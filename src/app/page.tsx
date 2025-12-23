@@ -83,7 +83,7 @@ export default function HomePage() {
             <img
               src="/home/hero-dashboard-1024.webp"
               alt="TikTok Creator Analytics Dashboard"
-              className="absolute inset-0 w-full h-full object-cover opacity-25"
+              className="absolute inset-0 w-full h-full object-cover opacity-10"
               loading="eager"
               fetchPriority="high"
               decoding="async"
@@ -91,10 +91,10 @@ export default function HomePage() {
           </picture>
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/60 via-secondary-900/40 to-accent-900/50"></div>
         </div>
-        <div className="container-custom py-16 md:py-24">
+        <div className="container-custom py-10 md:py-12">
           <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Trust Badge with Image */}
-          <div className="inline-flex items-center space-x-2 glass-dark text-white px-5 py-2.5 rounded-full text-label-md font-medium mb-8 animate-fade-in border border-white/20">
+          <div className="inline-flex items-center space-x-2 glass-dark text-white px-5 py-2.5 rounded-full text-label-md font-medium mb-2 animate-fade-in border border-white/20">
             <picture>
               <source type="image/avif" srcSet="/home/trust-badge-icon-640.avif" />
               <source type="image/webp" srcSet="/home/trust-badge-icon-640.webp" />
@@ -127,7 +127,7 @@ export default function HomePage() {
             about their monetization strategy. No sign-up required, completely free, updated daily.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-scale-in stagger-3">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-scale-in stagger-3">
             <Link
               href="/calculators/tiktok-money"
               className="btn btn-primary btn-lg gradient-primary gradient-animated glow-purple font-semibold shadow-2xl hover:scale-105 transition-all"
@@ -174,7 +174,7 @@ export default function HomePage() {
       </section>
 
       {/* PRIMARY CALCULATOR GRID WITH SHOWCASE IMAGE */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4 animate-fade-in">
             Most Popular TikTok Earnings Calculators
@@ -218,7 +218,7 @@ export default function HomePage() {
             >
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-primary opacity-5 blur-2xl rounded-full group-hover:opacity-10 transition-opacity"></div>
               <div className="flex items-start space-x-4 relative">
-                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-primary gradient-animated flex items-center justify-center text-white group-hover:scale-110 transition-all duration-300 glow-purple shadow-lg">
+                <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-primary gradient-animated flex items-center justify-center text-primary-600 group-hover:scale-110 transition-all duration-300 glow-purple shadow-lg">
                   <calc.icon size={28} />
                 </div>
                 <div className="flex-1 min-w-0">
@@ -241,7 +241,7 @@ export default function HomePage() {
       </section>
 
       {/* SECONDARY CALCULATORS BY CATEGORY */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             All TikTok Calculator Categories
@@ -257,7 +257,7 @@ export default function HomePage() {
               <div className="card p-8 overflow-hidden">
                 <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-primary opacity-5 blur-3xl rounded-full"></div>
                 <div className="flex items-center space-x-3 mb-4 relative">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-primary gradient-animated flex items-center justify-center text-white glow-purple">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-primary gradient-animated flex items-center justify-center text-primary-600 glow-purple">
                     <category.icon size={24} />
                   </div>
                   <h3 className="text-heading-lg font-display font-bold text-neutral-900">
@@ -288,7 +288,7 @@ export default function HomePage() {
       </section>
 
       {/* GUIDES HUB WITH MONETIZATION GUIDE PREVIEW */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             TikTok Monetization Guides & Strategy
@@ -326,7 +326,7 @@ export default function HomePage() {
           {guideCategories.map((category, idx) => (
             <div key={category.title} className="card p-8 animate-slide-in-right" style={{ animationDelay: `${idx * 100}ms` }}>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-gradient-accent gradient-animated flex items-center justify-center text-white glow-pink">
+                <div className="w-12 h-12 rounded-xl bg-gradient-accent gradient-animated flex items-center justify-center text-accent-600 glow-pink">
                   <category.icon size={24} />
                 </div>
                 <h3 className="text-heading-lg font-display font-bold text-neutral-900">
@@ -370,7 +370,7 @@ export default function HomePage() {
       </section>
 
       {/* DATA & REFERENCE SECTION WITH VISUALIZATION */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             Industry Data & Benchmarks
@@ -412,7 +412,7 @@ export default function HomePage() {
               className="card card-hover p-6 group animate-scale-in"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className="text-primary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-secondary-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                 <data.icon size={40} />
               </div>
               <h3 className="text-heading-md font-display font-bold text-neutral-900 mb-2 group-hover:text-secondary-600 transition-colors">
@@ -433,7 +433,7 @@ export default function HomePage() {
       </section>
 
       {/* COMPARISONS BLOCK */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             Platform & Monetization Comparisons
@@ -469,7 +469,7 @@ export default function HomePage() {
       </section>
 
       {/* NICHE EARNINGS PAGES WITH SUCCESS STORY */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             Earnings by Content Niche
@@ -511,7 +511,7 @@ export default function HomePage() {
               className="card card-hover p-6 text-center group animate-scale-in"
               style={{ animationDelay: `${idx * 100}ms` }}
             >
-              <div className="text-primary-600 mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="text-accent-600 mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                 <niche.icon size={48} />
               </div>
               <h3 className="text-heading-md font-display font-bold text-neutral-900 mb-2 group-hover:text-accent-600 transition-colors">
@@ -526,7 +526,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ SECTION WITH E-E-A-T AUTHORITY */}
-      <section className="container-custom py-16 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-display-sm md:text-display-md font-display font-bold text-white mb-4">
             Frequently Asked Questions
@@ -579,7 +579,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA SECTION WITH BACKGROUND IMAGE */}
-      <section className="container-custom py-20 relative z-10">
+      <section className="container-custom py-10 md:py-12 relative z-10">
         <div className="card p-10 md:p-16 text-center max-w-5xl mx-auto overflow-hidden relative">
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 overflow-hidden">
@@ -633,10 +633,10 @@ export default function HomePage() {
       </section>
 
       {/* FOOTER AUTHORITY BLOCK WITH TRUST INDICATORS */}
-      <section className="container-custom py-12 relative z-10 border-t border-white/10">
+      <section className="container-custom relative z-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto text-center">
           {/* E-E-A-T Authority Visual */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-2 flex justify-center">
             <picture>
               <source type="image/avif" srcSet="/home/eeat-badge-640.avif" />
               <source type="image/webp" srcSet="/home/eeat-badge-640.webp" />

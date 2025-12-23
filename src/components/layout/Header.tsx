@@ -146,7 +146,7 @@ export function Header() {
                       </svg>
                     </button>
                     {openDropdown === link.label && (
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-neutral-900 border border-white/20 rounded-xl shadow-2xl py-2 animate-slide-down">
+                      <div className="absolute top-full left-0 mt-0 w-56 bg-neutral-900 border border-white/20 rounded-xl shadow-2xl py-2 animate-slide-down">
                         {link.dropdown.map((item) => (
                           <Link
                             key={item.href}
