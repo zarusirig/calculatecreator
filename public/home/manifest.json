@@ -1,0 +1,61 @@
+{
+  "generated": "2025-12-05T17:32:55.558Z",
+  "images": [
+    {
+      "id": "hero",
+      "filename": "hero-dashboard.png",
+      "path": "/home/hero-dashboard.png",
+      "width": 1920,
+      "height": 1080,
+      "altText": "TikTok Creator Analytics Dashboard"
+    },
+    {
+      "id": "trust-badge",
+      "filename": "trust-badge-icon.png",
+      "path": "/home/trust-badge-icon.png",
+      "width": 128,
+      "height": 128,
+      "altText": "Trusted by creators badge"
+    },
+    {
+      "id": "calculator",
+      "filename": "calculator-interface.png",
+      "path": "/home/calculator-interface.png",
+      "width": 1200,
+      "height": 750,
+      "altText": "TikTok Money Calculator Interface"
+    },
+    {
+      "id": "monetization",
+      "filename": "monetization-guide.png",
+      "path": "/home/monetization-guide.png",
+      "width": 1200,
+      "height": 900,
+      "altText": "TikTok Monetization Strategy Guide"
+    },
+    {
+      "id": "data-viz",
+      "filename": "data-charts.png",
+      "path": "/home/data-charts.png",
+      "width": 1200,
+      "height": 675,
+      "altText": "TikTok Industry Data & Benchmarks"
+    },
+    {
+      "id": "success",
+      "filename": "creator-success.png",
+      "path": "/home/creator-success.png",
+      "width": 1200,
+      "height": 675,
+      "altText": "TikTok Creator Success Story"
+    },
+    {
+      "id": "eeat",
+      "filename": "eeat-badge.png",
+      "path": "/home/eeat-badge.png",
+      "width": 400,
+      "height": 400,
+      "altText": "E-E-A-T Authority Badge"
+    }
+  ]
+}

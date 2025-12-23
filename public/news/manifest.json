@@ -1,0 +1,41 @@
+{
+  "generated": "2025-12-05T17:56:27.682Z",
+  "images": [
+    {
+      "id": "regulatory",
+      "filename": "news-regulatory.png",
+      "path": "/news/news-regulatory.png",
+      "altText": "TikTok Regulatory News"
+    },
+    {
+      "id": "features",
+      "filename": "news-features.png",
+      "path": "/news/news-features.png",
+      "altText": "TikTok New Features"
+    },
+    {
+      "id": "shop-news",
+      "filename": "news-shop.png",
+      "path": "/news/news-shop.png",
+      "altText": "TikTok Shop News"
+    },
+    {
+      "id": "algorithm-news",
+      "filename": "news-algorithm.png",
+      "path": "/news/news-algorithm.png",
+      "altText": "TikTok Algorithm Updates"
+    },
+    {
+      "id": "monetization-news",
+      "filename": "news-monetization.png",
+      "path": "/news/news-monetization.png",
+      "altText": "TikTok Monetization News"
+    },
+    {
+      "id": "safety",
+      "filename": "news-safety.png",
+      "path": "/news/news-safety.png",
+      "altText": "TikTok Safety Updates"
+    }
+  ]
+}

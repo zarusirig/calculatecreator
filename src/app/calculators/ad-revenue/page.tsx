@@ -1,0 +1,440 @@
+'use client';
+
+import React, { useState } from 'react';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
+import { InputField } from '@/components/ui/InputField';
+import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { FAQSection } from '@/components/calculator/FAQSection';
+import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import {
+  calculateAdRevenue,
+  validateAdRevenueInput,
+} from '@/lib/calculators/ad-revenue';
+import type {
+  AdRevenueInput,
+  AdRevenueResult,
+} from '@/types/calculator';
+import { trackCalculation } from '@/lib/analytics/ga4';
+import { Banknote, DollarSign, TrendingUp } from 'lucide-react';
+
+export default function AdRevenueCalculatorPage() {
+  const [inputs, setInputs] = useState<AdRevenueInput>({
+    monthlyViews: 1000000,
+    cpm: 5,
+    adFrequency: 1,
+  });
+
+  const [results, setResults] = useState<AdRevenueResult | null>(null);
+  const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isCalculating, setIsCalculating] = useState(false);
+
+  const handleInputChange = (
+    field: keyof AdRevenueInput,
+    value: any
+  ) => {
+    setInputs((prev) => ({ ...prev, [field]: value }));
+    if (errors[field]) {
+      setErrors((prev) => {
+        const newErrors = { ...prev };
+        delete newErrors[field];
+        return newErrors;
+      });
+    }
+  };
+
+  const handleCalculate = () => {
+    const validation = validateAdRevenueInput(inputs);
+    if (!validation.valid) {
+      setErrors(validation.errors);
+      return;
+    }
+
+    setIsCalculating(true);
+    setErrors({});
+
+    setTimeout(() => {
+      const result = calculateAdRevenue(inputs);
+      setResults(result);
+
+      trackCalculation(
+        'ad-revenue',
+        { ...inputs },
+        { monthlyRevenue: result.monthlyRevenue, annualRevenue: result.annualRevenue }
+      );
+
+      setIsCalculating(false);
+    }, 500);
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
+      <div className="container-custom">
+        <Breadcrumb
+          items={[
+            { label: 'Calculators', href: '/calculators' },
+            {
+              label: 'Ad Revenue Calculator',
+              href: '/calculators/ad-revenue',
+            },
+          ]}
+        />
+
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-secondary-500 to-secondary-600 text-white mb-6">
+            <DollarSign className="w-8 h-8" />
+          </div>
+          <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
+            TikTok Ad Revenue Calculator
+          </h1>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+            Estimate potential ad revenue from TikTok monetization programs based on
+            your views, CPM, and ad frequency.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <Card className="lg:sticky lg:top-24 h-fit">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
+              Calculate Ad Revenue
+            </h2>
+
+            <InputField
+              id="monthlyViews"
+              label="Monthly Views"
+              type="number"
+              value={inputs.monthlyViews}
+              onChange={(value) => handleInputChange('monthlyViews', value)}
+              placeholder="e.g., 1000000"
+              helperText="Total monthly video views"
+              error={errors.monthlyViews}
+              min={0}
+              required
+            />
+
+            <InputField
+              id="cpm"
+              label="CPM (Cost per 1000 views)"
+              type="number"
+              value={inputs.cpm}
+              onChange={(value) => handleInputChange('cpm', value)}
+              placeholder="e.g., 5"
+              helperText="Typical range: $2-10"
+              error={errors.cpm}
+              min={0}
+              step={0.01}
+              required
+            />
+
+            <InputField
+              id="adFrequency"
+              label="Ads per Video"
+              type="number"
+              value={inputs.adFrequency}
+              onChange={(value) => handleInputChange('adFrequency', value)}
+              placeholder="e.g., 1"
+              helperText="Number of ad placements per video"
+              error={errors.adFrequency}
+              min={1}
+              max={5}
+              required
+            />
+
+            <Button
+              variant="primary"
+              size="lg"
+              onClick={handleCalculate}
+              isLoading={isCalculating}
+              className="w-full mt-6"
+            >
+              Calculate Ad Revenue
+            </Button>
+
+            {results && (
+              <div className="mt-6">
+                <ResultsDisplay
+                  results={results}
+                  type="single"
+                  format="currency"
+                  title="Monthly Revenue"
+                  subtitle={`$${results.annualRevenue.toLocaleString()} annual`}
+                />
+
+                <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
+                  <p className="text-label-md text-neutral-600 mb-3">
+                    Revenue Breakdown
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-body-sm text-neutral-600">
+                        Annual Revenue
+                      </span>
+                      <span className="text-body-sm font-semibold text-neutral-900">
+                        ${results.annualRevenue.toLocaleString()}
+                      </span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-body-sm text-neutral-600">
+                        Revenue per Video
+                      </span>
+                      <span className="text-body-sm font-semibold text-neutral-900">
+                        ${results.revenuePerVideo.toFixed(2)}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </Card>
+
+          <div className="space-y-8">
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+                Ad Revenue Guide
+              </h2>
+              <div className="space-y-4 text-body-md text-neutral-700">
+                <p>
+                  Ad revenue is earned through TikTok's monetization programs when
+                  ads are shown on your content. CPM varies by niche, audience
+                  demographics, and advertiser demand.
+                </p>
+                <p>
+                  <strong>Key factors:</strong>
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Higher-value niches (finance, tech) have better CPM rates</li>
+                  <li>Longer videos allow for mid-roll ads (higher earnings)</li>
+                  <li>US/UK audiences command higher CPMs than other regions</li>
+                  <li>Ad revenue requires 10K+ followers to qualify</li>
+                </ul>
+              </div>
+            </Card>
+
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+                CPM by Niche
+              </h2>
+              <div className="space-y-3">
+                {[
+                  { label: 'Finance', range: '$8-12', color: 'bg-success-DEFAULT' },
+                  { label: 'Tech', range: '$6-10', color: 'bg-success-DEFAULT' },
+                  { label: 'Lifestyle', range: '$4-6', color: 'bg-secondary-500' },
+                  { label: 'Entertainment', range: '$2-4', color: 'bg-warning-DEFAULT' },
+                ].map((niche) => (
+                  <div
+                    key={niche.label}
+                    className="flex items-center justify-between p-4 bg-neutral-50 rounded-lg"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-3 h-3 rounded-full ${niche.color}`} />
+                      <span className="font-semibold text-neutral-900">{niche.label}</span>
+                    </div>
+                    <span className="font-semibold text-neutral-900">{niche.range}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </div>
+        </div>
+
+        <div className="max-w-5xl mx-auto space-y-8">
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              Understanding TikTok Ad Revenue Monetization
+            </h2>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p>
+                The TikTok Ad Revenue Calculator estimates your earnings potential from TikTok's monetization programs, including the Creator Fund, TikTok Pulse (for top-performing content), and in-feed ads. Unlike YouTube where ad revenue is the primary income source, TikTok's ad revenue typically represents just 5-15% of a creator's total earnings, with brand deals, affiliate marketing, and product sales comprising the majority.
+              </p>
+              <p>
+                CPM (cost per mille - 1,000 views) varies dramatically based on your niche, audience demographics, and content quality. Finance creators command $8-12 CPM while entertainment averages $2-4. Geographic location matters tremendously - US/UK/Canadian viewers generate 3-5x higher CPM than viewers from lower-income countries. A creator with 80% US traffic earns significantly more than one with global viewership despite identical view counts.
+              </p>
+              <p>
+                TikTok's ad revenue model rewards longer-form content. Videos over 1 minute can include mid-roll ads, increasing earnings by 2-3x per view. The platform's push toward longer content (1-10 minutes) creates new opportunities for creators willing to evolve from short clips. However, longer doesn't always mean better - retention rate matters more than duration. A 90-second video with 70% retention earns more than a 3-minute video with 30% retention.
+              </p>
+            </div>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              Ad Revenue Benchmarks: What to Expect by Size
+            </h2>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p>
+                <strong>Small Creators (10K-50K followers):</strong> Average 200K-1M monthly views. At $3-5 CPM, expect $600-5,000 monthly ad revenue. Most earn toward the lower end ($600-1,500). Ad revenue isn't life-changing at this tier, but it validates monetization potential. Focus on growth and brand deal opportunities which pay 5-10x more.
+              </p>
+              <p>
+                <strong>Mid-Tier Creators (50K-250K followers):</strong> Generate 1M-5M monthly views. At $4-6 CPM, earn $4,000-30,000 monthly. This is where ad revenue becomes meaningful supplementary income. However, brand deals still typically outpace ad revenue. A creator earning $10K in ads likely earns $30-50K from sponsorships.
+              </p>
+              <p>
+                <strong>Large Creators (250K-1M followers):</strong> Pull 5M-20M monthly views. At $5-8 CPM, generate $25,000-160,000 monthly ad revenue. At this scale, ad revenue becomes significant passive income. Combined with brand deals ($50-200K/month) and other streams, total earnings can reach $100-500K monthly.
+              </p>
+              <p>
+                <strong>Mega Creators (1M+ followers):</strong> Command 20M-100M+ monthly views. At premium CPM ($6-10), ad revenue alone can reach $120,000-1M+ monthly. These creators often negotiate custom deals with TikTok for enhanced revenue sharing. However, even at this tier, brand deals, product lines, and business ventures typically exceed ad revenue.
+              </p>
+            </div>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              Why Ad Revenue Matters Beyond the Money
+            </h2>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p>
+                While TikTok ad revenue is lower than YouTube, it serves critical strategic purposes. First, it's passive income - once a video is posted, it continues earning without additional effort. Your catalog of hundreds of videos generates recurring monthly revenue. This compounds over time as your video library grows.
+              </p>
+              <p>
+                Second, ad revenue validates your business to brands and partners. When pitching brand deals, demonstrating $5K-20K monthly ad revenue proves you're a serious creator with engaged audiences. Brands are more likely to pay premium rates to creators with proven monetization metrics.
+              </p>
+              <p>
+                Third, algorithm alignment benefits creators in monetization programs. TikTok prioritizes distributing content from monetized creators because it generates platform revenue. Creators enrolled in monetization programs often see 10-20% higher reach compared to non-monetized accounts with similar engagement rates.
+              </p>
+              <p>
+                Finally, ad revenue provides income stability during brand deal droughts. Brand partnerships are lumpy - you might land 5 deals one month and zero the next. Ad revenue flows consistently based on views, providing reliable baseline income while you negotiate and fulfill sponsorships.
+              </p>
+            </div>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              8 Strategies to Maximize TikTok Ad Revenue
+            </h2>
+            <div className="space-y-3 text-body-md text-neutral-700">
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">1.</span>
+                <div>
+                  <strong>Increase Video Length Strategically:</strong> Videos over 1 minute qualify for mid-roll ads, earning 2-3x more. Test 90-second to 3-minute formats in your niche. Don't artificially extend content - maintain high retention. A focused 90-second video outearns a rambling 5-minute video.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">2.</span>
+                <div>
+                  <strong>Target High-CPM Demographics:</strong> Create content appealing to US, UK, Canadian, and Australian audiences. Business, finance, tech, and career content naturally attracts these demographics. Even lifestyle/entertainment creators can angle content toward these markets (e.g., "US travel tips" vs generic travel content).
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">3.</span>
+                <div>
+                  <strong>Pivot to Premium Niches:</strong> Finance, tech, business, and real estate command $8-12 CPM versus $2-4 for entertainment. If possible, add premium sub-niches to your content. Comedy creators can do "money comedy," lifestyle creators can cover "career growth." Blend entertainment with value.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">4.</span>
+                <div>
+                  <strong>Post Consistently to Compound Catalog Value:</strong> Each video continues earning ad revenue for months or years. A creator with 500 videos earning $5/video monthly generates $2,500 passive income. Consistent posting (3-7x/week) builds a revenue-generating asset library.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">5.</span>
+                <div>
+                  <strong>Optimize for Watch Time, Not Just Views:</strong> TikTok pays more for longer watch time. A 2-minute video with 70% retention (84 seconds watched) earns more than a 60-second video with 50% retention (30 seconds). Focus on retention optimization: strong hooks, pacing, and payoff.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">6.</span>
+                <div>
+                  <strong>Leverage TikTok Pulse for Premium Content:</strong> TikTok Pulse places ads on the top 4% of videos, paying premium rates (50%+ higher CPM). Qualify by creating high-quality, on-brand content. Check Creator Tools to see if your videos qualify for Pulse.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">7.</span>
+                <div>
+                  <strong>Time Content for Q4 Advertising Surge:</strong> CPM rates spike 40-80% in Q4 (October-December) as advertisers compete for holiday shoppers. Plan your best, most viral-worthy content for Oct-Dec. A video with 1M views in November earns 50-80% more than the same video in February.
+                </div>
+              </div>
+              <div className="flex items-start space-x-3 p-4 bg-neutral-50 rounded-lg">
+                <span className="font-bold text-secondary-600 text-lg">8.</span>
+                <div>
+                  <strong>Cross-Promote to YouTube for 10x RPM:</strong> Use TikTok for audience building, then drive traffic to YouTube where RPM is $3-8 versus TikTok's $0.02-0.04. A simple CTA: "Full version on YouTube" can convert 1-3% of TikTok viewers, dramatically increasing overall ad revenue.
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              Real Example: Ad Revenue Calculation by Niche
+            </h2>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p>
+                <strong>Scenario:</strong> Two creators with identical reach - 100K followers, 3M monthly views, 1.5 average ads per video
+              </p>
+              <div className="bg-neutral-50 p-4 rounded-lg space-y-2">
+                <p className="font-bold text-neutral-900">Finance Creator ($10 CPM):</p>
+                <p>Monthly Revenue = (3,000,000 ÷ 1,000) × $10 × 1.5 = $45,000/month</p>
+                <p>Annual Revenue = $45,000 × 12 = $540,000/year</p>
+                <p>Revenue Per Video = $45,000 ÷ 60 videos = $750/video</p>
+              </div>
+              <div className="bg-neutral-50 p-4 rounded-lg space-y-2 mt-4">
+                <p className="font-bold text-neutral-900">Entertainment Creator ($3 CPM):</p>
+                <p>Monthly Revenue = (3,000,000 ÷ 1,000) × $3 × 1.5 = $13,500/month</p>
+                <p>Annual Revenue = $13,500 × 12 = $162,000/year</p>
+                <p>Revenue Per Video = $13,500 ÷ 60 videos = $225/video</p>
+              </div>
+              <p className="pt-4">
+                <strong>Key Insight:</strong> Same followers, same views, same engagement - but the finance creator earns 3.3x more ($45K vs $13.5K monthly) purely from niche selection. The $378K annual difference ($540K vs $162K) demonstrates why niche matters tremendously. However, both creators should still prioritize brand deals, which typically pay 5-10x ad revenue rates.
+              </p>
+            </div>
+          </Card>
+
+          <MethodologySection
+            calculatorName="ad-revenue"
+            formula={`Monthly Revenue = (Monthly Views / 1000) × CPM × Ad Frequency
+
+Example:
+Monthly Views: 1,000,000
+CPM: $5
+Ad Frequency: 1 ad per video
+Monthly: (1,000,000 / 1000) × $5 × 1 = $5,000
+Annual: $5,000 × 12 = $60,000`}
+            assumptions={[
+              { label: 'CPM Range', value: 'Typical TikTok CPM ranges from $2-10 depending on niche' },
+              { label: 'Ad Frequency', value: 'Longer videos (1min+) can have 1-3 mid-roll ads' },
+              { label: 'Eligibility', value: 'Requires 10K+ followers and Creator Fund/Pulse enrollment' },
+            ]}
+            dataSources={[
+              'TikTok Creator Marketplace CPM Data 2024',
+              'Ad Revenue Benchmark Study',
+              'Creator Monetization Report',
+            ]}
+            limitations="Actual revenue varies by audience location, engagement, and advertiser demand. CPM fluctuates seasonally (higher in Q4)."
+            lastUpdated="November 13, 2025"
+          />
+
+          <FAQSection
+            pageName="Ad Revenue Calculator"
+            faqs={[
+              {
+                question: 'How much can I earn from TikTok ads?',
+                answer: 'Earnings vary widely: 100K views/month at $5 CPM = $500/month. 1M views = $5,000/month. High-CPM niches (finance, tech) can earn 2-3x more. Most creators need 500K+ monthly views for significant ad income.',
+              },
+              {
+                question: 'What is a good CPM rate on TikTok?',
+                answer: '$5+ CPM is good for most niches. Finance/tech creators see $8-12. Entertainment averages $2-4. Your CPM depends on niche, audience demographics, and engagement quality.',
+              },
+              {
+                question: 'How do I qualify for TikTok ad revenue?',
+                answer: 'Requirements: 10K+ followers, 100K+ video views in last 30 days, 18+ years old, follow Community Guidelines. Apply through Creator Tools → Creator Fund or TikTok Pulse program.',
+              },
+              {
+                question: 'Should I focus on ad revenue or brand deals?',
+                answer: 'Brand deals typically pay 5-10x more than ad revenue for the same reach. Use ad revenue as passive income, but prioritize brand partnerships, affiliate marketing, and selling your own products/services.',
+              },
+            ]}
+          />
+
+          <RelatedCalculators
+            currentCalculator="ad-revenue"
+            calculators={[
+              { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Estimate Creator Fund earnings', icon: Banknote },
+              { name: 'TikTok Money Calculator', slug: 'tiktok-money', description: 'Total earnings from all streams', icon: DollarSign },
+              { name: 'RPM Calculator', slug: 'rpm', description: 'Calculate revenue per 1000 views', icon: TrendingUp },
+            ]}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,65 @@
+{
+  "generated": "2025-12-05T17:56:27.674Z",
+  "images": [
+    {
+      "id": "monetization",
+      "filename": "guide-monetization.png",
+      "path": "/guides/guide-monetization.png",
+      "altText": "TikTok Monetization Guide"
+    },
+    {
+      "id": "creator-fund",
+      "filename": "guide-creator-fund.png",
+      "path": "/guides/guide-creator-fund.png",
+      "altText": "TikTok Creator Fund Guide"
+    },
+    {
+      "id": "brand-deals",
+      "filename": "guide-brand-deals.png",
+      "path": "/guides/guide-brand-deals.png",
+      "altText": "TikTok Brand Deals Guide"
+    },
+    {
+      "id": "live-streaming",
+      "filename": "guide-live-streaming.png",
+      "path": "/guides/guide-live-streaming.png",
+      "altText": "TikTok LIVE Streaming Guide"
+    },
+    {
+      "id": "tiktok-shop",
+      "filename": "guide-tiktok-shop.png",
+      "path": "/guides/guide-tiktok-shop.png",
+      "altText": "TikTok Shop Guide"
+    },
+    {
+      "id": "algorithm",
+      "filename": "guide-algorithm.png",
+      "path": "/guides/guide-algorithm.png",
+      "altText": "TikTok Algorithm Guide"
+    },
+    {
+      "id": "content-strategy",
+      "filename": "guide-content-strategy.png",
+      "path": "/guides/guide-content-strategy.png",
+      "altText": "TikTok Content Strategy Guide"
+    },
+    {
+      "id": "analytics",
+      "filename": "guide-analytics.png",
+      "path": "/guides/guide-analytics.png",
+      "altText": "TikTok Analytics Guide"
+    },
+    {
+      "id": "growth",
+      "filename": "guide-growth.png",
+      "path": "/guides/guide-growth.png",
+      "altText": "TikTok Growth Guide"
+    },
+    {
+      "id": "tools",
+      "filename": "guide-tools.png",
+      "path": "/guides/guide-tools.png",
+      "altText": "TikTok Creator Tools Guide"
+    }
+  ]
+}

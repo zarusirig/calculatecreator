@@ -1,0 +1,290 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
+    "trailingSlash": true,
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(html|json)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=3600, must-revalidate"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/calculators/earnings-revenue",
+        "destination": "/calculators",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/money",
+        "destination": "/calculators/tiktok-money",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-money-calculator",
+        "destination": "/calculators/tiktok-money",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/creator-fund",
+        "destination": "/calculators/tiktok-creator-fund",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-creator-fund-calculator",
+        "destination": "/calculators/tiktok-creator-fund",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/live-earnings",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-live-earnings-calculator",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/battle-earnings",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/views-money",
+        "destination": "/calculators/rpm",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-views-calculator",
+        "destination": "/calculators/rpm",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/likes-money",
+        "destination": "/calculators/engagement-rate",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence",
+        "destination": "/calculators",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/engagement",
+        "destination": "/calculators/engagement-rate",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-engagement-calculator",
+        "destination": "/calculators/engagement-rate",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/influencer-pricing",
+        "destination": "/calculators/brand-deal-rate",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/video-engagement",
+        "destination": "/calculators/video-performance",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/follower-value",
+        "destination": "/calculators/content-value",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/video-analytics",
+        "destination": "/calculators/video-performance",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-influence/average-views",
+        "destination": "/calculators/watch-time",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds",
+        "destination": "/calculators/coins",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/coins",
+        "destination": "/calculators/coins",
+        "type": 301
+      },
+      {
+        "source": "/tiktok-coins-calculator",
+        "destination": "/calculators/coins",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/diamonds",
+        "destination": "/calculators/coins",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/gift",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/live-gift",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/money-gun",
+        "destination": "/calculators/live-gifts",
+        "type": 301
+      },
+      {
+        "source": "/calculators/commerce-ads",
+        "destination": "/calculators/shop-commission",
+        "type": 301
+      },
+      {
+        "source": "/calculators/commerce-ads/shop-profit",
+        "destination": "/calculators/shop-commission",
+        "type": 301
+      },
+      {
+        "source": "/calculators/commerce-ads/ad-cost",
+        "destination": "/calculators/cpm-cpv",
+        "type": 301
+      },
+      {
+        "source": "/calculators/commerce-ads/rpm-cpm",
+        "destination": "/calculators/rpm",
+        "type": 301
+      },
+      {
+        "source": "/calculators/utility-tools",
+        "destination": "/calculators/creator-tax",
+        "type": 301
+      },
+      {
+        "source": "/calculators/utility-tools/eligibility",
+        "destination": "/guides/how-to-join-creator-fund",
+        "type": 301
+      },
+      {
+        "source": "/calculators/utility-tools/tax",
+        "destination": "/calculators/creator-tax",
+        "type": 301
+      },
+      {
+        "source": "/calculators/utility-tools/payout",
+        "destination": "/reference/creator-fund-payment-schedule",
+        "type": 301
+      },
+      {
+        "source": "/calculators/utility-tools/bmi",
+        "destination": "/calculators",
+        "type": 301
+      },
+      {
+        "source": "/calculators/fun-niche",
+        "destination": "/calculators",
+        "type": 301
+      },
+      {
+        "source": "/calculators/fun-niche/moon-phase",
+        "destination": "/calculators",
+        "type": 301
+      },
+      {
+        "source": "/glossary",
+        "destination": "/guides",
+        "type": 301
+      },
+      {
+        "source": "/authors/rebecca-lin",
+        "destination": "/about",
+        "type": 301
+      },
+      {
+        "source": "/blog",
+        "destination": "/guides",
+        "type": 301
+      },
+      {
+        "source": "/blog/understanding-tiktok-rpm",
+        "destination": "/guides/maximize-creator-fund-rpm",
+        "type": 301
+      },
+      {
+        "source": "/blog/tiktok-live-gifts-diamond-conversions",
+        "destination": "/guides/live-gift-earnings-optimization",
+        "type": 301
+      },
+      {
+        "source": "/blog/tiktok-influencer-pricing-models",
+        "destination": "/guides/how-to-price-brand-deals",
+        "type": 301
+      },
+      {
+        "source": "/blog/optimizing-tiktok-engagement-rate",
+        "destination": "/guides/increase-engagement-rate-tiktok",
+        "type": 301
+      },
+      {
+        "source": "/blog/what-affects-tiktok-cpm-2023",
+        "destination": "/guides/maximize-creator-fund-rpm",
+        "type": 301
+      },
+      {
+        "source": "/blog/creator-fund-vs-live-gifts",
+        "destination": "/comparisons/creator-fund-vs-brand-deals",
+        "type": 301
+      },
+      {
+        "source": "/blog/good-engagement-rate-tiktok",
+        "destination": "/guides/increase-engagement-rate-tiktok",
+        "type": 301
+      },
+      {
+        "source": "/blog/track-improve-average-views",
+        "destination": "/calculators/watch-time",
+        "type": 301
+      },
+      {
+        "source": "/blog/how-to-calculate-tiktok-rpm",
+        "destination": "/guides/maximize-creator-fund-rpm",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
