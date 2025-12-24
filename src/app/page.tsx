@@ -60,6 +60,9 @@ export const metadata: Metadata = {
     'tiktok view calculator',
     'tiktok followers earnings calculator',
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/',
+  },
 };
 
 export default function HomePage() {
