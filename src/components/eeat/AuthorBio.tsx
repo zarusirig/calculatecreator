@@ -30,7 +30,7 @@ export function AuthorBio({
     return (
       <div className="flex items-start space-x-4 p-4 bg-neutral-50 rounded-lg border border-neutral-200">
         <div className="flex-shrink-0">
-          <div className="w-16 h-16 rounded-full bg-gradient-primary text-white flex items-center justify-center text-xl font-bold">
+          <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white flex items-center justify-center text-xl font-bold shadow-md">
             {author.name
               .split(' ')
               .map((n) => n[0])
@@ -53,7 +53,7 @@ export function AuthorBio({
     <Card>
       <div className="flex items-start space-x-6">
         <div className="flex-shrink-0">
-          <div className="w-24 h-24 rounded-full bg-gradient-primary text-white flex items-center justify-center text-3xl font-bold shadow-lg">
+          <div className="w-24 h-24 rounded-full bg-gradient-to-r from-primary-600 to-secondary-600 text-white flex items-center justify-center text-3xl font-bold shadow-lg">
             {author.name
               .split(' ')
               .map((n) => n[0])

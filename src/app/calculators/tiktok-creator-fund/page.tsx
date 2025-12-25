@@ -177,6 +177,7 @@ export default function CreatorFundCalculatorPage() {
               { label: 'Calculators', href: '/calculators' },
               { label: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund' },
             ]}
+            variant="dark"
           />
 
         <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
@@ -196,7 +197,7 @@ export default function CreatorFundCalculatorPage() {
 
         {/* Author Byline with Expert Review Badge */}
         <div className="max-w-5xl mx-auto mb-8">
-          <PageAuthorByline pageSlug="tiktok-creator-fund" />
+          <PageAuthorByline pageSlug="tiktok-creator-fund" variant="dark" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 lg:mb-12">
@@ -479,6 +480,7 @@ Monthly earnings: (500 × $0.036) = $18.00`}
           <FAQSection
             pageName="Creator Fund Calculator"
             faqs={faqs}
+            variant="dark"
           />
 
           <RelatedCalculators
@@ -503,11 +505,12 @@ Monthly earnings: (500 × $0.036) = $18.00`}
                 icon: TrendingUp,
               },
             ]}
+            variant="dark"
           />
 
           {/* E-E-A-T Section: Author Bio, Review Info, Citations, Disclaimers */}
           <div className="mt-12">
-            <PageEEAT pageSlug="tiktok-creator-fund" variant="full" />
+            <PageEEAT pageSlug="tiktok-creator-fund" variant="full" theme="dark" />
           </div>
         </div>
       </div>

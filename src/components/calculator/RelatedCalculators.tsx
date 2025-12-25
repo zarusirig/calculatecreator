@@ -15,19 +15,23 @@ interface RelatedCalculator {
 interface RelatedCalculatorsProps {
   calculators: RelatedCalculator[];
   currentCalculator: string;
+  variant?: 'light' | 'dark';
 }
 
 export function RelatedCalculators({
   calculators,
   currentCalculator,
+  variant = 'light',
 }: RelatedCalculatorsProps) {
   const handleClick = (slug: string, name: string) => {
     trackRelatedContentClick(currentCalculator, `/calculators/${slug}`, 'calculator');
   };
 
+  const headingColor = variant === 'dark' ? 'text-white' : 'text-neutral-900';
+
   return (
     <div className="mt-12">
-      <h2 className="text-display-sm font-bold text-neutral-900 mb-6">
+      <h2 className={`text-display-sm font-bold mb-6 ${headingColor}`}>
         Related Calculators
       </h2>
 

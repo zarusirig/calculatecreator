@@ -6,9 +6,10 @@ export interface ReviewBadgeProps {
   reviewer: Author;
   reviewDate: string;
   reviewType?: 'technical' | 'editorial' | 'financial' | 'expert';
+  variant?: 'light' | 'dark';
 }
 
-export function ReviewBadge({ reviewer, reviewDate, reviewType = 'expert' }: ReviewBadgeProps) {
+export function ReviewBadge({ reviewer, reviewDate, reviewType = 'expert', variant = 'light' }: ReviewBadgeProps) {
   const reviewTypeLabels = {
     technical: 'Technically Reviewed',
     editorial: 'Editorially Reviewed',
@@ -24,15 +25,26 @@ export function ReviewBadge({ reviewer, reviewDate, reviewType = 'expert' }: Rev
   };
 
   const IconComponent = reviewTypeIcons[reviewType];
+  const isDark = variant === 'dark';
 
   return (
-    <div className="inline-flex items-center space-x-2 px-4 py-2 bg-success-50 border-2 border-success-200 rounded-lg">
-      <IconComponent className="w-5 h-5 text-success-700" />
+    <div className={`inline-flex items-center space-x-2 px-4 py-2 rounded-lg border-2 ${
+      isDark 
+        ? 'bg-white/10 border-white/20 backdrop-blur-sm' 
+        : 'bg-success-50 border-success-200'
+    }`}>
+      <IconComponent className={`w-5 h-5 ${
+        isDark ? 'text-white' : 'text-success-700'
+      }`} />
       <div className="flex flex-col">
-        <span className="text-label-sm font-semibold text-success-800">
+        <span className={`text-label-sm font-semibold ${
+          isDark ? 'text-white' : 'text-success-800'
+        }`}>
           {reviewTypeLabels[reviewType]}
         </span>
-        <span className="text-body-xs text-success-700">
+        <span className={`text-body-xs ${
+          isDark ? 'text-white/80' : 'text-success-700'
+        }`}>
           by {reviewer.name} • {reviewDate}
         </span>
       </div>

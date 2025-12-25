@@ -17,6 +17,7 @@ interface BreadcrumbProps {
   maxItems?: number;
   homeLabel?: string;
   homeHref?: string;
+  variant?: 'light' | 'dark';
 }
 
 export function Breadcrumb({
@@ -25,7 +26,8 @@ export function Breadcrumb({
   className = "mb-6",
   maxItems = 4,
   homeLabel = "Home",
-  homeHref = "/"
+  homeHref = "/",
+  variant = 'light'
 }: BreadcrumbProps) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -74,14 +76,18 @@ export function Breadcrumb({
           >
             {index > 0 && (
               <ChevronRight
-                className="w-4 h-4 text-neutral-400 mx-1 md:mx-2 flex-shrink-0"
+                className={`w-4 h-4 mx-1 md:mx-2 flex-shrink-0 ${
+                  variant === 'dark' ? 'text-neutral-300' : 'text-neutral-400'
+                }`}
                 aria-hidden="true"
               />
             )}
 
             {index === allItems.length - 1 ? (
               <span
-                className="text-neutral-900 font-medium truncate max-w-32 md:max-w-none"
+                className={`font-medium truncate max-w-32 md:max-w-none ${
+                  variant === 'dark' ? 'text-neutral-100' : 'text-neutral-900'
+                }`}
                 itemProp="name"
                 aria-current="page"
               >
@@ -90,7 +96,11 @@ export function Breadcrumb({
             ) : (
               <Link
                 href={item.href}
-                className="text-neutral-600 hover:text-primary-600 transition-colors truncate max-w-24 md:max-w-none"
+                className={`transition-colors truncate max-w-24 md:max-w-none ${
+                  variant === 'dark'
+                    ? 'text-neutral-300 hover:text-neutral-100'
+                    : 'text-neutral-600 hover:text-primary-600'
+                }`}
                 onClick={() => handleClick(item.label, item.href)}
                 itemProp="item"
               >

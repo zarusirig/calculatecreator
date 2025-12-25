@@ -4,6 +4,7 @@ import { DollarSign, ClipboardList, Link, Info, BookOpen, type LucideIcon } from
 export interface DisclaimerProps {
   type: 'financial' | 'general' | 'affiliate' | 'tax' | 'educational';
   customText?: string;
+  variant?: 'light' | 'dark';
 }
 
 interface DisclaimerConfig {
@@ -15,7 +16,7 @@ interface DisclaimerConfig {
   textColor: string;
 }
 
-export function Disclaimer({ type, customText }: DisclaimerProps) {
+export function Disclaimer({ type, customText, variant = 'light' }: DisclaimerProps) {
   const disclaimers: Record<DisclaimerProps['type'], DisclaimerConfig> = {
     financial: {
       title: 'Financial Disclaimer',
@@ -71,20 +72,26 @@ export function Disclaimer({ type, customText }: DisclaimerProps) {
 
   const disclaimer = disclaimers[type];
   const IconComponent = disclaimer.icon;
+  const isDark = variant === 'dark';
+
+  // Dark variant styling
+  const bgColor = isDark ? 'bg-white/10 backdrop-blur-sm' : disclaimer.bgColor;
+  const borderColor = isDark ? 'border-white/20' : disclaimer.borderColor;
+  const textColor = isDark ? 'text-white' : disclaimer.textColor;
 
   return (
     <div
-      className={`p-6 rounded-xl border-2 ${disclaimer.bgColor} ${disclaimer.borderColor}`}
+      className={`p-6 rounded-xl border-2 ${bgColor} ${borderColor}`}
       role="note"
       aria-label={disclaimer.title}
     >
       <div className="flex items-start space-x-3">
-        <IconComponent className={`w-8 h-8 flex-shrink-0 ${disclaimer.textColor}`} />
+        <IconComponent className={`w-8 h-8 flex-shrink-0 ${textColor}`} />
         <div className="flex-1 min-w-0">
-          <h3 className={`text-heading-sm font-semibold mb-2 ${disclaimer.textColor}`}>
+          <h3 className={`text-heading-sm font-semibold mb-2 ${textColor}`}>
             {disclaimer.title}
           </h3>
-          <p className={`text-body-sm leading-relaxed ${disclaimer.textColor}`}>
+          <p className={`text-body-sm leading-relaxed ${textColor}`}>
             {disclaimer.text}
           </p>
         </div>
@@ -98,14 +105,18 @@ export function Disclaimer({ type, customText }: DisclaimerProps) {
  */
 export interface MultipleDisclaimersProps {
   types: Array<'financial' | 'general' | 'affiliate' | 'tax' | 'educational'>;
+  variant?: 'light' | 'dark';
 }
 
-export function MultipleDisclaimers({ types }: MultipleDisclaimersProps) {
+export function MultipleDisclaimers({ types, variant = 'light' }: MultipleDisclaimersProps) {
+  const isDark = variant === 'dark';
+  const headingColor = isDark ? 'text-white' : 'text-neutral-900';
+
   return (
     <div className="space-y-4">
-      <h3 className="text-heading-md font-semibold text-neutral-900">Important Disclaimers</h3>
+      <h3 className={`text-heading-md font-semibold ${headingColor}`}>Important Disclaimers</h3>
       {types.map((type) => (
-        <Disclaimer key={type} type={type} />
+        <Disclaimer key={type} type={type} variant={variant} />
       ))}
     </div>
   );

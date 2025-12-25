@@ -12,9 +12,10 @@ interface FAQItem {
 interface FAQSectionProps {
   faqs: FAQItem[];
   pageName: string;
+  variant?: 'light' | 'dark';
 }
 
-export function FAQSection({ faqs, pageName }: FAQSectionProps) {
+export function FAQSection({ faqs, pageName, variant = 'light' }: FAQSectionProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -26,9 +27,11 @@ export function FAQSection({ faqs, pageName }: FAQSectionProps) {
     }
   };
 
+  const headingColor = variant === 'dark' ? 'text-white' : 'text-neutral-900';
+
   return (
     <div className="mt-12">
-      <h2 className="text-display-sm font-bold text-neutral-900 mb-6">
+      <h2 className={`text-display-sm font-bold mb-6 ${headingColor}`}>
         Frequently Asked Questions
       </h2>
 

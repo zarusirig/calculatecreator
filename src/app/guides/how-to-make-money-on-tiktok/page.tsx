@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { GuideTableOfContents } from '@/components/ui/GuideTableOfContents';
 import { FileText, DollarSign, Laptop, BookOpen, Sparkles, Smile, Film, Gamepad2, CheckCircle, XCircle, BarChart3, TrendingUp, Rocket } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -39,27 +40,7 @@ export default function HowToMakeMoneyOnTikTokPage() {
         </div>
 
         {/* Table of Contents */}
-        <Card className="mb-12 bg-primary-50 border border-primary-200">
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
-          <nav className="space-y-2">
-            {tableOfContents.map((item, index) => (
-              <div key={index}>
-                <a href={`#${item.id}`} className="text-body-md text-primary-600 hover:text-primary-700 hover:underline block">
-                  {index + 1}. {item.title}
-                </a>
-                {item.subtopics && (
-                  <div className="ml-6 mt-1 space-y-1">
-                    {item.subtopics.map((sub, subIndex) => (
-                      <a key={subIndex} href={`#${sub.id}`} className="text-body-sm text-neutral-600 hover:text-primary-600 block">
-                        {index + 1}.{subIndex + 1} {sub.title}
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </nav>
-        </Card>
+        <GuideTableOfContents items={tableOfContents} />
 
         {/* Introduction */}
         <section id="introduction" className="mb-12">

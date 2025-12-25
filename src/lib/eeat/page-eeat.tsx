@@ -15,13 +15,14 @@ import { getPageMetadata, getDefaultPageMetadata } from '@/lib/constants/page-me
 export interface PageEEATProps {
   pageSlug: string;
   variant?: 'full' | 'minimal';
+  theme?: 'light' | 'dark';
 }
 
 /**
  * Complete E-E-A-T section for a page
  * Includes author bio, review badge, citations, and disclaimers based on page metadata
  */
-export function PageEEAT({ pageSlug, variant = 'full' }: PageEEATProps) {
+export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEEATProps) {
   const metadata = getPageMetadata(pageSlug) || getDefaultPageMetadata();
   const author = getAuthor(metadata.author);
   const reviewer = metadata.reviewedBy ? getAuthor(metadata.reviewedBy) : undefined;
@@ -57,6 +58,7 @@ export function PageEEAT({ pageSlug, variant = 'full' }: PageEEATProps) {
                 reviewer={reviewer}
                 reviewDate={metadata.reviewDate}
                 reviewType={metadata.reviewType}
+                variant="light"
               />
             </div>
           )}
@@ -98,7 +100,7 @@ export function PageEEAT({ pageSlug, variant = 'full' }: PageEEATProps) {
 
       {/* Disclaimers */}
       {metadata.disclaimers && metadata.disclaimers.length > 0 && (
-        <MultipleDisclaimers types={metadata.disclaimers} />
+        <MultipleDisclaimers types={metadata.disclaimers} variant={theme} />
       )}
     </div>
   );
@@ -107,12 +109,18 @@ export function PageEEAT({ pageSlug, variant = 'full' }: PageEEATProps) {
 /**
  * Just the author byline for pages that need minimal E-E-A-T
  */
-export function PageAuthorByline({ pageSlug }: { pageSlug: string }) {
+export function PageAuthorByline({ pageSlug, variant = 'light' }: { pageSlug: string; variant?: 'light' | 'dark' }) {
   const metadata = getPageMetadata(pageSlug) || getDefaultPageMetadata();
   const author = getAuthor(metadata.author);
   const reviewer = metadata.reviewedBy ? getAuthor(metadata.reviewedBy) : undefined;
 
   if (!author) return null;
+
+  const isDark = variant === 'dark';
+  const textColor = isDark ? 'text-white/90' : 'text-neutral-600';
+  const textColorBold = isDark ? 'text-white' : 'text-neutral-900';
+  const bulletColor = isDark ? 'text-white/70' : 'text-neutral-600';
+  const borderColor = isDark ? 'border-white/20' : 'border-neutral-200';
 
   return (
     <>
@@ -128,18 +136,19 @@ export function PageAuthorByline({ pageSlug }: { pageSlug: string }) {
         }}
       />
 
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4 border-t border-b border-neutral-200">
+      <div className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4 border-t border-b ${borderColor}`}>
         <div className="flex items-center space-x-3 text-body-sm">
-          <span className="text-neutral-600">By</span>
-          <span className="font-semibold text-neutral-900">{author.name}</span>
-          <span className="text-neutral-600">•</span>
-          <span className="text-neutral-600">{author.role}</span>
+          <span className={textColor}>By</span>
+          <span className={`font-semibold ${textColorBold}`}>{author.name}</span>
+          <span className={bulletColor}>•</span>
+          <span className={textColor}>{author.role}</span>
         </div>
         {reviewer && metadata.reviewDate && (
           <ReviewBadge
             reviewer={reviewer}
             reviewDate={metadata.reviewDate}
             reviewType={metadata.reviewType}
+            variant={variant}
           />
         )}
       </div>
@@ -150,12 +159,12 @@ export function PageAuthorByline({ pageSlug }: { pageSlug: string }) {
 /**
  * Just disclaimers for a page
  */
-export function PageDisclaimers({ pageSlug }: { pageSlug: string }) {
+export function PageDisclaimers({ pageSlug, variant = 'light' }: { pageSlug: string; variant?: 'light' | 'dark' }) {
   const metadata = getPageMetadata(pageSlug) || getDefaultPageMetadata();
 
   if (!metadata.disclaimers || metadata.disclaimers.length === 0) return null;
 
-  return <MultipleDisclaimers types={metadata.disclaimers} />;
+  return <MultipleDisclaimers types={metadata.disclaimers} variant={variant} />;
 }
 
 /**
