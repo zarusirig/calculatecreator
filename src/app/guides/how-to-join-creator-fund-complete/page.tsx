@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How to Join TikTok Creator Fund: Complete Application Guide (2025)',
   description: 'Complete guide to joining the TikTok Creator Fund. Step-by-step application process, eligibility requirements, approval tips, and what to do if rejected.',
   keywords: ['how to join creator fund', 'tiktok creator fund application', 'creator fund eligibility', 'apply for creator fund', 'tiktok monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-join-creator-fund-complete/',
+  },
 };
 
 export default function HowToJoinCreatorFundCompletePage() {

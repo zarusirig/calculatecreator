@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Best TikTok Shop Niches for Creators: Most Profitable Categories 2025',
   description: 'Discover the most profitable TikTok Shop niches for affiliates and sellers. Commission rates, competition analysis, and best products to promote.',
   keywords: ['best tiktok shop niches', 'profitable shop categories', 'tiktok affiliate niches', 'shop product selection'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/best-shop-niches/',
+  },
 };
 
 export default function BestShopNichesPage() {

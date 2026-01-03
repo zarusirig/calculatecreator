@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2025)',
   description: 'Realistic earnings expectations for TikTok LIVE by follower tier. Learn how much you can earn from LIVE gifts, factors affecting income, and maximization strategies.',
   keywords: ['tiktok live earnings', 'tiktok gifts income', 'how much can you make tiktok live', 'tiktok live earnings expectations', 'tiktok live income by followers'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-live-earnings-expectations/',
+  },
 };
 
 export default function TikTokLiveEarningsExpectationsPage() {

@@ -4,6 +4,9 @@ import { Card } from '@/components/ui/Card';
 export const metadata: Metadata = {
   title: 'Terms of Service | TikTok Creator Calculator',
   description: 'Usage guidelines, disclaimers, and terms for TikTok Creator Calculator. Free tools provided as-is for informational purposes.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/terms/',
+  },
 };
 
 export default function TermsPage() {

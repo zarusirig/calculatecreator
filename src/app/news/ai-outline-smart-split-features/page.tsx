@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News',
   description: 'In November 2025, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities.',
   keywords: ['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/ai-outline-smart-split-features/',
+  },
 };
 
 export default function AIOutlineSmartSplitPage() {

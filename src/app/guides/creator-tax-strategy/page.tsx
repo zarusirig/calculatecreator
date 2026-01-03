@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Tax Strategy 2025: Deductions, Write-Offs, and Tax Planning',
   description: 'Complete tax guide for TikTok creators. Deductible expenses, quarterly estimated taxes, business structures, and how to minimize your tax bill legally.',
   keywords: ['creator tax guide', 'tiktok taxes', 'influencer tax deductions', 'self employment tax', 'creator tax strategy'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/creator-tax-strategy/',
+  },
 };
 
 export default function CreatorTaxStrategyPage() {

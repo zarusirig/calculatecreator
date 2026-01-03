@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Fund: Complete Guide (Rates, Requirements, Payment) 2025',
   description: 'Everything about the TikTok Creator Fund: RPM rates, eligibility requirements, payment schedule, how much you can earn, and strategies to maximize earnings.',
   keywords: ['tiktok creator fund', 'creator fund rates', 'tiktok rpm', 'creator fund requirements', 'tiktok earnings'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-creator-fund/',
+  },
 };
 
 export default function CreatorFundGuidePage() {

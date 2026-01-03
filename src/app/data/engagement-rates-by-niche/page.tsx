@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Engagement Rates by Niche 2025: Complete Benchmark Data',
   description: 'Comprehensive TikTok engagement rate benchmarks across 20+ niches. Compare your performance to industry standards and discover which niches have the highest engagement.',
   keywords: ['tiktok engagement rate by niche', 'tiktok benchmarks', 'engagement rate data', 'tiktok niche statistics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/engagement-rates-by-niche/',
+  },
 };
 
 const engagementByNiche = [

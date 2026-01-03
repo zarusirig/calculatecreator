@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok News Today - Latest Creator Updates & Platform Changes',
   description: 'Stay updated with the latest TikTok news including algorithm changes, monetization updates, new features, TikTok Shop developments, and safety announcements affecting creators.',
   keywords: ['tiktok news', 'creator updates', 'tiktok changes', 'platform news', 'social media news'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/',
+  },
 };
 
 interface NewsArticle {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Fund vs YouTube Partner Program: 2025 Comparison',
   description: 'Complete comparison of TikTok Creator Fund vs YouTube monetization. RPM rates, requirements, earnings potential, and which platform pays more.',
   keywords: ['tiktok vs youtube earnings', 'creator fund vs youtube', 'tiktok rpm vs youtube', 'platform comparison'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/creator-fund-vs-youtube/',
+  },
 };
 
 export default function CreatorFundVsYouTubePage() {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How Much Do Beauty Creators Make on TikTok? Earnings Breakdown 2025',
   description: 'Complete earnings guide for TikTok beauty creators. See real income data by follower tier, brand deal rates, and monetization strategies for makeup & skincare content.',
   keywords: ['beauty creator earnings', 'tiktok beauty money', 'makeup influencer income', 'skincare creator earnings', 'beautytok monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/beauty-creators-earnings/',
+  },
 };
 
 export default function BeautyCreatorsEarningsPage() {

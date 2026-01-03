@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate Customer Lifetime Value from TikTok traffic. Understand total customer worth to optimize acquisition costs and maximize profit margins.',
   keywords: ['ltv calculator', 'customer lifetime value', 'customer value', 'retention metrics'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/lifetime-value',
+    canonical: 'https://calculatecreator.com/calculators/lifetime-value/',
   },
   openGraph: {
     title: 'LTV Calculator (2025)',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Expands to France, Germany, and Italy | TikTok News',
   description: 'In March 2025, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence.',
   keywords: ['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/',
+  },
 };
 
 export default function TikTokShopEuropeExpansionPage() {

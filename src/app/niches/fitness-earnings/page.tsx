@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Fitness Creators TikTok Earnings: FitTok Income Data (2025)',
   description: 'How much fitness creators earn on TikTok. Brand deal rates, affiliate income, and monetization strategies.',
   keywords: ['fittok earnings', 'fitness creator income', 'workout influencer rates', 'fitness tiktok money'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/niches/fitness-earnings/',
+  },
 };
 
 export default function FitnessEarningsPage() {

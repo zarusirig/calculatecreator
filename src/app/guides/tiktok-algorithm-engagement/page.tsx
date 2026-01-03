@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'TikTok Algorithm & Engagement: How to Boost Your Reach in 2025',
   description: 'Master the relationship between TikTok algorithm and engagement. Proven tactics to increase likes, comments, shares, and watch time for better reach.',
   keywords: ['tiktok algorithm engagement', 'boost tiktok engagement', 'increase reach', 'fyp algorithm'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-algorithm-engagement/',
+  },
 };
 
 export default function AlgorithmEngagementPage() {

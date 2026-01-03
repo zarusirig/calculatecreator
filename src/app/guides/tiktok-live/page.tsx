@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE Monetization: Gifts, Subscriptions, and Earnings Guide (2025)',
   description: 'Complete guide to TikTok LIVE earnings: how gifts work, diamonds to USD conversion, LIVE subscriptions, requirements, and strategies to maximize income.',
   keywords: ['tiktok live', 'tiktok gifts', 'tiktok live earnings', 'tiktok diamonds', 'live streaming money'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-live/',
+  },
 };
 
 export default function TikTokLIVEGuidePage() {

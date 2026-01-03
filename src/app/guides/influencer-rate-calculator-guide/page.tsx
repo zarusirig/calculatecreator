@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'Influencer Rate Calculator Guide 2025 | How to Price TikTok Sponsorships',
   description: 'Master influencer pricing with our comprehensive rate guide. Learn to calculate brand deal rates, negotiate effectively, create packages, and scale your rates as you grow.',
   keywords: ['influencer rates', 'brand deal pricing', 'tiktok sponsorship rates', 'influencer pricing', 'how to charge brands', 'creator rates'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide/',
+  },
   openGraph: {
     title: 'Influencer Rate Calculator Guide 2025 | Price Your Sponsorships',
     description: 'Master influencer pricing, negotiation, and packaging. Learn what to charge brands at every follower tier.',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Retention Metrics Become Priority for TikTok Content Distribution | TikTok News',
   description: 'Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok.',
   keywords: ['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/retention-metrics-priority/',
+  },
 };
 
 export default function RetentionMetricsPriorityPage() {

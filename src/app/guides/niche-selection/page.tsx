@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Niche Selection Guide 2025: Find Your Profitable Content Category',
   description: 'Complete guide to choosing the right TikTok niche. Profitability analysis, competition assessment, and how to find your perfect content category.',
   keywords: ['tiktok niche selection', 'content niche', 'profitable niches', 'niche strategy tiktok'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/niche-selection/',
+  },
 };
 
 export default function NicheSelectionPage() {

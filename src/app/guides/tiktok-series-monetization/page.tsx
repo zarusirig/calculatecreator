@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Series Monetization Guide 2025: Paywalled Content Earnings',
   description: 'How to monetize with TikTok Series (paywalled content). Requirements, pricing strategies, earnings potential, and best practices for premium content.',
   keywords: ['tiktok series', 'paywalled content tiktok', 'tiktok premium content', 'series monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-series-monetization/',
+  },
 };
 
 export default function TikTokSeriesMonetizationPage() {

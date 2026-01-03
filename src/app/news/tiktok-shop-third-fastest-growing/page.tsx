@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Becomes Third-Fastest Growing Brand in the US | TikTok News',
   description: 'According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability.',
   keywords: ['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/',
+  },
 };
 
 export default function TikTokShopThirdFastestGrowingPage() {

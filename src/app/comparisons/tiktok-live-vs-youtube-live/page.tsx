@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE vs YouTube LIVE Earnings: 2025 Comparison Guide',
   description: 'Compare TikTok LIVE gifts vs YouTube Super Chat earnings, requirements, payment structures, and which platform pays live streamers more.',
   keywords: ['tiktok live vs youtube', 'live streaming earnings', 'super chat vs gifts', 'live monetization comparison'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/',
+  },
 };
 
 export default function TikTokLiveVsYouTubeLivePage() {

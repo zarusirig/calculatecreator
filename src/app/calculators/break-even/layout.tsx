@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate break-even point for TikTok content investments. Determine how many sales needed to cover ad spend and production costs.',
   keywords: ['break-even calculator', 'tiktok break even', 'roi calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/break-even',
+    canonical: 'https://calculatecreator.com/calculators/break-even/',
   },
   openGraph: {
     title: 'Break-Even Calculator (2025)',

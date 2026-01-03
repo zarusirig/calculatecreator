@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How to Make Your First $1,000 on TikTok: Realistic Roadmap',
   description: 'Step-by-step action plan to earn your first $1,000 on TikTok. Timeline, milestones, and monetization strategies from $0 to $1,000.',
   keywords: ['make money on tiktok', 'first 1000 dollars tiktok', 'tiktok earnings roadmap', 'tiktok monetization plan', 'tiktok income milestones'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-make-first-1000-dollars/',
+  },
 };
 
 export default function MakeFirst1000DollarsPage() {

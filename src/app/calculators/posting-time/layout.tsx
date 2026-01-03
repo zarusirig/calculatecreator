@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Find optimal posting times for your TikTok audience. Maximize engagement by scheduling content when followers are most active.',
   keywords: ['best posting time', 'tiktok posting schedule', 'optimal post time'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/posting-time',
+    canonical: 'https://calculatecreator.com/calculators/posting-time/',
   },
   openGraph: {
     title: 'Best Posting Time Calculator (2025)',

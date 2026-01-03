@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok vs YouTube Earnings: Which Platform Pays More in 2025?',
   description: 'Complete comparison of TikTok vs YouTube creator earnings. See RPM rates, monetization requirements, and which platform makes more money per view.',
   keywords: ['tiktok vs youtube', 'tiktok youtube earnings comparison', 'which pays more tiktok or youtube', 'creator fund vs adsense', 'tiktok youtube monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/',
+  },
 };
 
 export default function TikTokVsYouTubeEarningsPage() {

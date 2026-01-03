@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off (2025)',
   description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',
   keywords: ['creator tax deductions', 'influencer taxes', 'tiktok business expenses', 'content creator writeoffs'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/advanced/creator-tax-deductions/',
+  },
   openGraph: {
     title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off (2025)',
     description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',

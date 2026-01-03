@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Multi-Platform Attribution for Creators: Complete Tracking Guide (2025)',
   description: 'Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, Instagram. Essential analytics for creator growth.',
   keywords: ['multi-platform attribution', 'cross-platform tracking', 'creator analytics', 'roi tracking'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/multi-platform-attribution-creators/',
+  },
 };
 
 const faqs = [

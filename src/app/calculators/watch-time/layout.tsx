@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate average watch time and video completion rate. Optimize content length for better algorithm performance and increased reach.',
   keywords: ['watch time calculator', 'tiktok completion rate', 'average watch time'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/watch-time',
+    canonical: 'https://calculatecreator.com/calculators/watch-time/',
   },
   openGraph: {
     title: 'Watch Time Calculator (2025)',

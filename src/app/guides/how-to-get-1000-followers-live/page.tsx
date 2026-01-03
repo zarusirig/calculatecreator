@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How to Get 1,000 Followers for TikTok LIVE: Fast Track Guide (2025)',
   description: '10 proven strategies to reach 1,000 followers and unlock TikTok LIVE in 30-90 days. Growth tactics, content ideas, and timeline breakdown.',
   keywords: ['1000 followers tiktok', 'unlock tiktok live', 'grow tiktok followers', 'tiktok growth strategy', 'reach 1k followers'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-get-1000-followers-live/',
+  },
 };
 
 export default function Get1000FollowersPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Estimate TikTok Creator Fund earnings based on views, niche & engagement. Free calculator with real RPM rates ($0.02-$0.04/1K views).',
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/tiktok-creator-fund',
+    canonical: 'https://calculatecreator.com/calculators/tiktok-creator-fund/',
   },
   openGraph: {
     title: 'Creator Fund Calculator (2025)',

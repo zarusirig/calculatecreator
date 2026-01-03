@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Compare earning potential across TikTok niches. Find the most profitable content categories with real RPM and brand deal data.',
   keywords: ['niche profitability', 'tiktok niche calculator', 'best niches'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/niche-profitability',
+    canonical: 'https://calculatecreator.com/calculators/niche-profitability/',
   },
   openGraph: {
     title: 'Niche Profitability Calculator (2025)',

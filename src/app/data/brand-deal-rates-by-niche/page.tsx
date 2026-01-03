@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Brand Deal Rates by Niche: TikTok Sponsorship Pricing 2025',
   description: 'Comprehensive brand deal pricing data across 25+ TikTok niches. See which content categories command premium rates and how to price your sponsorships competitively.',
   keywords: ['brand deal rates by niche', 'tiktok sponsorship pricing', 'influencer rates by category', 'brand deal pricing', 'sponsorship benchmarks'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/brand-deal-rates-by-niche/',
+  },
 };
 
 export default function BrandDealRatesByNichePage() {

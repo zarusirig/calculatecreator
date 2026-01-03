@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Creator Fund Replaced with Creator Rewards Program | TikTok News',
   description: 'TikTok officially discontinued the Creator Fund and launched the Creator Rewards Program with dramatically increased requirements: 10,000 followers and 100,000 monthly views.',
   keywords: ['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/creator-rewards-program-launch/',
+  },
 };
 
 export default function CreatorRewardsProgramLaunchPage() {

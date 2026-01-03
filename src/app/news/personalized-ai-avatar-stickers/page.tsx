@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Releases Personalized AI Avatar Stickers | TikTok News',
   description: 'TikTok rolled out AI-powered personalized avatar stickers in October 2025, allowing users to create custom stickers based on their likeness.',
   keywords: ['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers/',
+  },
 };
 
 export default function PersonalizedAIAvatarStickersPage() {

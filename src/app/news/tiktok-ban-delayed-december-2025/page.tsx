@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Ban Enforcement Delayed Until December 16, 2025 | TikTok News',
   description: 'The White House has extended TikTok\'s enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution.',
   keywords: ['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/',
+  },
 };
 
 export default function TikTokBanDelayedPage() {

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Value Chart 2025: Complete Price & Earnings Guide',
   description: 'Complete chart of all TikTok LIVE gift values, coin costs, creator earnings (50% split), and diamonds to USD conversion rates.',
   keywords: ['tiktok live gifts value', 'gift prices', 'diamonds to usd', 'live gifts chart', 'creator earnings gifts'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/reference/live-gifts-value-chart/',
+  },
 };
 
 export default function LiveGiftsValueChartPage() {

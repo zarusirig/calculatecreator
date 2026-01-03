@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News',
   description: 'TikTok introduced comprehensive age-based parental controls in February 2025, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements.',
   keywords: ['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/age-specific-privacy-features/',
+  },
 };
 
 export default function AgeSpecificPrivacyFeaturesPage() {

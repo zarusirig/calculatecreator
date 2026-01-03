@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: 'TikTok Calculator FAQ: 40+ Common Questions Answered | CalculateCreator',
   description: 'Get answers to frequently asked questions about TikTok earnings calculators, Creator Fund rates, brand deals, LIVE gifts, TikTok Shop, and monetization strategies.',
   keywords: ['tiktok calculator faq', 'tiktok earnings questions', 'creator fund faq', 'tiktok money questions'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/faq/',
+  },
 };
 
 // FAQ Schema for SEO

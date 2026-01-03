@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate video completion rate to boost algorithm ranking. Videos with 80%+ completion get 3x more reach. Optimize your content length.',
   keywords: ['completion rate calculator', 'tiktok completion', 'watch through rate'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/completion-rate',
+    canonical: 'https://calculatecreator.com/calculators/completion-rate/',
   },
   openGraph: {
     title: 'Completion Rate Calculator (2025)',

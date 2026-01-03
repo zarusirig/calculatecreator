@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Analyze your video\'s viral potential score. Calculate likelihood of hitting FYP based on engagement, shares, saves & completion metrics.',
   keywords: ['viral potential calculator', 'tiktok viral score', 'virality predictor'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/viral-potential',
+    canonical: 'https://calculatecreator.com/calculators/viral-potential/',
   },
   openGraph: {
     title: 'Viral Potential Calculator (2025)',

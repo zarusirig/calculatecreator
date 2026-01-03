@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Brand Deal Rates by Follower Count: 2025 Pricing Guide',
   description: 'Complete pricing benchmarks for TikTok brand partnerships by follower tier. See what nano, micro, mid-tier, and macro influencers charge per post.',
   keywords: ['tiktok brand deal rates', 'influencer pricing', 'sponsorship rates by followers', 'tiktok partnership rates', 'how much to charge brands'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/brand-deal-rates-by-followers/',
+  },
 };
 
 export default function BrandDealRatesByFollowersPage() {

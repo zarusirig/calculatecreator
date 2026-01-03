@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Predict TikTok video views and engagement before posting. Analyze performance factors to optimize content for maximum reach and virality.',
   keywords: ['video performance calculator', 'tiktok views predictor', 'video success calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/video-performance',
+    canonical: 'https://calculatecreator.com/calculators/video-performance/',
   },
   openGraph: {
     title: 'Video Performance Calculator (2025)',

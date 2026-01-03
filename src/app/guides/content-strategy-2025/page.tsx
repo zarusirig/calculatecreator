@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Content Strategy 2025: Complete Creator Playbook',
   description: 'Proven TikTok content strategy for 2025. Posting frequency, content pillars, viral hooks, engagement tactics, and growth frameworks.',
   keywords: ['tiktok content strategy', 'content planning', 'viral content strategy', 'tiktok growth strategy 2025'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/content-strategy-2025/',
+  },
 };
 
 export default function ContentStrategy2025Page() {

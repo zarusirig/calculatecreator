@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Understanding TikTok Payment Delays: Complete Guide (2025)',
   description: 'Complete guide to TikTok payment schedules and delays. Learn Creator Fund, LIVE Gifts, Shop, and brand deal payment timelines with troubleshooting tips.',
   keywords: ['tiktok payment delay', 'creator fund payment schedule', 'when does tiktok pay', 'tiktok payout timeline'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-payment-delays/',
+  },
 };
 
 const faqs = [

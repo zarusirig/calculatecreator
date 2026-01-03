@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Spark Ads for Creators: Complete Monetization Guide 2025',
   description: 'How TikTok Spark Ads work for creators. Earn from brands using your organic content as ads, authorization process, payment rates, and optimization strategies.',
   keywords: ['tiktok spark ads', 'spark ads creators', 'tiktok ads monetization', 'spark ads payment', 'branded content ads'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/spark-ads-for-creators/',
+  },
 };
 
 export default function SparkAdsForCreatorsPage() {

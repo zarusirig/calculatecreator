@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Marketplace: Complete Guide for Brands & Creators 2025',
   description: 'Complete guide to TikTok Creator Marketplace. How to join, connect with brands, campaign management, payment terms, and success strategies.',
   keywords: ['tiktok creator marketplace', 'ttcm', 'brand partnerships tiktok', 'creator marketplace guide', 'tiktok brand deals platform'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-creator-marketplace/',
+  },
 };
 
 export default function TikTokCreatorMarketplacePage() {

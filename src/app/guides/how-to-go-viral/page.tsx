@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'How to Go Viral on TikTok: Formula + Examples (2025)',
   description: 'The viral video formula: hooks, trending sounds, optimal length, and posting strategy. Data from 10,000+ viral videos.',
   keywords: ['go viral tiktok', 'viral video formula', 'how to get views', 'tiktok algorithm hack'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-go-viral/',
+  },
 };
 
 export default function HowToGoViralPage() {

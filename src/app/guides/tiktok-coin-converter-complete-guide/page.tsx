@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     'tiktok coins converter', 'coin calculator tiktok', 'tiktok coin calc', 'tiktok coin value calculator',
     'how much is tiktok coins worth', 'tiktok coins to dollars', 'tiktok coin to usd', 'tik tok coins worth'
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide/',
+  },
   openGraph: {
     title: 'TikTok Coin Converter Complete Guide 2025 | Coins to Money Calculator',
     description: 'Master TikTok coin conversion with free calculator, understand values, and optimize your virtual currency earnings.',

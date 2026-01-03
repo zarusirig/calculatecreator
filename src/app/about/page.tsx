@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: 'About CalculateCreator | Our Team & Mission',
   description: 'Meet the team behind CalculateCreator: data analysts, experienced TikTok creators, and monetization experts. Learn about our methodology, data sources, and commitment to accuracy.',
   keywords: ['about calculatecreator', 'tiktok calculator team', 'creator economy experts'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/about/',
+  },
 };
 
 // Organization Schema for SEO

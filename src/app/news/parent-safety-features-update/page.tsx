@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Unveils New Safety Features for Parents | TikTok News',
   description: 'In July 2025, TikTok announced new safety measures giving parents more control over teens\' accounts, including greater visibility into account activity and customizable settings.',
   keywords: ['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/parent-safety-features-update/',
+  },
 };
 
 export default function ParentSafetyFeaturesUpdatePage() {

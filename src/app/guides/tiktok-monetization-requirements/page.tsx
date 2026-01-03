@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Monetization Requirements: Complete 2025 Eligibility Guide',
   description: 'Complete guide to TikTok monetization requirements for Creator Fund, LIVE Gifts, TikTok Shop, and brand deals. Eligibility criteria, timelines, and how to qualify.',
   keywords: ['tiktok monetization requirements', 'tiktok eligibility', 'creator fund requirements', 'tiktok live requirements', 'tiktok shop eligibility'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-monetization-requirements/',
+  },
 };
 
 export default function TikTokMonetizationRequirementsPage() {

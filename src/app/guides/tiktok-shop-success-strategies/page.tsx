@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Success Strategies: Complete Guide for 2025',
   description: 'Master TikTok Shop with proven affiliate strategies, product selection criteria, content formats, and conversion optimization tactics.',
   keywords: ['tiktok shop tips', 'shop affiliate success', 'tiktok shop earnings', 'tiktok shopping'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-shop-success-strategies/',
+  },
 };
 
 const faqs = [

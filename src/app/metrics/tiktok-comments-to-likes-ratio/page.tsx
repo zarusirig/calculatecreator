@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Comments-to-Likes Ratio: What\'s Good & How to Improve It',
   description: 'Learn what a good comments-to-likes ratio is on TikTok, why it matters for the algorithm, and 8 strategies to improve yours.',
   keywords: ['tiktok comments to likes ratio', 'tiktok engagement ratio', 'good comments to likes ratio', 'improve comment ratio tiktok', 'tiktok algorithm engagement'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/',
+  },
 };
 
 export default function TikTokCommentsToLikesRatioPage() {

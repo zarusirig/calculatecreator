@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'tiktok creator fund countries',
   ],
   alternates: {
-    canonical: 'https://calculatecreator.com/region',
+    canonical: 'https://calculatecreator.com/region/',
     languages: {
       'en': 'https://calculatecreator.com/region',
       'de': 'https://calculatecreator.com/calculator/de',

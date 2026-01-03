@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Fund Eligible Countries (2025): Complete List',
   description: 'Complete list of TikTok Creator Fund eligible countries with requirements, payment methods, and alternatives for ineligible regions.',
   keywords: ['tiktok creator fund eligible countries', 'creator fund countries', 'creator fund availability', 'is creator fund in my country', 'tiktok monetization by country'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/reference/creator-fund-eligible-countries/',
+  },
 };
 
 export default function CreatorFundEligibleCountriesPage() {

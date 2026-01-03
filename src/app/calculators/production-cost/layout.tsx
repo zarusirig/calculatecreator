@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate video production costs and content ROI. Track equipment, time & overhead expenses to price services and maximize profit.',
   keywords: ['production cost calculator', 'content cost', 'video production roi'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/production-cost',
+    canonical: 'https://calculatecreator.com/calculators/production-cost/',
   },
   openGraph: {
     title: 'Production Cost Calculator (2025)',

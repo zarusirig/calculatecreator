@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE Earnings: How Much Can You Really Make? (2025)',
   description: 'Complete earnings breakdown for TikTok LIVE creators. Realistic income by follower tier, gift values, diamond conversion, and proven monetization strategies.',
   keywords: ['tiktok live earnings', 'live stream income', 'tiktok gifts money', 'how much do live streamers make', 'tiktok diamonds'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-live-earnings-guide/',
+  },
 };
 
 export default function TikTokLiveEarningsPage() {

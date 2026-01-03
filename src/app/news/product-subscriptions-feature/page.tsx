@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Introduces Product Subscriptions Feature | TikTok News',
   description: 'TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers.',
   keywords: ['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/product-subscriptions-feature/',
+  },
 };
 
 export default function ProductSubscriptionsFeaturePage() {

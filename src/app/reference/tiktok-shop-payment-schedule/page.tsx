@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Payment Schedule: When You Get Paid (2025)',
   description: 'Complete guide to TikTok Shop payment schedule, processing times, minimum thresholds, payment methods, and troubleshooting delayed payments.',
   keywords: ['tiktok shop payment schedule', 'when does tiktok shop pay', 'tiktok affiliate payment timeline', 'tiktok shop payout date', 'tiktok shop payment processing'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/reference/tiktok-shop-payment-schedule/',
+  },
 };
 
 export default function TikTokShopPaymentSchedulePage() {

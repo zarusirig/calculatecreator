@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Estimate tax obligations on TikTok income. Calculate federal, state & self-employment taxes plus deductions for content creators.',
   keywords: ['creator tax calculator', 'influencer taxes', 'tiktok income tax'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/creator-tax',
+    canonical: 'https://calculatecreator.com/calculators/creator-tax/',
   },
   openGraph: {
     title: 'Creator Tax Calculator (2025)',

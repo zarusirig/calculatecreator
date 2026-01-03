@@ -5,6 +5,9 @@ import { MessageCircle, Bug, Lightbulb, BarChart3, Users, FileText, CheckCircle,
 export const metadata: Metadata = {
   title: 'Contact TikTok Creator Calculator | Support',
   description: 'Have questions about our calculators? Need help optimizing your TikTok earnings? Contact us for support, feedback, or partnership inquiries.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/contact/',
+  },
 };
 
 export default function ContactPage() {

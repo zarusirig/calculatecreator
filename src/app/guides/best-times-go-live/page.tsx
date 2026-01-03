@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Best Times to Go LIVE on TikTok: Data-Backed Schedule (2025)',
   description: 'Optimal TikTok LIVE streaming times by timezone, niche, and audience. Data-backed scheduling guide to maximize viewership and gift earnings.',
   keywords: ['best time tiktok live', 'when to go live', 'tiktok streaming schedule', 'peak live hours', 'tiktok live best time'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/best-times-go-live/',
+  },
 };
 
 export default function BestTimesGoLivePage() {

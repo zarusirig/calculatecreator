@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'How to Negotiate TikTok Brand Deals: Expert Pricing Strategies 2025',
   description: 'Master brand deal negotiations with proven strategies. Learn how to price your content, counter offers, and secure rates 30-50% higher than initial offers.',
   keywords: ['negotiate brand deals', 'tiktok sponsorship rates', 'influencer negotiation', 'brand deal pricing'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-negotiate-brand-deals/',
+  },
 };
 
 const negotiationPhrases = [

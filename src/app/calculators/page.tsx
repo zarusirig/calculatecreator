@@ -35,6 +35,9 @@ import {
 export const metadata: Metadata = {
   title: 'TikTok Calculators: 28 Free Tools | CalculateCreator',
   description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/',
+  },
 };
 
 export default function CalculatorsPage() {

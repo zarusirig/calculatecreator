@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Affiliate Program Guide 2025: Complete Earnings Strategy',
   description: 'Master TikTok Shop affiliate marketing with our comprehensive guide. Learn commission rates, best-selling categories, content strategies, and how to earn $500-$5,000+/month.',
   keywords: ['tiktok shop affiliate', 'tiktok shop commission', 'affiliate marketing tiktok', 'tiktok shop earnings'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-shop-affiliate/',
+  },
 };
 
 const commissionRates = [

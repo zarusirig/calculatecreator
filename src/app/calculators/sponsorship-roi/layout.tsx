@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate return on investment for brand sponsorships. Measure partnership profitability and optimize your influencer marketing deals.',
   keywords: ['sponsorship roi calculator', 'brand deal roi', 'partnership calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/sponsorship-roi',
+    canonical: 'https://calculatecreator.com/calculators/sponsorship-roi/',
   },
   openGraph: {
     title: 'Sponsorship ROI Calculator (2025)',

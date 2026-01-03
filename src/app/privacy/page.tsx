@@ -4,6 +4,9 @@ import { Card } from '@/components/ui/Card';
 export const metadata: Metadata = {
   title: 'Privacy Policy | TikTok Creator Calculator',
   description: 'Your privacy matters. We don\'t collect personal data or sell information. Learn about our privacy-first approach to TikTok earnings calculators.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/privacy/',
+  },
 };
 
 export default function PrivacyPage() {

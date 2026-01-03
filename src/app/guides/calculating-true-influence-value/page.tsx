@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Calculating True Influence Value: Beyond Follower Count (2025)',
   description: 'Learn how to calculate your true influence value as a creator. Discover 7 factors that determine real worth beyond follower count for brand negotiations.',
   keywords: ['influencer value calculator', 'true influence value', 'creator worth', 'brand deal rates'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/calculating-true-influence-value/',
+  },
 };
 
 const faqs = [

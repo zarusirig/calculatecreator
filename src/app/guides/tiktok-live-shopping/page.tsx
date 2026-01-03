@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok LIVE Shopping Guide: How to Sell Products During Livestreams 2025',
   description: 'Complete guide to TikTok LIVE Shopping. How to set up, showcase products, convert viewers to buyers, and maximize sales during live streams.',
   keywords: ['tiktok live shopping', 'live commerce', 'tiktok shop live', 'livestream selling', 'tiktok live sales'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-live-shopping/',
+  },
 };
 
 export default function TikTokLiveShoppingPage() {

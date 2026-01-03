@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Fund Payment Schedule 2025: When & How You Get Paid',
   description: 'Complete guide to TikTok Creator Fund payment schedule, processing times, minimum thresholds, payment methods, and what to do if your payment is delayed.',
   keywords: ['tiktok creator fund payment schedule', 'when does tiktok pay creators', 'creator fund payout', 'tiktok payment dates', 'creator fund withdrawal'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/reference/creator-fund-payment-schedule/',
+  },
 };
 
 export default function CreatorFundPaymentSchedulePage() {

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     'tiktok engagement checker', 'engagement rate tiktok calculator', 'free tiktok engagement rate calculator',
     'tiktok engagement rate formula', 'engagement rate tiktok formula', 'tiktok performance metrics'
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide/',
+  },
   openGraph: {
     title: 'TikTok Engagement Rate Calculator Guide 2025 | How to Calculate & Improve',
     description: 'Master TikTok engagement rate calculation and optimization with free tools and expert strategies.',

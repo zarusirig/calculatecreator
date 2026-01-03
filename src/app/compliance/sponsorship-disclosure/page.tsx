@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Sponsorship Disclosure Guidelines: FTC Compliance (2025)',
   description: 'Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations.',
   keywords: ['tiktok ftc compliance', 'sponsorship disclosure', 'how to disclose sponsored content', 'tiktok ad disclosure'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/compliance/sponsorship-disclosure/',
+  },
 };
 
 export default function SponsorshipDisclosurePage() {

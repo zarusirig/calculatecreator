@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Understanding TikTok\'s De Jure Nationwide Ban Status | TikTok News',
   description: 'While a nationwide TikTok ban technically took effect on January 19, 2025, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating.',
   keywords: ['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/tiktok-nationwide-ban-status/',
+  },
 };
 
 export default function TikTokNationwideBanStatusPage() {

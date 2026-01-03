@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'TikTok Monetization Calculator Hub 2025 | Complete Income Strategy Guide',
   description: 'Master every TikTok income stream with our comprehensive monetization hub. From Creator Fund and brand deals to TikTok Shop and affiliate marketing - calculate, optimize, and scale your earnings.',
   keywords: ['tiktok monetization', 'tiktok earnings', 'creator fund', 'brand deals', 'tiktok shop', 'affiliate marketing', 'live gifts', 'tiktok income'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/monetization-calculator-hub/',
+  },
   openGraph: {
     title: 'TikTok Monetization Calculator Hub 2025 | Complete Income Strategy',
     description: 'Master every TikTok income stream. Calculate Creator Fund earnings, price brand deals, optimize TikTok Shop, and build multi-income strategies.',

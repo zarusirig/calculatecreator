@@ -6,6 +6,9 @@ import { Calendar, Clock } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Why Did My TikTok Creator Fund Earnings Drop? Complete Troubleshooting',
   description: '12 common reasons for Creator Fund earnings drops with diagnostic checklist and fixes. Troubleshoot low payments and recover your income.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/why-creator-fund-earnings-dropped/',
+  },
 };
 
 export default function WhyEarningsDroppedPage() {

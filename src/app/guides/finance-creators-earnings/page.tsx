@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How Much Do Finance Creators Make on TikTok? FinTok Earnings 2025',
   description: 'Complete earnings guide for TikTok finance creators. See real FinTok income data, highest-paying niche breakdown, and monetization strategies.',
   keywords: ['finance creator earnings', 'fintok money', 'financial influencer income', 'personal finance tiktok', 'fintok monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/finance-creators-earnings/',
+  },
 };
 
 export default function FinanceCreatorsEarningsPage() {

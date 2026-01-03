@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025 | TikTok News',
   description: 'Between January and June 2025, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior.',
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/',
+  },
 };
 
 export default function AlgorithmEightMajorShiftsPage() {

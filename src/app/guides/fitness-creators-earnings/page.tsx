@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Fitness Creators TikTok Earnings Guide (2025)',
   description: 'Complete guide to fitness creator earnings on TikTok. See how much workout, gym, and health creators earn by follower tier with real 2025 data.',
   keywords: ['fitness creators tiktok earnings', 'workout creator income', 'gym influencer earnings', 'fitness niche monetization', 'tiktok fitness earnings'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/fitness-creators-earnings/',
+  },
 };
 
 export default function FitnessCreatorsEarningsPage() {

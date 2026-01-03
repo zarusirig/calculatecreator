@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok RPM Rates by Niche: 2025 Benchmark Data',
   description: 'Complete RPM (Revenue Per Mille) rates for TikTok Creator Fund across 20+ niches. See which content types earn the most per 1,000 views.',
   keywords: ['tiktok rpm rates', 'creator fund rpm by niche', 'tiktok earnings per view', 'rpm benchmark', 'tiktok niche earnings'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/rpm-rates-by-niche/',
+  },
 };
 
 export default function RPMRatesByNichePage() {

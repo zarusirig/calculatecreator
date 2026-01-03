@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Fund Rates by Country: Global RPM Data 2025',
   description: 'Complete geographic breakdown of TikTok Creator Fund earnings. See which countries have highest RPM rates, availability status, and regional earning multipliers.',
   keywords: ['tiktok creator fund by country', 'tiktok earnings by location', 'creator fund availability', 'tiktok rpm by country', 'geographic earnings data'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/creator-fund-rates-by-country/',
+  },
 };
 
 export default function CreatorFundRatesByCountryPage() {

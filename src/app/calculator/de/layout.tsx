@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Kostenloser TikTok-Rechner für Creator Fund, Markendeals und LIVE-Geschenke. Berechnen Sie Ihre Einnahmen in Euro für den deutschen Markt.',
   keywords: ['tiktok rechner', 'tiktok einnahmen berechnen', 'tiktok geld verdienen', 'creator fund deutschland', 'tiktok monetarisierung'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/de',
+    canonical: 'https://calculatecreator.com/calculator/de/',
     languages: {
       'en': 'https://calculatecreator.com/region',
       'de': 'https://calculatecreator.com/calculator/de',

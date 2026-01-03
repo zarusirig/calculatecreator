@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'TikTok Algorithm Optimization Guide: Beat the Algorithm (2025)',
   description: 'Complete TikTok algorithm guide for 2025. Learn 8 ranking factors and 10 proven optimization tactics to boost FYP placement and viral potential.',
   keywords: ['tiktok algorithm', 'how to beat tiktok algorithm', 'fyp strategy', 'tiktok algorithm 2025'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-algorithm-optimization/',
+  },
 };
 
 const faqs = [

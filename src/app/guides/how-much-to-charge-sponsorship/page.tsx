@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How Much to Charge for TikTok Sponsorships: 2025 Pricing Guide',
   description: 'Complete guide to pricing TikTok sponsorships. Rate calculation formulas, industry benchmarks by follower count, negotiation strategies, and what to include in packages.',
   keywords: ['tiktok sponsorship rates', 'how much to charge', 'influencer pricing', 'brand deal rates', 'tiktok sponsored posts'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-much-to-charge-sponsorship/',
+  },
 };
 
 export default function HowMuchToChargeSponsorshipPage() {

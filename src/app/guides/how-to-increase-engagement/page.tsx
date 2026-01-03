@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'How to Increase TikTok Engagement: 12 Proven Strategies (2025)',
   description: 'Boost likes, comments, shares, and saves on TikTok. Data-backed strategies to increase engagement rate and algorithmic performance.',
   keywords: ['increase tiktok engagement', 'boost engagement rate', 'get more likes', 'tiktok algorithm'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-increase-engagement/',
+  },
 };
 
 export default function IncreaseEngagementPage() {

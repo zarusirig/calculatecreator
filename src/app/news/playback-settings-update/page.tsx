@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News',
   description: 'TikTok added new playback options including "Disable HDR videos" and "Display object tags," giving users more control over their viewing experience.',
   keywords: ['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/playback-settings-update/',
+  },
 };
 
 export default function PlaybackSettingsUpdatePage() {

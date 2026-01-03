@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop vs Amazon Associates: Affiliate Earnings Comparison 2025',
   description: 'Compare TikTok Shop vs Amazon Associates affiliate programs. Commission rates, requirements, earning potential, and which platform is better for creators.',
   keywords: ['tiktok shop vs amazon', 'affiliate comparison', 'commission rates', 'creator affiliate programs'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon/',
+  },
 };
 
 export default function TikTokShopVsAmazonPage() {

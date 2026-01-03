@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Kalkulator TikTok percuma untuk Dana Pencipta, tawaran jenama dan hadiah LIVE. Kirakan potensi pendapatan anda dalam Ringgit Malaysia.',
   keywords: ['kalkulator tiktok', 'pendapatan tiktok', 'wang tiktok', 'dana pencipta', 'monetisasi tiktok'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/my',
+    canonical: 'https://calculatecreator.com/calculator/my/',
     languages: {
       'en': 'https://calculatecreator.com/region',
       'de': 'https://calculatecreator.com/calculator/de',

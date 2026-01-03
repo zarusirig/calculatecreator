@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News',
   description: 'Users can now mention "Liked" and "Favorited" videos in their content, expanding cross-referencing capabilities on the platform.',
   keywords: ['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/mention-liked-favorited-videos/',
+  },
 };
 
 export default function MentionLikedFavoritedVideosPage() {

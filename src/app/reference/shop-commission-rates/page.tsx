@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Commission Rates by Category 2025: Complete Reference',
   description: 'Complete breakdown of TikTok Shop affiliate commission rates by product category. Find the most profitable categories and optimize your earnings.',
   keywords: ['tiktok shop commission rates', 'affiliate commission', 'shop rates by category', 'tiktok shop earnings'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/reference/shop-commission-rates/',
+  },
 };
 
 export default function ShopCommissionRatesPage() {

@@ -7,6 +7,9 @@ import { Edit, BarChart, RotateCcw, DollarSign, Zap, TrendingUp, Target, Briefca
 export const metadata: Metadata = {
   title: 'TikTok Creator Guides: Monetization & Growth (2025)',
   description: 'Expert guides on TikTok monetization, brand deals, algorithm optimization & audience growth. Data-backed strategies from successful creators.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/',
+  },
 };
 
 export default function GuidesPage() {

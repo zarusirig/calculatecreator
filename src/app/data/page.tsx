@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'TikTok Creator Data & Benchmarks Hub | 2025 Industry Rates',
   description: 'Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2025.',
   keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/data/',
+  },
 };
 
 export default function DataIndexPage() {

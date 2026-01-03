@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Shop Kicks Off Biggest Holiday Season Ever | TikTok News',
   description: 'TikTok Shop announces its largest holiday shopping campaign in November 2025, combining creator storytelling with in-app purchasing.',
   keywords: ['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/tiktok-shop-holiday-campaign/',
+  },
 };
 
 export default function TikTokShopHolidayCampaignPage() {

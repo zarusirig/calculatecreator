@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'TikTok Hashtag Strategy Guide: Best Practices (2025)',
   description: 'Complete hashtag strategy for TikTok growth. How many, which types, and optimal combinations for maximum reach.',
   keywords: ['tiktok hashtags', 'hashtag strategy', 'best hashtags', 'fyp hashtags'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/hashtag-strategy/',
+  },
 };
 
 export default function HashtagStrategyPage() {

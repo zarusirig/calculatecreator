@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Creator Fund vs Brand Deals: Which Pays More? (2025)',
   description: 'Compare TikTok Creator Fund earnings vs brand deal sponsorships. See which monetization method pays better at your follower tier with real 2025 data.',
   keywords: ['creator fund vs brand deals', 'tiktok creator fund earnings', 'brand deal rates tiktok', 'tiktok monetization comparison', 'creator fund or brand deals'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals/',
+  },
 };
 
 export default function CreatorFundVsBrandDealsPage() {

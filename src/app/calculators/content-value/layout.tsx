@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate the monetary value of your TikTok content. Determine post worth for licensing deals, content partnerships & brand negotiations.',
   keywords: ['content value calculator', 'post value', 'tiktok content worth'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/content-value',
+    canonical: 'https://calculatecreator.com/calculators/content-value/',
   },
   openGraph: {
     title: 'Content Value Calculator (2025)',

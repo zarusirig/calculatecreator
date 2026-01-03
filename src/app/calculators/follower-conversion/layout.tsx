@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate view-to-follower conversion rate. Track how effectively your content converts viewers into followers and grow faster.',
   keywords: ['follower conversion calculator', 'view to follower rate', 'conversion rate'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/follower-conversion',
+    canonical: 'https://calculatecreator.com/calculators/follower-conversion/',
   },
   openGraph: {
     title: 'Follower Conversion Calculator (2025)',

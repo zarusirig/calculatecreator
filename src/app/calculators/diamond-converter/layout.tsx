@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Convert TikTok diamonds to real money with our free diamond calculator. Accurate USD conversion rates for creator LIVE gift earnings. Calculate your diamond payouts instantly.',
   keywords: ['tiktok diamond converter', 'tiktok diamond calculator', 'diamonds to usd', 'tiktok diamonds to money', 'diamond value calculator', 'convert tiktok diamonds'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/diamond-converter',
+    canonical: 'https://calculatecreator.com/calculators/diamond-converter/',
   },
   openGraph: {
     title: 'TikTok Diamond Converter | Diamonds to USD Calculator (2025)',

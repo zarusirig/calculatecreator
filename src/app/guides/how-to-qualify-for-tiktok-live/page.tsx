@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How to Qualify for TikTok LIVE Gifts: Requirements & Tips',
   description: 'Learn how to unlock TikTok LIVE and start earning from virtual gifts. Step-by-step guide to meeting requirements and getting approved quickly.',
   keywords: ['tiktok live requirements', 'how to go live on tiktok', 'tiktok live gifts', 'tiktok live monetization', 'unlock tiktok live'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-qualify-for-tiktok-live/',
+  },
 };
 
 export default function QualifyForTikTokLivePage() {

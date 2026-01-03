@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculatrice TikTok gratuite pour Fonds des Créateurs, partenariats de marque et cadeaux LIVE. Calculez vos revenus potentiels en euros pour la France.',
   keywords: ['calculatrice tiktok', 'revenus tiktok', 'argent tiktok', 'fonds des créateurs', 'monétisation tiktok'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/fr',
+    canonical: 'https://calculatecreator.com/calculator/fr/',
     languages: {
       'en': 'https://calculatecreator.com/region',
       'de': 'https://calculatecreator.com/calculator/de',

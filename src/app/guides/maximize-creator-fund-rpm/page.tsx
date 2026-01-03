@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Maximize Creator Fund RPM: 12 Strategies to Boost Earnings (2025)',
   description: 'Increase your TikTok Creator Fund RPM with 12 proven strategies. Learn what affects RPM rates and how to earn more per 1000 views.',
   keywords: ['increase creator fund rpm', 'boost tiktok earnings', 'higher rpm', 'creator fund optimization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/maximize-creator-fund-rpm/',
+  },
 };
 
 const faqs = [

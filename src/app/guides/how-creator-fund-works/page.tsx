@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'How TikTok Creator Fund Works: Complete 2025 Breakdown',
   description: 'Detailed explanation of how TikTok Creator Fund calculates payments, RPM rates, factors affecting earnings, and how to maximize your income.',
   keywords: ['how tiktok creator fund works', 'creator fund calculation', 'tiktok rpm', 'creator fund algorithm', 'tiktok earnings explained'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-creator-fund-works/',
+  },
 };
 
 export default function HowCreatorFundWorksPage() {

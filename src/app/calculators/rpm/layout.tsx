@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok Revenue Per Mille (RPM). Track earnings per 1,000 views to optimize content strategy and maximize Creator Fund income.',
   keywords: ['tiktok rpm calculator', 'revenue per mille', 'tiktok rpm rate', 'views to earnings'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/rpm',
+    canonical: 'https://calculatecreator.com/calculators/rpm/',
   },
   openGraph: {
     title: 'RPM Calculator (2025)',

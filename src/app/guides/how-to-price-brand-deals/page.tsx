@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'How to Price Brand Deals: Complete Influencer Pricing Guide (2025)',
   description: 'Master brand deal pricing with 5 pricing models, negotiation framework, and rate calculations. Learn what to charge for sponsored posts on TikTok.',
   keywords: ['how to price brand deals', 'influencer pricing guide', 'sponsored post rates', 'brand deal rates'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-price-brand-deals/',
+  },
 };
 
 const faqs = [

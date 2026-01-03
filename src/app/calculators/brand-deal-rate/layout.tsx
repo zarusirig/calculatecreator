@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate what to charge brands for sponsored posts. Get accurate rates based on followers, engagement & niche. Maximize your sponsorship income.',
   keywords: ['brand deal calculator', 'influencer rate calculator', 'sponsored post pricing', 'tiktok sponsorship rates'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/brand-deal-rate',
+    canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',
   },
   openGraph: {
     title: 'Brand Deal Calculator (2025)',

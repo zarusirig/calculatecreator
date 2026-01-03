@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Why Are My TikTok Earnings So Low? 8 Reasons + Solutions (2025)',
   description: 'Discover why your TikTok Creator Fund earnings are low. Complete analysis of RPM factors, engagement issues, and actionable strategies to increase income.',
   keywords: ['why are my tiktok earnings so low', 'low creator fund earnings', 'tiktok low rpm', 'increase tiktok income'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/why-tiktok-earnings-low/',
+  },
 };
 
 const faqs = [

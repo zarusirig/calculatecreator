@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok advertising costs for your campaigns. Estimate budget requirements for different ad formats and targeting options.',
   keywords: ['tiktok ad cost', 'advertising cost calculator', 'tiktok ads budget'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/tiktok-ad-cost',
+    canonical: 'https://calculatecreator.com/calculators/tiktok-ad-cost/',
   },
   openGraph: {
     title: 'TikTok Ad Cost Calculator (2025)',

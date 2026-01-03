@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok LIVE earnings from gifts and diamonds. Estimate income based on viewers, stream duration & gifting rates. Free LIVE calculator.',
   keywords: ['tiktok live gifts calculator', 'tiktok diamonds', 'live stream earnings', 'gift conversion'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/live-gifts',
+    canonical: 'https://calculatecreator.com/calculators/live-gifts/',
   },
   openGraph: {
     title: 'LIVE Gifts Calculator (2025)',

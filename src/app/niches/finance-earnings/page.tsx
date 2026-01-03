@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Finance Creators TikTok Earnings: FinTok Income Data (2025)',
   description: 'How much finance creators earn on TikTok. Brand deal rates, RPM data, and monetization strategies for financial content.',
   keywords: ['fintok earnings', 'finance creator income', 'financial influencer rates', 'money tiktok'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/niches/finance-earnings/',
+  },
 };
 
 export default function FinanceEarningsPage() {

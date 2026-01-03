@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok vs Instagram Creator Income: Which Pays More? (2025)',
   description: 'Complete comparison of creator earnings on TikTok vs Instagram. Monetization options, brand deal rates, and which platform is better for your niche.',
   keywords: ['tiktok vs instagram earnings', 'creator income comparison', 'which platform pays more', 'tiktok instagram money'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-instagram-income/',
+  },
 };
 
 export default function TikTokVsInstagramIncomePage() {

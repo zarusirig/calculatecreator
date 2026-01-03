@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok Shop affiliate earnings potential. Estimate commissions from product promotions with category-specific rates (5-20% average).',
   keywords: ['tiktok affiliate calculator', 'shop affiliate earnings', 'commission calculator', 'affiliate income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/affiliate-commission',
+    canonical: 'https://calculatecreator.com/calculators/affiliate-commission/',
   },
   openGraph: {
     title: 'Affiliate Commission Calculator (2025)',

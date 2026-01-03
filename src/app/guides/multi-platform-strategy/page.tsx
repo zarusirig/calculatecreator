@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Multi-Platform Creator Strategy 2025: TikTok, YouTube, Instagram Guide',
   description: 'Complete guide to multi-platform content strategy. How to repurpose content, maximize earnings across TikTok, YouTube, Instagram, and more.',
   keywords: ['multi-platform strategy', 'content repurposing', 'tiktok youtube instagram', 'creator monetization strategy'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/multi-platform-strategy/',
+  },
 };
 
 export default function MultiPlatformStrategyPage() {

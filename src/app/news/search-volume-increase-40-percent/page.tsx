@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'TikTok Search Volume Increases by Over 40% Year-Over-Year | TikTok News',
   description: 'Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising.',
   keywords: ['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/search-volume-increase-40-percent/',
+  },
 };
 
 export default function SearchVolumeIncrease40PercentPage() {
@@ -258,12 +261,12 @@ export default function SearchVolumeIncrease40PercentPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="https://newsroom.tiktok.com/en-us/tiktok-world-25-driving-full-funnel-growth-with-ai"
+                href="https://newsroom.tiktok.com/en-us/tiktok-announces-new-automation-updates-for-advertisers"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
               >
-                TikTok Newsroom: TikTok World 2025 - Search Growth Announcement →
+                TikTok Newsroom: New Automation Updates for Advertisers - Search Ads & Performance →
               </a>
             </li>
           </ul>

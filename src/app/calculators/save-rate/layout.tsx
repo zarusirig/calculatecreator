@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate video save rate to measure content value. High save rates (5%+) boost algorithm ranking and indicate quality content.',
   keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/save-rate',
+    canonical: 'https://calculatecreator.com/calculators/save-rate/',
   },
   openGraph: {
     title: 'Save Rate Calculator (2025)',

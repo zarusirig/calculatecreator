@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Creator Tax Deductions Guide: What TikTok Creators Can Write Off (2025)',
   description: 'Complete guide to tax deductions for TikTok creators. Learn what you can write off, how to track expenses, and tax strategies to reduce your tax bill.',
   keywords: ['creator tax deductions', 'tiktok creator taxes', 'influencer tax write offs', 'content creator tax deductions', 'what can creators deduct'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/advanced/creator-tax-deductions-guide/',
+  },
 };
 
 export default function CreatorTaxDeductionsGuidePage() {

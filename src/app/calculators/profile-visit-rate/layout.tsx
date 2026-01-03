@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculate profile visit rate from video views. Track how well content drives profile traffic and converts casual viewers to followers.',
   keywords: ['profile visit rate', 'profile views calculator', 'visitor rate'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/profile-visit-rate',
+    canonical: 'https://calculatecreator.com/calculators/profile-visit-rate/',
   },
   openGraph: {
     title: 'Profile Visit Calculator (2025)',

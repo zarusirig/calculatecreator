@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Make Money on TikTok: Complete Guide (2025)',
   description: 'Learn every TikTok income stream: Creator Fund ($0.02-$0.04/1K views), brand deals ($200-$10K+), LIVE gifts & Shop. Real earnings data included.',
   keywords: ['how to make money on tiktok', 'tiktok monetization', 'tiktok creator fund', 'tiktok earnings', 'tiktok income streams'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-make-money-on-tiktok/',
+  },
 };
 
 export default function HowToMakeMoneyOnTikTokPage() {

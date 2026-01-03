@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Brand Deals: How to Get Sponsored & What to Charge (2025)',
   description: 'Complete guide to TikTok brand deals: how to get sponsored, rate negotiation, TikTok Creator Marketplace, media kits, and maximizing sponsorship income.',
   keywords: ['tiktok brand deals', 'tiktok sponsorships', 'how much to charge for tiktok', 'tiktok creator marketplace', 'influencer marketing rates'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/brand-deals/',
+  },
 };
 
 export default function BrandDealsGuidePage() {

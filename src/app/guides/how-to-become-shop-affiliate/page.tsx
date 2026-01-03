@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'How to Become TikTok Shop Affiliate: Complete Guide (2025)',
   description: 'Step-by-step guide to joining TikTok Shop affiliate program. Requirements, application process, commission rates, and earning strategies for maximum income.',
   keywords: ['tiktok shop affiliate', 'become shop seller', 'tiktok affiliate program', 'shop creator', 'tiktok shop commission'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/how-to-become-shop-affiliate/',
+  },
 };
 
 export default function BecomeTikTokShopAffiliatePage() {

@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     'tiktok cpm calculator', 'tiktok ad budget', 'tiktok advertising budget', 'tiktok ads budget calculator',
     'calculate tiktok ad costs', 'tiktok ad spend calculator', 'tiktok marketing budget', 'tiktok campaign budget'
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide/',
+  },
   openGraph: {
     title: 'TikTok Ad Budget Calculator Guide 2025 | Advertising Cost Planning',
     description: 'Master TikTok advertising costs with free calculator, budget planning, and campaign optimization strategies.',

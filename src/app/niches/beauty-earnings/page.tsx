@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Beauty Creators TikTok Earnings Guide: Realistic Income Data (2025)',
   description: 'Complete earnings guide for beauty creators on TikTok. Income by follower tier, brand deal rates, affiliate commissions, and monetization strategies.',
   keywords: ['beauty creator earnings', 'tiktok beauty income', 'beauty influencer rates', 'makeup creator money'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/niches/beauty-earnings/',
+  },
 };
 
 export default function BeautyEarningsPage() {

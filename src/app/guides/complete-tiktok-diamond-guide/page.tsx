@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     'tiktok diamonds to usd', 'how much are diamonds worth on tiktok', 'tiktok diamond worth',
     'tiktok diamonds payout rate creator', 'tiktok gifts value conversion', 'diamond calculator tiktok'
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/complete-tiktok-diamond-guide/',
+  },
   openGraph: {
     title: 'Complete TikTok Diamond Guide 2025 | What Are Diamonds Worth?',
     description: 'Master TikTok diamonds: Complete guide to LIVE gifts, conversions, and maximizing creator earnings.',

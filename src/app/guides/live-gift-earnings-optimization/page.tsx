@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'LIVE Gift Earnings Optimization: Complete TikTok LIVE Guide (2025)',
   description: 'Maximize TikTok LIVE gift earnings with 15 proven strategies. Learn viewer retention, gifting psychology, and how to earn $500-5000+/month.',
   keywords: ['tiktok live earnings', 'maximize live gifts', 'live stream money', 'tiktok diamonds'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/live-gift-earnings-optimization/',
+  },
 };
 
 const faqs = [

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Calculadora gratuita de TikTok para Fondo de Creadores, colaboraciones de marca y regalos LIVE. Calcula tus ingresos potenciales en mercados hispanohablantes.',
   keywords: ['calculadora de tiktok', 'ganancias tiktok', 'dinero tiktok', 'fondo de creadores', 'monetización tiktok'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/es',
+    canonical: 'https://calculatecreator.com/calculator/es/',
     languages: {
       'en': 'https://calculatecreator.com/region',
       'de': 'https://calculatecreator.com/calculator/de',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'US-China Deal Reached to Keep TikTok Operational | TikTok News',
   description: 'A framework agreement announced in September 2025 between the Trump administration and China aims to maintain TikTok\'s operations in the United States through collaboration.',
   keywords: ['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/',
+  },
 };
 
 export default function USChinaDealPage() {

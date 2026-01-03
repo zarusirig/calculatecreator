@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'TikTok Brand Deal Contract Template (Free Download)',
   description: 'Free brand deal contract template for TikTok creators. Includes complete agreement, clause explanations, red flags to avoid, and how to protect yourself.',
   keywords: ['brand deal contract template', 'tiktok sponsorship agreement', 'influencer contract template', 'tiktok brand deal contract', 'creator contract'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/resources/brand-deal-contract-template/',
+  },
 };
 
 export default function BrandDealContractTemplatePage() {

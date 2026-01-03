@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Only Videos Longer Than One Minute Eligible for TikTok Monetization | TikTok News',
   description: 'The Creator Rewards Program exclusively focuses on videos longer than one minute, pushing creators toward longer-form content.',
   keywords: ['tiktok monetization', 'video length', 'one minute videos', 'creator rewards eligibility', 'long form content'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/videos-over-one-minute-monetization/',
+  },
 };
 
 export default function VideosOverOneMinuteMonetizationPage() {

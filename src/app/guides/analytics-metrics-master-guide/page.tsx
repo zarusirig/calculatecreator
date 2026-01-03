@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'TikTok Analytics & Metrics Master Guide 2025 | Data-Driven Growth',
   description: 'Master TikTok analytics with our comprehensive guide to metrics, benchmarks, and optimization strategies. Learn engagement rates, completion rates, algorithm signals, and action plans for growth.',
   keywords: ['tiktok analytics', 'tiktok metrics', 'engagement rate', 'completion rate', 'tiktok algorithm', 'growth metrics', 'performance tracking'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/analytics-metrics-master-guide/',
+  },
   openGraph: {
     title: 'TikTok Analytics & Metrics Master Guide 2025',
     description: 'Master TikTok analytics and metrics. Learn what to track, how to optimize, and action plans for explosive growth.',

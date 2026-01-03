@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Complete Guide to TikTok Calculators 2025 | 9 Free Tools for Creators',
   description: 'Master TikTok success with our comprehensive guide to 9 calculators. From earnings and engagement to business ROI - everything you need.',
   keywords: ['tiktok calculators', 'creator tools', 'tiktok earnings calculator', 'engagement calculator', 'brand deal calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/complete-tiktok-calculator-guide/',
+  },
 };
 
 export default function CompleteTikTokCalculatorGuidePage() {

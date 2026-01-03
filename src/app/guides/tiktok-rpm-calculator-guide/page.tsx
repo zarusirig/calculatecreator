@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     'tiktok revenue calculator', 'tiktok income calculator', 'rpm calculator', 'tiktok money calculator',
     'tiktok calculator money', 'tiktok earnings calculator', 'tiktok money calculator username'
   ],
+  alternates: {
+    canonical: 'https://calculatecreator.com/guides/tiktok-rpm-calculator-guide/',
+  },
   openGraph: {
     title: 'TikTok RPM Calculator Guide 2025 | How to Calculate Revenue Per Mille',
     description: 'Master TikTok RPM calculation with free calculator, benchmarks, and monetization strategies.',

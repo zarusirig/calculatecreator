@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Creator Rewards Offers Up to 20x Higher Earnings Than Creator Fund | TikTok News',
   description: 'The new Creator Rewards Program provides revenue-per-mille rates ranging from $0.40 to $1.00 per 1,000 qualified views, up to 20 times higher than the previous Creator Fund.',
   keywords: ['creator rewards', 'tiktok earnings', 'creator fund comparison', 'monetization rates', 'rpm'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/news/creator-rewards-20x-earnings/',
+  },
 };
 
 export default function CreatorRewards20xEarningsPage() {
