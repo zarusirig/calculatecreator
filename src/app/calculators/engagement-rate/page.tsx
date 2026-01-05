@@ -1,19 +1,14 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { BarChart3, Heart, MessageCircle, RefreshCw, Target, TrendingUp, DollarSign, Handshake, X, CheckCircle } from 'lucide-react';
+import { BarChart3, Target, TrendingUp, DollarSign, X, CheckCircle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
-import { CalculatorAuthor } from '@/components/calculator/CalculatorAuthor';
 import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -22,25 +17,8 @@ const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod =
 const PageEEAT = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageEEAT })), {
   ssr: false
 });
-import {
-  calculateEngagementRate,
-  validateEngagementRateInput,
-} from '@/lib/calculators/engagement-rate';
-import type { EngagementRateInput, EngagementRateResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
 
 export default function EngagementRateCalculatorPage() {
-  const [inputs, setInputs] = useState<EngagementRateInput>({
-    followers: 50000,
-    avgLikes: 2500,
-    avgComments: 150,
-    avgShares: 100,
-  });
-
-  const [results, setResults] = useState<EngagementRateResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
   // FAQ data for schema markup
   const faqData = [
     {
@@ -60,37 +38,6 @@ export default function EngagementRateCalculatorPage() {
       answer: 'Brands typically want creators with 5%+ engagement rate. Premium brands may require 8%+. High engagement shows your audience is genuinely interested, which drives better campaign results than raw follower count.',
     },
   ];
-
-  const handleInputChange = (field: keyof EngagementRateInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateEngagementRateInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateEngagementRate(inputs);
-      setResults(result);
-      trackCalculation(
-        'engagement-rate',
-        { ...inputs },
-        { rate: result.rate, rating: result.rating }
-      );
-      setIsCalculating(false);
-    }, 500);
-  };
 
   return (
     <>
@@ -143,128 +90,8 @@ export default function EngagementRateCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your Engagement Rate
-            </h2>
-
-            <InputField
-              id="followers"
-              label="Total Followers"
-              type="number"
-              value={inputs.followers}
-              onChange={(value) => handleInputChange('followers', value)}
-              placeholder="e.g., 50000"
-              helperText="Your total TikTok follower count"
-              error={errors.followers}
-              min={1}
-              required
-            />
-
-            <InputField
-              id="avgLikes"
-              label="Average Likes Per Video"
-              type="number"
-              value={inputs.avgLikes}
-              onChange={(value) => handleInputChange('avgLikes', value)}
-              placeholder="e.g., 2500"
-              helperText="Average likes on your recent videos"
-              tooltip="Calculate from your last 10-20 videos for accuracy"
-              error={errors.avgLikes}
-              min={0}
-              required
-            />
-
-            <InputField
-              id="avgComments"
-              label="Average Comments Per Video"
-              type="number"
-              value={inputs.avgComments}
-              onChange={(value) => handleInputChange('avgComments', value)}
-              placeholder="e.g., 150"
-              helperText="Average comments on your recent videos"
-              error={errors.avgComments}
-              min={0}
-              required
-            />
-
-            <InputField
-              id="avgShares"
-              label="Average Shares Per Video"
-              type="number"
-              value={inputs.avgShares}
-              onChange={(value) => handleInputChange('avgShares', value)}
-              placeholder="e.g., 100"
-              helperText="Average shares on your recent videos"
-              error={errors.avgShares}
-              min={0}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate Engagement Rate
-            </Button>
-
-            {results && (
-              <div className="mt-6">
-                <ResultsDisplay
-                  results={results}
-                  type="single"
-                  format="percentage"
-                  title="Your Engagement Rate"
-                  subtitle={`${results.rating.charAt(0).toUpperCase() + results.rating.slice(1).replace('-', ' ')} Performance`}
-                />
-
-                {results.interpretation && (
-                  <div className="mt-4 p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-
-                {results.additionalMetrics && (
-                  <div className="mt-4">
-                    <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">
-                      Engagement Breakdown
-                    </h3>
-                    <div className="space-y-2">
-                      <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-neutral-200">
-                        <span className="text-body-md text-neutral-700 flex items-center gap-2">
-                          <Heart size={16} className="text-primary-600" /> Likes
-                        </span>
-                        <span className="font-semibold text-neutral-900">
-                          {results.additionalMetrics.likesPercentage}%
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-neutral-200">
-                        <span className="text-body-md text-neutral-700 flex items-center gap-2">
-                          <MessageCircle size={16} className="text-primary-600" /> Comments
-                        </span>
-                        <span className="font-semibold text-neutral-900">
-                          {results.additionalMetrics.commentsPercentage}%
-                        </span>
-                      </div>
-                      <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-neutral-200">
-                        <span className="text-body-md text-neutral-700 flex items-center gap-2">
-                          <RefreshCw size={16} className="text-primary-600" /> Shares
-                        </span>
-                        <span className="font-semibold text-neutral-900">
-                          {results.additionalMetrics.sharesPercentage}%
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          {/* Interactive Calculator Widget (CSR) */}
+          <EngagementRateCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -522,19 +349,19 @@ Engagement Rate: (2,750 / 50,000) × 100 = 5.5%`}
                 name: 'Brand Deal Rate Calculator',
                 slug: 'brand-deal-rate',
                 description: 'Use your engagement rate to calculate brand deal pricing',
-                icon: Handshake,
+                icon: 'Handshake',
               },
               {
                 name: 'TikTok Money Calculator',
                 slug: 'tiktok-money',
                 description: 'Estimate total earnings across all income streams',
-                icon: DollarSign,
+                icon: 'DollarSign',
               },
               {
                 name: 'Creator Fund Calculator',
                 slug: 'tiktok-creator-fund',
                 description: 'See how engagement affects Creator Fund earnings',
-                icon: DollarSign,
+                icon: 'DollarSign',
               },
             ]}
           />
@@ -588,4 +415,3 @@ Engagement Rate: (2,750 / 50,000) × 100 = 5.5%`}
     </>
   );
 }
-

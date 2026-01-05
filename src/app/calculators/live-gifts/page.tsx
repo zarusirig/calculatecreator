@@ -1,85 +1,37 @@
-'use client';
-
-import React, { useState } from 'react';
-import { Gift, Coins as CoinsIcon, Banknote } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import React from 'react';
+import { Gift } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
-import { calculateLiveGifts, validateLiveGiftsInput } from '@/lib/calculators/live-gifts';
-import type { LiveGiftsInput, LiveGiftsResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
+
+const faqData = [
+  {
+    question: 'How much can you make from TikTok LIVE gifts?',
+    answer: 'Earnings vary widely. Small creators (50-200 viewers) earn $10-$50 per hour. Mid-tier creators (200-1000 viewers) earn $50-$300/hour. Top creators (1000+ viewers) can earn $300-$1000+/hour. Your gifting rate (gifts per viewer) is the biggest factor.'
+  },
+  {
+    question: 'What is a good gifts-per-viewer rate?',
+    answer: 'Average creators get 0.3-0.5 gifts per viewer. Engaging personalities can reach 0.7-1.0. Top entertainers exceed 1.5. To improve: interact with chat, call out gifters by name, create gift goals, and use gift battles during peak times.'
+  },
+  {
+    question: 'How long should I stream to maximize earnings?',
+    answer: 'Optimal duration: 60-90 minutes for most creators. Longer streams (2-3 hours) work if engagement stays high. The first 15-30 minutes are most profitable as initial viewers gift. Schedule multiple shorter streams over one marathon session.'
+  },
+  {
+    question: 'When is the best time to go LIVE for gifts?',
+    answer: 'Peak gifting hours: 7-10 PM in your audience\'s timezone (weekdays), 2-11 PM (weekends). Friday/Saturday nights see 40-60% more gifting. Avoid early mornings (6-10 AM) when gifting drops 50-70%. Test different times for 2 weeks to find your sweet spot.'
+  },
+  {
+    question: 'How do I increase viewer gifting during streams?',
+    answer: 'Top strategies: (1) Set visible gift goals with rewards, (2) Thank gifters by name within 10 seconds, (3) Create "battles" with other creators, (4) Use gift-triggered content (song requests, challenges), (5) Build anticipation for next stream, (6) Engage non-gifters to keep viewer count high.'
+  },
+];
 
 export default function LiveGiftsCalculatorPage() {
-  const [inputs, setInputs] = useState<LiveGiftsInput>({
-    avgViewers: 100,
-    avgStreamDuration: 60,
-    giftsPerViewer: 0.5,
-  });
-
-  const [results, setResults] = useState<LiveGiftsResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  // FAQ data for schema markup
-  const faqData = [
-    {
-      question: 'How much can you make from TikTok LIVE gifts?',
-      answer: 'Earnings vary widely. Small creators (50-200 viewers) earn $10-$50 per hour. Mid-tier creators (200-1000 viewers) earn $50-$300/hour. Top creators (1000+ viewers) can earn $300-$1000+/hour. Your gifting rate (gifts per viewer) is the biggest factor.'
-    },
-    {
-      question: 'What is a good gifts-per-viewer rate?',
-      answer: 'Average creators get 0.3-0.5 gifts per viewer. Engaging personalities can reach 0.7-1.0. Top entertainers exceed 1.5. To improve: interact with chat, call out gifters by name, create gift goals, and use gift battles during peak times.'
-    },
-    {
-      question: 'How long should I stream to maximize earnings?',
-      answer: 'Optimal duration: 60-90 minutes for most creators. Longer streams (2-3 hours) work if engagement stays high. The first 15-30 minutes are most profitable as initial viewers gift. Schedule multiple shorter streams over one marathon session.'
-    },
-    {
-      question: 'When is the best time to go LIVE for gifts?',
-      answer: 'Peak gifting hours: 7-10 PM in your audience\'s timezone (weekdays), 2-11 PM (weekends). Friday/Saturday nights see 40-60% more gifting. Avoid early mornings (6-10 AM) when gifting drops 50-70%. Test different times for 2 weeks to find your sweet spot.'
-    },
-    {
-      question: 'How do I increase viewer gifting during streams?',
-      answer: 'Top strategies: (1) Set visible gift goals with rewards, (2) Thank gifters by name within 10 seconds, (3) Create "battles" with other creators, (4) Use gift-triggered content (song requests, challenges), (5) Build anticipation for next stream, (6) Engage non-gifters to keep viewer count high.'
-    },
-  ];
-
-  const handleInputChange = (field: keyof LiveGiftsInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateLiveGiftsInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setErrors({});
-
-    setTimeout(() => {
-      const result = calculateLiveGifts(inputs);
-      setResults(result);
-      trackCalculation('live-gifts', { ...inputs }, { usd_earnings: result.usdEarnings, monthly_potential: result.monthlyPotential });
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <FAQSchema faqs={faqData} />
@@ -97,27 +49,7 @@ export default function LiveGiftsCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Calculate LIVE Earnings</h2>
-
-            <InputField id="avgViewers" label="Average Viewers" type="number" value={inputs.avgViewers} onChange={(value) => handleInputChange('avgViewers', value)} placeholder="e.g., 100" helperText="Typical concurrent viewers during your streams" error={errors.avgViewers} min={1} required />
-
-            <InputField id="avgStreamDuration" label="Stream Duration (minutes)" type="number" value={inputs.avgStreamDuration} onChange={(value) => handleInputChange('avgStreamDuration', value)} placeholder="e.g., 60" helperText="How long you typically stream" error={errors.avgStreamDuration} min={1} max={480} required />
-
-            <InputField id="giftsPerViewer" label="Gifts Per Viewer" type="number" value={inputs.giftsPerViewer} onChange={(value) => handleInputChange('giftsPerViewer', value)} placeholder="e.g., 0.5" helperText="Average gifts received per viewer" tooltip="Start with 0.3-0.5 for most creators. Highly engaging streams can reach 1.0+" error={errors.giftsPerViewer} min={0} step={0.1} required />
-
-            <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">Calculate LIVE Earnings</Button>
-
-            {results && (
-              <div className="mt-6">
-                <ResultsDisplay results={results} type="single" format="currency" title="Earnings Per Stream" subtitle={`${results.diamondsEarned.toLocaleString()} diamonds`} />
-                <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
-                  <p className="text-label-md text-neutral-600 mb-1">Monthly Potential (8 streams)</p>
-                  <p className="text-heading-lg font-semibold text-neutral-900">${results.monthlyPotential.toLocaleString()}</p>
-                </div>
-              </div>
-            )}
-          </Card>
+          <LiveGiftsCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -312,7 +244,7 @@ Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'V
             </div>
           </Card>
 
-          <RelatedCalculators currentCalculator="live-gifts" calculators={[{ name: 'Coins Calculator', slug: 'coins', description: 'Convert TikTok coins to USD', icon: CoinsIcon }, { name: 'TikTok Money Calculator', slug: 'tiktok-money', description: 'Total earnings including LIVE', icon: Banknote }]} />
+          <RelatedCalculators currentCalculator="live-gifts" calculators={[{ name: 'Coins Calculator', slug: 'coins', description: 'Convert TikTok coins to USD', icon: 'Coins' }, { name: 'TikTok Money Calculator', slug: 'tiktok-money', description: 'Total earnings including LIVE', icon: 'Banknote' }]} />
         </div>
       </div>
     </div>

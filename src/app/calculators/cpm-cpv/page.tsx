@@ -1,23 +1,13 @@
-'use client';
-
-import React, { useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { TrendingUp, DollarSign, Handshake, BarChart3, DollarSign as MoneyIcon, Laptop, Gamepad2, ShoppingBag, X, Check } from 'lucide-react';
+import { BarChart3, DollarSign as MoneyIcon, Laptop, Gamepad2, ShoppingBag, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import {
-  calculateCPMCPV,
-  validateCPMCPVInput,
-} from '@/lib/calculators/cpm-cpv';
-import type { CPMCPVInput, CPMCPVResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { CPMCPVCalculatorWidget } from '@/components/calculators/cpm-cpv/CalculatorWidget';
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -27,48 +17,7 @@ const PageEEAT = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ def
   ssr: false
 });
 
-export default function CPMCPVCalculatorPage() {
-  const [inputs, setInputs] = useState<CPMCPVInput>({
-    adSpend: 1000,
-    impressions: 100000,
-  });
-
-  const [results, setResults] = useState<CPMCPVResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (field: keyof CPMCPVInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateCPMCPVInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCPMCPV(inputs);
-      setResults(result);
-      trackCalculation(
-        'cpm-cpv',
-        { ...inputs },
-        { cpm: result.cpm, cpv: result.cpv }
-      );
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const faqs = [
+const faqs = [
     {
       question: 'What is a good CPM for TikTok ads?',
       answer: 'A good TikTok CPM ranges from $1-$10 depending on your targeting and industry. Broad targeting typically yields $1-$3 CPM, while highly targeted campaigns (specific demographics, interests) may see $5-$10+ CPM. Tech and finance niches tend to have higher CPMs ($8-$15), while entertainment and lifestyle are lower ($1-$5).',
@@ -101,8 +50,9 @@ export default function CPMCPVCalculatorPage() {
       question: 'What is the average TikTok CPM in 2025?',
       answer: 'As of 2025, average TikTok CPM ranges from $4-$8 for most industries in the US. This varies significantly by country (India/Brazil $0.50-$2, UK/Australia $5-$10), targeting specificity, and seasonality. Q4 (holiday season) sees CPMs increase by 30-50% compared to Q1-Q3.',
     },
-  ];
+];
 
+export default function CPMCPVCalculatorPage() {
   return (
     <>
       <CalculatorSchema
@@ -155,110 +105,7 @@ export default function CPMCPVCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your CPM/CPV
-            </h2>
-
-            <InputField
-              id="adSpend"
-              label="Ad Spend ($)"
-              type="number"
-              value={inputs.adSpend}
-              onChange={(value) => handleInputChange('adSpend', value)}
-              placeholder="e.g., 1000"
-              helperText="Total amount spent on your ad campaign"
-              tooltip="Enter your total advertising budget or campaign spend"
-              error={errors.adSpend}
-              min={1}
-              required
-            />
-
-            <InputField
-              id="impressions"
-              label="Impressions"
-              type="number"
-              value={inputs.impressions}
-              onChange={(value) => handleInputChange('impressions', value)}
-              placeholder="e.g., 100000"
-              helperText="Total number of times your ad was shown"
-              tooltip="Find this metric in your TikTok Ads Manager dashboard"
-              error={errors.impressions}
-              min={100}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate CPM/CPV
-            </Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-                  <p className="text-label-lg text-neutral-600 mb-2">Cost Per Mille (CPM)</p>
-                  <p className="text-display-md font-bold text-primary-600">
-                    ${results.cpm.toFixed(2)}
-                  </p>
-                  <p className="text-body-sm text-neutral-600 mt-2">
-                    Cost per 1,000 impressions
-                  </p>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Cost Per View (CPV)</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      ${results.cpv.toFixed(4)}
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">Cost for each individual impression</p>
-                </div>
-
-                {results.benchmark && (
-                  <div className={`p-4 rounded-lg border-2 ${
-                    results.benchmark === 'excellent' ? 'bg-success-50 border-success-300' :
-                    results.benchmark === 'good' ? 'bg-primary-50 border-primary-300' :
-                    results.benchmark === 'average' ? 'bg-neutral-50 border-neutral-300' :
-                    'bg-warning-50 border-warning-300'
-                  }`}>
-                    <p className="text-label-md font-semibold mb-1">
-                      Performance: {results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1)}
-                    </p>
-                    <p className="text-body-sm text-neutral-600">
-                      {results.benchmark === 'excellent' && 'Your CPM is excellent—great targeting and ad efficiency!'}
-                      {results.benchmark === 'good' && 'Your CPM is above average—solid campaign performance.'}
-                      {results.benchmark === 'average' && 'Your CPM is within typical range for TikTok ads.'}
-                      {results.benchmark === 'expensive' && 'Your CPM is higher than average—consider optimizing targeting or creative.'}
-                    </p>
-                  </div>
-                )}
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Impressions per $1</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      {(1000 / results.cpm).toFixed(0)}
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">How many impressions you get for every dollar spent</p>
-                </div>
-
-                {results.interpretation && (
-                  <div className="p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <CPMCPVCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -522,19 +369,19 @@ Impressions per $1 = 100,000 / 1,000 = 100`}
                 name: 'Campaign ROI Calculator',
                 slug: 'campaign-roi',
                 description: 'Calculate return on investment for your TikTok ad campaigns',
-                icon: TrendingUp,
+                icon: 'TrendingUp',
               },
               {
                 name: 'Ad Revenue Calculator',
                 slug: 'ad-revenue',
                 description: 'Estimate revenue from TikTok advertising campaigns',
-                icon: DollarSign,
+                icon: 'DollarSign',
               },
               {
                 name: 'Brand Deal Rate Calculator',
                 slug: 'brand-deal-rate',
                 description: 'Calculate your brand sponsorship rates',
-                icon: Handshake,
+                icon: 'Handshake',
               },
             ]}
           />

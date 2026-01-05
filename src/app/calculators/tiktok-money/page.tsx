@@ -1,102 +1,50 @@
-'use client';
-
-import React, { useState } from 'react';
 import Link from 'next/link';
 import { Banknote, DollarSign, Handshake, Gift, ShoppingBag, TrendingUp, PieChart, Target, AlertCircle, CheckCircle2, BarChart3 } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { SelectField } from '@/components/ui/SelectField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
-import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calculators/money';
-import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
-import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
+import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
+
+// FAQ data for schema markup
+const faqData = [
+  {
+    question: 'How much can TikTok creators really earn?',
+    answer: 'Earnings vary widely by account size and monetization strategy. Small creators (10-50K followers) earn $100-$1,000/month. Mid-tier creators (50-500K followers) earn $1,000-$10,000/month. Large creators (500K-1M) earn $10,000-$50,000/month. Top creators (1M+) can earn $50,000-$500,000+/month when combining Creator Fund, brand deals, LIVE gifts, and TikTok Shop.'
+  },
+  {
+    question: 'What is the most lucrative income stream on TikTok?',
+    answer: 'Brand deals generate the highest income for most creators, often earning 10-50× more than Creator Fund for the same audience size. A creator with 100K followers earning $30/month from Creator Fund can charge $1,000-3,000 per brand deal. However, LIVE gifts can be most lucrative for highly engaging personalities with smaller but loyal audiences.'
+  },
+  {
+    question: 'How do TikTok creators get paid?',
+    answer: 'TikTok offers multiple payment methods: (1) Creator Fund pays monthly via PayPal/bank transfer (minimum $10), (2) Brand deals pay directly from brands/agencies to your business account, (3) LIVE gifts convert to withdrawable cash (minimum $50), (4) TikTok Shop pays affiliate commissions biweekly, (5) Promotional links and codes track through third-party affiliate platforms.'
+  },
+  {
+    question: 'Can you make money on TikTok with 10,000 followers?',
+    answer: 'Yes! With 10K followers, you qualify for Creator Fund ($10-40/month), can charge $100-300 per brand deal, earn $50-200/month from LIVE gifts, and promote TikTok Shop products. Total potential: $200-600/month. Focus on brand deals and LIVE streaming for best returns at this tier.'
+  },
+  {
+    question: 'How much does TikTok pay per 1,000 views?',
+    answer: 'TikTok Creator Fund pays $0.02-$0.04 per 1,000 views (average $0.03). So 1 million views = $20-$40. This is 50-100× lower than YouTube ($2-4 per 1K views). However, TikTok creators compensate through brand deals, which pay significantly more per follower than YouTube sponsorships.'
+  },
+  {
+    question: 'Do you need 10,000 followers to make money on TikTok?',
+    answer: 'No, but it helps. You can earn from LIVE gifts with just 1,000 followers, promote affiliate links at any follower count, and land small brand deals with 5K+ followers. However, 10K followers unlocks Creator Fund and significantly increases brand deal opportunities and rates.'
+  },
+  {
+    question: 'What percentage does TikTok take from creators?',
+    answer: 'It varies by monetization method: Creator Fund takes ~50-70% (you get $0.02-0.04 per 1K views from a larger advertiser pool), LIVE gifts take 50% (2 coins = 1 diamond = $0.005), TikTok Shop takes 0-8% platform fee (you keep 92-100% of commission), Brand deals: TikTok takes 0% (direct payment between you and brand).'
+  },
+  {
+    question: 'How long does it take to make money on TikTok?',
+    answer: 'Timeline varies: LIVE gifts (1-2 weeks after hitting 1K followers), Brand deals (1-3 months to build portfolio and reach 5-10K followers), Creator Fund (2-4 months to hit 10K followers + 100K monthly views), TikTok Shop (immediate once approved). Most creators see first earnings within 1-3 months.'
+  },
+];
 
 export default function TikTokMoneyCalculatorPage() {
-  const [inputs, setInputs] = useState<MoneyCalculatorInput>({
-    followers: 50000,
-    monthlyViews: 500000,
-    engagementRate: 5,
-    niche: 'lifestyle',
-    avgStreamViewers: 100,
-    monthlyStreams: 8,
-  });
-
-  const [results, setResults] = useState<MoneyCalculatorResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const nicheOptions = Object.entries(NICHE_DISPLAY_NAMES).map(([value, label]) => ({ value, label }));
-
-  // FAQ data for schema markup
-  const faqData = [
-    {
-      question: 'How much can TikTok creators really earn?',
-      answer: 'Earnings vary widely by account size and monetization strategy. Small creators (10-50K followers) earn $100-$1,000/month. Mid-tier creators (50-500K followers) earn $1,000-$10,000/month. Large creators (500K-1M) earn $10,000-$50,000/month. Top creators (1M+) can earn $50,000-$500,000+/month when combining Creator Fund, brand deals, LIVE gifts, and TikTok Shop.'
-    },
-    {
-      question: 'What is the most lucrative income stream on TikTok?',
-      answer: 'Brand deals generate the highest income for most creators, often earning 10-50× more than Creator Fund for the same audience size. A creator with 100K followers earning $30/month from Creator Fund can charge $1,000-3,000 per brand deal. However, LIVE gifts can be most lucrative for highly engaging personalities with smaller but loyal audiences.'
-    },
-    {
-      question: 'How do TikTok creators get paid?',
-      answer: 'TikTok offers multiple payment methods: (1) Creator Fund pays monthly via PayPal/bank transfer (minimum $10), (2) Brand deals pay directly from brands/agencies to your business account, (3) LIVE gifts convert to withdrawable cash (minimum $50), (4) TikTok Shop pays affiliate commissions biweekly, (5) Promotional links and codes track through third-party affiliate platforms.'
-    },
-    {
-      question: 'Can you make money on TikTok with 10,000 followers?',
-      answer: 'Yes! With 10K followers, you qualify for Creator Fund ($10-40/month), can charge $100-300 per brand deal, earn $50-200/month from LIVE gifts, and promote TikTok Shop products. Total potential: $200-600/month. Focus on brand deals and LIVE streaming for best returns at this tier.'
-    },
-    {
-      question: 'How much does TikTok pay per 1,000 views?',
-      answer: 'TikTok Creator Fund pays $0.02-$0.04 per 1,000 views (average $0.03). So 1 million views = $20-$40. This is 50-100× lower than YouTube ($2-4 per 1K views). However, TikTok creators compensate through brand deals, which pay significantly more per follower than YouTube sponsorships.'
-    },
-    {
-      question: 'Do you need 10,000 followers to make money on TikTok?',
-      answer: 'No, but it helps. You can earn from LIVE gifts with just 1,000 followers, promote affiliate links at any follower count, and land small brand deals with 5K+ followers. However, 10K followers unlocks Creator Fund and significantly increases brand deal opportunities and rates.'
-    },
-    {
-      question: 'What percentage does TikTok take from creators?',
-      answer: 'It varies by monetization method: Creator Fund takes ~50-70% (you get $0.02-0.04 per 1K views from a larger advertiser pool), LIVE gifts take 50% (2 coins = 1 diamond = $0.005), TikTok Shop takes 0-8% platform fee (you keep 92-100% of commission), Brand deals: TikTok takes 0% (direct payment between you and brand).'
-    },
-    {
-      question: 'How long does it take to make money on TikTok?',
-      answer: 'Timeline varies: LIVE gifts (1-2 weeks after hitting 1K followers), Brand deals (1-3 months to build portfolio and reach 5-10K followers), Creator Fund (2-4 months to hit 10K followers + 100K monthly views), TikTok Shop (immediate once approved). Most creators see first earnings within 1-3 months.'
-    },
-  ];
-
-  const handleInputChange = (field: keyof MoneyCalculatorInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateMoneyCalculatorInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateTotalMoney(inputs);
-      setResults(result);
-      trackCalculation('tiktok-money', { ...inputs }, { total_min: result.total.min, total_max: result.total.max });
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
       <FAQSchema faqs={faqData} />
@@ -115,55 +63,7 @@ export default function TikTokMoneyCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Calculate Total Earnings</h2>
-
-            <InputField id="followers" label="Follower Count" type="number" value={inputs.followers} onChange={(value) => handleInputChange('followers', value)} placeholder="e.g., 50000" helperText="Your current TikTok followers" error={errors.followers} min={1} required />
-
-            <InputField id="monthlyViews" label="Monthly Video Views" type="number" value={inputs.monthlyViews} onChange={(value) => handleInputChange('monthlyViews', value)} placeholder="e.g., 500000" helperText="Total views across all videos per month" error={errors.monthlyViews} min={1} required />
-
-            <InputField id="engagementRate" label="Engagement Rate (%)" type="number" value={inputs.engagementRate} onChange={(value) => handleInputChange('engagementRate', value)} placeholder="e.g., 5.0" helperText="Your average engagement rate" tooltip="Calculate using our Engagement Rate Calculator if unsure" error={errors.engagementRate} min={0} max={100} step={0.1} required />
-
-            <SelectField id="niche" label="Content Niche" value={inputs.niche} onChange={(value) => handleInputChange('niche', value as any)} options={nicheOptions} helperText="Your primary content category" error={errors.niche} required />
-
-            <InputField id="avgStreamViewers" label="Avg LIVE Viewers (optional)" type="number" value={inputs.avgStreamViewers || 0} onChange={(value) => handleInputChange('avgStreamViewers', value)} placeholder="e.g., 100" helperText="Leave 0 if you don't stream" tooltip="Average concurrent viewers during your LIVE streams" min={0} />
-
-            <InputField id="monthlyStreams" label="Monthly Streams (optional)" type="number" value={inputs.monthlyStreams || 0} onChange={(value) => handleInputChange('monthlyStreams', value)} placeholder="e.g., 8" helperText="How often you go LIVE per month" min={0} />
-
-            <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">Calculate Total Earnings</Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-primary-50 via-accent-50 to-secondary-50 rounded-xl border-2 border-primary-200 shadow-lg">
-                  <p className="text-label-lg text-neutral-600 mb-2 font-medium">Total Monthly Earnings</p>
-                  <p className="text-display-md font-bold text-primary-600">${results.total.min.toLocaleString()}–${results.total.max.toLocaleString()}</p>
-                  <p className="text-body-sm text-neutral-600 mt-2">Annual: ${results.additionalMetrics?.annualMin.toLocaleString()}–${results.additionalMetrics?.annualMax.toLocaleString()}</p>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200 shadow-sm">
-                  <div className="flex items-center gap-2 mb-3">
-                    <PieChart size={20} className="text-primary-600" />
-                    <p className="text-heading-sm font-semibold text-neutral-900">Income Breakdown</p>
-                  </div>
-                  {results.breakdown.map((item) => (
-                    <div key={item.label} className="flex items-center justify-between py-2 border-b border-neutral-100 last:border-0">
-                      <span className="text-body-md text-neutral-700">{item.label}</span>
-                      <div className="text-right">
-                        <p className="text-heading-sm font-semibold text-neutral-900">${item.value.toLocaleString()}</p>
-                        <p className="text-label-sm text-neutral-500">{item.percentage}%</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {results.interpretation && (
-                  <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">{results.interpretation}</p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <TikTokMoneyCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -842,10 +742,10 @@ Total: $2,715/month`} assumptions={[
           <FAQSection pageName="TikTok Money Calculator" faqs={faqData} />
 
           <RelatedCalculators currentCalculator="tiktok-money" calculators={[
-            { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Detailed Creator Fund breakdown', icon: DollarSign },
-            { name: 'Brand Deal Calculator', slug: 'brand-deal-rate', description: 'Calculate brand deal rates', icon: Handshake },
-            { name: 'LIVE Gifts Calculator', slug: 'live-gifts', description: 'LIVE streaming earnings', icon: Gift },
-            { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track engagement to maximize income', icon: TrendingUp }
+            { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Detailed Creator Fund breakdown', icon: 'DollarSign' },
+            { name: 'Brand Deal Calculator', slug: 'brand-deal-rate', description: 'Calculate brand deal rates', icon: 'Handshake' },
+            { name: 'LIVE Gifts Calculator', slug: 'live-gifts', description: 'LIVE streaming earnings', icon: 'Gift' },
+            { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track engagement to maximize income', icon: 'TrendingUp' }
           ]} />
 
           <Card className="bg-neutral-100 border-neutral-300">

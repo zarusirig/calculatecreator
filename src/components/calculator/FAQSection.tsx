@@ -1,8 +1,4 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
-import { trackFAQExpand } from '@/lib/analytics/ga4';
 
 interface FAQItem {
   question: string;
@@ -15,18 +11,15 @@ interface FAQSectionProps {
   variant?: 'light' | 'dark';
 }
 
+/**
+ * FAQSection - SSR component for displaying FAQ accordions
+ *
+ * Uses native <details> elements for expand/collapse behavior,
+ * eliminating the need for client-side JavaScript and useState.
+ * This improves SEO by making FAQ content immediately crawlable
+ * and reduces JS bundle size.
+ */
 export function FAQSection({ faqs, pageName, variant = 'light' }: FAQSectionProps) {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-
-  const handleToggle = (index: number) => {
-    const newIndex = expandedIndex === index ? null : index;
-    setExpandedIndex(newIndex);
-
-    if (newIndex !== null) {
-      trackFAQExpand(faqs[index].question, pageName);
-    }
-  };
-
   const headingColor = variant === 'dark' ? 'text-white' : 'text-neutral-900';
 
   return (
@@ -38,37 +31,32 @@ export function FAQSection({ faqs, pageName, variant = 'light' }: FAQSectionProp
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <Card key={index} padding="none" className="overflow-hidden">
-            <button
-              onClick={() => handleToggle(index)}
-              className="flex items-center justify-between w-full text-left p-6 hover:bg-neutral-50 transition-colors"
-            >
-              <h3 className="text-heading-sm font-semibold text-neutral-900 pr-4">
-                {faq.question}
-              </h3>
-              <svg
-                className={`flex-shrink-0 w-6 h-6 text-neutral-600 transition-transform ${
-                  expandedIndex === index ? 'rotate-180' : ''
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </button>
+            <details className="group">
+              <summary className="flex items-center justify-between w-full text-left p-6 cursor-pointer list-none hover:bg-neutral-50 transition-colors">
+                <h3 className="text-heading-sm font-semibold text-neutral-900 pr-4">
+                  {faq.question}
+                </h3>
+                <svg
+                  className="flex-shrink-0 w-6 h-6 text-neutral-600 transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
 
-            {expandedIndex === index && (
-              <div className="px-6 pb-6 animate-slide-down">
+              <div className="px-6 pb-6">
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
-            )}
+            </details>
           </Card>
         ))}
       </div>

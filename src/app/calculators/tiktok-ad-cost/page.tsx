@@ -1,65 +1,13 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
-import { calculateTikTokAdCost, validateTikTokAdCostInput } from '@/lib/calculators/tiktok-ad-cost';
-import type { TikTokAdCostInput, TikTokAdCostResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
 import { DollarSign, RotateCcw, TrendingUp, Users, BarChart2, Target, Tag, ShoppingCart, Lightbulb } from 'lucide-react';
+import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
 
 export default function TikTokAdCostCalculatorPage() {
-  const [inputs, setInputs] = useState<TikTokAdCostInput>({
-    budget: 100,
-    impressions: 10000,
-    views: 5000,
-    clicks: 200,
-    conversions: 10,
-    conversionValue: 500,
-  });
-  const [results, setResults] = useState<TikTokAdCostResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (field: string, value: any) => {
-    setInputs(prev => ({ ...prev, [field]: parseFloat(value) || 0 }));
-    if (errors[field]) {
-      setErrors(prev => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateTikTokAdCostInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateTikTokAdCost(inputs);
-      setResults(result);
-      trackCalculation('tiktok-ad-cost', inputs, {
-        cpm: result.cpm,
-        cpv: result.cpv,
-        roas: result.roas,
-        profit: result.profit
-      });
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
         <div className="container-custom">
@@ -146,213 +94,7 @@ export default function TikTokAdCostCalculatorPage() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            {/* Campaign Presets */}
-            <Card className="p-6 mb-8 bg-gradient-to-r from-blue-50 to-purple-50">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-                <Tag className="w-5 h-5 text-purple-600" />
-                Quick Campaign Presets
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setInputs({
-                    budget: 500,
-                    impressions: 50000,
-                    views: 25000,
-                    clicks: 1000,
-                    conversions: 50,
-                    conversionValue: 2500
-                  })}
-                  className="text-xs"
-                >
-                  Starter Campaign
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setInputs({
-                    budget: 2000,
-                    impressions: 150000,
-                    views: 75000,
-                    clicks: 3000,
-                    conversions: 150,
-                    conversionValue: 9000
-                  })}
-                  className="text-xs"
-                >
-                  Growth Campaign
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setInputs({
-                    budget: 10000,
-                    impressions: 500000,
-                    views: 250000,
-                    clicks: 10000,
-                    conversions: 500,
-                    conversionValue: 35000
-                  })}
-                  className="text-xs"
-                >
-                  Enterprise Campaign
-                </Button>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setInputs({
-                    budget: 100,
-                    impressions: 8000,
-                    views: 4000,
-                    clicks: 160,
-                    conversions: 8,
-                    conversionValue: 400
-                  })}
-                  className="text-xs"
-                >
-                  Test Budget
-                </Button>
-              </div>
-              <p className="text-xs text-neutral-600">Click presets to auto-fill calculator with realistic campaign data</p>
-            </Card>
-
-            <Card className="p-8 mb-8">
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <InputField
-                  id="budget"
-                  label="Ad Budget ($)"
-                  type="number"
-                  value={inputs.budget}
-                  onChange={(value) => handleInputChange('budget', value)}
-                  error={errors.budget}
-                  placeholder="100"
-                  min={1}
-                  max={1000000}
-                  required
-                />
-
-                <InputField
-                  id="impressions"
-                  label="Impressions"
-                  type="number"
-                  value={inputs.impressions}
-                  onChange={(value) => handleInputChange('impressions', value)}
-                  error={errors.impressions}
-                  placeholder="10000"
-                  min={1}
-                  required
-                />
-
-                <InputField
-                  id="views"
-                  label="Views"
-                  type="number"
-                  value={inputs.views}
-                  onChange={(value) => handleInputChange('views', value)}
-                  error={errors.views}
-                  placeholder="5000"
-                  min={1}
-                  required
-                />
-
-                <InputField
-                  id="clicks"
-                  label="Clicks"
-                  type="number"
-                  value={inputs.clicks}
-                  onChange={(value) => handleInputChange('clicks', value)}
-                  error={errors.clicks}
-                  placeholder="200"
-                  min={0}
-                  required
-                />
-
-                <InputField
-                  id="conversions"
-                  label="Conversions (optional)"
-                  type="number"
-                  value={inputs.conversions || 0}
-                  onChange={(value) => handleInputChange('conversions', value)}
-                  placeholder="10"
-                  min={0}
-                />
-
-                <InputField
-                  id="conversionValue"
-                  label="Conversion Value ($) (optional)"
-                  type="number"
-                  value={inputs.conversionValue || 0}
-                  onChange={(value) => handleInputChange('conversionValue', value)}
-                  placeholder="500"
-                  min={0}
-                />
-              </div>
-
-              <div className="text-center">
-                <Button
-                  onClick={handleCalculate}
-                  disabled={isCalculating}
-                  size="lg"
-                  className="px-12"
-                >
-                  {isCalculating ? 'Calculating...' : 'Calculate Ad Costs'}
-                </Button>
-              </div>
-            </Card>
-
-            {results && (
-              <Card className="p-6">
-                <h3 className="text-heading-lg font-bold text-neutral-900 mb-6">Ad Campaign Results</h3>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600">${results.cpm.toFixed(2)}</div>
-                    <div className="text-sm text-neutral-600">CPM (Cost Per Mille)</div>
-                    <div className="text-xs text-neutral-500 mt-1">Cost per 1,000 impressions</div>
-                  </div>
-
-                  <div className="p-4 bg-green-50 rounded-lg">
-                    <div className="text-2xl font-bold text-green-600">${results.cpv.toFixed(4)}</div>
-                    <div className="text-sm text-neutral-600">CPV (Cost Per View)</div>
-                    <div className="text-xs text-neutral-500 mt-1">Cost per video view</div>
-                  </div>
-
-                  <div className="p-4 bg-purple-50 rounded-lg">
-                    <div className="text-2xl font-bold text-purple-600">${results.cpc.toFixed(2)}</div>
-                    <div className="text-sm text-neutral-600">CPC (Cost Per Click)</div>
-                    <div className="text-xs text-neutral-500 mt-1">Cost per link click</div>
-                  </div>
-
-                  <div className="p-4 bg-yellow-50 rounded-lg">
-                    <div className="text-2xl font-bold text-yellow-600">{results.roas.toFixed(2)}x</div>
-                    <div className="text-sm text-neutral-600">ROAS</div>
-                    <div className="text-xs text-neutral-500 mt-1">Return on Ad Spend</div>
-                  </div>
-
-                  <div className="p-4 bg-red-50 rounded-lg">
-                    <div className="text-2xl font-bold text-red-600">${results.profit.toFixed(2)}</div>
-                    <div className="text-sm text-neutral-600">Campaign Profit</div>
-                    <div className="text-xs text-neutral-500 mt-1">Net profit/loss</div>
-                  </div>
-
-                  <div className="p-4 bg-indigo-50 rounded-lg">
-                    <div className="text-2xl font-bold text-indigo-600">{results.additionalMetrics?.efficiency || 'Calculating...'}</div>
-                    <div className="text-sm text-neutral-600">Efficiency Rating</div>
-                    <div className="text-xs text-neutral-500 mt-1">Performance level</div>
-                  </div>
-                </div>
-
-                <div className="bg-neutral-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-neutral-900 mb-2">Analysis</h4>
-                  <p className="text-neutral-700 mb-3">{results.interpretation}</p>
-                  <div className="bg-blue-50 p-3 rounded">
-                    <h5 className="font-semibold text-blue-900 mb-1">Recommendation</h5>
-                    <p className="text-blue-800 text-sm">{results.recommendation}</p>
-                  </div>
-                </div>
-              </Card>
-            )}
+            <TikTokAdCostCalculatorWidget />
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">
@@ -421,10 +163,10 @@ export default function TikTokAdCostCalculatorPage() {
             <RelatedCalculators
               currentCalculator="tiktok-ad-cost"
               calculators={[
-                { name: 'Campaign ROI Calculator', slug: 'campaign-roi', description: 'Measure overall campaign profitability', icon: TrendingUp },
-                { name: 'CPM/CPV Calculator', slug: 'cpm-cpv', description: 'Compare different ad pricing models', icon: DollarSign },
-                { name: 'Customer Acquisition Cost', slug: 'customer-acquisition-cost', description: 'Calculate CAC for TikTok traffic', icon: Users },
-                { name: 'Lifetime Value Calculator', slug: 'lifetime-value', description: 'Measure customer lifetime value', icon: RotateCcw },
+                { name: 'Campaign ROI Calculator', slug: 'campaign-roi', description: 'Measure overall campaign profitability', icon: 'TrendingUp' },
+                { name: 'CPM/CPV Calculator', slug: 'cpm-cpv', description: 'Compare different ad pricing models', icon: 'DollarSign' },
+                { name: 'Customer Acquisition Cost', slug: 'customer-acquisition-cost', description: 'Calculate CAC for TikTok traffic', icon: 'Users' },
+                { name: 'Lifetime Value Calculator', slug: 'lifetime-value', description: 'Measure customer lifetime value', icon: 'RotateCcw' },
               ]}
             />
           </div>

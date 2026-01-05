@@ -1,159 +1,44 @@
-'use client';
-
-import React, { useState } from 'react';
-import { DollarSign, TrendingUp, Scale } from 'lucide-react';
+import { Scale } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { SelectField } from '@/components/ui/SelectField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { AdSpendCalculatorWidget } from '@/components/calculators/ad-spend/CalculatorWidget';
 
-interface AdSpendInput {
-  targetResults: number;
-  costPerResult: number;
-  timeframe: string;
-  campaignType: string;
-}
-
-interface AdSpendResult {
-  totalBudget: number;
-  dailyBudget: number;
-  weeklyBudget: number;
-  monthlyBudget: number;
-  projectedResults: number;
-  budgetWithBuffer: number;
-  interpretation: string;
-}
+const faqs = [
+  {
+    question: 'How much should I spend on TikTok ads as a beginner?',
+    answer: 'Start with $20-50 per day for 7-14 days to test and gather data. This gives you enough budget to test 2-3 ad variations and let TikTok\'s algorithm optimize. Total initial investment: $140-700. Once you find winning ads with positive ROI, gradually scale by 20-30% every few days. Don\'t start with large budgets—you need to learn what works first through testing.',
+  },
+  {
+    question: 'What is the minimum daily budget for TikTok ads?',
+    answer: 'TikTok requires a minimum of $20 per day at the campaign level and $20 per day at the ad group level. For conversion campaigns, start with at least $50/day to get enough data. Going below minimums spreads your budget too thin and prevents proper optimization. If budget is limited, run one focused campaign rather than multiple underfunded ones.',
+  },
+  {
+    question: 'How do I calculate my TikTok ad budget?',
+    answer: 'Calculate budget using: Target Results × Cost Per Result × Buffer (1.15-1.25). Example: 100 conversions × $20 CPA × 1.25 = $2,500. The 15-25% buffer accounts for learning phase costs, which are typically higher. Also consider: (1) Test budget (first 7 days), (2) Scale budget (once profitable), (3) Monthly vs campaign budget. Track ROI—only scale campaigns returning 2-3× your spend.',
+  },
+  {
+    question: 'How long does it take for TikTok ads to optimize?',
+    answer: 'TikTok ads typically need 3-7 days to complete the learning phase and optimize performance. During this time, costs may be 20-50% higher than steady state. Give campaigns at least 50 conversions or 7 days before judging performance. Significant budget or targeting changes restart the learning phase. For best results, let campaigns run unchanged for 7-14 days while testing new creative variations in separate ad groups.',
+  },
+  {
+    question: 'Should I use daily budget or lifetime budget on TikTok?',
+    answer: 'Daily budget is better for most campaigns—it provides consistent daily spend and easier performance tracking. Lifetime budget works for time-sensitive campaigns (product launches, events) where you want flexibility in daily pacing. TikTok may spend up to 20% over daily budget on high-performing days. Start with daily budget for predictable costs and easier optimization decisions.',
+  },
+  {
+    question: 'How much do TikTok ads cost compared to Facebook and Instagram?',
+    answer: 'TikTok ads are typically 30-50% cheaper than Facebook/Instagram: TikTok CPC: $0.20-$1.00 vs Facebook: $0.50-$2.00. TikTok CPA: $10-$30 vs Facebook: $15-$40. TikTok CPM: $3-$10 vs Instagram: $5-$15. However, conversion rates on TikTok may be 20-40% lower since users are in browsing mode. The key advantage is TikTok\'s viral potential—strong organic content can amplify paid reach 5-10×. Overall, TikTok offers better value for brand awareness and younger demographics.',
+  },
+  {
+    question: 'When should I increase my TikTok ad budget?',
+    answer: 'Scale your budget when: (1) Campaign ROI is consistently 200%+ (3× ROAS or higher), (2) Cost per result is stable or decreasing, (3) Campaign has run 7+ days past learning phase, (4) Creative performance is strong (high CTR and engagement). Increase by 20-30% every 3-5 days—doubling budget overnight often increases costs. Monitor performance for 2-3 days after each increase. If ROI drops below acceptable levels, reduce budget and optimize creative/targeting.',
+  },
+];
 
 export default function AdSpendCalculatorPage() {
-  const [inputs, setInputs] = useState<AdSpendInput>({
-    targetResults: 200,
-    costPerResult: 15,
-    timeframe: '30',
-    campaignType: 'conversion',
-  });
-
-  const [results, setResults] = useState<AdSpendResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const timeframeOptions = [
-    { value: '7', label: '7 Days (1 Week)' },
-    { value: '14', label: '14 Days (2 Weeks)' },
-    { value: '30', label: '30 Days (1 Month)' },
-    { value: '60', label: '60 Days (2 Months)' },
-    { value: '90', label: '90 Days (3 Months)' },
-  ];
-
-  const campaignTypeOptions = [
-    { value: 'conversion', label: 'Conversion/Sales' },
-    { value: 'traffic', label: 'Traffic/Clicks' },
-    { value: 'awareness', label: 'Brand Awareness' },
-    { value: 'engagement', label: 'Engagement' },
-    { value: 'leads', label: 'Lead Generation' },
-  ];
-
-  const handleInputChange = (field: keyof AdSpendInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const newErrors: Record<string, string> = {};
-
-    if (!inputs.targetResults || inputs.targetResults <= 0) {
-      newErrors.targetResults = 'Target results must be greater than 0';
-    }
-    if (!inputs.costPerResult || inputs.costPerResult <= 0) {
-      newErrors.costPerResult = 'Cost per result must be greater than 0';
-    }
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const days = parseInt(inputs.timeframe);
-      const totalBudget = inputs.targetResults * inputs.costPerResult;
-
-      // Add 15-25% buffer for learning phase and optimization
-      const bufferMultiplier = inputs.campaignType === 'conversion' ? 1.25 : 1.15;
-      const budgetWithBuffer = totalBudget * bufferMultiplier;
-
-      const dailyBudget = budgetWithBuffer / days;
-      const weeklyBudget = dailyBudget * 7;
-      const monthlyBudget = dailyBudget * 30;
-
-      let interpretation = '';
-
-      if (inputs.campaignType === 'conversion') {
-        interpretation = `To achieve ${inputs.targetResults.toLocaleString()} conversions over ${days} days at $${inputs.costPerResult.toFixed(2)} per conversion, you'll need a total budget of $${totalBudget.toLocaleString()}. We recommend $${budgetWithBuffer.toLocaleString()} (25% buffer) to account for TikTok's learning phase and optimization. This works out to $${dailyBudget.toFixed(2)} per day. Start with a smaller daily budget for the first 7 days to test and optimize before scaling.`;
-      } else if (inputs.campaignType === 'traffic') {
-        interpretation = `For ${inputs.targetResults.toLocaleString()} clicks at $${inputs.costPerResult.toFixed(2)} per click, budget $${budgetWithBuffer.toLocaleString()} over ${days} days ($${dailyBudget.toFixed(2)}/day). Traffic campaigns optimize quickly—expect costs to stabilize within 3-5 days. Monitor click quality and bounce rates to ensure you're getting valuable traffic.`;
-      } else if (inputs.campaignType === 'awareness') {
-        interpretation = `Brand awareness campaigns need $${budgetWithBuffer.toLocaleString()} to reach ${inputs.targetResults.toLocaleString()} results over ${days} days. At $${dailyBudget.toFixed(2)} per day, you'll maximize reach while staying within budget. Awareness campaigns benefit from longer run times (30+ days) for better frequency and recall.`;
-      } else if (inputs.campaignType === 'engagement') {
-        interpretation = `To generate ${inputs.targetResults.toLocaleString()} engagements, allocate $${budgetWithBuffer.toLocaleString()} over ${days} days ($${dailyBudget.toFixed(2)} daily). Engagement campaigns typically optimize quickly—test different content styles to find what resonates. High engagement can boost organic reach significantly.`;
-      } else if (inputs.campaignType === 'leads') {
-        interpretation = `Lead generation requires $${budgetWithBuffer.toLocaleString()} for ${inputs.targetResults.toLocaleString()} leads over ${days} days. Daily budget of $${dailyBudget.toFixed(2)} allows consistent lead flow. Focus on lead quality over quantity—track lead-to-customer conversion rates to optimize your spend.`;
-      }
-
-      setResults({
-        totalBudget,
-        dailyBudget,
-        weeklyBudget,
-        monthlyBudget,
-        projectedResults: inputs.targetResults,
-        budgetWithBuffer,
-        interpretation,
-      });
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const faqs = [
-    {
-      question: 'How much should I spend on TikTok ads as a beginner?',
-      answer: 'Start with $20-50 per day for 7-14 days to test and gather data. This gives you enough budget to test 2-3 ad variations and let TikTok\'s algorithm optimize. Total initial investment: $140-700. Once you find winning ads with positive ROI, gradually scale by 20-30% every few days. Don\'t start with large budgets—you need to learn what works first through testing.',
-    },
-    {
-      question: 'What is the minimum daily budget for TikTok ads?',
-      answer: 'TikTok requires a minimum of $20 per day at the campaign level and $20 per day at the ad group level. For conversion campaigns, start with at least $50/day to get enough data. Going below minimums spreads your budget too thin and prevents proper optimization. If budget is limited, run one focused campaign rather than multiple underfunded ones.',
-    },
-    {
-      question: 'How do I calculate my TikTok ad budget?',
-      answer: 'Calculate budget using: Target Results × Cost Per Result × Buffer (1.15-1.25). Example: 100 conversions × $20 CPA × 1.25 = $2,500. The 15-25% buffer accounts for learning phase costs, which are typically higher. Also consider: (1) Test budget (first 7 days), (2) Scale budget (once profitable), (3) Monthly vs campaign budget. Track ROI—only scale campaigns returning 2-3× your spend.',
-    },
-    {
-      question: 'How long does it take for TikTok ads to optimize?',
-      answer: 'TikTok ads typically need 3-7 days to complete the learning phase and optimize performance. During this time, costs may be 20-50% higher than steady state. Give campaigns at least 50 conversions or 7 days before judging performance. Significant budget or targeting changes restart the learning phase. For best results, let campaigns run unchanged for 7-14 days while testing new creative variations in separate ad groups.',
-    },
-    {
-      question: 'Should I use daily budget or lifetime budget on TikTok?',
-      answer: 'Daily budget is better for most campaigns—it provides consistent daily spend and easier performance tracking. Lifetime budget works for time-sensitive campaigns (product launches, events) where you want flexibility in daily pacing. TikTok may spend up to 20% over daily budget on high-performing days. Start with daily budget for predictable costs and easier optimization decisions.',
-    },
-    {
-      question: 'How much do TikTok ads cost compared to Facebook and Instagram?',
-      answer: 'TikTok ads are typically 30-50% cheaper than Facebook/Instagram: TikTok CPC: $0.20-$1.00 vs Facebook: $0.50-$2.00. TikTok CPA: $10-$30 vs Facebook: $15-$40. TikTok CPM: $3-$10 vs Instagram: $5-$15. However, conversion rates on TikTok may be 20-40% lower since users are in browsing mode. The key advantage is TikTok\'s viral potential—strong organic content can amplify paid reach 5-10×. Overall, TikTok offers better value for brand awareness and younger demographics.',
-    },
-    {
-      question: 'When should I increase my TikTok ad budget?',
-      answer: 'Scale your budget when: (1) Campaign ROI is consistently 200%+ (3× ROAS or higher), (2) Cost per result is stable or decreasing, (3) Campaign has run 7+ days past learning phase, (4) Creative performance is strong (high CTR and engagement). Increase by 20-30% every 3-5 days—doubling budget overnight often increases costs. Monitor performance for 2-3 days after each increase. If ROI drops below acceptable levels, reduce budget and optimize creative/targeting.',
-    },
-  ];
-
   return (
     <>
       <CalculatorSchema
@@ -198,133 +83,7 @@ export default function AdSpendCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your Ad Budget
-            </h2>
-
-            <InputField
-              id="targetResults"
-              label="Target Results"
-              type="number"
-              value={inputs.targetResults}
-              onChange={(value) => handleInputChange('targetResults', value)}
-              placeholder="e.g., 200"
-              helperText="Number of results you want to achieve (conversions, clicks, etc.)"
-              tooltip="Set realistic goals based on your business objectives and capacity"
-              error={errors.targetResults}
-              min={1}
-              required
-            />
-
-            <InputField
-              id="costPerResult"
-              label="Expected Cost Per Result ($)"
-              type="number"
-              value={inputs.costPerResult}
-              onChange={(value) => handleInputChange('costPerResult', value)}
-              placeholder="e.g., 15"
-              helperText="Estimated cost for each result based on benchmarks or past data"
-              tooltip="Use industry benchmarks if you don't have historical data"
-              error={errors.costPerResult}
-              min={0}
-              step={0.01}
-              required
-            />
-
-            <SelectField
-              id="campaignType"
-              label="Campaign Type"
-              value={inputs.campaignType}
-              onChange={(value) => handleInputChange('campaignType', value)}
-              options={campaignTypeOptions}
-              helperText="Type of campaign you're running"
-              error={errors.campaignType}
-              required
-            />
-
-            <SelectField
-              id="timeframe"
-              label="Campaign Duration"
-              value={inputs.timeframe}
-              onChange={(value) => handleInputChange('timeframe', value)}
-              options={timeframeOptions}
-              helperText="How long you plan to run the campaign"
-              error={errors.timeframe}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate Budget
-            </Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-success-50 to-primary-50 rounded-xl border-2 border-success-200">
-                  <p className="text-label-lg text-neutral-600 mb-2">Recommended Total Budget</p>
-                  <p className="text-display-md font-bold text-success-600">
-                    ${results.budgetWithBuffer.toLocaleString()}
-                  </p>
-                  <p className="text-body-sm text-neutral-600 mt-2">
-                    Includes optimization buffer for best results
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                    <p className="text-label-sm text-neutral-600 mb-1">Daily Budget</p>
-                    <p className="text-heading-md font-semibold text-neutral-900">
-                      ${results.dailyBudget.toFixed(2)}
-                    </p>
-                  </div>
-                  <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                    <p className="text-label-sm text-neutral-600 mb-1">Base Cost</p>
-                    <p className="text-heading-md font-semibold text-neutral-900">
-                      ${results.totalBudget.toLocaleString()}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Weekly Budget</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      ${results.weeklyBudget.toFixed(2)}
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-label-md text-neutral-600">Monthly Budget</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      ${results.monthlyBudget.toFixed(2)}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="p-4 bg-primary-50 border-2 border-primary-200 rounded-lg">
-                  <p className="text-label-md font-semibold mb-2 text-primary-900">
-                    Expected Results: {results.projectedResults.toLocaleString()}
-                  </p>
-                  <p className="text-body-sm text-neutral-700">
-                    With the recommended budget and learning phase optimization
-                  </p>
-                </div>
-
-                {results.interpretation && (
-                  <div className="p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <AdSpendCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -653,19 +412,19 @@ Monthly Budget = $125 × 30 = $3,750/month`}
                 name: 'Cost Per Result Calculator',
                 slug: 'cost-per-result',
                 description: 'Calculate your actual cost per result from campaigns',
-                icon: DollarSign,
+                icon: 'DollarSign',
               },
               {
                 name: 'Campaign ROI Calculator',
                 slug: 'campaign-roi',
                 description: 'Measure return on your ad investment',
-                icon: TrendingUp,
+                icon: 'TrendingUp',
               },
               {
                 name: 'Break-Even Calculator',
                 slug: 'break-even',
                 description: 'Calculate maximum affordable cost per acquisition',
-                icon: Scale,
+                icon: 'Scale',
               },
             ]}
           />

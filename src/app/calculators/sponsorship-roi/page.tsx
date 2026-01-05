@@ -1,76 +1,12 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Handshake, Scale, Gem, Briefcase } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
-import {
-  calculateSponsorshipROI,
-  validateSponsorshipROIInput,
-} from '@/lib/calculators/sponsorship-roi';
-import type {
-  SponsorshipROIInput,
-  SponsorshipROIResult,
-} from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { SponsorshipROICalculatorWidget } from '@/components/calculators/sponsorship-roi/CalculatorWidget';
 
 export default function SponsorshipROICalculatorPage() {
-  const [inputs, setInputs] = useState<SponsorshipROIInput>({
-    sponsorshipFee: 5000,
-    productionCost: 500,
-    expectedReach: 100000,
-    conversionRate: 2,
-    avgOrderValue: 50,
-  });
-
-  const [results, setResults] = useState<SponsorshipROIResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (
-    field: keyof SponsorshipROIInput,
-    value: any
-  ) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateSponsorshipROIInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setErrors({});
-
-    setTimeout(() => {
-      const result = calculateSponsorshipROI(inputs);
-      setResults(result);
-
-      trackCalculation(
-        'sponsorship-roi',
-        { ...inputs },
-        { roi: result.roi, roiPercentage: result.roiPercentage }
-      );
-
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
@@ -98,141 +34,7 @@ export default function SponsorshipROICalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Sponsorship ROI
-            </h2>
-
-            <InputField
-              id="sponsorshipFee"
-              label="Sponsorship Fee ($)"
-              type="number"
-              value={inputs.sponsorshipFee}
-              onChange={(value) => handleInputChange('sponsorshipFee', value)}
-              placeholder="e.g., 5000"
-              helperText="Payment you'll receive from the brand"
-              error={errors.sponsorshipFee}
-              min={0}
-              required
-            />
-
-            <InputField
-              id="productionCost"
-              label="Production Cost ($)"
-              type="number"
-              value={inputs.productionCost}
-              onChange={(value) => handleInputChange('productionCost', value)}
-              placeholder="e.g., 500"
-              helperText="Cost to create the sponsored content"
-              error={errors.productionCost}
-              min={0}
-              required
-            />
-
-            <InputField
-              id="expectedReach"
-              label="Expected Reach (Views)"
-              type="number"
-              value={inputs.expectedReach}
-              onChange={(value) => handleInputChange('expectedReach', value)}
-              placeholder="e.g., 100000"
-              helperText="Expected views on sponsored content"
-              error={errors.expectedReach}
-              min={1}
-              required
-            />
-
-            <InputField
-              id="conversionRate"
-              label="Conversion Rate (%)"
-              type="number"
-              value={inputs.conversionRate}
-              onChange={(value) => handleInputChange('conversionRate', value)}
-              placeholder="e.g., 2"
-              helperText="Expected percentage who will purchase"
-              error={errors.conversionRate}
-              min={0}
-              max={100}
-              step={0.1}
-              required
-            />
-
-            <InputField
-              id="avgOrderValue"
-              label="Average Order Value ($)"
-              type="number"
-              value={inputs.avgOrderValue}
-              onChange={(value) => handleInputChange('avgOrderValue', value)}
-              placeholder="e.g., 50"
-              helperText="Average purchase amount per customer"
-              error={errors.avgOrderValue}
-              min={0}
-              step={0.01}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate ROI
-            </Button>
-
-            {results && (
-              <div className="mt-6">
-                <ResultsDisplay
-                  results={results}
-                  type="single"
-                  format="percentage"
-                  title="ROI Percentage"
-                  subtitle={results.roiPercentage >= 0 ? 'PROFITABLE' : 'NOT PROFITABLE'}
-                />
-
-                <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
-                  <p className="text-label-md text-neutral-600 mb-3">
-                    Financial Breakdown
-                  </p>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-body-sm text-neutral-600">
-                        Total Revenue
-                      </span>
-                      <span className="text-body-sm font-semibold text-neutral-900">
-                        ${results.totalRevenue.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-body-sm text-neutral-600">
-                        Total Cost
-                      </span>
-                      <span className="text-body-sm font-semibold text-neutral-900">
-                        ${results.totalCost.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex justify-between border-t pt-2">
-                      <span className="text-body-sm text-neutral-600">
-                        Net Profit
-                      </span>
-                      <span className={`text-body-sm font-semibold ${results.roi >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                        ${results.roi.toLocaleString()}
-                      </span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-body-sm text-neutral-600">
-                        Break-Even Units
-                      </span>
-                      <span className="text-body-sm font-semibold text-neutral-900">
-                        {results.breakEvenUnits.toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </Card>
+          <SponsorshipROICalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -628,19 +430,19 @@ ROI: [($100,000 - $5,500) / $5,500] × 100 = 1,718%`}
                 slug: 'brand-deal-rate',
                 description:
                   'Calculate fair sponsorship rates for your account',
-                icon: Handshake,
+                icon: 'Handshake',
               },
               {
                 name: 'Break Even Calculator',
                 slug: 'break-even',
                 description: 'Determine sales needed to break even',
-                icon: Scale,
+                icon: 'Scale',
               },
               {
                 name: 'Content Value Calculator',
                 slug: 'content-value',
                 description: 'Assess overall content portfolio value',
-                icon: Gem,
+                icon: 'Gem',
               },
             ]}
           />

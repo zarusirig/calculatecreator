@@ -1,74 +1,13 @@
-'use client';
-
-import React, { useState } from 'react';
-import { BarChart3, Handshake, Rocket, TrendingUp, AlertTriangle } from 'lucide-react';
+import React from 'react';
+import { TrendingUp, AlertTriangle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
-import {
-  calculateFollowerGrowth,
-  validateFollowerGrowthInput,
-} from '@/lib/calculators/follower-growth';
-import type {
-  FollowerGrowthInput,
-  FollowerGrowthResult,
-} from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { FollowerGrowthCalculatorWidget } from '@/components/calculators/follower-growth/CalculatorWidget';
 
 export default function FollowerGrowthCalculatorPage() {
-  const [inputs, setInputs] = useState<FollowerGrowthInput>({
-    currentFollowers: 10000,
-    dailyGrowthRate: 2.5,
-    projectionDays: 30,
-  });
-
-  const [results, setResults] = useState<FollowerGrowthResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (
-    field: keyof FollowerGrowthInput,
-    value: any
-  ) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateFollowerGrowthInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setErrors({});
-
-    setTimeout(() => {
-      const result = calculateFollowerGrowth(inputs);
-      setResults(result);
-
-      trackCalculation(
-        'follower-growth',
-        { ...inputs },
-        { projectedFollowers: result.projectedFollowers, totalGrowth: result.totalGrowth }
-      );
-
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
@@ -96,99 +35,8 @@ export default function FollowerGrowthCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Follower Growth
-            </h2>
-
-            <InputField
-              id="currentFollowers"
-              label="Current Followers"
-              type="number"
-              value={inputs.currentFollowers}
-              onChange={(value) => handleInputChange('currentFollowers', value)}
-              placeholder="e.g., 10000"
-              helperText="Your current TikTok follower count"
-              error={errors.currentFollowers}
-              min={0}
-              required
-            />
-
-            <InputField
-              id="dailyGrowthRate"
-              label="Daily Growth Rate (%)"
-              type="number"
-              value={inputs.dailyGrowthRate}
-              onChange={(value) => handleInputChange('dailyGrowthRate', value)}
-              placeholder="e.g., 2.5"
-              helperText="Average daily follower growth percentage"
-              error={errors.dailyGrowthRate}
-              min={0}
-              max={100}
-              step={0.1}
-              required
-            />
-
-            <InputField
-              id="projectionDays"
-              label="Projection Period (Days)"
-              type="number"
-              value={inputs.projectionDays}
-              onChange={(value) => handleInputChange('projectionDays', value)}
-              placeholder="e.g., 30"
-              helperText="How many days to project forward"
-              error={errors.projectionDays}
-              min={1}
-              max={365}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate Growth Projection
-            </Button>
-
-            {results && (
-              <div className="mt-6">
-                <ResultsDisplay
-                  results={results}
-                  type="single"
-                  format="number"
-                  title="Projected Followers"
-                  subtitle={`+${results.totalGrowth.toLocaleString()} followers in ${inputs.projectionDays} days`}
-                />
-
-                <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
-                  <p className="text-label-md text-neutral-600 mb-3">
-                    Growth Breakdown
-                  </p>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="text-center">
-                      <p className="text-heading-sm font-semibold text-neutral-900">
-                        {results.dailyAverage.toLocaleString()}
-                      </p>
-                      <p className="text-label-sm text-neutral-600">
-                        Daily Average
-                      </p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-heading-sm font-semibold text-neutral-900">
-                        {results.growthPercentage.toFixed(1)}%
-                      </p>
-                      <p className="text-label-sm text-neutral-600">
-                        Total Growth
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </Card>
+          {/* Interactive Calculator Widget (CSR) */}
+          <FollowerGrowthCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -549,20 +397,20 @@ Total Growth: 11,027 new followers`}
                 slug: 'engagement-rate',
                 description:
                   'Ensure your engagement keeps pace with follower growth',
-                icon: BarChart3,
+                icon: 'BarChart3',
               },
               {
                 name: 'Brand Deal Rate Calculator',
                 slug: 'brand-deal-rate',
                 description:
                   'See how follower milestones affect your earning potential',
-                icon: Handshake,
+                icon: 'Handshake',
               },
               {
                 name: 'Viral Potential Calculator',
                 slug: 'viral-potential',
                 description: 'Assess which content can accelerate your growth',
-                icon: Rocket,
+                icon: 'Rocket',
               },
             ]}
           />

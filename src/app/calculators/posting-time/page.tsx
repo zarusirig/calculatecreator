@@ -1,26 +1,13 @@
-'use client';
-
-import React, { useState } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Video, Calendar, BarChart3, Clock, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { SelectField } from '@/components/ui/SelectField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import {
-  calculatePostingTime,
-  validatePostingTimeInput,
-} from '@/lib/calculators/posting-time';
-import type {
-  PostingTimeInput,
-  PostingTimeResult,
-} from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { PostingTimeCalculatorWidget } from '@/components/calculators/posting-time/CalculatorWidget';
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -30,77 +17,7 @@ const PageEEAT = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ def
   ssr: false
 });
 
-export default function PostingTimeCalculatorPage() {
-  const [inputs, setInputs] = useState<PostingTimeInput>({
-    timezone: 'EST',
-    audienceRegion: 'north-america',
-    contentType: 'entertainment',
-  });
-
-  const [results, setResults] = useState<PostingTimeResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (
-    field: keyof PostingTimeInput,
-    value: any
-  ) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validatePostingTimeInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setErrors({});
-
-    setTimeout(() => {
-      const result = calculatePostingTime(inputs);
-      setResults(result);
-
-      trackCalculation(
-        'posting-time',
-        { ...inputs },
-        { optimalTimesCount: result.optimalTimes.length }
-      );
-
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const timezoneOptions = [
-    { value: 'EST', label: 'Eastern Time (EST)' },
-    { value: 'CST', label: 'Central Time (CST)' },
-    { value: 'MST', label: 'Mountain Time (MST)' },
-    { value: 'PST', label: 'Pacific Time (PST)' },
-  ];
-
-  const regionOptions = [
-    { value: 'north-america', label: 'North America' },
-    { value: 'europe', label: 'Europe' },
-    { value: 'asia', label: 'Asia' },
-    { value: 'global', label: 'Global Audience' },
-  ];
-
-  const contentOptions = [
-    { value: 'entertainment', label: 'Entertainment' },
-    { value: 'educational', label: 'Educational' },
-    { value: 'promotional', label: 'Promotional' },
-    { value: 'inspirational', label: 'Inspirational' },
-  ];
-
-  const faqData = [
+const faqData = [
     {
       question: 'What is the best time to post on TikTok?',
       answer: 'Generally: 9AM, 12PM, 5PM, and 9PM (EST) for North American audiences. However, YOUR best times depend on your specific audience. Check Analytics → Followers → Follower activity to see when YOUR followers are online. Test different times and track results.',
@@ -131,6 +48,7 @@ export default function PostingTimeCalculatorPage() {
     },
   ];
 
+export default function PostingTimeCalculatorPage() {
   return (
     <>
       <CalculatorSchema
@@ -188,100 +106,7 @@ export default function PostingTimeCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Find Your Best Posting Times
-            </h2>
-
-            <SelectField
-              id="timezone"
-              label="Your Timezone"
-              value={inputs.timezone}
-              onChange={(value) => handleInputChange('timezone', value)}
-              options={timezoneOptions}
-              helperText="Your local timezone"
-              error={errors.timezone}
-              required
-            />
-
-            <SelectField
-              id="audienceRegion"
-              label="Primary Audience Region"
-              value={inputs.audienceRegion}
-              onChange={(value) => handleInputChange('audienceRegion', value)}
-              options={regionOptions}
-              helperText="Where most of your audience is located"
-              error={errors.audienceRegion}
-              required
-            />
-
-            <SelectField
-              id="contentType"
-              label="Content Type"
-              value={inputs.contentType}
-              onChange={(value) => handleInputChange('contentType', value)}
-              options={contentOptions}
-              helperText="Primary type of content you create"
-              error={errors.contentType}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Find Optimal Times
-            </Button>
-
-            {results && (
-              <div className="mt-6">
-                <div className="p-6 bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-xl border border-secondary-200">
-                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">
-                    Optimal Posting Times
-                  </h3>
-                  <div className="space-y-3">
-                    {results.optimalTimes.slice(0, 4).map((time, index) => (
-                      <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
-                        <div className="flex-1">
-                          <p className="text-heading-sm font-semibold text-neutral-900">
-                            {time.time}
-                          </p>
-                          <p className="text-body-sm text-neutral-600 mt-1">
-                            {time.reason}
-                          </p>
-                        </div>
-                        <div className="ml-4">
-                          <div className="w-12 h-12 rounded-full bg-success-DEFAULT/20 flex items-center justify-center">
-                            <span className="text-heading-sm font-bold text-success-DEFAULT">
-                              {time.score}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {results.worstTimes && results.worstTimes.length > 0 && (
-                  <div className="mt-4 p-4 bg-error-50 rounded-lg border border-error-200">
-                    <p className="text-label-md font-semibold text-neutral-900 mb-2">
-                      Times to Avoid
-                    </p>
-                    <ul className="space-y-1">
-                      {results.worstTimes.map((time, index) => (
-                        <li key={index} className="text-body-sm text-neutral-700">
-                          <strong>{time.time}:</strong> {time.reason}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <PostingTimeCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -464,9 +289,9 @@ Algorithm boost occurs when:
           <RelatedCalculators
             currentCalculator="posting-time"
             calculators={[
-              { name: 'Video Performance Calculator', slug: 'video-performance', description: 'Analyze overall video performance', icon: Video },
-              { name: 'Content Calendar ROI Calculator', slug: 'content-calendar-roi', description: 'Measure planning ROI', icon: Calendar },
-              { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track engagement metrics', icon: BarChart3 },
+              { name: 'Video Performance Calculator', slug: 'video-performance', description: 'Analyze overall video performance', icon: 'Video' },
+              { name: 'Content Calendar ROI Calculator', slug: 'content-calendar-roi', description: 'Measure planning ROI', icon: 'Calendar' },
+              { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track engagement metrics', icon: 'BarChart3' },
             ]}
           />
 

@@ -1,8 +1,4 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
-import { trackMethodologyView } from '@/lib/analytics/ga4';
 
 interface MethodologySectionProps {
   calculatorName: string;
@@ -13,6 +9,13 @@ interface MethodologySectionProps {
   lastUpdated: string;
 }
 
+/**
+ * MethodologySection - SSR component for displaying calculator methodology
+ *
+ * Uses native <details> element for expand/collapse behavior,
+ * eliminating the need for client-side JavaScript and useState.
+ * This improves SEO by making content crawlable and reduces JS bundle size.
+ */
 export function MethodologySection({
   calculatorName,
   formula,
@@ -21,43 +24,29 @@ export function MethodologySection({
   limitations,
   lastUpdated,
 }: MethodologySectionProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const handleToggle = () => {
-    if (!isExpanded) {
-      trackMethodologyView(calculatorName);
-    }
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <Card className="mt-8">
-      <button
-        onClick={handleToggle}
-        className="flex items-center justify-between w-full text-left"
-      >
-        <h3 className="text-heading-md font-semibold text-neutral-900">
-          How We Calculate This
-        </h3>
-        <svg
-          className={`w-6 h-6 text-neutral-600 transition-transform ${
-            isExpanded ? 'rotate-180' : ''
-          }`}
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
-        </svg>
-      </button>
+      <details className="group">
+        <summary className="flex items-center justify-between w-full text-left cursor-pointer list-none">
+          <h3 className="text-heading-md font-semibold text-neutral-900">
+            How We Calculate This
+          </h3>
+          <svg
+            className="w-6 h-6 text-neutral-600 transition-transform group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </summary>
 
-      {isExpanded && (
-        <div className="mt-6 space-y-6 animate-slide-down">
+        <div className="mt-6 space-y-6">
           {/* Formula */}
           <div>
             <h4 className="text-heading-sm font-semibold text-neutral-900 mb-3">
@@ -120,7 +109,7 @@ export function MethodologySection({
             </p>
           </div>
         </div>
-      )}
+      </details>
     </Card>
   );
 }

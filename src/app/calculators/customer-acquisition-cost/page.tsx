@@ -1,95 +1,36 @@
-'use client';
-
-import React, { useState } from 'react';
 import { DollarSign, ShoppingCart, Shirt, Smartphone, Briefcase } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { SelectField } from '@/components/ui/SelectField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import {
-  calculateCAC,
-  validateCACInput,
-} from '@/lib/calculators/customer-acquisition-cost';
-import type { CACInput, CACResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
-import { Gem, Target, TrendingUp } from 'lucide-react';
+import { CustomerAcquisitionCostCalculatorWidget } from '@/components/calculators/customer-acquisition-cost/CalculatorWidget';
+
+const faqs = [
+  {
+    question: 'What is a good Customer Acquisition Cost (CAC) for TikTok?',
+    answer: 'A good CAC depends on your Customer Lifetime Value (LTV). The golden ratio is LTV:CAC of 3:1 or higher. For TikTok specifically: E-commerce typically sees $15-$50 CAC, SaaS/Apps see $30-$150 CAC, Services see $50-$200 CAC. Lower CAC is better, but only if you maintain quality customers with good retention.',
+  },
+  {
+    question: 'How do I calculate CAC from TikTok ads?',
+    answer: 'CAC = Total Marketing Spend / Number of New Customers Acquired. Include all costs: ad spend, content creation, influencer fees, agency costs, and software tools. Track new customers using UTM parameters, promo codes, or TikTok pixel. Only count customers who made their first purchase in the period, not repeat customers.',
+  },
+  {
+    question: 'Why is my TikTok CAC so high?',
+    answer: 'Common reasons for high CAC: (1) Targeting too narrow—limiting reach increases costs, (2) Low conversion rate on landing page, (3) Poor product-market fit for TikTok audience, (4) Weak creative that doesn\'t stop the scroll, (5) High competition in your niche, (6) Not enough time for algorithm to optimize (run campaigns 7+ days). Test broader targeting and improve ad creative first.',
+  },
+  {
+    question: 'What\'s the difference between CAC and CPA?',
+    answer: 'CAC (Customer Acquisition Cost) measures cost to acquire a new customer specifically. CPA (Cost Per Acquisition) measures cost for any conversion (signup, download, purchase). For subscription businesses, someone who signs up for a trial (CPA) may not become a paying customer (CAC). CAC is always equal to or higher than CPA.',
+  },
+  {
+    question: 'How can I lower my TikTok CAC?',
+    answer: 'To reduce CAC: (1) Improve conversion rate—a 1% increase can cut CAC by 20-30%, (2) Create more engaging organic content to build trust before running ads, (3) Use retargeting for website visitors (typically 50-70% lower CAC), (4) Test lookalike audiences based on your best customers, (5) Optimize landing pages for mobile, (6) Use user-generated content in ads (3-5× more effective than polished ads).',
+  },
+];
 
 export default function CustomerAcquisitionCostCalculatorPage() {
-  const [inputs, setInputs] = useState<CACInput>({
-    marketingSpend: 5000,
-    newCustomers: 100,
-    timeframe: 'month',
-  });
-
-  const [results, setResults] = useState<CACResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const timeframeOptions = [
-    { value: 'month', label: 'Monthly' },
-    { value: 'quarter', label: 'Quarterly' },
-    { value: 'year', label: 'Annual' },
-  ];
-
-  const handleInputChange = (field: keyof CACInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateCACInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCAC(inputs);
-      setResults(result);
-      trackCalculation(
-        'customer-acquisition-cost',
-        { ...inputs },
-        { cac: result.cac }
-      );
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const faqs = [
-    {
-      question: 'What is a good Customer Acquisition Cost (CAC) for TikTok?',
-      answer: 'A good CAC depends on your Customer Lifetime Value (LTV). The golden ratio is LTV:CAC of 3:1 or higher. For TikTok specifically: E-commerce typically sees $15-$50 CAC, SaaS/Apps see $30-$150 CAC, Services see $50-$200 CAC. Lower CAC is better, but only if you maintain quality customers with good retention.',
-    },
-    {
-      question: 'How do I calculate CAC from TikTok ads?',
-      answer: 'CAC = Total Marketing Spend / Number of New Customers Acquired. Include all costs: ad spend, content creation, influencer fees, agency costs, and software tools. Track new customers using UTM parameters, promo codes, or TikTok pixel. Only count customers who made their first purchase in the period, not repeat customers.',
-    },
-    {
-      question: 'Why is my TikTok CAC so high?',
-      answer: 'Common reasons for high CAC: (1) Targeting too narrow—limiting reach increases costs, (2) Low conversion rate on landing page, (3) Poor product-market fit for TikTok audience, (4) Weak creative that doesn\'t stop the scroll, (5) High competition in your niche, (6) Not enough time for algorithm to optimize (run campaigns 7+ days). Test broader targeting and improve ad creative first.',
-    },
-    {
-      question: 'What\'s the difference between CAC and CPA?',
-      answer: 'CAC (Customer Acquisition Cost) measures cost to acquire a new customer specifically. CPA (Cost Per Acquisition) measures cost for any conversion (signup, download, purchase). For subscription businesses, someone who signs up for a trial (CPA) may not become a paying customer (CAC). CAC is always equal to or higher than CPA.',
-    },
-    {
-      question: 'How can I lower my TikTok CAC?',
-      answer: 'To reduce CAC: (1) Improve conversion rate—a 1% increase can cut CAC by 20-30%, (2) Create more engaging organic content to build trust before running ads, (3) Use retargeting for website visitors (typically 50-70% lower CAC), (4) Test lookalike audiences based on your best customers, (5) Optimize landing pages for mobile, (6) Use user-generated content in ads (3-5× more effective than polished ads).',
-    },
-  ];
-
   return (
     <>
       <CalculatorSchema
@@ -134,122 +75,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your CAC
-            </h2>
-
-            <InputField
-              id="marketingSpend"
-              label="Total Marketing Spend ($)"
-              type="number"
-              value={inputs.marketingSpend}
-              onChange={(value) => handleInputChange('marketingSpend', value)}
-              placeholder="e.g., 5000"
-              helperText="Total spent on TikTok marketing (ads, content, tools)"
-              tooltip="Include ad spend, content creation costs, influencer fees, and marketing software"
-              error={errors.marketingSpend}
-              min={0}
-              step={0.01}
-              required
-            />
-
-            <InputField
-              id="newCustomers"
-              label="New Customers Acquired"
-              type="number"
-              value={inputs.newCustomers}
-              onChange={(value) => handleInputChange('newCustomers', value)}
-              placeholder="e.g., 100"
-              helperText="Number of NEW customers gained (not repeat customers)"
-              tooltip="Count only first-time customers who made a purchase in this period"
-              error={errors.newCustomers}
-              min={1}
-              required
-            />
-
-            <SelectField
-              id="timeframe"
-              label="Timeframe"
-              value={inputs.timeframe}
-              onChange={(value) => handleInputChange('timeframe', value as any)}
-              options={timeframeOptions}
-              helperText="Period you're measuring"
-              error={errors.timeframe}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate CAC
-            </Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-success-50 to-primary-50 rounded-xl border-2 border-success-200">
-                  <p className="text-label-lg text-neutral-600 mb-2">Customer Acquisition Cost</p>
-                  <p className="text-display-md font-bold text-success-600">
-                    ${results.cac.toFixed(2)}
-                  </p>
-                  <p className="text-body-sm text-neutral-600 mt-2">
-                    Per new customer
-                  </p>
-                </div>
-
-                {results.benchmark && (
-                  <div className={`p-4 rounded-lg border-2 ${
-                    results.benchmark === 'excellent' ? 'bg-success-50 border-success-300' :
-                    results.benchmark === 'good' ? 'bg-primary-50 border-primary-300' :
-                    results.benchmark === 'acceptable' ? 'bg-neutral-50 border-neutral-300' :
-                    'bg-warning-50 border-warning-300'
-                  }`}>
-                    <p className="text-label-md font-semibold mb-1">
-                      Performance: {results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1)}
-                    </p>
-                    <p className="text-body-sm text-neutral-600">
-                      {results.benchmark === 'excellent' && 'Outstanding CAC! You\'re acquiring customers very efficiently.'}
-                      {results.benchmark === 'good' && 'Solid CAC for most businesses. Monitor and maintain this level.'}
-                      {results.benchmark === 'acceptable' && 'Typical CAC. Look for optimization opportunities to reduce costs.'}
-                      {results.benchmark === 'high' && 'CAC is high—focus on improving conversion rate and targeting.'}
-                    </p>
-                  </div>
-                )}
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Recommended Minimum LTV</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      ${(results.cac * 3).toFixed(2)}
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">Your customer lifetime value should be at least 3× your CAC</p>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Customers per $1,000 Spent</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      {(1000 / results.cac).toFixed(1)}
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">Acquisition efficiency metric</p>
-                </div>
-
-                {results.interpretation && (
-                  <div className="p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <CustomerAcquisitionCostCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -429,19 +255,19 @@ Recommended LTV = $50 × 3 = $150+`}
                 name: 'Lifetime Value Calculator',
                 slug: 'lifetime-value',
                 description: 'Calculate customer LTV to compare against your CAC',
-                icon: Gem,
+                icon: 'Gem',
               },
               {
                 name: 'Campaign ROI Calculator',
                 slug: 'campaign-roi',
                 description: 'Measure overall profitability of your campaigns',
-                icon: TrendingUp,
+                icon: 'TrendingUp',
               },
               {
                 name: 'Conversion Rate Calculator',
                 slug: 'conversion-rate',
                 description: 'Optimize conversion rate to reduce CAC',
-                icon: Target,
+                icon: 'Target',
               },
             ]}
           />

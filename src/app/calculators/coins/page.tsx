@@ -1,72 +1,36 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Coins as CoinsIcon, Gift, Gem, Banknote, DollarSign } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
-import { calculateCoins, validateCoinsInput } from '@/lib/calculators/coins';
-import type { CoinsInput, CoinsResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
+
+const faqData = [
+  {
+    question: 'How much are TikTok coins worth in real money?',
+    answer: 'TikTok coins cost approximately $0.0129 each in the US. Standard packages: 100 coins = $1.29, 1,000 coins = $12.99, 10,000 coins = $129.99. Prices vary slightly by region and platform (iOS vs Android).'
+  },
+  {
+    question: 'How many coins equal 1 diamond for creators?',
+    answer: '2 coins = 1 diamond. When a viewer sends a gift worth 1,000 coins, the creator receives 500 diamonds. This represents TikTok\'s 50% platform fee. Diamonds convert to cash at $0.005 per diamond.'
+  },
+  {
+    question: 'What\'s the most expensive gift on TikTok?',
+    answer: 'The Universe gift costs 44,999 coins (approximately $580). When sent, the creator receives 22,499.5 diamonds worth $112.50. Other high-value gifts include Planet (15,000 coins), Whale (2,150 coins), and Falcon (999 coins).'
+  },
+  {
+    question: 'How much money do creators actually make from gifts?',
+    answer: 'Creators receive 50% of the coin value. If viewers send $100 worth of gifts (7,751 coins), the creator gets 3,875.5 diamonds = $19.38. The minimum cashout is $50 (10,000 diamonds), requiring $100 in total gifts received.'
+  },
+  {
+    question: 'Do coin prices differ on iOS vs Android?',
+    answer: 'Yes, iOS prices are typically slightly higher due to Apple\'s 30% App Store fee. Many creators encourage viewers to use Android or web browsers for better coin value. The conversion rate to diamonds remains the same regardless of purchase platform.'
+  },
+];
 
 export default function CoinsCalculatorPage() {
-  const [inputs, setInputs] = useState<CoinsInput>({ coins: 1000 });
-  const [results, setResults] = useState<CoinsResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  // FAQ data for schema markup
-  const faqData = [
-    {
-      question: 'How much are TikTok coins worth in real money?',
-      answer: 'TikTok coins cost approximately $0.0129 each in the US. Standard packages: 100 coins = $1.29, 1,000 coins = $12.99, 10,000 coins = $129.99. Prices vary slightly by region and platform (iOS vs Android).'
-    },
-    {
-      question: 'How many coins equal 1 diamond for creators?',
-      answer: '2 coins = 1 diamond. When a viewer sends a gift worth 1,000 coins, the creator receives 500 diamonds. This represents TikTok\'s 50% platform fee. Diamonds convert to cash at $0.005 per diamond.'
-    },
-    {
-      question: 'What\'s the most expensive gift on TikTok?',
-      answer: 'The Universe gift costs 44,999 coins (approximately $580). When sent, the creator receives 22,499.5 diamonds worth $112.50. Other high-value gifts include Planet (15,000 coins), Whale (2,150 coins), and Falcon (999 coins).'
-    },
-    {
-      question: 'How much money do creators actually make from gifts?',
-      answer: 'Creators receive 50% of the coin value. If viewers send $100 worth of gifts (7,751 coins), the creator gets 3,875.5 diamonds = $19.38. The minimum cashout is $50 (10,000 diamonds), requiring $100 in total gifts received.'
-    },
-    {
-      question: 'Do coin prices differ on iOS vs Android?',
-      answer: 'Yes, iOS prices are typically slightly higher due to Apple\'s 30% App Store fee. Many creators encourage viewers to use Android or web browsers for better coin value. The conversion rate to diamonds remains the same regardless of purchase platform.'
-    },
-  ];
-
-  const handleInputChange = (value: any) => {
-    setInputs({ coins: value });
-    if (errors.coins) setErrors({});
-  };
-
-  const handleCalculate = () => {
-    const validation = validateCoinsInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCoins(inputs);
-      setResults(result);
-      trackCalculation('coins', { coins: inputs.coins }, { usd_value: result.usdValue, diamonds: result.diamonds });
-      setIsCalculating(false);
-    }, 500);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-warning-50 py-8">
       <FAQSchema faqs={faqData} />
@@ -82,23 +46,7 @@ export default function CoinsCalculatorPage() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Convert Coins</h2>
-
-            <InputField id="coins" label="TikTok Coins" type="number" value={inputs.coins} onChange={handleInputChange} placeholder="e.g., 1000" helperText="Number of TikTok coins to convert" error={errors.coins} min={1} required />
-
-            <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">Convert Coins</Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <ResultsDisplay results={results} type="single" format="currency" title="USD Value" />
-                <div className="p-4 bg-neutral-50 rounded-lg">
-                  <p className="text-label-md text-neutral-600 mb-1">Diamonds</p>
-                  <p className="text-heading-lg font-semibold text-neutral-900">{results.diamonds.toLocaleString()}</p>
-                </div>
-              </div>
-            )}
-          </Card>
+          <CoinsCalculatorWidget />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12 space-y-8">
@@ -402,19 +350,19 @@ Example:
                 name: 'LIVE Gifts Calculator',
                 slug: 'live-gifts',
                 description: 'Calculate total LIVE streaming earnings from gifts',
-                icon: Gift
+                icon: 'Gift'
               },
               {
                 name: 'TikTok Money Calculator',
                 slug: 'tiktok-money',
                 description: 'Calculate total earnings including LIVE gifts',
-                icon: Banknote
+                icon: 'Banknote'
               },
               {
                 name: 'Creator Fund Calculator',
                 slug: 'tiktok-creator-fund',
                 description: 'Compare gift earnings to Creator Fund income',
-                icon: DollarSign
+                icon: 'DollarSign'
               }
             ]}
           />

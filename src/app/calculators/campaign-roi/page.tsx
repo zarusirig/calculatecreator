@@ -1,86 +1,36 @@
-'use client';
-
-import React, { useState } from 'react';
-import { BarChart3, Banknote, Video, TrendingUp, ShoppingCart, Smartphone, Target, Palette } from 'lucide-react';
+import { TrendingUp, ShoppingCart, Smartphone, Target, Palette } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import {
-  calculateCampaignROI,
-  validateCampaignROIInput,
-} from '@/lib/calculators/campaign-roi';
-import type { CampaignROIInput, CampaignROIResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
+import { CampaignROICalculatorWidget } from '@/components/calculators/campaign-roi/CalculatorWidget';
+
+const faqs = [
+  {
+    question: 'What is a good ROI for TikTok ad campaigns?',
+    answer: 'A good TikTok campaign ROI depends on your industry and goals. E-commerce typically aims for 200-400% ROI (3-5× ROAS). Lead generation campaigns may see 300-600% ROI. Brand awareness campaigns might accept 100-200% ROI. The minimum viable ROI is generally 100% (break-even), but you should target at least 200% (3× ROAS) for sustainable profitability.',
+  },
+  {
+    question: 'What\'s the difference between ROI and ROAS?',
+    answer: 'ROI (Return on Investment) shows profit as a percentage: ROI = (Revenue - Cost) / Cost × 100. ROAS (Return on Ad Spend) shows revenue as a multiple: ROAS = Revenue / Cost. Example: Spend $1,000, earn $3,000. ROI = 200% (you made $2,000 profit on $1,000 investment). ROAS = 3× (you got $3 back for every $1 spent). Both measure the same campaign from different angles.',
+  },
+  {
+    question: 'How long should I run a TikTok campaign before calculating ROI?',
+    answer: 'Run campaigns for at least 7-14 days before judging ROI—TikTok\'s algorithm needs 3-7 days to optimize. For accurate ROI, wait 30 days to capture delayed conversions (people who see your ad but buy later). Track attribution window: TikTok default is 7-day click, but some products have 14-30 day consideration periods. Seasonal products may need 60-90 days of data.',
+  },
+  {
+    question: 'Why is my TikTok campaign ROI negative?',
+    answer: 'Negative ROI (losing money) happens when: (1) Poor targeting—showing ads to wrong audience, (2) Low conversion rate on landing page (fix this first—biggest ROI impact), (3) Weak creative that doesn\'t stop the scroll, (4) Product-market fit issues, (5) Too short learning phase (<7 days), (6) Incorrect tracking/attribution setup. Before scaling, get to at least break-even (100% ROI) by optimizing conversion rate and creative.',
+  },
+  {
+    question: 'How can I improve my TikTok campaign ROI?',
+    answer: 'To boost ROI: (1) Improve conversion rate—every 1% increase = 20-30% better ROI, (2) Test 5-10 ad variations weekly, winner improves ROI 30-100%, (3) Use lookalike audiences of top customers, (4) Increase AOV with bundles/upsells, (5) Implement retargeting (often 5-10× better ROI than cold traffic), (6) Optimize for "Purchase" not "Traffic", (7) A/B test landing pages, (8) Exclude existing customers from prospecting campaigns.',
+  },
+];
 
 export default function CampaignROICalculatorPage() {
-  const [inputs, setInputs] = useState<CampaignROIInput>({
-    campaignCost: 2000,
-    revenue: 6000,
-  });
-
-  const [results, setResults] = useState<CampaignROIResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const handleInputChange = (field: keyof CampaignROIInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateCampaignROIInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCampaignROI(inputs);
-      setResults(result);
-      trackCalculation(
-        'campaign-roi',
-        { ...inputs },
-        { roi: result.roi, roas: result.roas }
-      );
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const faqs = [
-    {
-      question: 'What is a good ROI for TikTok ad campaigns?',
-      answer: 'A good TikTok campaign ROI depends on your industry and goals. E-commerce typically aims for 200-400% ROI (3-5× ROAS). Lead generation campaigns may see 300-600% ROI. Brand awareness campaigns might accept 100-200% ROI. The minimum viable ROI is generally 100% (break-even), but you should target at least 200% (3× ROAS) for sustainable profitability.',
-    },
-    {
-      question: 'What\'s the difference between ROI and ROAS?',
-      answer: 'ROI (Return on Investment) shows profit as a percentage: ROI = (Revenue - Cost) / Cost × 100. ROAS (Return on Ad Spend) shows revenue as a multiple: ROAS = Revenue / Cost. Example: Spend $1,000, earn $3,000. ROI = 200% (you made $2,000 profit on $1,000 investment). ROAS = 3× (you got $3 back for every $1 spent). Both measure the same campaign from different angles.',
-    },
-    {
-      question: 'How long should I run a TikTok campaign before calculating ROI?',
-      answer: 'Run campaigns for at least 7-14 days before judging ROI—TikTok\'s algorithm needs 3-7 days to optimize. For accurate ROI, wait 30 days to capture delayed conversions (people who see your ad but buy later). Track attribution window: TikTok default is 7-day click, but some products have 14-30 day consideration periods. Seasonal products may need 60-90 days of data.',
-    },
-    {
-      question: 'Why is my TikTok campaign ROI negative?',
-      answer: 'Negative ROI (losing money) happens when: (1) Poor targeting—showing ads to wrong audience, (2) Low conversion rate on landing page (fix this first—biggest ROI impact), (3) Weak creative that doesn\'t stop the scroll, (4) Product-market fit issues, (5) Too short learning phase (<7 days), (6) Incorrect tracking/attribution setup. Before scaling, get to at least break-even (100% ROI) by optimizing conversion rate and creative.',
-    },
-    {
-      question: 'How can I improve my TikTok campaign ROI?',
-      answer: 'To boost ROI: (1) Improve conversion rate—every 1% increase = 20-30% better ROI, (2) Test 5-10 ad variations weekly, winner improves ROI 30-100%, (3) Use lookalike audiences of top customers, (4) Increase AOV with bundles/upsells, (5) Implement retargeting (often 5-10× better ROI than cold traffic), (6) Optimize for "Purchase" not "Traffic", (7) A/B test landing pages, (8) Exclude existing customers from prospecting campaigns.',
-    },
-  ];
-
   return (
     <>
       <CalculatorSchema
@@ -125,102 +75,7 @@ export default function CampaignROICalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your Campaign ROI
-            </h2>
-
-            <InputField
-              id="campaignCost"
-              label="Campaign Cost ($)"
-              type="number"
-              value={inputs.campaignCost}
-              onChange={(value) => handleInputChange('campaignCost', value)}
-              placeholder="e.g., 2000"
-              helperText="Total cost of your TikTok campaign (ads, content, tools)"
-              tooltip="Include all costs: ad spend, video production, influencer fees, agency costs"
-              error={errors.campaignCost}
-              min={0}
-              step={0.01}
-              required
-            />
-
-            <InputField
-              id="revenue"
-              label="Revenue Generated ($)"
-              type="number"
-              value={inputs.revenue}
-              onChange={(value) => handleInputChange('revenue', value)}
-              placeholder="e.g., 6000"
-              helperText="Total revenue directly attributed to this campaign"
-              tooltip="Use TikTok pixel, UTM codes, or promo codes to track campaign revenue"
-              error={errors.revenue}
-              min={0}
-              step={0.01}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate ROI
-            </Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-success-50 to-primary-50 rounded-xl border-2 border-success-200">
-                  <p className="text-label-lg text-neutral-600 mb-2">Return on Investment (ROI)</p>
-                  <p className={`text-display-md font-bold ${results.roi >= 0 ? 'text-success-600' : 'text-error-600'}`}>
-                    {results.roi > 0 ? '+' : ''}{results.roi.toFixed(1)}%
-                  </p>
-                  <p className="text-body-sm text-neutral-600 mt-2">
-                    {results.roi >= 0 ? 'Profit' : 'Loss'}: ${Math.abs(results.profit).toFixed(2)}
-                  </p>
-                </div>
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Return on Ad Spend (ROAS)</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      {results.roas.toFixed(2)}×
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">For every $1 spent, you earned ${results.roas.toFixed(2)}</p>
-                </div>
-
-                {results.rating && (
-                  <div className={`p-4 rounded-lg border-2 ${
-                    results.rating === 'excellent' ? 'bg-success-50 border-success-300' :
-                    results.rating === 'good' ? 'bg-primary-50 border-primary-300' :
-                    results.rating === 'break-even' ? 'bg-neutral-50 border-neutral-300' :
-                    'bg-error-50 border-error-300'
-                  }`}>
-                    <p className="text-label-md font-semibold mb-1">
-                      Performance: {results.rating === 'break-even' ? 'Break-Even' : results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
-                    </p>
-                    <p className="text-body-sm text-neutral-600">
-                      {results.rating === 'excellent' && 'Outstanding ROI! Your campaign is highly profitable—scale up!'}
-                      {results.rating === 'good' && 'Solid ROI. Campaign is profitable and worth continuing.'}
-                      {results.rating === 'break-even' && 'Breaking even. Optimize before scaling further.'}
-                      {results.rating === 'loss' && 'Losing money. Pause and optimize targeting, creative, or landing page.'}
-                    </p>
-                  </div>
-                )}
-
-                {results.interpretation && (
-                  <div className="p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <CampaignROICalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -429,19 +284,19 @@ Interpretation: You made $3 for every $1 spent, resulting in $4,000 profit (200%
                 name: 'CPM/CPV Calculator',
                 slug: 'cpm-cpv',
                 description: 'Analyze your campaign cost efficiency',
-                icon: BarChart3,
+                icon: 'BarChart3',
               },
               {
                 name: 'Customer Acquisition Cost Calculator',
                 slug: 'customer-acquisition-cost',
                 description: 'Calculate cost per customer acquired',
-                icon: Banknote,
+                icon: 'Banknote',
               },
               {
                 name: 'Sponsorship ROI Calculator',
                 slug: 'sponsorship-roi',
                 description: 'Measure ROI for sponsored content',
-                icon: Video,
+                icon: 'Video',
               },
             ]}
           />

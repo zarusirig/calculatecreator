@@ -1,94 +1,36 @@
-'use client';
-
-import React, { useState } from 'react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
-import { InputField } from '@/components/ui/InputField';
-import { SelectField } from '@/components/ui/SelectField';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import {
-  calculateConversionRate,
-  validateConversionRateInput,
-} from '@/lib/calculators/conversion-rate';
-import type { ConversionRateInput, ConversionRateResult } from '@/types/calculator';
-import { trackCalculation } from '@/lib/analytics/ga4';
-import { Handshake, Banknote, TrendingUp, Target } from 'lucide-react';
+import { ConversionRateCalculatorWidget } from '@/components/calculators/conversion-rate/CalculatorWidget';
+import { Target } from 'lucide-react';
+
+const faqs = [
+  {
+    question: 'What is a good conversion rate for TikTok traffic?',
+    answer: 'A good TikTok conversion rate depends on your goal: E-commerce: 2-4% is good, 5%+ is excellent. Email signups: 5-10% is typical, 15%+ is great. App downloads: 3-8% is average. TikTok traffic tends to convert lower than Google search (impulse vs intent-driven), but engagement quality is often higher.',
+  },
+  {
+    question: 'Why is my TikTok conversion rate low?',
+    answer: 'Common reasons for low conversion rates: (1) Landing page doesn\'t match video promise, (2) Too many steps in checkout process, (3) Price shock (not mentioned in video), (4) Slow page load time on mobile, (5) Audience mismatch (wrong demographics), (6) Weak or missing call-to-action, (7) No urgency or incentive to buy now.',
+  },
+  {
+    question: 'How do I calculate conversion rate from TikTok?',
+    answer: 'Conversion Rate = (Conversions / Visitors) × 100. Track visitors with UTM parameters or unique landing pages for TikTok traffic. Use tools like Google Analytics, Shopify analytics, or your CRM to track conversions. Make sure to count only unique visitors, not total views. Set up conversion tracking before running campaigns.',
+  },
+  {
+    question: 'What\'s the difference between TikTok engagement rate and conversion rate?',
+    answer: 'Engagement rate measures interactions on TikTok (likes, comments, shares) divided by views or followers. Conversion rate measures actions taken OFF TikTok (purchases, signups) after clicking your link. High engagement doesn\'t guarantee high conversions—you need strong call-to-action and landing page optimization.',
+  },
+  {
+    question: 'How can I improve my TikTok conversion rate?',
+    answer: 'To boost conversions: (1) Match landing page to video content exactly, (2) Mention price/offer in the video to avoid sticker shock, (3) Add urgency with limited-time offers, (4) Simplify checkout to 1-2 steps, (5) Mobile-optimize everything (90% of TikTok is mobile), (6) Use social proof (reviews, testimonials), (7) A/B test different landing pages and offers.',
+  },
+];
 
 export default function ConversionRateCalculatorPage() {
-  const [inputs, setInputs] = useState<ConversionRateInput>({
-    visitors: 10000,
-    conversions: 300,
-    timeframe: 'month',
-  });
-
-  const [results, setResults] = useState<ConversionRateResult | null>(null);
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-
-  const timeframeOptions = [
-    { value: 'day', label: 'Per Day' },
-    { value: 'week', label: 'Per Week' },
-    { value: 'month', label: 'Per Month' },
-  ];
-
-  const handleInputChange = (field: keyof ConversionRateInput, value: any) => {
-    setInputs((prev) => ({ ...prev, [field]: value }));
-    if (errors[field]) {
-      setErrors((prev) => {
-        const newErrors = { ...prev };
-        delete newErrors[field];
-        return newErrors;
-      });
-    }
-  };
-
-  const handleCalculate = () => {
-    const validation = validateConversionRateInput(inputs);
-    if (!validation.valid) {
-      setErrors(validation.errors);
-      return;
-    }
-
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateConversionRate(inputs);
-      setResults(result);
-      trackCalculation(
-        'conversion-rate',
-        { ...inputs },
-        { conversion_rate: result.conversionRate }
-      );
-      setIsCalculating(false);
-    }, 500);
-  };
-
-  const faqs = [
-    {
-      question: 'What is a good conversion rate for TikTok traffic?',
-      answer: 'A good TikTok conversion rate depends on your goal: E-commerce: 2-4% is good, 5%+ is excellent. Email signups: 5-10% is typical, 15%+ is great. App downloads: 3-8% is average. TikTok traffic tends to convert lower than Google search (impulse vs intent-driven), but engagement quality is often higher.',
-    },
-    {
-      question: 'Why is my TikTok conversion rate low?',
-      answer: 'Common reasons for low conversion rates: (1) Landing page doesn\'t match video promise, (2) Too many steps in checkout process, (3) Price shock (not mentioned in video), (4) Slow page load time on mobile, (5) Audience mismatch (wrong demographics), (6) Weak or missing call-to-action, (7) No urgency or incentive to buy now.',
-    },
-    {
-      question: 'How do I calculate conversion rate from TikTok?',
-      answer: 'Conversion Rate = (Conversions / Visitors) × 100. Track visitors with UTM parameters or unique landing pages for TikTok traffic. Use tools like Google Analytics, Shopify analytics, or your CRM to track conversions. Make sure to count only unique visitors, not total views. Set up conversion tracking before running campaigns.',
-    },
-    {
-      question: 'What\'s the difference between TikTok engagement rate and conversion rate?',
-      answer: 'Engagement rate measures interactions on TikTok (likes, comments, shares) divided by views or followers. Conversion rate measures actions taken OFF TikTok (purchases, signups) after clicking your link. High engagement doesn\'t guarantee high conversions—you need strong call-to-action and landing page optimization.',
-    },
-    {
-      question: 'How can I improve my TikTok conversion rate?',
-      answer: 'To boost conversions: (1) Match landing page to video content exactly, (2) Mention price/offer in the video to avoid sticker shock, (3) Add urgency with limited-time offers, (4) Simplify checkout to 1-2 steps, (5) Mobile-optimize everything (90% of TikTok is mobile), (6) Use social proof (reviews, testimonials), (7) A/B test different landing pages and offers.',
-    },
-  ];
-
   return (
     <>
       <CalculatorSchema
@@ -133,111 +75,7 @@ export default function ConversionRateCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <Card className="lg:sticky lg:top-24 h-fit">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              Calculate Your Conversion Rate
-            </h2>
-
-            <InputField
-              id="visitors"
-              label="Visitors"
-              type="number"
-              value={inputs.visitors}
-              onChange={(value) => handleInputChange('visitors', value)}
-              placeholder="e.g., 10000"
-              helperText="Total visitors from TikTok to your landing page/site"
-              tooltip="Use Google Analytics or your platform's analytics to track TikTok traffic"
-              error={errors.visitors}
-              min={1}
-              required
-            />
-
-            <InputField
-              id="conversions"
-              label="Conversions"
-              type="number"
-              value={inputs.conversions}
-              onChange={(value) => handleInputChange('conversions', value)}
-              placeholder="e.g., 300"
-              helperText="Number of desired actions completed (purchases, signups, etc.)"
-              tooltip="Count each unique conversion—a purchase, signup, download, or whatever your goal is"
-              error={errors.conversions}
-              min={0}
-              required
-            />
-
-            <SelectField
-              id="timeframe"
-              label="Timeframe"
-              value={inputs.timeframe}
-              onChange={(value) => handleInputChange('timeframe', value as any)}
-              options={timeframeOptions}
-              helperText="Period you're measuring"
-              error={errors.timeframe}
-              required
-            />
-
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={handleCalculate}
-              isLoading={isCalculating}
-              className="w-full mt-6"
-            >
-              Calculate Conversion Rate
-            </Button>
-
-            {results && (
-              <div className="mt-6 space-y-4">
-                <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-                  <p className="text-label-lg text-neutral-600 mb-2">Conversion Rate</p>
-                  <p className="text-display-md font-bold text-primary-600">
-                    {results.conversionRate.toFixed(2)}%
-                  </p>
-                  <p className="text-body-sm text-neutral-600 mt-2">
-                    {inputs.conversions} conversions from {inputs.visitors.toLocaleString()} visitors
-                  </p>
-                </div>
-
-                {results.rating && (
-                  <div className={`p-4 rounded-lg border-2 ${
-                    results.rating === 'excellent' ? 'bg-success-50 border-success-300' :
-                    results.rating === 'good' ? 'bg-primary-50 border-primary-300' :
-                    results.rating === 'average' ? 'bg-neutral-50 border-neutral-300' :
-                    'bg-warning-50 border-warning-300'
-                  }`}>
-                    <p className="text-label-md font-semibold mb-1">
-                      Performance: {results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
-                    </p>
-                    <p className="text-body-sm text-neutral-600">
-                      {results.rating === 'excellent' && 'Outstanding conversion rate! Your landing page and offer are highly optimized.'}
-                      {results.rating === 'good' && 'Above-average conversion rate. Small optimizations could push you higher.'}
-                      {results.rating === 'average' && 'Typical conversion rate for TikTok traffic. Room for improvement.'}
-                      {results.rating === 'poor' && 'Below average. Focus on landing page optimization and offer clarity.'}
-                    </p>
-                  </div>
-                )}
-
-                <div className="p-4 bg-white rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-label-md text-neutral-600">Visitors Needed for 100 Conversions</span>
-                    <span className="text-heading-md font-semibold text-neutral-900">
-                      {Math.round(100 / results.conversionRate).toLocaleString()}
-                    </span>
-                  </div>
-                  <p className="text-body-xs text-neutral-500">Based on your current conversion rate</p>
-                </div>
-
-                {results.interpretation && (
-                  <div className="p-4 bg-neutral-50 rounded-lg">
-                    <p className="text-body-md text-neutral-700 leading-relaxed">
-                      {results.interpretation}
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
-          </Card>
+          <ConversionRateCalculatorWidget />
 
           <div className="space-y-8">
             <Card>
@@ -401,19 +239,19 @@ Visitors Needed = 100 / 0.03 = 3,334 visitors`}
                 name: 'Affiliate Commission Calculator',
                 slug: 'affiliate-commission',
                 description: 'Calculate earnings based on your conversion rate',
-                icon: Handshake,
+                icon: 'Handshake',
               },
               {
                 name: 'Customer Acquisition Cost Calculator',
                 slug: 'customer-acquisition-cost',
                 description: 'Calculate cost per customer from your campaigns',
-                icon: Banknote,
+                icon: 'Banknote',
               },
               {
                 name: 'Campaign ROI Calculator',
                 slug: 'campaign-roi',
                 description: 'Measure overall campaign profitability',
-                icon: TrendingUp,
+                icon: 'TrendingUp',
               },
             ]}
           />
