@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop vs Amazon Associates: Affiliate Earnings Comparison 2025',
+  title: 'TikTok Shop vs Amazon Associates: Affiliate Earnings Comparison 2026',
   description: 'Compare TikTok Shop vs Amazon Associates affiliate programs. Commission rates, requirements, earning potential, and which platform is better for creators.',
   keywords: ['tiktok shop vs amazon', 'affiliate comparison', 'commission rates', 'creator affiliate programs'],
   alternates: {
@@ -28,7 +28,7 @@ export default function TikTokShopVsAmazonPage() {
       <section className="bg-gradient-to-br from-tiktok-pink via-tiktok-red to-tiktok-blue py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Shop vs Amazon Associates: 2025 Comparison
+            TikTok Shop vs Amazon Associates: 2026 Comparison
           </h1>
           <p className="text-heading-md text-white/90 mb-6">Which affiliate program pays creators more?</p>
         </div>
@@ -38,7 +38,7 @@ export default function TikTokShopVsAmazonPage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Affiliate marketing is a major income source for content creators, but choosing between TikTok Shop and Amazon Associates can dramatically impact your earnings. TikTok Shop offers 2-5x higher commission rates with native in-app checkout, while Amazon provides access to millions of products and trusted brand recognition. This comprehensive comparison helps you decide which affiliate program maximizes your creator income in 2025.
+            Affiliate marketing is a major income source for content creators, but choosing between TikTok Shop and Amazon Associates can dramatically impact your earnings. TikTok Shop offers 2-5x higher commission rates with native in-app checkout, while Amazon provides access to millions of products and trusted brand recognition. This comprehensive comparison helps you decide which affiliate program maximizes your creator income in 2026.
           </p>
         </Card>
 

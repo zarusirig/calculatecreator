@@ -9,21 +9,21 @@ import Link from 'next/link';
 import { Briefcase, BookOpen, RefreshCw, BarChart3, TrendingUp, CheckCircle, XCircle, AlertTriangle, Lightbulb, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Influencer Rate Calculator Guide 2025 | How to Price TikTok Sponsorships',
+  title: 'Influencer Rate Calculator Guide 2026 | How to Price TikTok Sponsorships',
   description: 'Master influencer pricing with our comprehensive rate guide. Learn to calculate brand deal rates, negotiate effectively, create packages, and scale your rates as you grow.',
   keywords: ['influencer rates', 'brand deal pricing', 'tiktok sponsorship rates', 'influencer pricing', 'how to charge brands', 'creator rates'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide/',
   },
   openGraph: {
-    title: 'Influencer Rate Calculator Guide 2025 | Price Your Sponsorships',
+    title: 'Influencer Rate Calculator Guide 2026 | Price Your Sponsorships',
     description: 'Master influencer pricing, negotiation, and packaging. Learn what to charge brands at every follower tier.',
     type: 'article',
     url: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Influencer Rate Calculator Guide 2025',
+    title: 'Influencer Rate Calculator Guide 2026',
     description: 'Master influencer pricing and negotiation strategies.',
   },
 };
@@ -43,16 +43,16 @@ const tableOfContents = [
 
 export default function InfluencerRateCalculatorGuidePage() {
   const readingTime = '11 min read';
-  const lastUpdated = 'November 13, 2025';
+  const lastUpdated = 'November 13, 2026';
 
   return (
     <>
       <ArticleSchema
-        headline="Influencer Rate Calculator Guide 2025"
+        headline="Influencer Rate Calculator Guide 2026"
         description="Comprehensive guide to influencer pricing covering rate calculations, benchmarks by tier, negotiation strategies, deliverable pricing, and scaling rates over time."
         url="https://calculatecreator.com/guides/influencer-rate-calculator-guide"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['influencer rates', 'brand deal pricing', 'sponsorship rates', 'creator pricing', 'negotiation strategies']}
       />
       <BreadcrumbSchema
@@ -79,7 +79,7 @@ export default function InfluencerRateCalculatorGuidePage() {
               <Briefcase className="w-10 h-10" />
             </div>
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-              Influencer Rate Calculator Guide 2025
+              Influencer Rate Calculator Guide 2026
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-3xl mx-auto mb-6">
               Master the art of pricing yourself as a TikTok influencer. Learn rate calculations, negotiation tactics, package creation, and how to scale your rates strategically as you grow.

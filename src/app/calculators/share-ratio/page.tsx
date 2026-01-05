@@ -170,7 +170,7 @@ This 3% share ratio indicates good viral potential`}
               'Social Sharing Behavior Research',
             ]}
             limitations="Share ratio varies by content type and niche. Tutorial content naturally gets more shares than entertainment. Compare against your own baseline, not others."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

@@ -5,7 +5,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Edit, BarChart, RotateCcw, DollarSign, Zap, TrendingUp, Target, Briefcase, Gift } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Guides: Monetization & Growth (2025)',
+  title: 'TikTok Creator Guides: Monetization & Growth (2026)',
   description: 'Expert guides on TikTok monetization, brand deals, algorithm optimization & audience growth. Data-backed strategies from successful creators.',
   alternates: {
     canonical: 'https://calculatecreator.com/guides/',
@@ -289,9 +289,9 @@ export default function GuidesPage() {
       status: '',
     },
     {
-      title: 'TikTok Content Strategy 2025',
-      slug: 'content-strategy-2025',
-      description: 'Complete content strategy guide for 2025: trends, algorithms, and engagement optimization.',
+      title: 'TikTok Content Strategy 2026',
+      slug: 'content-strategy-2026',
+      description: 'Complete content strategy guide for 2026: trends, algorithms, and engagement optimization.',
       readTime: '28 min',
       category: 'Content Strategy',
       featured: false,
@@ -897,7 +897,7 @@ export default function GuidesPage() {
                   Content creation strategies, niche selection, viral tactics, and hashtag optimization.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/content-strategy-2025" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/content-strategy-2026" className="text-body-sm text-tiktok-pink hover:underline">
                     Strategy →
                   </Link>
                   <Link href="/guides/niche-selection" className="text-body-sm text-tiktok-pink hover:underline">
@@ -1017,7 +1017,7 @@ export default function GuidesPage() {
         <div className="max-w-5xl mx-auto mb-16">
           <Card className="bg-gradient-to-br from-green-50 to-emerald-50">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              TikTok Creator Success Benchmarks (2025)
+              TikTok Creator Success Benchmarks (2026)
             </h2>
             <p className="text-body-md text-neutral-700 mb-6">
               Understanding industry benchmarks helps you set realistic goals and measure your progress:

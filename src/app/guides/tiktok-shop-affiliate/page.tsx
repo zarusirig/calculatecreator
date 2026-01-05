@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { ShoppingBag, Users, Cake, CheckCircle, Eye, Video, Globe, Package, Sparkles, Scale, BookOpen, Radio, Music, CheckSquare, XCircle, Calculator, Target, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Affiliate Program Guide 2025: Complete Earnings Strategy',
+  title: 'TikTok Shop Affiliate Program Guide 2026: Complete Earnings Strategy',
   description: 'Master TikTok Shop affiliate marketing with our comprehensive guide. Learn commission rates, best-selling categories, content strategies, and how to earn $500-$5,000+/month.',
   keywords: ['tiktok shop affiliate', 'tiktok shop commission', 'affiliate marketing tiktok', 'tiktok shop earnings'],
   alternates: {
@@ -50,7 +50,7 @@ export default function TikTokShopAffiliatePage() {
             <ShoppingBag className="w-8 h-8" />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-            TikTok Shop Affiliate Program Guide 2025
+            TikTok Shop Affiliate Program Guide 2026
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             The complete guide to earning passive income through TikTok Shop affiliate marketing. Learn commission structures, winning strategies, and how top creators earn $5,000-$50,000+ monthly.
@@ -406,7 +406,7 @@ export default function TikTokShopAffiliatePage() {
           <p className="text-body-sm text-neutral-600">
             Commission rates and program terms are subject to change. Always verify current rates in TikTok Shop Seller Center.
             <br />
-            Last updated: December 2025
+            Last updated: December 2026
           </p>
         </div>
       </div>

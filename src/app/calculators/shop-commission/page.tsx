@@ -499,7 +499,7 @@ Annual Earnings: $120 × 12 = $1,440`}
               'Creator earnings reports from TikTok Shop Beta program'
             ]}
             limitations="Actual commission rates vary by product category, seller agreement, and promotional campaigns. Returns reduce final payout. Payment processing takes 7-14 days after delivery confirmation."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -50,7 +50,7 @@ export default function CostPerResultCalculatorPage() {
           reviewCount: 892,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-12-05"
+        dateModified="2026-12-05"
         keywords={['cost per result', 'tiktok cpr', 'cpc calculator', 'cpa calculator', 'tiktok ad costs']}
       />
       <FAQSchema faqs={faqs} />
@@ -337,13 +337,13 @@ Note: "Result" varies by objective—clicks (CPC), conversions (CPA), views (CPV
               { label: 'Benchmarks', value: 'Industry benchmarks are averages; your actual costs depend on niche, targeting, creative quality, and competition' },
             ]}
             dataSources={[
-              'TikTok Ads Manager official cost benchmarks (2024-2025)',
+              'TikTok Ads Manager official cost benchmarks (2024-2026)',
               'Analysis of 1,000+ TikTok advertising campaigns across industries',
               'Digital advertising cost studies from WordStream and AdEspresso',
               'TikTok for Business official documentation and case studies',
             ]}
             limitations="Cost per result varies significantly by industry, geographic targeting, audience size, seasonality, and competition. Learning phase (first 7 days) typically shows inflated costs. Benchmark comparisons should consider your specific context—B2C vs B2B, product price point, and target audience demographics. Lower CPR doesn't always mean better ROI if result quality is poor."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

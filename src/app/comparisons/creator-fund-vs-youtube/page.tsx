@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund vs YouTube Partner Program: 2025 Comparison',
+  title: 'TikTok Creator Fund vs YouTube Partner Program: 2026 Comparison',
   description: 'Complete comparison of TikTok Creator Fund vs YouTube monetization. RPM rates, requirements, earnings potential, and which platform pays more.',
   keywords: ['tiktok vs youtube earnings', 'creator fund vs youtube', 'tiktok rpm vs youtube', 'platform comparison'],
   alternates: {
@@ -27,7 +27,7 @@ export default function CreatorFundVsYouTubePage() {
       <section className="bg-gradient-to-br from-tiktok-pink via-tiktok-red to-tiktok-blue py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Creator Fund vs YouTube: 2025 Comparison
+            TikTok Creator Fund vs YouTube: 2026 Comparison
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             Which platform pays creators more for video content?
@@ -39,7 +39,7 @@ export default function CreatorFundVsYouTubePage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Choosing between TikTok Creator Fund and YouTube Partner Program is one of the most important decisions for video creators. While TikTok offers faster growth and easier monetization, YouTube delivers significantly higher ad revenue per view. This comprehensive comparison breaks down earnings potential, requirements, and which platform is better for your content strategy in 2025.
+            Choosing between TikTok Creator Fund and YouTube Partner Program is one of the most important decisions for video creators. While TikTok offers faster growth and easier monetization, YouTube delivers significantly higher ad revenue per view. This comprehensive comparison breaks down earnings potential, requirements, and which platform is better for your content strategy in 2026.
           </p>
         </Card>
 

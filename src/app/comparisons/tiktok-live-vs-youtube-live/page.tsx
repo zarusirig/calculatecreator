@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle, Lightbulb, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE vs YouTube LIVE Earnings: 2025 Comparison Guide',
+  title: 'TikTok LIVE vs YouTube LIVE Earnings: 2026 Comparison Guide',
   description: 'Compare TikTok LIVE gifts vs YouTube Super Chat earnings, requirements, payment structures, and which platform pays live streamers more.',
   keywords: ['tiktok live vs youtube', 'live streaming earnings', 'super chat vs gifts', 'live monetization comparison'],
   alternates: {
@@ -30,7 +30,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok LIVE vs YouTube LIVE: Earnings Comparison
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">Which platform pays live streamers more in 2025?</p>
+          <p className="text-heading-md text-white/90 mb-6">Which platform pays live streamers more in 2026?</p>
         </div>
       </section>
 
@@ -38,7 +38,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Live streaming monetization has become a major income source for content creators, but choosing between TikTok LIVE and YouTube LIVE can significantly impact your earnings. TikTok's gift economy offers lower barriers to entry with a younger, generous audience, while YouTube provides better revenue splits and more mature monetization options. This comprehensive comparison analyzes which platform pays live streamers more in 2025.
+            Live streaming monetization has become a major income source for content creators, but choosing between TikTok LIVE and YouTube LIVE can significantly impact your earnings. TikTok's gift economy offers lower barriers to entry with a younger, generous audience, while YouTube provides better revenue splits and more mature monetization options. This comprehensive comparison analyzes which platform pays live streamers more in 2026.
           </p>
         </Card>
 

@@ -47,8 +47,8 @@ const faqs = [
       answer: 'Not necessarily. A low CPM with poor engagement or conversions is worse than a high CPM with strong results. Focus on your campaign objective: For awareness, optimize CPM. For conversions, optimize CPA (Cost Per Acquisition) or ROAS (Return on Ad Spend). Quality audience > cheap impressions.',
     },
     {
-      question: 'What is the average TikTok CPM in 2025?',
-      answer: 'As of 2025, average TikTok CPM ranges from $4-$8 for most industries in the US. This varies significantly by country (India/Brazil $0.50-$2, UK/Australia $5-$10), targeting specificity, and seasonality. Q4 (holiday season) sees CPMs increase by 30-50% compared to Q1-Q3.',
+      question: 'What is the average TikTok CPM in 2026?',
+      answer: 'As of 2026, average TikTok CPM ranges from $4-$8 for most industries in the US. This varies significantly by country (India/Brazil $0.50-$2, UK/Australia $5-$10), targeting specificity, and seasonality. Q4 (holiday season) sees CPMs increase by 30-50% compared to Q1-Q3.',
     },
 ];
 
@@ -64,7 +64,7 @@ export default function CPMCPVCalculatorPage() {
           reviewCount: 892,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok cpm calculator', 'cost per mille', 'cpv calculator', 'tiktok ad cost']}
       />
       <FAQSchema faqs={faqs} />
@@ -229,7 +229,7 @@ export default function CPMCPVCalculatorPage() {
                 </ul>
                 <div className="p-4 bg-primary-50 border border-primary-200 rounded-lg">
                   <p className="text-body-sm text-neutral-700">
-                    <strong>Industry Insight:</strong> TikTok CPM has become increasingly competitive as more advertisers join the platform. In 2025, average CPMs range from $4-$8 in the US, but can vary dramatically based on your targeting, creative quality, and industry. Understanding your CPM helps you stay competitive and maximize your advertising ROI.
+                    <strong>Industry Insight:</strong> TikTok CPM has become increasingly competitive as more advertisers join the platform. In 2026, average CPMs range from $4-$8 in the US, but can vary dramatically based on your targeting, creative quality, and industry. Understanding your CPM helps you stay competitive and maximize your advertising ROI.
                   </p>
                 </div>
               </div>
@@ -354,7 +354,7 @@ Impressions per $1 = 100,000 / 1,000 = 100`}
               'Analysis of 500+ TikTok ad campaigns across industries',
             ]}
             limitations="CPM alone doesn't measure campaign success—consider engagement rate, conversion rate, and ROAS. CPM varies significantly by geography, targeting parameters, and seasonality. Lower CPM doesn't always mean better campaign performance."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

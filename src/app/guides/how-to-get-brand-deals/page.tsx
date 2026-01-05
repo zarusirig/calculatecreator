@@ -81,7 +81,7 @@ export default function HowToGetBrandDealsPage() {
             Complete playbook to land your first (and next) sponsorship—from 1K to 100K followers
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 8 min read</span>
             <span className="flex items-center gap-2"><Briefcase className="w-4 h-4" /> For All Creator Tiers</span>
           </div>

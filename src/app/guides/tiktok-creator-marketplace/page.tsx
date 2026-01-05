@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, Briefcase, Users, Heart, CheckCircle, MapPin, Target, DollarSign, Lightbulb, Handshake } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Marketplace: Complete Guide for Brands & Creators 2025',
+  title: 'TikTok Creator Marketplace: Complete Guide for Brands & Creators 2026',
   description: 'Complete guide to TikTok Creator Marketplace. How to join, connect with brands, campaign management, payment terms, and success strategies.',
   keywords: ['tiktok creator marketplace', 'ttcm', 'brand partnerships tiktok', 'creator marketplace guide', 'tiktok brand deals platform'],
   alternates: {
@@ -68,20 +68,20 @@ export default function TikTokCreatorMarketplacePage() {
             />
             <img
               src="/guides/guide-brand-deals-1024.webp"
-              alt="Featured image for TikTok Creator Marketplace: Complete 2025 Guide"
+              alt="Featured image for TikTok Creator Marketplace: Complete 2026 Guide"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Creator Marketplace: Complete 2025 Guide
+            TikTok Creator Marketplace: Complete 2026 Guide
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             How to join, land brand deals, and maximize earnings through TikTok's official creator platform
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 14 min read</span>
             <span className="flex items-center gap-2"><Briefcase className="w-4 h-4" /> Official Platform</span>
           </div>

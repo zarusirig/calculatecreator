@@ -5,8 +5,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, Dumbbell, Trophy, Activity, Smartphone, BookOpen, Zap, Target, Gift, CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Fitness Creators TikTok Earnings Guide (2025)',
-  description: 'Complete guide to fitness creator earnings on TikTok. See how much workout, gym, and health creators earn by follower tier with real 2025 data.',
+  title: 'Fitness Creators TikTok Earnings Guide (2026)',
+  description: 'Complete guide to fitness creator earnings on TikTok. See how much workout, gym, and health creators earn by follower tier with real 2026 data.',
   keywords: ['fitness creators tiktok earnings', 'workout creator income', 'gym influencer earnings', 'fitness niche monetization', 'tiktok fitness earnings'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/fitness-creators-earnings/',
@@ -56,20 +56,20 @@ export default function FitnessCreatorsEarningsPage() {
             />
             <img
               src="/guides/guide-monetization-1024.webp"
-              alt="Featured image for Fitness Creators TikTok Earnings Guide (2025)"
+              alt="Featured image for Fitness Creators TikTok Earnings Guide (2026)"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            Fitness Creators TikTok Earnings Guide (2025)
+            Fitness Creators TikTok Earnings Guide (2026)
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Complete guide to fitness creator earnings on TikTok with real 2025 data. See how much workout, gym, and health creators earn by follower tier.
+            Complete guide to fitness creator earnings on TikTok with real 2026 data. See how much workout, gym, and health creators earn by follower tier.
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6 min read</span>
             <span className="flex items-center gap-1"><Dumbbell className="w-4 h-4" /> Fitness Creator Guide</span>
           </div>
@@ -82,7 +82,7 @@ export default function FitnessCreatorsEarningsPage() {
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
             Fitness is a <strong>top-earning niche on TikTok</strong>, with creators monetizing through brand deals, affiliate programs, digital products, and coaching services.
-            This guide provides realistic 2025 earnings data for fitness creators at every level.
+            This guide provides realistic 2026 earnings data for fitness creators at every level.
           </p>
         </Card>
 

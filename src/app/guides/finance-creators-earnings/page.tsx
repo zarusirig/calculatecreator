@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { DollarSign, Briefcase, Target, Calendar, TrendingUp, BarChart3, AlertTriangle, BarChart } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How Much Do Finance Creators Make on TikTok? FinTok Earnings 2025',
+  title: 'How Much Do Finance Creators Make on TikTok? FinTok Earnings 2026',
   description: 'Complete earnings guide for TikTok finance creators. See real FinTok income data, highest-paying niche breakdown, and monetization strategies.',
   keywords: ['finance creator earnings', 'fintok money', 'financial influencer income', 'personal finance tiktok', 'fintok monetization'],
   alternates: {
@@ -81,7 +81,7 @@ export default function FinanceCreatorsEarningsPage() {
             FinTok earnings breakdown: The highest-paying niche on TikTok—from 1K to 500K followers
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Highest-Paying Niche</span>
             <span className="flex items-center gap-2"><BarChart3 className="w-4 h-4" /> Real FinTok Data</span>
           </div>

@@ -6,7 +6,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Cal
 import { Calendar, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Calculating True Influence Value: Beyond Follower Count (2025)',
+  title: 'Calculating True Influence Value: Beyond Follower Count (2026)',
   description: 'Learn how to calculate your true influence value as a creator. Discover 7 factors that determine real worth beyond follower count for brand negotiations.',
   keywords: ['influencer value calculator', 'true influence value', 'creator worth', 'brand deal rates'],
   alternates: {
@@ -48,8 +48,8 @@ export default function CalculatingTrueInfluenceValuePage() {
         headline="Calculating True Influence Value: Beyond Follower Count"
         description="Complete guide to calculating creator influence value using 7 key factors beyond follower count for better brand negotiations."
         url="https://calculatecreator.com/guides/calculating-true-influence-value"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['influence value', 'creator worth', 'brand deals', 'influencer marketing']}
       />
       <BreadcrumbSchema
@@ -101,7 +101,7 @@ export default function CalculatingTrueInfluenceValuePage() {
             Beyond follower count: Understanding and quantifying your real creator worth
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4 flex-shrink-0" /> Updated: November 13, 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4 flex-shrink-0" /> Updated: November 13, 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4 flex-shrink-0" /> 5 min read</span>
           </div>
         </div>

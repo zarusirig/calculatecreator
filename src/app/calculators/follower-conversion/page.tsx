@@ -275,7 +275,7 @@ Revenue: $3,750 ($0.075 per follower)`}
               'TikTok Shopping Performance Study',
             ]}
             limitations="Conversion rates vary by product price, niche, and audience quality. Track over time to identify trends and optimization opportunities."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

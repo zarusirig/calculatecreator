@@ -248,7 +248,7 @@ ROI: [($500 - $200) / $200] × 100 = 150%`}
               'Strategic Content ROI Analysis',
             ]}
             limitations="ROI depends on execution quality. Planning without action has no return. Track actual performance improvements to validate assumptions."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

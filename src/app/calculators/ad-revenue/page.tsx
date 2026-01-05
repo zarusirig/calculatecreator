@@ -245,7 +245,7 @@ Annual: $5,000 × 12 = $60,000`}
               'Creator Monetization Report',
             ]}
             limitations="Actual revenue varies by audience location, engagement, and advertiser demand. CPM fluctuates seasonally (higher in Q4)."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

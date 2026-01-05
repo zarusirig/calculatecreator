@@ -7,7 +7,7 @@ import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: 'How to Go Viral on TikTok: Formula + Examples (2025)',
+  title: 'How to Go Viral on TikTok: Formula + Examples (2026)',
   description: 'The viral video formula: hooks, trending sounds, optimal length, and posting strategy. Data from 10,000+ viral videos.',
   keywords: ['go viral tiktok', 'viral video formula', 'how to get views', 'tiktok algorithm hack'],
   alternates: {
@@ -43,11 +43,11 @@ export default function HowToGoViralPage() {
     <>
       {/* Article Schema for SEO */}
       <ArticleSchema
-        headline="How to Go Viral on TikTok: Formula + Examples (2025)"
+        headline="How to Go Viral on TikTok: Formula + Examples (2026)"
         description="The viral video formula: hooks, trending sounds, optimal length, and posting strategy. Data from 10,000+ viral videos."
         url="https://calculatecreator.com/guides/how-to-go-viral"
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['go viral tiktok', 'viral video formula', 'how to get views', 'tiktok algorithm hack']}
       />
 
@@ -87,7 +87,7 @@ export default function HowToGoViralPage() {
             <p className="text-heading-md text-white/90 mb-4">The proven formula backed by data from 10,000+ viral videos</p>
             <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 8 min read</span>
-              <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2025</span>
+              <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2026</span>
               <span className="flex items-center gap-2"><Rocket className="w-4 h-4" /> Viral Strategy</span>
             </div>
           </div>

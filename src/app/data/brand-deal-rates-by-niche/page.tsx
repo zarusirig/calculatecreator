@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { TrendingUp, DollarSign, Users, Target, Crown, Zap, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Brand Deal Rates by Niche: TikTok Sponsorship Pricing 2025',
+  title: 'Brand Deal Rates by Niche: TikTok Sponsorship Pricing 2026',
   description: 'Comprehensive brand deal pricing data across 25+ TikTok niches. See which content categories command premium rates and how to price your sponsorships competitively.',
   keywords: ['brand deal rates by niche', 'tiktok sponsorship pricing', 'influencer rates by category', 'brand deal pricing', 'sponsorship benchmarks'],
   alternates: {
@@ -326,7 +326,7 @@ export default function BrandDealRatesByNichePage() {
               <DollarSign className="w-4 h-4" /> $200 - $30K+ Range
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              <TrendingUp className="w-4 h-4" /> Updated Jan 2025
+              <TrendingUp className="w-4 h-4" /> Updated Jan 2026
             </span>
           </div>
         </div>
@@ -618,7 +618,7 @@ export default function BrandDealRatesByNichePage() {
         <Card className="bg-yellow-50 border-2 border-yellow-300">
           <h4 className="font-semibold text-yellow-900 mb-3">Data Sources & Disclaimer</h4>
           <p className="text-body-sm text-neutral-700 leading-relaxed mb-3">
-            Brand deal rate data compiled from: (1) 1,000+ creator surveys across 25+ niches (Dec 2024 - Jan 2025), (2) Publicly disclosed rates from creator case studies and YouTube videos, (3) Influencer marketing platform rate cards (CreatorIQ, AspireIQ, Hashtag Paid, Creator.co), (4) Brand marketing budgets and CPM benchmarks, and (5) TikTok Creator Marketplace pricing guidelines.
+            Brand deal rate data compiled from: (1) 1,000+ creator surveys across 25+ niches (Dec 2024 - Jan 2026), (2) Publicly disclosed rates from creator case studies and YouTube videos, (3) Influencer marketing platform rate cards (CreatorIQ, AspireIQ, Hashtag Paid, Creator.co), (4) Brand marketing budgets and CPM benchmarks, and (5) TikTok Creator Marketplace pricing guidelines.
           </p>
           <p className="text-body-sm text-neutral-700 leading-relaxed">
             <strong>Rates are median ranges, not guarantees.</strong> Your actual deals depend on: negotiation skills, portfolio quality, audience demographics, brand budgets, campaign scope, and timing. Use these as negotiation starting points and validation, not rigid rules. For personalized rate calculations based on your metrics, use our <Link href="/calculators/brand-deal-rate" className="text-yellow-900 hover:underline font-semibold">brand deal calculator</Link>.

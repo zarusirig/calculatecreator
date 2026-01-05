@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Scale, CheckCircle, Calendar, XCircle, Shield, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Sponsorship Disclosure Guidelines: FTC Compliance (2025)',
+  title: 'TikTok Sponsorship Disclosure Guidelines: FTC Compliance (2026)',
   description: 'Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations.',
   keywords: ['tiktok ftc compliance', 'sponsorship disclosure', 'how to disclose sponsored content', 'tiktok ad disclosure'],
   alternates: {
@@ -62,7 +62,7 @@ export default function SponsorshipDisclosurePage() {
             </span>
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4 flex-shrink-0" />
-              Updated: November 2025
+              Updated: November 2026
             </span>
           </div>
         </div>

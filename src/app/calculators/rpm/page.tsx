@@ -64,7 +64,7 @@ export default function RPMCalculatorPage() {
           </Card>
 
           <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">TikTok RPM Benchmarks by Niche (2025)</h2>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">TikTok RPM Benchmarks by Niche (2026)</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-left">
                 <thead>
@@ -140,7 +140,7 @@ RPM: ($3.00 / 100,000) × 1000 = $0.030`}
             assumptions={[{ label: 'Benchmarks', value: 'Excellent: $0.04+, Good: $0.03-0.04, Average: $0.02-0.03' }]}
             dataSources={['Creator Fund data', 'Industry averages 2024']}
             limitations="RPM varies by niche, audience location, and engagement."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection pageName="RPM Calculator" faqs={faqData} />

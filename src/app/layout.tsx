@@ -109,14 +109,14 @@ export default function RootLayout({
         <link 
           rel="preload" 
           as="image" 
-          href="/images/homepage-hero/2025-12-05T15-49-14-244Z_1-1024.avif" 
+          href="/images/homepage-hero/2026-12-05T15-49-14-244Z_1-1024.avif" 
           type="image/avif" 
           fetchPriority="high" 
         />
         <link 
           rel="preload" 
           as="image" 
-          href="/images/homepage-hero/2025-12-05T15-49-14-244Z_1-1024.webp" 
+          href="/images/homepage-hero/2026-12-05T15-49-14-244Z_1-1024.webp" 
           type="image/webp" 
           fetchPriority="high" 
         />

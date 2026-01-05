@@ -50,7 +50,7 @@ export default function AudienceOverlapCalculatorPage() {
           reviewCount: 654,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-12-05"
+        dateModified="2026-12-05"
         keywords={['audience overlap', 'tiktok targeting', 'campaign optimization', 'audience analysis']}
       />
       <FAQSchema faqs={faqs} />
@@ -380,7 +380,7 @@ Interpretation: 25% overlap means 100K users are targeted twice, reducing effici
               'Platform-specific overlap benchmarks from TikTok for Business documentation',
             ]}
             limitations="Audience overlap calculations are estimates—TikTok doesn't provide exact overlap figures like Facebook. Actual overlap may vary based on cookie tracking, device targeting, and user behavior. Some overlap may be strategic (retargeting engaged users). Benchmarks assume similar campaign objectives—awareness vs conversion campaigns may tolerate different overlap levels. Geographic and seasonal factors affect audience composition. Results don't account for cross-device users or logged-out traffic."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

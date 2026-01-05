@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, CheckCircle, BarChart3, Users, Eye, MapPin, DollarSign, Target, AlertTriangle, XCircle, Smartphone, Gift, ShoppingCart, Handshake } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Monetization Requirements: Complete 2025 Eligibility Guide',
+  title: 'TikTok Monetization Requirements: Complete 2026 Eligibility Guide',
   description: 'Complete guide to TikTok monetization requirements for Creator Fund, LIVE Gifts, TikTok Shop, and brand deals. Eligibility criteria, timelines, and how to qualify.',
   keywords: ['tiktok monetization requirements', 'tiktok eligibility', 'creator fund requirements', 'tiktok live requirements', 'tiktok shop eligibility'],
   alternates: {
@@ -84,20 +84,20 @@ export default function TikTokMonetizationRequirementsPage() {
             />
             <img
               src="/guides/guide-monetization-1024.webp"
-              alt="Featured image for TikTok Monetization Requirements: Complete 2025 Guide"
+              alt="Featured image for TikTok Monetization Requirements: Complete 2026 Guide"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Monetization Requirements: Complete 2025 Guide
+            TikTok Monetization Requirements: Complete 2026 Guide
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             Everything you need to know about eligibility requirements for every TikTok monetization feature
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> All Features Covered</span>
           </div>
@@ -654,7 +654,7 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card className="bg-neutral-100">
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">Legal Disclaimer</h3>
           <p className="text-body-sm text-neutral-700 mb-4">
-            This guide provides educational information about TikTok monetization requirements based on publicly available information and creator experiences as of December 2025. Requirements, rates, and program availability are subject to change by TikTok without notice.
+            This guide provides educational information about TikTok monetization requirements based on publicly available information and creator experiences as of December 2026. Requirements, rates, and program availability are subject to change by TikTok without notice.
           </p>
           <p className="text-body-sm text-neutral-700 mb-4">
             Actual earnings vary significantly based on content quality, niche, audience demographics, geographic location, and TikTok's algorithm. Past performance and examples cited do not guarantee future results. Meeting minimum requirements does not guarantee acceptance into monetization programs.

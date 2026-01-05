@@ -7,7 +7,7 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { FileText, DollarSign, Laptop, BookOpen, Sparkles, Smile, Film, Gamepad2, BarChart3, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund: Complete Guide (Rates, Requirements, Payment) 2025',
+  title: 'TikTok Creator Fund: Complete Guide (Rates, Requirements, Payment) 2026',
   description: 'Everything about the TikTok Creator Fund: RPM rates, eligibility requirements, payment schedule, how much you can earn, and strategies to maximize earnings.',
   keywords: ['tiktok creator fund', 'creator fund rates', 'tiktok rpm', 'creator fund requirements', 'tiktok earnings'],
   alternates: {
@@ -20,11 +20,11 @@ export default function CreatorFundGuidePage() {
     <>
       {/* Article Schema for SEO */}
       <ArticleSchema
-        headline="TikTok Creator Fund: Complete Guide (2025)"
+        headline="TikTok Creator Fund: Complete Guide (2026)"
         description="Everything you need to know about the TikTok Creator Fund: RPM rates, eligibility requirements, payment schedule, realistic earnings, and optimization strategies."
         url="https://calculatecreator.com/guides/tiktok-creator-fund"
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok creator fund', 'creator fund rates', 'tiktok rpm', 'creator fund requirements', 'tiktok earnings']}
       />
 
@@ -39,7 +39,7 @@ export default function CreatorFundGuidePage() {
           </nav>
 
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-            TikTok Creator Fund: Complete Guide (2025)
+            TikTok Creator Fund: Complete Guide (2026)
           </h1>
           <p className="text-body-lg text-neutral-600 mb-4">
             Everything you need to know about the TikTok Creator Fund: RPM rates, eligibility requirements, payment schedule, realistic earnings, and optimization strategies.
@@ -47,7 +47,7 @@ export default function CreatorFundGuidePage() {
           <div className="flex items-center space-x-4 text-body-sm text-neutral-600 mb-8">
             <span className="flex items-center gap-2"><FileText className="w-4 h-4 flex-shrink-0" /> 25 min read</span>
             <span>•</span>
-            <span>Last updated: November 13, 2025</span>
+            <span>Last updated: November 13, 2026</span>
           </div>
 
           {/* Author Byline */}

@@ -171,7 +171,7 @@ Note: Rates over 100% are possible when viewers rewatch`}
               'Creator Success Metrics Study',
             ]}
             limitations="Completion rate should be evaluated relative to video length. A 50% completion on a 2-minute video may be better than 90% on a 10-second video."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

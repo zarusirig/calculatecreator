@@ -5,7 +5,7 @@ import { CheckCircle, Briefcase, BarChart3, RefreshCw } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'US-China Deal Reached to Keep TikTok Operational | TikTok News',
-  description: 'A framework agreement announced in September 2025 between the Trump administration and China aims to maintain TikTok\'s operations in the United States through collaboration.',
+  description: 'A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok\'s operations in the United States through collaboration.',
   keywords: ['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/',
@@ -58,7 +58,7 @@ export default function USChinaDealPage() {
               Regulatory Update
             </span>
             <span className="text-white/80 text-label-sm">
-              Published: September 15, 2025
+              Published: September 15, 2026
             </span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
@@ -91,7 +91,7 @@ export default function USChinaDealPage() {
             What Happened?
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            On September 15, 2025, CNN and other major news outlets reported that the Trump administration had reached a framework agreement with the Chinese government regarding TikTok's continued operation in the United States. The deal represents months of high-level diplomatic negotiations and marks a significant shift from previous hard-line stances on both sides.
+            On September 15, 2026, CNN and other major news outlets reported that the Trump administration had reached a framework agreement with the Chinese government regarding TikTok's continued operation in the United States. The deal represents months of high-level diplomatic negotiations and marks a significant shift from previous hard-line stances on both sides.
           </p>
           <p className="text-body-md text-neutral-700 mb-4">
             The framework focuses on maintaining TikTok's operations through what officials describe as "collaboration and reduced investment barriers," rather than forcing a complete divestiture from ByteDance, TikTok's Chinese parent company.
@@ -300,18 +300,18 @@ export default function USChinaDealPage() {
                   <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">2024</div>
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-1">Divestiture Deadline Set</h4>
-                    <p className="text-body-sm text-neutral-700">January 2025 deadline established; ByteDance explores options but resists full sale</p>
+                    <p className="text-body-sm text-neutral-700">January 2026 deadline established; ByteDance explores options but resists full sale</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">Early 2025</div>
+                  <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">Early 2026</div>
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-1">Multiple Extensions</h4>
                     <p className="text-body-sm text-neutral-700">Four enforcement delays as back-channel negotiations intensify</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">Sept 2025</div>
+                  <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">Sept 2026</div>
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-1">Framework Agreement Announced</h4>
                     <p className="text-body-sm text-neutral-700">Breakthrough deal focusing on collaboration rather than forced divestiture</p>
@@ -357,7 +357,7 @@ export default function USChinaDealPage() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 text-white text-sm font-bold flex items-center justify-center">Q4</div>
                   <div>
-                    <h4 className="font-semibold text-neutral-800 mb-1">Q4 2025: Framework Finalization</h4>
+                    <h4 className="font-semibold text-neutral-800 mb-1">Q4 2026: Framework Finalization</h4>
                     <p className="text-body-sm text-neutral-700">Legal teams work out detailed implementation terms, regulatory approval processes begin</p>
                   </div>
                 </div>
@@ -450,7 +450,7 @@ export default function USChinaDealPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/news/tiktok-ban-delayed-december-2025"
+                href="/news/tiktok-ban-delayed-december-2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
@@ -459,8 +459,8 @@ export default function USChinaDealPage() {
               </a>
             </li>
             <li>
-              <Link href="/news/tiktok-ban-delayed-december-2025" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
-                Related: TikTok Ban Enforcement Delayed Until December 16, 2025 →
+              <Link href="/news/tiktok-ban-delayed-december-2026" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
+                Related: TikTok Ban Enforcement Delayed Until December 16, 2026 →
               </Link>
             </li>
             <li>

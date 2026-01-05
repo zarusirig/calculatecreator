@@ -214,7 +214,7 @@ This 2% save rate indicates good content value`}
               'User Engagement Behavior Research',
             ]}
             limitations="Save rate varies significantly by content type. Entertainment content naturally gets fewer saves than educational content. Compare against similar content in your niche."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

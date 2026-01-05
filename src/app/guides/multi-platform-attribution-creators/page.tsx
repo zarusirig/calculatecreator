@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Multi-Platform Attribution for Creators: Complete Tracking Guide (2025)',
+  title: 'Multi-Platform Attribution for Creators: Complete Tracking Guide (2026)',
   description: 'Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, Instagram. Essential analytics for creator growth.',
   keywords: ['multi-platform attribution', 'cross-platform tracking', 'creator analytics', 'roi tracking'],
   alternates: {
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: 'What are UTM parameters and how do creators use them?',
-    answer: 'UTM parameters are tags added to URLs that identify traffic sources. Example: yoursite.com?utm_source=tiktok&utm_campaign=spring2025. This tells analytics tools exactly where visitors came from, allowing precise ROI tracking.',
+    answer: 'UTM parameters are tags added to URLs that identify traffic sources. Example: yoursite.com?utm_source=tiktok&utm_campaign=spring2026. This tells analytics tools exactly where visitors came from, allowing precise ROI tracking.',
   },
   {
     question: 'Should I focus on all platforms or just my best performer?',
@@ -51,8 +51,8 @@ export default function MultiPlatformAttributionPage() {
         headline="Multi-Platform Attribution for Creators: Complete Tracking Guide"
         description="Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, and Instagram with proven analytics frameworks."
         url="https://calculatecreator.com/guides/multi-platform-attribution-creators"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['multi-platform', 'attribution', 'analytics', 'creator tracking']}
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function MultiPlatformAttributionPage() {
             Track performance, ROI, and revenue across all your platforms
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2025</span>
+            <span>📅 Updated: November 13, 2026</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>
@@ -212,7 +212,7 @@ export default function MultiPlatformAttributionPage() {
                 <div className="p-3 bg-white rounded">
                   <p className="text-body-sm font-semibold text-neutral-900 mb-2">Example UTM Structure:</p>
                   <code className="block p-2 bg-neutral-50 rounded text-xs mt-2">
-                    yoursite.com/product?utm_source=tiktok&utm_medium=bio&utm_campaign=spring2025
+                    yoursite.com/product?utm_source=tiktok&utm_medium=bio&utm_campaign=spring2026
                   </code>
                 </div>
               </div>
@@ -423,13 +423,13 @@ export default function MultiPlatformAttributionPage() {
             </div>
             <div className="p-4 bg-neutral-50 rounded-lg">
               <p className="text-body-sm font-semibold text-neutral-900 mb-2">utm_campaign (Recommended)</p>
-              <p className="text-body-sm text-neutral-700 mb-2">The specific campaign or timeframe: spring_2025, product_launch, black_friday</p>
-              <code className="block p-2 bg-white rounded text-xs">?utm_source=tiktok&utm_medium=bio&utm_campaign=spring2025</code>
+              <p className="text-body-sm text-neutral-700 mb-2">The specific campaign or timeframe: spring_2026, product_launch, black_friday</p>
+              <code className="block p-2 bg-white rounded text-xs">?utm_source=tiktok&utm_medium=bio&utm_campaign=spring2026</code>
             </div>
             <div className="p-4 bg-neutral-50 rounded-lg">
               <p className="text-body-sm font-semibold text-neutral-900 mb-2">utm_content (Optional)</p>
               <p className="text-body-sm text-neutral-700 mb-2">Specific content piece: video_id, post_type</p>
-              <code className="block p-2 bg-white rounded text-xs">?utm_source=tiktok&utm_medium=video&utm_campaign=spring2025&utm_content=tutorial_series</code>
+              <code className="block p-2 bg-white rounded text-xs">?utm_source=tiktok&utm_medium=video&utm_campaign=spring2026&utm_content=tutorial_series</code>
             </div>
           </div>
         </Card>

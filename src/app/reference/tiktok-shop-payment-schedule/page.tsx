@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Payment Schedule: When You Get Paid (2025)',
+  title: 'TikTok Shop Payment Schedule: When You Get Paid (2026)',
   description: 'Complete guide to TikTok Shop payment schedule, processing times, minimum thresholds, payment methods, and troubleshooting delayed payments.',
   keywords: ['tiktok shop payment schedule', 'when does tiktok shop pay', 'tiktok affiliate payment timeline', 'tiktok shop payout date', 'tiktok shop payment processing'],
   alternates: {
@@ -70,7 +70,7 @@ export default function TikTokShopPaymentSchedulePage() {
             Complete guide to payment timing, processing, thresholds, and troubleshooting
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Payment Reference</span>
           </div>

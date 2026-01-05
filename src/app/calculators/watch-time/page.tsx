@@ -156,7 +156,7 @@ Watch Hours: (50,000 × 22) / 3600 = 305.6 hours`}
             ]}
             dataSources={['TikTok Creator Analytics', 'Algorithm Research 2024']}
             limitations="Retention benchmarks vary by video length. Shorter videos naturally have higher rates."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

@@ -6,7 +6,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Cal
 import { Calendar, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Understanding TikTok Payment Delays: Complete Guide (2025)',
+  title: 'Understanding TikTok Payment Delays: Complete Guide (2026)',
   description: 'Complete guide to TikTok payment schedules and delays. Learn Creator Fund, LIVE Gifts, Shop, and brand deal payment timelines with troubleshooting tips.',
   keywords: ['tiktok payment delay', 'creator fund payment schedule', 'when does tiktok pay', 'tiktok payout timeline'],
   alternates: {
@@ -48,8 +48,8 @@ export default function TikTokPaymentDelaysPage() {
         headline="Understanding TikTok Payment Delays: Complete Guide"
         description="Complete guide to TikTok payment schedules, timelines, and troubleshooting payment delays across Creator Fund, LIVE Gifts, and TikTok Shop."
         url="https://calculatecreator.com/guides/tiktok-payment-delays"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok payments', 'payment delays', 'creator fund payout', 'live gifts withdrawal']}
       />
       <BreadcrumbSchema
@@ -101,7 +101,7 @@ export default function TikTokPaymentDelaysPage() {
             Complete guide to payment schedules, timelines, and resolving delays
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 4 min read</span>
           </div>
         </div>

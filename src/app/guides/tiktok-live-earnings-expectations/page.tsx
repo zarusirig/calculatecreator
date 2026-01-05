@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2025)',
+  title: 'TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2026)',
   description: 'Realistic earnings expectations for TikTok LIVE by follower tier. Learn how much you can earn from LIVE gifts, factors affecting income, and maximization strategies.',
   keywords: ['tiktok live earnings', 'tiktok gifts income', 'how much can you make tiktok live', 'tiktok live earnings expectations', 'tiktok live income by followers'],
   alternates: {
@@ -210,7 +210,7 @@ export default function TikTokLiveEarningsExpectationsPage() {
             Realistic income guide by follower tier with earnings potential, factors, and maximization strategies
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Earnings Guide</span>
           </div>

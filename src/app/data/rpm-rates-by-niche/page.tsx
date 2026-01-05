@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, BarChart3, DollarSign, Trophy, Sparkles, Laugh } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok RPM Rates by Niche: 2025 Benchmark Data',
+  title: 'TikTok RPM Rates by Niche: 2026 Benchmark Data',
   description: 'Complete RPM (Revenue Per Mille) rates for TikTok Creator Fund across 20+ niches. See which content types earn the most per 1,000 views.',
   keywords: ['tiktok rpm rates', 'creator fund rpm by niche', 'tiktok earnings per view', 'rpm benchmark', 'tiktok niche earnings'],
   alternates: {
@@ -121,10 +121,10 @@ export default function RPMRatesByNichePage() {
             TikTok RPM Rates by Niche
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            2025 benchmark data: See which content niches earn the most (and least) per 1,000 views
+            2026 benchmark data: See which content niches earn the most (and least) per 1,000 views
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
             <span className="flex items-center gap-1"><BarChart3 className="w-4 h-4" /> 20+ Niches Analyzed</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Real Creator Data</span>
           </div>
@@ -179,7 +179,7 @@ export default function RPMRatesByNichePage() {
           <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
             <h3 className="font-semibold text-yellow-900 mb-2">⚠️ Important Context</h3>
             <p className="text-body-sm text-neutral-700">
-              These are <strong>average RPM ranges</strong> from real creator reports (Jan 2025). Your actual RPM may vary based on: viewer location (US views pay more), watch time, engagement rate, and seasonal advertiser demand. Use these as benchmarks, not guarantees.
+              These are <strong>average RPM ranges</strong> from real creator reports (Jan 2026). Your actual RPM may vary based on: viewer location (US views pay more), watch time, engagement rate, and seasonal advertiser demand. Use these as benchmarks, not guarantees.
             </p>
           </div>
         </Card>
@@ -376,7 +376,7 @@ export default function RPMRatesByNichePage() {
 
         {/* Historical Trends */}
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">RPM Trends: How Rates Have Changed (2022-2025)</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">RPM Trends: How Rates Have Changed (2022-2026)</h2>
           <div className="space-y-4">
             <p className="text-body-md text-neutral-700">
               Creator Fund RPM has fluctuated significantly over the past three years due to Creator Fund pool dilution, advertiser demand shifts, and TikTok's evolving monetization priorities:
@@ -397,7 +397,7 @@ export default function RPMRatesByNichePage() {
                 </p>
               </div>
               <div className="p-5 bg-blue-50 rounded-lg border border-blue-200">
-                <h4 className="font-semibold text-neutral-900 mb-2">2025: Stabilization</h4>
+                <h4 className="font-semibold text-neutral-900 mb-2">2026: Stabilization</h4>
                 <p className="text-display-sm font-bold text-blue-600 mb-2">$0.015-$0.05</p>
                 <p className="text-body-sm text-neutral-700">
                   Rates stabilized as TikTok improved ad targeting. High-value niches (finance, business) recovered somewhat. Low-effort content sees minimal earnings.

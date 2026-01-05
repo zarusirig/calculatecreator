@@ -50,7 +50,7 @@ export default function AdSpendCalculatorPage() {
           reviewCount: 743,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-12-05"
+        dateModified="2026-12-05"
         keywords={['tiktok ad budget', 'ad spend calculator', 'tiktok budget planning', 'campaign budget']}
       />
       <FAQSchema faqs={faqs} />
@@ -397,7 +397,7 @@ Monthly Budget = $125 × 30 = $3,750/month`}
               'TikTok for Business best practices and scaling documentation',
             ]}
             limitations="Budget calculations are estimates based on expected cost per result. Actual costs vary by industry, targeting precision, creative quality, competition, and seasonal factors. Learning phase typically lasts 7 days with 20-50% higher costs. Platform algorithm changes and market conditions affect costs. Budget recommendations don't guarantee specific results—testing and optimization are essential. Minimum daily budgets apply per campaign and ad group."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

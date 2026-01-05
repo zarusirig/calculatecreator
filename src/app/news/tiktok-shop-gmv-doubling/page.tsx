@@ -4,8 +4,8 @@ import { Card } from '@/components/ui/Card';
 import { Globe, Smartphone, Briefcase, Users, DollarSign, Gift, Rocket } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Projected to Double GMV by End of 2025 | TikTok News',
-  description: 'Industry projections indicate TikTok Shop\'s global gross merchandise value could double by the end of 2025, outpacing competitors in social commerce.',
+  title: 'TikTok Shop Projected to Double GMV by End of 2026 | TikTok News',
+  description: 'Industry projections indicate TikTok Shop\'s global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce.',
   keywords: ['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling/',
@@ -42,7 +42,7 @@ export default function TikTokShopGMVDoublingPage() {
             />
             <img
               src="/news/news-shop-1024.webp"
-              alt="Featured image for TikTok Shop GMV Projected to Double by End of 2025"
+              alt="Featured image for TikTok Shop GMV Projected to Double by End of 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -55,10 +55,10 @@ export default function TikTokShopGMVDoublingPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Financial Growth
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2025</span>
+            <span className="text-white/80 text-label-sm">Published: November 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Shop GMV Projected to Double by End of 2025
+            TikTok Shop GMV Projected to Double by End of 2026
           </h1>
           <p className="text-heading-md text-white/90">
             Industry analysts forecast explosive growth outpacing traditional social commerce competitors
@@ -87,7 +87,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <p className="text-display-md font-bold text-green-600">$20B</p>
               </div>
               <div>
-                <p className="text-label-sm text-neutral-600 mb-1">2025 Projected GMV</p>
+                <p className="text-label-sm text-neutral-600 mb-1">2026 Projected GMV</p>
                 <p className="text-display-md font-bold text-emerald-600">$40B+</p>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function TikTokShopGMVDoublingPage() {
             </div>
           </div>
           <p className="text-body-md text-neutral-700">
-            According to industry analysts and leaked internal projections, TikTok Shop's global gross merchandise value (GMV) is on track to reach $40+ billion by December 2025, effectively doubling from the $20 billion recorded in 2024.
+            According to industry analysts and leaked internal projections, TikTok Shop's global gross merchandise value (GMV) is on track to reach $40+ billion by December 2026, effectively doubling from the $20 billion recorded in 2024.
           </p>
         </Card>
 
@@ -112,7 +112,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <h3 className="text-heading-sm font-semibold text-blue-900">Geographic Expansion</h3>
               </div>
               <p className="text-body-sm text-blue-800">
-                TikTok Shop launched in France, Germany, Italy, and other new markets in 2025, dramatically expanding the addressable customer base.
+                TikTok Shop launched in France, Germany, Italy, and other new markets in 2026, dramatically expanding the addressable customer base.
               </p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
@@ -193,13 +193,13 @@ export default function TikTokShopGMVDoublingPage() {
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Improved User Experience</h3>
               <p className="text-body-sm text-blue-800">
-                TikTok has streamlined checkout, added one-click purchasing, integrated Shop tabs directly into creator profiles, and improved product discovery algorithms. Cart abandonment rates dropped 35% in 2025.
+                TikTok has streamlined checkout, added one-click purchasing, integrated Shop tabs directly into creator profiles, and improved product discovery algorithms. Cart abandonment rates dropped 35% in 2026.
               </p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-purple-900 mb-2">Creator Ecosystem Expansion</h3>
               <p className="text-body-sm text-purple-800">
-                Over 200,000 creators joined TikTok Shop affiliate programs in 2025. As creator participation grows, so does product promotion and sales velocity across the platform.
+                Over 200,000 creators joined TikTok Shop affiliate programs in 2026. As creator participation grows, so does product promotion and sales velocity across the platform.
               </p>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
@@ -221,7 +221,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <tr className="bg-neutral-100">
                   <th className="p-3 text-left text-heading-sm font-semibold">Region</th>
                   <th className="p-3 text-left text-heading-sm font-semibold">2024 GMV</th>
-                  <th className="p-3 text-left text-heading-sm font-semibold">2025 Projected GMV</th>
+                  <th className="p-3 text-left text-heading-sm font-semibold">2026 Projected GMV</th>
                   <th className="p-3 text-left text-heading-sm font-semibold">Growth Rate</th>
                 </tr>
               </thead>
@@ -268,7 +268,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <p className="text-heading-sm font-semibold text-neutral-900 mb-2">Scenario: Nano Creator (5K followers)</p>
                 <p className="text-body-sm text-neutral-700 mb-2">
                   <strong>2024 Monthly Earnings:</strong> $150-$300<br/>
-                  <strong>2025 Projected Earnings:</strong> $300-$600<br/>
+                  <strong>2026 Projected Earnings:</strong> $300-$600<br/>
                   <strong>Annual Increase:</strong> $1,800-$3,600 more per year
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <p className="text-heading-sm font-semibold text-neutral-900 mb-2">Scenario: Micro Creator (25K followers)</p>
                 <p className="text-body-sm text-neutral-700 mb-2">
                   <strong>2024 Monthly Earnings:</strong> $1,000-$2,000<br/>
-                  <strong>2025 Projected Earnings:</strong> $2,000-$4,000<br/>
+                  <strong>2026 Projected Earnings:</strong> $2,000-$4,000<br/>
                   <strong>Annual Increase:</strong> $12,000-$24,000 more per year
                 </p>
               </div>
@@ -284,7 +284,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <p className="text-heading-sm font-semibold text-neutral-900 mb-2">Scenario: Mid-Tier Creator (200K followers)</p>
                 <p className="text-body-sm text-neutral-700 mb-2">
                   <strong>2024 Monthly Earnings:</strong> $5,000-$10,000<br/>
-                  <strong>2025 Projected Earnings:</strong> $10,000-$20,000<br/>
+                  <strong>2026 Projected Earnings:</strong> $10,000-$20,000<br/>
                   <strong>Annual Increase:</strong> $60,000-$120,000 more per year
                 </p>
               </div>
@@ -393,7 +393,7 @@ export default function TikTokShopGMVDoublingPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="https://www.webpronews.com/tiktok-shops-explosive-ascent-reshaping-retail-in-2025/"
+                href="https://www.webpronews.com/tiktok-shops-explosive-ascent-reshaping-retail-in-2026/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

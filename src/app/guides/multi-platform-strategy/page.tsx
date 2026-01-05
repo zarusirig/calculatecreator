@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { DollarSign, TrendingUp, Shield, CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Multi-Platform Creator Strategy 2025: TikTok, YouTube, Instagram Guide',
+  title: 'Multi-Platform Creator Strategy 2026: TikTok, YouTube, Instagram Guide',
   description: 'Complete guide to multi-platform content strategy. How to repurpose content, maximize earnings across TikTok, YouTube, Instagram, and more.',
   keywords: ['multi-platform strategy', 'content repurposing', 'tiktok youtube instagram', 'creator monetization strategy'],
   alternates: {
@@ -40,13 +40,13 @@ export default function MultiPlatformStrategyPage() {
             />
             <img
               src="/guides/guide-analytics-1024.webp"
-              alt="Featured image for Multi-Platform Creator Strategy 2025"
+              alt="Featured image for Multi-Platform Creator Strategy 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">Multi-Platform Creator Strategy 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">Multi-Platform Creator Strategy 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Maximize your reach and earnings across all platforms</p>
         </div>
       </section>

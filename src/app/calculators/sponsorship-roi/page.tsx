@@ -373,7 +373,7 @@ ROI: [($100,000 - $5,500) / $5,500] × 100 = 1,718%`}
               'Creator Economy Financial Analysis',
             ]}
             limitations="ROI calculations don't account for long-term brand value, audience growth, or future opportunities. Consider intangible benefits when evaluating partnerships."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

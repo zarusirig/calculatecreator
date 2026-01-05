@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { DollarSign, BarChart3, TrendingUp, Target, Handshake, ChartBar, Rocket, CheckCircle2, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Complete Guide to TikTok Calculators 2025 | 9 Free Tools for Creators',
+  title: 'Complete Guide to TikTok Calculators 2026 | 9 Free Tools for Creators',
   description: 'Master TikTok success with our comprehensive guide to 9 calculators. From earnings and engagement to business ROI - everything you need.',
   keywords: ['tiktok calculators', 'creator tools', 'tiktok earnings calculator', 'engagement calculator', 'brand deal calculator'],
   alternates: {
@@ -181,7 +181,7 @@ export default function CompleteTikTokCalculatorGuidePage() {
             />
             <img
               src="/guides/guide-monetization-1024.webp"
-              alt="Featured image for Complete Guide to TikTok Calculators 2025"
+              alt="Featured image for Complete Guide to TikTok Calculators 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -191,7 +191,7 @@ export default function CompleteTikTokCalculatorGuidePage() {
             9 Free Tools for TikTok Success
           </span>
           <h1 className="text-display-lg font-bold text-white mb-6">
-            Complete Guide to TikTok Calculators 2025
+            Complete Guide to TikTok Calculators 2026
           </h1>
           <p className="text-heading-md text-white/90 mb-8 max-w-2xl mx-auto">
             Master every aspect of TikTok success with data-driven insights. From earnings estimation to engagement optimization, these calculators help creators make smarter decisions.

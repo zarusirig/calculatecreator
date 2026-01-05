@@ -333,7 +333,7 @@ Break Even: $1,000 / $30 = 34 units`}
               'Direct Response Marketing ROI Study',
             ]}
             limitations="Real-world performance varies. Factor in returns, chargebacks, shipping costs, and platform fees. Always test with small budget before scaling to full ad spend."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

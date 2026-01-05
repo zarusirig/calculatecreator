@@ -6,7 +6,7 @@ import { Calendar, Clock, TrendingUp, AlertTriangle, XCircle, CheckCircle2 } fro
 
 export const metadata: Metadata = {
   title: 'How to Increase TikTok Creator Fund Earnings: 12 Proven Strategies',
-  description: 'Maximize your TikTok Creator Fund income with proven tactics to boost RPM, increase views, and optimize content strategy. Data-backed strategies for 2025.',
+  description: 'Maximize your TikTok Creator Fund income with proven tactics to boost RPM, increase views, and optimize content strategy. Data-backed strategies for 2026.',
   keywords: ['increase creator fund earnings', 'tiktok rpm', 'creator fund optimization', 'tiktok earnings tips', 'boost creator fund income'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/how-to-increase-creator-fund-earnings/',
@@ -81,7 +81,7 @@ export default function IncreaseCreatorFundEarningsPage() {
             12 proven strategies to maximize your RPM, boost views, and 2-3x your monthly Creator Fund income
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 7 min read</span>
             <span className="flex items-center gap-2"><TrendingUp className="w-4 h-4" /> Data-Backed Strategies</span>
           </div>

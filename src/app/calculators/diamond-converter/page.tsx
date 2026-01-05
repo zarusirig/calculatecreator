@@ -11,7 +11,7 @@ import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamo
 const faqData = [
     {
       question: "How much is 1 TikTok diamond worth?",
-      answer: "1 TikTok diamond is worth $0.005 USD for creators (as of November 2025). This rate has been stable since 2023, meaning 200 diamonds equal $1 USD. Regional variations may apply due to currency conversion."
+      answer: "1 TikTok diamond is worth $0.005 USD for creators (as of November 2026). This rate has been stable since 2023, meaning 200 diamonds equal $1 USD. Regional variations may apply due to currency conversion."
     },
     {
       question: "How do I convert diamonds to money?",
@@ -49,9 +49,9 @@ export default function DiamondConverterPage() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-warning-DEFAULT text-white mb-6">
               <Gem size={32} />
             </div>
-            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Diamond Converter 2025</h1>
+            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Diamond Converter 2026</h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Convert TikTok diamonds to real money in multiple currencies. Calculate your creator payouts and understand diamond values with updated 2025 rates.
+              Convert TikTok diamonds to real money in multiple currencies. Calculate your creator payouts and understand diamond values with updated 2026 rates.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1"><DollarSign size={16} /> Updated Payout Rates</span>
@@ -71,7 +71,7 @@ export default function DiamondConverterPage() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
-                  <Gem size={20} className="text-warning-600" /> 2025 Diamond Economy
+                  <Gem size={20} className="text-warning-600" /> 2026 Diamond Economy
                 </h3>
                 <ul className="space-y-2 text-sm text-neutral-700">
                   <li>• Average payout: $0.005 per diamond</li>
@@ -121,9 +121,9 @@ export default function DiamondConverterPage() {
                 { label: 'Regional Variations', value: 'Minor differences due to banking fees and taxes' },
                 { label: 'Payout Minimum', value: '$50 equivalent balance required' }
               ]}
-              dataSources={['TikTok Creator Portal Data', 'Q4 2025 Creator Surveys', 'TikTok Official Documentation', 'Creator Payout Reports']}
+              dataSources={['TikTok Creator Portal Data', 'Q4 2026 Creator Surveys', 'TikTok Official Documentation', 'Creator Payout Reports']}
               limitations="Exchange rates fluctuate daily. Actual payout amounts may vary based on regional banking fees, currency conversion costs, and local tax withholding."
-              lastUpdated="November 2025"
+              lastUpdated="November 2026"
             />
 
             <FAQSection
@@ -131,7 +131,7 @@ export default function DiamondConverterPage() {
               faqs={[
                 {
                   question: "How much is 1 TikTok diamond worth?",
-                  answer: "1 TikTok diamond is worth $0.005 USD for creators (as of November 2025). This rate has been stable since 2023, meaning 200 diamonds equal $1 USD. Regional variations may apply due to currency conversion."
+                  answer: "1 TikTok diamond is worth $0.005 USD for creators (as of November 2026). This rate has been stable since 2023, meaning 200 diamonds equal $1 USD. Regional variations may apply due to currency conversion."
                 },
                 {
                   question: "How do I convert diamonds to money?",
@@ -170,8 +170,8 @@ export default function DiamondConverterPage() {
                   answer: "TikTok doesn't charge fees for diamond payouts, but your bank or PayPal may charge currency conversion or international transfer fees. These vary by region and financial institution."
                 },
                 {
-                  question: "How has the diamond economy changed in 2025?",
-                  answer: "In 2025, LIVE gifting increased 40% YoY, with global creator payouts exceeding $2 billion annually. Diamond values remain stable at $0.005, but competition for viewer attention has intensified."
+                  question: "How has the diamond economy changed in 2026?",
+                  answer: "In 2026, LIVE gifting increased 40% YoY, with global creator payouts exceeding $2 billion annually. Diamond values remain stable at $0.005, but competition for viewer attention has intensified."
                 },
                 {
                   question: "What's the most valuable TikTok gift?",

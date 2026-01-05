@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Users, Cake, Briefcase, Globe, CheckCircle, Smartphone, Shirt, Smartphone as Phone, Home, Dumbbell, Gamepad2, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Become TikTok Shop Affiliate: Complete Guide (2025)',
+  title: 'How to Become TikTok Shop Affiliate: Complete Guide (2026)',
   description: 'Step-by-step guide to joining TikTok Shop affiliate program. Requirements, application process, commission rates, and earning strategies for maximum income.',
   keywords: ['tiktok shop affiliate', 'become shop seller', 'tiktok affiliate program', 'shop creator', 'tiktok shop commission'],
   alternates: {
@@ -210,7 +210,7 @@ export default function BecomeTikTokShopAffiliatePage() {
           </picture>
         <div className="container-custom max-w-4xl text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
-            Complete 2025 Guide
+            Complete 2026 Guide
           </span>
           <h1 className="text-display-lg font-bold text-white mb-6">
             How to Become a TikTok Shop Affiliate

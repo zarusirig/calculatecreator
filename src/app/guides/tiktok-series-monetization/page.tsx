@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Film, DollarSign, TrendingUp, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Series Monetization Guide 2025: Paywalled Content Earnings',
+  title: 'TikTok Series Monetization Guide 2026: Paywalled Content Earnings',
   description: 'How to monetize with TikTok Series (paywalled content). Requirements, pricing strategies, earnings potential, and best practices for premium content.',
   keywords: ['tiktok series', 'paywalled content tiktok', 'tiktok premium content', 'series monetization'],
   alternates: {
@@ -150,7 +150,7 @@ export default function TikTokSeriesMonetizationPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/content-strategy-2025" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/content-strategy-2026" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-2">Content Strategy</h4>
               <p className="text-body-sm text-neutral-700">Plan your Series content</p>
             </Link>

@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, BarChart3, CheckCircle, DollarSign, TrendingUp, Target, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How TikTok Creator Fund Works: Complete 2025 Breakdown',
+  title: 'How TikTok Creator Fund Works: Complete 2026 Breakdown',
   description: 'Detailed explanation of how TikTok Creator Fund calculates payments, RPM rates, factors affecting earnings, and how to maximize your income.',
   keywords: ['how tiktok creator fund works', 'creator fund calculation', 'tiktok rpm', 'creator fund algorithm', 'tiktok earnings explained'],
   alternates: {
@@ -81,7 +81,7 @@ export default function HowCreatorFundWorksPage() {
             Understanding the algorithm, payment calculations, and factors that determine your Creator Fund earnings
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 15 min read</span>
             <span className="flex items-center gap-2"><BarChart3 className="w-4 h-4" /> Deep Dive</span>
           </div>
@@ -282,7 +282,7 @@ export default function HowCreatorFundWorksPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Average RPM Rates by Content Category</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Based on creator reports and industry data (November 2025):
+            Based on creator reports and industry data (November 2026):
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">

@@ -42,7 +42,7 @@ export default function ConversionRateCalculatorPage() {
           reviewCount: 756,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok conversion rate', 'conversion calculator', 'tiktok traffic conversion', 'conversion optimization']}
       />
       <FAQSchema faqs={faqs} />
@@ -224,7 +224,7 @@ Visitors Needed = 100 / 0.03 = 3,334 visitors`}
               'Industry studies from Unbounce, Instapage, and ConversionXL',
             ]}
             limitations="Conversion rate alone doesn't indicate profitability—consider cost per acquisition and lifetime value. Seasonal factors, product-market fit, audience quality, and funnel optimization significantly impact conversion rates. Some niches naturally convert higher/lower than others."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -218,7 +218,7 @@ This 0.5% comment rate indicates good community engagement`}
               'Social Media Engagement Research',
             ]}
             limitations="Comment rate varies significantly by content type and niche. Opinion-based content naturally generates more comments than aesthetic content. Compare against your own baseline and similar creators in your niche rather than across all content categories."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

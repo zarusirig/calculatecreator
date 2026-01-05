@@ -5,7 +5,7 @@ import { Gift, ShoppingBag, Smartphone, Video, FileVideo, Package, DollarSign } 
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Kicks Off Biggest Holiday Season Ever | TikTok News',
-  description: 'TikTok Shop announces its largest holiday shopping campaign in November 2025, combining creator storytelling with in-app purchasing.',
+  description: 'TikTok Shop announces its largest holiday shopping campaign in November 2026, combining creator storytelling with in-app purchasing.',
   keywords: ['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-holiday-campaign/',
@@ -55,7 +55,7 @@ export default function TikTokShopHolidayCampaignPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               TikTok Shop
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2025</span>
+            <span className="text-white/80 text-label-sm">Published: November 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Kicks Off Biggest Holiday Season Ever
@@ -81,7 +81,7 @@ export default function TikTokShopHolidayCampaignPage() {
             What's Launching for the Holidays?
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            In November 2025, TikTok Shop announced an unprecedented holiday shopping campaign that leverages the platform's unique blend of entertainment and commerce. The initiative includes special creator incentives, enhanced shopping features, and dedicated promotional support.
+            In November 2026, TikTok Shop announced an unprecedented holiday shopping campaign that leverages the platform's unique blend of entertainment and commerce. The initiative includes special creator incentives, enhanced shopping features, and dedicated promotional support.
           </p>
           <div className="bg-gradient-to-r from-red-50 to-rose-50 p-6 rounded-lg">
             <h3 className="text-heading-md font-semibold text-red-900 mb-4">
@@ -177,7 +177,7 @@ export default function TikTokShopHolidayCampaignPage() {
             Why This Holiday Season Is Different
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            TikTok Shop's 2025 holiday campaign represents the platform's largest-ever investment in social commerce. With enhanced features, bigger creator incentives, and unprecedented promotional support, this season positions TikTok Shop as a legitimate competitor to Amazon and traditional retail.
+            TikTok Shop's 2026 holiday campaign represents the platform's largest-ever investment in social commerce. With enhanced features, bigger creator incentives, and unprecedented promotional support, this season positions TikTok Shop as a legitimate competitor to Amazon and traditional retail.
           </p>
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg">
             <h3 className="text-heading-md font-semibold text-purple-900 mb-4">Campaign Scale</h3>
@@ -248,7 +248,7 @@ export default function TikTokShopHolidayCampaignPage() {
             Top-Selling Holiday Categories
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            Based on 2024 holiday performance and early 2025 trends, these categories are expected to dominate:
+            Based on 2024 holiday performance and early 2026 trends, these categories are expected to dominate:
           </p>
           <div className="space-y-3">
             <div className="bg-red-50 p-4 rounded-lg">
@@ -344,35 +344,35 @@ export default function TikTokShopHolidayCampaignPage() {
                 <span className="font-semibold text-neutral-900 block">Black Friday</span>
                 <span className="text-body-sm text-neutral-600">2x commission rates!</span>
               </div>
-              <span className="text-amber-600 font-semibold">November 29, 2025</span>
+              <span className="text-amber-600 font-semibold">November 29, 2026</span>
             </div>
             <div className="flex justify-between items-center bg-white p-3 rounded">
               <div>
                 <span className="font-semibold text-neutral-900 block">Cyber Monday</span>
                 <span className="text-body-sm text-neutral-600">2x commission rates!</span>
               </div>
-              <span className="text-amber-600 font-semibold">December 2, 2025</span>
+              <span className="text-amber-600 font-semibold">December 2, 2026</span>
             </div>
             <div className="flex justify-between items-center bg-white p-3 rounded">
               <div>
                 <span className="font-semibold text-neutral-900 block">Free Shipping Day</span>
                 <span className="text-body-sm text-neutral-600">Emphasize free shipping</span>
               </div>
-              <span className="text-amber-600 font-semibold">December 15, 2025</span>
+              <span className="text-amber-600 font-semibold">December 15, 2026</span>
             </div>
             <div className="flex justify-between items-center bg-white p-3 rounded">
               <div>
                 <span className="font-semibold text-neutral-900 block">Last Day for Standard Shipping</span>
                 <span className="text-body-sm text-neutral-600">Create urgency</span>
               </div>
-              <span className="text-amber-600 font-semibold">December 18, 2025</span>
+              <span className="text-amber-600 font-semibold">December 18, 2026</span>
             </div>
             <div className="flex justify-between items-center bg-white p-3 rounded">
               <div>
                 <span className="font-semibold text-neutral-900 block">Christmas</span>
                 <span className="text-body-sm text-neutral-600">Post-holiday sales begin</span>
               </div>
-              <span className="text-amber-600 font-semibold">December 25, 2025</span>
+              <span className="text-amber-600 font-semibold">December 25, 2026</span>
             </div>
           </div>
         </Card>

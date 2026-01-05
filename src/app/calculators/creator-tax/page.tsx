@@ -276,7 +276,7 @@ Total Tax: $21,695 (33.4% effective rate)`}
               'State Income Tax Comparison 2024',
             ]}
             limitations="This is an estimate for planning purposes only. Consult a tax professional for accurate calculations. Does not include additional deductions (health insurance, retirement contributions) or credits."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

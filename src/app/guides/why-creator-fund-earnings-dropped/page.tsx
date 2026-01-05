@@ -53,7 +53,7 @@ export default function WhyEarningsDroppedPage() {
             Complete troubleshooting guide with 12 common causes and solutions
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 13 min read</span>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function WhyEarningsDroppedPage() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-neutral-800 mb-2">Industry Benchmarks (2025):</h4>
+                  <h4 className="font-semibold text-neutral-800 mb-2">Industry Benchmarks (2026):</h4>
                   <ul className="space-y-1 text-body-sm text-neutral-700">
                     <li>• High RPM: $0.08-$0.15 (Education, Finance)</li>
                     <li>• Average RPM: $0.03-$0.07 (General content)</li>

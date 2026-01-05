@@ -4,15 +4,15 @@ import { Card } from '@/components/ui/Card';
 import { XCircle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Content Strategy 2025: Complete Creator Playbook',
-  description: 'Proven TikTok content strategy for 2025. Posting frequency, content pillars, viral hooks, engagement tactics, and growth frameworks.',
-  keywords: ['tiktok content strategy', 'content planning', 'viral content strategy', 'tiktok growth strategy 2025'],
+  title: 'TikTok Content Strategy 2026: Complete Creator Playbook',
+  description: 'Proven TikTok content strategy for 2026. Posting frequency, content pillars, viral hooks, engagement tactics, and growth frameworks.',
+  keywords: ['tiktok content strategy', 'content planning', 'viral content strategy', 'tiktok growth strategy 2026'],
   alternates: {
-    canonical: 'https://calculatecreator.com/guides/content-strategy-2025/',
+    canonical: 'https://calculatecreator.com/guides/content-strategy-2026/',
   },
 };
 
-export default function ContentStrategy2025Page() {
+export default function ContentStrategy2026Page() {
   return (
     <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
@@ -20,7 +20,7 @@ export default function ContentStrategy2025Page() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
             <Link href="/guides">Guides</Link><span>/</span>
-            <span className="text-neutral-900">Content Strategy 2025</span>
+            <span className="text-neutral-900">Content Strategy 2026</span>
           </div>
         </div>
       </nav>
@@ -40,13 +40,13 @@ export default function ContentStrategy2025Page() {
             />
             <img
               src="/guides/guide-content-strategy-1024.webp"
-              alt="Featured image for TikTok Content Strategy 2025"
+              alt="Featured image for TikTok Content Strategy 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Content Strategy 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Content Strategy 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">The complete playbook for TikTok growth and monetization</p>
         </div>
       </section>
@@ -139,9 +139,9 @@ export default function ContentStrategy2025Page() {
         </Card>
 
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">2025 Algorithm Changes You Need to Know</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">2026 Algorithm Changes You Need to Know</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok made significant algorithm updates in 2024-2025 that fundamentally changed content distribution. Understanding these shifts is critical for growth.
+            TikTok made significant algorithm updates in 2024-2026 that fundamentally changed content distribution. Understanding these shifts is critical for growth.
           </p>
           <div className="space-y-4">
             {[
@@ -190,9 +190,9 @@ export default function ContentStrategy2025Page() {
         </Card>
 
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Best Content Formats for 2025</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Best Content Formats for 2026</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Certain content formats consistently outperform others in 2025. Here are the highest-performing types:
+            Certain content formats consistently outperform others in 2026. Here are the highest-performing types:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -248,7 +248,7 @@ export default function ContentStrategy2025Page() {
         </Card>
 
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">2025 Hashtag Strategy (It Changed)</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">2026 Hashtag Strategy (It Changed)</h2>
           <p className="text-body-md text-neutral-700 mb-6">
             Hashtag strategy evolved significantly. The old "30 hashtags" approach is dead. Here's what works now:
           </p>
@@ -276,7 +276,7 @@ export default function ContentStrategy2025Page() {
             </div>
 
             <div className="p-5 bg-red-50 rounded-lg border border-red-200">
-              <h3 className="font-semibold text-red-900 mb-3 flex items-center gap-2"><XCircle className="w-5 h-5 flex-shrink-0" /> Hashtags That Hurt You in 2025</h3>
+              <h3 className="font-semibold text-red-900 mb-3 flex items-center gap-2"><XCircle className="w-5 h-5 flex-shrink-0" /> Hashtags That Hurt You in 2026</h3>
               <ul className="space-y-2 text-body-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-red-600">•</span>
@@ -374,7 +374,7 @@ export default function ContentStrategy2025Page() {
         </Card>
 
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">AI Tools for Content Creation (2025 Must-Haves)</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">AI Tools for Content Creation (2026 Must-Haves)</h2>
           <p className="text-body-md text-neutral-700 mb-6">
             AI has transformed content creation. Here are the tools that actually save time and improve quality:
           </p>

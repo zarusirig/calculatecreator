@@ -5,7 +5,7 @@ import { ShoppingBag, Users, Package, Radio } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Expands to France, Germany, and Italy | TikTok News',
-  description: 'In March 2025, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence.',
+  description: 'In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence.',
   keywords: ['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/',
@@ -55,7 +55,7 @@ export default function TikTokShopEuropeExpansionPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               TikTok Shop
             </span>
-            <span className="text-white/80 text-label-sm">Published: March 27, 2025</span>
+            <span className="text-white/80 text-label-sm">Published: March 27, 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Expands to France, Germany, and Italy
@@ -81,7 +81,7 @@ export default function TikTokShopEuropeExpansionPage() {
             Three New Markets Launch Simultaneously
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            On March 27, 2025, TikTok Shop officially launched in France, Germany, and Italy, marking the platform's most significant European expansion to date. This strategic move comes despite ongoing regulatory challenges in the United States, demonstrating TikTok's confidence in its social commerce model.
+            On March 27, 2026, TikTok Shop officially launched in France, Germany, and Italy, marking the platform's most significant European expansion to date. This strategic move comes despite ongoing regulatory challenges in the United States, demonstrating TikTok's confidence in its social commerce model.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg text-center">
@@ -158,7 +158,7 @@ export default function TikTokShopEuropeExpansionPage() {
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <p className="text-display-md font-bold text-purple-600 mb-1">€5B+</p>
-                <p className="text-label-sm text-neutral-700">Projected GMV by end of 2025</p>
+                <p className="text-label-sm text-neutral-700">Projected GMV by end of 2026</p>
               </div>
               <div className="bg-white p-4 rounded-lg">
                 <p className="text-display-md font-bold text-pink-600 mb-1">211M</p>
@@ -203,7 +203,7 @@ export default function TikTokShopEuropeExpansionPage() {
                 Brand Partnership Opportunities
               </h3>
               <p className="text-body-md text-purple-800">
-                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are expected to reach €500M+ in 2025.
+                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are expected to reach €500M+ in 2026.
               </p>
             </div>
           </div>
@@ -366,7 +366,7 @@ export default function TikTokShopEuropeExpansionPage() {
             <div className="bg-neutral-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can creators from other EU countries participate?</h3>
               <p className="text-body-sm text-neutral-700">
-                Currently limited to France, Germany, and Italy. More EU markets expected to launch in 2025-2026.
+                Currently limited to France, Germany, and Italy. More EU markets expected to launch in 2026-2026.
               </p>
             </div>
             <div className="bg-neutral-50 p-4 rounded-lg">

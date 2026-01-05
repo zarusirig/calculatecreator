@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { XCircle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Tax Strategy 2025: Deductions, Write-Offs, and Tax Planning',
+  title: 'TikTok Creator Tax Strategy 2026: Deductions, Write-Offs, and Tax Planning',
   description: 'Complete tax guide for TikTok creators. Deductible expenses, quarterly estimated taxes, business structures, and how to minimize your tax bill legally.',
   keywords: ['creator tax guide', 'tiktok taxes', 'influencer tax deductions', 'self employment tax', 'creator tax strategy'],
   alternates: {
@@ -40,13 +40,13 @@ export default function CreatorTaxStrategyPage() {
             />
             <img
               src="/guides/guide-analytics-1024.webp"
-              alt="Featured image for TikTok Creator Tax Strategy 2025"
+              alt="Featured image for TikTok Creator Tax Strategy 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Creator Tax Strategy 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Creator Tax Strategy 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Deductions, write-offs, and legal tax minimization for content creators</p>
         </div>
       </section>
@@ -120,10 +120,10 @@ export default function CreatorTaxStrategyPage() {
               </thead>
               <tbody>
                 {[
-                  { q: 'Q1 2025', period: 'Jan 1 - Mar 31', due: 'April 15, 2025' },
-                  { q: 'Q2 2025', period: 'Apr 1 - May 31', due: 'June 15, 2025' },
-                  { q: 'Q3 2025', period: 'Jun 1 - Aug 31', due: 'September 15, 2025' },
-                  { q: 'Q4 2025', period: 'Sep 1 - Dec 31', due: 'January 15, 2026' },
+                  { q: 'Q1 2026', period: 'Jan 1 - Mar 31', due: 'April 15, 2026' },
+                  { q: 'Q2 2026', period: 'Apr 1 - May 31', due: 'June 15, 2026' },
+                  { q: 'Q3 2026', period: 'Jun 1 - Aug 31', due: 'September 15, 2026' },
+                  { q: 'Q4 2026', period: 'Sep 1 - Dec 31', due: 'January 15, 2026' },
                 ].map((row, idx) => (
                   <tr key={idx} className="border-b border-neutral-100">
                     <td className="py-3 px-4 font-semibold text-neutral-900">{row.q}</td>
@@ -185,7 +185,7 @@ export default function CreatorTaxStrategyPage() {
                   <h4 className="font-semibold text-blue-800 mb-2">Solo 401(k)</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <p className="text-body-sm text-neutral-700 mb-2"><strong>Contribution Limits (2025):</strong></p>
+                      <p className="text-body-sm text-neutral-700 mb-2"><strong>Contribution Limits (2026):</strong></p>
                       <ul className="text-body-sm text-neutral-700 space-y-1">
                         <li>• Employee: Up to $23,000</li>
                         <li>• Employer: Up to 25% of net profit</li>
@@ -211,7 +211,7 @@ export default function CreatorTaxStrategyPage() {
                       <p className="text-body-sm text-neutral-700 mb-2"><strong>Details:</strong></p>
                       <ul className="text-body-sm text-neutral-700 space-y-1">
                         <li>• Contribute up to 25% of net profit</li>
-                        <li>• Max contribution: $69,000 (2025)</li>
+                        <li>• Max contribution: $69,000 (2026)</li>
                         <li>• Easier setup than Solo 401(k)</li>
                         <li>• Flexible annual contributions</li>
                       </ul>
@@ -268,7 +268,7 @@ export default function CreatorTaxStrategyPage() {
                   <div className="space-y-3">
                     <div className="p-3 bg-white rounded">
                       <p className="font-semibold text-neutral-700 mb-1">Standard Mileage Rate:</p>
-                      <p className="text-body-sm text-neutral-600">$0.67 per business mile (2025)</p>
+                      <p className="text-body-sm text-neutral-600">$0.67 per business mile (2026)</p>
                       <p className="text-xs text-neutral-500 mt-1">Simpler, good for high mileage</p>
                     </div>
                     <div className="p-3 bg-white rounded">

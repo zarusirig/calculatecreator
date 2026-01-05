@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Scale, DollarSign, Music, Video, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs YouTube Earnings: Which Platform Pays More in 2025?',
+  title: 'TikTok vs YouTube Earnings: Which Platform Pays More in 2026?',
   description: 'Complete comparison of TikTok vs YouTube creator earnings. See RPM rates, monetization requirements, and which platform makes more money per view.',
   keywords: ['tiktok vs youtube', 'tiktok youtube earnings comparison', 'which pays more tiktok or youtube', 'creator fund vs adsense', 'tiktok youtube monetization'],
   alternates: {
@@ -142,12 +142,12 @@ export default function TikTokVsYouTubeEarningsPage() {
             TikTok vs YouTube Earnings
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Complete comparison: Which platform pays creators more in 2025? See RPM, requirements, and real earnings data
+            Complete comparison: Which platform pays creators more in 2026? See RPM, requirements, and real earnings data
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4 flex-shrink-0" />
-              Last updated: January 2025
+              Last updated: January 2026
             </span>
             <span className="flex items-center gap-2">
               <Scale className="w-4 h-4 flex-shrink-0" />

@@ -48,7 +48,7 @@ export default function EngagementRateCalculatorPage() {
         url="https://calculatecreator.com/calculators/engagement-rate"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2341 }}
         datePublished="2024-01-15"
-        dateModified="2025-12-04"
+        dateModified="2026-12-04"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok analytics', 'social media engagement']}
       />
       <FAQSchema faqs={faqData} />
@@ -313,7 +313,7 @@ Engagement Rate: (2,750 / 50,000) × 100 = 5.5%`}
               'Analysis of 10,000+ TikTok creator accounts',
             ]}
             limitations="Engagement rates vary by follower size (smaller accounts typically have higher rates), content niche, and audience demographics. Use this as a directional guide."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

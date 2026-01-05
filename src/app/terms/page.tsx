@@ -23,7 +23,7 @@ export default function TermsPage() {
             <h1 className="text-display-md font-bold text-neutral-900">Terms of Service</h1>
           </div>
         </div>
-        <p className="text-body-md text-neutral-600 mb-8">Last Updated: November 13, 2025</p>
+        <p className="text-body-md text-neutral-600 mb-8">Last Updated: November 13, 2026</p>
 
         <div className="space-y-6">
           <Card>

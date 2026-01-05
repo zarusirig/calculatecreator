@@ -61,7 +61,7 @@ export default function VideoPerformanceCalculatorPage() {
           reviewCount: 1583,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-12-04"
+        dateModified="2026-12-04"
         keywords={['tiktok video performance', 'video analytics', 'content performance score', 'tiktok metrics']}
       />
       <FAQSchema faqs={faqData} />
@@ -362,7 +362,7 @@ export default function VideoPerformanceCalculatorPage() {
               'Viral Content Analysis Study by Influencer Marketing Hub',
             ]}
             limitations="Performance varies by niche, content type, and posting time. Scores are relative to your follower count - smaller accounts may score higher on reach metrics."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -5,7 +5,7 @@ import { Moon, MessageCircle, Users, Shield, BookOpen, GraduationCap } from 'luc
 
 export const metadata: Metadata = {
   title: 'TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News',
-  description: 'TikTok introduced comprehensive age-based parental controls in February 2025, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements.',
+  description: 'TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements.',
   keywords: ['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/age-specific-privacy-features/',
@@ -42,7 +42,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
             />
             <img
               src="/news/news-safety-1024.webp"
-              alt="Featured image for Age-Specific Privacy Features for Internet Safety Day 2025"
+              alt="Featured image for Age-Specific Privacy Features for Internet Safety Day 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -55,10 +55,10 @@ export default function AgeSpecificPrivacyFeaturesPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Internet Safety Day
             </span>
-            <span className="text-white/80 text-label-sm">Published: February 2025</span>
+            <span className="text-white/80 text-label-sm">Published: February 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
-            Age-Specific Privacy Features for Internet Safety Day 2025
+            Age-Specific Privacy Features for Internet Safety Day 2026
           </h1>
           <p className="text-heading-md text-white/90">
             Comprehensive age-based controls including nighttime restrictions and enhanced family protections
@@ -72,7 +72,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
             Key Takeaway
           </h2>
           <p className="text-body-md text-pink-800">
-            For Internet Safety Day 2025, TikTok introduced age-specific privacy features that automatically adjust safety settings based on user age. These include nighttime notification restrictions, comment limitations, and enhanced Family Pairing capabilities designed to protect younger users while giving teens age-appropriate autonomy.
+            For Internet Safety Day 2026, TikTok introduced age-specific privacy features that automatically adjust safety settings based on user age. These include nighttime notification restrictions, comment limitations, and enhanced Family Pairing capabilities designed to protect younger users while giving teens age-appropriate autonomy.
           </p>
         </Card>
 

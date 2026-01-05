@@ -4,8 +4,8 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025 | TikTok News',
-  description: 'Between January and June 2025, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior.',
+  title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2026 | TikTok News',
+  description: 'Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior.',
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/',
@@ -42,7 +42,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             />
             <img
               src="/news/news-algorithm-1024.webp"
-              alt="Featured image for TikTok Algorithm Undergoes Eight Major Shifts in 2025"
+              alt="Featured image for TikTok Algorithm Undergoes Eight Major Shifts in 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -55,10 +55,10 @@ export default function AlgorithmEightMajorShiftsPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Platform Changes
             </span>
-            <span className="text-white/80 text-label-sm">Published: June 2025</span>
+            <span className="text-white/80 text-label-sm">Published: June 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Algorithm Undergoes Eight Major Shifts in 2025
+            TikTok Algorithm Undergoes Eight Major Shifts in 2026
           </h1>
           <p className="text-heading-md text-white/90">
             Enhanced personalization, retention focus, and off-platform behavior tracking reshape content distribution
@@ -72,7 +72,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             Key Takeaway for Creators
           </h2>
           <p className="text-body-md text-violet-800">
-            TikTok's algorithm has evolved significantly in the first half of 2025, with eight major changes affecting how content gets distributed. Understanding these shifts is crucial for maintaining and growing your reach. The focus has shifted heavily toward retention metrics, authentic engagement, and sophisticated personalization.
+            TikTok's algorithm has evolved significantly in the first half of 2026, with eight major changes affecting how content gets distributed. Understanding these shifts is crucial for maintaining and growing your reach. The focus has shifted heavily toward retention metrics, authentic engagement, and sophisticated personalization.
           </p>
         </Card>
 
@@ -476,7 +476,7 @@ export default function AlgorithmEightMajorShiftsPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Content Strategy Framework for 2025 Algorithm
+            Content Strategy Framework for 2026 Algorithm
           </h2>
           <div className="space-y-6">
             <div className="p-5 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg">

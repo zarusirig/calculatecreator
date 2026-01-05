@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Commission Rates by Category 2025: Complete Reference',
+  title: 'TikTok Shop Commission Rates by Category 2026: Complete Reference',
   description: 'Complete breakdown of TikTok Shop affiliate commission rates by product category. Find the most profitable categories and optimize your earnings.',
   keywords: ['tiktok shop commission rates', 'affiliate commission', 'shop rates by category', 'tiktok shop earnings'],
   alternates: {
@@ -40,7 +40,7 @@ export default function ShopCommissionRatesPage() {
       <section className="bg-gradient-to-br from-tiktok-pink via-tiktok-red to-tiktok-blue py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Shop Commission Rates 2025
+            TikTok Shop Commission Rates 2026
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             Complete breakdown of affiliate commission rates by product category

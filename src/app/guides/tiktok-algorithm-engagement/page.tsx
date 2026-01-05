@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm & Engagement: How to Boost Your Reach in 2025',
+  title: 'TikTok Algorithm & Engagement: How to Boost Your Reach in 2026',
   description: 'Master the relationship between TikTok algorithm and engagement. Proven tactics to increase likes, comments, shares, and watch time for better reach.',
   keywords: ['tiktok algorithm engagement', 'boost tiktok engagement', 'increase reach', 'fyp algorithm'],
   alternates: {
@@ -39,13 +39,13 @@ export default function AlgorithmEngagementPage() {
             />
             <img
               src="/guides/guide-analytics-1024.webp"
-              alt="Featured image for TikTok Algorithm & Engagement 2025"
+              alt="Featured image for TikTok Algorithm & Engagement 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Algorithm & Engagement 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Algorithm & Engagement 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">How engagement signals drive algorithmic reach</p>
         </div>
       </section>

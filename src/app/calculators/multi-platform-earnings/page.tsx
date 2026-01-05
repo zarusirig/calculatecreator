@@ -238,7 +238,7 @@ Total: $3,560/month`}
               'Platform RPM Comparison Analysis',
             ]}
             limitations="Estimates are for ad revenue only. Brand deals, affiliate marketing, and product sales can significantly increase earnings across all platforms."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

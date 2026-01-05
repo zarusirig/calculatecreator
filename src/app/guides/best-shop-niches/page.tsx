@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best TikTok Shop Niches for Creators: Most Profitable Categories 2025',
+  title: 'Best TikTok Shop Niches for Creators: Most Profitable Categories 2026',
   description: 'Discover the most profitable TikTok Shop niches for affiliates and sellers. Commission rates, competition analysis, and best products to promote.',
   keywords: ['best tiktok shop niches', 'profitable shop categories', 'tiktok affiliate niches', 'shop product selection'],
   alternates: {
@@ -51,13 +51,13 @@ export default function BestShopNichesPage() {
             />
             <img
               src="/guides/guide-content-strategy-1024.webp"
-              alt="Featured image for Best TikTok Shop Niches 2025"
+              alt="Featured image for Best TikTok Shop Niches 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">Best TikTok Shop Niches 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">Best TikTok Shop Niches 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Most profitable categories for creators and affiliates</p>
         </div>
       </section>
@@ -268,7 +268,7 @@ export default function BestShopNichesPage() {
             </div>
 
             <div className="p-5 bg-yellow-50 rounded-lg">
-              <h3 className="font-semibold text-neutral-900 mb-3">Emerging Niches to Watch (2025)</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">Emerging Niches to Watch (2026)</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="p-4 bg-white rounded-lg">
                   <h4 className="font-semibold text-neutral-800 mb-2">Sustainable Living</h4>

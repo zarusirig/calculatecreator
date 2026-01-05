@@ -9,7 +9,7 @@ import { TrustBadges } from '@/components/eeat/TrustBadges';
 import { Clock, Calendar, TrendingUp, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Increase TikTok Engagement: 12 Proven Strategies (2025)',
+  title: 'How to Increase TikTok Engagement: 12 Proven Strategies (2026)',
   description: 'Boost likes, comments, shares, and saves on TikTok. Data-backed strategies to increase engagement rate and algorithmic performance.',
   keywords: ['increase tiktok engagement', 'boost engagement rate', 'get more likes', 'tiktok algorithm'],
   alternates: {
@@ -45,11 +45,11 @@ export default function IncreaseEngagementPage() {
     <>
       {/* Article Schema for SEO */}
       <ArticleSchema
-        headline="How to Increase TikTok Engagement: 12 Proven Strategies (2025)"
+        headline="How to Increase TikTok Engagement: 12 Proven Strategies (2026)"
         description="Boost likes, comments, shares, and saves on TikTok. Data-backed strategies to increase engagement rate and algorithmic performance."
         url="https://calculatecreator.com/guides/how-to-increase-engagement"
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['increase tiktok engagement', 'boost engagement rate', 'get more likes', 'tiktok algorithm']}
       />
 
@@ -89,7 +89,7 @@ export default function IncreaseEngagementPage() {
             <p className="text-heading-md text-white/90 mb-4">12 proven strategies to boost likes, comments, and shares</p>
             <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
               <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 6 min read</span>
-              <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2025</span>
+              <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2026</span>
             <span className="flex items-center gap-2"><TrendingUp className="w-4 h-4" /> Algorithm Optimization</span>
           </div>
         </div>

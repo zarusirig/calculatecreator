@@ -731,13 +731,13 @@ Total: $2,715/month`} assumptions={[
             { label: 'LIVE Gift Rate', value: '0.3-0.7 gifts per viewer (accounts for viewer turnover and engagement)' },
             { label: 'Income Mix', value: 'Brand deals 60-70%, LIVE 15-25%, Creator Fund 5-10%, Other 5-10% for established creators' }
           ]} dataSources={[
-            'TikTok Creator Fund payment data (2024-2025)',
+            'TikTok Creator Fund payment data (2024-2026)',
             'Brand deal rate surveys from AspireIQ, Grin, and CreatorIQ',
             'Influencer Marketing Hub industry benchmarks',
             'Anonymous creator earnings reports from 2,000+ creators',
             'TikTok Shop affiliate program data',
             'LIVE gift conversion rates from Creator Portal analytics'
-          ]} limitations="Actual earnings vary dramatically based on content quality, posting consistency, niche selection, audience demographics, negotiation skills, and business acumen. Brand deal rates can range from $5 to $100+ per 1K followers depending on campaign type and brand budget. LIVE gift earnings depend heavily on personality and streaming engagement. This calculator provides industry-average estimates but individual results may be 50-200% different based on execution." lastUpdated="December 5, 2025" />
+          ]} limitations="Actual earnings vary dramatically based on content quality, posting consistency, niche selection, audience demographics, negotiation skills, and business acumen. Brand deal rates can range from $5 to $100+ per 1K followers depending on campaign type and brand budget. LIVE gift earnings depend heavily on personality and streaming engagement. This calculator provides industry-average estimates but individual results may be 50-200% different based on execution." lastUpdated="December 5, 2026" />
 
           <FAQSection pageName="TikTok Money Calculator" faqs={faqData} />
 
@@ -752,7 +752,7 @@ Total: $2,715/month`} assumptions={[
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">Professional Disclaimer</h2>
             <div className="text-body-sm text-neutral-700 space-y-3">
               <p>
-                This TikTok Money Calculator provides earnings estimates based on industry averages, creator surveys, platform rate data, and aggregated performance benchmarks as of December 2025. Actual earnings vary significantly and depend on numerous factors including content quality, posting consistency, audience demographics, niche selection, engagement rates, negotiation abilities, brand partnership availability, streaming frequency, and overall business strategy.
+                This TikTok Money Calculator provides earnings estimates based on industry averages, creator surveys, platform rate data, and aggregated performance benchmarks as of December 2026. Actual earnings vary significantly and depend on numerous factors including content quality, posting consistency, audience demographics, niche selection, engagement rates, negotiation abilities, brand partnership availability, streaming frequency, and overall business strategy.
               </p>
               <p>
                 Brand deal rates can range from $5 to $100+ per 1,000 followers depending on niche, engagement, audience quality, campaign scope, usage rights, and brand budget. The calculator uses industry averages ($10-$30 per 1K) but your actual rates may differ substantially. Creator Fund RPM continues to decline as more creators join the program. LIVE gift earnings depend heavily on personality, interaction style, and community loyalty, with actual gifts-per-viewer rates ranging from 0.1 to 2.0+.

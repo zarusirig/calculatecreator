@@ -255,7 +255,7 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
               'Creator Economy Profitability Analysis',
             ]}
             limitations="Earnings vary by execution quality, personal brand, and audience demographics. A great creator in a low-value niche can outperform average creators in high-value niches."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

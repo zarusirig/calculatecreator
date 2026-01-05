@@ -55,7 +55,7 @@ export default function SearchVolumeIncrease40PercentPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Search & Discovery
             </span>
-            <span className="text-white/80 text-label-sm">Published: 2025</span>
+            <span className="text-white/80 text-label-sm">Published: 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Search Volume Increases 40% Year-Over-Year
@@ -97,7 +97,7 @@ export default function SearchVolumeIncrease40PercentPage() {
             </div>
           </div>
           <p className="text-body-md text-neutral-700">
-            According to TikTok's internal data released at TikTok World 2025, search volume on the platform has increased by more than 40% year-over-year. This massive growth has prompted TikTok to invest heavily in search advertising capabilities and SEO-optimized content discovery.
+            According to TikTok's internal data released at TikTok World 2026, search volume on the platform has increased by more than 40% year-over-year. This massive growth has prompted TikTok to invest heavily in search advertising capabilities and SEO-optimized content discovery.
           </p>
         </Card>
 

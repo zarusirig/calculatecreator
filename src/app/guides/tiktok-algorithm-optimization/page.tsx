@@ -6,9 +6,9 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm Optimization Guide: Beat the Algorithm (2025)',
-  description: 'Complete TikTok algorithm guide for 2025. Learn 8 ranking factors and 10 proven optimization tactics to boost FYP placement and viral potential.',
-  keywords: ['tiktok algorithm', 'how to beat tiktok algorithm', 'fyp strategy', 'tiktok algorithm 2025'],
+  title: 'TikTok Algorithm Optimization Guide: Beat the Algorithm (2026)',
+  description: 'Complete TikTok algorithm guide for 2026. Learn 8 ranking factors and 10 proven optimization tactics to boost FYP placement and viral potential.',
+  keywords: ['tiktok algorithm', 'how to beat tiktok algorithm', 'fyp strategy', 'tiktok algorithm 2026'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/tiktok-algorithm-optimization/',
   },
@@ -53,11 +53,11 @@ export default function TikTokAlgorithmOptimizationPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
       <ArticleSchema
-        headline="TikTok Algorithm Optimization Guide: Beat the Algorithm (2025)"
+        headline="TikTok Algorithm Optimization Guide: Beat the Algorithm (2026)"
         description="Master TikTok's algorithm with 8 key ranking factors and 10 proven optimization tactics for maximum FYP placement and viral growth."
         url="https://calculatecreator.com/guides/tiktok-algorithm-optimization"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok algorithm', 'fyp strategy', 'viral content', 'algorithm optimization']}
       />
       <BreadcrumbSchema
@@ -106,10 +106,10 @@ export default function TikTokAlgorithmOptimizationPage() {
             TikTok Algorithm Optimization Guide
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Master the 2025 algorithm with 8 ranking factors and 10 proven optimization tactics
+            Master the 2026 algorithm with 8 ranking factors and 10 proven optimization tactics
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2025</span>
+            <span>📅 Updated: November 13, 2026</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function TikTokAlgorithmOptimizationPage() {
         <Card>
           <div className="prose prose-lg max-w-none">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              How TikTok's Algorithm Works (2025 Update)
+              How TikTok's Algorithm Works (2026 Update)
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
               TikTok's algorithm is fundamentally different from other platforms. Rather than prioritizing followers or

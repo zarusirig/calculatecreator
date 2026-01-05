@@ -55,7 +55,7 @@ export default function MentionLikedFavoritedVideosPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Content Tools
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2025</span>
+            <span className="text-white/80 text-label-sm">Published: November 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Adds Mention Features for Liked and Favorited Videos

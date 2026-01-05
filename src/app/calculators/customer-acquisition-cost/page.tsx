@@ -42,7 +42,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
           reviewCount: 823,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['customer acquisition cost', 'cac calculator', 'tiktok cac', 'cost per customer']}
       />
       <FAQSchema faqs={faqs} />
@@ -240,7 +240,7 @@ Recommended LTV = $50 × 3 = $150+`}
               'Analysis of 400+ TikTok-driven customer acquisition campaigns',
             ]}
             limitations="CAC varies significantly by industry, product price point, and marketing maturity. Early-stage businesses typically have higher CAC that improves over time. Seasonal factors (Q4 holidays) can temporarily increase CAC by 20-50%. Include all marketing costs for accurate CAC, not just ad spend."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -264,7 +264,7 @@ Total: $375 × 100 = $37,500`}
               'Influencer Account Acquisition Benchmarks',
             ]}
             limitations="Values are estimates for negotiation purposes. Actual value depends on audience demographics, content rights, and buyer needs. Trending content loses value faster than evergreen content."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

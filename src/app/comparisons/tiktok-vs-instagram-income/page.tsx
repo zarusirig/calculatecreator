@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs Instagram Creator Income: Which Pays More? (2025)',
+  title: 'TikTok vs Instagram Creator Income: Which Pays More? (2026)',
   description: 'Complete comparison of creator earnings on TikTok vs Instagram. Monetization options, brand deal rates, and which platform is better for your niche.',
   keywords: ['tiktok vs instagram earnings', 'creator income comparison', 'which platform pays more', 'tiktok instagram money'],
   alternates: {
@@ -33,7 +33,7 @@ export default function TikTokVsInstagramIncomePage() {
             TikTok vs Instagram Creator Income
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Complete 2025 comparison: Which platform pays creators more?
+            Complete 2026 comparison: Which platform pays creators more?
           </p>
         </div>
       </section>
@@ -380,7 +380,7 @@ export default function TikTokVsInstagramIncomePage() {
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Brand Partnership Comparison</h2>
           <div className="space-y-6">
             <div className="p-5 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg">
-              <h3 className="font-semibold text-neutral-900 mb-3">Brand Deal Rates by Platform (2025)</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">Brand Deal Rates by Platform (2026)</h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-body-sm">
                   <thead>

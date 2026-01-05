@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, DollarSign, CheckCircle, XCircle, Star } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How Much to Charge for TikTok Sponsorships: 2025 Pricing Guide',
+  title: 'How Much to Charge for TikTok Sponsorships: 2026 Pricing Guide',
   description: 'Complete guide to pricing TikTok sponsorships. Rate calculation formulas, industry benchmarks by follower count, negotiation strategies, and what to include in packages.',
   keywords: ['tiktok sponsorship rates', 'how much to charge', 'influencer pricing', 'brand deal rates', 'tiktok sponsored posts'],
   alternates: {
@@ -79,7 +79,7 @@ export default function HowMuchToChargeSponsorshipPage() {
             Complete pricing guide with formulas, benchmarks, and negotiation strategies
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Pricing Guide</span>
           </div>
         </div>

@@ -60,7 +60,7 @@ export default function PostingTimeCalculatorPage() {
           reviewCount: 1247,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-12-04"
+        dateModified="2026-12-04"
         keywords={['best time to post tiktok', 'tiktok posting schedule', 'optimal posting time', 'tiktok algorithm timing']}
       />
       <FAQSchema faqs={faqData} />
@@ -278,7 +278,7 @@ Algorithm boost occurs when:
               'Platform Activity Benchmark Report',
             ]}
             limitations="Optimal times vary by specific audience. Check your TikTok Analytics for personalized insights on when YOUR followers are most active."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -5,7 +5,7 @@ import { Film, Scissors, Music, FileText, Clock, BarChart3, Palette, Lightbulb, 
 
 export const metadata: Metadata = {
   title: 'TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News',
-  description: 'In November 2025, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities.',
+  description: 'In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities.',
   keywords: ['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/ai-outline-smart-split-features/',
@@ -58,7 +58,7 @@ export default function AIOutlineSmartSplitPage() {
               AI Tools
             </span>
             <span className="text-white/80 text-label-sm">
-              Published: November 2025
+              Published: November 2026
             </span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
@@ -257,7 +257,7 @@ export default function AIOutlineSmartSplitPage() {
               <Smartphone className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-body-md text-amber-900 font-semibold mb-1">Update Your TikTok App</p>
-                <p className="text-body-sm text-amber-800">Ensure you have the latest version of TikTok from your app store (November 2025 release or newer)</p>
+                <p className="text-body-sm text-amber-800">Ensure you have the latest version of TikTok from your app store (November 2026 release or newer)</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -278,7 +278,7 @@ export default function AIOutlineSmartSplitPage() {
               <Globe className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-body-md text-amber-900 font-semibold mb-1">Availability</p>
-                <p className="text-body-sm text-amber-800">Both features are rolling out globally throughout November-December 2025. If you don't see them yet, check back in a few days.</p>
+                <p className="text-body-sm text-amber-800">Both features are rolling out globally throughout November-December 2026. If you don't see them yet, check back in a few days.</p>
               </div>
             </div>
           </div>

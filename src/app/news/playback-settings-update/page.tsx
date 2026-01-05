@@ -55,7 +55,7 @@ export default function PlaybackSettingsUpdatePage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               User Experience
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2025</span>
+            <span className="text-white/80 text-label-sm">Published: November 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Introduces New Playback Settings
@@ -600,7 +600,7 @@ export default function PlaybackSettingsUpdatePage() {
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
               >
-                SocialBee: TikTok Updates November 2025 →
+                SocialBee: TikTok Updates November 2026 →
               </a>
             </li>
             <li>

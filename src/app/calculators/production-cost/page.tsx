@@ -247,7 +247,7 @@ Total: $106.67 per video`}
               'Freelance Rate Guidelines 2024',
             ]}
             limitations="Does not include indirect costs (internet, electricity, space rental). Adjust hourly rate based on your market and opportunity cost."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

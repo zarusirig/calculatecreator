@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Monetization: Gifts, Subscriptions, and Earnings Guide (2025)',
+  title: 'TikTok LIVE Monetization: Gifts, Subscriptions, and Earnings Guide (2026)',
   description: 'Complete guide to TikTok LIVE earnings: how gifts work, diamonds to USD conversion, LIVE subscriptions, requirements, and strategies to maximize income.',
   keywords: ['tiktok live', 'tiktok gifts', 'tiktok live earnings', 'tiktok diamonds', 'live streaming money'],
   alternates: {
@@ -26,7 +26,7 @@ export default function TikTokLIVEGuidePage() {
         </nav>
 
         <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-          TikTok LIVE Monetization: Complete 2025 Guide
+          TikTok LIVE Monetization: Complete 2026 Guide
         </h1>
         <p className="text-body-lg text-neutral-600 mb-4">
           Everything you need to know about earning money from TikTok LIVE: gifts, diamonds, subscriptions, requirements, and proven strategies to maximize your income.
@@ -34,7 +34,7 @@ export default function TikTokLIVEGuidePage() {
         <div className="flex items-center space-x-4 text-body-sm text-neutral-600 mb-12">
           <span className="flex items-center gap-2"><FileText className="w-4 h-4" /> 20 min read</span>
           <span>•</span>
-          <span>Last updated: November 13, 2025</span>
+          <span>Last updated: November 13, 2026</span>
         </div>
 
         {/* Quick Summary */}

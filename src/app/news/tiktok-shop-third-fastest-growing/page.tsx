@@ -55,7 +55,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               E-Commerce
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2025</span>
+            <span className="text-white/80 text-label-sm">Published: November 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Ranks as Third-Fastest Growing Brand in the US
@@ -98,7 +98,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
               </div>
               <div className="bg-white p-4 rounded-lg text-center">
                 <div className="text-display-md font-bold text-cyan-600 mb-1">$20B+</div>
-                <p className="text-label-sm text-neutral-700">Projected 2025 GMV</p>
+                <p className="text-label-sm text-neutral-700">Projected 2026 GMV</p>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 As TikTok Shop grows, so do commission rates and available products. More brands are joining the platform, creating more partnership opportunities for creators of all sizes.
               </p>
               <p className="text-body-sm text-green-700">
-                In Q4 2025 alone, over 5,000 new brands joined TikTok Shop, expanding product selection by 40% and creating thousands of new affiliate opportunities.
+                In Q4 2026 alone, over 5,000 new brands joined TikTok Shop, expanding product selection by 40% and creating thousands of new affiliate opportunities.
               </p>
             </div>
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-lg border-l-4 border-blue-500">
@@ -195,7 +195,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 TikTok is investing heavily in Shop infrastructure, creator tools, and incentive programs. Early adopters are seeing the biggest rewards.
               </p>
               <p className="text-body-sm text-purple-700">
-                TikTok has committed $1B+ to creator payments, logistics improvements, and promotional campaigns in 2025.
+                TikTok has committed $1B+ to creator payments, logistics improvements, and promotional campaigns in 2026.
               </p>
             </div>
           </div>
@@ -353,7 +353,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
           <div className="bg-slate-50 p-6 rounded-lg">
             <div className="space-y-3">
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">2025 Projected GMV</span>
+                <span className="font-semibold text-neutral-900">2026 Projected GMV</span>
                 <span className="text-emerald-600 font-bold">$40-45 billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
@@ -361,11 +361,11 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 <span className="text-emerald-600 font-bold">$70-80 billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">Creator Payments (2025)</span>
+                <span className="font-semibold text-neutral-900">Creator Payments (2026)</span>
                 <span className="text-blue-600 font-bold">$2+ billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">New Markets (2025-2026)</span>
+                <span className="font-semibold text-neutral-900">New Markets (2026-2026)</span>
                 <span className="text-purple-600 font-bold">Spain, Netherlands, Japan</span>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="https://www.webpronews.com/tiktok-shops-explosive-ascent-reshaping-retail-in-2025/"
+                href="https://www.webpronews.com/tiktok-shops-explosive-ascent-reshaping-retail-in-2026/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

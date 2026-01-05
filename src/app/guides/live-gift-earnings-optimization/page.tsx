@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'LIVE Gift Earnings Optimization: Complete TikTok LIVE Guide (2025)',
+  title: 'LIVE Gift Earnings Optimization: Complete TikTok LIVE Guide (2026)',
   description: 'Maximize TikTok LIVE gift earnings with 15 proven strategies. Learn viewer retention, gifting psychology, and how to earn $500-5000+/month.',
   keywords: ['tiktok live earnings', 'maximize live gifts', 'live stream money', 'tiktok diamonds'],
   alternates: {
@@ -51,8 +51,8 @@ export default function LiveGiftEarningsOptimizationPage() {
         headline="LIVE Gift Earnings Optimization: Complete TikTok LIVE Guide"
         description="Complete guide to maximizing TikTok LIVE gift earnings with 15 proven strategies, viewer retention tactics, and gifting psychology."
         url="https://calculatecreator.com/guides/live-gift-earnings-optimization"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok live', 'live gifts', 'diamonds', 'live streaming earnings']}
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function LiveGiftEarningsOptimizationPage() {
             15 strategies to maximize TikTok LIVE earnings and build engaged community
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2025</span>
+            <span>📅 Updated: November 13, 2026</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>

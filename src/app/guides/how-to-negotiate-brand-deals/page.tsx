@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Handshake, BarChart3, DollarSign, Target, XCircle, CheckCircle, AlertTriangle, Calculator, TrendingUp, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Negotiate TikTok Brand Deals: Expert Pricing Strategies 2025',
+  title: 'How to Negotiate TikTok Brand Deals: Expert Pricing Strategies 2026',
   description: 'Master brand deal negotiations with proven strategies. Learn how to price your content, counter offers, and secure rates 30-50% higher than initial offers.',
   keywords: ['negotiate brand deals', 'tiktok sponsorship rates', 'influencer negotiation', 'brand deal pricing'],
   alternates: {
@@ -594,7 +594,7 @@ export default function NegotiateBrandDealsPage() {
           <p className="text-body-sm text-neutral-600">
             Negotiation outcomes vary based on individual circumstances, brand budgets, and market conditions. Use these strategies as guidelines, not guarantees.
             <br />
-            Last updated: December 2025
+            Last updated: December 2026
           </p>
         </div>
       </div>

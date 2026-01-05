@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Earnings: How Much Can You Really Make? (2025)',
+  title: 'TikTok LIVE Earnings: How Much Can You Really Make? (2026)',
   description: 'Complete earnings breakdown for TikTok LIVE creators. Realistic income by follower tier, gift values, diamond conversion, and proven monetization strategies.',
   keywords: ['tiktok live earnings', 'live stream income', 'tiktok gifts money', 'how much do live streamers make', 'tiktok diamonds'],
   alternates: {
@@ -286,7 +286,7 @@ export default function TikTokLiveEarningsPage() {
           </picture>
         <div className="container-custom max-w-4xl text-center">
           <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
-            Complete 2025 Breakdown
+            Complete 2026 Breakdown
           </span>
           <h1 className="text-display-lg font-bold text-white mb-6">
             TikTok LIVE Earnings Guide

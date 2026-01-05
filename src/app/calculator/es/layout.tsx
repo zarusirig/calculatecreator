@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Calculadora TikTok: Ganancias 2025 | España',
+  title: 'Calculadora TikTok: Ganancias 2026 | España',
   description: 'Calculadora gratuita de TikTok para Fondo de Creadores, colaboraciones de marca y regalos LIVE. Calcula tus ingresos potenciales en mercados hispanohablantes.',
   keywords: ['calculadora de tiktok', 'ganancias tiktok', 'dinero tiktok', 'fondo de creadores', 'monetización tiktok'],
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Calculadora de TikTok: Calcula tus Ganancias (2025)',
+    title: 'Calculadora de TikTok: Calcula tus Ganancias (2026)',
     description: 'Calcula tu potencial de ganancias en TikTok. Fondo de Creadores, acuerdos con marcas y regalos en LIVE.',
     url: 'https://calculatecreator.com/calculator/es',
     locale: 'es_ES',

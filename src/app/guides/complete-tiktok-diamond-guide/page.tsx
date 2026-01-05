@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { BookOpen, RefreshCw, Target, Gem, Gift, Coins, Calculator, DollarSign, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Complete TikTok Diamond Guide 2025 | What Are Diamonds Worth?',
+  title: 'Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?',
   description: 'Master TikTok diamonds: Complete guide to LIVE gifts, diamond conversions, payout rates, and maximizing creator earnings. Convert diamonds to cash, understand values, and optimize your LIVE strategy.',
   keywords: [
     'tiktok diamonds', 'diamonds on tiktok', 'what are diamonds on tiktok', 'tiktok diamond calculator',
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     canonical: 'https://calculatecreator.com/guides/complete-tiktok-diamond-guide/',
   },
   openGraph: {
-    title: 'Complete TikTok Diamond Guide 2025 | What Are Diamonds Worth?',
+    title: 'Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?',
     description: 'Master TikTok diamonds: Complete guide to LIVE gifts, conversions, and maximizing creator earnings.',
     type: 'article',
     url: 'https://calculatecreator.com/guides/complete-tiktok-diamond-guide',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Complete TikTok Diamond Guide 2025',
+    title: 'Complete TikTok Diamond Guide 2026',
     description: 'Master TikTok diamonds and maximize your LIVE earnings.',
   },
 };
@@ -52,16 +52,16 @@ const tableOfContents = [
 
 export default function CompleteTikTokDiamondGuidePage() {
   const readingTime = '18 min read';
-  const lastUpdated = 'November 14, 2025';
+  const lastUpdated = 'November 14, 2026';
 
   return (
     <>
       <ArticleSchema
-        headline="Complete TikTok Diamond Guide 2025 | What Are Diamonds Worth?"
+        headline="Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?"
         description="Comprehensive guide to TikTok diamonds: understanding LIVE gifts, conversion rates, payout values, and maximizing creator earnings from TikTok's virtual gifting system."
         url="https://calculatecreator.com/guides/complete-tiktok-diamond-guide"
-        datePublished="2025-11-14"
-        dateModified="2025-11-14"
+        datePublished="2026-11-14"
+        dateModified="2026-11-14"
         keywords={["tiktok diamonds", "live gifts", "creator earnings", "diamond conversion", "payout rates"]}
       />
 
@@ -79,7 +79,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                 <Gem className="w-10 h-10" />
               </div>
               <h1 className="text-display-lg font-bold text-neutral-900 mb-6">
-                Complete TikTok Diamond Guide 2025
+                Complete TikTok Diamond Guide 2026
               </h1>
               <p className="text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
                 Master TikTok's diamond economy: Understand LIVE gifts, conversion rates, payout values, and maximize your creator earnings from TikTok's virtual gifting system.

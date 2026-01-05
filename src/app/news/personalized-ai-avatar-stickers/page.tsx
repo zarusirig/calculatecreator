@@ -5,7 +5,7 @@ import { Theater, BookOpen, MessageSquare, Palette, CheckCircle, XCircle } from 
 
 export const metadata: Metadata = {
   title: 'TikTok Releases Personalized AI Avatar Stickers | TikTok News',
-  description: 'TikTok rolled out AI-powered personalized avatar stickers in October 2025, allowing users to create custom stickers based on their likeness.',
+  description: 'TikTok rolled out AI-powered personalized avatar stickers in October 2026, allowing users to create custom stickers based on their likeness.',
   keywords: ['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers/',
@@ -55,7 +55,7 @@ export default function PersonalizedAIAvatarStickersPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Creative Tools
             </span>
-            <span className="text-white/80 text-label-sm">Published: October 2025</span>
+            <span className="text-white/80 text-label-sm">Published: October 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Releases Personalized AI Avatar Stickers
@@ -232,7 +232,7 @@ export default function PersonalizedAIAvatarStickersPage() {
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/content-strategy-2025"
+              href="/guides/content-strategy-2026"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Personal Branding Guide</span>
@@ -597,7 +597,7 @@ export default function PersonalizedAIAvatarStickersPage() {
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
               >
-                SocialBee: TikTok Updates October 2025 →
+                SocialBee: TikTok Updates October 2026 →
               </a>
             </li>
             <li>

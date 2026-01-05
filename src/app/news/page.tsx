@@ -26,10 +26,10 @@ export default function NewsPage() {
   const newsArticles: NewsArticle[] = [
     // Regulatory & Legal (3)
     {
-      title: 'TikTok Ban Enforcement Delayed Until December 16, 2025',
-      slug: 'tiktok-ban-delayed-december-2025',
+      title: 'TikTok Ban Enforcement Delayed Until December 16, 2026',
+      slug: 'tiktok-ban-delayed-december-2026',
       description: 'White House extends enforcement deadline for fourth time as administration pursues qualified divestiture solution.',
-      date: '2025-09-24',
+      date: '2026-09-24',
       category: 'Regulatory',
       featured: true,
     },
@@ -37,7 +37,7 @@ export default function NewsPage() {
       title: 'US-China Deal Reached to Keep TikTok Operational',
       slug: 'us-china-deal-tiktok-operational',
       description: 'Framework agreement announced between Trump administration and China to maintain TikTok operations in the United States.',
-      date: '2025-09-15',
+      date: '2026-09-15',
       category: 'Regulatory',
       featured: true,
     },
@@ -45,7 +45,7 @@ export default function NewsPage() {
       title: 'Understanding TikTok\'s De Jure Nationwide Ban Status',
       slug: 'tiktok-nationwide-ban-status',
       description: 'Explainer on why TikTok is technically banned but still operational, and what this means for creators.',
-      date: '2025-11-01',
+      date: '2026-11-01',
       category: 'Regulatory',
     },
     // Product Features (4)
@@ -53,7 +53,7 @@ export default function NewsPage() {
       title: 'TikTok Launches AI Outline and Smart Split Features',
       slug: 'ai-outline-smart-split-features',
       description: 'Two new AI-powered tools designed to streamline video creation and enhance editing capabilities for creators.',
-      date: '2025-11-05',
+      date: '2026-11-05',
       category: 'Features',
       featured: true,
     },
@@ -61,21 +61,21 @@ export default function NewsPage() {
       title: 'TikTok Releases Personalized AI Avatar Stickers',
       slug: 'personalized-ai-avatar-stickers',
       description: 'Create custom stickers based on your likeness with AI-powered avatar generation technology.',
-      date: '2025-10-15',
+      date: '2026-10-15',
       category: 'Features',
     },
     {
       title: 'New Mention Features for Liked and Favorited Videos',
       slug: 'mention-liked-favorited-videos',
       description: 'Users can now reference videos from their saved collections directly in their content.',
-      date: '2025-11-08',
+      date: '2026-11-08',
       category: 'Features',
     },
     {
       title: 'TikTok Introduces New Playback Settings',
       slug: 'playback-settings-update',
       description: 'Disable HDR videos and display object tags for enhanced viewing control and accessibility.',
-      date: '2025-11-10',
+      date: '2026-11-10',
       category: 'Features',
     },
     // TikTok Shop (5)
@@ -83,7 +83,7 @@ export default function NewsPage() {
       title: 'TikTok Shop Kicks Off Biggest Holiday Season Ever',
       slug: 'tiktok-shop-holiday-campaign',
       description: 'Platform launches largest holiday shopping campaign with special creator incentives and exclusive deals.',
-      date: '2025-11-01',
+      date: '2026-11-01',
       category: 'TikTok Shop',
       featured: true,
     },
@@ -91,50 +91,50 @@ export default function NewsPage() {
       title: 'TikTok Shop Ranks as Third-Fastest Growing Brand in the US',
       slug: 'tiktok-shop-third-fastest-growing',
       description: 'Morning Consult research reveals 145% year-over-year growth in consumer favorability.',
-      date: '2025-11-03',
+      date: '2026-11-03',
       category: 'TikTok Shop',
     },
     {
       title: 'TikTok Shop Expands to France, Germany, and Italy',
       slug: 'tiktok-shop-europe-expansion',
       description: 'Major European expansion brings social commerce to 83 million new users across three countries.',
-      date: '2025-03-27',
+      date: '2026-03-27',
       category: 'TikTok Shop',
     },
     {
-      title: 'TikTok Shop GMV Projected to Double by End of 2025',
+      title: 'TikTok Shop GMV Projected to Double by End of 2026',
       slug: 'tiktok-shop-gmv-doubling',
       description: 'Industry analysts forecast explosive growth from $20B to $40B+ in gross merchandise value.',
-      date: '2025-11-07',
+      date: '2026-11-07',
       category: 'TikTok Shop',
     },
     {
       title: 'TikTok Shop Introduces Product Subscriptions',
       slug: 'product-subscriptions-feature',
       description: 'New recurring revenue model enables subscription-based purchasing for consumable products.',
-      date: '2025-11-09',
+      date: '2026-11-09',
       category: 'TikTok Shop',
     },
     // Algorithm (3)
     {
-      title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025',
+      title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2026',
       slug: 'algorithm-eight-major-shifts',
       description: 'Enhanced personalization, off-platform behavior tracking, and retention focus reshape content distribution.',
-      date: '2025-06-15',
+      date: '2026-06-15',
       category: 'Algorithm',
     },
     {
       title: 'Retention Metrics Become Priority for Content Distribution',
       slug: 'retention-metrics-priority',
       description: 'Completion rates and watch time at 3s, 15s, and 60s checkpoints now determine video distribution.',
-      date: '2025-06-20',
+      date: '2026-06-20',
       category: 'Algorithm',
     },
     {
       title: 'TikTok Search Volume Increases by Over 40%',
       slug: 'search-volume-increase-40-percent',
       description: 'Billions of daily searches prompt major platform investment in search advertising and SEO features.',
-      date: '2025-10-01',
+      date: '2026-10-01',
       category: 'Discovery',
     },
     // Monetization (3)
@@ -142,7 +142,7 @@ export default function NewsPage() {
       title: 'Creator Fund Replaced with Creator Rewards Program',
       slug: 'creator-rewards-program-launch',
       description: 'New program requires 10K followers and 100K monthly views but offers up to 20x higher earnings.',
-      date: '2025-05-01',
+      date: '2026-05-01',
       category: 'Monetization',
       featured: true,
     },
@@ -150,14 +150,14 @@ export default function NewsPage() {
       title: 'Creator Rewards Offers Up to 20x Higher Earnings',
       slug: 'creator-rewards-20x-earnings',
       description: 'New program delivers $0.40-$1.00 per 1K views compared to Creator Fund\'s $0.02-$0.04.',
-      date: '2025-05-02',
+      date: '2026-05-02',
       category: 'Monetization',
     },
     {
       title: 'Only Videos Over 1 Minute Now Eligible for Monetization',
       slug: 'videos-over-one-minute-monetization',
       description: 'Creator Rewards Program exclusively focuses on longer-form content, pushing creators to adapt strategy.',
-      date: '2025-05-03',
+      date: '2026-05-03',
       category: 'Monetization',
     },
     // Safety (2)
@@ -165,14 +165,14 @@ export default function NewsPage() {
       title: 'TikTok Unveils New Safety Features for Parents',
       slug: 'parent-safety-features-update',
       description: 'Enhanced parental controls give families more visibility into teen account activity and customizable settings.',
-      date: '2025-07-15',
+      date: '2026-07-15',
       category: 'Safety',
     },
     {
-      title: 'Age-Specific Privacy Features for Internet Safety Day 2025',
+      title: 'Age-Specific Privacy Features for Internet Safety Day 2026',
       slug: 'age-specific-privacy-features',
       description: 'Comprehensive age-based controls including nighttime restrictions and enhanced Family Pairing capabilities.',
-      date: '2025-02-11',
+      date: '2026-02-11',
       category: 'Safety',
     },
   ];
@@ -212,7 +212,7 @@ export default function NewsPage() {
               TikTok News Today
             </h1>
             <p className="text-body-lg text-white/90 max-w-3xl mx-auto mb-6">
-              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates affecting creators. Fresh news covering everything you need to know about TikTok in 2025.
+              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates affecting creators. Fresh news covering everything you need to know about TikTok in 2026.
             </p>
             <p className="text-body-md text-white/80 max-w-3xl mx-auto">
               Our team monitors TikTok's official announcements, creator forums, and industry publications to bring you verified, actionable updates. From algorithm changes to new monetization features, we cover the news that impacts your creator business.

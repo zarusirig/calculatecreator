@@ -5,8 +5,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, CheckCircle, XCircle, Music, Zap, Camera, Briefcase, Dumbbell, Utensils, BookOpen, Package } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs Instagram Creator Income: Complete Comparison (2025)',
-  description: 'Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with 2025 data.',
+  title: 'TikTok vs Instagram Creator Income: Complete Comparison (2026)',
+  description: 'Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with 2026 data.',
   keywords: ['tiktok vs instagram creator income', 'instagram vs tiktok earnings', 'tiktok monetization vs instagram', 'creator platform comparison', 'tiktok vs instagram reels'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-instagram/',
@@ -48,13 +48,13 @@ export default function TikTokVsInstagramPage() {
       <section className="bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 py-12">
       <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok vs Instagram Creator Income: Complete Comparison (2025)
+            TikTok vs Instagram Creator Income: Complete Comparison (2026)
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with real 2025 data.
+            Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with real 2026 data.
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 10 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Platform Comparison Guide</span>
           </div>
@@ -180,7 +180,7 @@ export default function TikTokVsInstagramPage() {
                 <div className="border border-neutral-200 rounded-lg p-4">
                   <h4 className="text-heading-sm font-semibold text-neutral-900 mb-2">In-Stream Video Ads</h4>
                   <ul className="text-body-sm text-neutral-700 space-y-1">
-                    <li><strong>Status:</strong> Coming 2025</li>
+                    <li><strong>Status:</strong> Coming 2026</li>
                     <li><strong>Note:</strong> IGTV ads discontinued, but new format coming</li>
                   </ul>
                 </div>

@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, X } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Niche Selection Guide 2025: Find Your Profitable Content Category',
+  title: 'TikTok Niche Selection Guide 2026: Find Your Profitable Content Category',
   description: 'Complete guide to choosing the right TikTok niche. Profitability analysis, competition assessment, and how to find your perfect content category.',
   keywords: ['tiktok niche selection', 'content niche', 'profitable niches', 'niche strategy tiktok'],
   alternates: {
@@ -51,13 +51,13 @@ export default function NicheSelectionPage() {
             />
             <img
               src="/guides/guide-content-strategy-1024.webp"
-              alt="Featured image for TikTok Niche Selection Guide 2025"
+              alt="Featured image for TikTok Niche Selection Guide 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Niche Selection Guide 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">TikTok Niche Selection Guide 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Find your profitable content category and build authority</p>
         </div>
       </section>

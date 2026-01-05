@@ -355,7 +355,7 @@ Total Growth: 11,027 new followers`}
               'Creator Economy Benchmark Report 2024',
             ]}
             limitations="Projections assume consistent posting schedule and content quality. Actual growth may vary due to algorithm changes, viral content, or seasonal trends. Use recent data (7-14 days) for most accurate projections."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

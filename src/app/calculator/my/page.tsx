@@ -69,7 +69,7 @@ export default function KalkulatorTikTokMY() {
   const faqItems = [
     {
       question: 'Seberapa tepat kalkulator TikTok ini?',
-      answer: 'Kalkulator kami menggunakan data terkini dari lebih 2,500 pencipta yang disahkan dan statistik rasmi Dana Pencipta TikTok. Hasilnya menunjukkan anggaran realistik berdasarkan data pasaran semasa (Januari 2025).',
+      answer: 'Kalkulator kami menggunakan data terkini dari lebih 2,500 pencipta yang disahkan dan statistik rasmi Dana Pencipta TikTok. Hasilnya menunjukkan anggaran realistik berdasarkan data pasaran semasa (Januari 2026).',
     },
     {
       question: 'Adakah Dana Pencipta TikTok tersedia di Malaysia?',
@@ -149,7 +149,7 @@ export default function KalkulatorTikTokMY() {
 
           <div className="space-y-6">
             <Card>
-              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monetisasi TikTok di Malaysia 2025</h2>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monetisasi TikTok di Malaysia 2026</h2>
               <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
                 Malaysia menawarkan salah satu pasaran TikTok paling aktif dengan <strong>21.5 juta pengguna aktif</strong> dan penetrasi pasaran 63.8% - antara yang tertinggi di dunia. Pencipta Malaysia mendapat manfaat daripada:
               </p>
@@ -212,10 +212,10 @@ export default function KalkulatorTikTokMY() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  Pasaran TikTok Malaysia dalam 2025
+                  Pasaran TikTok Malaysia dalam 2026
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                  Malaysia mempunyai salah satu ekosistem TikTok paling vibrant di Asia Tenggara, dengan 21.5 juta pengguna aktif bulanan dan penetrasi pasaran tertinggi di rantau ini pada 63.8%. Ini bermakna hampir dua pertiga rakyat Malaysia adalah pengguna aktif TikTok, menjadikan platform ini saluran penting untuk pencipta kandungan. Pasaran Malaysia unik kerana kepelbagaian budaya, penggunaan pelbagai bahasa (Bahasa Malaysia, Inggeris, Cina, Tamil), dan khalayak digital yang sangat terlibat. Ekonomi pencipta Malaysia dijangka mencecah RM580 juta menjelang akhir 2025, didorong oleh peningkatan pesat dalam pelaburan jenama dan pengembangan TikTok Shop.
+                  Malaysia mempunyai salah satu ekosistem TikTok paling vibrant di Asia Tenggara, dengan 21.5 juta pengguna aktif bulanan dan penetrasi pasaran tertinggi di rantau ini pada 63.8%. Ini bermakna hampir dua pertiga rakyat Malaysia adalah pengguna aktif TikTok, menjadikan platform ini saluran penting untuk pencipta kandungan. Pasaran Malaysia unik kerana kepelbagaian budaya, penggunaan pelbagai bahasa (Bahasa Malaysia, Inggeris, Cina, Tamil), dan khalayak digital yang sangat terlibat. Ekonomi pencipta Malaysia dijangka mencecah RM580 juta menjelang akhir 2026, didorong oleh peningkatan pesat dalam pelaburan jenama dan pengembangan TikTok Shop.
                 </p>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   Demografi pengguna TikTok Malaysia sangat menarik untuk pencipta: 58% pengguna berumur antara 18-34 tahun, dengan penggunaan hampir sama rata antara jantina (51% perempuan, 49% lelaki). Purata masa penggunaan harian adalah 61 minit, antara tertinggi di dunia. Pengguna Malaysia terkenal dengan tahap penglibatan tinggi, dengan kadar interaksi 2.3× lebih tinggi berbanding purata global. Bandaraya utama seperti Kuala Lumpur, Johor Bahru, Penang dan Kota Kinabalu mendominasi penggunaan, tetapi kawasan luar bandar menunjukkan pertumbuhan pesat 52% tahun ke tahun, membuka peluang untuk kandungan tempatan dan niche.
@@ -245,7 +245,7 @@ export default function KalkulatorTikTokMY() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  Ekonomi pencipta Malaysia bernilai RM580 juta pada 2025, dengan pertumbuhan diunjurkan 42% untuk 12 bulan seterusnya. Kategori kandungan paling popular termasuk hiburan (28%), makanan (24%), kecantikan (21%), lifestyle (15%) dan gaming (12%). TikTok Shop Malaysia mengalami pertumbuhan eksplosif dengan GMV meningkat 180% tahun ke tahun, menjadikan affiliate marketing sumber pendapatan paling cepat berkembang untuk pencipta. Jenama tempatan dan antarabangsa kini memperuntukkan 35-45% bajet influencer marketing mereka untuk TikTok, naik daripada hanya 12% pada 2023.
+                  Ekonomi pencipta Malaysia bernilai RM580 juta pada 2026, dengan pertumbuhan diunjurkan 42% untuk 12 bulan seterusnya. Kategori kandungan paling popular termasuk hiburan (28%), makanan (24%), kecantikan (21%), lifestyle (15%) dan gaming (12%). TikTok Shop Malaysia mengalami pertumbuhan eksplosif dengan GMV meningkat 180% tahun ke tahun, menjadikan affiliate marketing sumber pendapatan paling cepat berkembang untuk pencipta. Jenama tempatan dan antarabangsa kini memperuntukkan 35-45% bajet influencer marketing mereka untuk TikTok, naik daripada hanya 12% pada 2023.
                 </p>
               </div>
 

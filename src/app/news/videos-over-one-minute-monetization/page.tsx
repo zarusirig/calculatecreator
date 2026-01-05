@@ -55,7 +55,7 @@ export default function VideosOverOneMinuteMonetizationPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Content Strategy
             </span>
-            <span className="text-white/80 text-label-sm">Published: 2025</span>
+            <span className="text-white/80 text-label-sm">Published: 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             Only Videos Over 1 Minute Now Eligible for Monetization

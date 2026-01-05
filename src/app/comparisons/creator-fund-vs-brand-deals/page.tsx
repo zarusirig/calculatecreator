@@ -5,8 +5,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, CheckCircle, XCircle, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Creator Fund vs Brand Deals: Which Pays More? (2025)',
-  description: 'Compare TikTok Creator Fund earnings vs brand deal sponsorships. See which monetization method pays better at your follower tier with real 2025 data.',
+  title: 'Creator Fund vs Brand Deals: Which Pays More? (2026)',
+  description: 'Compare TikTok Creator Fund earnings vs brand deal sponsorships. See which monetization method pays better at your follower tier with real 2026 data.',
   keywords: ['creator fund vs brand deals', 'tiktok creator fund earnings', 'brand deal rates tiktok', 'tiktok monetization comparison', 'creator fund or brand deals'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals/',
@@ -59,10 +59,10 @@ export default function CreatorFundVsBrandDealsPage() {
             Creator Fund vs Brand Deals: Which Pays More?
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
-            Compare TikTok's Creator Fund payments vs brand deal sponsorships to maximize your earnings in 2025
+            Compare TikTok's Creator Fund payments vs brand deal sponsorships to maximize your earnings in 2026
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 8 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Creator Income Guide</span>
           </div>
@@ -140,7 +140,7 @@ export default function CreatorFundVsBrandDealsPage() {
             <li>Account in good standing</li>
           </ul>
 
-          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">RPM Rates by Niche (2025)</h3>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">RPM Rates by Niche (2026)</h3>
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-body-sm">
               <thead>

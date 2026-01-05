@@ -42,7 +42,7 @@ export default function LifetimeValueCalculatorPage() {
           reviewCount: 912,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'clv calculator']}
       />
       <FAQSchema faqs={faqs} />
@@ -250,7 +250,7 @@ Max CAC = $3,600 / 3 = $1,200`}
               'Analysis of 300+ DTC brands with 12+ months of customer data',
             ]}
             limitations="LTV is a projection based on past behavior—actual future value may differ due to market changes, competition, or product changes. Early-stage businesses lack historical data and must estimate using industry benchmarks. LTV calculation doesn't account for referrals or word-of-mouth value. For accurate LTV, track real cohorts over 12-24 months."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Rechner: Einnahmen 2025 | Deutschland',
+  title: 'TikTok Rechner: Einnahmen 2026 | Deutschland',
   description: 'Kostenloser TikTok-Rechner für Creator Fund, Markendeals und LIVE-Geschenke. Berechnen Sie Ihre Einnahmen in Euro für den deutschen Markt.',
   keywords: ['tiktok rechner', 'tiktok einnahmen berechnen', 'tiktok geld verdienen', 'creator fund deutschland', 'tiktok monetarisierung'],
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'TikTok Rechner: Einnahmen berechnen (2025)',
+    title: 'TikTok Rechner: Einnahmen berechnen (2026)',
     description: 'Berechnen Sie Ihr Verdienstpotenzial auf TikTok. Creator Fund, Markendeals und LIVE Geschenke für den deutschen Markt.',
     url: 'https://calculatecreator.com/calculator/de',
     locale: 'de_DE',

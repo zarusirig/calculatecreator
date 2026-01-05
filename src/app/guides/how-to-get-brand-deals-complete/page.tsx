@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, CheckCircle2, XCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Get Brand Deals on TikTok: Complete Guide (2025)',
+  title: 'How to Get Brand Deals on TikTok: Complete Guide (2026)',
   description: 'Complete guide to landing brand deals on TikTok. 7 proven strategies, pitch templates, pricing guide, and where to find opportunities. For creators at any level.',
   keywords: ['how to get brand deals', 'tiktok sponsorships', 'brand partnerships', 'influencer marketing', 'sponsored content'],
   alternates: {
@@ -196,7 +196,7 @@ export default function HowToGetBrandDealsPage() {
             Complete guide with 7 proven strategies, pitch templates, and pricing benchmarks for creators at any level
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 15 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Earn 10-50× more than Creator Fund</span>
           </div>

@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Smartphone, ShoppingBag, DollarSign, CheckCircle, XCircle, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Shopping Guide: How to Sell Products During Livestreams 2025',
+  title: 'TikTok LIVE Shopping Guide: How to Sell Products During Livestreams 2026',
   description: 'Complete guide to TikTok LIVE Shopping. How to set up, showcase products, convert viewers to buyers, and maximize sales during live streams.',
   keywords: ['tiktok live shopping', 'live commerce', 'tiktok shop live', 'livestream selling', 'tiktok live sales'],
   alternates: {
@@ -49,13 +49,13 @@ export default function TikTokLiveShoppingPage() {
             />
             <img
               src="/guides/guide-tiktok-shop-1024.webp"
-              alt="Featured image for TikTok LIVE Shopping Guide 2025"
+              alt="Featured image for TikTok LIVE Shopping Guide 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
           </picture>
         <div className="container-custom max-w-4xl">
-          <h1 className="text-display-lg font-bold text-white mb-4">TikTok LIVE Shopping Guide 2025</h1>
+          <h1 className="text-display-lg font-bold text-white mb-4">TikTok LIVE Shopping Guide 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">
             How to sell products during live streams and maximize your earnings
           </p>

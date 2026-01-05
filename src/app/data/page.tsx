@@ -6,8 +6,8 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Database, TrendingUp, Globe, Users, DollarSign, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Data & Benchmarks Hub | 2025 Industry Rates',
-  description: 'Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2025.',
+  title: 'TikTok Creator Data & Benchmarks Hub | 2026 Industry Rates',
+  description: 'Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2026.',
   keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
   alternates: {
     canonical: 'https://calculatecreator.com/data/',
@@ -72,7 +72,7 @@ export default function DataIndexPage() {
   const faqs = [
     {
       question: 'Where does this data come from?',
-      answer: 'Our datasets combine: (1) Anonymous survey data from 1,000+ active TikTok creators, (2) Publicly disclosed earnings from creator interviews and case studies, (3) Industry reports from influencer marketing platforms like CreatorIQ and AspireIQ, and (4) TikTok Creator Marketplace rate cards. All data is aggregated, anonymized, and updated quarterly (last update: January 2025).',
+      answer: 'Our datasets combine: (1) Anonymous survey data from 1,000+ active TikTok creators, (2) Publicly disclosed earnings from creator interviews and case studies, (3) Industry reports from influencer marketing platforms like CreatorIQ and AspireIQ, and (4) TikTok Creator Marketplace rate cards. All data is aggregated, anonymized, and updated quarterly (last update: January 2026).',
     },
     {
       question: 'How accurate are these benchmarks?',
@@ -88,7 +88,7 @@ export default function DataIndexPage() {
     },
     {
       question: 'How often is this data updated?',
-      answer: 'We update all datasets quarterly (January, April, July, October) to reflect current market conditions. Major updates occur in January (annual benchmark refresh) and July (mid-year adjustment). Follow our news page for update announcements. Last update: January 2025.',
+      answer: 'We update all datasets quarterly (January, April, July, October) to reflect current market conditions. Major updates occur in January (annual benchmark refresh) and July (mid-year adjustment). Follow our news page for update announcements. Last update: January 2026.',
     },
     {
       question: 'What if my earnings don\'t match these benchmarks?',
@@ -189,7 +189,7 @@ export default function DataIndexPage() {
 
         {/* Key Data Insights */}
         <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200">
-          <h2 className="text-display-sm font-bold text-neutral-900 mb-6">2025 Creator Economy At-a-Glance</h2>
+          <h2 className="text-display-sm font-bold text-neutral-900 mb-6">2026 Creator Economy At-a-Glance</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-5 bg-white rounded-lg border border-purple-200">
               <div className="flex items-center gap-3 mb-3">
@@ -450,7 +450,7 @@ export default function DataIndexPage() {
             </div>
 
             <p className="text-body-sm italic">
-              <strong>Data Sources:</strong> Aggregated from 1,000+ creator surveys, public earnings disclosures, influencer platform reports, and TikTok Creator Marketplace rate cards. Last updated January 2025. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
+              <strong>Data Sources:</strong> Aggregated from 1,000+ creator surveys, public earnings disclosures, influencer platform reports, and TikTok Creator Marketplace rate cards. Last updated January 2026. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
             </p>
           </div>
         </Card>

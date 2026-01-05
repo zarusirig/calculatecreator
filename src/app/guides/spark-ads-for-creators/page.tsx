@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, XCircle, CheckCircle, Hash, Zap, TrendingUp, Smartphone, Users, Handshake } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Spark Ads for Creators: Complete Monetization Guide 2025',
+  title: 'TikTok Spark Ads for Creators: Complete Monetization Guide 2026',
   description: 'How TikTok Spark Ads work for creators. Earn from brands using your organic content as ads, authorization process, payment rates, and optimization strategies.',
   keywords: ['tiktok spark ads', 'spark ads creators', 'tiktok ads monetization', 'spark ads payment', 'branded content ads'],
   alternates: {
@@ -81,7 +81,7 @@ export default function SparkAdsForCreatorsPage() {
             Monetize your organic content through TikTok's Spark Ads program and earn from brand promotions
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Creator Monetization</span>
           </div>

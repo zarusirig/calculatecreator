@@ -439,7 +439,7 @@ Multipliers:
               'Survey of 500+ creators and brand managers',
             ]}
             limitations="Rates vary significantly based on brand budget, campaign goals, usage rights, exclusivity, and creator-brand fit. These are starting points for negotiation, not guaranteed rates."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

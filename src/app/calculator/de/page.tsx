@@ -72,7 +72,7 @@ export default function TikTokRechnerDE() {
   const faqItems = [
     {
       question: 'Wie genau ist dieser TikTok Rechner?',
-      answer: 'Unser Rechner verwendet aktuelle Daten von über 2.500 verifizierten Creatorn sowie offizielle TikTok Creator Fund Statistiken. Die Ergebnisse zeigen realistische Schätzungen basierend auf aktuellen Marktdaten (Januar 2025). Tatsächliche Einnahmen können je nach Nische, Zielgruppe und Engagement variieren.',
+      answer: 'Unser Rechner verwendet aktuelle Daten von über 2.500 verifizierten Creatorn sowie offizielle TikTok Creator Fund Statistiken. Die Ergebnisse zeigen realistische Schätzungen basierend auf aktuellen Marktdaten (Januar 2026). Tatsächliche Einnahmen können je nach Nische, Zielgruppe und Engagement variieren.',
     },
     {
       question: 'Ist der TikTok Creator Fund in Deutschland verfügbar?',
@@ -257,7 +257,7 @@ export default function TikTokRechnerDE() {
           <div className="space-y-6">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                TikTok Monetarisierung in Deutschland 2025
+                TikTok Monetarisierung in Deutschland 2026
               </h2>
               <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
                 Deutschland bietet einen der lukrativsten TikTok-Märkte weltweit mit über <strong>33,8 Millionen aktiven Nutzern</strong> und einer Marktdurchdringung von 40,1%. Deutsche Creatorn profitieren von:
@@ -376,10 +376,10 @@ export default function TikTokRechnerDE() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  Der deutsche TikTok-Markt 2025
+                  Der deutsche TikTok-Markt 2026
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                  Deutschland etabliert sich als einer der wertvollsten TikTok-Märkte weltweit mit 33,8 Millionen aktiven monatlichen Nutzern und einer Marktdurchdringung von 40,1%. Der deutsche Markt zeichnet sich durch außergewöhnlich hohe RPM-Raten (€0.030-€0.048), ein etabliertes Influencer-Marketing-Ökosystem und eine kaufkräftige, engagierte Zielgruppe aus. Die deutsche Creator-Economy wird 2025 auf €480 Millionen geschätzt, mit einer prognostizierten Wachstumsrate von 36% für die kommenden 12 Monate. Deutsche Marken von DAX-Konzernen bis zu mittelständischen Unternehmen investieren zunehmend in TikTok-Marketing, wobei Budgets von durchschnittlich €80.000-€350.000 pro Kampagne nicht ungewöhnlich sind.
+                  Deutschland etabliert sich als einer der wertvollsten TikTok-Märkte weltweit mit 33,8 Millionen aktiven monatlichen Nutzern und einer Marktdurchdringung von 40,1%. Der deutsche Markt zeichnet sich durch außergewöhnlich hohe RPM-Raten (€0.030-€0.048), ein etabliertes Influencer-Marketing-Ökosystem und eine kaufkräftige, engagierte Zielgruppe aus. Die deutsche Creator-Economy wird 2026 auf €480 Millionen geschätzt, mit einer prognostizierten Wachstumsrate von 36% für die kommenden 12 Monate. Deutsche Marken von DAX-Konzernen bis zu mittelständischen Unternehmen investieren zunehmend in TikTok-Marketing, wobei Budgets von durchschnittlich €80.000-€350.000 pro Kampagne nicht ungewöhnlich sind.
                 </p>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   Die demographische Zusammensetzung ist bemerkenswert ausgewogen: 59% der Nutzer sind zwischen 18 und 34 Jahre alt, mit nahezu paritätischer Geschlechterverteilung (50,5% weiblich, 49,5% männlich). Die durchschnittliche tägliche Nutzungsdauer von 47 Minuten und Engagement-Raten 38% über dem europäischen Durchschnitt zeigen eine hochwertige, aktive Community. Großstädte wie Berlin, München, Hamburg, Köln und Frankfurt dominieren mit 58% der Aktivität, aber ländliche Regionen in Bayern, Baden-Württemberg und Nordrhein-Westfalen zeigen explosives Wachstum von 64% Jahr-über-Jahr. Der deutsche Markt schätzt besonders Qualität, Expertise, Authentizität und professionelle Produktionswerte, was premium Creator-Raten ermöglicht.
@@ -409,7 +409,7 @@ export default function TikTokRechnerDE() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  Die deutsche Creator-Economy erreicht €480 Millionen in 2025, mit einer Wachstumsprojektion von 36% für die nächsten 12 Monate. Führende Sektoren sind Automotive/Tech (28%), Finance/Business (22%), Lifestyle/Interior (19%), Beauty/Fashion (18%) und Food/Culinary (13%). Deutsche Premium-Marken wie Mercedes, BMW, Siemens, SAP und zahlreiche Mittelständler nutzen TikTok zunehmend für B2C- und B2B-Marketing. Micro- und Mid-Tier-Influencer (10K-500K Follower) erhalten 74% aller Markenkollaborationen, mit Engagement-Raten durchschnittlich 3,8× höher als Mega-Influencer. Nordrhein-Westfalen und Bayern generieren zusammen 48% aller Creator-Einnahmen, während Ostdeutschland mit +72% YoY das schnellste Wachstum zeigt.
+                  Die deutsche Creator-Economy erreicht €480 Millionen in 2026, mit einer Wachstumsprojektion von 36% für die nächsten 12 Monate. Führende Sektoren sind Automotive/Tech (28%), Finance/Business (22%), Lifestyle/Interior (19%), Beauty/Fashion (18%) und Food/Culinary (13%). Deutsche Premium-Marken wie Mercedes, BMW, Siemens, SAP und zahlreiche Mittelständler nutzen TikTok zunehmend für B2C- und B2B-Marketing. Micro- und Mid-Tier-Influencer (10K-500K Follower) erhalten 74% aller Markenkollaborationen, mit Engagement-Raten durchschnittlich 3,8× höher als Mega-Influencer. Nordrhein-Westfalen und Bayern generieren zusammen 48% aller Creator-Einnahmen, während Ostdeutschland mit +72% YoY das schnellste Wachstum zeigt.
                 </p>
               </div>
 

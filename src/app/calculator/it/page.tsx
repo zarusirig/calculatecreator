@@ -69,7 +69,7 @@ export default function CalcolatoreTikTokIT() {
   const faqItems = [
     {
       question: 'Quanto è preciso questo calcolatore TikTok?',
-      answer: 'Il nostro calcolatore utilizza dati attuali di oltre 2.500 creator verificati e statistiche ufficiali del Creator Fund di TikTok. I risultati mostrano stime realistiche basate sui dati di mercato attuali (gennaio 2025).',
+      answer: 'Il nostro calcolatore utilizza dati attuali di oltre 2.500 creator verificati e statistiche ufficiali del Creator Fund di TikTok. I risultati mostrano stime realistiche basate sui dati di mercato attuali (gennaio 2026).',
     },
     {
       question: 'Il Creator Fund di TikTok è disponibile in Italia?',
@@ -149,7 +149,7 @@ export default function CalcolatoreTikTokIT() {
 
           <div className="space-y-6">
             <Card>
-              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monetizzazione TikTok in Italia 2025</h2>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monetizzazione TikTok in Italia 2026</h2>
               <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
                 L'Italia offre un mercato TikTok lucrativo con <strong>28,9 milioni di utenti attivi</strong> e un tasso di penetrazione del 48,7%. I creator italiani beneficiano di tassi RPM premium e opportunità di collaborazione con brand locali e internazionali.
               </p>
@@ -196,7 +196,7 @@ export default function CalcolatoreTikTokIT() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  Il Mercato TikTok Italiano nel 2025
+                  Il Mercato TikTok Italiano nel 2026
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
                   L'Italia rappresenta uno dei mercati europei più dinamici per TikTok, con una base utenti in costante crescita e un alto tasso di coinvolgimento. Con 28,9 milioni di utenti attivi mensili e una penetrazione del 48,7%, il Paese offre opportunità uniche per i creator digitali. Il mercato italiano si distingue per un pubblico maturo, un potere d'acquisto elevato e una crescente domanda di contenuti autentici e di qualità. Le aziende italiane hanno abbracciato il marketing degli influencer, con investimenti che crescono del 35% anno su anno, creando un ecosistema fertile per i creator professionisti.
@@ -229,7 +229,7 @@ export default function CalcolatoreTikTokIT() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  L'economia dei creator italiani vale oltre €180 milioni nel 2025, con una crescita prevista del 28% per i prossimi 12 mesi. Il settore moda e bellezza rappresenta il 42% delle collaborazioni, seguito da food (23%), lifestyle (18%) e tecnologia (11%). Gli influencer micro e mid-tier (10K-500K follower) ricevono la maggior parte delle opportunità di brand partnership, con tassi di engagement mediamente superiori del 40% rispetto ai mega-influencer. Le regioni del Nord Italia generano il 58% dei ricavi totali, ma il Sud mostra la crescita più rapida con un aumento del 45% anno su anno.
+                  L'economia dei creator italiani vale oltre €180 milioni nel 2026, con una crescita prevista del 28% per i prossimi 12 mesi. Il settore moda e bellezza rappresenta il 42% delle collaborazioni, seguito da food (23%), lifestyle (18%) e tecnologia (11%). Gli influencer micro e mid-tier (10K-500K follower) ricevono la maggior parte delle opportunità di brand partnership, con tassi di engagement mediamente superiori del 40% rispetto ai mega-influencer. Le regioni del Nord Italia generano il 58% dei ricavi totali, ma il Sud mostra la crescita più rapida con un aumento del 45% anno su anno.
                 </p>
               </div>
 

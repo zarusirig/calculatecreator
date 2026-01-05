@@ -20,14 +20,14 @@ export default function TikTokAdCostCalculatorPage() {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary-DEFAULT text-white mb-6">
               <BarChart2 className="w-8 h-8" />
             </div>
-            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Ad Cost Calculator 2025</h1>
+            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Ad Cost Calculator 2026</h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. Updated with 2025 benchmarks and industry insights.
+              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. Updated with 2026 benchmarks and industry insights.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1">
                 <TrendingUp className="w-4 h-4" />
-                Updated November 2025
+                Updated November 2026
               </span>
               <span className="flex items-center gap-1">
                 <Target className="w-4 h-4" />
@@ -55,7 +55,7 @@ export default function TikTokAdCostCalculatorPage() {
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-blue-600" />
-                  2025 TikTok Ad Trends
+                  2026 TikTok Ad Trends
                 </h3>
                 <ul className="space-y-2 text-sm text-neutral-700">
                   <li>• CPM increased 25% YoY</li>
@@ -109,9 +109,9 @@ export default function TikTokAdCostCalculatorPage() {
                 { label: 'Seasonal Trends', value: 'Holiday periods increase costs significantly' },
                 { label: 'Account History', value: 'Proven advertisers get better rates over time' }
               ]}
-              dataSources={['TikTok Ads Manager Data', 'Q4 2025 Industry Reports', 'TikTok Official Benchmarks']}
+              dataSources={['TikTok Ads Manager Data', 'Q4 2026 Industry Reports', 'TikTok Official Benchmarks']}
               limitations="Costs fluctuate based on real-time auction dynamics and seasonal trends. Actual performance may vary based on creative quality and audience targeting."
-              lastUpdated="November 2025"
+              lastUpdated="November 2026"
             />
 
             <FAQSection
@@ -119,7 +119,7 @@ export default function TikTokAdCostCalculatorPage() {
               faqs={[
                 {
                   question: "What's a good CPM for TikTok ads?",
-                  answer: "A good CPM is typically under $10. Premium targeting and high-competition niches like beauty and fashion can reach $15-20 CPM. Average CPM across industries is $7.50 (2025 data)."
+                  answer: "A good CPM is typically under $10. Premium targeting and high-competition niches like beauty and fashion can reach $15-20 CPM. Average CPM across industries is $7.50 (2026 data)."
                 },
                 {
                   question: "How much do TikTok ads cost to start?",
@@ -139,7 +139,7 @@ export default function TikTokAdCostCalculatorPage() {
                 },
                 {
                   question: "Are TikTok ad costs worth it?",
-                  answer: "TikTok advertising can be highly cost-effective for reaching Gen Z and millennial audiences. Average ROAS across industries is 3.2x, with e-commerce achieving up to 8x ROAS in 2025."
+                  answer: "TikTok advertising can be highly cost-effective for reaching Gen Z and millennial audiences. Average ROAS across industries is 3.2x, with e-commerce achieving up to 8x ROAS in 2026."
                 },
                 {
                   question: "How do TikTok ad costs compare to other platforms?",

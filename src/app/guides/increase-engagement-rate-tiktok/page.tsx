@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'How to Increase TikTok Engagement Rate: 12 Proven Strategies (2025)',
+  title: 'How to Increase TikTok Engagement Rate: 12 Proven Strategies (2026)',
   description: 'Boost your TikTok engagement rate with 12 data-backed strategies. Increase likes, comments, shares, and saves to improve algorithm performance and earnings.',
   keywords: ['how to increase tiktok engagement', 'boost engagement rate', 'improve tiktok metrics', 'tiktok algorithm tips'],
   alternates: {
@@ -51,8 +51,8 @@ export default function IncreaseEngagementRatePage() {
         headline="How to Increase TikTok Engagement Rate: 12 Proven Strategies"
         description="Boost your TikTok engagement rate with proven strategies to increase likes, comments, shares, and saves for better algorithm performance."
         url="https://calculatecreator.com/guides/increase-engagement-rate-tiktok"
-        datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        datePublished="2026-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok engagement', 'increase engagement', 'boost metrics', 'algorithm optimization']}
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function IncreaseEngagementRatePage() {
             12 proven strategies to boost likes, comments, shares, and algorithm performance
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2025</span>
+            <span>📅 Updated: November 13, 2026</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function IncreaseEngagementRatePage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Current Engagement Rate Benchmarks (2025)
+            Current Engagement Rate Benchmarks (2026)
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">

@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { BarChart3, Zap, MessageCircle, Share2, TrendingUp, Clock, Music } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Engagement Rates by Niche 2025: Complete Benchmark Data',
+  title: 'TikTok Engagement Rates by Niche 2026: Complete Benchmark Data',
   description: 'Comprehensive TikTok engagement rate benchmarks across 20+ niches. Compare your performance to industry standards and discover which niches have the highest engagement.',
   keywords: ['tiktok engagement rate by niche', 'tiktok benchmarks', 'engagement rate data', 'tiktok niche statistics'],
   alternates: {
@@ -62,7 +62,7 @@ export default function EngagementRatesPage() {
             <BarChart3 className="w-8 h-8" />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-            TikTok Engagement Rates by Niche 2025
+            TikTok Engagement Rates by Niche 2026
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Comprehensive benchmark data across 20+ TikTok niches. Compare your engagement rate to industry standards and identify growth opportunities.
@@ -71,7 +71,7 @@ export default function EngagementRatesPage() {
 
         {/* Key Insights */}
         <Card className="mb-8 bg-gradient-to-r from-primary-50 to-secondary-50 border-primary-200">
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Key Insights for 2025</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Key Insights for 2026</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <p className="text-display-sm font-bold text-primary-600">6.2%</p>
@@ -115,7 +115,7 @@ export default function EngagementRatesPage() {
             Engagement Rates by Content Niche
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Data collected from analysis of 50,000+ TikTok accounts across all niches (Q4 2024 - Q1 2025):
+            Data collected from analysis of 50,000+ TikTok accounts across all niches (Q4 2024 - Q1 2026):
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">
@@ -464,7 +464,7 @@ export default function EngagementRatesPage() {
           <p className="text-body-sm text-neutral-600">
             This data is compiled from analysis of 50,000+ TikTok accounts across all niches, updated quarterly. Sources include our creator surveys, public analytics platforms, and industry reports from Influencer Marketing Hub and CreatorIQ. Engagement rates reflect averages; individual results vary based on content quality, posting consistency, and audience demographics.
           </p>
-          <p className="text-body-sm text-neutral-500 mt-2">Last updated: December 2025</p>
+          <p className="text-body-sm text-neutral-500 mt-2">Last updated: December 2026</p>
         </div>
       </div>
     </div>

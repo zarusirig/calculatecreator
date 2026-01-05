@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, BarChart3, Lightbulb, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Payment Schedule 2025: When & How You Get Paid',
+  title: 'TikTok Creator Fund Payment Schedule 2026: When & How You Get Paid',
   description: 'Complete guide to TikTok Creator Fund payment schedule, processing times, minimum thresholds, payment methods, and what to do if your payment is delayed.',
   keywords: ['tiktok creator fund payment schedule', 'when does tiktok pay creators', 'creator fund payout', 'tiktok payment dates', 'creator fund withdrawal'],
   alternates: {
@@ -56,13 +56,13 @@ export default function CreatorFundPaymentSchedulePage() {
       <section className="bg-gradient-to-br from-tiktok-pink via-tiktok-red to-tiktok-blue py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Creator Fund Payment Schedule 2025
+            TikTok Creator Fund Payment Schedule 2026
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             Everything you need to know about when and how you get paid from the Creator Fund
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Payment Guide</span>
           </div>

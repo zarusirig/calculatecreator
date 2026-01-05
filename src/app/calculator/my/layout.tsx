@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator TikTok: Pendapatan 2025 | Malaysia',
+  title: 'Kalkulator TikTok: Pendapatan 2026 | Malaysia',
   description: 'Kalkulator TikTok percuma untuk Dana Pencipta, tawaran jenama dan hadiah LIVE. Kirakan potensi pendapatan anda dalam Ringgit Malaysia.',
   keywords: ['kalkulator tiktok', 'pendapatan tiktok', 'wang tiktok', 'dana pencipta', 'monetisasi tiktok'],
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Kalkulator TikTok: Kira Pendapatan Anda (2025)',
+    title: 'Kalkulator TikTok: Kira Pendapatan Anda (2026)',
     description: 'Kirakan potensi pendapatan anda di TikTok. Dana Pencipta, tawaran jenama, dan hadiah LIVE.',
     url: 'https://calculatecreator.com/calculator/my',
     locale: 'ms_MY',

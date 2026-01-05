@@ -43,7 +43,7 @@ export default function AffiliateCommissionCalculatorPage() {
           reviewCount: 1034,
         }}
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-11-13"
         keywords={['tiktok affiliate calculator', 'tiktok shop commission', 'affiliate earnings', 'tiktok affiliate income']}
       />
       <FAQSchema faqs={faqs} />
@@ -250,7 +250,7 @@ Annual Earnings = $150 × 12 = $1,800`}
                 'Industry benchmarks from affiliate marketing platforms (ShareASale, Impact)',
               ]}
               limitations="Actual earnings vary significantly based on content quality, audience trust, product-niche fit, and posting consistency. Seasonal factors (holidays, trends) can cause 2-5× variance in monthly earnings. Building audience trust typically takes 1-3 months before seeing optimal conversion rates."
-              lastUpdated="November 13, 2025"
+              lastUpdated="November 13, 2026"
             />
 
             <FAQSection

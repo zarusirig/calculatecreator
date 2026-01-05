@@ -175,7 +175,7 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
             ]}
             dataSources={['TikTok Algorithm Research 2024', 'Creator Analytics Aggregation', 'Viral Content Pattern Analysis']}
             limitations="Viral potential is probabilistic, not deterministic. Timing, trends, and luck also play significant roles that can't be calculated."
-            lastUpdated="December 5, 2025"
+            lastUpdated="December 5, 2026"
           />
 
           <FAQSection

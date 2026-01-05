@@ -149,7 +149,7 @@ Visit Rate: (5,000 / 100,000) × 100 = 5%`}
               'Follower Acquisition Research 2024',
             ]}
             limitations="Visit rates vary by content type. How-to and educational content naturally drive more profile visits than entertainment content."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection

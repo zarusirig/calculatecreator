@@ -5,7 +5,7 @@ import { BarChart3, Lock, Clock, Shield, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'TikTok Unveils New Safety Features for Parents | TikTok News',
-  description: 'In July 2025, TikTok announced new safety measures giving parents more control over teens\' accounts, including greater visibility into account activity and customizable settings.',
+  description: 'In July 2026, TikTok announced new safety measures giving parents more control over teens\' accounts, including greater visibility into account activity and customizable settings.',
   keywords: ['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/parent-safety-features-update/',
@@ -55,7 +55,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Parental Controls
             </span>
-            <span className="text-white/80 text-label-sm">Published: July 2025</span>
+            <span className="text-white/80 text-label-sm">Published: July 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Unveils New Safety Features for Parents
@@ -72,7 +72,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
             Key Takeaway
           </h2>
           <p className="text-body-md text-blue-800">
-            TikTok's July 2025 safety update introduces comprehensive parental controls that give families greater visibility into teen account activity and customizable safety settings. These features strengthen TikTok's Family Pairing system and address concerns about teen social media use.
+            TikTok's July 2026 safety update introduces comprehensive parental controls that give families greater visibility into teen account activity and customizable safety settings. These features strengthen TikTok's Family Pairing system and address concerns about teen social media use.
           </p>
         </Card>
 
@@ -265,7 +265,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
                   <thead>
                     <tr className="border-b-2 border-neutral-300">
                       <th className="text-left py-3 px-4 font-semibold">Feature</th>
-                      <th className="text-left py-3 px-4 font-semibold">TikTok (2025)</th>
+                      <th className="text-left py-3 px-4 font-semibold">TikTok (2026)</th>
                       <th className="text-left py-3 px-4 font-semibold">Instagram</th>
                       <th className="text-left py-3 px-4 font-semibold">YouTube</th>
                     </tr>
@@ -350,14 +350,14 @@ export default function ParentSafetyFeaturesUpdatePage() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white text-sm font-bold flex items-center justify-center">Q3</div>
                   <div>
-                    <h4 className="font-semibold text-neutral-900 mb-1">Phase 1: Core Safety Features (July-August 2025)</h4>
+                    <h4 className="font-semibold text-neutral-900 mb-1">Phase 1: Core Safety Features (July-August 2026)</h4>
                     <p className="text-body-sm text-neutral-700">Enhanced activity dashboard, basic content filtering, improved Family Pairing interface</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-500 text-white text-sm font-bold flex items-center justify-center">Q4</div>
                   <div>
-                    <h4 className="font-semibold text-neutral-900 mb-1">Phase 2: Advanced Controls (September-November 2025)</h4>
+                    <h4 className="font-semibold text-neutral-900 mb-1">Phase 2: Advanced Controls (September-November 2026)</h4>
                     <p className="text-body-sm text-neutral-700">Bedtime mode, advanced content filtering, search history monitoring, enhanced privacy settings</p>
                   </div>
                 </div>
@@ -387,9 +387,9 @@ export default function ParentSafetyFeaturesUpdatePage() {
                 <div>
                   <h4 className="font-semibold text-neutral-800 mb-2">Expansion Timeline:</h4>
                   <ul className="space-y-1 text-body-sm text-neutral-700">
-                    <li>• <strong>August 2025:</strong> Additional EU markets</li>
-                    <li>• <strong>October 2025:</strong> Asian markets (Japan, South Korea)</li>
-                    <li>• <strong>December 2025:</strong> Latin America</li>
+                    <li>• <strong>August 2026:</strong> Additional EU markets</li>
+                    <li>• <strong>October 2026:</strong> Asian markets (Japan, South Korea)</li>
+                    <li>• <strong>December 2026:</strong> Latin America</li>
                     <li>• <strong>Early 2026:</strong> Remaining global markets</li>
                     <li>• Features adapted for local regulations and cultural norms</li>
                   </ul>

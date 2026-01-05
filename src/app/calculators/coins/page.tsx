@@ -156,7 +156,7 @@ export default function CoinsCalculatorPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              How TikTok's Currency System Works (2025)
+              How TikTok's Currency System Works (2026)
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
@@ -173,11 +173,11 @@ export default function CoinsCalculatorPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              Conversion Rates Explained: 2024-2025 Updates
+              Conversion Rates Explained: 2024-2026 Updates
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                As of 2025, TikTok coin pricing remains consistent at approximately $0.0129 per coin in the United States, though regional variations exist. The platform maintains a fixed 2:1 conversion ratio where 2 coins equal 1 diamond for creators. This means when a viewer sends a 1,000-coin gift, the creator receives 500 diamonds worth $2.50. TikTok's 50% platform cut is non-negotiable and applies universally to all creators regardless of follower count or performance.
+                As of 2026, TikTok coin pricing remains consistent at approximately $0.0129 per coin in the United States, though regional variations exist. The platform maintains a fixed 2:1 conversion ratio where 2 coins equal 1 diamond for creators. This means when a viewer sends a 1,000-coin gift, the creator receives 500 diamonds worth $2.50. TikTok's 50% platform cut is non-negotiable and applies universally to all creators regardless of follower count or performance.
               </p>
               <p>
                 Regional pricing varies significantly due to currency exchange rates and local purchasing power. European users might pay €1.19 for 100 coins, UK users pay £1.09, while users in developing markets like India or Brazil see proportionally lower prices. However, the diamond payout rate for creators remains standardized at $0.005 per diamond globally, meaning geographic arbitrage doesn't benefit creators—only the viewer's purchase experience differs.
@@ -186,7 +186,7 @@ export default function CoinsCalculatorPage() {
                 iOS users typically pay 5-10% more for coins due to Apple's 30% App Store commission, which TikTok partially passes to consumers. Many savvy creators encourage their audiences to purchase coins via Android devices or TikTok's web browser to maximize the value of viewer spending. A viewer spending $100 on iOS might get 7,500 coins, while the same $100 on Android could yield 7,750 coins—a meaningful difference for frequent gifters.
               </p>
               <div className="p-4 bg-warning-50 border-l-4 border-warning-400 rounded">
-                <p className="text-body-sm"><strong>Important 2025 Update:</strong> TikTok has introduced tiered coin packages with slight bulk discounts. While the base rate is $0.0129/coin, the 10,000 coin package effectively costs $0.0130/coin—minimal savings. Focus on content quality over package optimization.</p>
+                <p className="text-body-sm"><strong>Important 2026 Update:</strong> TikTok has introduced tiered coin packages with slight bulk discounts. While the base rate is $0.0129/coin, the 10,000 coin package effectively costs $0.0130/coin—minimal savings. Focus on content quality over package optimization.</p>
               </div>
             </div>
           </Card>
@@ -310,7 +310,7 @@ Example:
               'TikTok LIVE Gifts & Diamonds documentation'
             ]}
             limitations="Coin prices vary by region (iOS/Android differences). Some promotional packages offer bonus coins. Actual conversion rates are fixed by TikTok."
-            lastUpdated="November 13, 2025"
+            lastUpdated="November 13, 2026"
           />
 
           <FAQSection
