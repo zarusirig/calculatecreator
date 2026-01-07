@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Sparkles, Heart, Coffee, Home, DollarSign, BarChart3, Target, CheckCircle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Introduces Product Subscriptions Feature | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function ProductSubscriptionsFeaturePage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Shop Introduces Product Subscriptions Feature"
+        description="TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers."
+        url="https://calculatecreator.com/news/product-subscriptions-feature/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        keywords={['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Product Subscriptions', url: 'https://calculatecreator.com/news/product-subscriptions-feature/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -454,5 +472,6 @@ export default function ProductSubscriptionsFeaturePage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

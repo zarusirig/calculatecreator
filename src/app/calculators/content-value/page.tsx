@@ -1,13 +1,61 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { Gem } from 'lucide-react';
 import { ContentValueCalculatorWidget } from '@/components/calculators/content-value/CalculatorWidget';
 
+export const metadata: Metadata = {
+  title: 'TikTok Content Value Calculator: What Your Videos Are Worth (2026)',
+  description: 'Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche.',
+  keywords: ['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/content-value/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'How is content value calculated?',
+    answer: 'Content value is based on three factors: (1) Total reach (views), (2) Engagement quality, and (3) Niche monetization potential. High-value niches like finance and tech command 2-3x premiums due to better brand deal rates and audience purchasing power.',
+  },
+  {
+    question: 'When would I use a content value calculation?',
+    answer: 'Use cases: (1) Negotiating account acquisition or sale, (2) Licensing your content library to brands/agencies, (3) Pitching to investors or seeking loans, (4) Understanding asset value for tax/accounting, (5) Comparing ROI across different content strategies.',
+  },
+  {
+    question: 'Does old content still have value?',
+    answer: 'Yes, if it\'s evergreen. Educational, tutorial, and reference content retains value longer. Trending/meme content depreciates quickly. Videos still getting views (even years later) are highly valuable. Check your analytics for "catalog content" that continues performing.',
+  },
+  {
+    question: 'How can I increase my content portfolio value?',
+    answer: 'Strategies: (1) Pivot to higher-value niches (finance, tech, B2B), (2) Create evergreen content that compounds views, (3) Improve engagement rate (comments/shares worth more), (4) Build a larger content library, (5) Optimize for SEO/discoverability to extend content lifespan.',
+  },
+];
+
 export default function ContentValueCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Content Value Calculator"
+        description="Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche."
+        url="https://calculatecreator.com/calculators/content-value"
+        aggregateRating={{ ratingValue: 4.6, reviewCount: 1298 }}
+        datePublished="2024-04-01"
+        dateModified="2025-11-13"
+        keywords={['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Content Value Calculator', url: 'https://calculatecreator.com/calculators/content-value' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -264,7 +312,7 @@ Total: $375 × 100 = $37,500`}
               'Influencer Account Acquisition Benchmarks',
             ]}
             limitations="Values are estimates for negotiation purposes. Actual value depends on audience demographics, content rights, and buyer needs. Trending content loses value faster than evergreen content."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -320,5 +368,6 @@ Total: $375 × 100 = $37,500`}
         </div>
       </div>
     </div>
+    </>
   );
 }

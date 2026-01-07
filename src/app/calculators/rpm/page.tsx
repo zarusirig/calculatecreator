@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { TrendingUp, X } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -8,6 +9,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok RPM Calculator: Revenue Per 1000 Views (2026)',
+  description: 'Calculate your TikTok RPM (revenue per mille). Understand how much you earn per 1000 views from Creator Fund and compare to benchmarks.',
+  keywords: ['rpm calculator', 'tiktok rpm', 'revenue per thousand views', 'creator fund rpm', 'earnings per view'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/rpm/',
+  },
+};
 
 const faqData = [
   {
@@ -64,7 +74,7 @@ export default function RPMCalculatorPage() {
           </Card>
 
           <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">TikTok RPM Benchmarks by Niche (2026)</h2>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">TikTok RPM Benchmarks by Niche 2026</h2>
             <div className="overflow-x-auto">
               <table className="w-full text-left">
                 <thead>
@@ -140,7 +150,7 @@ RPM: ($3.00 / 100,000) × 1000 = $0.030`}
             assumptions={[{ label: 'Benchmarks', value: 'Excellent: $0.04+, Good: $0.03-0.04, Average: $0.02-0.03' }]}
             dataSources={['Creator Fund data', 'Industry averages 2024']}
             limitations="RPM varies by niche, audience location, and engagement."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection pageName="RPM Calculator" faqs={faqData} />

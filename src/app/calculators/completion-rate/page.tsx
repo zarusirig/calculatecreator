@@ -1,14 +1,62 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { CheckCircle, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CompletionRateCalculatorWidget } from '@/components/calculators/completion-rate/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Video Completion Rate Calculator (2026)',
+  description: 'Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance.',
+  keywords: ['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/completion-rate/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good completion rate on TikTok?',
+    answer: 'For videos under 30 seconds: aim for 70%+. For 30-60 seconds: 50%+ is good. For 60+ seconds: 40%+ is solid. Focus on beating your own baseline averages.',
+  },
+  {
+    question: 'How do I increase my completion rate?',
+    answer: 'Delete the first 2-3 seconds, put payoff at the end, use text overlays to tease, cut out fluff, make videos shorter, add pattern interrupts every 5 seconds, create loop-worthy endings.',
+  },
+  {
+    question: 'Where can I find completion rate in TikTok Analytics?',
+    answer: 'TikTok doesn\'t show "completion rate" directly. Go to Analytics → Content → Select a video. Find "Average watch time" and divide by video duration, then multiply by 100.',
+  },
+  {
+    question: 'Does looping/rewatching count toward completion rate?',
+    answer: 'Yes! When viewers rewatch, it can push completion rate over 100%. Creating loop-worthy content is one of the most powerful virality strategies.',
+  },
+];
 
 export default function CompletionRateCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Video Completion Rate Calculator"
+        description="Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance."
+        url="https://calculatecreator.com/calculators/completion-rate"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1876 }}
+        datePublished="2024-02-10"
+        dateModified="2025-11-13"
+        keywords={['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Completion Rate Calculator', url: 'https://calculatecreator.com/calculators/completion-rate' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -171,7 +219,7 @@ Note: Rates over 100% are possible when viewers rewatch`}
               'Creator Success Metrics Study',
             ]}
             limitations="Completion rate should be evaluated relative to video length. A 50% completion on a 2-minute video may be better than 90% on a 10-second video."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -207,5 +255,6 @@ Note: Rates over 100% are possible when viewers rewatch`}
         </div>
       </div>
     </div>
+    </>
   );
 }

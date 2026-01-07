@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { TrendingUp, ShoppingCart, Smartphone, Target, Palette } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,6 +7,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CampaignROICalculatorWidget } from '@/components/calculators/campaign-roi/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Campaign ROI Calculator: Measure Ad Performance (2026)',
+  description: 'Calculate your TikTok advertising campaign ROI. Measure ROAS, track conversions, and optimize ad spend with our free campaign ROI calculator.',
+  keywords: ['campaign roi calculator', 'tiktok roas', 'ad performance calculator', 'marketing roi', 'tiktok ads roi'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/campaign-roi/',
+  },
+};
 
 const faqs = [
   {
@@ -42,7 +52,7 @@ export default function CampaignROICalculatorPage() {
           reviewCount: 1156,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['campaign roi calculator', 'tiktok roi', 'roas calculator', 'marketing roi']}
       />
       <FAQSchema faqs={faqs} />
@@ -269,7 +279,7 @@ Interpretation: You made $3 for every $1 spent, resulting in $4,000 profit (200%
               'Digital marketing ROI standards from WordStream and HubSpot',
             ]}
             limitations="ROI varies significantly by industry, product type, pricing, and campaign maturity. Early campaigns (first 7 days) may show lower ROI as algorithm learns. Seasonal factors affect ROI—Q4 holidays typically 20-40% better than Q1. Attribution challenges (multi-touch, view-through) may undercount conversions. Doesn't account for lifetime value—acceptable ROI depends on repeat purchase potential."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { ShoppingBag, Handshake, TrendingUp, MessageCircle, Sparkles, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Beauty Creators TikTok Earnings Guide: Realistic Income Data (2026)',
+  title: 'Beauty Creators TikTok Earnings Guide: Realistic Income Data 2026',
   description: 'Complete earnings guide for beauty creators on TikTok. Income by follower tier, brand deal rates, affiliate commissions, and monetization strategies.',
   keywords: ['beauty creator earnings', 'tiktok beauty income', 'beauty influencer rates', 'makeup creator money'],
   alternates: {
@@ -36,7 +36,7 @@ export default function BeautyEarningsPage() {
             </h1>
           </div>
           <p className="text-heading-md text-white/90 mb-6">
-            Realistic income data, brand deal rates, and monetization strategies for beauty creators in 2026
+            Realistic income data, brand deal rates, and monetization strategies for beauty creators in 2025
           </p>
         </div>
       </section>

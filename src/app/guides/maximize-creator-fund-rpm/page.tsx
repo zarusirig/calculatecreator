@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Maximize Creator Fund RPM: 12 Strategies to Boost Earnings (2026)',
+  title: 'Maximize Creator Fund RPM: 12 Strategies to Boost Earnings 2026',
   description: 'Increase your TikTok Creator Fund RPM with 12 proven strategies. Learn what affects RPM rates and how to earn more per 1000 views.',
   keywords: ['increase creator fund rpm', 'boost tiktok earnings', 'higher rpm', 'creator fund optimization'],
   alternates: {
@@ -51,8 +51,8 @@ export default function MaximizeCreatorFundRPMPage() {
         headline="Maximize Creator Fund RPM: 12 Strategies to Boost Earnings"
         description="Complete guide to increasing TikTok Creator Fund RPM with 12 proven strategies, niche-specific data, and optimization tactics."
         url="https://calculatecreator.com/guides/maximize-creator-fund-rpm"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['rpm optimization', 'creator fund earnings', 'boost rpm', 'tiktok income']}
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function MaximizeCreatorFundRPMPage() {
             12 proven strategies to increase earnings per 1000 views
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2026</span>
+            <span>📅 Updated: November 13, 2025</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>

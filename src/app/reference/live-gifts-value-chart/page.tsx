@@ -54,7 +54,7 @@ export default function LiveGiftsValueChartPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">TikTok LIVE Gifts Value Chart 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Complete reference for all gift values, prices, and creator earnings</p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Gem className="w-4 h-4" /> All Gift Values</span>
           </div>
         </div>

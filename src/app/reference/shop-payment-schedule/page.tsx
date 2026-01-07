@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Calendar, Clock, DollarSign, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Payment Schedule: When Do You Get Paid? (2026)',
+  title: 'TikTok Shop Payment Schedule: When Do You Get Paid? 2026',
   description: 'Complete TikTok Shop payout schedule, processing times, minimum thresholds, payment methods, and troubleshooting for delayed payments.',
   keywords: ['tiktok shop payment', 'shop payout schedule', 'when paid tiktok shop', 'commission payout', 'tiktok shop seller payment'],
   alternates: {
@@ -30,7 +30,7 @@ export default function ShopPaymentSchedulePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">TikTok Shop Payment Schedule 2026</h1>
           <p className="text-heading-md text-white/90 mb-6">Complete guide to when and how you get paid as a TikTok Shop seller or affiliate</p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> Bi-Weekly Payments</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> $10 Minimum</span>
           </div>

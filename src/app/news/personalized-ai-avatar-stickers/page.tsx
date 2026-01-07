@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Theater, BookOpen, MessageSquare, Palette, CheckCircle, XCircle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Releases Personalized AI Avatar Stickers | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function PersonalizedAIAvatarStickersPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Releases Personalized AI Avatar Stickers | TikTok News"
+        description="TikTok rolled out AI-powered personalized avatar stickers in October 2026, allowing users to create custom stickers based on their likeness."
+        url="https://calculatecreator.com/news/personalized-ai-avatar-stickers/"
+        datePublished="2026-10-01"
+        dateModified="2026-10-01"
+        image="https://calculatecreator.com/news/news-features-1024.webp"
+        keywords={['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'AI Avatar Stickers', url: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -614,5 +632,6 @@ export default function PersonalizedAIAvatarStickersPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

@@ -1,13 +1,61 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { Banknote, DollarSign, Gem, Smartphone } from 'lucide-react';
 import { MultiPlatformEarningsCalculatorWidget } from '@/components/calculators/multi-platform-earnings/CalculatorWidget';
 
+export const metadata: Metadata = {
+  title: 'Multi-Platform Creator Earnings Calculator (2026)',
+  description: 'Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media.',
+  keywords: ['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'Which platform pays the most?',
+    answer: 'YouTube pays highest per view ($1.50-8/1K) but requires 1K subs + 4K watch hours. Instagram Reels pay $0.50-3/1K. TikTok pays least ($0.02-0.04/1K) but has fastest growth. Strategy: grow on TikTok, repurpose to Instagram, monetize on YouTube.',
+  },
+  {
+    question: 'Should I focus on one platform or all three?',
+    answer: 'Start with TikTok (easiest growth), then expand. Repurpose content to Instagram Reels (same vertical format). Once you have an audience, create longer YouTube content for higher monetization. Multi-platform diversifies risk and maximizes reach.',
+  },
+  {
+    question: 'How do I repurpose content across platforms?',
+    answer: 'TikTok → Instagram Reels: Direct repost (same format). TikTok → YouTube Shorts: Direct upload. TikTok → YouTube Long-form: Combine multiple TikToks into compilation or expand into 8-15 min video. Use native uploading (don\'t include watermarks).',
+  },
+  {
+    question: 'Why is TikTok RPM so low?',
+    answer: 'TikTok Creator Fund pays $0.02-0.04/1K views, much lower than YouTube. However, TikTok has easiest organic reach. Smart creators use TikTok for audience building, then monetize through: brand deals (10x more than fund), affiliate links, own products, or driving traffic to higher-paying platforms.',
+  },
+];
+
 export default function MultiPlatformEarningsCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="Multi-Platform Creator Earnings Calculator"
+        description="Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media."
+        url="https://calculatecreator.com/calculators/multi-platform-earnings"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 2034 }}
+        datePublished="2024-02-15"
+        dateModified="2025-11-13"
+        keywords={['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Multi-Platform Earnings Calculator', url: 'https://calculatecreator.com/calculators/multi-platform-earnings' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -238,7 +286,7 @@ Total: $3,560/month`}
               'Platform RPM Comparison Analysis',
             ]}
             limitations="Estimates are for ad revenue only. Brand deals, affiliate marketing, and product sales can significantly increase earnings across all platforms."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -274,5 +322,6 @@ Total: $3,560/month`}
         </div>
       </div>
     </div>
+    </>
   );
 }

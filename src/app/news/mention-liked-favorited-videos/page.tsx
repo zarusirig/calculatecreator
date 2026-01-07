@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Tv, GraduationCap, MessageSquare, Award } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function MentionLikedFavoritedVideosPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News"
+        description="Users can now mention 'Liked' and 'Favorited' videos in their content, expanding cross-referencing capabilities on the platform."
+        url="https://calculatecreator.com/news/mention-liked-favorited-videos/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-features-1024.webp"
+        keywords={['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Mention Liked & Favorited Videos', url: 'https://calculatecreator.com/news/mention-liked-favorited-videos' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -654,5 +672,6 @@ export default function MentionLikedFavoritedVideosPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

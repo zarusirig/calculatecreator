@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { CheckCircle, BarChart3, Users, MessageCircle, Target } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Creator Rewards Offers Up to 20x Higher Earnings Than Creator Fund | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function CreatorRewards20xEarningsPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="Creator Rewards Offers Up to 20x Higher Earnings Than Creator Fund | TikTok News"
+        description="The new Creator Rewards Program provides revenue-per-mille rates ranging from $0.40 to $1.00 per 1,000 qualified views, up to 20 times higher than the previous Creator Fund."
+        url="https://calculatecreator.com/news/creator-rewards-20x-earnings/"
+        datePublished="2026-01-01"
+        dateModified="2026-01-01"
+        image="https://calculatecreator.com/news/news-monetization-1024.webp"
+        keywords={['creator rewards', 'tiktok earnings', 'creator fund comparison', 'monetization rates', 'rpm']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: '20x Higher Earnings', url: 'https://calculatecreator.com/news/creator-rewards-20x-earnings' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -457,5 +475,6 @@ export default function CreatorRewards20xEarningsPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

@@ -48,7 +48,7 @@ const tableOfContents = [
 
 export default function TikTokEngagementRateCalculatorGuidePage() {
   const readingTime = '15 min read';
-  const lastUpdated = 'November 14, 2026';
+  const lastUpdated = 'November 14, 2025';
 
   return (
     <>
@@ -56,8 +56,8 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
         headline="TikTok Engagement Rate Calculator Guide 2026 | How to Calculate & Improve"
         description="Complete guide to TikTok engagement rate: Learn how to calculate, measure, and improve your engagement rate with free calculator tools, benchmarks, and optimization strategies."
         url="https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide"
-        datePublished="2026-11-14"
-        dateModified="2026-11-14"
+        datePublished="2025-11-14"
+        dateModified="2025-11-14"
         keywords={["tiktok engagement rate", "engagement calculator", "tiktok metrics", "engagement optimization"]}
       />
 

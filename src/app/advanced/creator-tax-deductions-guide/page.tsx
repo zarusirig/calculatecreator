@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, AlertTriangle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Creator Tax Deductions Guide: What TikTok Creators Can Write Off (2026)',
+  title: 'Creator Tax Deductions Guide: What TikTok Creators Can Write Off 2026',
   description: 'Complete guide to tax deductions for TikTok creators. Learn what you can write off, how to track expenses, and tax strategies to reduce your tax bill.',
   keywords: ['creator tax deductions', 'tiktok creator taxes', 'influencer tax write offs', 'content creator tax deductions', 'what can creators deduct'],
   alternates: {
@@ -181,7 +181,7 @@ export default function CreatorTaxDeductionsGuidePage() {
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              Updated: November 2026
+              Updated: November 2025
             </span>
             <span className="flex items-center gap-2">
               <Clock className="w-4 h-4" />

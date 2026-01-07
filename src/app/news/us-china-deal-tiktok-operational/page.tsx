@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { CheckCircle, Briefcase, BarChart3, RefreshCw } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'US-China Deal Reached to Keep TikTok Operational | TikTok News',
@@ -14,6 +15,23 @@ export const metadata: Metadata = {
 
 export default function USChinaDealPage() {
   return (
+    <>
+      <NewsArticleSchema
+        headline="US-China Deal Reached to Keep TikTok Operational"
+        description="A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok's operations in the United States through collaboration."
+        url="https://calculatecreator.com/news/us-china-deal-tiktok-operational"
+        datePublished="2026-09-15"
+        dateModified="2026-09-15"
+        image="https://calculatecreator.com/news/news-regulatory-1024.webp"
+        keywords={['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'US-China TikTok Deal', url: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational' },
+        ]}
+      />
     <div className="min-h-screen bg-neutral-50">
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
@@ -300,7 +318,7 @@ export default function USChinaDealPage() {
                   <div className="flex-shrink-0 w-24 text-body-sm font-semibold text-neutral-600">2024</div>
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-1">Divestiture Deadline Set</h4>
-                    <p className="text-body-sm text-neutral-700">January 2026 deadline established; ByteDance explores options but resists full sale</p>
+                    <p className="text-body-sm text-neutral-700">January 2025 deadline established; ByteDance explores options but resists full sale</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -477,5 +495,6 @@ export default function USChinaDealPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

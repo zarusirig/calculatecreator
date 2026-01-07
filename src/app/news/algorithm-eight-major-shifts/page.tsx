@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2026 | TikTok News',
+  title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025 | TikTok News',
   description: 'Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior.',
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
   alternates: {
@@ -14,6 +15,23 @@ export const metadata: Metadata = {
 
 export default function AlgorithmEightMajorShiftsPage() {
   return (
+    <>
+      <NewsArticleSchema
+        headline="TikTok Algorithm Undergoes Eight Major Shifts in 2025"
+        description="Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior."
+        url="https://calculatecreator.com/news/algorithm-eight-major-shifts"
+        datePublished="2026-01-03"
+        dateModified="2026-01-03"
+        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        keywords={['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Algorithm Changes', url: 'https://calculatecreator.com/news/algorithm-eight-major-shifts' },
+        ]}
+      />
     <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
@@ -42,7 +60,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             />
             <img
               src="/news/news-algorithm-1024.webp"
-              alt="Featured image for TikTok Algorithm Undergoes Eight Major Shifts in 2026"
+              alt="Featured image for TikTok Algorithm Undergoes Eight Major Shifts in 2025"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -58,7 +76,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             <span className="text-white/80 text-label-sm">Published: June 2026</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Algorithm Undergoes Eight Major Shifts in 2026
+            TikTok Algorithm Undergoes Eight Major Shifts in 2025
           </h1>
           <p className="text-heading-md text-white/90">
             Enhanced personalization, retention focus, and off-platform behavior tracking reshape content distribution
@@ -643,5 +661,6 @@ export default function AlgorithmEightMajorShiftsPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

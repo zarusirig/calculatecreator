@@ -81,7 +81,7 @@ export default function IncreaseCreatorFundEarningsPage() {
             12 proven strategies to maximize your RPM, boost views, and 2-3x your monthly Creator Fund income
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 7 min read</span>
             <span className="flex items-center gap-2"><TrendingUp className="w-4 h-4" /> Data-Backed Strategies</span>
           </div>

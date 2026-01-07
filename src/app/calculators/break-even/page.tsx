@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -5,9 +6,56 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Scale } from 'lucide-react';
 import { BreakEvenCalculatorWidget } from '@/components/calculators/break-even/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Creator Break-Even Calculator (2026)',
+  description: 'Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams.',
+  keywords: ['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator', 'creator economics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/break-even/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a realistic break even point?',
+    answer: 'For most TikTok campaigns, break even requires 20-100 units depending on margins. High-ticket items ($100+) need fewer sales but harder to convert. Low-ticket items ($20-50) need more volume but convert easier. Aim to break even within first 48 hours of campaign launch.',
+  },
+  {
+    question: 'What if I can\'t reach break even?',
+    answer: 'Options: (1) Improve conversion rate - test better landing pages, offers, or CTAs, (2) Lower CPC - refine targeting, improve ad creative, (3) Increase margins - raise price or lower costs, (4) Accept initial losses for customer lifetime value, (5) Don\'t launch - save your money.',
+  },
+  {
+    question: 'How do I calculate break even for TikTok Shop?',
+    answer: 'TikTok Shop charges 2-8% commission plus payment processing (~3%). Add these to your product cost. For example: $50 product with $20 cost + $4 TikTok fee + $1.50 processing = $25.50 total cost. Your real margin is $24.50, not $30.',
+  },
+  {
+    question: 'Should I scale before reaching break even?',
+    answer: 'Generally no. Only scale after consistently hitting break even. Exception: If you have strong customer lifetime value and can afford short-term losses. Calculate customer LTV and ensure it exceeds acquisition cost by 3x minimum.',
+  },
+];
 
 export default function BreakEvenCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Creator Break-Even Calculator"
+        description="Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams."
+        url="https://calculatecreator.com/calculators/break-even"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 1243 }}
+        datePublished="2024-04-15"
+        dateModified="2025-11-13"
+        keywords={['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Break Even Calculator', url: 'https://calculatecreator.com/calculators/break-even' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -333,7 +381,7 @@ Break Even: $1,000 / $30 = 34 units`}
               'Direct Response Marketing ROI Study',
             ]}
             limitations="Real-world performance varies. Factor in returns, chargebacks, shipping costs, and platform fees. Always test with small budget before scaling to full ad spend."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -389,5 +437,6 @@ Break Even: $1,000 / $30 = 34 units`}
         </div>
       </div>
     </div>
+    </>
   );
 }

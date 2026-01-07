@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Multi-Platform Attribution for Creators: Complete Tracking Guide (2026)',
+  title: 'Multi-Platform Attribution for Creators: Complete Tracking Guide 2026',
   description: 'Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, Instagram. Essential analytics for creator growth.',
   keywords: ['multi-platform attribution', 'cross-platform tracking', 'creator analytics', 'roi tracking'],
   alternates: {
@@ -51,8 +51,8 @@ export default function MultiPlatformAttributionPage() {
         headline="Multi-Platform Attribution for Creators: Complete Tracking Guide"
         description="Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, and Instagram with proven analytics frameworks."
         url="https://calculatecreator.com/guides/multi-platform-attribution-creators"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['multi-platform', 'attribution', 'analytics', 'creator tracking']}
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function MultiPlatformAttributionPage() {
             Track performance, ROI, and revenue across all your platforms
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2026</span>
+            <span>📅 Updated: November 13, 2025</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -6,6 +7,15 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { LifetimeValueCalculatorWidget } from '@/components/calculators/lifetime-value/CalculatorWidget';
 import { Gem } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Customer Lifetime Value (LTV) Calculator for TikTok (2026)',
+  description: 'Calculate customer lifetime value from TikTok traffic. Measure LTV, optimize your LTV:CAC ratio, and improve customer retention strategies.',
+  keywords: ['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'ltv cac ratio', 'customer retention'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/lifetime-value/',
+  },
+};
 
 const faqs = [
   {
@@ -42,7 +52,7 @@ export default function LifetimeValueCalculatorPage() {
           reviewCount: 912,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'clv calculator']}
       />
       <FAQSchema faqs={faqs} />
@@ -250,7 +260,7 @@ Max CAC = $3,600 / 3 = $1,200`}
               'Analysis of 300+ DTC brands with 12+ months of customer data',
             ]}
             limitations="LTV is a projection based on past behavior—actual future value may differ due to market changes, competition, or product changes. Early-stage businesses lack historical data and must estimate using industry benchmarks. LTV calculation doesn't account for referrals or word-of-mouth value. For accurate LTV, track real cohorts over 12-24 months."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

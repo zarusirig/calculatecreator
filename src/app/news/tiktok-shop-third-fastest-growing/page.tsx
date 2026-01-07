@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Target, Users, Zap, DollarSign, TrendingUp, Rocket } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Becomes Third-Fastest Growing Brand in the US | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function TikTokShopThirdFastestGrowingPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Shop Becomes Third-Fastest Growing Brand in the US"
+        description="According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability."
+        url="https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        keywords={['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'TikTok Shop Growth', url: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -195,7 +213,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 TikTok is investing heavily in Shop infrastructure, creator tools, and incentive programs. Early adopters are seeing the biggest rewards.
               </p>
               <p className="text-body-sm text-purple-700">
-                TikTok has committed $1B+ to creator payments, logistics improvements, and promotional campaigns in 2026.
+                TikTok has committed $1B+ to creator payments, logistics improvements, and promotional campaigns in 2025.
               </p>
             </div>
           </div>
@@ -361,11 +379,11 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 <span className="text-emerald-600 font-bold">$70-80 billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">Creator Payments (2026)</span>
+                <span className="font-semibold text-neutral-900">Creator Payments 2026</span>
                 <span className="text-blue-600 font-bold">$2+ billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">New Markets (2026-2026)</span>
+                <span className="font-semibold text-neutral-900">New Markets (2025-2026)</span>
                 <span className="text-purple-600 font-bold">Spain, Netherlands, Japan</span>
               </div>
             </div>
@@ -442,5 +460,6 @@ export default function TikTokShopThirdFastestGrowingPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

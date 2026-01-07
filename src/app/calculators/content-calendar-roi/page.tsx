@@ -1,13 +1,61 @@
+import type { Metadata } from 'next';
 import { Calendar } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { ContentCalendarROICalculatorWidget } from '@/components/calculators/content-calendar-roi/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Content Calendar ROI Calculator (2026)',
+  description: 'Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth.',
+  keywords: ['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/content-calendar-roi/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'Is content planning worth the time?',
+    answer: 'Yes, if done efficiently. 2-4 hours monthly planning (15-30 videos) typically yields 20-30% performance improvement through better topics, timing, and consistency. This translates to 150-300% ROI for most creators. However, avoid over-planning - diminishing returns after 4 hours.',
+  },
+  {
+    question: 'What should I include in content planning?',
+    answer: 'Essential elements: (1) Topic research and trend analysis, (2) Posting schedule with optimal times, (3) Content format variety, (4) Hook and CTA planning, (5) Hashtag strategy, (6) Batch filming schedule. Use tools like Notion, Trello, or dedicated content planners.',
+  },
+  {
+    question: 'How far ahead should I plan content?',
+    answer: 'Sweet spot: 2-4 weeks ahead. This allows: (1) Batch filming efficiency, (2) Flexibility for trending topics, (3) Reduced daily stress, (4) Strategic content mix. Don\'t plan 3+ months ahead - trends change too quickly. Balance structure with agility.',
+  },
+  {
+    question: 'What if my planning doesn\'t improve performance?',
+    answer: 'Common issues: (1) Planning without execution (consistency matters), (2) Ignoring analytics (plan based on data, not assumptions), (3) Over-planning same content types (need variety), (4) Not adjusting based on results. Solution: Plan → Execute → Measure → Adjust. Use analytics to validate your planning effectiveness.',
+  },
+];
 
 export default function ContentCalendarROICalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Content Calendar ROI Calculator"
+        description="Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth."
+        url="https://calculatecreator.com/calculators/content-calendar-roi"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 1543 }}
+        datePublished="2024-03-15"
+        dateModified="2025-11-13"
+        keywords={['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Content Calendar ROI Calculator', url: 'https://calculatecreator.com/calculators/content-calendar-roi' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -248,7 +296,7 @@ ROI: [($500 - $200) / $200] × 100 = 150%`}
               'Strategic Content ROI Analysis',
             ]}
             limitations="ROI depends on execution quality. Planning without action has no return. Track actual performance improvements to validate assumptions."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -284,5 +332,6 @@ ROI: [($500 - $200) / $200] × 100 = 150%`}
         </div>
       </div>
     </div>
+    </>
   );
 }

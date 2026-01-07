@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm & Engagement: How to Boost Your Reach in 2026',
+  title: 'TikTok Algorithm & Engagement: How to Boost Your Reach in 2025',
   description: 'Master the relationship between TikTok algorithm and engagement. Proven tactics to increase likes, comments, shares, and watch time for better reach.',
   keywords: ['tiktok algorithm engagement', 'boost tiktok engagement', 'increase reach', 'fyp algorithm'],
   alternates: {

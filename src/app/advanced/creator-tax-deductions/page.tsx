@@ -5,21 +5,21 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { AlertTriangle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off (2026)',
+  title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off 2026',
   description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',
   keywords: ['creator tax deductions', 'influencer taxes', 'tiktok business expenses', 'content creator writeoffs'],
   alternates: {
     canonical: 'https://calculatecreator.com/advanced/creator-tax-deductions/',
   },
   openGraph: {
-    title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off (2026)',
+    title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off 2026',
     description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',
     type: 'article',
     url: 'https://calculatecreator.com/advanced/creator-tax-deductions',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off (2026)',
+    title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off 2026',
     description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',
   },
 };
@@ -259,7 +259,7 @@ export default function CreatorTaxDeductionsPage() {
                 <li>• Q1 (Jan 1 - Mar 31): Due April 15, 2026</li>
                 <li>• Q2 (Apr 1 - May 31): Due June 16, 2026</li>
                 <li>• Q3 (Jun 1 - Aug 31): Due September 15, 2026</li>
-                <li>• Q4 (Sep 1 - Dec 31): Due January 15, 2026</li>
+                <li>• Q4 (Sep 1 - Dec 31): Due January 15, 2027</li>
               </ul>
             </div>
 

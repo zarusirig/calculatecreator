@@ -97,7 +97,7 @@ export default function TikTokMonetizationRequirementsPage() {
             Everything you need to know about eligibility requirements for every TikTok monetization feature
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> All Features Covered</span>
           </div>

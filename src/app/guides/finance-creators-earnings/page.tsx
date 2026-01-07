@@ -81,7 +81,7 @@ export default function FinanceCreatorsEarningsPage() {
             FinTok earnings breakdown: The highest-paying niche on TikTok—from 1K to 500K followers
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Highest-Paying Niche</span>
             <span className="flex items-center gap-2"><BarChart3 className="w-4 h-4" /> Real FinTok Data</span>
           </div>

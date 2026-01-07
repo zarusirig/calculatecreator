@@ -124,7 +124,7 @@ export default function RPMRatesByNichePage() {
             2026 benchmark data: See which content niches earn the most (and least) per 1,000 views
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-1"><BarChart3 className="w-4 h-4" /> 20+ Niches Analyzed</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Real Creator Data</span>
           </div>

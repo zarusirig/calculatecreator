@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Gamepad2, Music, Dumbbell, ChefHat, GraduationCap, Moon, Smile, BarChart3, FlaskConical, Globe, Calendar, Sunrise, Clock, Sun, Star, XCircle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Times to Go LIVE on TikTok: Data-Backed Schedule (2026)',
+  title: 'Best Times to Go LIVE on TikTok: Data-Backed Schedule 2026',
   description: 'Optimal TikTok LIVE streaming times by timezone, niche, and audience. Data-backed scheduling guide to maximize viewership and gift earnings.',
   keywords: ['best time tiktok live', 'when to go live', 'tiktok streaming schedule', 'peak live hours', 'tiktok live best time'],
   alternates: {

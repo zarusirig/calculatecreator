@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Banknote } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,6 +7,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CostPerResultCalculatorWidget } from '@/components/calculators/cost-per-result/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Cost Per Result Calculator: Measure Ad Efficiency (2026)',
+  description: 'Calculate your TikTok cost per result (CPR). Optimize ad spend and improve campaign efficiency with our free advertising calculator.',
+  keywords: ['cost per result calculator', 'tiktok cpr', 'ad efficiency calculator', 'campaign cost calculator', 'tiktok ads cost'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/cost-per-result/',
+  },
+};
 
 const faqs = [
     {
@@ -50,7 +60,7 @@ export default function CostPerResultCalculatorPage() {
           reviewCount: 892,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-12-05"
+        dateModified="2025-12-05"
         keywords={['cost per result', 'tiktok cpr', 'cpc calculator', 'cpa calculator', 'tiktok ad costs']}
       />
       <FAQSchema faqs={faqs} />
@@ -337,13 +347,13 @@ Note: "Result" varies by objective—clicks (CPC), conversions (CPA), views (CPV
               { label: 'Benchmarks', value: 'Industry benchmarks are averages; your actual costs depend on niche, targeting, creative quality, and competition' },
             ]}
             dataSources={[
-              'TikTok Ads Manager official cost benchmarks (2024-2026)',
+              'TikTok Ads Manager official cost benchmarks (2024-2025)',
               'Analysis of 1,000+ TikTok advertising campaigns across industries',
               'Digital advertising cost studies from WordStream and AdEspresso',
               'TikTok for Business official documentation and case studies',
             ]}
             limitations="Cost per result varies significantly by industry, geographic targeting, audience size, seasonality, and competition. Learning phase (first 7 days) typically shows inflated costs. Benchmark comparisons should consider your specific context—B2C vs B2B, product price point, and target audience demographics. Lower CPR doesn't always mean better ROI if result quality is poor."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection

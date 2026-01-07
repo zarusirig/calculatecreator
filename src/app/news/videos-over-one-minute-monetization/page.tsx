@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { XCircle, CheckCircle, Target, Timer, BarChart3 } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Only Videos Longer Than One Minute Eligible for TikTok Monetization | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function VideosOverOneMinuteMonetizationPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="Only Videos Longer Than One Minute Eligible for TikTok Monetization"
+        description="The Creator Rewards Program exclusively focuses on videos longer than one minute, pushing creators toward longer-form content."
+        url="https://calculatecreator.com/news/videos-over-one-minute-monetization/"
+        datePublished="2026-01-01"
+        dateModified="2026-01-01"
+        image="https://calculatecreator.com/news/news-monetization-1024.webp"
+        keywords={['tiktok monetization', 'video length', 'one minute videos', 'creator rewards eligibility', 'long form content']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: '1+ Minute Monetization', url: 'https://calculatecreator.com/news/videos-over-one-minute-monetization/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -585,5 +603,6 @@ export default function VideosOverOneMinuteMonetizationPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

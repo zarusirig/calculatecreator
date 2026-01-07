@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Gift, ShoppingBag, Smartphone, Video, FileVideo, Package, DollarSign } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Kicks Off Biggest Holiday Season Ever | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function TikTokShopHolidayCampaignPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Shop Kicks Off Biggest Holiday Season Ever"
+        description="TikTok Shop announces its largest holiday shopping campaign in November 2026, combining creator storytelling with in-app purchasing."
+        url="https://calculatecreator.com/news/tiktok-shop-holiday-campaign/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        keywords={['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Holiday Campaign', url: 'https://calculatecreator.com/news/tiktok-shop-holiday-campaign/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -533,5 +551,6 @@ export default function TikTokShopHolidayCampaignPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

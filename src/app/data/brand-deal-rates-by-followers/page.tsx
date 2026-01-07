@@ -166,7 +166,7 @@ export default function BrandDealRatesByFollowersPage() {
             2026 pricing benchmarks: See what creators charge at every follower tier—from 1K to 1M+
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-1"><Briefcase className="w-4 h-4" /> All Influencer Tiers</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Real Deal Data</span>
           </div>
@@ -186,7 +186,7 @@ export default function BrandDealRatesByFollowersPage() {
               Unlike traditional advertising where brands pay per impression, influencer marketing operates on a <strong>relationship-based model</strong>. Creators aren't just ad space—they're trusted voices who can drive genuine purchase intent. This is why a nano-influencer with 5,000 highly engaged followers can sometimes deliver better ROI than a mega-influencer with 5 million passive followers.
             </p>
             <p>
-              The benchmark rates on this page represent <strong>median market rates</strong> compiled from thousands of brand partnerships across the TikTok creator economy (January 2026 data). These rates serve as your starting point for negotiations, but your actual rate should be customized based on your specific metrics, deliverables, and value proposition.
+              The benchmark rates on this page represent <strong>median market rates</strong> compiled from thousands of brand partnerships across the TikTok creator economy (January 2025 data). These rates serve as your starting point for negotiations, but your actual rate should be customized based on your specific metrics, deliverables, and value proposition.
             </p>
             <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg mt-4">
               <p className="text-body-sm text-neutral-700">
@@ -550,7 +550,7 @@ export default function BrandDealRatesByFollowersPage() {
             </div>
             <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg mt-4">
               <p className="text-body-sm text-neutral-700">
-                <strong>Last Updated:</strong> January 2026. These rates reflect current market conditions and may change. We recommend checking quarterly for updates, especially during high-demand periods (Q4 holiday season typically sees 20-30% rate increases).
+                <strong>Last Updated:</strong> January 2025. These rates reflect current market conditions and may change. We recommend checking quarterly for updates, especially during high-demand periods (Q4 holiday season typically sees 20-30% rate increases).
               </p>
             </div>
           </div>

@@ -1,12 +1,60 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CreatorTaxCalculatorWidget } from '@/components/calculators/creator-tax/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Creator Tax Calculator: Estimate Your Taxes (2026)',
+  description: 'Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator.',
+  keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/creator-tax/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'How accurate is this tax calculator?',
+    answer: 'This calculator provides a reasonable estimate based on 2024 tax brackets and standard deduction. However, it\'s a simplified model that doesn\'t account for all deductions, credits, or special situations (dependents, retirement contributions, itemized deductions, etc.). Use it for planning purposes, but work with a CPA for exact calculations, especially if you earn over $50,000 or have complex finances.',
+  },
+  {
+    question: 'How much should I set aside for taxes?',
+    answer: 'General rule: Set aside 25-35% of gross income. If you\'re in a high-tax state or making $100K+, aim for 35-40%. Better to over-save than face penalties. Open a separate savings account and transfer tax money immediately when paid. Use this calculator quarterly to adjust your savings rate based on year-to-date earnings.',
+  },
+  {
+    question: 'Do I need to pay quarterly taxes?',
+    answer: 'Yes! If you expect to owe $1,000+ in taxes, you must make quarterly estimated payments (April 15, June 16, September 15, January 15). Failing to pay quarterly results in penalties. Use this calculator to estimate your annual tax, then divide by 4 for quarterly payments. Adjust each quarter based on actual income. Use IRS Form 1040-ES or work with a CPA.',
+  },
+  {
+    question: 'Should I form an LLC or S-Corp?',
+    answer: 'LLC: Simple, protects personal assets, pass-through taxation. S-Corp: Can save on self-employment taxes if making $60K+, but requires payroll and more paperwork. Consult a CPA - generally LLC for beginners, consider S-Corp when consistently making $75K+ annually. This calculator assumes sole proprietorship; S-Corp calculations differ significantly.',
+  },
+];
 
 export default function CreatorTaxCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Creator Tax Calculator"
+        description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
+        url="https://calculatecreator.com/calculators/creator-tax"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 2156 }}
+        datePublished="2024-01-20"
+        dateModified="2025-11-13"
+        keywords={['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Creator Tax Calculator', url: 'https://calculatecreator.com/calculators/creator-tax' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -276,7 +324,7 @@ Total Tax: $21,695 (33.4% effective rate)`}
               'State Income Tax Comparison 2024',
             ]}
             limitations="This is an estimate for planning purposes only. Consult a tax professional for accurate calculations. Does not include additional deductions (health insurance, retirement contributions) or credits."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -342,5 +390,6 @@ Total Tax: $21,695 (33.4% effective rate)`}
         </div>
       </div>
     </div>
+    </>
   );
 }

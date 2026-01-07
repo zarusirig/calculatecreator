@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { CheckCircle, BarChart3, RefreshCw, Briefcase, AlertTriangle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Understanding TikTok\'s De Jure Nationwide Ban Status | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function TikTokNationwideBanStatusPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="Understanding TikTok's De Jure Nationwide Ban Status"
+        description="While a nationwide TikTok ban technically took effect on January 19, 2026, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating."
+        url="https://calculatecreator.com/news/tiktok-nationwide-ban-status/"
+        datePublished="2025-11-01"
+        dateModified="2025-11-01"
+        image="https://calculatecreator.com/news/news-regulatory-1024.webp"
+        keywords={['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'TikTok Ban Status', url: 'https://calculatecreator.com/news/tiktok-nationwide-ban-status/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
@@ -58,7 +76,7 @@ export default function TikTokNationwideBanStatusPage() {
               Legal & Regulatory
             </span>
             <span className="text-white/80 text-label-sm">
-              Updated: November 2026
+              Updated: November 2025
             </span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
@@ -526,5 +544,6 @@ export default function TikTokNationwideBanStatusPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

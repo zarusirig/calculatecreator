@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Target, Users, ShoppingCart, GraduationCap } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Search Volume Increases by Over 40% Year-Over-Year | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function SearchVolumeIncrease40PercentPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Search Volume Increases by Over 40% Year-Over-Year"
+        description="Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising."
+        url="https://calculatecreator.com/news/search-volume-increase-40-percent/"
+        datePublished="2026-01-01"
+        dateModified="2026-01-01"
+        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        keywords={['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Search Volume Growth', url: 'https://calculatecreator.com/news/search-volume-increase-40-percent/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -273,5 +291,6 @@ export default function SearchVolumeIncrease40PercentPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

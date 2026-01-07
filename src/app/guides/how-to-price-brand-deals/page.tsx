@@ -6,7 +6,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Cal
 import { Calendar, Clock, Medal, Trophy, Award, X } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Price Brand Deals: Complete Influencer Pricing Guide (2026)',
+  title: 'How to Price Brand Deals: Complete Influencer Pricing Guide 2026',
   description: 'Master brand deal pricing with 5 pricing models, negotiation framework, and rate calculations. Learn what to charge for sponsored posts on TikTok.',
   keywords: ['how to price brand deals', 'influencer pricing guide', 'sponsored post rates', 'brand deal rates'],
   alternates: {
@@ -56,8 +56,8 @@ export default function HowToPriceBrandDealsPage() {
         headline="How to Price Brand Deals: Complete Influencer Pricing Guide"
         description="Master brand deal pricing with proven models, negotiation frameworks, and rate calculations for TikTok creators and influencers."
         url="https://calculatecreator.com/guides/how-to-price-brand-deals"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['brand deals', 'influencer pricing', 'sponsored posts', 'creator rates']}
       />
       <BreadcrumbSchema
@@ -109,7 +109,7 @@ export default function HowToPriceBrandDealsPage() {
             Complete pricing guide with 5 models, rate calculations, and negotiation framework
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 13, 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 13, 2025</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 5 min read</span>
           </div>
         </div>

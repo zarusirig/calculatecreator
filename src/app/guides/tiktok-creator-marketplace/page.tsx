@@ -81,7 +81,7 @@ export default function TikTokCreatorMarketplacePage() {
             How to join, land brand deals, and maximize earnings through TikTok's official creator platform
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 14 min read</span>
             <span className="flex items-center gap-2"><Briefcase className="w-4 h-4" /> Official Platform</span>
           </div>

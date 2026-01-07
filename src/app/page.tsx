@@ -42,7 +42,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Money Calculator & Creator Earnings Hub (2026) | Free Tools',
+  title: 'TikTok Money Calculator & Creator Earnings Hub 2026 | Free Tools',
   description:
     'Calculate TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions. 35+ free calculators with transparent methodology. Used by 50,000+ creators to maximize revenue.',
   keywords: [

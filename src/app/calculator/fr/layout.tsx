@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Calculatrice TikTok: Calculez vos Revenus (2026)',
+    title: 'Calculatrice TikTok: Calculez vos Revenus 2026',
     description: 'Calculez votre potentiel de revenus sur TikTok. Fonds des Créateurs, partenariats de marque et cadeaux LIVE.',
     url: 'https://calculatecreator.com/calculator/fr',
     locale: 'fr_FR',

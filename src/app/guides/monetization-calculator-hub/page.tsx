@@ -43,7 +43,7 @@ const tableOfContents = [
 
 export default function MonetizationCalculatorHubPage() {
   const readingTime = '15 min read';
-  const lastUpdated = 'November 13, 2026';
+  const lastUpdated = 'November 13, 2025';
 
   return (
     <>
@@ -51,8 +51,8 @@ export default function MonetizationCalculatorHubPage() {
         headline="TikTok Monetization Calculator Hub 2026"
         description="Comprehensive guide to TikTok monetization covering Creator Fund, brand deals, LIVE gifts, TikTok Shop, affiliate marketing, and multi-income strategies with calculators and optimization tips."
         url="https://calculatecreator.com/guides/monetization-calculator-hub"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
       />
       <BreadcrumbSchema

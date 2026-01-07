@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { XCircle, CheckCircle, BarChart3, Eye, Clock, Globe } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Creator Fund Replaced with Creator Rewards Program | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function CreatorRewardsProgramLaunchPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="Creator Fund Replaced with Creator Rewards Program | TikTok News"
+        description="TikTok officially discontinued the Creator Fund and launched the Creator Rewards Program with dramatically increased requirements: 10,000 followers and 100,000 monthly views."
+        url="https://calculatecreator.com/news/creator-rewards-program-launch/"
+        datePublished="2026-01-01"
+        dateModified="2026-01-01"
+        image="https://calculatecreator.com/news/news-monetization-1024.webp"
+        keywords={['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Creator Rewards Launch', url: 'https://calculatecreator.com/news/creator-rewards-program-launch' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -504,5 +522,6 @@ export default function CreatorRewardsProgramLaunchPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

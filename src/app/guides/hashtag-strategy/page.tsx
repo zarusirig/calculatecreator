@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Hashtag Strategy Guide: Best Practices (2026)',
+  title: 'TikTok Hashtag Strategy Guide: Best Practices 2026',
   description: 'Complete hashtag strategy for TikTok growth. How many, which types, and optimal combinations for maximum reach.',
   keywords: ['tiktok hashtags', 'hashtag strategy', 'best hashtags', 'fyp hashtags'],
   alternates: {

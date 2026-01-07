@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { DollarSign, ShoppingCart, Shirt, Smartphone, Briefcase } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,6 +7,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CustomerAcquisitionCostCalculatorWidget } from '@/components/calculators/customer-acquisition-cost/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Customer Acquisition Cost (CAC) Calculator (2026)',
+  description: 'Calculate your TikTok customer acquisition cost. Measure CAC by campaign, optimize marketing spend, and improve customer lifetime value ratio.',
+  keywords: ['customer acquisition cost', 'cac calculator', 'tiktok marketing cost', 'ltv cac ratio', 'acquisition cost calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/customer-acquisition-cost/',
+  },
+};
 
 const faqs = [
   {
@@ -42,7 +52,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
           reviewCount: 823,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['customer acquisition cost', 'cac calculator', 'tiktok cac', 'cost per customer']}
       />
       <FAQSchema faqs={faqs} />
@@ -240,7 +250,7 @@ Recommended LTV = $50 × 3 = $150+`}
               'Analysis of 400+ TikTok-driven customer acquisition campaigns',
             ]}
             limitations="CAC varies significantly by industry, product price point, and marketing maturity. Early-stage businesses typically have higher CAC that improves over time. Seasonal factors (Q4 holidays) can temporarily increase CAC by 20-50%. Include all marketing costs for accurate CAC, not just ad spend."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

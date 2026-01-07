@@ -43,7 +43,7 @@ const tableOfContents = [
 
 export default function InfluencerRateCalculatorGuidePage() {
   const readingTime = '11 min read';
-  const lastUpdated = 'November 13, 2026';
+  const lastUpdated = 'November 13, 2025';
 
   return (
     <>
@@ -51,8 +51,8 @@ export default function InfluencerRateCalculatorGuidePage() {
         headline="Influencer Rate Calculator Guide 2026"
         description="Comprehensive guide to influencer pricing covering rate calculations, benchmarks by tier, negotiation strategies, deliverable pricing, and scaling rates over time."
         url="https://calculatecreator.com/guides/influencer-rate-calculator-guide"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['influencer rates', 'brand deal pricing', 'sponsorship rates', 'creator pricing', 'negotiation strategies']}
       />
       <BreadcrumbSchema

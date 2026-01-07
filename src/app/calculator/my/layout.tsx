@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Kalkulator TikTok: Kira Pendapatan Anda (2026)',
+    title: 'Kalkulator TikTok: Kira Pendapatan Anda 2026',
     description: 'Kirakan potensi pendapatan anda di TikTok. Dana Pencipta, tawaran jenama, dan hadiah LIVE.',
     url: 'https://calculatecreator.com/calculator/my',
     locale: 'ms_MY',

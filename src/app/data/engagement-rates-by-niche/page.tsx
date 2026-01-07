@@ -464,7 +464,7 @@ export default function EngagementRatesPage() {
           <p className="text-body-sm text-neutral-600">
             This data is compiled from analysis of 50,000+ TikTok accounts across all niches, updated quarterly. Sources include our creator surveys, public analytics platforms, and industry reports from Influencer Marketing Hub and CreatorIQ. Engagement rates reflect averages; individual results vary based on content quality, posting consistency, and audience demographics.
           </p>
-          <p className="text-body-sm text-neutral-500 mt-2">Last updated: December 2026</p>
+          <p className="text-body-sm text-neutral-500 mt-2">Last updated: December 2025</p>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { BarChart3, Lock, Clock, Shield, CheckCircle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Unveils New Safety Features for Parents | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function ParentSafetyFeaturesUpdatePage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Unveils New Safety Features for Parents | TikTok News"
+        description="In July 2026, TikTok announced new safety measures giving parents more control over teens' accounts, including greater visibility into account activity and customizable settings."
+        url="https://calculatecreator.com/news/parent-safety-features-update/"
+        datePublished="2026-07-01"
+        dateModified="2026-07-01"
+        image="https://calculatecreator.com/news/news-safety-1024.webp"
+        keywords={['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Parent Safety Features', url: 'https://calculatecreator.com/news/parent-safety-features-update' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -265,7 +283,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
                   <thead>
                     <tr className="border-b-2 border-neutral-300">
                       <th className="text-left py-3 px-4 font-semibold">Feature</th>
-                      <th className="text-left py-3 px-4 font-semibold">TikTok (2026)</th>
+                      <th className="text-left py-3 px-4 font-semibold">TikTok 2026</th>
                       <th className="text-left py-3 px-4 font-semibold">Instagram</th>
                       <th className="text-left py-3 px-4 font-semibold">YouTube</th>
                     </tr>
@@ -534,5 +552,6 @@ export default function ParentSafetyFeaturesUpdatePage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

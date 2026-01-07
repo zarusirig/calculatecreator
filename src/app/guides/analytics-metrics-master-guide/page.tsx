@@ -43,7 +43,7 @@ const tableOfContents = [
 
 export default function AnalyticsMetricsMasterGuidePage() {
   const readingTime = '13 min read';
-  const lastUpdated = 'November 13, 2026';
+  const lastUpdated = 'November 13, 2025';
 
   return (
     <>
@@ -51,8 +51,8 @@ export default function AnalyticsMetricsMasterGuidePage() {
         headline="TikTok Analytics & Metrics Master Guide 2026"
         description="Comprehensive guide to TikTok analytics covering engagement metrics, video performance, growth tracking, algorithm signals, and data-driven optimization strategies."
         url="https://calculatecreator.com/guides/analytics-metrics-master-guide"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok analytics', 'engagement metrics', 'completion rate', 'algorithm optimization', 'growth tracking', 'performance analysis']}
       />
       <BreadcrumbSchema

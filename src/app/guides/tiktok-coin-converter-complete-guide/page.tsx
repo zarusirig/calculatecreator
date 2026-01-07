@@ -48,7 +48,7 @@ const tableOfContents = [
 
 export default function TikTokCoinConverterCompleteGuidePage() {
   const readingTime = '18 min read';
-  const lastUpdated = 'November 14, 2026';
+  const lastUpdated = 'November 14, 2025';
 
   return (
     <>
@@ -56,8 +56,8 @@ export default function TikTokCoinConverterCompleteGuidePage() {
         headline="TikTok Coin Converter Complete Guide 2026 | Coins to Money Calculator"
         description="Complete guide to TikTok coin conversion: Learn how coins work, calculate values, understand gift pricing, and maximize your virtual currency earnings on TikTok."
         url="https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide"
-        datePublished="2026-11-14"
-        dateModified="2026-11-14"
+        datePublished="2025-11-14"
+        dateModified="2025-11-14"
         keywords={["tiktok coin calculator", "coin converter", "virtual currency", "gift values"]}
       />
 

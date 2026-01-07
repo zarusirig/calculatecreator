@@ -406,7 +406,7 @@ export default function TikTokShopAffiliatePage() {
           <p className="text-body-sm text-neutral-600">
             Commission rates and program terms are subject to change. Always verify current rates in TikTok Shop Seller Center.
             <br />
-            Last updated: December 2026
+            Last updated: December 2025
           </p>
         </div>
       </div>

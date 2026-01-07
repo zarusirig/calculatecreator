@@ -72,7 +72,7 @@ export default function TikTokRechnerDE() {
   const faqItems = [
     {
       question: 'Wie genau ist dieser TikTok Rechner?',
-      answer: 'Unser Rechner verwendet aktuelle Daten von über 2.500 verifizierten Creatorn sowie offizielle TikTok Creator Fund Statistiken. Die Ergebnisse zeigen realistische Schätzungen basierend auf aktuellen Marktdaten (Januar 2026). Tatsächliche Einnahmen können je nach Nische, Zielgruppe und Engagement variieren.',
+      answer: 'Unser Rechner verwendet aktuelle Daten von über 2.500 verifizierten Creatorn sowie offizielle TikTok Creator Fund Statistiken. Die Ergebnisse zeigen realistische Schätzungen basierend auf aktuellen Marktdaten (Januar 2025). Tatsächliche Einnahmen können je nach Nische, Zielgruppe und Engagement variieren.',
     },
     {
       question: 'Ist der TikTok Creator Fund in Deutschland verfügbar?',
@@ -409,7 +409,7 @@ export default function TikTokRechnerDE() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  Die deutsche Creator-Economy erreicht €480 Millionen in 2026, mit einer Wachstumsprojektion von 36% für die nächsten 12 Monate. Führende Sektoren sind Automotive/Tech (28%), Finance/Business (22%), Lifestyle/Interior (19%), Beauty/Fashion (18%) und Food/Culinary (13%). Deutsche Premium-Marken wie Mercedes, BMW, Siemens, SAP und zahlreiche Mittelständler nutzen TikTok zunehmend für B2C- und B2B-Marketing. Micro- und Mid-Tier-Influencer (10K-500K Follower) erhalten 74% aller Markenkollaborationen, mit Engagement-Raten durchschnittlich 3,8× höher als Mega-Influencer. Nordrhein-Westfalen und Bayern generieren zusammen 48% aller Creator-Einnahmen, während Ostdeutschland mit +72% YoY das schnellste Wachstum zeigt.
+                  Die deutsche Creator-Economy erreicht €480 Millionen in 2025, mit einer Wachstumsprojektion von 36% für die nächsten 12 Monate. Führende Sektoren sind Automotive/Tech (28%), Finance/Business (22%), Lifestyle/Interior (19%), Beauty/Fashion (18%) und Food/Culinary (13%). Deutsche Premium-Marken wie Mercedes, BMW, Siemens, SAP und zahlreiche Mittelständler nutzen TikTok zunehmend für B2C- und B2B-Marketing. Micro- und Mid-Tier-Influencer (10K-500K Follower) erhalten 74% aller Markenkollaborationen, mit Engagement-Raten durchschnittlich 3,8× höher als Mega-Influencer. Nordrhein-Westfalen und Bayern generieren zusammen 48% aller Creator-Einnahmen, während Ostdeutschland mit +72% YoY das schnellste Wachstum zeigt.
                 </p>
               </div>
 

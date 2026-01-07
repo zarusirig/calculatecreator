@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, Target, CheckCircle, DollarSign, Zap, X, Smartphone, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Get 1,000 Followers for TikTok LIVE: Fast Track Guide (2026)',
+  title: 'How to Get 1,000 Followers for TikTok LIVE: Fast Track Guide 2026',
   description: '10 proven strategies to reach 1,000 followers and unlock TikTok LIVE in 30-90 days. Growth tactics, content ideas, and timeline breakdown.',
   keywords: ['1000 followers tiktok', 'unlock tiktok live', 'grow tiktok followers', 'tiktok growth strategy', 'reach 1k followers'],
   alternates: {
@@ -246,7 +246,7 @@ export default function Get1000FollowersPage() {
             Fast track guide: 10 proven strategies to unlock LIVE streaming in 30-90 days
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-1"><Target className="w-4 h-4" /> Goal: 1K followers</span>
           </div>

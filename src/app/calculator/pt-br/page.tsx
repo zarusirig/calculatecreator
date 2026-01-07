@@ -69,7 +69,7 @@ export default function CalculadoraTikTokPTBR() {
   const faqItems = [
     {
       question: 'Quão precisa é esta calculadora TikTok?',
-      answer: 'Nossa calculadora utiliza dados atuais de mais de 2.500 criadores verificados e estatísticas oficiais do Fundo de Criadores do TikTok. Os resultados mostram estimativas realistas baseadas em dados de mercado atuais (janeiro de 2026).',
+      answer: 'Nossa calculadora utiliza dados atuais de mais de 2.500 criadores verificados e estatísticas oficiais do Fundo de Criadores do TikTok. Os resultados mostram estimativas realistas baseadas em dados de mercado atuais (janeiro de 2025).',
     },
     {
       question: 'O Fundo de Criadores do TikTok está disponível no Brasil?',
@@ -212,10 +212,10 @@ export default function CalculadoraTikTokPTBR() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  O Mercado TikTok Brasileiro em 2026
+                  O Mercado TikTok Brasileiro em 2025
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                  O Brasil representa o terceiro maior mercado TikTok do mundo, com impressionantes 84,1 milhões de usuários ativos mensais e uma taxa de penetração de 38,9%. O mercado brasileiro se destaca pelo altíssimo engajamento, com taxa de interação 2,8× superior à média global, e pela produção massiva de conteúdo viral que frequentemente transcende fronteiras. A economia de criadores brasileiros está avaliada em R$2,1 bilhões em 2026, com crescimento projetado de 45% nos próximos 12 meses, impulsionada pela expansão do TikTok Shop e pelo investimento crescente de marcas nacionais e multinacionais. O Brasil lidera a América Latina em criação de trends globais, especialmente em música, dança e entretenimento.
+                  O Brasil representa o terceiro maior mercado TikTok do mundo, com impressionantes 84,1 milhões de usuários ativos mensais e uma taxa de penetração de 38,9%. O mercado brasileiro se destaca pelo altíssimo engajamento, com taxa de interação 2,8× superior à média global, e pela produção massiva de conteúdo viral que frequentemente transcende fronteiras. A economia de criadores brasileiros está avaliada em R$2,1 bilhões em 2025, com crescimento projetado de 45% nos próximos 12 meses, impulsionada pela expansão do TikTok Shop e pelo investimento crescente de marcas nacionais e multinacionais. O Brasil lidera a América Latina em criação de trends globais, especialmente em música, dança e entretenimento.
                 </p>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   A demografia brasileira no TikTok é extremamente jovem e diversificada: 68% dos usuários têm entre 16 e 34 anos, com distribuição equilibrada entre gêneros (53% mulheres, 47% homens). O tempo médio de uso diário é de 73 minutos, um dos mais altos globalmente, refletindo o profundo engajamento da audiência. São Paulo, Rio de Janeiro, Brasília e Belo Horizonte lideram em volume de usuários, mas o Nordeste brasileiro mostra crescimento explosivo de 62% ano a ano, criando oportunidades para conteúdo regional e cultural. O mercado brasileiro valoriza autenticidade, humor, entretenimento e conteúdo relacionável, permitindo que criadores micro e nano consigam viralizar e monetizar efetivamente mesmo sem grandes investimentos iniciais.
@@ -245,7 +245,7 @@ export default function CalculadoraTikTokPTBR() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  A economia de criadores brasileiros alcança R$2,1 bilhões em 2026, com projeção de crescimento de 45% para os próximos 12 meses. Os setores mais ativos são entretenimento (32%), beleza (21%), lifestyle (18%), comida (15%) e música (14%). O TikTok Shop Brasil registrou crescimento de 230% em GMV ano a ano, tornando-se a plataforma de social commerce de mais rápido crescimento no país. Marcas brasileiras alocam crescentemente 40-55% de seus orçamentos de influencer marketing para TikTok, superando Instagram em algumas verticais. Micro-influencers (10K-100K seguidores) representam 68% das campanhas de marca, com taxas de engajamento médias de 8,7%, significativamente superiores aos mega-influencers (2,3%).
+                  A economia de criadores brasileiros alcança R$2,1 bilhões em 2025, com projeção de crescimento de 45% para os próximos 12 meses. Os setores mais ativos são entretenimento (32%), beleza (21%), lifestyle (18%), comida (15%) e música (14%). O TikTok Shop Brasil registrou crescimento de 230% em GMV ano a ano, tornando-se a plataforma de social commerce de mais rápido crescimento no país. Marcas brasileiras alocam crescentemente 40-55% de seus orçamentos de influencer marketing para TikTok, superando Instagram em algumas verticais. Micro-influencers (10K-100K seguidores) representam 68% das campanhas de marca, com taxas de engajamento médias de 8,7%, significativamente superiores aos mega-influencers (2,3%).
                 </p>
               </div>
 
@@ -286,7 +286,7 @@ export default function CalculadoraTikTokPTBR() {
                       4. TikTok Shop e Comissões de Afiliados
                     </h4>
                     <p className="text-body-md text-neutral-700 leading-relaxed">
-                      O TikTok Shop Brasil explodiu em 2024-2026, tornando-se a forma mais rápida de monetizar para muitos criadores. Comissões variam de 5% a 30% dependendo da categoria. Criadores focados em fashion, eletrônicos, casa e beleza ganham R$2.000-R$18.000 mensais apenas com afiliados. Taxa de conversão média de 3,4% é uma das mais altas do mundo. Live commerce é particularmente efetivo: criadores experientes vendem R$30.000-R$150.000 em produtos numa única live de 2-3 horas. Produtos de R$20-R$120 têm melhor performance. Programa de afiliados oferece bônus agressivos e incentivos para top performers, com alguns creators ganhando mais do Shop que de todas as outras fontes combinadas.
+                      O TikTok Shop Brasil explodiu em 2024-2025, tornando-se a forma mais rápida de monetizar para muitos criadores. Comissões variam de 5% a 30% dependendo da categoria. Criadores focados em fashion, eletrônicos, casa e beleza ganham R$2.000-R$18.000 mensais apenas com afiliados. Taxa de conversão média de 3,4% é uma das mais altas do mundo. Live commerce é particularmente efetivo: criadores experientes vendem R$30.000-R$150.000 em produtos numa única live de 2-3 horas. Produtos de R$20-R$120 têm melhor performance. Programa de afiliados oferece bônus agressivos e incentivos para top performers, com alguns creators ganhando mais do Shop que de todas as outras fontes combinadas.
                     </p>
                   </div>
                 </div>

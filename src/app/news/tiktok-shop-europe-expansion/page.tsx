@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { ShoppingBag, Users, Package, Radio } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Expands to France, Germany, and Italy | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function TikTokShopEuropeExpansionPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Shop Expands to France, Germany, and Italy"
+        description="In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence."
+        url="https://calculatecreator.com/news/tiktok-shop-europe-expansion/"
+        datePublished="2026-03-27"
+        dateModified="2026-03-27"
+        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        keywords={['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Europe Expansion', url: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -203,7 +221,7 @@ export default function TikTokShopEuropeExpansionPage() {
                 Brand Partnership Opportunities
               </h3>
               <p className="text-body-md text-purple-800">
-                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are expected to reach €500M+ in 2026.
+                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are expected to reach €500M+ in 2025.
               </p>
             </div>
           </div>
@@ -366,7 +384,7 @@ export default function TikTokShopEuropeExpansionPage() {
             <div className="bg-neutral-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can creators from other EU countries participate?</h3>
               <p className="text-body-sm text-neutral-700">
-                Currently limited to France, Germany, and Italy. More EU markets expected to launch in 2026-2026.
+                Currently limited to France, Germany, and Italy. More EU markets expected to launch in 2025-2026.
               </p>
             </div>
             <div className="bg-neutral-50 p-4 rounded-lg">
@@ -421,5 +439,6 @@ export default function TikTokShopEuropeExpansionPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

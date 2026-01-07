@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Brand Deals: How to Get Sponsored & What to Charge (2026)',
+  title: 'TikTok Brand Deals: How to Get Sponsored & What to Charge 2026',
   description: 'Complete guide to TikTok brand deals: how to get sponsored, rate negotiation, TikTok Creator Marketplace, media kits, and maximizing sponsorship income.',
   keywords: ['tiktok brand deals', 'tiktok sponsorships', 'how much to charge for tiktok', 'tiktok creator marketplace', 'influencer marketing rates'],
   alternates: {
@@ -29,12 +29,12 @@ export default function BrandDealsGuidePage() {
           TikTok Brand Deals: How to Get Sponsored & What to Charge
         </h1>
         <p className="text-body-lg text-neutral-600 mb-4">
-          The complete guide to TikTok brand deals: negotiating rates, finding brands, creating media kits, and maximizing your sponsorship income in 2026. Brand deals are the highest-earning income stream in our <Link href="/guides/how-to-make-money-on-tiktok" className="text-primary-600 hover:text-primary-700 underline font-medium">complete TikTok monetization guide</Link>.
+          The complete guide to TikTok brand deals: negotiating rates, finding brands, creating media kits, and maximizing your sponsorship income in 2025. Brand deals are the highest-earning income stream in our <Link href="/guides/how-to-make-money-on-tiktok" className="text-primary-600 hover:text-primary-700 underline font-medium">complete TikTok monetization guide</Link>.
         </p>
         <div className="flex items-center space-x-4 text-body-sm text-neutral-600 mb-12">
           <span className="flex items-center gap-2"><FileText className="w-4 h-4" /> 28 min read</span>
           <span>•</span>
-          <span>Last updated: November 13, 2026</span>
+          <span>Last updated: November 13, 2025</span>
         </div>
 
         {/* Quick Stats */}

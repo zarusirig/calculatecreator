@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Rocket, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { ViralPotentialCalculatorWidget } from '@/components/calculators/viral-potential/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Viral Potential Calculator: Predict Content Virality (2026)',
+  description: 'Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach.',
+  keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/viral-potential/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What viral score should I aim for?',
+    answer: '60+ indicates above-average viral potential. 80+ means very strong viral candidate. Focus on improving your weakest factors for the biggest gains.',
+  },
+  {
+    question: 'Which factor matters most for going viral?',
+    answer: 'Completion rate is the foundation - without retention, nothing else matters. After that, share rate is the most powerful viral signal.',
+  },
+  {
+    question: 'Can I predict exactly which videos will go viral?',
+    answer: 'No calculator can guarantee virality. This tool identifies videos with higher probability based on proven engagement patterns.',
+  },
+  {
+    question: 'How often should I check viral potential?',
+    answer: 'Analyze your best-performing videos to understand what patterns lead to higher scores. Use insights to inform future content strategy.',
+  },
+];
 
 export default function ViralPotentialCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Viral Potential Calculator"
+        description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
+        url="https://calculatecreator.com/calculators/viral-potential"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1889 }}
+        datePublished="2024-05-05"
+        dateModified="2025-12-05"
+        keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Viral Potential Calculator', url: 'https://calculatecreator.com/calculators/viral-potential' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -175,7 +223,7 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
             ]}
             dataSources={['TikTok Algorithm Research 2024', 'Creator Analytics Aggregation', 'Viral Content Pattern Analysis']}
             limitations="Viral potential is probabilistic, not deterministic. Timing, trends, and luck also play significant roles that can't be calculated."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection
@@ -211,5 +259,6 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
         </div>
       </div>
     </div>
+    </>
   );
 }

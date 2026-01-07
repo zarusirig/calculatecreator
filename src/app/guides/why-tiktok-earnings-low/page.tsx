@@ -6,7 +6,7 @@ import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/Cal
 import { Calendar, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Why Are My TikTok Earnings So Low? 8 Reasons + Solutions (2026)',
+  title: 'Why Are My TikTok Earnings So Low? 8 Reasons + Solutions 2026',
   description: 'Discover why your TikTok Creator Fund earnings are low. Complete analysis of RPM factors, engagement issues, and actionable strategies to increase income.',
   keywords: ['why are my tiktok earnings so low', 'low creator fund earnings', 'tiktok low rpm', 'increase tiktok income'],
   alternates: {
@@ -48,8 +48,8 @@ export default function WhyTikTokEarningsLowPage() {
         headline="Why Are My TikTok Earnings So Low? 8 Reasons + Solutions"
         description="Complete analysis of why TikTok Creator Fund earnings are low, including RPM factors, engagement issues, and actionable strategies to increase income."
         url="https://calculatecreator.com/guides/why-tiktok-earnings-low"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok earnings', 'creator fund', 'low rpm', 'increase income']}
       />
       <BreadcrumbSchema
@@ -101,7 +101,7 @@ export default function WhyTikTokEarningsLowPage() {
             8 main reasons your Creator Fund earnings are disappointing — and how to fix them
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 13, 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 5 min read</span>
           </div>
         </div>

@@ -69,7 +69,7 @@ export default function CalculatriceTikTokFR() {
   const faqItems = [
     {
       question: 'Quelle est la précision de cette calculatrice TikTok?',
-      answer: 'Notre calculatrice utilise des données actuelles de plus de 2 500 créateurs vérifiés et des statistiques officielles du Fonds des Créateurs TikTok. Les résultats montrent des estimations réalistes basées sur les données du marché actuel (janvier 2026).',
+      answer: 'Notre calculatrice utilise des données actuelles de plus de 2 500 créateurs vérifiés et des statistiques officielles du Fonds des Créateurs TikTok. Les résultats montrent des estimations réalistes basées sur les données du marché actuel (janvier 2025).',
     },
     {
       question: 'Le Fonds des Créateurs TikTok est-il disponible en France?',
@@ -212,10 +212,10 @@ export default function CalculatriceTikTokFR() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  Le Marché TikTok Français en 2026
+                  Le Marché TikTok Français en 2025
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                  La France représente l'un des marchés TikTok les plus matures et lucratifs d'Europe, avec 30,4 millions d'utilisateurs actifs mensuels et un taux de pénétration de 46,3%. Le marché français se distingue par une audience sophistiquée, un fort pouvoir d'achat et une culture du marketing d'influence bien établie. Les créateurs français bénéficient de taux RPM parmi les plus élevés au monde (€0.028-€0.045 pour 1 000 vues), reflétant les CPM publicitaires premium du marché. L'économie des créateurs français est évaluée à plus de €420 millions en 2026, avec une croissance annuelle projetée de 32%, alimentée par l'adoption croissante de TikTok par les grandes marques de luxe et les entreprises du CAC 40.
+                  La France représente l'un des marchés TikTok les plus matures et lucratifs d'Europe, avec 30,4 millions d'utilisateurs actifs mensuels et un taux de pénétration de 46,3%. Le marché français se distingue par une audience sophistiquée, un fort pouvoir d'achat et une culture du marketing d'influence bien établie. Les créateurs français bénéficient de taux RPM parmi les plus élevés au monde (€0.028-€0.045 pour 1 000 vues), reflétant les CPM publicitaires premium du marché. L'économie des créateurs français est évaluée à plus de €420 millions en 2025, avec une croissance annuelle projetée de 32%, alimentée par l'adoption croissante de TikTok par les grandes marques de luxe et les entreprises du CAC 40.
                 </p>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   La démographie française sur TikTok est exceptionnellement équilibrée: 61% des utilisateurs ont entre 18 et 34 ans, avec une répartition quasi-parfaite entre les genres (51% femmes, 49% hommes). La durée moyenne d'utilisation quotidienne de 48 minutes et un taux d'engagement supérieur de 35% à la moyenne européenne témoignent d'une audience hautement engagée. Les grandes métropoles (Paris, Lyon, Marseille, Toulouse, Bordeaux) concentrent 65% de l'activité, mais les régions montrent une croissance explosive de 58% en glissement annuel, créant des opportunités pour du contenu localisé. Le marché français valorise particulièrement l'authenticité, la qualité de production et l'expertise, permettant aux créateurs de niche de monétiser efficacement même avec des audiences plus petites.
@@ -245,7 +245,7 @@ export default function CalculatriceTikTokFR() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  L'économie des créateurs français atteint €420 millions en 2026, avec une projection de croissance de 32% pour les 12 prochains mois. Le secteur mode et beauté représente 38% des collaborations de marques, suivi par la gastronomie (22%), le lifestyle (19%), la tech (12%) et la finance (9%). Les marques de luxe françaises (LVMH, Kering, L'Oréal) investissent massivement dans le marketing d'influence TikTok, avec des budgets moyens de €150 000-€500 000 par campagne. Les micro et mid-tier influenceurs (10K-500K abonnés) captent 72% des opportunités de partenariats, bénéficiant de taux d'engagement 3,2× supérieurs aux méga-influenceurs. L'Île-de-France génère 52% des revenus totaux, mais l'Occitanie et l'Auvergne-Rhône-Alpes affichent les croissances les plus rapides avec +68% et +62% respectivement.
+                  L'économie des créateurs français atteint €420 millions en 2025, avec une projection de croissance de 32% pour les 12 prochains mois. Le secteur mode et beauté représente 38% des collaborations de marques, suivi par la gastronomie (22%), le lifestyle (19%), la tech (12%) et la finance (9%). Les marques de luxe françaises (LVMH, Kering, L'Oréal) investissent massivement dans le marketing d'influence TikTok, avec des budgets moyens de €150 000-€500 000 par campagne. Les micro et mid-tier influenceurs (10K-500K abonnés) captent 72% des opportunités de partenariats, bénéficiant de taux d'engagement 3,2× supérieurs aux méga-influenceurs. L'Île-de-France génère 52% des revenus totaux, mais l'Occitanie et l'Auvergne-Rhône-Alpes affichent les croissances les plus rapides avec +68% et +62% respectivement.
                 </p>
               </div>
 

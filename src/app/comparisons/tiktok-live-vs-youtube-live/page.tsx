@@ -30,7 +30,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok LIVE vs YouTube LIVE: Earnings Comparison
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">Which platform pays live streamers more in 2026?</p>
+          <p className="text-heading-md text-white/90 mb-6">Which platform pays live streamers more in 2025?</p>
         </div>
       </section>
 
@@ -38,7 +38,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Live streaming monetization has become a major income source for content creators, but choosing between TikTok LIVE and YouTube LIVE can significantly impact your earnings. TikTok's gift economy offers lower barriers to entry with a younger, generous audience, while YouTube provides better revenue splits and more mature monetization options. This comprehensive comparison analyzes which platform pays live streamers more in 2026.
+            Live streaming monetization has become a major income source for content creators, but choosing between TikTok LIVE and YouTube LIVE can significantly impact your earnings. TikTok's gift economy offers lower barriers to entry with a younger, generous audience, while YouTube provides better revenue splits and more mature monetization options. This comprehensive comparison analyzes which platform pays live streamers more in 2025.
           </p>
         </Card>
 

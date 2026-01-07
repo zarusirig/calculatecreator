@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Globe, ClipboardList } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Eligible Countries (2026): Complete List',
+  title: 'TikTok Creator Fund Eligible Countries 2026: Complete List',
   description: 'Complete list of TikTok Creator Fund eligible countries with requirements, payment methods, and alternatives for ineligible regions.',
   keywords: ['tiktok creator fund eligible countries', 'creator fund countries', 'creator fund availability', 'is creator fund in my country', 'tiktok monetization by country'],
   alternates: {
@@ -261,13 +261,13 @@ export default function CreatorFundEligibleCountriesPage() {
       <section className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Creator Fund Eligible Countries (2026)
+            TikTok Creator Fund Eligible Countries 2026
           </h1>
           <p className="text-heading-md text-white/90 mb-6">
             Complete list with requirements, payment methods, and expansion timeline
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Globe className="w-4 h-4" /> 8 Countries Eligible</span>
             <span className="flex items-center gap-1"><ClipboardList className="w-4 h-4" /> Reference Guide</span>
           </div>
@@ -297,7 +297,7 @@ export default function CreatorFundEligibleCountriesPage() {
 
         {/* Currently Eligible Countries */}
         <Card>
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Currently Eligible Countries (2026)</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Currently Eligible Countries 2026</h2>
           <div className="space-y-6">
             {eligibleCountries.map((country, idx) => (
               <div key={idx} className="p-6 bg-gradient-to-br from-neutral-50 to-white rounded-lg border border-neutral-200 shadow-sm">

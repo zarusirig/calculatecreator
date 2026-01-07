@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ShoppingBag, DollarSign, Banknote, Handshake, BarChart3, Package, AlertTriangle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -7,6 +8,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Shop Commission Calculator: Seller Fees Explained (2026)',
+  description: 'Calculate TikTok Shop commissions and seller fees. Understand referral fees, payment processing costs, and net profit per sale.',
+  keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/shop-commission/',
+  },
+};
 
 // FAQ data for schema markup
 const faqData = [
@@ -499,7 +509,7 @@ Annual Earnings: $120 × 12 = $1,440`}
               'Creator earnings reports from TikTok Shop Beta program'
             ]}
             limitations="Actual commission rates vary by product category, seller agreement, and promotional campaigns. Returns reduce final payout. Payment processing takes 7-14 days after delivery confirmation."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

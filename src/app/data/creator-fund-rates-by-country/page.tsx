@@ -133,7 +133,7 @@ export default function CreatorFundRatesByCountryPage() {
     },
     {
       question: 'What if the Creator Fund isn\'t available in my country?',
-      answer: 'Focus on alternative monetization: (1) TikTok LIVE gifts (available in 100+ countries), (2) Brand deals (international brands work with creators globally), (3) TikTok Shop affiliate (expanding to more countries in 2026), (4) Promote your own products/services, (5) Drive traffic to YouTube (monetization available in more countries). Many non-US creators earn more from these methods than Creator Fund anyway.',
+      answer: 'Focus on alternative monetization: (1) TikTok LIVE gifts (available in 100+ countries), (2) Brand deals (international brands work with creators globally), (3) TikTok Shop affiliate (expanding to more countries in 2025), (4) Promote your own products/services, (5) Drive traffic to YouTube (monetization available in more countries). Many non-US creators earn more from these methods than Creator Fund anyway.',
     },
     {
       question: 'How do I maximize earnings if I\'m in a low-RPM country?',
@@ -144,7 +144,7 @@ export default function CreatorFundRatesByCountryPage() {
       answer: 'Yes, strategically. If you speak both a Tier 1 language (English, German, French) and a high-population language (Spanish, Arabic, Hindi), you can target premium advertisers while reaching massive audiences. Best approach: Create content in the premium language to maximize RPM, then repurpose/subtitle for the broader audience. Example: Spanish-speaking creator making English content gets US rates ($0.03-$0.05 RPM) instead of Latin America rates ($0.01-$0.02).',
     },
     {
-      question: 'Will Creator Fund expand to more countries in 2026?',
+      question: 'Will Creator Fund expand to more countries in 2025?',
       answer: 'TikTok has announced plans to expand but hasn\'t confirmed specific countries. Likely expansion targets: India (if regulatory issues resolve), Russia, Turkey, and additional Southeast Asian markets. However, expansion doesn\'t guarantee high rates—new markets typically start at $0.008-$0.015 RPM. Monitor the official TikTok Creator Portal for announcements. In the meantime, focus on monetization methods available in your country.',
     },
   ];
@@ -184,7 +184,7 @@ export default function CreatorFundRatesByCountryPage() {
               <DollarSign className="w-4 h-4" /> 10x Earning Difference
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              <TrendingUp className="w-4 h-4" /> Updated Jan 2026
+              <TrendingUp className="w-4 h-4" /> Updated Jan 2025
             </span>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function CreatorFundRatesByCountryPage() {
               <div>
                 <h4 className="font-semibold text-yellow-900 mb-2">Important Context</h4>
                 <p className="text-body-sm text-neutral-700">
-                  These RPM ranges are <strong>averages from real creator reports (January 2026)</strong>. Your actual rate depends on: niche (finance pays more than comedy), engagement (high completion rates boost RPM), watch time, and seasonal advertiser demand (Q4 pays 20-40% more). Use these as benchmarks, not guarantees.
+                  These RPM ranges are <strong>averages from real creator reports (January 2025)</strong>. Your actual rate depends on: niche (finance pays more than comedy), engagement (high completion rates boost RPM), watch time, and seasonal advertiser demand (Q4 pays 20-40% more). Use these as benchmarks, not guarantees.
                 </p>
               </div>
             </div>
@@ -368,7 +368,7 @@ export default function CreatorFundRatesByCountryPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Creator Fund Availability Status</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            As of January 2026, TikTok Creator Fund is available in these countries/regions:
+            As of January 2025, TikTok Creator Fund is available in these countries/regions:
           </p>
           <div className="grid md:grid-cols-3 gap-3 mb-6">
             {[

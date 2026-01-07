@@ -41,7 +41,7 @@ const faqSchema = {
       "name": "How accurate are your calculator estimates?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our calculators are based on data from 500+ creator surveys, official TikTok Creator Portal documentation, and 2024-2026 industry reports. We provide ranges rather than exact numbers because actual earnings vary based on audience location, engagement quality, niche, and algorithm changes. Most creators find our estimates within 15-25% of actual earnings."
+        "text": "Our calculators are based on data from 500+ creator surveys, official TikTok Creator Portal documentation, and 2024-2025 industry reports. We provide ranges rather than exact numbers because actual earnings vary based on audience location, engagement quality, niche, and algorithm changes. Most creators find our estimates within 15-25% of actual earnings."
       }
     },
     {
@@ -68,7 +68,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       },
       {
         question: 'How accurate are your calculator estimates?',
-        answer: 'Our calculators are based on data from 500+ creator surveys, official TikTok Creator Portal documentation, and 2024-2026 industry reports. We provide ranges rather than exact numbers because actual earnings vary based on audience location, engagement quality, niche, and algorithm changes. Most creators find our estimates within 15-25% of actual earnings.',
+        answer: 'Our calculators are based on data from 500+ creator surveys, official TikTok Creator Portal documentation, and 2024-2025 industry reports. We provide ranges rather than exact numbers because actual earnings vary based on audience location, engagement quality, niche, and algorithm changes. Most creators find our estimates within 15-25% of actual earnings.',
       },
       {
         question: 'Where does your data come from?',

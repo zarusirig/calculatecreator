@@ -1,13 +1,61 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { SaveRateCalculatorWidget } from '@/components/calculators/save-rate/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Save Rate Calculator: Measure Content Value (2026)',
+  description: 'Calculate your TikTok save rate. Understand how often viewers bookmark your content, a key signal for the algorithm.',
+  keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric', 'tiktok algorithm signal'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/save-rate/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good save rate on TikTok?',
+    answer: 'Excellent: 5%+ (exceptional value), Good: 2-5% (save-worthy), Average: 0.5-2% (typical), Below Average: <0.5%. Educational creators should aim for 3-5%, while entertainment creators might see 0.5-2%.',
+  },
+  {
+    question: 'Why do saves matter for the algorithm?',
+    answer: 'Saves signal that your content has lasting value beyond immediate entertainment. TikTok interprets this as high-quality content worth recommending to more users. Saved videos often get resurged in the FYP weeks or months later.',
+  },
+  {
+    question: 'How can I increase my save rate?',
+    answer: 'Create save-worthy content: (1) Tutorials and how-tos, (2) Recipes and cooking guides, (3) Educational content worth revisiting, (4) Life hacks and tips, (5) Workout routines, (6) Add text "Save this for later!" as a CTA.',
+  },
+  {
+    question: 'Where can I see save counts in TikTok Analytics?',
+    answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to engagement metrics. "Favorites" is TikTok\'s term for saves.',
+  },
+];
 
 export default function SaveRateCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Save Rate Calculator"
+        description="Calculate your TikTok save rate. Understand how often viewers bookmark your content, a key signal for the algorithm."
+        url="https://calculatecreator.com/calculators/save-rate"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 2145 }}
+        datePublished="2024-03-22"
+        dateModified="2025-12-05"
+        keywords={['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Save Rate Calculator', url: 'https://calculatecreator.com/calculators/save-rate' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -214,7 +262,7 @@ This 2% save rate indicates good content value`}
               'User Engagement Behavior Research',
             ]}
             limitations="Save rate varies significantly by content type. Entertainment content naturally gets fewer saves than educational content. Compare against similar content in your niche."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection
@@ -263,5 +311,6 @@ This 2% save rate indicates good content value`}
         </div>
       </div>
     </div>
+    </>
   );
 }

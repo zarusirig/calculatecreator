@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'TikTok Rechner: Einnahmen berechnen (2026)',
+    title: 'TikTok Rechner: Einnahmen berechnen 2026',
     description: 'Berechnen Sie Ihr Verdienstpotenzial auf TikTok. Creator Fund, Markendeals und LIVE Geschenke für den deutschen Markt.',
     url: 'https://calculatecreator.com/calculator/de',
     locale: 'de_DE',

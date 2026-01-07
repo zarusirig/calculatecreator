@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Brand Deal Contract Template for TikTok Creators (2026)',
+  title: 'Brand Deal Contract Template for TikTok Creators 2026',
   description: 'Free brand partnership contract template. Essential clauses, payment terms, usage rights, and legal protection for creators.',
   keywords: ['brand deal contract', 'influencer agreement template', 'sponsorship contract', 'creator legal'],
   alternates: {

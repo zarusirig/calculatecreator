@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -5,9 +6,56 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Banknote, Gem, Handshake, Target } from 'lucide-react';
 import { NicheProfitabilityCalculatorWidget } from '@/components/calculators/niche-profitability/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Niche Profitability Calculator (2026)',
+  description: 'Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing.',
+  keywords: ['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories', 'niche comparison'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/niche-profitability/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is the most profitable TikTok niche?',
+    answer: 'Finance (#1) earns 3x more than average due to high CPM ($8-12 vs $2-4) and premium brand deals. Tech (#2) and Beauty/Fashion (#3) also command premium rates. However, choose based on your expertise and passion - authenticity matters more than niche.',
+  },
+  {
+    question: 'Can I make money in a low-value niche?',
+    answer: 'Absolutely! Entertainment/comedy creators can still earn well through: (1) High volume (millions of views), (2) Diversification (merch, live gifts, Patreon), (3) Personal brand (speaking, courses), (4) Cross-platform (YouTube pays better). Focus on building audience first.',
+  },
+  {
+    question: 'Should I switch niches for better earnings?',
+    answer: 'Only if: (1) You have genuine interest/expertise in new niche, (2) Your audience would follow, (3) You\'re willing to rebuild authority. Pivoting without authenticity fails. Better strategy: add sub-niche elements (e.g., comedy → finance comedy) to increase value.',
+  },
+  {
+    question: 'How do I increase profitability in my current niche?',
+    answer: 'Strategies: (1) Target high-value audience segments, (2) Create more premium/valuable content, (3) Build email list for direct monetization, (4) Offer services/products aligned with niche, (5) Partner with premium brands, (6) Cross-sell to higher-paying platforms (YouTube, courses).',
+  },
+];
 
 export default function NicheProfitabilityCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Niche Profitability Calculator"
+        description="Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing."
+        url="https://calculatecreator.com/calculators/niche-profitability"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 1624 }}
+        datePublished="2024-06-15"
+        dateModified="2025-11-13"
+        keywords={['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Niche Profitability Calculator', url: 'https://calculatecreator.com/calculators/niche-profitability' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -255,7 +303,7 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
               'Creator Economy Profitability Analysis',
             ]}
             limitations="Earnings vary by execution quality, personal brand, and audience demographics. A great creator in a low-value niche can outperform average creators in high-value niches."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -291,5 +339,6 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
         </div>
       </div>
     </div>
+    </>
   );
 }

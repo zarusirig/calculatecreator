@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { DollarSign, TrendingUp, CreditCard, Users, Frown, Swords, BarChart2 } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,6 +7,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { AudienceOverlapCalculatorWidget } from '@/components/calculators/audience-overlap/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Audience Overlap Calculator: Optimize Ad Targeting (2026)',
+  description: 'Calculate audience overlap between TikTok ad campaigns. Reduce wasted ad spend and optimize targeting efficiency with our free overlap calculator.',
+  keywords: ['audience overlap calculator', 'tiktok ad targeting', 'campaign optimization', 'ad audience analysis', 'targeting efficiency'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/audience-overlap/',
+  },
+};
 
 const faqs = [
     {
@@ -50,7 +60,7 @@ export default function AudienceOverlapCalculatorPage() {
           reviewCount: 654,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-12-05"
+        dateModified="2025-12-05"
         keywords={['audience overlap', 'tiktok targeting', 'campaign optimization', 'audience analysis']}
       />
       <FAQSchema faqs={faqs} />
@@ -380,7 +390,7 @@ Interpretation: 25% overlap means 100K users are targeted twice, reducing effici
               'Platform-specific overlap benchmarks from TikTok for Business documentation',
             ]}
             limitations="Audience overlap calculations are estimates—TikTok doesn't provide exact overlap figures like Facebook. Actual overlap may vary based on cookie tracking, device targeting, and user behavior. Some overlap may be strategic (retargeting engaged users). Benchmarks assume similar campaign objectives—awareness vs conversion campaigns may tolerate different overlap levels. Geographic and seasonal factors affect audience composition. Results don't account for cross-device users or logged-out traffic."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Sparkles, Shirt, Home, Smartphone, Check, X } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -7,6 +8,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { AffiliateCommissionCalculatorWidget } from '@/components/calculators/affiliate-commission/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Shop Affiliate Commission Calculator (2026)',
+  description: 'Calculate your TikTok Shop affiliate earnings. Estimate commissions by product category, conversion rates, and sales volume with our free calculator.',
+  keywords: ['tiktok shop affiliate', 'affiliate commission calculator', 'tiktok shop earnings', 'affiliate marketing calculator', 'commission estimator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/affiliate-commission/',
+  },
+};
 
 const faqs = [
   {
@@ -43,7 +53,7 @@ export default function AffiliateCommissionCalculatorPage() {
           reviewCount: 1034,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok affiliate calculator', 'tiktok shop commission', 'affiliate earnings', 'tiktok affiliate income']}
       />
       <FAQSchema faqs={faqs} />
@@ -250,7 +260,7 @@ Annual Earnings = $150 × 12 = $1,800`}
                 'Industry benchmarks from affiliate marketing platforms (ShareASale, Impact)',
               ]}
               limitations="Actual earnings vary significantly based on content quality, audience trust, product-niche fit, and posting consistency. Seasonal factors (holidays, trends) can cause 2-5× variance in monthly earnings. Building audience trust typically takes 1-3 months before seeing optimal conversion rates."
-              lastUpdated="November 13, 2026"
+              lastUpdated="November 13, 2025"
             />
 
             <FAQSection

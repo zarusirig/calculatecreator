@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Film, Scissors, Music, FileText, Clock, BarChart3, Palette, Lightbulb, Smartphone, Edit, Globe } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function AIOutlineSmartSplitPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News"
+        description="In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities."
+        url="https://calculatecreator.com/news/ai-outline-smart-split-features/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-features-1024.webp"
+        keywords={['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'AI Outline & Smart Split', url: 'https://calculatecreator.com/news/ai-outline-smart-split-features' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
@@ -776,5 +794,6 @@ export default function AIOutlineSmartSplitPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

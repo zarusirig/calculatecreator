@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { Video, Calendar, BarChart3, Clock, X, Check } from 'lucide-react';
@@ -8,6 +9,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PostingTimeCalculatorWidget } from '@/components/calculators/posting-time/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Best Posting Time Calculator (2026)',
+  description: 'Find the best times to post on TikTok for your audience. Optimize posting schedule based on timezone and content type for maximum reach.',
+  keywords: ['best posting time tiktok', 'when to post tiktok', 'posting schedule calculator', 'tiktok timing optimizer', 'post time analysis'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/posting-time/',
+  },
+};
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -60,7 +70,7 @@ export default function PostingTimeCalculatorPage() {
           reviewCount: 1247,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-12-04"
+        dateModified="2025-12-04"
         keywords={['best time to post tiktok', 'tiktok posting schedule', 'optimal posting time', 'tiktok algorithm timing']}
       />
       <FAQSchema faqs={faqData} />
@@ -278,7 +288,7 @@ Algorithm boost occurs when:
               'Platform Activity Benchmark Report',
             ]}
             limitations="Optimal times vary by specific audience. Check your TikTok Analytics for personalized insights on when YOUR followers are most active."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

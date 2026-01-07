@@ -38,7 +38,7 @@ export default function TikTokShopVsAmazonPage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Affiliate marketing is a major income source for content creators, but choosing between TikTok Shop and Amazon Associates can dramatically impact your earnings. TikTok Shop offers 2-5x higher commission rates with native in-app checkout, while Amazon provides access to millions of products and trusted brand recognition. This comprehensive comparison helps you decide which affiliate program maximizes your creator income in 2026.
+            Affiliate marketing is a major income source for content creators, but choosing between TikTok Shop and Amazon Associates can dramatically impact your earnings. TikTok Shop offers 2-5x higher commission rates with native in-app checkout, while Amazon provides access to millions of products and trusted brand recognition. This comprehensive comparison helps you decide which affiliate program maximizes your creator income in 2025.
           </p>
         </Card>
 

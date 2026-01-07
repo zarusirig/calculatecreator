@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Share2 } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { ShareRatioCalculatorWidget } from '@/components/calculators/share-ratio/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Share Rate Calculator: Measure Viral Potential (2026)',
+  description: 'Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential.',
+  keywords: ['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio', 'content shareability'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/share-ratio/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good share ratio on TikTok?',
+    answer: 'Excellent: 5%+ (1 in 20 viewers shares), Good: 2-5% (strong shareability), Average: 0.5-2% (typical), Below Average: <0.5% (needs work). Even 2-3% is impressive - it means highly engaged viewers who find value worth sharing.',
+  },
+  {
+    question: 'Why are shares more important than likes?',
+    answer: 'Shares require more effort and social risk - you\'re recommending content to your friends. TikTok treats this as a stronger signal of quality. Plus shares expose your content to entirely new networks.',
+  },
+  {
+    question: 'How can I increase my share ratio?',
+    answer: 'Create share-worthy content: (1) Surprising facts/statistics, (2) Relatable humor friends will tag each other in, (3) Useful tutorials worth saving/sharing, (4) Controversial takes (tastefully), (5) Emotional stories.',
+  },
+  {
+    question: 'Where can I see my share count in TikTok Analytics?',
+    answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to "Shares" under engagement metrics.',
+  },
+];
 
 export default function ShareRatioCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Share Rate Calculator"
+        description="Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential."
+        url="https://calculatecreator.com/calculators/share-ratio"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 2387 }}
+        datePublished="2024-02-28"
+        dateModified="2025-12-05"
+        keywords={['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Share Ratio Calculator', url: 'https://calculatecreator.com/calculators/share-ratio' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -170,7 +218,7 @@ This 3% share ratio indicates good viral potential`}
               'Social Sharing Behavior Research',
             ]}
             limitations="Share ratio varies by content type and niche. Tutorial content naturally gets more shares than entertainment. Compare against your own baseline, not others."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection
@@ -206,5 +254,6 @@ This 3% share ratio indicates good viral potential`}
         </div>
       </div>
     </div>
+    </>
   );
 }

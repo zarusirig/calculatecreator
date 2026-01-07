@@ -81,7 +81,7 @@ export default function QualifyForTikTokLivePage() {
             Complete guide to unlocking LIVE streaming and earning from virtual gifts—requirements, tips, and troubleshooting
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 6 min read</span>
             <span className="flex items-center gap-2"><Video className="w-4 h-4" /> Get LIVE Access</span>
           </div>

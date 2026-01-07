@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Comments-to-Likes Ratio: What\'s Good? (2026)',
+  title: 'TikTok Comments-to-Likes Ratio: What\'s Good? 2026',
   description: 'Understanding the comments-to-likes ratio metric. Benchmarks, what it means, and how to improve it.',
   keywords: ['comments to likes ratio', 'tiktok engagement metrics', 'comment rate', 'engagement analysis'],
   alternates: {

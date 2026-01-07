@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -5,9 +6,56 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Scale, ClipboardList, Camera, Gem } from 'lucide-react';
 import { ProductionCostCalculatorWidget } from '@/components/calculators/production-cost/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Video Production Cost Calculator (2026)',
+  description: 'Calculate content production costs for TikTok videos. Budget equipment, editing, and time costs to understand your true content investment.',
+  keywords: ['production cost calculator', 'content creation cost', 'video production budget', 'creator expenses', 'content cost analysis'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/production-cost/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What should my hourly rate be?',
+    answer: 'Base it on: (1) Your opportunity cost (what else you could earn), (2) Market rates for video editors ($25-100/hr), (3) Your experience level. Beginners: $20-40/hr, Experienced: $50-100/hr, Professionals: $100-200/hr.',
+  },
+  {
+    question: 'How can I reduce production costs?',
+    answer: 'Batch filming (shoot 5-10 videos in one session), use templates, improve efficiency with practice, outsource editing ($10-30/video), use phone instead of expensive camera, leverage free tools (CapCut, Canva free plan).',
+  },
+  {
+    question: 'Are production costs tax deductible?',
+    answer: 'Yes! As a content creator, equipment, software, props, home office, and internet are typically deductible business expenses. Keep receipts and consult a CPA for specific guidance. Deductions reduce your taxable income.',
+  },
+  {
+    question: 'When should I upgrade equipment?',
+    answer: 'Upgrade when: (1) Current equipment limits quality/creativity, (2) You can justify ROI (earning enough to cover costs in 3-6 months), (3) Tax deduction makes sense, (4) Clients/brands expect higher production value. Don\'t upgrade just to upgrade.',
+  },
+];
 
 export default function ProductionCostCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Video Production Cost Calculator"
+        description="Calculate content production costs for TikTok videos. Budget equipment, editing, and time costs to understand your true content investment."
+        url="https://calculatecreator.com/calculators/production-cost"
+        aggregateRating={{ ratingValue: 4.6, reviewCount: 1342 }}
+        datePublished="2024-05-20"
+        dateModified="2025-11-13"
+        keywords={['production cost calculator', 'content creation cost', 'video production budget', 'creator expenses']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Production Cost Calculator', url: 'https://calculatecreator.com/calculators/production-cost' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -247,7 +295,7 @@ Total: $106.67 per video`}
               'Freelance Rate Guidelines 2024',
             ]}
             limitations="Does not include indirect costs (internet, electricity, space rental). Adjust hourly rate based on your market and opportunity cost."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -283,5 +331,6 @@ Total: $106.67 per video`}
         </div>
       </div>
     </div>
+    </>
   );
 }

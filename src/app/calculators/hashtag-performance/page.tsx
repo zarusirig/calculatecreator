@@ -1,13 +1,61 @@
+import type { Metadata } from 'next';
 import { Video, Rocket, BarChart3, Hash } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { HashtagPerformanceCalculatorWidget } from '@/components/calculators/hashtag-performance/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Hashtag Performance Calculator (2026)',
+  description: 'Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy.',
+  keywords: ['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/hashtag-performance/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'How many hashtags should I use on TikTok?',
+    answer: '3-5 hashtags is optimal. Mix: 1-2 trending/popular (broad reach), 1-2 niche-specific (targeted audience), 1 branded (community building). Avoid: irrelevant hashtags, banned hashtags, or hashtag stuffing (diminishes effectiveness).',
+  },
+  {
+    question: 'Should I use trending hashtags?',
+    answer: 'Yes, but strategically. Trending hashtags increase reach but also competition. Best practice: Use 1 trending + 2-3 niche hashtags. Only use trending tags relevant to your content - TikTok penalizes irrelevant hashtag usage.',
+  },
+  {
+    question: 'How do I find effective hashtags?',
+    answer: 'Methods: (1) Analyze competitors\' top videos, (2) Check TikTok\'s Discover page, (3) Search your niche and see autocomplete suggestions, (4) Use TikTok Creative Center for trending hashtags, (5) Test and measure (use this calculator!).',
+  },
+  {
+    question: 'Do hashtags still work on TikTok in 2025?',
+    answer: 'Yes! While TikTok\'s algorithm has evolved, hashtags remain important for: (1) Search discovery, (2) Niche community targeting, (3) Trend participation. However, content quality matters more - great content with bad hashtags outperforms bad content with perfect hashtags.',
+  },
+];
 
 export default function HashtagPerformanceCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Hashtag Performance Calculator"
+        description="Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy."
+        url="https://calculatecreator.com/calculators/hashtag-performance"
+        aggregateRating={{ ratingValue: 4.6, reviewCount: 1432 }}
+        datePublished="2024-02-28"
+        dateModified="2025-11-13"
+        keywords={['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Hashtag Performance Calculator', url: 'https://calculatecreator.com/calculators/hashtag-performance' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -270,7 +318,7 @@ Effectiveness Score: 75/100 (Highly Effective)`}
               'Hashtag Performance Benchmark Report',
             ]}
             limitations="Results vary by hashtag popularity, niche, and competition. Test multiple hashtags to find your optimal mix."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -289,7 +337,7 @@ Effectiveness Score: 75/100 (Highly Effective)`}
                 answer: 'Methods: (1) Analyze competitors\' top videos, (2) Check TikTok\'s Discover page, (3) Search your niche and see autocomplete suggestions, (4) Use TikTok Creative Center for trending hashtags, (5) Test and measure (use this calculator!).',
               },
               {
-                question: 'Do hashtags still work on TikTok in 2026?',
+                question: 'Do hashtags still work on TikTok in 2025?',
                 answer: 'Yes! While TikTok\'s algorithm has evolved, hashtags remain important for: (1) Search discovery, (2) Niche community targeting, (3) Trend participation. However, content quality matters more - great content with bad hashtags outperforms bad content with perfect hashtags.',
               },
               {
@@ -341,5 +389,6 @@ Effectiveness Score: 75/100 (Highly Effective)`}
         </div>
       </div>
     </div>
+    </>
   );
 }

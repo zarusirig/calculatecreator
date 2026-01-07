@@ -81,7 +81,7 @@ export default function SparkAdsForCreatorsPage() {
             Monetize your organic content through TikTok's Spark Ads program and earn from brand promotions
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 12 min read</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Creator Monetization</span>
           </div>

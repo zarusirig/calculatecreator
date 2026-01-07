@@ -326,7 +326,7 @@ export default function BrandDealRatesByNichePage() {
               <DollarSign className="w-4 h-4" /> $200 - $30K+ Range
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              <TrendingUp className="w-4 h-4" /> Updated Jan 2026
+              <TrendingUp className="w-4 h-4" /> Updated Jan 2025
             </span>
           </div>
         </div>

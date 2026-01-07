@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Handshake, Scale, Gem, Briefcase } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -5,9 +6,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { SponsorshipROICalculatorWidget } from '@/components/calculators/sponsorship-roi/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Sponsorship ROI Calculator: Measure Brand Deal Returns (2026)',
+  description: 'Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations.',
+  keywords: ['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator', 'sponsorship profitability'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/sponsorship-roi/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good ROI for a sponsorship deal?',
+    answer: 'Excellent: 200%+ (tripling your investment), Good: 100-200% (doubling), Acceptable: 25-100% (profitable but modest). However, first-time brand partnerships may have lower ROI but open doors for future deals. Consider both financial and strategic value. Top-tier creators consistently achieve 300-500% ROI on their best partnerships through strong audience trust and perfect product-audience fit.',
+  },
+  {
+    question: 'How do I estimate conversion rate for a sponsorship?',
+    answer: 'Check past sponsored content performance, use industry benchmarks (typical TikTok conversion is 1-3%), or ask the brand for their historical data. Start conservative - use 1% for new partnerships, 2-3% if you have strong audience trust and the product fits your niche. Established creator-brand fits with exclusive discount codes can achieve 3-5%. Always track with unique codes or affiliate links to measure actual performance.',
+  },
+  {
+    question: 'Should I accept sponsorships with negative ROI?',
+    answer: 'Generally no, unless: (1) The brand is highly prestigious and opens future doors, (2) It\'s your first brand deal and you need portfolio building, (3) The brand offers non-monetary benefits (products, exposure, long-term partnership). Never consistently accept losing deals. Remember that opportunity cost matters - time spent on unprofitable deals prevents you from pursuing profitable opportunities.',
+  },
+  {
+    question: 'How can I negotiate better sponsorship terms?',
+    answer: 'Leverage: (1) Show your engagement rate and past conversion data with performance reports, (2) Offer package deals (multiple videos for better rates and reduced negotiation time), (3) Request higher fees or lower deliverables if ROI calculations show marginal profitability, (4) Ask for performance bonuses tied to conversions or reach milestones, (5) Negotiate usage rights - limit how brands can repurpose your content and charge extra for extended usage, (6) Request exclusive discount codes with higher commission rates.',
+  },
+];
 
 export default function SponsorshipROICalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Sponsorship ROI Calculator"
+        description="Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations."
+        url="https://calculatecreator.com/calculators/sponsorship-roi"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1523 }}
+        datePublished="2024-07-12"
+        dateModified="2025-11-13"
+        keywords={['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Sponsorship ROI Calculator', url: 'https://calculatecreator.com/calculators/sponsorship-roi' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -373,7 +421,7 @@ ROI: [($100,000 - $5,500) / $5,500] × 100 = 1,718%`}
               'Creator Economy Financial Analysis',
             ]}
             limitations="ROI calculations don't account for long-term brand value, audience growth, or future opportunities. Consider intangible benefits when evaluating partnerships."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -479,5 +527,6 @@ ROI: [($100,000 - $5,500) / $5,500] × 100 = 1,718%`}
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Gift } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -7,6 +8,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Income (2026)',
+  description: 'Calculate your TikTok LIVE gift earnings. Estimate income from virtual gifts, roses, lions, and other TikTok LIVE rewards.',
+  keywords: ['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/live-gifts/',
+  },
+};
 
 const faqData = [
   {
@@ -230,7 +240,7 @@ export default function LiveGiftsCalculatorPage() {
         <div className="max-w-5xl mx-auto">
           <MethodologySection calculatorName="live-gifts" formula={`Per-Stream Earnings = (Avg Viewers × 2) × Gifts/Viewer × Avg Gift Value (50 coins) / 2 × $0.005
 
-Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'Viewer Turnover', value: '2x - assumes viewers join/leave during stream' }, { label: 'Avg Gift Value', value: '50 coins (ranges 5-5000)' }, { label: 'Diamond Conversion', value: '$0.005 per diamond (50% of coin value)' }]} dataSources={['TikTok Creator Portal', 'Creator surveys Q4 2024']} limitations="Actual earnings depend on audience generosity, stream engagement, and viewer purchasing power." lastUpdated="November 13, 2026" />
+Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'Viewer Turnover', value: '2x - assumes viewers join/leave during stream' }, { label: 'Avg Gift Value', value: '50 coins (ranges 5-5000)' }, { label: 'Diamond Conversion', value: '$0.005 per diamond (50% of coin value)' }]} dataSources={['TikTok Creator Portal', 'Creator surveys Q4 2024']} limitations="Actual earnings depend on audience generosity, stream engagement, and viewer purchasing power." lastUpdated="November 13, 2025" />
 
           <FAQSection pageName="LIVE Gifts Calculator" faqs={[{ question: 'How much can you earn from TikTok LIVE?', answer: 'Earnings vary widely. Small creators (50-100 viewers) earn $5-$20 per stream. Mid-tier (500-1000 viewers) earn $50-$200. Top streamers (5000+ viewers) can earn $500-$5000+ per stream. Your gifts-per-viewer rate is the biggest factor in earnings.' }, { question: 'How do I withdraw LIVE earnings?', answer: 'Once you reach $50 in diamonds, you can withdraw to PayPal or bank account. Withdrawals process within 7-14 business days. Go to Profile > Settings > Balance > Withdraw to initiate.' }, { question: 'What factors affect my LIVE earnings?', answer: 'Key factors: audience size (concurrent viewers), engagement quality (how interactive you are), audience purchasing power, stream timing (peak hours earn more), content type (entertainment streams earn more than casual chats), and gifting culture in your niche.' }, { question: 'Can I make a full-time income from TikTok LIVE?', answer: 'Yes, but it requires dedication. To earn $3000/month, you need roughly 400-600 viewers with 0.5 gifts/viewer doing 8-12 streams monthly. Top creators earning $10K+ monthly typically have 1000+ viewers and stream 15-20 times per month.' }, { question: 'How long does it take to become eligible for LIVE?', answer: 'Requirements: 1000+ followers and 18+ years old in most regions. Once eligible, focus on building engagement before monetizing. Creators with 5K+ engaged followers typically see better LIVE earnings than those who go LIVE immediately at 1K.' }, { question: 'What are the most profitable stream times?', answer: 'Peak earning hours: 7-10 PM weekdays, 2-11 PM weekends in your audience timezone. Friday/Saturday nights see 40-60% higher gifting. Avoid early mornings (6-10 AM) when gifting drops 50-70%. Test for 2 weeks to find your sweet spot.' }, { question: 'How do I calculate my actual gifts-per-viewer rate?', answer: 'Formula: Total diamonds earned / (peak viewers x 2). The x2 accounts for viewer turnover. Example: 1000 diamonds from stream with 200 peak viewers = 1000/(200x2) = 2.5 gifts per viewer. Track across 5-10 streams for accuracy.' }, { question: 'Do I need special equipment for LIVE streaming?', answer: 'Basic setup works: smartphone with good camera, stable internet (5+ Mbps upload), good lighting (ring light recommended), and quiet environment. Audio quality matters more than video - consider a basic microphone ($20-50) if streaming regularly.' }]} />
 

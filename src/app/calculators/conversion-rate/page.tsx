@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -6,6 +7,15 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { ConversionRateCalculatorWidget } from '@/components/calculators/conversion-rate/CalculatorWidget';
 import { Target } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'TikTok Conversion Rate Calculator: Track Sales Performance (2026)',
+  description: 'Calculate your TikTok conversion rate from views to sales. Optimize your funnel and improve e-commerce performance with our free calculator.',
+  keywords: ['conversion rate calculator', 'tiktok sales conversion', 'ecommerce conversion', 'funnel optimization', 'tiktok shop conversion'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/conversion-rate/',
+  },
+};
 
 const faqs = [
   {
@@ -42,7 +52,7 @@ export default function ConversionRateCalculatorPage() {
           reviewCount: 756,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok conversion rate', 'conversion calculator', 'tiktok traffic conversion', 'conversion optimization']}
       />
       <FAQSchema faqs={faqs} />
@@ -224,7 +234,7 @@ Visitors Needed = 100 / 0.03 = 3,334 visitors`}
               'Industry studies from Unbounce, Instapage, and ConversionXL',
             ]}
             limitations="Conversion rate alone doesn't indicate profitability—consider cost per acquisition and lifetime value. Seasonal factors, product-market fit, audience quality, and funnel optimization significantly impact conversion rates. Some niches naturally convert higher/lower than others."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

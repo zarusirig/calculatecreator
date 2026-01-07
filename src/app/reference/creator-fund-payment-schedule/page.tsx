@@ -62,7 +62,7 @@ export default function CreatorFundPaymentSchedulePage() {
             Everything you need to know about when and how you get paid from the Creator Fund
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min read</span>
             <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Payment Guide</span>
           </div>

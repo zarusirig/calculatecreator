@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Tv, Tag, Battery, Smartphone, Palette } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function PlaybackSettingsUpdatePage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News"
+        description="TikTok added new playback options including 'Disable HDR videos' and 'Display object tags,' giving users more control over their viewing experience."
+        url="https://calculatecreator.com/news/playback-settings-update/"
+        datePublished="2026-11-01"
+        dateModified="2026-11-01"
+        image="https://calculatecreator.com/news/news-features-1024.webp"
+        keywords={['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Playback Settings Update', url: 'https://calculatecreator.com/news/playback-settings-update' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -617,5 +635,6 @@ export default function PlaybackSettingsUpdatePage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

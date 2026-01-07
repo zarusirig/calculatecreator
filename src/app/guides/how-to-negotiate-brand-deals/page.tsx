@@ -594,7 +594,7 @@ export default function NegotiateBrandDealsPage() {
           <p className="text-body-sm text-neutral-600">
             Negotiation outcomes vary based on individual circumstances, brand budgets, and market conditions. Use these strategies as guidelines, not guarantees.
             <br />
-            Last updated: December 2026
+            Last updated: December 2025
           </p>
         </div>
       </div>

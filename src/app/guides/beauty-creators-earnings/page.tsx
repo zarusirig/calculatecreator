@@ -128,7 +128,7 @@ export default function BeautyCreatorsEarningsPage() {
             Complete earnings breakdown for makeup & skincare creators—from 1K to 1M followers
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-2"><Palette className="w-4 h-4" /> Beauty & Skincare Focus</span>
             <span className="flex items-center gap-2"><DollarSign className="w-4 h-4" /> Real Creator Data</span>
           </div>

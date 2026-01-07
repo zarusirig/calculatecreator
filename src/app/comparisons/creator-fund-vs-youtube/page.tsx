@@ -39,7 +39,7 @@ export default function CreatorFundVsYouTubePage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Choosing between TikTok Creator Fund and YouTube Partner Program is one of the most important decisions for video creators. While TikTok offers faster growth and easier monetization, YouTube delivers significantly higher ad revenue per view. This comprehensive comparison breaks down earnings potential, requirements, and which platform is better for your content strategy in 2026.
+            Choosing between TikTok Creator Fund and YouTube Partner Program is one of the most important decisions for video creators. While TikTok offers faster growth and easier monetization, YouTube delivers significantly higher ad revenue per view. This comprehensive comparison breaks down earnings potential, requirements, and which platform is better for your content strategy in 2025.
           </p>
         </Card>
 

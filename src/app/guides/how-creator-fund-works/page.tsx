@@ -81,7 +81,7 @@ export default function HowCreatorFundWorksPage() {
             Understanding the algorithm, payment calculations, and factors that determine your Creator Fund earnings
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 15 min read</span>
             <span className="flex items-center gap-2"><BarChart3 className="w-4 h-4" /> Deep Dive</span>
           </div>

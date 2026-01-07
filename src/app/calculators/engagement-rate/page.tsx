@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { BarChart3, Target, TrendingUp, DollarSign, X, CheckCircle } from 'lucide-react';
@@ -9,6 +10,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Engagement Rate Calculator: Free Tool (2026)',
+  description: 'Calculate your TikTok engagement rate instantly. Compare to benchmarks, understand what good engagement looks like, and improve your content strategy.',
+  keywords: ['engagement rate calculator', 'tiktok engagement', 'engagement rate formula', 'good engagement rate', 'tiktok analytics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/engagement-rate/',
+  },
+};
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -48,7 +58,7 @@ export default function EngagementRateCalculatorPage() {
         url="https://calculatecreator.com/calculators/engagement-rate"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2341 }}
         datePublished="2024-01-15"
-        dateModified="2026-12-04"
+        dateModified="2025-12-04"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok analytics', 'social media engagement']}
       />
       <FAQSchema faqs={faqData} />
@@ -313,7 +323,7 @@ Engagement Rate: (2,750 / 50,000) × 100 = 5.5%`}
               'Analysis of 10,000+ TikTok creator accounts',
             ]}
             limitations="Engagement rates vary by follower size (smaller accounts typically have higher rates), content niche, and audience demographics. Use this as a directional guide."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

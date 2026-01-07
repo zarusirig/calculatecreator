@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { BarChart3, DollarSign as MoneyIcon, Laptop, Gamepad2, ShoppingBag, X, Check } from 'lucide-react';
@@ -8,6 +9,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CPMCPVCalculatorWidget } from '@/components/calculators/cpm-cpv/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok CPM & CPV Calculator: Ad Cost Benchmarks (2026)',
+  description: 'Calculate TikTok CPM (cost per 1000 impressions) and CPV (cost per view). Compare your ad costs to industry benchmarks with our free calculator.',
+  keywords: ['tiktok cpm calculator', 'cpv calculator', 'cost per view', 'cost per thousand', 'tiktok ad benchmarks'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/cpm-cpv/',
+  },
+};
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -47,7 +57,7 @@ const faqs = [
       answer: 'Not necessarily. A low CPM with poor engagement or conversions is worse than a high CPM with strong results. Focus on your campaign objective: For awareness, optimize CPM. For conversions, optimize CPA (Cost Per Acquisition) or ROAS (Return on Ad Spend). Quality audience > cheap impressions.',
     },
     {
-      question: 'What is the average TikTok CPM in 2026?',
+      question: 'What is the average TikTok CPM in 2025?',
       answer: 'As of 2026, average TikTok CPM ranges from $4-$8 for most industries in the US. This varies significantly by country (India/Brazil $0.50-$2, UK/Australia $5-$10), targeting specificity, and seasonality. Q4 (holiday season) sees CPMs increase by 30-50% compared to Q1-Q3.',
     },
 ];
@@ -64,7 +74,7 @@ export default function CPMCPVCalculatorPage() {
           reviewCount: 892,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok cpm calculator', 'cost per mille', 'cpv calculator', 'tiktok ad cost']}
       />
       <FAQSchema faqs={faqs} />
@@ -354,7 +364,7 @@ Impressions per $1 = 100,000 / 1,000 = 100`}
               'Analysis of 500+ TikTok ad campaigns across industries',
             ]}
             limitations="CPM alone doesn't measure campaign success—consider engagement rate, conversion rate, and ROAS. CPM varies significantly by geography, targeting parameters, and seasonality. Lower CPM doesn't always mean better campaign performance."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

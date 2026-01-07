@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'Fitness Creators TikTok Earnings: FitTok Income Data (2026)',
+  title: 'Fitness Creators TikTok Earnings: FitTok Income Data 2026',
   description: 'How much fitness creators earn on TikTok. Brand deal rates, affiliate income, and monetization strategies.',
   keywords: ['fittok earnings', 'fitness creator income', 'workout influencer rates', 'fitness tiktok money'],
   alternates: {

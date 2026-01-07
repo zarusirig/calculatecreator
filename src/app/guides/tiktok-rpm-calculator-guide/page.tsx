@@ -47,7 +47,7 @@ const tableOfContents = [
 
 export default function TikTokRPMCalculatorGuidePage() {
   const readingTime = '16 min read';
-  const lastUpdated = 'November 14, 2026';
+  const lastUpdated = 'November 14, 2025';
 
   return (
     <>
@@ -55,8 +55,8 @@ export default function TikTokRPMCalculatorGuidePage() {
         headline="TikTok RPM Calculator Guide 2026 | How to Calculate Revenue Per Mille"
         description="Complete guide to TikTok RPM calculation: Learn what Revenue Per Mille means, how to calculate it, industry benchmarks, and strategies to maximize your earnings per 1,000 views."
         url="https://calculatecreator.com/guides/tiktok-rpm-calculator-guide"
-        datePublished="2026-11-14"
-        dateModified="2026-11-14"
+        datePublished="2025-11-14"
+        dateModified="2025-11-14"
         keywords={["tiktok rpm calculator", "revenue per mille", "tiktok monetization", "creator earnings"]}
       />
 

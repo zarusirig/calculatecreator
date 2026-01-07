@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Calculadora do TikTok: Calcule Seus Ganhos (2026)',
+    title: 'Calculadora do TikTok: Calcule Seus Ganhos 2026',
     description: 'Calcule seu potencial de ganhos no TikTok. Fundo de Criadores, parcerias com marcas e presentes em LIVE.',
     url: 'https://calculatecreator.com/calculator/pt-br',
     locale: 'pt_BR',

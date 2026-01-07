@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Moon, MessageCircle, Users, Shield, BookOpen, GraduationCap } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function AgeSpecificPrivacyFeaturesPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News"
+        description="TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements."
+        url="https://calculatecreator.com/news/age-specific-privacy-features/"
+        datePublished="2026-02-01"
+        dateModified="2026-02-01"
+        image="https://calculatecreator.com/news/news-safety-1024.webp"
+        keywords={['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Age-Specific Privacy Features', url: 'https://calculatecreator.com/news/age-specific-privacy-features' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -258,5 +276,6 @@ export default function AgeSpecificPrivacyFeaturesPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

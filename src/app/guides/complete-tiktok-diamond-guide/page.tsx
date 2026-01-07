@@ -52,7 +52,7 @@ const tableOfContents = [
 
 export default function CompleteTikTokDiamondGuidePage() {
   const readingTime = '18 min read';
-  const lastUpdated = 'November 14, 2026';
+  const lastUpdated = 'November 14, 2025';
 
   return (
     <>
@@ -60,8 +60,8 @@ export default function CompleteTikTokDiamondGuidePage() {
         headline="Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?"
         description="Comprehensive guide to TikTok diamonds: understanding LIVE gifts, conversion rates, payout values, and maximizing creator earnings from TikTok's virtual gifting system."
         url="https://calculatecreator.com/guides/complete-tiktok-diamond-guide"
-        datePublished="2026-11-14"
-        dateModified="2026-11-14"
+        datePublished="2025-11-14"
+        dateModified="2025-11-14"
         keywords={["tiktok diamonds", "live gifts", "creator earnings", "diamond conversion", "payout rates"]}
       />
 

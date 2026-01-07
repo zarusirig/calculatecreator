@@ -6,7 +6,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm Optimization Guide: Beat the Algorithm (2026)',
+  title: 'TikTok Algorithm Optimization Guide: Beat the Algorithm 2026',
   description: 'Complete TikTok algorithm guide for 2026. Learn 8 ranking factors and 10 proven optimization tactics to boost FYP placement and viral potential.',
   keywords: ['tiktok algorithm', 'how to beat tiktok algorithm', 'fyp strategy', 'tiktok algorithm 2026'],
   alternates: {
@@ -53,11 +53,11 @@ export default function TikTokAlgorithmOptimizationPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
       <ArticleSchema
-        headline="TikTok Algorithm Optimization Guide: Beat the Algorithm (2026)"
+        headline="TikTok Algorithm Optimization Guide: Beat the Algorithm 2026"
         description="Master TikTok's algorithm with 8 key ranking factors and 10 proven optimization tactics for maximum FYP placement and viral growth."
         url="https://calculatecreator.com/guides/tiktok-algorithm-optimization"
-        datePublished="2026-11-13"
-        dateModified="2026-11-13"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok algorithm', 'fyp strategy', 'viral content', 'algorithm optimization']}
       />
       <BreadcrumbSchema
@@ -109,7 +109,7 @@ export default function TikTokAlgorithmOptimizationPage() {
             Master the 2026 algorithm with 8 ranking factors and 10 proven optimization tactics
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span>📅 Updated: November 13, 2026</span>
+            <span>📅 Updated: November 13, 2025</span>
             <span>⏱️ 5 min read</span>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Coins as CoinsIcon, Gift, Gem, Banknote, DollarSign } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,6 +7,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Coins to USD Calculator: Convert Coins to Money (2026)',
+  description: 'Convert TikTok coins to real money. Calculate the USD value of TikTok coins, gifts, and diamonds with our free currency converter.',
+  keywords: ['tiktok coins calculator', 'coins to usd', 'tiktok coin value', 'tiktok gift calculator', 'coins converter'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/coins/',
+  },
+};
 
 const faqData = [
   {
@@ -156,7 +166,7 @@ export default function CoinsCalculatorPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              How TikTok's Currency System Works (2026)
+              How TikTok's Currency System Works 2026
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
@@ -173,7 +183,7 @@ export default function CoinsCalculatorPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              Conversion Rates Explained: 2024-2026 Updates
+              Conversion Rates Explained: 2024-2025 Updates
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
@@ -310,7 +320,7 @@ Example:
               'TikTok LIVE Gifts & Diamonds documentation'
             ]}
             limitations="Coin prices vary by region (iOS/Android differences). Some promotional packages offer bonus coins. Actual conversion rates are fixed by TikTok."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

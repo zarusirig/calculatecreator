@@ -7,8 +7,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { Globe, BarChart3, CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Top 20 Countries With the Most TikTok Users (2026) | Global TikTok Statistics',
-  description: 'Comprehensive analysis of TikTok user distribution across the top 20 countries in 2026. Includes market penetration, creator earnings by region, and monetization opportunities worldwide.',
+  title: 'Top 20 Countries With the Most TikTok Users 2026 | Global TikTok Statistics',
+  description: 'Comprehensive analysis of TikTok user distribution across the top 20 countries in 2025. Includes market penetration, creator earnings by region, and monetization opportunities worldwide.',
   keywords: [
     'tiktok users by country',
     'top tiktok countries 2026',
@@ -294,8 +294,8 @@ const regionalInsights = [
 
 const faqItems = [
   {
-    question: 'Which country has the most TikTok users in 2026?',
-    answer: 'The United States has the most TikTok users with 148 million active users as of 2026, representing 43.8% market penetration. Indonesia follows closely with 113 million users (39.8% penetration), and Brazil ranks third with 84.1 million users (38.9% penetration).',
+    question: 'Which country has the most TikTok users in 2025?',
+    answer: 'The United States has the most TikTok users with 148 million active users as of 2025, representing 43.8% market penetration. Indonesia follows closely with 113 million users (39.8% penetration), and Brazil ranks third with 84.1 million users (38.9% penetration).',
   },
   {
     question: 'Is the TikTok Creator Fund available in all countries?',
@@ -327,11 +327,11 @@ export default function RegionPage() {
   return (
     <>
       <ArticleSchema
-        headline="Top 20 Countries With the Most TikTok Users (2026)"
-        description="Comprehensive analysis of TikTok user distribution across the top 20 countries in 2026. Includes market penetration, creator earnings by region, and monetization opportunities worldwide."
+        headline="Top 20 Countries With the Most TikTok Users 2026"
+        description="Comprehensive analysis of TikTok user distribution across the top 20 countries in 2025. Includes market penetration, creator earnings by region, and monetization opportunities worldwide."
         url="https://calculatecreator.com/region"
-        datePublished="2026-01-28"
-        dateModified="2026-01-28"
+        datePublished="2025-01-28"
+        dateModified="2025-01-28"
         keywords={[
           'tiktok users by country',
           'top tiktok countries 2026',
@@ -358,7 +358,7 @@ export default function RegionPage() {
               <Globe className="w-8 h-8" />
             </div>
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-              Top 20 Countries With the Most TikTok Users (2026)
+              Top 20 Countries With the Most TikTok Users 2026
             </h1>
             <p className="text-body-lg text-neutral-600 mb-4">
               Comprehensive analysis of TikTok's global reach across 20 countries, including user statistics, market penetration, Creator Fund availability, and regional monetization opportunities for creators worldwide.
@@ -369,7 +369,7 @@ export default function RegionPage() {
                 <span>20 min read</span>
               </div>
               <span>•</span>
-              <span>Last updated: January 28, 2026</span>
+              <span>Last updated: January 28, 2025</span>
             </div>
           </div>
 
@@ -400,13 +400,13 @@ export default function RegionPage() {
               Global TikTok Landscape 2026
             </h2>
             <p className="text-body-lg text-neutral-700 leading-relaxed mb-4">
-              TikTok has evolved from a regional social media app to a global phenomenon with over <strong>1.7 billion active users</strong> worldwide as of January 2026. The platform's reach spans across continents, cultures, and demographics, creating unprecedented opportunities for content creators to build international audiences and monetize their influence.
+              TikTok has evolved from a regional social media app to a global phenomenon with over <strong>1.7 billion active users</strong> worldwide as of January 2025. The platform's reach spans across continents, cultures, and demographics, creating unprecedented opportunities for content creators to build international audiences and monetize their influence.
             </p>
             <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
               Understanding TikTok's geographic distribution is critical for creators seeking to maximize their earnings potential. Different regions offer varying monetization opportunities: North America and Europe provide the highest Creator Fund RPM rates and brand deal values, while Southeast Asia offers massive audience scale and engagement rates that can compensate for lower per-view earnings.
             </p>
             <Card className="mb-6 bg-gradient-to-br from-primary-50 to-secondary-50 border-2 border-primary-200">
-              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Key Global Statistics (2026)</h3>
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Key Global Statistics 2026</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <p className="text-heading-lg font-bold text-primary-600 mb-2">1.7B+</p>
@@ -768,7 +768,7 @@ export default function RegionPage() {
 
               <h4 className="text-heading-sm font-semibold text-neutral-900 mb-3 mt-6">Data Update Frequency</h4>
               <p className="text-body-md text-neutral-700 leading-relaxed">
-                This report is updated quarterly to reflect the latest user statistics, Creator Fund availability changes, and RPM rate trends. Last update: January 28, 2026. Next scheduled update: April 2026.
+                This report is updated quarterly to reflect the latest user statistics, Creator Fund availability changes, and RPM rate trends. Last update: January 28, 2025. Next scheduled update: April 2026.
               </p>
             </Card>
           </section>

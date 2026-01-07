@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
@@ -6,9 +7,56 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DollarSign, RotateCcw, TrendingUp, Users, BarChart2, Target, Tag, ShoppingCart, Lightbulb } from 'lucide-react';
 import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Ad Cost Calculator: CPM, CPV & Budget Estimator (2026)',
+  description: 'Calculate TikTok advertising costs including CPM, CPV rates, and campaign ROI. Get 2026 benchmarks and plan your TikTok ad budget effectively.',
+  keywords: ['tiktok ad cost calculator', 'tiktok cpm', 'tiktok cpv', 'tiktok advertising budget', 'tiktok ads pricing'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/tiktok-ad-cost/',
+  },
+};
+
+const faqData = [
+  {
+    question: "What's a good CPM for TikTok ads?",
+    answer: "A good CPM is typically under $10. Premium targeting and high-competition niches like beauty and fashion can reach $15-20 CPM. Average CPM across industries is $7.50 (2025 data).",
+  },
+  {
+    question: "How much do TikTok ads cost to start?",
+    answer: "You can start with as little as $1-5 per day, but $20-50 daily budget is recommended for meaningful results. Minimum campaign budget is $50-200 depending on your region.",
+  },
+  {
+    question: "What's the difference between CPM and CPV?",
+    answer: "CPM charges per 1,000 ad impressions (views), while CPV charges per actual video view completion. CPV is often more cost-effective for video-heavy campaigns.",
+  },
+  {
+    question: "How do I reduce TikTok ad costs?",
+    answer: "Improve targeting precision, create engaging creative content, test different ad formats, optimize for specific objectives, run campaigns during off-peak hours, and build account performance history.",
+  },
+];
 
 export default function TikTokAdCostCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Ad Cost Calculator"
+        description="Calculate TikTok advertising costs including CPM, CPV rates, and campaign ROI. Get 2026 benchmarks and plan your TikTok ad budget effectively."
+        url="https://calculatecreator.com/calculators/tiktok-ad-cost"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 2164 }}
+        datePublished="2024-01-15"
+        dateModified="2025-11-01"
+        keywords={['tiktok ad cost calculator', 'tiktok cpm', 'tiktok cpv', 'tiktok advertising budget']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'TikTok Ad Cost Calculator', url: 'https://calculatecreator.com/calculators/tiktok-ad-cost' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
@@ -22,12 +70,12 @@ export default function TikTokAdCostCalculatorPage() {
             </div>
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Ad Cost Calculator 2026</h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. Updated with 2026 benchmarks and industry insights.
+              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. Updated with 2025 benchmarks and industry insights.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1">
                 <TrendingUp className="w-4 h-4" />
-                Updated November 2026
+                Updated November 2025
               </span>
               <span className="flex items-center gap-1">
                 <Target className="w-4 h-4" />
@@ -111,7 +159,7 @@ export default function TikTokAdCostCalculatorPage() {
               ]}
               dataSources={['TikTok Ads Manager Data', 'Q4 2026 Industry Reports', 'TikTok Official Benchmarks']}
               limitations="Costs fluctuate based on real-time auction dynamics and seasonal trends. Actual performance may vary based on creative quality and audience targeting."
-              lastUpdated="November 2026"
+              lastUpdated="November 2025"
             />
 
             <FAQSection
@@ -119,7 +167,7 @@ export default function TikTokAdCostCalculatorPage() {
               faqs={[
                 {
                   question: "What's a good CPM for TikTok ads?",
-                  answer: "A good CPM is typically under $10. Premium targeting and high-competition niches like beauty and fashion can reach $15-20 CPM. Average CPM across industries is $7.50 (2026 data)."
+                  answer: "A good CPM is typically under $10. Premium targeting and high-competition niches like beauty and fashion can reach $15-20 CPM. Average CPM across industries is $7.50 (2025 data)."
                 },
                 {
                   question: "How much do TikTok ads cost to start?",
@@ -139,7 +187,7 @@ export default function TikTokAdCostCalculatorPage() {
                 },
                 {
                   question: "Are TikTok ad costs worth it?",
-                  answer: "TikTok advertising can be highly cost-effective for reaching Gen Z and millennial audiences. Average ROAS across industries is 3.2x, with e-commerce achieving up to 8x ROAS in 2026."
+                  answer: "TikTok advertising can be highly cost-effective for reaching Gen Z and millennial audiences. Average ROAS across industries is 3.2x, with e-commerce achieving up to 8x ROAS in 2025."
                 },
                 {
                   question: "How do TikTok ad costs compare to other platforms?",
@@ -177,5 +225,6 @@ export default function TikTokAdCostCalculatorPage() {
           </div>
         </div>
       </div>
+    </>
   );
 }

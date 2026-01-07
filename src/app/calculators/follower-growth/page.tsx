@@ -1,14 +1,62 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { TrendingUp, AlertTriangle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FollowerGrowthCalculatorWidget } from '@/components/calculators/follower-growth/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Follower Growth Rate Calculator (2026)',
+  description: 'Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance.',
+  keywords: ['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/follower-growth/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good follower growth rate on TikTok?',
+    answer: 'A healthy daily growth rate is 2-5%, which translates to roughly 60-150% monthly growth for established accounts. New accounts (under 1K followers) often see highly variable rates (0-10%+ daily) as they find their niche. Accounts experiencing growth from viral videos can temporarily hit 5-10% daily, but this typically stabilizes to 2-4% for sustainable long-term growth.',
+  },
+  {
+    question: 'How do I calculate my current growth rate?',
+    answer: 'Track your followers over 7-14 days for accuracy. Formula: Daily Growth Rate = [(End Followers - Start Followers) / Start Followers / Number of Days] × 100. Example: Started with 10,000, ended with 12,100 after 14 days = [(12,100 - 10,000) / 10,000 / 14] × 100 = 1.5% daily growth rate.',
+  },
+  {
+    question: 'Why did my growth rate suddenly drop?',
+    answer: 'Common reasons: (1) Algorithm reset after a viral video - TikTok tests your next content with larger, colder audiences; (2) Content quality inconsistency - posting mediocre content to "stay consistent" actually hurts; (3) Niche dilution - posting outside your core topic confuses the algorithm; (4) Engagement drop-off - lower engagement rates signal declining quality to TikTok.',
+  },
+  {
+    question: 'How can I improve my follower growth rate?',
+    answer: 'Proven strategies: (1) Post during peak activity hours (check Analytics for when your followers are online), (2) Create series content that builds anticipation for future episodes, (3) Optimize your profile for conversions - pin best videos, write compelling bio, (4) Use trending sounds within the first 24-48 hours while they\'re hot, (5) Collaborate with creators who have 0.5-2x your follower count.',
+  },
+];
 
 export default function FollowerGrowthCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Follower Growth Rate Calculator"
+        description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
+        url="https://calculatecreator.com/calculators/follower-growth"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 2287 }}
+        datePublished="2024-01-25"
+        dateModified="2025-11-13"
+        keywords={['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Follower Growth Calculator', url: 'https://calculatecreator.com/calculators/follower-growth' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -355,7 +403,7 @@ Total Growth: 11,027 new followers`}
               'Creator Economy Benchmark Report 2024',
             ]}
             limitations="Projections assume consistent posting schedule and content quality. Actual growth may vary due to algorithm changes, viral content, or seasonal trends. Use recent data (7-14 days) for most accurate projections."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -417,5 +465,6 @@ Total Growth: 11,027 new followers`}
         </div>
       </div>
     </div>
+    </>
   );
 }

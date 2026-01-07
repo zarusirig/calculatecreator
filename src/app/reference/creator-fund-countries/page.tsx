@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Eligible Countries List (2026)',
+  title: 'TikTok Creator Fund Eligible Countries List 2026',
   description: 'Complete list of countries where TikTok Creator Fund is available. Regional requirements and alternatives.',
   keywords: ['creator fund countries', 'tiktok monetization countries', 'eligible regions', 'creator fund availability'],
   alternates: {

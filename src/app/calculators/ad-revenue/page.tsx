@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { DollarSign } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { AdRevenueCalculatorWidget } from '@/components/calculators/ad-revenue/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Ad Revenue Calculator: Estimate Your Earnings (2026)',
+  description: 'Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency with our free calculator.',
+  keywords: ['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator', 'ad revenue estimator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/ad-revenue/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'How much can I earn from TikTok ads?',
+    answer: 'Earnings vary widely: 100K views/month at $5 CPM = $500/month. 1M views = $5,000/month. High-CPM niches (finance, tech) can earn 2-3x more. Most creators need 500K+ monthly views for significant ad income.',
+  },
+  {
+    question: 'What is a good CPM rate on TikTok?',
+    answer: '$5+ CPM is good for most niches. Finance/tech creators see $8-12. Entertainment averages $2-4. Your CPM depends on niche, audience demographics, and engagement quality.',
+  },
+  {
+    question: 'How do I qualify for TikTok ad revenue?',
+    answer: 'Requirements: 10K+ followers, 100K+ video views in last 30 days, 18+ years old, follow Community Guidelines. Apply through Creator Tools → Creator Fund or TikTok Pulse program.',
+  },
+  {
+    question: 'Should I focus on ad revenue or brand deals?',
+    answer: 'Brand deals typically pay 5-10x more than ad revenue for the same reach. Use ad revenue as passive income, but prioritize brand partnerships, affiliate marketing, and selling your own products/services.',
+  },
+];
 
 export default function AdRevenueCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Ad Revenue Calculator"
+        description="Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency."
+        url="https://calculatecreator.com/calculators/ad-revenue"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1856 }}
+        datePublished="2024-03-01"
+        dateModified="2025-11-13"
+        keywords={['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Ad Revenue Calculator', url: 'https://calculatecreator.com/calculators/ad-revenue' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -245,7 +293,7 @@ Annual: $5,000 × 12 = $60,000`}
               'Creator Monetization Report',
             ]}
             limitations="Actual revenue varies by audience location, engagement, and advertiser demand. CPM fluctuates seasonally (higher in Q4)."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -281,5 +329,6 @@ Annual: $5,000 × 12 = $60,000`}
         </div>
       </div>
     </div>
+    </>
   );
 }

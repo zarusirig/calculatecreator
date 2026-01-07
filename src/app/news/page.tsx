@@ -117,7 +117,7 @@ export default function NewsPage() {
     },
     // Algorithm (3)
     {
-      title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2026',
+      title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025',
       slug: 'algorithm-eight-major-shifts',
       description: 'Enhanced personalization, off-platform behavior tracking, and retention focus reshape content distribution.',
       date: '2026-06-15',
@@ -212,7 +212,7 @@ export default function NewsPage() {
               TikTok News Today
             </h1>
             <p className="text-body-lg text-white/90 max-w-3xl mx-auto mb-6">
-              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates affecting creators. Fresh news covering everything you need to know about TikTok in 2026.
+              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates affecting creators. Fresh news covering everything you need to know about TikTok in 2025.
             </p>
             <p className="text-body-md text-white/80 max-w-3xl mx-auto">
               Our team monitors TikTok's official announcements, creator forums, and industry publications to bring you verified, actionable updates. From algorithm changes to new monetization features, we cover the news that impacts your creator business.

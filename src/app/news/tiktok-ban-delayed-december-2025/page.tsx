@@ -2,18 +2,36 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { CheckCircle, AlertTriangle, Mail } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Ban Enforcement Delayed Until December 16, 2026 | TikTok News',
-  description: 'The White House has extended TikTok\'s enforcement delay for the fourth time, moving the deadline to December 16, 2026 as the administration pursues a qualified divestiture solution.',
+  title: 'TikTok Ban Enforcement Delayed Until December 16, 2025 | TikTok News',
+  description: 'The White House has extended TikTok\'s enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution.',
   keywords: ['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2026/',
+    canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/',
   },
 };
 
 export default function TikTokBanDelayedPage() {
   return (
+    <>
+      <NewsArticleSchema
+        headline="TikTok Ban Enforcement Delayed Until December 16, 2025"
+        description="The White House has extended TikTok's enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution."
+        url="https://calculatecreator.com/news/tiktok-ban-delayed-december-2025"
+        datePublished="2025-09-24"
+        dateModified="2025-09-24"
+        image="https://calculatecreator.com/news/news-regulatory-1024.webp"
+        keywords={['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'TikTok Ban Delayed', url: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025' },
+        ]}
+      />
     <div className="min-h-screen bg-neutral-50">
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
@@ -44,7 +62,7 @@ export default function TikTokBanDelayedPage() {
             />
             <img
               src="/news/news-regulatory-1024.webp"
-              alt="Featured image for TikTok Ban Enforcement Delayed Until December 16, 2026"
+              alt="Featured image for TikTok Ban Enforcement Delayed Until December 16, 2025"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
             />
@@ -58,11 +76,11 @@ export default function TikTokBanDelayedPage() {
               Regulatory Update
             </span>
             <span className="text-white/80 text-label-sm">
-              Published: September 24, 2026
+              Published: September 24, 2025
             </span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
-            TikTok Ban Enforcement Delayed Until December 16, 2026
+            TikTok Ban Enforcement Delayed Until December 16, 2025
           </h1>
           <p className="text-heading-md text-white/90">
             White House extends enforcement deadline for fourth time as administration pursues qualified divestiture solution
@@ -78,7 +96,7 @@ export default function TikTokBanDelayedPage() {
             Key Takeaway for Creators
           </h2>
           <p className="text-body-md text-blue-800 mb-3">
-            TikTok creators can continue operating on the platform through at least December 16, 2026. This fourth extension provides additional time for ongoing negotiations between the U.S. government and ByteDance regarding a potential divestiture solution.
+            TikTok creators can continue operating on the platform through at least December 16, 2025. This fourth extension provides additional time for ongoing negotiations between the U.S. government and ByteDance regarding a potential divestiture solution.
           </p>
           <p className="text-body-md text-blue-800">
             <strong>What this means:</strong> Creators should continue building their audiences and diversifying their content strategies, but also maintain presence on alternative platforms as a contingency plan.
@@ -91,10 +109,10 @@ export default function TikTokBanDelayedPage() {
             What Happened?
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            On September 24, 2026, the White House announced its fourth extension of the TikTok enforcement deadline, moving it from September 17, 2026 to December 16, 2026. The extension comes as the Trump administration continues to pursue what officials describe as a "qualified divestiture" solution.
+            On September 24, 2025, the White House announced its fourth extension of the TikTok enforcement deadline, moving it from September 17, 2025 to December 16, 2025. The extension comes as the Trump administration continues to pursue what officials describe as a "qualified divestiture" solution.
           </p>
           <p className="text-body-md text-neutral-700 mb-4">
-            The original nationwide ban technically went into effect on January 19, 2026, but enforcement has been repeatedly delayed through executive orders. Each extension has provided additional negotiating time while allowing TikTok to continue operating normally in the United States.
+            The original nationwide ban technically went into effect on January 19, 2025, but enforcement has been repeatedly delayed through executive orders. Each extension has provided additional negotiating time while allowing TikTok to continue operating normally in the United States.
           </p>
           <div className="bg-neutral-100 border-l-4 border-blue-500 p-4 my-4">
             <p className="text-body-sm text-neutral-700 italic">
@@ -111,7 +129,7 @@ export default function TikTokBanDelayedPage() {
           <div className="space-y-4">
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-32 text-label-sm font-semibold text-neutral-600">
-                January 19, 2026
+                January 19, 2025
               </div>
               <div className="flex-1">
                 <p className="text-body-md text-neutral-700">
@@ -141,11 +159,11 @@ export default function TikTokBanDelayedPage() {
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-32 text-label-sm font-semibold text-neutral-600">
-                September 24, 2026
+                September 24, 2025
               </div>
               <div className="flex-1">
                 <p className="text-body-md text-neutral-700">
-                  <strong>Fourth extension announced</strong> - deadline moved to December 16, 2026
+                  <strong>Fourth extension announced</strong> - deadline moved to December 16, 2025
                 </p>
               </div>
             </div>
@@ -160,7 +178,7 @@ export default function TikTokBanDelayedPage() {
           <div className="space-y-4">
             <div>
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">
-                Short-Term Impact (Through December 2026)
+                Short-Term Impact (Through December 2025)
               </h3>
               <ul className="space-y-2 text-body-md text-neutral-700 list-disc list-inside">
                 <li>Creators can continue monetizing through all current channels</li>
@@ -174,7 +192,7 @@ export default function TikTokBanDelayedPage() {
                 Long-Term Considerations
               </h3>
               <ul className="space-y-2 text-body-md text-neutral-700 list-disc list-inside">
-                <li>Uncertainty remains beyond December 16, 2026</li>
+                <li>Uncertainty remains beyond December 16, 2025</li>
                 <li>Multiple extensions suggest ongoing negotiation complexity</li>
                 <li>Creators should maintain multi-platform presence</li>
                 <li>Alternative monetization strategies remain important</li>
@@ -336,11 +354,11 @@ export default function TikTokBanDelayedPage() {
                 </div>
                 <div className="p-4 bg-white rounded border-l-4 border-neutral-400">
                   <h4 className="font-semibold text-neutral-800 mb-1">2024: Federal Ban Legislation</h4>
-                  <p className="text-body-sm text-neutral-700">Congress passes bill requiring divestiture or ban; signed into law with January 2026 deadline</p>
+                  <p className="text-body-sm text-neutral-700">Congress passes bill requiring divestiture or ban; signed into law with January 2025 deadline</p>
                 </div>
                 <div className="p-4 bg-white rounded border-l-4 border-blue-400">
-                  <h4 className="font-semibold text-blue-800 mb-1">2026: Multiple Extensions</h4>
-                  <p className="text-body-sm text-neutral-700">Four enforcement delays as negotiations continue; current deadline December 16, 2026</p>
+                  <h4 className="font-semibold text-blue-800 mb-1">2025: Multiple Extensions</h4>
+                  <p className="text-body-sm text-neutral-700">Four enforcement delays as negotiations continue; current deadline December 16, 2025</p>
                 </div>
               </div>
             </div>
@@ -448,7 +466,7 @@ export default function TikTokBanDelayedPage() {
                   <h4 className="font-semibold text-yellow-800 mb-2">Middle Case: Further Extensions (35% probability)</h4>
                   <p className="text-body-sm text-neutral-700 mb-2"><strong>What happens:</strong></p>
                   <ul className="space-y-1 text-body-sm text-neutral-700">
-                    <li>• Deadline extended again into 2026 as negotiations continue</li>
+                    <li>• Deadline extended again into 2025 as negotiations continue</li>
                     <li>• Ongoing uncertainty affects long-term brand commitments</li>
                     <li>• Creators continue operating but with persistent risk</li>
                     <li>• Possible feature development slowdown due to uncertainty</li>
@@ -620,5 +638,6 @@ export default function TikTokBanDelayedPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

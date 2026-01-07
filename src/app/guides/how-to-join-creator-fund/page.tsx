@@ -5,7 +5,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, CheckCircle, User, Users, Eye, MapPin, Video, BarChart3, DollarSign, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'How to Join TikTok Creator Fund: Step-by-Step Guide (2026)',
+  title: 'How to Join TikTok Creator Fund: Step-by-Step Guide 2026',
   description: 'Complete guide to joining the TikTok Creator Fund. Learn eligibility requirements, application process, approval tips, and what to do if rejected.',
   keywords: ['tiktok creator fund', 'how to join tiktok creator fund', 'creator fund application', 'tiktok monetization', 'creator fund eligibility'],
   alternates: {
@@ -81,7 +81,7 @@ export default function HowToJoinCreatorFundPage() {
             Step-by-step guide to qualifying, applying, and getting approved for TikTok's monetization program
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
-            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2026</span>
+            <span className="flex items-center gap-2"><Calendar className="w-4 h-4" /> Last updated: January 2025</span>
             <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 5 min read</span>
             <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4" /> 2026 Requirements</span>
           </div>

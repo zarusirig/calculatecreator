@@ -102,7 +102,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Data-Driven</h3>
-                    <p className="text-body-sm text-neutral-700">Based on surveys of 500+ creators, official TikTok documentation, and 2024-2026 industry reports</p>
+                    <p className="text-body-sm text-neutral-700">Based on surveys of 500+ creators, official TikTok documentation, and 2024-2025 industry reports</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">

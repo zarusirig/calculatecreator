@@ -46,7 +46,7 @@ const tableOfContents = [
 
 export default function TikTokAdBudgetCalculatorGuidePage() {
   const readingTime = '17 min read';
-  const lastUpdated = 'November 14, 2026';
+  const lastUpdated = 'November 14, 2025';
 
   return (
     <>
@@ -54,8 +54,8 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
         headline="TikTok Ad Budget Calculator Guide 2026 | Advertising Cost Planning"
         description="Complete guide to TikTok advertising costs: Learn how to calculate ad budgets, understand CPM/CPC/CPV pricing, measure campaign ROI, and optimize your TikTok marketing spend."
         url="https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide"
-        datePublished="2026-11-14"
-        dateModified="2026-11-14"
+        datePublished="2025-11-14"
+        dateModified="2025-11-14"
         keywords={["tiktok ad budget calculator", "advertising costs", "campaign budget", "CPM calculator"]}
       />
 

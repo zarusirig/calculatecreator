@@ -72,12 +72,22 @@ export const metadata: Metadata = {
     description:
       'Free TikTok calculators for creators: estimate earnings, engagement rates, brand deal rates, and more.',
     siteName: 'TikTok Creator Calculator',
+    url: 'https://calculatecreator.com',
+    images: [
+      {
+        url: 'https://calculatecreator.com/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'TikTok Creator Calculator - Free Earnings & Analytics Tools',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TikTok Creator Calculator',
     description:
       'Free TikTok calculators for creators: estimate earnings, engagement rates, and more.',
+    images: ['https://calculatecreator.com/images/og-image.png'],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',

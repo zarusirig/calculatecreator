@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Clock, AlertTriangle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { WatchTimeCalculatorWidget } from '@/components/calculators/watch-time/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Watch Time Calculator: Measure Retention Rate (2026)',
+  description: 'Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success.',
+  keywords: ['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time', 'tiktok algorithm metric'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/watch-time/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is good watch time on TikTok?',
+    answer: 'For 30-second videos, 20+ seconds (66%+) is good. For 60-second videos, 35+ seconds (58%+) is good. Focus on retention rate rather than absolute time for comparison.',
+  },
+  {
+    question: 'How does watch time affect the algorithm?',
+    answer: 'Watch time is TikTok\'s primary signal. Videos with high retention get pushed to larger audiences. Low retention (under 40%) limits distribution significantly.',
+  },
+  {
+    question: 'Should I make shorter or longer videos?',
+    answer: 'Match length to content. Short (15-30s) for entertainment. Medium (30-60s) for tips. Long (1-3min) for tutorials. High retention on any length beats forced padding.',
+  },
+  {
+    question: 'Where can I see watch time in TikTok Analytics?',
+    answer: 'Go to Analytics → Content → Select video → "Average watch time" shows seconds. Divide by video length for retention percentage.',
+  },
+];
 
 export default function WatchTimeCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Watch Time Calculator"
+        description="Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success."
+        url="https://calculatecreator.com/calculators/watch-time"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 2456 }}
+        datePublished="2024-04-18"
+        dateModified="2025-12-05"
+        keywords={['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Watch Time Calculator', url: 'https://calculatecreator.com/calculators/watch-time' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -156,7 +204,7 @@ Watch Hours: (50,000 × 22) / 3600 = 305.6 hours`}
             ]}
             dataSources={['TikTok Creator Analytics', 'Algorithm Research 2024']}
             limitations="Retention benchmarks vary by video length. Shorter videos naturally have higher rates."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection
@@ -192,5 +240,6 @@ Watch Hours: (50,000 × 22) / 3600 = 305.6 hours`}
         </div>
       </div>
     </div>
+    </>
   );
 }

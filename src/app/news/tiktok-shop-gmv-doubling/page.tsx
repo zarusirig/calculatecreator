@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Globe, Smartphone, Briefcase, Users, DollarSign, Gift, Rocket } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Projected to Double GMV by End of 2026 | TikTok News',
@@ -14,6 +15,23 @@ export const metadata: Metadata = {
 
 export default function TikTokShopGMVDoublingPage() {
   return (
+    <>
+      <NewsArticleSchema
+        headline="TikTok Shop Projected to Double GMV by End of 2026"
+        description="Industry projections indicate TikTok Shop's global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce."
+        url="https://calculatecreator.com/news/tiktok-shop-gmv-doubling"
+        datePublished="2026-01-05"
+        dateModified="2026-01-05"
+        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        keywords={['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'TikTok Shop GMV Growth', url: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling' },
+        ]}
+      />
     <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
@@ -112,7 +130,7 @@ export default function TikTokShopGMVDoublingPage() {
                 <h3 className="text-heading-sm font-semibold text-blue-900">Geographic Expansion</h3>
               </div>
               <p className="text-body-sm text-blue-800">
-                TikTok Shop launched in France, Germany, Italy, and other new markets in 2026, dramatically expanding the addressable customer base.
+                TikTok Shop launched in France, Germany, Italy, and other new markets in 2025, dramatically expanding the addressable customer base.
               </p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
@@ -193,13 +211,13 @@ export default function TikTokShopGMVDoublingPage() {
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Improved User Experience</h3>
               <p className="text-body-sm text-blue-800">
-                TikTok has streamlined checkout, added one-click purchasing, integrated Shop tabs directly into creator profiles, and improved product discovery algorithms. Cart abandonment rates dropped 35% in 2026.
+                TikTok has streamlined checkout, added one-click purchasing, integrated Shop tabs directly into creator profiles, and improved product discovery algorithms. Cart abandonment rates dropped 35% in 2025.
               </p>
             </div>
             <div className="bg-purple-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-purple-900 mb-2">Creator Ecosystem Expansion</h3>
               <p className="text-body-sm text-purple-800">
-                Over 200,000 creators joined TikTok Shop affiliate programs in 2026. As creator participation grows, so does product promotion and sales velocity across the platform.
+                Over 200,000 creators joined TikTok Shop affiliate programs in 2025. As creator participation grows, so does product promotion and sales velocity across the platform.
               </p>
             </div>
             <div className="bg-green-50 p-4 rounded-lg">
@@ -405,5 +423,6 @@ export default function TikTokShopGMVDoublingPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

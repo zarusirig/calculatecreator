@@ -123,7 +123,7 @@ export default function CreatorTaxStrategyPage() {
                   { q: 'Q1 2026', period: 'Jan 1 - Mar 31', due: 'April 15, 2026' },
                   { q: 'Q2 2026', period: 'Apr 1 - May 31', due: 'June 15, 2026' },
                   { q: 'Q3 2026', period: 'Jun 1 - Aug 31', due: 'September 15, 2026' },
-                  { q: 'Q4 2026', period: 'Sep 1 - Dec 31', due: 'January 15, 2026' },
+                  { q: 'Q4 2026', period: 'Sep 1 - Dec 31', due: 'January 15, 2027' },
                 ].map((row, idx) => (
                   <tr key={idx} className="border-b border-neutral-100">
                     <td className="py-3 px-4 font-semibold text-neutral-900">{row.q}</td>
@@ -185,7 +185,7 @@ export default function CreatorTaxStrategyPage() {
                   <h4 className="font-semibold text-blue-800 mb-2">Solo 401(k)</h4>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <p className="text-body-sm text-neutral-700 mb-2"><strong>Contribution Limits (2026):</strong></p>
+                      <p className="text-body-sm text-neutral-700 mb-2"><strong>Contribution Limits 2026:</strong></p>
                       <ul className="text-body-sm text-neutral-700 space-y-1">
                         <li>• Employee: Up to $23,000</li>
                         <li>• Employer: Up to 25% of net profit</li>
@@ -211,7 +211,7 @@ export default function CreatorTaxStrategyPage() {
                       <p className="text-body-sm text-neutral-700 mb-2"><strong>Details:</strong></p>
                       <ul className="text-body-sm text-neutral-700 space-y-1">
                         <li>• Contribute up to 25% of net profit</li>
-                        <li>• Max contribution: $69,000 (2026)</li>
+                        <li>• Max contribution: $69,000 2026</li>
                         <li>• Easier setup than Solo 401(k)</li>
                         <li>• Flexible annual contributions</li>
                       </ul>
@@ -268,7 +268,7 @@ export default function CreatorTaxStrategyPage() {
                   <div className="space-y-3">
                     <div className="p-3 bg-white rounded">
                       <p className="font-semibold text-neutral-700 mb-1">Standard Mileage Rate:</p>
-                      <p className="text-body-sm text-neutral-600">$0.67 per business mile (2026)</p>
+                      <p className="text-body-sm text-neutral-600">$0.67 per business mile 2026</p>
                       <p className="text-xs text-neutral-500 mt-1">Simpler, good for high mileage</p>
                     </div>
                     <div className="p-3 bg-white rounded">

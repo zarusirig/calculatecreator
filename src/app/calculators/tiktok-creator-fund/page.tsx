@@ -1,6 +1,16 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+
+export const metadata: Metadata = {
+  title: 'TikTok Creator Fund Calculator: Estimate Your Earnings (2026)',
+  description: 'Calculate your TikTok Creator Fund earnings based on views, engagement rate, and content niche. Get accurate RPM estimates and monthly income projections.',
+  keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment', 'tiktok monetization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/tiktok-creator-fund/',
+  },
+};
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
@@ -48,7 +58,7 @@ export default function CreatorFundCalculatorPage() {
           reviewCount: 1247,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment']}
       />
       <FAQSchema faqs={faqs} />
@@ -259,7 +269,7 @@ Monthly earnings: (500 × $0.036) = $18.00`}
                 'Industry benchmark studies (Influencer Marketing Hub, Social Blade)',
               ]}
               limitations="Actual earnings vary based on viewer location, video completion rate, advertiser demand, and TikTok's algorithm changes. Creator Fund RPM has declined over time as more creators join the program."
-              lastUpdated="November 13, 2026"
+              lastUpdated="November 13, 2025"
             />
 
             <FAQSection

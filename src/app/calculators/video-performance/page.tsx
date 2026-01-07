@@ -1,7 +1,17 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { BarChart3, Rocket, Clock, Video, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+
+export const metadata: Metadata = {
+  title: 'TikTok Video Performance Calculator: Analyze Content Success (2026)',
+  description: 'Calculate your TikTok video performance score based on views, engagement, and reach. Identify top-performing content patterns and optimize your strategy.',
+  keywords: ['video performance calculator', 'tiktok video analytics', 'content performance score', 'tiktok metrics calculator', 'video success tracker'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/video-performance/',
+  },
+};
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
@@ -61,7 +71,7 @@ export default function VideoPerformanceCalculatorPage() {
           reviewCount: 1583,
         }}
         datePublished="2024-01-15"
-        dateModified="2026-12-04"
+        dateModified="2025-12-04"
         keywords={['tiktok video performance', 'video analytics', 'content performance score', 'tiktok metrics']}
       />
       <FAQSchema faqs={faqData} />
@@ -362,7 +372,7 @@ export default function VideoPerformanceCalculatorPage() {
               'Viral Content Analysis Study by Influencer Marketing Hub',
             ]}
             limitations="Performance varies by niche, content type, and posting time. Scores are relative to your follower count - smaller accounts may score higher on reach metrics."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

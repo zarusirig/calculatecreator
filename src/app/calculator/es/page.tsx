@@ -69,7 +69,7 @@ export default function CalculadoraTikTokES() {
   const faqItems = [
     {
       question: '¿Qué tan precisa es esta calculadora de TikTok?',
-      answer: 'Nuestra calculadora utiliza datos actuales de más de 2,500 creadores verificados y estadísticas oficiales del Fondo de Creadores de TikTok. Los resultados muestran estimaciones realistas basadas en datos de mercado actuales (enero 2026). Las ganancias reales pueden variar según el nicho, la audiencia y el compromiso.',
+      answer: 'Nuestra calculadora utiliza datos actuales de más de 2,500 creadores verificados y estadísticas oficiales del Fondo de Creadores de TikTok. Los resultados muestran estimaciones realistas basadas en datos de mercado actuales (enero 2025). Las ganancias reales pueden variar según el nicho, la audiencia y el compromiso.',
     },
     {
       question: '¿El Fondo de Creadores de TikTok está disponible en España y México?',
@@ -373,10 +373,10 @@ export default function CalculadoraTikTokES() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-                  El Mercado TikTok Hispanohablante en 2026
+                  El Mercado TikTok Hispanohablante en 2025
                 </h3>
                 <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                  El mercado hispanohablante representa uno de los ecosistemas TikTok más vibrantes y prometedores globalmente, con más de 190 millones de usuarios activos en España, México, Argentina, Colombia y otros países de habla hispana. España lidera con 25,8 millones de usuarios (54,8% penetración) y RPM premium de €0.025-€0.038, mientras México domina en volumen con 72 millones de usuarios. La economía de creadores hispanohablantes alcanza los €1.8 mil millones en 2026, con un crecimiento proyectado del 42% para los próximos 12 meses. El mercado se caracteriza por contenido altamente viral, especialmente en música, baile, comedia y entretenimiento, que frecuentemente trasciende fronteras lingüísticas y se vuelve global.
+                  El mercado hispanohablante representa uno de los ecosistemas TikTok más vibrantes y prometedores globalmente, con más de 190 millones de usuarios activos en España, México, Argentina, Colombia y otros países de habla hispana. España lidera con 25,8 millones de usuarios (54,8% penetración) y RPM premium de €0.025-€0.038, mientras México domina en volumen con 72 millones de usuarios. La economía de creadores hispanohablantes alcanza los €1.8 mil millones en 2025, con un crecimiento proyectado del 42% para los próximos 12 meses. El mercado se caracteriza por contenido altamente viral, especialmente en música, baile, comedia y entretenimiento, que frecuentemente trasciende fronteras lingüísticas y se vuelve global.
                 </p>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
                   La demografía hispanohablante en TikTok es excepcionalmente joven y comprometida: 67% de usuarios tienen entre 16-34 años, con distribución equilibrada de género (52% mujeres, 48% hombres). El tiempo promedio de uso diario es de 68 minutos, reflejando audiencias altamente enganchadas. Ciudades como Madrid, Barcelona, Ciudad de México, Buenos Aires, Bogotá y Lima concentran el 55% de la actividad, pero regiones secundarias muestran crecimiento explosivo de 58% interanual. El mercado hispanohablante valora autenticidad, humor, entretenimiento y conexión emocional, permitiendo que creadores con recursos limitados puedan volverse virales y monetizar efectivamente a través de engagement genuino y contenido relatable.
@@ -406,7 +406,7 @@ export default function CalculadoraTikTokES() {
                   </div>
                 </div>
                 <p className="text-body-md text-neutral-700 leading-relaxed">
-                  La economía de creadores hispanohablantes alcanza €1.8 mil millones en 2026, con proyección de crecimiento del 42% para los siguientes 12 meses. Los sectores más activos son entretenimiento/comedia (35%), música y baile (22%), belleza y moda (18%), comida (15%) y lifestyle (10%). Marcas tanto locales como multinacionales invierten agresivamente en TikTok, con presupuestos que han crecido 180% desde 2023. España lidera en tasas RPM y valor por seguidor, mientras que México, Colombia y Argentina dominan en volumen y potencial viral. Los micro-influencers (10K-100K seguidores) capturan 71% de todas las colaboraciones de marca, con tasas de engagement de 7.8%, significativamente superiores a mega-influencers (2.1%).
+                  La economía de creadores hispanohablantes alcanza €1.8 mil millones en 2025, con proyección de crecimiento del 42% para los siguientes 12 meses. Los sectores más activos son entretenimiento/comedia (35%), música y baile (22%), belleza y moda (18%), comida (15%) y lifestyle (10%). Marcas tanto locales como multinacionales invierten agresivamente en TikTok, con presupuestos que han crecido 180% desde 2023. España lidera en tasas RPM y valor por seguidor, mientras que México, Colombia y Argentina dominan en volumen y potencial viral. Los micro-influencers (10K-100K seguidores) capturan 71% de todas las colaboraciones de marca, con tasas de engagement de 7.8%, significativamente superiores a mega-influencers (2.1%).
                 </p>
               </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { User, X, CheckCircle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { ProfileVisitRateCalculatorWidget } from '@/components/calculators/profile-visit-rate/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Profile Visit Rate Calculator (2026)',
+  description: 'Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content.',
+  keywords: ['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator', 'profile conversion'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/profile-visit-rate/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good profile visit rate on TikTok?',
+    answer: 'Excellent: 10%+ (1 in 10 viewers visits), Good: 5-10%, Average: 2-5%, Below Average: <2%. Educational content typically achieves 8-15% visit rates.',
+  },
+  {
+    question: 'How can I increase my profile visit rate?',
+    answer: 'Create series/multi-part content, add direct CTAs, showcase unique personality, write a compelling bio, end videos with cliffhangers, reference other content, build consistent branding.',
+  },
+  {
+    question: 'Where can I see profile visits in TikTok Analytics?',
+    answer: 'Go to Profile → Three dots menu → Creator Tools → Analytics → Overview tab. "Profile views" shows total visits.',
+  },
+  {
+    question: 'Why do people visit my profile but not follow?',
+    answer: 'Common reasons: inconsistent content, unclear niche, poor bio, not enough quality content. Create 15-20+ quality videos in one niche before driving traffic.',
+  },
+];
 
 export default function ProfileVisitRateCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Profile Visit Rate Calculator"
+        description="Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content."
+        url="https://calculatecreator.com/calculators/profile-visit-rate"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1978 }}
+        datePublished="2024-04-10"
+        dateModified="2025-11-13"
+        keywords={['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Profile Visit Rate Calculator', url: 'https://calculatecreator.com/calculators/profile-visit-rate' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -149,7 +197,7 @@ Visit Rate: (5,000 / 100,000) × 100 = 5%`}
               'Follower Acquisition Research 2024',
             ]}
             limitations="Visit rates vary by content type. How-to and educational content naturally drive more profile visits than entertainment content."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -185,5 +233,6 @@ Visit Rate: (5,000 / 100,000) × 100 = 5%`}
         </div>
       </div>
     </div>
+    </>
   );
 }

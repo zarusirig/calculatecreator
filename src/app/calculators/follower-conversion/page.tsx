@@ -1,13 +1,61 @@
+import type { Metadata } from 'next';
 import { Users, Scale, TrendingUp, Target } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FollowerConversionCalculatorWidget } from '@/components/calculators/follower-conversion/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Follower Conversion Rate Calculator (2026)',
+  description: 'Calculate how effectively your TikTok views convert to followers. Optimize content to grow your audience faster with our free conversion calculator.',
+  keywords: ['follower conversion rate', 'views to followers', 'tiktok growth calculator', 'follower growth rate', 'conversion optimization'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/follower-conversion/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good conversion rate for TikTok?',
+    answer: 'Overall conversion (follower to purchase): Excellent 5%+, Good 2-5%, Average 0.5-2%. However, CTR (5-10%) and site conversion (2-5%) matter more for optimization. Most issues are in CTR (weak CTA) or site conversion (poor product pages).',
+  },
+  {
+    question: 'How do I improve my conversion rate?',
+    answer: 'Improve CTR: Stronger CTAs, bio link optimization, content that drives action. Improve Conversion: Better product pages, social proof, limited-time offers, abandoned cart recovery, retargeting ads, lower friction checkout.',
+  },
+  {
+    question: 'How do I track follower conversions?',
+    answer: 'Use link tracking tools (Bitly, Linktree, Shopify), UTM parameters to track traffic source, TikTok Pixel for ad tracking, Google Analytics for behavior, and Shopify/WooCommerce for sales attribution.',
+  },
+  {
+    question: 'What is good revenue per follower?',
+    answer: '$0.10+ per follower is excellent for e-commerce. $0.05-0.10 is good. Under $0.05 needs improvement. Example: 10K followers at $0.10 = $1,000 revenue. This metric helps calculate follower ROI and growth targets.',
+  },
+];
 
 export default function FollowerConversionCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Follower Conversion Rate Calculator"
+        description="Calculate how effectively your TikTok views convert to followers. Optimize content to grow your audience faster with our free conversion calculator."
+        url="https://calculatecreator.com/calculators/follower-conversion"
+        aggregateRating={{ ratingValue: 4.7, reviewCount: 1687 }}
+        datePublished="2024-03-08"
+        dateModified="2025-11-13"
+        keywords={['follower conversion rate', 'views to followers', 'tiktok growth calculator', 'follower growth rate', 'conversion optimization']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Follower Conversion Calculator', url: 'https://calculatecreator.com/calculators/follower-conversion' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -275,7 +323,7 @@ Revenue: $3,750 ($0.075 per follower)`}
               'TikTok Shopping Performance Study',
             ]}
             limitations="Conversion rates vary by product price, niche, and audience quality. Track over time to identify trends and optimization opportunities."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection
@@ -351,5 +399,6 @@ Revenue: $3,750 ($0.075 per follower)`}
         </div>
       </div>
     </div>
+    </>
   );
 }

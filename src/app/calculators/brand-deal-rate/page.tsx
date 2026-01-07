@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { Handshake, XCircle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -7,6 +8,15 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Brand Deal Rate Calculator: How Much to Charge (2026)',
+  description: 'Calculate your TikTok brand deal rates based on followers, engagement, and niche. Know your worth and charge the right price for sponsorships.',
+  keywords: ['brand deal calculator', 'tiktok sponsorship rates', 'influencer rate calculator', 'how much to charge brand deals', 'creator pricing'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',
+  },
+};
 
 const faqData = [
   {
@@ -439,7 +449,7 @@ Multipliers:
               'Survey of 500+ creators and brand managers',
             ]}
             limitations="Rates vary significantly based on brand budget, campaign goals, usage rights, exclusivity, and creator-brand fit. These are starting points for negotiation, not guaranteed rates."
-            lastUpdated="November 13, 2026"
+            lastUpdated="November 13, 2025"
           />
 
           <FAQSection

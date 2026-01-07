@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { Gem, DollarSign, Gift, Banknote, Globe, BarChart3 } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -7,6 +8,15 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamond-converter/CalculatorWidget';
+
+export const metadata: Metadata = {
+  title: 'TikTok Diamond to USD Calculator: Convert Diamonds to Money (2026)',
+  description: 'Convert TikTok diamonds to real money. Calculate how much your LIVE gifts are worth in USD, EUR, and other currencies with our free converter.',
+  keywords: ['tiktok diamond calculator', 'diamonds to usd', 'tiktok live earnings', 'diamond converter', 'gift value calculator'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/diamond-converter/',
+  },
+};
 
 const faqData = [
     {
@@ -123,7 +133,7 @@ export default function DiamondConverterPage() {
               ]}
               dataSources={['TikTok Creator Portal Data', 'Q4 2026 Creator Surveys', 'TikTok Official Documentation', 'Creator Payout Reports']}
               limitations="Exchange rates fluctuate daily. Actual payout amounts may vary based on regional banking fees, currency conversion costs, and local tax withholding."
-              lastUpdated="November 2026"
+              lastUpdated="November 2025"
             />
 
             <FAQSection
@@ -170,7 +180,7 @@ export default function DiamondConverterPage() {
                   answer: "TikTok doesn't charge fees for diamond payouts, but your bank or PayPal may charge currency conversion or international transfer fees. These vary by region and financial institution."
                 },
                 {
-                  question: "How has the diamond economy changed in 2026?",
+                  question: "How has the diamond economy changed in 2025?",
                   answer: "In 2026, LIVE gifting increased 40% YoY, with global creator payouts exceeding $2 billion annually. Diamond values remain stable at $0.005, but competition for viewer attention has intensified."
                 },
                 {

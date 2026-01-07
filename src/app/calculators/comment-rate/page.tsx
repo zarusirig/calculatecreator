@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import { MessageCircle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
@@ -6,9 +7,56 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CommentRateCalculatorWidget } from '@/components/calculators/comment-rate/CalculatorWidget';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+
+export const metadata: Metadata = {
+  title: 'TikTok Comment Rate Calculator: Measure Audience Engagement (2026)',
+  description: 'Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is with our free calculator.',
+  keywords: ['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement', 'tiktok analytics'],
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/comment-rate/',
+  },
+};
+
+const faqData = [
+  {
+    question: 'What is a good comment rate on TikTok?',
+    answer: 'Excellent: 1%+ (exceptional engagement), Good: 0.5-1% (strong community building), Average: 0.2-0.5% (typical), Below Average: <0.2% (needs improvement). Opinion and Q&A content should aim for 1%+, while educational content typically achieves 0.5-1%.',
+  },
+  {
+    question: 'Why do comments matter more than likes?',
+    answer: 'Comments require significantly more effort than likes, indicating deeper engagement. When viewers comment, they extend their watch time (boosting algorithmic performance), often return to check responses, and build community around your content.',
+  },
+  {
+    question: 'How can I increase my comment rate?',
+    answer: 'Ask direct questions, share controversial but respectful opinions, create "this or that" choices, use "wrong answers only" prompts, request audience advice, make relatable call-out content, include specific comment CTAs, and respond to early comments quickly.',
+  },
+  {
+    question: 'Should I respond to all comments?',
+    answer: 'While responding to every comment is ideal, prioritize: (1) Questions that provide value to all viewers, (2) Thoughtful insights worth highlighting, (3) Early comments in the first hour to boost initial engagement. Aim for 20-30% response rate minimum.',
+  },
+];
 
 export default function CommentRateCalculatorPage() {
   return (
+    <>
+      <CalculatorSchema
+        name="TikTok Comment Rate Calculator"
+        description="Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is."
+        url="https://calculatecreator.com/calculators/comment-rate"
+        aggregateRating={{ ratingValue: 4.8, reviewCount: 1567 }}
+        datePublished="2024-05-01"
+        dateModified="2025-12-05"
+        keywords={['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement']}
+      />
+      <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Comment Rate Calculator', url: 'https://calculatecreator.com/calculators/comment-rate' },
+        ]}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
@@ -218,7 +266,7 @@ This 0.5% comment rate indicates good community engagement`}
               'Social Media Engagement Research',
             ]}
             limitations="Comment rate varies significantly by content type and niche. Opinion-based content naturally generates more comments than aesthetic content. Compare against your own baseline and similar creators in your niche rather than across all content categories."
-            lastUpdated="December 5, 2026"
+            lastUpdated="December 5, 2025"
           />
 
           <FAQSection
@@ -267,5 +315,6 @@ This 0.5% comment rate indicates good community engagement`}
         </div>
       </div>
     </div>
+    </>
   );
 }

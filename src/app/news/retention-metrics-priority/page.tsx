@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { BarChart3, Clock, CheckCircle, XCircle } from 'lucide-react';
+import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Retention Metrics Become Priority for TikTok Content Distribution | TikTok News',
@@ -14,7 +15,24 @@ export const metadata: Metadata = {
 
 export default function RetentionMetricsPriorityPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <NewsArticleSchema
+        headline="Retention Metrics Become Priority for TikTok Content Distribution"
+        description="Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok."
+        url="https://calculatecreator.com/news/retention-metrics-priority/"
+        datePublished="2026-01-01"
+        dateModified="2026-01-01"
+        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        keywords={['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'Retention Metrics Priority', url: 'https://calculatecreator.com/news/retention-metrics-priority/' },
+        ]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
@@ -482,5 +500,6 @@ export default function RetentionMetricsPriorityPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

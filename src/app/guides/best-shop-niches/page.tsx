@@ -268,7 +268,7 @@ export default function BestShopNichesPage() {
             </div>
 
             <div className="p-5 bg-yellow-50 rounded-lg">
-              <h3 className="font-semibold text-neutral-900 mb-3">Emerging Niches to Watch (2026)</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">Emerging Niches to Watch 2026</h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="p-4 bg-white rounded-lg">
                   <h4 className="font-semibold text-neutral-800 mb-2">Sustainable Living</h4>
