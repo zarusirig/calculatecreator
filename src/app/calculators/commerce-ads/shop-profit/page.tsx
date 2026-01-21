@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok Shop commissions and seller fees. Understand referral fees, payment processing costs, and net profit per sale.',
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/shop-commission/',
+    canonical: 'https://calculatecreator.com/calculators/commerce-ads/shop-profit/',
   },
 };
 

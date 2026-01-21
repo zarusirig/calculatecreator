@@ -11,6 +11,7 @@ import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calcula
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { Globe, Lightbulb, CheckCircle, Music, Laugh, Sparkles, UtensilsCrossed } from 'lucide-react';
+import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
 export default function CalculadoraTikTokES() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
@@ -90,11 +91,24 @@ export default function CalculadoraTikTokES() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
-      <div className="container-custom">
-        {/* Breadcrumb */}
-        <nav className="flex items-center space-x-2 text-body-sm mb-6">
-          <Link href="/" className="text-neutral-600 hover:text-primary-600">Inicio</Link>
+    <>
+      <InternationalCalculatorSchema
+        locale="es_ES"
+        languageCode="es"
+        countryName="Spain"
+        title="Calculadora de TikTok: Ganancias y Monetización"
+        description="Calcula tu potencial de ingresos en TikTok: Fondo de Creadores, acuerdos con marcas y regalos en LIVE. Optimizado para mercados hispanohablantes con tasas RPM actuales."
+        url="https://calculatecreator.com/calculator/es/"
+        faqs={faqItems}
+        currency="EUR"
+        rpmMin="€0.025"
+        rpmMax="€0.038"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+        <div className="container-custom">
+          {/* Breadcrumb */}
+          <nav className="flex items-center space-x-2 text-body-sm mb-6">
+            <Link href="/" className="text-neutral-600 hover:text-primary-600">Inicio</Link>
           <span className="text-neutral-400">→</span>
           <Link href="/region" className="text-neutral-600 hover:text-primary-600">Estadísticas Globales de TikTok</Link>
           <span className="text-neutral-400">→</span>
@@ -561,6 +575,7 @@ export default function CalculadoraTikTokES() {
         </div>
 
       </div>
-    </div>
+      </div>
+    </>
   );
 }

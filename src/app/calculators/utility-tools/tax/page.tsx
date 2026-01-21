@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator.',
   keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/creator-tax/',
+    canonical: 'https://calculatecreator.com/calculators/utility-tools/tax/',
   },
 };
 

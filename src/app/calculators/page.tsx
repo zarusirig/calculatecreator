@@ -45,7 +45,7 @@ export default function CalculatorsPage() {
     // Original 8 Calculators
     {
       name: 'Creator Fund Calculator',
-      slug: 'tiktok-creator-fund',
+      slug: 'earnings-revenue/creator-fund',
       description: 'Estimate monthly and annual earnings from the TikTok Creator Fund based on views, engagement, and niche.',
       icon: DollarSign,
       category: 'Earnings',
@@ -53,7 +53,7 @@ export default function CalculatorsPage() {
     },
     {
       name: 'Engagement Rate Calculator',
-      slug: 'engagement-rate',
+      slug: 'engagement-influence/engagement',
       description: 'Calculate your TikTok engagement rate and compare to industry benchmarks.',
       icon: BarChart3,
       category: 'Analytics',
@@ -61,7 +61,7 @@ export default function CalculatorsPage() {
     },
     {
       name: 'Brand Deal Rate Calculator',
-      slug: 'brand-deal-rate',
+      slug: 'engagement-influence/influencer-pricing',
       description: 'Calculate how much you should charge brands for sponsored content based on followers and engagement.',
       icon: Handshake,
       category: 'Earnings',
@@ -69,7 +69,7 @@ export default function CalculatorsPage() {
     },
     {
       name: 'TikTok Money Calculator',
-      slug: 'tiktok-money',
+      slug: 'earnings-revenue/money',
       description: 'Calculate total earnings from all monetization streams: Creator Fund, brand deals, and LIVE gifts.',
       icon: Banknote,
       category: 'Earnings',
@@ -77,28 +77,28 @@ export default function CalculatorsPage() {
     },
     {
       name: 'LIVE Gifts Calculator',
-      slug: 'live-gifts',
+      slug: 'earnings-revenue/live-earnings',
       description: 'Estimate earnings from TikTok LIVE streaming based on viewers, duration, and gifting rate.',
       icon: Gift,
       category: 'LIVE',
     },
     {
       name: 'Coins Calculator',
-      slug: 'coins',
+      slug: 'coins-gifts-diamonds/coins',
       description: 'Convert TikTok coins to USD value and diamonds.',
       icon: Coins,
       category: 'Conversion',
     },
     {
       name: 'RPM Calculator',
-      slug: 'rpm',
+      slug: 'commerce-ads/rpm-cpm',
       description: 'Calculate your revenue per 1,000 views (RPM) to understand earning efficiency.',
       icon: TrendingUp,
       category: 'Analytics',
     },
     {
       name: 'Shop Commission Calculator',
-      slug: 'shop-commission',
+      slug: 'commerce-ads/shop-profit',
       description: 'Calculate earnings from TikTok Shop affiliate commissions.',
       icon: ShoppingBag,
       category: 'Shop',
@@ -114,7 +114,7 @@ export default function CalculatorsPage() {
     },
     {
       name: 'Video Performance Predictor',
-      slug: 'video-performance',
+      slug: 'engagement-influence/video-engagement',
       description: 'Predict video performance and get a comprehensive performance score based on key metrics.',
       icon: Target,
       category: 'Analytics',
@@ -165,7 +165,7 @@ export default function CalculatorsPage() {
     },
     {
       name: 'Creator Tax Calculator',
-      slug: 'creator-tax',
+      slug: 'utility-tools/tax',
       description: 'Estimate your tax obligations including federal, state, and self-employment taxes.',
       icon: Receipt,
       category: 'Business',

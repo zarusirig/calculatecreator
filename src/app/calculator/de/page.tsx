@@ -13,6 +13,7 @@ import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calcul
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
 import { Globe, Lightbulb, CheckCircle, Car, Briefcase, Home, Laugh } from 'lucide-react';
+import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
 // Note: For SEO, we'll need to add metadata in a wrapper or use Next.js 15+ metadata API
 export default function TikTokRechnerDE() {
@@ -93,11 +94,24 @@ export default function TikTokRechnerDE() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
-      <div className="container-custom">
-        {/* Breadcrumb */}
-        <nav className="flex items-center space-x-2 text-body-sm mb-6">
-          <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
+    <>
+      <InternationalCalculatorSchema
+        locale="de_DE"
+        languageCode="de"
+        countryName="Germany"
+        title="TikTok Rechner: Einnahmen & Verdienstmöglichkeiten berechnen"
+        description="Berechnen Sie Ihr Verdienstpotenzial auf TikTok: Creator Fund, Markendeals und LIVE Geschenke. Speziell optimiert für den deutschen Markt mit aktuellen RPM-Raten."
+        url="https://calculatecreator.com/calculator/de/"
+        faqs={faqItems}
+        currency="EUR"
+        rpmMin="€0.030"
+        rpmMax="€0.048"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+        <div className="container-custom">
+          {/* Breadcrumb */}
+          <nav className="flex items-center space-x-2 text-body-sm mb-6">
+            <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
           <span className="text-neutral-400">→</span>
           <Link href="/region" className="text-neutral-600 hover:text-primary-600">Globale TikTok Statistiken</Link>
           <span className="text-neutral-400">→</span>
@@ -560,6 +574,7 @@ export default function TikTokRechnerDE() {
         </div>
 
       </div>
-    </div>
+      </div>
+    </>
   );
 }

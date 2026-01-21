@@ -40,6 +40,7 @@ import {
   ShoppingCart,
   type LucideIcon,
 } from 'lucide-react';
+import { HomepageSchema } from '@/components/seo/HomepageSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Money Calculator & Creator Earnings Hub 2026 | Free Tools',
@@ -67,9 +68,11 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen relative">
-      {/* HERO SECTION WITH FULL-WIDTH BACKGROUND IMAGE */}
-      <section className="relative z-10">
+    <>
+      <HomepageSchema />
+      <div className="min-h-screen relative">
+        {/* HERO SECTION WITH FULL-WIDTH BACKGROUND IMAGE */}
+        <section className="relative z-10">
         {/* Full-width Hero Background Image - Optimized with picture element */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <picture>
@@ -694,7 +697,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
 
