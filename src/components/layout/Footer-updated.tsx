@@ -23,7 +23,7 @@ export function Footer() {
         { href: '/calculators/live-gifts', label: 'LIVE Gifts' },
         { href: '/calculators/tiktok-money', label: 'Money Calculator' },
         { href: '/calculators/rpm', label: 'RPM Calculator' },
-        { href: '/calculators/shop-commission', label: 'Shop Commission' },
+        { href: '/calculators/commerce-ads/shop-profit/', label: 'Shop Commission' },
         { href: '/calculators/coins', label: 'Coins Converter' },
         { href: '/calculators', label: 'All Calculators' },
       ],

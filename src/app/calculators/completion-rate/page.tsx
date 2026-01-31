@@ -74,8 +74,7 @@ export default function CompletionRateCalculatorPage() {
             TikTok Completion Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate what percentage of viewers watch your video to the end.
-            Completion rate is critical for algorithmic success.
+            Calculate what percentage of viewers watch your video all the way to the end using average watch time and video duration. Completion rate is one of the strongest algorithmic signals on TikTok. Videos with 80%+ completion rates often go viral as they prove your content delivers on its promise. Essential for optimizing video length and pacing decisions.
           </p>
         </div>
 

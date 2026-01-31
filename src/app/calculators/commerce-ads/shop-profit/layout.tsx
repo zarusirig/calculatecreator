@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: 'Calculate TikTok Shop affiliate earnings. Estimate commissions from product sales with accurate commission rates by category (5-20%).',
   keywords: ['tiktok shop calculator', 'tiktok affiliate commission', 'shop earnings', 'product commission'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/shop-commission/',
+    canonical: 'https://calculatecreator.com/calculators/commerce-ads/shop-profit/',
   },
   openGraph: {
     title: 'Shop Commission Calculator 2026',
     description: 'Calculate TikTok Shop affiliate earnings and commissions.',
-    url: 'https://calculatecreator.com/calculators/shop-commission',
+    url: 'https://calculatecreator.com/calculators/commerce-ads/shop-profit/',
     type: 'website',
   },
 };

@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 export function BlogListingSchema() {
   const blogSchema = {
     '@context': 'https://schema.org',
@@ -48,13 +46,11 @@ export function BlogListingSchema() {
 
   return (
     <>
-      <Script
-        id="blog-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-      <Script
-        id="breadcrumb-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />

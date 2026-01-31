@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, AlertTriangle, XCircle } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Creator Tax Deductions Guide: What TikTok Creators Can Write Off 2026',
@@ -156,13 +157,19 @@ export default function CreatorTaxDeductionsGuidePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="Creator Tax Deductions Guide: What TikTok Creators Can Write Off 2026"
+        description="Complete guide to tax deductions for TikTok creators. Learn what you can write off, how to track expenses, and tax strategies to reduce your tax bill."
+        url="https://calculatecreator.com/advanced/creator-tax-deductions-guide/"
+        category="Advanced Guides"
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Tax Deductions Guide</span>
           </div>
@@ -514,7 +521,7 @@ export default function CreatorTaxDeductionsGuidePage() {
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">Calculate taxes:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li>Use <Link href="/calculators/creator-tax" className="text-blue-600 hover:underline">Creator Tax Calculator</Link> to estimate quarterly payments</li>
+                <li>Use <Link href="/calculators/utility-tools/tax/" className="text-blue-600 hover:underline">Creator Tax Calculator</Link> to estimate quarterly payments</li>
               </ul>
             </div>
           </div>
@@ -524,19 +531,19 @@ export default function CreatorTaxDeductionsGuidePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/creator-tax" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Creator Tax Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate quarterly tax payments</p>
             </Link>
-            <Link href="/reference/tiktok-shop-payment-schedule" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/reference/tiktok-shop-payment-schedule/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Shop Payment Schedule</h3>
               <p className="text-body-sm text-neutral-600">Track income for taxes</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Get Brand Deals</h3>
               <p className="text-body-sm text-neutral-600">Increase your income</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Creator Fund Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate taxable income</p>
             </Link>

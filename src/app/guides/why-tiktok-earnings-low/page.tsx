@@ -66,7 +66,7 @@ export default function WhyTikTokEarningsLowPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Why TikTok Earnings Low</span>
           </div>
@@ -107,6 +107,15 @@ export default function WhyTikTokEarningsLowPage() {
         </div>
       </section>
 
+      {/* Introduction */}
+      <section className="py-8">
+        <div className="container-custom max-w-4xl">
+          <p className="text-body-lg text-neutral-700 leading-relaxed">
+            Discovering that your TikTok Creator Fund earnings are disappointingly low despite significant effort, consistent posting, and strong view counts is one of the most frustrating experiences for creators who expected meaningful income from their content creation work. You finally qualified for monetization after meeting all the strict requirements, building your audience from zero followers, and consistently posting high-quality content for months with dedication and discipline. You're getting thousands or even millions of views each month with engaged followers, maintaining strong growth metrics, and you're genuinely excited to start earning meaningful income that could turn your passion into a sustainable business or at least provide supplemental income to justify the time investment. But when you check your earnings dashboard for the first time with great anticipation and hope, the numbers are shockingly, disappointingly, and frustratingly low—just $10-15 for a million views when you expected much more based on what you've heard from other creators. This comprehensive guide breaks down the 8 main reasons why your TikTok Creator Fund earnings are disappointingly low, from engagement rate issues and audience geography to niche selection and income stream diversification strategies, along with detailed actionable solutions to systematically increase your earnings.
+          </p>
+        </div>
+      </section>
+
       <div className="container-custom max-w-4xl py-12 space-y-8">
         <Card>
           <div className="prose prose-lg max-w-none">
@@ -114,14 +123,7 @@ export default function WhyTikTokEarningsLowPage() {
               The Frustrating Reality
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              You finally qualified for the TikTok Creator Fund. You're getting thousands or even millions of views.
-              But when you check your earnings dashboard, the numbers are shockingly low. $10 for a million views?
-              $2 for 100,000 views? You're not alone in this frustration.
-            </p>
-            <p className="text-body-md text-neutral-700 mb-4">
-              Many creators report earning just $20-40 per million views, while seeing others claim earnings of
-              $100+ for the same views. What's the difference? Let's break down exactly why your earnings are low
-              and what you can do about it.
+              You finally qualified for the TikTok Creator Fund after meeting all the strict requirements, building your audience from zero, and consistently posting high-quality content for months. You're getting thousands or even millions of views each month, maintaining strong follower growth, and you're genuinely excited to start earning meaningful income from your creative work and turn your passion into a sustainable business. But when you check your earnings dashboard for the first time with great anticipation, the numbers are shockingly, disappointingly, and frustratingly low. Just $10-15 for a million views? Only $2-3 for 100,000 views? You're definitely not alone in this frustration - this is one of the most common complaints in creator communities. Many creators report earning just $20-40 per million views, while simultaneously seeing other creators in seemingly similar niches claim earnings of $100, $200, or even more for the same exact view counts. This massive disparity and inequality raises an extremely important question that every creator asks: what's the actual difference between low-earning and high-earning creators with similar audiences? This comprehensive guide breaks down the 8 main reasons why your TikTok Creator Fund earnings are disappointingly low, from engagement rate issues and audience geography to niche selection and income stream diversification strategies, along with detailed actionable solutions to systematically increase your earnings in 2026.
             </p>
           </div>
         </Card>
@@ -134,10 +136,10 @@ export default function WhyTikTokEarningsLowPage() {
             Before diagnosing the problem, understand your baseline metrics.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/rpm" className="btn btn-primary">
+            <Link href="/calculators/rpm/" className="btn btn-primary">
               RPM Calculator →
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="btn btn-secondary">
+            <Link href="/calculators/tiktok-creator-fund/" className="btn btn-secondary">
               Creator Fund Calculator
             </Link>
           </div>
@@ -221,7 +223,7 @@ export default function WhyTikTokEarningsLowPage() {
                   Keep videos between 21-34 seconds for maximum completion rate. Add cliffhangers that make people watch again.
                 </span>
               </div>
-              <Link href="/calculators/completion-rate" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/calculators/completion-rate/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Calculate Your Completion Rate →
               </Link>
             </div>
@@ -243,7 +245,7 @@ export default function WhyTikTokEarningsLowPage() {
                   or educational content. These topics attract higher-income viewers that advertisers pay more to reach.
                 </span>
               </div>
-              <Link href="/calculators/niche-profitability" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/calculators/niche-profitability/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Check Niche Profitability →
               </Link>
             </div>
@@ -266,15 +268,15 @@ export default function WhyTikTokEarningsLowPage() {
                 </span>
               </div>
               <div className="flex flex-wrap gap-2 mt-3">
-                <Link href="/calculators/brand-deal-rate" className="text-body-sm text-blue-600 hover:underline">
+                <Link href="/calculators/brand-deal-rate/" className="text-body-sm text-blue-600 hover:underline">
                   Brand Deal Calculator
                 </Link>
                 <span className="text-neutral-400">•</span>
-                <Link href="/calculators/shop-commission" className="text-body-sm text-blue-600 hover:underline">
+                <Link href="/calculators/commerce-ads/shop-profit/" className="text-body-sm text-blue-600 hover:underline">
                   Shop Commission
                 </Link>
                 <span className="text-neutral-400">•</span>
-                <Link href="/calculators/live-gifts" className="text-body-sm text-blue-600 hover:underline">
+                <Link href="/calculators/live-gifts/" className="text-body-sm text-blue-600 hover:underline">
                   LIVE Gifts Calculator
                 </Link>
               </div>
@@ -316,7 +318,7 @@ export default function WhyTikTokEarningsLowPage() {
                   Maintain quality while increasing frequency. The algorithm rewards consistent creators.
                 </span>
               </div>
-              <Link href="/calculators/posting-time" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/calculators/posting-time/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Find Your Best Posting Times →
               </Link>
             </div>
@@ -338,7 +340,7 @@ export default function WhyTikTokEarningsLowPage() {
                   funny, or valuable). Add value that makes viewers visit your profile. Use series/parts to encourage follows.
                 </span>
               </div>
-              <Link href="/guides/tiktok-algorithm-optimization" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/guides/tiktok-algorithm-optimization/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Read: TikTok Algorithm Optimization Guide →
               </Link>
             </div>
@@ -376,21 +378,43 @@ export default function WhyTikTokEarningsLowPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate earnings based on views and RPM</p>
             </Link>
-            <Link href="/calculators/engagement-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Engagement Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Measure your content performance</p>
             </Link>
-            <Link href="/calculators/rpm" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/rpm/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">RPM Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate revenue per 1000 views</p>
             </Link>
-            <Link href="/calculators/niche-profitability" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/niche-profitability/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Niche Profitability</h3>
               <p className="text-body-sm text-neutral-600">Compare earning potential by niche</p>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/why-creator-fund-earnings-dropped/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Why Did My Earnings Drop?</h4>
+              <p className="text-body-sm text-neutral-700">Troubleshoot sudden decreases in payments</p>
+            </Link>
+            <Link href="/guides/maximize-creator-fund-rpm/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Maximize Creator Fund RPM</h4>
+              <p className="text-body-sm text-neutral-700">Increase your revenue per thousand views</p>
+            </Link>
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">How to Make Money on TikTok</h4>
+              <p className="text-body-sm text-neutral-700">Explore all monetization options beyond Creator Fund</p>
+            </Link>
+            <Link href="/guides/monetization-calculator-hub/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Monetization Calculator Hub</h4>
+              <p className="text-body-sm text-neutral-700">Compare different income streams and earnings potential</p>
             </Link>
           </div>
         </Card>

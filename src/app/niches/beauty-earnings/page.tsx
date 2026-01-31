@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { ShoppingBag, Handshake, TrendingUp, MessageCircle, Sparkles, BarChart3 } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Beauty Creators TikTok Earnings Guide: Realistic Income Data 2026',
@@ -15,12 +16,18 @@ export const metadata: Metadata = {
 export default function BeautyEarningsPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="Beauty Creators TikTok Earnings Guide: Realistic Income Data 2026"
+        description="Complete earnings guide for beauty creators on TikTok. Income by follower tier, brand deal rates, affiliate commissions, and monetization strategies."
+        url="https://calculatecreator.com/niches/beauty-earnings/"
+        category="Niche Guides"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Beauty Creator Earnings</span>
           </div>
@@ -109,7 +116,7 @@ export default function BeautyEarningsPage() {
             <p className="text-body-md text-neutral-700 mb-6">
               Use our specialized calculator to estimate your income potential as a beauty creator
             </p>
-            <Link href="/calculators/tiktok-creator-fund" className="inline-flex items-center space-x-2 px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="inline-flex items-center space-x-2 px-6 py-3 bg-primary-600 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">
               <BarChart3 className="w-5 h-5" />
               <span>Calculate Earnings →</span>
             </Link>
@@ -119,14 +126,14 @@ export default function BeautyEarningsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <div className="flex items-center space-x-2 mb-1">
                 <Handshake className="w-5 h-5 text-primary-600" />
                 <h4 className="font-semibold text-neutral-900">How to Get Brand Deals</h4>
               </div>
               <p className="text-body-sm text-neutral-700">Strategies to land beauty brand partnerships</p>
             </Link>
-            <Link href="/guides/how-to-become-tiktok-shop-affiliate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/how-to-become-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <div className="flex items-center space-x-2 mb-1">
                 <ShoppingBag className="w-5 h-5 text-primary-600" />
                 <h4 className="font-semibold text-neutral-900">TikTok Shop Affiliate</h4>

@@ -101,7 +101,7 @@ export default function CalculatriceTikTokFR() {
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Accueil</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/region" className="text-neutral-600 hover:text-primary-600">Statistiques Mondiales TikTok</Link>
+          <Link href="/region/" className="text-neutral-600 hover:text-primary-600">Statistiques Mondiales TikTok</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Français</span>
         </nav>
@@ -117,7 +117,7 @@ export default function CalculatriceTikTokFR() {
             Calculez votre potentiel de revenus sur TikTok: Fonds des Créateurs, partenariats de marque et cadeaux LIVE. Optimisé pour le marché français avec des taux RPM actuels.
           </p>
           <div className="mt-4">
-            <Link href="/region" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
+            <Link href="/region/" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
               <Globe className="w-4 h-4" />
               <span>Voir les statistiques TikTok pour tous les pays</span>
             </Link>
@@ -188,23 +188,23 @@ export default function CalculatriceTikTokFR() {
             <Card>
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Explorer d'Autres Langues</h3>
               <div className="grid grid-cols-2 gap-2">
-                <Link href="/calculator/de" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
+                <Link href="/calculator/de/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Deutsch</span>
                 </Link>
-                <Link href="/calculator/es" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
+                <Link href="/calculator/es/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Español</span>
                 </Link>
-                <Link href="/calculator/it" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
+                <Link href="/calculator/it/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Italiano</span>
                 </Link>
-                <Link href="/calculator/pt-br" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
+                <Link href="/calculator/pt-br/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Português</span>
                 </Link>
-                <Link href="/calculator/my" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
+                <Link href="/calculator/my/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Bahasa Malaysia</span>
                 </Link>

@@ -102,11 +102,10 @@ export default function PostingTimeCalculatorPage() {
             TikTok Best Time to Post Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">
-            Find optimal posting times based on your audience region and content type.
-            Maximize reach by posting when your audience is most active and the algorithm rewards your content.
+            Find optimal posting times based on your audience region and content type to maximize reach and engagement. Generally, TikTok sees peak activity at 9 AM, 12 PM, 5 PM, and 9 PM EST, but your specific audience may differ. Use this calculator to identify the best times for your niche, understand how timing can 2-3x your views, and build a consistent posting schedule that the algorithm rewards.
           </p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Timing is critical for TikTok success. Use this calculator with our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Engagement Rate Calculator</Link> to track how posting times affect performance, and check your <Link href="/calculators/video-performance" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Video Performance Score</Link> to measure overall content quality.
+            Timing is critical for TikTok success. Use this calculator with our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Engagement Rate Calculator</Link> to track how posting times affect performance, and check your <Link href="/calculators/video-performance/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Video Performance Score</Link> to measure overall content quality.
           </p>
         </div>
 

@@ -76,8 +76,7 @@ export default function ContentCalendarROICalculatorPage() {
             Content Calendar ROI Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate the return on investment for strategic content planning.
-            Measure if your planning time translates to better performance.
+            Calculate the return on investment for strategic content planning and scheduling. This calculator measures whether your planning time translates to better performance by comparing planning costs against revenue improvements from optimized posting schedules, topic selection, and consistency. Essential for creators who want to justify time spent on content strategy, improve efficiency, and ensure their planning efforts drive measurable business results.
           </p>
         </div>
 

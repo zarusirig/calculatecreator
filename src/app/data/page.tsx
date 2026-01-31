@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { Database, TrendingUp, Globe, Users, DollarSign, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -98,6 +99,12 @@ export default function DataIndexPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <DatasetSchema
+        title="TikTok Creator Data & Benchmarks Hub"
+        description="Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2026."
+        url="https://calculatecreator.com/data/"
+        keywords={['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data']}
+      />
       <Breadcrumb
         items={[
           { label: 'Data & Insights', href: '/data' },
@@ -283,7 +290,7 @@ export default function DataIndexPage() {
                 <p className="text-body-sm text-neutral-700 mb-2"><strong>Example Process:</strong></p>
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
                   <li>Check your Creator Fund dashboard: $42 earned from 1.5M views = $0.028 RPM</li>
-                  <li>Visit <Link href="/data/rpm-rates-by-niche" className="text-green-600 hover:underline">RPM Rates by Niche</Link> and find your category (e.g., Beauty: $0.025-$0.04)</li>
+                  <li>Visit <Link href="/data/rpm-rates-by-niche/" className="text-green-600 hover:underline">RPM Rates by Niche</Link> and find your category (e.g., Beauty: $0.025-$0.04)</li>
                   <li>You're at the low-mid range—room for optimization</li>
                 </ul>
               </div>
@@ -313,8 +320,8 @@ export default function DataIndexPage() {
               <div className="p-4 bg-white rounded-lg border border-purple-200">
                 <p className="text-body-sm text-neutral-700 mb-2"><strong>Rate Card Template Using Our Data:</strong></p>
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
-                  <li>Find your follower tier in <Link href="/data/brand-deal-rates-by-followers" className="text-purple-600 hover:underline">Brand Deal Rates by Followers</Link></li>
-                  <li>Apply niche multipliers from <Link href="/data/brand-deal-rates-by-niche" className="text-purple-600 hover:underline">Brand Deal Rates by Niche</Link></li>
+                  <li>Find your follower tier in <Link href="/data/brand-deal-rates-by-followers/" className="text-purple-600 hover:underline">Brand Deal Rates by Followers</Link></li>
+                  <li>Apply niche multipliers from <Link href="/data/brand-deal-rates-by-niche/" className="text-purple-600 hover:underline">Brand Deal Rates by Niche</Link></li>
                   <li>Adjust for engagement (4-8% = standard, 10%+ = 20-40% premium)</li>
                   <li>Include benchmark sources in your media kit to justify pricing</li>
                 </ul>
@@ -450,7 +457,7 @@ export default function DataIndexPage() {
             </div>
 
             <p className="text-body-sm italic">
-              <strong>Data Sources:</strong> Aggregated from 1,000+ creator surveys, public earnings disclosures, influencer platform reports, and TikTok Creator Marketplace rate cards. Last updated January 2025. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
+              <strong>Data Sources:</strong> Aggregated from 1,000+ creator surveys, public earnings disclosures, influencer platform reports, and TikTok Creator Marketplace rate cards. Last updated January 2025. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money/" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
             </p>
           </div>
         </Card>
@@ -462,17 +469,17 @@ export default function DataIndexPage() {
             Use these benchmarks with our calculators to get custom estimates for your account
           </p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/tiktok-money" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
+            <Link href="/calculators/tiktok-money/" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
               <DollarSign className="w-8 h-8 text-purple-600 mx-auto mb-3" />
               <h4 className="font-semibold text-neutral-900 mb-2">Total Earnings Calculator</h4>
               <p className="text-body-sm text-neutral-600">Estimate monthly income across all streams</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
+            <Link href="/calculators/brand-deal-rate/" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
               <Users className="w-8 h-8 text-purple-600 mx-auto mb-3" />
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate Calculator</h4>
               <p className="text-body-sm text-neutral-600">Get your custom sponsorship pricing</p>
             </Link>
-            <Link href="/calculators/rpm" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
+            <Link href="/calculators/rpm/" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
               <BarChart3 className="w-8 h-8 text-purple-600 mx-auto mb-3" />
               <h4 className="font-semibold text-neutral-900 mb-2">RPM Calculator</h4>
               <p className="text-body-sm text-neutral-600">Analyze your Creator Fund earnings rate</p>
@@ -493,19 +500,19 @@ export default function DataIndexPage() {
         <Card>
           <h3 className="text-heading-lg font-semibold text-neutral-900 mb-6">Related Guides & Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Make Money on TikTok</h4>
               <p className="text-body-sm text-neutral-600">Complete guide to all monetization methods and realistic earnings expectations</p>
             </Link>
-            <Link href="/guides/how-to-price-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-price-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Price Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Step-by-step framework for setting competitive sponsorship rates</p>
             </Link>
-            <Link href="/guides/niche-selection" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/niche-selection/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok Niche Selection Guide</h4>
               <p className="text-body-sm text-neutral-600">Choose a profitable niche that matches your interests and expertise</p>
             </Link>
-            <Link href="/guides/how-to-increase-creator-fund-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-increase-creator-fund-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Increase Creator Fund Earnings</h4>
               <p className="text-body-sm text-neutral-600">12 proven strategies to boost your RPM and total monthly income</p>
             </Link>

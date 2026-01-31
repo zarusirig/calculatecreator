@@ -38,7 +38,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Age-Specific Privacy</span>
           </div>
@@ -241,7 +241,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
               <p className="text-body-sm text-purple-800 mb-2">
                 Step-by-step instructions for setting up parental controls
               </p>
-              <Link href="/news/parent-safety-features-update" className="text-primary-600 hover:underline text-body-sm">
+              <Link href="/news/parent-safety-features-update/" className="text-primary-600 hover:underline text-body-sm">
                 Read Full Guide →
               </Link>
             </div>
@@ -257,6 +257,20 @@ export default function AgeSpecificPrivacyFeaturesPage() {
           </div>
         </Card>
 
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/parent-safety-features-update/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">TikTok Parent Safety Features Update</h4>
+              <p className="text-body-xs text-neutral-600">Enhanced parental controls give families more visibility and customization options</p>
+            </Link>
+            <Link href="/news/playback-settings-update/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">TikTok Playback Settings Update</h4>
+              <p className="text-body-xs text-neutral-600">New options to disable HDR videos and display object tags for enhanced viewing control</p>
+            </Link>
+          </div>
+        </Card>
+
         <Card className="bg-gray-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
             Official Sources
@@ -264,7 +278,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/news/parent-safety-features-update"
+                href="/news/parent-safety-features-update/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

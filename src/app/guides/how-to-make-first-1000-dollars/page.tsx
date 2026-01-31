@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { Calendar, Clock, DollarSign, Briefcase, Video, Banknote, XCircle, AlertTriangle, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -39,13 +40,21 @@ export default function MakeFirst1000DollarsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        headline="How to Make Your First $1,000 on TikTok: Realistic Roadmap"
+        description="Step-by-step action plan to earn your first $1,000 on TikTok. Timeline, milestones, and monetization strategies from $0 to $1,000."
+        url="https://calculatecreator.com/guides/how-to-make-first-1000-dollars"
+        datePublished="2025-11-13"
+        dateModified="2026-01-30"
+        keywords={['make money on tiktok', 'first 1000 dollars tiktok', 'tiktok earnings roadmap', 'tiktok monetization plan', 'tiktok income milestones']}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Make First $1,000 on TikTok</span>
           </div>
@@ -90,6 +99,14 @@ export default function MakeFirst1000DollarsPage() {
 
       {/* Main Content */}
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Your Step-by-Step Blueprint to Earning $1,000 on TikTok</h2>
+          <p className="text-body-lg text-neutral-700 mb-6">
+            Making your first $1,000 on TikTok is entirely achievable, but it requires a strategic approach that most creators miss because they focus on the wrong monetization methods or unrealistic timelines. While countless gurus promise overnight riches or viral success that will magically translate to income, the reality is that sustainable TikTok income comes from systematically building multiple revenue streams over a 90-180 day period through consistent effort and smart strategy. Most creators fail to hit their first $1,000 because they rely solely on Creator Fund earnings (which would require 25-50 million views), don't know when or how to pitch brands, or chase viral moments instead of building reliable income foundations. This comprehensive roadmap shows you exactly how to reach your first $1,000 through a proven three-month action plan that combines brand deals as your primary income source (typically 60-70% of your first $1K), TikTok LIVE gifts as supplemental revenue (20-25%), and Creator Fund passive income in the background (5-15%). Unlike vague advice to "create good content and the money will follow" or "just go viral," this guide provides week-by-week milestones that tell you exactly what to focus on, specific follower count targets with actionable strategies to reach them, concrete action items for each phase of growth from 0 to 25,000 followers, and realistic earnings projections based on actual creator data from hundreds of successful monetization journeys. You'll discover the exact income mix that gets creators to $1,000 fastest without needing millions of views, learn which monetization methods to prioritize at each follower milestone so you're not wasting time on methods that don't work yet, master the art of pitching brands even with a small following by leveraging engagement over follower count, understand the realistic timeline so you don't get discouraged too early, and avoid the five critical mistakes that keep 90% of creators stuck at $0-$100 monthly no matter how many views they get. Whether you're starting from zero followers or already have a few thousand and want to finally monetize them properly, this roadmap eliminates guesswork and gives you a clear, actionable path to your first four-figure month on TikTok.
+          </p>
+        </Card>
+
         {/* The Reality Check */}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">The Reality: How Long Will This Take?</h2>
@@ -240,7 +257,7 @@ export default function MakeFirst1000DollarsPage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Week 7-8: First Brand Deals</h4>
                 <ul className="list-disc list-inside space-y-1 text-body-sm text-neutral-700 ml-4">
                   <li><strong>Create media kit:</strong> Use Canva template with your stats, demographics, top videos.</li>
-                  <li><strong>Pitch 30 brands:</strong> Build target list, find decision-makers, send custom pitches (see our <Link href="/guides/how-to-get-brand-deals" className="text-blue-600 hover:underline">brand deal guide</Link>).</li>
+                  <li><strong>Pitch 30 brands:</strong> Build target list, find decision-makers, send custom pitches (see our <Link href="/guides/how-to-get-brand-deals/" className="text-blue-600 hover:underline">brand deal guide</Link>).</li>
                   <li><strong>Goal:</strong> Land 1-2 deals at $150-$250 each. Even if lower-paid, these build your portfolio.</li>
                   <li><strong>LIVE streaming:</strong> Continue 2-3 times per week. Aim for $50-$100 in gifts this month.</li>
                 </ul>
@@ -421,17 +438,17 @@ export default function MakeFirst1000DollarsPage() {
             Use our free calculators to estimate earnings from each income stream:
           </p>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors text-center">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors text-center">
               <div className="flex justify-center mb-2"><Briefcase className="w-12 h-12 text-purple-600" /></div>
               <h4 className="font-semibold text-neutral-900 mb-1">Brand Deal Calculator</h4>
               <p className="text-body-sm text-neutral-700">Estimate rates by followers</p>
             </Link>
-            <Link href="/calculators/live-gifts" className="p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors text-center">
+            <Link href="/calculators/live-gifts/" className="p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors text-center">
               <div className="flex justify-center mb-2"><Video className="w-12 h-12 text-blue-600" /></div>
               <h4 className="font-semibold text-neutral-900 mb-1">LIVE Earnings Calculator</h4>
               <p className="text-body-sm text-neutral-700">Project gift income per stream</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors text-center">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-green-50 border border-green-200 rounded-lg hover:bg-green-100 transition-colors text-center">
               <div className="flex justify-center mb-2"><Banknote className="w-12 h-12 text-green-600" /></div>
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund Calculator</h4>
               <p className="text-body-sm text-neutral-700">Estimate monthly RPM earnings</p>
@@ -450,11 +467,11 @@ export default function MakeFirst1000DollarsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><DollarSign className="w-5 h-5 text-green-600" /> How to Make Money on TikTok</h4>
               <p className="text-body-sm text-neutral-700">Complete guide to all TikTok monetization methods</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><Briefcase className="w-5 h-5 text-purple-600" /> How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-700">4 methods to land sponsorships and media kit templates</p>
             </Link>

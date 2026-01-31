@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Edit, BarChart, RotateCcw, DollarSign, Zap, TrendingUp, Target, Briefcase, Gift } from 'lucide-react';
+import { CollectionSchema } from '@/components/seo/CollectionSchema';
+import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Guides: Monetization & Growth 2026',
@@ -619,15 +621,32 @@ export default function GuidesPage() {
     },
   ];
 
+  const schemaItems = guides
+    .filter(guide => !guide.status)
+    .map(guide => ({
+      name: guide.title,
+      description: guide.description,
+      url: `https://calculatecreator.com/guides/${guide.slug}`,
+      category: guide.category,
+    }));
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
-      <div className="container-custom">
-        <Breadcrumb
-          items={[
-            { label: 'Guides', href: '/guides' },
-          ]}
-          includeHome={true}
-        />
+    <>
+      <CollectionSchema
+        title="TikTok Creator Guides: Monetization & Growth 2026"
+        description="Expert guides on TikTok monetization, brand deals, algorithm optimization & audience growth. Data-backed strategies from successful creators."
+        url="https://calculatecreator.com/guides/"
+        items={schemaItems}
+        collectionType="Guides"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
+        <div className="container-custom">
+          <Breadcrumb
+            items={[
+              { label: 'Guides', href: '/guides' },
+            ]}
+            includeHome={true}
+          />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
@@ -765,10 +784,10 @@ export default function GuidesPage() {
                   Everything about earning money on TikTok: requirements, applications, optimization strategies.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/tiktok-monetization-requirements" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/tiktok-monetization-requirements/" className="text-body-sm text-tiktok-pink hover:underline">
                     Requirements →
                   </Link>
-                  <Link href="/guides/how-to-make-first-1000-dollars" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/how-to-make-first-1000-dollars/" className="text-body-sm text-tiktok-pink hover:underline">
                     First $1,000 →
                   </Link>
                 </div>
@@ -787,10 +806,10 @@ export default function GuidesPage() {
                   Maximize earnings from the Creator Fund with RPM optimization and strategic planning.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/maximize-creator-fund-rpm" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/maximize-creator-fund-rpm/" className="text-body-sm text-tiktok-pink hover:underline">
                     RPM Guide →
                   </Link>
-                  <Link href="/guides/how-to-join-creator-fund" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/how-to-join-creator-fund/" className="text-body-sm text-tiktok-pink hover:underline">
                     Join Fund →
                   </Link>
                 </div>
@@ -809,10 +828,10 @@ export default function GuidesPage() {
                   Get sponsored, negotiate fair rates, and build lasting brand partnerships.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/how-to-get-brand-deals" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/how-to-get-brand-deals/" className="text-body-sm text-tiktok-pink hover:underline">
                     Get Deals →
                   </Link>
-                  <Link href="/guides/how-to-negotiate-brand-deals" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/how-to-negotiate-brand-deals/" className="text-body-sm text-tiktok-pink hover:underline">
                     Negotiate →
                   </Link>
                 </div>
@@ -831,10 +850,10 @@ export default function GuidesPage() {
                   Master LIVE gifts, build engaged communities, and create consistent income.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/best-times-go-live" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/best-times-go-live/" className="text-body-sm text-tiktok-pink hover:underline">
                     Best Times →
                   </Link>
-                  <Link href="/guides/tiktok-live-earnings-guide" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/tiktok-live-earnings-guide/" className="text-body-sm text-tiktok-pink hover:underline">
                     Earnings →
                   </Link>
                 </div>
@@ -853,10 +872,10 @@ export default function GuidesPage() {
                   Earn commissions through TikTok Shop affiliate program and LIVE shopping.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/how-to-become-shop-affiliate" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/how-to-become-shop-affiliate/" className="text-body-sm text-tiktok-pink hover:underline">
                     Become Affiliate →
                   </Link>
-                  <Link href="/guides/tiktok-shop-affiliate" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/tiktok-shop-affiliate/" className="text-body-sm text-tiktok-pink hover:underline">
                     Shop Guide →
                   </Link>
                 </div>
@@ -875,10 +894,10 @@ export default function GuidesPage() {
                   Master TikTok analytics, algorithm optimization, and calculator tools.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/tiktok-algorithm-optimization" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/tiktok-algorithm-optimization/" className="text-body-sm text-tiktok-pink hover:underline">
                     Algorithm →
                   </Link>
-                  <Link href="/guides/analytics-metrics-master-guide" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/analytics-metrics-master-guide/" className="text-body-sm text-tiktok-pink hover:underline">
                     Analytics Master →
                   </Link>
                 </div>
@@ -897,10 +916,10 @@ export default function GuidesPage() {
                   Content creation strategies, niche selection, viral tactics, and hashtag optimization.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/content-strategy-2026" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/content-strategy-2025/" className="text-body-sm text-tiktok-pink hover:underline">
                     Strategy →
                   </Link>
-                  <Link href="/guides/niche-selection" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/niche-selection/" className="text-body-sm text-tiktok-pink hover:underline">
                     Niche Selection →
                   </Link>
                 </div>
@@ -919,10 +938,10 @@ export default function GuidesPage() {
                   Earnings breakdowns and strategies for beauty, finance, fitness, and more.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/beauty-creators-earnings" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/beauty-creators-earnings/" className="text-body-sm text-tiktok-pink hover:underline">
                     Beauty →
                   </Link>
-                  <Link href="/guides/finance-creators-earnings" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/finance-creators-earnings/" className="text-body-sm text-tiktok-pink hover:underline">
                     Finance →
                   </Link>
                 </div>
@@ -941,10 +960,10 @@ export default function GuidesPage() {
                   Tax planning, multi-platform growth, and series monetization strategies.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/creator-tax-strategy" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/creator-tax-strategy/" className="text-body-sm text-tiktok-pink hover:underline">
                     Tax Strategy →
                   </Link>
-                  <Link href="/guides/multi-platform-strategy" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/multi-platform-strategy/" className="text-body-sm text-tiktok-pink hover:underline">
                     Multi-Platform →
                   </Link>
                 </div>
@@ -963,10 +982,10 @@ export default function GuidesPage() {
                   Master TikTok calculators and tools for earnings estimation.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/monetization-calculator-hub" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/monetization-calculator-hub/" className="text-body-sm text-tiktok-pink hover:underline">
                     Calculator Hub →
                   </Link>
-                  <Link href="/guides/influencer-rate-calculator-guide" className="text-body-sm text-tiktok-pink hover:underline">
+                  <Link href="/guides/influencer-rate-calculator-guide/" className="text-body-sm text-tiktok-pink hover:underline">
                     Rate Calculator →
                   </Link>
                 </div>
@@ -984,7 +1003,7 @@ export default function GuidesPage() {
             Use our free calculators to estimate earnings and plan your creator strategy:
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/calculators/tiktok-creator-fund" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-blue-50">
+            <Link href="/calculators/tiktok-creator-fund/" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-blue-50">
               <div className="flex justify-center mb-3"><Target className="w-8 h-8 text-blue-600" /></div>
               <h3 className="font-semibold text-neutral-900 mb-2">Creator Fund</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
@@ -993,7 +1012,7 @@ export default function GuidesPage() {
               <span className="text-body-sm text-tiktok-pink font-semibold">Calculate →</span>
             </Link>
 
-            <Link href="/calculators/brand-deal-rate" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-purple-50">
+            <Link href="/calculators/brand-deal-rate/" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-purple-50">
               <div className="flex justify-center mb-3"><Briefcase className="w-8 h-8 text-purple-600" /></div>
               <h3 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
@@ -1002,7 +1021,7 @@ export default function GuidesPage() {
               <span className="text-body-sm text-tiktok-pink font-semibold">Calculate →</span>
             </Link>
 
-            <Link href="/calculators/live-gifts" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-pink-50">
+            <Link href="/calculators/live-gifts/" className="card p-6 hover:shadow-lg transition-shadow bg-gradient-to-br from-white to-pink-50">
               <div className="flex justify-center mb-3"><Gift className="w-8 h-8 text-pink-600" /></div>
               <h3 className="font-semibold text-neutral-900 mb-2">LIVE Gifts</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
@@ -1101,7 +1120,7 @@ export default function GuidesPage() {
                   <p className="text-body-sm text-neutral-700 mb-3">
                     Understand eligibility requirements for each monetization feature. Set clear milestone goals.
                   </p>
-                  <Link href="/guides/tiktok-monetization-requirements" className="text-body-sm text-tiktok-pink font-semibold hover:underline">
+                  <Link href="/guides/tiktok-monetization-requirements/" className="text-body-sm text-tiktok-pink font-semibold hover:underline">
                     Read Requirements Guide →
                   </Link>
                 </div>
@@ -1117,7 +1136,7 @@ export default function GuidesPage() {
                     Post 3-5 quality videos per week. Learn what resonates with your audience. Reach 1,000 followers.
                   </p>
                   <div className="flex gap-3">
-                    <Link href="/calculators/engagement-rate" className="text-body-sm text-blue-600 font-semibold hover:underline">
+                    <Link href="/calculators/engagement-rate/" className="text-body-sm text-blue-600 font-semibold hover:underline">
                       Track Engagement →
                     </Link>
                   </div>
@@ -1133,7 +1152,7 @@ export default function GuidesPage() {
                   <p className="text-body-sm text-neutral-700 mb-3">
                     Enable LIVE Gifts at 1K followers. Join TikTok Shop affiliate. Reach out for first brand deals.
                   </p>
-                  <Link href="/calculators/live-gifts" className="text-body-sm text-purple-600 font-semibold hover:underline">
+                  <Link href="/calculators/live-gifts/" className="text-body-sm text-purple-600 font-semibold hover:underline">
                     Calculate LIVE Earnings →
                   </Link>
                 </div>
@@ -1148,7 +1167,7 @@ export default function GuidesPage() {
                   <p className="text-body-sm text-neutral-700 mb-3">
                     Reach 10K followers and 100K views/month. Apply to Creator Fund. Optimize RPM for higher earnings.
                   </p>
-                  <Link href="/guides/maximize-creator-fund-rpm" className="text-body-sm text-green-600 font-semibold hover:underline">
+                  <Link href="/guides/maximize-creator-fund-rpm/" className="text-body-sm text-green-600 font-semibold hover:underline">
                     Maximize RPM →
                   </Link>
                 </div>
@@ -1163,13 +1182,67 @@ export default function GuidesPage() {
                   <p className="text-body-sm text-neutral-700 mb-3">
                     Multiple income streams active. $2,000-5,000+/month. Build toward Creator Marketplace eligibility.
                   </p>
-                  <Link href="/calculators/brand-deal-rate" className="text-body-sm text-orange-600 font-semibold hover:underline">
+                  <Link href="/calculators/brand-deal-rate/" className="text-body-sm text-orange-600 font-semibold hover:underline">
                     Calculate Brand Rates →
                   </Link>
                 </div>
               </div>
             </Card>
           </div>
+        </div>
+
+        {/* Related Resources */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/calculators/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">TikTok Calculators</h3>
+                <p className="text-body-sm text-neutral-700">28 free tools to calculate earnings, engagement, and growth</p>
+              </Link>
+              <Link href="/data/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Creator Data Hub</h3>
+                <p className="text-body-sm text-neutral-700">Industry benchmarks, rates, and statistics</p>
+              </Link>
+              <Link href="/news/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">TikTok News</h3>
+                <p className="text-body-sm text-neutral-700">Latest platform updates and creator news</p>
+              </Link>
+              <Link href="/comparisons/tiktok-vs-instagram/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Platform Comparisons</h3>
+                <p className="text-body-sm text-neutral-700">TikTok vs YouTube, Instagram earnings</p>
+              </Link>
+            </div>
+          </Card>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <FAQSection
+            pageName="TikTok Creator Guides"
+            faqs={[
+              {
+                question: "Which guide should I start with as a new TikTok creator?",
+                answer: "Start with 'TikTok Monetization Requirements' to understand what you need to earn money, then read 'How to Make Your First $1,000' for a step-by-step action plan. These guides cover the fundamentals before diving into specific monetization methods."
+              },
+              {
+                question: "How often are these guides updated?",
+                answer: "We update our guides quarterly to reflect TikTok platform changes, new features, and current best practices. All guides show a 'Last Updated' date. Major algorithm changes or policy updates trigger immediate guide revisions."
+              },
+              {
+                question: "Are these strategies different for different niches?",
+                answer: "Yes, monetization varies significantly by niche. Finance and education creators earn 3-5x more per view than entertainment creators. Our niche-specific guides (Beauty, Fitness, Finance) provide tailored strategies for each category."
+              },
+              {
+                question: "Do I need a certain follower count to benefit from these guides?",
+                answer: "Our guides cover all stages of creator growth. We have beginner guides for under 1K followers, growth guides for 1K-100K, and scaling guides for 100K+. Use the category filters to find guides relevant to your current stage."
+              },
+              {
+                question: "Can I use these strategies on other platforms too?",
+                answer: "Many strategies are cross-platform applicable, especially engagement tactics and content planning. Our 'Multi-Platform Strategy' guide specifically covers adapting TikTok success to YouTube Shorts and Instagram Reels."
+              }
+            ]}
+          />
         </div>
 
         {/* Additional Resources */}
@@ -1182,22 +1255,23 @@ export default function GuidesPage() {
               Use our free calculators to estimate your potential earnings and plan your strategy:
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <Link href="/calculators/tiktok-creator-fund" className="btn btn-outline btn-sm">
+              <Link href="/calculators/tiktok-creator-fund/" className="btn btn-outline btn-sm">
                 Creator Fund Calculator
               </Link>
-              <Link href="/calculators/brand-deal-rate" className="btn btn-outline btn-sm">
+              <Link href="/calculators/brand-deal-rate/" className="btn btn-outline btn-sm">
                 Brand Deal Calculator
               </Link>
-              <Link href="/calculators/live-gifts" className="btn btn-outline btn-sm">
+              <Link href="/calculators/live-gifts/" className="btn btn-outline btn-sm">
                 LIVE Gifts Calculator
               </Link>
             </div>
             <p className="text-body-sm text-neutral-600">
-              Still have questions? Check our <Link href="/faq" className="text-tiktok-pink hover:underline">FAQ section</Link> or <Link href="/contact" className="text-tiktok-pink hover:underline">contact us</Link> directly.
+              Still have questions? Check our <Link href="/faq/" className="text-tiktok-pink hover:underline">FAQ section</Link> or <Link href="/contact/" className="text-tiktok-pink hover:underline">contact us</Link> directly.
             </p>
           </Card>
         </div>
       </div>
     </div>
+    </>
   );
 }

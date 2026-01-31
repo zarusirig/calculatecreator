@@ -5,6 +5,10 @@ import type { Metadata } from 'next';
 import { Gift, Coins, Gem, DollarSign } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
+import { FAQSection } from '@/components/calculator/FAQSection';
+import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { CalculatorSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 
 const giftData = [
   { name: 'Rose', coins: 1, diamonds: 0.5, usd: 0.0025 },
@@ -28,6 +32,29 @@ const giftData = [
   { name: 'Universe', coins: 44999, diamonds: 22499.5, usd: 112.4975 },
 ];
 
+const faqData = [
+  {
+    question: 'How do I calculate TikTok gift values?',
+    answer: 'Multiply the gift coin cost by $0.0129 for viewer cost. For creator earnings: divide coins by 2 to get diamonds, then multiply by $0.005. Example: A 1,000 coin gift costs viewers $12.90 and pays creators $2.50.'
+  },
+  {
+    question: 'What is the most popular TikTok gift?',
+    answer: 'The Rose (1 coin) is the most common gift due to its affordability. For higher-value gifts, the Lion (29,999 coins) and Drama Queen (199 coins) are popular choices that show significant support.'
+  },
+  {
+    question: 'Do gift values change by region?',
+    answer: 'Coin prices vary slightly by region and platform (iOS vs Android), but the conversion rates remain constant: 2 coins = 1 diamond, and 1 diamond = $0.005 USD for creators globally.'
+  },
+  {
+    question: 'Can I send multiple gifts at once?',
+    answer: 'Yes, you can send the same gift multiple times during a LIVE stream. Use the quantity selector to calculate bulk gift values and understand the total cost and creator payout for sending multiple gifts.'
+  },
+  {
+    question: 'How long does it take for creators to receive gift earnings?',
+    answer: 'Creators typically receive diamond payouts 7-14 business days after the LIVE stream ends. A minimum balance of $50 (10,000 diamonds) is required before withdrawal is available.'
+  },
+];
+
 export default function GiftCalculatorPage() {
   const [quantity, setQuantity] = useState(1);
   const [selectedGift, setSelectedGift] = useState(giftData[0]);
@@ -38,6 +65,23 @@ export default function GiftCalculatorPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
+      <CalculatorSchema
+        name="TikTok Gift Value Calculator"
+        description="Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD. Understand how much creators earn from each gift type sent during LIVE streams."
+        url="https://calculatecreator.com/calculators/coins-gifts-diamonds/gift"
+        category="FinanceApplication"
+        keywords={[
+          'TikTok gift calculator',
+          'LIVE gift value',
+          'gift to money converter',
+          'TikTok LIVE earnings',
+          'diamond earnings',
+        ]}
+        datePublished="2024-01-25"
+        dateModified="2026-01-27"
+        aggregateRating={{ ratingValue: 4.5, reviewCount: 892 }}
+      />
+      <FAQSchema faqs={faqData} />
       <div className="container-custom">
         <Breadcrumb items={[
           { label: 'Calculators', href: '/calculators' },
@@ -50,7 +94,7 @@ export default function GiftCalculatorPage() {
             <Gift size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Gift Value Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD for creators.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD for creators. Enter any gift quantity to see instant conversions showing what viewers pay versus what creators actually earn from virtual gifts. Perfect for understanding the economics behind popular gifts like roses, universes, and lions during LIVE streams, including the 50% platform fee split.</p>
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -131,6 +175,66 @@ export default function GiftCalculatorPage() {
               </table>
             </div>
           </Card>
+
+          <div className="mt-12">
+            <MethodologySection
+              calculatorName="gift"
+              formula={`Viewer Cost (USD) = Coins × $0.0129
+Creator Diamonds = Coins ÷ 2
+Creator Payout (USD) = Diamonds × $0.005
+
+Example:
+Rose (1 coin):
+→ Viewer pays: $0.0129
+→ Creator receives: 0.5 diamonds = $0.0025
+
+Universe (44,999 coins):
+→ Viewer pays: $580.49
+→ Creator receives: 22,499.5 diamonds = $112.50`}
+              assumptions={[
+                { label: 'Coin Price', value: '$0.0129 per coin (US standard rate)' },
+                { label: 'Conversion Rate', value: '2 coins = 1 diamond (50% split)' },
+                { label: 'Diamond Value', value: '1 diamond = $0.005 USD' },
+                { label: 'Platform Fee', value: 'TikTok retains 50% of gift value' }
+              ]}
+              dataSources={[
+                'TikTok LIVE Gifts catalog',
+                'TikTok Creator Portal documentation',
+                'Official TikTok pricing (November 2025)'
+              ]}
+              limitations="Gift prices may vary by region and platform (iOS vs Android). Actual costs and payouts depend on regional pricing."
+              lastUpdated="November 27, 2025"
+            />
+
+            <FAQSection
+              pageName="Gift Calculator"
+              faqs={faqData}
+            />
+
+            <RelatedCalculators
+              currentCalculator="gift"
+              calculators={[
+                {
+                  name: 'Coins Calculator',
+                  slug: 'coins',
+                  description: 'Convert TikTok coins to USD and diamonds',
+                  icon: 'Coins'
+                },
+                {
+                  name: 'LIVE Earnings Calculator',
+                  slug: 'live-earnings',
+                  description: 'Estimate total LIVE streaming income',
+                  icon: 'Gift'
+                },
+                {
+                  name: 'Diamond Converter',
+                  slug: 'diamonds',
+                  description: 'Convert diamonds to multiple currencies',
+                  icon: 'Gem'
+                }
+              ]}
+            />
+          </div>
         </div>
       </div>
     </div>

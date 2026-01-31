@@ -76,8 +76,7 @@ export default function NicheProfitabilityCalculatorPage() {
             TikTok Niche Profitability Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Compare earning potential across different content niches. Choose the
-            most profitable niche for your skills and audience.
+            Compare earning potential across content niches using profitability multipliers from 1.0x for entertainment to 3.0x for finance. Calculate how CPM rates, brand deal demand, and audience purchasing power impact your monetization ceiling. Essential for creators choosing their niche or optimizing within their current category to maximize revenue per view and follower.
           </p>
         </div>
 

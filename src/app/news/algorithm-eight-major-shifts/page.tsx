@@ -38,7 +38,7 @@ export default function AlgorithmEightMajorShiftsPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Algorithm Changes</span>
           </div>
@@ -244,14 +244,14 @@ export default function AlgorithmEightMajorShiftsPage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/calculators/engagement-rate"
+              href="/calculators/engagement-rate/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/tiktok-algorithm-optimization"
+              href="/guides/tiktok-algorithm-optimization/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">TikTok Algorithm Guide</span>
@@ -639,7 +639,7 @@ export default function AlgorithmEightMajorShiftsPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/guides/tiktok-algorithm-optimization"
+                href="/guides/tiktok-algorithm-optimization/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

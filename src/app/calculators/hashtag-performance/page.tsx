@@ -76,8 +76,7 @@ export default function HashtagPerformanceCalculatorPage() {
             TikTok Hashtag Performance Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Analyze hashtag effectiveness by comparing performance with and without
-            specific hashtags. Optimize your hashtag strategy.
+            Analyze hashtag effectiveness by comparing view and engagement metrics with and without specific hashtags. Calculate view lift, engagement lift, and effectiveness scores to identify high-performing hashtags that expand your reach. Perfect for creators who want to optimize their 3-5 hashtag strategy using data-driven insights rather than guesswork. Test different hashtags scientifically by measuring baseline performance versus hashtag performance to find your golden set of tags. Get numerical effectiveness scores showing which hashtags truly drive discovery versus just taking up caption space.
           </p>
         </div>
 

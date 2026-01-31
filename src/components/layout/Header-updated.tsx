@@ -24,7 +24,7 @@ export function Header() {
         { href: '/calculators/live-gifts', label: 'TikTok LIVE Gifts Calculator' },
         { href: '/calculators/tiktok-money', label: 'TikTok Money Calculator' },
         { href: '/calculators/rpm', label: 'TikTok RPM Calculator' },
-        { href: '/calculators/shop-commission', label: 'TikTok Shop Commission Calculator' },
+        { href: '/calculators/commerce-ads/shop-profit/', label: 'TikTok Shop Commission Calculator' },
         { href: '/calculators', label: 'View All TikTok Calculators', featured: true },
       ],
     },

@@ -66,7 +66,7 @@ export default function TikTokPaymentDelaysPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Payment Delays</span>
           </div>
@@ -107,6 +107,15 @@ export default function TikTokPaymentDelaysPage() {
         </div>
       </section>
 
+      {/* Introduction */}
+      <section className="py-8">
+        <div className="container-custom max-w-4xl">
+          <p className="text-body-lg text-neutral-700 leading-relaxed">
+            TikTok payment delays are one of the most common frustrations creators face when monetizing their content, causing stress and uncertainty when expected earnings don't arrive on schedule. Understanding how TikTok processes payments across different monetization streams is essential because each program—Creator Fund, LIVE Gifts, TikTok Shop, and brand partnerships—operates on completely different payment schedules with distinct processing timelines, minimum thresholds, and verification requirements. Creator Fund payments typically take 30-45 days after the month ends to process, LIVE Gifts require manual withdrawal requests and 5-10 business days to process, and TikTok Shop commissions must wait through a mandatory return window period before payout. This comprehensive guide breaks down the exact payment schedule for every TikTok monetization feature, common reasons why payments get delayed including missing tax documentation and verification issues, and actionable troubleshooting steps to resolve payment problems and get your money faster in 2026.
+          </p>
+        </div>
+      </section>
+
       <div className="container-custom max-w-4xl py-12 space-y-8">
         <Card>
           <div className="prose prose-lg max-w-none">
@@ -114,12 +123,7 @@ export default function TikTokPaymentDelaysPage() {
               How TikTok Payments Work
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok has multiple monetization streams, each with its own payment schedule and requirements.
-              Understanding these timelines helps set proper expectations and identify when genuine delays occur.
-            </p>
-            <p className="text-body-md text-neutral-700">
-              The most common source of confusion is that TikTok doesn't pay immediately. All monetization methods
-              have built-in waiting periods for verification, fraud prevention, and processing.
+              TikTok has multiple monetization streams available to eligible creators including Creator Fund payments, LIVE Gifts earnings, TikTok Shop commissions, and brand partnership opportunities, each with its own completely distinct payment schedule, processing timeline, and minimum threshold requirements that can be confusing to navigate. Understanding these specific payment timelines for each income stream helps creators set proper expectations for when earnings will actually arrive in their accounts and accurately identify when genuine delays occur that require troubleshooting or contacting support. The most common source of confusion, frustration, and concern among creators is that TikTok doesn't pay immediately after you earn money like a traditional job would. All monetization methods have built-in waiting periods that can range from a few days to several weeks or even months, designed for verification processes, fraud prevention measures, tax compliance checks, and standard payment processing procedures. Creator Fund payments typically take 30-45 days after the month ends to process and arrive, LIVE gift withdrawals generally process within 5-10 business days after requesting withdrawal, and TikTok Shop affiliate commissions require a mandatory 30-day return window period before payout can occur. This comprehensive guide breaks down each payment stream's exact schedule with timeline examples, common delay reasons you should watch for, and actionable troubleshooting steps to help you get paid faster and more reliably.
             </p>
           </div>
         </Card>
@@ -132,10 +136,10 @@ export default function TikTokPaymentDelaysPage() {
             Estimate your earnings while waiting for payments to process.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/tiktok-creator-fund" className="btn btn-primary">
+            <Link href="/calculators/tiktok-creator-fund/" className="btn btn-primary">
               Creator Fund Calculator →
             </Link>
-            <Link href="/calculators/live-gifts" className="btn btn-secondary">
+            <Link href="/calculators/live-gifts/" className="btn btn-secondary">
               LIVE Gifts Calculator
             </Link>
           </div>
@@ -213,7 +217,7 @@ export default function TikTokPaymentDelaysPage() {
                   <span><strong>Exchange Rate:</strong> 1 Diamond = $0.05 USD (200 Diamonds = $10)</span>
                 </li>
               </ul>
-              <Link href="/calculators/live-gifts" className="text-body-sm text-green-700 hover:underline inline-block mt-3">
+              <Link href="/calculators/live-gifts/" className="text-body-sm text-green-700 hover:underline inline-block mt-3">
                 Calculate LIVE Gifts Earnings →
               </Link>
             </div>
@@ -271,7 +275,7 @@ export default function TikTokPaymentDelaysPage() {
                   </ul>
                 </div>
               </div>
-              <Link href="/calculators/shop-commission" className="text-body-sm text-blue-700 hover:underline inline-block mt-3">
+              <Link href="/calculators/commerce-ads/shop-profit/" className="text-body-sm text-blue-700 hover:underline inline-block mt-3">
                 Calculate Shop Commission →
               </Link>
             </div>
@@ -383,15 +387,15 @@ export default function TikTokPaymentDelaysPage() {
             Related Calculators
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Creator Fund</h3>
               <p className="text-body-sm text-neutral-600">Estimate monthly earnings</p>
             </Link>
-            <Link href="/calculators/live-gifts" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/live-gifts/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">LIVE Gifts</h3>
               <p className="text-body-sm text-neutral-600">Calculate diamond value</p>
             </Link>
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Shop Commission</h3>
               <p className="text-body-sm text-neutral-600">Project affiliate earnings</p>
             </Link>

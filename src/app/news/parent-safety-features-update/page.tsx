@@ -38,7 +38,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Parent Safety Features</span>
           </div>
@@ -523,6 +523,20 @@ export default function ParentSafetyFeaturesUpdatePage() {
           </div>
         </Card>
 
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/age-specific-privacy-features/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">Age-Specific Privacy Features Introduced</h4>
+              <p className="text-body-xs text-neutral-600">Tiered privacy controls automatically adjust based on user age for enhanced safety</p>
+            </Link>
+            <Link href="/news/playback-settings-update/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">TikTok Playback Settings Update</h4>
+              <p className="text-body-xs text-neutral-600">New options to disable HDR videos and display object tags</p>
+            </Link>
+          </div>
+        </Card>
+
         <Card className="bg-gray-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
             Official Sources and Further Reading
@@ -530,7 +544,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/news/age-specific-privacy-features"
+                href="/news/age-specific-privacy-features/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

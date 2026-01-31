@@ -74,7 +74,7 @@ export default function TikTokAlgorithmOptimizationPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Algorithm Optimization</span>
           </div>
@@ -122,8 +122,7 @@ export default function TikTokAlgorithmOptimizationPage() {
               How TikTok's Algorithm Works (2026 Update)
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok's algorithm is fundamentally different from other platforms. Rather than prioritizing followers or
-              posting time, it focuses on content quality signals: watch time, engagement, and replay value.
+              TikTok's algorithm is fundamentally different from other social media platforms in how it distributes content and determines what appears on users' For You Pages. Rather than primarily prioritizing follower counts or posting times like Instagram or Facebook's outdated chronological feeds, TikTok focuses almost exclusively on sophisticated content quality signals such as watch time percentages, engagement rates, replay behavior, and user interaction patterns. This democratized approach means even brand-new creators with zero followers can achieve massive viral success and millions of views if their content genuinely resonates with viewers and triggers the right algorithmic signals. The algorithm intelligently tests every single video with a small initial audience batch, carefully analyzes multiple performance metrics within the first few hours after posting, and then makes data-driven decisions whether to expand reach exponentially to larger audiences or limit distribution. Understanding these precise ranking factors, optimization tactics, and algorithmic preferences is absolutely essential for maximizing your For You Page placement consistently, growing your audience organically without paid promotion, and building sustainable long-term success on the platform in 2026 as competition intensifies.
             </p>
             <p className="text-body-md text-neutral-700 mb-4">
               Here's the process every video goes through:
@@ -149,10 +148,10 @@ export default function TikTokAlgorithmOptimizationPage() {
             Use these calculators to understand how the algorithm views your content.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/viral-potential" className="btn btn-primary">
+            <Link href="/calculators/viral-potential/" className="btn btn-primary">
               Viral Potential Calculator →
             </Link>
-            <Link href="/calculators/completion-rate" className="btn btn-secondary">
+            <Link href="/calculators/completion-rate/" className="btn btn-secondary">
               Completion Rate Calculator
             </Link>
           </div>
@@ -270,7 +269,7 @@ export default function TikTokAlgorithmOptimizationPage() {
               <p className="text-body-sm mb-3 opacity-90">
                 When viewers click your profile after watching a video. Signals strong interest and often leads to follows.
               </p>
-              <Link href="/calculators/profile-visit-rate" className="inline-block px-4 py-2 bg-white text-blue-600 font-semibold rounded hover:bg-blue-50 transition-colors text-sm">
+              <Link href="/calculators/profile-visit-rate/" className="inline-block px-4 py-2 bg-white text-blue-600 font-semibold rounded hover:bg-blue-50 transition-colors text-sm">
                 Calculate Profile Visit Rate →
               </Link>
             </div>
@@ -284,7 +283,7 @@ export default function TikTokAlgorithmOptimizationPage() {
                 Gaining followers directly from a video indicates compelling content. Algorithm rewards creators who
                 convert viewers to followers.
               </p>
-              <Link href="/calculators/follower-conversion" className="inline-block px-4 py-2 bg-white text-indigo-600 font-semibold rounded hover:bg-indigo-50 transition-colors text-sm">
+              <Link href="/calculators/follower-conversion/" className="inline-block px-4 py-2 bg-white text-indigo-600 font-semibold rounded hover:bg-indigo-50 transition-colors text-sm">
                 Calculate Follower Conversion →
               </Link>
             </div>
@@ -455,7 +454,7 @@ export default function TikTokAlgorithmOptimizationPage() {
                   </ul>
                 </div>
               </div>
-              <Link href="/calculators/hashtag-performance" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/hashtag-performance/" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
                 Analyze Hashtag Performance →
               </Link>
             </div>
@@ -502,7 +501,7 @@ export default function TikTokAlgorithmOptimizationPage() {
               <p className="text-body-sm text-neutral-700 mb-3">
                 High engagement signals quality to algorithm. Prioritize shares and comments over likes.
               </p>
-              <Link href="/guides/increase-engagement-rate-tiktok" className="text-body-sm text-teal-600 hover:underline inline-block">
+              <Link href="/guides/increase-engagement-rate-tiktok/" className="text-body-sm text-teal-600 hover:underline inline-block">
                 Read: Complete Engagement Optimization Guide →
               </Link>
             </div>
@@ -561,19 +560,19 @@ export default function TikTokAlgorithmOptimizationPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/viral-potential" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/viral-potential/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Viral Potential Calculator</h3>
               <p className="text-body-sm text-neutral-600">Predict video performance</p>
             </Link>
-            <Link href="/calculators/completion-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/completion-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Completion Rate</h3>
               <p className="text-body-sm text-neutral-600">Measure watch time</p>
             </Link>
-            <Link href="/calculators/hashtag-performance" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/hashtag-performance/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Hashtag Performance</h3>
               <p className="text-body-sm text-neutral-600">Analyze hashtag effectiveness</p>
             </Link>
-            <Link href="/calculators/posting-time" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/posting-time/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Best Posting Times</h3>
               <p className="text-body-sm text-neutral-600">Find optimal posting schedule</p>
             </Link>

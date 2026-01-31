@@ -16,82 +16,82 @@ export function Footer() {
     {
       title: 'Calculators',
       links: [
-        { href: '/calculators/tiktok-creator-fund', label: 'Creator Fund Calculator' },
-        { href: '/calculators/engagement-rate', label: 'Engagement Rate' },
-        { href: '/calculators/brand-deal-rate', label: 'Brand Deal Rate' },
-        { href: '/calculators/live-gifts', label: 'LIVE Gifts' },
-        { href: '/calculators/tiktok-money', label: 'Money Calculator' },
-        { href: '/calculators/rpm', label: 'RPM Calculator' },
-        { href: '/calculators/shop-commission', label: 'Shop Commission' },
-        { href: '/calculators/coins', label: 'Coins Converter' },
-        { href: '/calculators', label: 'All Calculators' },
+        { href: '/calculators/tiktok-creator-fund/', label: 'Creator Fund Calculator' },
+        { href: '/calculators/engagement-rate/', label: 'Engagement Rate' },
+        { href: '/calculators/brand-deal-rate/', label: 'Brand Deal Rate' },
+        { href: '/calculators/live-gifts/', label: 'LIVE Gifts' },
+        { href: '/calculators/tiktok-money/', label: 'Money Calculator' },
+        { href: '/calculators/rpm/', label: 'RPM Calculator' },
+        { href: '/calculators/commerce-ads/shop-profit/', label: 'Shop Commission' },
+        { href: '/calculators/coins/', label: 'Coins Converter' },
+        { href: '/calculators/', label: 'All Calculators' },
       ],
     },
     {
       title: 'Guides & Resources',
       links: [
-        { href: '/guides/how-to-make-money-on-tiktok', label: 'Make Money on TikTok' },
-        { href: '/guides/tiktok-creator-fund', label: 'Creator Fund Guide' },
-        { href: '/guides/brand-deals', label: 'Brand Deals' },
-        { href: '/guides/how-to-get-brand-deals', label: 'Get Brand Deals' },
-        { href: '/guides/how-to-negotiate-brand-deals', label: 'Negotiate Deals' },
-        { href: '/guides/tiktok-live', label: 'LIVE Monetization' },
-        { href: '/guides/tiktok-shop-affiliate', label: 'Shop Affiliate' },
-        { href: '/guides/how-to-make-first-1000-dollars', label: 'Make First $1,000' },
-        { href: '/guides', label: 'All Guides' },
+        { href: '/guides/how-to-make-money-on-tiktok/', label: 'Make Money on TikTok' },
+        { href: '/guides/tiktok-creator-fund/', label: 'Creator Fund Guide' },
+        { href: '/guides/brand-deals/', label: 'Brand Deals' },
+        { href: '/guides/how-to-get-brand-deals/', label: 'Get Brand Deals' },
+        { href: '/guides/how-to-negotiate-brand-deals/', label: 'Negotiate Deals' },
+        { href: '/guides/tiktok-live/', label: 'LIVE Monetization' },
+        { href: '/guides/tiktok-shop-affiliate/', label: 'Shop Affiliate' },
+        { href: '/guides/how-to-make-first-1000-dollars/', label: 'Make First $1,000' },
+        { href: '/guides/', label: 'All Guides' },
       ],
     },
     {
       title: 'News & Updates',
       links: [
-        { href: '/news', label: 'Latest TikTok News' },
-        { href: '/news', label: 'Algorithm Updates' },
-        { href: '/news', label: 'Monetization Changes' },
-        { href: '/news', label: 'TikTok Shop News' },
-        { href: '/news', label: 'Platform Features' },
-        { href: '/news', label: 'Safety & Privacy' },
+        { href: '/news/', label: 'Latest TikTok News' },
+        { href: '/news/', label: 'Algorithm Updates' },
+        { href: '/news/', label: 'Monetization Changes' },
+        { href: '/news/', label: 'TikTok Shop News' },
+        { href: '/news/', label: 'Platform Features' },
+        { href: '/news/', label: 'Safety & Privacy' },
       ],
     },
     {
       title: 'Data & Insights',
       links: [
-        { href: '/data/brand-deal-rates-by-followers', label: 'Brand Deal Rates' },
-        { href: '/data/rpm-rates-by-niche', label: 'RPM Rates by Niche' },
-        { href: '/data/engagement-rates-by-niche', label: 'Engagement Benchmarks' },
-        { href: '/comparisons/tiktok-vs-youtube-earnings', label: 'TikTok vs YouTube' },
-        { href: '/comparisons/tiktok-vs-instagram', label: 'TikTok vs Instagram' },
-        { href: '/comparisons/creator-fund-vs-brand-deals', label: 'Fund vs Brand Deals' },
+        { href: '/data/brand-deal-rates-by-followers/', label: 'Brand Deal Rates' },
+        { href: '/data/rpm-rates-by-niche/', label: 'RPM Rates by Niche' },
+        { href: '/data/engagement-rates-by-niche/', label: 'Engagement Benchmarks' },
+        { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube' },
+        { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram' },
+        { href: '/comparisons/creator-fund-vs-brand-deals/', label: 'Fund vs Brand Deals' },
       ],
     },
     {
       title: 'Niche Earnings',
       links: [
-        { href: '/guides/beauty-creators-earnings', label: 'Beauty Creators' },
-        { href: '/guides/finance-creators-earnings', label: 'Finance Creators' },
-        { href: '/guides/fitness-creators-earnings', label: 'Fitness Creators' },
+        { href: '/guides/beauty-creators-earnings/', label: 'Beauty Creators' },
+        { href: '/guides/finance-creators-earnings/', label: 'Finance Creators' },
+        { href: '/guides/fitness-creators-earnings/', label: 'Fitness Creators' },
       ],
     },
     {
       title: 'Global Calculators',
       hasGlobeIcon: true,
       links: [
-        { href: '/region', label: 'Global TikTok Stats' },
-        { href: '/calculator/de', label: 'Deutsch (DE)' },
-        { href: '/calculator/es', label: 'Español (ES)' },
-        { href: '/calculator/fr', label: 'Français (FR)' },
-        { href: '/calculator/it', label: 'Italiano (IT)' },
-        { href: '/calculator/pt-br', label: 'Português (BR)' },
-        { href: '/calculator/my', label: 'Bahasa Malaysia (MY)' },
+        { href: '/region/', label: 'Global TikTok Stats' },
+        { href: '/calculator/de/', label: 'Deutsch (DE)' },
+        { href: '/calculator/es/', label: 'Español (ES)' },
+        { href: '/calculator/fr/', label: 'Français (FR)' },
+        { href: '/calculator/it/', label: 'Italiano (IT)' },
+        { href: '/calculator/pt-br/', label: 'Português (BR)' },
+        { href: '/calculator/my/', label: 'Bahasa Malaysia (MY)' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { href: '/about', label: 'About Us' },
-        { href: '/contact', label: 'Contact Us' },
-        { href: '/faq', label: 'FAQ' },
-        { href: '/privacy', label: 'Privacy Policy' },
-        { href: '/terms', label: 'Terms of Service' },
+        { href: '/about/', label: 'About Us' },
+        { href: '/contact/', label: 'Contact Us' },
+        { href: '/faq/', label: 'FAQ' },
+        { href: '/privacy/', label: 'Privacy Policy' },
+        { href: '/terms/', label: 'Terms of Service' },
       ],
     },
   ];
@@ -174,25 +174,25 @@ export function Footer() {
             </p>
             <div className="flex items-center space-x-4">
               <Link
-                href="/privacy"
+                href="/privacy/"
                 className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Privacy Policy Footer', '/privacy')}
+                onClick={() => handleLinkClick('Privacy Policy Footer', '/privacy/')}
               >
                 Privacy
               </Link>
               <span className="text-neutral-700">•</span>
               <Link
-                href="/terms"
+                href="/terms/"
                 className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Terms Footer', '/terms')}
+                onClick={() => handleLinkClick('Terms Footer', '/terms/')}
               >
                 Terms
               </Link>
               <span className="text-neutral-700">•</span>
               <Link
-                href="/contact"
+                href="/contact/"
                 className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Contact Footer', '/contact')}
+                onClick={() => handleLinkClick('Contact Footer', '/contact/')}
               >
                 Contact
               </Link>

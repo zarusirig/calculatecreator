@@ -52,7 +52,7 @@ export default function CoinsCalculatorPage() {
             <CoinsIcon size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Coins Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Convert TikTok coins to USD value and diamonds. Essential for understanding gift values.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Convert TikTok coins to USD and calculate diamond payouts for creators. This calculator helps viewers understand gift costs and creators estimate LIVE earnings from virtual gifts. Essential for anyone participating in TikTok's virtual economy, whether you're sending gifts or receiving them during streams. Calculate exact conversion rates between coins, diamonds, and dollars using current 2026 pricing. Understand TikTok's 50% platform fee and plan your LIVE streaming income or gifting budget accurately.</p>
         </div>
 
         <div className="max-w-3xl mx-auto">

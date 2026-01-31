@@ -103,11 +103,10 @@ export default function VideoPerformanceCalculatorPage() {
             TikTok Video Performance Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">
-            Analyze your video performance with a comprehensive score based on
-            views, engagement, and reach. Identify top-performing content and patterns to replicate success.
+            Analyze your video performance with a comprehensive score based on views, engagement metrics, and reach beyond your follower base. This calculator evaluates multiple dimensions including view-to-follower ratio, engagement rate, and interaction quality to provide a 0-100 performance score. Ideal for creators who want to identify top-performing content patterns, understand what makes videos successful, optimize future content strategy, and demonstrate their value to potential brand partners through data-driven performance insights.
           </p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Understanding video performance helps you create more viral content. Combine this analysis with our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Engagement Rate Calculator</Link> for audience quality insights and <Link href="/calculators/viral-potential" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Viral Potential Calculator</Link> to predict which videos might go viral.
+            Understanding video performance helps you create more viral content. Combine this analysis with our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Engagement Rate Calculator</Link> for audience quality insights and <Link href="/calculators/viral-potential/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Viral Potential Calculator</Link> to predict which videos might go viral.
           </p>
         </div>
 

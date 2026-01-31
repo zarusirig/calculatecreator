@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 interface FAQ {
   question: string;
   answer: string;
@@ -71,7 +69,7 @@ export function InternationalCalculatorSchema({
     provider: {
       '@type': 'Organization',
       name: 'CalculateCreator.com',
-      url: 'https://calculatecreator.com',
+      url: 'https://calculatecreator.com/',
     },
   };
 
@@ -85,7 +83,7 @@ export function InternationalCalculatorSchema({
     isPartOf: {
       '@type': 'WebSite',
       name: 'CalculateCreator.com',
-      url: 'https://calculatecreator.com',
+      url: 'https://calculatecreator.com/',
     },
     about: {
       '@type': 'Thing',
@@ -143,23 +141,19 @@ export function InternationalCalculatorSchema({
 
   return (
     <>
-      <Script
-        id="software-application-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
       />
-      <Script
-        id="webpage-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
-      <Script
-        id="faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Script
-        id="breadcrumb-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />

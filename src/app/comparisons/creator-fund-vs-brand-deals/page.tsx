@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Clock, DollarSign, CheckCircle, XCircle, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -39,13 +40,24 @@ export default function CreatorFundVsBrandDealsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="Creator Fund vs Brand Deals: Which Pays More? 2026"
+        description="Compare TikTok Creator Fund earnings vs brand deal sponsorships. See which monetization method pays better at your follower tier with real 2026 data."
+        url="https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok Creator Fund"
+        subjectB="Brand Deal Sponsorships"
+        faqs={faqs}
+        readTime="8 min"
+      />
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/data" className="hover:text-neutral-900 transition-colors">Data & Insights</Link>
+            <Link href="/data/" className="hover:text-neutral-900 transition-colors">Data & Insights</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Fund vs Brand Deals</span>
           </div>
@@ -462,27 +474,27 @@ export default function CreatorFundVsBrandDealsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Content</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/guides/how-to-get-brand-deals-complete" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Step-by-step guide to finding sponsorships</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Brand Deal Rate Calculator</h4>
               <p className="text-body-sm text-neutral-600">Calculate what brands should pay you</p>
             </Link>
-            <Link href="/guides/how-to-join-creator-fund-complete" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">How to Join Creator Fund</h4>
               <p className="text-body-sm text-neutral-600">Complete application guide</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund Calculator</h4>
               <p className="text-body-sm text-neutral-600">Estimate your RPM earnings</p>
             </Link>
-            <Link href="/guides/fitness-creators-earnings" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/fitness-creators-earnings/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Fitness Creators Earnings</h4>
               <p className="text-body-sm text-neutral-600">High-paying fitness niche guide</p>
             </Link>
-            <Link href="/comparisons/tiktok-vs-instagram" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/comparisons/tiktok-vs-instagram/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">TikTok vs Instagram</h4>
               <p className="text-body-sm text-neutral-600">Platform comparison guide</p>
             </Link>

@@ -76,8 +76,7 @@ export default function SponsorshipROICalculatorPage() {
             TikTok Sponsorship ROI Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate the return on investment for sponsorship deals. Evaluate
-            profitability before accepting brand partnerships.
+            Calculate the return on investment for sponsorship deals and brand partnerships. This calculator helps you evaluate profitability by comparing total revenue generated against costs including sponsorship fees and production expenses. Essential for creators and influencers who want to make data-driven decisions on which brand deals to accept, negotiate better terms, and ensure profitable collaborations that align with their business goals.
           </p>
         </div>
 

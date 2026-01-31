@@ -88,7 +88,7 @@ export default function CostPerResultCalculatorPage() {
             TikTok Cost Per Result Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate cost per result for your TikTok ad campaigns. Measure CPC, CPA, CPV, CPL, CPE and optimize your advertising efficiency for maximum ROI.
+            Calculate cost per result for your TikTok ad campaigns by dividing total spend by results achieved. This versatile calculator measures CPC (Cost Per Click), CPA (Cost Per Acquisition), CPV (Cost Per View), CPL (Cost Per Lead), or CPE (Cost Per Engagement) depending on your campaign objective. Compare against industry benchmarks ranging from $0.20-$1.00 CPC to identify optimization opportunities and maximize advertising efficiency.
           </p>
         </div>
 

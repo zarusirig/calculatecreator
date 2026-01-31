@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign, BarChart3, Lightbulb, Globe } from 'lucide-react';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Fund Payment Schedule 2026: When & How You Get Paid',
@@ -39,13 +40,21 @@ export default function CreatorFundPaymentSchedulePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok Creator Fund Payment Schedule 2026: When & How You Get Paid"
+        description="Complete guide to TikTok Creator Fund payment schedule, processing times, minimum thresholds, payment methods, and what to do if your payment is delayed."
+        url="https://calculatecreator.com/reference/creator-fund-payment-schedule/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Fund Payment Schedule</span>
           </div>
@@ -262,7 +271,7 @@ export default function CreatorFundPaymentSchedulePage() {
             </div>
           </div>
           <div className="mt-4">
-            <Link href="/advanced/creator-tax-deductions" className="text-tiktok-pink font-semibold hover:underline">
+            <Link href="/advanced/creator-tax-deductions/" className="text-tiktok-pink font-semibold hover:underline">
               Learn About Creator Tax Deductions →
             </Link>
           </div>
@@ -322,19 +331,19 @@ export default function CreatorFundPaymentSchedulePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-join-creator-fund-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Join Creator Fund</h4>
               <p className="text-body-sm text-neutral-700">Complete application guide</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h4>
               <p className="text-body-sm text-neutral-700">Estimate your monthly earnings</p>
             </Link>
-            <Link href="/guides/why-creator-fund-earnings-dropped" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/why-creator-fund-earnings-dropped/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Why Earnings Dropped</h4>
               <p className="text-body-sm text-neutral-700">Troubleshoot low payments</p>
             </Link>
-            <Link href="/advanced/creator-tax-deductions" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/advanced/creator-tax-deductions/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Creator Tax Guide</h4>
               <p className="text-body-sm text-neutral-700">Tax deductions and strategies</p>
             </Link>

@@ -76,17 +76,17 @@ export default function BlogPage() {
 
         {/* Related Sections */}
         <div className="mt-12">
-          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Explore More</h3>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/guides" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Guides</h4>
               <p className="text-body-sm text-neutral-600">In-depth guides on monetization</p>
             </Link>
-            <Link href="/comparisons/creator-fund-vs-brand-deals" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/comparisons/creator-fund-vs-brand-deals/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Comparisons</h4>
               <p className="text-body-sm text-neutral-600">Compare income strategies</p>
             </Link>
-            <Link href="/calculators" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Calculators</h4>
               <p className="text-body-sm text-neutral-600">Calculate your earnings</p>
             </Link>

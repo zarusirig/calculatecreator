@@ -2,6 +2,8 @@ import type { Metadata} from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { XCircle, CheckCircle } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
+import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Tax Strategy 2026: Deductions, Write-Offs, and Tax Planning',
@@ -14,12 +16,20 @@ export const metadata: Metadata = {
 
 export default function CreatorTaxStrategyPage() {
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <nav className="bg-white border-b border-neutral-200 py-3">
+    <>
+      <ArticleSchema
+        headline="TikTok Creator Tax Strategy 2026: Deductions, Write-Offs, and Tax Planning"
+        description="Complete tax guide for TikTok creators. Deductible expenses, quarterly estimated taxes, business structures, and how to minimize your tax bill legally."
+        url="https://calculatecreator.com/guides/creator-tax-strategy/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+      />
+      <div className="min-h-screen bg-neutral-50">
+        <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Creator Tax Strategy</span>
           </div>
         </div>
@@ -52,6 +62,12 @@ export default function CreatorTaxStrategyPage() {
       </section>
 
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        <Card>
+          <p className="text-body-lg text-neutral-700 mb-6">
+            TikTok creator income presents unique tax challenges that require strategic planning to minimize your tax burden while staying compliant with IRS regulations. As a content creator, you're classified as self-employed, which means you face both income tax and self-employment tax obligations that can total 25-52% of your earnings if not properly managed. However, creators also have access to powerful tax deductions and write-offs that W-2 employees cannot claim, from equipment purchases and home office expenses to travel costs and software subscriptions. This comprehensive tax strategy guide covers everything TikTok creators need to know about managing their tax obligations, including quarterly estimated payments, business structure decisions, retirement planning options, and hundreds of legitimate deductions that can save you thousands of dollars annually. Whether you're earning your first dollar from the Creator Fund or scaling a six-figure creator business, understanding these tax strategies is essential for building sustainable, profitable creator income in 2026.
+          </p>
+        </Card>
+
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Understanding Creator Income Taxes</h2>
           <p className="text-body-md text-neutral-700 mb-6">
@@ -518,7 +534,34 @@ export default function CreatorTaxStrategyPage() {
             </div>
           </div>
         </Card>
+
+        <FAQSection
+          pageName="TikTok Creator Tax Strategy"
+          faqs={[
+            {
+              question: "Do I have to pay taxes on TikTok Creator Fund earnings?",
+              answer: "Yes, all TikTok creator income (Creator Fund, brand deals, LIVE gifts, Shop commissions) is taxable as self-employment income. You'll pay both income tax (10-37% based on bracket) and self-employment tax (15.3% for Social Security and Medicare). If you expect to owe $1,000+ in taxes, you must make quarterly estimated payments to avoid penalties."
+            },
+            {
+              question: "What business expenses can I deduct as a TikTok creator?",
+              answer: "Deductible expenses include equipment (phone, camera, lighting), software subscriptions, home office (by square footage), internet and utilities (business %), props and wardrobe for videos, travel for content creation, professional services (accountant, lawyer), and marketing tools. Keep receipts and document the business purpose for every expense."
+            },
+            {
+              question: "Should I form an LLC or S-Corp as a creator?",
+              answer: "Start as a sole proprietor if earning under $50K annually. Form an LLC once you hit $50K+ for liability protection and credibility. Consider S-Corp election at $100K+ to save on self-employment taxes, though it requires payroll setup and higher accounting costs. Consult a tax professional before changing structures."
+            },
+            {
+              question: "When are quarterly estimated tax payments due?",
+              answer: "Q1 (Jan-Mar income): Due April 15. Q2 (Apr-May income): Due June 15. Q3 (Jun-Aug income): Due September 15. Q4 (Sep-Dec income): Due January 15 of next year. Set aside 25-30% of creator income each month and pay quarterly based on that quarter's earnings to avoid penalties."
+            },
+            {
+              question: "Can I deduct my home office as a content creator?",
+              answer: "Yes, if you have a dedicated workspace used exclusively for your creator business. Calculate the percentage of your home used for business (e.g., 10% if one room in 10-room house), then deduct that percentage of rent/mortgage, utilities, internet, and insurance. Keep photos and measurements as documentation."
+            }
+          ]}
+        />
       </div>
-    </div>
+      </div>
+    </>
   );
 }

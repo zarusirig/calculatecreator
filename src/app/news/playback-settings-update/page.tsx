@@ -38,7 +38,7 @@ export default function PlaybackSettingsUpdatePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Playback Settings Update</span>
           </div>
@@ -263,14 +263,14 @@ export default function PlaybackSettingsUpdatePage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/guides/tiktok-algorithm-optimization"
+              href="/guides/tiktok-algorithm-optimization/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Understanding TikTok Algorithm</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/calculators/engagement-rate"
+              href="/calculators/engagement-rate/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
@@ -603,6 +603,20 @@ export default function PlaybackSettingsUpdatePage() {
                 Object tags may actually improve performance by helping the algorithm better understand and categorize your content, leading to more accurate distribution to interested audiences.
               </p>
             </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/ai-outline-smart-split-features/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">AI Outline and Smart Split Features</h4>
+              <p className="text-body-xs text-neutral-600">New AI tools that auto-generate outlines and split videos into chapters</p>
+            </Link>
+            <Link href="/news/personalized-ai-avatar-stickers/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">Personalized AI Avatar Stickers</h4>
+              <p className="text-body-xs text-neutral-600">Create custom stickers based on your likeness with AI-powered avatars</p>
+            </Link>
           </div>
         </Card>
 

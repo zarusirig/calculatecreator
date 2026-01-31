@@ -81,7 +81,7 @@ export default function AffiliateCommissionCalculatorPage() {
               TikTok Affiliate Commission Calculator
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-              Calculate your potential earnings from TikTok Shop affiliate marketing and product commissions.
+              Calculate your potential earnings from TikTok Shop affiliate marketing based on product prices, commission rates, and conversion rates. With typical commissions ranging from 5-30% depending on category and conversion rates of 2-5% for successful creators, this calculator helps you project monthly income, compare product niches, and understand how many clicks you need to hit your earning goals.
             </p>
           </div>
 
@@ -273,7 +273,7 @@ Annual Earnings = $150 × 12 = $1,800`}
               calculators={[
                 {
                   name: 'Shop Commission Calculator',
-                  slug: 'shop-commission',
+                  slug: 'commerce-ads/shop-profit',
                   description: 'Calculate TikTok Shop seller commissions and fees',
                   icon: 'ShoppingBag',
                 },

@@ -88,7 +88,7 @@ export default function AdSpendCalculatorPage() {
             TikTok Ad Spend Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Plan daily, weekly, and monthly budgets with confidence.
+            Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Whether you're planning conversion campaigns with typical CPAs of $15-$40 or brand awareness with CPMs of $3-$10, this calculator helps you determine optimal daily budgets, account for learning phase costs, and avoid common budget mistakes that waste money. Plan daily, weekly, and monthly budgets with confidence.
           </p>
         </div>
 

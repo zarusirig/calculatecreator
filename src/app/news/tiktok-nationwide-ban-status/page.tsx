@@ -39,7 +39,7 @@ export default function TikTokNationwideBanStatusPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Ban Status Explained</span>
           </div>
@@ -320,21 +320,21 @@ export default function TikTokNationwideBanStatusPage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/calculators/tiktok-money"
+              href="/calculators/tiktok-money/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">TikTok Money Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/calculators/engagement-rate"
+              href="/calculators/engagement-rate/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/how-to-make-money-on-tiktok"
+              href="/guides/how-to-make-money-on-tiktok/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Complete Monetization Guide</span>
@@ -521,12 +521,12 @@ export default function TikTokNationwideBanStatusPage() {
               </a>
             </li>
             <li>
-              <Link href="/news/tiktok-ban-delayed-december-2026" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
+              <Link href="/news/tiktok-ban-delayed-december-2025/" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
                 Related: TikTok Ban Enforcement Delayed Until December 16, 2026 →
               </Link>
             </li>
             <li>
-              <Link href="/news/us-china-deal-tiktok-operational" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
+              <Link href="/news/us-china-deal-tiktok-operational/" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
                 Related: US-China Framework Agreement Reached →
               </Link>
             </li>

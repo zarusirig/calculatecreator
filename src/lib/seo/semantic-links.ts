@@ -257,7 +257,7 @@ export const SEMANTIC_RELATIONSHIPS: Record<string, Record<string, SemanticLink[
         context: 'Optimize your niche strategy →',
       },
       {
-        slug: 'creator-tax',
+        slug: 'utility-tools/tax',
         name: 'Creator Tax Calculator',
         description: 'Estimate tax obligations on your TikTok income',
         icon: 'briefcase',
@@ -291,7 +291,7 @@ export const SEMANTIC_RELATIONSHIPS: Record<string, Record<string, SemanticLink[
         context: 'Breakdown: LIVE gifts →',
       },
       {
-        slug: 'shop-commission',
+        slug: 'commerce-ads/shop-profit',
         name: 'Shop Commission Calculator',
         description: 'Deep dive into TikTok Shop earnings',
         icon: 'shopping',
@@ -397,7 +397,7 @@ export const SEMANTIC_RELATIONSHIPS: Record<string, Record<string, SemanticLink[
     ],
     related: [
       {
-        slug: 'shop-commission',
+        slug: 'commerce-ads/shop-profit',
         name: 'Shop Commission Calculator',
         description: 'TikTok Shop commission calculator',
         icon: 'shopping',
@@ -565,7 +565,7 @@ export const SEMANTIC_RELATIONSHIPS: Record<string, Record<string, SemanticLink[
     ],
   },
 
-  'shop-commission': {
+  'commerce-ads/shop-profit': {
     'next-steps': [
       {
         slug: 'affiliate-commission',
@@ -815,7 +815,7 @@ export const SEMANTIC_RELATIONSHIPS: Record<string, Record<string, SemanticLink[
     ],
   },
 
-  'creator-tax': {
+  'utility-tools/tax': {
     prerequisite: [
       {
         slug: 'tiktok-money',

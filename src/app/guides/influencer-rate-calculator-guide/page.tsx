@@ -96,6 +96,15 @@ export default function InfluencerRateCalculatorGuidePage() {
             </div>
           </div>
 
+          {/* Introduction */}
+          <section className="py-8 bg-white -mx-4 px-4 mb-8">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-body-lg text-neutral-700 leading-relaxed">
+                Pricing yourself correctly as a TikTok influencer is one of the most critical skills for building a sustainable creator business, yet most creators dramatically underprice their work and leave thousands of dollars on the table with every brand deal they accept. Research shows that 70% of creators charge 40-60% below market rate because they lack access to benchmark data, fear losing opportunities by asking for more, or simply don't understand the true value their engaged audience provides to brands seeking authentic marketing channels. This comprehensive guide provides data-backed frameworks for calculating your brand deal rates based on follower count, engagement rate, niche premium, and deliverable complexity. You'll learn industry-standard rate benchmarks broken down by influencer tier from nano to mega, understand the ten key factors that justify charging premium rates above market average, master a proven six-step negotiation framework used by top creators to secure better deals, and know exactly when to walk away from lowball offers that undervalue your work. Whether you're landing your first paid partnership or scaling to five and six-figure brand deals, these pricing strategies will help you confidently charge what you're worth and build a profitable creator business in 2026.
+              </p>
+            </div>
+          </section>
+
           {/* Table of Contents */}
           <Card className="max-w-4xl mx-auto mb-12">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -267,7 +276,7 @@ export default function InfluencerRateCalculatorGuidePage() {
                     </div>
 
                     <div className="mt-6 text-center">
-                      <Link href="/calculators/brand-deal-rate">
+                      <Link href="/calculators/brand-deal-rate/">
                         <Button variant="primary" size="lg">Calculate Your Brand Deal Rate</Button>
                       </Link>
                     </div>
@@ -820,10 +829,33 @@ export default function InfluencerRateCalculatorGuidePage() {
                 <p className="text-body-lg text-neutral-700 mb-6 max-w-2xl mx-auto">
                   Use our Brand Deal Rate Calculator to get your data-backed pricing in seconds. Never undercharge again.
                 </p>
-                <Link href="/calculators/brand-deal-rate">
+                <Link href="/calculators/brand-deal-rate/">
                   <Button variant="primary" size="lg">
                     Calculate My Rate
                   </Button>
+                </Link>
+              </div>
+            </Card>
+
+            {/* Related Guides */}
+            <Card>
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/guides/how-to-price-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">How to Price Brand Deals</h4>
+                  <p className="text-body-sm text-neutral-700">Step-by-step pricing strategy for partnerships</p>
+                </Link>
+                <Link href="/guides/how-to-negotiate-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">How to Negotiate Brand Deals</h4>
+                  <p className="text-body-sm text-neutral-700">Negotiate higher rates and better terms</p>
+                </Link>
+                <Link href="/guides/how-much-to-charge-sponsorship/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">How Much to Charge for Sponsorships</h4>
+                  <p className="text-body-sm text-neutral-700">Determine fair rates for different content types</p>
+                </Link>
+                <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Complete Brand Deal Guide</h4>
+                  <p className="text-body-sm text-neutral-700">Comprehensive brand partnership resource</p>
                 </Link>
               </div>
             </Card>

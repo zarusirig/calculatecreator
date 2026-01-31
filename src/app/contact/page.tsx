@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Card } from '@/components/ui/Card';
 import { MessageCircle, Bug, Lightbulb, BarChart3, Users, FileText, CheckCircle, XCircle } from 'lucide-react';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Contact TikTok Creator Calculator | Support',
@@ -12,7 +13,13 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
+    <>
+      <WebPageSchema
+        title="Contact TikTok Creator Calculator | Support"
+        description="Have questions about our calculators? Need help optimizing your TikTok earnings? Contact us for support, feedback, or partnership inquiries."
+        url="https://calculatecreator.com/contact/"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
       <div className="container-custom max-w-3xl">
         <div className="text-center mb-8">
           <img
@@ -459,5 +466,6 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { Calendar, Clock, CheckCircle, User, Users, Eye, MapPin, Video, BarChart3, DollarSign, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -38,14 +39,25 @@ export default function HowToJoinCreatorFundPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      {/* Breadcrumb */}
+    <>
+      {/* Article Schema for SEO */}
+      <ArticleSchema
+        headline="How to Join TikTok Creator Fund: Step-by-Step Guide 2026"
+        description="Complete guide to joining the TikTok Creator Fund. Learn eligibility requirements, application process, approval tips, and what to do if rejected."
+        url="https://calculatecreator.com/guides/how-to-join-creator-fund"
+        datePublished="2024-01-15"
+        dateModified="2025-01-30"
+        keywords={['tiktok creator fund', 'how to join tiktok creator fund', 'creator fund application', 'tiktok monetization', 'creator fund eligibility']}
+      />
+
+      <div className="min-h-screen bg-neutral-50">
+        {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">How to Join Creator Fund</span>
           </div>
@@ -90,6 +102,13 @@ export default function HowToJoinCreatorFundPage() {
 
       {/* Main Content */}
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <p className="text-body-lg text-neutral-700 leading-relaxed mb-4">
+            Joining the TikTok Creator Fund is one of the first major monetization milestones for growing creators on the platform. Once approved, you'll start earning money directly from TikTok based on your video views and engagement, creating a passive income stream that complements other revenue sources like brand deals and affiliate marketing. While the Creator Fund pays relatively modest rates compared to YouTube's Partner Program (typically $0.02-$0.04 per 1,000 views), it requires no extra work beyond creating your regular content, making it an essential part of every creator's monetization strategy. However, getting approved isn't automatic - TikTok has specific requirements around follower count, video views, age, location, and account standing that you must meet. This step-by-step guide walks you through the entire application process, explains each eligibility requirement in detail, provides proven strategies to reach the thresholds faster, troubleshoots common rejection reasons, and helps you understand what to expect once you're approved and earning from the fund.
+          </p>
+        </Card>
+
         {/* Quick Overview */}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Quick Requirements Check</h2>
@@ -119,7 +138,7 @@ export default function HowToJoinCreatorFundPage() {
           </div>
           <div className="mt-6 p-4 bg-tiktok-pink/10 border border-tiktok-pink/20 rounded-lg">
             <p className="text-body-sm text-neutral-700">
-              <strong>Pro Tip:</strong> Use our <Link href="/calculators/tiktok-creator-fund" className="text-tiktok-pink hover:underline">Creator Fund Calculator</Link> to estimate your potential monthly earnings before applying.
+              <strong>Pro Tip:</strong> Use our <Link href="/calculators/tiktok-creator-fund/" className="text-tiktok-pink hover:underline">Creator Fund Calculator</Link> to estimate your potential monthly earnings before applying.
             </p>
           </div>
         </Card>
@@ -308,7 +327,7 @@ export default function HowToJoinCreatorFundPage() {
               Use our free calculator to see how much you could earn based on your current views and engagement.
             </p>
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="inline-block bg-tiktok-pink text-white px-8 py-3 rounded-lg font-semibold hover:bg-tiktok-red transition-colors"
             >
               Calculate Your Earnings →
@@ -327,11 +346,11 @@ export default function HowToJoinCreatorFundPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><BarChart3 className="w-5 h-5 text-tiktok-pink" /> TikTok Creator Fund Complete Guide</h4>
               <p className="text-body-sm text-neutral-700">Everything about how the fund works, RPM rates, and earnings by niche</p>
             </Link>
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><DollarSign className="w-5 h-5 text-tiktok-pink" /> How to Make Money on TikTok</h4>
               <p className="text-body-sm text-neutral-700">All TikTok monetization methods: Creator Fund, brand deals, LIVE, Shop</p>
             </Link>
@@ -339,5 +358,6 @@ export default function HowToJoinCreatorFundPage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

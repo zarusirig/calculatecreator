@@ -61,7 +61,7 @@ export default function BrandDealRateCalculatorPage() {
             TikTok Brand Deal Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate how much you should charge brands for sponsored content based on your follower count, engagement rate, niche, and deliverable type.
+            Calculate how much you should charge brands for sponsored content and partnerships based on your follower count, engagement rate, content niche, and deliverable type. This calculator provides fair market rates across different creator tiers from nano to mega influencers. Perfect for creators negotiating their first brand deals, established influencers ensuring competitive pricing, and anyone wanting to understand their worth in the creator economy and maximize sponsorship income.
           </p>
         </div>
 

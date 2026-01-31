@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Commission Rates by Category 2026: Complete Reference',
@@ -27,11 +28,19 @@ export default function ShopCommissionRatesPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok Shop Commission Rates by Category 2026: Complete Reference"
+        description="Complete breakdown of TikTok Shop affiliate commission rates by product category. Find the most profitable categories and optimize your earnings."
+        url="https://calculatecreator.com/reference/shop-commission-rates/"
+        datePublished="2024-02-01"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Shop Commission Rates</span>
           </div>
         </div>
@@ -101,7 +110,7 @@ export default function ShopCommissionRatesPage() {
             ))}
           </div>
           <div className="mt-6">
-            <Link href="/calculators/shop-commission" className="inline-block px-6 py-3 bg-tiktok-pink text-white font-semibold rounded-lg hover:bg-tiktok-pink/90">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="inline-block px-6 py-3 bg-tiktok-pink text-white font-semibold rounded-lg hover:bg-tiktok-pink/90">
               Calculate Your Earnings →
             </Link>
           </div>
@@ -284,11 +293,11 @@ export default function ShopCommissionRatesPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-become-shop-affiliate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/how-to-become-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-2">Become Shop Affiliate</h4>
               <p className="text-body-sm text-neutral-700">Join TikTok Shop program</p>
             </Link>
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-2">Commission Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate your potential earnings</p>
             </Link>

@@ -87,10 +87,10 @@ export default function EngagementRateCalculatorPage() {
             TikTok Engagement Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">
-            Calculate your TikTok engagement rate and see how you compare to industry benchmarks. High engagement rates (5%+) are crucial for brand deals and algorithmic success.
+            Calculate your TikTok engagement rate instantly and see how you compare to industry benchmarks. This free calculator analyzes your likes, comments, and shares to determine your engagement percentage. High engagement rates (5%+) are crucial for landing brand deals, getting algorithmic promotion, and maximizing your monetization potential across all income streams.
           </p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Use your engagement rate to calculate <Link href="/calculators/brand-deal-rate" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok brand deal pricing</Link> or estimate your total <Link href="/calculators/tiktok-money" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok earnings potential</Link> across all monetization streams.
+            Use your engagement rate to calculate <Link href="/calculators/brand-deal-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok brand deal pricing</Link> or estimate your total <Link href="/calculators/tiktok-money/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok earnings potential</Link> across all monetization streams.
           </p>
         </div>
 
@@ -142,7 +142,7 @@ export default function EngagementRateCalculatorPage() {
                     <Target size={20} className="text-primary-600" /> TikTok Algorithm Performance
                   </h3>
                   <p>
-                    TikTok's algorithm prioritizes content with high engagement. Videos with more likes, comments, and shares get pushed to more users' For You pages. Learn how to <Link href="/guides/tiktok-algorithm-optimization" className="text-primary-600 hover:text-primary-700 underline font-medium">optimize your content for the TikTok algorithm</Link>.
+                    TikTok's algorithm prioritizes content with high engagement. Videos with more likes, comments, and shares get pushed to more users' For You pages. Learn how to <Link href="/guides/tiktok-algorithm-optimization/" className="text-primary-600 hover:text-primary-700 underline font-medium">optimize your content for the TikTok algorithm</Link>.
                   </p>
                 </div>
                 <div>
@@ -150,7 +150,7 @@ export default function EngagementRateCalculatorPage() {
                     <DollarSign size={20} className="text-primary-600" /> TikTok Brand Deal Value
                   </h3>
                   <p>
-                    Brands look for creators with 5%+ engagement rates. High engagement means your audience actually cares about your content, leading to better campaign performance. Use our <Link href="/calculators/brand-deal-rate" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok brand deal rate calculator</Link> to see how engagement affects your pricing.
+                    Brands look for creators with 5%+ engagement rates. High engagement means your audience actually cares about your content, leading to better campaign performance. Use our <Link href="/calculators/brand-deal-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok brand deal rate calculator</Link> to see how engagement affects your pricing.
                   </p>
                 </div>
                 <div>
@@ -158,7 +158,7 @@ export default function EngagementRateCalculatorPage() {
                     <TrendingUp size={20} className="text-primary-600" /> TikTok Growth Indicator
                   </h3>
                   <p>
-                    Engagement rate is more important than follower count for measuring genuine audience quality. Calculate your <Link href="/calculators/follower-growth" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok follower growth rate</Link> to track your progress over time.
+                    Engagement rate is more important than follower count for measuring genuine audience quality. Calculate your <Link href="/calculators/follower-growth/" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok follower growth rate</Link> to track your progress over time.
                   </p>
                 </div>
               </div>
@@ -169,7 +169,7 @@ export default function EngagementRateCalculatorPage() {
                 How to Improve TikTok Engagement Rate
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                Want to boost your engagement and earnings? Check out our complete guide on <Link href="/guides/increase-engagement-rate-tiktok" className="text-primary-600 hover:text-primary-700 underline font-medium">how to increase TikTok engagement rate</Link> with proven strategies:
+                Want to boost your engagement and earnings? Check out our complete guide on <Link href="/guides/increase-engagement-rate-tiktok/" className="text-primary-600 hover:text-primary-700 underline font-medium">how to increase TikTok engagement rate</Link> with proven strategies:
               </p>
               <div className="space-y-3">
                 {[

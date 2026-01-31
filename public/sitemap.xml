@@ -14,28 +14,28 @@
 
   <!-- Main Navigation Pages -->
   <url>
-    <loc>https://calculatecreator.com/calculators</loc>
+    <loc>https://calculatecreator.com/calculators/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides</loc>
+    <loc>https://calculatecreator.com/guides/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/region</loc>
+    <loc>https://calculatecreator.com/region/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/data</loc>
+    <loc>https://calculatecreator.com/data/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -43,49 +43,49 @@
 
   <!-- Multilingual Calculator Landing Pages -->
   <url>
-    <loc>https://calculatecreator.com/calculator/de</loc>
+    <loc>https://calculatecreator.com/calculator/de/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculator/es</loc>
+    <loc>https://calculatecreator.com/calculator/es/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculator/fr</loc>
+    <loc>https://calculatecreator.com/calculator/fr/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculator/it</loc>
+    <loc>https://calculatecreator.com/calculator/it/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculator/pt-br</loc>
+    <loc>https://calculatecreator.com/calculator/pt-br/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculator/my</loc>
+    <loc>https://calculatecreator.com/calculator/my/</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news</loc>
+    <loc>https://calculatecreator.com/news/</loc>
     <lastmod>2025-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -93,108 +93,100 @@
 
   <!-- Static Pages -->
   <url>
-    <loc>https://calculatecreator.com/about</loc>
+    <loc>https://calculatecreator.com/about/</loc>
     <lastmod>2025-07-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/contact</loc>
+    <loc>https://calculatecreator.com/contact/</loc>
     <lastmod>2025-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/faq</loc>
+    <loc>https://calculatecreator.com/faq/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/privacy</loc>
+    <loc>https://calculatecreator.com/privacy/</loc>
     <lastmod>2025-07-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/terms</loc>
+    <loc>https://calculatecreator.com/terms/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
 
-  <!-- Calculator Pages - ALL 36 CALCULATORS -->
-  <!-- Phase 1 & 2 Optimized (FAQ Schema) - Highest Priority -->
+  <!-- Calculator Pages - Canonical URLs Only (no redirects) -->
+  <!-- High-Priority Calculators -->
   <url>
-    <loc>https://calculatecreator.com/calculators/tiktok-money</loc>
+    <loc>https://calculatecreator.com/calculators/earnings-revenue/money/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/engagement-rate</loc>
+    <loc>https://calculatecreator.com/calculators/engagement-influence/engagement/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/diamond-converter</loc>
+    <loc>https://calculatecreator.com/calculators/coins-gifts-diamonds/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/coins</loc>
+    <loc>https://calculatecreator.com/calculators/engagement-influence/influencer-pricing/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/brand-deal-rate</loc>
+    <loc>https://calculatecreator.com/calculators/earnings-revenue/live-earnings/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/live-gifts</loc>
+    <loc>https://calculatecreator.com/calculators/commerce-ads/rpm-cpm/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/rpm</loc>
+    <loc>https://calculatecreator.com/calculators/commerce-ads/shop-profit/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/shop-commission</loc>
-    <lastmod>2025-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Other High-Priority Calculators -->
-  <url>
-    <loc>https://calculatecreator.com/calculators/tiktok-creator-fund</loc>
+    <loc>https://calculatecreator.com/calculators/earnings-revenue/creator-fund/</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/tiktok-ad-cost</loc>
+    <loc>https://calculatecreator.com/calculators/commerce-ads/ad-cost/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
@@ -202,49 +194,49 @@
 
   <!-- Analytics & Growth Calculators -->
   <url>
-    <loc>https://calculatecreator.com/calculators/follower-growth</loc>
+    <loc>https://calculatecreator.com/calculators/follower-growth/</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/viral-potential</loc>
+    <loc>https://calculatecreator.com/calculators/viral-potential/</loc>
     <lastmod>2025-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/video-performance</loc>
+    <loc>https://calculatecreator.com/calculators/engagement-influence/video-engagement/</loc>
     <lastmod>2025-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/watch-time</loc>
+    <loc>https://calculatecreator.com/calculators/watch-time/</loc>
     <lastmod>2025-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/completion-rate</loc>
+    <loc>https://calculatecreator.com/calculators/completion-rate/</loc>
     <lastmod>2025-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/hashtag-performance</loc>
+    <loc>https://calculatecreator.com/calculators/hashtag-performance/</loc>
     <lastmod>2025-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/posting-time</loc>
+    <loc>https://calculatecreator.com/calculators/posting-time/</loc>
     <lastmod>2025-09-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -252,28 +244,28 @@
 
   <!-- Engagement Metrics -->
   <url>
-    <loc>https://calculatecreator.com/calculators/save-rate</loc>
+    <loc>https://calculatecreator.com/calculators/save-rate/</loc>
     <lastmod>2025-09-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/share-ratio</loc>
+    <loc>https://calculatecreator.com/calculators/share-ratio/</loc>
     <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/profile-visit-rate</loc>
+    <loc>https://calculatecreator.com/calculators/profile-visit-rate/</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/follower-conversion</loc>
+    <loc>https://calculatecreator.com/calculators/follower-conversion/</loc>
     <lastmod>2025-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -281,49 +273,49 @@
 
   <!-- Business & ROI Calculators -->
   <url>
-    <loc>https://calculatecreator.com/calculators/creator-tax</loc>
+    <loc>https://calculatecreator.com/calculators/utility-tools/tax/</loc>
     <lastmod>2025-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/sponsorship-roi</loc>
+    <loc>https://calculatecreator.com/calculators/sponsorship-roi/</loc>
     <lastmod>2025-09-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/content-value</loc>
+    <loc>https://calculatecreator.com/calculators/content-value/</loc>
     <lastmod>2025-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/break-even</loc>
+    <loc>https://calculatecreator.com/calculators/break-even/</loc>
     <lastmod>2025-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/production-cost</loc>
+    <loc>https://calculatecreator.com/calculators/production-cost/</loc>
     <lastmod>2025-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/niche-profitability</loc>
+    <loc>https://calculatecreator.com/calculators/niche-profitability/</loc>
     <lastmod>2025-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/content-calendar-roi</loc>
+    <loc>https://calculatecreator.com/calculators/content-calendar-roi/</loc>
     <lastmod>2025-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -331,49 +323,49 @@
 
   <!-- E-commerce & Monetization -->
   <url>
-    <loc>https://calculatecreator.com/calculators/ad-revenue</loc>
+    <loc>https://calculatecreator.com/calculators/ad-revenue/</loc>
     <lastmod>2025-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/affiliate-commission</loc>
+    <loc>https://calculatecreator.com/calculators/affiliate-commission/</loc>
     <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/conversion-rate</loc>
+    <loc>https://calculatecreator.com/calculators/conversion-rate/</loc>
     <lastmod>2025-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/customer-acquisition-cost</loc>
+    <loc>https://calculatecreator.com/calculators/customer-acquisition-cost/</loc>
     <lastmod>2025-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/lifetime-value</loc>
+    <loc>https://calculatecreator.com/calculators/lifetime-value/</loc>
     <lastmod>2025-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/campaign-roi</loc>
+    <loc>https://calculatecreator.com/calculators/campaign-roi/</loc>
     <lastmod>2025-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/calculators/cpm-cpv</loc>
+    <loc>https://calculatecreator.com/calculators/cpm-cpv/</loc>
     <lastmod>2025-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -381,7 +373,7 @@
 
   <!-- Multi-Platform -->
   <url>
-    <loc>https://calculatecreator.com/calculators/multi-platform-earnings</loc>
+    <loc>https://calculatecreator.com/calculators/multi-platform-earnings/</loc>
     <lastmod>2025-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -389,7 +381,7 @@
 
   <!-- Additional Calculator Pages -->
   <url>
-    <loc>https://calculatecreator.com/calculators/cost-per-result</loc>
+    <loc>https://calculatecreator.com/calculators/cost-per-result/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -397,203 +389,203 @@
 
   <!-- Guide Pages - Medium-High Priority -->
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-creator-fund</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-creator-fund/</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-make-money-on-tiktok</loc>
+    <loc>https://calculatecreator.com/guides/how-to-make-money-on-tiktok/</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/brand-deals</loc>
+    <loc>https://calculatecreator.com/guides/brand-deals/</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-live</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-live/</loc>
     <lastmod>2025-11-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-get-brand-deals</loc>
+    <loc>https://calculatecreator.com/guides/how-to-get-brand-deals/</loc>
     <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-algorithm-optimization</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-algorithm-optimization/</loc>
     <lastmod>2025-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-increase-engagement</loc>
+    <loc>https://calculatecreator.com/guides/how-to-increase-engagement/</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-go-viral</loc>
+    <loc>https://calculatecreator.com/guides/how-to-go-viral/</loc>
     <lastmod>2025-10-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-shop-success-strategies</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-shop-success-strategies/</loc>
     <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/analytics-metrics-master-guide</loc>
+    <loc>https://calculatecreator.com/guides/analytics-metrics-master-guide/</loc>
     <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/monetization-calculator-hub</loc>
+    <loc>https://calculatecreator.com/guides/monetization-calculator-hub/</loc>
     <lastmod>2025-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/influencer-rate-calculator-guide</loc>
+    <loc>https://calculatecreator.com/guides/influencer-rate-calculator-guide/</loc>
     <lastmod>2025-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-price-brand-deals</loc>
+    <loc>https://calculatecreator.com/guides/how-to-price-brand-deals/</loc>
     <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/calculating-true-influence-value</loc>
+    <loc>https://calculatecreator.com/guides/calculating-true-influence-value/</loc>
     <lastmod>2025-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/content-strategy-2025</loc>
+    <loc>https://calculatecreator.com/guides/content-strategy-2025/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/complete-tiktok-diamond-guide</loc>
+    <loc>https://calculatecreator.com/guides/complete-tiktok-diamond-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-rpm-calculator-guide</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-rpm-calculator-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/beauty-creators-earnings</loc>
+    <loc>https://calculatecreator.com/guides/beauty-creators-earnings/</loc>
     <lastmod>2025-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/finance-creators-earnings</loc>
+    <loc>https://calculatecreator.com/guides/finance-creators-earnings/</loc>
     <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/fitness-creators-earnings</loc>
+    <loc>https://calculatecreator.com/guides/fitness-creators-earnings/</loc>
     <lastmod>2025-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/live-gift-earnings-optimization</loc>
+    <loc>https://calculatecreator.com/guides/live-gift-earnings-optimization/</loc>
     <lastmod>2025-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/maximize-creator-fund-rpm</loc>
+    <loc>https://calculatecreator.com/guides/maximize-creator-fund-rpm/</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/multi-platform-attribution-creators</loc>
+    <loc>https://calculatecreator.com/guides/multi-platform-attribution-creators/</loc>
     <lastmod>2025-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/why-tiktok-earnings-low</loc>
+    <loc>https://calculatecreator.com/guides/why-tiktok-earnings-low/</loc>
     <lastmod>2025-08-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/increase-engagement-rate-tiktok</loc>
+    <loc>https://calculatecreator.com/guides/increase-engagement-rate-tiktok/</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-payment-delays</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-payment-delays/</loc>
     <lastmod>2025-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -601,175 +593,175 @@
 
   <!-- Additional Guide Pages -->
   <url>
-    <loc>https://calculatecreator.com/guides/best-shop-niches</loc>
+    <loc>https://calculatecreator.com/guides/best-shop-niches/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/best-times-go-live</loc>
+    <loc>https://calculatecreator.com/guides/best-times-go-live/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/complete-tiktok-calculator-guide</loc>
+    <loc>https://calculatecreator.com/guides/complete-tiktok-calculator-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/creator-tax-strategy</loc>
+    <loc>https://calculatecreator.com/guides/creator-tax-strategy/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-creator-fund-works</loc>
+    <loc>https://calculatecreator.com/guides/how-creator-fund-works/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-much-to-charge-sponsorship</loc>
+    <loc>https://calculatecreator.com/guides/how-much-to-charge-sponsorship/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-become-shop-affiliate</loc>
+    <loc>https://calculatecreator.com/guides/how-to-become-shop-affiliate/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-get-1000-followers-live</loc>
+    <loc>https://calculatecreator.com/guides/how-to-get-1000-followers-live/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-get-brand-deals-complete</loc>
+    <loc>https://calculatecreator.com/guides/how-to-get-brand-deals-complete/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-increase-creator-fund-earnings</loc>
+    <loc>https://calculatecreator.com/guides/how-to-increase-creator-fund-earnings/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-join-creator-fund</loc>
+    <loc>https://calculatecreator.com/guides/how-to-join-creator-fund/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-join-creator-fund-complete</loc>
+    <loc>https://calculatecreator.com/guides/how-to-join-creator-fund-complete/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-make-first-1000-dollars</loc>
+    <loc>https://calculatecreator.com/guides/how-to-make-first-1000-dollars/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-negotiate-brand-deals</loc>
+    <loc>https://calculatecreator.com/guides/how-to-negotiate-brand-deals/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/how-to-qualify-for-tiktok-live</loc>
+    <loc>https://calculatecreator.com/guides/how-to-qualify-for-tiktok-live/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/multi-platform-strategy</loc>
+    <loc>https://calculatecreator.com/guides/multi-platform-strategy/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/niche-selection</loc>
+    <loc>https://calculatecreator.com/guides/niche-selection/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/spark-ads-for-creators</loc>
+    <loc>https://calculatecreator.com/guides/spark-ads-for-creators/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-creator-marketplace</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-creator-marketplace/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-live-earnings-expectations</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-live-earnings-expectations/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-live-earnings-guide</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-live-earnings-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-live-shopping</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-live-shopping/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-monetization-requirements</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-monetization-requirements/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/tiktok-shop-affiliate</loc>
+    <loc>https://calculatecreator.com/guides/tiktok-shop-affiliate/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/guides/why-creator-fund-earnings-dropped</loc>
+    <loc>https://calculatecreator.com/guides/why-creator-fund-earnings-dropped/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -777,49 +769,49 @@
 
   <!-- Comparison Pages -->
   <url>
-    <loc>https://calculatecreator.com/comparisons/tiktok-vs-instagram</loc>
+    <loc>https://calculatecreator.com/comparisons/tiktok-vs-instagram/</loc>
     <lastmod>2025-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals</loc>
+    <loc>https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals/</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings</loc>
+    <loc>https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/</loc>
     <lastmod>2025-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/creator-fund-vs-youtube</loc>
+    <loc>https://calculatecreator.com/comparisons/creator-fund-vs-youtube/</loc>
     <lastmod>2025-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live</loc>
+    <loc>https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon</loc>
+    <loc>https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon/</loc>
     <lastmod>2025-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/comparisons/tiktok-vs-instagram-income</loc>
+    <loc>https://calculatecreator.com/comparisons/tiktok-vs-instagram-income/</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -827,140 +819,140 @@
 
   <!-- News Pages -->
   <url>
-    <loc>https://calculatecreator.com/news/age-specific-privacy-features</loc>
+    <loc>https://calculatecreator.com/news/age-specific-privacy-features/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/ai-outline-smart-split-features</loc>
+    <loc>https://calculatecreator.com/news/ai-outline-smart-split-features/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/algorithm-eight-major-shifts</loc>
+    <loc>https://calculatecreator.com/news/algorithm-eight-major-shifts/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/creator-rewards-20x-earnings</loc>
+    <loc>https://calculatecreator.com/news/creator-rewards-20x-earnings/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/creator-rewards-program-launch</loc>
+    <loc>https://calculatecreator.com/news/creator-rewards-program-launch/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/mention-liked-favorited-videos</loc>
+    <loc>https://calculatecreator.com/news/mention-liked-favorited-videos/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/parent-safety-features-update</loc>
+    <loc>https://calculatecreator.com/news/parent-safety-features-update/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/personalized-ai-avatar-stickers</loc>
+    <loc>https://calculatecreator.com/news/personalized-ai-avatar-stickers/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/playback-settings-update</loc>
+    <loc>https://calculatecreator.com/news/playback-settings-update/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/product-subscriptions-feature</loc>
+    <loc>https://calculatecreator.com/news/product-subscriptions-feature/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/retention-metrics-priority</loc>
+    <loc>https://calculatecreator.com/news/retention-metrics-priority/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/search-volume-increase-40-percent</loc>
+    <loc>https://calculatecreator.com/news/search-volume-increase-40-percent/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-ban-delayed-december-2025</loc>
+    <loc>https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-nationwide-ban-status</loc>
+    <loc>https://calculatecreator.com/news/tiktok-nationwide-ban-status/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-shop-europe-expansion</loc>
+    <loc>https://calculatecreator.com/news/tiktok-shop-europe-expansion/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-shop-gmv-doubling</loc>
+    <loc>https://calculatecreator.com/news/tiktok-shop-gmv-doubling/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-shop-holiday-campaign</loc>
+    <loc>https://calculatecreator.com/news/tiktok-shop-holiday-campaign/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/tiktok-shop-third-fastest-growing</loc>
+    <loc>https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/us-china-deal-tiktok-operational</loc>
+    <loc>https://calculatecreator.com/news/us-china-deal-tiktok-operational/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/news/videos-over-one-minute-monetization</loc>
+    <loc>https://calculatecreator.com/news/videos-over-one-minute-monetization/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -968,14 +960,14 @@
 
   <!-- Advanced Pages -->
   <url>
-    <loc>https://calculatecreator.com/advanced/creator-tax-deductions</loc>
+    <loc>https://calculatecreator.com/advanced/creator-tax-deductions/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/advanced/creator-tax-deductions-guide</loc>
+    <loc>https://calculatecreator.com/advanced/creator-tax-deductions-guide/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -983,35 +975,35 @@
 
   <!-- Data Reference Pages -->
   <url>
-    <loc>https://calculatecreator.com/data/brand-deal-rates-by-followers</loc>
+    <loc>https://calculatecreator.com/data/brand-deal-rates-by-followers/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/data/rpm-rates-by-niche</loc>
+    <loc>https://calculatecreator.com/data/rpm-rates-by-niche/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/data/engagement-rates-by-niche</loc>
+    <loc>https://calculatecreator.com/data/engagement-rates-by-niche/</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/data/brand-deal-rates-by-niche</loc>
+    <loc>https://calculatecreator.com/data/brand-deal-rates-by-niche/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/data/creator-fund-rates-by-country</loc>
+    <loc>https://calculatecreator.com/data/creator-fund-rates-by-country/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1019,35 +1011,35 @@
 
   <!-- Additional Reference Pages -->
   <url>
-    <loc>https://calculatecreator.com/reference/creator-fund-eligible-countries</loc>
+    <loc>https://calculatecreator.com/reference/creator-fund-eligible-countries/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/reference/creator-fund-payment-schedule</loc>
+    <loc>https://calculatecreator.com/reference/creator-fund-payment-schedule/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/reference/live-gifts-value-chart</loc>
+    <loc>https://calculatecreator.com/reference/live-gifts-value-chart/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/reference/shop-commission-rates</loc>
+    <loc>https://calculatecreator.com/reference/shop-commission-rates/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/reference/tiktok-shop-payment-schedule</loc>
+    <loc>https://calculatecreator.com/reference/tiktok-shop-payment-schedule/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -1055,14 +1047,14 @@
 
   <!-- Additional Resources Pages -->
   <url>
-    <loc>https://calculatecreator.com/resources/brand-deal-contract</loc>
+    <loc>https://calculatecreator.com/resources/brand-deal-contract/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <url>
-    <loc>https://calculatecreator.com/resources/brand-deal-contract-template</loc>
+    <loc>https://calculatecreator.com/resources/brand-deal-contract-template/</loc>
     <lastmod>2025-12-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -1070,7 +1062,7 @@
 
   <!-- Compliance -->
   <url>
-    <loc>https://calculatecreator.com/compliance/sponsorship-disclosure</loc>
+    <loc>https://calculatecreator.com/compliance/sponsorship-disclosure/</loc>
     <lastmod>2025-08-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

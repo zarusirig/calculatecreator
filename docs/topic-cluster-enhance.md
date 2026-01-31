@@ -100,7 +100,7 @@ Internal Link Targets:
 
 /calculators/live-gifts
 
-/calculators/shop-commission
+/calculators/commerce-ads/shop-profit/
 
 /calculators/brand-deal-rate
 

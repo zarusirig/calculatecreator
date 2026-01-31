@@ -85,6 +85,15 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
               </div>
             </div>
 
+            {/* Introduction */}
+            <section className="py-8 bg-white -mx-4 px-4 mb-8">
+              <div className="max-w-4xl mx-auto">
+                <p className="text-body-lg text-neutral-700 leading-relaxed">
+                  Understanding TikTok advertising costs and budget allocation is essential for any business or creator looking to amplify their reach through paid promotion on the platform. TikTok Ads offer powerful targeting capabilities and access to over 1 billion monthly active users, but without proper budget planning and ROI calculation, it's easy to overspend without seeing meaningful returns on your investment. The platform uses a dynamic auction-based pricing model where costs vary dramatically based on targeting parameters, campaign objectives, ad format selection, competition levels, and seasonal demand fluctuations. This comprehensive guide covers everything you need to know about TikTok ad budgeting in 2026, from understanding the different pricing models (CPM, CPC, CPV, oCPM) and their typical cost ranges to calculating expected reach and conversions based on your specific budget. You'll learn how to set realistic budget expectations for different campaign objectives, optimize your ad spend allocation across the funnel, measure campaign ROI accurately, and avoid common budgeting mistakes that waste marketing dollars. Whether you're planning your first TikTok ad campaign or scaling existing efforts, these budget strategies will help you maximize every dollar spent.
+                </p>
+              </div>
+            </section>
+
             {/* Table of Contents */}
             <Card className="p-6 mb-8">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -101,7 +110,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
               </div>
             </Card>
 
-            {/* Introduction */}
+            {/* Detailed Introduction */}
             <section id="introduction" className="mb-12">
               <Card className="p-8">
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
@@ -110,7 +119,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    TikTok advertising has become essential for brands looking to reach Gen Z and millennial audiences. Understanding ad costs and budget planning is crucial for running effective campaigns that deliver measurable results.
+                    TikTok advertising has become absolutely essential for brands and businesses looking to reach Gen Z and millennial audiences in today's digital marketing landscape. With over 1 billion monthly active users and unprecedented engagement rates that surpass traditional social platforms, TikTok offers unparalleled opportunities for brand awareness, customer acquisition, and sales conversion. However, understanding ad costs and budget planning is absolutely crucial for running effective campaigns that deliver measurable results and positive return on ad spend. Without proper budget calculations and cost projections, businesses often overspend on ineffective campaigns, waste resources on poorly targeted audiences, or fail to scale successful campaigns appropriately. This comprehensive guide breaks down TikTok's advertising cost structure, pricing models (CPM, CPC, CPV), industry benchmarks by niche and region, and strategic budget allocation frameworks to help marketers maximize their advertising investment and achieve their campaign objectives efficiently in 2026.
                   </p>
 
                   <div className="bg-blue-50 p-6 rounded-lg">
@@ -347,7 +356,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
                     <p className="text-neutral-700 mb-4">
                       Calculate TikTok advertising costs, measure campaign performance, and forecast ROI instantly.
                     </p>
-                    <Link href="/calculators/tiktok-ad-cost">
+                    <Link href="/calculators/tiktok-ad-cost/">
                       <Button variant="primary" size="lg">Use Ad Cost Calculator</Button>
                     </Link>
                   </div>
@@ -556,7 +565,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
             <Card className="p-8 mt-12">
               <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Advertising Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link href="/calculators/tiktok-ad-cost" className="block">
+                <Link href="/calculators/tiktok-ad-cost/" className="block">
                   <div className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <BarChart3 className="w-12 h-12 text-blue-600" />
@@ -566,7 +575,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/campaign-roi" className="block">
+                <Link href="/calculators/campaign-roi/" className="block">
                   <div className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <TrendingUp className="w-12 h-12 text-green-600" />
@@ -576,7 +585,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/cpm-cpv" className="block">
+                <Link href="/calculators/cpm-cpv/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <DollarSign className="w-12 h-12 text-purple-600" />

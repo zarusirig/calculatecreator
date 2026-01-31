@@ -114,22 +114,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-        
-        {/* Preload critical homepage images for LCP optimization */}
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/images/homepage-hero/2026-12-05T15-49-14-244Z_1-1024.avif" 
-          type="image/avif" 
-          fetchPriority="high" 
-        />
-        <link 
-          rel="preload" 
-          as="image" 
-          href="/images/homepage-hero/2026-12-05T15-49-14-244Z_1-1024.webp" 
-          type="image/webp" 
-          fetchPriority="high" 
-        />
 
         {/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X90GQYNEHW" />

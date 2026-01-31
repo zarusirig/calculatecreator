@@ -86,6 +86,15 @@ export default function TikTokRPMCalculatorGuidePage() {
               </div>
             </div>
 
+            {/* Introduction */}
+            <section className="py-8 bg-white -mx-4 px-4 mb-8">
+              <div className="max-w-4xl mx-auto">
+                <p className="text-body-lg text-neutral-700 leading-relaxed">
+                  RPM (Revenue Per Mille) is universally considered one of the most important financial metrics for TikTok creators to track consistently and optimize strategically because it reveals the true earning efficiency and monetary value of your content and audience. Unlike simple vanity metrics such as view counts or follower numbers that look impressive but don't necessarily translate to income, RPM measures exactly how much money you earn for every 1,000 views across all your videos, helping you understand the actual real-world monetary value your content generates. This comprehensive metric encompasses all revenue sources combined including Creator Fund payments, LIVE gift earnings from streaming, brand deal income from sponsorships, TikTok Shop commissions from affiliate sales, and other monetization streams you may have diversified into. By accurately calculating and consistently monitoring your RPM over time, you can identify which specific content types and topics generate the most revenue per view, compare your performance against industry benchmarks and competitors, set realistic income goals based on view projections, and make data-driven strategic decisions about your content strategy and monetization approach. Understanding RPM calculation methodology and optimization techniques is absolutely essential for creators who want to maximize earnings per view and build a sustainable income on TikTok in 2026.
+                </p>
+              </div>
+            </section>
+
             {/* Table of Contents */}
             <Card className="p-6 mb-8">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -102,7 +111,7 @@ export default function TikTokRPMCalculatorGuidePage() {
               </div>
             </Card>
 
-            {/* Introduction */}
+            {/* Detailed Introduction */}
             <section id="introduction" className="mb-12">
               <Card className="p-8">
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
@@ -111,7 +120,7 @@ export default function TikTokRPMCalculatorGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    RPM (Revenue Per Mille) is one of the most important metrics for TikTok creators. It measures how much money you earn for every 1,000 views on your videos, helping you understand the true value of your content and audience.
+                    RPM (Revenue Per Mille) is universally considered one of the most important financial metrics for TikTok creators to track consistently and optimize strategically because it reveals the true earning efficiency and monetary value of your content and audience. Unlike simple vanity metrics such as view counts or follower numbers that look impressive but don't necessarily translate to income, RPM measures exactly how much money you earn for every 1,000 views across all your videos, helping you understand the actual real-world monetary value your content generates and your audience's economic worth. This comprehensive metric encompasses all revenue sources combined including Creator Fund payments, LIVE gift earnings from streaming, brand deal income from sponsorships, TikTok Shop commissions from affiliate sales, and other monetization streams you may have diversified into. By accurately calculating and consistently monitoring your RPM over time, you can identify which specific content types and topics generate the most revenue per view, compare your performance against industry benchmarks and competitors, set realistic income goals based on view projections, and make data-driven strategic decisions about your content strategy and monetization approach. Understanding RPM calculation methodology and optimization techniques is absolutely essential for creators who want to maximize earnings per view, optimize their monetization mix across multiple income streams, and build a sustainable and scalable income on TikTok in 2026 and beyond.
                   </p>
 
                   <div className="bg-green-50 p-6 rounded-lg">
@@ -327,7 +336,7 @@ export default function TikTokRPMCalculatorGuidePage() {
                     <p className="text-neutral-700 mb-4">
                       Calculate your RPM instantly and get personalized insights on your monetization efficiency.
                     </p>
-                    <Link href="/calculators/rpm">
+                    <Link href="/calculators/rpm/">
                       <Button variant="primary" size="lg">Use RPM Calculator</Button>
                     </Link>
                   </div>
@@ -553,7 +562,7 @@ export default function TikTokRPMCalculatorGuidePage() {
             <Card className="p-8 mt-12">
               <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related RPM Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link href="/calculators/rpm" className="block">
+                <Link href="/calculators/rpm/" className="block">
                   <div className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <DollarSign className="w-12 h-12 text-green-600" />
@@ -563,7 +572,7 @@ export default function TikTokRPMCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/tiktok-money" className="block">
+                <Link href="/calculators/tiktok-money/" className="block">
                   <div className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <DollarSign className="w-12 h-12 text-blue-600" />
@@ -573,7 +582,7 @@ export default function TikTokRPMCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/guides/monetization-calculator-hub" className="block">
+                <Link href="/guides/monetization-calculator-hub/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <BarChart3 className="w-12 h-12 text-purple-600" />

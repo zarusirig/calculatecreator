@@ -75,10 +75,10 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     dateModified: '2025-11-13',
     aggregateRating: { ratingValue: 4.7, reviewCount: 1543 },
   },
-  'shop-commission': {
+  'commerce-ads/shop-profit': {
     name: 'TikTok Shop Commission Calculator',
     description: 'Calculate earnings from TikTok Shop affiliate commissions and product sales.',
-    slug: 'shop-commission',
+    slug: 'commerce-ads/shop-profit',
     keywords: ['tiktok shop calculator', 'tiktok affiliate commission', 'shop earnings', 'product commission'],
     datePublished: '2024-02-01',
     dateModified: '2025-11-13',
@@ -183,10 +183,10 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     dateModified: '2025-11-13',
     aggregateRating: { ratingValue: 4.4, reviewCount: 234 },
   },
-  'creator-tax': {
+  'utility-tools/tax': {
     name: 'TikTok Creator Tax Calculator',
     description: 'Estimate tax obligations for TikTok creator income and earnings.',
-    slug: 'creator-tax',
+    slug: 'utility-tools/tax',
     keywords: ['creator tax calculator', 'influencer taxes', 'tiktok income tax'],
     datePublished: '2024-03-25',
     dateModified: '2025-11-13',
@@ -327,6 +327,15 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     dateModified: '2025-11-13',
     aggregateRating: { ratingValue: 4.8, reviewCount: 678 },
   },
+  'diamond-converter': {
+    name: 'TikTok Diamond Converter',
+    description: 'Convert TikTok diamonds to real money and understand the LIVE gift payout structure.',
+    slug: 'diamond-converter',
+    keywords: ['tiktok diamond converter', 'diamonds to money', 'tiktok payout', 'diamond value'],
+    datePublished: '2024-01-25',
+    dateModified: '2025-11-13',
+    aggregateRating: { ratingValue: 4.7, reviewCount: 1089 },
+  },
 };
 
 /**
@@ -340,5 +349,5 @@ export function getCalculatorSchema(slug: string): CalculatorSchemaConfig | unde
  * Get full URL for a calculator
  */
 export function getCalculatorURL(slug: string): string {
-  return `https://calculatecreator.com/calculators/${slug}`;
+  return `https://calculatecreator.com/calculators/${slug}/`;
 }

@@ -70,7 +70,7 @@ export default function TikTokAdCostCalculatorPage() {
             </div>
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Ad Cost Calculator 2026</h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. Updated with 2025 benchmarks and industry insights.
+              Calculate TikTok advertising costs, CPM, CPV rates, and measure campaign ROI for effective TikTok marketing. This calculator helps advertisers plan budgets, estimate reach, and forecast campaign performance using real-time pricing data. Updated with 2026 benchmarks and industry insights to maximize your ad spend efficiency. Estimate total campaign costs based on impressions, views, and target audience size. Compare different bidding strategies and optimize your advertising budget for maximum return on ad spend across all TikTok ad formats.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Fitness Creators TikTok Earnings: FitTok Income Data 2026',
@@ -14,11 +15,17 @@ export const metadata: Metadata = {
 export default function FitnessEarningsPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="Fitness Creators TikTok Earnings: FitTok Income Data 2026"
+        description="How much fitness creators earn on TikTok. Brand deal rates, affiliate income, and monetization strategies."
+        url="https://calculatecreator.com/niches/fitness-earnings/"
+        category="Niche Guides"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/niches">Niches</Link><span>/</span>
+            <Link href="/niches/">Niches</Link><span>/</span>
             <span className="text-neutral-900">Fitness Creators</span>
           </div>
         </div>
@@ -45,6 +52,29 @@ export default function FitnessEarningsPage() {
               <p className="text-body-sm text-neutral-600">Amazon fitness gear, workout programs</p>
               <p className="font-semibold text-tiktok-pink">$500-$2,000/month passive</p>
             </div>
+          </div>
+        </Card>
+
+        {/* Related Content */}
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Content</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/fitness-creators-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Complete Fitness Creator Guide</h4>
+              <p className="text-body-sm text-neutral-700">Detailed strategies for maximizing FitTok income</p>
+            </Link>
+            <Link href="/data/brand-deal-rates-by-niche/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rates by Niche</h4>
+              <p className="text-body-sm text-neutral-700">Compare fitness sponsorship rates across categories</p>
+            </Link>
+            <Link href="/niches/finance-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Finance Creators Earnings</h4>
+              <p className="text-body-sm text-neutral-700">Another high-value niche with premium brand partnerships</p>
+            </Link>
+            <Link href="/calculators/earnings-revenue/money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">TikTok Money Calculator</h4>
+              <p className="text-body-sm text-neutral-700">Calculate your potential earnings as a fitness creator</p>
+            </Link>
           </div>
         </Card>
       </div>

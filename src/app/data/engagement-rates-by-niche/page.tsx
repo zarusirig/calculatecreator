@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { BarChart3, Zap, MessageCircle, Share2, TrendingUp, Clock, Music } from 'lucide-react';
+import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Engagement Rates by Niche 2026: Complete Benchmark Data',
@@ -46,12 +48,18 @@ const engagementByFollowerSize = [
 export default function EngagementRatesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
+      <DatasetSchema
+        title="TikTok Engagement Rates by Niche 2026: Complete Benchmark Data"
+        description="Comprehensive TikTok engagement rate benchmarks across 20+ niches. Compare your performance to industry standards and discover which niches have the highest engagement."
+        url="https://calculatecreator.com/data/engagement-rates-by-niche/"
+        keywords={['tiktok engagement rate by niche', 'tiktok benchmarks', 'engagement rate data', 'tiktok niche statistics']}
+      />
       <div className="container-custom max-w-5xl">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-body-sm mb-6">
           <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/data" className="text-neutral-600 hover:text-primary-600">Data</Link>
+          <Link href="/data/" className="text-neutral-600 hover:text-primary-600">Data</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Engagement Rates by Niche</span>
         </nav>
@@ -422,7 +430,7 @@ export default function EngagementRatesPage() {
               To accurately benchmark your engagement rate, follow these steps:
             </p>
             <ol className="list-decimal list-inside space-y-3 pl-4">
-              <li><strong>Calculate your current rate:</strong> Use our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:underline">Engagement Rate Calculator</Link> with your last 10-20 videos for accuracy.</li>
+              <li><strong>Calculate your current rate:</strong> Use our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:underline">Engagement Rate Calculator</Link> with your last 10-20 videos for accuracy.</li>
               <li><strong>Find your niche average:</strong> Locate your content category in the table above and note the average rate.</li>
               <li><strong>Account for follower size:</strong> Compare to the appropriate tier in the follower breakdown section.</li>
               <li><strong>Set realistic goals:</strong> Aim for the upper range of your niche/size combination within 3-6 months.</li>
@@ -440,23 +448,49 @@ export default function EngagementRatesPage() {
         <Card className="mb-8 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
           <h2 className="text-heading-lg font-semibold mb-4">Related Tools</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/engagement-rate" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <div className="mb-2"><BarChart3 className="w-8 h-8" /></div>
               <h3 className="font-semibold mb-1">Engagement Calculator</h3>
               <p className="text-body-sm opacity-90">Calculate your rate</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <div className="mb-2"><MessageCircle className="w-8 h-8" /></div>
               <h3 className="font-semibold mb-1">Brand Deal Calculator</h3>
               <p className="text-body-sm opacity-90">Price your sponsorships</p>
             </Link>
-            <Link href="/guides/how-to-increase-engagement" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/guides/how-to-increase-engagement/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <div className="mb-2"><TrendingUp className="w-8 h-8" /></div>
               <h3 className="font-semibold mb-1">Increase Engagement Guide</h3>
               <p className="text-body-sm opacity-90">Proven strategies</p>
             </Link>
           </div>
         </Card>
+
+        <FAQSection
+          pageName="TikTok Engagement Rates by Niche"
+          faqs={[
+            {
+              question: 'What is a good engagement rate on TikTok in 2026?',
+              answer: 'A good engagement rate on TikTok is 3-8% across most niches. Excellent performance is 10%+ engagement. The platform average is around 6.2%. Engagement rates naturally decrease as follower counts increase, so nano creators (1K-10K followers) average 8.8%, while mega creators (1M+) average 2.4%. Focus on beating your niche average rather than platform-wide benchmarks.'
+            },
+            {
+              question: 'Which TikTok niche has the highest engagement rate?',
+              answer: 'Dance & Choreography leads with 9.2% average engagement, followed by Pets & Animals (8.9%), and Comedy & Entertainment (8.5%). These niches benefit from highly shareable, visually engaging content. However, lower-engagement niches like Finance (4.8%) often have better monetization potential through brand deals and products despite lower interaction rates.'
+            },
+            {
+              question: 'How do I calculate my TikTok engagement rate?',
+              answer: 'Use this formula: (Likes + Comments + Shares) ÷ Followers × 100 = Engagement Rate %. For accurate assessment, calculate across your last 10-20 videos and average the results. Compare your rate to your niche average (not platform average) to understand your performance. Use our Engagement Rate Calculator for automated tracking.'
+            },
+            {
+              question: 'Why is my engagement rate dropping over time?',
+              answer: 'Engagement rates naturally decline as follower counts increase because not all followers remain active. Other causes include: inconsistent posting schedule, content quality decline, over-promotional content, inactive follower base from viral videos, or algorithm changes. To recover, return to content formats that performed well, improve hooks and watch time, and engage more with comments in the first hour after posting.'
+            },
+            {
+              question: 'Does engagement rate affect brand deal opportunities?',
+              answer: 'Yes, significantly. Brands increasingly prioritize engagement rate over follower count when selecting creators. A creator with 50K followers and 8% engagement often receives better rates than one with 500K followers and 2% engagement. High engagement signals an active, loyal audience that trusts your recommendations, leading to better campaign performance and higher conversion rates for brands.'
+            }
+          ]}
+        />
 
         {/* Methodology Note */}
         <div className="p-4 bg-neutral-100 rounded-lg">

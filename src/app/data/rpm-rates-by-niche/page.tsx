@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { Calendar, BarChart3, DollarSign, Trophy, Sparkles, Laugh } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -101,13 +102,19 @@ export default function RPMRatesByNichePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <DatasetSchema
+        title="TikTok RPM Rates by Niche: 2026 Benchmark Data"
+        description="Complete RPM (Revenue Per Mille) rates for TikTok Creator Fund across 20+ niches. See which content types earn the most per 1,000 views."
+        url="https://calculatecreator.com/data/rpm-rates-by-niche/"
+        keywords={['tiktok rpm rates', 'creator fund rpm by niche', 'tiktok earnings per view', 'rpm benchmark', 'tiktok niche earnings']}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Data</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Data</Link>
             <span>/</span>
             <span className="text-neutral-900">RPM Rates by Niche</span>
           </div>
@@ -473,7 +480,7 @@ export default function RPMRatesByNichePage() {
               Use our Creator Fund calculator to see how your RPM and views translate to monthly income.
             </p>
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition-colors"
             >
               Try Creator Fund Calculator →
@@ -492,11 +499,11 @@ export default function RPMRatesByNichePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><BarChart3 className="w-4 h-4" /> TikTok Creator Fund Complete Guide</h4>
               <p className="text-body-sm text-neutral-700">Everything about how the fund works and payment structure</p>
             </Link>
-            <Link href="/guides/how-to-increase-creator-fund-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-increase-creator-fund-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><Trophy className="w-4 h-4" /> How to Increase Creator Fund Earnings</h4>
               <p className="text-body-sm text-neutral-700">12 proven strategies to boost your RPM and total earnings</p>
             </Link>

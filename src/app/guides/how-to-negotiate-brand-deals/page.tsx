@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { Handshake, BarChart3, DollarSign, Target, XCircle, CheckCircle, AlertTriangle, Calculator, TrendingUp, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -148,12 +149,20 @@ const proTips = [
 export default function NegotiateBrandDealsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
+      <ArticleSchema
+        headline="How to Negotiate TikTok Brand Deals: Expert Pricing Strategies 2026"
+        description="Master brand deal negotiations with proven strategies. Learn how to price your content, counter offers, and secure rates 30-50% higher than initial offers."
+        url="https://calculatecreator.com/guides/how-to-negotiate-brand-deals"
+        datePublished="2025-11-13"
+        dateModified="2026-01-30"
+        keywords={['negotiate brand deals', 'tiktok sponsorship rates', 'influencer negotiation', 'brand deal pricing']}
+      />
       <div className="container-custom max-w-4xl">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-body-sm mb-6">
           <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/guides" className="text-neutral-600 hover:text-primary-600">Guides</Link>
+          <Link href="/guides/" className="text-neutral-600 hover:text-primary-600">Guides</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Negotiate Brand Deals</span>
         </nav>
@@ -181,7 +190,7 @@ export default function NegotiateBrandDealsPage() {
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Why Most Creators Leave Money on the Table</h2>
           <div className="space-y-4 text-body-md text-neutral-700">
             <p>
-              Here is the truth about brand deal negotiations: <strong>most creators accept the first offer they receive.</strong> This single mistake costs creators thousands of dollars every month. Why? Because brands expect you to negotiate. Their initial offer is typically 50-70% of their actual budget—they are testing to see if you know your worth.
+              Here is the truth about brand deal negotiations: <strong>most creators accept the first offer they receive.</strong> This single mistake costs creators thousands of dollars every month, leaving money on the table that brands fully expected to pay. Why does this happen? Because brands expect you to negotiate. Their initial offer is typically 50-70% of their actual budget—they are testing to see if you know your worth and whether you'll advocate for yourself. The difference between creators who earn $500 per deal and those who earn $2,000 for identical work with the same follower count often comes down to one skill: negotiation. Yet most creators are terrified to negotiate, worried they'll lose the deal entirely, offend the brand, or seem difficult to work with, so they eagerly accept whatever is offered just to get a "yes." This comprehensive guide reveals the exact strategies and word-for-word scripts that professional creators use to consistently secure rates 30-50% higher than initial offers, even when brands claim their budget is "fixed" or "non-negotiable." You'll learn how to calculate and justify your true value with data before any negotiation begins so you enter conversations from a position of confidence, master the five-step negotiation framework that protects your worth while building long-term brand relationships instead of burning bridges, discover how to use silence and strategic pauses as powerful negotiation tools that make brands reveal their real budget, understand how to price add-ons like usage rights, Spark Ads access, and exclusivity clauses to maximize your per-deal earnings without just lowering your base rate, learn the psychology of why negotiating actually makes brands respect you more not less, and recognize the red flags that signal when to walk away from deals that don't serve you financially or reputationally. Stop accepting lowball offers out of fear or desperation—this guide gives you the confidence and exact language to negotiate like a professional who knows their worth.
             </p>
             <p>
               In this comprehensive guide, you will learn the exact negotiation strategies used by six-figure creators to secure rates 30-50% higher than initial offers. Whether you are landing your first $200 deal or negotiating a $10,000 campaign, these principles apply.
@@ -227,7 +236,7 @@ export default function NegotiateBrandDealsPage() {
                 <h3 className="font-semibold text-neutral-900 mb-2">Your Key Metrics</h3>
                 <ul className="space-y-2 text-body-sm">
                   <li>• Follower count (and growth rate)</li>
-                  <li>• Engagement rate (use our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:underline">calculator</Link>)</li>
+                  <li>• Engagement rate (use our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:underline">calculator</Link>)</li>
                   <li>• Average views per video</li>
                   <li>• Audience demographics</li>
                   <li>• Past campaign performance</li>
@@ -246,7 +255,7 @@ export default function NegotiateBrandDealsPage() {
             </div>
             <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
               <p className="text-body-sm text-neutral-800">
-                <strong>Calculate your rate:</strong> Use our <Link href="/calculators/brand-deal-rate" className="text-primary-600 hover:underline">Brand Deal Rate Calculator</Link> to get a data-backed starting point for negotiations.
+                <strong>Calculate your rate:</strong> Use our <Link href="/calculators/brand-deal-rate/" className="text-primary-600 hover:underline">Brand Deal Rate Calculator</Link> to get a data-backed starting point for negotiations.
               </p>
             </div>
           </div>
@@ -571,17 +580,17 @@ export default function NegotiateBrandDealsPage() {
         <Card className="mb-8 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
           <h2 className="text-heading-lg font-semibold mb-4">Related Tools & Guides</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <Calculator className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Brand Deal Calculator</h3>
               <p className="text-body-sm opacity-90">Know your rate</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <Target className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Get Brand Deals</h3>
               <p className="text-body-sm opacity-90">Find opportunities</p>
             </Link>
-            <Link href="/resources/brand-deal-contract" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/resources/brand-deal-contract/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <FileText className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Contract Template</h3>
               <p className="text-body-sm opacity-90">Protect yourself</p>

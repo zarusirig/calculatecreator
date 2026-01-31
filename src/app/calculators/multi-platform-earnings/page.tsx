@@ -76,8 +76,7 @@ export default function MultiPlatformEarningsCalculatorPage() {
             Multi-Platform Earnings Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Compare earning potential across TikTok, YouTube, and Instagram.
-            Identify which platform to prioritize for maximum revenue.
+            Compare earning potential across TikTok, YouTube, and Instagram using platform-specific RPM rates from $0.02-0.04 for TikTok to $1.50-8 for YouTube. Calculate combined monthly revenue, identify which platform delivers the highest ROI for your niche, and develop a strategic multi-platform approach that maximizes total income while diversifying risk across social media channels.
           </p>
         </div>
 

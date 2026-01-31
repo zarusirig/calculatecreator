@@ -87,10 +87,10 @@ export default function CreatorFundCalculatorPage() {
               TikTok Creator Fund Calculator
             </h1>
             <p className="text-body-lg text-white/90 max-w-2xl mx-auto mb-3 animate-slide-up stagger-1">
-              Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche.
+              Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche. The Creator Fund typically pays $0.02-$0.04 per 1,000 views, with rates varying by engagement quality and audience location. Whether you're just qualifying for the fund or already earning, use this calculator to project your income and understand which factors impact your RPM most.
             </p>
             <p className="text-body-md text-white/80 max-w-2xl mx-auto animate-slide-up stagger-2">
-              Want to understand <Link href="/guides/tiktok-creator-fund" className="text-accent-400 hover:text-accent-300 underline font-medium transition-colors">how the Creator Fund works</Link>? Or explore <Link href="/guides/how-to-make-money-on-tiktok" className="text-secondary-400 hover:text-secondary-300 underline font-medium transition-colors">all TikTok monetization methods</Link> including higher-paying alternatives.
+              Want to understand <Link href="/guides/tiktok-creator-fund/" className="text-accent-400 hover:text-accent-300 underline font-medium transition-colors">how the Creator Fund works</Link>? Or explore <Link href="/guides/how-to-make-money-on-tiktok/" className="text-secondary-400 hover:text-secondary-300 underline font-medium transition-colors">all TikTok monetization methods</Link> including higher-paying alternatives.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function CreatorFundCalculatorPage() {
                   Creator Fund Eligibility
                 </h2>
                 <p className="text-body-md text-neutral-700 mb-4">
-                  To qualify for the TikTok Creator Fund, you must meet these requirements. Learn the step-by-step <Link href="/guides/how-to-join-creator-fund" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">application process</Link>:
+                  To qualify for the TikTok Creator Fund, you must meet these requirements. Learn the step-by-step <Link href="/guides/how-to-join-creator-fund/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">application process</Link>:
                 </p>
                 <div className="space-y-3">
                   {[
@@ -157,7 +157,7 @@ export default function CreatorFundCalculatorPage() {
                   How to Increase Creator Fund Earnings
                 </h2>
                 <p className="text-body-md text-neutral-700 mb-4">
-                  Learn our <Link href="/guides/how-to-increase-creator-fund-earnings" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">proven strategies to boost your RPM</Link> and <Link href="/guides/maximize-creator-fund-rpm" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">maximize your Creator Fund income</Link>:
+                  Learn our <Link href="/guides/how-to-increase-creator-fund-earnings/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">proven strategies to boost your RPM</Link> and <Link href="/guides/maximize-creator-fund-rpm/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">maximize your Creator Fund income</Link>:
                 </p>
                 <div className="space-y-3">
                   {[
@@ -185,7 +185,7 @@ export default function CreatorFundCalculatorPage() {
                   Creator Fund vs. Other Income Streams
                 </h2>
                 <p className="text-body-md text-neutral-700 mb-4">
-                  The Creator Fund typically pays the <strong>least</strong> of all TikTok monetization methods. Compare with <Link href="/comparisons/creator-fund-vs-brand-deals" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">brand deals</Link> to see which income stream to prioritize:
+                  The Creator Fund typically pays the <strong>least</strong> of all TikTok monetization methods. Compare with <Link href="/comparisons/creator-fund-vs-brand-deals/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">brand deals</Link> to see which income stream to prioritize:
                 </p>
                 <div className="space-y-3 text-body-sm">
                   <div className="p-3 bg-neutral-50 rounded-lg">
@@ -197,7 +197,7 @@ export default function CreatorFundCalculatorPage() {
                     </div>
                     <p className="text-neutral-600">Passive, but lowest paying</p>
                   </div>
-                  <Link href="/guides/brand-deals" className="block">
+                  <Link href="/guides/brand-deals/" className="block">
                     <div className="p-3 bg-accent-50 border border-accent-200 rounded-lg hover:shadow-md transition-shadow">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-semibold text-neutral-900 flex items-center gap-2">
@@ -208,7 +208,7 @@ export default function CreatorFundCalculatorPage() {
                       <p className="text-neutral-600">Highest earnings for most creators</p>
                     </div>
                   </Link>
-                  <Link href="/guides/tiktok-live" className="block">
+                  <Link href="/guides/tiktok-live/" className="block">
                     <div className="p-3 bg-neutral-50 hover:bg-secondary-50 rounded-lg hover:shadow-md transition-shadow">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-semibold text-neutral-900 flex items-center gap-2">
@@ -219,7 +219,7 @@ export default function CreatorFundCalculatorPage() {
                       <p className="text-neutral-600">Depends on audience generosity</p>
                     </div>
                   </Link>
-                  <Link href="/guides/tiktok-shop-affiliate" className="block">
+                  <Link href="/guides/tiktok-shop-affiliate/" className="block">
                     <div className="p-3 bg-neutral-50 hover:bg-primary-50 rounded-lg hover:shadow-md transition-shadow">
                       <div className="flex items-center justify-between mb-1">
                         <span className="font-semibold text-neutral-900 flex items-center gap-2">

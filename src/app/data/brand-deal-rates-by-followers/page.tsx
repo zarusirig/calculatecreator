@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { Calendar, Briefcase, DollarSign, BarChart3, Target, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -143,13 +144,19 @@ export default function BrandDealRatesByFollowersPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <DatasetSchema
+        title="TikTok Brand Deal Rates by Follower Count: 2026 Pricing Guide"
+        description="Complete pricing benchmarks for TikTok brand partnerships by follower tier. See what nano, micro, mid-tier, and macro influencers charge per post."
+        url="https://calculatecreator.com/data/brand-deal-rates-by-followers/"
+        keywords={['tiktok brand deal rates', 'influencer pricing', 'sponsorship rates by followers', 'tiktok partnership rates', 'how much to charge brands']}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Data</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Data</Link>
             <span>/</span>
             <span className="text-neutral-900">Brand Deal Rates by Followers</span>
           </div>
@@ -566,7 +573,7 @@ export default function BrandDealRatesByFollowersPage() {
               Use our free calculator to determine your rate based on followers, engagement, and niche.
             </p>
             <Link
-              href="/calculators/brand-deal-rate"
+              href="/calculators/brand-deal-rate/"
               className="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-600 transition-colors"
             >
               Calculate Your Rate →
@@ -585,11 +592,11 @@ export default function BrandDealRatesByFollowersPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><Briefcase className="w-4 h-4" /> How to Get Brand Deals on TikTok</h4>
               <p className="text-body-sm text-neutral-700">4 methods to land sponsorships and media kit templates</p>
             </Link>
-            <Link href="/guides/brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><BarChart3 className="w-4 h-4" /> TikTok Brand Deals Complete Guide</h4>
               <p className="text-body-sm text-neutral-700">Everything about brand partnerships and negotiation strategies</p>
             </Link>

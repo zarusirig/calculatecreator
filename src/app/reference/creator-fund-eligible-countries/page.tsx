@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Globe, ClipboardList } from 'lucide-react';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Fund Eligible Countries 2026: Complete List',
@@ -244,13 +245,21 @@ export default function CreatorFundEligibleCountriesPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok Creator Fund Eligible Countries 2026: Complete List"
+        description="Complete list of TikTok Creator Fund eligible countries with requirements, payment methods, and alternatives for ineligible regions."
+        url="https://calculatecreator.com/reference/creator-fund-eligible-countries/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Fund Eligible Countries</span>
           </div>
@@ -465,15 +474,15 @@ export default function CreatorFundEligibleCountriesPage() {
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">If your country IS eligible:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li>Learn <Link href="/guides/how-to-join-creator-fund-complete" className="text-blue-600 hover:underline">How to Join TikTok Creator Fund</Link> (step-by-step guide)</li>
-                <li>Calculate potential earnings with <Link href="/calculators/tiktok-creator-fund" className="text-blue-600 hover:underline">Creator Fund Calculator</Link></li>
+                <li>Learn <Link href="/guides/how-to-join-creator-fund-complete/" className="text-blue-600 hover:underline">How to Join TikTok Creator Fund</Link> (step-by-step guide)</li>
+                <li>Calculate potential earnings with <Link href="/calculators/tiktok-creator-fund/" className="text-blue-600 hover:underline">Creator Fund Calculator</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">If your country is NOT eligible yet:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li>Focus on <Link href="/guides/how-to-get-brand-deals" className="text-blue-600 hover:underline">Brand Deals</Link> (available globally, pays better)</li>
-                <li>Explore <Link href="/guides/tiktok-live-earnings-expectations" className="text-blue-600 hover:underline">TikTok LIVE Gifts</Link> monetization</li>
+                <li>Focus on <Link href="/guides/how-to-get-brand-deals/" className="text-blue-600 hover:underline">Brand Deals</Link> (available globally, pays better)</li>
+                <li>Explore <Link href="/guides/tiktok-live-earnings-expectations/" className="text-blue-600 hover:underline">TikTok LIVE Gifts</Link> monetization</li>
                 <li>Prepare for Creator Fund by meeting requirements before launch</li>
               </ul>
             </div>
@@ -484,19 +493,19 @@ export default function CreatorFundEligibleCountriesPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Creator Fund Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate your potential earnings</p>
             </Link>
-            <Link href="/guides/how-to-join-creator-fund-complete" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Join Creator Fund</h3>
               <p className="text-body-sm text-neutral-600">Complete application guide</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Get Brand Deals</h3>
               <p className="text-body-sm text-neutral-600">Alternative monetization strategy</p>
             </Link>
-            <Link href="/guides/tiktok-live-earnings-expectations" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/tiktok-live-earnings-expectations/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok LIVE Earnings Guide</h3>
               <p className="text-body-sm text-neutral-600">Another monetization option</p>
             </Link>

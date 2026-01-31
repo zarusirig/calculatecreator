@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { CheckCircle, XCircle, Lightbulb, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,13 +14,47 @@ export const metadata: Metadata = {
 };
 
 export default function TikTokLiveVsYouTubeLivePage() {
+  const faqs = [
+    {
+      question: 'Can I stream on both platforms simultaneously?',
+      answer: 'Yes! Many streamers use multi-streaming tools like Restream or StreamYard to broadcast to TikTok and YouTube simultaneously, maximizing audience and donations.',
+    },
+    {
+      question: 'Which platform has more generous viewers?',
+      answer: 'TikTok\'s younger audience (13-24) sends more frequent smaller gifts. YouTube\'s older audience (25-45+) sends fewer but larger Super Chats. Both can be lucrative depending on your niche.',
+    },
+    {
+      question: 'How do payout thresholds compare?',
+      answer: 'TikTok requires $50 minimum withdrawal (10,000 Diamonds). YouTube requires $100 minimum. However, TikTok offers on-demand withdrawals while YouTube pays monthly.',
+    },
+    {
+      question: 'What about viewer retention?',
+      answer: 'TikTok viewers typically stay 5-15 minutes (platform encourages hopping between streams). YouTube viewers stay 30-90+ minutes, making longer monetized streams more viable.',
+    },
+    {
+      question: 'Can I repurpose LIVE streams?',
+      answer: 'YouTube LIVE VODs remain on your channel earning ad revenue indefinitely. TikTok LIVE streams disappear after ending (can download within 30 days). YouTube has major advantage for evergreen content.',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok LIVE vs YouTube LIVE Earnings: 2026 Comparison Guide"
+        description="Compare TikTok LIVE gifts vs YouTube Super Chat earnings, requirements, payment structures, and which platform pays live streamers more."
+        url="https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok LIVE Gifts"
+        subjectB="YouTube LIVE Super Chat"
+        faqs={faqs}
+        readTime="9 min"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/data">Data & Insights</Link><span>/</span>
+            <Link href="/data/">Data & Insights</Link><span>/</span>
             <span className="text-neutral-900">TikTok LIVE vs YouTube LIVE</span>
           </div>
         </div>
@@ -458,15 +493,15 @@ export default function TikTokLiveVsYouTubeLivePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/guides/tiktok-live-earnings-guide" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-live-earnings-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok LIVE Earnings Guide</h4>
               <p className="text-body-sm text-neutral-700">Complete monetization breakdown</p>
             </Link>
-            <Link href="/calculators/live-gifts" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/live-gifts/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">LIVE Gifts Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate your streaming earnings</p>
             </Link>
-            <Link href="/comparisons/creator-fund-vs-youtube" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/comparisons/creator-fund-vs-youtube/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund vs YouTube</h4>
               <p className="text-body-sm text-neutral-700">Compare regular content earnings</p>
             </Link>

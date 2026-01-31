@@ -76,8 +76,7 @@ export default function BreakEvenCalculatorPage() {
             TikTok Break Even Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate how many sales you need to break even on your ad spend or
-            product launch. Essential for campaign planning.
+            Calculate how many sales you need to break even on your ad spend or product launch. This calculator uses your contribution margin per unit and total fixed costs to determine the exact number of units required for profitability. Essential for campaign planning, product launches, and budget decisions. Understand your profitability threshold before investing in paid advertising.
           </p>
         </div>
 

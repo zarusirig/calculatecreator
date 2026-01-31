@@ -66,7 +66,7 @@ export default function CalculatingTrueInfluenceValuePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Calculating True Influence Value</span>
           </div>
@@ -114,9 +114,7 @@ export default function CalculatingTrueInfluenceValuePage() {
               Beyond Follower Count: What Really Matters
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Two creators with identical follower counts can have vastly different earning potential and influence.
-              The difference lies in factors that brands actually care about: engagement, audience quality, niche authority,
-              and conversion potential.
+              Two creators with identical follower counts can have vastly different earning potential and influence, sometimes differing by 10x or more in their ability to command brand deal rates and convert audiences into customers. The critical difference lies in factors that sophisticated brands actually evaluate when determining partnership value including engagement rate quality, audience demographics and purchasing power, established niche authority and expertise, historical conversion potential from previous campaigns, content production quality, community loyalty signals, and authentic brand alignment capabilities. Understanding your true influence value through this multi-factor framework is absolutely essential for negotiating fair brand deals that reflect your actual impact, building sustainable creator income streams that scale with your expertise rather than just follower count, and avoiding the tragically common mistake of underpricing yourself by 40-60% simply because you only looked at follower-based benchmarks. This comprehensive guide breaks down the seven critical factors that determine your real worth beyond simple follower metrics, provides actionable formulas and calculators to quantify your influence score on a 0-2000 point scale, explains exactly how to present this data in media kits and negotiations, and shows you proven negotiation frameworks for leveraging your influence score to justify premium rates even against creators with larger but less engaged audiences. Whether you currently have 5,000 or 500,000 followers, knowing and articulating your true value transforms you from someone nervously accepting whatever brands offer to a confident professional who commands premium rates backed by concrete performance data.
             </p>
             <p className="text-body-md text-neutral-700 mb-4">
               Understanding your true influence value helps you:
@@ -139,10 +137,10 @@ export default function CalculatingTrueInfluenceValuePage() {
             Use these calculators to assess the components of your influence value.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/engagement-rate" className="btn btn-primary">
+            <Link href="/calculators/engagement-rate/" className="btn btn-primary">
               Engagement Rate →
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="btn btn-secondary">
+            <Link href="/calculators/brand-deal-rate/" className="btn btn-secondary">
               Brand Deal Rate Calculator
             </Link>
           </div>
@@ -183,7 +181,7 @@ export default function CalculatingTrueInfluenceValuePage() {
                   <span className="font-semibold text-red-600">Multiplier: 0.7x</span>
                 </div>
               </div>
-              <Link href="/calculators/engagement-rate" className="text-body-sm text-purple-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/engagement-rate/" className="text-body-sm text-purple-600 hover:underline inline-block mt-3">
                 Calculate Your Engagement Rate →
               </Link>
             </div>
@@ -315,7 +313,7 @@ export default function CalculatingTrueInfluenceValuePage() {
                   <li>Direct product inquiries or sales from videos</li>
                 </ul>
               </div>
-              <Link href="/calculators/conversion-rate" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/conversion-rate/" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
                 Calculate Conversion Rate →
               </Link>
             </div>
@@ -470,19 +468,19 @@ export default function CalculatingTrueInfluenceValuePage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate fair rates based on your metrics</p>
             </Link>
-            <Link href="/calculators/content-value" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/content-value/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Content Value Calculator</h3>
               <p className="text-body-sm text-neutral-600">Determine individual post worth</p>
             </Link>
-            <Link href="/calculators/engagement-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Engagement Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Measure audience connection strength</p>
             </Link>
-            <Link href="/calculators/conversion-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/conversion-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Conversion Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Track action-driving ability</p>
             </Link>

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
+import { FAQSection } from '@/components/calculator/FAQSection';
 import { CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,14 +15,44 @@ export const metadata: Metadata = {
 };
 
 export default function TikTokVsInstagramIncomePage() {
+  const faqs = [
+    {
+      question: 'Which platform pays more for creators?',
+      answer: 'Instagram generally pays 15-30% more than TikTok for similar follower counts, primarily due to higher brand deal rates and better bonus programs. However, TikTok is easier to grow on.',
+    },
+    {
+      question: 'Should I focus on TikTok or Instagram?',
+      answer: 'Start with TikTok for faster growth (easier to go viral), then expand to Instagram once you have a content library. Most successful creators use both platforms.',
+    },
+    {
+      question: 'Which has better brand deal rates?',
+      answer: 'Instagram pays 10-20% more per follower for brand deals, but TikTok\'s easier growth can lead to more total deals over time.',
+    },
+    {
+      question: 'Can I post the same content on both platforms?',
+      answer: 'Yes! Successful creators repurpose TikToks to Instagram Reels (adjusting aspect ratio if needed). This maximizes reach and earnings.',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok vs Instagram Creator Income: Which Pays More? 2026"
+        description="Complete comparison of creator earnings on TikTok vs Instagram. Monetization options, brand deal rates, and which platform is better for your niche."
+        url="https://calculatecreator.com/comparisons/tiktok-vs-instagram-income/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok Creator Income"
+        subjectB="Instagram Creator Income"
+        faqs={faqs}
+        readTime="10 min"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/data">Data & Insights</Link>
+            <Link href="/data/">Data & Insights</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok vs Instagram Income</span>
           </div>
@@ -524,14 +556,14 @@ export default function TikTokVsInstagramIncomePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <div className="flex items-center space-x-2 mb-1">
                 <BarChart3 className="w-5 h-5 text-primary-600" />
                 <h4 className="font-semibold text-neutral-900">TikTok Earnings Calculator</h4>
               </div>
               <p className="text-body-sm text-neutral-700">Project your TikTok income potential</p>
             </Link>
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <div className="flex items-center space-x-2 mb-1">
                 <BarChart3 className="w-5 h-5 text-primary-600" />
                 <h4 className="font-semibold text-neutral-900">TikTok Monetization Guide</h4>
@@ -540,6 +572,11 @@ export default function TikTokVsInstagramIncomePage() {
             </Link>
           </div>
         </Card>
+
+        <FAQSection
+          pageName="TikTok vs Instagram Income"
+          faqs={faqs}
+        />
       </div>
     </div>
   );

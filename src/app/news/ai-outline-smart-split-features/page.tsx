@@ -39,7 +39,7 @@ export default function AIOutlineSmartSplitPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">AI Outline & Smart Split</span>
           </div>
@@ -345,14 +345,14 @@ export default function AIOutlineSmartSplitPage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/calculators/tiktok-money"
+              href="/calculators/tiktok-money/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">TikTok Money Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Creator Rewards Calculator</span>
@@ -751,6 +751,20 @@ export default function AIOutlineSmartSplitPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/personalized-ai-avatar-stickers/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">Personalized AI Avatar Stickers Released</h4>
+              <p className="text-body-xs text-neutral-600">Create custom stickers based on your likeness with AI-powered avatar generation</p>
+            </Link>
+            <Link href="/news/playback-settings-update/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">New Playback Settings Introduced</h4>
+              <p className="text-body-xs text-neutral-600">Disable HDR videos and display object tags for enhanced viewing control</p>
+            </Link>
           </div>
         </Card>
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { AlertTriangle } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Brand Deal Contract Template for TikTok Creators 2026',
@@ -24,11 +25,17 @@ export default function BrandDealContractPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="Brand Deal Contract Template for TikTok Creators 2026"
+        description="Free brand partnership contract template. Essential clauses, payment terms, usage rights, and legal protection for creators."
+        url="https://calculatecreator.com/resources/brand-deal-contract/"
+        category="Resources"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Brand Deal Contract</span>
           </div>
         </div>
@@ -700,11 +707,11 @@ export default function BrandDealContractPage() {
         <Card>
           <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="space-y-3">
-            <Link href="/guides/how-to-get-brand-deals-complete" className="block p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="block p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
               <h3 className="text-body-md font-semibold text-primary-700 mb-1">How to Get Brand Deals Guide →</h3>
               <p className="text-body-sm text-neutral-600">Complete step-by-step guide to landing your first (and 100th) brand partnership</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="block p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="block p-4 bg-primary-50 rounded-lg hover:bg-primary-100 transition-colors">
               <h3 className="text-body-md font-semibold text-primary-700 mb-1">Brand Deal Rate Calculator →</h3>
               <p className="text-body-sm text-neutral-600">Calculate fair pricing for your brand partnerships based on followers and engagement</p>
             </Link>

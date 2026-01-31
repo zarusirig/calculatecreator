@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { ShoppingBag, Users, Cake, CheckCircle, Eye, Video, Globe, Package, Sparkles, Scale, BookOpen, Radio, Music, CheckSquare, XCircle, Calculator, Target, BarChart3 } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
+import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Affiliate Program Guide 2026: Complete Earnings Strategy',
@@ -33,13 +35,22 @@ const earningsTiers = [
 
 export default function TikTokShopAffiliatePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
+    <>
+      <ArticleSchema
+        headline="TikTok Shop Affiliate Program Guide: Complete Earnings Strategy"
+        description="Master TikTok Shop affiliate marketing with our comprehensive guide. Learn commission rates, best-selling categories, content strategies, and how to earn $500-$5,000+/month."
+        url="https://calculatecreator.com/guides/tiktok-shop-affiliate"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
+        keywords={['tiktok shop affiliate', 'tiktok shop commission', 'affiliate marketing tiktok', 'tiktok shop earnings']}
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
       <div className="container-custom max-w-4xl">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-body-sm mb-6">
           <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/guides" className="text-neutral-600 hover:text-primary-600">Guides</Link>
+          <Link href="/guides/" className="text-neutral-600 hover:text-primary-600">Guides</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">TikTok Shop Affiliate</span>
         </nav>
@@ -79,6 +90,15 @@ export default function TikTokShopAffiliatePage() {
           </div>
         </Card>
 
+        {/* Introduction */}
+        <section className="py-8">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-body-lg text-neutral-700 leading-relaxed">
+              TikTok Shop Affiliate marketing is a revenue-sharing program where creators earn commissions by promoting products from the TikTok Shop marketplace, representing one of the most accessible monetization paths with low barriers to entry and high earning potential for creators at any follower level. Unlike traditional affiliate programs that redirect users to external sites and lose significant conversions in the process, TikTok Shop's seamless in-app purchasing experience keeps users engaged within the platform, resulting in conversion rates 2-3 times higher than conventional e-commerce platforms like Amazon or Shopify. When you join as an affiliate, you gain access to thousands of vetted products across categories like beauty, fashion, home goods, and electronics, earning commissions typically ranging from 5-20% depending on product category and seller promotional terms that can boost your earnings during special campaigns. The program has exploded in popularity because it solves three critical creator pain points simultaneously: viewers never leave TikTok to complete purchases which dramatically improves conversion rates, the algorithm actively promotes content featuring Shop products to boost engagement and reach, and creators can monetize through both organic viral videos and high-converting LIVE shopping sessions where real-time demonstrations drive impulse purchases.
+            </p>
+          </div>
+        </section>
+
         {/* What is TikTok Shop Affiliate */}
         <Card className="mb-8">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
@@ -86,13 +106,7 @@ export default function TikTokShopAffiliatePage() {
           </h2>
           <div className="space-y-4 text-body-md text-neutral-700">
             <p>
-              TikTok Shop Affiliate is a revenue-sharing program where creators earn commissions by promoting products from the TikTok Shop marketplace. Unlike traditional affiliate programs that redirect users to external sites, TikTok Shop allows seamless in-app purchases, dramatically increasing conversion rates.
-            </p>
-            <p>
-              When you join as an affiliate, you can add product links to your videos, LIVE streams, and profile showcase. Every time a viewer purchases through your link, you earn a percentage of the sale—typically 5-20% depending on the product category and seller terms.
-            </p>
-            <p>
-              The program has exploded in popularity because of its unique advantages: viewers never leave the TikTok app to purchase, the algorithm favors content with Shop products, and creators can earn from both organic content and LIVE shopping events.
+              TikTok Shop Affiliate is a revenue-sharing program where creators earn commissions by promoting products from the TikTok Shop marketplace, representing one of the most accessible monetization paths with low barriers to entry and high earning potential. Unlike traditional affiliate programs that redirect users to external sites and lose conversions in the process, TikTok Shop's seamless in-app purchasing experience keeps users engaged within the platform, resulting in conversion rates 2-3 times higher than conventional e-commerce. When you join as an affiliate, you gain access to thousands of vetted products across categories like beauty, fashion, home goods, and electronics, earning commissions typically ranging from 5-20% depending on product category and seller promotional terms. The program has exploded in popularity because it solves three critical creator pain points simultaneously: viewers never leave TikTok to complete purchases, the algorithm actively promotes content featuring Shop products to boost engagement, and creators can monetize through both organic viral videos and high-converting LIVE shopping sessions where real-time demonstrations drive impulse purchases.
             </p>
           </div>
         </Card>
@@ -383,23 +397,49 @@ export default function TikTokShopAffiliatePage() {
         <Card className="mb-8 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
           <h2 className="text-heading-lg font-semibold mb-4">Related Tools & Guides</h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/shop-commission" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <Calculator className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Shop Commission Calculator</h3>
               <p className="text-body-sm opacity-90">Estimate your earnings</p>
             </Link>
-            <Link href="/guides/best-shop-niches" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/guides/best-shop-niches/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <Target className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Best Shop Niches</h3>
               <p className="text-body-sm opacity-90">Top converting categories</p>
             </Link>
-            <Link href="/reference/shop-commission-rates" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
+            <Link href="/reference/shop-commission-rates/" className="p-4 bg-white/20 rounded-lg hover:bg-white/30 transition-colors">
               <BarChart3 className="w-8 h-8 mb-2" />
               <h3 className="font-semibold mb-1">Commission Rate Chart</h3>
               <p className="text-body-sm opacity-90">Full rate breakdown</p>
             </Link>
           </div>
         </Card>
+
+        <FAQSection
+          pageName="TikTok Shop Affiliate Program"
+          faqs={[
+            {
+              question: 'How much can I realistically earn as a TikTok Shop affiliate?',
+              answer: 'Earnings vary widely by follower count, niche, and effort. Creators with 10K-50K followers typically earn $300-$1,500/month. Those with 50K-100K followers earn $1,500-$5,000/month. Mega creators (500K+) can earn $20,000+/month. Beauty and fashion niches with high commission rates (8-20%) and engaged audiences perform best. Success requires consistent product promotion and authentic recommendations.'
+            },
+            {
+              question: 'What are the requirements to join TikTok Shop affiliate program?',
+              answer: 'You need 1,000+ followers (5,000 for US creators), be 18+ years old, have an account in good standing with no violations, posted at least one video in the last 28 days, have at least 50 video views in the last 28 days, and be located in an eligible country (US, UK, Indonesia, Malaysia, Philippines, Singapore, Thailand, Vietnam).'
+            },
+            {
+              question: 'Which product categories have the best commission rates?',
+              answer: 'Beauty & Skincare leads with 10-20% commissions, followed by Fashion & Accessories (10-15%), and Health & Wellness (8-15%). Electronics typically offer lower rates (2-8%) but have higher order values. Focus on categories with both good commission rates AND products your audience actually needs to maximize conversions and earnings.'
+            },
+            {
+              question: 'How do I get products to promote as an affiliate?',
+              answer: 'Browse the TikTok Shop product marketplace in your Creator Tools, request free samples from sellers (many offer this to affiliates), join the TikTok Shop Affiliate program to access product catalogs, and prioritize products with 4.5+ star ratings and good seller reviews. Always test products before promoting to maintain audience trust and credibility.'
+            },
+            {
+              question: 'When and how do I get paid for TikTok Shop affiliate commissions?',
+              answer: 'Commissions have a 7-15 day hold period after sale completion (for potential returns/refunds). After the hold period, earnings become available for withdrawal. Payments process weekly with a $10 minimum withdrawal. You can withdraw via bank transfer or PayPal with 3-7 business day processing time. There are no withdrawal fees.'
+            }
+          ]}
+        />
 
         {/* Disclaimer */}
         <div className="p-4 bg-neutral-100 rounded-lg text-center">
@@ -411,5 +451,6 @@ export default function TikTokShopAffiliatePage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

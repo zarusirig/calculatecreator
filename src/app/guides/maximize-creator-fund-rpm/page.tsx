@@ -69,7 +69,7 @@ export default function MaximizeCreatorFundRPMPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Maximize Creator Fund RPM</span>
           </div>
@@ -117,8 +117,7 @@ export default function MaximizeCreatorFundRPMPage() {
               What Affects Creator Fund RPM
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              RPM (Revenue Per Mille/1000 views) is the amount you earn per 1,000 video views. It varies dramatically
-              based on multiple factors. Understanding these factors helps you optimize for higher earnings.
+              RPM (Revenue Per Mille, or revenue per 1,000 views) is the critical metric that determines how much you earn per 1,000 video views from the TikTok Creator Fund, yet most creators have no idea what their RPM is or how to improve it. This rate varies dramatically based on multiple controllable and uncontrollable factors, ranging from $0.02 for low-performing content in oversaturated niches to $0.15+ for premium optimized videos in high-value categories. Understanding the factors that influence your RPM is the difference between earning $20 versus $150 per million views—a staggering 650% earnings gap from the exact same view count, same audience size, and same effort. Many creators assume their RPM is fixed and determined entirely by TikTok's algorithm, but the reality is that strategic creators can systematically increase their RPM by 50-300% through tactical content decisions, audience targeting, and optimization techniques. Your niche selection alone can triple your earnings per view, while factors like audience demographics, geographic targeting, video length, completion rates, posting times, and content quality all play crucial roles in determining your final payout rates. This comprehensive guide breaks down 12 proven strategies to systematically increase your Creator Fund RPM through actionable tactics you can implement immediately, complete with real-world examples showing creators who boosted their RPM from $0.03 to $0.08 or higher within 60-90 days through tactical optimizations without changing their follower count. Whether you're currently earning on the low end at $0.02 and frustrated with minimal payouts, sitting at average $0.04 and wanting to break through to the next level, or already performing well but looking to push into the premium $0.08-$0.12 range, these data-driven strategies will help you maximize earnings from every single view your content receives by optimizing the variables that actually matter to TikTok's payment algorithm.
             </p>
             <div className="p-4 bg-blue-50 rounded-lg">
               <p className="text-body-md font-semibold text-neutral-900 mb-2">The RPM Formula:</p>
@@ -140,10 +139,10 @@ export default function MaximizeCreatorFundRPMPage() {
             Track your RPM to measure optimization progress.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/rpm" className="btn btn-primary">
+            <Link href="/calculators/rpm/" className="btn btn-primary">
               RPM Calculator →
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="btn btn-secondary">
+            <Link href="/calculators/tiktok-creator-fund/" className="btn btn-secondary">
               Creator Fund Calculator
             </Link>
           </div>
@@ -244,7 +243,7 @@ export default function MaximizeCreatorFundRPMPage() {
                   </ul>
                 </div>
               </div>
-              <Link href="/calculators/completion-rate" className="text-body-sm text-green-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/completion-rate/" className="text-body-sm text-green-600 hover:underline inline-block mt-3">
                 Calculate Your Completion Rate →
               </Link>
             </div>
@@ -322,7 +321,7 @@ export default function MaximizeCreatorFundRPMPage() {
                   </tbody>
                 </table>
               </div>
-              <Link href="/calculators/niche-profitability" className="text-body-sm text-orange-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/niche-profitability/" className="text-body-sm text-orange-600 hover:underline inline-block mt-3">
                 Compare Niche Profitability →
               </Link>
             </div>
@@ -343,7 +342,7 @@ export default function MaximizeCreatorFundRPMPage() {
                   <li>Avoid: 12-6 AM EST (low-value audience active)</li>
                 </ul>
               </div>
-              <Link href="/calculators/posting-time" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
+              <Link href="/calculators/posting-time/" className="text-body-sm text-red-600 hover:underline inline-block mt-3">
                 Find Your Best Posting Times →
               </Link>
             </div>
@@ -493,7 +492,7 @@ export default function MaximizeCreatorFundRPMPage() {
                   <li>Use CTAs to guide engagement</li>
                 </ul>
               </div>
-              <Link href="/guides/increase-engagement-rate-tiktok" className="text-body-sm text-emerald-600 hover:underline inline-block mt-3">
+              <Link href="/guides/increase-engagement-rate-tiktok/" className="text-body-sm text-emerald-600 hover:underline inline-block mt-3">
                 Read: Complete Engagement Optimization Guide →
               </Link>
             </div>
@@ -602,21 +601,21 @@ export default function MaximizeCreatorFundRPMPage() {
             <div className="p-4 bg-white rounded-lg">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">Brand Deals (Primary Income)</h4>
               <p className="text-body-sm text-neutral-700">10-100x more lucrative than Creator Fund. Focus here for 50-60% of income.</p>
-              <Link href="/guides/how-to-price-brand-deals" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/guides/how-to-price-brand-deals/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Learn Brand Deal Pricing →
               </Link>
             </div>
             <div className="p-4 bg-white rounded-lg">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">TikTok Shop (Growing Income)</h4>
               <p className="text-body-sm text-neutral-700">10-50% commission on products. Target 20-30% of total income.</p>
-              <Link href="/guides/tiktok-shop-success-strategies" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/guides/tiktok-shop-success-strategies/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Shop Success Strategies →
               </Link>
             </div>
             <div className="p-4 bg-white rounded-lg">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">LIVE Gifts (Supplemental)</h4>
               <p className="text-body-sm text-neutral-700">Direct audience support. Target 10-15% of total income.</p>
-              <Link href="/guides/live-gift-earnings-optimization" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/guides/live-gift-earnings-optimization/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Optimize LIVE Earnings →
               </Link>
             </div>
@@ -632,19 +631,19 @@ export default function MaximizeCreatorFundRPMPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/rpm" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/rpm/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">RPM Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate revenue per 1000 views</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate total earnings</p>
             </Link>
-            <Link href="/calculators/engagement-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Engagement Rate</h3>
               <p className="text-body-sm text-neutral-600">Measure content performance</p>
             </Link>
-            <Link href="/calculators/niche-profitability" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/niche-profitability/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Niche Profitability</h3>
               <p className="text-body-sm text-neutral-600">Compare earning potential</p>
             </Link>
@@ -958,6 +957,28 @@ export default function MaximizeCreatorFundRPMPage() {
           <p className="text-body-sm text-neutral-700">
             Always comply with TikTok's Terms of Service and Creator Fund Agreement. Optimization tactics should never involve manipulation, artificial inflation, or violation of platform policies. Consult with tax professionals regarding income reporting requirements.
           </p>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/why-tiktok-earnings-low/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Why Are My TikTok Earnings So Low?</h4>
+              <p className="text-body-sm text-neutral-700">Diagnose and fix low Creator Fund earnings</p>
+            </Link>
+            <Link href="/guides/why-creator-fund-earnings-dropped/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Why Did My Earnings Drop?</h4>
+              <p className="text-body-sm text-neutral-700">Troubleshoot sudden drops in Creator Fund payments</p>
+            </Link>
+            <Link href="/guides/how-to-increase-creator-fund-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">How to Increase Creator Fund Earnings</h4>
+              <p className="text-body-sm text-neutral-700">Proven tactics to boost your monthly payments</p>
+            </Link>
+            <Link href="/guides/analytics-metrics-master-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Analytics Metrics Master Guide</h4>
+              <p className="text-body-sm text-neutral-700">Track metrics that impact your RPM</p>
+            </Link>
+          </div>
         </Card>
 
         <FAQSection faqs={faqs} pageName="Maximize Creator Fund RPM" />

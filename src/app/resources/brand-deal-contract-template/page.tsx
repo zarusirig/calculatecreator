@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, FileText, CheckCircle, AlertTriangle, Scale } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Brand Deal Contract Template (Free Download)',
@@ -86,6 +87,12 @@ export default function BrandDealContractTemplatePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="TikTok Brand Deal Contract Template (Free Download)"
+        description="Free brand deal contract template for TikTok creators. Includes complete agreement, clause explanations, red flags to avoid, and how to protect yourself."
+        url="https://calculatecreator.com/resources/brand-deal-contract-template/"
+        category="Resources"
+      />
 
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
@@ -93,7 +100,7 @@ export default function BrandDealContractTemplatePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Brand Deal Contract Template</span>
           </div>
@@ -512,9 +519,9 @@ Date: _______________________`}
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">Learn more:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li><Link href="/guides/how-to-get-brand-deals" className="text-blue-600 hover:underline">How to Get Brand Deals on TikTok</Link> - Find partnership opportunities</li>
-                <li><Link href="/calculators/brand-deal-rate" className="text-blue-600 hover:underline">TikTok Brand Deal Rate Calculator</Link> - Price your services</li>
-                <li><Link href="/compliance/sponsorship-disclosure" className="text-blue-600 hover:underline">Sponsorship Disclosure Guidelines</Link> - FTC compliance</li>
+                <li><Link href="/guides/how-to-get-brand-deals/" className="text-blue-600 hover:underline">How to Get Brand Deals on TikTok</Link> - Find partnership opportunities</li>
+                <li><Link href="/calculators/brand-deal-rate/" className="text-blue-600 hover:underline">TikTok Brand Deal Rate Calculator</Link> - Price your services</li>
+                <li><Link href="/compliance/sponsorship-disclosure/" className="text-blue-600 hover:underline">Sponsorship Disclosure Guidelines</Link> - FTC compliance</li>
               </ul>
             </div>
           </div>
@@ -537,19 +544,19 @@ Date: _______________________`}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Brand Deal Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate your worth</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Get Brand Deals</h3>
               <p className="text-body-sm text-neutral-600">Find opportunities</p>
             </Link>
-            <Link href="/compliance/sponsorship-disclosure" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/compliance/sponsorship-disclosure/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Sponsorship Disclosure Guidelines</h3>
               <p className="text-body-sm text-neutral-600">Stay compliant with FTC</p>
             </Link>
-            <Link href="/advanced/creator-tax-deductions-guide" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Creator Tax Deductions Guide</h3>
               <p className="text-body-sm text-neutral-600">Maximize tax savings</p>
             </Link>

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { CheckCircle, X } from 'lucide-react';
+import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Niche Selection Guide 2026: Find Your Profitable Content Category',
@@ -25,12 +27,23 @@ export default function NicheSelectionPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <nav className="bg-white border-b border-neutral-200 py-3">
+    <>
+      {/* Article Schema for SEO */}
+      <ArticleSchema
+        headline="TikTok Niche Selection Guide 2026: Find Your Profitable Content Category"
+        description="Complete guide to choosing the right TikTok niche. Profitability analysis, competition assessment, and how to find your perfect content category."
+        url="https://calculatecreator.com/guides/niche-selection"
+        datePublished="2024-01-15"
+        dateModified="2025-11-13"
+        keywords={['tiktok niche selection', 'content niche', 'profitable niches', 'niche strategy tiktok']}
+      />
+
+      <div className="min-h-screen bg-neutral-50">
+        <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Niche Selection</span>
           </div>
         </div>
@@ -63,6 +76,13 @@ export default function NicheSelectionPage() {
       </section>
 
       <div className="container-custom max-w-5xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <p className="text-body-lg text-neutral-700 leading-relaxed mb-4">
+            Choosing the right niche is arguably the most important decision you'll make as a TikTok creator, directly impacting your growth potential, monetization opportunities, content sustainability, and long-term success on the platform. A well-chosen niche allows you to establish clear authority and expertise, attract a highly engaged audience, command premium brand deal rates, create content consistently without burnout, and stand out in an increasingly crowded creator economy. The mistake many new creators make is either going too broad (trying to appeal to everyone) or picking a niche based solely on what seems profitable without considering their own knowledge, passion, and unique perspective. This comprehensive niche selection guide walks you through a proven framework for identifying profitable content categories that align with your strengths, analyzing competition and market demand, understanding monetization potential across different niches, and developing a strategic approach to niche positioning that sets you up for sustainable creator success and maximum earning potential.
+          </p>
+        </Card>
+
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">The Niche Selection Framework</h2>
           <div className="space-y-4">
@@ -462,7 +482,34 @@ export default function NicheSelectionPage() {
             </div>
           </div>
         </Card>
+
+        <FAQSection
+          pageName="TikTok Niche Selection"
+          faqs={[
+            {
+              question: 'How specific should my niche be when starting on TikTok?',
+              answer: 'Start ultra-specific within a sub-niche for the first 3-6 months to establish authority quickly. For example, "budget meal prep for college students" rather than "cooking." Once you have 10K+ followers and proven content, gradually expand to adjacent topics. Being the top creator in a micro-niche is more valuable than being mediocre in a broad category.'
+            },
+            {
+              question: 'Can I be successful in a saturated niche like beauty or fitness?',
+              answer: 'Yes, but you need a unique angle or target a specific underserved demographic. Instead of "beauty tips," try "makeup for mature skin over 50" or "beauty on a $20 budget." Saturation means proven demand—success comes from differentiation, not avoiding competition. Find gaps in content formats, target audiences, or problem-solving approaches.'
+            },
+            {
+              question: 'What if I have expertise in multiple unrelated areas?',
+              answer: 'Pick ONE niche for your main account, then create separate accounts for other topics once you have proven success. Trying to cover finance + gaming + fitness on one account confuses the algorithm and dilutes your brand. Most successful multi-niche creators built authority in one area first, then expanded. Focus beats fragmentation.'
+            },
+            {
+              question: 'How do I know if my niche has enough monetization potential?',
+              answer: 'Check these signals: 1) Are there products or services people buy related to your niche? 2) Do brands advertise in this space? 3) Would someone pay $20-100 for a course on this topic? 4) Are there established creators earning from it? If yes to 3+ questions, monetization potential exists. Entertainment niches are fun but harder to monetize than educational/aspirational niches.'
+            },
+            {
+              question: 'Should I choose a profitable niche I am not passionate about?',
+              answer: 'No—you will burn out. Creating 100+ videos on a topic you do not care about is unsustainable. Find the overlap between profitable niches AND your genuine interests/expertise. If you love gaming but it is hard to monetize, pivot to "productivity for gamers" or "career advice for esports." Combine passion with profit for long-term success.'
+            }
+          ]}
+        />
       </div>
     </div>
+    </>
   );
 }

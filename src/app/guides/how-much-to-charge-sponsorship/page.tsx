@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, DollarSign, CheckCircle, XCircle, Star } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'How Much to Charge for TikTok Sponsorships: 2026 Pricing Guide',
@@ -38,13 +39,21 @@ export default function HowMuchToChargeSponsorshipPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      <nav className="bg-white border-b border-neutral-200 py-3">
+    <>
+      <ArticleSchema
+        headline="How Much to Charge for TikTok Sponsorships: 2026 Pricing Guide"
+        description="Complete guide to pricing TikTok sponsorships. Rate calculation formulas, industry benchmarks by follower count, negotiation strategies, and what to include in packages."
+        url="https://calculatecreator.com/guides/how-much-to-charge-sponsorship/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+      />
+      <div className="min-h-screen bg-neutral-50">
+        <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">How Much to Charge</span>
           </div>
@@ -86,6 +95,12 @@ export default function HowMuchToChargeSponsorshipPage() {
       </section>
 
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        <Card>
+          <p className="text-body-lg text-neutral-700 mb-6">
+            Pricing your TikTok sponsorships correctly is one of the most critical skills for building a sustainable creator business, directly impacting both your income potential and your ability to attract quality brand partnerships. Charge too little and you undervalue your influence while leaving significant money on the table; charge too much and you risk pricing yourself out of opportunities or damaging relationships with potential long-term partners. The sponsorship pricing landscape has matured significantly in 2026, with established industry benchmarks, proven rate calculation formulas, and sophisticated factors that justify premium pricing for high-performing creators. This comprehensive pricing guide provides everything you need to confidently quote rates for brand deals, including the standard mathematical formula used across the industry, detailed rate benchmarks by follower tier, critical adjustment factors that can double your base rate, package-based pricing strategies, negotiation scripts for common scenarios, and how to build a professional media kit that justifies your rates with data-driven proof of your audience value and conversion potential.
+          </p>
+        </Card>
+
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Pricing Formula</h2>
           <div className="p-6 bg-gradient-to-br from-tiktok-pink/10 to-purple-50 rounded-lg mb-6">
@@ -480,17 +495,18 @@ export default function HowMuchToChargeSponsorshipPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Tools</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate your exact rate</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-700">Land your first partnerships</p>
             </Link>
           </div>
         </Card>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

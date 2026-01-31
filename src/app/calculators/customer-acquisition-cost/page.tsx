@@ -80,7 +80,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
             TikTok Customer Acquisition Cost (CAC) Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate how much it costs to acquire a new customer through your TikTok marketing campaigns.
+            Calculate how much it costs to acquire a new customer through your TikTok marketing campaigns by dividing total marketing spend by new customers acquired. This calculator helps you measure CAC and compare it against customer lifetime value for healthy business unit economics. The ideal LTV:CAC ratio is 3:1 or higher for sustainable profitability. Essential for e-commerce brands, SaaS businesses, and service providers running TikTok ads.
           </p>
         </div>
 

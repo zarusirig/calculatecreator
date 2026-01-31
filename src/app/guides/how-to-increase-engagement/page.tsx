@@ -58,7 +58,7 @@ export default function IncreaseEngagementPage() {
           <div className="container-custom">
             <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
               <Link href="/">Home</Link><span>/</span>
-              <Link href="/guides">Guides</Link><span>/</span>
+              <Link href="/guides/">Guides</Link><span>/</span>
               <span className="text-neutral-900">Increase Engagement</span>
             </div>
           </div>
@@ -97,6 +97,15 @@ export default function IncreaseEngagementPage() {
 
       {/* Trust Badges */}
       <TrustBadges />
+
+      {/* Introduction */}
+      <section className="py-8 bg-white">
+        <div className="container-custom max-w-4xl">
+          <p className="text-body-lg text-neutral-700 leading-relaxed">
+            Engagement rate is the single most important metric for TikTok success because it directly determines how aggressively the algorithm promotes your content to new audiences. Creators with high engagement (8%+) consistently outperform those with larger followings but lower engagement, both in organic reach and brand deal opportunities. This guide reveals 12 proven strategies that top creators use to boost likes, comments, shares, and saves on every video they post. You'll learn the psychological triggers that compel viewers to interact, optimal posting times based on audience activity patterns, hook formulas that demand engagement, and content formats that outperform standard videos by 2-3x. Each strategy is backed by real data and can be implemented immediately to start improving your engagement metrics and algorithmic performance.
+          </p>
+        </div>
+      </section>
 
         <div className="container-custom max-w-4xl py-12 space-y-8">
           {/* Author Byline */}
@@ -445,9 +454,28 @@ export default function IncreaseEngagementPage() {
 
             <Card id="check-your-rate" className="bg-purple-50">
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">Check Your Current Rate</h3>
-              <Link href="/calculators/engagement-rate" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg">
+              <Link href="/calculators/engagement-rate/" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg">
                 Calculate Engagement Rate →
               </Link>
+            </Card>
+
+            {/* Related Guides Section */}
+            <Card>
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/guides/increase-engagement-rate-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Increase Engagement Rate</h4>
+                  <p className="text-body-sm text-neutral-700">Advanced strategies to improve your engagement metrics</p>
+                </Link>
+                <Link href="/guides/how-to-go-viral/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">How to Go Viral on TikTok</h4>
+                  <p className="text-body-sm text-neutral-700">Create content that resonates and spreads organically</p>
+                </Link>
+                <Link href="/guides/analytics-metrics-master-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Analytics Metrics Master Guide</h4>
+                  <p className="text-body-sm text-neutral-700">Track and measure your engagement performance</p>
+                </Link>
+              </div>
             </Card>
 
             {/* FAQ Section */}

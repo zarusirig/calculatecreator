@@ -38,7 +38,7 @@ export default function MentionLikedFavoritedVideosPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Mention Liked & Favorited Videos</span>
           </div>
@@ -255,14 +255,14 @@ export default function MentionLikedFavoritedVideosPage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/calculators/engagement-rate"
+              href="/calculators/engagement-rate/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/calculators/follower-growth"
+              href="/calculators/follower-growth/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Follower Growth Calculator</span>

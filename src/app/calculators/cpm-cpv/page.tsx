@@ -102,10 +102,10 @@ export default function CPMCPVCalculatorPage() {
             TikTok CPM/CPV Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">
-            Calculate Cost Per Mille (CPM) and Cost Per View (CPV) for your TikTok ad campaigns to measure advertising efficiency and optimize your ad spend.
+            Calculate Cost Per Mille (CPM) and Cost Per View (CPV) for your TikTok ad campaigns to measure advertising efficiency and optimize your ad spend. With typical TikTok CPMs ranging from $1-$10 depending on targeting and industry, understanding your costs helps you benchmark performance, identify optimization opportunities, and ensure you're getting competitive rates compared to platform averages.
           </p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Understanding your CPM is crucial for managing ad budgets effectively. Use this calculator alongside our <Link href="/calculators/campaign-roi" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Campaign ROI Calculator</Link> to measure overall campaign performance and <Link href="/calculators/tiktok-ad-cost" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Ad Cost Calculator</Link> for budget planning.
+            Understanding your CPM is crucial for managing ad budgets effectively. Use this calculator alongside our <Link href="/calculators/campaign-roi/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">Campaign ROI Calculator</Link> to measure overall campaign performance and <Link href="/calculators/tiktok-ad-cost/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Ad Cost Calculator</Link> for budget planning.
           </p>
         </div>
 

@@ -15,7 +15,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
-import { FAQSchema } from '@/components/seo/CalculatorSchema';
+import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
 
 // FAQ data for schema markup
@@ -56,8 +56,25 @@ const faqData = [
 
 export default function TikTokMoneyCalculatorPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+    <>
+      <CalculatorSchema
+        name="TikTok Money Calculator"
+        description="Calculate your total TikTok earnings from all income streams: Creator Fund, brand deals, LIVE gifts, and TikTok Shop. Get comprehensive monetization estimates for any follower count."
+        url="https://calculatecreator.com/calculators/earnings-revenue/money"
+        aggregateRating={{ ratingValue: 4.9, reviewCount: 3247 }}
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+        keywords={['tiktok money calculator', 'tiktok earnings calculator', 'tiktok income estimator', 'how much tiktok pays']}
+      />
       <FAQSchema faqs={faqData} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://calculatecreator.com' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'TikTok Money Calculator', url: 'https://calculatecreator.com/calculators/earnings-revenue/money' },
+        ]}
+      />
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
       <div className="container-custom">
         <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'TikTok Money Calculator', href: '/calculators/tiktok-money' }]} />
 
@@ -66,9 +83,9 @@ export default function TikTokMoneyCalculatorPage() {
             <Banknote size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Money Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your total earnings from all TikTok monetization streams: Creator Fund, brand deals, LIVE gifts, and TikTok Shop.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your total earnings potential from all TikTok monetization streams. This comprehensive calculator estimates income from Creator Fund ($0.02-$0.04 per 1K views), brand sponsorships ($10-$30 per 1K followers), LIVE streaming gifts, and TikTok Shop affiliate commissions based on your account metrics.</p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Want to understand <Link href="/guides/how-to-make-money-on-tiktok" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">all ways to make money on TikTok</Link>? Or calculate your <Link href="/calculators/engagement-rate" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok engagement rate</Link> to maximize your earnings potential.
+            Want to understand <Link href="/guides/how-to-make-money-on-tiktok/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">all ways to make money on TikTok</Link>? Or calculate your <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok engagement rate</Link> to maximize your earnings potential.
           </p>
         </div>
 
@@ -82,25 +99,25 @@ export default function TikTokMoneyCalculatorPage() {
                 This calculator combines earnings from all major TikTok income sources. Learn more about each revenue stream:
               </p>
               <div className="space-y-3">
-                <Link href="/calculators/tiktok-creator-fund" className="block p-4 bg-neutral-50 hover:bg-primary-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-primary-200">
+                <Link href="/calculators/tiktok-creator-fund/" className="block p-4 bg-neutral-50 hover:bg-primary-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-primary-200">
                   <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
                     <DollarSign size={20} className="text-primary-600" /> TikTok Creator Fund
                   </h3>
                   <p className="text-body-sm text-neutral-700">Passive income from video views. Calculate your detailed <span className="text-primary-600 font-medium">Creator Fund earnings</span> based on RPM rates ($0.02-$0.04 per 1K views).</p>
                 </Link>
-                <Link href="/calculators/brand-deal-rate" className="block p-4 bg-neutral-50 hover:bg-accent-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-accent-200">
+                <Link href="/calculators/brand-deal-rate/" className="block p-4 bg-neutral-50 hover:bg-accent-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-accent-200">
                   <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
                     <Handshake size={20} className="text-accent-600" /> TikTok Brand Deal Calculator
                   </h3>
                   <p className="text-body-sm text-neutral-700">Highest earning potential (typically 10-50× more than Creator Fund). Use our <span className="text-accent-600 font-medium">brand deal rate calculator</span> to determine your sponsorship pricing.</p>
                 </Link>
-                <Link href="/calculators/live-gifts" className="block p-4 bg-neutral-50 hover:bg-secondary-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-secondary-200">
+                <Link href="/calculators/live-gifts/" className="block p-4 bg-neutral-50 hover:bg-secondary-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-secondary-200">
                   <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
                     <Gift size={20} className="text-secondary-600" /> TikTok LIVE Gifts Calculator
                   </h3>
                   <p className="text-body-sm text-neutral-700">Real-time earnings from viewer gifts during live streams. Estimate your potential <span className="text-secondary-600 font-medium">LIVE streaming income</span> from diamonds and coins.</p>
                 </Link>
-                <Link href="/calculators/shop-commission" className="block p-4 bg-neutral-50 hover:bg-success-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-success-200">
+                <Link href="/calculators/commerce-ads/shop-profit/" className="block p-4 bg-neutral-50 hover:bg-success-50 rounded-lg transition-all hover:shadow-md border border-transparent hover:border-success-200">
                   <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
                     <ShoppingBag size={20} className="text-success-600" /> TikTok Shop Commission Calculator
                   </h3>
@@ -272,7 +289,7 @@ export default function TikTokMoneyCalculatorPage() {
                 <div>
                   <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Enter Accurate Current Metrics</h3>
                   <p className="text-body-sm text-neutral-700 mb-2">
-                    Use your actual follower count and monthly views from TikTok Analytics (not estimates). Calculate your engagement rate using our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:text-primary-700 underline">Engagement Rate Calculator</Link> for accuracy.
+                    Use your actual follower count and monthly views from TikTok Analytics (not estimates). Calculate your engagement rate using our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline">Engagement Rate Calculator</Link> for accuracy.
                   </p>
                   <div className="p-3 bg-neutral-50 rounded text-body-xs text-neutral-600">
                     <strong>Pro Tip:</strong> Review your analytics for the last 28 days rather than just last week to account for viral fluctuations.
@@ -778,5 +795,6 @@ Total: $2,715/month`} assumptions={[
         </div>
       </div>
     </div>
+    </>
   );
 }

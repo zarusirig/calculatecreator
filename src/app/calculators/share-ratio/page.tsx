@@ -74,8 +74,7 @@ export default function ShareRatioCalculatorPage() {
             TikTok Share Ratio Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your share-to-view ratio to measure viral potential. Shares
-            are the strongest signal to TikTok's algorithm for content quality and reach expansion.
+            Calculate your share-to-view ratio to measure viral potential and content shareability. This calculator analyzes how often viewers share your videos, which is the strongest signal to TikTok's algorithm for content quality and reach expansion. Perfect for creators wanting to understand their viral metrics, optimize content strategy, and boost For You Page distribution through higher share rates.
           </p>
         </div>
 

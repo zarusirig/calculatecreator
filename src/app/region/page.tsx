@@ -428,7 +428,7 @@ export default function RegionPage() {
             </Card>
             <p className="text-body-md text-neutral-700 leading-relaxed">
               This guide provides detailed statistics for the top 20 countries by user count, regional monetization insights, and practical recommendations for creators targeting international audiences. Use our{' '}
-              <Link href="/calculators/tiktok-creator-fund" className="text-primary-600 hover:text-primary-700 underline font-medium">
+              <Link href="/calculators/tiktok-creator-fund/" className="text-primary-600 hover:text-primary-700 underline font-medium">
                 TikTok Creator Fund calculator
               </Link>{' '}
               to estimate your potential earnings in different markets.
@@ -601,7 +601,7 @@ export default function RegionPage() {
               <p className="text-body-md text-neutral-700 leading-relaxed">
                 Advanced creators often target multiple regions simultaneously by creating content that transcends language barriers (visual humor, dance, beauty tutorials) or by posting language-specific variations. This maximizes both volume (total views) and value (average RPM). Use our{' '}
                 <Link
-                  href="/calculators/multi-platform-earnings"
+                  href="/calculators/multi-platform-earnings/"
                   className="text-primary-600 hover:text-primary-700 underline font-medium"
                 >
                   multi-platform earnings calculator
@@ -626,7 +626,7 @@ export default function RegionPage() {
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/calculator/de"
+                  href="/calculator/de/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -640,7 +640,7 @@ export default function RegionPage() {
                 </Link>
 
                 <Link
-                  href="/calculator/es"
+                  href="/calculator/es/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -654,7 +654,7 @@ export default function RegionPage() {
                 </Link>
 
                 <Link
-                  href="/calculator/fr"
+                  href="/calculator/fr/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -668,7 +668,7 @@ export default function RegionPage() {
                 </Link>
 
                 <Link
-                  href="/calculator/it"
+                  href="/calculator/it/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -682,7 +682,7 @@ export default function RegionPage() {
                 </Link>
 
                 <Link
-                  href="/calculator/pt-br"
+                  href="/calculator/pt-br/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -696,7 +696,7 @@ export default function RegionPage() {
                 </Link>
 
                 <Link
-                  href="/calculator/my"
+                  href="/calculator/my/"
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all"
                 >
                   <div className="flex items-center space-x-3">
@@ -714,7 +714,7 @@ export default function RegionPage() {
             <Card className="mt-6 bg-info-light border border-info-600">
               <p className="text-body-md text-neutral-700">
                 <strong>Looking for a different language?</strong> Contact us through our{' '}
-                <Link href="/contact" className="text-primary-600 hover:text-primary-700 underline font-medium">
+                <Link href="/contact/" className="text-primary-600 hover:text-primary-700 underline font-medium">
                   contact page
                 </Link>{' '}
                 to request additional language support. We're continuously expanding our multilingual calculator offerings based on user demand.

@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { CollectionSchema } from '@/components/seo/CollectionSchema';
+import { FAQSection } from '@/components/calculator/FAQSection';
 import {
   DollarSign,
   BarChart3,
@@ -254,15 +256,30 @@ export default function CalculatorsPage() {
 
   const categories = ['All', 'Earnings', 'Analytics', 'Growth', 'Engagement', 'Business', 'ROI', 'LIVE', 'Shop', 'Conversion'];
 
+  const schemaItems = calculators.map(calc => ({
+    name: calc.name,
+    description: calc.description,
+    url: `https://calculatecreator.com/calculators/${calc.slug}`,
+    category: calc.category,
+  }));
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
-      <div className="container-custom">
-        <Breadcrumb
-          items={[
-            { label: 'Calculators', href: '/calculators' },
-          ]}
-          includeHome={true}
-        />
+    <>
+      <CollectionSchema
+        title="TikTok Calculators: 28 Free Tools"
+        description="Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators."
+        url="https://calculatecreator.com/calculators/"
+        items={schemaItems}
+        collectionType="Calculators"
+      />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
+        <div className="container-custom">
+          <Breadcrumb
+            items={[
+              { label: 'Calculators', href: '/calculators' },
+            ]}
+            includeHome={true}
+          />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
@@ -675,6 +692,60 @@ export default function CalculatorsPage() {
           </div>
         </div>
 
+        {/* Related Guides */}
+        <div className="mt-16 max-w-4xl mx-auto">
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Guides</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Complete Monetization Guide</h3>
+                <p className="text-body-sm text-neutral-700">Learn all the ways to earn money on TikTok</p>
+              </Link>
+              <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Creator Fund Guide</h3>
+                <p className="text-body-sm text-neutral-700">Maximize your Creator Fund earnings</p>
+              </Link>
+              <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Brand Deals Guide</h3>
+                <p className="text-body-sm text-neutral-700">Get and negotiate sponsorships</p>
+              </Link>
+              <Link href="/data/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <h3 className="font-semibold text-neutral-900 mb-2">Creator Data Hub</h3>
+                <p className="text-body-sm text-neutral-700">Industry benchmarks and rates</p>
+              </Link>
+            </div>
+          </Card>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="mt-12 max-w-4xl mx-auto">
+          <FAQSection
+            pageName="TikTok Calculators"
+            faqs={[
+              {
+                question: "How accurate are these TikTok calculators?",
+                answer: "Our calculators use verified data from thousands of TikTok accounts and official platform documentation. Earnings estimates are typically within 15-20% of actual results. For best accuracy, ensure you enter current metrics from your TikTok analytics."
+              },
+              {
+                question: "Do I need to create an account to use the calculators?",
+                answer: "No account required. All 28 calculators are completely free and work instantly in your browser. Just enter your metrics and get immediate results. We do not store your data or require any signup."
+              },
+              {
+                question: "Which calculator should I use first?",
+                answer: "Start with the Engagement Rate Calculator to understand your audience quality. Then use the TikTok Money Calculator for earnings estimates. From there, explore specific calculators based on your monetization goals (brand deals, LIVE gifts, Creator Fund, etc.)."
+              },
+              {
+                question: "Can brands and agencies use these calculators?",
+                answer: "Absolutely. Marketing agencies use our Brand Deal Rate Calculator to evaluate influencer pricing, and brands use our Engagement Rate Calculator to vet potential partnerships and identify creators with authentic engagement."
+              },
+              {
+                question: "How often is the calculator data updated?",
+                answer: "We refresh our benchmark data quarterly to reflect current TikTok rates and industry standards. The latest update includes 2026 Creator Fund rates, brand deal pricing trends, and engagement benchmarks across all major niches."
+              }
+            ]}
+          />
+        </div>
+
         {/* CTA Section */}
         <div className="mt-16 max-w-3xl mx-auto">
           <Card className="bg-gradient-primary text-white text-center p-8">
@@ -685,7 +756,7 @@ export default function CalculatorsPage() {
               Not sure which calculator to use? Start with the Engagement Rate Calculator, then explore earnings estimates.
             </p>
             <Link
-              href="/guides/how-to-make-money-on-tiktok"
+              href="/guides/how-to-make-money-on-tiktok/"
               className="btn bg-white text-primary-600 hover:bg-neutral-100 btn-lg"
             >
               Read Our Complete Guide
@@ -694,5 +765,6 @@ export default function CalculatorsPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

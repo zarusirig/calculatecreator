@@ -56,7 +56,7 @@ export default function CreatorFundVsLiveGiftsPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/blog" className="hover:text-neutral-900 transition-colors">Blog</Link>
+            <Link href="/blog/" className="hover:text-neutral-900 transition-colors">Blog</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Fund vs LIVE Gifts</span>
           </div>
@@ -184,7 +184,7 @@ export default function CreatorFundVsLiveGiftsPage() {
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <h4 className="text-heading-sm font-semibold text-blue-900 mb-2">Creator Fund Calculator</h4>
             <p className="text-body-sm text-blue-800">
-              Use our <Link href="/calculators/earnings-revenue/creator-fund" className="underline">Creator Fund Calculator</Link> to estimate your potential earnings based on your view count.
+              Use our <Link href="/calculators/earnings-revenue/creator-fund/" className="underline">Creator Fund Calculator</Link> to estimate your potential earnings based on your view count.
             </p>
           </div>
         </Card>
@@ -440,27 +440,27 @@ export default function CreatorFundVsLiveGiftsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Content</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/calculators/earnings-revenue/live-earnings" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/earnings-revenue/live-earnings/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">LIVE Earnings Calculator</h4>
               <p className="text-body-sm text-neutral-600">Calculate your potential LIVE income</p>
             </Link>
-            <Link href="/calculators/earnings-revenue/creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/earnings-revenue/creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund Calculator</h4>
               <p className="text-body-sm text-neutral-600">Estimate your RPM earnings</p>
             </Link>
-            <Link href="/calculators/coins-gifts-diamonds/diamonds" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Diamond Converter</h4>
               <p className="text-body-sm text-neutral-600">Convert diamonds to real money</p>
             </Link>
-            <Link href="/guides/tiktok-live-earnings-guide" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/tiktok-live-earnings-guide/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">LIVE Earnings Guide</h4>
               <p className="text-body-sm text-neutral-600">Master TikTok LIVE monetization</p>
             </Link>
-            <Link href="/guides/how-to-join-creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Join Creator Fund</h4>
               <p className="text-body-sm text-neutral-600">Complete application guide</p>
             </Link>
-            <Link href="/comparisons/creator-fund-vs-brand-deals" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/comparisons/creator-fund-vs-brand-deals/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund vs Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Compare all monetization options</p>
             </Link>

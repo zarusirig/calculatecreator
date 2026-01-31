@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { Calendar, Clock, Briefcase, Target, BarChart3, Sparkles, TrendingUp, Scale, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -38,14 +39,25 @@ export default function HowToGetBrandDealsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      {/* Breadcrumb */}
+    <>
+      {/* Article Schema for SEO */}
+      <ArticleSchema
+        headline="How to Get Brand Deals on TikTok: Complete Guide for Creators"
+        description="Learn how to land your first brand deal on TikTok. Step-by-step strategies for nano, micro, and mid-tier creators to attract sponsors and negotiate rates."
+        url="https://calculatecreator.com/guides/how-to-get-brand-deals"
+        datePublished="2024-01-15"
+        dateModified="2025-01-30"
+        keywords={['tiktok brand deals', 'how to get sponsored on tiktok', 'brand partnerships', 'tiktok sponsorships', 'influencer marketing']}
+      />
+
+      <div className="min-h-screen bg-neutral-50">
+        {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">How to Get Brand Deals</span>
           </div>
@@ -90,6 +102,13 @@ export default function HowToGetBrandDealsPage() {
 
       {/* Main Content */}
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <p className="text-body-lg text-neutral-700 leading-relaxed mb-4">
+            Landing your first brand deal on TikTok can feel overwhelming, but with the right strategy and preparation, creators of all sizes can secure paid partnerships. Whether you're a nano-influencer with 1,000 followers or a mid-tier creator with 50,000+, brands are actively seeking authentic voices to promote their products. The key is understanding what brands look for, where to find partnership opportunities, how to pitch yourself professionally, and what rates to charge for your content and influence. This comprehensive guide walks you through the entire process from preparing your account and building a media kit to outreach strategies, negotiation tactics, and creating successful sponsored content that leads to repeat partnerships. With 73% of marketers increasing their influencer marketing budgets in 2026 and TikTok being the fastest-growing platform for brand collaborations, there's never been a better time to monetize your creator presence through sponsorships.
+          </p>
+        </Card>
+
         {/* Prerequisites */}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">What You Need Before Pitching Brands</h2>
@@ -413,7 +432,7 @@ Looking forward to hearing from you!
               Use our free calculator to see what you should charge brands based on your followers, engagement, and niche.
             </p>
             <Link
-              href="/calculators/brand-deal-rate"
+              href="/calculators/brand-deal-rate/"
               className="inline-block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-600 transition-colors"
             >
               Calculate Your Rate →
@@ -432,11 +451,11 @@ Looking forward to hearing from you!
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><Briefcase className="w-5 h-5 text-tiktok-pink" /> TikTok Brand Deals Complete Guide</h4>
               <p className="text-body-sm text-neutral-700">Rate benchmarks, negotiation strategies, and contract templates</p>
             </Link>
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><TrendingUp className="w-5 h-5 text-tiktok-pink" /> How to Make Money on TikTok</h4>
               <p className="text-body-sm text-neutral-700">All monetization methods: Creator Fund, brand deals, LIVE, Shop</p>
             </Link>
@@ -444,5 +463,6 @@ Looking forward to hearing from you!
         </Card>
       </div>
     </div>
+    </>
   );
 }

@@ -76,8 +76,7 @@ export default function MilestoneTrackerCalculatorPage() {
             TikTok Milestone Tracker Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Track your progress toward follower milestones and estimate when you will reach your next goal.
-            Set realistic targets based on your current growth rate and celebrate every achievement.
+            Track your progress toward key follower milestones like 1K, 10K, 50K, and 100K using your current growth rate. Calculate exactly when you'll reach monetization thresholds, unlock Creator Fund eligibility, and qualify for brand deal opportunities. Set realistic targets, maintain motivation, and celebrate achievements as you progress through each creator tier based on compound growth modeling.
           </p>
         </div>
 

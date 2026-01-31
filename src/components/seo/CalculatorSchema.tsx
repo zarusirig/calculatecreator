@@ -29,7 +29,7 @@ export function CalculatorSchema({
   url,
   category = 'BusinessApplication',
   aggregateRating,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com' },
+  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
   datePublished,
   dateModified,
   offers = { price: '0', priceCurrency: 'USD' },
@@ -104,7 +104,7 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com' },
+  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
   image,
   keywords,
   articleBody,
@@ -125,7 +125,7 @@ export function ArticleSchema({
     publisher: {
       '@type': 'Organization',
       name: 'TikTok Calculator',
-      url: 'https://calculatecreator.com',
+      url: 'https://calculatecreator.com/',
       logo: {
         '@type': 'ImageObject',
         url: 'https://calculatecreator.com/logo.png',
@@ -214,7 +214,7 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'TikTok Calculator',
-    url: 'https://calculatecreator.com',
+    url: 'https://calculatecreator.com/',
     logo: 'https://calculatecreator.com/logo.png',
     description:
       'Free TikTok calculators for creators to estimate earnings, engagement rates, and growth metrics. Data-driven tools trusted by 50,000+ TikTok creators.',
@@ -242,7 +242,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'TikTok Calculator',
-    url: 'https://calculatecreator.com',
+    url: 'https://calculatecreator.com/',
     description:
       'Free TikTok calculators and tools for creators. Calculate earnings, engagement rates, follower growth, and more.',
     potentialAction: {
@@ -450,7 +450,7 @@ export function NewsArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com' },
+  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
   image,
   keywords,
   articleBody,
@@ -471,7 +471,7 @@ export function NewsArticleSchema({
     publisher: {
       '@type': 'Organization',
       name: 'TikTok Calculator',
-      url: 'https://calculatecreator.com',
+      url: 'https://calculatecreator.com/',
       logo: {
         '@type': 'ImageObject',
         url: 'https://calculatecreator.com/logo.png',
@@ -493,5 +493,106 @@ export function NewsArticleSchema({
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
+  );
+}
+
+// CollectionPage Schema for category pages
+export interface CollectionPageSchemaProps {
+  name: string;
+  description: string;
+  url: string;
+  calculators: Array<{
+    name: string;
+    description: string;
+    slug: string;
+    aggregateRating?: {
+      ratingValue: number;
+      reviewCount: number;
+    };
+  }>;
+  keywords?: string[];
+  about?: {
+    name: string;
+    description: string;
+  };
+}
+
+export function CollectionPageSchema({
+  name,
+  description,
+  url,
+  calculators,
+  keywords,
+  about,
+}: CollectionPageSchemaProps) {
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${url}#calculator-list`,
+    name,
+    description,
+    numberOfItems: calculators.length,
+    itemListElement: calculators.map((calc, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'SoftwareApplication',
+        name: calc.name,
+        description: calc.description,
+        url: `${url}/${calc.slug}`,
+        applicationCategory: 'FinanceApplication',
+        operatingSystem: 'Web',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+        ...(calc.aggregateRating && {
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: calc.aggregateRating.ratingValue,
+            reviewCount: calc.aggregateRating.reviewCount,
+            bestRating: 5,
+            worstRating: 1,
+          },
+        }),
+      },
+    })),
+  };
+
+  const collectionPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#collection`,
+    name,
+    description,
+    url,
+    isPartOf: {
+      '@id': 'https://calculatecreator.com/#website',
+    },
+    ...(about && {
+      about: {
+        '@type': 'Thing',
+        name: about.name,
+        description: about.description,
+      },
+    }),
+    mainEntity: {
+      '@id': `${url}#calculator-list`,
+    },
+    ...(keywords && { keywords }),
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionPageSchema) }}
+      />
+    </>
   );
 }

@@ -76,8 +76,7 @@ export default function ProductionCostCalculatorPage() {
             TikTok Production Cost Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your true cost per video including equipment, software, and
-            time investment. Essential for pricing and profitability.
+            Calculate your true cost per video by factoring in equipment amortization, software subscriptions, and most importantly your time value at appropriate hourly rates. Understand production costs to evaluate ROI, price services accurately, claim tax deductions, and identify efficiency improvements. Critical for determining whether your content creation is actually profitable after accounting for all expenses.
           </p>
         </div>
 
@@ -324,7 +323,7 @@ Total: $106.67 per video`}
             currentCalculator="production-cost"
             calculators={[
               { name: 'Break Even Calculator', slug: 'break-even', description: 'Calculate profitability including costs', icon: 'Scale' },
-              { name: 'Creator Tax Calculator', slug: 'creator-tax', description: 'Estimate tax deductions from expenses', icon: 'ClipboardList' },
+              { name: 'Creator Tax Calculator', slug: 'utility-tools/tax', description: 'Estimate tax deductions from expenses', icon: 'ClipboardList' },
               { name: 'Content Value Calculator', slug: 'content-value', description: 'Compare costs vs content value', icon: 'Gem' },
             ]}
           />

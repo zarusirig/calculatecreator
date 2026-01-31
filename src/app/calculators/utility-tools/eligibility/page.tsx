@@ -1,9 +1,34 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { CheckCircle, XCircle, AlertCircle, User, Users, Video, Clock } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
+import { FAQSection } from '@/components/calculator/FAQSection';
+
+const faqData = [
+  {
+    question: 'What are the requirements for TikTok Creator Fund?',
+    answer: 'Creator Fund requires: 10,000+ followers, 100,000+ video views in the last 30 days, 18+ years old, and residence in an eligible country (US, UK, Germany, France, Italy, Spain). Your account must be in good standing with Community Guidelines.'
+  },
+  {
+    question: 'How do I qualify for TikTok LIVE?',
+    answer: 'TikTok LIVE requires 1,000+ followers and 18+ years old to go LIVE. To receive gifts (monetize), you need the same requirements plus your account must be at least 30 days old. Some regions have different requirements.'
+  },
+  {
+    question: 'Can I join multiple TikTok monetization programs?',
+    answer: 'Yes! You can participate in Creator Fund, LIVE Gifts, Shop Affiliate, and Series simultaneously if you meet each program\'s requirements. Many creators diversify income across multiple TikTok monetization streams.'
+  },
+  {
+    question: 'What does "account in good standing" mean?',
+    answer: 'Good standing means no recent Community Guidelines violations, no copyright strikes, no fake engagement, and authentic content. Violations can temporarily or permanently disqualify you from monetization programs.'
+  },
+  {
+    question: 'How long does it take to get approved for monetization?',
+    answer: 'Approval times vary by program. Creator Fund: 1-7 days. LIVE access: instant once requirements met. Shop Affiliate: 1-3 days. If you meet requirements but aren\'t approved, contact TikTok support.'
+  }
+];
 
 export default function EligibilityCalculatorPage() {
   const [followers, setFollowers] = useState(10000);
@@ -63,7 +88,7 @@ export default function EligibilityCalculatorPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-50 py-8">
-      <div className="container-custom">
+        <div className="container-custom">
         <Breadcrumb items={[
           { label: 'Calculators', href: '/calculators' },
           { label: 'Utility Tools', href: '/calculators/utility-tools' },
@@ -75,7 +100,7 @@ export default function EligibilityCalculatorPage() {
             <CheckCircle size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Monetization Eligibility</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop. This eligibility checker evaluates your account against official TikTok requirements for all monetization features. Enter your follower count, video views, age, and location to see which programs you can access. Understand exactly what's needed to unlock Creator Fund, LIVE Gifts, Shop Affiliate, Series, and Creator Rewards. Get instant feedback on your eligibility status and know what milestones to reach next for monetization opportunities.</p>
         </div>
 
         <div className="max-w-3xl mx-auto mb-12">
@@ -185,6 +210,35 @@ export default function EligibilityCalculatorPage() {
                 </Card>
               );
             })}
+          </div>
+
+          <div className="mt-12">
+            <Card className="p-8 mb-12">
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/calculators/earnings-revenue/creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h4>
+                  <p className="text-body-sm text-neutral-700">Estimate monthly earnings from the Creator Fund</p>
+                </Link>
+                <Link href="/calculators/earnings-revenue/live-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                  <h4 className="font-semibold text-neutral-900 mb-2">LIVE Earnings Calculator</h4>
+                  <p className="text-body-sm text-neutral-700">Calculate potential earnings from TikTok LIVE streams</p>
+                </Link>
+                <Link href="/calculators/utility-tools/payout" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
+                  <p className="text-body-sm text-neutral-700">Calculate net earnings after platform fees</p>
+                </Link>
+                <Link href="/guides/how-to-join-creator-fund-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Join Creator Fund Guide</h4>
+                  <p className="text-body-sm text-neutral-700">Complete guide to qualifying for TikTok monetization</p>
+                </Link>
+              </div>
+            </Card>
+
+            <FAQSection
+              pageName="Eligibility Checker"
+              faqs={faqData}
+            />
           </div>
         </div>
       </div>

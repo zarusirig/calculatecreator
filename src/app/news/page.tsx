@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Zap, TrendingUp, Lightbulb } from 'lucide-react';
+import { CollectionSchema } from '@/components/seo/CollectionSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok News Today - Latest Creator Updates & Platform Changes',
@@ -26,10 +27,10 @@ export default function NewsPage() {
   const newsArticles: NewsArticle[] = [
     // Regulatory & Legal (3)
     {
-      title: 'TikTok Ban Enforcement Delayed Until December 16, 2026',
-      slug: 'tiktok-ban-delayed-december-2026',
+      title: 'TikTok Ban Enforcement Delayed Until December 16, 2025',
+      slug: 'tiktok-ban-delayed-december-2025',
       description: 'White House extends enforcement deadline for fourth time as administration pursues qualified divestiture solution.',
-      date: '2026-09-24',
+      date: '2025-09-24',
       category: 'Regulatory',
       featured: true,
     },
@@ -195,14 +196,29 @@ export default function NewsPage() {
 
   const getCategoryImage = (category: string) => categoryImages[category] || 'news-features';
 
+  const schemaItems = newsArticles.map(article => ({
+    name: article.title,
+    description: article.description,
+    url: `https://calculatecreator.com/news/${article.slug}`,
+    category: article.category,
+  }));
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50">
-      <Breadcrumb
-        items={[
-          { label: 'News', href: '/news' },
-        ]}
-        includeHome={true}
+    <>
+      <CollectionSchema
+        title="TikTok News Today - Latest Creator Updates & Platform Changes"
+        description="Stay updated with the latest TikTok news including algorithm changes, monetization updates, new features, TikTok Shop developments, and safety announcements affecting creators."
+        url="https://calculatecreator.com/news/"
+        items={schemaItems}
+        collectionType="News"
       />
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50">
+        <Breadcrumb
+          items={[
+            { label: 'News', href: '/news' },
+          ]}
+          includeHome={true}
+        />
 
       {/* Header Section */}
       <section className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 py-16">
@@ -378,49 +394,49 @@ export default function NewsPage() {
         <div className="mt-16">
           <Card className="bg-gradient-to-br from-primary-50 to-secondary-50">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              Stay Ahead with TikTok Tools & Guides
+              Related Tools & Guides
             </h2>
             <p className="text-body-md text-neutral-700 mb-6">
               Use our calculators and guides to maximize your TikTok strategy based on the latest platform changes:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
               <Link
-                href="/calculators/tiktok-money"
+                href="/calculators/tiktok-money/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">TikTok Money Calculator</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/calculators/tiktok-creator-fund"
+                href="/calculators/tiktok-creator-fund/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Creator Rewards Calculator</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/calculators/shop-commission"
+                href="/calculators/commerce-ads/shop-profit/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">TikTok Shop Profit Calculator</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/calculators/engagement-rate"
+                href="/calculators/engagement-rate/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/guides/how-to-make-money-on-tiktok"
+                href="/guides/how-to-make-money-on-tiktok/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Monetization Guide</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/guides/tiktok-algorithm-optimization"
+                href="/guides/tiktok-algorithm-optimization/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Algorithm Guide</span>
@@ -431,5 +447,6 @@ export default function NewsPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

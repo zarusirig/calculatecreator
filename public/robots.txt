@@ -1,32 +1,8 @@
-# robots.txt for CalculateCreator.com
-# Updated: December 1, 2025
-
-# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
-# Disallow Next.js internal paths and API routes
 Disallow: /api/
-Disallow: /_next/static/
-Disallow: /_next/webpack-hmr
-
-# Disallow temporary and system files
-Disallow: *.json$
 Disallow: /admin/
 Disallow: /tmp/
 
-# Allow important JavaScript and CSS for rendering
-Allow: /*.js$
-Allow: /*.css$
-Allow: /_next/static/
-
-# Crawl-delay for aggressive bots (optional)
-# Uncomment if experiencing server load issues
-# Crawl-delay: 1
-
-# Sitemap locations
 Sitemap: https://calculatecreator.com/sitemap.xml
-
-# Additional sitemaps (if you create category-specific sitemaps later)
-# Sitemap: https://calculatecreator.com/sitemap-calculators.xml
-# Sitemap: https://calculatecreator.com/sitemap-guides.xml

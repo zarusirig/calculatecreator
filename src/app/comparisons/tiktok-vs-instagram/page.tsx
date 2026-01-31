@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Clock, DollarSign, CheckCircle, XCircle, Music, Zap, Camera, Briefcase, Dumbbell, Utensils, BookOpen, Package } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -31,13 +32,24 @@ export default function TikTokVsInstagramPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok vs Instagram Creator Income: Complete Comparison 2026"
+        description="Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with 2026 data."
+        url="https://calculatecreator.com/comparisons/tiktok-vs-instagram/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok"
+        subjectB="Instagram"
+        faqs={faqs}
+        readTime="10 min"
+      />
       {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/data" className="hover:text-neutral-900 transition-colors">Data & Insights</Link>
+            <Link href="/data/" className="hover:text-neutral-900 transition-colors">Data & Insights</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok vs Instagram</span>
           </div>
@@ -364,6 +376,29 @@ export default function TikTokVsInstagramPage() {
         {/* FAQ Section */}
         <FAQSection faqs={faqs} pageName="TikTok vs Instagram Creator Income" />
 
+        {/* Related Content */}
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Content</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/comparisons/tiktok-vs-youtube-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">TikTok vs YouTube Earnings</h4>
+              <p className="text-body-sm text-neutral-700">Compare long-form vs short-form video monetization rates and requirements</p>
+            </Link>
+            <Link href="/comparisons/creator-fund-vs-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund vs Brand Deals</h4>
+              <p className="text-body-sm text-neutral-700">Which monetization strategy pays more for your follower count</p>
+            </Link>
+            <Link href="/guides/multi-platform-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Multi-Platform Creator Strategy</h4>
+              <p className="text-body-sm text-neutral-700">How to maximize income across TikTok, Instagram, and YouTube</p>
+            </Link>
+            <Link href="/data/brand-deal-rates-by-niche/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rates by Niche</h4>
+              <p className="text-body-sm text-neutral-700">Industry-specific sponsorship pricing data for both platforms</p>
+            </Link>
+          </div>
+        </Card>
+
         {/* Next Steps */}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Next Steps</h2>
@@ -371,14 +406,14 @@ export default function TikTokVsInstagramPage() {
             <div>
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">Calculate your earnings</h3>
               <div className="space-y-3">
-                <Link href="/calculators/tiktok-money" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/tiktok-money/" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <Camera className="w-6 h-6 text-pink-600 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-neutral-900">TikTok Earnings Calculator</h4>
                     <p className="text-body-sm text-neutral-600">Project TikTok income</p>
                   </div>
                 </Link>
-                <Link href="/calculators/brand-deal-rate" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/brand-deal-rate/" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <DollarSign className="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-neutral-900">Brand Deal Calculator</h4>
@@ -391,14 +426,14 @@ export default function TikTokVsInstagramPage() {
             <div>
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">Compare monetization options</h3>
               <div className="space-y-3">
-                <Link href="/comparisons/creator-fund-vs-brand-deals" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/comparisons/creator-fund-vs-brand-deals/" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <DollarSign className="w-6 h-6 text-green-600 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-neutral-900">Creator Fund vs Brand Deals</h4>
                     <p className="text-body-sm text-neutral-600">Which pays more?</p>
                   </div>
                 </Link>
-                <Link href="/guides/fitness-creators-earnings" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/guides/fitness-creators-earnings/" className="flex items-center p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <Dumbbell className="w-6 h-6 text-orange-600 mr-3 flex-shrink-0" />
                   <div>
                     <h4 className="font-medium text-neutral-900">Fitness Creators Earnings</h4>

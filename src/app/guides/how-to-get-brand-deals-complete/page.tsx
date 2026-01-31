@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { Calendar, Clock, DollarSign, CheckCircle2, XCircle, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -156,12 +157,20 @@ export default function HowToGetBrandDealsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        headline="How to Get Brand Deals on TikTok: Complete Guide 2026"
+        description="Complete guide to landing brand deals on TikTok. 7 proven strategies, pitch templates, pricing guide, and where to find opportunities. For creators at any level."
+        url="https://calculatecreator.com/guides/how-to-get-brand-deals-complete"
+        datePublished="2025-11-13"
+        dateModified="2026-01-30"
+        keywords={['how to get brand deals', 'tiktok sponsorships', 'brand partnerships', 'influencer marketing', 'sponsored content']}
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">How to Get Brand Deals</span>
           </div>
@@ -204,6 +213,14 @@ export default function HowToGetBrandDealsPage() {
       </section>
 
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Transform Your TikTok Following Into Lucrative Brand Partnerships</h2>
+          <p className="text-body-lg text-neutral-700 mb-6">
+            Brand deals represent the most lucrative monetization strategy for TikTok creators, often paying 10 to 50 times more per video than the Creator Fund. While the Creator Fund might earn you $20-$40 per million views, a single brand deal at 20,000 followers can pay $2,000-$4,000 for the exact same content reach. The beauty of brand partnerships is that they're accessible to creators at virtually any level—nano influencers with just 5,000 highly engaged followers regularly secure $200-$500 deals, while micro-influencers with 50,000 followers command $2,500-$10,000 per campaign. Yet most creators struggle to land their first sponsorship because they don't know where brands are looking, how to position themselves as valuable partners, or what pricing actually works in today's market. This comprehensive guide reveals the complete system for landing your first brand deals and scaling them into consistent monthly income, whether you're at 1,000 followers or 100,000. You'll discover the 7 proven strategies that successful creators use to consistently attract brand partnerships, learn how to craft irresistible pitches that brands actually respond to instead of ignoring, master the art of pricing your content to maximize earnings without scaring away opportunities or underselling yourself, gain access to the exact platforms and networks where brands are actively searching for creators like you right now, and understand the red flags and contract terms that protect you from bad deals. Stop leaving money on the table with underpriced collaborations or waiting for brands to magically discover you—this guide shows you how to proactively transform your content creation from a hobby into a sustainable, profitable business through strategic brand partnerships.
+          </p>
+        </Card>
+
         <Card className="bg-gradient-to-r from-purple-50 to-pink-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Why Brand Deals Matter</h2>
           <p className="text-body-md text-neutral-700 mb-4">
@@ -249,7 +266,7 @@ export default function HowToGetBrandDealsPage() {
             <p className="text-body-sm text-neutral-700">
               <strong>Use our calculator:</strong> Get a personalized rate estimate based on your followers, engagement, and niche.
             </p>
-            <Link href="/calculators/brand-deal-rate" className="text-primary-600 hover:text-primary-700 font-semibold text-body-sm">
+            <Link href="/calculators/brand-deal-rate/" className="text-primary-600 hover:text-primary-700 font-semibold text-body-sm">
               Calculate Your Rate →
             </Link>
           </div>
@@ -346,7 +363,7 @@ export default function HowToGetBrandDealsPage() {
             <p className="text-body-md text-neutral-700 mb-4">
               Get a personalized rate estimate based on your followers, engagement rate, and niche
             </p>
-            <Link href="/calculators/brand-deal-rate" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
+            <Link href="/calculators/brand-deal-rate/" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity">
               Use Brand Deal Calculator →
             </Link>
           </div>
@@ -358,11 +375,11 @@ export default function HowToGetBrandDealsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><DollarSign className="w-5 h-5 text-green-600" /> Brand Deal Rate Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate what you should charge</p>
             </Link>
-            <Link href="/guides/how-to-join-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><DollarSign className="w-5 h-5 text-blue-600" /> Join Creator Fund</h4>
               <p className="text-body-sm text-neutral-700">Get passive income while pitching brands</p>
             </Link>

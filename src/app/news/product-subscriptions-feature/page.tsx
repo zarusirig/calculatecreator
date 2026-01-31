@@ -38,7 +38,7 @@ export default function ProductSubscriptionsFeaturePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">Product Subscriptions</span>
           </div>
@@ -437,18 +437,32 @@ export default function ProductSubscriptionsFeaturePage() {
           </h2>
           <div className="grid gap-3">
             <Link
-              href="/calculators/shop-commission"
+              href="/calculators/commerce-ads/shop-profit/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">TikTok Shop Profit Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/calculators/affiliate-commission"
+              href="/calculators/affiliate-commission/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Affiliate Commission Calculator</span>
               <span className="text-primary-600">→</span>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/tiktok-shop-europe-expansion/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">TikTok Shop Expands to France, Germany, and Italy</h4>
+              <p className="text-body-xs text-neutral-600">Major European expansion brings shopping features to 83M new users</p>
+            </Link>
+            <Link href="/news/tiktok-shop-gmv-doubling/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">TikTok Shop GMV Projected to Double</h4>
+              <p className="text-body-xs text-neutral-600">Industry projections indicate GMV could reach $40B+ by end of 2026</p>
             </Link>
           </div>
         </Card>

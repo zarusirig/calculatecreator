@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Card } from '@/components/ui/Card';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | TikTok Creator Calculator',
@@ -11,7 +12,13 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-neutral-50 py-12">
+    <>
+      <WebPageSchema
+        title="Privacy Policy | TikTok Creator Calculator"
+        description="Your privacy matters. We don't collect personal data or sell information. Learn about our privacy-first approach to TikTok earnings calculators."
+        url="https://calculatecreator.com/privacy/"
+      />
+      <div className="min-h-screen bg-neutral-50 py-12">
       <div className="container-custom max-w-4xl">
         <div className="flex items-center space-x-3 mb-8">
           <img
@@ -371,5 +378,6 @@ export default function PrivacyPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

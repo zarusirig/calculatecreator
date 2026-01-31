@@ -74,8 +74,7 @@ export default function ViralPotentialCalculatorPage() {
             TikTok Viral Potential Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Predict your content's viral likelihood based on key engagement signals.
-            Get a comprehensive viral score and actionable insights.
+            Predict your content's viral likelihood based on key engagement signals including completion rate, share rate, engagement rate, and save rate. This calculator provides a comprehensive viral score from 0-100 and actionable insights to help you understand what makes content go viral. Ideal for creators who want to maximize reach, identify viral patterns in their content, and increase their chances of hitting the For You Page.
           </p>
         </div>
 

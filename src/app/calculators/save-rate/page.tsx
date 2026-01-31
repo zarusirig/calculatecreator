@@ -73,8 +73,7 @@ export default function SaveRateCalculatorPage() {
             TikTok Save Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your save-to-view ratio to measure content value. High save
-            rates indicate evergreen, reference-worthy content that viewers want to revisit.
+            Calculate your save-to-view ratio to measure content value and algorithmic favorability. High save rates signal TikTok that your content has lasting value, resulting in extended distribution on the For You Page and better search rankings. Educational creators typically achieve 3-5% save rates while entertainment averages 0.5-2%. Track this metric to create more reference-worthy, evergreen content that viewers bookmark for later.
           </p>
         </div>
 

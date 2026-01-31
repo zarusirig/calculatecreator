@@ -47,16 +47,16 @@ export default function ShopCommissionCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-info-light py-8">
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
-        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'Shop Commission Calculator', href: '/calculators/shop-commission' }]} />
+        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'Shop Commission Calculator', href: '/calculators/commerce-ads/shop-profit/' }]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-info-DEFAULT text-white mb-6">
             <ShoppingBag size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Shop Commission Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your earnings from TikTok Shop affiliate commissions and estimate your monthly revenue potential.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your earnings from TikTok Shop affiliate commissions and estimate your monthly revenue potential. This calculator helps affiliates forecast income based on product prices, commission rates, and sales volume. Perfect for creators evaluating TikTok Shop as a monetization strategy or tracking performance across different product categories and niches.</p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Learn <Link href="/guides/tiktok-shop-affiliate" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the TikTok Shop affiliate program works</Link> or explore <Link href="/guides/tiktok-shop-success-strategies" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Shop success strategies</Link> to maximize your commissions.
+            Learn <Link href="/guides/tiktok-shop-affiliate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the TikTok Shop affiliate program works</Link> or explore <Link href="/guides/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Shop success strategies</Link> to maximize your commissions.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ShopCommissionCalculatorPage() {
                   <ShoppingBag size={20} className="text-info-600" /> What is TikTok Shop?
                 </h3>
                 <p>
-                  TikTok Shop lets creators earn commissions by promoting products directly on TikTok. You don't need to hold inventory or handle shipping—just create content featuring products and earn a percentage of each sale. Compare this with other <Link href="/calculators/tiktok-money" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok monetization streams</Link>.
+                  TikTok Shop lets creators earn commissions by promoting products directly on TikTok. You don't need to hold inventory or handle shipping—just create content featuring products and earn a percentage of each sale. Compare this with other <Link href="/calculators/tiktok-money/" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok monetization streams</Link>.
                 </p>
               </div>
               <div>
@@ -83,7 +83,7 @@ export default function ShopCommissionCalculatorPage() {
                   <DollarSign size={20} className="text-success-600" /> TikTok Shop Commission Structure
                 </h3>
                 <p>
-                  Sellers set commission rates (typically 5-20%). When someone buys through your affiliate link or during your <Link href="/calculators/live-gifts" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok LIVE stream</Link>, you earn the commission. Higher-priced items or premium sellers often offer better rates.
+                  Sellers set commission rates (typically 5-20%). When someone buys through your affiliate link or during your <Link href="/calculators/live-gifts/" className="text-primary-600 hover:text-primary-700 underline font-medium">TikTok LIVE stream</Link>, you earn the commission. Higher-priced items or premium sellers often offer better rates.
                 </p>
               </div>
               <div>
@@ -91,7 +91,7 @@ export default function ShopCommissionCalculatorPage() {
                   <BarChart3 size={20} className="text-primary-600" /> TikTok Shop Earnings Potential
                 </h3>
                 <p>
-                  Top TikTok Shop affiliates earn $5,000-$50,000+ per month. Success depends on niche, audience size, and product selection. Check out the <Link href="/guides/best-shop-niches" className="text-primary-600 hover:text-primary-700 underline font-medium">best TikTok Shop niches</Link> for maximum earnings. Fashion, beauty, and home goods typically perform best.
+                  Top TikTok Shop affiliates earn $5,000-$50,000+ per month. Success depends on niche, audience size, and product selection. Check out the <Link href="/guides/best-shop-niches/" className="text-primary-600 hover:text-primary-700 underline font-medium">best TikTok Shop niches</Link> for maximum earnings. Fashion, beauty, and home goods typically perform best.
                 </p>
               </div>
               <div className="p-4 bg-info-50 border border-info-200 rounded-lg">
@@ -481,7 +481,7 @@ export default function ShopCommissionCalculatorPage() {
           </Card>
 
           <MethodologySection
-            calculatorName="shop-commission"
+            calculatorName="commerce-ads/shop-profit"
             formula={`Commission Per Sale = Product Price × (Commission Rate / 100)
 
 Monthly Commission = Commission Per Sale × Monthly Sales
@@ -543,7 +543,7 @@ Annual Earnings: $120 × 12 = $1,440`}
           />
 
           <RelatedCalculators
-            currentCalculator="shop-commission"
+            currentCalculator="commerce-ads/shop-profit"
             calculators={[
               {
                 name: 'TikTok Money Calculator',

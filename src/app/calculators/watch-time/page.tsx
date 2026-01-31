@@ -74,8 +74,7 @@ export default function WatchTimeCalculatorPage() {
             TikTok Watch Time Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your video retention rate and total watch hours. Watch time
-            is the most important metric for TikTok's algorithm.
+            Calculate your video retention rate, average watch time, and total watch hours across your TikTok content. Watch time is the single most important metric for TikTok's algorithm, directly impacting For You Page distribution and viral potential. Essential for creators who want to optimize content length, improve retention strategies, and understand how viewer watch behavior affects their algorithmic reach and overall performance.
           </p>
         </div>
 

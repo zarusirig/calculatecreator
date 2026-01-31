@@ -69,7 +69,7 @@ export default function MultiPlatformAttributionPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Multi-Platform Attribution</span>
           </div>
@@ -117,9 +117,7 @@ export default function MultiPlatformAttributionPage() {
               Why Multi-Platform Presence Matters
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Today's successful creators rarely rely on a single platform. TikTok might drive awareness, YouTube builds
-              authority, Instagram converts sales, and email lists provide stability. But here's the challenge: without
-              proper attribution, you can't answer critical questions like:
+              Today's successful creators rarely rely on a single platform for their entire business strategy, recognizing that platform diversification is essential for sustainable income and risk mitigation. Modern creator economics demand multi-platform presence: TikTok might drive initial awareness and discovery through viral short-form content, YouTube builds long-term authority and trust with in-depth videos, Instagram converts browsers into buyers through visual storytelling and shopping features, and email lists provide stability when algorithms change unpredictably or platforms decline. However, here lies the fundamental challenge that most creators struggle with daily - without proper multi-platform attribution tracking, you cannot accurately answer critical business questions that determine your success or failure. Which specific platform actually generates the most revenue for your business? Where should you invest your limited time and resources for maximum return on investment? What is the real ROI of each platform when you account for time invested in content creation? Which platform's audience is most valuable for your specific monetization model and offers? How do different platforms work together in your customer journey funnel, and which combinations drive the highest conversions? Without precise attribution data answering these questions with hard numbers, you are essentially running a potentially multi-million dollar creator business while flying completely blind, making strategic decisions based on vanity metrics and gut feelings rather than revenue data that actually matters for your bottom line.
             </p>
             <ul className="text-body-md text-neutral-700 space-y-2 list-disc list-inside mb-4">
               <li>Which platform actually drives my revenue?</li>
@@ -142,10 +140,10 @@ export default function MultiPlatformAttributionPage() {
             Use these calculators to track and compare platform performance.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/multi-platform-earnings" className="btn btn-primary">
+            <Link href="/calculators/multi-platform-earnings/" className="btn btn-primary">
               Multi-Platform Earnings →
             </Link>
-            <Link href="/calculators/campaign-roi" className="btn btn-secondary">
+            <Link href="/calculators/campaign-roi/" className="btn btn-secondary">
               Campaign ROI Calculator
             </Link>
           </div>
@@ -290,7 +288,7 @@ export default function MultiPlatformAttributionPage() {
                   </div>
                 </div>
               </div>
-              <Link href="/calculators/multi-platform-earnings" className="text-body-sm text-green-700 hover:underline inline-block mt-3">
+              <Link href="/calculators/multi-platform-earnings/" className="text-body-sm text-green-700 hover:underline inline-block mt-3">
                 Calculate Multi-Platform Earnings →
               </Link>
             </div>
@@ -526,17 +524,35 @@ export default function MultiPlatformAttributionPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/multi-platform-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/multi-platform-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Multi-Platform Earnings</h3>
               <p className="text-body-sm text-neutral-600">Compare revenue across platforms</p>
             </Link>
-            <Link href="/calculators/campaign-roi" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/campaign-roi/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Campaign ROI</h3>
               <p className="text-body-sm text-neutral-600">Calculate return on investment</p>
             </Link>
-            <Link href="/calculators/content-value" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/content-value/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Content Value</h3>
               <p className="text-body-sm text-neutral-600">Determine per-post worth</p>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/multi-platform-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Multi-Platform Strategy</h4>
+              <p className="text-body-sm text-neutral-700">Build sustainable presence across platforms</p>
+            </Link>
+            <Link href="/guides/analytics-metrics-master-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Analytics Metrics Master Guide</h4>
+              <p className="text-body-sm text-neutral-700">Track and optimize performance metrics</p>
+            </Link>
+            <Link href="/guides/monetization-calculator-hub/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Monetization Calculator Hub</h4>
+              <p className="text-body-sm text-neutral-700">Compare revenue across different platforms</p>
             </Link>
           </div>
         </Card>

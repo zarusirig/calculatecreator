@@ -77,8 +77,7 @@ export default function FollowerGrowthCalculatorPage() {
             TikTok Follower Growth Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Project your future follower count based on your current growth rate.
-            Perfect for setting realistic goals and tracking progress.
+            Project your future follower count based on your current daily growth rate using compound growth modeling. This calculator helps creators set realistic milestone goals, track progress toward monetization thresholds, and benchmark growth performance against industry standards. Essential for both new creators building their first 1,000 followers and established accounts scaling to 100K+.
           </p>
         </div>
 

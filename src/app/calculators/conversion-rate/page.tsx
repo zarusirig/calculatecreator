@@ -80,7 +80,7 @@ export default function ConversionRateCalculatorPage() {
             TikTok Conversion Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers.
+            Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers or leads. With typical e-commerce conversion rates of 2-4% and email signup rates of 5-10% from TikTok traffic, this calculator helps you benchmark your funnel performance, identify optimization opportunities, and understand how landing page improvements can dramatically increase your results without spending more on ads.
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { CheckCircle, XCircle, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -13,13 +14,47 @@ export const metadata: Metadata = {
 };
 
 export default function TikTokShopVsAmazonPage() {
+  const faqs = [
+    {
+      question: 'Can I use both TikTok Shop and Amazon Associates simultaneously?',
+      answer: 'Yes! Most successful creators use both. Promote TikTok Shop products when available (higher commissions) and Amazon for products not in TikTok Shop catalog.',
+    },
+    {
+      question: 'Which has better conversion rates?',
+      answer: 'TikTok Shop converts 3-5x better (5-15% CVR) than Amazon (1-3% CVR) because checkout happens in-app without leaving TikTok. No friction = higher sales.',
+    },
+    {
+      question: 'How do cookie durations compare?',
+      answer: 'TikTok Shop: 7-30 days (varies by product). Amazon: Only 24 hours. TikTok\'s longer window means you earn even if viewer purchases days later.',
+    },
+    {
+      question: 'What about payout minimums?',
+      answer: 'TikTok Shop: $50 minimum (faster payouts, 2-3 weeks). Amazon: $10 minimum (monthly payments on NET-60 schedule). TikTok pays faster but higher threshold.',
+    },
+    {
+      question: 'Which program is easier to get approved for?',
+      answer: 'Amazon has no requirements (instant approval). TikTok Shop typically requires 5K followers (or lower in some regions). Start with Amazon, add TikTok Shop as you grow.',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok Shop vs Amazon Associates: Affiliate Earnings Comparison 2026"
+        description="Compare TikTok Shop vs Amazon Associates affiliate programs. Commission rates, requirements, earning potential, and which platform is better for creators."
+        url="https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok Shop Affiliate"
+        subjectB="Amazon Associates"
+        faqs={faqs}
+        readTime="8 min"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/data">Data & Insights</Link><span>/</span>
+            <Link href="/data/">Data & Insights</Link><span>/</span>
             <span className="text-neutral-900">TikTok Shop vs Amazon</span>
           </div>
         </div>
@@ -436,15 +471,15 @@ export default function TikTokShopVsAmazonPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Shop Commission Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate your TikTok Shop earnings</p>
             </Link>
-            <Link href="/guides/tiktok-shop-affiliate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok Shop Affiliate Guide</h4>
               <p className="text-body-sm text-neutral-700">Complete setup and strategy</p>
             </Link>
-            <Link href="/reference/shop-commission-rates" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/reference/shop-commission-rates/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Commission Rates Reference</h4>
               <p className="text-body-sm text-neutral-700">All product category rates</p>
             </Link>

@@ -69,7 +69,7 @@ export default function LiveGiftEarningsOptimizationPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">LIVE Gift Earnings Optimization</span>
           </div>
@@ -117,14 +117,7 @@ export default function LiveGiftEarningsOptimizationPage() {
               LIVE Streaming Opportunity Breakdown
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok LIVE represents one of the most direct creator-to-audience monetization methods. Unlike Creator Fund
-              (paid by TikTok) or brand deals (paid by sponsors), LIVE gifts come directly from your audience. This creates
-              a powerful dynamic: viewers financially support creators they genuinely value.
-            </p>
-            <p className="text-body-md text-neutral-700">
-              Top LIVE streamers earn $500-5,000+ per stream through strategic community building, psychological gifting
-              triggers, and consistent engagement. The key is transforming passive viewers into active community members
-              invested in your success.
+              TikTok LIVE streaming represents one of the most direct creator-to-audience monetization methods available on the platform today, transforming passive viewers into active financial supporters through real-time virtual gifts. Unlike Creator Fund payments that come from TikTok itself or brand deals negotiated with sponsors, LIVE gifts flow directly from your audience to you, creating an authentic financial connection between creator and community where viewers voluntarily send money because they value your content and presence. This direct support model means viewers are financially backing creators they genuinely feel connected to and want to support, making it one of the purest forms of creator income that isn't dependent on advertisers, algorithms, or brand partnerships. Top LIVE streamers consistently earn $500-$5,000+ per stream through strategic community building, understanding of gifting psychology, and authentic engagement tactics that transform casual viewers into dedicated supporters who gift regularly. However, most creators struggle to monetize LIVE effectively because they treat it like regular content posting—they just turn on the camera, chat aimlessly without strategy, fail to acknowledge gifters properly, don't create incentives for gifting, and wonder why earnings stay below $20 per stream despite decent viewer counts. The fundamental key to success is transforming passive viewers who simply watch into active community members who feel personally invested in your success and growth, creating a gifting culture where supporting you financially feels natural and rewarding. This guide reveals 15 proven strategies to maximize LIVE gift earnings through psychological triggers, community building techniques, engagement tactics, goal-setting frameworks, and viewer retention methods that turn one-time viewers into loyal supporters who gift consistently stream after stream, helping you build sustainable income directly from your most engaged fans.
             </p>
           </div>
         </Card>
@@ -137,10 +130,10 @@ export default function LiveGiftEarningsOptimizationPage() {
             Estimate potential LIVE gift earnings based on viewer count and engagement.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/live-gifts" className="btn btn-primary">
+            <Link href="/calculators/live-gifts/" className="btn btn-primary">
               LIVE Gifts Calculator →
             </Link>
-            <Link href="/calculators/coins" className="btn btn-secondary">
+            <Link href="/calculators/coins/" className="btn btn-secondary">
               Coins Converter
             </Link>
           </div>
@@ -206,7 +199,7 @@ export default function LiveGiftEarningsOptimizationPage() {
               </div>
             </div>
           </div>
-          <Link href="/calculators/coins" className="text-body-sm text-blue-600 hover:underline inline-block mt-3">
+          <Link href="/calculators/coins/" className="text-body-sm text-blue-600 hover:underline inline-block mt-3">
             Convert Coins to USD →
           </Link>
         </Card>
@@ -725,17 +718,39 @@ export default function LiveGiftEarningsOptimizationPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/live-gifts" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/live-gifts/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">LIVE Gifts Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate LIVE earnings</p>
             </Link>
-            <Link href="/calculators/coins" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/coins/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Coins Converter</h3>
               <p className="text-body-sm text-neutral-600">Convert coins to USD</p>
             </Link>
-            <Link href="/calculators/follower-growth" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/follower-growth/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Follower Growth</h3>
               <p className="text-body-sm text-neutral-600">Track growth to 1K threshold</p>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/tiktok-live/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">TikTok LIVE Monetization Guide</h4>
+              <p className="text-body-sm text-neutral-700">Complete guide to LIVE gifts, subscriptions, and earnings</p>
+            </Link>
+            <Link href="/guides/best-times-go-live/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Best Times to Go LIVE</h4>
+              <p className="text-body-sm text-neutral-700">Maximize viewership with optimal streaming times</p>
+            </Link>
+            <Link href="/guides/how-to-get-1000-followers-live/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">How to Get 1000 Followers for LIVE</h4>
+              <p className="text-body-sm text-neutral-700">Unlock LIVE access and start earning from gifts</p>
+            </Link>
+            <Link href="/guides/monetization-calculator-hub/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Monetization Calculator Hub</h4>
+              <p className="text-body-sm text-neutral-700">Compare LIVE gifts with other income streams</p>
             </Link>
           </div>
         </Card>

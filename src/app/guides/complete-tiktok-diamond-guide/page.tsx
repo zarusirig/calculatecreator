@@ -82,7 +82,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                 Complete TikTok Diamond Guide 2026
               </h1>
               <p className="text-xl text-neutral-600 mb-8 max-w-3xl mx-auto">
-                Master TikTok's diamond economy: Understand LIVE gifts, conversion rates, payout values, and maximize your creator earnings from TikTok's virtual gifting system.
+                Master TikTok's complex diamond economy with this comprehensive guide covering everything from basic diamond mechanics to advanced earning optimization strategies. Learn how TikTok's virtual gifting system actually works behind the scenes, including the exact conversion rates between coins, diamonds, and real-world currency across different regions. Understand viewer coin costs versus creator diamond payouts, the 50% platform fee structure, minimum withdrawal thresholds, payment processing timelines, and proven tactics for maximizing gift revenue during LIVE streams. This guide breaks down the complete diamond value chain from the moment a viewer purchases coins through to cash hitting your bank account, revealing insider knowledge about which gifts generate the most revenue, how diamond payouts vary by country and creator tier, strategies top streamers use to encourage higher-value gifting, and common mistakes that leave creators earning 40-60% less than their potential. Whether you're preparing for your first LIVE stream or optimizing an established streaming schedule, understanding diamonds is essential for turning audience attention into sustainable income through TikTok's most direct creator-to-fan monetization system.
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500 mb-8">
                 <span className="flex items-center gap-2"><BookOpen className="w-4 h-4" /> {readingTime}</span>
@@ -213,7 +213,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                       <p className="text-neutral-700 mb-4">
                         Convert diamonds to USD, EUR, GBP, CAD, and AUD. Calculate creator payout values instantly.
                       </p>
-                      <Link href="/calculators/diamond-converter">
+                      <Link href="/calculators/diamond-converter/">
                         <Button variant="primary">Use Diamond Converter</Button>
                       </Link>
                     </div>
@@ -223,7 +223,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                       <p className="text-neutral-700 mb-4">
                         Calculate potential earnings from LIVE streams based on viewer engagement and gift patterns.
                       </p>
-                      <Link href="/calculators/live-gifts">
+                      <Link href="/calculators/live-gifts/">
                         <Button variant="secondary">Try LIVE Calculator</Button>
                       </Link>
                     </div>
@@ -293,7 +293,7 @@ export default function CompleteTikTokDiamondGuidePage() {
             <Card className="p-8 mt-12">
               <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Diamond Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link href="/calculators/diamond-converter" className="block">
+                <Link href="/calculators/diamond-converter/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex items-center justify-center mb-3"><Gem className="w-12 h-12 text-purple-600" /></div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Diamond Converter</h3>
@@ -301,7 +301,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/live-gifts" className="block">
+                <Link href="/calculators/live-gifts/" className="block">
                   <div className="bg-pink-50 p-6 rounded-lg hover:bg-pink-100 transition-colors">
                     <div className="flex items-center justify-center mb-3"><Gift className="w-12 h-12 text-pink-600" /></div>
                     <h3 className="font-semibold text-neutral-900 mb-2">LIVE Gifts Calculator</h3>
@@ -309,7 +309,7 @@ export default function CompleteTikTokDiamondGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/coins" className="block">
+                <Link href="/calculators/coins/" className="block">
                   <div className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
                     <div className="text-3xl mb-3">🪙</div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Coins Calculator</h3>

@@ -54,7 +54,7 @@ export default function LiveGiftsCalculatorPage() {
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok LIVE Gifts Calculator</h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Estimate your earnings from TikTok LIVE streaming based on average viewers, stream duration, and gifting rate.
+            Estimate your earnings from TikTok LIVE streaming based on average viewers, stream duration, and gifting rate. This calculator helps creators forecast LIVE income, plan streaming schedules, and understand the relationship between audience size and earnings. Use realistic metrics to project monthly revenue and set achievable LIVE streaming goals for consistent growth. Calculate expected diamond earnings per stream and monthly income potential based on viewer engagement. Perfect for creators planning to monetize through LIVE streaming or optimizing existing stream strategy for higher gift revenue.
           </p>
         </div>
 

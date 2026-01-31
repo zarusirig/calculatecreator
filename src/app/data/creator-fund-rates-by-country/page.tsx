@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { Globe, DollarSign, TrendingUp, AlertCircle, MapPin, BarChart3, BookOpen, Rocket, Handshake, CheckCircle, Flag } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -151,13 +152,19 @@ export default function CreatorFundRatesByCountryPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <DatasetSchema
+        title="TikTok Creator Fund Rates by Country: Global RPM Data 2026"
+        description="Complete geographic breakdown of TikTok Creator Fund earnings. See which countries have highest RPM rates, availability status, and regional earning multipliers."
+        url="https://calculatecreator.com/data/creator-fund-rates-by-country/"
+        keywords={['tiktok creator fund by country', 'tiktok earnings by location', 'creator fund availability', 'tiktok rpm by country', 'geographic earnings data']}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/data" className="hover:text-neutral-900 transition-colors">Data</Link>
+            <Link href="/data/" className="hover:text-neutral-900 transition-colors">Data</Link>
             <span>/</span>
             <span className="text-neutral-900">Creator Fund Rates by Country</span>
           </div>
@@ -404,7 +411,7 @@ export default function CreatorFundRatesByCountryPage() {
             Use our Creator Fund calculator to estimate monthly income based on your location and views
           </p>
           <Link
-            href="/calculators/tiktok-creator-fund"
+            href="/calculators/tiktok-creator-fund/"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
           >
             Try Creator Fund Calculator →
@@ -424,19 +431,19 @@ export default function CreatorFundRatesByCountryPage() {
         <Card>
           <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Data & Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/data/rpm-rates-by-niche" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/data/rpm-rates-by-niche/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">RPM Rates by Niche</h4>
               <p className="text-body-sm text-neutral-600">See how content type affects Creator Fund earnings across 20+ niches</p>
             </Link>
-            <Link href="/guides/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Complete Creator Fund Guide</h4>
               <p className="text-body-sm text-neutral-600">Everything about how the fund works, requirements, and payment structure</p>
             </Link>
-            <Link href="/guides/how-to-increase-creator-fund-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-increase-creator-fund-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Increase Creator Fund Earnings</h4>
               <p className="text-body-sm text-neutral-600">12 strategies to boost RPM regardless of your location</p>
             </Link>
-            <Link href="/data/brand-deal-rates-by-niche" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/data/brand-deal-rates-by-niche/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rates by Niche</h4>
               <p className="text-body-sm text-neutral-600">Alternative monetization: sponsorship pricing across different content types</p>
             </Link>
@@ -450,7 +457,7 @@ export default function CreatorFundRatesByCountryPage() {
             Country-level RPM data compiled from: (1) 1,000+ creator surveys across 50+ countries (Dec 2024 - Jan 2026), (2) TikTok Creator Marketplace regional rate cards, (3) Publicly disclosed earnings from creator case studies and YouTube videos, and (4) Influencer marketing platform reports (CreatorIQ, AspireIQ, Hashtag Paid).
           </p>
           <p className="text-body-sm text-neutral-700 leading-relaxed">
-            <strong>Rates are median ranges, not guarantees.</strong> Your actual RPM varies based on niche, engagement, watch time, audience demographics within the country, and seasonal demand. Use these benchmarks for planning and negotiations, not as exact predictions. For personalized estimates, use our <Link href="/calculators/tiktok-creator-fund" className="text-yellow-900 hover:underline font-semibold">Creator Fund calculator</Link>.
+            <strong>Rates are median ranges, not guarantees.</strong> Your actual RPM varies based on niche, engagement, watch time, audience demographics within the country, and seasonal demand. Use these benchmarks for planning and negotiations, not as exact predictions. For personalized estimates, use our <Link href="/calculators/tiktok-creator-fund/" className="text-yellow-900 hover:underline font-semibold">Creator Fund calculator</Link>.
           </p>
         </Card>
       </div>

@@ -38,7 +38,7 @@ export default function CreatorRewards20xEarningsPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">20x Higher Earnings</span>
           </div>
@@ -447,11 +447,25 @@ export default function CreatorRewards20xEarningsPage() {
           </h2>
           <div className="grid gap-3">
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Creator Rewards Calculator</span>
               <span className="text-primary-600">→</span>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/creator-rewards-program-launch/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">Creator Fund Replaced with Creator Rewards</h4>
+              <p className="text-body-xs text-neutral-600">New program offers up to 20x higher earnings but requires 10K followers and 100K monthly views</p>
+            </Link>
+            <Link href="/news/videos-over-one-minute-monetization/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">Only Videos Over 1 Minute Eligible for Monetization</h4>
+              <p className="text-body-xs text-neutral-600">Creator Rewards Program exclusively rewards longer-form content</p>
             </Link>
           </div>
         </Card>
@@ -463,7 +477,7 @@ export default function CreatorRewards20xEarningsPage() {
           <ul className="space-y-3">
             <li>
               <a
-                href="/guides/tiktok-monetization-requirements"
+                href="/guides/tiktok-monetization-requirements/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"

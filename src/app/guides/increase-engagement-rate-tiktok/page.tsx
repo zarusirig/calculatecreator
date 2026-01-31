@@ -69,7 +69,7 @@ export default function IncreaseEngagementRatePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Increase Engagement Rate</span>
           </div>
@@ -110,6 +110,15 @@ export default function IncreaseEngagementRatePage() {
         </div>
       </section>
 
+      {/* Introduction */}
+      <section className="py-8 bg-white">
+        <div className="container-custom max-w-4xl">
+          <p className="text-body-lg text-neutral-700 leading-relaxed">
+            Your TikTok engagement rate is the single most important metric determining your success on the platform. It directly influences how aggressively the algorithm promotes your content, what brand deal rates you can command, and your overall growth trajectory. Creators with 8%+ engagement consistently outperform those with larger followings but lower engagement rates. This guide covers 12 proven strategies to increase your engagement rate, from optimizing your hooks and calls-to-action to posting at peak times and leveraging trending formats. Each strategy is backed by real data and can be implemented immediately to start improving your metrics and unlocking better algorithmic distribution.
+          </p>
+        </div>
+      </section>
+
       <div className="container-custom max-w-4xl py-12 space-y-8">
         <Card>
           <div className="prose prose-lg max-w-none">
@@ -140,10 +149,10 @@ export default function IncreaseEngagementRatePage() {
             Benchmark your performance before implementing these strategies.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/engagement-rate" className="btn btn-primary">
+            <Link href="/calculators/engagement-rate/" className="btn btn-primary">
               Calculate Engagement Rate →
             </Link>
-            <Link href="/calculators/video-performance" className="btn btn-secondary">
+            <Link href="/calculators/video-performance/" className="btn btn-secondary">
               Video Performance Analyzer
             </Link>
           </div>
@@ -300,7 +309,7 @@ export default function IncreaseEngagementRatePage() {
                   <li>Avoid: Early mornings (before 8 AM)</li>
                 </ul>
               </div>
-              <Link href="/calculators/posting-time" className="text-body-sm text-blue-600 hover:underline">
+              <Link href="/calculators/posting-time/" className="text-body-sm text-blue-600 hover:underline">
                 Calculate Your Best Posting Times →
               </Link>
             </div>
@@ -386,7 +395,7 @@ export default function IncreaseEngagementRatePage() {
               <p className="text-body-sm text-neutral-700">
                 <strong>Rule of thumb:</strong> Only make videos as long as necessary. Every second should add value or entertainment.
               </p>
-              <Link href="/calculators/completion-rate" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
+              <Link href="/calculators/completion-rate/" className="text-body-sm text-blue-600 hover:underline inline-block mt-2">
                 Calculate Your Completion Rate →
               </Link>
             </div>
@@ -398,21 +407,39 @@ export default function IncreaseEngagementRatePage() {
             Recommended Calculators for Tracking Progress
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/engagement-rate" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-neutral-900 mb-2">Engagement Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Measure overall engagement performance</p>
             </Link>
-            <Link href="/calculators/completion-rate" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            <Link href="/calculators/completion-rate/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-neutral-900 mb-2">Completion Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Track watch time and video optimization</p>
             </Link>
-            <Link href="/calculators/posting-time" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            <Link href="/calculators/posting-time/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-neutral-900 mb-2">Best Posting Times</h3>
               <p className="text-body-sm text-neutral-600">Find when your audience is most active</p>
             </Link>
-            <Link href="/calculators/viral-potential" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
+            <Link href="/calculators/viral-potential/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h3 className="font-semibold text-neutral-900 mb-2">Viral Potential Calculator</h3>
               <p className="text-body-sm text-neutral-600">Predict which content will perform best</p>
+            </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/how-to-increase-engagement/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">How to Increase Engagement</h4>
+              <p className="text-body-sm text-neutral-700">Foundational tactics to boost engagement quickly</p>
+            </Link>
+            <Link href="/guides/tiktok-algorithm-engagement/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">TikTok Algorithm & Engagement</h4>
+              <p className="text-body-sm text-neutral-700">How engagement signals affect your reach</p>
+            </Link>
+            <Link href="/guides/analytics-metrics-master-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 mb-2">Analytics Metrics Master Guide</h4>
+              <p className="text-body-sm text-neutral-700">Track and measure engagement performance</p>
             </Link>
           </div>
         </Card>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Calendar, Gem, Gift, DollarSign, Coins } from 'lucide-react';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Value Chart 2026: Complete Price & Earnings Guide',
@@ -39,11 +40,19 @@ export default function LiveGiftsValueChartPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok LIVE Gifts Value Chart 2026: Complete Price & Earnings Guide"
+        description="Complete chart of all TikTok LIVE gift values, coin costs, creator earnings (50% split), and diamonds to USD conversion rates."
+        url="https://calculatecreator.com/reference/live-gifts-value-chart/"
+        datePublished="2024-01-20"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">LIVE Gifts Value Chart</span>
           </div>
         </div>
@@ -335,15 +344,15 @@ export default function LiveGiftsValueChartPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/live-gifts" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/live-gifts/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">LIVE Gifts Calculator</h4>
               <p className="text-body-sm text-neutral-700">Estimate your earnings</p>
             </Link>
-            <Link href="/guides/tiktok-live-earnings-guide" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-live-earnings-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">LIVE Earnings Guide</h4>
               <p className="text-body-sm text-neutral-700">Maximize gift income</p>
             </Link>
-            <Link href="/guides/how-to-qualify-for-tiktok-live" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-qualify-for-tiktok-live/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Qualify for LIVE</h4>
               <p className="text-body-sm text-neutral-700">Reach 1K followers</p>
             </Link>

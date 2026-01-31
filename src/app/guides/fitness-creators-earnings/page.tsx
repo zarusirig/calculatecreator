@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, Dumbbell, Trophy, Activity, Smartphone, BookOpen, Zap, Target, Gift, CheckCircle, XCircle } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Fitness Creators TikTok Earnings Guide 2026',
@@ -26,14 +27,22 @@ export default function FitnessCreatorsEarningsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      {/* Breadcrumb Navigation */}
+    <>
+      <ArticleSchema
+        headline="Fitness Creators TikTok Earnings Guide 2026"
+        description="Complete guide to fitness creator earnings on TikTok. See how much workout, gym, and health creators earn by follower tier with real 2026 data."
+        url="https://calculatecreator.com/guides/fitness-creators-earnings/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+      />
+      <div className="min-h-screen bg-neutral-50">
+        {/* Breadcrumb Navigation */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Fitness Creators Earnings</span>
           </div>
@@ -81,8 +90,7 @@ export default function FitnessCreatorsEarningsPage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 mb-4">
-            Fitness is a <strong>top-earning niche on TikTok</strong>, with creators monetizing through brand deals, affiliate programs, digital products, and coaching services.
-            This guide provides realistic 2026 earnings data for fitness creators at every level.
+            Fitness is a <strong>top-earning niche on TikTok</strong>, with creators monetizing through brand deals, affiliate programs, digital products, and coaching services. The fitness and wellness category has exploded on TikTok, attracting millions of viewers seeking workout routines, nutrition advice, and motivational content. Fitness creators enjoy unique advantages including passionate audience engagement, lucrative supplement sponsorships, and the ability to sell their own programs and coaching services. This comprehensive guide provides realistic 2026 earnings data for fitness creators at every level, from nano influencers just starting their journey to established fitness authorities with hundreds of thousands of followers. Whether you're a certified personal trainer, enthusiastic home workout creator, or nutrition expert, understanding the earning potential at each milestone will help you build a sustainable creator business in the fitness space.
           </p>
         </Card>
 
@@ -594,45 +602,46 @@ export default function FitnessCreatorsEarningsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Content</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/guides/beauty-creators-earnings" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/beauty-creators-earnings/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Beauty Creators Earnings</h4>
               <p className="text-body-sm text-neutral-600">Makeup and skincare earnings</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Brand Deal Calculator</h4>
               <p className="text-body-sm text-neutral-600">Calculate sponsorship rates</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals-complete" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Find sponsorship opportunities</p>
             </Link>
-            <Link href="/guides/how-to-increase-engagement" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-increase-engagement/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Increase Engagement</h4>
               <p className="text-body-sm text-neutral-600">Boost your TikTok performance</p>
             </Link>
-            <Link href="/guides/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund Guide</h4>
               <p className="text-body-sm text-neutral-600">TikTok's RPM program</p>
             </Link>
-            <Link href="/comparisons/creator-fund-vs-brand-deals" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/comparisons/creator-fund-vs-brand-deals/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Creator Fund vs Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Which monetization method pays more?</p>
             </Link>
-            <Link href="/comparisons/tiktok-vs-instagram" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/comparisons/tiktok-vs-instagram/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">TikTok vs Instagram</h4>
               <p className="text-body-sm text-neutral-600">Platform comparison for creators</p>
             </Link>
-            <Link href="/guides/how-to-go-viral" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-go-viral/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">How to Go Viral</h4>
               <p className="text-body-sm text-neutral-600">Viral content strategies</p>
             </Link>
-            <Link href="/guides/best-times-go-live" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/best-times-go-live/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1">Best Times to Go Live</h4>
               <p className="text-body-sm text-neutral-600">Optimize your live streaming schedule</p>
             </Link>
           </div>
         </Card>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

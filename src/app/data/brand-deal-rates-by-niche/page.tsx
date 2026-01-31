@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { TrendingUp, DollarSign, Users, Target, Crown, Zap, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -293,13 +294,19 @@ export default function BrandDealRatesByNichePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <DatasetSchema
+        title="Brand Deal Rates by Niche: TikTok Sponsorship Pricing 2026"
+        description="Comprehensive brand deal pricing data across 25+ TikTok niches. See which content categories command premium rates and how to price your sponsorships competitively."
+        url="https://calculatecreator.com/data/brand-deal-rates-by-niche/"
+        keywords={['brand deal rates by niche', 'tiktok sponsorship pricing', 'influencer rates by category', 'brand deal pricing', 'sponsorship benchmarks']}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/data" className="hover:text-neutral-900 transition-colors">Data</Link>
+            <Link href="/data/" className="hover:text-neutral-900 transition-colors">Data</Link>
             <span>/</span>
             <span className="text-neutral-900">Brand Deal Rates by Niche</span>
           </div>
@@ -575,7 +582,7 @@ export default function BrandDealRatesByNichePage() {
             Use our calculator to get personalized pricing based on your followers, engagement, and niche
           </p>
           <Link
-            href="/calculators/brand-deal-rate"
+            href="/calculators/brand-deal-rate/"
             className="inline-block bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors"
           >
             Try Brand Deal Calculator →
@@ -595,19 +602,19 @@ export default function BrandDealRatesByNichePage() {
         <Card>
           <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Data & Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/data/brand-deal-rates-by-followers" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/data/brand-deal-rates-by-followers/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rates by Follower Count</h4>
               <p className="text-body-sm text-neutral-600">See pricing tiers from nano (1K) to mega-influencers (1M+)</p>
             </Link>
-            <Link href="/guides/how-to-price-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-price-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Price Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Complete framework for setting competitive sponsorship rates</p>
             </Link>
-            <Link href="/guides/how-to-get-brand-deals-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Step-by-step guide from pitching to closing sponsorships</p>
             </Link>
-            <Link href="/data/rpm-rates-by-niche" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/data/rpm-rates-by-niche/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">RPM Rates by Niche</h4>
               <p className="text-body-sm text-neutral-600">Creator Fund earnings comparison across content categories</p>
             </Link>
@@ -621,7 +628,7 @@ export default function BrandDealRatesByNichePage() {
             Brand deal rate data compiled from: (1) 1,000+ creator surveys across 25+ niches (Dec 2024 - Jan 2026), (2) Publicly disclosed rates from creator case studies and YouTube videos, (3) Influencer marketing platform rate cards (CreatorIQ, AspireIQ, Hashtag Paid, Creator.co), (4) Brand marketing budgets and CPM benchmarks, and (5) TikTok Creator Marketplace pricing guidelines.
           </p>
           <p className="text-body-sm text-neutral-700 leading-relaxed">
-            <strong>Rates are median ranges, not guarantees.</strong> Your actual deals depend on: negotiation skills, portfolio quality, audience demographics, brand budgets, campaign scope, and timing. Use these as negotiation starting points and validation, not rigid rules. For personalized rate calculations based on your metrics, use our <Link href="/calculators/brand-deal-rate" className="text-yellow-900 hover:underline font-semibold">brand deal calculator</Link>.
+            <strong>Rates are median ranges, not guarantees.</strong> Your actual deals depend on: negotiation skills, portfolio quality, audience demographics, brand budgets, campaign scope, and timing. Use these as negotiation starting points and validation, not rigid rules. For personalized rate calculations based on your metrics, use our <Link href="/calculators/brand-deal-rate/" className="text-yellow-900 hover:underline font-semibold">brand deal calculator</Link>.
           </p>
         </Card>
       </div>

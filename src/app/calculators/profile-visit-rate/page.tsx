@@ -74,8 +74,7 @@ export default function ProfileVisitRateCalculatorPage() {
             TikTok Profile Visit Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate how effectively your content drives profile visits and
-            follower conversions. Essential for growth tracking.
+            Calculate how effectively your content drives profile visits by measuring the percentage of viewers who click through to your profile. Track this key funnel metric to understand content curiosity, optimize profile conversion rates, and identify whether your videos inspire viewers to learn more about you. Essential for creators focused on follower growth and building engaged communities beyond viral views.
           </p>
         </div>
 

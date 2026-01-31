@@ -38,7 +38,7 @@ export default function PersonalizedAIAvatarStickersPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-primary-600">Home</Link>
             <span>/</span>
-            <Link href="/news" className="hover:text-primary-600">News</Link>
+            <Link href="/news/" className="hover:text-primary-600">News</Link>
             <span>/</span>
             <span className="text-neutral-900">AI Avatar Stickers</span>
           </div>
@@ -243,14 +243,14 @@ export default function PersonalizedAIAvatarStickersPage() {
           </p>
           <div className="grid gap-3">
             <Link
-              href="/calculators/engagement-rate"
+              href="/calculators/engagement-rate/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Engagement Rate Calculator</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/content-strategy-2026"
+              href="/guides/content-strategy-2025/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Personal Branding Guide</span>
@@ -600,6 +600,20 @@ export default function PersonalizedAIAvatarStickersPage() {
                 <li>• Clear app cache and regenerate avatar if needed</li>
               </ul>
             </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related News</h3>
+          <div className="space-y-3">
+            <Link href="/news/ai-outline-smart-split-features/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">AI Outline and Smart Split Features Released</h4>
+              <p className="text-body-xs text-neutral-600">AI tools that auto-generate outlines and split videos into chapters for easier editing</p>
+            </Link>
+            <Link href="/news/playback-settings-update/" className="block p-3 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+              <h4 className="font-semibold text-neutral-900 text-sm">New Playback Settings Introduced</h4>
+              <p className="text-body-xs text-neutral-600">Disable HDR videos and display object tags for enhanced control</p>
+            </Link>
           </div>
         </Card>
 

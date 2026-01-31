@@ -82,7 +82,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
               TikTok Analytics & Metrics Master Guide 2026
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-3xl mx-auto mb-6">
-              Master TikTok analytics with data-driven insights. Learn which metrics matter, how to track performance, optimize for the algorithm, and create action plans for explosive growth.
+              Master TikTok analytics with data-driven insights that transform raw numbers into actionable growth strategies. This comprehensive guide teaches you which metrics actually matter for success, how to accurately track performance using TikTok's native tools and third-party platforms, optimization techniques proven to boost algorithmic favor and FYP distribution, and step-by-step action plans for explosive growth regardless of your current follower count. Whether you're a beginner trying to understand basic engagement rates or an established creator seeking advanced optimization tactics for brand deals and monetization, this guide provides the analytical framework used by top-earning TikTok creators to make data-driven decisions that compound over time. Learn to identify patterns in your best-performing content, predict viral potential before posting, benchmark yourself against niche competitors, and leverage analytics to command premium rates in brand negotiations. Stop guessing what works and start making strategic choices backed by concrete metrics that drive real results.
             </p>
             <div className="flex items-center justify-center gap-6 text-sm text-neutral-600">
               <span className="flex items-center gap-2">
@@ -234,7 +234,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                     </div>
 
                     <div className="mt-6 text-center">
-                      <Link href="/calculators/engagement-rate">
+                      <Link href="/calculators/engagement-rate/">
                         <Button variant="primary" size="lg">Calculate Your Engagement Rate</Button>
                       </Link>
                     </div>
@@ -305,7 +305,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                             <li>• <strong>Content types:</strong> Educational, how-to, resource lists perform best</li>
                           </ul>
                           <div className="mt-4">
-                            <Link href="/calculators/save-rate">
+                            <Link href="/calculators/save-rate/">
                               <Button variant="secondary">Calculate Save Rate</Button>
                             </Link>
                           </div>
@@ -344,7 +344,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                           = (20 / 25) × 100 = <strong className="text-green-600">80% completion rate</strong>
                         </p>
                         <div className="mt-4">
-                          <Link href="/calculators/completion-rate">
+                          <Link href="/calculators/completion-rate/">
                             <Button variant="primary" size="sm">Calculate Completion Rate</Button>
                           </Link>
                         </div>
@@ -415,7 +415,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         </div>
                       </div>
                       <div className="mt-4">
-                        <Link href="/calculators/watch-time">
+                        <Link href="/calculators/watch-time/">
                           <Button variant="primary">Calculate Watch Time</Button>
                         </Link>
                       </div>
@@ -469,7 +469,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         At this rate: 10K → 50K in ~240 days, 10K → 100K in ~335 days
                       </p>
                       <div className="mt-4">
-                        <Link href="/calculators/follower-growth">
+                        <Link href="/calculators/follower-growth/">
                           <Button variant="primary">Calculate Growth Rate</Button>
                         </Link>
                       </div>
@@ -558,7 +558,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                           <li>✓ CTAs to check profile for more</li>
                         </ul>
                         <div className="mt-4">
-                          <Link href="/calculators/follower-conversion">
+                          <Link href="/calculators/follower-conversion/">
                             <Button variant="secondary" size="sm">Calculate Conversion Rate</Button>
                           </Link>
                         </div>
@@ -580,7 +580,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                           <li>• If high visits but low follows: optimize profile</li>
                         </ul>
                         <div className="mt-4">
-                          <Link href="/calculators/profile-visit-rate">
+                          <Link href="/calculators/profile-visit-rate/">
                             <Button variant="primary" size="sm">Calculate Visit Rate</Button>
                           </Link>
                         </div>
@@ -597,7 +597,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                           <li>• High share ratio = high viral potential</li>
                         </ul>
                         <div className="mt-4">
-                          <Link href="/calculators/viral-potential">
+                          <Link href="/calculators/viral-potential/">
                             <Button variant="primary" size="sm">Calculate Viral Potential</Button>
                           </Link>
                         </div>
@@ -771,7 +771,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         <li>• Track with UTM links and analytics</li>
                       </ul>
                       <div className="mt-3">
-                        <Link href="/calculators/conversion-rate">
+                        <Link href="/calculators/conversion-rate/">
                           <Button variant="primary" size="sm">Track Conversions</Button>
                         </Link>
                       </div>
@@ -788,7 +788,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         <li>• Lower CAC = more profitable scaling</li>
                       </ul>
                       <div className="mt-3">
-                        <Link href="/calculators/customer-acquisition-cost">
+                        <Link href="/calculators/customer-acquisition-cost/">
                           <Button variant="primary" size="sm">Calculate CAC</Button>
                         </Link>
                       </div>
@@ -805,7 +805,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         <li>• Focus on retention to increase LTV</li>
                       </ul>
                       <div className="mt-3">
-                        <Link href="/calculators/lifetime-value">
+                        <Link href="/calculators/lifetime-value/">
                           <Button variant="primary" size="sm">Calculate LTV</Button>
                         </Link>
                       </div>
@@ -822,7 +822,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
                         <li>• Track all costs (ads, creator fees, production)</li>
                       </ul>
                       <div className="mt-3">
-                        <Link href="/calculators/campaign-roi">
+                        <Link href="/calculators/campaign-roi/">
                           <Button variant="primary" size="sm">Calculate ROI</Button>
                         </Link>
                       </div>
@@ -969,17 +969,40 @@ export default function AnalyticsMetricsMasterGuidePage() {
                   Use our analytics calculators to track metrics, identify opportunities, and optimize for explosive growth.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/calculators/engagement-rate">
+                  <Link href="/calculators/engagement-rate/">
                     <Button variant="primary" size="lg">
                       Calculate Engagement Rate
                     </Button>
                   </Link>
-                  <Link href="/calculators/viral-potential">
+                  <Link href="/calculators/viral-potential/">
                     <Button variant="secondary" size="lg">
                       Check Viral Potential
                     </Button>
                   </Link>
                 </div>
+              </div>
+            </Card>
+
+            {/* Related Guides Section */}
+            <Card>
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/guides/tiktok-algorithm-optimization/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">TikTok Algorithm Optimization</h4>
+                  <p className="text-body-sm text-neutral-700">Master the algorithm to boost your metrics and reach</p>
+                </Link>
+                <Link href="/guides/increase-engagement-rate-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Increase Engagement Rate</h4>
+                  <p className="text-body-sm text-neutral-700">Proven tactics to improve likes, comments, and shares</p>
+                </Link>
+                <Link href="/guides/multi-platform-attribution-creators/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Multi-Platform Attribution</h4>
+                  <p className="text-body-sm text-neutral-700">Track and compare performance across all platforms</p>
+                </Link>
+                <Link href="/guides/maximize-creator-fund-rpm/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Maximize Creator Fund RPM</h4>
+                  <p className="text-body-sm text-neutral-700">Use analytics insights to increase your earnings per view</p>
+                </Link>
               </div>
             </Card>
 

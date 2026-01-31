@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Calendar, Palette, DollarSign, Briefcase, TrendingUp } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'How Much Do Beauty Creators Make on TikTok? Earnings Breakdown 2026',
@@ -85,14 +86,22 @@ export default function BeautyCreatorsEarningsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
-      {/* Breadcrumb */}
+    <>
+      <ArticleSchema
+        headline="How Much Do Beauty Creators Make on TikTok? Earnings Breakdown 2026"
+        description="Complete earnings guide for TikTok beauty creators. See real income data by follower tier, brand deal rates, and monetization strategies for makeup & skincare content."
+        url="https://calculatecreator.com/guides/beauty-creators-earnings/"
+        datePublished="2024-01-15"
+        dateModified="2026-01-15"
+      />
+      <div className="min-h-screen bg-neutral-50">
+        {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Beauty Creators Earnings</span>
           </div>
@@ -137,6 +146,13 @@ export default function BeautyCreatorsEarningsPage() {
 
       {/* Main Content */}
       <div className="container-custom max-w-4xl py-12 space-y-8">
+        {/* Introduction */}
+        <Card>
+          <p className="text-body-lg text-neutral-700 mb-6">
+            The beauty niche on TikTok represents one of the platform's most lucrative creator categories, with makeup and skincare influencers earning significantly more than average creators across most follower tiers. Beauty creators benefit from high brand partnership demand, premium product margins, and an audience that actively converts into customers. This comprehensive guide breaks down actual earnings data from thousands of beauty creators, revealing exactly how much you can expect to make at each follower milestone. From nano creators just starting out to established beauty influencers with hundreds of thousands of followers, we'll show you the real numbers behind brand deals, affiliate commissions, and multiple revenue streams that make beauty content so profitable on TikTok in 2026.
+          </p>
+        </Card>
+
         {/* Quick Overview */}
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">The Quick Answer</h2>
@@ -405,7 +421,7 @@ export default function BeautyCreatorsEarningsPage() {
               Use our brand deal calculator to see what you should charge as a beauty creator (remember to add 30-40% premium):
             </p>
             <Link
-              href="/calculators/brand-deal-rate"
+              href="/calculators/brand-deal-rate/"
               className="inline-block bg-gradient-to-r from-pink-500 to-rose-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600 transition-colors"
             >
               Calculate Your Rate →
@@ -417,17 +433,18 @@ export default function BeautyCreatorsEarningsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><Briefcase className="w-5 h-5" /> How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-700">4 methods to land beauty brand sponsorships</p>
             </Link>
-            <Link href="/data/brand-deal-rates-by-followers" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/data/brand-deal-rates-by-followers/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2"><TrendingUp className="w-5 h-5" /> Brand Deal Rates by Followers</h4>
               <p className="text-body-sm text-neutral-700">Complete pricing benchmarks for all follower tiers</p>
             </Link>
           </div>
         </Card>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

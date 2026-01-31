@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Card } from '@/components/ui/Card';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | TikTok Creator Calculator',
@@ -11,7 +12,13 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="min-h-screen bg-neutral-50 py-12">
+    <>
+      <WebPageSchema
+        title="Terms of Service | TikTok Creator Calculator"
+        description="Usage guidelines, disclaimers, and terms for TikTok Creator Calculator. Free tools provided as-is for informational purposes."
+        url="https://calculatecreator.com/terms/"
+      />
+      <div className="min-h-screen bg-neutral-50 py-12">
       <div className="container-custom max-w-4xl">
         <div className="flex items-center space-x-3 mb-8">
           <img
@@ -486,5 +493,6 @@ export default function TermsPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

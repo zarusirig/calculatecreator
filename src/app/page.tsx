@@ -135,13 +135,13 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6 animate-scale-in stagger-3">
             <Link
-              href="/calculators/tiktok-money"
+              href="/calculators/tiktok-money/"
               className="btn btn-primary btn-lg gradient-primary gradient-animated glow-purple font-semibold shadow-2xl hover:scale-105 transition-all"
             >
               Calculate Your Total Earnings
             </Link>
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="btn btn-lg glass-dark text-white border-2 border-white/30 hover:bg-white/10 font-semibold"
             >
               Estimate Creator Fund Income
@@ -364,7 +364,7 @@ export default function HomePage() {
 
         <div className="text-center mt-12">
           <Link
-            href="/guides"
+            href="/guides/"
             className="btn btn-lg glass-dark text-white border-2 border-white/30 hover:bg-white/10 font-semibold inline-flex items-center space-x-2"
           >
             <span>View All Guides</span>
@@ -573,7 +573,7 @@ export default function HomePage() {
 
         <div className="text-center mt-12">
           <Link
-            href="/faq"
+            href="/faq/"
             className="btn btn-lg glass-dark text-white border-2 border-white/30 hover:bg-white/10 font-semibold inline-flex items-center space-x-2"
           >
             <span>View All FAQs</span>
@@ -622,13 +622,13 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/calculators/tiktok-money"
+                href="/calculators/tiktok-money/"
                 className="btn btn-lg bg-white text-primary-600 hover:bg-neutral-100 font-bold shadow-2xl hover:scale-105 transition-all"
               >
                 Calculate Total Earnings Now
               </Link>
               <Link
-                href="/guides"
+                href="/guides/"
                 className="btn btn-lg glass-dark border-2 border-white text-white hover:bg-white/20 font-semibold"
               >
                 Explore Monetization Guides
@@ -670,23 +670,23 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6 text-body-sm text-white/70">
-            <Link href="/about" className="hover:text-white transition-colors">
+            <Link href="/about/" className="hover:text-white transition-colors">
               About
             </Link>
             <span className="text-white/30">•</span>
-            <Link href="/contact" className="hover:text-white transition-colors">
+            <Link href="/contact/" className="hover:text-white transition-colors">
               Contact
             </Link>
             <span className="text-white/30">•</span>
-            <Link href="/privacy" className="hover:text-white transition-colors">
+            <Link href="/privacy/" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
             <span className="text-white/30">•</span>
-            <Link href="/terms" className="hover:text-white transition-colors">
+            <Link href="/terms/" className="hover:text-white transition-colors">
               Terms of Service
             </Link>
             <span className="text-white/30">•</span>
-            <Link href="/compliance/sponsorship-disclosure" className="hover:text-white transition-colors">
+            <Link href="/compliance/sponsorship-disclosure/" className="hover:text-white transition-colors">
               Disclosure Policy
             </Link>
           </div>
@@ -737,7 +737,7 @@ const primaryCalculators: { name: string; slug: string; description: string; ico
   },
   {
     name: 'TikTok Shop Commission',
-    slug: 'shop-commission',
+    slug: 'commerce-ads/shop-profit',
     description: 'Calculate affiliate earnings from TikTok Shop product promotions and commission rates',
     icon: ShoppingBag,
   },
@@ -772,7 +772,7 @@ const calculatorCategories: { title: string; icon: LucideIcon; description: stri
       { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', icon: Banknote },
       { name: 'Brand Deal Rate', slug: 'brand-deal-rate', icon: Handshake },
       { name: 'LIVE Gifts', slug: 'live-gifts', icon: Gift },
-      { name: 'Shop Commission', slug: 'shop-commission', icon: ShoppingBag },
+      { name: 'Shop Commission', slug: 'commerce-ads/shop-profit', icon: ShoppingBag },
       { name: 'Affiliate Commission', slug: 'affiliate-commission', icon: Handshake },
     ],
   },
@@ -832,7 +832,7 @@ const calculatorCategories: { title: string; icon: LucideIcon; description: stri
     description: 'Manage creator finances, production costs, niche profitability, tax deductions, and content value. Professional tools for serious creators.',
     calculators: [
       { name: 'Production Cost', slug: 'production-cost', icon: Camera },
-      { name: 'Creator Tax', slug: 'creator-tax', icon: ClipboardList },
+      { name: 'Creator Tax', slug: 'utility-tools/tax', icon: ClipboardList },
       { name: 'Niche Profitability', slug: 'niche-profitability', icon: Target },
       { name: 'Content Value', slug: 'content-value', icon: Lightbulb },
       { name: 'Multi-Platform Earnings', slug: 'multi-platform-earnings', icon: Globe },

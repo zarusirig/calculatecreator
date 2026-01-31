@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { AlertTriangle, CheckCircle } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off 2026',
@@ -101,11 +102,17 @@ export default function CreatorTaxDeductionsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="TikTok Creator Tax Deductions Guide: What You Can Write Off 2026"
+        description="Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs."
+        url="https://calculatecreator.com/advanced/creator-tax-deductions/"
+        category="Advanced Guides"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Tax Deductions</span>
           </div>
         </div>
@@ -300,11 +307,11 @@ export default function CreatorTaxDeductionsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/creator-tax" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Creator Tax Calculator</h3>
               <p className="text-body-sm text-neutral-600">Estimate your quarterly tax obligations</p>
             </Link>
-            <Link href="/advanced/creator-tax-deductions-guide" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Complete Tax Deductions Guide</h3>
               <p className="text-body-sm text-neutral-600">In-depth guide with examples</p>
             </Link>

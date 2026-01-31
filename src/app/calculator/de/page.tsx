@@ -113,7 +113,7 @@ export default function TikTokRechnerDE() {
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/region" className="text-neutral-600 hover:text-primary-600">Globale TikTok Statistiken</Link>
+          <Link href="/region/" className="text-neutral-600 hover:text-primary-600">Globale TikTok Statistiken</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Deutsch</span>
         </nav>
@@ -130,7 +130,7 @@ export default function TikTokRechnerDE() {
           </p>
           <div className="mt-4">
             <Link
-              href="/region"
+              href="/region/"
               className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700"
             >
               <Globe className="w-4 h-4" />
@@ -352,23 +352,23 @@ export default function TikTokRechnerDE() {
                 TikTok Rechner verfügbar in mehreren Sprachen:
               </p>
               <div className="grid grid-cols-2 gap-2">
-                <Link href="/calculator/es" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
+                <Link href="/calculator/es/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Español</span>
                 </Link>
-                <Link href="/calculator/fr" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
+                <Link href="/calculator/fr/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Français</span>
                 </Link>
-                <Link href="/calculator/it" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
+                <Link href="/calculator/it/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Italiano</span>
                 </Link>
-                <Link href="/calculator/pt-br" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
+                <Link href="/calculator/pt-br/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Português</span>
                 </Link>
-                <Link href="/calculator/my" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
+                <Link href="/calculator/my/" className="flex items-center space-x-1 text-body-sm text-primary-600 hover:text-primary-700 hover:underline">
                   <Globe className="w-4 h-4" />
                   <span>Bahasa Malaysia</span>
                 </Link>

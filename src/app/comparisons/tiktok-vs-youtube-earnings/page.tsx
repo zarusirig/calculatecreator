@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Scale, DollarSign, Music, Video, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -122,13 +123,24 @@ export default function TikTokVsYouTubeEarningsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok vs YouTube Earnings: Which Platform Pays More in 2025?"
+        description="Complete comparison of TikTok vs YouTube creator earnings. See RPM rates, monetization requirements, and which platform makes more money per view."
+        url="https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok Creator Earnings"
+        subjectB="YouTube Creator Earnings"
+        faqs={faqs}
+        readTime="12 min"
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Comparisons</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Comparisons</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok vs YouTube Earnings</span>
           </div>
@@ -491,14 +503,14 @@ export default function TikTokVsYouTubeEarningsPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <DollarSign className="w-5 h-5 text-green-600 flex-shrink-0" />
                 How to Make Money on TikTok
               </h4>
               <p className="text-body-sm text-neutral-700">Complete guide to all TikTok monetization methods</p>
             </Link>
-            <Link href="/guides/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <BarChart3 className="w-5 h-5 text-blue-600 flex-shrink-0" />
                 TikTok Creator Fund Guide

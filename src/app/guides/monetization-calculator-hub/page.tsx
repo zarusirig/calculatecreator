@@ -96,6 +96,15 @@ export default function MonetizationCalculatorHubPage() {
             </div>
           </div>
 
+          {/* Introduction */}
+          <section className="py-8 bg-white -mx-4 px-4 mb-8">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-body-lg text-neutral-700 leading-relaxed">
+                TikTok has evolved from a viral video platform into a comprehensive creator economy with multiple income streams that enable full-time creator businesses earning substantial income. In 2026, successful creators earn from 5-8 different revenue sources simultaneously, with top creators generating $50K-$500K+ monthly through strategic diversification of their monetization approach. Yet most creators struggle to monetize effectively because they don't understand which income streams to prioritize at their current follower count, how to calculate realistic earnings potential based on their specific metrics, what rates to charge brands for sponsored content, or how to build sustainable revenue beyond hoping for viral videos. This comprehensive hub serves as your complete resource for mastering every TikTok monetization method available to creators, from Creator Fund optimization and brand deal pricing strategies to LIVE gift maximization and TikTok Shop commission structures. You'll gain access to specialized calculators for each income stream that provide realistic earnings projections, learn the optimal income mix at every follower milestone from 1K to 1M+, and discover which monetization methods to activate first as you build your creator business in 2026 and beyond.
+              </p>
+            </div>
+          </section>
+
           {/* Table of Contents */}
           <Card className="max-w-4xl mx-auto mb-12">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -125,7 +134,7 @@ export default function MonetizationCalculatorHubPage() {
                 </h2>
                 <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
                   <p>
-                    TikTok has evolved from a viral video platform to a comprehensive creator economy with multiple income streams. In 2026, successful creators earn from 5-8 different revenue sources simultaneously, with top creators generating $50K-$500K+ monthly.
+                    TikTok has evolved from a viral video platform into a comprehensive creator economy with multiple income streams that enable full-time creator businesses. In 2026, successful creators earn from 5-8 different revenue sources simultaneously, with top creators generating $50K-$500K+ monthly through strategic diversification. Yet most creators struggle to monetize effectively because they don't understand which income streams to prioritize at their current follower count, how to calculate realistic earnings potential, what rates to charge brands, or how to build sustainable revenue beyond hoping for viral videos. The biggest mistake creators make is relying on a single monetization method—usually Creator Fund—which provides the lowest earnings per view and creates income instability when views fluctuate. This comprehensive hub serves as your complete resource for mastering every TikTok monetization method, from Creator Fund optimization and brand deal pricing to LIVE gift strategies and TikTok Shop commission structures. You'll gain access to specialized calculators for each income stream that provide realistic earnings projections based on your specific metrics, learn the optimal income mix at every follower milestone from 1K to 1M+, discover which monetization methods to activate first and which to add as you scale, master pricing strategies that ensure you're never leaving money on the table, and understand how to diversify income so algorithm changes or platform shifts don't destroy your business overnight. Whether you're at 5,000 followers trying to earn your first dollar or 500,000 followers looking to scale from $5K to $50K monthly, this hub provides the frameworks, calculators, and strategic guidance to build sustainable creator income across multiple channels.
                   </p>
                   <p>
                     The TikTok monetization landscape includes:
@@ -301,7 +310,7 @@ export default function MonetizationCalculatorHubPage() {
                       </ol>
 
                       <div className="mt-4 text-center">
-                        <Link href="/calculators/tiktok-creator-fund">
+                        <Link href="/calculators/tiktok-creator-fund/">
                           <Button variant="primary" size="lg">
                             Try Creator Fund Calculator
                           </Button>
@@ -452,8 +461,8 @@ export default function MonetizationCalculatorHubPage() {
                       <div className="p-5 bg-blue-50 rounded-lg">
                         <h4 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><FileText className="w-5 h-5 text-blue-600" /> Pre-Negotiation Prep</h4>
                         <ul className="space-y-2 text-sm text-neutral-700">
-                          <li>• Run <Link href="/calculators/engagement-rate" className="text-primary-600 underline">Engagement Rate Calculator</Link> - Have exact percentage ready</li>
-                          <li>• Use <Link href="/calculators/brand-deal-rate" className="text-primary-600 underline">Brand Deal Rate Calculator</Link> - Know your market value</li>
+                          <li>• Run <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Engagement Rate Calculator</Link> - Have exact percentage ready</li>
+                          <li>• Use <Link href="/calculators/brand-deal-rate/" className="text-primary-600 underline">Brand Deal Rate Calculator</Link> - Know your market value</li>
                           <li>• Check recent video performance - Prepare your top 3-5 performing videos</li>
                           <li>• Research brand's budget tier - Small startup vs Fortune 500 changes expectations</li>
                           <li>• Define your minimum rate - Know your walk-away number before negotiating</li>
@@ -588,7 +597,7 @@ export default function MonetizationCalculatorHubPage() {
                       <p className="text-sm text-neutral-700 mb-3">
                         Track your earnings by entering total diamonds received. The calculator converts to USD and projects monthly income based on streaming frequency.
                       </p>
-                      <Link href="/calculators/live-gifts">
+                      <Link href="/calculators/live-gifts/">
                         <Button variant="primary">Try LIVE Gifts Calculator</Button>
                       </Link>
                     </div>
@@ -719,7 +728,7 @@ export default function MonetizationCalculatorHubPage() {
                       <p className="text-sm text-neutral-700 mb-3">
                         Estimate your Shop earnings by entering average product price, conversion rate, and commission percentage. The calculator projects monthly income based on your traffic.
                       </p>
-                      <Link href="/calculators/shop-commission">
+                      <Link href="/calculators/commerce-ads/shop-profit/">
                         <Button variant="primary">Try Shop Commission Calculator</Button>
                       </Link>
                     </div>
@@ -799,7 +808,7 @@ export default function MonetizationCalculatorHubPage() {
                           </li>
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" />
-                            <span><strong>Track performance:</strong> Use <Link href="/calculators/affiliate-commission" className="text-primary-600 underline">Affiliate Commission Calculator</Link> to compare programs</span>
+                            <span><strong>Track performance:</strong> Use <Link href="/calculators/affiliate-commission/" className="text-primary-600 underline">Affiliate Commission Calculator</Link> to compare programs</span>
                           </li>
                         </ul>
                       </div>
@@ -842,7 +851,7 @@ export default function MonetizationCalculatorHubPage() {
                     </div>
                   </div>
                   <div className="mt-4">
-                    <Link href="/calculators/ad-revenue">
+                    <Link href="/calculators/ad-revenue/">
                       <Button variant="primary">Calculate Ad Revenue Potential</Button>
                     </Link>
                   </div>
@@ -911,7 +920,7 @@ export default function MonetizationCalculatorHubPage() {
                   </div>
 
                   <div className="mt-6">
-                    <Link href="/calculators/multi-platform-earnings">
+                    <Link href="/calculators/multi-platform-earnings/">
                       <Button variant="primary" size="lg">Calculate Multi-Platform Earnings</Button>
                     </Link>
                   </div>
@@ -959,7 +968,7 @@ export default function MonetizationCalculatorHubPage() {
                   </div>
 
                   <div className="mt-4">
-                    <Link href="/calculators/creator-tax">
+                    <Link href="/calculators/utility-tools/tax/">
                       <Button variant="primary">Calculate Tax Obligations</Button>
                     </Link>
                   </div>
@@ -1081,17 +1090,40 @@ export default function MonetizationCalculatorHubPage() {
                   Use our monetization calculators to estimate earnings, price deals correctly, and build your creator business strategically.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/calculators/tiktok-money">
+                  <Link href="/calculators/tiktok-money/">
                     <Button variant="primary" size="lg">
                       Calculate Total Earnings
                     </Button>
                   </Link>
-                  <Link href="/calculators/brand-deal-rate">
+                  <Link href="/calculators/brand-deal-rate/">
                     <Button variant="secondary" size="lg">
                       Price Your Brand Deals
                     </Button>
                   </Link>
                 </div>
+              </div>
+            </Card>
+
+            {/* Related Guides */}
+            <Card>
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">How to Make Money on TikTok</h4>
+                  <p className="text-body-sm text-neutral-700">Complete guide to all TikTok monetization methods</p>
+                </Link>
+                <Link href="/guides/multi-platform-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Multi-Platform Strategy</h4>
+                  <p className="text-body-sm text-neutral-700">Diversify income across multiple platforms</p>
+                </Link>
+                <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">Brand Deals Guide</h4>
+                  <p className="text-body-sm text-neutral-700">Maximize earnings with sponsored partnerships</p>
+                </Link>
+                <Link href="/guides/tiktok-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                  <h4 className="font-semibold text-neutral-900 mb-2">TikTok Shop Affiliate</h4>
+                  <p className="text-body-sm text-neutral-700">Earn commissions promoting products</p>
+                </Link>
               </div>
             </Card>
 

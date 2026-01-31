@@ -80,7 +80,7 @@ export default function CampaignROICalculatorPage() {
             TikTok Campaign ROI Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate return on investment for your TikTok marketing campaigns to measure profitability and performance.
+            Calculate return on investment for your TikTok marketing campaigns using actual ad spend and revenue data. This calculator measures both ROI percentage and ROAS (Return on Ad Spend) to help you understand campaign profitability. Compare your results against industry benchmarks ranging from 200-400% ROI for e-commerce to determine if your campaigns are worth scaling.
           </p>
         </div>
 

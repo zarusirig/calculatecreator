@@ -140,7 +140,7 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     ],
     disclaimers: ['financial', 'tax'],
   },
-  'creator-tax': {
+  'utility-tools/tax': {
     author: 'emily-thompson',
     reviewedBy: 'sarah-johnson',
     reviewDate: '2025-11-13',
@@ -157,7 +157,7 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     ],
     disclaimers: ['tax', 'financial'],
   },
-  'shop-commission': {
+  'commerce-ads/shop-profit': {
     author: 'david-kim',
     reviewedBy: 'sarah-johnson',
     reviewDate: '2025-11-13',

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, Briefcase, Users, Heart, CheckCircle, MapPin, Target, DollarSign, Lightbulb, Handshake } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Marketplace: Complete Guide for Brands & Creators 2026',
@@ -38,14 +39,23 @@ export default function TikTokCreatorMarketplacePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <ArticleSchema
+        headline="TikTok Creator Marketplace: Complete Guide for Brands & Creators"
+        description="Complete guide to TikTok Creator Marketplace. How to join, connect with brands, campaign management, payment terms, and success strategies."
+        url="https://calculatecreator.com/guides/tiktok-creator-marketplace"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
+        keywords={['tiktok creator marketplace', 'ttcm', 'brand partnerships tiktok', 'creator marketplace guide', 'tiktok brand deals platform']}
+      />
+      <div className="min-h-screen bg-neutral-50">
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Creator Marketplace</span>
           </div>
@@ -95,7 +105,7 @@ export default function TikTokCreatorMarketplacePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">What Is TikTok Creator Marketplace?</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok Creator Marketplace (TTCM) is the platform's official branded content marketplace, launched in 2019 and expanded globally in 2021. It's designed to connect brands with creators for authentic sponsored content.
+            TikTok Creator Marketplace (TTCM) is the platform's official branded content marketplace that revolutionizes how creators and brands discover, negotiate, and execute sponsored content partnerships at scale. Launched in 2019 and expanded globally by 2021, this sophisticated platform eliminates traditional pain points of brand deal negotiations by providing transparent audience analytics, streamlined contract management, secure payment processing, and built-in campaign performance tracking. Unlike third-party influencer marketing platforms that charge hefty commissions, TikTok takes zero fees from creators, meaning you keep 100% of negotiated brand payments while gaining access to premium advertisers actively seeking creators in your niche. With requirements recently lowered in many regions, creators with as few as 100,000 followers can now access enterprise-level brand partnership opportunities, detailed demographic insights about their audience, campaign invitation systems, and professional portfolio tools that command higher rates and establish long-term relationships with major brands.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-5 bg-blue-50 rounded-lg">
@@ -339,19 +349,19 @@ export default function TikTokCreatorMarketplacePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-get-brand-deals-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Get Brand Deals</h4>
               <p className="text-body-sm text-neutral-700">Beyond Creator Marketplace</p>
             </Link>
-            <Link href="/calculators/brand-deal-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate what to charge</p>
             </Link>
-            <Link href="/resources/brand-deal-contract" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/resources/brand-deal-contract/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Contract Template</h4>
               <p className="text-body-sm text-neutral-700">For independent deals</p>
             </Link>
-            <Link href="/compliance/sponsorship-disclosure" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/compliance/sponsorship-disclosure/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Sponsorship Disclosure Rules</h4>
               <p className="text-body-sm text-neutral-700">FTC compliance guide</p>
             </Link>
@@ -359,5 +369,6 @@ export default function TikTokCreatorMarketplacePage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }

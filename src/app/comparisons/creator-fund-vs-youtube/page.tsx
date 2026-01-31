@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Fund vs YouTube Partner Program: 2026 Comparison',
@@ -12,13 +13,47 @@ export const metadata: Metadata = {
 };
 
 export default function CreatorFundVsYouTubePage() {
+  const faqs = [
+    {
+      question: 'Can I monetize both TikTok and YouTube simultaneously?',
+      answer: 'Yes! You can be in both Creator Fund and YouTube Partner Program at the same time. Many creators use this strategy to maximize total income.',
+    },
+    {
+      question: 'Which should I join first?',
+      answer: 'TikTok Creator Fund is typically faster to qualify for (6-12 months vs 12-24 months for YouTube). Start with TikTok, then add YouTube once you have content and audience foundation.',
+    },
+    {
+      question: 'Does YouTube RPM vary by country?',
+      answer: 'Yes significantly. US, Canada, UK, and Australia have highest RPMs ($2-8). India and developing countries see $0.20-1.50 RPM. TikTok RPM is more consistent globally at $0.02-0.04.',
+    },
+    {
+      question: 'How do payment schedules compare?',
+      answer: 'TikTok offers on-demand withdrawals (3-14 day processing) once you hit $50. YouTube pays monthly between the 21st-26th once you reach $100. TikTok\'s flexibility is better for cash flow.',
+    },
+    {
+      question: 'Can I repurpose content between platforms?',
+      answer: 'Absolutely! Post TikToks as YouTube Shorts to grow your YouTube channel faster. Then expand into long-form (8+ min) videos on YouTube for higher ad revenue.',
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ComparisonSchema
+        title="TikTok Creator Fund vs YouTube Partner Program: 2026 Comparison"
+        description="Complete comparison of TikTok Creator Fund vs YouTube monetization. RPM rates, requirements, earnings potential, and which platform pays more."
+        url="https://calculatecreator.com/comparisons/creator-fund-vs-youtube/"
+        datePublished="2024-11-01"
+        dateModified="2025-11-15"
+        subjectA="TikTok Creator Fund"
+        subjectB="YouTube Partner Program"
+        faqs={faqs}
+        readTime="10 min"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/data">Data & Insights</Link><span>/</span>
+            <Link href="/data/">Data & Insights</Link><span>/</span>
             <span className="text-neutral-900">Creator Fund vs YouTube</span>
           </div>
         </div>
@@ -415,15 +450,15 @@ export default function CreatorFundVsYouTubePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <Link href="/comparisons/tiktok-vs-instagram-income" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/comparisons/tiktok-vs-instagram-income/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok vs Instagram Income</h4>
               <p className="text-body-sm text-neutral-700">Platform income comparison</p>
             </Link>
-            <Link href="/calculators/tiktok-creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok Creator Fund Calculator</h4>
               <p className="text-body-sm text-neutral-700">Estimate your TikTok earnings</p>
             </Link>
-            <Link href="/comparisons/creator-fund-vs-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/comparisons/creator-fund-vs-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund vs Brand Deals</h4>
               <p className="text-body-sm text-neutral-700">Which monetization pays more</p>
             </Link>

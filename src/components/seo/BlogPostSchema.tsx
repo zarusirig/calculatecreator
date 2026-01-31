@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 interface FAQ {
   question: string;
   answer: string;
@@ -35,7 +33,7 @@ export function BlogPostSchema({
     author: {
       '@type': 'Organization',
       name: 'CalculateCreator.com',
-      url: 'https://calculatecreator.com'
+      url: 'https://calculatecreator.com/'
     },
     publisher: {
       '@type': 'Organization',
@@ -92,19 +90,16 @@ export function BlogPostSchema({
 
   return (
     <>
-      <Script
-        id="article-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <Script
-        id="breadcrumb-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       {faqSchema && (
-        <Script
-          id="faq-schema"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />

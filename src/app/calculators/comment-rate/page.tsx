@@ -77,8 +77,7 @@ export default function CommentRateCalculatorPage() {
             TikTok Comment Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your comment-to-view ratio to measure community engagement. High comment
-            rates indicate content that sparks conversation and builds loyal audiences.
+            Calculate your comment-to-view ratio to measure true community engagement beyond passive likes. This metric reveals how effectively your content sparks conversation and builds loyal audiences. High comment rates signal to TikTok's algorithm that your content is discussion-worthy, earning better distribution. Ideal comment rates range from 0.5-1% for most creators, with exceptional content exceeding 1%.
           </p>
         </div>
 

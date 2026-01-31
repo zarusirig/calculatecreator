@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, BarChart3 } from 'lucide-react';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Comments-to-Likes Ratio: What\'s Good & How to Improve It',
@@ -118,13 +119,19 @@ export default function TikTokCommentsToLikesRatioPage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="TikTok Comments-to-Likes Ratio: What's Good & How to Improve It"
+        description="Learn what a good comments-to-likes ratio is on TikTok, why it matters for the algorithm, and 8 strategies to improve yours."
+        url="https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/"
+        category="Metrics"
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/metrics" className="hover:text-neutral-900 transition-colors">Metrics</Link>
+            <Link href="/metrics/" className="hover:text-neutral-900 transition-colors">Metrics</Link>
             <span>/</span>
             <span className="text-neutral-900">Comments-to-Likes Ratio</span>
           </div>
@@ -416,9 +423,9 @@ export default function TikTokCommentsToLikesRatioPage() {
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">Optimize further:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li>Use <Link href="/calculators/engagement-rate" className="text-blue-600 hover:underline">TikTok Engagement Rate Calculator</Link> for overall engagement</li>
-                <li>Read <Link href="/guides/how-to-increase-engagement" className="text-blue-600 hover:underline">How to Increase Engagement Rate</Link> for comprehensive strategies</li>
-                <li>Learn <Link href="/guides/how-to-go-viral" className="text-blue-600 hover:underline">How to Go Viral on TikTok</Link></li>
+                <li>Use <Link href="/calculators/engagement-rate/" className="text-blue-600 hover:underline">TikTok Engagement Rate Calculator</Link> for overall engagement</li>
+                <li>Read <Link href="/guides/how-to-increase-engagement/" className="text-blue-600 hover:underline">How to Increase Engagement Rate</Link> for comprehensive strategies</li>
+                <li>Learn <Link href="/guides/how-to-go-viral/" className="text-blue-600 hover:underline">How to Go Viral on TikTok</Link></li>
               </ul>
             </div>
           </div>
@@ -428,19 +435,19 @@ export default function TikTokCommentsToLikesRatioPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/engagement-rate" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Engagement Rate Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate overall engagement</p>
             </Link>
-            <Link href="/guides/how-to-increase-engagement" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-increase-engagement/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Increase TikTok Engagement</h3>
               <p className="text-body-sm text-neutral-600">Comprehensive engagement strategies</p>
             </Link>
-            <Link href="/guides/how-to-go-viral" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-go-viral/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Go Viral on TikTok</h3>
               <p className="text-body-sm text-neutral-600">Maximize reach and visibility</p>
             </Link>
-            <Link href="/calculators/video-performance" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/video-performance/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Video Performance Calculator</h3>
               <p className="text-body-sm text-neutral-600">Analyze video metrics</p>
             </Link>

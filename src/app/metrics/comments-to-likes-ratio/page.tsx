@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Comments-to-Likes Ratio: What\'s Good? 2026',
@@ -14,11 +15,17 @@ export const metadata: Metadata = {
 export default function CommentsToLikesRatioPage() {
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ArticleSchema
+        title="TikTok Comments-to-Likes Ratio: What's Good? 2026"
+        description="Understanding the comments-to-likes ratio metric. Benchmarks, what it means, and how to improve it."
+        url="https://calculatecreator.com/metrics/comments-to-likes-ratio/"
+        category="Metrics"
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/metrics">Metrics</Link><span>/</span>
+            <Link href="/metrics/">Metrics</Link><span>/</span>
             <span className="text-neutral-900">Comments-to-Likes Ratio</span>
           </div>
         </div>

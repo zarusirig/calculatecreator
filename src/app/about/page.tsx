@@ -435,13 +435,13 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-neutral-100 transition-colors"
                 >
                   Contact Us &rarr;
                 </Link>
                 <Link
-                  href="/faq"
+                  href="/faq/"
                   className="inline-flex items-center px-6 py-3 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors"
                 >
                   View FAQ
@@ -454,17 +454,17 @@ export default function AboutPage() {
           <div className="mt-12">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-6 text-center">Explore Our Tools</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link href="/calculators" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
+              <Link href="/calculators/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
                 <Calculator size={28} className="text-primary-600 mx-auto mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">All Calculators</h3>
                 <p className="text-body-sm text-neutral-600">35+ free creator tools</p>
               </Link>
-              <Link href="/guides" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
+              <Link href="/guides/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
                 <BookOpen size={28} className="text-primary-600 mx-auto mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">Creator Guides</h3>
                 <p className="text-body-sm text-neutral-600">In-depth monetization guides</p>
               </Link>
-              <Link href="/news" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
+              <Link href="/news/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
                 <Newspaper size={28} className="text-primary-600 mx-auto mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">TikTok News</h3>
                 <p className="text-body-sm text-neutral-600">Latest platform updates</p>

@@ -2,6 +2,7 @@ import type { Metadata} from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Calendar, Clock, DollarSign, AlertCircle } from 'lucide-react';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Payment Schedule: When Do You Get Paid? 2026',
@@ -15,11 +16,19 @@ export const metadata: Metadata = {
 export default function ShopPaymentSchedulePage() {
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok Shop Payment Schedule: When Do You Get Paid? 2026"
+        description="Complete TikTok Shop payout schedule, processing times, minimum thresholds, payment methods, and troubleshooting for delayed payments."
+        url="https://calculatecreator.com/reference/shop-payment-schedule/"
+        datePublished="2024-02-01"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link><span>/</span>
-            <Link href="/guides">Guides</Link><span>/</span>
+            <Link href="/guides/">Guides</Link><span>/</span>
             <span className="text-neutral-900">Shop Payment Schedule</span>
           </div>
         </div>
@@ -242,7 +251,7 @@ export default function ShopPaymentSchedulePage() {
             </div>
           </div>
           <div className="mt-4">
-            <Link href="/advanced/creator-tax-deductions-guide" className="text-teal-600 font-semibold hover:underline">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="text-teal-600 font-semibold hover:underline">
               Complete Tax Guide for TikTok Creators and Sellers →
             </Link>
           </div>
@@ -251,19 +260,19 @@ export default function ShopPaymentSchedulePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">TikTok Shop Commission Calculator</h4>
               <p className="text-body-sm text-neutral-700">Calculate your affiliate earnings</p>
             </Link>
-            <Link href="/reference/shop-commission-rates" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/reference/shop-commission-rates/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Shop Commission Rates</h4>
               <p className="text-body-sm text-neutral-700">Commission rates by category</p>
             </Link>
-            <Link href="/guides/how-to-become-shop-affiliate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/guides/how-to-become-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Become Shop Affiliate</h4>
               <p className="text-body-sm text-neutral-700">Join TikTok Shop program</p>
             </Link>
-            <Link href="/advanced/creator-tax-deductions-guide" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h4 className="font-semibold text-neutral-900 mb-2">Tax Deductions Guide</h4>
               <p className="text-body-sm text-neutral-700">Maximize your tax savings</p>
             </Link>

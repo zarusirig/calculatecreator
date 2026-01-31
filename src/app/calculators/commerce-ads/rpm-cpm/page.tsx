@@ -50,9 +50,9 @@ export default function RPMCalculatorPage() {
             <TrendingUp size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok RPM Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your revenue per 1,000 views (RPM) to understand your earning efficiency and compare to industry benchmarks.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your revenue per 1,000 views (RPM) to understand your earning efficiency and compare to industry benchmarks. This calculator helps creators track earnings performance, identify optimization opportunities, and forecast monthly income based on view counts. Essential for creators serious about monetizing their TikTok content through the Creator Fund and other revenue streams.</p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-            Calculate your <Link href="/calculators/tiktok-creator-fund" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Creator Fund earnings</Link> or learn <Link href="/guides/maximize-creator-fund-rpm" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how to maximize your TikTok RPM rate</Link> for higher payouts.
+            Calculate your <Link href="/calculators/tiktok-creator-fund/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Creator Fund earnings</Link> or learn <Link href="/guides/maximize-creator-fund-rpm/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how to maximize your TikTok RPM rate</Link> for higher payouts.
           </p>
         </div>
 

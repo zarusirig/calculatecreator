@@ -76,8 +76,7 @@ export default function FollowerConversionCalculatorPage() {
             TikTok Follower Conversion Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your e-commerce conversion funnel from followers to customers.
-            Track revenue per follower and identify optimization opportunities.
+            Calculate your complete e-commerce conversion funnel from TikTok followers to paying customers using click-through rates and purchase conversion metrics. This calculator tracks your CTR (typically 5-10% for successful creators), site conversion rate (2-5% benchmark), and overall conversion to reveal where you're losing potential buyers. Measure revenue per follower to understand audience monetization effectiveness and identify exactly where to focus optimization efforts for maximum impact.
           </p>
         </div>
 

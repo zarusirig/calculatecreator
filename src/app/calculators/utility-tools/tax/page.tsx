@@ -41,7 +41,7 @@ export default function CreatorTaxCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Tax Calculator"
         description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
-        url="https://calculatecreator.com/calculators/creator-tax"
+        url="https://calculatecreator.com/calculators/utility-tools/tax/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 2156 }}
         datePublished="2024-01-20"
         dateModified="2025-11-13"
@@ -50,19 +50,19 @@ export default function CreatorTaxCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Creator Tax Calculator', url: 'https://calculatecreator.com/calculators/creator-tax' },
+          { name: 'Home', url: 'https://calculatecreator.com/' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Creator Tax Calculator', url: 'https://calculatecreator.com/calculators/utility-tools/tax/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Creator Tax Calculator',
-              href: '/calculators/creator-tax',
+              href: '/calculators/utility-tools/tax/',
             },
           ]}
         />
@@ -75,8 +75,7 @@ export default function CreatorTaxCalculatorPage() {
             TikTok Creator Tax Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Estimate your tax obligations as a content creator. Plan for federal,
-            state, and self-employment taxes.
+            Estimate your tax obligations as a content creator. Plan for federal, state, and self-employment taxes with accurate calculations based on 2026 tax brackets. This calculator helps creators set aside appropriate amounts for quarterly tax payments, understand deductions, and avoid penalties. Essential for managing creator income responsibly and staying compliant with tax requirements. Calculate your effective tax rate including self-employment tax obligations and see how business expense deductions reduce your tax burden. Get quarterly payment estimates to avoid IRS penalties and understand the true after-tax value of your creator earnings.
           </p>
         </div>
 
@@ -288,7 +287,7 @@ export default function CreatorTaxCalculatorPage() {
           </Card>
 
           <MethodologySection
-            calculatorName="creator-tax"
+            calculatorName="utility-tools/tax"
             formula={`Net Income = Annual Income - Business Expenses
 Federal Tax = Progressive tax brackets (10-37%)
 State Tax = Net Income × State Rate (0-10%)
@@ -364,7 +363,7 @@ Total Tax: $21,695 (33.4% effective rate)`}
           />
 
           <RelatedCalculators
-            currentCalculator="creator-tax"
+            currentCalculator="utility-tools/tax"
             calculators={[
               {
                 name: 'TikTok Money Calculator',

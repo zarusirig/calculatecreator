@@ -12,6 +12,7 @@ import {
   BarChart3,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Calculator FAQ: 40+ Common Questions Answered | CalculateCreator',
@@ -20,39 +21,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://calculatecreator.com/faq/',
   },
-};
-
-// FAQ Schema for SEO
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    // About This Site
-    {
-      "@type": "Question",
-      "name": "Who created CalculateCreator.com and why?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CalculateCreator was built by a team of data analysts, former TikTok creators, and monetization experts who were frustrated by inaccurate earnings calculators online. Our mission is to provide free, data-driven tools backed by surveys of 500+ creators, official TikTok documentation, and industry research."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How accurate are your calculator estimates?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our calculators are based on data from 500+ creator surveys, official TikTok Creator Portal documentation, and 2024-2025 industry reports. We provide ranges rather than exact numbers because actual earnings vary based on audience location, engagement quality, niche, and algorithm changes. Most creators find our estimates within 15-25% of actual earnings."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where does your data come from?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our data sources include: quarterly surveys of 500+ TikTok creators, TikTok Creator Portal official documentation, industry reports from CreatorIQ, Influencer Marketing Hub, and AspireIQ, talent agency rate cards, and direct feedback from our user community. All sources are cited in each calculator's methodology section."
-      }
-    }
-  ]
 };
 
 // FAQ Data organized by category
@@ -259,7 +227,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'Do you pay taxes on TikTok LIVE gifts?',
         answer: 'Yes. LIVE gift earnings are taxable income in most countries. In the US, TikTok reports earnings over $600 via 1099 form. You\'re responsible for quarterly estimated taxes as self-employment income. Track all earnings throughout the year. Consult a tax professional familiar with creator income to ensure compliance and maximize deductions.',
-        link: { text: 'Creator Tax Calculator', href: '/calculators/creator-tax' }
+        link: { text: 'Creator Tax Calculator', href: '/calculators/utility-tools/tax/' }
       },
     ],
   },
@@ -304,7 +272,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How much can I realistically earn from TikTok Shop?',
         answer: 'Earnings vary widely. Small creators (1-10K followers) typically earn $50-300/month from Shop. Mid-tier creators (50-100K) can earn $500-3,000/month. Top affiliates (500K+) earn $5,000-50,000+ monthly. Success depends on niche alignment, content quality, conversion rates, and product selection. Beauty, fashion, and home niches typically perform best.',
-        link: { text: 'Shop Commission Calculator', href: '/calculators/shop-commission' }
+        link: { text: 'Shop Commission Calculator', href: '/calculators/commerce-ads/shop-profit/' }
       },
     ],
   },
@@ -346,12 +314,18 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
 ];
 
 export default function FAQPage() {
+  // Collect all FAQs for schema
+  const allFAQs = faqCategories.flatMap(category =>
+    category.questions.map(q => ({ question: q.question, answer: q.answer }))
+  );
+
   return (
     <>
-      {/* FAQ Schema for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      <FAQPageSchema
+        title="TikTok Calculator FAQ: 40+ Common Questions Answered"
+        description="Get answers to frequently asked questions about TikTok earnings calculators, Creator Fund rates, brand deals, LIVE gifts, TikTok Shop, and monetization strategies."
+        url="https://calculatecreator.com/faq/"
+        faqs={allFAQs}
       />
 
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
@@ -375,7 +349,7 @@ export default function FAQPage() {
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
               Everything you need to know about TikTok Creator Calculator, monetization,
-              and growing your creator business. Can't find your answer? <Link href="/contact" className="text-primary-600 hover:underline">Contact us</Link>.
+              and growing your creator business. Can't find your answer? <Link href="/contact/" className="text-primary-600 hover:underline">Contact us</Link>.
             </p>
           </div>
 
@@ -449,7 +423,7 @@ export default function FAQPage() {
                 questions, feedback, or methodology inquiries.
               </p>
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-neutral-100 transition-colors"
               >
                 Contact Us &rarr;
@@ -461,17 +435,17 @@ export default function FAQPage() {
           <div className="mt-12">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Popular Resources</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link href="/guides/tiktok-creator-fund" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
+              <Link href="/guides/tiktok-creator-fund/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
                 <DollarSign size={24} className="text-primary-600 mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">Creator Fund Guide</h3>
                 <p className="text-body-sm text-neutral-600">Complete monetization breakdown</p>
               </Link>
-              <Link href="/calculators/engagement-rate" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
+              <Link href="/calculators/engagement-rate/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
                 <BarChart3 size={24} className="text-primary-600 mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">Engagement Calculator</h3>
                 <p className="text-body-sm text-neutral-600">Check your engagement rate</p>
               </Link>
-              <Link href="/calculators/brand-deal-rate" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
+              <Link href="/calculators/brand-deal-rate/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow">
                 <Handshake size={24} className="text-primary-600 mb-2" />
                 <h3 className="font-semibold text-neutral-900 mb-1">Brand Deal Calculator</h3>
                 <p className="text-body-sm text-neutral-600">Know what to charge sponsors</p>

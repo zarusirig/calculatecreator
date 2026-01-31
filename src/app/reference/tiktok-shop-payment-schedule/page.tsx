@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Calendar, Clock, DollarSign } from 'lucide-react';
+import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Payment Schedule: When You Get Paid 2026',
@@ -47,13 +48,21 @@ export default function TikTokShopPaymentSchedulePage() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
+      <ReferenceSchema
+        title="TikTok Shop Payment Schedule: When You Get Paid 2026"
+        description="Complete guide to TikTok Shop payment schedule, processing times, minimum thresholds, payment methods, and troubleshooting delayed payments."
+        url="https://calculatecreator.com/reference/tiktok-shop-payment-schedule/"
+        datePublished="2024-02-01"
+        dateModified="2026-01-15"
+        hasTable={true}
+      />
       {/* Breadcrumb */}
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/" className="hover:text-neutral-900 transition-colors">Home</Link>
             <span>/</span>
-            <Link href="/guides" className="hover:text-neutral-900 transition-colors">Guides</Link>
+            <Link href="/guides/" className="hover:text-neutral-900 transition-colors">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Shop Payment Schedule</span>
           </div>
@@ -364,7 +373,7 @@ export default function TikTokShopPaymentSchedulePage() {
           </div>
 
           <div className="mt-4">
-            <Link href="/advanced/creator-tax-deductions-guide" className="text-blue-600 font-semibold hover:underline">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="text-blue-600 font-semibold hover:underline">
               Complete Creator Tax Deductions Guide →
             </Link>
           </div>
@@ -389,8 +398,8 @@ export default function TikTokShopPaymentSchedulePage() {
             <div>
               <h3 className="font-semibold text-neutral-900 mb-2">Optimize payments:</h3>
               <ul className="text-body-sm text-neutral-700 space-y-1 ml-4 list-disc">
-                <li>Use <Link href="/calculators/shop-commission" className="text-blue-600 hover:underline">TikTok Shop Commission Calculator</Link> to project monthly earnings</li>
-                <li>Learn <Link href="/guides/how-to-become-shop-affiliate" className="text-blue-600 hover:underline">How to Become TikTok Shop Affiliate</Link> if not yet enrolled</li>
+                <li>Use <Link href="/calculators/commerce-ads/shop-profit/" className="text-blue-600 hover:underline">TikTok Shop Commission Calculator</Link> to project monthly earnings</li>
+                <li>Learn <Link href="/guides/how-to-become-shop-affiliate/" className="text-blue-600 hover:underline">How to Become TikTok Shop Affiliate</Link> if not yet enrolled</li>
               </ul>
             </div>
             <div>
@@ -408,19 +417,19 @@ export default function TikTokShopPaymentSchedulePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Shop Commission Calculator</h3>
               <p className="text-body-sm text-neutral-600">Project your earnings</p>
             </Link>
-            <Link href="/guides/how-to-become-shop-affiliate" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/guides/how-to-become-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">How to Become TikTok Shop Affiliate</h3>
               <p className="text-body-sm text-neutral-600">Get started with TikTok Shop</p>
             </Link>
-            <Link href="/advanced/creator-tax-deductions-guide" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/advanced/creator-tax-deductions-guide/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">Creator Tax Deductions Guide</h3>
               <p className="text-body-sm text-neutral-600">Maximize your tax savings</p>
             </Link>
-            <Link href="/calculators/affiliate-commission" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
+            <Link href="/calculators/affiliate-commission/" className="p-4 bg-neutral-50 rounded-lg border border-neutral-200 hover:border-neutral-300 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-1">TikTok Affiliate Earnings Calculator</h3>
               <p className="text-body-sm text-neutral-600">Calculate potential income</p>
             </Link>

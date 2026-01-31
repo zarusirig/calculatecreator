@@ -87,6 +87,15 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
               </div>
             </div>
 
+            {/* Introduction */}
+            <section className="py-8 bg-white -mx-4 px-4 mb-8">
+              <div className="max-w-4xl mx-auto">
+                <p className="text-body-lg text-neutral-700 leading-relaxed">
+                  Engagement rate is widely considered the single most important metric for TikTok success and algorithmic favor, surpassing even follower count and raw view numbers in determining your content's actual performance and distribution potential on the platform. Unlike vanity metrics that look impressive but don't drive results, engagement rate measures exactly how well your content resonates with your audience by tracking the percentage of viewers who actively interact with your videos through likes, comments, shares, saves, and other engagement actions. The TikTok algorithm uses engagement rate as a primary signal when making critical decisions about whether to promote your videos to exponentially larger audiences on the For You Page or limit their distribution to only existing followers. High engagement rates indicate valuable, compelling content that keeps users actively engaged on the platform, which is exactly what TikTok wants to maximize. Understanding how to accurately calculate engagement rate, interpret the results in proper context, and systematically improve your engagement metrics is absolutely crucial for creators who want to grow their audience organically, increase content visibility consistently, and maximize monetization opportunities through better algorithmic performance. This comprehensive guide covers the precise engagement rate formula, industry benchmarks, and proven optimization strategies to boost your TikTok performance in 2026.
+                </p>
+              </div>
+            </section>
+
             {/* Table of Contents */}
             <Card className="p-6 mb-8">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -103,7 +112,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
               </div>
             </Card>
 
-            {/* Introduction */}
+            {/* Detailed Introduction */}
             <section id="introduction" className="mb-12">
               <Card className="p-8">
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
@@ -112,7 +121,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Engagement rate is the most important metric for TikTok success. It measures how well your content resonates with your audience and directly impacts the TikTok algorithm's decision to promote your videos.
+                    Engagement rate is widely considered the single most important metric for TikTok success and algorithmic favor, surpassing even follower count and raw view numbers in determining your content's actual performance and distribution potential. Unlike vanity metrics that look impressive but don't drive results, engagement rate measures exactly how well your content resonates with your audience by tracking the percentage of viewers who actively interact with your videos through likes, comments, shares, saves, and other engagement actions. The TikTok algorithm uses engagement rate as a primary signal when making critical decisions about whether to promote your videos to exponentially larger audiences on the For You Page or limit their distribution. High engagement rates indicate valuable, compelling content that keeps users actively engaged on the platform for longer sessions, which is exactly what TikTok wants to maximize advertising revenue and user retention. Understanding how to accurately calculate engagement rate, interpret the results in context, and systematically improve your engagement metrics is absolutely crucial for creators who want to grow their audience organically, increase content visibility consistently, and maximize monetization opportunities through better algorithmic performance. This comprehensive guide covers the precise engagement rate formula, detailed industry benchmarks broken down by niche and follower count, step-by-step manual calculation methods for verification, and proven optimization strategies to boost your TikTok performance in 2026.
                   </p>
 
                   <div className="bg-blue-50 p-6 rounded-lg">
@@ -261,7 +270,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
                     <p className="text-neutral-700 mb-4">
                       Calculate your engagement rate instantly and get personalized recommendations to improve your TikTok performance.
                     </p>
-                    <Link href="/calculators/engagement-rate">
+                    <Link href="/calculators/engagement-rate/">
                       <Button variant="primary" size="lg">Use Engagement Calculator</Button>
                     </Link>
                   </div>
@@ -498,7 +507,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
             <Card className="p-8 mt-12">
               <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Engagement Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link href="/calculators/engagement-rate" className="block">
+                <Link href="/calculators/engagement-rate/" className="block">
                   <div className="bg-blue-50 p-6 rounded-lg hover:bg-blue-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <BarChart3 className="w-12 h-12 text-blue-600" />
@@ -508,7 +517,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/guides/increase-engagement-rate-tiktok" className="block">
+                <Link href="/guides/increase-engagement-rate-tiktok/" className="block">
                   <div className="bg-green-50 p-6 rounded-lg hover:bg-green-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <TrendingUp className="w-12 h-12 text-green-600" />
@@ -518,7 +527,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/guides/analytics-metrics-master-guide" className="block">
+                <Link href="/guides/analytics-metrics-master-guide/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex justify-center mb-3">
                       <BarChart3 className="w-12 h-12 text-purple-600" />

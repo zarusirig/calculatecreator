@@ -74,7 +74,7 @@ export default function TikTokShopSuccessStrategiesPage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">TikTok Shop Success Strategies</span>
           </div>
@@ -115,6 +115,15 @@ export default function TikTokShopSuccessStrategiesPage() {
         </div>
       </section>
 
+      {/* Introduction */}
+      <section className="py-8">
+        <div className="container-custom max-w-4xl">
+          <p className="text-body-lg text-neutral-700 leading-relaxed">
+            TikTok Shop represents one of the fastest-growing creator monetization opportunities in 2026, combining the platform's entertainment-first approach with sophisticated e-commerce infrastructure that converts viewers into buyers at unprecedented rates compared to traditional online shopping. With integrated shopping features built directly into the content experience, creators can earn significant affiliate commissions ranging from 10-30% depending on product category, or sell their own products with transaction fees substantially lower than traditional e-commerce platforms like Shopify or Amazon while maintaining complete control over margins and customer relationships. The platform's unique algorithm combines social proof through live viewer counts and real-time comments, impulse buying behavior driven by limited-time offers and scarcity tactics, and frictionless checkout that keeps users within the TikTok ecosystem to create conversion rates 2-3 times higher than conventional e-commerce approaches where customers must leave the platform. Success requires mastering three interconnected skills: strategic product selection based on commission rates and audience alignment to maximize earnings per sale, compelling content creation that demonstrates value without feeling overly promotional or salesy, and conversion optimization through urgency tactics and trust-building authenticity that transforms casual viewers into committed buyers who return for future purchases.
+          </p>
+        </div>
+      </section>
+
       <div className="container-custom max-w-4xl py-12 space-y-8">
         <Card>
           <div className="prose prose-lg max-w-none">
@@ -122,13 +131,7 @@ export default function TikTokShopSuccessStrategiesPage() {
               TikTok Shop Opportunity in 2025
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok Shop represents one of the fastest-growing creator monetization opportunities. With integrated shopping
-              features, creators can earn significant affiliate commissions (10-30%) or sell their own products with lower
-              fees than traditional e-commerce platforms.
-            </p>
-            <p className="text-body-md text-neutral-700">
-              The platform combines social proof, impulse buying behavior, and seamless checkout to create conversion rates
-              2-3x higher than traditional e-commerce. Understanding product selection and content strategy is key to success.
+              TikTok Shop represents one of the fastest-growing creator monetization opportunities, combining the platform's entertainment-first approach with sophisticated e-commerce infrastructure that converts viewers into buyers at unprecedented rates. With integrated shopping features built directly into the content experience, creators can earn significant affiliate commissions ranging from 10-30% depending on product category, or sell their own products with transaction fees substantially lower than traditional e-commerce platforms like Shopify or Amazon. The platform's unique algorithm combines social proof through live viewer counts and real-time comments, impulse buying behavior driven by limited-time offers and scarcity tactics, and frictionless checkout that keeps users within the TikTok ecosystem to create conversion rates 2-3 times higher than conventional e-commerce. Success requires mastering three interconnected skills: strategic product selection based on commission rates and audience alignment, compelling content creation that demonstrates value without feeling overly promotional, and conversion optimization through urgency tactics and trust-building authenticity that transforms casual viewers into committed buyers.
             </p>
           </div>
         </Card>
@@ -141,10 +144,10 @@ export default function TikTokShopSuccessStrategiesPage() {
             Estimate your Shop affiliate earnings before diving in.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link href="/calculators/shop-commission" className="btn btn-primary">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="btn btn-primary">
               Shop Commission Calculator →
             </Link>
-            <Link href="/calculators/affiliate-commission" className="btn btn-secondary">
+            <Link href="/calculators/affiliate-commission/" className="btn btn-secondary">
               Affiliate Calculator
             </Link>
           </div>
@@ -648,15 +651,15 @@ export default function TikTokShopSuccessStrategiesPage() {
             Recommended Calculators
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/calculators/shop-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/commerce-ads/shop-profit/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Shop Commission</h3>
               <p className="text-body-sm text-neutral-600">Calculate potential earnings</p>
             </Link>
-            <Link href="/calculators/affiliate-commission" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/affiliate-commission/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Affiliate Commission</h3>
               <p className="text-body-sm text-neutral-600">Estimate affiliate income</p>
             </Link>
-            <Link href="/calculators/conversion-rate" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+            <Link href="/calculators/conversion-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
               <h3 className="font-semibold text-neutral-900 mb-2">Conversion Rate</h3>
               <p className="text-body-sm text-neutral-600">Measure sales performance</p>
             </Link>

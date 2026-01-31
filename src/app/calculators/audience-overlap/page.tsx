@@ -88,7 +88,7 @@ export default function AudienceOverlapCalculatorPage() {
             TikTok Audience Overlap Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach across your advertising efforts.
+            Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach. High overlap above 40% can waste nearly half your budget on duplicate impressions and cause your campaigns to compete against each other in auctions. Use this calculator to measure overlap percentage, understand efficiency impact, and implement targeting strategies that ensure you're reaching new users rather than paying twice for the same audience.
           </p>
         </div>
 

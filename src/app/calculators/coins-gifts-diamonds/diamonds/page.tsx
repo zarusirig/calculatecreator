@@ -61,7 +61,7 @@ export default function DiamondConverterPage() {
             </div>
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Diamond Converter 2026</h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Convert TikTok diamonds to real money in multiple currencies. Calculate your creator payouts and understand diamond values with updated 2026 rates.
+              Convert TikTok diamonds to real money in multiple currencies. Calculate your creator payouts and understand diamond values with updated 2026 rates. This calculator supports USD, EUR, GBP, CAD, and AUD conversions, helping LIVE streamers track earnings and plan withdrawals. Essential for creators managing international audiences and understanding the true value of virtual gifts across different regions.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1"><DollarSign size={16} /> Updated Payout Rates</span>

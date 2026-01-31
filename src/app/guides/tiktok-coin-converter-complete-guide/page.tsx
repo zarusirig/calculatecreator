@@ -87,6 +87,15 @@ export default function TikTokCoinConverterCompleteGuidePage() {
               </div>
             </div>
 
+            {/* Introduction */}
+            <section className="py-8 bg-white -mx-4 px-4 mb-8">
+              <div className="max-w-4xl mx-auto">
+                <p className="text-body-lg text-neutral-700 leading-relaxed">
+                  TikTok coins are the virtual currency system that powers the platform's massive and rapidly growing gifting economy, facilitating billions of dollars in transactions annually between viewers and creators worldwide. Understanding exactly how coins work, their real-world value, and the conversion mechanics between coins, diamonds, and actual money is absolutely essential for both viewers who want to support their favorite creators cost-effectively and creators who want to maximize their earnings from virtual gifts. The coin system involves a multi-step process: viewers purchase coins with real money through the app, send those coins as virtual gifts during LIVE streams to show appreciation and support, and then creators receive diamonds (at a 2:1 ratio) that can eventually be converted to real cash. However, the conversion rates between coins and dollars, regional pricing differences across countries, platform fees that TikTok takes at each step, and the various withdrawal processes can be genuinely confusing for both new and experienced users. This comprehensive guide breaks down every aspect of TikTok's coin system in detail, from purchase packages and individual gift values to diamond conversion ratios and creator withdrawal processes, helping you make informed decisions about buying, sending, or earning from TikTok's virtual currency in 2026.
+                </p>
+              </div>
+            </section>
+
             {/* Table of Contents */}
             <Card className="p-6 mb-8">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Table of Contents</h2>
@@ -103,7 +112,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
               </div>
             </Card>
 
-            {/* Introduction */}
+            {/* Detailed Introduction */}
             <section id="introduction" className="mb-12">
               <Card className="p-8">
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
@@ -112,7 +121,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    TikTok coins are the virtual currency that powers the platform's gifting economy. Understanding how coins work is essential for both viewers who want to support creators and creators who want to maximize their earnings.
+                    TikTok coins are the virtual currency system that powers the platform's massive and rapidly growing gifting economy, facilitating billions of dollars in transactions annually between viewers and creators worldwide. This virtual currency ecosystem has become a major monetization stream for thousands of creators who rely on LIVE gift income. Understanding exactly how coins work, their real-world value, and conversion mechanics is absolutely essential for both viewers who want to support their favorite creators cost-effectively without overspending and creators who want to maximize their earnings from virtual gifts strategically. The coin system involves a multi-step process: coins can be purchased with real money through the app using various payment methods, sent as virtual gifts during LIVE streams to show appreciation, and then converted to diamonds that creators accumulate in their accounts and eventually cash out for real income. However, the conversion rates between coins and dollars, regional pricing differences across countries, platform fees that TikTok takes, and withdrawal processes can be genuinely confusing for both new and experienced users. This comprehensive guide breaks down every single aspect of TikTok's coin system in detail, from purchase packages and pricing tiers to individual gift values, diamond conversion ratios, and withdrawal processes, helping you make informed decisions about buying, sending, or earning from TikTok's virtual currency in 2026.
                   </p>
 
                   <div className="bg-yellow-50 p-6 rounded-lg">
@@ -345,7 +354,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
                     <p className="text-neutral-700 mb-4">
                       Calculate coin values, diamond conversions, and understand your gifting costs instantly.
                     </p>
-                    <Link href="/calculators/coins">
+                    <Link href="/calculators/coins/">
                       <Button variant="primary" size="lg">Use Coin Calculator</Button>
                     </Link>
                   </div>
@@ -496,7 +505,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
             <Card className="p-8 mt-12">
               <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Coin Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
-                <Link href="/calculators/coins" className="block">
+                <Link href="/calculators/coins/" className="block">
                   <div className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">
                     <div className="flex justify-center mb-3"><Coins className="w-12 h-12 text-yellow-600" /></div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Coin Calculator</h3>
@@ -504,7 +513,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/diamond-converter" className="block">
+                <Link href="/calculators/diamond-converter/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">
                     <div className="flex justify-center mb-3"><ArrowRightLeft className="w-12 h-12 text-purple-600" /></div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Diamond Converter</h3>
@@ -512,7 +521,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
                   </div>
                 </Link>
 
-                <Link href="/calculators/live-gifts" className="block">
+                <Link href="/calculators/live-gifts/" className="block">
                   <div className="bg-pink-50 p-6 rounded-lg hover:bg-pink-100 transition-colors">
                     <div className="flex justify-center mb-3"><Gift className="w-12 h-12 text-pink-600" /></div>
                     <h3 className="font-semibold text-neutral-900 mb-2">LIVE Gifts Calculator</h3>

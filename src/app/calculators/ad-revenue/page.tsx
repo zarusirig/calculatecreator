@@ -74,8 +74,7 @@ export default function AdRevenueCalculatorPage() {
             TikTok Ad Revenue Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Estimate potential ad revenue from TikTok monetization programs based on
-            your views, CPM, and ad frequency.
+            Estimate potential ad revenue from TikTok monetization programs including Creator Fund, TikTok Pulse, and in-feed ads. This calculator analyzes your monthly views, CPM rates by niche, and ad frequency to project your earnings. Perfect for creators who want to understand their monetization potential, compare different revenue streams, and optimize content strategy to maximize passive income from TikTok's advertising programs.
           </p>
         </div>
 

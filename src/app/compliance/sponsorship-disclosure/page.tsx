@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Scale, CheckCircle, Calendar, XCircle, Shield, Users } from 'lucide-react';
+import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Sponsorship Disclosure Guidelines: FTC Compliance 2026',
@@ -30,13 +31,20 @@ export default function SponsorshipDisclosurePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-50">
+    <>
+      <WebPageSchema
+        title="TikTok Sponsorship Disclosure Guidelines: FTC Compliance 2026"
+        description="Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations."
+        url="https://calculatecreator.com/compliance/sponsorship-disclosure/"
+        breadcrumbs={[{ name: 'Compliance', url: 'https://calculatecreator.com/compliance/' }]}
+      />
+      <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">
         <div className="container-custom">
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Sponsorship Disclosure</span>
           </div>
@@ -468,14 +476,14 @@ export default function SponsorshipDisclosurePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <Users className="w-4 h-4 flex-shrink-0 text-blue-600" />
                 How to Get Brand Deals
               </h4>
               <p className="text-body-sm text-neutral-700">Complete guide to TikTok sponsorships</p>
             </Link>
-            <Link href="/resources/brand-deal-contract" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/resources/brand-deal-contract/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <Shield className="w-4 h-4 flex-shrink-0 text-blue-600" />
                 Brand Deal Contract Template
@@ -486,6 +494,7 @@ export default function SponsorshipDisclosurePage() {
         </Card>
       </div>
     </div>
+    </>
   );
 }
 

@@ -76,8 +76,7 @@ export default function ContentValueCalculatorPage() {
             TikTok Content Value Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Estimate the total monetary value of your content portfolio. Useful
-            for acquisitions, partnerships, or understanding your content worth.
+            Estimate the total monetary value of your content portfolio based on average views, engagement rates, and niche monetization potential. This calculator multiplies your per-video value by total video count to determine your catalog worth. Useful for account acquisitions, licensing negotiations, investor pitches, business insurance, or simply understanding your content library as a financial asset worth protecting.
           </p>
         </div>
 

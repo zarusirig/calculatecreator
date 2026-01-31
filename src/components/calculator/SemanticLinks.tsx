@@ -75,7 +75,7 @@ export function SemanticLinks({ currentCalculator, className = '' }: SemanticLin
               {group.links.map((link, linkIndex) => (
                 <Link
                   key={linkIndex}
-                  href={`/calculators/${link.slug}`}
+                  href={`/calculators/${link.slug}/`}
                   onClick={() => handleLinkClick(link.slug, link.relationship)}
                   className="block group"
                 >
@@ -148,7 +148,7 @@ export function SemanticLinksCompact({
       {allLinks.map((link, index) => (
         <Link
           key={index}
-          href={`/calculators/${link.slug}`}
+          href={`/calculators/${link.slug}/`}
           onClick={() => handleLinkClick(link.slug, link.relationship)}
           className="group flex items-center gap-3 p-3 rounded-lg bg-neutral-50 hover:bg-neutral-100 border border-neutral-200 hover:border-primary-300 transition-all"
         >
@@ -195,7 +195,7 @@ export function SemanticLinkPrompt({
 
   return (
     <Link
-      href={`/calculators/${targetLink.slug}`}
+      href={`/calculators/${targetLink.slug}/`}
       onClick={handleClick}
       className={`block ${className}`}
     >

@@ -80,7 +80,7 @@ export default function LifetimeValueCalculatorPage() {
             TikTok Customer Lifetime Value (LTV) Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate the total value a customer brings over their lifetime to determine how much you can spend on acquisition.
+            Calculate the total value a customer brings over their lifetime to determine how much you can spend on acquisition. With a healthy LTV:CAC ratio of 3:1 or higher, understanding your customer lifetime value is crucial for profitable TikTok marketing. Whether you're in e-commerce with typical LTVs of $100-$500 or subscription businesses with $500-$5,000+, this calculator helps you project customer value, optimize retention strategies, and scale your ad spend confidently.
           </p>
         </div>
 
