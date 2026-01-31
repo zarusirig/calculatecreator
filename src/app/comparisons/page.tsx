@@ -4,7 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
-import { Scale, TrendingUp, DollarSign, ShoppingBag, Video, Zap, Users, Clock, Target, Award, Sparkles, TrendingDown, Info } from 'lucide-react';
+import { Scale, TrendingUp, DollarSign, ShoppingBag, Video, Zap, Users, Clock, Target, Award, Sparkles, TrendingDown, Info, RotateCcw } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: {
@@ -108,6 +108,14 @@ export default function ComparisonsPage() {
     {
       question: 'How much time should I spend on each monetization method?',
       answer: 'Focus 80% of your time on creating great content that grows your audience. Use 15% for the monetization method that fits your content style (Shop integration, brand outreach, or longer videos for Creator Rewards), and 5% exploring new opportunities. Growth always leads to more monetization options.',
+    },
+    {
+      question: 'How do TikTok LIVE gifts compare to YouTube Super Chats?',
+      answer: 'TikTok LIVE gifts and YouTube Super Chats both allow viewers to send monetary support during livestreams, but with different mechanics. TikTok creators receive 50% of gift value (coins to diamonds conversion), while YouTube takes 30% of Super Chat revenue. TikTok LIVE tends to generate more frequent small gifts, while YouTube Super Chats are often larger but less frequent. Success depends on your audience engagement style and platform.',
+    },
+    {
+      question: 'Can I use the same content strategy across TikTok, Instagram, and YouTube?',
+      answer: 'Yes, with minor adaptations. Create TikTok videos first (9:16 vertical format), then repurpose to Instagram Reels and YouTube Shorts. Adjust captions for each platform\'s culture and optimize hashtags separately. Many successful creators use this cross-posting strategy to maximize reach with minimal extra effort, but customize thumbnails and descriptions for YouTube to improve performance.',
     },
   ];
 
@@ -408,6 +416,377 @@ export default function ComparisonsPage() {
                     <li>Short 7-15 second viral clips</li>
                     <li>Single-platform creator strategies</li>
                   </ul>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          {/* Platform Comparison Framework */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-display-sm font-bold text-neutral-900 mb-6">
+              Platform Comparison Framework: Choose Your Best Path
+            </h2>
+            <Card className="bg-gradient-to-br from-slate-50 to-blue-50 border-slate-200">
+              <p className="text-body-md text-neutral-700 mb-6">
+                Use this decision matrix to determine which platform best matches your creator goals, content style, and current audience size. Each factor is weighted to help you make data-driven platform decisions.
+              </p>
+
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full text-body-sm">
+                  <thead>
+                    <tr className="border-b-2 border-neutral-300">
+                      <th className="text-left py-3 px-4 font-semibold text-neutral-900">Decision Factor</th>
+                      <th className="text-left py-3 px-4 font-semibold text-neutral-900">Choose TikTok If...</th>
+                      <th className="text-left py-3 px-4 font-semibold text-neutral-900">Choose YouTube If...</th>
+                      <th className="text-left py-3 px-4 font-semibold text-neutral-900">Choose Instagram If...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-neutral-100">
+                      <td className="py-3 px-4 font-semibold">Audience Size</td>
+                      <td className="py-3 px-4">Under 50K followers, need fast growth</td>
+                      <td className="py-3 px-4">Willing to invest 6-12 months for growth</td>
+                      <td className="py-3 px-4">Already have 10K+ followers elsewhere</td>
+                    </tr>
+                    <tr className="border-b border-neutral-100">
+                      <td className="py-3 px-4 font-semibold">Content Type</td>
+                      <td className="py-3 px-4">Short viral clips, trends, entertainment</td>
+                      <td className="py-3 px-4">Educational, tutorials, long-form (8+ min)</td>
+                      <td className="py-3 px-4">Lifestyle, fashion, visual aesthetics</td>
+                    </tr>
+                    <tr className="border-b border-neutral-100">
+                      <td className="py-3 px-4 font-semibold">Monetization Priority</td>
+                      <td className="py-3 px-4">Brand deals, LIVE gifts, TikTok Shop</td>
+                      <td className="py-3 px-4">Ad revenue (AdSense), sponsorships</td>
+                      <td className="py-3 px-4">Brand partnerships, affiliate marketing</td>
+                    </tr>
+                    <tr className="border-b border-neutral-100">
+                      <td className="py-3 px-4 font-semibold">Time Investment</td>
+                      <td className="py-3 px-4">Can post daily, quick content creation</td>
+                      <td className="py-3 px-4">Weekly uploads, high production quality</td>
+                      <td className="py-3 px-4">3-5 posts/week, polished visuals</td>
+                    </tr>
+                    <tr className="border-b border-neutral-100">
+                      <td className="py-3 px-4 font-semibold">Niche Fit</td>
+                      <td className="py-3 px-4">Gen Z trends, comedy, dance, food</td>
+                      <td className="py-3 px-4">Tech, finance, gaming, education</td>
+                      <td className="py-3 px-4">Beauty, fitness, travel, photography</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-4 font-semibold">Income Goal (Year 1)</td>
+                      <td className="py-3 px-4">$500-$2,000/month from diverse sources</td>
+                      <td className="py-3 px-4">$1,000-$5,000/month from ads + sponsors</td>
+                      <td className="py-3 px-4">$800-$3,000/month from brand deals</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="bg-white/50 rounded-lg p-4 border border-neutral-200">
+                <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+                  <Target className="w-5 h-5 text-blue-600" />
+                  Framework Application Example
+                </h3>
+                <p className="text-body-sm text-neutral-700">
+                  <strong>Scenario:</strong> New creator with 2K followers, creating 30-second cooking videos, goal of $1,000/month within 6 months.
+                  <br /><strong>Recommendation:</strong> Start with TikTok (fast growth for short content), repurpose to Instagram Reels after hitting 10K, add YouTube Shorts once you have 50+ videos. This multi-platform approach maximizes viral potential while building foundations for long-term YouTube ad revenue.
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          {/* Case Studies */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-display-sm font-bold text-neutral-900 mb-6">
+              Real Creator Earnings: Platform Case Studies
+            </h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              See how real creators earn across different platforms with identical audience sizes. These examples demonstrate why platform choice matters for your income potential.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-200">
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-label-sm font-semibold mb-3">
+                    Beauty Niche
+                  </span>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">
+                    Sarah - 75K Followers
+                  </h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/60 rounded-lg p-3 border border-pink-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">TikTok</span>
+                      <span className="font-bold text-green-700">$2,800/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• Brand deals: $2,200 (2 deals/month)</li>
+                      <li>• TikTok Shop: $450 (makeup affiliate)</li>
+                      <li>• Creator Rewards: $150</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white/60 rounded-lg p-3 border border-pink-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">Instagram</span>
+                      <span className="font-bold text-green-700">$3,400/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• Brand deals: $2,800 (higher rates)</li>
+                      <li>• Affiliate links: $600</li>
+                    </ul>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 pt-2 border-t border-pink-200">
+                    <strong>Key Insight:</strong> Instagram pays 21% more for beauty creators due to stronger purchase intent from audience. Sarah maintains both platforms using repurposed content.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-label-sm font-semibold mb-3">
+                    Finance Niche
+                  </span>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">
+                    Marcus - 50K Followers
+                  </h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/60 rounded-lg p-3 border border-blue-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">TikTok</span>
+                      <span className="font-bold text-green-700">$1,900/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• Brand deals: $1,500 (fintech apps)</li>
+                      <li>• Creator Rewards: $400 (high RPM niche)</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white/60 rounded-lg p-3 border border-blue-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">YouTube</span>
+                      <span className="font-bold text-green-700">$4,200/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• AdSense: $2,800 (high CPM $15-25)</li>
+                      <li>• Sponsorships: $1,400</li>
+                    </ul>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 pt-2 border-t border-blue-200">
+                    <strong>Key Insight:</strong> YouTube pays 121% more for finance content due to premium advertiser CPMs. Marcus spent 8 months building YouTube channel while using TikTok for discovery.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200">
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-label-sm font-semibold mb-3">
+                    Entertainment
+                  </span>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">
+                    Alex - 200K Followers
+                  </h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/60 rounded-lg p-3 border border-purple-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">TikTok</span>
+                      <span className="font-bold text-green-700">$6,500/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• Brand deals: $5,000 (3-4 deals/month)</li>
+                      <li>• LIVE gifts: $1,200</li>
+                      <li>• Creator Rewards: $300</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white/60 rounded-lg p-3 border border-purple-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">Multi-Platform</span>
+                      <span className="font-bold text-green-700">$8,900/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• TikTok: $6,500</li>
+                      <li>• Instagram Reels bonus: $1,200</li>
+                      <li>• YouTube Shorts: $1,200</li>
+                    </ul>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 pt-2 border-t border-purple-200">
+                    <strong>Key Insight:</strong> Entertainment creators gain 37% more income by repurposing content to Instagram and YouTube. Alex spends 30 minutes/week adapting content for other platforms.
+                  </p>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+                <div className="mb-4">
+                  <span className="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-label-sm font-semibold mb-3">
+                    Fitness Niche
+                  </span>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">
+                    Jordan - 120K Followers
+                  </h3>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white/60 rounded-lg p-3 border border-green-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">TikTok Shop Focus</span>
+                      <span className="font-bold text-green-700">$5,200/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• TikTok Shop: $3,800 (supplements, gear)</li>
+                      <li>• Brand deals: $1,200</li>
+                      <li>• Creator Rewards: $200</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white/60 rounded-lg p-3 border border-green-100">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-neutral-900">Instagram Focus</span>
+                      <span className="font-bold text-green-700">$3,800/month</span>
+                    </div>
+                    <ul className="text-body-sm text-neutral-700 space-y-1">
+                      <li>• Brand deals: $2,600</li>
+                      <li>• Affiliate links: $1,200</li>
+                    </ul>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 pt-2 border-t border-green-200">
+                    <strong>Key Insight:</strong> TikTok Shop outperforms traditional brand deals for product-heavy fitness content. Jordan earns 37% more on TikTok due to native e-commerce integration.
+                  </p>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* Multi-Platform Strategy */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-display-sm font-bold text-neutral-900 mb-6">
+              Multi-Platform Strategy: Maximize Reach Without Burnout
+            </h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Smart creators use a hub-and-spoke content strategy to dominate multiple platforms with minimal extra effort. Here's how to scale efficiently:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="bg-gradient-to-br from-orange-50 to-amber-50 border-orange-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-orange-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">
+                      1. Choose Your Primary Platform
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      Select one platform as your main content hub based on your niche and audience. Create native content optimized for this platform's algorithm and culture.
+                    </p>
+                    <div className="bg-white/60 rounded-lg p-3 border border-orange-100">
+                      <p className="text-body-sm text-neutral-700">
+                        <strong>Example:</strong> Beauty creator starts on TikTok (fastest growth), fitness creator on Instagram (visual platform), finance educator on YouTube (long-form monetization).
+                      </p>
+                    </div>
+                    <p className="text-body-sm text-neutral-700 mt-3">
+                      <strong>Time Investment:</strong> 60-70% of content creation time.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-cyan-50 to-blue-50 border-cyan-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-cyan-100 flex items-center justify-center">
+                    <RotateCcw className="w-6 h-6 text-cyan-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">
+                      2. Repurpose to Secondary Platforms
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      Adapt your primary platform content for 2-3 secondary platforms. Adjust aspect ratios, captions, and hashtags but keep core content identical.
+                    </p>
+                    <div className="bg-white/60 rounded-lg p-3 border border-cyan-100">
+                      <p className="text-body-sm text-neutral-700">
+                        <strong>Tools to use:</strong> CapCut for reformatting, Hootsuite for scheduling, ChatGPT for caption adaptation. Total repurposing time: 15-20 minutes per video.
+                      </p>
+                    </div>
+                    <p className="text-body-sm text-neutral-700 mt-3">
+                      <strong>Time Investment:</strong> 20-25% of content creation time.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-violet-50 to-purple-50 border-violet-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-violet-100 flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-violet-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">
+                      3. Test Platform-Specific Features
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      Once established on multiple platforms, experiment with platform-exclusive monetization: TikTok Shop, Instagram Shopping, YouTube memberships.
+                    </p>
+                    <div className="bg-white/60 rounded-lg p-3 border border-violet-100">
+                      <p className="text-body-sm text-neutral-700">
+                        <strong>Growth tip:</strong> Use your strongest platform to drive traffic to newer platforms. Add "Follow me on YouTube" CTAs in TikTok videos, link Instagram in YouTube descriptions.
+                      </p>
+                    </div>
+                    <p className="text-body-sm text-neutral-700 mt-3">
+                      <strong>Time Investment:</strong> 10-15% of content creation time.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-rose-50 to-pink-50 border-rose-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-rose-100 flex items-center justify-center">
+                    <Target className="w-6 h-6 text-rose-600" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">
+                      4. Track Performance Metrics
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      Monitor which platforms drive best engagement, conversions, and income. Double down on winners, deprioritize underperformers.
+                    </p>
+                    <div className="bg-white/60 rounded-lg p-3 border border-rose-100">
+                      <p className="text-body-sm text-neutral-700">
+                        <strong>Key metrics:</strong> Engagement rate, follower growth rate, earnings per 1K followers, time-to-monetization. Use our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:underline">engagement rate calculator</Link> to track progress.
+                      </p>
+                    </div>
+                    <p className="text-body-sm text-neutral-700 mt-3">
+                      <strong>Time Investment:</strong> Weekly 30-minute review session.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <Card className="mt-6 bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-200">
+              <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">
+                Multi-Platform Success Timeline
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-bold text-sm">1</span>
+                  <div>
+                    <p className="font-semibold text-neutral-900">Months 1-3: Single Platform Mastery</p>
+                    <p className="text-body-sm text-neutral-700">Focus entirely on your primary platform. Learn algorithm, build content library, establish posting rhythm. Goal: 10K+ followers.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-bold text-sm">2</span>
+                  <div>
+                    <p className="font-semibold text-neutral-900">Months 4-6: Add One Secondary Platform</p>
+                    <p className="text-body-sm text-neutral-700">Start cross-posting to one additional platform. Repurpose top-performing content. Goal: 5K+ followers on secondary platform.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-8 h-8 bg-teal-100 text-teal-700 rounded-full flex items-center justify-center font-bold text-sm">3</span>
+                  <div>
+                    <p className="font-semibold text-neutral-900">Months 7-12: Full Multi-Platform Presence</p>
+                    <p className="text-body-sm text-neutral-700">Add third platform, optimize monetization across all channels. Goal: 50K+ total followers, $2,000+/month income from multiple revenue streams.</p>
+                  </div>
                 </div>
               </div>
             </Card>

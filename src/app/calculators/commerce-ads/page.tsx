@@ -68,6 +68,14 @@ const faqs = [
     question: 'What is the difference between Spark Ads and In-Feed Ads?',
     answer: 'Spark Ads promote existing organic content (your own or creator-made UGC), maintaining social engagement like comments and shares, with CPMs around $2-$5. In-Feed Ads are standalone paid content appearing in the For You feed with "Sponsored" labels, averaging $1-$3 CPM. Spark Ads perform better for brand awareness (authentic feel) while In-Feed Ads work best for direct-response campaigns with clear CTAs.',
   },
+  {
+    question: 'Should I invest in TikTok Shop or TikTok Ads for my business?',
+    answer: 'Both strategies serve different purposes and work best together. TikTok Shop is ideal for e-commerce brands with physical products, offering 2-8% platform fees plus affiliate commissions. It creates organic discovery and leverages creator partnerships. TikTok Ads suit service businesses, lead generation, and scaling existing products with controlled budgets ($20+ daily). Successful brands typically run ads to drive Shop sales, creating a synergistic revenue model with 30-50% lower customer acquisition costs than ads alone.',
+  },
+  {
+    question: 'What is the average ROAS (Return on Ad Spend) for TikTok advertising in 2026?',
+    answer: 'Average ROAS for TikTok advertising ranges from 2:1 to 5:1 depending on industry and optimization. E-commerce brands typically achieve 3-4:1 ROAS, meaning $3-$4 in revenue for every $1 spent on ads. Beauty and fashion can reach 5-7:1 with strong creatives and targeted audiences. B2B and high-ticket services see 1.5-3:1 ROAS but higher lifetime customer value. Optimize for ROAS by testing creative variations, refining targeting, and using lookalike audiences based on purchaser data.',
+  },
 ];
 
 export default function CommerceAdsPage() {
@@ -258,6 +266,185 @@ export default function CommerceAdsPage() {
               </div>
             </div>
           </Card>
+
+          {/* 2026 TikTok Ads Performance */}
+          <Card className="p-8 mb-12 bg-gradient-to-br from-blue-50 to-white border-blue-200">
+            <div className="flex items-start space-x-4 mb-6">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-600 text-white flex items-center justify-center">
+                <TrendingUp size={24} />
+              </div>
+              <div>
+                <h2 className="text-heading-md font-bold text-neutral-900 mb-2">
+                  2026 TikTok Ads Performance Statistics
+                </h2>
+                <p className="text-body-sm text-neutral-600">
+                  Platform-wide advertising benchmarks and performance metrics
+                </p>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white p-5 rounded-lg border border-neutral-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h4 className="font-semibold text-neutral-900">Average CTR</h4>
+                  <span className="text-2xl font-bold text-blue-600">2.8%</span>
+                </div>
+                <p className="text-body-sm text-neutral-600">
+                  TikTok ads achieve 2.8% average click-through rate, significantly higher than Facebook (1.9%) and Instagram (1.7%). Video completion rates average 58%, with top-performing ads reaching 75%+ completion.
+                </p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border border-neutral-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h4 className="font-semibold text-neutral-900">Conversion Rate</h4>
+                  <span className="text-2xl font-bold text-blue-600">3.2%</span>
+                </div>
+                <p className="text-body-sm text-neutral-600">
+                  Average conversion rate stands at 3.2% for e-commerce campaigns, with optimized funnels reaching 5-8%. Gen Z audiences (18-24) convert 40% higher than other age groups on TikTok.
+                </p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border border-neutral-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h4 className="font-semibold text-neutral-900">User Growth</h4>
+                  <span className="text-2xl font-bold text-blue-600">1.7B+</span>
+                </div>
+                <p className="text-body-sm text-neutral-600">
+                  Platform reached 1.7 billion monthly active users in 2026, with 47% in the 18-34 age bracket. Daily active users spend average 95 minutes per day, providing extensive ad impression opportunities.
+                </p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border border-neutral-200">
+                <div className="flex justify-between items-start mb-3">
+                  <h4 className="font-semibold text-neutral-900">Ad Engagement</h4>
+                  <span className="text-2xl font-bold text-blue-600">12%</span>
+                </div>
+                <p className="text-body-sm text-neutral-600">
+                  TikTok ads see 12% average engagement rate (likes, comments, shares), 6× higher than traditional social platforms. Interactive ad formats like Branded Effects achieve 18-25% engagement rates.
+                </p>
+              </div>
+            </div>
+          </Card>
+
+          {/* Shop vs Ads Comparison */}
+          <Card className="p-8 mb-12">
+            <h2 className="text-heading-md font-bold text-neutral-900 mb-6">
+              TikTok Shop vs TikTok Ads: Which Should You Choose?
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-neutral-300">
+                    <th className="text-left py-4 px-4 text-body-md font-bold text-neutral-900">Factor</th>
+                    <th className="text-left py-4 px-4 text-body-md font-bold text-neutral-900">TikTok Shop</th>
+                    <th className="text-left py-4 px-4 text-body-md font-bold text-neutral-900">TikTok Ads</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-neutral-200">
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Best For</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Physical products, e-commerce brands, creator-led sales</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Services, lead generation, brand awareness, app installs</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200">
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Cost Structure</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">2-8% platform fee + affiliate commissions (5-20%)</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">CPM ($1-$8) or CPC ($0.50-$2.00), minimum $20/day budget</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200">
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Time to Results</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">2-4 weeks to build affiliate network and organic traction</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Immediate traffic within 24-48 hours of campaign launch</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200">
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Control</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Relies on creator content quality and posting consistency</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Full control over targeting, budget, creative, and timing</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200">
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Scalability</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Scale by recruiting more affiliates, limited by creator availability</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">Unlimited scale with budget increases, instant volume control</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4 text-body-sm font-semibold text-neutral-900">Typical ROAS</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">4-8:1 (organic discovery, lower acquisition cost)</td>
+                    <td className="py-4 px-4 text-body-sm text-neutral-700">2-5:1 (paid traffic, faster results but higher cost)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+              <p className="text-body-sm text-neutral-700">
+                <strong className="text-neutral-900">Best Strategy:</strong> Combine both approaches. Use TikTok Ads to drive initial awareness and traffic to your Shop, then leverage creator affiliates for sustained organic growth. Brands using this hybrid model see 30-50% lower customer acquisition costs than ads-only strategies.
+              </p>
+            </div>
+          </Card>
+
+          {/* Optimize Your Ad Spend */}
+          <div className="mb-12">
+            <h2 className="text-heading-md font-bold text-neutral-900 mb-6 text-center">
+              Optimize Your Ad Spend: 4 Essential Strategies
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="p-6 border-l-4 border-blue-500">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <Target size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">
+                      Refine Audience Targeting
+                    </h3>
+                    <p className="text-body-sm text-neutral-700">
+                      Start broad with age and location, then narrow based on performance data. Use Custom Audiences from website visitors or existing customers for 40-60% lower CPMs. Lookalike Audiences from purchaser data typically achieve 2-3× higher conversion rates than interest-based targeting.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              <Card className="p-6 border-l-4 border-blue-500">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <Zap size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">
+                      Test Creative Variations
+                    </h3>
+                    <p className="text-body-sm text-neutral-700">
+                      Run 3-5 creative variations per campaign with different hooks, formats, and CTAs. Top performers achieve 5-10% CTR vs 1-2% for underperforming creatives. Refresh ads every 7-10 days to prevent creative fatigue, which increases CPM by 30-50% after 2 weeks.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              <Card className="p-6 border-l-4 border-blue-500">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <BarChart size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">
+                      Monitor CPM & Adjust Bids
+                    </h3>
+                    <p className="text-body-sm text-neutral-700">
+                      Check CPM daily—if it exceeds $4-$5, pause and optimize. Test different bidding strategies: CBO (Campaign Budget Optimization) for scaling, manual bids for precise control. Reduce bids by 10-15% if CPM climbs, or increase 20% if you're not spending full budget with good ROAS.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              <Card className="p-6 border-l-4 border-blue-500">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                    <CheckCircle2 size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">
+                      Optimize Landing Pages
+                    </h3>
+                    <p className="text-body-sm text-neutral-700">
+                      Match landing page messaging to ad creative for consistency. Mobile-optimized pages (load time under 3 seconds) convert 40% better than slow sites. A/B test headlines, CTAs, and checkout flows. Adding customer reviews and trust badges can improve conversion rates by 20-35%.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
 
           {/* How Commerce & Ads Tools Work */}
           <Card className="p-8 mb-12">

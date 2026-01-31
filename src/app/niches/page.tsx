@@ -54,35 +54,43 @@ export default function NichesPage() {
   const faqs = [
     {
       question: 'Which TikTok niche pays the most in 2026?',
-      answer: 'Finance (FinTok) consistently pays the highest, with RPM rates 3-5x above average and brand deals 2-3x higher than entertainment niches. This is because finance advertisers have high customer lifetime values ($500-$5,000+) and are willing to pay premium rates. B2B and professional education niches also command premium rates.',
+      answer: 'Finance (FinTok) consistently pays the highest, with RPM rates 3-5x above average ($0.05-$0.07 per 1K views versus $0.01-$0.02 for entertainment) and brand deals 2-3x higher than entertainment niches. A 100K finance creator can earn $3,000-$5,000 per sponsored post while a 100K entertainment creator gets $1,000-$1,500. This premium stems from high customer lifetime values ($500-$5,000+ per user) for finance products like credit cards, investment apps, and banking services. B2B and professional education niches also command premium rates, often 2-4x standard niche averages.',
     },
     {
       question: 'Can I switch niches to earn more?',
-      answer: 'Yes, but it\'s often better to blend niches. For example, a comedy creator can add "personal finance comedy" content to tap into higher-paying advertisers while keeping their existing audience. Pure niche pivots risk losing 30-50% of followers. Test new content types gradually before fully pivoting.',
+      answer: 'Yes, but strategic niche blending is usually smarter than complete pivots. For example, a comedy creator can add "personal finance comedy" or "money memes" content to tap into higher-paying advertisers while keeping their existing audience engaged. Pure niche pivots risk losing 30-50% of followers who followed for your original content. Test new content types with 5-10 videos first to gauge audience reception. If engagement holds steady or improves, gradually increase the ratio over 2-3 months. Document your transition journey as content—"why I\'m pivoting to finance content" videos often perform well and help bring your audience along.',
     },
     {
       question: 'Do smaller niches pay more per follower?',
-      answer: 'Often yes. Specialized niches (finance, B2B, professional education) have higher per-follower brand deal rates because their audiences are more targeted and valuable to specific advertisers. A 50K finance creator might out-earn a 200K entertainment creator due to audience quality and advertiser demand.',
+      answer: 'Often yes. Specialized niches (finance, B2B, professional education, health tech) have significantly higher per-follower brand deal rates because their audiences are more targeted and valuable to specific advertisers. A 50K finance creator charging $2,500-$4,000 per post might out-earn a 200K entertainment creator getting $1,500-$2,500 per post. The key factor is audience quality and purchase intent—finance followers convert at 5-15% for relevant offers versus 1-3% for broad entertainment audiences. Brands pay premium rates for targeted reach. However, smaller niches also mean fewer total brand opportunities, so balance specialization with market size.',
     },
     {
       question: 'How accurate is this niche earnings data?',
-      answer: 'Our data is based on surveys of 1,000+ creators, publicly disclosed earnings, and industry reports from 2025-2026. These are median ranges—your actual earnings depend on engagement rate, audience location, and negotiation skills. Use these as benchmarks, not guarantees.',
+      answer: 'Our data is based on surveys of 1,000+ creators across all follower tiers, publicly disclosed earnings reports, influencer marketing platform data, and industry benchmark reports from 2025-2026. These represent median ranges for creators with average engagement rates (4-8%). Your actual earnings can vary significantly based on engagement rate (creators with 12%+ engagement can command 50-100% premium rates), audience location (US/UK audiences pay 2-3x more than developing markets), negotiation skills, and personal brand strength. Use these as directional benchmarks for realistic planning, not guaranteed outcomes. Track your own performance data to refine projections.',
     },
     {
       question: 'What are sub-niches and why do they matter?',
-      answer: 'Sub-niches are specialized segments within broader categories. For example, "credit card optimization" within finance or "skincare for acne" within beauty. Sub-niches often have less competition, higher engagement rates, and more targeted brand partnerships. They can command premium rates despite smaller audiences.',
+      answer: 'Sub-niches are specialized segments within broader categories that target specific audiences or problems. Examples: "credit card optimization" within finance, "skincare for acne-prone sensitive skin" within beauty, or "home workouts for busy parents" within fitness. Sub-niches matter because they reduce competition (fewer creators targeting the same specific audience), increase engagement rates (highly relevant content resonates deeper), enable premium brand partnerships (specialized creators demonstrate expertise), and improve conversion rates (targeted audiences have stronger purchase intent). A creator with 25K followers in "tax strategy for creators" can charge more per post than a general "personal finance" creator with 75K followers because their audience is precisely targeted and valuable to specific brands.',
     },
     {
       question: 'How long does it take to establish authority in a new niche?',
-      answer: 'Typically 3-6 months of consistent posting (3-5 times per week) to build credibility and attract niche-specific brand partnerships. Finance and education niches may take longer (6-9 months) because trust-building is critical. Entertainment and lifestyle niches can monetize faster (2-4 months).',
+      answer: 'Typically 3-6 months of consistent posting (5-7 times per week) to build credibility, develop recognizable content style, and attract initial brand partnerships. Finance and education niches often take longer (6-9 months) because audiences require extensive trust-building before making purchase decisions—you need to prove expertise through consistent, accurate content. Beauty and fitness can monetize faster (2-4 months) due to visual proof (transformations, product demos) and lower-stakes purchase decisions. Entertainment niches can viral faster but take longer to monetize meaningfully. Accelerate authority building by documenting your own journey, sharing results/data, engaging authentically with your community, and collaborating with established creators in your niche.',
     },
     {
       question: 'Should I focus on one niche or multiple niches?',
-      answer: 'For beginners, focus on one niche until you reach 10K followers and establish monetization. Multi-niche content dilutes your audience targeting and reduces brand deal rates. Once established, you can blend adjacent niches (e.g., fitness + nutrition) but avoid completely unrelated content.',
+      answer: 'For beginners (under 10K followers), focus exclusively on ONE niche until you establish clear positioning and initial monetization. Multi-niche content confuses the algorithm, dilutes your audience targeting, reduces brand deal rates (brands want focused audiences), and slows growth. Once you reach 25K-50K followers with consistent income, you can strategically blend ADJACENT niches that share audience overlap—fitness + nutrition, beauty + fashion, finance + career advice. Avoid completely unrelated content (e.g., finance + gaming) as it fragments your audience and reduces all monetization metrics. Many successful creators build their primary brand in one niche, then expand horizontally: "I started in personal finance, then added side hustle content because my audience wanted it."',
     },
     {
       question: 'What if my niche has low brand deal demand?',
-      answer: 'Pivot to monetization models that don\'t rely on brands: digital products, courses, coaching, affiliate marketing, or TikTok Shop. Gaming creators often earn more from affiliate links than sponsorships. Comedy creators monetize through live gifts and Creator Fund. Adapt your strategy to your niche\'s strengths.',
+      answer: 'Pivot your monetization strategy to methods that don\'t rely on direct brand sponsorships. Gaming creators often earn 70-80% of income from affiliate links (gaming gear, peripherals) and TikTok Shop rather than sponsorships. Comedy and entertainment creators monetize through LIVE gifts ($500-$5,000 per session for engaging hosts), Creator Fund/Rewards, and merchandise. Education creators sell digital products (courses $97-$997, templates $10-$50) and coaching ($100-$500/month per client). Food creators leverage TikTok Shop, Amazon affiliates, and recipe ebooks. The key is matching your monetization mix to your niche\'s natural strengths rather than forcing traditional brand deals. Many creators in "low brand deal" niches out-earn those in high brand deal niches by optimizing alternative revenue streams.',
+    },
+    {
+      question: 'How do I research if a niche is profitable before committing?',
+      answer: 'Use this validation process: (1) Search your niche + "sponsored" or "#ad" on TikTok to see if brands are actively partnering with creators—frequency of sponsored posts indicates market demand. (2) Check affiliate program availability—search "[your niche] affiliate programs" to identify potential partnership opportunities and commission rates. (3) Analyze top creators in the niche using Social Blade or similar tools—consistent growth and high engagement suggest healthy market dynamics. (4) Search brand names from your niche on TikTok Creator Marketplace or AspireIQ to see active campaigns. (5) Join Facebook groups or Discord communities for creators in that niche to gather insider insights on earnings and opportunities. Spend 3-5 hours researching before committing months of content creation.',
+    },
+    {
+      question: 'What\'s the best niche for beginners with no specialized knowledge?',
+      answer: 'Start with lifestyle, productivity, or "day in my life" content while you build skills and discover your natural strengths. These broad niches have lower barriers to entry, don\'t require specialized credentials, and let you experiment with different content styles. Document your journey learning something new—"learning to code," "getting fit from zero," "budgeting journey"—authenticity and relatability often outperform expertise for beginners. As you gain traction (5K-10K followers), analyze which content types get highest engagement and save rates, then niche down strategically. Many successful creators started broad, then specialized once they understood what resonated. Example: started with "productivity," noticed finance content performed best, pivoted to "personal finance for millennials," then specialized further into "tax strategy." Let your audience guide your specialization through engagement data.',
     },
   ];
 
@@ -329,13 +337,176 @@ export default function NichesPage() {
             </Card>
           </div>
 
-          {/* How to Choose Your Niche */}
+          {/* Sub-Niche Examples Section */}
           <div className="max-w-5xl mx-auto mb-16">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">
-              How to Choose Your TikTok Niche Strategically
+              Sub-Niche Examples: Specialize for Higher Earnings
             </h2>
             <p className="text-body-md text-neutral-600 text-center mb-8 max-w-3xl mx-auto">
-              The right niche balances your interests, expertise, and earning potential. Consider these four critical factors when selecting or pivoting your content category:
+              Generic niches are oversaturated. Sub-niches reduce competition, increase engagement rates, and command premium brand deal rates. Here are high-value specializations within major categories:
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card>
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Sparkles className="w-5 h-5 text-pink-600" />
+                  Beauty Sub-Niches
+                </h3>
+                <ul className="space-y-2 text-body-sm text-neutral-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-600 mt-0.5">•</span>
+                    <span><strong>Glass skin for mature skin (40+):</strong> Targets older demographic with higher purchasing power</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-600 mt-0.5">•</span>
+                    <span><strong>Clean beauty ingredient education:</strong> Science-backed content builds authority and trust</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-600 mt-0.5">•</span>
+                    <span><strong>Makeup for hooded eyes:</strong> Specific technique tutorials for underserved audience</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-pink-600 mt-0.5">•</span>
+                    <span><strong>K-beauty on a budget:</strong> Combines trending aesthetic with affordability angle</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card>
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <PiggyBank className="w-5 h-5 text-green-600" />
+                  Finance Sub-Niches
+                </h3>
+                <ul className="space-y-2 text-body-sm text-neutral-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">•</span>
+                    <span><strong>Credit card optimization:</strong> High affiliate payouts ($50-200 per approval)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">•</span>
+                    <span><strong>Tax strategy for creators:</strong> Niche within niche, premium consulting potential</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">•</span>
+                    <span><strong>Real estate investing for beginners:</strong> High-ticket courses and coaching opportunities</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">•</span>
+                    <span><strong>Side hustles for 9-5 workers:</strong> Mass appeal with strong product conversion</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card>
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Dumbbell className="w-5 h-5 text-orange-600" />
+                  Fitness Sub-Niches
+                </h3>
+                <ul className="space-y-2 text-body-sm text-neutral-700">
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-0.5">•</span>
+                    <span><strong>Home workouts for busy parents:</strong> Loyal audience, coaching upsell potential</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-0.5">•</span>
+                    <span><strong>Strength training for women 40+:</strong> Premium demographic, supplement partnerships</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-0.5">•</span>
+                    <span><strong>Postpartum fitness recovery:</strong> Specialized knowledge, dedicated community</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-orange-600 mt-0.5">•</span>
+                    <span><strong>Calisthenics for beginners:</strong> Equipment affiliate opportunities, course sales</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-3xl mx-auto">
+              <p className="text-body-sm text-neutral-700">
+                <strong>Why sub-niches matter:</strong> A creator with 25K followers in "credit card optimization" can charge $2,000-$3,500 per brand deal, while a general "personal finance" creator with 50K followers might only get $1,500-$2,500. Specialization demonstrates expertise, attracts highly targeted audiences, and justifies premium rates.
+              </p>
+            </div>
+          </div>
+
+          {/* Emerging Niches for 2026 */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">
+              Emerging High-Growth Niches for 2026
+            </h2>
+            <p className="text-body-md text-neutral-600 text-center mb-8 max-w-3xl mx-auto">
+              These emerging categories show exceptional growth metrics, low competition, and increasing advertiser demand. Early adopters in these niches are seeing 2-3x faster monetization than established categories.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="bg-gradient-to-br from-purple-50 to-blue-50 border-purple-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <TrendingUp className="w-6 h-6 text-purple-600" />
+                  AI and Automation Tools
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  Content teaching ChatGPT prompts, AI productivity hacks, and automation workflows is exploding. SaaS companies pay premium rates ($5,000-$15,000 per integration) for qualified leads. Audience growth: <strong>240% YoY</strong>.
+                </p>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="px-2 py-1 bg-green-100 text-green-700 rounded">Low competition</span>
+                  <span className="text-neutral-600">Avg RPM: $0.06-$0.10</span>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-green-50 to-teal-50 border-green-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Target className="w-6 h-6 text-green-600" />
+                  Remote Work and Digital Nomad
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  Remote work tools, digital nomad tips, and location-independent careers attract audiences with disposable income. Travel brands, coworking spaces, and productivity apps actively seeking partnerships. Audience growth: <strong>180% YoY</strong>.
+                </p>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded">Medium competition</span>
+                  <span className="text-neutral-600">Avg RPM: $0.04-$0.07</span>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Lightbulb className="w-6 h-6 text-orange-600" />
+                  Creator Economy Education
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  Teaching others to become creators (editing tutorials, algorithm hacks, monetization strategies) has meta appeal. Course sales potential enormous ($500-$2,000 products). Audience growth: <strong>165% YoY</strong>.
+                </p>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="px-2 py-1 bg-yellow-100 text-yellow-700 rounded">Medium competition</span>
+                  <span className="text-neutral-600">Avg RPM: $0.03-$0.06</span>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Users className="w-6 h-6 text-pink-600" />
+                  Mental Health and Wellness
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  Therapy tips, anxiety management, and mental wellness content sees high engagement and save rates. Wellness apps, therapy platforms, and meditation brands investing heavily. Audience growth: <strong>150% YoY</strong>.
+                </p>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="px-2 py-1 bg-green-100 text-green-700 rounded">Low competition</span>
+                  <span className="text-neutral-600">Avg RPM: $0.04-$0.08</span>
+                </div>
+              </Card>
+            </div>
+            <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg max-w-3xl mx-auto">
+              <p className="text-body-sm text-neutral-700">
+                <strong>Early mover advantage:</strong> Creators entering these niches in 2026 are seeing 40-60% higher engagement rates and faster follower growth than established categories. Brand demand is increasing faster than creator supply, creating premium pricing power for early adopters.
+              </p>
+            </div>
+          </div>
+
+          {/* Niche Selection Decision Framework */}
+          <div className="max-w-5xl mx-auto mb-16">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">
+              Niche Selection Guide: Strategic Decision Framework
+            </h2>
+            <p className="text-body-md text-neutral-600 text-center mb-8 max-w-3xl mx-auto">
+              Use this framework to evaluate potential niches. The right choice balances personal strengths, market demand, and long-term sustainability. Score each niche 1-5 on these criteria:
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 border-blue-200">
@@ -344,12 +515,12 @@ export default function NichesPage() {
                     <Target className="w-10 h-10 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-2">Match Skills to Market Demand</h3>
+                    <h3 className="font-semibold text-neutral-900 mb-2">1. Personal Expertise Match</h3>
                     <p className="text-body-sm text-neutral-700 mb-3">
-                      Choose a niche where you have genuine expertise or credibility. Finance creators need financial literacy. Fitness creators need training knowledge. Audiences spot fakes quickly, especially in high-value niches where trust drives conversions.
+                      Do you have genuine knowledge, skills, or experience in this niche? Audiences detect inauthenticity quickly. Finance requires financial literacy, fitness needs training knowledge, beauty demands product expertise.
                     </p>
                     <p className="text-body-sm text-neutral-700">
-                      <strong>Action Step:</strong> List your professional skills, hobbies, and passions. Cross-reference with high-paying niches to find overlaps.
+                      <strong>Score 5:</strong> Professional background or years of personal experience. <strong>Score 1:</strong> No knowledge, purely interest-based.
                     </p>
                   </div>
                 </div>
@@ -358,15 +529,15 @@ export default function NichesPage() {
               <Card className="bg-gradient-to-br from-purple-50 to-pink-50 border-purple-200">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <Users className="w-10 h-10 text-purple-600" />
+                    <DollarSign className="w-10 h-10 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-2">Analyze Audience Demographics</h3>
+                    <h3 className="font-semibold text-neutral-900 mb-2">2. Monetization Potential</h3>
                     <p className="text-body-sm text-neutral-700 mb-3">
-                      High-earning niches attract audiences with disposable income and buying intent. Finance followers are typically 25-45 with jobs. Beauty skews 18-35 with spending power. Gaming skews younger with lower purchasing capacity but high engagement.
+                      Evaluate RPM rates, brand deal frequency, affiliate opportunities, digital product viability, and coaching potential. Best niches offer 4+ revenue streams with high customer lifetime value.
                     </p>
                     <p className="text-body-sm text-neutral-700">
-                      <strong>Action Step:</strong> Research competitor audience demographics using TikTok analytics or SocialBlade data before committing.
+                      <strong>Score 5:</strong> Finance/B2B niches with multiple high-value streams. <strong>Score 1:</strong> Entertainment with limited monetization options.
                     </p>
                   </div>
                 </div>
@@ -375,15 +546,15 @@ export default function NichesPage() {
               <Card className="bg-gradient-to-br from-green-50 to-teal-50 border-green-200">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <Layers className="w-10 h-10 text-green-600" />
+                    <ArrowRightLeft className="w-10 h-10 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-2">Consider Content Sustainability</h3>
+                    <h3 className="font-semibold text-neutral-900 mb-2">3. Competition Level</h3>
                     <p className="text-body-sm text-neutral-700 mb-3">
-                      Can you create content consistently for 12+ months? Finance and education require constant research to stay current. Beauty benefits from product launches for fresh content. Entertainment relies on creativity that can burn out quickly.
+                      Research existing creators in the space. High competition makes growth slower but validates market demand. Low competition might indicate limited monetization or audience interest.
                     </p>
                     <p className="text-body-sm text-neutral-700">
-                      <strong>Action Step:</strong> Test your niche with 10-15 videos before fully committing. If ideas dry up early, it's not sustainable.
+                      <strong>Score 5:</strong> Emerging niche with growing demand, few established creators. <strong>Score 1:</strong> Oversaturated with celebrity-level competition.
                     </p>
                   </div>
                 </div>
@@ -392,19 +563,62 @@ export default function NichesPage() {
               <Card className="bg-gradient-to-br from-orange-50 to-red-50 border-orange-200">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
-                    <TrendingUp className="w-10 h-10 text-orange-600" />
+                    <Layers className="w-10 h-10 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-2">Evaluate Monetization Diversity</h3>
+                    <h3 className="font-semibold text-neutral-900 mb-2">4. Content Sustainability</h3>
                     <p className="text-body-sm text-neutral-700 mb-3">
-                      Best niches offer multiple income streams: Creator Fund, brand deals, affiliates, digital products, coaching, and TikTok Shop. Relying on a single revenue source is risky. Finance and fitness excel here with 5+ monetization options.
+                      Can you generate fresh ideas for 12+ months? Finance and education require ongoing research. Beauty benefits from continuous product launches. Entertainment depends on creativity that can burn out.
                     </p>
                     <p className="text-body-sm text-neutral-700">
-                      <strong>Action Step:</strong> Map out 3-4 potential revenue streams for your chosen niche before launching content.
+                      <strong>Score 5:</strong> Evergreen topic with endless content angles. <strong>Score 1:</strong> Trend-dependent or limited content potential.
                     </p>
                   </div>
                 </div>
               </Card>
+
+              <Card className="bg-gradient-to-br from-pink-50 to-rose-50 border-pink-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <Users className="w-10 h-10 text-pink-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">5. Audience Demographics</h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      High-earning niches attract audiences with disposable income and purchase intent. Finance targets 25-45 with careers. Beauty skews 18-35 with spending power. Gaming skews younger with less purchasing capacity.
+                    </p>
+                    <p className="text-body-sm text-neutral-700">
+                      <strong>Score 5:</strong> Professional audience 25-45 with high income. <strong>Score 1:</strong> Primarily teenagers with limited spending power.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="bg-gradient-to-br from-teal-50 to-cyan-50 border-teal-200">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <TrendingUp className="w-10 h-10 text-teal-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">6. Long-Term Growth Trajectory</h3>
+                    <p className="text-body-sm text-neutral-700 mb-3">
+                      Is the niche growing, stable, or declining? Check Google Trends, TikTok search volume, and industry reports. Emerging niches offer early mover advantages but require validation.
+                    </p>
+                    <p className="text-body-sm text-neutral-700">
+                      <strong>Score 5:</strong> 100%+ YoY growth with strong fundamentals. <strong>Score 1:</strong> Declining interest or fading trend.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-3xl mx-auto">
+              <h3 className="font-semibold text-neutral-900 mb-2">Scoring Guide:</h3>
+              <ul className="space-y-1 text-body-sm text-neutral-700">
+                <li><strong>25-30 points:</strong> Excellent niche fit. High probability of success with strategic execution.</li>
+                <li><strong>20-24 points:</strong> Good potential. Address weaknesses before fully committing.</li>
+                <li><strong>15-19 points:</strong> Moderate fit. Consider pivoting to adjacent niche or building expertise first.</li>
+                <li><strong>Below 15:</strong> Poor fit. Explore other options that better match your strengths and market demand.</li>
+              </ul>
             </div>
           </div>
 

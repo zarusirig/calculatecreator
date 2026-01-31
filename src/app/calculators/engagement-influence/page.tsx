@@ -68,6 +68,14 @@ const faqs = [
     question: 'What engagement benchmarks should I aim for by niche?',
     answer: 'Engagement benchmarks vary significantly by niche. Comedy and entertainment creators typically achieve 10-18% due to highly shareable content. Beauty and fashion see 8-15% with strong product-driven engagement. Finance and education average 6-12% with more thoughtful, save-focused engagement. Gaming content ranges 7-14% depending on community building. Fitness creators average 9-16% with motivational, aspirational content. Regardless of niche, aim to exceed your category average by 20-30% to command premium brand rates and algorithmic favorability.',
   },
+  {
+    question: 'How does TikTok\'s algorithm use engagement to distribute content?',
+    answer: 'TikTok\'s 2026 algorithm uses a two-stage distribution system heavily dependent on engagement. First, your video is shown to a small test audience (200-500 users, primarily existing followers). If this group achieves 8-12%+ engagement within 1-2 hours, the algorithm promotes your content to a broader audience (5K-50K users). High engagement in this second wave triggers exponential distribution to millions of users via the For You Page. The algorithm specifically tracks completion rate (60%+ ideal), like rate (5-10%), comment rate (0.5-2%), share rate (1-3%), and save rate (3-5%+). Videos that maintain high engagement across multiple waves can stay on FYP for days or weeks, creating sustained growth.',
+  },
+  {
+    question: 'Can I recover from low engagement rates, or is my account permanently limited?',
+    answer: 'Low engagement rates are recoverable through strategic content pivots and consistency. TikTok\'s algorithm evaluates each video individually—one high-engagement video can reset your account\'s distribution potential. To recover: (1) Analyze your top 5 performing videos from the past 6 months and identify common elements (topic, format, hook style); (2) Create 10-15 videos doubling down on what worked, using proven hooks and CTAs; (3) Post consistently (4-7 times per week) for 3-4 weeks to give the algorithm sufficient data; (4) Engage aggressively with comments in the first hour. Most creators see engagement improvement within 2-3 weeks. If engagement remains below 3% after 30 days of optimized content, consider creating a fresh account focused on a tighter niche—sometimes starting over with refined positioning is faster than recovering a misaligned account.',
+  },
 ];
 
 export default function EngagementInfluencePage() {
@@ -312,6 +320,220 @@ export default function EngagementInfluencePage() {
                   Beyond direct pricing impact, high engagement creates compound benefits: improved algorithmic reach (more views per post), stronger negotiating leverage with brands, access to exclusive partnership programs, and higher commission rates on affiliate links. A 1% improvement in engagement can translate to 10-15% higher annual earnings when accounting for all revenue streams.
                 </p>
               </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Why Engagement > Followers Section */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="p-8 bg-gradient-to-br from-purple-50 to-white border-purple-200">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-purple-600 text-white flex items-center justify-center">
+                <Award size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">Why Engagement Rate Matters More Than Follower Count</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              In 2026, brands and TikTok's algorithm prioritize engagement over follower count. Here's why a smaller, engaged audience beats a large, passive one every time.
+            </p>
+
+            <div className="space-y-5">
+              <div className="bg-white p-5 rounded-lg border border-purple-200">
+                <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+                  <DollarSign size={18} className="text-purple-600" />
+                  Brand ROI: Engagement Predicts Sales
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  A creator with 20K followers and 15% engagement (3,000 active users) delivers better campaign results than one with 100K followers and 3% engagement (3,000 active users). The first creator's audience actively likes, comments, shares, and clicks—behaviors that correlate directly with purchase intent. Brands pay 2-3× higher rates for high engagement because it translates to measurable ROI.
+                </p>
+              </div>
+
+              <div className="bg-white p-5 rounded-lg border border-purple-200">
+                <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+                  <TrendingUp size={18} className="text-purple-600" />
+                  Algorithm Amplification: Engagement Creates Reach
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  TikTok's 2026 algorithm heavily weights early engagement (first 1-2 hours). Videos that achieve 10%+ engagement within this window receive 5-10× more distribution to the broader For You Page. High engagement isn't just a vanity metric—it directly triggers algorithmic promotion, creating exponential reach. This creates a compounding effect where engaged audiences generate more views, which attracts more followers, which increases earning potential across all revenue streams.
+                </p>
+              </div>
+
+              <div className="bg-white p-5 rounded-lg border border-purple-200">
+                <h3 className="font-semibold text-neutral-900 mb-2 flex items-center gap-2">
+                  <Eye size={18} className="text-purple-600" />
+                  Follower Inflation: The Quality vs Quantity Problem
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  Many creators have inflated follower counts from viral videos, giveaways, or inactive accounts. A creator who gained 50K followers from one viral video three months ago but has 3% ongoing engagement has an audience mismatch problem. Brands now scrutinize engagement trends over 30-90 days to identify authentic influence. Consistent 8-15% engagement proves you have a real, active community rather than a one-hit audience.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Influence Metrics Comparison */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+                <BarChart3 size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">Influence Metrics Compared: Which Matters Most?</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Not all metrics are created equal. Here's how engagement rate, reach, and saves stack up for measuring true influence and earning potential.
+            </p>
+
+            <div className="space-y-4">
+              <div className="bg-green-50 p-6 rounded-lg border-2 border-green-300">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-bold text-neutral-900 flex items-center gap-2">
+                    <CheckCircle size={20} className="text-green-600" />
+                    Engagement Rate (Most Important)
+                  </h3>
+                  <span className="text-sm font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">Primary Metric</span>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>What it measures:</strong> (Likes + Comments + Shares) / Followers × 100. Represents audience activation and interaction quality.
+                </p>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>Why it matters:</strong> Directly correlates with brand deal pricing (2-3× multiplier above 10%), algorithmic promotion, and conversion rates. Most predictive metric for campaign success.
+                </p>
+                <p className="text-body-md text-neutral-700">
+                  <strong>Target benchmark:</strong> 8-15% for micro-influencers, 5-10% for macro creators. Above 15% commands premium rates.
+                </p>
+              </div>
+
+              <div className="bg-blue-50 p-6 rounded-lg border-2 border-blue-300">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-bold text-neutral-900 flex items-center gap-2">
+                    <Eye size={20} className="text-blue-600" />
+                    Reach / Views (Secondary Metric)
+                  </h3>
+                  <span className="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">Reach Indicator</span>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>What it measures:</strong> Total unique viewers or video views. Indicates content distribution and audience size.
+                </p>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>Why it matters:</strong> Important for awareness campaigns and brand reach objectives. However, views without engagement indicate passive consumption—less valuable for conversion-focused campaigns.
+                </p>
+                <p className="text-body-md text-neutral-700">
+                  <strong>Best use case:</strong> Combine with engagement rate. High views + high engagement = maximum value. High views + low engagement = inflated audience or poor content fit.
+                </p>
+              </div>
+
+              <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-300">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-bold text-neutral-900 flex items-center gap-2">
+                    <Award size={20} className="text-purple-600" />
+                    Save Rate (Emerging Premium Metric)
+                  </h3>
+                  <span className="text-sm font-semibold text-purple-600 bg-purple-100 px-3 py-1 rounded-full">Quality Signal</span>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>What it measures:</strong> Percentage of viewers who bookmark/save your content for later reference.
+                </p>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  <strong>Why it matters:</strong> TikTok's 2026 algorithm heavily weights saves as a quality signal. Save rates above 3-5% indicate high-value educational or tutorial content. Particularly valuable for finance, education, DIY, and how-to niches.
+                </p>
+                <p className="text-body-md text-neutral-700">
+                  <strong>Target benchmark:</strong> 3-5% save rate signals premium content. Educational creators with 8%+ save rates command 30-50% higher brand deal rates in information-heavy niches.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 bg-neutral-100 p-5 rounded-lg border border-neutral-300">
+              <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                <Target size={20} className="text-neutral-700" />
+                The Optimal Influence Formula
+              </h3>
+              <p className="text-body-md text-neutral-700">
+                <strong>True Influence Score = Engagement Rate (40%) + Reach Growth (30%) + Save Rate (20%) + Audience Demographics (10%).</strong> Track all four metrics monthly. Creators who optimize across all dimensions—not just followers—earn 2-4× more than those focused solely on follower growth. Use our <Link href="/calculators/engagement-influence/engagement" className="text-primary-600 hover:text-primary-700 underline font-semibold">Engagement Calculator</Link> to benchmark your current position and identify optimization opportunities.
+              </p>
+            </div>
+          </Card>
+        </div>
+
+        {/* Boost Your Influence Section */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="p-8 bg-gradient-to-br from-orange-50 to-white border-orange-200">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-orange-600 text-white flex items-center justify-center">
+                <Zap size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">4 Proven Strategies to Boost Your Influence</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Implement these evidence-based strategies to increase engagement rate, improve algorithmic performance, and command higher brand deal rates.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              <div className="bg-white p-6 rounded-lg border-2 border-orange-200 hover:border-orange-400 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+                    <Video size={20} />
+                  </div>
+                  <h3 className="font-semibold text-neutral-900">Hook Optimization (First 3 Seconds)</h3>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  80% of viewers decide whether to watch or scroll within 3 seconds. Start with a pattern interrupt (surprising statement, visual hook, or question) before context. Videos with strong hooks achieve 2-3× higher completion rates, which directly feeds TikTok's algorithm. Test 3-5 different hooks for the same video concept to identify what resonates.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Example: Instead of "Today I'm going to show you...", try "This mistake cost me $10,000..." or "Nobody talks about this, but..."
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-2 border-orange-200 hover:border-orange-400 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+                    <Users size={20} />
+                  </div>
+                  <h3 className="font-semibold text-neutral-900">Golden Hour Engagement</h3>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  Respond to every comment within the first 60 minutes of posting. This creates engagement velocity that signals to TikTok's algorithm that your content is conversation-worthy. Creators who actively engage in the first hour see 40-60% higher overall engagement rates. Ask follow-up questions, use humor, and pin the best comment to encourage more interaction.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Pro tip: Set up push notifications for comments during the first hour and respond immediately. Even "❤️" reactions count as engagement signals.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-2 border-orange-200 hover:border-orange-400 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+                    <Target size={20} />
+                  </div>
+                  <h3 className="font-semibold text-neutral-900">Strategic CTAs (Calls to Action)</h3>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  End videos with specific engagement asks: "Comment which you prefer: A or B?", "Share this with someone who needs to hear it", or "Save this for later reference." CTAs increase comment rates by 30-50% and share rates by 20-40%. Avoid generic "like and follow" requests—give viewers a specific, easy action that feels natural to the content.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Best-performing CTAs: Binary choices (A or B), tag-a-friend prompts, and controversial takes that invite debate.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg border-2 border-orange-200 hover:border-orange-400 transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+                    <BarChart3 size={20} />
+                  </div>
+                  <h3 className="font-semibold text-neutral-900">Niche Authority Positioning</h3>
+                </div>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  Focus on a specific niche rather than broad content. Creators with clear niche expertise achieve 2-3× higher engagement rates because their audience self-selects for high interest. Define your specific expertise (e.g., "TikTok Shop for handmade jewelry" vs. "TikTok tips") and create 80% of content within that niche. Brands pay premium rates for niche authority—$50-100 per 1K followers instead of the $10-30 baseline.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Use our <Link href="/calculators/engagement-influence/influencer-pricing" className="text-orange-600 hover:text-orange-700 underline font-medium">Influencer Pricing Calculator</Link> to see how niche positioning impacts your rates.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 bg-white p-5 rounded-lg border border-orange-200">
+              <p className="text-body-md text-neutral-700">
+                <strong>Implementation Timeline:</strong> Apply one strategy per week for sustainable improvement. Track engagement rate weekly using our <Link href="/calculators/engagement-influence/engagement" className="text-orange-600 hover:text-orange-700 underline font-medium">Engagement Calculator</Link>. Most creators see measurable improvement (1-3% engagement increase) within 2-3 weeks of consistent application. A 3% engagement increase can translate to 20-30% higher annual earnings.
+              </p>
             </div>
           </Card>
         </div>

@@ -4,7 +4,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
-import { Receipt, Wallet, CheckCircle, AlertCircle, DollarSign, Shield, TrendingUp, Calendar, Percent, FileText, Users, Target } from 'lucide-react';
+import { Receipt, Wallet, CheckCircle, AlertCircle, DollarSign, Shield, TrendingUp, Calendar, Percent, FileText, Users, Target, Gift, ShoppingBag } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Utility Tools | TikTok Creator Calculators',
@@ -68,6 +68,14 @@ const faqs = [
     question: 'How do payment processing fees affect my TikTok payouts?',
     answer: 'TikTok\'s platform fees are deducted before payout (50% on LIVE gifts, 2-8% on Shop transactions), but payment processing fees also apply when withdrawing funds. PayPal charges 2.9% + $0.30 per transaction for US accounts. Bank transfers (ACH) are typically free for US creators but may take 3-5 business days. International wire transfers cost $15-$40 and have currency conversion fees (2-4%). To minimize fees, accumulate larger balances before withdrawing, use bank transfer over PayPal when possible, and consider the $50 minimum threshold requirement to avoid small transaction fee ratios.',
   },
+  {
+    question: 'Should I form an LLC or S-Corp as a TikTok creator?',
+    answer: 'For creators earning under $40,000/year, a sole proprietorship (Schedule C) is usually sufficient and simplest. Once you\'re consistently earning $50,000-$75,000+, an S-Corp can save 5-10% in self-employment taxes by splitting income between salary (subject to 15.3% SE tax) and distributions (not subject to SE tax). LLCs provide liability protection but don\'t save taxes unless you elect S-Corp status. Consult a CPA to analyze your specific situation - S-Corps require payroll processing, quarterly filings, and compliance costs that may outweigh tax savings for smaller creators. Most creators earning $100,000+ benefit from S-Corp election.',
+  },
+  {
+    question: 'What happens if I miss a quarterly tax payment?',
+    answer: 'The IRS charges underpayment penalties calculated at 8% annual interest (varies quarterly based on federal short-term rate plus 3%). If you owe $3,000 in taxes for a quarter you missed, you\'d accrue roughly $60 in penalties ($3,000 x 8% divided by 4 quarters). Penalties compound if multiple quarters are missed. To avoid penalties entirely, ensure your total quarterly payments equal at least 90% of current year tax liability OR 100% of prior year tax (110% if AGI was $150,000+). If you missed Q1, increase Q2-Q4 payments proportionally. The IRS Form 2210 calculates exact penalty amounts, or use our Tax Calculator to estimate what you should pay each quarter to stay compliant.',
+  },
 ];
 
 export default function UtilityToolsPage() {
@@ -128,6 +136,54 @@ export default function UtilityToolsPage() {
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* Creator Operations Overview */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <Card className="p-8 bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 text-center">Creator Operations Overview</h2>
+            <p className="text-body-md text-neutral-700 mb-6 text-center max-w-2xl mx-auto">
+              Managing a successful TikTok creator business requires more than just making great content. You must navigate complex tax obligations, understand platform payout structures, and meet specific eligibility requirements to unlock monetization streams. These utility tools help you manage the business side of content creation professionally.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="p-5 bg-white rounded-lg border border-blue-200">
+                <div className="flex items-center space-x-3 mb-3">
+                  <Receipt size={22} className="text-blue-600" />
+                  <h3 className="font-semibold text-neutral-900">Tax Management</h3>
+                </div>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  As a self-employed creator, you're responsible for federal income tax, self-employment tax (15.3%), and state taxes. Unlike traditional employees, no taxes are withheld from your TikTok payments.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Use the Tax Calculator to estimate quarterly payments and avoid underpayment penalties.
+                </p>
+              </div>
+              <div className="p-5 bg-white rounded-lg border border-blue-200">
+                <div className="flex items-center space-x-3 mb-3">
+                  <Wallet size={22} className="text-blue-600" />
+                  <h3 className="font-semibold text-neutral-900">Payout Processing</h3>
+                </div>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  TikTok takes platform fees before paying creators. LIVE gifts have a 50% fee, TikTok Shop charges 2-8%, while Creator Fund has no fees. Payment processing adds another 0-3% when withdrawing.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Use the Payout Calculator to see actual take-home amounts after all fees.
+                </p>
+              </div>
+              <div className="p-5 bg-white rounded-lg border border-blue-200">
+                <div className="flex items-center space-x-3 mb-3">
+                  <CheckCircle size={22} className="text-blue-600" />
+                  <h3 className="font-semibold text-neutral-900">Eligibility Requirements</h3>
+                </div>
+                <p className="text-body-sm text-neutral-700 mb-3">
+                  Each monetization program has specific thresholds. Creator Fund requires 10K+ followers, LIVE gifts need 1K+, while TikTok Shop has no minimum. Meeting these unlocks different revenue potential.
+                </p>
+                <p className="text-body-sm text-neutral-600 italic">
+                  Use the Eligibility Checker to verify which programs you currently qualify for.
+                </p>
+              </div>
+            </div>
+          </Card>
         </div>
 
         {/* 2026 Creator Tax Requirements */}
@@ -428,9 +484,76 @@ export default function UtilityToolsPage() {
           </Card>
         </div>
 
+        {/* 2026 Platform Changes Affecting Payouts & Taxes */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <Card className="p-8 bg-gradient-to-br from-purple-50 to-violet-50 border-purple-200">
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center">
+                <Calendar size={24} />
+              </div>
+              <div>
+                <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">2026 Platform Changes Affecting Payouts & Taxes</h2>
+                <p className="text-body-md text-neutral-700 mb-4">
+                  TikTok is implementing several major changes to monetization programs throughout 2026 that directly impact creator earnings and tax obligations. Understanding these shifts is critical for accurate financial planning and tax compliance.
+                </p>
+                <div className="space-y-4">
+                  <div className="p-4 bg-white rounded-lg border border-purple-200">
+                    <h3 className="font-semibold text-neutral-900 mb-2 flex items-center">
+                      <TrendingUp size={18} className="text-purple-600 mr-2" />
+                      Creator Rewards Expansion (Q1-Q2 2026)
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-2">
+                      TikTok is rolling out Creator Rewards globally, replacing the traditional Creator Fund in most regions. This program pays 10-20x higher rates ($0.50-$1.00+ RPM vs $0.02-$0.04), but focuses exclusively on videos over 1 minute with high completion rates. For creators currently earning $500/month from Creator Fund, this could mean $5,000-$10,000/month potential.
+                    </p>
+                    <p className="text-body-sm text-neutral-600">
+                      <strong>Tax Impact:</strong> Dramatically higher income means moving into higher tax brackets (potentially 22% or 24% federal vs 12%), requiring larger quarterly estimated payments to avoid underpayment penalties.
+                    </p>
+                  </div>
+                  <div className="p-4 bg-white rounded-lg border border-purple-200">
+                    <h3 className="font-semibold text-neutral-900 mb-2 flex items-center">
+                      <ShoppingBag size={18} className="text-purple-600 mr-2" />
+                      TikTok Shop 1099-K Reporting Threshold
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-2">
+                      The IRS lowered the 1099-K reporting threshold to $600 in 2026 (down from $20,000 in previous years). TikTok Shop affiliates earning just $50/month ($600/year) will now receive tax forms and must report this income. Previously, many small affiliates didn't receive 1099-Ks and some failed to report earnings.
+                    </p>
+                    <p className="text-body-sm text-neutral-600">
+                      <strong>Tax Impact:</strong> Even micro-affiliates must track Shop commissions meticulously and report on Schedule C. Failure to report income that TikTok reported to the IRS triggers audits.
+                    </p>
+                  </div>
+                  <div className="p-4 bg-white rounded-lg border border-purple-200">
+                    <h3 className="font-semibold text-neutral-900 mb-2 flex items-center">
+                      <Gift size={18} className="text-purple-600 mr-2" />
+                      LIVE Gifts Minimum Payout Increase
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-2">
+                      TikTok is testing a $100 minimum withdrawal threshold for LIVE gift diamonds in select markets (up from $50/10,000 diamonds). This reduces payment processing frequency and encourages creators to accumulate earnings before withdrawal. Smaller creators may wait weeks or months between payouts instead of receiving monthly deposits.
+                    </p>
+                    <p className="text-body-sm text-neutral-600">
+                      <strong>Tax Impact:</strong> Delayed cash flow doesn't affect when income is taxable. You owe taxes when diamonds are earned, not when withdrawn. Track monthly earnings even if you don't hit the minimum threshold.
+                    </p>
+                  </div>
+                  <div className="p-4 bg-white rounded-lg border border-purple-200">
+                    <h3 className="font-semibold text-neutral-900 mb-2 flex items-center">
+                      <Shield size={18} className="text-purple-600 mr-2" />
+                      Enhanced Tax Documentation Requirements
+                    </h3>
+                    <p className="text-body-sm text-neutral-700 mb-2">
+                      TikTok now requires all creators to submit W-9 forms (US) or equivalent tax documentation before enabling any monetization features. This ensures TikTok has accurate taxpayer information for 1099-NEC and 1099-MISC reporting. Creators who fail to submit forms have monetization frozen until compliance.
+                    </p>
+                    <p className="text-body-sm text-neutral-600">
+                      <strong>Tax Impact:</strong> Improved documentation means fewer discrepancies between creator-reported income and TikTok-reported payments, reducing audit risk. Ensure your legal name matches your tax ID exactly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Card>
+        </div>
+
         {/* Why Use Utility Tools */}
         <div className="max-w-4xl mx-auto mt-12">
-          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">Why Use Utility Tools for Your Creator Business</h2>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">Why These Tools Matter for Your Creator Business</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6 bg-gradient-to-br from-blue-50 to-primary-50 border-blue-200">
               <div className="flex items-start space-x-4">

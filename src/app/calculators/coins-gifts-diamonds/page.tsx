@@ -68,6 +68,14 @@ const faqs = [
     question: 'Can I transfer diamonds between TikTok accounts?',
     answer: 'No, TikTok diamonds cannot be transferred between accounts. Diamonds are tied to the specific creator account that earned them through LIVE gifts. They cannot be sold, traded, or gifted to other users. Each creator must independently earn and withdraw their own diamond balance. This policy prevents fraud and ensures proper tax reporting. If you manage multiple accounts, each must reach the $50 minimum withdrawal threshold separately.',
   },
+  {
+    question: 'Why do creators receive only 50% of gift value?',
+    answer: 'TikTok\'s 50% commission covers platform infrastructure costs, payment processing fees, fraud prevention, content moderation, and LIVE streaming server costs. The split is industry-standard across live streaming platforms (YouTube, Twitch, Bigo all take 30-50%). TikTok provides the technology, audience discovery, and secure payment processing that enables creators to monetize directly. While the split seems steep, it eliminates the need for creators to build their own payment systems or audience platforms.',
+  },
+  {
+    question: 'How often should I go LIVE to maximize gift revenue?',
+    answer: 'Optimal LIVE frequency is 3-5 streams per week, 60-120 minutes each, scheduled at consistent times. Regular viewers become habitual gifters who budget for your streams. Daily streaming can lead to audience fatigue and lower per-stream earnings. Test your audience\'s timezone preferences - evening streams (7-10 PM local) consistently generate 2-3x more gifts than morning or afternoon sessions. Consistency matters more than frequency for building reliable gift revenue.',
+  },
 ];
 
 export default function CoinsGiftsDiamondsPage() {
@@ -192,7 +200,10 @@ export default function CoinsGiftsDiamondsPage() {
         {/* Currency Conversion Table */}
         <div className="max-w-4xl mx-auto mt-12">
           <Card className="p-8">
-            <h2 className="text-heading-md font-bold text-neutral-900 mb-6">TikTok Currency Conversion Rates</h2>
+            <h2 className="text-heading-md font-bold text-neutral-900 mb-6">TikTok Virtual Currency Conversion Rates</h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Understanding TikTok's three-tier currency system is essential for maximizing LIVE earnings. Viewers purchase coins with real money, send gifts worth coins during streams, and creators receive diamonds that convert to USD. Each conversion layer involves specific rates and TikTok's platform commission.
+            </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
@@ -252,6 +263,63 @@ export default function CoinsGiftsDiamondsPage() {
             <p className="text-body-sm text-neutral-600 mt-4">
               Note: TikTok takes approximately 50% commission. Viewer pays full coin price, creator receives 50% value in diamonds. Diamond-to-USD conversion: $0.005 per diamond.
             </p>
+          </Card>
+        </div>
+
+        {/* Understanding TikTok's Virtual Economy */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <Card className="p-8">
+            <h2 className="text-heading-md font-bold text-neutral-900 mb-6">Understanding TikTok's Virtual Economy</h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              TikTok's virtual currency system creates a thriving digital economy where creators monetize live content through viewer support. The three-currency model—coins, gifts, and diamonds—separates viewer spending from creator earnings, allowing TikTok to take its platform commission while maintaining transparent conversion rates at each stage.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center">
+                  <Coins className="text-primary-600 mr-2" size={20} />
+                  Coins (Viewer Currency)
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-2">
+                  Viewers purchase coins using real money through in-app payments. Coin prices range from $0.99 for 65 coins to $249.99 for 16,500 coins. Bulk purchases offer slight discounts. Coins are the spending currency that viewers use to buy gifts during LIVE streams.
+                </p>
+                <Link href="/calculators/coins-gifts-diamonds/coins" className="text-body-sm text-primary-600 hover:text-primary-700 font-medium">
+                  Use Coins Calculator →
+                </Link>
+              </div>
+              <div className="p-4 bg-secondary-50 rounded-lg border border-secondary-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center">
+                  <Gift className="text-secondary-600 mr-2" size={20} />
+                  Gifts (Exchange Medium)
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-2">
+                  Virtual gifts are animated items viewers send to creators during LIVE streams. Each gift has a fixed coin cost ranging from 1 coin (Rose) to 34,999 coins (Universe). Gifts trigger on-screen animations and effects that enhance stream engagement and viewer satisfaction.
+                </p>
+                <Link href="/calculators/coins-gifts-diamonds/gift" className="text-body-sm text-secondary-600 hover:text-secondary-700 font-medium">
+                  Use Gift Calculator →
+                </Link>
+              </div>
+              <div className="p-4 bg-success-50 rounded-lg border border-success-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center">
+                  <Gem className="text-success-600 mr-2" size={20} />
+                  Diamonds (Creator Currency)
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-2">
+                  Creators receive diamonds when viewers send gifts. The conversion is 2 coins = 1 diamond, reflecting TikTok's 50% commission. Diamonds accumulate in the Creator Portal and convert to USD at $0.005 per diamond. Minimum withdrawal is 10,000 diamonds ($50).
+                </p>
+                <Link href="/calculators/coins-gifts-diamonds/diamonds" className="text-body-sm text-success-600 hover:text-success-700 font-medium">
+                  Use Diamond Converter →
+                </Link>
+              </div>
+              <div className="p-4 bg-warning-50 rounded-lg border border-warning-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center">
+                  <DollarSign className="text-warning-600 mr-2" size={20} />
+                  Platform Economics
+                </h3>
+                <p className="text-body-sm text-neutral-700 mb-2">
+                  TikTok's 50% commission funds platform infrastructure, payment processing, fraud prevention, and content moderation. The split is competitive with other live streaming platforms and eliminates creator overhead costs for audience building, payment systems, and technology infrastructure.
+                </p>
+              </div>
+            </div>
           </Card>
         </div>
 
@@ -325,9 +393,95 @@ export default function CoinsGiftsDiamondsPage() {
           </Card>
         </div>
 
+        {/* Platform Fee Breakdown */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <Card className="p-8 bg-gradient-to-br from-neutral-50 to-neutral-100 border-neutral-200">
+            <h2 className="text-heading-md font-bold text-neutral-900 mb-6">Platform Fee Breakdown: Where Does Your Money Go?</h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              TikTok's 50% commission structure is transparent and industry-standard. Understanding where platform fees go helps creators make informed decisions about monetization strategies and revenue expectations. Here's the complete breakdown of costs covered by TikTok's commission:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-sm font-bold">
+                    1
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Infrastructure Costs</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  LIVE streaming server costs, bandwidth for millions of concurrent streams, CDN delivery, video encoding/transcoding, and global platform maintenance.
+                </p>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-sm font-bold">
+                    2
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Payment Processing</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  Credit card fees (2-3%), PayPal transaction costs, international currency conversion, fraud detection, secure payment gateway infrastructure.
+                </p>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center text-sm font-bold">
+                    3
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Audience Discovery</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  Algorithm-driven LIVE recommendations, For You page promotion, push notifications to followers, LIVE tab placement, and audience growth tools.
+                </p>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex items-center justify-center text-sm font-bold">
+                    4
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Moderation & Safety</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  24/7 content moderation teams, automated safety systems, copyright protection, DMCA compliance, user report handling, and community guideline enforcement.
+                </p>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex items-center justify-center text-sm font-bold">
+                    5
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Creator Support</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  Creator dashboard tools, analytics and insights, payment processing support, Creator Portal infrastructure, and monetization feature development.
+                </p>
+              </div>
+              <div className="p-4 bg-white rounded-lg shadow-sm">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-secondary-100 text-secondary-600 flex items-center justify-center text-sm font-bold">
+                    6
+                  </div>
+                  <h4 className="font-semibold text-neutral-900">Platform Development</h4>
+                </div>
+                <p className="text-body-sm text-neutral-700">
+                  New monetization features, improved gift effects and animations, enhanced creator tools, mobile app updates, and continuous platform innovation.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 bg-primary-50 border border-primary-200 rounded-lg">
+              <p className="text-body-sm text-neutral-900">
+                <strong>Industry Context:</strong> TikTok's 50% split is competitive with YouTube LIVE (30% platform fee), Twitch (50% split for most creators), and Bigo Live (40-50%). Unlike building your own streaming platform, TikTok provides instant access to millions of potential viewers without upfront infrastructure costs.
+              </p>
+            </div>
+          </Card>
+        </div>
+
         {/* LIVE Streaming Tips */}
         <div className="max-w-4xl mx-auto mt-12">
-          <h2 className="text-heading-md font-bold text-neutral-900 mb-6">Maximize LIVE Gift Revenue</h2>
+          <h2 className="text-heading-md font-bold text-neutral-900 mb-6">Maximize Your Gift Revenue: Proven Strategies</h2>
+          <p className="text-body-md text-neutral-700 mb-6">
+            Top-earning LIVE creators don't rely on luck or viral moments. They use systematic strategies to encourage consistent gifting, build loyal supporter communities, and optimize every stream for maximum revenue. Here are four proven approaches to increase your gift earnings:
+          </p>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6 border-l-4 border-primary-600">
               <div className="flex items-start space-x-3 mb-3">
@@ -337,7 +491,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-2">Set Gift Goals & Milestones</h3>
                   <p className="text-body-sm text-neutral-700">
-                    Create visible on-screen goals like "500 roses unlocks next song" or "Galaxy gift = personal shoutout." Track progress live to encourage participation. Viewers engage 3x more when they see tangible milestones and immediate rewards for their gifts.
+                    Create visible on-screen goals like "500 roses unlocks next song" or "Galaxy gift = personal shoutout." Track progress live to encourage participation. Viewers engage 3x more when they see tangible milestones and immediate rewards for their gifts. Use visual progress bars, countdowns, and celebrations when goals are reached.
                   </p>
                 </div>
               </div>
@@ -350,7 +504,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-2">Acknowledge Every Gift Immediately</h3>
                   <p className="text-body-sm text-neutral-700">
-                    Call out gifters by username within 5 seconds. Thank small gifts as enthusiastically as large ones. Create custom reactions for top-tier gifts. Immediate recognition builds reciprocity and encourages repeat gifting throughout the stream.
+                    Call out gifters by username within 5 seconds. Thank small gifts as enthusiastically as large ones. Create custom reactions for top-tier gifts. Immediate recognition builds reciprocity and encourages repeat gifting throughout the stream. Studies show acknowledged gifters spend 2.5x more over their viewer lifetime.
                   </p>
                 </div>
               </div>
@@ -363,7 +517,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-2">Stream Consistently at Peak Times</h3>
                   <p className="text-body-sm text-neutral-700">
-                    Go live 3-5x weekly at the same times when your audience is most active. Evening hours (7-10 PM local) generate 2.5x more gifts than morning streams. Consistency builds routine viewership and higher-value regular gifters who anticipate your schedule.
+                    Go live 3-5x weekly at the same times when your audience is most active. Evening hours (7-10 PM local) generate 2.5x more gifts than morning streams. Consistency builds routine viewership and higher-value regular gifters who anticipate your schedule. Test different timeslots for 2 weeks to find your optimal window.
                   </p>
                 </div>
               </div>
@@ -376,7 +530,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-2">Use Interactive Gift Mechanics</h3>
                   <p className="text-body-sm text-neutral-700">
-                    Enable TikTok's gift effects that trigger animations, sounds, or special stream interactions. Host gift battles between viewers, create tiered reward systems, or offer exclusive content at gift thresholds. Interactive mechanics increase average gift value by 40%.
+                    Enable TikTok's gift effects that trigger animations, sounds, or special stream interactions. Host gift battles between viewers, create tiered reward systems, or offer exclusive content at gift thresholds. Interactive mechanics increase average gift value by 40%. Make gifting feel like participation, not just donation.
                   </p>
                 </div>
               </div>

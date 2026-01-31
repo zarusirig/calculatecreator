@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { Gift, Banknote, DollarSign, TrendingUp, Users, BarChart3, Target, Clock, Shield, Zap, Calculator, CheckCircle } from 'lucide-react';
+import { Gift, Banknote, DollarSign, TrendingUp, Users, BarChart3, Target, Clock, Shield, Zap, Calculator, CheckCircle, Lightbulb, Rocket, LineChart, Video, Handshake } from 'lucide-react';
 import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
@@ -109,6 +109,100 @@ const trackingBenefits = [
   },
 ];
 
+const revenueStreamComparison = [
+  {
+    stream: 'Creator Rewards Program',
+    icon: DollarSign,
+    payRate: '$0.40-$1.00 per 1K views',
+    timeInvestment: 'Low (passive)',
+    requirements: '10K+ followers, 1+ min videos, high engagement',
+    bestFor: 'Consistent content creators posting 3-5× weekly',
+    pros: 'Passive income, predictable, scales with views',
+    cons: 'Lower than brand deals, requires consistent posting',
+    monthlyPotential: '$400-$1,000 at 1M monthly views',
+  },
+  {
+    stream: 'LIVE Gifts',
+    icon: Gift,
+    payRate: '$50-$200 per hour',
+    timeInvestment: 'High (active streaming)',
+    requirements: '1K+ followers, 18+ years old',
+    bestFor: 'Engaging personalities with loyal communities',
+    pros: 'High hourly rate, builds community, immediate payout',
+    cons: 'Time-intensive, burnout risk, requires streaming skills',
+    monthlyPotential: '$800-$3,200 (4hrs/week)',
+  },
+  {
+    stream: 'TikTok Shop',
+    icon: Banknote,
+    payRate: '5-20% commission per sale',
+    timeInvestment: 'Medium (product promotion)',
+    requirements: 'No follower minimum, product fit',
+    bestFor: 'Product reviewers, lifestyle creators',
+    pros: 'Scales with sales, no follower requirement, high commissions',
+    cons: 'Requires product knowledge, audience trust critical',
+    monthlyPotential: '$2,000-$10,000+ (with good product-market fit)',
+  },
+  {
+    stream: 'Brand Deals',
+    icon: Handshake,
+    payRate: '$10-$30 per 1K followers',
+    timeInvestment: 'Low per deal (1-3 videos)',
+    requirements: '10K+ followers, professional media kit',
+    bestFor: 'Niche authorities with engaged audiences',
+    pros: 'Highest per-deal income, negotiable rates, creative freedom',
+    cons: 'Inconsistent, requires outreach/negotiation, taxes brand trust',
+    monthlyPotential: '$1,000-$5,000 at 100K followers (1-2 deals/month)',
+  },
+];
+
+const maximizeEarningsStrategies = [
+  {
+    title: 'Diversify Revenue Streams',
+    description: 'Top creators earn from 4-6 different sources, not just one. Combine Creator Rewards for passive income, 1-2 brand deals monthly for high payouts, weekly LIVE sessions for community building, and TikTok Shop for scalable commissions. This protects against algorithm changes and platform policy shifts.',
+    icon: Lightbulb,
+    actionItems: [
+      'Set up Creator Rewards if you have 10K+ followers',
+      'Apply to TikTok Shop Creator Marketplace',
+      'Schedule at least 1 LIVE session weekly',
+      'Create a media kit and pitch 5 brands in your niche',
+    ],
+  },
+  {
+    title: 'Optimize for High-Value Niches',
+    description: 'Finance, tech, and B2B creators earn 3-5× more than entertainment creators with the same follower count. Brand budgets in these niches are significantly higher, and audiences have higher purchasing power. Consider pivoting or adding educational/value-driven content to your mix.',
+    icon: Target,
+    actionItems: [
+      'Research brand deal rates in your current vs adjacent niches',
+      'Add educational content that solves specific problems',
+      'Position yourself as a niche expert, not generalist',
+      'Partner with B2B brands for premium sponsorships',
+    ],
+  },
+  {
+    title: 'Increase Engagement Rate',
+    description: 'Creators with 10%+ engagement charge 2-3× baseline brand deal rates and see higher Creator Rewards payouts. Engagement signals quality to both algorithms and brands. Focus on community building through responding to comments, creating series content, and asking questions that encourage interaction.',
+    icon: Rocket,
+    actionItems: [
+      'Respond to every comment in the first hour after posting',
+      'Use polls, Q&As, and duets to drive interaction',
+      'Create series content that brings viewers back',
+      'Post at times when your audience is most active',
+    ],
+  },
+  {
+    title: 'Track and Optimize Performance',
+    description: 'Use analytics to identify your most profitable content types, best posting times, and highest-earning revenue streams. Most creators underestimate earnings by 40-60% because they do not track performance. Set up a simple spreadsheet to log monthly income by source and adjust strategy quarterly.',
+    icon: LineChart,
+    actionItems: [
+      'Track earnings by source in a monthly spreadsheet',
+      'Analyze which content types drive most revenue',
+      'Calculate your effective hourly rate for each stream',
+      'Double down on what works, eliminate what does not',
+    ],
+  },
+];
+
 const faqs = [
   {
     question: 'How much can I earn from TikTok as a creator?',
@@ -124,7 +218,7 @@ const faqs = [
   },
   {
     question: 'Which TikTok revenue stream pays the most?',
-    answer: 'Brand deals generate the highest income for most creators, typically 10-50× more than Creator Fund for the same audience size. A creator with 100K followers earning $30/month from Creator Fund can charge $1,000-$3,000 per brand deal. However, LIVE gifts can be most lucrative for highly engaging personalities.',
+    answer: 'Brand deals generate the highest income for most creators, typically 10-50× more than Creator Fund for the same audience size. A creator with 100K followers earning $30/month from Creator Fund can charge $1,000-$3,000 per brand deal. However, LIVE gifts can be most lucrative for highly engaging personalities with dedicated communities who stream regularly.',
   },
   {
     question: 'How has the Creator Rewards Program changed TikTok earnings in 2026?',
@@ -141,6 +235,14 @@ const faqs = [
   {
     question: 'How accurate are TikTok earnings calculators?',
     answer: 'Earnings calculators provide estimates based on platform averages and industry benchmarks. Actual earnings vary by niche (finance pays 3-5× more than general content), audience quality (engaged followers vs passive viewers), and individual monetization strategy. Use calculators as planning tools, not guarantees. Track your real earnings over 3-6 months for personalized benchmarks.',
+  },
+  {
+    question: 'Should I focus on one revenue stream or diversify?',
+    answer: 'Diversification is critical for long-term creator sustainability. Top-earning creators in 2026 generate income from 4-6 different streams, protecting against algorithm changes, platform policy shifts, and seasonal fluctuations. Start with Creator Rewards as your passive baseline, add 1-2 brand deals monthly, schedule weekly LIVE sessions for community engagement, and integrate TikTok Shop for scalable commissions. This multi-stream approach typically generates 3-5× more income than relying solely on one method.',
+  },
+  {
+    question: 'How can I transition from part-time to full-time TikTok creator?',
+    answer: 'Build a financial runway of 6-12 months expenses before going full-time. Aim for consistent monthly earnings of 1.5-2× your current salary for at least 6 months to account for income variability and self-employment taxes (25-30% of gross income). Diversify revenue streams so no single source accounts for more than 50% of income. Set up quarterly tax payments, track all business expenses for deductions, and maintain separate personal and business accounts. Most successful full-time creators have 50K+ followers and earn from at least 3 different monetization methods.',
   },
 ];
 
@@ -285,6 +387,105 @@ export default function EarningsRevenuePage() {
             <div className="mt-6 p-4 bg-neutral-50 rounded-lg">
               <p className="text-body-sm text-neutral-600">
                 <strong>Note:</strong> Actual earnings vary by niche (finance/tech creators earn 2-3× more than entertainment), engagement rate (6%+ earns premium brand deals), and content quality. These figures represent averages across all niches.
+              </p>
+            </div>
+          </Card>
+
+          {/* Revenue Stream Comparison */}
+          <Card className="p-8 mb-8">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Revenue Stream Comparison: Which Pays Best?</h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Understanding the tradeoffs between Creator Rewards, LIVE gifts, TikTok Shop, and brand deals helps you allocate time strategically. Each revenue stream has different pay rates, time investments, and requirements.
+            </p>
+            <div className="space-y-4">
+              {revenueStreamComparison.map((stream, idx) => (
+                <div key={idx} className="p-6 bg-gradient-to-br from-neutral-50 to-white rounded-lg border-2 border-neutral-200 hover:border-primary-300 transition-colors">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center">
+                      <stream.icon size={24} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">{stream.stream}</h3>
+                      <div className="grid md:grid-cols-2 gap-x-6 gap-y-2">
+                        <div>
+                          <span className="text-body-xs font-semibold text-neutral-600">Pay Rate: </span>
+                          <span className="text-body-sm text-neutral-900">{stream.payRate}</span>
+                        </div>
+                        <div>
+                          <span className="text-body-xs font-semibold text-neutral-600">Time Investment: </span>
+                          <span className="text-body-sm text-neutral-900">{stream.timeInvestment}</span>
+                        </div>
+                        <div>
+                          <span className="text-body-xs font-semibold text-neutral-600">Requirements: </span>
+                          <span className="text-body-sm text-neutral-900">{stream.requirements}</span>
+                        </div>
+                        <div>
+                          <span className="text-body-xs font-semibold text-neutral-600">Best For: </span>
+                          <span className="text-body-sm text-neutral-900">{stream.bestFor}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-neutral-200">
+                    <div>
+                      <p className="text-body-xs font-semibold text-green-700 mb-1">Pros</p>
+                      <p className="text-body-sm text-neutral-700">{stream.pros}</p>
+                    </div>
+                    <div>
+                      <p className="text-body-xs font-semibold text-red-700 mb-1">Cons</p>
+                      <p className="text-body-sm text-neutral-700">{stream.cons}</p>
+                    </div>
+                    <div>
+                      <p className="text-body-xs font-semibold text-primary-700 mb-1">Monthly Potential</p>
+                      <p className="text-body-sm font-semibold text-primary-600">{stream.monthlyPotential}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+              <p className="text-body-sm text-blue-900">
+                <strong>Strategic Insight:</strong> Most successful creators combine all four streams. Use Creator Rewards for passive baseline income, brand deals for high-value payouts, LIVE gifts for community building, and TikTok Shop for scalable commissions. This diversification protects against platform changes and maximizes total earnings.
+              </p>
+            </div>
+          </Card>
+
+          {/* Maximize Your Earnings */}
+          <Card className="p-8 mb-8 bg-gradient-to-br from-green-50 to-emerald-50 border-green-200">
+            <div className="flex items-center gap-3 mb-4">
+              <Rocket className="w-8 h-8 text-green-600" />
+              <h2 className="text-heading-lg font-semibold text-neutral-900">Maximize Your TikTok Earnings</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Strategic creators earn 3-5× more than those who post randomly. These proven strategies help you optimize revenue across all monetization streams.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {maximizeEarningsStrategies.map((strategy, idx) => (
+                <div key={idx} className="p-6 bg-white rounded-lg border-2 border-green-200 hover:border-green-400 transition-colors">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-green-100 text-green-600 flex items-center justify-center">
+                      <strategy.icon size={20} />
+                    </div>
+                    <h3 className="text-heading-sm font-semibold text-neutral-900">{strategy.title}</h3>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 mb-4">{strategy.description}</p>
+                  <div className="space-y-2">
+                    <p className="text-body-xs font-semibold text-green-700 mb-2">Action Steps:</p>
+                    <ul className="space-y-1.5">
+                      {strategy.actionItems.map((item, itemIdx) => (
+                        <li key={itemIdx} className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span className="text-body-xs text-neutral-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 p-4 bg-yellow-100 rounded-lg border border-yellow-300">
+              <p className="text-body-sm text-yellow-900">
+                <strong>Reality Check:</strong> Building sustainable creator income takes 6-12 months of consistent effort. Focus on one new revenue stream per quarter rather than trying to activate everything at once. Most creators see breakthrough earnings growth between months 8-14.
               </p>
             </div>
           </Card>
