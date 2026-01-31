@@ -169,6 +169,12 @@ export default function AlgorithmEngagementPage() {
               </tbody>
             </table>
           </div>
+          <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+            <p className="text-body-sm text-neutral-900 font-semibold mb-2">Pro Tip: Timing Your Analytics Review</p>
+            <p className="text-body-sm text-neutral-700">
+              Check engagement rates 2-4 hours after posting when the algorithm completes initial testing waves. Early metrics (first 30 minutes) fluctuate wildly and don't predict final performance accurately. Videos that appear to flop initially can surge hours later if they reach the right audience segment during subsequent distribution waves.
+            </p>
+          </div>
         </Card>
 
         <Card>
@@ -207,6 +213,22 @@ export default function AlgorithmEngagementPage() {
             {
               question: 'Can I recover from low engagement on previous videos?',
               answer: 'Yes! Each video is evaluated independently. A few low-performing videos do not permanently hurt your account. However, consistently poor engagement over 10-20 videos signals quality issues that reduce the algorithm\'s trust. To recover, analyze your best-performing content, replicate those elements, improve hooks and watch time, and post consistently. Recovery typically takes 5-10 high-quality posts.'
+            },
+            {
+              question: 'How does TikTok measure engagement differently for longer videos?',
+              answer: 'For videos over 60 seconds, TikTok adjusts watch time expectations. A 3-minute video with 45% average watch time (1.5 minutes watched) can trigger viral distribution, while a 15-second video needs 70%+ completion. Longer videos benefit from mid-roll engagement spikes—comments or shares at the 1-2 minute mark signal sustained interest and boost algorithmic scoring more than early-video interactions alone.'
+            },
+            {
+              question: 'Do comments from my replies count toward engagement metrics?',
+              answer: 'Creator replies generate engagement but carry less algorithmic weight than organic viewer comments. However, replying to comments extends video lifespan by triggering notifications that bring viewers back, creating new watch time and engagement cycles. Reply within 1-2 hours of posting to maximize this effect during critical initial testing phases when the algorithm decides distribution trajectory.'
+            },
+            {
+              question: 'Does posting at specific times affect how the algorithm evaluates engagement?',
+              answer: 'Yes, posting time impacts initial engagement velocity, which heavily influences algorithmic distribution. Post when your audience is most active (check TikTok Analytics for peak hours). Videos posted during high-activity windows receive faster initial engagement, signaling quality to the algorithm. However, content quality still outweighs timing—a great video posted at a suboptimal time can still go viral if early viewers engage strongly.'
+            },
+            {
+              question: 'How does the algorithm treat engagement from non-followers vs followers?',
+              answer: 'Engagement from non-followers carries MORE weight than follower engagement for viral distribution. When someone who doesn\'t follow you likes, comments, or shares your video, it signals the content has broad appeal beyond your existing audience. This is why videos can go viral even with small follower counts—strong non-follower engagement triggers the algorithm to push content to increasingly larger test audiences on the For You Page.'
             }
           ]}
         />

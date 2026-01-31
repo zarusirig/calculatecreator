@@ -21,19 +21,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What viral score should I aim for?',
-    answer: '60+ indicates above-average viral potential. 80+ means very strong viral candidate. Focus on improving your weakest factors for the biggest gains.',
+    answer: '60+ indicates above-average viral potential. 80+ means very strong viral candidate. Focus on improving your weakest factors for the biggest gains. Scores of 40-60 are average and unlikely to go viral without optimization.',
   },
   {
     question: 'Which factor matters most for going viral?',
-    answer: 'Completion rate is the foundation - without retention, nothing else matters. After that, share rate is the most powerful viral signal.',
+    answer: 'Completion rate is the foundation - without retention, nothing else matters. After that, share rate is the most powerful viral signal. A video with 80% completion and 5% share rate will outperform one with 60% completion and 10% engagement every time.',
   },
   {
     question: 'Can I predict exactly which videos will go viral?',
-    answer: 'No calculator can guarantee virality. This tool identifies videos with higher probability based on proven engagement patterns.',
+    answer: 'No calculator can guarantee virality. This tool identifies videos with higher probability based on proven engagement patterns. Timing, trends, cultural moments, and luck also play significant roles that cannot be calculated or predicted.',
   },
   {
     question: 'How often should I check viral potential?',
-    answer: 'Analyze your best-performing videos to understand what patterns lead to higher scores. Use insights to inform future content strategy.',
+    answer: 'Analyze your best-performing videos to understand what patterns lead to higher scores. Use insights to inform future content strategy. Check individual videos 6-24 hours after posting when initial engagement signals have stabilized.',
+  },
+  {
+    question: 'Why is completion rate weighted so heavily?',
+    answer: 'Completion rate directly signals content quality to the algorithm. TikTok only pushes videos to larger audiences if initial viewers watch most or all of the content. Without high completion, your video never gets the reach needed for virality regardless of other metrics.',
+  },
+  {
+    question: 'What is a realistic share rate for viral content?',
+    answer: 'Average content gets 0.5-2% share rate. Viral content typically achieves 5%+ shares. Anything above 8% is exceptional. Share rate is the purest indicator of value—people only share content they genuinely find useful, funny, or remarkable.',
+  },
+  {
+    question: 'Does follower count really affect viral potential?',
+    answer: 'Yes, but only 10% of the score. Larger follower counts give initial distribution advantages and social proof. However, small accounts (under 10K) regularly go viral with exceptional engagement metrics. Focus on engagement quality over follower quantity.',
+  },
+  {
+    question: 'How long does it take for a video to go viral on TikTok?',
+    answer: 'Most viral videos show strong signals within 1-6 hours. Some "sleeper" virals can take 24-72 hours. If your video hasn\'t gained traction within 48 hours, it\'s unlikely to go viral organically. The algorithm tests content quickly.',
+  },
+  {
+    question: 'Can I improve viral potential after posting?',
+    answer: 'Limited options post-publishing. You can respond to every comment to boost engagement signals and encourage the algorithm to re-test the video. Some creators delete and repost during better times, but this resets all engagement data.',
+  },
+  {
+    question: 'What niche has the highest viral potential on TikTok?',
+    answer: 'Comedy, relatable content, and controversial takes have the highest share rates. Educational "did you know" content and life hacks achieve high save rates. Beauty and fitness content gets strong engagement. News commentary typically has lower viral potential despite high view counts.',
   },
 ];
 
@@ -108,20 +132,47 @@ export default function ViralPotentialCalculatorPage() {
               </h2>
               <div className="space-y-3">
                 {[
-                  { label: 'Very High', range: '80+', color: 'bg-success-DEFAULT', description: 'Strong viral candidate' },
-                  { label: 'High', range: '60-80', color: 'bg-secondary-500', description: 'Above average viral potential' },
-                  { label: 'Medium', range: '40-60', color: 'bg-warning-DEFAULT', description: 'Moderate viral chance' },
-                  { label: 'Low', range: '<40', color: 'bg-error-DEFAULT', description: 'Unlikely to go viral' },
+                  {
+                    label: 'Very High',
+                    range: '80+',
+                    color: 'bg-success-DEFAULT',
+                    description: 'Strong viral candidate',
+                    interpretation: 'Your content has exceptional viral potential. Multiple engagement signals are firing. Focus on posting at peak times and capitalize on this momentum with consistent content in the same format.'
+                  },
+                  {
+                    label: 'High',
+                    range: '60-80',
+                    color: 'bg-secondary-500',
+                    description: 'Above average viral potential',
+                    interpretation: 'Your video shows solid viral indicators. One or two improvements to weaker metrics could push this into the viral tier. Analyze which factor is lowest and optimize that element.'
+                  },
+                  {
+                    label: 'Medium',
+                    range: '40-60',
+                    color: 'bg-warning-DEFAULT',
+                    description: 'Moderate viral chance',
+                    interpretation: 'Your content is performing average for TikTok. Virality is unlikely without improvement. Focus on the hook, content structure, and call-to-action elements to increase engagement signals.'
+                  },
+                  {
+                    label: 'Low',
+                    range: '<40',
+                    color: 'bg-error-DEFAULT',
+                    description: 'Unlikely to go viral',
+                    interpretation: 'Multiple engagement metrics are underperforming. Review successful competitors in your niche, identify format patterns, and redesign your content strategy from scratch.'
+                  },
                 ].map((benchmark) => (
-                  <div key={benchmark.label} className="flex items-center justify-between p-4 bg-neutral-50 rounded-lg">
-                    <div className="flex items-center space-x-3">
-                      <div className={`w-3 h-3 rounded-full ${benchmark.color}`} />
-                      <div>
-                        <p className="font-semibold text-neutral-900">{benchmark.label}</p>
-                        <p className="text-body-sm text-neutral-600">{benchmark.description}</p>
+                  <div key={benchmark.label} className="p-4 bg-neutral-50 rounded-lg">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center space-x-3">
+                        <div className={`w-3 h-3 rounded-full ${benchmark.color}`} />
+                        <div>
+                          <p className="font-semibold text-neutral-900">{benchmark.label}</p>
+                          <p className="text-body-sm text-neutral-600">{benchmark.description}</p>
+                        </div>
                       </div>
+                      <span className="font-semibold text-neutral-900">{benchmark.range}</span>
                     </div>
-                    <span className="font-semibold text-neutral-900">{benchmark.range}</span>
+                    <p className="text-body-sm text-neutral-700 mt-2">{benchmark.interpretation}</p>
                   </div>
                 ))}
               </div>
@@ -152,6 +203,46 @@ export default function ViralPotentialCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto space-y-8">
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
+              How to Increase Your Viral Potential
+            </h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Viral potential is not random—it's engineered through strategic content design. These three areas have the highest impact on your viral score across all engagement metrics.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {[
+                {
+                  title: 'Perfect the Hook',
+                  description: 'The first 0.5-1 second determines everything. Skip intros, logos, and setup. Start with your strongest moment, boldest claim, or most visually striking frame. Hook quality directly drives completion rate (30% of viral score) and determines if anyone sees the rest of your content.',
+                  icon: '🎯',
+                  impact: 'Affects completion rate, engagement, shares'
+                },
+                {
+                  title: 'Design for Sharing',
+                  description: 'Create "tag someone" moments—relatable situations, hot takes, or valuable information people want to send to friends. Share rate is 25% of your viral score and the single strongest viral signal. Ask yourself: "Would I send this to someone?" If not, redesign it.',
+                  icon: '🔗',
+                  impact: 'Directly drives share rate (25% weight)'
+                },
+                {
+                  title: 'Optimize Retention',
+                  description: 'Use pattern interrupts every 2-3 seconds: quick cuts, zoom changes, text pops, sound effects. Save the payoff for the last second to maximize rewatches. Completion rate is the foundation metric—without retention, other signals don\'t matter.',
+                  icon: '⏱️',
+                  impact: 'Maximizes completion rate (30% weight)'
+                },
+              ].map((strategy, index) => (
+                <div key={index} className="p-6 bg-gradient-to-br from-secondary-50 to-neutral-50 rounded-lg border border-secondary-200">
+                  <div className="text-3xl mb-3">{strategy.icon}</div>
+                  <h3 className="font-semibold text-neutral-900 mb-2 text-heading-sm">{strategy.title}</h3>
+                  <p className="text-body-sm text-neutral-700 mb-3">{strategy.description}</p>
+                  <p className="text-body-xs text-secondary-700 font-medium">
+                    Impact: {strategy.impact}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </Card>
+
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
               8 Proven Viral Strategies
@@ -227,24 +318,7 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
 
           <FAQSection
             pageName="Viral Potential Calculator"
-            faqs={[
-              {
-                question: 'What viral score should I aim for?',
-                answer: '60+ indicates above-average viral potential. 80+ means very strong viral candidate. Focus on improving your weakest factors for the biggest gains.',
-              },
-              {
-                question: 'Which factor matters most for going viral?',
-                answer: 'Completion rate is the foundation - without retention, nothing else matters. After that, share rate is the most powerful viral signal.',
-              },
-              {
-                question: 'Can I predict exactly which videos will go viral?',
-                answer: 'No calculator can guarantee virality. This tool identifies videos with higher probability based on proven engagement patterns.',
-              },
-              {
-                question: 'How often should I check viral potential?',
-                answer: 'Analyze your best-performing videos to understand what patterns lead to higher scores. Use insights to inform future content strategy.',
-              },
-            ]}
+            faqs={faqData}
           />
 
           <RelatedCalculators

@@ -21,19 +21,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good share ratio on TikTok?',
-    answer: 'Excellent: 5%+ (1 in 20 viewers shares), Good: 2-5% (strong shareability), Average: 0.5-2% (typical), Below Average: <0.5% (needs work). Even 2-3% is impressive - it means highly engaged viewers who find value worth sharing.',
+    answer: 'Excellent: 5%+ (1 in 20 viewers shares), Good: 2-5% (strong shareability), Average: 0.5-2% (typical), Below Average: <0.5% (needs work). Even 2-3% is impressive - it means highly engaged viewers who find value worth sharing. Educational content typically achieves 3-7% while entertainment averages 0.5-2%.',
   },
   {
     question: 'Why are shares more important than likes?',
-    answer: 'Shares require more effort and social risk - you\'re recommending content to your friends. TikTok treats this as a stronger signal of quality. Plus shares expose your content to entirely new networks.',
+    answer: 'Shares require more effort and social risk - you\'re recommending content to your friends. TikTok treats this as a stronger signal of quality because sharing involves deliberate action and personal endorsement. Plus shares expose your content to entirely new networks, creating exponential reach beyond your existing audience. Each share can trigger a new wave of For You Page distribution.',
   },
   {
     question: 'How can I increase my share ratio?',
-    answer: 'Create share-worthy content: (1) Surprising facts/statistics, (2) Relatable humor friends will tag each other in, (3) Useful tutorials worth saving/sharing, (4) Controversial takes (tastefully), (5) Emotional stories.',
+    answer: 'Create share-worthy content: (1) Surprising facts/statistics that challenge assumptions, (2) Relatable humor friends will tag each other in, (3) Useful tutorials worth saving/sharing, (4) Controversial takes that spark discussion (tastefully), (5) Emotional stories that resonate deeply, (6) Problem-solving content addressing common frustrations, (7) Content that makes sharers look smart or informed.',
   },
   {
     question: 'Where can I see my share count in TikTok Analytics?',
-    answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to "Shares" under engagement metrics.',
+    answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to "Shares" under engagement metrics. You can view shares for individual videos or see aggregated share data in your overview tab. For most accurate tracking, check analytics 24-48 hours after posting when metrics stabilize.',
+  },
+  {
+    question: 'Does share ratio affect my For You Page reach?',
+    answer: 'Yes, significantly. Share ratio is one of the most heavily weighted factors in TikTok\'s algorithm. Videos with 5%+ share rates often see 3-5x more FYP distribution than those with 1% share rates. The algorithm interprets shares as a strong quality signal and pushes content further. High share ratios can also trigger "resurge" waves where old content gets redistributed.',
+  },
+  {
+    question: 'What\'s the difference between share ratio and viral potential?',
+    answer: 'Share ratio measures the percentage of viewers who share your content, while viral potential combines multiple metrics including shares, completion rate, engagement rate, and watch time. However, share ratio is the single strongest predictor of virality. Content with 8%+ share rates has extremely high viral potential regardless of other metrics.',
+  },
+  {
+    question: 'Should I ask viewers to share my content?',
+    answer: 'Yes, but do it strategically. Direct CTAs like "Share this with someone who needs to hear it" or "Tag a friend who does this" can increase shares by 15-30%. However, the content itself must be genuinely share-worthy. Generic "please share" requests without inherent value won\'t work. Focus on creating content worth sharing, then add a specific, contextual CTA.',
+  },
+  {
+    question: 'How quickly should shares accumulate after posting?',
+    answer: 'High-performing videos typically see 30-40% of their total shares within the first 4 hours, 60-70% within 24 hours, and the remainder over the following days. If your video has under 0.5% share ratio after 24 hours, it\'s unlikely to go viral through shares alone. However, evergreen educational content can accumulate shares steadily over weeks or months.',
+  },
+  {
+    question: 'Can I track who shared my video?',
+    answer: 'No, TikTok doesn\'t reveal individual users who shared your content for privacy reasons. You can only see the total share count. However, you can sometimes infer sharing patterns by watching sudden spikes in views from new audiences or geographic regions, which often indicates share-driven distribution.',
+  },
+  {
+    question: 'Does share ratio differ between niches?',
+    answer: 'Absolutely. Educational niches (finance, tech tutorials, life hacks) average 3-7% share rates. Comedy and relatable content sees 4-8%. Controversial opinion content can hit 6-12%. Entertainment and dance content typically stays at 0.5-2%. Always benchmark against similar creators in your niche rather than across all of TikTok. A 2% share rate in entertainment is excellent, while in education it\'s merely average.',
   },
 ];
 
@@ -157,15 +181,31 @@ export default function ShareRatioCalculatorPage() {
                 <div className="space-y-3">
                   <div className="p-4 bg-neutral-50 rounded-lg">
                     <p className="font-semibold text-neutral-900 mb-1">Educational & Tutorial Content (3-7% share rate)</p>
-                    <p className="text-body-sm">How-to videos get shared frequently as viewers want to help friends learn.</p>
+                    <p className="text-body-sm">How-to videos get shared frequently as viewers want to help friends learn specific skills or solve problems.</p>
                   </div>
                   <div className="p-4 bg-neutral-50 rounded-lg">
                     <p className="font-semibold text-neutral-900 mb-1">Relatable Humor & Memes (4-8% share rate)</p>
-                    <p className="text-body-sm">Comedy content with universal relatability gets tagged and shared.</p>
+                    <p className="text-body-sm">Comedy content with universal relatability gets tagged and shared because viewers immediately think "this is so my friend."</p>
                   </div>
                   <div className="p-4 bg-neutral-50 rounded-lg">
                     <p className="font-semibold text-neutral-900 mb-1">Surprising Facts & Statistics (5-10% share rate)</p>
-                    <p className="text-body-sm">"Mind-blowing" content that challenges assumptions is highly shareable.</p>
+                    <p className="text-body-sm">"Mind-blowing" content that challenges assumptions is highly shareable as people want to spread fascinating information.</p>
+                  </div>
+                  <div className="p-4 bg-neutral-50 rounded-lg">
+                    <p className="font-semibold text-neutral-900 mb-1">Motivational & Inspirational (2-5% share rate)</p>
+                    <p className="text-body-sm">Uplifting stories and quotes get shared when viewers feel they'll positively impact someone else's day.</p>
+                  </div>
+                  <div className="p-4 bg-neutral-50 rounded-lg">
+                    <p className="font-semibold text-neutral-900 mb-1">Product Reviews & Recommendations (3-6% share rate)</p>
+                    <p className="text-body-sm">Honest reviews of products or services get shared as viewers want to help friends make informed purchases.</p>
+                  </div>
+                  <div className="p-4 bg-neutral-50 rounded-lg">
+                    <p className="font-semibold text-neutral-900 mb-1">Controversial Takes & Hot Opinions (6-12% share rate)</p>
+                    <p className="text-body-sm">Polarizing content generates high shares as viewers want others to weigh in or validate their own opinions.</p>
+                  </div>
+                  <div className="p-4 bg-neutral-50 rounded-lg">
+                    <p className="font-semibold text-neutral-900 mb-1">Lifestyle & Life Hacks (4-7% share rate)</p>
+                    <p className="text-body-sm">Time-saving tips and clever solutions are shared because they provide practical everyday value.</p>
                   </div>
                 </div>
               </div>
@@ -177,19 +217,46 @@ export default function ShareRatioCalculatorPage() {
                 <div className="space-y-4">
                   <div>
                     <p className="font-semibold text-neutral-900 mb-2">1. Create "Tag a Friend" Moments</p>
-                    <p>Design content that makes viewers immediately think of someone specific.</p>
+                    <p>Design content that makes viewers immediately think of someone specific. Use relatable scenarios where people will tag friends who share the same experience.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 mb-2">2. Deliver Surprising Information</p>
-                    <p>Share counterintuitive facts or little-known tips that make viewers say "Wait, what?"</p>
+                    <p>Share counterintuitive facts or little-known tips that make viewers say "Wait, what?" People love sharing information that makes them look knowledgeable.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 mb-2">3. Solve Specific Problems</p>
-                    <p>Address common frustrations with clear solutions.</p>
+                    <p>Address common frustrations with clear solutions. When you help someone solve a real problem, they'll share it with others facing the same challenge.</p>
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 mb-2">4. Trigger Strong Emotions</p>
-                    <p>Content that evokes powerful feelings gets shared more frequently.</p>
+                    <p>Content that evokes powerful feelings gets shared more frequently. Whether it's joy, inspiration, or righteous anger, emotional resonance drives shares.</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-neutral-900 mb-2">5. Include Share-Worthy Hooks</p>
+                    <p>Start with statements like "Send this to someone who needs to hear it" or "Share this before it gets taken down" to plant the idea of sharing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">
+                  Create More Shareable Content
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="p-5 bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-lg border border-secondary-200">
+                    <div className="text-2xl mb-3">🎯</div>
+                    <h4 className="font-semibold text-neutral-900 mb-2">Know Your Audience's Pain Points</h4>
+                    <p className="text-body-sm text-neutral-700">Research what frustrates your target audience. Create content that directly addresses these challenges with actionable solutions they'll want to share with others facing the same issues.</p>
+                  </div>
+                  <div className="p-5 bg-gradient-to-br from-success-50 to-success-100 rounded-lg border border-success-200">
+                    <div className="text-2xl mb-3">💡</div>
+                    <h4 className="font-semibold text-neutral-900 mb-2">Test Controversial Angles</h4>
+                    <p className="text-body-sm text-neutral-700">Take a unique stance on popular topics in your niche. Polarizing opinions drive engagement and shares as viewers want others to weigh in. Stay respectful but don't be afraid to challenge conventional wisdom.</p>
+                  </div>
+                  <div className="p-5 bg-gradient-to-br from-warning-50 to-warning-100 rounded-lg border border-warning-200">
+                    <div className="text-2xl mb-3">📊</div>
+                    <h4 className="font-semibold text-neutral-900 mb-2">Leverage Social Currency</h4>
+                    <p className="text-body-sm text-neutral-700">Create content that makes sharers look good, smart, or "in the know." People share to build their personal brand and social status. Give them valuable insights they can use as conversational currency.</p>
                   </div>
                 </div>
               </div>
@@ -225,19 +292,43 @@ This 3% share ratio indicates good viral potential`}
             faqs={[
               {
                 question: 'What is a good share ratio on TikTok?',
-                answer: 'Excellent: 5%+ (1 in 20 viewers shares), Good: 2-5% (strong shareability), Average: 0.5-2% (typical), Below Average: <0.5% (needs work). Even 2-3% is impressive - it means highly engaged viewers who find value worth sharing.',
+                answer: 'Excellent: 5%+ (1 in 20 viewers shares), Good: 2-5% (strong shareability), Average: 0.5-2% (typical), Below Average: <0.5% (needs work). Even 2-3% is impressive - it means highly engaged viewers who find value worth sharing. Educational content typically achieves 3-7% while entertainment averages 0.5-2%.',
               },
               {
                 question: 'Why are shares more important than likes?',
-                answer: 'Shares require more effort and social risk - you\'re recommending content to your friends. TikTok treats this as a stronger signal of quality. Plus shares expose your content to entirely new networks.',
+                answer: 'Shares require more effort and social risk - you\'re recommending content to your friends. TikTok treats this as a stronger signal of quality because sharing involves deliberate action and personal endorsement. Plus shares expose your content to entirely new networks, creating exponential reach beyond your existing audience. Each share can trigger a new wave of For You Page distribution.',
               },
               {
                 question: 'How can I increase my share ratio?',
-                answer: 'Create share-worthy content: (1) Surprising facts/statistics, (2) Relatable humor friends will tag each other in, (3) Useful tutorials worth saving/sharing, (4) Controversial takes (tastefully), (5) Emotional stories.',
+                answer: 'Create share-worthy content: (1) Surprising facts/statistics that challenge assumptions, (2) Relatable humor friends will tag each other in, (3) Useful tutorials worth saving/sharing, (4) Controversial takes that spark discussion (tastefully), (5) Emotional stories that resonate deeply, (6) Problem-solving content addressing common frustrations, (7) Content that makes sharers look smart or informed.',
               },
               {
                 question: 'Where can I see my share count in TikTok Analytics?',
-                answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to "Shares" under engagement metrics.',
+                answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → Scroll to "Shares" under engagement metrics. You can view shares for individual videos or see aggregated share data in your overview tab. For most accurate tracking, check analytics 24-48 hours after posting when metrics stabilize.',
+              },
+              {
+                question: 'Does share ratio affect my For You Page reach?',
+                answer: 'Yes, significantly. Share ratio is one of the most heavily weighted factors in TikTok\'s algorithm. Videos with 5%+ share rates often see 3-5x more FYP distribution than those with 1% share rates. The algorithm interprets shares as a strong quality signal and pushes content further. High share ratios can also trigger "resurge" waves where old content gets redistributed.',
+              },
+              {
+                question: 'What\'s the difference between share ratio and viral potential?',
+                answer: 'Share ratio measures the percentage of viewers who share your content, while viral potential combines multiple metrics including shares, completion rate, engagement rate, and watch time. However, share ratio is the single strongest predictor of virality. Content with 8%+ share rates has extremely high viral potential regardless of other metrics.',
+              },
+              {
+                question: 'Should I ask viewers to share my content?',
+                answer: 'Yes, but do it strategically. Direct CTAs like "Share this with someone who needs to hear it" or "Tag a friend who does this" can increase shares by 15-30%. However, the content itself must be genuinely share-worthy. Generic "please share" requests without inherent value won\'t work. Focus on creating content worth sharing, then add a specific, contextual CTA.',
+              },
+              {
+                question: 'How quickly should shares accumulate after posting?',
+                answer: 'High-performing videos typically see 30-40% of their total shares within the first 4 hours, 60-70% within 24 hours, and the remainder over the following days. If your video has under 0.5% share ratio after 24 hours, it\'s unlikely to go viral through shares alone. However, evergreen educational content can accumulate shares steadily over weeks or months.',
+              },
+              {
+                question: 'Can I track who shared my video?',
+                answer: 'No, TikTok doesn\'t reveal individual users who shared your content for privacy reasons. You can only see the total share count. However, you can sometimes infer sharing patterns by watching sudden spikes in views from new audiences or geographic regions, which often indicates share-driven distribution.',
+              },
+              {
+                question: 'Does share ratio differ between niches?',
+                answer: 'Absolutely. Educational niches (finance, tech tutorials, life hacks) average 3-7% share rates. Comedy and relatable content sees 4-8%. Controversial opinion content can hit 6-12%. Entertainment and dance content typically stays at 0.5-2%. Always benchmark against similar creators in your niche rather than across all of TikTok. A 2% share rate in entertainment is excellent, while in education it\'s merely average.',
               },
             ]}
           />

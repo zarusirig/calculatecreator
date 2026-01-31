@@ -36,6 +36,10 @@ export default function CreatorFundVsLiveGiftsPage() {
       question: 'Can I go LIVE without being in the Creator Fund?',
       answer: 'Yes, these are separate programs. You can stream and receive LIVE gifts without being enrolled in the Creator Fund, and vice versa.',
     },
+    {
+      question: 'Do LIVE streams affect my Creator Fund earnings?',
+      answer: 'LIVE streams don\'t directly earn Creator Fund payments, but they can indirectly boost your video earnings. Going LIVE increases follower engagement, sends notifications to followers, and often leads to more profile visits and video views, which increases your Creator Fund payouts.',
+    },
   ];
 
   return (

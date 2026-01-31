@@ -366,6 +366,70 @@ export default function ProductSubscriptionsFeaturePage() {
           </div>
         </Card>
 
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+            Creator Impact Analysis
+          </h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            Product subscriptions affect creators differently based on audience size and engagement levels. Understanding where you fit helps set realistic revenue goals.
+          </p>
+          <div className="space-y-3">
+            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+              <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Small Creators (10K-50K followers)</h3>
+              <p className="text-body-sm text-blue-800">
+                Expect 5-15 subscription sign-ups monthly. Focus on niche consumables with passionate audiences. Monthly recurring revenue potential: $25-$75.
+              </p>
+            </div>
+            <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+              <h3 className="text-heading-sm font-semibold text-purple-900 mb-2">Mid-Tier Creators (50K-500K followers)</h3>
+              <p className="text-body-sm text-purple-800">
+                Target 20-100 new subscriptions monthly. Diversify across multiple product categories. Monthly recurring revenue potential: $100-$500 within 6 months.
+              </p>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+              <h3 className="text-heading-sm font-semibold text-green-900 mb-2">Large Creators (500K+ followers)</h3>
+              <p className="text-body-sm text-green-800">
+                Can generate 100-500+ subscriptions monthly. Consider exclusive subscription bundles. Monthly recurring revenue potential: $500-$2,500+ within first year.
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+            Implementation Timeline
+          </h2>
+          <div className="space-y-3">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">November 2026</div>
+              <div className="text-body-md text-neutral-700">Product Subscriptions feature officially launched across TikTok Shop US marketplace. Sellers can now enable subscription options.</div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">December 2026</div>
+              <div className="text-body-md text-neutral-700">Expanded product categories eligible for subscriptions. Improved creator dashboard analytics for tracking recurring commission.</div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">Q1 2027</div>
+              <div className="text-body-md text-neutral-700">Expected rollout to UK, Canada, and European markets. New subscription management features for customers including skip orders and delivery customization.</div>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+            What This Means for Brands
+          </h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            For brands selling consumable products on TikTok Shop, subscriptions offer predictable inventory planning and improved customer lifetime value metrics. Subscription customers typically have 40-60% lower acquisition costs over time compared to one-time buyers.
+          </p>
+          <p className="text-body-md text-neutral-700 mb-4">
+            Brands should prioritize creator partnerships for subscription launches. Creators drive 3-4x higher subscription conversion rates than traditional advertising. Consider offering creators increased commission rates (15-20% vs standard 10%) for subscription sign-ups to incentivize promotion.
+          </p>
+          <p className="text-body-md text-neutral-700">
+            Smart brands are creating subscription-exclusive products or bundles that creators can promote, differentiating from Amazon Subscribe & Save and building TikTok-native subscription ecosystems.
+          </p>
+        </Card>
+
         <Card className="bg-amber-50">
           <h2 className="text-heading-lg font-semibold text-amber-900 mb-4">
             Getting Started with Subscription Promotions
@@ -426,6 +490,36 @@ export default function ProductSubscriptionsFeaturePage() {
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Are commission rates higher for subscriptions?</h3>
               <p className="text-body-sm text-neutral-700">
                 Many brands offer 10-15% commission on subscriptions versus 5-10% on one-time purchases, recognizing the higher customer lifetime value subscriptions provide.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can customers customize subscription frequency?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes. Customers can choose weekly, bi-weekly, or monthly deliveries. They can also pause, skip, or modify their subscription schedule at any time.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">How do I find subscription-eligible products?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Browse TikTok Shop and look for products with "Subscribe & Save" badges. You can also filter by subscription availability in the Creator Center affiliate dashboard.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Do subscriptions count toward my monthly GMV metrics?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes. Each subscription renewal counts as a new transaction toward your monthly gross merchandise value, helping you maintain and improve your creator tier status.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">What happens if a product goes out of stock during an active subscription?</h3>
+              <p className="text-body-sm text-neutral-700">
+                TikTok Shop automatically pauses the subscription until inventory is restocked. Customers receive notifications and can choose to wait or cancel. Your commission resumes when deliveries restart.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can I promote subscriptions through TikTok Live?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Absolutely. Live shopping is highly effective for subscription promotions. Use live streams to demonstrate products, answer questions, and offer limited-time subscription discounts to drive immediate sign-ups.
               </p>
             </div>
           </div>

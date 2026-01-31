@@ -99,7 +99,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
             What the Research Shows
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            According to Morning Consult's latest brand tracking data, TikTok Shop secured the third position among brands with the most significant year-over-year growth in consumer favorability. This achievement is particularly remarkable given that TikTok Shop launched in the US market less than two years ago.
+            According to Morning Consult's latest brand tracking data, TikTok Shop secured the third position among brands with the most significant year-over-year growth in consumer favorability. This achievement is particularly remarkable given that TikTok Shop launched in the US market less than two years ago. The research surveyed over 15,000 US consumers monthly, tracking brand perception across commerce, technology, and retail sectors.
           </p>
           <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-lg">
             <h3 className="text-heading-md font-semibold text-emerald-900 mb-4">
@@ -411,6 +411,30 @@ export default function TikTokShopThirdFastestGrowingPage() {
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">What makes a successful TikTok Shop creator?</h3>
               <p className="text-body-sm text-neutral-700">
                 Authenticity, consistent posting, niche focus, and willingness to experiment with LIVE shopping. Top earners typically post 4-7x weekly and host 1-2 LIVE sessions per week.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">How much can creators earn from TikTok Shop?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Earnings vary widely based on follower count, niche, and engagement. Micro-creators (10K-50K followers) typically earn $500-$2,000 monthly, while mid-tier creators (50K-200K) can earn $3,000-$10,000. Top creators with 200K+ followers often exceed $15,000 monthly from Shop commissions alone.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">What commission rates does TikTok Shop offer creators?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Commission rates range from 5% to 20% depending on product category and brand partnerships. Beauty and fashion typically offer 10-15%, while electronics range 5-8%. During promotional periods, TikTok often doubles commission rates to incentivize creator participation.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">How does TikTok Shop's return policy affect creators?</h3>
+              <p className="text-body-sm text-neutral-700">
+                TikTok Shop has a standard 30-day return window. If customers return products, the affiliate commission is deducted from your next payout. This makes promoting quality products essential—high return rates hurt your earnings and account standing.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">What products perform best on TikTok Shop?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Products under $50 with visual transformation or demonstration potential perform best. Beauty, skincare, fashion accessories, kitchen gadgets, and organizational tools are top categories. Products that can be shown "before and after" or in quick demos tend to convert highest.
               </p>
             </div>
           </div>

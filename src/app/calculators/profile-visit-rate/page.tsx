@@ -21,19 +21,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good profile visit rate on TikTok?',
-    answer: 'Excellent: 10%+ (1 in 10 viewers visits), Good: 5-10%, Average: 2-5%, Below Average: <2%. Educational content typically achieves 8-15% visit rates.',
+    answer: 'Excellent: 10%+ (1 in 10 viewers visits), Good: 5-10%, Average: 2-5%, Below Average: <2%. Educational content typically achieves 8-15% visit rates. Profile visit rate is one of the most important metrics for follower growth because it represents the first step in converting viewers into followers.',
   },
   {
     question: 'How can I increase my profile visit rate?',
-    answer: 'Create series/multi-part content, add direct CTAs, showcase unique personality, write a compelling bio, end videos with cliffhangers, reference other content, build consistent branding.',
+    answer: 'Create series/multi-part content, add direct CTAs, showcase unique personality, write a compelling bio, end videos with cliffhangers, reference other content, build consistent branding. The most effective strategy is creating episodic or series content where viewers must visit your profile to find previous parts.',
   },
   {
     question: 'Where can I see profile visits in TikTok Analytics?',
-    answer: 'Go to Profile → Three dots menu → Creator Tools → Analytics → Overview tab. "Profile views" shows total visits.',
+    answer: 'Go to Profile → Three dots menu → Creator Tools → Analytics → Overview tab. "Profile views" shows total visits. You can also see profile views for individual videos in the video analytics section. Track this metric weekly to identify which content types drive the most profile traffic.',
   },
   {
     question: 'Why do people visit my profile but not follow?',
-    answer: 'Common reasons: inconsistent content, unclear niche, poor bio, not enough quality content. Create 15-20+ quality videos in one niche before driving traffic.',
+    answer: 'Common reasons: inconsistent content, unclear niche, poor bio, not enough quality content. Create 15-20+ quality videos in one niche before driving traffic. Your profile should immediately communicate what value you provide and why someone should follow. Pin your 3 best videos at the top to make a strong first impression.',
+  },
+  {
+    question: 'What is the difference between profile visits and profile views?',
+    answer: 'Profile visits and profile views are the same metric on TikTok - both refer to how many times users viewed your profile page. Some creators use "visits" to emphasize the action of clicking through from a video. This metric includes both logged-in users and anonymous viewers.',
+  },
+  {
+    question: 'Does profile visit rate affect the TikTok algorithm?',
+    answer: 'Yes, indirectly. While profile visits themselves are not a direct ranking factor, they indicate strong content quality. Videos that drive high profile visits typically also have strong watch time and engagement, which are direct algorithm signals. TikTok wants to surface content that helps creators gain followers.',
+  },
+  {
+    question: 'What is a realistic profile-to-follower conversion rate?',
+    answer: 'Typical conversion rates: 20-30% for niche content with clear value proposition, 15-25% for general entertainment, 10-20% for trend-following content. If 1,000 people visit your profile and 200-300 follow, you are doing well. This rate improves significantly when you have 15+ quality videos on your profile.',
+  },
+  {
+    question: 'How do I optimize my profile for visitors?',
+    answer: 'Write a clear bio that explains what you do and who you help. Pin your 3 best-performing videos at the top. Use a high-quality profile photo. Add a call-to-action in your bio. Organize content with hashtags if you have multiple content pillars. Make sure your first 9-12 visible videos are your strongest work.',
+  },
+  {
+    question: 'Why is my profile visit rate dropping?',
+    answer: 'Common causes: switching content niches confuses your audience, following trends instead of creating original content, video quality declined, too many promotional posts, inconsistent posting schedule. Profile visit rate drops when viewers cannot identify what makes you unique or worth following beyond one video.',
+  },
+  {
+    question: 'Should I track profile visits per video or overall?',
+    answer: 'Track both. Overall profile visit rate (last 7-30 days) shows account health. Per-video rate helps identify what content types drive curiosity. Videos with 10%+ visit rates should inform your content strategy - make more content like that. Analyze your top 10 videos by profile visit rate quarterly.',
   },
 ];
 
@@ -103,6 +127,48 @@ export default function ProfileVisitRateCalculatorPage() {
 
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+                Profile Visit Rate Benchmarks by Niche (2026)
+              </h2>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left">
+                  <thead>
+                    <tr className="border-b border-neutral-200">
+                      <th className="py-3 px-4 text-body-sm font-semibold text-neutral-700">Niche</th>
+                      <th className="py-3 px-4 text-body-sm font-semibold text-neutral-700">Average Visit Rate</th>
+                      <th className="py-3 px-4 text-body-sm font-semibold text-neutral-700">Top 10% Rate</th>
+                      <th className="py-3 px-4 text-body-sm font-semibold text-neutral-700">Key Driver</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-neutral-100">
+                    {[
+                      { niche: 'Finance & Investing', avg: '12-18%', top: '20%+', driver: 'Educational value' },
+                      { niche: 'Business & Entrepreneurship', avg: '10-15%', top: '18%+', driver: 'Actionable advice' },
+                      { niche: 'Tech Reviews & Tutorials', avg: '9-14%', top: '17%+', driver: 'Product research' },
+                      { niche: 'Fitness & Nutrition', avg: '8-12%', top: '15%+', driver: 'Workout programs' },
+                      { niche: 'Cooking & Recipes', avg: '7-11%', top: '14%+', driver: 'Recipe collection' },
+                      { niche: 'Beauty & Skincare', avg: '6-10%', top: '13%+', driver: 'Product recommendations' },
+                      { niche: 'Travel & Lifestyle', avg: '5-8%', top: '11%+', driver: 'Destination guides' },
+                      { niche: 'Comedy & Entertainment', avg: '3-6%', top: '9%+', driver: 'Personality appeal' },
+                      { niche: 'Dance & Music', avg: '2-5%', top: '8%+', driver: 'Skill demonstration' },
+                      { niche: 'General Trends', avg: '1-3%', top: '5%+', driver: 'Viral participation' },
+                    ].map((row, index) => (
+                      <tr key={index} className="hover:bg-neutral-50 transition-colors">
+                        <td className="py-3 px-4 font-medium text-neutral-900">{row.niche}</td>
+                        <td className="py-3 px-4 text-neutral-700">{row.avg}</td>
+                        <td className="py-3 px-4 text-success-600 font-semibold">{row.top}</td>
+                        <td className="py-3 px-4 text-body-sm text-neutral-600">{row.driver}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-body-sm text-neutral-600 mt-4 italic">
+                Educational and expertise-driven niches naturally achieve higher profile visit rates because viewers actively seek more content. Entertainment niches rely more on personality and branding to drive profile visits.
+              </p>
+            </Card>
+
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 Visit Rate Benchmarks by Content Type
               </h2>
               <div className="space-y-3">
@@ -121,6 +187,44 @@ export default function ProfileVisitRateCalculatorPage() {
                       </div>
                     </div>
                     <span className="font-semibold text-neutral-900">{benchmark.range}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
+                How to Improve Your Profile Visits: 3 Core Strategies
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6 mb-6">
+                {[
+                  {
+                    title: 'Content Strategy',
+                    description: 'Create series content that requires viewers to visit your profile to watch all parts. Educational content naturally drives 2-3x higher visit rates than entertainment because viewers want to learn more.',
+                    tactics: ['Multi-part series', 'Reference previous videos', 'Episodic storytelling', 'Educational hooks'],
+                  },
+                  {
+                    title: 'Profile Optimization',
+                    description: 'When viewers arrive at your profile, you have 3 seconds to convince them to follow. Pin your 3 best videos at the top, write a clear value-driven bio, and ensure your first 9-12 videos showcase quality.',
+                    tactics: ['Pin best 3 videos', 'Clear value proposition', 'High-quality thumbnails', 'Consistent branding'],
+                  },
+                  {
+                    title: 'Call-to-Action',
+                    description: 'Explicitly tell viewers to check your profile. Add CTAs at the end of videos, use on-screen text prompts, and create curiosity gaps that can only be satisfied by visiting your profile for more content.',
+                    tactics: ['End-screen CTAs', 'Verbal profile mentions', 'Bio link teases', 'Cliffhanger endings'],
+                  },
+                ].map((strategy, index) => (
+                  <div key={index} className="bg-gradient-to-br from-secondary-50 to-white border border-secondary-200 rounded-lg p-6">
+                    <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">{strategy.title}</h3>
+                    <p className="text-body-md text-neutral-700 mb-4">{strategy.description}</p>
+                    <ul className="space-y-2">
+                      {strategy.tactics.map((tactic, i) => (
+                        <li key={i} className="text-body-sm text-neutral-600 flex items-start gap-2">
+                          <CheckCircle size={16} className="text-secondary-600 flex-shrink-0 mt-0.5" />
+                          <span>{tactic}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>
@@ -201,24 +305,7 @@ Visit Rate: (5,000 / 100,000) × 100 = 5%`}
 
           <FAQSection
             pageName="Profile Visit Rate Calculator"
-            faqs={[
-              {
-                question: 'What is a good profile visit rate on TikTok?',
-                answer: 'Excellent: 10%+ (1 in 10 viewers visits), Good: 5-10%, Average: 2-5%, Below Average: <2%. Educational content typically achieves 8-15% visit rates.',
-              },
-              {
-                question: 'How can I increase my profile visit rate?',
-                answer: 'Create series/multi-part content, add direct CTAs, showcase unique personality, write a compelling bio, end videos with cliffhangers, reference other content, build consistent branding.',
-              },
-              {
-                question: 'Where can I see profile visits in TikTok Analytics?',
-                answer: 'Go to Profile → Three dots menu → Creator Tools → Analytics → Overview tab. "Profile views" shows total visits.',
-              },
-              {
-                question: 'Why do people visit my profile but not follow?',
-                answer: 'Common reasons: inconsistent content, unclear niche, poor bio, not enough quality content. Create 15-20+ quality videos in one niche before driving traffic.',
-              },
-            ]}
+            faqs={faqData}
           />
 
           <RelatedCalculators

@@ -21,19 +21,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good completion rate on TikTok?',
-    answer: 'For videos under 30 seconds: aim for 70%+. For 30-60 seconds: 50%+ is good. For 60+ seconds: 40%+ is solid. Focus on beating your own baseline averages.',
+    answer: 'For videos under 30 seconds: aim for 70%+. For 30-60 seconds: 50%+ is good. For 60+ seconds: 40%+ is solid. Videos with 80%+ completion rates often go viral regardless of follower count. Focus on beating your own baseline averages and compare against similar content lengths in your niche.',
   },
   {
     question: 'How do I increase my completion rate?',
-    answer: 'Delete the first 2-3 seconds, put payoff at the end, use text overlays to tease, cut out fluff, make videos shorter, add pattern interrupts every 5 seconds, create loop-worthy endings.',
+    answer: 'Delete the first 2-3 seconds of slow intro, put the payoff at the very end, use text overlays to create anticipation, cut out all fluff ruthlessly, make videos shorter, add pattern interrupts (camera changes, zooms) every 5-7 seconds, create loop-worthy endings, and test multiple versions of the same content at different lengths.',
   },
   {
     question: 'Where can I find completion rate in TikTok Analytics?',
-    answer: 'TikTok doesn\'t show "completion rate" directly. Go to Analytics → Content → Select a video. Find "Average watch time" and divide by video duration, then multiply by 100.',
+    answer: 'TikTok doesn\'t show "completion rate" directly. Go to Analytics → Content → Select a video. Find "Average watch time" and divide by video duration, then multiply by 100. For example: 25-second average watch time on a 30-second video = (25/30) × 100 = 83.3% completion rate.',
   },
   {
     question: 'Does looping/rewatching count toward completion rate?',
-    answer: 'Yes! When viewers rewatch, it can push completion rate over 100%. Creating loop-worthy content is one of the most powerful virality strategies.',
+    answer: 'Yes! When viewers rewatch, it can push completion rate over 100%. Creating loop-worthy content where the ending flows seamlessly back to the beginning is one of the most powerful virality strategies. Videos with 100%+ completion rates signal exceptional quality to the algorithm.',
+  },
+  {
+    question: 'Why does completion rate matter more than views?',
+    answer: 'Completion rate is a quality signal while views are a volume metric. TikTok algorithm uses completion rate to determine if your content deserves wider distribution. A video with 1,000 views and 90% completion will get pushed harder than one with 100,000 views and 20% completion. High completion proves your content delivers value.',
+  },
+  {
+    question: 'What video length has the best completion rate?',
+    answer: 'Videos under 15 seconds typically achieve 70-95% completion rates, the highest on the platform. However, optimal length depends on your content type. Comedy works best at 7-15 seconds, tutorials at 20-40 seconds, and storytelling at 45-90 seconds. Test different lengths to find what works for your niche.',
+  },
+  {
+    question: 'Can completion rate be too high?',
+    answer: 'No, there is no such thing as a completion rate that is too high. Rates over 100% (from rewatches) are ideal and signal loop-worthy viral content. Even 150-200% completion is possible and highly beneficial. The algorithm rewards content that keeps viewers engaged through multiple watch cycles.',
+  },
+  {
+    question: 'How does completion rate affect the TikTok algorithm?',
+    answer: 'Completion rate is one of the top 3 algorithmic ranking factors alongside watch time and engagement rate. Videos with high completion in the first hour get pushed to larger audiences. The algorithm interprets high completion as proof your content is worth showing to more people, triggering exponential reach growth.',
+  },
+  {
+    question: 'Should I make all my videos shorter to boost completion rate?',
+    answer: 'Not necessarily. While shorter videos achieve higher completion rates, longer videos can drive more total watch time, which is also valuable. The key is information density - every second must add value. A tight 60-second video can outperform a bloated 15-second video. Optimize for value per second, not just brevity.',
+  },
+  {
+    question: 'How often should I check my completion rate?',
+    answer: 'Check completion rate for each video at 1 hour, 24 hours, and 7 days after posting. The first hour shows initial performance, 24 hours reveals the first push cycle, and 7 days captures the full lifecycle. Compare completion rates across similar content types to identify patterns and optimize your strategy.',
   },
 ];
 
@@ -146,24 +170,174 @@ export default function CompletionRateCalculatorPage() {
                 </div>
               </div>
             </Card>
+
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+                Completion Rate Benchmarks by Video Length
+              </h2>
+              <p className="text-body-md text-neutral-700 mb-4">
+                Video length dramatically impacts completion rates. Shorter content inherently achieves higher completion, but value density matters more than duration alone.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-4 bg-success-50 border border-success-200 rounded-lg">
+                  <div>
+                    <p className="font-semibold text-neutral-900">5-15 seconds</p>
+                    <p className="text-body-sm text-neutral-600">Ultra-short format</p>
+                  </div>
+                  <span className="font-bold text-success-700 text-lg">70-95%</span>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-primary-50 border border-primary-200 rounded-lg">
+                  <div>
+                    <p className="font-semibold text-neutral-900">15-30 seconds</p>
+                    <p className="text-body-sm text-neutral-600">Standard TikTok format</p>
+                  </div>
+                  <span className="font-bold text-primary-700 text-lg">60-80%</span>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-secondary-50 border border-secondary-200 rounded-lg">
+                  <div>
+                    <p className="font-semibold text-neutral-900">30-60 seconds</p>
+                    <p className="text-body-sm text-neutral-600">Extended content</p>
+                  </div>
+                  <span className="font-bold text-secondary-700 text-lg">45-65%</span>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-warning-50 border border-warning-200 rounded-lg">
+                  <div>
+                    <p className="font-semibold text-neutral-900">60-90 seconds</p>
+                    <p className="text-body-sm text-neutral-600">Long-form storytelling</p>
+                  </div>
+                  <span className="font-bold text-warning-700 text-lg">35-55%</span>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-neutral-100 border border-neutral-300 rounded-lg">
+                  <div>
+                    <p className="font-semibold text-neutral-900">90+ seconds</p>
+                    <p className="text-body-sm text-neutral-600">Maximum length content</p>
+                  </div>
+                  <span className="font-bold text-neutral-700 text-lg">25-45%</span>
+                </div>
+              </div>
+              <p className="text-body-sm text-neutral-600 mt-4 p-3 bg-neutral-50 rounded-lg">
+                <strong>Key insight:</strong> A 40% completion rate on a 90-second educational video may be more valuable than 80% on a 10-second meme. Context and content quality matter. Focus on delivering maximum value per second rather than simply making videos shorter.
+              </p>
+            </Card>
           </div>
         </div>
 
         <div className="max-w-5xl mx-auto space-y-8">
+          <div>
+            <h2 className="text-heading-xl font-bold text-neutral-900 mb-6 text-center">
+              How to Improve Your Completion Rate
+            </h2>
+            <p className="text-body-lg text-neutral-600 text-center mb-8 max-w-3xl mx-auto">
+              Completion rate is one of the most powerful levers for virality. These three core strategies address the biggest drop-off points in most TikTok videos.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <Card className="p-6 border-2 border-secondary-200 hover:border-secondary-400 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-secondary-100 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-secondary-700">1</span>
+                </div>
+                <h3 className="text-heading-md font-bold text-neutral-900 mb-3">
+                  Master the Hook
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-4">
+                  The first 1-3 seconds determine if viewers stay or scroll. Most creators lose 60% of potential viewers in this window.
+                </p>
+                <ul className="space-y-2 text-body-sm text-neutral-600">
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-secondary-600 flex-shrink-0 mt-0.5" />
+                    <span>Start with your best moment or payoff preview</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-secondary-600 flex-shrink-0 mt-0.5" />
+                    <span>Delete all intro fluff, logo animations, slow builds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-secondary-600 flex-shrink-0 mt-0.5" />
+                    <span>Use text overlays for instant context</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-secondary-600 flex-shrink-0 mt-0.5" />
+                    <span>Test multiple hook versions of same video</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-6 border-2 border-primary-200 hover:border-primary-400 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-primary-700">2</span>
+                </div>
+                <h3 className="text-heading-md font-bold text-neutral-900 mb-3">
+                  Maintain Momentum
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-4">
+                  Every second after the hook is a battle to keep attention. Pattern interrupts reset the attention clock.
+                </p>
+                <ul className="space-y-2 text-body-sm text-neutral-600">
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-primary-600 flex-shrink-0 mt-0.5" />
+                    <span>Change camera angle every 5-7 seconds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-primary-600 flex-shrink-0 mt-0.5" />
+                    <span>Use visual effects, zooms, or transitions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-primary-600 flex-shrink-0 mt-0.5" />
+                    <span>Add text reveals or on-screen graphics</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-primary-600 flex-shrink-0 mt-0.5" />
+                    <span>Cut ruthlessly - remove every boring frame</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-6 border-2 border-success-200 hover:border-success-400 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-success-100 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-success-700">3</span>
+                </div>
+                <h3 className="text-heading-md font-bold text-neutral-900 mb-3">
+                  Optimize the Ending
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-4">
+                  The final seconds determine if viewers rewatch and whether they feel satisfied or disappointed.
+                </p>
+                <ul className="space-y-2 text-body-sm text-neutral-600">
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-success-600 flex-shrink-0 mt-0.5" />
+                    <span>Place payoff in the last 2-3 seconds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-success-600 flex-shrink-0 mt-0.5" />
+                    <span>Create loop-worthy endings that restart seamlessly</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-success-600 flex-shrink-0 mt-0.5" />
+                    <span>End on a question or teaser for next video</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check size={16} className="text-success-600 flex-shrink-0 mt-0.5" />
+                    <span>Avoid slow outros or long CTAs that kill rewatches</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+          </div>
+
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              8 Strategies to Dramatically Improve Completion Rate
+              8 Advanced Tactics to Maximize Completion Rate
             </h2>
             <div className="space-y-4">
               {[
-                { title: '1. Delete Your First 2-3 Seconds', description: 'Most creators waste precious seconds on slow openings. Start with your best moment.' },
-                { title: '2. Put the Payoff at the Very End', description: 'Structure your video so the punchline or reveal comes in the final 2-3 seconds.' },
-                { title: '3. Use Text Overlays to Tease What\'s Coming', description: 'Add on-screen text: "Wait for it..." to create anticipation.' },
-                { title: '4. Make Videos Shorter - Ruthlessly', description: 'If you can say it in 20 seconds, don\'t stretch it to 40. Every second hemorrhages viewers.' },
-                { title: '5. Use Pattern Interrupts Every 5-7 Seconds', description: 'Change camera angle, zoom level, or add text overlays to reset viewer attention.' },
-                { title: '6. Create Loop-Worthy Endings', description: 'Design endings that flow back to the beginning for rewatches.' },
-                { title: '7. Build Curiosity Throughout', description: 'Create mini-cliffhangers: "But that\'s not even the crazy part..."' },
-                { title: '8. Test Different Video Lengths', description: 'Post the same concept in 15s, 30s, and 60s versions and compare completion rates.' },
+                { title: '1. Delete Your First 2-3 Seconds', description: 'Most creators waste precious seconds on slow openings. Start with your best moment. Export your video, then trim the beginning in TikTok before posting.' },
+                { title: '2. Put the Payoff at the Very End', description: 'Structure your video so the punchline or reveal comes in the final 2-3 seconds. This forces viewers to watch completely to get the value they were promised.' },
+                { title: '3. Use Text Overlays to Tease What\'s Coming', description: 'Add on-screen text like "Wait for it..." or "Watch until the end" to create anticipation. Position text to guide eye movement throughout the video.' },
+                { title: '4. Make Videos Shorter - Ruthlessly', description: 'If you can say it in 20 seconds, don\'t stretch it to 40. Every second hemorrhages viewers. Review your raw footage and ask: does every second add value?' },
+                { title: '5. Use Pattern Interrupts Every 5-7 Seconds', description: 'Change camera angle, zoom level, add text overlays, or switch scenes to reset viewer attention span. Maintain visual variety without being chaotic.' },
+                { title: '6. Create Loop-Worthy Endings', description: 'Design endings that flow back to the beginning for rewatches. Completion rates over 100% dramatically boost algorithmic distribution.' },
+                { title: '7. Build Curiosity Throughout', description: 'Create mini-cliffhangers every 5-10 seconds: "But that\'s not even the crazy part..." Keep promising value just ahead to maintain watch time.' },
+                { title: '8. Test Different Video Lengths', description: 'Post the same concept in 15s, 30s, and 60s versions and compare completion rates. Your optimal length varies by niche and content type.' },
               ].map((strategy, index) => (
                 <div key={index} className="p-4 bg-neutral-50 rounded-lg">
                   <h3 className="font-semibold text-neutral-900 mb-2">{strategy.title}</h3>
@@ -223,24 +397,7 @@ Note: Rates over 100% are possible when viewers rewatch`}
 
           <FAQSection
             pageName="Completion Rate Calculator"
-            faqs={[
-              {
-                question: 'What is a good completion rate on TikTok?',
-                answer: 'For videos under 30 seconds: aim for 70%+. For 30-60 seconds: 50%+ is good. For 60+ seconds: 40%+ is solid. Focus on beating your own baseline averages.',
-              },
-              {
-                question: 'How do I increase my completion rate?',
-                answer: 'Delete the first 2-3 seconds, put payoff at the end, use text overlays to tease, cut out fluff, make videos shorter, add pattern interrupts every 5 seconds, create loop-worthy endings.',
-              },
-              {
-                question: 'Where can I find completion rate in TikTok Analytics?',
-                answer: 'TikTok doesn\'t show "completion rate" directly. Go to Analytics → Content → Select a video. Find "Average watch time" and divide by video duration, then multiply by 100.',
-              },
-              {
-                question: 'Does looping/rewatching count toward completion rate?',
-                answer: 'Yes! When viewers rewatch, it can push completion rate over 100%. Creating loop-worthy content is one of the most powerful virality strategies.',
-              },
-            ]}
+            faqs={faqData}
           />
 
           <RelatedCalculators

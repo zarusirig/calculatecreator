@@ -186,6 +186,10 @@ export default function DiamondConverterPage() {
                 {
                   question: "What's the most valuable TikTok gift?",
                   answer: "The TikTok Universe gift is currently the most valuable at 34,999 coins ($53.84), converting to 17,499.5 diamonds worth $87.50 for creators. Prices vary by region and platform."
+                },
+                {
+                  question: "Can I see my diamond balance before withdrawal?",
+                  answer: "Yes, check your diamond balance in TikTok Settings → Balance. This shows your accumulated diamonds from LIVE gifts, pending payouts, and withdrawal history. Diamonds don't expire, so you can accumulate until reaching the $50 minimum threshold."
                 }
               ]}
             />

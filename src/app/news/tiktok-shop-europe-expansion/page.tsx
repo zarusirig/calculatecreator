@@ -362,6 +362,38 @@ export default function TikTokShopEuropeExpansionPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+            Country-by-Country Status
+          </h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            TikTok Shop's European rollout follows a strategic phased approach. Currently live markets represent just the beginning of broader European expansion plans:
+          </p>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+              <h3 className="text-heading-sm font-semibold text-green-900 mb-2">Live Markets</h3>
+              <ul className="space-y-1 text-body-sm text-green-800">
+                <li>🇫🇷 France - March 2026</li>
+                <li>🇩🇪 Germany - March 2026</li>
+                <li>🇮🇹 Italy - March 2026</li>
+                <li>🇬🇧 United Kingdom - August 2024</li>
+              </ul>
+            </div>
+            <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
+              <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Expected Q3-Q4 2026</h3>
+              <ul className="space-y-1 text-body-sm text-blue-800">
+                <li>🇪🇸 Spain - Q3 2026 (planned)</li>
+                <li>🇳🇱 Netherlands - Q3 2026 (planned)</li>
+                <li>🇵🇱 Poland - Q4 2026 (under review)</li>
+                <li>🇸🇪 Sweden - Q4 2026 (under review)</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-body-sm text-neutral-600 mt-4">
+            TikTok is evaluating regulatory requirements and logistics infrastructure in additional markets. The platform aims to reach 15+ European countries by end of 2027, covering 85% of EU e-commerce spending.
+          </p>
+        </Card>
+
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
             Regulatory Compliance in Europe
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
@@ -374,6 +406,42 @@ export default function TikTokShopEuropeExpansionPage() {
             <li><strong>Data Privacy:</strong> GDPR-compliant data handling for all transactions and user information</li>
             <li><strong>Clear Labeling:</strong> Sponsored content must be clearly marked as per EU advertising regulations</li>
           </ul>
+        </Card>
+
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+            Seller Requirements for European Markets
+          </h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            To sell on TikTok Shop in France, Germany, or Italy, businesses must meet specific eligibility criteria:
+          </p>
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 p-5 rounded-lg">
+            <ul className="space-y-3 text-body-md text-neutral-700">
+              <li className="flex gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Business Registration:</strong> Valid business license or registration in EU country (VAT number required)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Bank Account:</strong> European SEPA-enabled business bank account for payouts</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Product Standards:</strong> Compliance with EU product safety regulations and CE marking where applicable</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Customer Service:</strong> Support availability in local language (French, German, or Italian)</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-amber-600 font-bold">•</span>
+                <span><strong>Fulfillment:</strong> Ability to ship within advertised timeframes (typically 2-5 business days within EU)</span>
+              </li>
+            </ul>
+          </div>
+          <p className="text-body-sm text-neutral-600 mt-3">
+            Individual sellers and sole proprietors are eligible. Non-EU businesses can sell through TikTok Shop if they have EU representation and meet all regulatory requirements.
+          </p>
         </Card>
 
         <Card>
@@ -397,6 +465,30 @@ export default function TikTokShopEuropeExpansionPage() {
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Are there minimum follower requirements for affiliates?</h3>
               <p className="text-body-sm text-neutral-700">
                 Requirements vary by country, but typically 1,000+ followers and 10,000+ views in last 30 days to join affiliate program.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">How long does TikTok Shop seller verification take?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Business verification typically takes 3-5 business days. Once approved, you can start uploading products immediately.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can I sell across all three markets with one account?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes, a single TikTok Shop seller account can list products in France, Germany, and Italy simultaneously with multi-country shipping.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">What are TikTok Shop seller fees in Europe?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Commission rates range from 2-8% depending on category, plus payment processing fees of approximately 2.9% + €0.30 per transaction.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Do I need to provide customer support in multiple languages?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes, if selling in multiple markets, you must provide customer service in the local language of each market (French, German, Italian).
               </p>
             </div>
           </div>

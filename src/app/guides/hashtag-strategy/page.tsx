@@ -100,6 +100,12 @@ export default function HashtagStrategyPage() {
           </p>
         </Card>
 
+        <Card className="bg-blue-50">
+          <p className="text-body-md text-neutral-700">
+            <strong>Advanced strategy:</strong> Create hashtag sets for different content types. For example, maintain separate hashtag combinations for tutorials versus entertainment content, ensuring each video reaches the most relevant audience segment.
+          </p>
+        </Card>
+
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Common Hashtag Mistakes to Avoid</h2>
           <div className="space-y-3">
@@ -199,6 +205,22 @@ export default function HashtagStrategyPage() {
             {
               question: "Should I use the same hashtags on every video?",
               answer: "No, rotate hashtags every 5-7 videos to avoid being seen as repetitive by the algorithm. However, you can have 1-2 branded or signature hashtags that appear consistently. Test different hashtag combinations and track which drive the most views in your analytics to continuously refine your strategy."
+            },
+            {
+              question: "Can I edit hashtags after posting a video?",
+              answer: "Yes, you can edit hashtags after posting, and it can sometimes help boost a video's performance. If your video didn't perform well initially, try replacing 2-3 hashtags with alternative tags that may better categorize your content. However, major hashtag changes within the first 2 hours may reset the algorithm's evaluation process, so minor adjustments work best."
+            },
+            {
+              question: "Should I put hashtags in captions or comments?",
+              answer: "Always place hashtags in your video caption, not in comments. TikTok's algorithm reads hashtags from captions immediately upon posting to categorize and distribute your video. Hashtags added in comments are not indexed by the algorithm and provide no reach benefits. Keep your hashtags integrated naturally within or at the end of your caption text."
+            },
+            {
+              question: "Do branded hashtags help with discoverability?",
+              answer: "Branded hashtags (your unique hashtag like #YourNameTips) don't directly improve algorithmic reach since they have no search volume. However, they help build community identity and make it easy for followers to find all your content. Use 1 branded hashtag consistently alongside 2-4 niche/trending hashtags for the best balance of community building and discoverability."
+            },
+            {
+              question: "How do I know if a hashtag is shadowbanned or restricted?",
+              answer: "Search the hashtag in TikTok's search bar. If no results appear or you see a 'no results found' message, the hashtag may be shadowbanned. Also check if recent videos under that hashtag are getting normal view counts. Shadowbanned hashtags often show very old content or content with unusually low engagement. When in doubt, avoid hashtags that seem too edgy or could violate community guidelines."
             }
           ]}
         />

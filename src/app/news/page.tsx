@@ -615,6 +615,87 @@ export default function NewsPage() {
           </div>
         </div>
 
+        {/* News Sourcing Methodology */}
+        <div className="mb-16">
+          <h2 className="text-display-md font-bold text-neutral-900 mb-6">
+            Our News Sourcing Methodology
+          </h2>
+          <Card className="bg-gradient-to-br from-slate-50 to-blue-50 border-l-4 border-blue-600">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <div className="flex-1">
+                <p className="text-body-md text-neutral-700 mb-4">
+                  We maintain strict editorial standards to ensure accuracy and relevance for creators. Every news article published on CalculateCreator undergoes verification against primary sources before publication. Our team monitors TikTok's official Newsroom, Creator Portal announcements, in-app notifications, and TikTok for Business updates daily.
+                </p>
+                <p className="text-body-md text-neutral-700 mb-4">
+                  We cross-reference official announcements with community reports from verified creators, industry publications like Social Media Today and TechCrunch, and regulatory filings for policy news. When TikTok releases ambiguous updates, we test features directly and consult with creators across multiple niches to understand real-world implementation before reporting.
+                </p>
+                <p className="text-body-md text-neutral-700">
+                  All monetization figures, algorithm insights, and feature descriptions are validated against multiple independent sources. We prioritize news with direct creator impact—earnings changes, algorithm shifts, policy updates—over general platform announcements. Articles include original publication dates and are updated when TikTok revises or clarifies information.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* How to Use This News Feed */}
+        <div className="mb-16">
+          <h2 className="text-display-md font-bold text-neutral-900 mb-6">
+            How to Use This News Feed
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="border-l-4 border-green-500">
+              <div className="flex items-start gap-3">
+                <Bell className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">Weekly Check-In Strategy</h3>
+                  <p className="text-body-md text-neutral-700">
+                    Bookmark this page and review every Monday morning. Focus on Monetization and Algorithm categories first as these directly impact earnings. Featured/Breaking News section highlights time-sensitive updates requiring immediate action. Scan article dates—anything from the past 7 days warrants full read-through.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border-l-4 border-purple-500">
+              <div className="flex items-start gap-3">
+                <Search className="w-6 h-6 text-purple-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">Category-Specific Navigation</h3>
+                  <p className="text-body-md text-neutral-700">
+                    Use category pills to filter by topic. TikTok Shop sellers should prioritize "TikTok Shop" and "Monetization" categories. Creators focused on organic growth should monitor "Algorithm" and "Features" news. If you're affected by regulatory uncertainty, track "Regulatory" updates for business continuity planning.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border-l-4 border-amber-500">
+              <div className="flex items-start gap-3">
+                <Calendar className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">Timeline Reference</h3>
+                  <p className="text-body-md text-neutral-700">
+                    Our Key Dates Timeline shows the chronological evolution of platform changes throughout 2026. Use this to understand context—how algorithm changes correlate with new features, or how Shop expansion aligns with monetization program updates. This historical view helps predict future platform priorities.
+                  </p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="border-l-4 border-indigo-500">
+              <div className="flex items-start gap-3">
+                <Lightbulb className="w-6 h-6 text-indigo-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">Action-Oriented Reading</h3>
+                  <p className="text-body-md text-neutral-700">
+                    Each article translates news into creator actions. Don't just read—immediately identify how updates affect your content strategy, monetization approach, or compliance requirements. Click through to related calculators and guides at the bottom of articles to implement changes using our tools.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+
         {/* FAQ Section */}
         <FAQSection
           pageName="TikTok News"
@@ -630,6 +711,10 @@ export default function NewsPage() {
             {
               question: 'Where does TikTok announce official updates?',
               answer: 'TikTok announces updates through multiple channels: TikTok Newsroom (newsroom.tiktok.com) for major features and policy changes, the TikTok Creator Portal for monetization updates, in-app notifications for feature rollouts, and the @tiktokforbusiness account for advertising/commerce news. We aggregate all these sources plus industry reports to provide comprehensive coverage in one place.'
+            },
+            {
+              question: 'Should I change my content strategy immediately after algorithm updates?',
+              answer: 'Test incrementally before committing fully to strategy changes. When retention metrics became prioritized in 2026, smart creators A/B tested hook styles and video lengths across 10-20 videos while monitoring analytics. Complete pivots based on single announcements can backfire if you misinterpret the change. Verify algorithm updates by checking if your top-performing content aligns with new metrics before overhauling your entire approach.'
             },
             {
               question: 'Do TikTok Shop updates affect all creators?',
@@ -650,6 +735,10 @@ export default function NewsPage() {
             {
               question: 'How do new features impact content distribution?',
               answer: 'TikTok algorithmically promotes content using new features to encourage adoption. When AI Outline and Smart Split launched in November 2026, creators using these tools reported 25-40% higher initial distribution. This "new feature boost" typically lasts 2-4 weeks before normalizing. Early adoption gives you a temporary algorithmic advantage and helps you master tools before competitors.'
+            },
+            {
+              question: 'How reliable are unofficial TikTok news sources?',
+              answer: 'Unofficial sources like creator forums and social media speculation should be verified against official announcements before acting. However, creator communities often surface bugs, shadow-bans, and undocumented algorithm changes before TikTok acknowledges them publicly. Cross-reference community reports with your own analytics and wait for pattern confirmation from multiple creators before considering unofficial information actionable.'
             }
           ]}
         />

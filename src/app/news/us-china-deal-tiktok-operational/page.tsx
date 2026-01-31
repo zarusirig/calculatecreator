@@ -465,6 +465,9 @@ export default function USChinaDealPage() {
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
             Official Sources & Further Reading
           </h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            This framework represents a pivotal moment for the creator economy, with over 170 million US TikTok users and millions of creators now operating with increased stability and long-term planning horizons.
+          </p>
           <ul className="space-y-3">
             <li>
               <a

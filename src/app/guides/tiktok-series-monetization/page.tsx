@@ -119,6 +119,9 @@ export default function TikTokSeriesMonetizationPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Pricing Strategy</h2>
+          <p className="text-body-md text-neutral-700 mb-6">
+            Strategic pricing directly impacts conversion rates and revenue. Start with lower-priced Series ($4.99-$9.99) to build social proof and testimonials, then increase prices for subsequent Series as your authority grows. Consider your audience demographics—younger audiences typically convert better at $4.99-$14.99, while professional development content can command $49.99-$99.99. Use tiered pricing across multiple Series to capture different buyer segments: an entry-level Series attracts price-sensitive viewers, while premium Series monetize your most dedicated fans willing to invest in transformation.
+          </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">
               <thead>
@@ -148,12 +151,16 @@ export default function TikTokSeriesMonetizationPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Content Ideas for Series</h2>
+          <p className="text-body-md text-neutral-700 mb-6">
+            The most successful Series content provides structured, transformational value that justifies the price point. Educational creators thrive by packaging expertise into comprehensive courses that take viewers from beginner to proficient. Fitness creators excel with progressive programs featuring daily workouts, nutrition guidance, and accountability check-ins. Business coaching Series work particularly well when teaching specific skills like freelancing, social media growth, or e-commerce setup with actionable worksheets and templates. Entertainment creators can serialize exclusive content like behind-the-scenes production diaries, extended interviews, or premium storytelling that superfans eagerly consume. The key differentiator is depth and organization—Series content should feel like a premium course or exclusive membership, not just repackaged free content.
+          </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { category: 'Education', examples: ['Complete courses (photography, coding, language)', 'Step-by-step tutorials', 'Certification prep'] },
-              { category: 'Fitness', examples: ['30-day workout programs', 'Meal planning series', 'Transformation challenges'] },
-              { category: 'Business', examples: ['How to start [business type]', 'Marketing masterclass', 'Sales training'] },
-              { category: 'Creative', examples: ['Art technique series', 'Music production lessons', 'Writing workshop'] },
+              { category: 'Education & Skills', examples: ['Complete courses (photography, coding, language)', 'Step-by-step tutorials with worksheets', 'Certification prep and study guides', 'Professional skill development'] },
+              { category: 'Fitness & Wellness', examples: ['30-day workout programs', 'Meal planning and recipe series', 'Transformation challenges with tracking', 'Yoga or meditation courses'] },
+              { category: 'Business & Money', examples: ['How to start [business type]', 'Marketing masterclass with templates', 'Sales training and scripts', 'Investing basics for beginners'] },
+              { category: 'Creative Arts', examples: ['Art technique series (digital, traditional)', 'Music production lessons with project files', 'Writing workshop with feedback', 'Photography editing masterclass'] },
+              { category: 'Entertainment & Lifestyle', examples: ['Behind-the-scenes exclusive content', 'Extended interviews and commentary', 'Travel guides and hidden gems', 'Recipe collections with techniques'] },
             ].map((item, idx) => (
               <div key={idx} className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">{item.category}</h3>
@@ -203,6 +210,18 @@ export default function TikTokSeriesMonetizationPage() {
             {
               question: 'Can I create multiple Series or just one?',
               answer: 'You can create unlimited Series. Many successful creators run multiple Series simultaneously at different price points: a low-cost "intro" series ($4.99) to build trust, a mid-tier course ($29.99) for core content, and a premium masterclass ($99.99) for advanced topics. This tiered approach maximizes revenue by serving different audience commitment levels and budgets.'
+            },
+            {
+              question: 'How does TikTok pay creators for Series sales?',
+              answer: 'TikTok pays creators a percentage of Series revenue after platform fees, which vary by region (typically creators keep 60-70% of the sale price). Payments are processed through the Creator Fund payment system. You must meet withdrawal minimums (usually $50) and have payment information set up in Creator Tools to receive payouts.'
+            },
+            {
+              question: 'Can I update or add episodes to a Series after publishing?',
+              answer: 'Yes, you can add new episodes to existing Series, allowing you to expand content based on audience feedback or provide ongoing value. However, you cannot edit or replace already-published episodes. This flexibility lets you start with a core Series and grow it over time, increasing value for existing purchasers.'
+            },
+            {
+              question: 'Should I promote my Series on other platforms?',
+              answer: 'Absolutely. Cross-promotion maximizes Series sales by driving traffic from Instagram, YouTube, email lists, and other platforms where your audience exists. Create teaser content showing Series value, share testimonials from buyers, and use TikTok\'s unique Series link to direct external traffic. Multi-platform promotion typically doubles conversion rates compared to TikTok-only marketing.'
             }
           ]}
         />

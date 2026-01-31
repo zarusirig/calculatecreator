@@ -287,6 +287,10 @@ This 2% save rate indicates good content value`}
                 question: 'Does save rate affect my follower count?',
                 answer: 'Yes, indirectly. High save rates signal valuable content, leading to more algorithmic distribution. As more people discover your content, your follower count naturally increases.',
               },
+              {
+                question: 'How do saves compare to likes and comments for algorithm ranking?',
+                answer: 'Saves carry more algorithmic weight than likes because they indicate lasting value. While likes show momentary appreciation, saves signal content worth revisiting. TikTok prioritizes saves and shares over likes when determining extended distribution. A video with high saves but moderate likes often outperforms one with high likes but few saves.',
+              },
             ]}
           />
 

@@ -438,6 +438,30 @@ export default function CreatorRewards20xEarningsPage() {
                 You remain in the program but won't earn that month. If you meet requirements again in future months, earnings resume automatically.
               </p>
             </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Do horizontal landscape videos earn the same as vertical videos?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes, both horizontal and vertical videos are eligible for Creator Rewards as long as they meet the 1+ minute requirement. However, vertical videos typically get higher engagement on TikTok's mobile-first platform, which can lead to better retention rates and higher RPM.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">How long does it take to see earnings after posting a qualifying video?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Earnings data appears in your Creator Portal within 7-14 days after a qualifying video is posted. The actual payout occurs monthly, around the 10th-15th of the following month, once you reach the minimum withdrawal threshold of $50.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can I combine Creator Rewards with other TikTok monetization methods?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Yes! Creator Rewards stacks with other monetization methods like LIVE gifts, TikTok Shop affiliate commissions, brand sponsorships, and TikTok Series. Many top creators earn from multiple streams simultaneously, with Creator Rewards providing consistent baseline income while other methods add supplemental earnings.
+              </p>
+            </div>
+            <div className="bg-neutral-50 p-4 rounded-lg">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Does music or sound choice affect Creator Rewards eligibility?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Using copyrighted music can disqualify videos from Creator Rewards earnings. Stick to TikTok's Commercial Music Library or original audio for qualifying videos. Videos flagged for copyright don't count toward your 100,000 views requirement either, so original or licensed audio is essential for consistent monetization.
+              </p>
+            </div>
           </div>
         </Card>
 

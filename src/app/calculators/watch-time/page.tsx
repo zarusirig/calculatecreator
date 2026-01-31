@@ -21,19 +21,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is good watch time on TikTok?',
-    answer: 'For 30-second videos, 20+ seconds (66%+) is good. For 60-second videos, 35+ seconds (58%+) is good. Focus on retention rate rather than absolute time for comparison.',
+    answer: 'For 30-second videos, 20+ seconds (66%+) is good. For 60-second videos, 35+ seconds (58%+) is good. Focus on retention rate rather than absolute time for comparison. Top-performing viral content typically maintains 75-85% retention regardless of length.',
   },
   {
-    question: 'How does watch time affect the algorithm?',
-    answer: 'Watch time is TikTok\'s primary signal. Videos with high retention get pushed to larger audiences. Low retention (under 40%) limits distribution significantly.',
+    question: 'How does watch time affect the TikTok algorithm?',
+    answer: 'Watch time is TikTok\'s primary signal for content distribution. Videos with high retention get pushed to larger audiences within 1-2 hours of posting. Low retention (under 40%) limits distribution significantly, often capping reach at 300-500 views even for established accounts.',
   },
   {
-    question: 'Should I make shorter or longer videos?',
-    answer: 'Match length to content. Short (15-30s) for entertainment. Medium (30-60s) for tips. Long (1-3min) for tutorials. High retention on any length beats forced padding.',
+    question: 'Should I make shorter or longer videos for better retention?',
+    answer: 'Match length to content value. Short (15-30s) for entertainment hooks. Medium (30-60s) for tips and tutorials. Long (1-3min) for detailed storytelling. High retention on any length beats artificially shortened or padded content. Test both formats in your niche.',
   },
   {
     question: 'Where can I see watch time in TikTok Analytics?',
-    answer: 'Go to Analytics → Content → Select video → "Average watch time" shows seconds. Divide by video length for retention percentage.',
+    answer: 'Go to Analytics → Content → Select video → "Average watch time" shows seconds watched. Divide by total video length for retention percentage. TikTok also shows a retention graph that displays exact drop-off points throughout your video.',
+  },
+  {
+    question: 'Can watch time retention go over 100%?',
+    answer: 'Yes. When viewers rewatch your video (loop it), retention can exceed 100%. A 150% retention means viewers watched the video 1.5 times on average. This is highly valuable for the algorithm and indicates extremely engaging content.',
+  },
+  {
+    question: 'What is the difference between watch time and retention rate?',
+    answer: 'Watch time is the absolute number of seconds viewers watch (e.g., 25 seconds). Retention rate is the percentage of the video watched (e.g., 83% of a 30-second video). Retention rate is better for comparing videos of different lengths.',
+  },
+  {
+    question: 'How quickly does TikTok measure watch time for algorithmic decisions?',
+    answer: 'TikTok evaluates watch time signals within the first 100-200 views of your video. Strong early retention (first 1-2 hours) triggers broader distribution. The algorithm continuously reassesses as more data comes in, but early performance is critical.',
+  },
+  {
+    question: 'Does pausing count toward watch time?',
+    answer: 'Yes, if a viewer pauses your video to read text or examine details, that time typically counts toward watch time as long as they remain on the video screen. This is why text-heavy educational content can perform well despite slower pacing.',
+  },
+  {
+    question: 'What is the average watch time for viral TikTok videos?',
+    answer: 'Viral videos (1M+ views) typically achieve 70-90% retention rates regardless of length. The key is matching content density to video duration. A viral 15-second video holds attention for 12-14 seconds, while a viral 60-second video holds for 45-55 seconds.',
+  },
+  {
+    question: 'How do I improve watch time for longer educational content?',
+    answer: 'Use chapter hooks every 10-15 seconds, add visual text overlays for readers, create pattern interrupts with zoom-ins or B-roll, tease the payoff early, and deliver value incrementally. Educational content should feel like multiple short videos stitched together, not one long lecture.',
   },
 ];
 
@@ -128,6 +152,33 @@ export default function WatchTimeCalculatorPage() {
 
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+                Watch Time Benchmarks by Content Type
+              </h2>
+              <div className="space-y-3">
+                {[
+                  { type: 'Quick Comedy/Memes', length: '7-15s', retention: '75-90%', description: 'High rewatch potential' },
+                  { type: 'Entertainment Skits', length: '15-30s', retention: '65-80%', description: 'Strong hook required' },
+                  { type: 'Tips & Hacks', length: '20-45s', retention: '60-75%', description: 'Value-driven content' },
+                  { type: 'Tutorials', length: '45-90s', retention: '55-70%', description: 'Detailed how-tos' },
+                  { type: 'Storytelling', length: '60-180s', retention: '50-65%', description: 'Narrative arc needed' },
+                  { type: 'Product Reviews', length: '30-60s', retention: '45-60%', description: 'Mixed audience intent' },
+                ].map((item, index) => (
+                  <div key={index} className="p-4 bg-neutral-50 rounded-lg">
+                    <div className="flex items-start justify-between mb-2">
+                      <p className="font-semibold text-neutral-900">{item.type}</p>
+                      <span className="text-body-sm font-medium text-secondary-600">{item.retention}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-body-sm text-neutral-600">
+                      <span>Ideal length: {item.length}</span>
+                      <span className="text-neutral-500">{item.description}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Card>
+
+            <Card>
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 Why Watch Time is King
               </h2>
               <div className="space-y-4 text-body-md text-neutral-700">
@@ -146,20 +197,36 @@ export default function WatchTimeCalculatorPage() {
         <div className="max-w-5xl mx-auto space-y-8">
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">
-              7 Strategies to Maximize Watch Time
+              Boost Your Watch Time: Proven Strategies
             </h2>
-            <div className="space-y-4">
+            <p className="text-body-md text-neutral-700 mb-6">
+              Implement these data-backed tactics to improve retention rates and algorithmic performance. Focus on the strategies that align best with your content type.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               {[
-                { title: 'Hook in First 1-3 Seconds', description: 'Start with your most compelling moment. No intro, no buildup.' },
-                { title: 'Use Pattern Interrupts', description: 'Change visuals, zoom, or add text every 3-5 seconds to reset attention.' },
-                { title: 'Create Curiosity Loops', description: 'Tease what\'s coming with "but wait" moments throughout the video.' },
-                { title: 'Optimize Video Length', description: 'Match length to content type. Don\'t pad for time.' },
-                { title: 'Add Text Overlays', description: 'Visual text keeps viewers engaged and reading.' },
-                { title: 'End with Payoff', description: 'Put your best content at the end to maximize completion.' },
-                { title: 'Create Loop-Worthy Content', description: 'Design endings that make viewers want to rewatch.' },
+                { title: 'Master the 1-Second Hook', description: 'Start with movement, text, or your core value proposition. The first second determines if viewers stay. Use action verbs, questions, or shocking statements to grab attention immediately.', icon: '⚡' },
+                { title: 'Pattern Interrupts Every 3-5 Seconds', description: 'Change camera angles, add zoom effects, insert B-roll, or display new text overlays. Each interrupt resets the attention span and prevents scroll fatigue.', icon: '🔄' },
+                { title: 'Create Strategic Curiosity Loops', description: 'Tease upcoming content with "but wait" or "here\'s the best part" moments. Position key reveals at 50% and 90% of your video to maintain engagement throughout.', icon: '🎯' },
+                { title: 'Optimize Length to Content Value', description: 'Don\'t artificially extend or compress content. If you can deliver value in 15 seconds, don\'t stretch to 60. Quality retention on short content outperforms poor retention on long content.', icon: '⏱️' },
+              ].map((strategy, index) => (
+                <div key={index} className="p-5 bg-gradient-to-br from-secondary-50 to-white border border-secondary-200 rounded-lg">
+                  <div className="flex items-start space-x-3 mb-2">
+                    <span className="text-2xl">{strategy.icon}</span>
+                    <h3 className="font-semibold text-neutral-900">{strategy.title}</h3>
+                  </div>
+                  <p className="text-body-sm text-neutral-700 ml-11">{strategy.description}</p>
+                </div>
+              ))}
+            </div>
+            <div className="space-y-3">
+              <h3 className="font-semibold text-neutral-900 mb-3">Additional Quick Wins</h3>
+              {[
+                { title: 'Add Text Overlays for Scanners', description: 'Visual text keeps viewers engaged and makes content accessible without sound. 67% of TikTok is watched muted.' },
+                { title: 'End with Your Best Content', description: 'Put the payoff at 90-95% completion. This maximizes full-video views while rewarding viewers who stay.' },
+                { title: 'Design Loop-Worthy Endings', description: 'Create endings that connect to the beginning. Seamless loops drive 100%+ retention through rewatches.' },
               ].map((strategy, index) => (
                 <div key={index} className="p-4 bg-neutral-50 rounded-lg">
-                  <h3 className="font-semibold text-neutral-900 mb-2">{index + 1}. {strategy.title}</h3>
+                  <h4 className="font-semibold text-neutral-900 mb-1">{strategy.title}</h4>
                   <p className="text-body-sm text-neutral-700">{strategy.description}</p>
                 </div>
               ))}
@@ -208,24 +275,7 @@ Watch Hours: (50,000 × 22) / 3600 = 305.6 hours`}
 
           <FAQSection
             pageName="Watch Time Calculator"
-            faqs={[
-              {
-                question: 'What is good watch time on TikTok?',
-                answer: 'For 30-second videos, 20+ seconds (66%+) is good. For 60-second videos, 35+ seconds (58%+) is good. Focus on retention rate rather than absolute time for comparison.',
-              },
-              {
-                question: 'How does watch time affect the algorithm?',
-                answer: 'Watch time is TikTok\'s primary signal. Videos with high retention get pushed to larger audiences. Low retention (under 40%) limits distribution significantly.',
-              },
-              {
-                question: 'Should I make shorter or longer videos?',
-                answer: 'Match length to content. Short (15-30s) for entertainment. Medium (30-60s) for tips. Long (1-3min) for tutorials. High retention on any length beats forced padding.',
-              },
-              {
-                question: 'Where can I see watch time in TikTok Analytics?',
-                answer: 'Go to Analytics → Content → Select video → "Average watch time" shows seconds. Divide by video length for retention percentage.',
-              },
-            ]}
+            faqs={faqData}
           />
 
           <RelatedCalculators

@@ -39,6 +39,10 @@ const faqs = [
     question: 'Can I do TikTok affiliate marketing without showing my face?',
     answer: 'Yes! Many successful TikTok affiliates use faceless content: product unboxings, hands-only demonstrations, voiceover reviews, aesthetic product photography, comparison videos, or animation. Focus on showcasing the product benefits clearly. Some niches (tech gadgets, home products) work particularly well for faceless affiliate content.',
   },
+  {
+    question: 'How many products should I promote at once?',
+    answer: 'Focus on 3-5 core products that align with your niche. Promoting too many products dilutes your credibility and confuses your audience. Start with products you genuinely use, master those, then gradually expand. Top affiliates often earn 80% of their income from just 2-3 hero products they consistently recommend.',
+  },
 ];
 
 export default function AffiliateCommissionCalculatorPage() {

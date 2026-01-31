@@ -228,7 +228,7 @@ export default function ShopPaymentSchedulePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Tax Implications</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            TikTok Shop payments are taxable income. Understanding your tax obligations helps you avoid surprises:
+            TikTok Shop payments are taxable income. Understanding your tax obligations helps you avoid surprises and ensure compliance. All payments received through TikTok Shop must be reported to your local tax authority, regardless of whether you receive a tax form from TikTok. Keeping detailed records of all transactions, expenses, and payment dates is essential for accurate tax filing.
           </p>
           <div className="space-y-4">
             <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
@@ -238,6 +238,7 @@ export default function ShopPaymentSchedulePage() {
                 <li>Self-employment tax (15.3%) applies to net profit</li>
                 <li>Quarterly estimated taxes required if earning $1,000+ annually</li>
                 <li>Deductible expenses: inventory, shipping, packaging, advertising, TikTok fees</li>
+                <li>Keep payment records for at least 3 years for IRS audit purposes</li>
               </ul>
             </div>
 
@@ -254,6 +255,60 @@ export default function ShopPaymentSchedulePage() {
             <Link href="/advanced/creator-tax-deductions-guide/" className="text-teal-600 font-semibold hover:underline">
               Complete Tax Guide for TikTok Creators and Sellers →
             </Link>
+          </div>
+        </Card>
+
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">Can I change my payment schedule from bi-weekly to monthly?</h3>
+              <p className="text-body-sm text-neutral-700">
+                No, the bi-weekly payment schedule is automatic and cannot be changed. All TikTok Shop sellers and affiliates receive payments every 14 days. However, if you don't meet the minimum threshold in a cycle, your balance automatically rolls over to the next payment period.
+              </p>
+            </div>
+
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">What happens if a customer returns a product after I've been paid?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Returns processed after payment will be deducted from your next payment cycle. TikTok tracks all returns and refunds, adjusting your future payments accordingly. If you have a high return rate, you may notice significant deductions in subsequent payment cycles. Monitor your returns dashboard closely to understand how returns impact your net earnings.
+              </p>
+            </div>
+
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">How do I track my payment history?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Access your complete payment history in TikTok Shop Seller Center under Finance → Payment History. You can view all past payments, download detailed transaction reports, and export CSV files for accounting purposes. Each payment shows the sales period, gross amount, deductions, and net amount deposited.
+              </p>
+            </div>
+
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">Why is my payment amount different from my dashboard estimate?</h3>
+              <p className="text-body-sm text-neutral-700">
+                Payment amounts may differ from estimates due to returns processed during the settlement period, chargebacks, TikTok Shop commission adjustments, or currency conversion rates for international sellers. The final payment reflects all deductions and fees calculated at the time of payment processing. Always check the detailed payment breakdown in your payment history for exact deduction amounts.
+              </p>
+            </div>
+
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">Can I request early payment or faster processing?</h3>
+              <p className="text-body-sm text-neutral-700">
+                TikTok Shop does not currently offer early payment options or expedited processing. All sellers follow the same bi-weekly schedule regardless of account size or sales volume. However, using PayPal as your payment method can reduce the time between payment initiation and funds arriving in your account by 2-4 days compared to bank transfers, which is the fastest option available.
+              </p>
+            </div>
+
+            <div className="border-b border-neutral-200 pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">What should I do if my payment is delayed beyond the expected timeframe?</h3>
+              <p className="text-body-sm text-neutral-700">
+                If your payment hasn't arrived within 10 business days of initiation, first verify your payment method details are correct in Seller Center. Check your bank or PayPal for any pending transactions or holds. If everything appears correct, contact TikTok Shop Seller Support through the app with your payment ID and expected arrival date. Keep screenshots of your payment dashboard as documentation.
+              </p>
+            </div>
+
+            <div className="pb-4">
+              <h3 className="font-semibold text-neutral-900 mb-2">Are there any fees deducted from my TikTok Shop payments?</h3>
+              <p className="text-body-sm text-neutral-700">
+                TikTok Shop deducts platform commission fees (typically 2-8% depending on product category) before calculating your payout. Additionally, some international bank transfers may incur receiving fees from your bank ($10-25). PayPal has minimal fees for receiving payments. The platform fee is automatically deducted and reflected in your net earnings shown in the dashboard.
+              </p>
+            </div>
           </div>
         </Card>
 

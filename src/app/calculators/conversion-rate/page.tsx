@@ -38,6 +38,22 @@ const faqs = [
     question: 'How can I improve my TikTok conversion rate?',
     answer: 'To boost conversions: (1) Match landing page to video content exactly, (2) Mention price/offer in the video to avoid sticker shock, (3) Add urgency with limited-time offers, (4) Simplify checkout to 1-2 steps, (5) Mobile-optimize everything (90% of TikTok is mobile), (6) Use social proof (reviews, testimonials), (7) A/B test different landing pages and offers.',
   },
+  {
+    question: 'Should I track conversion rate by video or by campaign?',
+    answer: 'Track both for maximum insight. Video-level tracking shows which content types convert best, helping you create more effective videos. Campaign-level tracking measures overall funnel performance across multiple videos. Use UTM parameters for each video to see individual performance, then aggregate for campaign totals.',
+  },
+  {
+    question: 'How does TikTok Shop conversion rate compare to external landing pages?',
+    answer: 'TikTok Shop typically converts 2-3x higher than external websites because users stay in-app, checkout is one-tap, and TikTok Shop builds trust. Expect 4-8% conversion rates on TikTok Shop vs 1.5-3% for external e-commerce sites from TikTok traffic. However, TikTok takes 2-8% commission on Shop sales.',
+  },
+  {
+    question: 'What time of day has the best TikTok conversion rates?',
+    answer: 'Conversion rates are typically highest during evening hours (7-10 PM local time) when users are relaxed and more likely to make purchase decisions. Weekends also see 10-15% higher conversion rates. However, test your specific audience—checkout behavior varies by niche. Use TikTok Analytics to identify when your followers are most active and purchasing.',
+  },
+  {
+    question: 'How long does it take to see conversion data in TikTok analytics?',
+    answer: 'TikTok Shop conversion data appears within 24-48 hours. For external websites using TikTok Pixel, data typically appears within 15-30 minutes. UTM tracking in Google Analytics shows immediately. Set up your tracking before running campaigns so you have baseline data for comparison and optimization.',
+  },
 ];
 
 export default function ConversionRateCalculatorPage() {
@@ -198,7 +214,7 @@ export default function ConversionRateCalculatorPage() {
                 </div>
                 <div className="p-3 bg-success-50 border border-success-200 rounded-lg">
                   <p className="text-body-sm text-neutral-700">
-                    <strong>Pro Tip:</strong> Test one element at a time. Run each test for at least 100 conversions or 7 days before declaring a winner.
+                    <strong>Pro Tip:</strong> Test one element at a time. Run each test for at least 100 conversions or 7 days before declaring a winner. Use statistical significance calculators to ensure results aren't due to chance—a 95% confidence level is the industry standard.
                   </p>
                 </div>
               </div>

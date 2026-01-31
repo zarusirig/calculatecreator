@@ -38,6 +38,10 @@ const faqs = [
     question: 'How can I lower my TikTok CAC?',
     answer: 'To reduce CAC: (1) Improve conversion rate—a 1% increase can cut CAC by 20-30%, (2) Create more engaging organic content to build trust before running ads, (3) Use retargeting for website visitors (typically 50-70% lower CAC), (4) Test lookalike audiences based on your best customers, (5) Optimize landing pages for mobile, (6) Use user-generated content in ads (3-5× more effective than polished ads).',
   },
+  {
+    question: 'How long should I run campaigns before evaluating CAC?',
+    answer: 'Run TikTok campaigns for at least 7-14 days before making CAC decisions. The algorithm needs time to optimize (learning phase). Early CAC data is often inflated—give it time to stabilize. Aim for at least 50-100 conversions before calculating your true CAC for statistical significance.',
+  },
 ];
 
 export default function CustomerAcquisitionCostCalculatorPage() {

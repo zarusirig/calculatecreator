@@ -141,6 +141,71 @@ export default function TikTokAdCostCalculatorPage() {
             </div>
           </div>
 
+          {/* Industry Benchmarks Section */}
+          <div className="max-w-6xl mx-auto mb-12">
+            <Card className="p-8">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-2">
+                <BarChart2 className="w-6 h-6 text-secondary-DEFAULT" />
+                Industry Benchmarks: TikTok Ad Costs by Vertical (2026)
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="font-semibold text-neutral-900 mb-3">High-Cost Industries</h3>
+                  <ul className="space-y-2 text-sm text-neutral-700">
+                    <li><strong>Finance & Insurance:</strong> $12-18 CPM, $1.50-2.80 CPC - Highly regulated audience requires premium targeting</li>
+                    <li><strong>Beauty & Cosmetics:</strong> $10-16 CPM, $0.80-1.50 CPC - Competitive market with high conversion potential</li>
+                    <li><strong>Fashion & Apparel:</strong> $9-15 CPM, $0.70-1.40 CPC - Visual content performs well but faces stiff competition</li>
+                    <li><strong>Technology & SaaS:</strong> $11-17 CPM, $1.20-2.20 CPC - B2B targeting commands premium rates</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-neutral-900 mb-3">Cost-Effective Industries</h3>
+                  <ul className="space-y-2 text-sm text-neutral-700">
+                    <li><strong>Food & Beverage:</strong> $5-9 CPM, $0.40-0.90 CPC - Broad appeal with viral content potential</li>
+                    <li><strong>Entertainment & Gaming:</strong> $4-8 CPM, $0.35-0.85 CPC - Natural fit for platform demographics</li>
+                    <li><strong>Education & Learning:</strong> $6-10 CPM, $0.50-1.00 CPC - Growing segment with engaged audience</li>
+                    <li><strong>Home & Garden:</strong> $5-9 CPM, $0.45-0.95 CPC - Strong organic engagement reduces costs</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="mt-4 text-sm text-neutral-600 italic">
+                Benchmark data sourced from TikTok Ads Manager and Q4 2026 industry reports. Actual costs vary based on targeting, creative quality, and campaign objectives.
+              </p>
+            </Card>
+          </div>
+
+          {/* Budget Optimization Tips Section */}
+          <div className="max-w-6xl mx-auto mb-12">
+            <Card className="p-8">
+              <h2 className="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-2">
+                <Lightbulb className="w-6 h-6 text-secondary-DEFAULT" />
+                Budget Optimization Tips for TikTok Ads
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">1. Start with Automatic Bidding</h3>
+                    <p className="text-sm text-neutral-700">Let TikTok's algorithm optimize your bids during the learning phase. Switch to manual bidding once you understand your cost per result benchmarks.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">2. Use Campaign Budget Optimization</h3>
+                    <p className="text-sm text-neutral-700">Enable CBO to automatically distribute budget across ad sets. This typically reduces costs by 15-25% compared to manual allocation by prioritizing high-performing segments.</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">3. Test Different Dayparting Strategies</h3>
+                    <p className="text-sm text-neutral-700">Run campaigns during off-peak hours (2AM-6AM local time) to reduce competition. Many advertisers see 20-30% lower CPMs without sacrificing quality traffic.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-neutral-900 mb-2">4. Leverage Spark Ads for Lower Costs</h3>
+                    <p className="text-sm text-neutral-700">Boost organic posts using Spark Ads to achieve 30-40% lower CPMs. Native-looking content performs better and costs less than traditional ad formats.</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+
           <div className="max-w-4xl mx-auto">
             <TikTokAdCostCalculatorWidget />
           </div>
