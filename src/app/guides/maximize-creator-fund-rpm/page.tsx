@@ -628,7 +628,7 @@ export default function MaximizeCreatorFundRPMPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Recommended Calculators
+            Related Calculators
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/calculators/rpm/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">

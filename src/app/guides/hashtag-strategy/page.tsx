@@ -155,6 +155,28 @@ export default function HashtagStrategyPage() {
           </ul>
         </Card>
 
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/guides/tiktok-algorithm-optimization/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">Algorithm Optimization Guide</h3>
+              <p className="text-body-sm text-neutral-600">Master the TikTok algorithm for maximum reach</p>
+            </Link>
+            <Link href="/guides/how-to-go-viral/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">How to Go Viral on TikTok</h3>
+              <p className="text-body-sm text-neutral-600">Proven strategies for viral content creation</p>
+            </Link>
+            <Link href="/calculators/engagement-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">Engagement Rate Calculator</h3>
+              <p className="text-body-sm text-neutral-600">Measure your content performance</p>
+            </Link>
+            <Link href="/guides/content-strategy-2025/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">Content Strategy Guide</h3>
+              <p className="text-body-sm text-neutral-600">Complete content planning framework</p>
+            </Link>
+          </div>
+        </Card>
+
         <FAQSection
           pageName="TikTok Hashtag Strategy"
           faqs={[

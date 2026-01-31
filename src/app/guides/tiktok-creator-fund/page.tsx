@@ -326,7 +326,7 @@ export default function CreatorFundGuidePage() {
 
         {/* Related Guides */}
         <div className="mt-12 p-6 bg-neutral-100 rounded-xl">
-          <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Creator Fund Resources</h3>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Join Creator Fund</h4>

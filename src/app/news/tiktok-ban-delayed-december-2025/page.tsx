@@ -237,10 +237,10 @@ export default function TikTokBanDelayedPage() {
           </div>
         </Card>
 
-        {/* Related Tools Section */}
+        {/* Related Resources */}
         <Card className="bg-gradient-to-br from-primary-50 to-secondary-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Calculate Your TikTok Earnings
+            Related Resources
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
             While TikTok remains operational, continue optimizing your earnings strategy with our calculators:

@@ -634,7 +634,7 @@ export default function AlgorithmEightMajorShiftsPage() {
 
         <Card className="bg-gray-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Official Sources & Further Reading
+            Related Resources
           </h2>
           <ul className="space-y-3">
             <li>

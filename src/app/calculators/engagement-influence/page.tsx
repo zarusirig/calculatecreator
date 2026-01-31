@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
-import { BarChart3, Handshake, Video } from 'lucide-react';
+import { BarChart3, Handshake, Video, TrendingUp, Users, DollarSign, Target, Award, CheckCircle, Zap, Eye } from 'lucide-react';
 import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
@@ -51,6 +51,22 @@ const faqs = [
   {
     question: 'What metrics should I track to improve my video engagement?',
     answer: 'Focus on watch time percentage (aim for 70%+), completion rate (60%+ is excellent), like-to-view ratio (5-10%), comment rate (0.5-2%), and share rate (1-3%). The TikTok algorithm heavily weights watch time and rewatches. Videos with hooks in the first 3 seconds, 15-30 second length, and strong CTAs for engagement consistently outperform longer content.',
+  },
+  {
+    question: 'How can I improve my engagement rate to get better brand deals?',
+    answer: 'Post consistently (at least 3-5 times per week), engage with your community within the first hour of posting, use trending sounds strategically, and create content that encourages comments (ask questions, create controversy, share relatable experiences). Analyze your top-performing videos and double down on those content types. Engagement rates improve when you respond to comments, use polls/Q&As, and create series that bring viewers back. Most importantly, focus on niche authority rather than broad appeal—brands pay premium rates for engaged niche audiences.',
+  },
+  {
+    question: 'Should I focus on follower growth or engagement rate?',
+    answer: 'Prioritize engagement rate over follower count. A creator with 20K followers and 15% engagement (3,000 engaged users) is more valuable than one with 100K followers and 3% engagement (3,000 engaged users). Brands increasingly use engagement as the primary metric because it predicts campaign ROI better than follower count. High engagement also helps with algorithmic reach—TikTok promotes videos that generate strong early engagement, creating a compounding growth effect.',
+  },
+  {
+    question: 'How do I negotiate brand deals using my engagement metrics?',
+    answer: 'Lead with engagement rate, not follower count. Present your average engagement rate over the last 30 days, highlight niche relevance, and show past campaign performance if available. Use data to justify premium pricing: "My 12% engagement rate is 2× the industry average for my follower tier, which translates to higher conversion rates for your campaign." Provide a media kit with engagement breakdowns (likes, comments, shares, saves) and audience demographics. If your engagement is above 10%, confidently ask for rates 50-100% above baseline ($10-30 per 1K followers).',
+  },
+  {
+    question: 'What engagement benchmarks should I aim for by niche?',
+    answer: 'Engagement benchmarks vary significantly by niche. Comedy and entertainment creators typically achieve 10-18% due to highly shareable content. Beauty and fashion see 8-15% with strong product-driven engagement. Finance and education average 6-12% with more thoughtful, save-focused engagement. Gaming content ranges 7-14% depending on community building. Fitness creators average 9-16% with motivational, aspirational content. Regardless of niche, aim to exceed your category average by 20-30% to command premium brand rates and algorithmic favorability.',
   },
 ];
 
@@ -112,6 +128,238 @@ export default function EngagementInfluencePage() {
               </div>
             </Link>
           ))}
+        </div>
+
+        {/* 2026 Engagement Benchmarks */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <Card className="p-8 mb-12 bg-gradient-to-br from-primary-50 to-white border-primary-200">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-primary-600 text-white flex items-center justify-center">
+                <TrendingUp size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">2026 Engagement Benchmarks by Follower Tier</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Engagement rates vary significantly by follower count. Smaller creators typically have more engaged communities, while larger creators trade engagement rate for reach. Use these 2026 industry benchmarks to evaluate your performance and identify growth opportunities.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="bg-white p-5 rounded-lg border-2 border-primary-200 hover:border-primary-400 transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <Users size={20} className="text-primary-600" />
+                  <h3 className="font-semibold text-neutral-900">Nano (1K-10K)</h3>
+                </div>
+                <div className="text-display-sm font-bold text-primary-600 mb-2">15-20%</div>
+                <p className="text-body-sm text-neutral-600">Highly engaged niche communities. Best for authentic partnerships and micro-influencer campaigns.</p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border-2 border-primary-200 hover:border-primary-400 transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <Users size={20} className="text-primary-600" />
+                  <h3 className="font-semibold text-neutral-900">Micro (10K-100K)</h3>
+                </div>
+                <div className="text-display-sm font-bold text-primary-600 mb-2">8-15%</div>
+                <p className="text-body-sm text-neutral-600">Strong community connection with growing reach. Ideal balance for most brand campaigns.</p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border-2 border-primary-200 hover:border-primary-400 transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <Users size={20} className="text-primary-600" />
+                  <h3 className="font-semibold text-neutral-900">Macro (100K-1M)</h3>
+                </div>
+                <div className="text-display-sm font-bold text-primary-600 mb-2">5-10%</div>
+                <p className="text-body-sm text-neutral-600">Significant reach with solid engagement. Premium rates for established creator partnerships.</p>
+              </div>
+              <div className="bg-white p-5 rounded-lg border-2 border-primary-200 hover:border-primary-400 transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <Users size={20} className="text-primary-600" />
+                  <h3 className="font-semibold text-neutral-900">Mega (1M+)</h3>
+                </div>
+                <div className="text-display-sm font-bold text-primary-600 mb-2">3-5%</div>
+                <p className="text-body-sm text-neutral-600">Maximum reach with broad audience appeal. Celebrity-tier rates for mass market campaigns.</p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Engagement Rate by Niche Table */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center">
+                <Target size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">Average Engagement Rates by Content Niche</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Different content categories achieve varying engagement rates based on content type, shareability, and audience behavior. Compare your performance against niche-specific benchmarks to understand where you stand.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-neutral-100">
+                    <th className="text-left p-4 font-semibold text-neutral-900 border-b-2 border-neutral-200">Niche</th>
+                    <th className="text-left p-4 font-semibold text-neutral-900 border-b-2 border-neutral-200">Avg. Engagement Rate</th>
+                    <th className="text-left p-4 font-semibold text-neutral-900 border-b-2 border-neutral-200">Key Drivers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Comedy & Entertainment</td>
+                    <td className="p-4 text-primary-600 font-semibold">10-18%</td>
+                    <td className="p-4 text-neutral-700">High shareability, viral potential, broad appeal</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Beauty & Fashion</td>
+                    <td className="p-4 text-primary-600 font-semibold">8-15%</td>
+                    <td className="p-4 text-neutral-700">Product tutorials, trend participation, visual appeal</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Fitness & Wellness</td>
+                    <td className="p-4 text-primary-600 font-semibold">9-16%</td>
+                    <td className="p-4 text-neutral-700">Motivational content, transformation stories, challenges</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Gaming & Esports</td>
+                    <td className="p-4 text-primary-600 font-semibold">7-14%</td>
+                    <td className="p-4 text-neutral-700">Community building, highlights, live stream clips</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Finance & Business</td>
+                    <td className="p-4 text-primary-600 font-semibold">6-12%</td>
+                    <td className="p-4 text-neutral-700">Educational value, save rate, niche authority</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Food & Cooking</td>
+                    <td className="p-4 text-primary-600 font-semibold">8-14%</td>
+                    <td className="p-4 text-neutral-700">Recipe shares, visual satisfaction, trending foods</td>
+                  </tr>
+                  <tr className="border-b border-neutral-200 hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Travel & Lifestyle</td>
+                    <td className="p-4 text-primary-600 font-semibold">7-13%</td>
+                    <td className="p-4 text-neutral-700">Aspirational content, destination inspiration, tips</td>
+                  </tr>
+                  <tr className="hover:bg-neutral-50">
+                    <td className="p-4 font-medium text-neutral-900">Education & DIY</td>
+                    <td className="p-4 text-primary-600 font-semibold">6-11%</td>
+                    <td className="p-4 text-neutral-700">High save rate, tutorial format, practical value</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Card>
+        </div>
+
+        {/* How Engagement Affects Earnings */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <Card className="p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-lg bg-green-100 text-green-600 flex items-center justify-center">
+                <DollarSign size={24} />
+              </div>
+              <h2 className="text-heading-md font-semibold text-neutral-900">How Engagement Affects Your Earnings</h2>
+            </div>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Engagement rate is the single most important metric for brand deal pricing. Creators with high engagement can command significantly higher rates because they deliver better ROI for sponsors. Here's how engagement directly impacts your earning potential.
+            </p>
+
+            <div className="space-y-6">
+              <div className="bg-green-50 p-6 rounded-lg border border-green-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Award size={20} className="text-green-600" />
+                  High Engagement = Premium Rates (10%+ Engagement)
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  Creators with engagement rates above 10% can charge 2-3× the baseline rate. Example: A creator with 50K followers and 12% engagement can command $1,500-$2,250 per post instead of the baseline $750. Brands pay premium rates because high engagement correlates with higher conversion rates and better campaign performance.
+                </p>
+                <div className="bg-white p-4 rounded border border-green-200">
+                  <p className="text-body-sm font-semibold text-neutral-900 mb-1">Calculation Example:</p>
+                  <p className="text-body-sm text-neutral-700">50,000 followers × $15 baseline × 2× engagement multiplier = $1,500 per post</p>
+                </div>
+              </div>
+
+              <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <TrendingUp size={20} className="text-yellow-600" />
+                  Average Engagement = Standard Rates (5-10% Engagement)
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  Creators within the standard engagement range receive baseline rates of $10-$30 per 1,000 followers. While competitive, there's significant opportunity to increase rates by improving engagement through better content strategy, community interaction, and niche focus.
+                </p>
+                <div className="bg-white p-4 rounded border border-yellow-200">
+                  <p className="text-body-sm font-semibold text-neutral-900 mb-1">Calculation Example:</p>
+                  <p className="text-body-sm text-neutral-700">50,000 followers × $15 baseline = $750 per post</p>
+                </div>
+              </div>
+
+              <div className="bg-red-50 p-6 rounded-lg border border-red-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Eye size={20} className="text-red-600" />
+                  Low Engagement = Discounted Rates (Below 5% Engagement)
+                </h3>
+                <p className="text-body-md text-neutral-700 mb-3">
+                  Creators with engagement below 5% face significant rate pressure. Brands increasingly reject low-engagement creators or offer 30-50% below baseline rates. A creator with 50K followers but only 3% engagement might only secure $375-$525 per post, as brands question audience authenticity and campaign ROI.
+                </p>
+                <div className="bg-white p-4 rounded border border-red-200">
+                  <p className="text-body-sm font-semibold text-neutral-900 mb-1">Calculation Example:</p>
+                  <p className="text-body-sm text-neutral-700">50,000 followers × $10 baseline × 0.7 penalty = $350 per post</p>
+                </div>
+              </div>
+
+              <div className="bg-primary-50 p-6 rounded-lg border border-primary-200">
+                <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+                  <Zap size={20} className="text-primary-600" />
+                  The Multiplier Effect of Engagement
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  Beyond direct pricing impact, high engagement creates compound benefits: improved algorithmic reach (more views per post), stronger negotiating leverage with brands, access to exclusive partnership programs, and higher commission rates on affiliate links. A 1% improvement in engagement can translate to 10-15% higher annual earnings when accounting for all revenue streams.
+                </p>
+              </div>
+            </div>
+          </Card>
+        </div>
+
+        {/* Why Measure Engagement */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6 text-center">Why Measuring Engagement Matters</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <DollarSign size={24} />
+              </div>
+              <h3 className="font-semibold text-neutral-900 mb-3">Maximize Brand Deal Revenue</h3>
+              <p className="text-body-md text-neutral-700">
+                Accurate engagement tracking lets you justify premium pricing with data. Creators who present detailed engagement analytics in pitch decks secure 40-60% higher rates than those relying on follower count alone. Track engagement monthly to spot trends and optimize your media kit.
+              </p>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <Target size={24} />
+              </div>
+              <h3 className="font-semibold text-neutral-900 mb-3">Optimize Content Strategy</h3>
+              <p className="text-body-md text-neutral-700">
+                Measuring engagement by content type reveals what resonates with your audience. Videos with 15%+ engagement should inform future content direction. A/B test different formats, hooks, and topics—then double down on high-engagement content to grow faster and earn more.
+              </p>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <TrendingUp size={24} />
+              </div>
+              <h3 className="font-semibold text-neutral-900 mb-3">Improve Algorithm Performance</h3>
+              <p className="text-body-md text-neutral-700">
+                TikTok's algorithm prioritizes content that generates quick engagement. Videos that achieve high engagement in the first 1-2 hours receive exponentially more views. Regular engagement measurement helps identify the optimal posting times, content formats, and hooks that trigger algorithmic promotion.
+              </p>
+            </Card>
+
+            <Card className="p-6 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 rounded-lg bg-primary-100 text-primary-600 flex items-center justify-center mb-4">
+                <CheckCircle size={24} />
+              </div>
+              <h3 className="font-semibold text-neutral-900 mb-3">Prove Campaign ROI to Brands</h3>
+              <p className="text-body-md text-neutral-700">
+                Brands increasingly demand post-campaign engagement reports. Creators who can demonstrate 10%+ engagement on sponsored content secure repeat partnerships and referrals. Measuring baseline engagement helps you set realistic campaign benchmarks and exceed brand expectations, leading to long-term partnerships.
+              </p>
+            </Card>
+          </div>
         </div>
 
         <div className="max-w-4xl mx-auto mt-12">

@@ -35,7 +35,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Calculators: 28 Free Tools | CalculateCreator',
+  title: 'TikTok Calculators: 28 Free Tools',
   description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators.',
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/',
@@ -251,6 +251,28 @@ export default function CalculatorsPage() {
       description: 'Estimate potential ad revenue from TikTok\'s monetization programs.',
       icon: Wallet,
       category: 'Earnings',
+    },
+    // Additional Calculators
+    {
+      name: 'Audience Overlap Calculator',
+      slug: 'audience-overlap',
+      description: 'Analyze audience overlap between your accounts or with other creators for collaboration opportunities.',
+      icon: User,
+      category: 'Analytics',
+    },
+    {
+      name: 'Comment Rate Calculator',
+      slug: 'comment-rate',
+      description: 'Calculate your comment rate and compare it to engagement benchmarks.',
+      icon: BarChart3,
+      category: 'Engagement',
+    },
+    {
+      name: 'Milestone Tracker',
+      slug: 'milestone-tracker',
+      description: 'Track your progress toward key creator milestones like 1K, 10K, and 100K followers.',
+      icon: Target,
+      category: 'Growth',
     },
   ];
 
@@ -526,8 +548,44 @@ export default function CalculatorsPage() {
           </Card>
         </div>
 
-        {/* Calculator Categories Explained */}
+        {/* Calculator Category Hubs */}
         <div className="mt-20 max-w-5xl mx-auto">
+          <h2 className="text-display-sm font-bold text-neutral-900 mb-4 text-center">
+            Browse Calculators by Category
+          </h2>
+          <p className="text-body-md text-neutral-600 text-center mb-8 max-w-2xl mx-auto">
+            Explore our calculator collections organized by purpose and use case
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+            <Link href="/calculators/earnings-revenue/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <DollarSign className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Earnings & Revenue</h3>
+            </Link>
+            <Link href="/calculators/engagement-influence/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <BarChart3 className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Engagement & Influence</h3>
+            </Link>
+            <Link href="/calculators/commerce-ads/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <ShoppingBag className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Commerce & Ads</h3>
+            </Link>
+            <Link href="/calculators/coins-gifts-diamonds/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <Coins className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Coins & Gifts</h3>
+            </Link>
+            <Link href="/calculators/utility-tools/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <Receipt className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Utility Tools</h3>
+            </Link>
+            <Link href="/calculators/fun-niche/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-400 hover:shadow-md transition-all text-center">
+              <Rocket className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+              <h3 className="font-semibold text-neutral-900 text-sm">Fun & Niche</h3>
+            </Link>
+          </div>
+        </div>
+
+        {/* Calculator Categories Explained */}
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-display-sm font-bold text-neutral-900 mb-8 text-center">
             Calculator Categories Explained
           </h2>

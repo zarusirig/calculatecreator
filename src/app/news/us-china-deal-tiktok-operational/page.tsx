@@ -259,10 +259,10 @@ export default function USChinaDealPage() {
           </div>
         </Card>
 
-        {/* Related Tools Section */}
+        {/* Related Resources */}
         <Card className="bg-gradient-to-br from-primary-50 to-secondary-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Maximize Your TikTok Earnings Potential
+            Related Resources
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
             With TikTok's future looking more secure, now is the time to optimize your monetization strategy:

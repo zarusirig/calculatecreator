@@ -291,7 +291,7 @@ export default function CompleteTikTokDiamondGuidePage() {
 
             {/* Related Content */}
             <Card className="p-8 mt-12">
-              <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Diamond Resources</h2>
+              <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <Link href="/calculators/diamond-converter/" className="block">
                   <div className="bg-purple-50 p-6 rounded-lg hover:bg-purple-100 transition-colors">

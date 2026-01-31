@@ -503,7 +503,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
 
             {/* Related Content */}
             <Card className="p-8 mt-12">
-              <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Coin Resources</h2>
+              <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Related Resources</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <Link href="/calculators/coins/" className="block">
                   <div className="bg-yellow-50 p-6 rounded-lg hover:bg-yellow-100 transition-colors">

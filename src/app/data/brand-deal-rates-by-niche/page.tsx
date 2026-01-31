@@ -600,7 +600,7 @@ export default function BrandDealRatesByNichePage() {
 
         {/* Related Resources */}
         <Card>
-          <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Data & Guides</h3>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/data/brand-deal-rates-by-followers/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">Brand Deal Rates by Follower Count</h4>

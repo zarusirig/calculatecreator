@@ -535,6 +535,28 @@ export default function CreatorTaxStrategyPage() {
           </div>
         </Card>
 
+        <Card>
+          <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Related Resources</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">Creator Tax Calculator</h3>
+              <p className="text-body-sm text-neutral-600">Estimate your tax obligations and quarterly payments</p>
+            </Link>
+            <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">TikTok Monetization Guide</h3>
+              <p className="text-body-sm text-neutral-600">Complete guide to all income streams on TikTok</p>
+            </Link>
+            <Link href="/calculators/tiktok-money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">TikTok Money Calculator</h3>
+              <p className="text-body-sm text-neutral-600">Calculate total earnings from all monetization methods</p>
+            </Link>
+            <Link href="/data/brand-deal-rates-by-followers/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <h3 className="font-semibold text-neutral-900 mb-2">Brand Deal Rate Data</h3>
+              <p className="text-body-sm text-neutral-600">Industry benchmarks for sponsorship income tracking</p>
+            </Link>
+          </div>
+        </Card>
+
         <FAQSection
           pageName="TikTok Creator Tax Strategy"
           faqs={[

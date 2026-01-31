@@ -404,7 +404,7 @@ export default function IncreaseEngagementRatePage() {
 
         <Card className="bg-gradient-to-br from-purple-50 to-pink-50">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-            Recommended Calculators for Tracking Progress
+            Related Calculators for Tracking Progress
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/calculators/engagement-rate/" className="p-4 bg-white rounded-lg hover:shadow-md transition-shadow">

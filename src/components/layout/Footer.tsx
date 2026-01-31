@@ -45,11 +45,9 @@ export function Footer() {
       title: 'News & Updates',
       links: [
         { href: '/news/', label: 'Latest TikTok News' },
-        { href: '/news/', label: 'Algorithm Updates' },
-        { href: '/news/', label: 'Monetization Changes' },
-        { href: '/news/', label: 'TikTok Shop News' },
-        { href: '/news/', label: 'Platform Features' },
-        { href: '/news/', label: 'Safety & Privacy' },
+        { href: '/blog/', label: 'Blog' },
+        { href: '/comparisons/', label: 'Platform Comparisons' },
+        { href: '/niches/', label: 'Niche Earnings' },
       ],
     },
     {
@@ -61,14 +59,16 @@ export function Footer() {
         { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube' },
         { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram' },
         { href: '/comparisons/creator-fund-vs-brand-deals/', label: 'Fund vs Brand Deals' },
+        { href: '/data/', label: 'All Data' },
       ],
     },
     {
       title: 'Niche Earnings',
       links: [
-        { href: '/guides/beauty-creators-earnings/', label: 'Beauty Creators' },
-        { href: '/guides/finance-creators-earnings/', label: 'Finance Creators' },
-        { href: '/guides/fitness-creators-earnings/', label: 'Fitness Creators' },
+        { href: '/niches/beauty-earnings/', label: 'Beauty Creators' },
+        { href: '/niches/finance-earnings/', label: 'Finance Creators' },
+        { href: '/niches/fitness-earnings/', label: 'Fitness Creators' },
+        { href: '/niches/', label: 'All Niches' },
       ],
     },
     {

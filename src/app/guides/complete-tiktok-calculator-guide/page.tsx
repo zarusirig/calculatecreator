@@ -344,7 +344,7 @@ function CompleteTikTokCalculatorGuideContent() {
                   <p className="text-body-md text-neutral-700 mb-4">{stage.goal}</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <h4 className="text-label-md font-semibold text-neutral-900 mb-2">Recommended Calculators:</h4>
+                      <h4 className="text-label-md font-semibold text-neutral-900 mb-2">Related Calculators:</h4>
                       <ul className="space-y-1">
                         {stage.recommendedCalculators.map((calc, calcIdx) => (
                           <li key={calcIdx} className="text-body-sm text-neutral-700 flex items-center gap-2">

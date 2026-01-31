@@ -7,7 +7,9 @@ import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Guides: Monetization & Growth 2026',
+  title: {
+    absolute: 'TikTok Creator Guides: Monetization & Growth 2026 | CalculateCreator',
+  },
   description: 'Expert guides on TikTok monetization, brand deals, algorithm optimization & audience growth. Data-backed strategies from successful creators.',
   alternates: {
     canonical: 'https://calculatecreator.com/guides/',
@@ -856,6 +858,9 @@ export default function GuidesPage() {
                   <Link href="/guides/tiktok-live-earnings-guide/" className="text-body-sm text-tiktok-pink hover:underline">
                     Earnings →
                   </Link>
+                  <Link href="/guides/tiktok-live-earnings-expectations/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Expectations →
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -966,6 +971,12 @@ export default function GuidesPage() {
                   <Link href="/guides/multi-platform-strategy/" className="text-body-sm text-tiktok-pink hover:underline">
                     Multi-Platform →
                   </Link>
+                  <Link href="/guides/tiktok-series-monetization/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Series →
+                  </Link>
+                  <Link href="/guides/tiktok-payment-delays/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Payment Delays →
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -982,11 +993,17 @@ export default function GuidesPage() {
                   Master TikTok calculators and tools for earnings estimation.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Link href="/guides/monetization-calculator-hub/" className="text-body-sm text-tiktok-pink hover:underline">
-                    Calculator Hub →
+                  <Link href="/guides/tiktok-rpm-calculator-guide/" className="text-body-sm text-tiktok-pink hover:underline">
+                    RPM Guide →
                   </Link>
-                  <Link href="/guides/influencer-rate-calculator-guide/" className="text-body-sm text-tiktok-pink hover:underline">
-                    Rate Calculator →
+                  <Link href="/guides/tiktok-engagement-rate-calculator-guide/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Engagement →
+                  </Link>
+                  <Link href="/guides/tiktok-ad-budget-calculator-guide/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Ad Budget →
+                  </Link>
+                  <Link href="/guides/tiktok-coin-converter-complete-guide/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Coins →
                   </Link>
                 </div>
               </div>

@@ -4,10 +4,12 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { DatasetSchema } from '@/components/seo/DatasetSchema';
-import { Database, TrendingUp, Globe, Users, DollarSign, BarChart3 } from 'lucide-react';
+import { Database, TrendingUp, Globe, Users, DollarSign, BarChart3, FileText, MessageSquare, Calendar } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Data & Benchmarks Hub | 2026 Industry Rates',
+  title: {
+    absolute: 'TikTok Creator Data & Benchmarks Hub | 2026 Industry Rates | CalculateCreator',
+  },
   description: 'Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2026.',
   keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
   alternates: {
@@ -65,6 +67,56 @@ export default function DataIndexPage() {
           url: '/data/engagement-rates-by-niche',
           description: 'Average engagement rates (likes, comments, shares) across 20+ niches',
           insights: 'Median engagement: 4-8%, top performers exceed 15%',
+        },
+      ],
+    },
+    {
+      icon: FileText,
+      title: 'Reference Data',
+      description: 'Payment schedules and program details',
+      datasets: [
+        {
+          name: 'Creator Fund Eligible Countries',
+          url: '/reference/creator-fund-countries',
+          description: 'List of countries where Creator Fund is available with eligibility requirements',
+          insights: 'Available in 25+ countries with varying requirements',
+        },
+        {
+          name: 'TikTok Shop Payment Schedule',
+          url: '/reference/shop-payment-schedule',
+          description: 'When and how TikTok Shop affiliate payments are processed',
+          insights: 'Payments typically process within 7-14 business days',
+        },
+        {
+          name: 'LIVE Gifts Value Chart',
+          url: '/reference/live-gifts-value-chart',
+          description: 'Complete list of TikTok LIVE gifts with coin costs and creator payout values',
+          insights: 'Creators receive approximately 50% of gift value',
+        },
+        {
+          name: 'Shop Commission Rates',
+          url: '/reference/shop-commission-rates',
+          description: 'TikTok Shop affiliate commission rates by product category',
+          insights: 'Commission rates range from 1% to 20% depending on category',
+        },
+      ],
+    },
+    {
+      icon: MessageSquare,
+      title: 'Engagement Metrics',
+      description: 'Advanced performance indicators',
+      datasets: [
+        {
+          name: 'Comments to Likes Ratio',
+          url: '/metrics/comments-to-likes-ratio',
+          description: 'Benchmark ratios for measuring comment engagement relative to likes',
+          insights: 'Healthy ratio: 1-5% (1-5 comments per 100 likes)',
+        },
+        {
+          name: 'TikTok Comments Analysis',
+          url: '/metrics/tiktok-comments-to-likes-ratio',
+          description: 'Detailed TikTok comments-to-likes ratio benchmarks and optimization tips',
+          insights: 'Comment engagement signals high audience interest',
         },
       ],
     },
