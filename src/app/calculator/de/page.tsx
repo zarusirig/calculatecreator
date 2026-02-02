@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
@@ -11,11 +10,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calculators/money';
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
-import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
 import { Globe, Lightbulb, CheckCircle, Car, Briefcase, Home, Laugh } from 'lucide-react';
-import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
-// Note: For SEO, we'll need to add metadata in a wrapper or use Next.js 15+ metadata API
 export default function TikTokRechnerDE() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
     followers: 50000,
@@ -94,20 +90,7 @@ export default function TikTokRechnerDE() {
   ];
 
   return (
-    <>
-      <InternationalCalculatorSchema
-        locale="de_DE"
-        languageCode="de"
-        countryName="Germany"
-        title="TikTok Rechner: Einnahmen & Verdienstmöglichkeiten berechnen"
-        description="Berechnen Sie Ihr Verdienstpotenzial auf TikTok: Creator Fund, Markendeals und LIVE Geschenke. Speziell optimiert für den deutschen Markt mit aktuellen RPM-Raten."
-        url="https://calculatecreator.com/calculator/de/"
-        faqs={faqItems}
-        currency="EUR"
-        rpmMin="€0.030"
-        rpmMax="€0.048"
-      />
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           {/* Breadcrumb */}
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
@@ -574,7 +557,6 @@ export default function TikTokRechnerDE() {
         </div>
 
       </div>
-      </div>
-    </>
+    </div>
   );
 }

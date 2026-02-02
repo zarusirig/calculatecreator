@@ -11,7 +11,6 @@ import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calcula
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { Globe, Lightbulb, CheckCircle } from 'lucide-react';
-import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
 export default function CalculatriceTikTokFR() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
@@ -83,20 +82,7 @@ export default function CalculatriceTikTokFR() {
   ];
 
   return (
-    <>
-      <InternationalCalculatorSchema
-        locale="fr_FR"
-        languageCode="fr"
-        countryName="France"
-        title="Calculatrice TikTok: Calculez vos Revenus de Créateur"
-        description="Calculez votre potentiel de revenus sur TikTok: Fonds des Créateurs, partenariats de marque et cadeaux LIVE. Optimisé pour le marché français avec des taux RPM actuels."
-        url="https://calculatecreator.com/calculator/fr/"
-        faqs={faqItems}
-        currency="EUR"
-        rpmMin="€0.028"
-        rpmMax="€0.045"
-      />
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Accueil</Link>
@@ -412,7 +398,6 @@ export default function CalculatriceTikTokFR() {
         </div>
 
       </div>
-      </div>
-    </>
+    </div>
   );
 }

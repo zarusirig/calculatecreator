@@ -1,4 +1,8 @@
 import type { Metadata } from 'next';
+import { generateInternationalCalculatorSchemas } from '@/lib/seo/international-calculator-schema';
+import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
+
+const config = calculatorConfigs.it;
 
 export const metadata: Metadata = {
   title: 'Calcolatore TikTok: Guadagni 2026 | Italia',
@@ -30,5 +34,35 @@ export default function ITCalculatorLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  const schemas = generateInternationalCalculatorSchemas(config);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.softwareApplicationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.howToSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.articleSchema) }}
+      />
+      {children}
+    </>
+  );
 }

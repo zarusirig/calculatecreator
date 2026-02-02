@@ -11,7 +11,6 @@ import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calcula
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { Globe, Lightbulb } from 'lucide-react';
-import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
 export default function KalkulatorTikTokMY() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
@@ -83,20 +82,7 @@ export default function KalkulatorTikTokMY() {
   ];
 
   return (
-    <>
-      <InternationalCalculatorSchema
-        locale="ms_MY"
-        languageCode="ms"
-        countryName="Malaysia"
-        title="Kalkulator TikTok: Kira Pendapatan Pencipta Anda"
-        description="Kira potensi pendapatan anda di TikTok: Dana Pencipta, tawaran jenama dan hadiah LIVE. Dioptimumkan untuk pasaran Malaysia dengan kadar RPM terkini."
-        url="https://calculatecreator.com/calculator/my/"
-        faqs={faqItems}
-        currency="MYR"
-        rpmMin="RM0.08"
-        rpmMax="RM0.13"
-      />
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Laman Utama</Link>
@@ -412,7 +398,6 @@ export default function KalkulatorTikTokMY() {
         </div>
 
       </div>
-      </div>
-    </>
+    </div>
   );
 }

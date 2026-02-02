@@ -11,7 +11,6 @@ import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calcula
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { Globe, Lightbulb } from 'lucide-react';
-import { InternationalCalculatorSchema } from '@/components/seo/InternationalCalculatorSchema';
 
 export default function CalculadoraTikTokPTBR() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
@@ -83,20 +82,7 @@ export default function CalculadoraTikTokPTBR() {
   ];
 
   return (
-    <>
-      <InternationalCalculatorSchema
-        locale="pt_BR"
-        languageCode="pt"
-        countryName="Brazil"
-        title="Calculadora do TikTok: Calcule Seus Ganhos de Criador"
-        description="Calcule seu potencial de ganhos no TikTok: Fundo de Criadores, acordos com marcas e presentes em LIVE. Otimizado para o mercado brasileiro com taxas RPM atuais."
-        url="https://calculatecreator.com/calculator/pt-br/"
-        faqs={faqItems}
-        currency="BRL"
-        rpmMin="R$0.09"
-        rpmMax="R$0.15"
-      />
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Início</Link>
@@ -412,7 +398,6 @@ export default function CalculadoraTikTokPTBR() {
         </div>
 
       </div>
-      </div>
-    </>
+    </div>
   );
 }
