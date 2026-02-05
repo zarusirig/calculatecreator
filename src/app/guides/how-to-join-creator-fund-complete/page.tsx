@@ -253,7 +253,6 @@ export default function HowToJoinCreatorFundCompletePage() {
         </Card>
 
         {/* FAQ */}
-        <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Frequently Asked Questions</h2>
         <FAQSection pageName="How to Join Creator Fund" faqs={faqs} />
 
         {/* Related Guides */}

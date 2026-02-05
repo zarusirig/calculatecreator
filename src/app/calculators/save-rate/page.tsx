@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { SaveRateCalculatorWidget } from '@/components/calculators/save-rate/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Save Rate Calculator: Measure Content Value (2026)',
@@ -77,11 +79,28 @@ export default function SaveRateCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Interactive Calculator Widget (CSR) */}
-          <SaveRateCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="save-rate" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            {/* Interactive Calculator Widget (CSR) */}
+            <SaveRateCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Total Views', description: 'Number of times the video was viewed', example: '50,000', required: true },
+                  { name: 'Total Saves', description: 'Number of times viewers saved the video', example: '1,000', required: true },
+                ]}
+                note="Save rate above 2% indicates highly valuable, reference-worthy content."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 What is Save Rate?
@@ -311,6 +330,10 @@ This 2% save rate indicates good content value`}
               { name: 'Content Value Calculator', slug: 'content-value', description: 'Estimate content portfolio value', icon: 'Gem' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="save-rate" variant="full" />
+          </div>
         </div>
       </div>
     </div>

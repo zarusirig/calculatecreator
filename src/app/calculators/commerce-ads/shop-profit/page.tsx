@@ -8,6 +8,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Commission Calculator: Seller Fees Explained (2026)',
@@ -62,6 +63,18 @@ export default function ShopCommissionCalculatorPage() {
 
         <div className="max-w-3xl mx-auto">
           <ShopCommissionCalculatorWidget />
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-8">
+          <InputsExplained
+            inputs={[
+              { name: 'Product Price', description: 'Your product selling price on TikTok Shop', example: '$35', required: true },
+              { name: 'Units Sold', description: 'Number of products sold', example: '500', required: true },
+              { name: 'TikTok Commission', description: 'TikTok Shop commission rate (2-8%)', example: '5%' },
+              { name: 'Product Cost', description: 'Your cost per unit including shipping', example: '$15' },
+            ]}
+            note="TikTok Shop commission varies by category: 2% for essentials, 5% standard, 8% for luxury."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12 space-y-8">

@@ -6,7 +6,9 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { AdSpendCalculatorWidget } from '@/components/calculators/ad-spend/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Spend Calculator: Plan Your Advertising Budget (2026)',
@@ -90,6 +92,10 @@ export default function AdSpendCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Whether you're planning conversion campaigns with typical CPAs of $15-$40 or brand awareness with CPMs of $3-$10, this calculator helps you determine optimal daily budgets, account for learning phase costs, and avoid common budget mistakes that waste money. Plan daily, weekly, and monthly budgets with confidence.
           </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="ad-spend" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -370,6 +376,17 @@ export default function AdSpendCalculatorPage() {
           </div>
         </div>
 
+        <div className="max-w-5xl mx-auto mb-12">
+          <InputsExplained
+            inputs={[
+              { name: 'Daily Budget', description: 'Amount you plan to spend per day on ads', example: '$50', required: true },
+              { name: 'Campaign Duration', description: 'Number of days to run the campaign', example: '30 days' },
+              { name: 'Target CPM', description: 'Expected cost per 1,000 impressions', example: '$10' },
+            ]}
+            note="Start with $20-50/day minimum. TikTok needs data to optimize - too low budget limits learning."
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto">
           <MethodologySection
             calculatorName="ad-spend"
@@ -439,13 +456,8 @@ Monthly Budget = $125 × 30 = $3,750/month`}
             ]}
           />
 
-          <div className="mt-12 p-6 bg-neutral-50 border border-neutral-200 rounded-lg">
-            <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">
-              Professional Disclaimer
-            </h2>
-            <p className="text-body-sm text-neutral-600 leading-relaxed">
-              This Ad Spend Calculator is provided for informational and budget planning purposes only. Budget recommendations are estimates based on industry benchmarks and the data you provide. Actual campaign costs and performance will vary based on numerous factors including audience targeting, creative quality, competition, seasonality, and TikTok algorithm changes. This tool does not constitute financial, business, or advertising advice. Results are not guaranteed. Always start with smaller test budgets to validate assumptions before scaling. TikTok platform policies, minimums, and advertising costs are subject to change. For official guidance, consult TikTok for Business documentation or work with a certified TikTok marketing partner. Monitor campaigns closely and adjust budgets based on actual performance data.
-            </p>
+          <div className="mt-12">
+            <PageEEAT pageSlug="ad-spend" variant="full" />
           </div>
         </div>
       </div>

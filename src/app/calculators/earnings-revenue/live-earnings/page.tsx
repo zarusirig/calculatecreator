@@ -8,6 +8,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Income (2026)',
@@ -59,7 +60,18 @@ export default function LiveGiftsCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <LiveGiftsCalculatorWidget />
+          <div className="space-y-8">
+            <LiveGiftsCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Gifts Received', description: 'Total gift points/diamonds received', example: '50,000', required: true },
+                { name: 'Live Duration', description: 'Total hours of live streaming', example: '10 hours' },
+                { name: 'Average Viewers', description: 'Average concurrent viewers during lives', example: '500' },
+              ]}
+              note="TikTok takes 50% of gift value. Maximize earnings with engaging content and consistent streaming schedule."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>

@@ -17,6 +17,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 // FAQ data for schema markup
 const faqData = [
@@ -90,7 +91,18 @@ export default function TikTokMoneyCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <TikTokMoneyCalculatorWidget />
+          <div className="space-y-6">
+            <TikTokMoneyCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Followers', description: 'Your total TikTok follower count', example: '100,000', required: true },
+                { name: 'Average Views', description: 'Average views per video', example: '50,000', required: true },
+                { name: 'Engagement Rate', description: 'Your engagement rate percentage', example: '5%' },
+              ]}
+              note="Total earnings combine Creator Fund, brand deals, affiliate income, and other revenue streams."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>

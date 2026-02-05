@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CommentRateCalculatorWidget } from '@/components/calculators/comment-rate/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Comment Rate Calculator: Measure Audience Engagement (2026)',
@@ -79,6 +81,10 @@ export default function CommentRateCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Calculate your comment-to-view ratio to measure true community engagement beyond passive likes. This metric reveals how effectively your content sparks conversation and builds loyal audiences. High comment rates signal to TikTok's algorithm that your content is discussion-worthy, earning better distribution. Ideal comment rates range from 0.5-1% for most creators, with exceptional content exceeding 1%.
           </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="comment-rate" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -244,6 +250,16 @@ export default function CommentRateCalculatorPage() {
             </div>
           </Card>
 
+          <div className="mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Total Views', description: 'Number of views on the video', example: '100,000', required: true },
+                { name: 'Total Comments', description: 'Number of comments received', example: '500', required: true },
+              ]}
+              note="Comment rate above 0.5% indicates highly engaging content. Comments are weighted heavily by the algorithm."
+            />
+          </div>
+
           <MethodologySection
             calculatorName="comment-rate"
             formula={`Comment Rate = (Comments / Views) × 100
@@ -294,14 +310,9 @@ This 0.5% comment rate indicates good community engagement`}
             ]}
           />
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
-              Disclaimer
-            </h2>
-            <p className="text-body-sm text-neutral-600">
-              This TikTok Comment Rate Calculator provides estimates based on publicly available information and industry research. Results may vary based on content type, niche, audience demographics, posting time, and TikTok's evolving algorithm.
-            </p>
-          </Card>
+          <div className="mt-12">
+            <PageEEAT pageSlug="comment-rate" variant="full" />
+          </div>
 
           <RelatedCalculators
             currentCalculator="comment-rate"

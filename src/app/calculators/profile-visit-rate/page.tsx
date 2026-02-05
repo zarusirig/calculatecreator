@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { ProfileVisitRateCalculatorWidget } from '@/components/calculators/profile-visit-rate/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Profile Visit Rate Calculator (2026)',
@@ -102,8 +104,22 @@ export default function ProfileVisitRateCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="profile-visit-rate" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <ProfileVisitRateCalculatorWidget />
+          <div className="space-y-8">
+            <ProfileVisitRateCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Total Video Views', description: 'Views on the video being analyzed', example: '50,000', required: true },
+                { name: 'Profile Visits', description: 'Number of viewers who visited your profile', example: '2,500', required: true },
+              ]}
+              note="Profile visit rate above 5% indicates strong curiosity about your other content. Optimize your bio and pinned videos."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -316,6 +332,10 @@ Visit Rate: (5,000 / 100,000) × 100 = 5%`}
               { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Measure overall engagement', icon: 'BarChart3' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="profile-visit-rate" variant="full" />
+          </div>
         </div>
       </div>
     </div>

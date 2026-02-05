@@ -6,7 +6,9 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { AudienceOverlapCalculatorWidget } from '@/components/calculators/audience-overlap/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Audience Overlap Calculator: Optimize Ad Targeting (2026)',
@@ -90,6 +92,10 @@ export default function AudienceOverlapCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach. High overlap above 40% can waste nearly half your budget on duplicate impressions and cause your campaigns to compete against each other in auctions. Use this calculator to measure overlap percentage, understand efficiency impact, and implement targeting strategies that ensure you're reaching new users rather than paying twice for the same audience.
           </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="audience-overlap" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -348,6 +354,17 @@ export default function AudienceOverlapCalculatorPage() {
           </div>
         </div>
 
+        <div className="max-w-5xl mx-auto mb-12">
+          <InputsExplained
+            inputs={[
+              { name: 'Audience A Size', description: 'Size of your first target audience', example: '500,000', required: true },
+              { name: 'Audience B Size', description: 'Size of your second target audience', example: '750,000', required: true },
+              { name: 'Estimated Overlap', description: 'Estimated number of users in both audiences', example: '150,000' },
+            ]}
+            note="Lower overlap (under 20%) means more new audience reach. High overlap wastes budget on duplicate impressions."
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto">
           <MethodologySection
             calculatorName="audience-overlap"
@@ -422,13 +439,8 @@ Interpretation: 25% overlap means 100K users are targeted twice, reducing effici
             ]}
           />
 
-          <div className="mt-12 p-6 bg-neutral-50 border border-neutral-200 rounded-lg">
-            <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">
-              Professional Disclaimer
-            </h2>
-            <p className="text-body-sm text-neutral-600 leading-relaxed">
-              This Audience Overlap Calculator is provided for informational and analytical purposes only. Overlap calculations are estimates based on the data you provide and general platform behaviors. TikTok does not provide exact overlap figures like some other platforms, so results rely on estimated reach data and audience comparisons. Actual overlap may differ due to cookie policies, device targeting, logged-out users, and platform algorithm changes. Some audience overlap may be intentional and strategic for certain campaign objectives. This tool does not constitute advertising, targeting, or business strategy advice. Results should be used as guidance for optimization testing, not absolute performance predictors. For official targeting guidance, consult TikTok for Business documentation or work with a certified TikTok marketing partner. Always test optimization changes and measure actual performance impact before making major campaign adjustments.
-            </p>
+          <div className="mt-12">
+            <PageEEAT pageSlug="audience-overlap" variant="full" />
           </div>
         </div>
       </div>

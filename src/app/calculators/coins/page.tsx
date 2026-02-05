@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Coins Calculator: Convert Coins to USD & Diamonds (2026)',
@@ -171,6 +172,17 @@ export default function CoinsCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <CoinsCalculatorWidget />
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Coin Amount', description: 'Number of TikTok coins to convert', example: '1,000', required: true },
+                { name: 'Purchase Bundle', description: 'Coin package purchased (affects price per coin)', example: '1,000 coins ($13.99)' },
+                { name: 'Currency', description: 'Your local currency', example: 'USD' },
+              ]}
+              note="1 coin ≈ $0.0139. Creators receive 50% of gift value as diamonds. Larger bundles offer slightly better rates."
+            />
           </div>
 
           {/* Educational Content Cards */}

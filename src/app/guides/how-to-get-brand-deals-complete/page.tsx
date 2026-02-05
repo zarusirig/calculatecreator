@@ -369,7 +369,6 @@ export default function HowToGetBrandDealsPage() {
           </div>
         </Card>
 
-        <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Frequently Asked Questions</h2>
         <FAQSection pageName="How to Get Brand Deals" faqs={faqs} />
 
         <Card>

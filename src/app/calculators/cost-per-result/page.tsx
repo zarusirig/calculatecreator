@@ -6,7 +6,9 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CostPerResultCalculatorWidget } from '@/components/calculators/cost-per-result/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Cost Per Result Calculator: Measure Ad Efficiency (2026)',
@@ -90,6 +92,10 @@ export default function CostPerResultCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Calculate cost per result for your TikTok ad campaigns by dividing total spend by results achieved. This versatile calculator measures CPC (Cost Per Click), CPA (Cost Per Acquisition), CPV (Cost Per View), CPL (Cost Per Lead), or CPE (Cost Per Engagement) depending on your campaign objective. Compare against industry benchmarks ranging from $0.20-$1.00 CPC to identify optimization opportunities and maximize advertising efficiency.
           </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="cost-per-result" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -322,6 +328,17 @@ export default function CostPerResultCalculatorPage() {
           </div>
         </div>
 
+        <div className="max-w-5xl mx-auto mb-12">
+          <InputsExplained
+            inputs={[
+              { name: 'Total Ad Spend', description: 'Amount spent on the campaign', example: '$1,000', required: true },
+              { name: 'Total Results', description: 'Number of conversions achieved', example: '50', required: true },
+              { name: 'Result Type', description: 'Type of conversion (purchase, signup, etc.)', example: 'Purchase' },
+            ]}
+            note="Compare cost per result across campaigns to identify most efficient ad strategies."
+          />
+        </div>
+
         <div className="max-w-5xl mx-auto">
           <MethodologySection
             calculatorName="cost-per-result"
@@ -385,13 +402,8 @@ Note: "Result" varies by objective—clicks (CPC), conversions (CPA), views (CPV
             ]}
           />
 
-          <div className="mt-12 p-6 bg-neutral-50 border border-neutral-200 rounded-lg">
-            <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">
-              Professional Disclaimer
-            </h2>
-            <p className="text-body-sm text-neutral-600 leading-relaxed">
-              This Cost Per Result Calculator is provided for informational and educational purposes only. Results are estimates based on the data you provide and industry benchmarks. Actual campaign performance may vary based on numerous factors including targeting, creative quality, competition, seasonality, and platform algorithm changes. This tool does not constitute financial, business, or advertising advice. Always conduct thorough testing and analysis before making significant advertising budget decisions. TikTok advertising costs and performance metrics are subject to change. For official guidance, consult TikTok for Business documentation or a certified TikTok marketing partner.
-            </p>
+          <div className="mt-12">
+            <PageEEAT pageSlug="cost-per-result" variant="full" />
           </div>
         </div>
       </div>

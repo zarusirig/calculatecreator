@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FollowerConversionCalculatorWidget } from '@/components/calculators/follower-conversion/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Follower Conversion Rate Calculator (2026)',
@@ -80,8 +82,22 @@ export default function FollowerConversionCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="follower-conversion" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <FollowerConversionCalculatorWidget />
+          <div className="space-y-8">
+            <FollowerConversionCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Profile Visits', description: 'Number of users who visited your profile', example: '5,000', required: true },
+                { name: 'New Followers', description: 'Number of visitors who followed', example: '500', required: true },
+              ]}
+              note="Follower conversion above 10% is excellent. Improve with a compelling bio and strong pinned content."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -395,6 +411,10 @@ Revenue: $3,750 ($0.075 per follower)`}
               { name: 'Follower Growth Calculator', slug: 'follower-growth', description: 'Project future follower count', icon: 'TrendingUp' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="follower-conversion" variant="full" />
+          </div>
         </div>
       </div>
     </div>

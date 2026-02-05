@@ -9,6 +9,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok RPM Calculator: Revenue Per 1000 Views (2026)',
@@ -82,6 +83,17 @@ export default function RPMCalculatorPage() {
 
         <div className="max-w-3xl mx-auto">
           <RpmCalculatorWidget />
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-8">
+          <InputsExplained
+            inputs={[
+              { name: 'Total Revenue', description: 'Earnings from all monetization sources', example: '$200', required: true },
+              { name: 'Total Views', description: 'Total video views in the same period', example: '100,000', required: true },
+              { name: 'Revenue Source', description: 'Creator Fund, ads, sponsorships, etc.', example: 'Creator Fund' },
+            ]}
+            note="RPM = (Total Revenue / Total Views) × 1000. Creator Fund RPM: $0.02-$0.04. Creator Rewards: $0.40-$1.00."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12 space-y-8">

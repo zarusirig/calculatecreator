@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Cost Calculator: Estimate Campaign Budget (2026)',
@@ -171,6 +172,18 @@ export default function TikTokAdCostCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <TikTokAdCostCalculatorWidget />
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Campaign Budget', description: 'Total ad spend budget for campaign', example: '$5,000', required: true },
+                { name: 'Target Audience Size', description: 'Estimated reach of target demographics', example: '500,000', required: true },
+                { name: 'Ad Format', description: 'Type of TikTok ad (In-Feed, Spark, TopView)', example: 'In-Feed' },
+                { name: 'Campaign Duration', description: 'Length of ad campaign', example: '30 days' },
+              ]}
+              note="Minimum daily budget: $20. In-Feed ads average $10/CPM. Spark Ads often cost 20-30% less."
+            />
           </div>
 
           {/* Educational Content Cards */}

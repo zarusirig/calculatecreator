@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { MilestoneTrackerCalculatorWidget } from '@/components/calculators/milestone-tracker/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Milestone Tracker Calculator (2026)',
@@ -80,8 +82,24 @@ export default function MilestoneTrackerCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="milestone-tracker" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <MilestoneTrackerCalculatorWidget />
+          <div className="space-y-8">
+            <MilestoneTrackerCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Current Followers', description: 'Your current follower count', example: '8,500', required: true },
+                { name: 'Target Milestone', description: 'Next follower goal to reach', example: '10,000', required: true },
+                { name: 'Daily Growth Rate', description: 'Average new followers per day', example: '50' },
+                { name: 'Growth Trend', description: 'Is growth accelerating or slowing?', example: 'Steady' },
+              ]}
+              note="Major milestones: 1K (LIVE gifts), 10K (Creator Fund), 100K (verified badge opportunities)."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -501,6 +519,10 @@ Progress = (5000 / 10000) x 100 = 50%`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="milestone-tracker" variant="full" />
+          </div>
 
           <RelatedCalculators
             currentCalculator="milestone-tracker"

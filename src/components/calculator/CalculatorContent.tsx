@@ -407,6 +407,12 @@ export function CalculatorDisclaimer({ type = 'general', customText }: Calculato
 }
 
 // ============================================
+// INPUTS EXPLAINED (re-export from separate file)
+// ============================================
+export { InputsExplained } from './InputsExplained';
+export type { InputItem, InputsExplainedProps } from './InputsExplained';
+
+// ============================================
 // EXPORT ALL
 // ============================================
 export default {

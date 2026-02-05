@@ -553,7 +553,6 @@ export default function TikTokLiveEarningsPage() {
 
         {/* FAQs */}
         <section>
-          <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Frequently Asked Questions</h2>
           <FAQSection pageName="LIVE Earnings" faqs={faqs} />
         </section>
 

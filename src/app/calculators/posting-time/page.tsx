@@ -9,6 +9,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PostingTimeCalculatorWidget } from '@/components/calculators/posting-time/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Best Posting Time Calculator (2026)',
@@ -115,7 +116,18 @@ export default function PostingTimeCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <PostingTimeCalculatorWidget />
+          <div className="space-y-8">
+            <PostingTimeCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Time Zone', description: 'Your target audience time zone', example: 'EST', required: true },
+                { name: 'Content Type', description: 'Type of content you are posting', example: 'Entertainment' },
+                { name: 'Target Audience', description: 'Age group and interests of your audience', example: '18-24, students' },
+              ]}
+              note="Best times vary by niche. Test different slots and check TikTok Analytics for your audience activity."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>

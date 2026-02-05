@@ -8,6 +8,7 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DollarSign, RotateCcw, TrendingUp, Users, BarChart2, Target, Tag, ShoppingCart, Lightbulb } from 'lucide-react';
 import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Cost Calculator: CPM, CPV & Budget Estimator (2026)',
@@ -206,8 +207,17 @@ export default function TikTokAdCostCalculatorPage() {
             </Card>
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-6">
             <TikTokAdCostCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Daily Budget', description: 'Your planned daily ad spend', example: '$50', required: true },
+                { name: 'Campaign Duration', description: 'Number of days to run ads', example: '30 days' },
+                { name: 'Target CPM', description: 'Expected cost per 1,000 impressions', example: '$8' },
+              ]}
+              note="TikTok minimum daily budget is $20. Start with $50/day for meaningful data collection."
+            />
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">

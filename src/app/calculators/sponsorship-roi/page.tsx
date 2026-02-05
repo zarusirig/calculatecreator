@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { SponsorshipROICalculatorWidget } from '@/components/calculators/sponsorship-roi/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Sponsorship ROI Calculator: Measure Brand Deal Returns (2026)',
@@ -80,8 +82,24 @@ export default function SponsorshipROICalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="sponsorship-roi" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <SponsorshipROICalculatorWidget />
+          <div className="space-y-8">
+            <SponsorshipROICalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Sponsorship Fee', description: 'Amount paid by the brand for the partnership', example: '$5,000', required: true },
+                { name: 'Production Cost', description: 'Your costs to create the sponsored content', example: '$500' },
+                { name: 'Views Generated', description: 'Total views the sponsored content received', example: '200,000' },
+                { name: 'Conversions', description: 'Sales or signups attributed to the sponsorship', example: '150' },
+              ]}
+              note="Track ROI per brand to identify which partnerships are most profitable for future negotiations."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -523,6 +541,10 @@ ROI: [($100,000 - $5,500) / $5,500] × 100 = 1,718%`}
               </p>
             </div>
           </Card>
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="sponsorship-roi" variant="full" />
+          </div>
         </div>
       </div>
     </div>

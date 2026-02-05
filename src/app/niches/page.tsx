@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { Sparkles, DollarSign, TrendingUp, Dumbbell, PiggyBank, Target, Users, BarChart3, Lightbulb, TrendingDown, ArrowRightLeft, Layers } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -103,6 +104,7 @@ export default function NichesPage() {
         items={schemaItems}
         collectionType="Guides"
       />
+      <FAQPageSchema faqs={faqs} />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
         <div className="container-custom">
           <Breadcrumb

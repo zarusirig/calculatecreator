@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { BlogListingSchema } from '@/components/seo/BlogListingSchema';
 import {
   FileText, TrendingUp, DollarSign, Users, BarChart3, Sparkles,
@@ -153,6 +154,7 @@ export default function BlogPage() {
   return (
     <>
       <BlogListingSchema />
+      <FAQPageSchema faqs={faqs} />
       <div className="min-h-screen bg-neutral-50">
         {/* Breadcrumb Navigation */}
         <nav className="bg-white border-b border-neutral-200 py-3">

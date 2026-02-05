@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Fund Calculator: Estimate Your Earnings (2026)',
@@ -171,6 +172,18 @@ export default function TikTokCreatorFundCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <CreatorFundCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Daily Views', description: 'Average daily video views across all content', example: '100,000', required: true },
+                { name: 'Total Videos', description: 'Number of videos posted in the period', example: '30' },
+                { name: 'Content Type', description: 'Original vs trending content affects payouts', example: 'Original' },
+              ]}
+              note="Creator Fund pays $0.02-0.04 per 1,000 views. Payouts vary by region and content originality."
+            />
           </div>
 
           {/* Educational Content Cards */}

@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamond-converter/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Diamond Converter: Convert Diamonds to USD (2026 Rates)',
@@ -171,6 +172,16 @@ export default function DiamondConverterPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <DiamondConverterCalculatorWidget />
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Diamonds', description: 'Number of diamonds earned from LIVE gifts', example: '10,000', required: true },
+                { name: 'Currency', description: 'Your preferred payout currency', example: 'USD' },
+              ]}
+              note="Each diamond = $0.005 USD. Minimum withdrawal is 10,000 diamonds ($50). TikTok takes 50% before conversion."
+            />
           </div>
 
           {/* Educational Content Cards */}

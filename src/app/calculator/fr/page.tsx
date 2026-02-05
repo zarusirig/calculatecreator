@@ -394,7 +394,7 @@ export default function CalculatriceTikTokFR() {
               question: 'Combien de temps pour atteindre un revenu stable sur TikTok?',
               answer: 'Chronologie réaliste en France: 3-5 mois pour atteindre 10K abonnés avec contenu qualité et constance, 5-8 mois pour premiers partenariats marques (€500-€2 000), 8-12 mois pour revenu mensuel €2 000-€4 000, 12-18 mois pour revenu temps plein €3 500-€8 000/mois. 18% des créateurs français atteignent ces objectifs plus rapidement avec stratégie optimale, niche premium et réseau influenceur. Investissement initial recommandé: €800-€2 000 en équipement et formation.',
             },
-          ]} pageName="calculator-fr" />
+          ]} pageName="calculator-fr" title="" />
         </div>
 
       </div>

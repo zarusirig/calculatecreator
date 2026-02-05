@@ -18,6 +18,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { DollarSign, Users, Eye, Cake, CheckCircle, Globe, Video, Handshake, Gift, ShoppingBag } from 'lucide-react';
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 const faqs = [
   {
@@ -103,7 +104,17 @@ export default function CreatorFundCalculatorPage() {
           </div>
 
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 lg:mb-12">
-            <CreatorFundCalculatorWidget />
+            <div className="space-y-6">
+              <CreatorFundCalculatorWidget />
+
+              <InputsExplained
+                inputs={[
+                  { name: 'Daily Views', description: 'Average daily views across your content', example: '100,000', required: true },
+                  { name: 'Region', description: 'Your country/region affects payout rates', example: 'USA' },
+                ]}
+                note="Creator Fund pays $0.02-0.04 per 1,000 views. Rates vary by region and content originality."
+              />
+            </div>
 
             <div className="space-y-8">
               <Card className="animate-slide-in-right stagger-1">

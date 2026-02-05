@@ -378,7 +378,7 @@ export default function CalcolatoreTikTokIT() {
               question: 'Quanto tempo ci vuole per iniziare a guadagnare su TikTok?',
               answer: 'Variabile, ma mediamente: Creator Fund dopo 2-4 mesi di posting consistente (raggiungimento 10K follower). Prime collaborazioni brand dopo 3-6 mesi con 5K-10K follower in nicchia definita. Reddito sostenibile (€1.000+/mese) dopo 6-12 mesi di lavoro dedicato. Il 15% dei creator raggiunge questi obiettivi più velocemente con strategia ottimale e contenuti virali.',
             },
-          ]} pageName="calculator-it" />
+          ]} pageName="calculator-it" title="" />
         </div>
 
       </div>

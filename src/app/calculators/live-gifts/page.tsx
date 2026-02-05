@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Earnings (2026)',
@@ -171,6 +172,18 @@ export default function LiveGiftsCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <LiveGiftsCalculatorWidget />
+          </div>
+
+          <div className="max-w-3xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Average Viewers', description: 'Concurrent viewers during your LIVE stream', example: '200', required: true },
+                { name: 'Stream Duration', description: 'Length of each LIVE session in hours', example: '2 hours', required: true },
+                { name: 'Streams Per Week', description: 'How often you go LIVE', example: '4' },
+                { name: 'Gift Rate', description: 'Percentage of viewers who send gifts', example: '5%' },
+              ]}
+              note="TikTok takes 50% of gift value. You earn diamonds worth $0.005 each, redeemable at $50 minimum."
+            />
           </div>
 
           {/* Educational Content Cards */}

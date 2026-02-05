@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { HashtagPerformanceCalculatorWidget } from '@/components/calculators/hashtag-performance/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Hashtag Performance Calculator (2026)',
@@ -80,10 +82,28 @@ export default function HashtagPerformanceCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <HashtagPerformanceCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="hashtag-performance" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <HashtagPerformanceCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Hashtag', description: 'The hashtag you want to analyze', example: '#fitness', required: true },
+                  { name: 'Your Views', description: 'Views on your posts using this hashtag', example: '25,000' },
+                  { name: 'Hashtag Total Views', description: 'Total views the hashtag has received', example: '10B' },
+                ]}
+                note="Mix trending hashtags (high competition) with niche hashtags (lower competition, targeted reach)."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 Why Hashtag Performance Matters
@@ -385,6 +405,10 @@ Effectiveness Score: 75/100 (Highly Effective)`}
               { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Measure overall engagement', icon: 'BarChart3' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="hashtag-performance" variant="full" />
+          </div>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
@@ -171,6 +172,19 @@ export default function TikTokMoneyCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <TikTokMoneyCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Followers', description: 'Your total TikTok follower count', example: '100,000', required: true },
+                { name: 'Average Views', description: 'Average views per video over last 30 days', example: '50,000', required: true },
+                { name: 'Engagement Rate', description: 'Your average engagement rate (likes + comments / followers)', example: '5%' },
+                { name: 'Niche', description: 'Your content category affects brand deal rates and CPM', example: 'Beauty' },
+              ]}
+              note="For most accurate results, use your 30-day average metrics from TikTok Analytics."
+            />
           </div>
 
           {/* Educational Content Cards */}

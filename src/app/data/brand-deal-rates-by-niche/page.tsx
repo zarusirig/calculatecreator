@@ -591,7 +591,6 @@ export default function BrandDealRatesByNichePage() {
 
         {/* FAQ Section */}
         <div>
-          <h2 className="text-display-sm font-bold text-neutral-900 mb-6">Frequently Asked Questions</h2>
           <FAQSection
             pageName="Brand Deal Rates by Niche"
             faqs={faqs}

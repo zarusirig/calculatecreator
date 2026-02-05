@@ -5,6 +5,50 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Zap, TrendingUp, Lightbulb, DollarSign, Brain, Shield, Sparkles, Calendar, Bell, Search, Users } from 'lucide-react';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
+
+const newsFaqs = [
+  {
+    question: 'How often does TikTok release major updates?',
+    answer: 'TikTok typically releases major feature updates monthly, with algorithm adjustments happening even more frequently (sometimes weekly). Monetization program changes tend to occur quarterly, while policy and regulatory news is ongoing. Our news page is updated within 24 hours of official announcements to keep creators informed of all changes affecting their strategy and earnings.'
+  },
+  {
+    question: 'How do algorithm changes affect my existing content?',
+    answer: 'Algorithm changes can retroactively impact older content distribution. When TikTok shifted to prioritize retention metrics in mid-2026, videos with strong hooks and high completion rates saw renewed distribution even months after posting. However, content optimized for old metrics (like likes/comments only) experienced decreased reach. This is why monitoring algorithm news helps you understand fluctuations in older video performance.'
+  },
+  {
+    question: 'Where does TikTok announce official updates?',
+    answer: 'TikTok announces updates through multiple channels: TikTok Newsroom (newsroom.tiktok.com) for major features and policy changes, the TikTok Creator Portal for monetization updates, in-app notifications for feature rollouts, and the @tiktokforbusiness account for advertising/commerce news. We aggregate all these sources plus industry reports to provide comprehensive coverage in one place.'
+  },
+  {
+    question: 'Should I change my content strategy immediately after algorithm updates?',
+    answer: 'Test incrementally before committing fully to strategy changes. When retention metrics became prioritized in 2026, smart creators A/B tested hook styles and video lengths across 10-20 videos while monitoring analytics. Complete pivots based on single announcements can backfire if you misinterpret the change. Verify algorithm updates by checking if your top-performing content aligns with new metrics before overhauling your entire approach.'
+  },
+  {
+    question: 'Do TikTok Shop updates affect all creators?',
+    answer: 'TikTok Shop updates primarily impact creators who sell products or participate in affiliate programs. However, Shop expansion and GMV growth indirectly affect all creators as TikTok invests more resources in commerce features, search optimization, and longer video formats. Even non-Shop creators should monitor these updates as they signal platform priorities and algorithm focus areas.'
+  },
+  {
+    question: 'How quickly should I adapt to new monetization requirements?',
+    answer: 'Adapt immediately when monetization requirements change. When Creator Rewards replaced Creator Fund in May 2026, the 1-minute minimum video length requirement took effect instantly. Creators who continued posting 15-30 second videos became ineligible for monetization overnight. Set up alerts for monetization category updates and have a rapid content strategy pivot plan ready.'
+  },
+  {
+    question: 'Are regulatory updates relevant to international creators?',
+    answer: 'Yes. While US regulatory news (like the TikTok ban discussions) directly impacts American creators, these decisions influence TikTok\'s global strategy. The US-China framework agreement in September 2026 led to increased platform stability worldwide, expanded Shop to Europe, and increased Creator Rewards investment globally. Regulatory changes often cascade to affect features and policies internationally.'
+  },
+  {
+    question: 'What is the best way to stay updated on TikTok news?',
+    answer: 'Bookmark this page and check weekly for breaking news. Subscribe to TikTok Creator Portal email updates for monetization changes. Follow TikTok Newsroom for official announcements. Join creator communities on Discord or Reddit where changes are discussed in real-time. Set Google Alerts for "TikTok algorithm update" and "TikTok monetization change" to catch news from multiple sources.'
+  },
+  {
+    question: 'How do new features impact content distribution?',
+    answer: 'TikTok algorithmically promotes content using new features to encourage adoption. When AI Outline and Smart Split launched in November 2026, creators using these tools reported 25-40% higher initial distribution. This "new feature boost" typically lasts 2-4 weeks before normalizing. Early adoption gives you a temporary algorithmic advantage and helps you master tools before competitors.'
+  },
+  {
+    question: 'How reliable are unofficial TikTok news sources?',
+    answer: 'Unofficial sources like creator forums and social media speculation should be verified against official announcements before acting. However, creator communities often surface bugs, shadow-bans, and undocumented algorithm changes before TikTok acknowledges them publicly. Cross-reference community reports with your own analytics and wait for pattern confirmation from multiple creators before considering unofficial information actionable.'
+  }
+];
 
 export const metadata: Metadata = {
   title: {
@@ -215,6 +259,7 @@ export default function NewsPage() {
         items={schemaItems}
         collectionType="News"
       />
+      <FAQPageSchema faqs={newsFaqs} />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50">
         <Breadcrumb
           items={[
@@ -699,48 +744,7 @@ export default function NewsPage() {
         {/* FAQ Section */}
         <FAQSection
           pageName="TikTok News"
-          faqs={[
-            {
-              question: 'How often does TikTok release major updates?',
-              answer: 'TikTok typically releases major feature updates monthly, with algorithm adjustments happening even more frequently (sometimes weekly). Monetization program changes tend to occur quarterly, while policy and regulatory news is ongoing. Our news page is updated within 24 hours of official announcements to keep creators informed of all changes affecting their strategy and earnings.'
-            },
-            {
-              question: 'How do algorithm changes affect my existing content?',
-              answer: 'Algorithm changes can retroactively impact older content distribution. When TikTok shifted to prioritize retention metrics in mid-2026, videos with strong hooks and high completion rates saw renewed distribution even months after posting. However, content optimized for old metrics (like likes/comments only) experienced decreased reach. This is why monitoring algorithm news helps you understand fluctuations in older video performance.'
-            },
-            {
-              question: 'Where does TikTok announce official updates?',
-              answer: 'TikTok announces updates through multiple channels: TikTok Newsroom (newsroom.tiktok.com) for major features and policy changes, the TikTok Creator Portal for monetization updates, in-app notifications for feature rollouts, and the @tiktokforbusiness account for advertising/commerce news. We aggregate all these sources plus industry reports to provide comprehensive coverage in one place.'
-            },
-            {
-              question: 'Should I change my content strategy immediately after algorithm updates?',
-              answer: 'Test incrementally before committing fully to strategy changes. When retention metrics became prioritized in 2026, smart creators A/B tested hook styles and video lengths across 10-20 videos while monitoring analytics. Complete pivots based on single announcements can backfire if you misinterpret the change. Verify algorithm updates by checking if your top-performing content aligns with new metrics before overhauling your entire approach.'
-            },
-            {
-              question: 'Do TikTok Shop updates affect all creators?',
-              answer: 'TikTok Shop updates primarily impact creators who sell products or participate in affiliate programs. However, Shop expansion and GMV growth indirectly affect all creators as TikTok invests more resources in commerce features, search optimization, and longer video formats. Even non-Shop creators should monitor these updates as they signal platform priorities and algorithm focus areas.'
-            },
-            {
-              question: 'How quickly should I adapt to new monetization requirements?',
-              answer: 'Adapt immediately when monetization requirements change. When Creator Rewards replaced Creator Fund in May 2026, the 1-minute minimum video length requirement took effect instantly. Creators who continued posting 15-30 second videos became ineligible for monetization overnight. Set up alerts for monetization category updates and have a rapid content strategy pivot plan ready.'
-            },
-            {
-              question: 'Are regulatory updates relevant to international creators?',
-              answer: 'Yes. While US regulatory news (like the TikTok ban discussions) directly impacts American creators, these decisions influence TikTok\'s global strategy. The US-China framework agreement in September 2026 led to increased platform stability worldwide, expanded Shop to Europe, and increased Creator Rewards investment globally. Regulatory changes often cascade to affect features and policies internationally.'
-            },
-            {
-              question: 'What is the best way to stay updated on TikTok news?',
-              answer: 'Bookmark this page and check weekly for breaking news. Subscribe to TikTok Creator Portal email updates for monetization changes. Follow TikTok Newsroom for official announcements. Join creator communities on Discord or Reddit where changes are discussed in real-time. Set Google Alerts for "TikTok algorithm update" and "TikTok monetization change" to catch news from multiple sources.'
-            },
-            {
-              question: 'How do new features impact content distribution?',
-              answer: 'TikTok algorithmically promotes content using new features to encourage adoption. When AI Outline and Smart Split launched in November 2026, creators using these tools reported 25-40% higher initial distribution. This "new feature boost" typically lasts 2-4 weeks before normalizing. Early adoption gives you a temporary algorithmic advantage and helps you master tools before competitors.'
-            },
-            {
-              question: 'How reliable are unofficial TikTok news sources?',
-              answer: 'Unofficial sources like creator forums and social media speculation should be verified against official announcements before acting. However, creator communities often surface bugs, shadow-bans, and undocumented algorithm changes before TikTok acknowledges them publicly. Cross-reference community reports with your own analytics and wait for pattern confirmation from multiple creators before considering unofficial information actionable.'
-            }
-          ]}
+          faqs={newsFaqs}
         />
 
         {/* Related Tools CTA Section */}

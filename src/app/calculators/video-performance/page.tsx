@@ -19,6 +19,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { VideoPerformanceCalculatorWidget } from '@/components/calculators/video-performance/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Video Performance Calculator 2026 | Analyze Your Content',
@@ -263,6 +264,20 @@ export default function VideoPerformanceCalculatorPage() {
           {/* Calculator Widget */}
           <div className="mb-10">
             <VideoPerformanceCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="mb-10">
+            <InputsExplained
+              inputs={[
+                { name: 'Views', description: 'Total video views', example: '100,000', required: true },
+                { name: 'Likes', description: 'Total likes received', example: '8,000' },
+                { name: 'Comments', description: 'Total comments received', example: '500' },
+                { name: 'Shares', description: 'Total shares received', example: '300' },
+                { name: 'Watch Time', description: 'Average watch time percentage', example: '65%' },
+              ]}
+              note="Compare metrics against your account averages to identify high-performing content patterns."
+            />
           </div>
 
           {/* Educational Cards */}

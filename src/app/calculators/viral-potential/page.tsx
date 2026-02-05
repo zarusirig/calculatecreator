@@ -6,8 +6,10 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ViralPotentialCalculatorWidget } from '@/components/calculators/viral-potential/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Viral Potential Calculator: Predict Content Virality (2026)',
@@ -102,8 +104,26 @@ export default function ViralPotentialCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="viral-potential" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <ViralPotentialCalculatorWidget />
+
+          {/* Inputs Explained */}
+          <div className="lg:col-span-2 mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Completion Rate', description: 'Percentage of viewers who watch the entire video', example: '75%', required: true },
+                { name: 'Share Rate', description: 'Percentage of viewers who share the video', example: '4%', required: true },
+                { name: 'Engagement Rate', description: 'Combined likes, comments as percentage of views', example: '8%' },
+                { name: 'Save Rate', description: 'Percentage of viewers who save the video', example: '2%' },
+                { name: 'Follower Count', description: 'Your current follower count for reach baseline', example: '25,000' },
+              ]}
+              note="Completion rate and share rate are the strongest predictors of viral content."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -329,6 +349,10 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
               { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track overall engagement', icon: 'BarChart3' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="viral-potential" variant="full" />
+          </div>
         </div>
       </div>
     </div>

@@ -4,9 +4,11 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { ConversionRateCalculatorWidget } from '@/components/calculators/conversion-rate/CalculatorWidget';
 import { Target } from 'lucide-react';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Conversion Rate Calculator: Track Sales Performance (2026)',
@@ -100,8 +102,23 @@ export default function ConversionRateCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="conversion-rate" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <ConversionRateCalculatorWidget />
+
+          {/* Inputs Explained */}
+          <div className="lg:col-span-2 mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Total Visitors', description: 'Number of unique visitors from TikTok', example: '10,000', required: true },
+                { name: 'Conversions', description: 'Number of desired actions completed (purchases, signups)', example: '300', required: true },
+              ]}
+              note="Use UTM parameters to track TikTok traffic separately from other sources."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -281,6 +298,10 @@ Visitors Needed = 100 / 0.03 = 3,334 visitors`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="conversion-rate" variant="full" />
+          </div>
         </div>
       </div>
     </div>

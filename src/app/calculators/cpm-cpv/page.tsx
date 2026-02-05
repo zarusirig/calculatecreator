@@ -9,6 +9,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CPMCPVCalculatorWidget } from '@/components/calculators/cpm-cpv/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok CPM & CPV Calculator: Ad Cost Benchmarks (2026)',
@@ -115,7 +116,18 @@ export default function CPMCPVCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <CPMCPVCalculatorWidget />
+          <div className="space-y-8">
+            <CPMCPVCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Total Ad Spend', description: 'Amount spent on the ad campaign', example: '$1,000', required: true },
+                { name: 'Impressions', description: 'Total times the ad was shown', example: '200,000', required: true },
+                { name: 'Video Views', description: 'Number of video views (for CPV)', example: '50,000' },
+              ]}
+              note="TikTok CPM ranges $5-15. Lower CPM with better targeting and higher-quality creative."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>

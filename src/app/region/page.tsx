@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { Globe, BarChart3, CheckCircle, XCircle } from 'lucide-react';
@@ -340,6 +341,7 @@ export default function RegionPage() {
           'tiktok demographics',
         ]}
       />
+      <FAQPageSchema faqs={faqItems} />
 
       <div className="min-h-screen bg-neutral-50 py-12">
         <div className="container-custom max-w-4xl">

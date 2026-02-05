@@ -1,8 +1,6 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
-import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import {
   DollarSign,
@@ -33,14 +31,6 @@ import {
   Wallet,
   type LucideIcon,
 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'TikTok Calculators: 28 Free Tools',
-  description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators.',
-  alternates: {
-    canonical: 'https://calculatecreator.com/calculators/',
-  },
-};
 
 export default function CalculatorsPage() {
   const calculators: { name: string; slug: string; description: string; icon: LucideIcon; category: string; popular?: boolean }[] = [
@@ -278,23 +268,8 @@ export default function CalculatorsPage() {
 
   const categories = ['All', 'Earnings', 'Analytics', 'Growth', 'Engagement', 'Business', 'ROI', 'LIVE', 'Shop', 'Conversion'];
 
-  const schemaItems = calculators.map(calc => ({
-    name: calc.name,
-    description: calc.description,
-    url: `https://calculatecreator.com/calculators/${calc.slug}`,
-    category: calc.category,
-  }));
-
   return (
-    <>
-      <CollectionSchema
-        title="TikTok Calculators: 28 Free Tools"
-        description="Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators."
-        url="https://calculatecreator.com/calculators/"
-        items={schemaItems}
-        collectionType="Calculators"
-      />
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
         <div className="container-custom">
           <Breadcrumb
             items={[
@@ -823,6 +798,5 @@ export default function CalculatorsPage() {
         </div>
       </div>
     </div>
-    </>
   );
 }

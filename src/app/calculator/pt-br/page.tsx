@@ -394,7 +394,7 @@ export default function CalculadoraTikTokPTBR() {
               question: 'Quanto tempo para viver de TikTok no Brasil?',
               answer: 'Timeline realista: 2-4 meses para atingir 10K seguidores postando 2-3×/dia, 4-7 meses para primeiras publis (R$500-R$2.500), 6-10 meses para renda R$3.000-R$6.000/mês, 12-18 meses para renda full-time R$8.000-R$20.000/mês. 25% dos criadores brasileiros alcançam isso mais rápido com nicho certo e conteúdo viral. TikTok Shop pode acelerar timeline em 40-60% se você dominar live selling. Investimento inicial necessário: R$800-R$2.500 em equipamento.',
             },
-          ]} pageName="calculator-pt-br" />
+          ]} pageName="calculator-pt-br" title="" />
         </div>
 
       </div>

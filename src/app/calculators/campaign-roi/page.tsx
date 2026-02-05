@@ -5,7 +5,9 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CampaignROICalculatorWidget } from '@/components/calculators/campaign-roi/CalculatorWidget';
 
 export const metadata: Metadata = {
@@ -84,8 +86,24 @@ export default function CampaignROICalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="campaign-roi" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <CampaignROICalculatorWidget />
+
+          {/* Inputs Explained */}
+          <div className="lg:col-span-2 mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Ad Spend', description: 'Total amount spent on the campaign', example: '$5,000', required: true },
+                { name: 'Revenue Generated', description: 'Total revenue attributed to the campaign', example: '$15,000', required: true },
+                { name: 'Additional Costs', description: 'Creator fees, production costs, etc.', example: '$1,000' },
+              ]}
+              note="Track revenue using UTM parameters or unique discount codes for accurate attribution."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -310,6 +328,10 @@ Interpretation: You made $3 for every $1 spent, resulting in $4,000 profit (200%
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="campaign-roi" variant="full" />
+          </div>
         </div>
       </div>
     </div>

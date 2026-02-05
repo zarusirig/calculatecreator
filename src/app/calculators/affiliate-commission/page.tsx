@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { AffiliateCommissionCalculatorWidget } from '@/components/calculators/affiliate-commission/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Affiliate Commission Calculator (2026)',
@@ -89,10 +91,29 @@ export default function AffiliateCommissionCalculatorPage() {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <AffiliateCommissionCalculatorWidget />
+          <div className="max-w-4xl mx-auto mb-8">
+            <PageAuthorByline pageSlug="affiliate-commission" />
+          </div>
 
-            <div className="space-y-8">
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              <AffiliateCommissionCalculatorWidget />
+
+              {/* Inputs Explained */}
+              <div>
+                <InputsExplained
+                  inputs={[
+                    { name: 'Product Price', description: 'Retail price of the product you are promoting', example: '$50', required: true },
+                    { name: 'Commission Rate', description: 'Percentage earned per sale (varies 5-30%)', example: '15%', required: true },
+                    { name: 'Expected Sales', description: 'Estimated number of sales from your promotion', example: '100' },
+                    { name: 'Conversion Rate', description: 'Percentage of clicks that convert to sales', example: '3%' },
+                  ]}
+                  note="TikTok Shop commissions range 5-30% by category. Beauty/fashion typically pay 10-20%."
+                />
+              </div>
+            </div>
+
+            <div className="space-y-8 lg:col-span-2">
               <Card>
                 <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                   TikTok Shop Commission Rates by Category
@@ -295,6 +316,10 @@ Annual Earnings = $150 × 12 = $1,800`}
                 },
               ]}
             />
+
+            <div className="mt-12">
+              <PageEEAT pageSlug="affiliate-commission" variant="full" />
+            </div>
           </div>
         </div>
       </div>

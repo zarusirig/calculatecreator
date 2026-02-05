@@ -1,21 +1,21 @@
-export interface FAQ {
+interface FAQ {
   question: string;
   answer: string;
 }
 
 interface FAQPageSchemaProps {
-  title: string;
-  description: string;
-  url: string;
   faqs: FAQ[];
+  title?: string;
+  description?: string;
+  url?: string;
 }
 
-export function FAQPageSchema({ title, description, url, faqs }: FAQPageSchemaProps) {
-  const faqSchema = {
+export function FAQPageSchema({ faqs, title, description, url }: FAQPageSchemaProps) {
+  if (!faqs || faqs.length === 0) return null;
+
+  const faqSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    name: title,
-    description: description,
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
@@ -26,64 +26,15 @@ export function FAQPageSchema({ title, description, url, faqs }: FAQPageSchemaPr
     })),
   };
 
-  const breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://calculatecreator.com/',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: title,
-        item: url,
-      },
-    ],
-  };
-
-  const webPageSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    '@id': `${url}#webpage`,
-    url: url,
-    name: title,
-    description: description,
-    isPartOf: {
-      '@id': 'https://calculatecreator.com/#website',
-    },
-    about: {
-      '@type': 'Thing',
-      name: 'TikTok Creator FAQ',
-      description: 'Frequently asked questions about TikTok monetization, calculators, and creator earnings.',
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'CalculateCreator.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png',
-      },
-    },
-  };
+  // Add optional properties if provided
+  if (title) faqSchema.name = title;
+  if (description) faqSchema.description = description;
+  if (url) faqSchema.url = url;
 
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-    </>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
   );
 }

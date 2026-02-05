@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Scale } from 'lucide-react';
 import { BreakEvenCalculatorWidget } from '@/components/calculators/break-even/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Break-Even Calculator (2026)',
@@ -80,8 +82,25 @@ export default function BreakEvenCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="break-even" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <BreakEvenCalculatorWidget />
+          <div className="space-y-8">
+            <BreakEvenCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Ad Spend', description: 'Total budget allocated for the campaign', example: '$1,000', required: true },
+                { name: 'Product Price', description: 'Selling price of your product', example: '$50', required: true },
+                { name: 'Product Cost', description: 'Your cost per unit (COGS)', example: '$20', required: true },
+                { name: 'Cost Per Click', description: 'Average CPC from your TikTok ads', example: '$0.50' },
+                { name: 'Conversion Rate', description: 'Percentage of clicks that result in sales', example: '2%' },
+              ]}
+              note="Include all costs: product, shipping, TikTok Shop fees (2-8%), and payment processing (~3%)."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -433,6 +452,10 @@ Break Even: $1,000 / $30 = 34 units`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="break-even" variant="full" />
+          </div>
         </div>
       </div>
     </div>

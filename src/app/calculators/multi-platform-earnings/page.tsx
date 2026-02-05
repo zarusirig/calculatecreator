@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { Banknote, DollarSign, Gem, Smartphone } from 'lucide-react';
 import { MultiPlatformEarningsCalculatorWidget } from '@/components/calculators/multi-platform-earnings/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'Multi-Platform Creator Earnings Calculator (2026)',
@@ -80,8 +82,24 @@ export default function MultiPlatformEarningsCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="multi-platform-earnings" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <MultiPlatformEarningsCalculatorWidget />
+          <div className="space-y-8">
+            <MultiPlatformEarningsCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'TikTok Followers', description: 'Your TikTok follower count', example: '100,000', required: true },
+                { name: 'YouTube Subscribers', description: 'Your YouTube subscriber count', example: '25,000' },
+                { name: 'Instagram Followers', description: 'Your Instagram follower count', example: '50,000' },
+                { name: 'Monthly Views (Each)', description: 'Average monthly views per platform', example: '500,000' },
+              ]}
+              note="YouTube typically has 10x higher RPM than TikTok. Cross-promote to maximize total earnings."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -318,6 +336,10 @@ Total: $3,560/month`}
               { name: 'Content Value Calculator', slug: 'content-value', description: 'Assess content portfolio value', icon: 'Gem' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="multi-platform-earnings" variant="full" />
+          </div>
         </div>
       </div>
     </div>

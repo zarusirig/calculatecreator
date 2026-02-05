@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { Gem } from 'lucide-react';
 import { ContentValueCalculatorWidget } from '@/components/calculators/content-value/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Content Value Calculator: What Your Videos Are Worth (2026)',
@@ -80,8 +82,23 @@ export default function ContentValueCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="content-value" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <ContentValueCalculatorWidget />
+          <div className="space-y-8">
+            <ContentValueCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Video Views', description: 'Total views the content received', example: '100,000', required: true },
+                { name: 'Engagement Rate', description: 'Engagement percentage on the content', example: '6%' },
+                { name: 'Niche', description: 'Content category for rate benchmarking', example: 'Beauty' },
+              ]}
+              note="Use content value to negotiate fair rates with brands. Don't undervalue your work."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -339,6 +356,10 @@ Total: $375 × 100 = $37,500`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="content-value" variant="full" />
+          </div>
 
           <RelatedCalculators
             currentCalculator="content-value"

@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CompletionRateCalculatorWidget } from '@/components/calculators/completion-rate/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Video Completion Rate Calculator (2026)',
@@ -102,10 +104,27 @@ export default function CompletionRateCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <CompletionRateCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="completion-rate" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <CompletionRateCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Total Views', description: 'Number of times the video was started', example: '100,000', required: true },
+                  { name: 'Complete Views', description: 'Number of viewers who watched to the end', example: '65,000', required: true },
+                ]}
+                note="Aim for 60%+ completion rate. Videos under 15 seconds naturally have higher completion rates."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 What is Completion Rate?
@@ -408,6 +427,10 @@ Note: Rates over 100% are possible when viewers rewatch`}
               { name: 'Video Performance Calculator', slug: 'video-performance', description: 'Comprehensive video performance analysis', icon: 'Video' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="completion-rate" variant="full" />
+          </div>
         </div>
       </div>
     </div>

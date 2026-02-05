@@ -6,6 +6,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CreatorTaxCalculatorWidget } from '@/components/calculators/creator-tax/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Tax Calculator: Estimate Your Taxes (2026)',
@@ -80,7 +81,18 @@ export default function CreatorTaxCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <CreatorTaxCalculatorWidget />
+          <div className="space-y-6">
+            <CreatorTaxCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Gross Income', description: 'Total creator income before taxes', example: '$50,000', required: true },
+                { name: 'Business Expenses', description: 'Deductible expenses (equipment, software)', example: '$10,000' },
+                { name: 'Tax Bracket', description: 'Your estimated tax bracket', example: '22%' },
+              ]}
+              note="Self-employed creators pay ~15.3% self-employment tax plus income tax. Consult a tax professional."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card className="bg-yellow-50 border-yellow-200">

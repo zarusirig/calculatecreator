@@ -400,6 +400,38 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     ],
     disclaimers: ['financial'],
   },
+  'comment-rate': {
+    author: 'alex-martinez',
+    reviewedBy: 'michael-chen',
+    reviewDate: '2025-12-05',
+    reviewType: 'expert',
+    disclaimers: ['educational'],
+  },
+  'cost-per-result': {
+    author: 'david-kim',
+    reviewedBy: 'sarah-johnson',
+    reviewDate: '2025-12-05',
+    reviewType: 'expert',
+    citations: [
+      {
+        id: 'tiktok-ads-official',
+        title: 'TikTok Ads Manager',
+        source: 'TikTok for Business',
+        url: 'https://ads.tiktok.com/',
+        type: 'official',
+        accessDate: '2025-12-05',
+      },
+    ],
+    disclaimers: ['financial'],
+  },
+  'milestone-tracker': {
+    author: 'alex-martinez',
+    reviewedBy: 'sarah-johnson',
+    reviewDate: '2025-12-05',
+    reviewType: 'expert',
+    citations: [COMMON_CITATIONS['creator-survey']],
+    disclaimers: ['educational'],
+  },
 
   // ========================================
   // GUIDE PAGES

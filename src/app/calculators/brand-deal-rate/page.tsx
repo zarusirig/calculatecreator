@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
@@ -171,6 +172,19 @@ export default function BrandDealRateCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <BrandDealRateCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Follower Count', description: 'Total followers on your TikTok account', example: '50,000', required: true },
+                { name: 'Engagement Rate', description: 'Average engagement percentage across recent posts', example: '6%', required: true },
+                { name: 'Niche', description: 'Your content category (beauty, tech, lifestyle, etc.)', example: 'Fashion' },
+                { name: 'Content Type', description: 'Type of sponsored content (dedicated video, mention, series)', example: 'Dedicated' },
+              ]}
+              note="Rates vary significantly by niche. Finance and tech command 2-3x higher rates than entertainment."
+            />
           </div>
 
           {/* Educational Content Cards */}

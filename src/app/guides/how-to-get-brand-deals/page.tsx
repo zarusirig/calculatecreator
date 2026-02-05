@@ -441,7 +441,6 @@ Looking forward to hearing from you!
         </Card>
 
         {/* FAQ Section */}
-                <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Frequently Asked Questions</h2>
         <FAQSection
           pageName="FAQ"
           faqs={faqs}

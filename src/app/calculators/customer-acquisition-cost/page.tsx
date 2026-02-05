@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CustomerAcquisitionCostCalculatorWidget } from '@/components/calculators/customer-acquisition-cost/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Customer Acquisition Cost (CAC) Calculator (2026)',
@@ -88,8 +90,22 @@ export default function CustomerAcquisitionCostCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="customer-acquisition-cost" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <CustomerAcquisitionCostCalculatorWidget />
+          <div className="space-y-8">
+            <CustomerAcquisitionCostCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Total Marketing Spend', description: 'All costs for the campaign period', example: '$5,000', required: true },
+                { name: 'New Customers Acquired', description: 'Number of new customers gained', example: '100', required: true },
+              ]}
+              note="Compare CAC to customer lifetime value (LTV). Healthy ratio is LTV:CAC of 3:1 or higher."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -285,6 +301,10 @@ Recommended LTV = $50 × 3 = $150+`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="customer-acquisition-cost" variant="full" />
+          </div>
         </div>
       </div>
     </div>

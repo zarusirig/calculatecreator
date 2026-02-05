@@ -541,7 +541,6 @@ export default function DataIndexPage() {
 
         {/* FAQ Section */}
         <div>
-          <h2 className="text-display-sm font-bold text-neutral-900 mb-6">Frequently Asked Questions</h2>
           <FAQSection
             pageName="TikTok Data Hub"
             faqs={faqs}

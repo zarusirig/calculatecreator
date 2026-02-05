@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { WatchTimeCalculatorWidget } from '@/components/calculators/watch-time/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Watch Time Calculator: Measure Retention Rate (2026)',
@@ -102,10 +104,28 @@ export default function WatchTimeCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <WatchTimeCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="watch-time" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <WatchTimeCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Video Duration', description: 'Total length of your video in seconds', example: '60 seconds', required: true },
+                  { name: 'Average Watch Time', description: 'Average seconds viewers watch before leaving', example: '45 seconds', required: true },
+                  { name: 'Total Views', description: 'Number of times the video was viewed', example: '50,000' },
+                ]}
+                note="Videos with 70%+ watch time are prioritized by the algorithm for broader distribution."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 What is Watch Time?
@@ -286,6 +306,10 @@ Watch Hours: (50,000 × 22) / 3600 = 305.6 hours`}
               { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track overall engagement', icon: 'BarChart3' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="watch-time" variant="full" />
+          </div>
         </div>
       </div>
     </div>

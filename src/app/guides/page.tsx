@@ -5,6 +5,30 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Edit, BarChart, RotateCcw, DollarSign, Zap, TrendingUp, Target, Briefcase, Gift } from 'lucide-react';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
+
+const guideFaqs = [
+  {
+    question: "Which guide should I start with as a new TikTok creator?",
+    answer: "Start with 'TikTok Monetization Requirements' to understand what you need to earn money, then read 'How to Make Your First $1,000' for a step-by-step action plan. These guides cover the fundamentals before diving into specific monetization methods."
+  },
+  {
+    question: "How often are these guides updated?",
+    answer: "We update our guides quarterly to reflect TikTok platform changes, new features, and current best practices. All guides show a 'Last Updated' date. Major algorithm changes or policy updates trigger immediate guide revisions."
+  },
+  {
+    question: "Are these strategies different for different niches?",
+    answer: "Yes, monetization varies significantly by niche. Finance and education creators earn 3-5x more per view than entertainment creators. Our niche-specific guides (Beauty, Fitness, Finance) provide tailored strategies for each category."
+  },
+  {
+    question: "Do I need a certain follower count to benefit from these guides?",
+    answer: "Our guides cover all stages of creator growth. We have beginner guides for under 1K followers, growth guides for 1K-100K, and scaling guides for 100K+. Use the category filters to find guides relevant to your current stage."
+  },
+  {
+    question: "Can I use these strategies on other platforms too?",
+    answer: "Many strategies are cross-platform applicable, especially engagement tactics and content planning. Our 'Multi-Platform Strategy' guide specifically covers adapting TikTok success to YouTube Shorts and Instagram Reels."
+  }
+];
 
 export const metadata: Metadata = {
   title: {
@@ -641,6 +665,7 @@ export default function GuidesPage() {
         items={schemaItems}
         collectionType="Guides"
       />
+      <FAQPageSchema faqs={guideFaqs} />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
         <div className="container-custom">
           <Breadcrumb
@@ -1237,28 +1262,7 @@ export default function GuidesPage() {
         <div className="max-w-4xl mx-auto mb-12">
           <FAQSection
             pageName="TikTok Creator Guides"
-            faqs={[
-              {
-                question: "Which guide should I start with as a new TikTok creator?",
-                answer: "Start with 'TikTok Monetization Requirements' to understand what you need to earn money, then read 'How to Make Your First $1,000' for a step-by-step action plan. These guides cover the fundamentals before diving into specific monetization methods."
-              },
-              {
-                question: "How often are these guides updated?",
-                answer: "We update our guides quarterly to reflect TikTok platform changes, new features, and current best practices. All guides show a 'Last Updated' date. Major algorithm changes or policy updates trigger immediate guide revisions."
-              },
-              {
-                question: "Are these strategies different for different niches?",
-                answer: "Yes, monetization varies significantly by niche. Finance and education creators earn 3-5x more per view than entertainment creators. Our niche-specific guides (Beauty, Fitness, Finance) provide tailored strategies for each category."
-              },
-              {
-                question: "Do I need a certain follower count to benefit from these guides?",
-                answer: "Our guides cover all stages of creator growth. We have beginner guides for under 1K followers, growth guides for 1K-100K, and scaling guides for 100K+. Use the category filters to find guides relevant to your current stage."
-              },
-              {
-                question: "Can I use these strategies on other platforms too?",
-                answer: "Many strategies are cross-platform applicable, especially engagement tactics and content planning. Our 'Multi-Platform Strategy' guide specifically covers adapting TikTok success to YouTube Shorts and Instagram Reels."
-              }
-            ]}
+            faqs={guideFaqs}
           />
         </div>
 

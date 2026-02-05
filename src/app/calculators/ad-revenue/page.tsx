@@ -6,8 +6,10 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { AdRevenueCalculatorWidget } from '@/components/calculators/ad-revenue/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Revenue Calculator: Estimate Your Earnings (2026)',
@@ -78,8 +80,24 @@ export default function AdRevenueCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="ad-revenue" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <AdRevenueCalculatorWidget />
+
+          {/* Inputs Explained */}
+          <div className="lg:col-span-2 mb-12">
+            <InputsExplained
+              inputs={[
+                { name: 'Monthly Views', description: 'Total video views in the past 30 days', example: '1,000,000', required: true },
+                { name: 'CPM Rate', description: 'Cost per 1,000 impressions for your niche', example: '$5', required: true },
+                { name: 'Ad Frequency', description: 'Average number of ads shown per video', example: '1.5' },
+              ]}
+              note="CPM varies by niche: Finance ($8-12), Tech ($6-10), Lifestyle ($4-6), Entertainment ($2-4)."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -325,6 +343,10 @@ Annual: $5,000 × 12 = $60,000`}
               { name: 'RPM Calculator', slug: 'rpm', description: 'Calculate revenue per 1000 views', icon: 'TrendingUp' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="ad-revenue" variant="full" />
+          </div>
         </div>
       </div>
     </div>

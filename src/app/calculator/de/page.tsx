@@ -553,7 +553,7 @@ export default function TikTokRechnerDE() {
               question: 'Lohnt sich TikTok für B2B-Marketing in Deutschland?',
               answer: 'Absolut! Deutschland ist führend in B2B-TikTok-Marketing. Besonders erfolgreich: SaaS, Consulting, Maschinenbau, FinTech, Professional Services. B2B-Creatorn mit 20K-100K hochqualifizierten Followern erzielen oft €150-€500 pro 1K Follower für Kampagnen (vs. €50-€150 B2C). Formate: Quick Tips, Prozesse, Case Studies, Behind-Scenes, Team-Content. LinkedIn-Integration verstärkt Effekt. B2B-Leads sind 5-15× wertvoller, was Premium-Raten rechtfertigt.',
             },
-          ]} pageName="calculator-de" />
+          ]} pageName="calculator-de" title="" />
         </div>
 
       </div>

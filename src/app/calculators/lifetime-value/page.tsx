@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { LifetimeValueCalculatorWidget } from '@/components/calculators/lifetime-value/CalculatorWidget';
 import { Gem } from 'lucide-react';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'Customer Lifetime Value (LTV) Calculator for TikTok (2026)',
@@ -84,8 +86,23 @@ export default function LifetimeValueCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="lifetime-value" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <LifetimeValueCalculatorWidget />
+          <div className="space-y-8">
+            <LifetimeValueCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Average Order Value', description: 'Average amount spent per purchase', example: '$75', required: true },
+                { name: 'Purchase Frequency', description: 'Average purchases per year', example: '3', required: true },
+                { name: 'Customer Lifespan', description: 'Average years a customer remains active', example: '2 years' },
+              ]}
+              note="LTV should be at least 3x your customer acquisition cost (CAC) for sustainable growth."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -291,6 +308,10 @@ Max CAC = $3,600 / 3 = $1,200`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="lifetime-value" variant="full" />
+          </div>
         </div>
       </div>
     </div>

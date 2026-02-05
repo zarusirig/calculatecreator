@@ -7,6 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { ContentCalendarROICalculatorWidget } from '@/components/calculators/content-calendar-roi/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Content Calendar ROI Calculator (2026)',
@@ -80,8 +82,24 @@ export default function ContentCalendarROICalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="content-calendar-roi" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <ContentCalendarROICalculatorWidget />
+          <div className="space-y-8">
+            <ContentCalendarROICalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Posts Per Week', description: 'Number of posts you publish weekly', example: '7', required: true },
+                { name: 'Average Revenue Per Post', description: 'Estimated earnings per post (ads, affiliate, etc.)', example: '$50' },
+                { name: 'Time Per Post', description: 'Hours spent creating each post', example: '2 hours' },
+                { name: 'Monthly Costs', description: 'Tools, software, and overhead costs', example: '$200' },
+              ]}
+              note="Consistency matters: accounts posting 5-7x per week see 2-3x faster growth than 1-2x per week."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -328,6 +346,10 @@ ROI: [($500 - $200) / $200] × 100 = 150%`}
               { name: 'Video Performance Calculator', slug: 'video-performance', description: 'Track content performance', icon: 'Video' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="content-calendar-roi" variant="full" />
+          </div>
         </div>
       </div>
     </div>

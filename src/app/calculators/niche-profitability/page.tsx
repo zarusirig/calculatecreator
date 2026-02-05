@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Banknote, Gem, Handshake, Target } from 'lucide-react';
 import { NicheProfitabilityCalculatorWidget } from '@/components/calculators/niche-profitability/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Niche Profitability Calculator (2026)',
@@ -80,8 +82,23 @@ export default function NicheProfitabilityCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="niche-profitability" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <NicheProfitabilityCalculatorWidget />
+          <div className="space-y-8">
+            <NicheProfitabilityCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Niche Category', description: 'Your content category (finance, beauty, tech, etc.)', example: 'Finance', required: true },
+                { name: 'Follower Count', description: 'Your current follower count', example: '50,000' },
+                { name: 'Engagement Rate', description: 'Your average engagement rate', example: '5%' },
+              ]}
+              note="Finance and tech niches command 2-3x higher brand deal rates than entertainment niches."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -335,6 +352,10 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
               { name: 'Brand Deal Rate Calculator', slug: 'brand-deal-rate', description: 'Calculate fair brand deal rates', icon: 'Handshake' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="niche-profitability" variant="full" />
+          </div>
         </div>
       </div>
     </div>

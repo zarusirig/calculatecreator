@@ -10,6 +10,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Engagement Rate Calculator: Free Tool (2026)',
@@ -100,8 +101,19 @@ export default function EngagementRateCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Interactive Calculator Widget (CSR) */}
-          <EngagementRateCalculatorWidget />
+          <div className="space-y-6">
+            <EngagementRateCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Followers', description: 'Your total TikTok follower count', example: '50,000', required: true },
+                { name: 'Likes', description: 'Average likes per video', example: '3,000', required: true },
+                { name: 'Comments', description: 'Average comments per video', example: '150' },
+                { name: 'Shares', description: 'Average shares per video', example: '100' },
+              ]}
+              note="Good engagement rate is 5-10%. Higher rates lead to better brand deals and algorithm performance."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>

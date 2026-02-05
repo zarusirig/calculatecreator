@@ -7,6 +7,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Coins to USD Calculator: Convert Coins to Money (2026)',
@@ -55,8 +56,15 @@ export default function CoinsCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Convert TikTok coins to USD and calculate diamond payouts for creators. This calculator helps viewers understand gift costs and creators estimate LIVE earnings from virtual gifts. Essential for anyone participating in TikTok's virtual economy, whether you're sending gifts or receiving them during streams. Calculate exact conversion rates between coins, diamonds, and dollars using current 2026 pricing. Understand TikTok's 50% platform fee and plan your LIVE streaming income or gifting budget accurately.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
           <CoinsCalculatorWidget />
+
+          <InputsExplained
+            inputs={[
+              { name: 'Coin Amount', description: 'Number of TikTok coins', example: '5,000', required: true },
+            ]}
+            note="TikTok coins are purchased by viewers to send gifts. 1 Coin = approximately $0.0105."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12 space-y-8">

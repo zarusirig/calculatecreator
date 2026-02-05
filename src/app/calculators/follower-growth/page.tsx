@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { FollowerGrowthCalculatorWidget } from '@/components/calculators/follower-growth/CalculatorWidget';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Follower Growth Rate Calculator (2026)',
@@ -81,11 +83,29 @@ export default function FollowerGrowthCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Interactive Calculator Widget (CSR) */}
-          <FollowerGrowthCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="follower-growth" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            {/* Interactive Calculator Widget (CSR) */}
+            <FollowerGrowthCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Starting Followers', description: 'Follower count at the beginning of the period', example: '10,000', required: true },
+                  { name: 'Ending Followers', description: 'Follower count at the end of the period', example: '12,500', required: true },
+                  { name: 'Time Period', description: 'Number of days between measurements', example: '30 days' },
+                ]}
+                note="Track over 7-14 days minimum for accurate growth rate. Single viral videos can skew short-term data."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 What is Follower Growth Rate?
@@ -461,6 +481,10 @@ Total Growth: 11,027 new followers`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="follower-growth" variant="full" />
+          </div>
         </div>
       </div>
     </div>

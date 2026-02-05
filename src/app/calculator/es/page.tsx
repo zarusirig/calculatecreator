@@ -557,7 +557,7 @@ export default function CalculadoraTikTokES() {
               question: '¿Cuánto tiempo toma vivir de TikTok en español?',
               answer: 'Timeline realista para mercados hispanohablantes: 2-4 meses alcanzar 10K seguidores con posting consistente y contenido viral, 4-7 meses primeras colaboraciones pagadas ($300-$2,000), 7-11 meses ingresos regulares $1,500-$4,000/mes, 12-20 meses ingresos full-time $4,000-$12,000+/mes. 22% de creadores hispanohablantes alcanzan estos hitos más rápido con niche correcto, contenido altamente viral y enfoque en TikTok Shop. Live selling puede acelerar monetización 40-70%. Inversión inicial necesaria: $400-$1,800 en equipo básico.',
             },
-          ]} pageName="calculator-es" />
+          ]} pageName="calculator-es" title="" />
         </div>
 
       </div>

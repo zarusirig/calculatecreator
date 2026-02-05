@@ -8,6 +8,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { ShareRatioCalculatorWidget } from '@/components/calculators/share-ratio/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Share Rate Calculator: Measure Viral Potential (2026)',
@@ -40,20 +42,12 @@ const faqData = [
     answer: 'Yes, significantly. Share ratio is one of the most heavily weighted factors in TikTok\'s algorithm. Videos with 5%+ share rates often see 3-5x more FYP distribution than those with 1% share rates. The algorithm interprets shares as a strong quality signal and pushes content further. High share ratios can also trigger "resurge" waves where old content gets redistributed.',
   },
   {
-    question: 'What\'s the difference between share ratio and viral potential?',
-    answer: 'Share ratio measures the percentage of viewers who share your content, while viral potential combines multiple metrics including shares, completion rate, engagement rate, and watch time. However, share ratio is the single strongest predictor of virality. Content with 8%+ share rates has extremely high viral potential regardless of other metrics.',
-  },
-  {
     question: 'Should I ask viewers to share my content?',
     answer: 'Yes, but do it strategically. Direct CTAs like "Share this with someone who needs to hear it" or "Tag a friend who does this" can increase shares by 15-30%. However, the content itself must be genuinely share-worthy. Generic "please share" requests without inherent value won\'t work. Focus on creating content worth sharing, then add a specific, contextual CTA.',
   },
   {
     question: 'How quickly should shares accumulate after posting?',
     answer: 'High-performing videos typically see 30-40% of their total shares within the first 4 hours, 60-70% within 24 hours, and the remainder over the following days. If your video has under 0.5% share ratio after 24 hours, it\'s unlikely to go viral through shares alone. However, evergreen educational content can accumulate shares steadily over weeks or months.',
-  },
-  {
-    question: 'Can I track who shared my video?',
-    answer: 'No, TikTok doesn\'t reveal individual users who shared your content for privacy reasons. You can only see the total share count. However, you can sometimes infer sharing patterns by watching sudden spikes in views from new audiences or geographic regions, which often indicates share-driven distribution.',
   },
   {
     question: 'Does share ratio differ between niches?',
@@ -102,10 +96,27 @@ export default function ShareRatioCalculatorPage() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <ShareRatioCalculatorWidget />
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="share-ratio" />
+        </div>
 
-          <div className="space-y-8">
+        <div className="max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <ShareRatioCalculatorWidget />
+
+            {/* Inputs Explained */}
+            <div>
+              <InputsExplained
+                inputs={[
+                  { name: 'Total Views', description: 'Number of times the video was viewed', example: '100,000', required: true },
+                  { name: 'Total Shares', description: 'Number of times viewers shared the video', example: '5,000', required: true },
+                ]}
+                note="Share rate above 5% is exceptional. Shares are the strongest viral signal on TikTok."
+              />
+            </div>
+          </div>
+
+          <div className="space-y-8 lg:col-span-2">
             <Card>
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
                 What is Share Ratio?
@@ -311,20 +322,12 @@ This 3% share ratio indicates good viral potential`}
                 answer: 'Yes, significantly. Share ratio is one of the most heavily weighted factors in TikTok\'s algorithm. Videos with 5%+ share rates often see 3-5x more FYP distribution than those with 1% share rates. The algorithm interprets shares as a strong quality signal and pushes content further. High share ratios can also trigger "resurge" waves where old content gets redistributed.',
               },
               {
-                question: 'What\'s the difference between share ratio and viral potential?',
-                answer: 'Share ratio measures the percentage of viewers who share your content, while viral potential combines multiple metrics including shares, completion rate, engagement rate, and watch time. However, share ratio is the single strongest predictor of virality. Content with 8%+ share rates has extremely high viral potential regardless of other metrics.',
-              },
-              {
                 question: 'Should I ask viewers to share my content?',
                 answer: 'Yes, but do it strategically. Direct CTAs like "Share this with someone who needs to hear it" or "Tag a friend who does this" can increase shares by 15-30%. However, the content itself must be genuinely share-worthy. Generic "please share" requests without inherent value won\'t work. Focus on creating content worth sharing, then add a specific, contextual CTA.',
               },
               {
                 question: 'How quickly should shares accumulate after posting?',
                 answer: 'High-performing videos typically see 30-40% of their total shares within the first 4 hours, 60-70% within 24 hours, and the remainder over the following days. If your video has under 0.5% share ratio after 24 hours, it\'s unlikely to go viral through shares alone. However, evergreen educational content can accumulate shares steadily over weeks or months.',
-              },
-              {
-                question: 'Can I track who shared my video?',
-                answer: 'No, TikTok doesn\'t reveal individual users who shared your content for privacy reasons. You can only see the total share count. However, you can sometimes infer sharing patterns by watching sudden spikes in views from new audiences or geographic regions, which often indicates share-driven distribution.',
               },
               {
                 question: 'Does share ratio differ between niches?',
@@ -341,6 +344,10 @@ This 3% share ratio indicates good viral potential`}
               { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Overall engagement including shares', icon: 'BarChart3' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="share-ratio" variant="full" />
+          </div>
         </div>
       </div>
     </div>

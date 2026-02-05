@@ -7,6 +7,8 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Scale, ClipboardList, Camera, Gem } from 'lucide-react';
 import { ProductionCostCalculatorWidget } from '@/components/calculators/production-cost/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Video Production Cost Calculator (2026)',
@@ -80,8 +82,25 @@ export default function ProductionCostCalculatorPage() {
           </p>
         </div>
 
+        <div className="max-w-4xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="production-cost" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <ProductionCostCalculatorWidget />
+          <div className="space-y-8">
+            <ProductionCostCalculatorWidget />
+
+            <InputsExplained
+              inputs={[
+                { name: 'Equipment Costs', description: 'Camera, lighting, audio equipment (amortized)', example: '$200/month' },
+                { name: 'Software Subscriptions', description: 'Editing software, music licenses, etc.', example: '$50/month' },
+                { name: 'Time Spent', description: 'Hours spent creating content', example: '10 hours', required: true },
+                { name: 'Hourly Rate', description: 'Your target hourly rate for content creation', example: '$50/hour' },
+                { name: 'Videos Per Month', description: 'Number of videos produced', example: '20 videos' },
+              ]}
+              note="Track cost per video to ensure your content is profitable against revenue generated."
+            />
+          </div>
 
           <div className="space-y-8">
             <Card>
@@ -327,6 +346,10 @@ Total: $106.67 per video`}
               { name: 'Content Value Calculator', slug: 'content-value', description: 'Compare costs vs content value', icon: 'Gem' },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="production-cost" variant="full" />
+          </div>
         </div>
       </div>
     </div>

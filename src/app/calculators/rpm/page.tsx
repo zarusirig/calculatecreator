@@ -18,6 +18,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
@@ -258,6 +259,17 @@ export default function RpmCalculatorPage() {
           {/* Calculator Widget */}
           <div className="mb-10">
             <RpmCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="mb-10">
+            <InputsExplained
+              inputs={[
+                { name: 'Total Revenue', description: 'All revenue earned in the period', example: '$500', required: true },
+                { name: 'Total Views', description: 'Total views in the same period', example: '1,000,000', required: true },
+              ]}
+              note="TikTok RPM is typically $0.02-0.05. YouTube RPM is 10-20x higher ($2-8)."
+            />
           </div>
 
           {/* Educational Cards */}

@@ -9,6 +9,8 @@ interface FAQSectionProps {
   faqs: FAQItem[];
   pageName: string;
   variant?: 'light' | 'dark';
+  /** Custom title for the FAQ section. Set to empty string to hide the heading. */
+  title?: string;
 }
 
 /**
@@ -19,14 +21,16 @@ interface FAQSectionProps {
  * This improves SEO by making FAQ content immediately crawlable
  * and reduces JS bundle size.
  */
-export function FAQSection({ faqs, pageName, variant = 'light' }: FAQSectionProps) {
+export function FAQSection({ faqs, pageName, variant = 'light', title = 'Frequently Asked Questions' }: FAQSectionProps) {
   const headingColor = variant === 'dark' ? 'text-white' : 'text-neutral-900';
 
   return (
     <div className="mt-12">
-      <h2 className={`text-display-sm font-bold mb-6 ${headingColor}`}>
-        Frequently Asked Questions
-      </h2>
+      {title && (
+        <h2 className={`text-display-sm font-bold mb-6 ${headingColor}`}>
+          {title}
+        </h2>
+      )}
 
       <div className="space-y-4">
         {faqs.map((faq, index) => (

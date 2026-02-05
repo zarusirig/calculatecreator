@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { Scale, TrendingUp, DollarSign, ShoppingBag, Video, Zap, Users, Clock, Target, Award, Sparkles, TrendingDown, Info, RotateCcw } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -128,6 +129,7 @@ export default function ComparisonsPage() {
         items={schemaItems}
         collectionType="Guides"
       />
+      <FAQPageSchema faqs={faqs} />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
         <div className="container-custom">
           <Breadcrumb

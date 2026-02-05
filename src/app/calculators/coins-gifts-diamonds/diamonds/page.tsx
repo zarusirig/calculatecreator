@@ -8,6 +8,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamond-converter/CalculatorWidget';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
   title: 'TikTok Diamond to USD Calculator: Convert Diamonds to Money (2026)',
@@ -117,7 +118,18 @@ export default function DiamondConverterPage() {
             </div>
           </div>
 
-          <DiamondConverterCalculatorWidget />
+          <div className="max-w-5xl mx-auto">
+            <DiamondConverterCalculatorWidget />
+
+            <div className="mt-6">
+              <InputsExplained
+                inputs={[
+                  { name: 'Diamond Count', description: 'Total diamonds received from gifts', example: '10,000', required: true },
+                ]}
+                note="1 Diamond ≈ $0.005. TikTok takes 50% before creator payout. Minimum withdrawal usually $100."
+              />
+            </div>
+          </div>
 
           <div className="max-w-4xl mx-auto mt-12">
             <MethodologySection

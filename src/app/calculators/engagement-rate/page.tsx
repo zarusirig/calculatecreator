@@ -8,6 +8,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
 
 export const metadata: Metadata = {
@@ -171,6 +172,38 @@ export default function EngagementRateCalculatorPage() {
           {/* Calculator Widget */}
           <div className="max-w-5xl mx-auto mb-12">
             <EngagementRateCalculatorWidget />
+          </div>
+
+          {/* Inputs Explained */}
+          <div className="max-w-5xl mx-auto mb-12">
+            <InputsExplained
+              title="Calculator Inputs Explained"
+              inputs={[
+                {
+                  name: 'Total Followers',
+                  description: 'Your current follower count on TikTok. This is the base for calculating engagement rate.',
+                  example: '50,000',
+                  required: true,
+                },
+                {
+                  name: 'Total Likes',
+                  description: 'Average number of likes per post. Calculate from your last 10-20 posts for accuracy.',
+                  example: '5,000',
+                  required: true,
+                },
+                {
+                  name: 'Total Comments',
+                  description: 'Average number of comments per post. Comments are weighted higher than likes by the algorithm.',
+                  example: '200',
+                },
+                {
+                  name: 'Total Shares',
+                  description: 'Average number of shares per post. Shares indicate high-value, recommendation-worthy content.',
+                  example: '100',
+                },
+              ]}
+              note="For the most accurate engagement rate, use averages from your last 10-20 posts rather than a single viral video."
+            />
           </div>
 
           {/* Educational Content Cards */}

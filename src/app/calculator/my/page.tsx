@@ -394,7 +394,7 @@ export default function KalkulatorTikTokMY() {
               question: 'Berapa lama masa untuk buat income penuh masa dari TikTok?',
               answer: 'Timeline realistik di Malaysia: 2-3 bulan untuk capai 10K followers dengan posting konsisten, 4-6 bulan untuk first brand deals (RM500-RM2,000), 6-9 bulan untuk pendapatan RM3,000-RM5,000/bulan, 12-18 bulan untuk full-time income RM8,000-RM15,000/bulan. 20% pencipta Malaysia mencapai milestone ini lebih cepat dengan niche yang betul dan strategi viral. TikTok Shop boleh accelerate timeline 30-40% jika fokus live selling.',
             },
-          ]} pageName="calculator-my" />
+          ]} pageName="calculator-my" title="" />
         </div>
 
       </div>

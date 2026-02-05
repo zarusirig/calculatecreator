@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { BookOpen, DollarSign, Globe, Gift, ShoppingBag, Calendar, CreditCard, FileText, CheckCircle, Clock, ArrowRight, AlertCircle } from 'lucide-react';
 
