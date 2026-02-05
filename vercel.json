@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/calculators/diamonds",
+      "destination": "/calculators/coins-gifts-diamonds/diamonds/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/diamonds/",
+      "destination": "/calculators/coins-gifts-diamonds/diamonds/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/live-earnings",
+      "destination": "/calculators/earnings-revenue/live-earnings/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/live-earnings/",
+      "destination": "/calculators/earnings-revenue/live-earnings/",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-money-calculator",
+      "destination": "/calculators/tiktok-money/",
+      "permanent": true
+    },
+    {
+      "source": "/tiktok-money-calculator/",
+      "destination": "/calculators/tiktok-money/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/live-gift",
+      "destination": "/calculators/live-gifts/",
+      "permanent": true
+    },
+    {
+      "source": "/calculators/live-gift/",
+      "destination": "/calculators/live-gifts/",
+      "permanent": true
+    }
+  ]
+}
