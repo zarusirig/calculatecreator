@@ -39,14 +39,14 @@ export default function MoonPhaseLayout({ children }: { children: React.ReactNod
       <CalculatorSchema
         name="Moon Phase Posting Guide"
         description="Align your TikTok content with lunar energy. A fun tool for creators who believe in cosmic timing."
-        url="https://calculatecreator.com/calculators/fun-niche/moon-phase"
+        url="https://calculatecreator.com/calculators/fun-niche/moon-phase/"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
           { name: 'Fun & Niche', url: 'https://calculatecreator.com/calculators/fun-niche' },
-          { name: 'Moon Phase', url: 'https://calculatecreator.com/calculators/fun-niche/moon-phase' }
+          { name: 'Moon Phase', url: 'https://calculatecreator.com/calculators/fun-niche/moon-phase/' }
         ]}
       />
       {children}

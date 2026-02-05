@@ -39,14 +39,14 @@ export default function EligibilityLayout({ children }: { children: React.ReactN
       <CalculatorSchema
         name="TikTok Monetization Eligibility Checker"
         description="Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop."
-        url="https://calculatecreator.com/calculators/utility-tools/eligibility"
+        url="https://calculatecreator.com/calculators/utility-tools/eligibility/"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
           { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools' },
-          { name: 'Eligibility Checker', url: 'https://calculatecreator.com/calculators/utility-tools/eligibility' }
+          { name: 'Eligibility Checker', url: 'https://calculatecreator.com/calculators/utility-tools/eligibility/' }
         ]}
       />
       {children}

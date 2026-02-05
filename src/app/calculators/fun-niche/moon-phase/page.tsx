@@ -105,7 +105,7 @@ export default function MoonPhaseCalculatorPage() {
         <Breadcrumb items={[
           { label: 'Calculators', href: '/calculators' },
           { label: 'Fun & Niche', href: '/calculators/fun-niche' },
-          { label: 'Moon Phase', href: '/calculators/fun-niche/moon-phase' }
+          { label: 'Moon Phase', href: '/calculators/fun-niche/moon-phase/' }
         ]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">

@@ -39,14 +39,14 @@ export default function PayoutLayout({ children }: { children: React.ReactNode }
       <CalculatorSchema
         name="Creator Payout Calculator"
         description="Calculate your actual payout after platform fees and payment processing charges."
-        url="https://calculatecreator.com/calculators/utility-tools/payout"
+        url="https://calculatecreator.com/calculators/utility-tools/payout/"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
           { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools' },
-          { name: 'Payout Calculator', url: 'https://calculatecreator.com/calculators/utility-tools/payout' }
+          { name: 'Payout Calculator', url: 'https://calculatecreator.com/calculators/utility-tools/payout/' }
         ]}
       />
       {children}

@@ -73,7 +73,7 @@ export default function PayoutCalculatorPage() {
         <Breadcrumb items={[
           { label: 'Calculators', href: '/calculators' },
           { label: 'Utility Tools', href: '/calculators/utility-tools' },
-          { label: 'Payout Calculator', href: '/calculators/utility-tools/payout' }
+          { label: 'Payout Calculator', href: '/calculators/utility-tools/payout/' }
         ]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">

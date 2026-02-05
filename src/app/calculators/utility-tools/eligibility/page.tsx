@@ -133,7 +133,7 @@ export default function EligibilityCalculatorPage() {
         <Breadcrumb items={[
           { label: 'Calculators', href: '/calculators' },
           { label: 'Utility Tools', href: '/calculators/utility-tools' },
-          { label: 'Eligibility Checker', href: '/calculators/utility-tools/eligibility' }
+          { label: 'Eligibility Checker', href: '/calculators/utility-tools/eligibility/' }
         ]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
