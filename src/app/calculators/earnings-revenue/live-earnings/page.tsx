@@ -47,7 +47,7 @@ export default function LiveGiftsCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
-        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'LIVE Gifts Calculator', href: '/calculators/live-gifts' }]} />
+        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' }]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-secondary text-white mb-6">

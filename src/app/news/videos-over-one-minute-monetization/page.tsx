@@ -28,7 +28,7 @@ export default function VideosOverOneMinuteMonetizationPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: '1+ Minute Monetization', url: 'https://calculatecreator.com/news/videos-over-one-minute-monetization/' },
         ]}
       />

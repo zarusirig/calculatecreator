@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'TikTok Engagement Rate Calculator Guide 2026 | How to Calculate & Improve',
     description: 'Master TikTok engagement rate calculation and optimization with free tools and expert strategies.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide',
+    url: 'https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,7 +55,7 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
       <ArticleSchema
         headline="TikTok Engagement Rate Calculator Guide 2026 | How to Calculate & Improve"
         description="Complete guide to TikTok engagement rate: Learn how to calculate, measure, and improve your engagement rate with free calculator tools, benchmarks, and optimization strategies."
-        url="https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide"
+        url="https://calculatecreator.com/guides/tiktok-engagement-rate-calculator-guide/"
         datePublished="2025-11-14"
         dateModified="2025-11-14"
         keywords={["tiktok engagement rate", "engagement calculator", "tiktok metrics", "engagement optimization"]}
@@ -64,8 +64,8 @@ export default function TikTokEngagementRateCalculatorGuidePage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Guides', href: '/guides' },
-            { label: 'TikTok Engagement Rate Calculator Guide', href: '/guides/tiktok-engagement-rate-calculator-guide' }
+            { label: 'Guides', href: '/guides/' },
+            { label: 'TikTok Engagement Rate Calculator Guide', href: '/guides/tiktok-engagement-rate-calculator-guide/' }
           ]} />
 
           <div className="max-w-4xl mx-auto">

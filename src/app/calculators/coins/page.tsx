@@ -87,7 +87,7 @@ export default function CoinsCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'Coins Calculator', url: 'https://calculatecreator.com/calculators/coins/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function CoinsCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'Coins Calculator', href: '/calculators/coins/' },
             ]}
           />

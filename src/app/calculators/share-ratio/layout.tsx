@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Share Ratio Calculator 2026',
     description: 'Calculate share-to-view ratio to measure viral potential.',
-    url: 'https://calculatecreator.com/calculators/share-ratio',
+    url: 'https://calculatecreator.com/calculators/share-ratio/',
     type: 'website',
   },
 };

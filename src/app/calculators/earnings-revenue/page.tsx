@@ -252,23 +252,23 @@ export default function EarningsRevenuePage() {
       <CollectionPageSchema
         name="TikTok Earnings & Revenue Calculators"
         description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Fund, brand deals, and total revenue across all monetization streams."
-        url="https://calculatecreator.com/calculators/earnings-revenue"
+        url="https://calculatecreator.com/calculators/earnings-revenue/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Earnings & Revenue', url: 'https://calculatecreator.com/calculators/earnings-revenue' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Earnings & Revenue', url: 'https://calculatecreator.com/calculators/earnings-revenue/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Earnings & Revenue', href: '/calculators/earnings-revenue' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Earnings & Revenue', href: '/calculators/earnings-revenue/' },
           ]}
           includeHome={true}
         />

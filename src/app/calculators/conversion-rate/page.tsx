@@ -64,7 +64,7 @@ export default function ConversionRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Conversion Rate Calculator"
         description="Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers."
-        url="https://calculatecreator.com/calculators/conversion-rate"
+        url="https://calculatecreator.com/calculators/conversion-rate/"
         aggregateRating={{
           ratingValue: 4.7,
           reviewCount: 756,
@@ -77,16 +77,16 @@ export default function ConversionRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Conversion Rate Calculator', url: 'https://calculatecreator.com/calculators/conversion-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Conversion Rate Calculator', url: 'https://calculatecreator.com/calculators/conversion-rate/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Conversion Rate Calculator', href: '/calculators/conversion-rate' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Conversion Rate Calculator', href: '/calculators/conversion-rate/' },
             ]}
           />
 

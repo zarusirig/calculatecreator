@@ -28,8 +28,8 @@ export default function AgeSpecificPrivacyFeaturesPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Age-Specific Privacy Features', url: 'https://calculatecreator.com/news/age-specific-privacy-features' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Age-Specific Privacy Features', url: 'https://calculatecreator.com/news/age-specific-privacy-features/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

@@ -47,7 +47,7 @@ export default function TikTokPaymentDelaysPage() {
       <ArticleSchema
         headline="Understanding TikTok Payment Delays: Complete Guide"
         description="Complete guide to TikTok payment schedules, timelines, and troubleshooting payment delays across Creator Fund, LIVE Gifts, and TikTok Shop."
-        url="https://calculatecreator.com/guides/tiktok-payment-delays"
+        url="https://calculatecreator.com/guides/tiktok-payment-delays/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok payments', 'payment delays', 'creator fund payout', 'live gifts withdrawal']}
@@ -55,8 +55,8 @@ export default function TikTokPaymentDelaysPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'TikTok Payment Delays', url: 'https://calculatecreator.com/guides/tiktok-payment-delays' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'TikTok Payment Delays', url: 'https://calculatecreator.com/guides/tiktok-payment-delays/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

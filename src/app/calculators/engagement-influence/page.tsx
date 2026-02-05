@@ -84,23 +84,23 @@ export default function EngagementInfluencePage() {
       <CollectionPageSchema
         name="TikTok Engagement & Influence Calculators"
         description="Free calculators to measure TikTok engagement rate, calculate influencer pricing for brand deals, and predict video performance based on key metrics."
-        url="https://calculatecreator.com/calculators/engagement-influence"
+        url="https://calculatecreator.com/calculators/engagement-influence/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Engagement & Influence', url: 'https://calculatecreator.com/calculators/engagement-influence' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Engagement & Influence', url: 'https://calculatecreator.com/calculators/engagement-influence/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Engagement & Influence', href: '/calculators/engagement-influence' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Engagement & Influence', href: '/calculators/engagement-influence/' },
           ]}
           includeHome={true}
         />

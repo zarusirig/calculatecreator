@@ -43,7 +43,7 @@ export default function TikTokCreatorMarketplacePage() {
       <ArticleSchema
         headline="TikTok Creator Marketplace: Complete Guide for Brands & Creators"
         description="Complete guide to TikTok Creator Marketplace. How to join, connect with brands, campaign management, payment terms, and success strategies."
-        url="https://calculatecreator.com/guides/tiktok-creator-marketplace"
+        url="https://calculatecreator.com/guides/tiktok-creator-marketplace/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok creator marketplace', 'ttcm', 'brand partnerships tiktok', 'creator marketplace guide', 'tiktok brand deals platform']}

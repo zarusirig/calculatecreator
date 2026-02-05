@@ -19,7 +19,7 @@ export default function TikTokShopGMVDoublingPage() {
       <NewsArticleSchema
         headline="TikTok Shop Projected to Double GMV by End of 2026"
         description="Industry projections indicate TikTok Shop's global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce."
-        url="https://calculatecreator.com/news/tiktok-shop-gmv-doubling"
+        url="https://calculatecreator.com/news/tiktok-shop-gmv-doubling/"
         datePublished="2026-01-05"
         dateModified="2026-01-05"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
@@ -28,8 +28,8 @@ export default function TikTokShopGMVDoublingPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'TikTok Shop GMV Growth', url: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'TikTok Shop GMV Growth', url: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

@@ -330,7 +330,7 @@ export default function RegionPage() {
       <ArticleSchema
         headline="Top 20 Countries With the Most TikTok Users 2026"
         description="Comprehensive analysis of TikTok user distribution across the top 20 countries in 2025. Includes market penetration, creator earnings by region, and monetization opportunities worldwide."
-        url="https://calculatecreator.com/region"
+        url="https://calculatecreator.com/region/"
         datePublished="2025-01-28"
         dateModified="2025-01-28"
         keywords={[

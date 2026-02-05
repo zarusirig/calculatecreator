@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'TikTok Creator Tax Deductions Guide: What You Can Write Off 2026',
     description: 'Complete tax deduction guide for TikTok creators. Equipment, software, home office, and business expense writeoffs.',
     type: 'article',
-    url: 'https://calculatecreator.com/advanced/creator-tax-deductions',
+    url: 'https://calculatecreator.com/advanced/creator-tax-deductions/',
   },
   twitter: {
     card: 'summary_large_image',

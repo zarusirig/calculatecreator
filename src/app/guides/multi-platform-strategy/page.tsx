@@ -21,7 +21,7 @@ export default function MultiPlatformStrategyPage() {
       <ArticleSchema
         headline="Multi-Platform Creator Strategy 2026: TikTok, YouTube, Instagram Guide"
         description="Complete guide to multi-platform content strategy. How to repurpose content, maximize earnings across TikTok, YouTube, Instagram, and more."
-        url="https://calculatecreator.com/guides/multi-platform-strategy"
+        url="https://calculatecreator.com/guides/multi-platform-strategy/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['multi-platform strategy', 'content repurposing', 'tiktok youtube instagram', 'creator monetization strategy']}

@@ -87,7 +87,7 @@ export default function TikTokCreatorFundCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'Creator Fund Calculator', url: 'https://calculatecreator.com/calculators/tiktok-creator-fund/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function TikTokCreatorFundCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
             ]}
           />

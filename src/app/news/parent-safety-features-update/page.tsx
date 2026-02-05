@@ -28,8 +28,8 @@ export default function ParentSafetyFeaturesUpdatePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Parent Safety Features', url: 'https://calculatecreator.com/news/parent-safety-features-update' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Parent Safety Features', url: 'https://calculatecreator.com/news/parent-safety-features-update/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

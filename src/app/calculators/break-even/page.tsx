@@ -44,7 +44,7 @@ export default function BreakEvenCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Break-Even Calculator"
         description="Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams."
-        url="https://calculatecreator.com/calculators/break-even"
+        url="https://calculatecreator.com/calculators/break-even/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 1243 }}
         datePublished="2024-04-15"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function BreakEvenCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Break Even Calculator', url: 'https://calculatecreator.com/calculators/break-even' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Break Even Calculator', url: 'https://calculatecreator.com/calculators/break-even/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Break Even Calculator',
-              href: '/calculators/break-even',
+              href: '/calculators/break-even/',
             },
           ]}
         />

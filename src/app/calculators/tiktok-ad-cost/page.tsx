@@ -87,7 +87,7 @@ export default function TikTokAdCostCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'TikTok Ad Cost Calculator', url: 'https://calculatecreator.com/calculators/tiktok-ad-cost/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function TikTokAdCostCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'TikTok Ad Cost Calculator', href: '/calculators/tiktok-ad-cost/' },
             ]}
           />

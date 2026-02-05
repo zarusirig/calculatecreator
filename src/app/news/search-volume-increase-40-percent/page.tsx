@@ -29,7 +29,7 @@ export default function SearchVolumeIncrease40PercentPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'Search Volume Growth', url: 'https://calculatecreator.com/news/search-volume-increase-40-percent/' },
         ]}
       />

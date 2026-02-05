@@ -114,7 +114,7 @@ export default function ReferencePage() {
       <CollectionPageSchema
         name="TikTok Reference Data & Official Rates"
         description="Complete reference library for TikTok creators with official rates, payment schedules, eligible countries, gift values, and commission structures."
-        url="https://calculatecreator.com/reference"
+        url="https://calculatecreator.com/reference/"
         calculators={references.map(r => ({ name: r.name, description: r.description, slug: r.slug }))}
         keywords={['tiktok reference', 'creator fund', 'payment schedule', 'gift values', 'commission rates']}
         about={{
@@ -126,7 +126,7 @@ export default function ReferencePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Reference', url: 'https://calculatecreator.com/reference' },
+          { name: 'Reference', url: 'https://calculatecreator.com/reference/' },
         ]}
       />
 
@@ -135,7 +135,7 @@ export default function ReferencePage() {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Reference', href: '/reference' },
+              { label: 'Reference', href: '/reference/' },
             ]}
           />
 

@@ -65,7 +65,7 @@ export default function VideoPerformanceCalculatorPage() {
       <CalculatorSchema
         name="TikTok Video Performance Calculator"
         description="Calculate a comprehensive performance score for your TikTok videos based on views, engagement, reach, and audience interaction metrics."
-        url="https://calculatecreator.com/calculators/video-performance"
+        url="https://calculatecreator.com/calculators/video-performance/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 1583,
@@ -78,8 +78,8 @@ export default function VideoPerformanceCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Video Performance Calculator', url: 'https://calculatecreator.com/calculators/video-performance' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Video Performance Calculator', url: 'https://calculatecreator.com/calculators/video-performance/' },
         ]}
       />
 
@@ -87,10 +87,10 @@ export default function VideoPerformanceCalculatorPage() {
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Video Performance Calculator',
-              href: '/calculators/video-performance',
+              href: '/calculators/video-performance/',
             },
           ]}
         />

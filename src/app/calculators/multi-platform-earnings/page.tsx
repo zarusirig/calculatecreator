@@ -44,7 +44,7 @@ export default function MultiPlatformEarningsCalculatorPage() {
       <CalculatorSchema
         name="Multi-Platform Creator Earnings Calculator"
         description="Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media."
-        url="https://calculatecreator.com/calculators/multi-platform-earnings"
+        url="https://calculatecreator.com/calculators/multi-platform-earnings/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 2034 }}
         datePublished="2024-02-15"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function MultiPlatformEarningsCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Multi-Platform Earnings Calculator', url: 'https://calculatecreator.com/calculators/multi-platform-earnings' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Multi-Platform Earnings Calculator', url: 'https://calculatecreator.com/calculators/multi-platform-earnings/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Multi-Platform Earnings Calculator',
-              href: '/calculators/multi-platform-earnings',
+              href: '/calculators/multi-platform-earnings/',
             },
           ]}
         />

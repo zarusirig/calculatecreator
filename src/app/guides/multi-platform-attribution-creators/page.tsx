@@ -50,7 +50,7 @@ export default function MultiPlatformAttributionPage() {
       <ArticleSchema
         headline="Multi-Platform Attribution for Creators: Complete Tracking Guide"
         description="Master multi-platform attribution to track earnings, ROI, and performance across TikTok, YouTube, and Instagram with proven analytics frameworks."
-        url="https://calculatecreator.com/guides/multi-platform-attribution-creators"
+        url="https://calculatecreator.com/guides/multi-platform-attribution-creators/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['multi-platform', 'attribution', 'analytics', 'creator tracking']}
@@ -58,8 +58,8 @@ export default function MultiPlatformAttributionPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Multi-Platform Attribution', url: 'https://calculatecreator.com/guides/multi-platform-attribution-creators' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Multi-Platform Attribution', url: 'https://calculatecreator.com/guides/multi-platform-attribution-creators/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CAC Calculator 2026',
     description: 'Calculate Customer Acquisition Cost for TikTok marketing.',
-    url: 'https://calculatecreator.com/calculators/customer-acquisition-cost',
+    url: 'https://calculatecreator.com/calculators/customer-acquisition-cost/',
     type: 'website',
   },
 };

@@ -20,7 +20,7 @@ export default function CompleteTikTokCalculatorGuidePage() {
       <ArticleSchema
         headline="Complete Guide to TikTok Calculators 2026"
         description="Master TikTok success with comprehensive guide to 9 free calculators covering earnings, engagement, business ROI, and growth optimization."
-        url="https://calculatecreator.com/guides/complete-tiktok-calculator-guide"
+        url="https://calculatecreator.com/guides/complete-tiktok-calculator-guide/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok calculators', 'creator tools', 'earnings calculator', 'engagement calculator', 'roi calculator']}
@@ -28,8 +28,8 @@ export default function CompleteTikTokCalculatorGuidePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Complete Calculator Guide', url: 'https://calculatecreator.com/guides/complete-tiktok-calculator-guide' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Complete Calculator Guide', url: 'https://calculatecreator.com/guides/complete-tiktok-calculator-guide/' },
         ]}
       />
       <CompleteTikTokCalculatorGuideContent />
@@ -44,11 +44,11 @@ function CompleteTikTokCalculatorGuideContent() {
       description: 'Calculate your potential income from every TikTok monetization stream',
       icon: 'DollarSign',
       calculators: [
-        { name: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund', description: 'Estimate earnings from TikTok Creator Fund based on views, engagement, and audience location' },
-        { name: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate', description: 'Determine your fair market value for sponsored content and partnerships' },
-        { name: 'LIVE Gifts Calculator', href: '/calculators/live-gifts', description: 'Project income from virtual gifts during live streams' },
+        { name: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/', description: 'Estimate earnings from TikTok Creator Fund based on views, engagement, and audience location' },
+        { name: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/', description: 'Determine your fair market value for sponsored content and partnerships' },
+        { name: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/', description: 'Project income from virtual gifts during live streams' },
         { name: 'Shop Commission Calculator', href: '/calculators/commerce-ads/shop-profit/', description: 'Calculate affiliate earnings from TikTok Shop product promotions' },
-        { name: 'RPM Calculator', href: '/calculators/rpm', description: 'Analyze your revenue per thousand views for optimization' },
+        { name: 'RPM Calculator', href: '/calculators/rpm/', description: 'Analyze your revenue per thousand views for optimization' },
       ]
     },
     {
@@ -56,9 +56,9 @@ function CompleteTikTokCalculatorGuideContent() {
       description: 'Measure and optimize your content performance metrics',
       icon: 'BarChart3',
       calculators: [
-        { name: 'Engagement Rate Calculator', href: '/calculators/engagement-rate', description: 'Calculate your true engagement rate across all interactions' },
-        { name: 'Follower Growth Calculator', href: '/calculators/follower-growth', description: 'Project follower growth and set realistic milestones' },
-        { name: 'Hashtag Performance Analyzer', href: '/calculators/hashtag-performance', description: 'Evaluate hashtag effectiveness for reach optimization' },
+        { name: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/', description: 'Calculate your true engagement rate across all interactions' },
+        { name: 'Follower Growth Calculator', href: '/calculators/follower-growth/', description: 'Project follower growth and set realistic milestones' },
+        { name: 'Hashtag Performance Analyzer', href: '/calculators/hashtag-performance/', description: 'Evaluate hashtag effectiveness for reach optimization' },
       ]
     },
     {
@@ -66,7 +66,7 @@ function CompleteTikTokCalculatorGuideContent() {
       description: 'Make data-driven decisions for marketing investments',
       icon: 'TrendingUp',
       calculators: [
-        { name: 'Cost Per Result Calculator', href: '/calculators/cost-per-result', description: 'Track efficiency of advertising spend' },
+        { name: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/', description: 'Track efficiency of advertising spend' },
       ]
     },
   ];

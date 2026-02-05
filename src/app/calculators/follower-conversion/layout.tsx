@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Follower Conversion Calculator 2026',
     description: 'Calculate view-to-follower conversion rate.',
-    url: 'https://calculatecreator.com/calculators/follower-conversion',
+    url: 'https://calculatecreator.com/calculators/follower-conversion/',
     type: 'website',
   },
 };

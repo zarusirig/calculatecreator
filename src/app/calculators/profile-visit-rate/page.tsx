@@ -69,7 +69,7 @@ export default function ProfileVisitRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Profile Visit Rate Calculator"
         description="Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content."
-        url="https://calculatecreator.com/calculators/profile-visit-rate"
+        url="https://calculatecreator.com/calculators/profile-visit-rate/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1978 }}
         datePublished="2024-04-10"
         dateModified="2025-11-13"
@@ -79,16 +79,16 @@ export default function ProfileVisitRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Profile Visit Rate Calculator', url: 'https://calculatecreator.com/calculators/profile-visit-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Profile Visit Rate Calculator', url: 'https://calculatecreator.com/calculators/profile-visit-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Profile Visit Rate Calculator', href: '/calculators/profile-visit-rate' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Profile Visit Rate Calculator', href: '/calculators/profile-visit-rate/' },
           ]}
         />
 

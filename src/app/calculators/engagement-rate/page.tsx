@@ -87,7 +87,7 @@ export default function EngagementRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'Engagement Rate Calculator', url: 'https://calculatecreator.com/calculators/engagement-rate/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function EngagementRateCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
             ]}
           />

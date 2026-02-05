@@ -43,7 +43,7 @@ export default function HowToJoinCreatorFundCompletePage() {
       <ArticleSchema
         headline="How to Join TikTok Creator Fund: Complete Application Guide 2026"
         description="Complete guide to joining the TikTok Creator Fund. Step-by-step application process, eligibility requirements, approval tips, and what to do if rejected."
-        url="https://calculatecreator.com/guides/how-to-join-creator-fund-complete"
+        url="https://calculatecreator.com/guides/how-to-join-creator-fund-complete/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['how to join creator fund', 'tiktok creator fund application', 'creator fund eligibility', 'apply for creator fund', 'tiktok monetization']}

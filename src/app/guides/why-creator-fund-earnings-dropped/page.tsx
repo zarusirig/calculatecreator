@@ -19,7 +19,7 @@ export default function WhyEarningsDroppedPage() {
       <ArticleSchema
         headline="Why Did My TikTok Creator Fund Earnings Drop? Complete Troubleshooting"
         description="12 common reasons for Creator Fund earnings drops with diagnostic checklist and fixes. Troubleshoot low payments and recover your income."
-        url="https://calculatecreator.com/guides/why-creator-fund-earnings-dropped"
+        url="https://calculatecreator.com/guides/why-creator-fund-earnings-dropped/"
         datePublished="2024-06-15"
         dateModified="2026-01-15"
         keywords={['creator fund earnings dropped', 'tiktok earnings low', 'creator fund troubleshooting', 'fix low tiktok payments']}

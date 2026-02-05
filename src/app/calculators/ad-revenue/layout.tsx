@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Ad Revenue Calculator 2026',
     description: 'Estimate TikTok ad revenue potential from video views.',
-    url: 'https://calculatecreator.com/calculators/ad-revenue',
+    url: 'https://calculatecreator.com/calculators/ad-revenue/',
     type: 'website',
   },
 };

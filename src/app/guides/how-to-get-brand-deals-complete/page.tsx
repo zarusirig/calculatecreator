@@ -160,7 +160,7 @@ export default function HowToGetBrandDealsPage() {
       <ArticleSchema
         headline="How to Get Brand Deals on TikTok: Complete Guide 2026"
         description="Complete guide to landing brand deals on TikTok. 7 proven strategies, pitch templates, pricing guide, and where to find opportunities. For creators at any level."
-        url="https://calculatecreator.com/guides/how-to-get-brand-deals-complete"
+        url="https://calculatecreator.com/guides/how-to-get-brand-deals-complete/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['how to get brand deals', 'tiktok sponsorships', 'brand partnerships', 'influencer marketing', 'sponsored content']}

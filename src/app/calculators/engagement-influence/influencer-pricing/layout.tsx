@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Brand Deal Calculator 2026',
     description: 'Calculate what to charge brands for sponsored TikTok posts.',
-    url: 'https://calculatecreator.com/calculators/brand-deal-rate',
+    url: 'https://calculatecreator.com/calculators/brand-deal-rate/',
     type: 'website',
   },
 };

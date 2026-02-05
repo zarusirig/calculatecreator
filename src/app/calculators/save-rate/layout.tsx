@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Save Rate Calculator 2026',
     description: 'Calculate video save rate to measure content value.',
-    url: 'https://calculatecreator.com/calculators/save-rate',
+    url: 'https://calculatecreator.com/calculators/save-rate/',
     type: 'website',
   },
 };

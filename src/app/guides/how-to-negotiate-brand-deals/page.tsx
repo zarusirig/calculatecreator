@@ -152,7 +152,7 @@ export default function NegotiateBrandDealsPage() {
       <ArticleSchema
         headline="How to Negotiate TikTok Brand Deals: Expert Pricing Strategies 2026"
         description="Master brand deal negotiations with proven strategies. Learn how to price your content, counter offers, and secure rates 30-50% higher than initial offers."
-        url="https://calculatecreator.com/guides/how-to-negotiate-brand-deals"
+        url="https://calculatecreator.com/guides/how-to-negotiate-brand-deals/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['negotiate brand deals', 'tiktok sponsorship rates', 'influencer negotiation', 'brand deal pricing']}

@@ -19,7 +19,7 @@ export default function AlgorithmEngagementPage() {
       <ArticleSchema
         headline="TikTok Algorithm & Engagement: How to Boost Your Reach"
         description="Master the relationship between TikTok algorithm and engagement. Proven tactics to increase likes, comments, shares, and watch time for better reach."
-        url="https://calculatecreator.com/guides/tiktok-algorithm-engagement"
+        url="https://calculatecreator.com/guides/tiktok-algorithm-engagement/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok algorithm engagement', 'boost tiktok engagement', 'increase reach', 'fyp algorithm']}

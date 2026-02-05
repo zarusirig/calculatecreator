@@ -72,23 +72,23 @@ export default function FunNichePage() {
       <CollectionPageSchema
         name="TikTok Fun & Niche Calculators"
         description="Explore fun and unique calculators for TikTok creators, including moon phase timing tools for creators who believe in lunar influences on content performance."
-        url="https://calculatecreator.com/calculators/fun-niche"
+        url="https://calculatecreator.com/calculators/fun-niche/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Fun & Niche', url: 'https://calculatecreator.com/calculators/fun-niche' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Fun & Niche', url: 'https://calculatecreator.com/calculators/fun-niche/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Fun & Niche', href: '/calculators/fun-niche' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Fun & Niche', href: '/calculators/fun-niche/' },
           ]}
           includeHome={true}
         />

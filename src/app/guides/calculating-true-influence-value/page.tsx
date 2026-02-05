@@ -47,7 +47,7 @@ export default function CalculatingTrueInfluenceValuePage() {
       <ArticleSchema
         headline="Calculating True Influence Value: Beyond Follower Count"
         description="Complete guide to calculating creator influence value using 7 key factors beyond follower count for better brand negotiations."
-        url="https://calculatecreator.com/guides/calculating-true-influence-value"
+        url="https://calculatecreator.com/guides/calculating-true-influence-value/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['influence value', 'creator worth', 'brand deals', 'influencer marketing']}
@@ -55,8 +55,8 @@ export default function CalculatingTrueInfluenceValuePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Calculating True Influence Value', url: 'https://calculatecreator.com/guides/calculating-true-influence-value' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Calculating True Influence Value', url: 'https://calculatecreator.com/guides/calculating-true-influence-value/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

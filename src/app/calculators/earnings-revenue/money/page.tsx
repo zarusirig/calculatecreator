@@ -61,7 +61,7 @@ export default function TikTokMoneyCalculatorPage() {
       <CalculatorSchema
         name="TikTok Money Calculator"
         description="Calculate your total TikTok earnings from all income streams: Creator Fund, brand deals, LIVE gifts, and TikTok Shop. Get comprehensive monetization estimates for any follower count."
-        url="https://calculatecreator.com/calculators/earnings-revenue/money"
+        url="https://calculatecreator.com/calculators/earnings-revenue/money/"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 3247 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
@@ -71,13 +71,13 @@ export default function TikTokMoneyCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'TikTok Money Calculator', url: 'https://calculatecreator.com/calculators/earnings-revenue/money' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'TikTok Money Calculator', url: 'https://calculatecreator.com/calculators/earnings-revenue/money/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
       <div className="container-custom">
-        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators' }, { label: 'TikTok Money Calculator', href: '/calculators/tiktok-money' }]} />
+        <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' }]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-primary text-white mb-6">

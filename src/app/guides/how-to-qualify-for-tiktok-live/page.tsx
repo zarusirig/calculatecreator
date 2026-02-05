@@ -43,7 +43,7 @@ export default function QualifyForTikTokLivePage() {
       <ArticleSchema
         headline="How to Qualify for TikTok LIVE Gifts: Requirements & Tips"
         description="Learn how to unlock TikTok LIVE and start earning from virtual gifts. Step-by-step guide to meeting requirements and getting approved quickly."
-        url="https://calculatecreator.com/guides/how-to-qualify-for-tiktok-live"
+        url="https://calculatecreator.com/guides/how-to-qualify-for-tiktok-live/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['tiktok live requirements', 'how to go live on tiktok', 'tiktok live gifts', 'tiktok live monetization', 'unlock tiktok live']}

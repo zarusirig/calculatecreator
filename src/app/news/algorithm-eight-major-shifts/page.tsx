@@ -19,7 +19,7 @@ export default function AlgorithmEightMajorShiftsPage() {
       <NewsArticleSchema
         headline="TikTok Algorithm Undergoes Eight Major Shifts in 2025"
         description="Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior."
-        url="https://calculatecreator.com/news/algorithm-eight-major-shifts"
+        url="https://calculatecreator.com/news/algorithm-eight-major-shifts/"
         datePublished="2026-01-03"
         dateModified="2026-01-03"
         image="https://calculatecreator.com/news/news-algorithm-1024.webp"
@@ -28,8 +28,8 @@ export default function AlgorithmEightMajorShiftsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Algorithm Changes', url: 'https://calculatecreator.com/news/algorithm-eight-major-shifts' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Algorithm Changes', url: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

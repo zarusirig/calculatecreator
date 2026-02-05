@@ -69,7 +69,7 @@ export default function ViralPotentialCalculatorPage() {
       <CalculatorSchema
         name="TikTok Viral Potential Calculator"
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
-        url="https://calculatecreator.com/calculators/viral-potential"
+        url="https://calculatecreator.com/calculators/viral-potential/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1889 }}
         datePublished="2024-05-05"
         dateModified="2025-12-05"
@@ -79,16 +79,16 @@ export default function ViralPotentialCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Viral Potential Calculator', url: 'https://calculatecreator.com/calculators/viral-potential' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Viral Potential Calculator', url: 'https://calculatecreator.com/calculators/viral-potential/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Viral Potential Calculator', href: '/calculators/viral-potential' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
           ]}
         />
 

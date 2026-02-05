@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Video Performance Calculator 2026',
     description: 'Predict TikTok video performance before posting.',
-    url: 'https://calculatecreator.com/calculators/video-performance',
+    url: 'https://calculatecreator.com/calculators/video-performance/',
     type: 'website',
   },
 };

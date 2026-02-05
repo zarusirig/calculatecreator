@@ -48,8 +48,8 @@ export default function BrandDealRateCalculatorPage() {
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
           ]}
         />
 

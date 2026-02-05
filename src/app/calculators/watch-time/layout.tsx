@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Watch Time Calculator 2026',
     description: 'Calculate average watch time and video completion rate.',
-    url: 'https://calculatecreator.com/calculators/watch-time',
+    url: 'https://calculatecreator.com/calculators/watch-time/',
     type: 'website',
   },
 };

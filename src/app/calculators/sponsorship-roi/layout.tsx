@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sponsorship ROI Calculator 2026',
     description: 'Calculate ROI for brand sponsorships and partnerships.',
-    url: 'https://calculatecreator.com/calculators/sponsorship-roi',
+    url: 'https://calculatecreator.com/calculators/sponsorship-roi/',
     type: 'website',
   },
 };

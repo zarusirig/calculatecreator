@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: 'TikTok Coin Converter Complete Guide 2026 | Coins to Money Calculator',
     description: 'Master TikTok coin conversion with free calculator, understand values, and optimize your virtual currency earnings.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide',
+    url: 'https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,7 +55,7 @@ export default function TikTokCoinConverterCompleteGuidePage() {
       <ArticleSchema
         headline="TikTok Coin Converter Complete Guide 2026 | Coins to Money Calculator"
         description="Complete guide to TikTok coin conversion: Learn how coins work, calculate values, understand gift pricing, and maximize your virtual currency earnings on TikTok."
-        url="https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide"
+        url="https://calculatecreator.com/guides/tiktok-coin-converter-complete-guide/"
         datePublished="2025-11-14"
         dateModified="2025-11-14"
         keywords={["tiktok coin calculator", "coin converter", "virtual currency", "gift values"]}
@@ -64,8 +64,8 @@ export default function TikTokCoinConverterCompleteGuidePage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-yellow-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Guides', href: '/guides' },
-            { label: 'TikTok Coin Converter Complete Guide', href: '/guides/tiktok-coin-converter-complete-guide' }
+            { label: 'Guides', href: '/guides/' },
+            { label: 'TikTok Coin Converter Complete Guide', href: '/guides/tiktok-coin-converter-complete-guide/' }
           ]} />
 
           <div className="max-w-4xl mx-auto">

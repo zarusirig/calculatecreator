@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'TikTok Ad Budget Calculator Guide 2026 | Advertising Cost Planning',
     description: 'Master TikTok advertising costs with free calculator, budget planning, and campaign optimization strategies.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide',
+    url: 'https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -53,7 +53,7 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
       <ArticleSchema
         headline="TikTok Ad Budget Calculator Guide 2026 | Advertising Cost Planning"
         description="Complete guide to TikTok advertising costs: Learn how to calculate ad budgets, understand CPM/CPC/CPV pricing, measure campaign ROI, and optimize your TikTok marketing spend."
-        url="https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide"
+        url="https://calculatecreator.com/guides/tiktok-ad-budget-calculator-guide/"
         datePublished="2025-11-14"
         dateModified="2025-11-14"
         keywords={["tiktok ad budget calculator", "advertising costs", "campaign budget", "CPM calculator"]}
@@ -62,8 +62,8 @@ export default function TikTokAdBudgetCalculatorGuidePage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Guides', href: '/guides' },
-            { label: 'TikTok Ad Budget Calculator Guide', href: '/guides/tiktok-ad-budget-calculator-guide' }
+            { label: 'Guides', href: '/guides/' },
+            { label: 'TikTok Ad Budget Calculator Guide', href: '/guides/tiktok-ad-budget-calculator-guide/' }
           ]} />
 
           <div className="max-w-4xl mx-auto">

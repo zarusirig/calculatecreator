@@ -44,7 +44,7 @@ export default function ContentCalendarROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Content Calendar ROI Calculator"
         description="Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth."
-        url="https://calculatecreator.com/calculators/content-calendar-roi"
+        url="https://calculatecreator.com/calculators/content-calendar-roi/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 1543 }}
         datePublished="2024-03-15"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function ContentCalendarROICalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Content Calendar ROI Calculator', url: 'https://calculatecreator.com/calculators/content-calendar-roi' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Content Calendar ROI Calculator', url: 'https://calculatecreator.com/calculators/content-calendar-roi/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Content Calendar ROI Calculator',
-              href: '/calculators/content-calendar-roi',
+              href: '/calculators/content-calendar-roi/',
             },
           ]}
         />

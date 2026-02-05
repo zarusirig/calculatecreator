@@ -48,7 +48,7 @@ export default function LifetimeValueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Customer Lifetime Value (LTV) Calculator"
         description="Calculate the total value a customer brings over their lifetime to determine how much you can spend on acquisition."
-        url="https://calculatecreator.com/calculators/lifetime-value"
+        url="https://calculatecreator.com/calculators/lifetime-value/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 912,
@@ -61,16 +61,16 @@ export default function LifetimeValueCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Lifetime Value Calculator', url: 'https://calculatecreator.com/calculators/lifetime-value' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Lifetime Value Calculator', url: 'https://calculatecreator.com/calculators/lifetime-value/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Lifetime Value Calculator', href: '/calculators/lifetime-value' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Lifetime Value Calculator', href: '/calculators/lifetime-value/' },
             ]}
           />
 

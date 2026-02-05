@@ -69,7 +69,7 @@ export default function WatchTimeCalculatorPage() {
       <CalculatorSchema
         name="TikTok Watch Time Calculator"
         description="Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success."
-        url="https://calculatecreator.com/calculators/watch-time"
+        url="https://calculatecreator.com/calculators/watch-time/"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2456 }}
         datePublished="2024-04-18"
         dateModified="2025-12-05"
@@ -79,16 +79,16 @@ export default function WatchTimeCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Watch Time Calculator', url: 'https://calculatecreator.com/calculators/watch-time' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Watch Time Calculator', url: 'https://calculatecreator.com/calculators/watch-time/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Watch Time Calculator', href: '/calculators/watch-time' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Watch Time Calculator', href: '/calculators/watch-time/' },
           ]}
         />
 

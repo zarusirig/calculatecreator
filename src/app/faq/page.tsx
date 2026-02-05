@@ -53,7 +53,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How can I contact you or report an issue?',
         answer: 'Visit our Contact page to reach our team. We welcome feedback on calculator accuracy, feature requests, bug reports, and questions about methodology. We typically respond within 24-48 hours. For urgent issues, include "URGENT" in your message subject.',
-        link: { text: 'Contact Us', href: '/contact' }
+        link: { text: 'Contact Us', href: '/contact/' }
       },
     ],
   },
@@ -73,7 +73,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'Which calculator should I start with as a new creator?',
         answer: 'Start with the Engagement Rate Calculator to understand your audience interaction quality. Then use the Follower Growth Calculator to project your trajectory. Once you hit 10K followers, the Creator Fund Calculator becomes relevant. At 10K+, also check the Brand Deal Rate Calculator to know your market value.',
-        link: { text: 'Engagement Rate Calculator', href: '/calculators/engagement-rate' }
+        link: { text: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' }
       },
       {
         question: 'Can I trust these calculators for business decisions?',
@@ -101,22 +101,22 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'What is the TikTok Creator Fund and how does it work?',
         answer: 'The TikTok Creator Fund pays eligible creators based on video performance. Unlike YouTube AdSense (which shares ad revenue), it operates on a fixed pool model—TikTok allocates a daily budget divided among all participating creators. Your share depends on views, engagement, watch time, and audience location.',
-        link: { text: 'Creator Fund Guide', href: '/guides/tiktok-creator-fund' }
+        link: { text: 'Creator Fund Guide', href: '/guides/tiktok-creator-fund/' }
       },
       {
         question: 'What are the Creator Fund eligibility requirements?',
         answer: 'To join the Creator Fund, you need: (1) 10,000+ followers, (2) 100,000+ video views in the last 30 days, (3) Be 18+ years old, (4) Account in good standing with no community guideline violations, (5) Based in US, UK, Germany, France, Italy, or Spain. Requirements may vary by region.',
-        link: { text: 'How to Join Creator Fund', href: '/guides/how-to-join-creator-fund' }
+        link: { text: 'How to Join Creator Fund', href: '/guides/how-to-join-creator-fund/' }
       },
       {
         question: 'How much does the Creator Fund pay per 1,000 views?',
         answer: 'The Creator Fund pays approximately $0.02-$0.04 per 1,000 views on average. Premium niches (finance, business, education) can earn $0.05-$0.08, while entertainment content often sees $0.01-$0.02. Your RPM depends on audience location, engagement rate, and content quality.',
-        link: { text: 'RPM Calculator', href: '/calculators/rpm' }
+        link: { text: 'RPM Calculator', href: '/calculators/rpm/' }
       },
       {
         question: 'Why are Creator Fund payments so low compared to YouTube?',
         answer: 'Three main reasons: (1) Fixed pool model—as more creators join, the pool is divided further, (2) Short-form content has fewer ad opportunities than YouTube\'s long-form videos, (3) TikTok is still developing its ad infrastructure. YouTube creators typically earn $3-5 per 1,000 views vs TikTok\'s $0.02-$0.04.',
-        link: { text: 'TikTok vs YouTube Comparison', href: '/comparisons/tiktok-vs-youtube-earnings' }
+        link: { text: 'TikTok vs YouTube Comparison', href: '/comparisons/tiktok-vs-youtube-earnings/' }
       },
       {
         question: 'How long does Creator Fund approval take?',
@@ -125,7 +125,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'When and how does TikTok pay Creator Fund earnings?',
         answer: 'Creator Fund earnings are calculated daily and visible in your Creator Tools dashboard within 3 days. Payments are processed monthly around the 15th for the previous month\'s earnings. Minimum withdrawal is $10 (US) via PayPal or direct bank transfer. Processing takes 7-14 business days.',
-        link: { text: 'Payment Schedule', href: '/reference/creator-fund-payment-schedule' }
+        link: { text: 'Payment Schedule', href: '/reference/creator-fund-payment-schedule/' }
       },
       {
         question: 'Does joining Creator Fund hurt your views?',
@@ -138,7 +138,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'What\'s the difference between Creator Fund and Creator Rewards Program?',
         answer: 'Creator Rewards Program (launched 2024) is TikTok\'s newer monetization program replacing Creator Fund. Key differences: (1) Only videos 1+ minute qualify (vs any length), (2) Pays $0.40-$1.00 per 1K views (vs $0.02-$0.04), (3) Focuses on originality and engagement, (4) Same eligibility requirements (10K followers, 100K views/month). Many creators transition to Rewards for higher earnings.',
-        link: { text: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund' }
+        link: { text: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' }
       },
       {
         question: 'Why did my Creator Fund earnings suddenly drop?',
@@ -154,17 +154,17 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How much should I charge for a sponsored TikTok post?',
         answer: 'A general formula: $10-25 per 1,000 followers × engagement multiplier (1.0 for 3-5% engagement, 1.3 for 5-8%, 1.5+ for 8%+). Nano creators (1-10K) charge $50-300, micro (10-50K) $300-1,500, mid-tier (50-500K) $1,500-10,000, and macro (500K+) $10,000-50,000+. Always negotiate—first offers are typically 50-70% of budget.',
-        link: { text: 'Brand Deal Calculator', href: '/calculators/brand-deal-rate' }
+        link: { text: 'Brand Deal Calculator', href: '/calculators/brand-deal-rate/' }
       },
       {
         question: 'When do brands start reaching out to creators?',
         answer: 'Most creators start receiving brand inquiries around 10,000-20,000 followers with consistent engagement (4%+). However, you don\'t have to wait—proactively pitch brands in your niche at any size. Nano-influencers (1-10K) are increasingly popular for their high engagement and authentic audiences.',
-        link: { text: 'How to Get Brand Deals', href: '/guides/how-to-get-brand-deals' }
+        link: { text: 'How to Get Brand Deals', href: '/guides/how-to-get-brand-deals/' }
       },
       {
         question: 'How do I find brand deal opportunities?',
         answer: 'Multiple channels: (1) Optimize your bio with contact info and "open for collabs", (2) Join creator marketplaces like TikTok Creator Marketplace, AspireIQ, Grin, and Influencer.co, (3) Cold-pitch brands you genuinely use, (4) Engage with brand content to get noticed, (5) Work with talent agencies once you hit 100K+.',
-        link: { text: 'TikTok Creator Marketplace Guide', href: '/guides/tiktok-creator-marketplace' }
+        link: { text: 'TikTok Creator Marketplace Guide', href: '/guides/tiktok-creator-marketplace/' }
       },
       {
         question: 'What\'s the difference between gifted products and paid sponsorships?',
@@ -173,12 +173,12 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How do I negotiate higher brand deal rates?',
         answer: 'Key tactics: (1) Never accept the first offer—counter 30-50% higher, (2) Lead with engagement data, not follower count, (3) Bundle deliverables (TikTok + Instagram = +30%), (4) Charge for usage rights separately (+25-100%), (5) Create scarcity—mention other brand interest. Use our calculator results as evidence.',
-        link: { text: 'Negotiation Guide', href: '/guides/how-to-negotiate-brand-deals' }
+        link: { text: 'Negotiation Guide', href: '/guides/how-to-negotiate-brand-deals/' }
       },
       {
         question: 'What should be included in a brand deal contract?',
         answer: 'Essential elements: deliverables (number of posts, format, length), timeline and deadlines, compensation and payment terms, usage rights (duration, platforms), exclusivity period, revision limits, content approval process, FTC disclosure requirements, and cancellation terms. Never start work without a signed agreement.',
-        link: { text: 'Contract Template', href: '/resources/brand-deal-contract-template' }
+        link: { text: 'Contract Template', href: '/resources/brand-deal-contract-template/' }
       },
       {
         question: 'How do I create a media kit for brand outreach?',
@@ -198,7 +198,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How do TikTok coins convert to real money?',
         answer: 'Viewers buy TikTok Coins ($0.01-0.015 per coin depending on purchase bundle). They send coins as gifts during LIVE streams. Creators receive approximately 50% of the gift value as Diamonds. Diamonds convert to USD at roughly $0.005 per diamond (200 diamonds = $1). Example: A Drama Queen gift (5,000 coins) = ~$12.50 to the creator.',
-        link: { text: 'Coins Calculator', href: '/calculators/coins' }
+        link: { text: 'Coins Calculator', href: '/calculators/coins/' }
       },
       {
         question: 'What percentage does TikTok take from LIVE gifts?',
@@ -207,22 +207,22 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'What are the requirements to go LIVE on TikTok?',
         answer: 'You need: (1) At least 1,000 followers, (2) Be 18+ years old (16+ in some regions with restrictions), (3) Account in good standing. Once eligible, the LIVE button appears when you tap "+" to create content. Some features like LIVE gifts require additional verification.',
-        link: { text: 'LIVE Requirements Guide', href: '/guides/how-to-qualify-for-tiktok-live' }
+        link: { text: 'LIVE Requirements Guide', href: '/guides/how-to-qualify-for-tiktok-live/' }
       },
       {
         question: 'What are the most valuable TikTok gifts?',
         answer: 'Top gifts by value: TikTok Universe (34,999 coins, ~$87 to creator), Lion (29,999 coins, ~$75), TikTok Stars (10,000 coins, ~$25), Drama Queen (5,000 coins, ~$12.50), and Interstellar (10,000 coins, ~$25). However, many small gifts (Rose, TikTok) add up significantly during active streams.',
-        link: { text: 'Gift Value Chart', href: '/reference/live-gifts-value-chart' }
+        link: { text: 'Gift Value Chart', href: '/reference/live-gifts-value-chart/' }
       },
       {
         question: 'What are the best times and strategies for LIVE streaming?',
         answer: 'Best times vary by audience, but generally: weekday evenings (7-10 PM) and weekends perform well. Strategies: (1) Stream consistently same time weekly, (2) Set visible gift goals with incentives, (3) Acknowledge every gifter by name, (4) Run LIVE battles for competitive gift surges, (5) Engage constantly—no dead air.',
-        link: { text: 'Best Times to LIVE', href: '/guides/best-times-go-live' }
+        link: { text: 'Best Times to LIVE', href: '/guides/best-times-go-live/' }
       },
       {
         question: 'How do diamonds convert to cash withdrawal?',
         answer: 'Diamonds convert at approximately $0.005 each (200 diamonds = $1). Minimum withdrawal is $10 (2,000 diamonds) in most regions. Go to Profile → Settings → Balance to withdraw to PayPal or linked bank account. Processing takes 2-7 business days. Note: Some regions have higher minimums.',
-        link: { text: 'Diamond Converter', href: '/calculators/diamond-converter' }
+        link: { text: 'Diamond Converter', href: '/calculators/diamond-converter/' }
       },
       {
         question: 'Do you pay taxes on TikTok LIVE gifts?',
@@ -239,22 +239,22 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How does TikTok Shop affiliate marketing work?',
         answer: 'As a TikTok Shop affiliate, you promote products from the Shop marketplace and earn commission on sales. You can add product links to your videos, LIVE streams, or profile showcase. When viewers purchase through your links, you earn 5-20% commission depending on the product category and seller terms.',
-        link: { text: 'TikTok Shop Guide', href: '/guides/tiktok-shop-affiliate' }
+        link: { text: 'TikTok Shop Guide', href: '/guides/tiktok-shop-affiliate/' }
       },
       {
         question: 'What commission rates can TikTok Shop creators earn?',
         answer: 'Commission rates vary by category: Fashion & Accessories (10-20%), Beauty & Personal Care (10-15%), Electronics (5-10%), Home & Garden (8-15%), Health & Wellness (10-15%). Top-performing affiliates can negotiate higher rates with sellers. Some promotional periods offer boosted commissions.',
-        link: { text: 'Commission Rates', href: '/reference/shop-commission-rates' }
+        link: { text: 'Commission Rates', href: '/reference/shop-commission-rates/' }
       },
       {
         question: 'What are the requirements to join TikTok Shop as a creator?',
         answer: 'Requirements vary by region, but generally: (1) 1,000+ followers, (2) 18+ years old, (3) Account in good standing, (4) At least 50 video views in last 28 days, (5) Posted video in last 28 days. Some markets have higher thresholds. US creators need 5,000+ followers for full Shop features.',
-        link: { text: 'How to Join TikTok Shop', href: '/guides/how-to-become-shop-affiliate' }
+        link: { text: 'How to Join TikTok Shop', href: '/guides/how-to-become-shop-affiliate/' }
       },
       {
         question: 'What product categories sell best on TikTok?',
         answer: 'Top-performing categories: Beauty & Skincare (#TikTokMadeMeBuyIt), Fashion accessories, Kitchen gadgets, Tech accessories, Health & Wellness products, Home organization items. Products that demonstrate well in short videos perform best—visual transformation, before/after, or satisfying application content.',
-        link: { text: 'Best Shop Niches', href: '/guides/best-shop-niches' }
+        link: { text: 'Best Shop Niches', href: '/guides/best-shop-niches/' }
       },
       {
         question: 'How do I add products to my TikTok videos?',
@@ -263,7 +263,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'When and how does TikTok Shop pay commissions?',
         answer: 'TikTok Shop pays commissions after the order completion period (typically 7-15 days after delivery to account for returns). Payments are processed weekly or bi-weekly depending on your region. Minimum payout is usually $10-25. Funds transfer to your linked bank account or PayPal within 3-7 business days.',
-        link: { text: 'Shop Payment Schedule', href: '/reference/tiktok-shop-payment-schedule' }
+        link: { text: 'Shop Payment Schedule', href: '/reference/tiktok-shop-payment-schedule/' }
       },
       {
         question: 'Can I sell my own products on TikTok Shop?',
@@ -284,17 +284,17 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'What are all the ways to make money on TikTok?',
         answer: 'Main monetization streams: (1) Creator Fund/Rewards Program ($0.02-$1.00 per 1K views), (2) Brand deals & sponsorships ($50-$50,000+ per post), (3) LIVE gifts (varies widely), (4) TikTok Shop affiliate commissions (5-20%), (5) Product subscriptions, (6) Selling your own products/services, (7) Driving traffic to external platforms (YouTube, Patreon, courses).',
-        link: { text: 'Complete Monetization Guide', href: '/guides/tiktok-monetization-requirements' }
+        link: { text: 'Complete Monetization Guide', href: '/guides/tiktok-monetization-requirements/' }
       },
       {
         question: 'How much money can you realistically make on TikTok?',
         answer: 'It varies enormously. Nano creators (1-10K) typically earn $50-300/month. Micro (10-50K) earn $300-2,000/month. Mid-tier (50-500K) earn $2,000-15,000/month. Macro (500K+) can earn $15,000-100,000+ monthly. Brand deals become the primary income source at scale. Most full-time creators have 100K+ followers and combine multiple revenue streams.',
-        link: { text: 'TikTok Money Calculator', href: '/calculators/tiktok-money' }
+        link: { text: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' }
       },
       {
         question: 'Do you need 10,000 followers to make money on TikTok?',
         answer: 'No! While Creator Fund requires 10K followers, you can monetize earlier. At 1,000 followers you unlock LIVE gifts and can start earning from viewers. You can also pursue nano-influencer brand deals (even with 1K-5K followers), join TikTok Shop affiliate program, or drive traffic to external income sources from day one.',
-        link: { text: 'First $1,000 Guide', href: '/guides/how-to-make-first-1000-dollars' }
+        link: { text: 'First $1,000 Guide', href: '/guides/how-to-make-first-1000-dollars/' }
       },
       {
         question: 'Which monetization stream pays the most?',
@@ -303,7 +303,7 @@ const faqCategories: { id: string; title: string; icon: LucideIcon; questions: {
       {
         question: 'How long does it take to start making money on TikTok?',
         answer: 'With consistent posting (3-5 videos/week), most creators reach 1,000 followers in 2-4 months, unlocking LIVE gifts. Reaching 10,000 followers for Creator Fund typically takes 6-12 months. First brand deal inquiries often come around 5-10K followers (4-8 months). Your first $1,000 earned realistically takes 4-8 months of dedicated content creation.',
-        link: { text: 'Growth Timeline', href: '/guides/how-to-make-first-1000-dollars' }
+        link: { text: 'Growth Timeline', href: '/guides/how-to-make-first-1000-dollars/' }
       },
       {
         question: 'Can you make a full-time income from TikTok?',

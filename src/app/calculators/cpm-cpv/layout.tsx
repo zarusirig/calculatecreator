@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CPM/CPV Calculator 2026',
     description: 'Calculate Cost Per Mille and Cost Per View for TikTok ads.',
-    url: 'https://calculatecreator.com/calculators/cpm-cpv',
+    url: 'https://calculatecreator.com/calculators/cpm-cpv/',
     type: 'website',
   },
 };

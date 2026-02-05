@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Campaign ROI Calculator 2026',
     description: 'Calculate marketing campaign ROI and ROAS on TikTok.',
-    url: 'https://calculatecreator.com/calculators/campaign-roi',
+    url: 'https://calculatecreator.com/calculators/campaign-roi/',
     type: 'website',
   },
 };

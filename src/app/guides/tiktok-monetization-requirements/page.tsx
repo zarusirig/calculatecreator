@@ -59,7 +59,7 @@ export default function TikTokMonetizationRequirementsPage() {
       <ArticleSchema
         headline="TikTok Monetization Requirements: Complete 2026 Eligibility Guide"
         description="Complete guide to TikTok monetization requirements for Creator Fund, LIVE Gifts, TikTok Shop, and brand deals. Eligibility criteria, timelines, and how to qualify."
-        url="https://calculatecreator.com/guides/tiktok-monetization-requirements"
+        url="https://calculatecreator.com/guides/tiktok-monetization-requirements/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok monetization requirements', 'tiktok eligibility', 'creator fund requirements', 'tiktok live requirements', 'tiktok shop eligibility']}

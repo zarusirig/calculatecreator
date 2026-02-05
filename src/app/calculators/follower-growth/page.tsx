@@ -45,7 +45,7 @@ export default function FollowerGrowthCalculatorPage() {
       <CalculatorSchema
         name="TikTok Follower Growth Rate Calculator"
         description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
-        url="https://calculatecreator.com/calculators/follower-growth"
+        url="https://calculatecreator.com/calculators/follower-growth/"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2287 }}
         datePublished="2024-01-25"
         dateModified="2025-11-13"
@@ -55,18 +55,18 @@ export default function FollowerGrowthCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Follower Growth Calculator', url: 'https://calculatecreator.com/calculators/follower-growth' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Follower Growth Calculator', url: 'https://calculatecreator.com/calculators/follower-growth/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Follower Growth Calculator',
-              href: '/calculators/follower-growth',
+              href: '/calculators/follower-growth/',
             },
           ]}
         />

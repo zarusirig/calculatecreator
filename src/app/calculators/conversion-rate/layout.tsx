@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Conversion Rate Calculator 2026',
     description: 'Calculate traffic conversion rate from TikTok to sales.',
-    url: 'https://calculatecreator.com/calculators/conversion-rate',
+    url: 'https://calculatecreator.com/calculators/conversion-rate/',
     type: 'website',
   },
 };

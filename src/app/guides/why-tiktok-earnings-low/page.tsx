@@ -47,7 +47,7 @@ export default function WhyTikTokEarningsLowPage() {
       <ArticleSchema
         headline="Why Are My TikTok Earnings So Low? 8 Reasons + Solutions"
         description="Complete analysis of why TikTok Creator Fund earnings are low, including RPM factors, engagement issues, and actionable strategies to increase income."
-        url="https://calculatecreator.com/guides/why-tiktok-earnings-low"
+        url="https://calculatecreator.com/guides/why-tiktok-earnings-low/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok earnings', 'creator fund', 'low rpm', 'increase income']}
@@ -55,8 +55,8 @@ export default function WhyTikTokEarningsLowPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Why TikTok Earnings Low', url: 'https://calculatecreator.com/guides/why-tiktok-earnings-low' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Why TikTok Earnings Low', url: 'https://calculatecreator.com/guides/why-tiktok-earnings-low/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

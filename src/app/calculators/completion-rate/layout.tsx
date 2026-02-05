@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Completion Rate Calculator 2026',
     description: 'Calculate video completion rate to boost algorithm ranking.',
-    url: 'https://calculatecreator.com/calculators/completion-rate',
+    url: 'https://calculatecreator.com/calculators/completion-rate/',
     type: 'website',
   },
 };

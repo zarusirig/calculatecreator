@@ -28,7 +28,7 @@ export default function TikTokShopEuropeExpansionPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'Europe Expansion', url: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/' },
         ]}
       />

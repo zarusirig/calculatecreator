@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'LTV Calculator 2026',
     description: 'Calculate Customer Lifetime Value from TikTok traffic.',
-    url: 'https://calculatecreator.com/calculators/lifetime-value',
+    url: 'https://calculatecreator.com/calculators/lifetime-value/',
     type: 'website',
   },
 };

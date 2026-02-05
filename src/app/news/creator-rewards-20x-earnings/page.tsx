@@ -28,8 +28,8 @@ export default function CreatorRewards20xEarningsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: '20x Higher Earnings', url: 'https://calculatecreator.com/news/creator-rewards-20x-earnings' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: '20x Higher Earnings', url: 'https://calculatecreator.com/news/creator-rewards-20x-earnings/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

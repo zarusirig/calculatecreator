@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hashtag Performance Calculator 2026',
     description: 'Analyze hashtag effectiveness and reach potential.',
-    url: 'https://calculatecreator.com/calculators/hashtag-performance',
+    url: 'https://calculatecreator.com/calculators/hashtag-performance/',
     type: 'website',
   },
 };

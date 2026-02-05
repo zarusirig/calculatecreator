@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TikTok Money Calculator | Calculate Your Earnings 2026',
     description: 'Free TikTok money calculator: Estimate your total earnings from Creator Fund, brand deals, LIVE gifts & TikTok Shop.',
-    url: 'https://calculatecreator.com/calculators/tiktok-money',
+    url: 'https://calculatecreator.com/calculators/tiktok-money/',
     type: 'website',
   },
 };

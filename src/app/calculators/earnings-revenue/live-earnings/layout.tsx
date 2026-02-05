@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'LIVE Gifts Calculator 2026',
     description: 'Calculate TikTok LIVE earnings from gifts and diamonds.',
-    url: 'https://calculatecreator.com/calculators/live-gifts',
+    url: 'https://calculatecreator.com/calculators/live-gifts/',
     type: 'website',
   },
 };

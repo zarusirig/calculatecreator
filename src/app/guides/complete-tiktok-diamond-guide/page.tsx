@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?',
     description: 'Master TikTok diamonds: Complete guide to LIVE gifts, conversions, and maximizing creator earnings.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/complete-tiktok-diamond-guide',
+    url: 'https://calculatecreator.com/guides/complete-tiktok-diamond-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -61,7 +61,7 @@ export default function CompleteTikTokDiamondGuidePage() {
       <ArticleSchema
         headline="Complete TikTok Diamond Guide 2026 | What Are Diamonds Worth?"
         description="Comprehensive guide to TikTok diamonds: understanding LIVE gifts, conversion rates, payout values, and maximizing creator earnings from TikTok's virtual gifting system."
-        url="https://calculatecreator.com/guides/complete-tiktok-diamond-guide"
+        url="https://calculatecreator.com/guides/complete-tiktok-diamond-guide/"
         datePublished="2025-11-14"
         dateModified="2025-11-14"
         keywords={["tiktok diamonds", "live gifts", "creator earnings", "diamond conversion", "payout rates"]}
@@ -70,8 +70,8 @@ export default function CompleteTikTokDiamondGuidePage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-purple-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Guides', href: '/guides' },
-            { label: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide' }
+            { label: 'Guides', href: '/guides/' },
+            { label: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide/' }
           ]} />
 
           <div className="max-w-4xl mx-auto">

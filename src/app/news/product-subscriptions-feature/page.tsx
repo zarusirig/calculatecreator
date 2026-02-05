@@ -28,7 +28,7 @@ export default function ProductSubscriptionsFeaturePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'Product Subscriptions', url: 'https://calculatecreator.com/news/product-subscriptions-feature/' },
         ]}
       />

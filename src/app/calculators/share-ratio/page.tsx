@@ -61,7 +61,7 @@ export default function ShareRatioCalculatorPage() {
       <CalculatorSchema
         name="TikTok Share Rate Calculator"
         description="Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential."
-        url="https://calculatecreator.com/calculators/share-ratio"
+        url="https://calculatecreator.com/calculators/share-ratio/"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2387 }}
         datePublished="2024-02-28"
         dateModified="2025-12-05"
@@ -71,16 +71,16 @@ export default function ShareRatioCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Share Ratio Calculator', url: 'https://calculatecreator.com/calculators/share-ratio' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Share Ratio Calculator', url: 'https://calculatecreator.com/calculators/share-ratio/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Share Ratio Calculator', href: '/calculators/share-ratio' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Share Ratio Calculator', href: '/calculators/share-ratio/' },
           ]}
         />
 

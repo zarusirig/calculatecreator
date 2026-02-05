@@ -56,7 +56,7 @@ export default function AudienceOverlapCalculatorPage() {
       <CalculatorSchema
         name="TikTok Audience Overlap Calculator"
         description="Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach."
-        url="https://calculatecreator.com/calculators/audience-overlap"
+        url="https://calculatecreator.com/calculators/audience-overlap/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 654,
@@ -69,16 +69,16 @@ export default function AudienceOverlapCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Audience Overlap Calculator', url: 'https://calculatecreator.com/calculators/audience-overlap' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Audience Overlap Calculator', url: 'https://calculatecreator.com/calculators/audience-overlap/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Audience Overlap Calculator', href: '/calculators/audience-overlap' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Audience Overlap Calculator', href: '/calculators/audience-overlap/' },
             ]}
           />
 

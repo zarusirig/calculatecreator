@@ -134,7 +134,7 @@ export default function ComparisonsPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Comparisons', href: '/comparisons' },
+              { label: 'Comparisons', href: '/comparisons/' },
             ]}
             includeHome={true}
           />

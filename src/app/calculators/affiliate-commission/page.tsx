@@ -53,7 +53,7 @@ export default function AffiliateCommissionCalculatorPage() {
       <CalculatorSchema
         name="TikTok Affiliate Commission Calculator"
         description="Calculate your potential earnings from TikTok Shop affiliate marketing and product commissions."
-        url="https://calculatecreator.com/calculators/affiliate-commission"
+        url="https://calculatecreator.com/calculators/affiliate-commission/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 1034,
@@ -66,16 +66,16 @@ export default function AffiliateCommissionCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Affiliate Commission Calculator', url: 'https://calculatecreator.com/calculators/affiliate-commission' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Affiliate Commission Calculator', url: 'https://calculatecreator.com/calculators/affiliate-commission/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Affiliate Commission Calculator', href: '/calculators/affiliate-commission' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Affiliate Commission Calculator', href: '/calculators/affiliate-commission/' },
             ]}
           />
 

@@ -84,23 +84,23 @@ export default function UtilityToolsPage() {
       <CollectionPageSchema
         name="TikTok Creator Utility Tools"
         description="Essential utility calculators for TikTok creators to manage taxes, calculate payouts after fees, and check monetization eligibility requirements."
-        url="https://calculatecreator.com/calculators/utility-tools"
+        url="https://calculatecreator.com/calculators/utility-tools/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Utility Tools', href: '/calculators/utility-tools' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Utility Tools', href: '/calculators/utility-tools/' },
           ]}
           includeHome={true}
         />

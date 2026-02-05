@@ -32,7 +32,7 @@ export default function NicheSelectionPage() {
       <ArticleSchema
         headline="TikTok Niche Selection Guide 2026: Find Your Profitable Content Category"
         description="Complete guide to choosing the right TikTok niche. Profitability analysis, competition assessment, and how to find your perfect content category."
-        url="https://calculatecreator.com/guides/niche-selection"
+        url="https://calculatecreator.com/guides/niche-selection/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['tiktok niche selection', 'content niche', 'profitable niches', 'niche strategy tiktok']}

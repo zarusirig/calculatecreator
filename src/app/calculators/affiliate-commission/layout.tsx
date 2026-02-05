@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Affiliate Commission Calculator 2026',
     description: 'Calculate TikTok Shop affiliate earnings and commission potential.',
-    url: 'https://calculatecreator.com/calculators/affiliate-commission',
+    url: 'https://calculatecreator.com/calculators/affiliate-commission/',
     type: 'website',
   },
 };

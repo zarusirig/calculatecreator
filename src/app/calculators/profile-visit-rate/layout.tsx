@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Profile Visit Calculator 2026',
     description: 'Calculate profile visit rate from video views.',
-    url: 'https://calculatecreator.com/calculators/profile-visit-rate',
+    url: 'https://calculatecreator.com/calculators/profile-visit-rate/',
     type: 'website',
   },
 };

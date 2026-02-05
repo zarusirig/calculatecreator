@@ -28,7 +28,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'TikTok Shop Growth', url: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/' },
         ]}
       />

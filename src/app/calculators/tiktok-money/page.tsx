@@ -87,7 +87,7 @@ export default function TikTokMoneyCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'TikTok Money Calculator', url: 'https://calculatecreator.com/calculators/tiktok-money/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function TikTokMoneyCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
             ]}
           />

@@ -87,7 +87,7 @@ export default function LiveGiftsCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'LIVE Gifts Calculator', url: 'https://calculatecreator.com/calculators/live-gifts/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function LiveGiftsCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
             ]}
           />

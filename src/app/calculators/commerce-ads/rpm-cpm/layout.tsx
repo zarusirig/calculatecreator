@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'RPM Calculator 2026',
     description: 'Calculate Revenue Per Mille to track earnings per 1,000 views.',
-    url: 'https://calculatecreator.com/calculators/rpm',
+    url: 'https://calculatecreator.com/calculators/rpm/',
     type: 'website',
   },
 };

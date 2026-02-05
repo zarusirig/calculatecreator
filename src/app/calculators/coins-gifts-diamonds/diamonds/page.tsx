@@ -52,8 +52,8 @@ export default function DiamondConverterPage() {
         <FAQSchema faqs={faqData} />
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Diamond Converter', href: '/calculators/diamond-converter' }
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Diamond Converter', href: '/calculators/diamond-converter/' }
           ]} />
 
           <div className="max-w-4xl mx-auto text-center mb-12">

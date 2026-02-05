@@ -50,7 +50,7 @@ export default function IncreaseEngagementRatePage() {
       <ArticleSchema
         headline="How to Increase TikTok Engagement Rate: 12 Proven Strategies"
         description="Boost your TikTok engagement rate with proven strategies to increase likes, comments, shares, and saves for better algorithm performance."
-        url="https://calculatecreator.com/guides/increase-engagement-rate-tiktok"
+        url="https://calculatecreator.com/guides/increase-engagement-rate-tiktok/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok engagement', 'increase engagement', 'boost metrics', 'algorithm optimization']}
@@ -58,8 +58,8 @@ export default function IncreaseEngagementRatePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Increase Engagement Rate', url: 'https://calculatecreator.com/guides/increase-engagement-rate-tiktok' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Increase Engagement Rate', url: 'https://calculatecreator.com/guides/increase-engagement-rate-tiktok/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

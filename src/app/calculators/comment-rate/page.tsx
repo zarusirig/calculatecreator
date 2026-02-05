@@ -45,7 +45,7 @@ export default function CommentRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Comment Rate Calculator"
         description="Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is."
-        url="https://calculatecreator.com/calculators/comment-rate"
+        url="https://calculatecreator.com/calculators/comment-rate/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1567 }}
         datePublished="2024-05-01"
         dateModified="2025-12-05"
@@ -55,18 +55,18 @@ export default function CommentRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Comment Rate Calculator', url: 'https://calculatecreator.com/calculators/comment-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Comment Rate Calculator', url: 'https://calculatecreator.com/calculators/comment-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Comment Rate Calculator',
-              href: '/calculators/comment-rate',
+              href: '/calculators/comment-rate/',
             },
           ]}
         />

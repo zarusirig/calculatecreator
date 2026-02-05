@@ -44,7 +44,7 @@ export default function ProductionCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Video Production Cost Calculator"
         description="Calculate content production costs for TikTok videos. Budget equipment, editing, and time costs to understand your true content investment."
-        url="https://calculatecreator.com/calculators/production-cost"
+        url="https://calculatecreator.com/calculators/production-cost/"
         aggregateRating={{ ratingValue: 4.6, reviewCount: 1342 }}
         datePublished="2024-05-20"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function ProductionCostCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Production Cost Calculator', url: 'https://calculatecreator.com/calculators/production-cost' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Production Cost Calculator', url: 'https://calculatecreator.com/calculators/production-cost/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Production Cost Calculator',
-              href: '/calculators/production-cost',
+              href: '/calculators/production-cost/',
             },
           ]}
         />

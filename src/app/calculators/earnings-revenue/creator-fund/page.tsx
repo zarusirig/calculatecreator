@@ -61,7 +61,7 @@ export default function CreatorFundCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Fund Calculator"
         description="Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche."
-        url="https://calculatecreator.com/calculators/tiktok-creator-fund"
+        url="https://calculatecreator.com/calculators/tiktok-creator-fund/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 1247,
@@ -74,16 +74,16 @@ export default function CreatorFundCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Creator Fund Calculator', url: 'https://calculatecreator.com/calculators/tiktok-creator-fund' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Creator Fund Calculator', url: 'https://calculatecreator.com/calculators/tiktok-creator-fund/' },
         ]}
       />
       <div className="min-h-screen py-8 relative">
         <div className="container-custom relative z-10">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
             ]}
             variant="dark"
           />

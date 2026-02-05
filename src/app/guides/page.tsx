@@ -670,7 +670,7 @@ export default function GuidesPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Guides', href: '/guides' },
+              { label: 'Guides', href: '/guides/' },
             ]}
             includeHome={true}
           />

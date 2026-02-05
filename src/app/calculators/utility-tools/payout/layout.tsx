@@ -44,8 +44,8 @@ export default function PayoutLayout({ children }: { children: React.ReactNode }
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
           { name: 'Payout Calculator', url: 'https://calculatecreator.com/calculators/utility-tools/payout/' }
         ]}
       />

@@ -84,7 +84,7 @@ export default function CommerceAdsPage() {
       <CollectionPageSchema
         name="TikTok Commerce & Ads Calculators"
         description="Calculate your TikTok RPM, CPM, shop profits, and ad costs. Free tools to optimize your commerce and advertising revenue."
-        url="https://calculatecreator.com/calculators/commerce-ads"
+        url="https://calculatecreator.com/calculators/commerce-ads/"
         calculators={calculators.map(calc => ({
           name: calc.name,
           description: calc.description,
@@ -111,15 +111,15 @@ export default function CommerceAdsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Commerce & Ads', url: 'https://calculatecreator.com/calculators/commerce-ads' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Commerce & Ads', url: 'https://calculatecreator.com/calculators/commerce-ads/' },
         ]}
       />
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Commerce & Ads', href: '/calculators/commerce-ads' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Commerce & Ads', href: '/calculators/commerce-ads/' },
           ]}
           includeHome={true}
         />

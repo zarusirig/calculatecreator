@@ -71,7 +71,7 @@ export default function MetricsPage() {
       <CollectionPageSchema
         name="TikTok Metrics & Analytics Guides"
         description="Comprehensive guides to understanding TikTok engagement metrics, performance benchmarks, and analytics for content creators."
-        url="https://calculatecreator.com/metrics"
+        url="https://calculatecreator.com/metrics/"
         calculators={metrics.map(m => ({ name: m.name, description: m.description, slug: m.slug }))}
         keywords={['tiktok metrics', 'engagement analytics', 'comments to likes ratio', 'creator benchmarks']}
         about={{
@@ -83,7 +83,7 @@ export default function MetricsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Metrics', url: 'https://calculatecreator.com/metrics' },
+          { name: 'Metrics', url: 'https://calculatecreator.com/metrics/' },
         ]}
       />
 
@@ -92,7 +92,7 @@ export default function MetricsPage() {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Metrics', href: '/metrics' },
+              { label: 'Metrics', href: '/metrics/' },
             ]}
           />
 

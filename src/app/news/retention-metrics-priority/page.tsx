@@ -28,7 +28,7 @@ export default function RetentionMetricsPriorityPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'Retention Metrics Priority', url: 'https://calculatecreator.com/news/retention-metrics-priority/' },
         ]}
       />

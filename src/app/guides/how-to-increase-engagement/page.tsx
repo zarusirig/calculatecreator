@@ -47,7 +47,7 @@ export default function IncreaseEngagementPage() {
       <ArticleSchema
         headline="How to Increase TikTok Engagement: 12 Proven Strategies 2026"
         description="Boost likes, comments, shares, and saves on TikTok. Data-backed strategies to increase engagement rate and algorithmic performance."
-        url="https://calculatecreator.com/guides/how-to-increase-engagement"
+        url="https://calculatecreator.com/guides/how-to-increase-engagement/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['increase tiktok engagement', 'boost engagement rate', 'get more likes', 'tiktok algorithm']}

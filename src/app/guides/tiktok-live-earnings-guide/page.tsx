@@ -254,7 +254,7 @@ export default function TikTokLiveEarningsPage() {
       <ArticleSchema
         headline="TikTok LIVE Earnings Guide: How Much Can You Really Make?"
         description="Complete earnings breakdown for TikTok LIVE creators. Realistic income by follower tier, gift values, diamond conversion, and proven monetization strategies."
-        url="https://calculatecreator.com/guides/tiktok-live-earnings-guide"
+        url="https://calculatecreator.com/guides/tiktok-live-earnings-guide/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok live earnings', 'live stream income', 'tiktok gifts money', 'how much do live streamers make', 'tiktok diamonds']}

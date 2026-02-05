@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'TikTok RPM Calculator Guide 2026 | How to Calculate Revenue Per Mille',
     description: 'Master TikTok RPM calculation with free calculator, benchmarks, and monetization strategies.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/tiktok-rpm-calculator-guide',
+    url: 'https://calculatecreator.com/guides/tiktok-rpm-calculator-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -54,7 +54,7 @@ export default function TikTokRPMCalculatorGuidePage() {
       <ArticleSchema
         headline="TikTok RPM Calculator Guide 2026 | How to Calculate Revenue Per Mille"
         description="Complete guide to TikTok RPM calculation: Learn what Revenue Per Mille means, how to calculate it, industry benchmarks, and strategies to maximize your earnings per 1,000 views."
-        url="https://calculatecreator.com/guides/tiktok-rpm-calculator-guide"
+        url="https://calculatecreator.com/guides/tiktok-rpm-calculator-guide/"
         datePublished="2025-11-14"
         dateModified="2025-11-14"
         keywords={["tiktok rpm calculator", "revenue per mille", "tiktok monetization", "creator earnings"]}
@@ -63,8 +63,8 @@ export default function TikTokRPMCalculatorGuidePage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-green-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Guides', href: '/guides' },
-            { label: 'TikTok RPM Calculator Guide', href: '/guides/tiktok-rpm-calculator-guide' }
+            { label: 'Guides', href: '/guides/' },
+            { label: 'TikTok RPM Calculator Guide', href: '/guides/tiktok-rpm-calculator-guide/' }
           ]} />
 
           <div className="max-w-4xl mx-auto">

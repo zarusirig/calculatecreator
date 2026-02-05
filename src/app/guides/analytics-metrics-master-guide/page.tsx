@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'TikTok Analytics & Metrics Master Guide 2026',
     description: 'Master TikTok analytics and metrics. Learn what to track, how to optimize, and action plans for explosive growth.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/analytics-metrics-master-guide',
+    url: 'https://calculatecreator.com/guides/analytics-metrics-master-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,7 +50,7 @@ export default function AnalyticsMetricsMasterGuidePage() {
       <ArticleSchema
         headline="TikTok Analytics & Metrics Master Guide 2026"
         description="Comprehensive guide to TikTok analytics covering engagement metrics, video performance, growth tracking, algorithm signals, and data-driven optimization strategies."
-        url="https://calculatecreator.com/guides/analytics-metrics-master-guide"
+        url="https://calculatecreator.com/guides/analytics-metrics-master-guide/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok analytics', 'engagement metrics', 'completion rate', 'algorithm optimization', 'growth tracking', 'performance analysis']}
@@ -58,8 +58,8 @@ export default function AnalyticsMetricsMasterGuidePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Analytics & Metrics Guide', url: 'https://calculatecreator.com/guides/analytics-metrics-master-guide' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Analytics & Metrics Guide', url: 'https://calculatecreator.com/guides/analytics-metrics-master-guide/' },
         ]}
       />
 
@@ -68,8 +68,8 @@ export default function AnalyticsMetricsMasterGuidePage() {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Guides', href: '/guides' },
-              { label: 'Analytics Master Guide', href: '/guides/analytics-metrics-master-guide' },
+              { label: 'Guides', href: '/guides/' },
+              { label: 'Analytics Master Guide', href: '/guides/analytics-metrics-master-guide/' },
             ]}
           />
 

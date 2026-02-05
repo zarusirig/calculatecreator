@@ -39,7 +39,7 @@ export default function TikTokShopAffiliatePage() {
       <ArticleSchema
         headline="TikTok Shop Affiliate Program Guide: Complete Earnings Strategy"
         description="Master TikTok Shop affiliate marketing with our comprehensive guide. Learn commission rates, best-selling categories, content strategies, and how to earn $500-$5,000+/month."
-        url="https://calculatecreator.com/guides/tiktok-shop-affiliate"
+        url="https://calculatecreator.com/guides/tiktok-shop-affiliate/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok shop affiliate', 'tiktok shop commission', 'affiliate marketing tiktok', 'tiktok shop earnings']}

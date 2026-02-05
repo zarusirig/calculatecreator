@@ -296,7 +296,7 @@ export default function CalculatorsPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
             ]}
             includeHome={true}
           />

@@ -71,8 +71,8 @@ export default function PayoutCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-8">
         <div className="container-custom">
         <Breadcrumb items={[
-          { label: 'Calculators', href: '/calculators' },
-          { label: 'Utility Tools', href: '/calculators/utility-tools' },
+          { label: 'Calculators', href: '/calculators/' },
+          { label: 'Utility Tools', href: '/calculators/utility-tools/' },
           { label: 'Payout Calculator', href: '/calculators/utility-tools/payout/' }
         ]} />
 

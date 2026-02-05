@@ -44,8 +44,8 @@ export default function EligibilityLayout({ children }: { children: React.ReactN
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
           { name: 'Eligibility Checker', url: 'https://calculatecreator.com/calculators/utility-tools/eligibility/' }
         ]}
       />

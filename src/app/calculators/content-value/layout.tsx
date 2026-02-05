@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Content Value Calculator 2026',
     description: 'Calculate the monetary value of your TikTok content.',
-    url: 'https://calculatecreator.com/calculators/content-value',
+    url: 'https://calculatecreator.com/calculators/content-value/',
     type: 'website',
   },
 };

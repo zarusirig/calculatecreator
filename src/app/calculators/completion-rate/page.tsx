@@ -69,7 +69,7 @@ export default function CompletionRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Video Completion Rate Calculator"
         description="Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance."
-        url="https://calculatecreator.com/calculators/completion-rate"
+        url="https://calculatecreator.com/calculators/completion-rate/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1876 }}
         datePublished="2024-02-10"
         dateModified="2025-11-13"
@@ -79,16 +79,16 @@ export default function CompletionRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Completion Rate Calculator', url: 'https://calculatecreator.com/calculators/completion-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Completion Rate Calculator', url: 'https://calculatecreator.com/calculators/completion-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Completion Rate Calculator', href: '/calculators/completion-rate' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Completion Rate Calculator', href: '/calculators/completion-rate/' },
           ]}
         />
 

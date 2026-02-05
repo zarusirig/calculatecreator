@@ -109,7 +109,7 @@ export default function NichesPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Niche Earnings', href: '/niches' },
+              { label: 'Niche Earnings', href: '/niches/' },
             ]}
             includeHome={true}
           />

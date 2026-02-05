@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Follower Growth Calculator 2026',
     description: 'Project future follower count and growth milestones.',
-    url: 'https://calculatecreator.com/calculators/follower-growth',
+    url: 'https://calculatecreator.com/calculators/follower-growth/',
     type: 'website',
   },
 };

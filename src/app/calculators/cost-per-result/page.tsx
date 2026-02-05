@@ -56,7 +56,7 @@ export default function CostPerResultCalculatorPage() {
       <CalculatorSchema
         name="TikTok Cost Per Result Calculator"
         description="Calculate cost per result for your TikTok ad campaigns. Measure CPC, CPA, CPV, CPL, CPE and optimize your advertising efficiency."
-        url="https://calculatecreator.com/calculators/cost-per-result"
+        url="https://calculatecreator.com/calculators/cost-per-result/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 892,
@@ -69,16 +69,16 @@ export default function CostPerResultCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Cost Per Result Calculator', url: 'https://calculatecreator.com/calculators/cost-per-result' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Cost Per Result Calculator', url: 'https://calculatecreator.com/calculators/cost-per-result/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Cost Per Result Calculator', href: '/calculators/cost-per-result' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
             ]}
           />
 

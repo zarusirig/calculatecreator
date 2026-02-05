@@ -172,7 +172,7 @@ export default function TikTokLiveEarningsExpectationsPage() {
       <ArticleSchema
         headline="TikTok LIVE Earnings: What to Expect (Realistic Income Guide)"
         description="Realistic earnings expectations for TikTok LIVE by follower tier. Learn how much you can earn from LIVE gifts, factors affecting income, and maximization strategies."
-        url="https://calculatecreator.com/guides/tiktok-live-earnings-expectations"
+        url="https://calculatecreator.com/guides/tiktok-live-earnings-expectations/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok live earnings', 'tiktok gifts income', 'how much can you make tiktok live', 'tiktok live earnings expectations']}

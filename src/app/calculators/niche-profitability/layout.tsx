@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Niche Profitability Calculator 2026',
     description: 'Compare earning potential across different TikTok niches.',
-    url: 'https://calculatecreator.com/calculators/niche-profitability',
+    url: 'https://calculatecreator.com/calculators/niche-profitability/',
     type: 'website',
   },
 };

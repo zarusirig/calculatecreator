@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TikTok Coins Calculator | Convert Coins to USD 2026',
     description: 'Convert TikTok coins to USD and diamonds. Free calculator with accurate rates for creators and viewers.',
-    url: 'https://calculatecreator.com/calculators/coins',
+    url: 'https://calculatecreator.com/calculators/coins/',
     type: 'website',
   },
 };

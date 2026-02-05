@@ -43,7 +43,7 @@ export default function IncreaseCreatorFundEarningsPage() {
       <ArticleSchema
         headline="How to Increase TikTok Creator Fund Earnings: 12 Proven Strategies"
         description="Maximize your TikTok Creator Fund income with proven tactics to boost RPM, increase views, and optimize content strategy. Data-backed strategies for 2026."
-        url="https://calculatecreator.com/guides/how-to-increase-creator-fund-earnings"
+        url="https://calculatecreator.com/guides/how-to-increase-creator-fund-earnings/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['increase creator fund earnings', 'tiktok rpm', 'creator fund optimization', 'tiktok earnings tips', 'boost creator fund income']}

@@ -44,7 +44,7 @@ export default function FollowerConversionCalculatorPage() {
       <CalculatorSchema
         name="TikTok Follower Conversion Rate Calculator"
         description="Calculate how effectively your TikTok views convert to followers. Optimize content to grow your audience faster with our free conversion calculator."
-        url="https://calculatecreator.com/calculators/follower-conversion"
+        url="https://calculatecreator.com/calculators/follower-conversion/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 1687 }}
         datePublished="2024-03-08"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function FollowerConversionCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Follower Conversion Calculator', url: 'https://calculatecreator.com/calculators/follower-conversion' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Follower Conversion Calculator', url: 'https://calculatecreator.com/calculators/follower-conversion/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Follower Conversion Calculator',
-              href: '/calculators/follower-conversion',
+              href: '/calculators/follower-conversion/',
             },
           ]}
         />

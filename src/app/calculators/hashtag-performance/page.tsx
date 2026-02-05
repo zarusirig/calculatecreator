@@ -44,7 +44,7 @@ export default function HashtagPerformanceCalculatorPage() {
       <CalculatorSchema
         name="TikTok Hashtag Performance Calculator"
         description="Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy."
-        url="https://calculatecreator.com/calculators/hashtag-performance"
+        url="https://calculatecreator.com/calculators/hashtag-performance/"
         aggregateRating={{ ratingValue: 4.6, reviewCount: 1432 }}
         datePublished="2024-02-28"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function HashtagPerformanceCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Hashtag Performance Calculator', url: 'https://calculatecreator.com/calculators/hashtag-performance' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Hashtag Performance Calculator', url: 'https://calculatecreator.com/calculators/hashtag-performance/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Hashtag Performance Calculator',
-              href: '/calculators/hashtag-performance',
+              href: '/calculators/hashtag-performance/',
             },
           ]}
         />

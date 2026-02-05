@@ -44,7 +44,7 @@ export default function SaveRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Save Rate Calculator"
         description="Calculate your TikTok save rate. Understand how often viewers bookmark your content, a key signal for the algorithm."
-        url="https://calculatecreator.com/calculators/save-rate"
+        url="https://calculatecreator.com/calculators/save-rate/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 2145 }}
         datePublished="2024-03-22"
         dateModified="2025-12-05"
@@ -54,16 +54,16 @@ export default function SaveRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Save Rate Calculator', url: 'https://calculatecreator.com/calculators/save-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Save Rate Calculator', url: 'https://calculatecreator.com/calculators/save-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Save Rate Calculator', href: '/calculators/save-rate' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Save Rate Calculator', href: '/calculators/save-rate/' },
           ]}
         />
 

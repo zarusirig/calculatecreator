@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'Influencer Rate Calculator Guide 2026 | Price Your Sponsorships',
     description: 'Master influencer pricing, negotiation, and packaging. Learn what to charge brands at every follower tier.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide',
+    url: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,7 +50,7 @@ export default function InfluencerRateCalculatorGuidePage() {
       <ArticleSchema
         headline="Influencer Rate Calculator Guide 2026"
         description="Comprehensive guide to influencer pricing covering rate calculations, benchmarks by tier, negotiation strategies, deliverable pricing, and scaling rates over time."
-        url="https://calculatecreator.com/guides/influencer-rate-calculator-guide"
+        url="https://calculatecreator.com/guides/influencer-rate-calculator-guide/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['influencer rates', 'brand deal pricing', 'sponsorship rates', 'creator pricing', 'negotiation strategies']}
@@ -58,8 +58,8 @@ export default function InfluencerRateCalculatorGuidePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Influencer Rate Guide', url: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Influencer Rate Guide', url: 'https://calculatecreator.com/guides/influencer-rate-calculator-guide/' },
         ]}
       />
 
@@ -68,8 +68,8 @@ export default function InfluencerRateCalculatorGuidePage() {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Guides', href: '/guides' },
-              { label: 'Influencer Rate Guide', href: '/guides/influencer-rate-calculator-guide' },
+              { label: 'Guides', href: '/guides/' },
+              { label: 'Influencer Rate Guide', href: '/guides/influencer-rate-calculator-guide/' },
             ]}
           />
 

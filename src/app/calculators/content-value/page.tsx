@@ -44,7 +44,7 @@ export default function ContentValueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Content Value Calculator"
         description="Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche."
-        url="https://calculatecreator.com/calculators/content-value"
+        url="https://calculatecreator.com/calculators/content-value/"
         aggregateRating={{ ratingValue: 4.6, reviewCount: 1298 }}
         datePublished="2024-04-01"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function ContentValueCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Content Value Calculator', url: 'https://calculatecreator.com/calculators/content-value' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Content Value Calculator', url: 'https://calculatecreator.com/calculators/content-value/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Content Value Calculator',
-              href: '/calculators/content-value',
+              href: '/calculators/content-value/',
             },
           ]}
         />

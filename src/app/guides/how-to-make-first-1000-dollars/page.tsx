@@ -43,7 +43,7 @@ export default function MakeFirst1000DollarsPage() {
       <ArticleSchema
         headline="How to Make Your First $1,000 on TikTok: Realistic Roadmap"
         description="Step-by-step action plan to earn your first $1,000 on TikTok. Timeline, milestones, and monetization strategies from $0 to $1,000."
-        url="https://calculatecreator.com/guides/how-to-make-first-1000-dollars"
+        url="https://calculatecreator.com/guides/how-to-make-first-1000-dollars/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['make money on tiktok', 'first 1000 dollars tiktok', 'tiktok earnings roadmap', 'tiktok monetization plan', 'tiktok income milestones']}

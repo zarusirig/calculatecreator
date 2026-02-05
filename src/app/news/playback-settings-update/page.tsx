@@ -28,8 +28,8 @@ export default function PlaybackSettingsUpdatePage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Playback Settings Update', url: 'https://calculatecreator.com/news/playback-settings-update' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Playback Settings Update', url: 'https://calculatecreator.com/news/playback-settings-update/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Viral Potential Calculator 2026',
     description: 'Analyze your video\'s potential to go viral on TikTok.',
-    url: 'https://calculatecreator.com/calculators/viral-potential',
+    url: 'https://calculatecreator.com/calculators/viral-potential/',
     type: 'website',
   },
 };

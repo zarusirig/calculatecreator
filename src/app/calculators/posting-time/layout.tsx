@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Best Posting Time Calculator 2026',
     description: 'Find optimal posting times for your TikTok audience.',
-    url: 'https://calculatecreator.com/calculators/posting-time',
+    url: 'https://calculatecreator.com/calculators/posting-time/',
     type: 'website',
   },
 };

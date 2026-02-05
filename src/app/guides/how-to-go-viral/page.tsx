@@ -45,7 +45,7 @@ export default function HowToGoViralPage() {
       <ArticleSchema
         headline="How to Go Viral on TikTok: Formula + Examples 2026"
         description="The viral video formula: hooks, trending sounds, optimal length, and posting strategy. Data from 10,000+ viral videos."
-        url="https://calculatecreator.com/guides/how-to-go-viral"
+        url="https://calculatecreator.com/guides/how-to-go-viral/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['go viral tiktok', 'viral video formula', 'how to get views', 'tiktok algorithm hack']}

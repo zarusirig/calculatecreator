@@ -84,7 +84,7 @@ export default function CoinsGiftsDiamondsPage() {
       <CollectionPageSchema
         name="TikTok Coins, Gifts & Diamonds Calculators"
         description="Convert TikTok coins, calculate gift values, and understand diamond conversions. Free tools for LIVE streamers and gift recipients."
-        url="https://calculatecreator.com/calculators/coins-gifts-diamonds"
+        url="https://calculatecreator.com/calculators/coins-gifts-diamonds/"
         calculators={calculators.map(calc => ({
           name: calc.name,
           description: calc.description,
@@ -111,15 +111,15 @@ export default function CoinsGiftsDiamondsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Coins, Gifts & Diamonds', url: 'https://calculatecreator.com/calculators/coins-gifts-diamonds' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Coins, Gifts & Diamonds', url: 'https://calculatecreator.com/calculators/coins-gifts-diamonds/' },
         ]}
       />
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Coins, Gifts & Diamonds', href: '/calculators/coins-gifts-diamonds' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Coins, Gifts & Diamonds', href: '/calculators/coins-gifts-diamonds/' },
           ]}
           includeHome={true}
         />

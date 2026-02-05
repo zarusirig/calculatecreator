@@ -28,8 +28,8 @@ export default function AIOutlineSmartSplitPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'AI Outline & Smart Split', url: 'https://calculatecreator.com/news/ai-outline-smart-split-features' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'AI Outline & Smart Split', url: 'https://calculatecreator.com/news/ai-outline-smart-split-features/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

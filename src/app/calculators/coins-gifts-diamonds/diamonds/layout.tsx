@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TikTok Diamond Converter | Diamonds to USD Calculator 2026',
     description: 'Convert TikTok diamonds to real money. Free calculator with accurate conversion rates for creators.',
-    url: 'https://calculatecreator.com/calculators/diamond-converter',
+    url: 'https://calculatecreator.com/calculators/diamond-converter/',
     type: 'website',
   },
 };

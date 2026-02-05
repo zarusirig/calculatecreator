@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Content Calendar ROI Calculator 2026',
     description: 'Calculate ROI for your TikTok content calendar.',
-    url: 'https://calculatecreator.com/calculators/content-calendar-roi',
+    url: 'https://calculatecreator.com/calculators/content-calendar-roi/',
     type: 'website',
   },
 };

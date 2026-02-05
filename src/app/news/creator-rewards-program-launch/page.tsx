@@ -28,8 +28,8 @@ export default function CreatorRewardsProgramLaunchPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Creator Rewards Launch', url: 'https://calculatecreator.com/news/creator-rewards-program-launch' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Creator Rewards Launch', url: 'https://calculatecreator.com/news/creator-rewards-program-launch/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

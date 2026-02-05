@@ -44,7 +44,7 @@ export default function NicheProfitabilityCalculatorPage() {
       <CalculatorSchema
         name="TikTok Niche Profitability Calculator"
         description="Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing."
-        url="https://calculatecreator.com/calculators/niche-profitability"
+        url="https://calculatecreator.com/calculators/niche-profitability/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 1624 }}
         datePublished="2024-06-15"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function NicheProfitabilityCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Niche Profitability Calculator', url: 'https://calculatecreator.com/calculators/niche-profitability' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Niche Profitability Calculator', url: 'https://calculatecreator.com/calculators/niche-profitability/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Niche Profitability Calculator',
-              href: '/calculators/niche-profitability',
+              href: '/calculators/niche-profitability/',
             },
           ]}
         />

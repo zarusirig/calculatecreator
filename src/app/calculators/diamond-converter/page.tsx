@@ -87,7 +87,7 @@ export default function DiamondConverterPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'Diamond Converter', url: 'https://calculatecreator.com/calculators/diamond-converter/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function DiamondConverterPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'Diamond Converter', href: '/calculators/diamond-converter/' },
             ]}
           />

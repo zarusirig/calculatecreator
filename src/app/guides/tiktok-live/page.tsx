@@ -21,7 +21,7 @@ export default function TikTokLIVEGuidePage() {
       <ArticleSchema
         headline="TikTok LIVE Monetization: Gifts, Subscriptions, and Earnings Guide 2026"
         description="Complete guide to TikTok LIVE earnings: how gifts work, diamonds to USD conversion, LIVE subscriptions, requirements, and strategies to maximize income."
-        url="https://calculatecreator.com/guides/tiktok-live"
+        url="https://calculatecreator.com/guides/tiktok-live/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['tiktok live', 'tiktok gifts', 'tiktok live earnings', 'tiktok diamonds', 'live streaming money']}

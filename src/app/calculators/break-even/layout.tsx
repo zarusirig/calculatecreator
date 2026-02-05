@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Break-Even Calculator 2026',
     description: 'Calculate break-even point for TikTok investments.',
-    url: 'https://calculatecreator.com/calculators/break-even',
+    url: 'https://calculatecreator.com/calculators/break-even/',
     type: 'website',
   },
 };

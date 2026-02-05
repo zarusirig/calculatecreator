@@ -87,7 +87,7 @@ export default function BrandDealRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
           { name: 'Brand Deal Rate Calculator', url: 'https://calculatecreator.com/calculators/brand-deal-rate/' },
         ]}
       />
@@ -96,7 +96,7 @@ export default function BrandDealRateCalculatorPage() {
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
+              { label: 'Calculators', href: '/calculators/' },
               { label: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
             ]}
           />

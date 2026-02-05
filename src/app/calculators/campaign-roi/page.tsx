@@ -48,7 +48,7 @@ export default function CampaignROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Campaign ROI Calculator"
         description="Calculate return on investment for your TikTok marketing campaigns to measure profitability and performance."
-        url="https://calculatecreator.com/calculators/campaign-roi"
+        url="https://calculatecreator.com/calculators/campaign-roi/"
         aggregateRating={{
           ratingValue: 4.9,
           reviewCount: 1156,
@@ -61,16 +61,16 @@ export default function CampaignROICalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Campaign ROI Calculator', url: 'https://calculatecreator.com/calculators/campaign-roi' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Campaign ROI Calculator', url: 'https://calculatecreator.com/calculators/campaign-roi/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Campaign ROI Calculator', href: '/calculators/campaign-roi' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
             ]}
           />
 

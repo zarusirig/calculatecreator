@@ -19,7 +19,7 @@ export default function USChinaDealPage() {
       <NewsArticleSchema
         headline="US-China Deal Reached to Keep TikTok Operational"
         description="A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok's operations in the United States through collaboration."
-        url="https://calculatecreator.com/news/us-china-deal-tiktok-operational"
+        url="https://calculatecreator.com/news/us-china-deal-tiktok-operational/"
         datePublished="2026-09-15"
         dateModified="2026-09-15"
         image="https://calculatecreator.com/news/news-regulatory-1024.webp"
@@ -28,8 +28,8 @@ export default function USChinaDealPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'US-China TikTok Deal', url: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'US-China TikTok Deal', url: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

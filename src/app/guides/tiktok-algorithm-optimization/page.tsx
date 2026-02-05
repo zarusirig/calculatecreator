@@ -55,7 +55,7 @@ export default function TikTokAlgorithmOptimizationPage() {
       <ArticleSchema
         headline="TikTok Algorithm Optimization Guide: Beat the Algorithm 2026"
         description="Master TikTok's algorithm with 8 key ranking factors and 10 proven optimization tactics for maximum FYP placement and viral growth."
-        url="https://calculatecreator.com/guides/tiktok-algorithm-optimization"
+        url="https://calculatecreator.com/guides/tiktok-algorithm-optimization/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok algorithm', 'fyp strategy', 'viral content', 'algorithm optimization']}
@@ -63,8 +63,8 @@ export default function TikTokAlgorithmOptimizationPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'TikTok Algorithm Optimization', url: 'https://calculatecreator.com/guides/tiktok-algorithm-optimization' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'TikTok Algorithm Optimization', url: 'https://calculatecreator.com/guides/tiktok-algorithm-optimization/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

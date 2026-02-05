@@ -97,7 +97,7 @@ export function GiftCalculator() {
       <CalculatorSchema
         name="TikTok Gift Value Calculator"
         description="Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD. Understand how much creators earn from each gift type sent during LIVE streams."
-        url="https://calculatecreator.com/calculators/coins-gifts-diamonds/gift"
+        url="https://calculatecreator.com/calculators/coins-gifts-diamonds/gift/"
         category="FinanceApplication"
         keywords={[
           'TikTok gift calculator',
@@ -113,9 +113,9 @@ export function GiftCalculator() {
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
         <Breadcrumb items={[
-          { label: 'Calculators', href: '/calculators' },
-          { label: 'Coins, Gifts & Diamonds', href: '/calculators/coins-gifts-diamonds' },
-          { label: 'Gift Calculator', href: '/calculators/coins-gifts-diamonds/gift' }
+          { label: 'Calculators', href: '/calculators/' },
+          { label: 'Coins, Gifts & Diamonds', href: '/calculators/coins-gifts-diamonds/' },
+          { label: 'Gift Calculator', href: '/calculators/coins-gifts-diamonds/gift/' }
         ]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">

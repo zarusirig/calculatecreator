@@ -50,7 +50,7 @@ export default function LiveGiftEarningsOptimizationPage() {
       <ArticleSchema
         headline="LIVE Gift Earnings Optimization: Complete TikTok LIVE Guide"
         description="Complete guide to maximizing TikTok LIVE gift earnings with 15 proven strategies, viewer retention tactics, and gifting psychology."
-        url="https://calculatecreator.com/guides/live-gift-earnings-optimization"
+        url="https://calculatecreator.com/guides/live-gift-earnings-optimization/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok live', 'live gifts', 'diamonds', 'live streaming earnings']}
@@ -58,8 +58,8 @@ export default function LiveGiftEarningsOptimizationPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'LIVE Gift Earnings Optimization', url: 'https://calculatecreator.com/guides/live-gift-earnings-optimization' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'LIVE Gift Earnings Optimization', url: 'https://calculatecreator.com/guides/live-gift-earnings-optimization/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

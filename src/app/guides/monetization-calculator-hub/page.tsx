@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     title: 'TikTok Monetization Calculator Hub 2026 | Complete Income Strategy',
     description: 'Master every TikTok income stream. Calculate Creator Fund earnings, price brand deals, optimize TikTok Shop, and build multi-income strategies.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/monetization-calculator-hub',
+    url: 'https://calculatecreator.com/guides/monetization-calculator-hub/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,7 +50,7 @@ export default function MonetizationCalculatorHubPage() {
       <ArticleSchema
         headline="TikTok Monetization Calculator Hub 2026"
         description="Comprehensive guide to TikTok monetization covering Creator Fund, brand deals, LIVE gifts, TikTok Shop, affiliate marketing, and multi-income strategies with calculators and optimization tips."
-        url="https://calculatecreator.com/guides/monetization-calculator-hub"
+        url="https://calculatecreator.com/guides/monetization-calculator-hub/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
@@ -58,8 +58,8 @@ export default function MonetizationCalculatorHubPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Monetization Calculator Hub', url: 'https://calculatecreator.com/guides/monetization-calculator-hub' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Monetization Calculator Hub', url: 'https://calculatecreator.com/guides/monetization-calculator-hub/' },
         ]}
       />
 
@@ -68,8 +68,8 @@ export default function MonetizationCalculatorHubPage() {
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
-              { label: 'Guides', href: '/guides' },
-              { label: 'Monetization Hub', href: '/guides/monetization-calculator-hub' },
+              { label: 'Guides', href: '/guides/' },
+              { label: 'Monetization Hub', href: '/guides/monetization-calculator-hub/' },
             ]}
           />
 

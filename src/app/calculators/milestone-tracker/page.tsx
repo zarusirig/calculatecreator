@@ -44,7 +44,7 @@ export default function MilestoneTrackerCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Milestone Tracker Calculator"
         description="Track your TikTok creator milestones. See when you'll hit monetization thresholds, follower goals, and unlock new features."
-        url="https://calculatecreator.com/calculators/milestone-tracker"
+        url="https://calculatecreator.com/calculators/milestone-tracker/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 1789 }}
         datePublished="2024-03-20"
         dateModified="2025-12-04"
@@ -54,18 +54,18 @@ export default function MilestoneTrackerCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Milestone Tracker Calculator', url: 'https://calculatecreator.com/calculators/milestone-tracker' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Milestone Tracker Calculator', url: 'https://calculatecreator.com/calculators/milestone-tracker/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Milestone Tracker Calculator',
-              href: '/calculators/milestone-tracker',
+              href: '/calculators/milestone-tracker/',
             },
           ]}
         />

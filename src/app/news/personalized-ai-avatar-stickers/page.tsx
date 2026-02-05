@@ -28,8 +28,8 @@ export default function PersonalizedAIAvatarStickersPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'AI Avatar Stickers', url: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'AI Avatar Stickers', url: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

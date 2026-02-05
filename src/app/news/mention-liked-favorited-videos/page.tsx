@@ -28,8 +28,8 @@ export default function MentionLikedFavoritedVideosPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
-          { name: 'Mention Liked & Favorited Videos', url: 'https://calculatecreator.com/news/mention-liked-favorited-videos' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
+          { name: 'Mention Liked & Favorited Videos', url: 'https://calculatecreator.com/news/mention-liked-favorited-videos/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

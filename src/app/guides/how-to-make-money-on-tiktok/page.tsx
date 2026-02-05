@@ -22,7 +22,7 @@ export default function HowToMakeMoneyOnTikTokPage() {
       <ArticleSchema
         headline="How to Make Money on TikTok: Complete 2026 Guide"
         description="Learn every TikTok income stream: Creator Fund ($0.02-$0.04/1K views), brand deals ($200-$10K+), LIVE gifts & Shop. Real earnings data included."
-        url="https://calculatecreator.com/guides/how-to-make-money-on-tiktok"
+        url="https://calculatecreator.com/guides/how-to-make-money-on-tiktok/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['how to make money on tiktok', 'tiktok monetization', 'tiktok creator fund', 'tiktok earnings', 'tiktok income streams']}

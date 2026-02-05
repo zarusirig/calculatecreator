@@ -44,7 +44,7 @@ export default function TikTokAdCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Cost Calculator"
         description="Calculate TikTok advertising costs including CPM, CPV rates, and campaign ROI. Get 2026 benchmarks and plan your TikTok ad budget effectively."
-        url="https://calculatecreator.com/calculators/tiktok-ad-cost"
+        url="https://calculatecreator.com/calculators/tiktok-ad-cost/"
         aggregateRating={{ ratingValue: 4.7, reviewCount: 2164 }}
         datePublished="2024-01-15"
         dateModified="2025-11-01"
@@ -54,15 +54,15 @@ export default function TikTokAdCostCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'TikTok Ad Cost Calculator', url: 'https://calculatecreator.com/calculators/tiktok-ad-cost' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'TikTok Ad Cost Calculator', url: 'https://calculatecreator.com/calculators/tiktok-ad-cost/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
         <div className="container-custom">
           <Breadcrumb items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'TikTok Ad Cost Calculator', href: '/calculators/tiktok-ad-cost' }
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'TikTok Ad Cost Calculator', href: '/calculators/tiktok-ad-cost/' }
           ]} />
 
           <div className="max-w-4xl mx-auto text-center mb-12">

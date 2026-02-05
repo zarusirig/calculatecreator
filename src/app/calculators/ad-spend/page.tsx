@@ -56,7 +56,7 @@ export default function AdSpendCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Spend Calculator"
         description="Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Plan daily, weekly, and monthly budgets."
-        url="https://calculatecreator.com/calculators/ad-spend"
+        url="https://calculatecreator.com/calculators/ad-spend/"
         aggregateRating={{
           ratingValue: 4.7,
           reviewCount: 743,
@@ -69,16 +69,16 @@ export default function AdSpendCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Ad Spend Calculator', url: 'https://calculatecreator.com/calculators/ad-spend' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Ad Spend Calculator', url: 'https://calculatecreator.com/calculators/ad-spend/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Ad Spend Calculator', href: '/calculators/ad-spend' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Ad Spend Calculator', href: '/calculators/ad-spend/' },
             ]}
           />
 

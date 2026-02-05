@@ -131,8 +131,8 @@ export default function EligibilityCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-50 py-8">
         <div className="container-custom">
         <Breadcrumb items={[
-          { label: 'Calculators', href: '/calculators' },
-          { label: 'Utility Tools', href: '/calculators/utility-tools' },
+          { label: 'Calculators', href: '/calculators/' },
+          { label: 'Utility Tools', href: '/calculators/utility-tools/' },
           { label: 'Eligibility Checker', href: '/calculators/utility-tools/eligibility/' }
         ]} />
 

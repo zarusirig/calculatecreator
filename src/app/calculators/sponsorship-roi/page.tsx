@@ -44,7 +44,7 @@ export default function SponsorshipROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Sponsorship ROI Calculator"
         description="Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations."
-        url="https://calculatecreator.com/calculators/sponsorship-roi"
+        url="https://calculatecreator.com/calculators/sponsorship-roi/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1523 }}
         datePublished="2024-07-12"
         dateModified="2025-11-13"
@@ -54,18 +54,18 @@ export default function SponsorshipROICalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Sponsorship ROI Calculator', url: 'https://calculatecreator.com/calculators/sponsorship-roi' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Sponsorship ROI Calculator', url: 'https://calculatecreator.com/calculators/sponsorship-roi/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Sponsorship ROI Calculator',
-              href: '/calculators/sponsorship-roi',
+              href: '/calculators/sponsorship-roi/',
             },
           ]}
         />

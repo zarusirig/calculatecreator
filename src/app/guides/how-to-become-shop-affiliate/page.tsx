@@ -178,7 +178,7 @@ export default function BecomeTikTokShopAffiliatePage() {
       <ArticleSchema
         headline="How to Become TikTok Shop Affiliate: Complete Guide 2026"
         description="Step-by-step guide to joining TikTok Shop affiliate program. Requirements, application process, commission rates, and earning strategies for maximum income."
-        url="https://calculatecreator.com/guides/how-to-become-shop-affiliate"
+        url="https://calculatecreator.com/guides/how-to-become-shop-affiliate/"
         datePublished="2025-11-13"
         dateModified="2026-01-30"
         keywords={['tiktok shop affiliate', 'become shop seller', 'tiktok affiliate program', 'shop creator', 'tiktok shop commission']}

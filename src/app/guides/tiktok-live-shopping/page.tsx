@@ -28,7 +28,7 @@ export default function TikTokLiveShoppingPage() {
       <ArticleSchema
         headline="TikTok LIVE Shopping Guide: How to Sell Products During Livestreams"
         description="Complete guide to TikTok LIVE Shopping. How to set up, showcase products, convert viewers to buyers, and maximize sales during live streams."
-        url="https://calculatecreator.com/guides/tiktok-live-shopping"
+        url="https://calculatecreator.com/guides/tiktok-live-shopping/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok live shopping', 'live commerce', 'tiktok shop live', 'livestream selling', 'tiktok live sales']}

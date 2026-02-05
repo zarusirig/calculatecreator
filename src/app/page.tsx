@@ -847,10 +847,10 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: DollarSign,
     description: 'Master the basics of earning money on TikTok. Learn about all monetization methods, Creator Fund requirements, and strategies to reach your first $1,000.',
     guides: [
-      { title: 'Complete TikTok Calculator Guide', href: '/guides/complete-tiktok-calculator-guide' },
-      { title: 'TikTok Creator Fund Explained', href: '/guides/tiktok-creator-fund' },
-      { title: 'How Creator Fund Works', href: '/guides/how-creator-fund-works' },
-      { title: 'Maximize Creator Fund RPM', href: '/guides/maximize-creator-fund-rpm' },
+      { title: 'Complete TikTok Calculator Guide', href: '/guides/complete-tiktok-calculator-guide/' },
+      { title: 'TikTok Creator Fund Explained', href: '/guides/tiktok-creator-fund/' },
+      { title: 'How Creator Fund Works', href: '/guides/how-creator-fund-works/' },
+      { title: 'Maximize Creator Fund RPM', href: '/guides/maximize-creator-fund-rpm/' },
     ],
   },
   {
@@ -858,10 +858,10 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: Handshake,
     description: 'Learn how to land, negotiate, and price brand deals. Understand your worth, create compelling proposals, and build long-term partnerships.',
     guides: [
-      { title: 'How to Get Brand Deals', href: '/guides/how-to-get-brand-deals' },
-      { title: 'Complete Brand Deals Guide', href: '/guides/how-to-get-brand-deals-complete' },
-      { title: 'How to Price Brand Deals', href: '/guides/how-to-price-brand-deals' },
-      { title: 'How Much to Charge for Sponsorships', href: '/guides/how-much-to-charge-sponsorship' },
+      { title: 'How to Get Brand Deals', href: '/guides/how-to-get-brand-deals/' },
+      { title: 'Complete Brand Deals Guide', href: '/guides/how-to-get-brand-deals-complete/' },
+      { title: 'How to Price Brand Deals', href: '/guides/how-to-price-brand-deals/' },
+      { title: 'How Much to Charge for Sponsorships', href: '/guides/how-much-to-charge-sponsorship/' },
     ],
   },
   {
@@ -869,9 +869,9 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: Gift,
     description: 'Optimize your LIVE streaming revenue. Understand gift values, diamond conversion rates, and proven strategies to maximize viewer engagement and earnings.',
     guides: [
-      { title: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide' },
-      { title: 'LIVE Gift Earnings Optimization', href: '/guides/live-gift-earnings-optimization' },
-      { title: 'How to Get 1000 Followers for LIVE', href: '/guides/how-to-get-1000-followers-live' },
+      { title: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide/' },
+      { title: 'LIVE Gift Earnings Optimization', href: '/guides/live-gift-earnings-optimization/' },
+      { title: 'How to Get 1000 Followers for LIVE', href: '/guides/how-to-get-1000-followers-live/' },
     ],
   },
   {
@@ -879,10 +879,10 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: Rocket,
     description: 'Crack the TikTok algorithm code. Learn proven strategies for going viral, increasing engagement, and growing your audience organically.',
     guides: [
-      { title: 'TikTok Algorithm Optimization', href: '/guides/tiktok-algorithm-optimization' },
-      { title: 'How to Go Viral on TikTok', href: '/guides/how-to-go-viral' },
-      { title: 'How to Increase Engagement', href: '/guides/how-to-increase-engagement' },
-      { title: 'Increase Engagement Rate', href: '/guides/increase-engagement-rate-tiktok' },
+      { title: 'TikTok Algorithm Optimization', href: '/guides/tiktok-algorithm-optimization/' },
+      { title: 'How to Go Viral on TikTok', href: '/guides/how-to-go-viral/' },
+      { title: 'How to Increase Engagement', href: '/guides/how-to-increase-engagement/' },
+      { title: 'Increase Engagement Rate', href: '/guides/increase-engagement-rate-tiktok/' },
     ],
   },
   {
@@ -890,9 +890,9 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: BarChart3,
     description: 'Master TikTok analytics and metrics. Understand what data matters, how to track performance, and make data-driven content decisions.',
     guides: [
-      { title: 'Analytics & Metrics Master Guide', href: '/guides/analytics-metrics-master-guide' },
-      { title: 'Calculating True Influence Value', href: '/guides/calculating-true-influence-value' },
-      { title: 'Multi-Platform Attribution for Creators', href: '/guides/multi-platform-attribution-creators' },
+      { title: 'Analytics & Metrics Master Guide', href: '/guides/analytics-metrics-master-guide/' },
+      { title: 'Calculating True Influence Value', href: '/guides/calculating-true-influence-value/' },
+      { title: 'Multi-Platform Attribution for Creators', href: '/guides/multi-platform-attribution-creators/' },
     ],
   },
   {
@@ -900,8 +900,8 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
     icon: ShoppingBag,
     description: 'Build a profitable TikTok Shop business. Learn success strategies, best niches, and how to become an approved affiliate seller.',
     guides: [
-      { title: 'TikTok Shop Success Strategies', href: '/guides/tiktok-shop-success-strategies' },
-      { title: 'Best TikTok Shop Niches', href: '/guides/best-shop-niches' },
+      { title: 'TikTok Shop Success Strategies', href: '/guides/tiktok-shop-success-strategies/' },
+      { title: 'Best TikTok Shop Niches', href: '/guides/best-shop-niches/' },
     ],
   },
 ];
@@ -910,19 +910,19 @@ const guideCategories: { title: string; icon: LucideIcon; description: string; g
 const dataPages: { title: string; href: string; description: string; icon: LucideIcon }[] = [
   {
     title: 'Brand Deal Rates by Followers',
-    href: '/data/brand-deal-rates-by-followers',
+    href: '/data/brand-deal-rates-by-followers/',
     description: 'Real-world sponsored content pricing based on follower count, engagement rate, and content niche',
     icon: Banknote,
   },
   {
     title: 'RPM Rates by Niche',
-    href: '/data/rpm-rates-by-niche',
+    href: '/data/rpm-rates-by-niche/',
     description: 'Creator Fund revenue per 1,000 views across beauty, finance, fitness, gaming, and lifestyle categories',
     icon: TrendingUp,
   },
   {
     title: 'Engagement Rate Benchmarks',
-    href: '/data/engagement-rates-by-niche',
+    href: '/data/engagement-rates-by-niche/',
     description: 'Industry-standard engagement rates segmented by content category and follower count',
     icon: BarChart3,
   },
@@ -932,19 +932,19 @@ const dataPages: { title: string; href: string; description: string; icon: Lucid
 const comparisons: { title: string; href: string; description: string; icon: LucideIcon }[] = [
   {
     title: 'TikTok vs YouTube Earnings',
-    href: '/comparisons/tiktok-vs-youtube-earnings',
+    href: '/comparisons/tiktok-vs-youtube-earnings/',
     description: 'Compare monetization opportunities, RPM rates, and creator earning potential across platforms',
     icon: Swords,
   },
   {
     title: 'TikTok vs Instagram Income',
-    href: '/comparisons/tiktok-vs-instagram',
+    href: '/comparisons/tiktok-vs-instagram/',
     description: 'Analyze which platform offers better earning potential for your content niche and audience size',
     icon: Smartphone,
   },
   {
     title: 'Creator Fund vs Brand Deals',
-    href: '/comparisons/creator-fund-vs-brand-deals',
+    href: '/comparisons/creator-fund-vs-brand-deals/',
     description: 'Understand which monetization method pays more and when to prioritize each revenue stream',
     icon: DollarSign,
   },
@@ -954,19 +954,19 @@ const comparisons: { title: string; href: string; description: string; icon: Luc
 const nichePages: { title: string; href: string; description: string; icon: LucideIcon }[] = [
   {
     title: 'Beauty Creators',
-    href: '/guides/beauty-creators-earnings',
+    href: '/guides/beauty-creators-earnings/',
     description: 'Earning strategies, RPM rates, and brand deal opportunities for makeup and skincare content',
     icon: Sparkles,
   },
   {
     title: 'Finance Creators',
-    href: '/guides/finance-creators-earnings',
+    href: '/guides/finance-creators-earnings/',
     description: 'Monetization guide for personal finance, investing, and money management content creators',
     icon: CreditCard,
   },
   {
     title: 'Fitness Creators',
-    href: '/guides/fitness-creators-earnings',
+    href: '/guides/fitness-creators-earnings/',
     description: 'Revenue opportunities for workout, nutrition, and wellness content on TikTok',
     icon: Dumbbell,
   },

@@ -263,7 +263,7 @@ export default function NewsPage() {
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-blue-50">
         <Breadcrumb
           items={[
-            { label: 'News', href: '/news' },
+            { label: 'News', href: '/news/' },
           ]}
           includeHome={true}
         />

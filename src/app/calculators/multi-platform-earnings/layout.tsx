@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Platform Earnings Comparison 2026',
     description: 'Compare earnings across TikTok, YouTube & Instagram.',
-    url: 'https://calculatecreator.com/calculators/multi-platform-earnings',
+    url: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
     type: 'website',
   },
 };

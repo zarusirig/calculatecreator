@@ -22,7 +22,7 @@ export default function CreatorFundGuidePage() {
       <ArticleSchema
         headline="TikTok Creator Fund: Complete Guide 2026"
         description="Everything you need to know about the TikTok Creator Fund: RPM rates, eligibility requirements, payment schedule, realistic earnings, and optimization strategies."
-        url="https://calculatecreator.com/guides/tiktok-creator-fund"
+        url="https://calculatecreator.com/guides/tiktok-creator-fund/"
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['tiktok creator fund', 'creator fund rates', 'tiktok rpm', 'creator fund requirements', 'tiktok earnings']}

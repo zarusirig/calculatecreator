@@ -16,69 +16,69 @@ export function Header() {
   const navLinks = [
     {
       label: 'Calculators',
-      href: '/calculators',
+      href: '/calculators/',
       dropdown: [
-        { href: '/calculators/tiktok-creator-fund', label: 'TikTok Creator Fund Calculator' },
-        { href: '/calculators/engagement-rate', label: 'TikTok Engagement Rate Calculator' },
-        { href: '/calculators/brand-deal-rate', label: 'TikTok Brand Deal Calculator' },
-        { href: '/calculators/live-gifts', label: 'TikTok LIVE Gifts Calculator' },
-        { href: '/calculators/tiktok-money', label: 'TikTok Money Calculator' },
-        { href: '/calculators/rpm', label: 'TikTok RPM Calculator' },
+        { href: '/calculators/tiktok-creator-fund/', label: 'TikTok Creator Fund Calculator' },
+        { href: '/calculators/engagement-rate/', label: 'TikTok Engagement Rate Calculator' },
+        { href: '/calculators/brand-deal-rate/', label: 'TikTok Brand Deal Calculator' },
+        { href: '/calculators/live-gifts/', label: 'TikTok LIVE Gifts Calculator' },
+        { href: '/calculators/tiktok-money/', label: 'TikTok Money Calculator' },
+        { href: '/calculators/rpm/', label: 'TikTok RPM Calculator' },
         { href: '/calculators/commerce-ads/shop-profit/', label: 'TikTok Shop Commission Calculator' },
-        { href: '/calculators', label: 'View All TikTok Calculators', featured: true },
+        { href: '/calculators/', label: 'View All TikTok Calculators', featured: true },
       ],
     },
     {
       label: 'Guides',
-      href: '/guides',
+      href: '/guides/',
       dropdown: [
-        { href: '/guides/how-to-make-money-on-tiktok', label: 'How to Make Money on TikTok' },
-        { href: '/guides/tiktok-creator-fund', label: 'TikTok Creator Fund Guide' },
-        { href: '/guides/brand-deals', label: 'TikTok Brand Deals Guide' },
-        { href: '/guides/tiktok-live', label: 'TikTok LIVE Monetization Guide' },
-        { href: '/guides/tiktok-shop-affiliate', label: 'TikTok Shop Affiliate Guide' },
-        { href: '/guides/how-to-get-brand-deals', label: 'How to Get TikTok Brand Deals' },
-        { href: '/guides', label: 'View All TikTok Guides', featured: true },
+        { href: '/guides/how-to-make-money-on-tiktok/', label: 'How to Make Money on TikTok' },
+        { href: '/guides/tiktok-creator-fund/', label: 'TikTok Creator Fund Guide' },
+        { href: '/guides/brand-deals/', label: 'TikTok Brand Deals Guide' },
+        { href: '/guides/tiktok-live/', label: 'TikTok LIVE Monetization Guide' },
+        { href: '/guides/tiktok-shop-affiliate/', label: 'TikTok Shop Affiliate Guide' },
+        { href: '/guides/how-to-get-brand-deals/', label: 'How to Get TikTok Brand Deals' },
+        { href: '/guides/', label: 'View All TikTok Guides', featured: true },
       ],
     },
     {
       label: 'News',
-      href: '/news',
+      href: '/news/',
       dropdown: [
-        { href: '/news', label: 'Latest News' },
-        { href: '/news', label: 'Algorithm Updates' },
-        { href: '/news', label: 'Monetization News' },
-        { href: '/news', label: 'TikTok Shop Updates' },
-        { href: '/news', label: 'Platform Features' },
-        { href: '/news', label: 'View All News', featured: true },
+        { href: '/news/', label: 'Latest News' },
+        { href: '/news/', label: 'Algorithm Updates' },
+        { href: '/news/', label: 'Monetization News' },
+        { href: '/news/', label: 'TikTok Shop Updates' },
+        { href: '/news/', label: 'Platform Features' },
+        { href: '/news/', label: 'View All News', featured: true },
       ],
     },
     {
       label: 'Data & Insights',
-      href: '/data',
+      href: '/data/',
       dropdown: [
-        { href: '/data/brand-deal-rates-by-followers', label: 'TikTok Brand Deal Rates by Followers' },
-        { href: '/data/rpm-rates-by-niche', label: 'TikTok RPM Rates by Niche' },
-        { href: '/data/engagement-rates-by-niche', label: 'TikTok Engagement Rate Benchmarks' },
-        { href: '/comparisons/tiktok-vs-youtube-earnings', label: 'TikTok vs YouTube Earnings' },
-        { href: '/comparisons/tiktok-vs-instagram', label: 'TikTok vs Instagram Earnings' },
+        { href: '/data/brand-deal-rates-by-followers/', label: 'TikTok Brand Deal Rates by Followers' },
+        { href: '/data/rpm-rates-by-niche/', label: 'TikTok RPM Rates by Niche' },
+        { href: '/data/engagement-rates-by-niche/', label: 'TikTok Engagement Rate Benchmarks' },
+        { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube Earnings' },
+        { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram Earnings' },
       ],
     },
     {
       label: 'Global',
-      href: '/region',
+      href: '/region/',
       dropdown: [
-        { href: '/region', label: 'Global TikTok Stats', featured: true, hasIcon: true },
-        { href: '/calculator/de', label: 'Deutsch (DE)' },
-        { href: '/calculator/es', label: 'Español (ES)' },
-        { href: '/calculator/fr', label: 'Français (FR)' },
-        { href: '/calculator/it', label: 'Italiano (IT)' },
-        { href: '/calculator/pt-br', label: 'Português (BR)' },
-        { href: '/calculator/my', label: 'Bahasa Malaysia (MY)' },
+        { href: '/region/', label: 'Global TikTok Stats', featured: true, hasIcon: true },
+        { href: '/calculator/de/', label: 'Deutsch (DE)' },
+        { href: '/calculator/es/', label: 'Español (ES)' },
+        { href: '/calculator/fr/', label: 'Français (FR)' },
+        { href: '/calculator/it/', label: 'Italiano (IT)' },
+        { href: '/calculator/pt-br/', label: 'Português (BR)' },
+        { href: '/calculator/my/', label: 'Bahasa Malaysia (MY)' },
       ],
     },
-    { label: 'FAQ', href: '/faq' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'FAQ', href: '/faq/' },
+    { label: 'Contact', href: '/contact/' },
   ];
 
   const handleLinkClick = (label: string, href: string) => {
@@ -183,9 +183,9 @@ export function Header() {
               </div>
             ))}
             <Link
-              href="/calculators/tiktok-creator-fund"
+              href="/calculators/tiktok-creator-fund/"
               className="btn btn-primary btn-sm ml-2 gradient-primary gradient-animated glow-purple font-semibold"
-              onClick={() => handleLinkClick('Calculate CTA', '/calculators/tiktok-creator-fund')}
+              onClick={() => handleLinkClick('Calculate CTA', '/calculators/tiktok-creator-fund/')}
             >
               Calculate Now
             </Link>
@@ -299,9 +299,9 @@ export function Header() {
               ))}
               <div className="pt-4 px-4">
                 <Link
-                  href="/calculators/tiktok-creator-fund"
+                  href="/calculators/tiktok-creator-fund/"
                   className="btn btn-primary w-full gradient-primary gradient-animated glow-purple font-semibold"
-                  onClick={() => handleLinkClick('Calculate CTA Mobile', '/calculators/tiktok-creator-fund')}
+                  onClick={() => handleLinkClick('Calculate CTA Mobile', '/calculators/tiktok-creator-fund/')}
                 >
                   Calculate Now
                 </Link>

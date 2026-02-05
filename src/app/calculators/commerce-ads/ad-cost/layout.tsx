@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TikTok Ad Cost Calculator 2026',
     description: 'Calculate TikTok advertising costs for your campaigns.',
-    url: 'https://calculatecreator.com/calculators/tiktok-ad-cost',
+    url: 'https://calculatecreator.com/calculators/tiktok-ad-cost/',
     type: 'website',
   },
 };

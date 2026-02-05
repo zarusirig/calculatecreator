@@ -31,7 +31,7 @@ export interface IntroSectionProps {
  *   title="TikTok Engagement Rate Calculator"
  *   description="Calculate your TikTok engagement rate..."
  *   secondaryDescription={
- *     <>Use your engagement rate to calculate <Link href="/calculators/brand-deal-rate">brand deal pricing</Link></>
+ *     <>Use your engagement rate to calculate <Link href="/calculators/brand-deal-rate/">brand deal pricing</Link></>
  *   }
  * />
  * ```

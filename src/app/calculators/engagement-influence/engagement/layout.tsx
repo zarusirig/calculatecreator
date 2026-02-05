@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TikTok Engagement Rate Calculator | Free & Accurate 2026',
     description: 'Calculate your TikTok engagement rate and compare to industry benchmarks. Free tool for creators.',
-    url: 'https://calculatecreator.com/calculators/engagement-rate',
+    url: 'https://calculatecreator.com/calculators/engagement-rate/',
     type: 'website',
   },
 };

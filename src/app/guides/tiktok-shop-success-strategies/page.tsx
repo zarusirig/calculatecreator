@@ -55,7 +55,7 @@ export default function TikTokShopSuccessStrategiesPage() {
       <ArticleSchema
         headline="TikTok Shop Success Strategies: Complete Guide for 2026"
         description="Master TikTok Shop affiliate marketing with proven product selection, content strategies, and conversion optimization tactics."
-        url="https://calculatecreator.com/guides/tiktok-shop-success-strategies"
+        url="https://calculatecreator.com/guides/tiktok-shop-success-strategies/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok shop', 'affiliate marketing', 'shop success', 'tiktok shopping']}
@@ -63,8 +63,8 @@ export default function TikTokShopSuccessStrategiesPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'TikTok Shop Success Strategies', url: 'https://calculatecreator.com/guides/tiktok-shop-success-strategies' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'TikTok Shop Success Strategies', url: 'https://calculatecreator.com/guides/tiktok-shop-success-strategies/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

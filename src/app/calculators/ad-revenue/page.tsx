@@ -45,7 +45,7 @@ export default function AdRevenueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Revenue Calculator"
         description="Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency."
-        url="https://calculatecreator.com/calculators/ad-revenue"
+        url="https://calculatecreator.com/calculators/ad-revenue/"
         aggregateRating={{ ratingValue: 4.8, reviewCount: 1856 }}
         datePublished="2024-03-01"
         dateModified="2025-11-13"
@@ -55,16 +55,16 @@ export default function AdRevenueCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Ad Revenue Calculator', url: 'https://calculatecreator.com/calculators/ad-revenue' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Ad Revenue Calculator', url: 'https://calculatecreator.com/calculators/ad-revenue/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Ad Revenue Calculator', href: '/calculators/ad-revenue' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Ad Revenue Calculator', href: '/calculators/ad-revenue/' },
           ]}
         />
 

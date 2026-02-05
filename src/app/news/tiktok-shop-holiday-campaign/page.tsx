@@ -28,7 +28,7 @@ export default function TikTokShopHolidayCampaignPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news' },
+          { name: 'News', url: 'https://calculatecreator.com/news/' },
           { name: 'Holiday Campaign', url: 'https://calculatecreator.com/news/tiktok-shop-holiday-campaign/' },
         ]}
       />

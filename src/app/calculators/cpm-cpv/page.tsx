@@ -69,7 +69,7 @@ export default function CPMCPVCalculatorPage() {
       <CalculatorSchema
         name="TikTok CPM/CPV Calculator"
         description="Calculate Cost Per Mille (CPM) and Cost Per View (CPV) for your TikTok ad campaigns to measure advertising efficiency."
-        url="https://calculatecreator.com/calculators/cpm-cpv"
+        url="https://calculatecreator.com/calculators/cpm-cpv/"
         aggregateRating={{
           ratingValue: 4.7,
           reviewCount: 892,
@@ -82,16 +82,16 @@ export default function CPMCPVCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'CPM/CPV Calculator', url: 'https://calculatecreator.com/calculators/cpm-cpv' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'CPM/CPV Calculator', url: 'https://calculatecreator.com/calculators/cpm-cpv/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'CPM/CPV Calculator', href: '/calculators/cpm-cpv' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'CPM/CPV Calculator', href: '/calculators/cpm-cpv/' },
             ]}
           />
 

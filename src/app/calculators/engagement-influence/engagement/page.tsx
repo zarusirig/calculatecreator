@@ -56,7 +56,7 @@ export default function EngagementRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Engagement Rate Calculator"
         description="Calculate your TikTok engagement rate and compare to industry benchmarks. Essential for brand deals, algorithm performance, and growth tracking."
-        url="https://calculatecreator.com/calculators/engagement-rate"
+        url="https://calculatecreator.com/calculators/engagement-rate/"
         aggregateRating={{ ratingValue: 4.9, reviewCount: 2341 }}
         datePublished="2024-01-15"
         dateModified="2025-12-04"
@@ -66,8 +66,8 @@ export default function EngagementRateCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Engagement Rate Calculator', url: 'https://calculatecreator.com/calculators/engagement-rate' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Engagement Rate Calculator', url: 'https://calculatecreator.com/calculators/engagement-rate/' },
         ]}
       />
 
@@ -75,8 +75,8 @@ export default function EngagementRateCalculatorPage() {
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
-            { label: 'Engagement Rate Calculator', href: '/calculators/engagement-rate' },
+            { label: 'Calculators', href: '/calculators/' },
+            { label: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
           ]}
         />
 

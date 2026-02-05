@@ -65,7 +65,7 @@ export default function PostingTimeCalculatorPage() {
       <CalculatorSchema
         name="TikTok Best Time to Post Calculator"
         description="Find the optimal times to post on TikTok based on your audience location, timezone, and content type to maximize engagement and reach."
-        url="https://calculatecreator.com/calculators/posting-time"
+        url="https://calculatecreator.com/calculators/posting-time/"
         aggregateRating={{
           ratingValue: 4.8,
           reviewCount: 1247,
@@ -78,8 +78,8 @@ export default function PostingTimeCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Posting Time Calculator', url: 'https://calculatecreator.com/calculators/posting-time' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Posting Time Calculator', url: 'https://calculatecreator.com/calculators/posting-time/' },
         ]}
       />
 
@@ -87,10 +87,10 @@ export default function PostingTimeCalculatorPage() {
       <div className="container-custom">
         <Breadcrumb
           items={[
-            { label: 'Calculators', href: '/calculators' },
+            { label: 'Calculators', href: '/calculators/' },
             {
               label: 'Posting Time Calculator',
-              href: '/calculators/posting-time',
+              href: '/calculators/posting-time/',
             },
           ]}
         />

@@ -55,7 +55,7 @@ export default function HowToPriceBrandDealsPage() {
       <ArticleSchema
         headline="How to Price Brand Deals: Complete Influencer Pricing Guide"
         description="Master brand deal pricing with proven models, negotiation frameworks, and rate calculations for TikTok creators and influencers."
-        url="https://calculatecreator.com/guides/how-to-price-brand-deals"
+        url="https://calculatecreator.com/guides/how-to-price-brand-deals/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['brand deals', 'influencer pricing', 'sponsored posts', 'creator rates']}
@@ -63,8 +63,8 @@ export default function HowToPriceBrandDealsPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'How to Price Brand Deals', url: 'https://calculatecreator.com/guides/how-to-price-brand-deals' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'How to Price Brand Deals', url: 'https://calculatecreator.com/guides/how-to-price-brand-deals/' },
         ]}
       />
       <FAQSchema faqs={faqs} />

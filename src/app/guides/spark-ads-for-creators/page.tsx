@@ -43,7 +43,7 @@ export default function SparkAdsForCreatorsPage() {
       <ArticleSchema
         headline="TikTok Spark Ads for Creators: Complete Monetization Guide"
         description="How TikTok Spark Ads work for creators. Earn from brands using your organic content as ads, authorization process, payment rates, and optimization strategies."
-        url="https://calculatecreator.com/guides/spark-ads-for-creators"
+        url="https://calculatecreator.com/guides/spark-ads-for-creators/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['tiktok spark ads', 'spark ads creators', 'tiktok ads monetization', 'spark ads payment', 'branded content ads']}

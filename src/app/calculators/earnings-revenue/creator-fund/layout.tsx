@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Creator Fund Calculator 2026',
     description: 'Estimate TikTok Creator Fund earnings based on views, niche & engagement. Free calculator with real RPM rates.',
-    url: 'https://calculatecreator.com/calculators/tiktok-creator-fund',
+    url: 'https://calculatecreator.com/calculators/tiktok-creator-fund/',
     type: 'website',
   },
 };

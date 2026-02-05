@@ -159,7 +159,7 @@ export default function DataIndexPage() {
       />
       <Breadcrumb
         items={[
-          { label: 'Data & Insights', href: '/data' },
+          { label: 'Data & Insights', href: '/data/' },
         ]}
         includeHome={true}
       />

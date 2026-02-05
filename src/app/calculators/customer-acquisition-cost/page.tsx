@@ -52,7 +52,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Customer Acquisition Cost (CAC) Calculator"
         description="Calculate how much it costs to acquire a new customer through your TikTok marketing campaigns."
-        url="https://calculatecreator.com/calculators/customer-acquisition-cost"
+        url="https://calculatecreator.com/calculators/customer-acquisition-cost/"
         aggregateRating={{
           ratingValue: 4.9,
           reviewCount: 823,
@@ -65,16 +65,16 @@ export default function CustomerAcquisitionCostCalculatorPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Customer Acquisition Cost Calculator', url: 'https://calculatecreator.com/calculators/customer-acquisition-cost' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Customer Acquisition Cost Calculator', url: 'https://calculatecreator.com/calculators/customer-acquisition-cost/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">
         <div className="container-custom">
           <Breadcrumb
             items={[
-              { label: 'Calculators', href: '/calculators' },
-              { label: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost' },
+              { label: 'Calculators', href: '/calculators/' },
+              { label: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost/' },
             ]}
           />
 

@@ -103,8 +103,8 @@ export default function MoonPhaseCalculatorPage() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-900 py-8">
         <div className="container-custom">
         <Breadcrumb items={[
-          { label: 'Calculators', href: '/calculators' },
-          { label: 'Fun & Niche', href: '/calculators/fun-niche' },
+          { label: 'Calculators', href: '/calculators/' },
+          { label: 'Fun & Niche', href: '/calculators/fun-niche/' },
           { label: 'Moon Phase', href: '/calculators/fun-niche/moon-phase/' }
         ]} />
 

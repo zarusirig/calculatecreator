@@ -44,8 +44,8 @@ export default function MoonPhaseLayout({ children }: { children: React.ReactNod
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators' },
-          { name: 'Fun & Niche', url: 'https://calculatecreator.com/calculators/fun-niche' },
+          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
+          { name: 'Fun & Niche', url: 'https://calculatecreator.com/calculators/fun-niche/' },
           { name: 'Moon Phase', url: 'https://calculatecreator.com/calculators/fun-niche/moon-phase/' }
         ]}
       />

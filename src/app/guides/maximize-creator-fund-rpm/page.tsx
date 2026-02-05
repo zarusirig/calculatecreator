@@ -50,7 +50,7 @@ export default function MaximizeCreatorFundRPMPage() {
       <ArticleSchema
         headline="Maximize Creator Fund RPM: 12 Strategies to Boost Earnings"
         description="Complete guide to increasing TikTok Creator Fund RPM with 12 proven strategies, niche-specific data, and optimization tactics."
-        url="https://calculatecreator.com/guides/maximize-creator-fund-rpm"
+        url="https://calculatecreator.com/guides/maximize-creator-fund-rpm/"
         datePublished="2025-11-13"
         dateModified="2025-11-13"
         keywords={['rpm optimization', 'creator fund earnings', 'boost rpm', 'tiktok income']}
@@ -58,8 +58,8 @@ export default function MaximizeCreatorFundRPMPage() {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides' },
-          { name: 'Maximize Creator Fund RPM', url: 'https://calculatecreator.com/guides/maximize-creator-fund-rpm' },
+          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
+          { name: 'Maximize Creator Fund RPM', url: 'https://calculatecreator.com/guides/maximize-creator-fund-rpm/' },
         ]}
       />
       <FAQSchema faqs={faqs} />
