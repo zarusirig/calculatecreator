@@ -23,7 +23,7 @@ export default function PrivacyPage() {
         <div className="flex items-center space-x-3 mb-8">
           <img
             src="/images/calculate-creator-transparent-v2.png"
-            alt="TikTok Creator Calculator"
+            alt="CalculateCreator logo - Privacy Policy"
             className="h-12 w-auto"
           />
           <div>

@@ -105,9 +105,10 @@ export default function RootLayout({
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="w-C9CwLR5pFTw0kjkeKFKIJ-qM3RQGok1qm3Zt8pSwA" />
 
-        {/* Favicon */}
+        {/* Favicon & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* Preload critical resources for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

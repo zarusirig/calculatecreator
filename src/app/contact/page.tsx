@@ -24,7 +24,7 @@ export default function ContactPage() {
         <div className="text-center mb-8">
           <img
             src="/images/calculate-creator-transparent-v2.png"
-            alt="TikTok Creator Calculator"
+            alt="CalculateCreator logo - Contact support"
             className="h-12 w-auto mx-auto mb-4"
           />
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-6">

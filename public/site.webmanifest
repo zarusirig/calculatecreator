@@ -1,0 +1,22 @@
+{
+  "name": "TikTok Creator Calculator",
+  "short_name": "CalculateCreator",
+  "description": "Free TikTok calculators for creators: estimate earnings, engagement rates, brand deal rates, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#171717",
+  "icons": [
+    {
+      "src": "/images/calculate-creator-transparent-v2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Contact: mailto:bugs@calculatecreator.com
+Preferred-Languages: en
+Canonical: https://calculatecreator.com/.well-known/security.txt
+Expires: 2027-02-06T00:00:00.000Z

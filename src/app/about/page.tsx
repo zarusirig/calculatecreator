@@ -67,7 +67,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <img
               src="/images/calculate-creator-transparent-v2.png"
-              alt="TikTok Creator Calculator"
+              alt="CalculateCreator logo - About our team and mission"
               className="h-16 w-auto mx-auto mb-6"
             />
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">

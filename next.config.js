@@ -18,12 +18,14 @@ const nextConfig = {
   //   optimizeCss: true,
   // },
 
-  // SEO and metadata - using stable build ID for better caching
+  // Use git commit hash for cache-busting between deployments
   generateBuildId: async () => {
-    // Use a stable identifier that only changes when the build process changes
-    // This enables better CDN and browser caching between deployments
-    // In CI/CD, you could use commit hash: process.env.COMMIT_HASH?.substring(0, 8) || 
-    return 'tiktok-calculator-v1';
+    const { execSync } = require('child_process');
+    try {
+      return execSync('git rev-parse --short HEAD').toString().trim();
+    } catch {
+      return `build-${Date.now()}`;
+    }
   },
 };
 
