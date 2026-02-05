@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { generateHubPageSchemas, hubPageConfigs } from '@/lib/seo/hub-page-schema';
 import {
   DollarSign,
   BarChart3,
@@ -33,6 +34,9 @@ import {
 } from 'lucide-react';
 
 export default function CalculatorsPage() {
+  const config = hubPageConfigs.calculators;
+  const schemas = generateHubPageSchemas(config);
+
   const calculators: { name: string; slug: string; description: string; icon: LucideIcon; category: string; popular?: boolean }[] = [
     // Original 8 Calculators
     {
@@ -269,6 +273,25 @@ export default function CalculatorsPage() {
   const categories = ['All', 'Earnings', 'Analytics', 'Growth', 'Engagement', 'Business', 'ROI', 'LIVE', 'Shop', 'Conversion'];
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.collectionPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }}
+      />
+      {schemas.faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.faqSchema) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.webPageSchema) }}
+      />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
         <div className="container-custom">
           <Breadcrumb
@@ -798,5 +821,6 @@ export default function CalculatorsPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -23,29 +23,8 @@ export default function CalculatorsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const schemas = generateHubPageSchemas(config);
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.collectionPageSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }}
-      />
-      {schemas.faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.faqSchema) }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.webPageSchema) }}
-      />
-      {children}
-    </>
-  );
+  // Note: Schemas are now only applied in the main /calculators/page.tsx
+  // to avoid duplicate schemas on child calculator pages
+  // Each child page has its own specific schemas (CalculatorSchema, FAQSchema, etc.)
+  return <>{children}</>;
 }
