@@ -92,6 +92,7 @@ export function Footer() {
         { href: '/faq/', label: 'FAQ' },
         { href: '/privacy/', label: 'Privacy Policy' },
         { href: '/terms/', label: 'Terms of Service' },
+        { href: '/glossary/', label: 'Glossary' },
       ],
     },
   ];
