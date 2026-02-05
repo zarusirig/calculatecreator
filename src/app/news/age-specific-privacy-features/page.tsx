@@ -209,7 +209,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
             </table>
           </div>
           <p className="text-body-sm text-neutral-600 mt-4">
-            These restrictions automatically apply based on your account birthday. Age verification may be required to update settings. Learn more about <Link href="/guides/tiktok-monetization-requirements" className="text-primary-600 hover:underline">TikTok monetization requirements</Link>.
+            These restrictions automatically apply based on your account birthday. Age verification may be required to update settings. Learn more about <Link href="/guides/tiktok-monetization-requirements/" className="text-primary-600 hover:underline">TikTok monetization requirements</Link>.
           </p>
         </Card>
 
@@ -289,7 +289,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
                 Creators targeting 18+ audiences unlock full monetization capabilities including Creator Rewards, TikTok Shop, brand partnerships, and affiliate marketing. This demographic has no communication restrictions and can engage with all content types.
               </p>
               <p className="text-body-sm text-green-800">
-                For maximum earning potential, analyze your audience demographics using TikTok Analytics and adjust content strategy to attract viewers 18+. Learn more in our <Link href="/guides/tiktok-algorithm-optimization" className="text-green-900 font-semibold underline">algorithm optimization guide</Link> and <Link href="/guides/how-to-make-money-on-tiktok" className="text-green-900 font-semibold underline">monetization strategy</Link>.
+                For maximum earning potential, analyze your audience demographics using TikTok Analytics and adjust content strategy to attract viewers 18+. Learn more in our <Link href="/guides/tiktok-algorithm-optimization/" className="text-green-900 font-semibold underline">algorithm optimization guide</Link> and <Link href="/guides/how-to-make-money-on-tiktok/" className="text-green-900 font-semibold underline">monetization strategy</Link>.
               </p>
             </div>
           </div>
@@ -350,7 +350,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
             </ul>
           </div>
           <p className="text-body-sm text-neutral-600 mt-4">
-            For comprehensive guidance on optimizing your creator strategy, see our <Link href="/guides/content-strategy-2025" className="text-primary-600 hover:underline">2025 content strategy guide</Link> and <Link href="/guides/increase-engagement-rate-tiktok" className="text-primary-600 hover:underline">engagement optimization tips</Link>.
+            For comprehensive guidance on optimizing your creator strategy, see our <Link href="/guides/content-strategy-2025/" className="text-primary-600 hover:underline">2025 content strategy guide</Link> and <Link href="/guides/increase-engagement-rate-tiktok/" className="text-primary-600 hover:underline">engagement optimization tips</Link>.
           </p>
         </Card>
 
@@ -443,7 +443,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
                 How do nighttime notification restrictions affect my engagement?
               </h3>
               <p className="text-body-md text-neutral-700">
-                Nighttime restrictions prevent users ages 13-15 from receiving notifications between 9 PM and 7 AM, and users 16-17 can opt-in to quiet hours from 10 PM to 6 AM. If your audience skews younger, posting during late evening or early morning hours will result in delayed engagement as notifications won't be delivered until restrictions lift. Check your <Link href="/guides/analytics-metrics-master-guide" className="text-primary-600 hover:underline">TikTok Analytics</Link> to identify your audience's peak active hours and schedule content accordingly.
+                Nighttime restrictions prevent users ages 13-15 from receiving notifications between 9 PM and 7 AM, and users 16-17 can opt-in to quiet hours from 10 PM to 6 AM. If your audience skews younger, posting during late evening or early morning hours will result in delayed engagement as notifications won't be delivered until restrictions lift. Check your <Link href="/guides/analytics-metrics-master-guide/" className="text-primary-600 hover:underline">TikTok Analytics</Link> to identify your audience's peak active hours and schedule content accordingly.
               </p>
             </div>
             <div>
@@ -451,7 +451,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
                 Do age restrictions affect my ability to monetize content?
               </h3>
               <p className="text-body-md text-neutral-700">
-                Yes, significantly. TikTok requires creators to be 18+ to participate in monetization programs including Creator Rewards, TikTok Shop seller accounts, and most brand partnership opportunities. Additionally, viewers under 18 cannot make purchases on TikTok Shop, meaning product promotions directed at teen audiences will have zero conversion rates. Focus your monetization strategy on attracting 18+ audiences. Learn more in our <Link href="/guides/tiktok-monetization-requirements" className="text-primary-600 hover:underline">monetization requirements guide</Link>.
+                Yes, significantly. TikTok requires creators to be 18+ to participate in monetization programs including Creator Rewards, TikTok Shop seller accounts, and most brand partnership opportunities. Additionally, viewers under 18 cannot make purchases on TikTok Shop, meaning product promotions directed at teen audiences will have zero conversion rates. Focus your monetization strategy on attracting 18+ audiences. Learn more in our <Link href="/guides/tiktok-monetization-requirements/" className="text-primary-600 hover:underline">monetization requirements guide</Link>.
               </p>
             </div>
             <div>
@@ -483,7 +483,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
                 Will age restrictions affect my video performance on the For You Page?
               </h3>
               <p className="text-body-md text-neutral-700">
-                Indirectly, yes. Private accounts (mandatory for ages 13-15) have significantly reduced FYP distribution because TikTok prioritizes discoverability for public content. Additionally, comment restrictions and limited sharing options reduce the engagement signals that boost FYP performance. If your account is restricted due to age, focus on creating exceptional content that encourages your followers to share videos directly with friends. Once you turn 16 and can switch to a public account, you'll see improved FYP distribution. Learn more about <Link href="/guides/tiktok-algorithm-optimization" className="text-primary-600 hover:underline">algorithm optimization</Link>.
+                Indirectly, yes. Private accounts (mandatory for ages 13-15) have significantly reduced FYP distribution because TikTok prioritizes discoverability for public content. Additionally, comment restrictions and limited sharing options reduce the engagement signals that boost FYP performance. If your account is restricted due to age, focus on creating exceptional content that encourages your followers to share videos directly with friends. Once you turn 16 and can switch to a public account, you'll see improved FYP distribution. Learn more about <Link href="/guides/tiktok-algorithm-optimization/" className="text-primary-600 hover:underline">algorithm optimization</Link>.
               </p>
             </div>
             <div>
@@ -499,7 +499,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
                 How do comment restrictions affect creator-audience interaction?
               </h3>
               <p className="text-body-md text-neutral-700">
-                For creators ages 13-15, only followers can comment on videos, which dramatically reduces comment volume and social proof signals. This limitation makes it harder to build community and generate the engagement metrics needed for FYP distribution. However, the restriction protects younger creators from harassment and inappropriate comments. Creators should focus on building a loyal follower base through consistent posting and encouraging followers to share content. Live streaming remains an effective way to interact with audiences in real-time. See our <Link href="/guides/increase-engagement-rate-tiktok" className="text-primary-600 hover:underline">engagement rate optimization guide</Link> for strategies.
+                For creators ages 13-15, only followers can comment on videos, which dramatically reduces comment volume and social proof signals. This limitation makes it harder to build community and generate the engagement metrics needed for FYP distribution. However, the restriction protects younger creators from harassment and inappropriate comments. Creators should focus on building a loyal follower base through consistent posting and encouraging followers to share content. Live streaming remains an effective way to interact with audiences in real-time. See our <Link href="/guides/increase-engagement-rate-tiktok/" className="text-primary-600 hover:underline">engagement rate optimization guide</Link> for strategies.
               </p>
             </div>
             <div>

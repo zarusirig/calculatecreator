@@ -6,6 +6,7 @@ import { Moon, Sun, Star, Sparkles, Calendar, TrendingUp, Heart } from 'lucide-r
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 const moonPhases = [
   { name: 'New Moon', emoji: '🌑', energy: 'Fresh Starts', bestFor: 'Announcing new content series, rebranding, launching products' },
@@ -115,7 +116,7 @@ export default function MoonPhaseCalculatorPage() {
           <p className="text-body-lg text-indigo-200 max-w-2xl mx-auto">Align your content with lunar energy. A fun tool for creators who believe in cosmic timing! Discover which moon phase matches your posting date and get content recommendations based on lunar energy. From New Moon fresh starts to Full Moon peak energy, this calculator suggests optimal content types for each lunar phase. Perfect for creators who follow astrology, want creative inspiration, or simply enjoy adding cosmic intention to their posting schedule. Remember this is entertainment only but can add meaningful ritual to your content planning process.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
           <Card className="p-6 bg-white/10 backdrop-blur border-indigo-500/30">
             <div className="text-center mb-6">
               <label className="block text-body-sm font-medium text-indigo-200 mb-2">
@@ -145,6 +146,13 @@ export default function MoonPhaseCalculatorPage() {
               <p className="text-body-md text-indigo-200">{currentPhase.bestFor}</p>
             </div>
           </Card>
+
+          <InputsExplained
+            inputs={[
+              { name: 'Date', description: 'Date to check moon phase', example: 'March 15, 2026', required: true },
+            ]}
+            note="Moon phase content performs well in astrology, wellness, and spiritual niches."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12">
@@ -426,19 +434,19 @@ export default function MoonPhaseCalculatorPage() {
             <Card className="p-8 mb-12 bg-white/10 backdrop-blur border-indigo-500/30">
               <h3 className="text-heading-md font-semibold text-white mb-6">Related Calculators</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/calculators/posting-time" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
+                <Link href="/calculators/posting-time/" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
                   <h4 className="font-semibold text-white mb-2">Best Time to Post</h4>
                   <p className="text-body-sm text-indigo-200">Find optimal posting times based on audience data</p>
                 </Link>
-                <Link href="/calculators/engagement-influence/video-engagement" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
+                <Link href="/calculators/engagement-influence/video-engagement/" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
                   <h4 className="font-semibold text-white mb-2">Video Engagement Calculator</h4>
                   <p className="text-body-sm text-indigo-200">Predict video performance with comprehensive metrics</p>
                 </Link>
-                <Link href="/guides/content-strategy-2025" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
+                <Link href="/guides/content-strategy-2025/" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
                   <h4 className="font-semibold text-white mb-2">Content Strategy 2026</h4>
                   <p className="text-body-sm text-indigo-200">Latest strategies for TikTok growth and viral content</p>
                 </Link>
-                <Link href="/guides/tiktok-algorithm-optimization" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
+                <Link href="/guides/tiktok-algorithm-optimization/" className="p-4 bg-indigo-900/50 rounded-lg hover:bg-indigo-800/50 transition-colors">
                   <h4 className="font-semibold text-white mb-2">Algorithm Optimization</h4>
                   <p className="text-body-sm text-indigo-200">Master the TikTok algorithm for better reach</p>
                 </Link>

@@ -76,7 +76,7 @@ export function CalculatorAuthor({
               />
             )}
             <Link
-              href="/about"
+              href="/about/"
               className="text-body-xs text-primary-600 hover:text-primary-700 font-medium"
             >
               Meet Our Team →
@@ -138,7 +138,7 @@ export function CalculatorAuthor({
         {/* Meet the Team Link */}
         <div className="flex items-center justify-center">
           <Link
-            href="/about"
+            href="/about/"
             className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 font-medium"
           >
             <span>Meet Our Full Team</span>

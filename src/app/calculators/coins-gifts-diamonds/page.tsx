@@ -282,7 +282,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <p className="text-body-sm text-neutral-700 mb-2">
                   Viewers purchase coins using real money through in-app payments. Coin prices range from $0.99 for 65 coins to $249.99 for 16,500 coins. Bulk purchases offer slight discounts. Coins are the spending currency that viewers use to buy gifts during LIVE streams.
                 </p>
-                <Link href="/calculators/coins-gifts-diamonds/coins" className="text-body-sm text-primary-600 hover:text-primary-700 font-medium">
+                <Link href="/calculators/coins-gifts-diamonds/coins/" className="text-body-sm text-primary-600 hover:text-primary-700 font-medium">
                   Use Coins Calculator →
                 </Link>
               </div>
@@ -294,7 +294,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <p className="text-body-sm text-neutral-700 mb-2">
                   Virtual gifts are animated items viewers send to creators during LIVE streams. Each gift has a fixed coin cost ranging from 1 coin (Rose) to 34,999 coins (Universe). Gifts trigger on-screen animations and effects that enhance stream engagement and viewer satisfaction.
                 </p>
-                <Link href="/calculators/coins-gifts-diamonds/gift" className="text-body-sm text-secondary-600 hover:text-secondary-700 font-medium">
+                <Link href="/calculators/coins-gifts-diamonds/gift/" className="text-body-sm text-secondary-600 hover:text-secondary-700 font-medium">
                   Use Gift Calculator →
                 </Link>
               </div>
@@ -306,7 +306,7 @@ export default function CoinsGiftsDiamondsPage() {
                 <p className="text-body-sm text-neutral-700 mb-2">
                   Creators receive diamonds when viewers send gifts. The conversion is 2 coins = 1 diamond, reflecting TikTok's 50% commission. Diamonds accumulate in the Creator Portal and convert to USD at $0.005 per diamond. Minimum withdrawal is 10,000 diamonds ($50).
                 </p>
-                <Link href="/calculators/coins-gifts-diamonds/diamonds" className="text-body-sm text-success-600 hover:text-success-700 font-medium">
+                <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="text-body-sm text-success-600 hover:text-success-700 font-medium">
                   Use Diamond Converter →
                 </Link>
               </div>
@@ -542,19 +542,19 @@ export default function CoinsGiftsDiamondsPage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/earnings-revenue/live-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/earnings-revenue/live-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">LIVE Earnings Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Estimate total earnings from TikTok LIVE based on viewers and gifts</p>
               </Link>
-              <Link href="/calculators/utility-tools/payout" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/utility-tools/payout/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate net payout after platform fees and payment processing</p>
               </Link>
-              <Link href="/calculators/utility-tools/eligibility" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/utility-tools/eligibility/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Eligibility Checker</h4>
                 <p className="text-body-sm text-neutral-700">Check if you qualify for TikTok LIVE and monetization features</p>
               </Link>
-              <Link href="/guides/complete-tiktok-diamond-guide" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/complete-tiktok-diamond-guide/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Complete Diamond Guide</h4>
                 <p className="text-body-sm text-neutral-700">Learn everything about TikTok diamonds and LIVE monetization</p>
               </Link>

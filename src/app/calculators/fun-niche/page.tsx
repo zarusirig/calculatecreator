@@ -425,19 +425,19 @@ export default function FunNichePage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/posting-time" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/posting-time/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Best Time to Post</h4>
                 <p className="text-body-sm text-neutral-700">Find optimal posting times based on data and audience timezone</p>
               </Link>
-              <Link href="/calculators/engagement-influence/video-engagement" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/engagement-influence/video-engagement/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Video Engagement Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Predict video performance with comprehensive metrics</p>
               </Link>
-              <Link href="/guides/content-strategy-2025" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/content-strategy-2025/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Content Strategy 2026</h4>
                 <p className="text-body-sm text-neutral-700">Latest strategies for TikTok growth and viral content</p>
               </Link>
-              <Link href="/guides/hashtag-strategy" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/hashtag-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Hashtag Strategy Guide</h4>
                 <p className="text-body-sm text-neutral-700">Optimize hashtags to maximize content discovery</p>
               </Link>

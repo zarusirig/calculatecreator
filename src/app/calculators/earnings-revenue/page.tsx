@@ -548,19 +548,19 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/engagement-influence/influencer-pricing" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/engagement-influence/influencer-pricing/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Influencer Pricing Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate brand deal rates based on followers and engagement</p>
               </Link>
-              <Link href="/calculators/coins-gifts-diamonds/diamonds" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Convert diamonds from LIVE gifts to real money</p>
               </Link>
-              <Link href="/calculators/utility-tools/payout" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/utility-tools/payout/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate net earnings after platform fees</p>
               </Link>
-              <Link href="/guides/how-to-make-money-on-tiktok" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Monetization Guide</h4>
                 <p className="text-body-sm text-neutral-700">Complete guide to earning money on TikTok</p>
               </Link>

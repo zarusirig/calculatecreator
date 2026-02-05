@@ -579,19 +579,19 @@ export default function CommerceAdsPage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/earnings-revenue/money" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/earnings-revenue/money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Money Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate total revenue across all monetization streams</p>
               </Link>
-              <Link href="/calculators/engagement-influence/engagement" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/engagement-influence/engagement/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Engagement Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Measure engagement rate to optimize ad performance</p>
               </Link>
-              <Link href="/calculators/utility-tools/tax" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Estimate tax obligations on commerce and advertising revenue</p>
               </Link>
-              <Link href="/guides/tiktok-shop-success-strategies" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/tiktok-shop-success-strategies/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Shop Success Guide</h4>
                 <p className="text-body-sm text-neutral-700">Master TikTok Shop strategies to maximize affiliate profits</p>
               </Link>

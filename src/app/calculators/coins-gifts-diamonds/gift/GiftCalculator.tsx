@@ -8,6 +8,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { CalculatorSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 import Link from 'next/link';
 
 const giftData = [
@@ -125,7 +126,7 @@ export function GiftCalculator() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD for creators. Enter any gift quantity to see instant conversions showing what viewers pay versus what creators actually earn from virtual gifts. Perfect for understanding the economics behind popular gifts like roses, universes, and lions during LIVE streams, including the 50% platform fee split.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
           <Card className="p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-6">Calculate Gift Value</h2>
 
@@ -175,6 +176,14 @@ export function GiftCalculator() {
               </div>
             </div>
           </Card>
+
+          <InputsExplained
+            inputs={[
+              { name: 'Gift Type', description: 'Type of TikTok gift received', example: 'Rose, Lion', required: true },
+              { name: 'Quantity', description: 'Number of this gift received', example: '50' },
+            ]}
+            note="Gift values range from 1 coin (Rose) to 34,999 coins (TikTok Universe). Creators receive 50% value."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12">
@@ -252,7 +261,7 @@ export function GiftCalculator() {
                   <div>
                     <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Strategic Stream Timing</h3>
                     <p className="text-body-sm text-neutral-600">
-                      Stream during peak hours (7-10 PM local time) when audiences have disposable income and leisure time. Test different days—weekends typically see 40% higher gift volumes. Analyze your <Link href="/calculators/live-gifts" className="text-primary-600 hover:text-primary-700 underline">LIVE earnings patterns</Link> to optimize scheduling.
+                      Stream during peak hours (7-10 PM local time) when audiences have disposable income and leisure time. Test different days—weekends typically see 40% higher gift volumes. Analyze your <Link href="/calculators/live-gifts/" className="text-primary-600 hover:text-primary-700 underline">LIVE earnings patterns</Link> to optimize scheduling.
                     </p>
                   </div>
                 </div>
@@ -266,7 +275,7 @@ export function GiftCalculator() {
                   <div>
                     <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Create Gift Milestones</h3>
                     <p className="text-body-sm text-neutral-600">
-                      Set visible goals (e.g., "At 10,000 diamonds, I'll reveal X") to gamify gifting. Celebrate milestones with special content or performances. Track progress using the <Link href="/calculators/diamond-converter" className="text-primary-600 hover:text-primary-700 underline">diamond converter</Link> to convert goals into USD equivalents.
+                      Set visible goals (e.g., "At 10,000 diamonds, I'll reveal X") to gamify gifting. Celebrate milestones with special content or performances. Track progress using the <Link href="/calculators/diamond-converter/" className="text-primary-600 hover:text-primary-700 underline">diamond converter</Link> to convert goals into USD equivalents.
                     </p>
                   </div>
                 </div>
@@ -340,7 +349,7 @@ export function GiftCalculator() {
                   <div className="bg-primary-50 rounded-lg p-6 border-l-4 border-primary-500">
                     <p className="text-body-sm text-neutral-800 font-medium mb-2">Pro Tip: Consistency Builds Revenue</p>
                     <p className="text-body-sm text-neutral-700">
-                      Streaming 3-5 times weekly at consistent times builds viewer habits and superfan loyalty. Creators with regular schedules earn 3x more in gifts than sporadic streamers, as audiences anticipate and budget for their favorite creator's LIVE sessions. Calculate your potential monthly earnings with the <Link href="/calculators/live-gifts" className="text-primary-700 hover:text-primary-800 underline font-medium">LIVE gifts calculator</Link>.
+                      Streaming 3-5 times weekly at consistent times builds viewer habits and superfan loyalty. Creators with regular schedules earn 3x more in gifts than sporadic streamers, as audiences anticipate and budget for their favorite creator's LIVE sessions. Calculate your potential monthly earnings with the <Link href="/calculators/live-gifts/" className="text-primary-700 hover:text-primary-800 underline font-medium">LIVE gifts calculator</Link>.
                     </p>
                   </div>
                 </div>

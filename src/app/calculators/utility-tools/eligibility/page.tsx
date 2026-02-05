@@ -6,6 +6,7 @@ import { CheckCircle, XCircle, AlertCircle, User, Users, Video, Clock, Target, T
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 const faqData = [
   {
@@ -143,7 +144,7 @@ export default function EligibilityCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop. This eligibility checker evaluates your account against official TikTok requirements for all monetization features. Enter your follower count, video views, age, and location to see which programs you can access. Understand exactly what's needed to unlock Creator Fund, LIVE Gifts, Shop Affiliate, Series, and Creator Rewards. Get instant feedback on your eligibility status and know what milestones to reach next for monetization opportunities.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-12">
+        <div className="max-w-3xl mx-auto mb-12 space-y-6">
           <Card className="p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-6">Your Account Stats</h2>
 
@@ -214,6 +215,15 @@ export default function EligibilityCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <InputsExplained
+            inputs={[
+              { name: 'Follower Count', description: 'Your current TikTok followers', example: '10,000', required: true },
+              { name: 'Account Age', description: 'How long your account has existed', example: '30 days' },
+              { name: 'Video Count', description: 'Number of public videos', example: '15' },
+            ]}
+            note="Most monetization features require 10K+ followers, 18+ age, and compliance with Community Guidelines."
+          />
         </div>
 
         {/* Eligibility Requirements Comparison Table */}
@@ -273,7 +283,7 @@ export default function EligibilityCalculatorPage() {
             </div>
             <div className="mt-6 p-4 bg-primary-50 rounded-lg border border-primary-200">
               <p className="text-body-sm text-neutral-800">
-                <strong>Strategy Tip:</strong> Start with TikTok Shop (no minimums) and LIVE Gifts (1K followers) while working toward Creator Rewards eligibility (10K followers + invitation). Diversifying across multiple programs maximizes income stability. Use our <Link href="/calculators/earnings-revenue/money" className="text-primary-600 hover:text-primary-700 underline">Money Calculator</Link> to estimate total earnings potential across all programs.
+                <strong>Strategy Tip:</strong> Start with TikTok Shop (no minimums) and LIVE Gifts (1K followers) while working toward Creator Rewards eligibility (10K followers + invitation). Diversifying across multiple programs maximizes income stability. Use our <Link href="/calculators/earnings-revenue/money/" className="text-primary-600 hover:text-primary-700 underline">Money Calculator</Link> to estimate total earnings potential across all programs.
               </p>
             </div>
           </Card>
@@ -331,7 +341,7 @@ export default function EligibilityCalculatorPage() {
                     <div>
                       <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">Optimize for Virality</h3>
                       <p className="text-body-md text-neutral-700">
-                        Focus on trending sounds, hooks in the first 3 seconds, and content formats proven to perform in your niche. One viral video can deliver 100K+ views instantly, meeting Creator Fund requirements in a single post. Analyze your top-performing content and replicate successful patterns. Use our <Link href="/calculators/engagement-rate" className="text-primary-600 hover:text-primary-700 underline">Engagement Rate Calculator</Link> to track performance metrics.
+                        Focus on trending sounds, hooks in the first 3 seconds, and content formats proven to perform in your niche. One viral video can deliver 100K+ views instantly, meeting Creator Fund requirements in a single post. Analyze your top-performing content and replicate successful patterns. Use our <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline">Engagement Rate Calculator</Link> to track performance metrics.
                       </p>
                     </div>
                   </div>
@@ -359,7 +369,7 @@ export default function EligibilityCalculatorPage() {
                     <div>
                       <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">Engage With Your Community</h3>
                       <p className="text-body-md text-neutral-700">
-                        Reply to comments within the first hour of posting to boost engagement rate. Create response videos to popular comments to drive additional views. Higher engagement signals quality content to TikTok's algorithm, increasing distribution. Engaged followers are more likely to watch multiple videos, compounding your 30-day view totals. Use our <Link href="/calculators/engagement-influence" className="text-primary-600 hover:text-primary-700 underline">Influence Calculator</Link> to measure community strength.
+                        Reply to comments within the first hour of posting to boost engagement rate. Create response videos to popular comments to drive additional views. Higher engagement signals quality content to TikTok's algorithm, increasing distribution. Engaged followers are more likely to watch multiple videos, compounding your 30-day view totals. Use our <Link href="/calculators/engagement-influence/" className="text-primary-600 hover:text-primary-700 underline">Influence Calculator</Link> to measure community strength.
                       </p>
                     </div>
                   </div>
@@ -449,7 +459,7 @@ export default function EligibilityCalculatorPage() {
                   </div>
                   <div className="mt-6 p-4 bg-white rounded-lg border border-red-200">
                     <p className="text-body-sm text-neutral-800">
-                      <strong>Reapplication Timeline:</strong> If rejected, wait 30 days before reapplying. Use this time to fix issues, remove violative content, and build genuine engagement. Repeated rapid applications without addressing root causes lead to permanent disqualification. Check our <Link href="/guides/how-to-price-brand-deals" className="text-primary-600 hover:text-primary-700 underline">Brand Deal Pricing Guide</Link> for alternative monetization while building eligibility.
+                      <strong>Reapplication Timeline:</strong> If rejected, wait 30 days before reapplying. Use this time to fix issues, remove violative content, and build genuine engagement. Repeated rapid applications without addressing root causes lead to permanent disqualification. Check our <Link href="/guides/how-to-price-brand-deals/" className="text-primary-600 hover:text-primary-700 underline">Brand Deal Pricing Guide</Link> for alternative monetization while building eligibility.
                     </p>
                   </div>
                 </div>
@@ -461,19 +471,19 @@ export default function EligibilityCalculatorPage() {
             <Card className="p-8 mb-12">
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/calculators/earnings-revenue/creator-fund" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/earnings-revenue/creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Estimate monthly earnings from the Creator Fund</p>
                 </Link>
-                <Link href="/calculators/earnings-revenue/live-earnings" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/earnings-revenue/live-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">LIVE Earnings Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Calculate potential earnings from TikTok LIVE streams</p>
                 </Link>
-                <Link href="/calculators/utility-tools/payout" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/utility-tools/payout/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Calculate net earnings after platform fees</p>
                 </Link>
-                <Link href="/guides/how-to-join-creator-fund-complete" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Join Creator Fund Guide</h4>
                   <p className="text-body-sm text-neutral-700">Complete guide to qualifying for TikTok monetization</p>
                 </Link>

@@ -6,6 +6,7 @@ import { Wallet, DollarSign, Percent, Calculator, TrendingUp, Clock, Shield, Tar
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 const faqData = [
   {
@@ -83,7 +84,7 @@ export default function PayoutCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate your actual payout after platform fees and payment processing charges. This calculator shows what you'll really receive from TikTok earnings after all deductions are applied. Factor in TikTok's platform fees ranging from 20-50% depending on monetization method, plus payment processing fees from PayPal, Payoneer, or bank transfer. Essential for accurate income planning and understanding the true value of gross earnings. Compare different payment methods to maximize your take-home revenue and set realistic earnings expectations for all TikTok monetization streams.</p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto space-y-6">
           <Card className="p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-6">Calculate Your Payout</h2>
 
@@ -155,6 +156,14 @@ export default function PayoutCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <InputsExplained
+            inputs={[
+              { name: 'Pending Balance', description: 'Your current pending earnings', example: '$500', required: true },
+              { name: 'Payment Method', description: 'How you receive payments', example: 'PayPal' },
+            ]}
+            note="Minimum payout is typically $50-$100. Processing takes 15-21 days after end of earning period."
+          />
         </div>
 
         <div className="max-w-5xl mx-auto mt-12">
@@ -386,7 +395,7 @@ export default function PayoutCalculatorPage() {
             </div>
             <div className="mt-6 p-4 bg-amber-50 rounded-lg border border-amber-200">
               <p className="text-body-sm text-neutral-800">
-                <strong>Cash Flow Planning Tip:</strong> Most creator revenue has 30-60 day delays between earning and receiving payment. Maintain 2-3 months of operating expenses in reserves. For tax purposes, income is typically taxable when earned (accrual method) or received (cash method) - consult a CPA for your specific situation. Use our <Link href="/calculators/utility-tools/tax" className="text-primary-600 hover:text-primary-700 underline">Tax Calculator</Link> to estimate quarterly obligations based on payment timing.
+                <strong>Cash Flow Planning Tip:</strong> Most creator revenue has 30-60 day delays between earning and receiving payment. Maintain 2-3 months of operating expenses in reserves. For tax purposes, income is typically taxable when earned (accrual method) or received (cash method) - consult a CPA for your specific situation. Use our <Link href="/calculators/utility-tools/tax/" className="text-primary-600 hover:text-primary-700 underline">Tax Calculator</Link> to estimate quarterly obligations based on payment timing.
               </p>
             </div>
           </Card>
@@ -417,19 +426,19 @@ export default function PayoutCalculatorPage() {
             <Card className="p-8 mb-12">
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/calculators/coins-gifts-diamonds/diamonds" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Convert TikTok diamonds to cash value</p>
                 </Link>
-                <Link href="/calculators/utility-tools/tax" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Estimate tax obligations on creator earnings</p>
                 </Link>
-                <Link href="/calculators/earnings-revenue/money" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/earnings-revenue/money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Money Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Calculate total earnings across all revenue streams</p>
                 </Link>
-                <Link href="/guides/creator-tax-strategy" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/guides/creator-tax-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Creator Tax Strategy</h4>
                   <p className="text-body-sm text-neutral-700">Tax planning and deductions for content creators</p>
                 </Link>
