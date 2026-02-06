@@ -499,6 +499,43 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     disclaimers: ['educational'],
   },
 
+  'tiktok-ads-hub': {
+    author: 'david-kim',
+    reviewedBy: 'michael-chen',
+    reviewDate: '2026-02-06',
+    reviewType: 'expert',
+    citations: [
+      {
+        id: 'tiktok-ads-official',
+        title: 'TikTok Ads Manager',
+        source: 'TikTok for Business',
+        url: 'https://ads.tiktok.com/',
+        type: 'official',
+        accessDate: '2026-02-06',
+      },
+      COMMON_CITATIONS['creator-survey'],
+    ],
+    disclaimers: ['financial', 'educational'],
+  },
+  'tiktok-growth-hub': {
+    author: 'alex-martinez',
+    reviewedBy: 'sarah-johnson',
+    reviewDate: '2026-02-06',
+    reviewType: 'expert',
+    citations: [
+      {
+        id: 'tiktok-algorithm-study',
+        title: 'TikTok Algorithm Research 2024-2025',
+        source: 'TikTok Calculator Research Team',
+        type: 'research',
+        publicationDate: '2025-01',
+        accessDate: '2026-02-06',
+      },
+      COMMON_CITATIONS['creator-survey'],
+    ],
+    disclaimers: ['educational'],
+  },
+
   // ========================================
   // DATA & REGIONAL PAGES
   // ========================================

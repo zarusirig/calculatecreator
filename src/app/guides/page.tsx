@@ -531,6 +531,24 @@ export default function GuidesPage() {
       featured: false,
       status: '',
     },
+    {
+      title: 'TikTok Ads Hub',
+      slug: 'tiktok-ads-hub',
+      description: 'Complete TikTok advertising guide covering ad formats, budget planning, ROAS benchmarks, Spark Ads, and campaign optimization.',
+      readTime: '18 min',
+      category: 'Tools',
+      featured: false,
+      status: '',
+    },
+    {
+      title: 'TikTok Growth Hub',
+      slug: 'tiktok-growth-hub',
+      description: 'Master TikTok growth with algorithm insights, engagement optimization, content strategy, and milestone-based growth roadmaps.',
+      readTime: '20 min',
+      category: 'Tools',
+      featured: false,
+      status: '',
+    },
 
     // Additional Tools & Calculators
     {
