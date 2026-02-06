@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/it/',
     languages: {
-      'en': 'https://calculatecreator.com/region',
-      'de': 'https://calculatecreator.com/calculator/de',
-      'es': 'https://calculatecreator.com/calculator/es',
-      'fr': 'https://calculatecreator.com/calculator/fr',
-      'it': 'https://calculatecreator.com/calculator/it',
-      'pt-BR': 'https://calculatecreator.com/calculator/pt-br',
-      'ms': 'https://calculatecreator.com/calculator/my',
+      'en': 'https://calculatecreator.com/region/',
+      'de': 'https://calculatecreator.com/calculator/de/',
+      'es': 'https://calculatecreator.com/calculator/es/',
+      'fr': 'https://calculatecreator.com/calculator/fr/',
+      'it': 'https://calculatecreator.com/calculator/it/',
+      'pt-BR': 'https://calculatecreator.com/calculator/pt-br/',
+      'ms': 'https://calculatecreator.com/calculator/my/',
     },
   },
   openGraph: {
