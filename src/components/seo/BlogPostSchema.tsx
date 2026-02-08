@@ -11,6 +11,9 @@ interface BlogPostSchemaProps {
   dateModified: string;
   faqs?: FAQ[];
   readTime?: string;
+  image?: string;
+  wordCount?: number;
+  articleSection?: string;
 }
 
 export function BlogPostSchema({
@@ -20,9 +23,12 @@ export function BlogPostSchema({
   datePublished,
   dateModified,
   faqs = [],
-  readTime = '7 min'
+  readTime = '7 min',
+  image,
+  wordCount,
+  articleSection,
 }: BlogPostSchemaProps) {
-  const articleSchema = {
+  const articleSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: title,
@@ -47,7 +53,10 @@ export function BlogPostSchema({
       '@type': 'WebPage',
       '@id': url
     },
-    timeRequired: readTime
+    timeRequired: readTime,
+    ...(image && { image }),
+    ...(wordCount && { wordCount }),
+    ...(articleSection && { articleSection }),
   };
 
   const breadcrumbSchema = {

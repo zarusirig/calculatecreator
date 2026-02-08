@@ -573,6 +573,22 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     ],
     disclaimers: ['educational'],
   },
+
+  // ========================================
+  // BLOG POSTS
+  // ========================================
+  'building-multiple-income-streams-tiktok': {
+    author: 'sarah-johnson',
+    reviewedBy: 'michael-chen',
+    reviewDate: '2026-02-05',
+    reviewType: 'editorial',
+    citations: [
+      COMMON_CITATIONS['tiktok-official'],
+      COMMON_CITATIONS['creator-survey'],
+      COMMON_CITATIONS['influencer-marketing-hub'],
+    ],
+    disclaimers: ['educational'],
+  },
 };
 
 /**

@@ -434,11 +434,49 @@ export default function ContactPage() {
             </div>
           </Card>
 
+          {/* Quick Contact Form */}
+          <Card className="bg-gradient-to-br from-primary-50 to-secondary-50 border-primary-200">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Send Us a Message</h2>
+            <p className="text-body-md text-neutral-700 mb-6">
+              Click the button below to open your email client with a pre-filled message. Just add your details and hit send.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              <a
+                href="mailto:contact@calculatecreator.com?subject=General%20Inquiry%20-%20CalculateCreator&body=Hi%20CalculateCreator%20Team%2C%0A%0AI%20have%20a%20question%20about%3A%0A%0A%5BPlease%20describe%20your%20question%20here%5D%0A%0AThanks!"
+                className="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border-2 border-primary-300 hover:border-primary-500 hover:shadow-md transition-all text-primary-700 font-semibold"
+              >
+                <MessageCircle className="w-5 h-5" />
+                General Inquiry
+              </a>
+              <a
+                href="mailto:bugs@calculatecreator.com?subject=Bug%20Report%20-%20CalculateCreator&body=Hi%20Team%2C%0A%0AI%20found%20a%20bug%3A%0A%0APage%3A%20%5Bwhich%20page%5D%0AExpected%3A%20%5Bwhat%20should%20happen%5D%0AActual%3A%20%5Bwhat%20happened%5D%0ABrowser%3A%20%5Byour%20browser%5D%0A%0AThanks!"
+                className="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border-2 border-red-300 hover:border-red-500 hover:shadow-md transition-all text-red-700 font-semibold"
+              >
+                <Bug className="w-5 h-5" />
+                Report a Bug
+              </a>
+              <a
+                href="mailto:features@calculatecreator.com?subject=Feature%20Request%20-%20CalculateCreator&body=Hi%20Team%2C%0A%0AI%20have%20a%20feature%20idea%3A%0A%0A%5BDescribe%20your%20idea%5D%0A%0AWhy%20it%20would%20be%20useful%3A%0A%5BExplain%20the%20benefit%5D%0A%0AThanks!"
+                className="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border-2 border-yellow-300 hover:border-yellow-500 hover:shadow-md transition-all text-yellow-700 font-semibold"
+              >
+                <Lightbulb className="w-5 h-5" />
+                Suggest a Feature
+              </a>
+              <a
+                href="mailto:business@calculatecreator.com?subject=Business%20Inquiry%20-%20CalculateCreator&body=Hi%20Team%2C%0A%0AI%27m%20reaching%20out%20regarding%3A%0A%0A%5BDescribe%20your%20business%20inquiry%5D%0A%0ACompany%3A%20%5Byour%20company%5D%0A%0AThanks!"
+                className="flex items-center justify-center gap-2 p-4 bg-white rounded-lg border-2 border-blue-300 hover:border-blue-500 hover:shadow-md transition-all text-blue-700 font-semibold"
+              >
+                <Users className="w-5 h-5" />
+                Business Partnership
+              </a>
+            </div>
+          </Card>
+
           {/* Final CTA */}
           <Card className="bg-primary-light border-primary-200">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Ready to Reach Out?</h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Choose the appropriate email address above based on your inquiry type, and we'll get back to you as soon as possible. We read every email personally and appreciate you taking the time to reach out.
+              Choose the appropriate email address above based on your inquiry type, and we&apos;ll get back to you as soon as possible. We read every email personally and appreciate you taking the time to reach out.
             </p>
             <div className="grid md:grid-cols-3 gap-3">
               <div className="p-3 bg-white rounded text-center">

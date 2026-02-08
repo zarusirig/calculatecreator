@@ -114,6 +114,9 @@ module.exports = {
         '18': '4.5rem',
         '88': '22rem',
         '128': '32rem',
+        'ad-banner': '106px',
+        'ad-rect': '266px',
+        'ad-gutter': '24px',
       },
       borderRadius: {
         'sm': '4px',

@@ -92,6 +92,8 @@ export function Footer() {
         { href: '/faq/', label: 'FAQ' },
         { href: '/privacy/', label: 'Privacy Policy' },
         { href: '/terms/', label: 'Terms of Service' },
+        { href: '/editorial-policy/', label: 'Editorial Policy' },
+        { href: '/compliance/advertising-disclosure/', label: 'Advertising Disclosure' },
         { href: '/glossary/', label: 'Glossary' },
       ],
     },
@@ -196,6 +198,22 @@ export function Footer() {
                 onClick={() => handleLinkClick('Contact Footer', '/contact/')}
               >
                 Contact
+              </Link>
+              <span className="text-neutral-700">•</span>
+              <Link
+                href="/editorial-policy/"
+                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
+                onClick={() => handleLinkClick('Editorial Policy Footer', '/editorial-policy/')}
+              >
+                Editorial Policy
+              </Link>
+              <span className="text-neutral-700">•</span>
+              <Link
+                href="/compliance/advertising-disclosure/"
+                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
+                onClick={() => handleLinkClick('Ad Disclosure Footer', '/compliance/advertising-disclosure/')}
+              >
+                Ad Disclosure
               </Link>
             </div>
           </div>
