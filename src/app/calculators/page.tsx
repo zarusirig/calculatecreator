@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
@@ -32,6 +33,27 @@ import {
   Wallet,
   type LucideIcon,
 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'TikTok Calculators: 28 Free Tools for Creators (2026)',
+  description:
+    '28 free TikTok calculators for earnings, engagement, growth, ROI, taxes, and LIVE gifts. Data-backed formulas updated for 2026. No signup required.',
+  alternates: {
+    canonical: 'https://calculatecreator.com/calculators/',
+  },
+  openGraph: {
+    title: 'TikTok Calculators: 28 Free Tools for Creators',
+    description:
+      'Earnings, engagement, growth, ROI, and tax calculators for TikTok creators. Updated 2026 benchmarks.',
+    url: 'https://calculatecreator.com/calculators/',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TikTok Calculators: 28 Free Tools for Creators',
+    description: 'All-in-one calculator hub for TikTok creators (2026 data).',
+  },
+};
 
 export default function CalculatorsPage() {
   const config = hubPageConfigs.calculators;
@@ -278,6 +300,12 @@ export default function CalculatorsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.collectionPageSchema) }}
       />
+      {schemas.itemListSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.itemListSchema) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas.breadcrumbSchema) }}

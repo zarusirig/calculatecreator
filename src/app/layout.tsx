@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     url: 'https://calculatecreator.com',
     images: [
       {
-        url: 'https://calculatecreator.com/images/og-image.png',
+        url: 'https://calculatecreator.com/home/hero-dashboard-1600.webp',
         width: 1200,
         height: 630,
         alt: 'TikTok Creator Calculator - Free Earnings & Analytics Tools',
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     title: 'TikTok Creator Calculator',
     description:
       'Free TikTok calculators for creators: estimate earnings, engagement rates, and more.',
-    images: ['https://calculatecreator.com/images/og-image.png'],
+    images: ['https://calculatecreator.com/home/hero-dashboard-1600.webp'],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
@@ -102,9 +102,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bricolage.variable} ${ibmPlex.variable} ${jetbrains.variable}`}>
       <head>
-        {/* Google Site Verification */}
-        <meta name="google-site-verification" content="w-C9CwLR5pFTw0kjkeKFKIJ-qM3RQGok1qm3Zt8pSwA" />
-
         {/* Favicon & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="shortcut icon" href="/favicon.ico" />
