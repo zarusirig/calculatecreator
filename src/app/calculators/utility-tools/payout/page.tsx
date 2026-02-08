@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 const faqData = [
   {
@@ -444,6 +445,46 @@ export default function PayoutCalculatorPage() {
                 </Link>
               </div>
             </Card>
+
+            <ToolExplanationSection
+              whatItDoes="The Creator Payout Calculator shows your actual take-home pay after platform fees and payment processing charges are deducted from gross TikTok earnings. Different monetization methods have different platform fees: LIVE Gifts (50%), Creator Rewards (30%), TikTok Shop (15-20%), and brand deals (0% platform fee). On top of that, your chosen payment method (PayPal, Payoneer, or bank transfer) adds additional processing fees. This calculator reveals the true net amount that lands in your account."
+              howToUse={[
+                'Enter your gross earnings amount (the total before any deductions)',
+                'Select the platform fee percentage based on your revenue source (50% for LIVE, 30% for Rewards, 20% for Shop, 0% for brand deals)',
+                'Choose your payment method to apply the correct processing fee (PayPal 2.9%, Payoneer 2%, Bank transfer 0%)',
+                'Review the breakdown showing gross earnings, platform deduction, processing fee, and final net payout',
+                'Compare payment methods side by side to find the most cost-effective withdrawal option',
+              ]}
+              examples={[
+                {
+                  scenario: 'LIVE streamer withdrawing via PayPal',
+                  input: '$1,000 gross LIVE gift earnings, 50% platform fee, PayPal (2.9%)',
+                  output: 'Net payout: $485.50 (Platform takes $500, PayPal takes $14.50 - you keep 48.6%)',
+                },
+                {
+                  scenario: 'Creator Rewards income via bank transfer',
+                  input: '$500 Creator Rewards earnings, 30% platform fee, Bank transfer (0%)',
+                  output: 'Net payout: $350.00 (Platform takes $150, no processing fee - you keep 70%)',
+                },
+                {
+                  scenario: 'Brand deal payment with no platform fee',
+                  input: '$2,000 brand deal payment, 0% platform fee, PayPal (2.9%)',
+                  output: 'Net payout: $1,942.00 (No platform fee, PayPal takes $58 - you keep 97.1%)',
+                },
+              ]}
+              limitations={[
+                'International creators may face additional currency conversion fees not shown here',
+                'PayPal and Payoneer fee structures may vary by country and account type',
+                'Tax withholding is not included in the calculation but will further reduce take-home pay',
+                'Some payment methods have minimum withdrawal thresholds that may delay access to funds',
+                'Processing times vary (7-30 days) and are not reflected in the payout amount calculation',
+              ]}
+              relatedContent={[
+                { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
+                { title: 'Tax Calculator', href: '/calculators/utility-tools/tax/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              ]}
+            />
 
             <FAQSection
               pageName="Payout Calculator"

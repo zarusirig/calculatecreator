@@ -4,6 +4,7 @@ import { Clock, AlertTriangle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { WatchTimeCalculatorWidget } from '@/components/calculators/watch-time/CalculatorWidget';
@@ -273,6 +274,30 @@ export default function WatchTimeCalculatorPage() {
               ))}
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="This calculator measures your TikTok video retention rate and total watch hours by comparing average watch time against video duration. Retention rate is TikTok's most heavily weighted algorithmic signal, directly determining whether your content gets pushed to wider audiences on the For You Page."
+            howToUse={[
+              'Enter your video duration in seconds (the total length of the video as posted).',
+              'Enter the average watch time in seconds, which you can find in TikTok Analytics under Content by selecting a specific video.',
+              'Optionally enter total views to calculate total watch hours, which shows the cumulative time your audience has spent on that video.',
+            ]}
+            examples={[
+              { scenario: 'Short comedy clip', input: '15-second video, 13-second average watch time, 200,000 views', output: '86.7% retention rate, 722 total watch hours -- excellent algorithmic performance' },
+              { scenario: 'Tutorial video', input: '60-second video, 42-second average watch time, 50,000 views', output: '70.0% retention rate, 583 total watch hours -- strong for educational content' },
+              { scenario: 'Storytelling content', input: '120-second video, 55-second average watch time, 30,000 views', output: '45.8% retention rate, 458 total watch hours -- typical for longer narratives, room to tighten pacing' },
+            ]}
+            limitations={[
+              'Retention benchmarks differ significantly by video length -- a 50% retention on a 2-minute video may outperform 80% on a 10-second clip in terms of algorithmic value.',
+              'Does not distinguish between rewatches (loops) and initial views, so retention rates above 100% are possible and actually indicate highly engaging content.',
+              'Average watch time from TikTok Analytics can lag 24-48 hours behind real-time performance, making immediate post-publish analysis unreliable.',
+            ]}
+            relatedContent={[
+              { title: 'Completion Rate Calculator', href: '/calculators/completion-rate/' },
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Comment Rate Calculator', href: '/calculators/comment-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="watch-time"

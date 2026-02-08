@@ -56,6 +56,9 @@ function getRouteConfig(route) {
   // Utility pages
   if (/^\/(about|contact|faq|glossary)\/$/.test(route)) return { priority: '0.5', changefreq: 'monthly' };
 
+  // Editorial policy
+  if (route === '/editorial-policy/') return { priority: '0.4', changefreq: 'yearly' };
+
   // Legal/compliance
   if (/^\/(privacy|terms)\/$/.test(route)) return { priority: '0.2', changefreq: 'yearly' };
   if (route.startsWith('/compliance/')) return { priority: '0.3', changefreq: 'yearly' };

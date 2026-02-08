@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Shop Commission Calculator: Seller Fees Explained (2026)',
@@ -492,6 +493,46 @@ export default function ShopCommissionCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The TikTok Shop Profit Calculator estimates your commission earnings from promoting products through TikTok Shop's affiliate program. It calculates per-sale commissions based on product price and commission rate, projects monthly and annual income based on your sales volume, and helps you compare profitability across different product categories and price points. Essential for creators evaluating whether TikTok Shop affiliate marketing is a viable income stream."
+            howToUse={[
+              'Enter the average product price for items you promote or plan to promote',
+              'Set the commission rate percentage (typically 1-20% depending on product category)',
+              'Input your estimated monthly sales volume based on your audience size and conversion rate',
+              'Review per-sale commission, monthly projection, and annual earning estimates',
+              'Compare different product categories and price points to find the most profitable affiliate opportunities',
+            ]}
+            examples={[
+              {
+                scenario: 'Beauty creator promoting skincare products',
+                input: '$35 product price, 15% commission, 200 sales/month',
+                output: '$5.25 per sale, $1,050/month, $12,600/year projected',
+              },
+              {
+                scenario: 'Tech reviewer promoting electronics',
+                input: '$120 product price, 5% commission, 50 sales/month',
+                output: '$6.00 per sale, $300/month, $3,600/year projected',
+              },
+              {
+                scenario: 'Fashion creator with high-volume sales',
+                input: '$25 product price, 10% commission, 500 sales/month',
+                output: '$2.50 per sale, $1,250/month, $15,000/year projected',
+              },
+            ]}
+            limitations={[
+              'Commission rates vary by seller and product category and can change without notice',
+              'Sales projections assume consistent conversion rates which may fluctuate seasonally',
+              'Product returns reduce actual commissions as reversed sales are deducted',
+              'TikTok Shop platform fees (2-8%) are charged to sellers, not directly to affiliate creators',
+              'Commission earnings are subject to a hold period (14-30 days) before payout for returns processing',
+            ]}
+            relatedContent={[
+              { title: 'Ad Cost Calculator', href: '/calculators/commerce-ads/ad-cost/' },
+              { title: 'RPM Calculator', href: '/calculators/commerce-ads/rpm-cpm/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="commerce-ads/shop-profit"

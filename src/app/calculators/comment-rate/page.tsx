@@ -4,6 +4,7 @@ import { MessageCircle } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CommentRateCalculatorWidget } from '@/components/calculators/comment-rate/CalculatorWidget';
@@ -259,6 +260,30 @@ export default function CommentRateCalculatorPage() {
               note="Comment rate above 0.5% indicates highly engaging content. Comments are weighted heavily by the algorithm."
             />
           </div>
+
+          <ToolExplanationSection
+            whatItDoes="This calculator measures your TikTok comment rate by dividing total comments by total views and expressing it as a percentage. Comment rate reveals how effectively your content sparks conversation, which is a stronger engagement signal than likes because comments require significantly more viewer effort and time investment."
+            howToUse={[
+              'Open TikTok Analytics and navigate to the Content tab, then select the specific video you want to analyze.',
+              'Enter the total view count into the calculator along with the total number of comments received on that video.',
+              'Review your comment rate percentage and compare it against the provided benchmarks to understand whether your content is driving meaningful discussion.',
+            ]}
+            examples={[
+              { scenario: 'Opinion-based video', input: '50,000 views, 750 comments', output: '1.50% comment rate -- excellent, strong discussion-driving content' },
+              { scenario: 'Tutorial video', input: '100,000 views, 600 comments', output: '0.60% comment rate -- good engagement with viewers asking follow-up questions' },
+              { scenario: 'Entertainment skit', input: '200,000 views, 400 comments', output: '0.20% comment rate -- average, consider adding a question or prompt at the end' },
+            ]}
+            limitations={[
+              'Comment rate varies dramatically by content type -- opinion and Q&A content naturally generates 3-5x more comments than entertainment or aesthetic content.',
+              'Spam comments, bot activity, and self-replies inflate comment counts without representing genuine audience engagement.',
+              'Does not measure comment quality or sentiment -- a video with 500 negative comments has the same comment rate as one with 500 thoughtful discussions.',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Watch Time Calculator', href: '/calculators/watch-time/' },
+              { title: 'Completion Rate Calculator', href: '/calculators/completion-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="comment-rate"

@@ -10,6 +10,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PostingTimeCalculatorWidget } from '@/components/calculators/posting-time/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Best Posting Time Calculator (2026)',
@@ -272,6 +273,29 @@ export default function PostingTimeCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="Recommends the best times to post on TikTok based on your audience's timezone, your content type, and platform-wide engagement data. It identifies peak activity windows where your content is most likely to get strong first-hour engagement, which is critical for algorithmic distribution."
+            howToUse={[
+              'Select your target audience timezone (e.g., EST, PST, GMT) so the calculator can adjust peak times to match when your viewers are actually online.',
+              'Choose your content type (entertainment, educational, fitness, business, etc.) since different categories have different optimal posting windows.',
+              'Review the recommended time slots with engagement scores, then test the top 2-3 suggested times over a 2-week period to find your personal best window.',
+            ]}
+            examples={[
+              { scenario: 'Entertainment creator targeting US East Coast', input: 'Timezone: EST, Content type: Entertainment, Audience: 18-24', output: 'Top slots: 9 PM (score 95/100), 5 PM (88/100), 12 PM (90/100). Evening posting recommended for leisure content.' },
+              { scenario: 'Fitness creator with mixed US audience', input: 'Timezone: PST, Content type: Fitness, Audience: 25-34', output: 'Top slots: 6 AM PST (pre-workout), 5 PM PST (post-work gym). Fitness aligns with workout schedule timing.' },
+            ]}
+            limitations={[
+              'General time recommendations may not match your specific audience. Always cross-reference with your TikTok Analytics follower activity graph for personalized insights.',
+              'Peak hours have more users online but also more competition from other creators, so off-peak times may sometimes yield better results.',
+              'Usage patterns shift during holidays, major events, and seasonal changes, requiring periodic re-evaluation of your posting schedule.',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Video Performance Calculator', href: '/calculators/video-performance/' },
+              { title: 'Content Calendar ROI Calculator', href: '/calculators/content-calendar-roi/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="posting-time"
             formula={`Optimal times based on:

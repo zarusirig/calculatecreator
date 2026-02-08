@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -245,6 +246,30 @@ export default function LifetimeValueCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator projects the total revenue a single customer generates over their entire relationship with your brand by multiplying average order value, purchase frequency, and customer lifespan. It also computes the maximum Customer Acquisition Cost you can afford while maintaining a profitable 3:1 LTV:CAC ratio."
+            howToUse={[
+              'Enter your average order value -- the typical dollar amount a customer spends per transaction.',
+              'Enter the purchase frequency, meaning how many times a customer buys per month on average.',
+              'Enter the customer lifespan in months -- how long the typical customer remains active before churning. If you are unsure, use industry averages (12-24 months for most e-commerce).',
+            ]}
+            examples={[
+              { scenario: 'Subscription beauty brand', input: '$45 average order, 1 purchase/month, 18-month lifespan', output: '$810 LTV, $270 maximum CAC -- strong unit economics for scaling TikTok ads' },
+              { scenario: 'Fashion e-commerce store', input: '$75 average order, 0.5 purchases/month, 12-month lifespan', output: '$450 LTV, $150 maximum CAC -- viable for mid-range ad spend' },
+              { scenario: 'SaaS productivity tool', input: '$29 average order, 1 purchase/month, 36-month lifespan', output: '$1,044 LTV, $348 maximum CAC -- high LTV justifies aggressive acquisition spending' },
+            ]}
+            limitations={[
+              'Assumes consistent purchase frequency and order value throughout the customer lifespan, but actual behavior often declines over time.',
+              'Calculates gross LTV before product costs, shipping, and overhead -- multiply by your profit margin for net LTV.',
+              'Early-stage businesses without 12+ months of customer data must estimate lifespan using industry benchmarks, which may not reflect their actual retention patterns.',
+            ]}
+            relatedContent={[
+              { title: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost/' },
+              { title: 'Conversion Rate Calculator', href: '/calculators/conversion-rate/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="lifetime-value"
             formula={`Customer Lifetime Value (LTV) = Average Order Value × Purchase Frequency × Customer Lifespan

@@ -10,6 +10,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { FollowerGrowthCalculatorWidget } from '@/components/calculators/follower-growth/CalculatorWidget';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Follower Growth Rate Calculator (2026)',
@@ -389,6 +390,29 @@ export default function FollowerGrowthCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="Projects your future TikTok follower count using compound growth modeling based on your current follower count and daily growth rate. It calculates weekly, monthly, and yearly growth trajectories so you can set realistic milestone goals and benchmark your account performance."
+            howToUse={[
+              'Enter your starting follower count and ending follower count for a recent period (ideally 7-14 days).',
+              'Specify the number of days between your two measurements so the calculator can derive your daily growth rate.',
+              'Review the projected follower counts at 30, 60, 90, and 365 days, plus estimated dates for hitting key milestones like 10K, 50K, and 100K.',
+            ]}
+            examples={[
+              { scenario: 'New creator building momentum', input: 'Start: 2,500 followers, End: 3,100 after 14 days', output: 'Daily growth rate of 1.55%, projected to reach 10K in ~93 days' },
+              { scenario: 'Mid-tier creator tracking steady growth', input: 'Start: 25,000 followers, End: 28,500 after 30 days', output: 'Daily growth rate of 0.44%, projected to reach 50K in ~157 days' },
+            ]}
+            limitations={[
+              'Assumes your current growth rate remains constant, but viral videos or algorithm changes can cause significant fluctuations.',
+              'Compound growth projections become less reliable over longer time horizons (6+ months) as content quality and platform dynamics shift.',
+              'Does not account for seasonal trends, posting frequency changes, or niche-specific growth patterns.',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Milestone Tracker Calculator', href: '/calculators/milestone-tracker/' },
+              { title: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="follower-growth"

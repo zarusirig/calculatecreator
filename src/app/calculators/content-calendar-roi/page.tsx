@@ -9,6 +9,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { ContentCalendarROICalculatorWidget } from '@/components/calculators/content-calendar-roi/CalculatorWidget';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Content Calendar ROI Calculator (2026)',
@@ -287,6 +288,31 @@ export default function ContentCalendarROICalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Content Calendar ROI Calculator measures whether the time you invest in planning and scheduling your TikTok content actually pays off. It compares your planning costs (hours spent multiplied by your hourly rate) against the revenue improvements you gain from optimized posting schedules, better topic selection, and consistent output."
+            howToUse={[
+              'Enter how many posts you publish per week and your average revenue per post from all sources (ads, affiliate, brand deals).',
+              'Input the hours you spend creating each post and your monthly overhead costs for tools and software.',
+              'Specify how many hours you dedicate to content planning each month and your hourly rate.',
+              'Review the calculated ROI percentage to see if your planning time generates positive returns compared to unplanned content creation.',
+            ]}
+            examples={[
+              { scenario: 'Full-time lifestyle creator with structured planning', input: '7 posts/week, $50/post revenue, 2 hrs/post, $200/month tools, 4 hours planning at $50/hr', output: 'ROI of 400% -- planning generates $800 net monthly profit from 25% performance lift' },
+              { scenario: 'Part-time creator testing a content calendar for the first time', input: '3 posts/week, $20/post revenue, 1.5 hrs/post, $50/month tools, 2 hours planning at $30/hr', output: 'ROI of 150% -- modest but positive returns, confirming planning is worth the effort' },
+            ]}
+            limitations={[
+              'ROI depends heavily on execution quality -- planning without consistent follow-through will show poor returns.',
+              'Performance improvement percentages are estimates; actual gains vary by niche, audience size, and content quality.',
+              'Does not account for non-monetary benefits like reduced creative burnout or improved work-life balance.',
+              'Assumes your hourly rate reflects true opportunity cost, which may differ from actual freelance or employment rates.',
+            ]}
+            relatedContent={[
+              { title: 'Production Cost Calculator', href: '/calculators/production-cost/' },
+              { title: 'Video Performance Calculator', href: '/calculators/video-performance/' },
+              { title: 'Posting Time Calculator', href: '/calculators/posting-time/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="content-calendar-roi"

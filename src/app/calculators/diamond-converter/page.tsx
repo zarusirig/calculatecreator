@@ -10,6 +10,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamond-converter/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Diamond Converter: Convert Diamonds to USD (2026 Rates)',
@@ -292,6 +293,31 @@ export default function DiamondConverterPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This converter translates your TikTok diamond balance into real-money values across multiple currencies including USD, EUR, GBP, CAD, and AUD. It helps LIVE streamers track accumulated earnings from viewer gifts and determine when they have reached the minimum withdrawal threshold."
+              howToUse={[
+                'Enter the total number of diamonds shown in your TikTok creator balance.',
+                'Select your preferred payout currency from the dropdown.',
+                'View your earnings in real money, along with how close you are to the $50 minimum withdrawal.',
+              ]}
+              examples={[
+                { scenario: 'New streamer checking earnings', input: '4,200 diamonds, USD', output: '$21.00 -- still $29.00 away from the $50 minimum withdrawal' },
+                { scenario: 'Active streamer planning withdrawal', input: '35,000 diamonds, GBP', output: 'Approximately £140 available for withdrawal via PayPal or bank transfer' },
+              ]}
+              limitations={[
+                'The $0.005 per diamond rate is the base USD value; your actual payout may differ slightly due to currency exchange fluctuations.',
+                'PayPal and bank transfer providers may charge their own conversion or processing fees on top of the payout.',
+                'Diamond balances shown in the TikTok app may have a short delay before reflecting recent LIVE gifts.',
+                'This converter does not account for potential tax withholding that TikTok may apply in certain jurisdictions.',
+              ]}
+              relatedContent={[
+                { title: 'Coins Calculator', href: '/calculators/coins/' },
+                { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+                { title: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Diamond Converter"
               formula={`USD Value = Diamonds × $0.005

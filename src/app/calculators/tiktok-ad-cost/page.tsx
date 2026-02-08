@@ -10,6 +10,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Cost Calculator: Estimate Campaign Budget (2026)',
@@ -299,6 +300,31 @@ export default function TikTokAdCostCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator estimates your TikTok advertising costs based on campaign goals, ad format, targeting parameters, and budget. It computes CPM (cost per 1,000 impressions), CPC (cost per click), and total campaign budget so you can plan ad spend before launching."
+              howToUse={[
+                'Enter your total campaign budget or target number of impressions/clicks.',
+                'Select your ad format (In-Feed, Spark Ads, TopView, etc.) and target audience region.',
+                'Review the estimated CPM, CPC, total impressions, and projected reach breakdown.',
+              ]}
+              examples={[
+                { scenario: 'Small business product launch', input: '$2,000 budget, In-Feed Ads, US audience', output: 'Estimated 133K-200K impressions at $10-$15 CPM, 1,000-4,000 clicks' },
+                { scenario: 'App install campaign in Southeast Asia', input: '$5,000 budget, In-Feed Ads, SEA targeting', output: 'Estimated 625K-1.67M impressions at $3-$8 CPM with lower CPC' },
+              ]}
+              limitations={[
+                'Actual CPM and CPC vary based on real-time auction competition and ad quality scores.',
+                'Seasonal cost increases (especially Q4) can raise costs 30-50% above estimates.',
+                'Premium formats like TopView and Brand Takeover require direct booking and are not calculated here.',
+                'Creative quality and relevance score significantly affect actual costs but cannot be pre-calculated.',
+              ]}
+              relatedContent={[
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+                { title: 'CPM/CPV Calculator', href: '/calculators/cpm-cpv/' },
+                { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
+                { title: 'TikTok Ad Budget Guide', href: '/guides/tiktok-ad-budget-calculator-guide/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Ad Cost Calculator"
               formula={`Total Budget = (Target Impressions / 1,000) × CPM

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -295,6 +296,30 @@ export default function ContentValueCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="This calculator estimates the monetary worth of your TikTok content portfolio by computing a per-video value based on average views, engagement rate, and niche CPM, then multiplying by your total video count. It treats your video library as a financial asset for purposes like account sales, licensing deals, investor pitches, and business insurance."
+            howToUse={[
+              'Enter your average views per video and engagement rate (available in TikTok Analytics), then select your content niche for accurate CPM benchmarking.',
+              'Enter the total number of videos in your content library to calculate the aggregate portfolio value.',
+              'Review the per-video value and total portfolio valuation to use in licensing negotiations, account sale discussions, or business planning.',
+            ]}
+            examples={[
+              { scenario: 'Mid-tier beauty creator', input: '200 videos, 80K avg views, 5% engagement, Beauty niche', output: '$120 per video, $24,000 total portfolio value' },
+              { scenario: 'Finance educator', input: '150 videos, 60K avg views, 7% engagement, Finance niche', output: '$306 per video, $45,900 total portfolio value -- premium niche multiplier' },
+              { scenario: 'Entertainment creator', input: '500 videos, 120K avg views, 3% engagement, Entertainment niche', output: '$156 per video, $78,000 total portfolio value -- volume compensates for lower CPM' },
+            ]}
+            limitations={[
+              'Values are estimates for negotiation purposes -- actual sale prices depend on buyer demand, audience demographics, content rights, and market conditions.',
+              'Trending content depreciates rapidly (losing 90% of value within 3-6 months), while evergreen content retains value, but the calculator does not distinguish between the two.',
+              'Does not account for audience quality factors like geographic distribution or purchasing power, which significantly affect true monetization potential.',
+            ]}
+            relatedContent={[
+              { title: 'Lifetime Value Calculator', href: '/calculators/lifetime-value/' },
+              { title: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost/' },
+              { title: 'Affiliate Commission Calculator', href: '/calculators/affiliate-commission/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="content-value"

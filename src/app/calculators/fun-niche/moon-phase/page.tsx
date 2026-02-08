@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 const moonPhases = [
   { name: 'New Moon', emoji: '🌑', energy: 'Fresh Starts', bestFor: 'Announcing new content series, rebranding, launching products' },
@@ -452,6 +453,46 @@ export default function MoonPhaseCalculatorPage() {
                 </Link>
               </div>
             </Card>
+
+            <ToolExplanationSection
+              whatItDoes="The Moon Phase Posting Guide determines the current lunar phase for any date and recommends content types aligned with that phase's energy. From New Moon (fresh starts and launches) to Full Moon (peak energy and viral attempts), this entertainment-focused tool maps the 29.5-day lunar cycle to content strategy frameworks. Popular with the spiritual wellness and manifestation communities on TikTok, this guide provides creative inspiration for content calendars based on lunar timing."
+              howToUse={[
+                'Select a date using the date picker to see which moon phase falls on that day',
+                'Review the current phase name, energy type, and recommended content categories',
+                'Browse the full lunar cycle guide below to plan content for upcoming phase transitions',
+                'Use the Moon Phase Content Strategy Table for specific content ideas matched to each phase',
+                'Plan your content calendar around the 8 lunar phases for consistent, themed posting throughout the month',
+              ]}
+              examples={[
+                {
+                  scenario: 'Planning a product launch',
+                  input: 'Checking the next New Moon date',
+                  output: 'New Moon on [date]: Fresh Starts energy - ideal for announcing new series, rebranding, or launching products',
+                },
+                {
+                  scenario: 'Scheduling a viral content attempt',
+                  input: 'Finding the next Full Moon',
+                  output: 'Full Moon on [date]: Peak Energy phase - best time for major announcements, high-energy content, viral attempts',
+                },
+                {
+                  scenario: 'Building a monthly content calendar',
+                  input: 'Reviewing all 8 phases for the current month',
+                  output: 'Complete posting schedule: New Moon (launch), Waxing (tutorials), Full Moon (big content), Waning (gratitude/reflection)',
+                },
+              ]}
+              limitations={[
+                'There is no scientific evidence that moon phases affect social media performance or engagement',
+                'This tool is for entertainment and creative inspiration only - not a data-driven strategy',
+                'Content quality, posting time, and audience engagement are far more important than lunar cycles',
+                'Moon phase calculations are astronomically accurate but their application to content is purely thematic',
+                'The spiritual wellness niche audience responds well to moon content but mainstream audiences may not',
+              ]}
+              relatedContent={[
+                { title: 'Video Engagement Calculator', href: '/calculators/engagement-influence/video-engagement/' },
+                { title: 'Engagement Rate Calculator', href: '/calculators/engagement-influence/engagement/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              ]}
+            />
 
             <FAQSection
               pageName="Moon Phase Posting Guide"

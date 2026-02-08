@@ -8,6 +8,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Brand Deal Rate Calculator: How Much to Charge (2026)',
@@ -420,6 +421,47 @@ export default function BrandDealRateCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The TikTok Brand Deal Rate Calculator determines how much you should charge brands for sponsored content and partnerships. It factors in your follower count, engagement rate, content niche, and deliverable type to produce a fair market rate range. The calculator applies tier-based pricing (Nano through Mega) with multipliers for engagement quality, niche premiums, and content format to generate both minimum and maximum rate recommendations for negotiations."
+            howToUse={[
+              'Enter your current TikTok follower count to establish your creator tier',
+              'Input your engagement rate (calculate using likes + comments + shares divided by followers times 100)',
+              'Select your content niche (finance, beauty, entertainment, tech, etc.) for niche-specific rate adjustments',
+              'Choose the deliverable type (In-Feed Video, Spark Ad, Product Showcase, LIVE mention)',
+              'Review the recommended rate range showing your minimum floor and maximum ceiling for negotiations',
+              'Use the range as a starting point - present the higher number first and negotiate from there',
+            ]}
+            examples={[
+              {
+                scenario: 'Micro beauty creator negotiating first brand deal',
+                input: '30K followers, 7% engagement, beauty niche, In-Feed Video',
+                output: 'Recommended range: $600-$1,200 per post (Micro tier with high engagement and beauty premium)',
+              },
+              {
+                scenario: 'Mid-tier finance creator pricing Spark Ad',
+                input: '150K followers, 4.5% engagement, finance niche, Spark Ad',
+                output: 'Recommended range: $5,500-$11,000 (Mid tier + finance premium + Spark Ad 1.3x multiplier)',
+              },
+              {
+                scenario: 'Nano lifestyle creator starting out',
+                input: '8K followers, 10% engagement, lifestyle niche, In-Feed Video',
+                output: 'Recommended range: $150-$300 (Nano tier but very high engagement compensates)',
+              },
+            ]}
+            limitations={[
+              'Rates vary significantly based on brand budget, campaign scope, and creator-brand fit beyond what metrics alone predict',
+              'The calculator uses industry averages that may not reflect pricing in emerging or oversaturated niches',
+              'Usage rights, exclusivity clauses, and revision requirements are not priced into the base calculation',
+              'Rates change over time as the creator economy matures and market conditions shift',
+              'Creator reputation, portfolio quality, and past brand performance also influence real-world pricing',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-influence/engagement/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              { title: 'Creator Fund Calculator', href: '/calculators/earnings-revenue/creator-fund/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="brand-deal-rate"

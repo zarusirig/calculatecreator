@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
@@ -240,6 +241,30 @@ export default function ConversionRateCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator determines your TikTok conversion rate by dividing the number of completed actions (purchases, signups, downloads) by total visitors from TikTok, then expressing it as a percentage. It helps you benchmark funnel performance and estimate how many visitors you need to reach a specific conversion goal."
+            howToUse={[
+              'Enter your total unique visitors from TikTok traffic (use UTM parameters or platform analytics to isolate TikTok-specific visitors).',
+              'Enter the number of conversions, meaning completed desired actions like purchases, email signups, or app downloads.',
+              'Review your conversion rate percentage, compare it against the benchmarks provided, and see how many visitors you would need to hit a target number of conversions.',
+            ]}
+            examples={[
+              { scenario: 'E-commerce store', input: '10,000 visitors, 300 purchases', output: '3.00% conversion rate -- above-average for TikTok e-commerce traffic' },
+              { scenario: 'Email list building', input: '5,000 visitors, 400 email signups', output: '8.00% conversion rate -- strong performance for lead capture from TikTok' },
+              { scenario: 'App download campaign', input: '25,000 visitors, 750 installs', output: '3.00% conversion rate -- right in the average range for app installs' },
+            ]}
+            limitations={[
+              'Assumes unique visitors rather than total page views, so inflated view counts from repeat visitors may skew results.',
+              'Does not account for attribution windows or multi-touch journeys where a viewer may convert days after the initial TikTok click.',
+              'Conversion rate benchmarks vary significantly by niche, product price point, and landing page quality -- the provided benchmarks are averages, not guarantees.',
+            ]}
+            relatedContent={[
+              { title: 'Affiliate Commission Calculator', href: '/calculators/affiliate-commission/' },
+              { title: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost/' },
+              { title: 'Lifetime Value Calculator', href: '/calculators/lifetime-value/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="conversion-rate"
             formula={`Conversion Rate = (Conversions / Visitors) × 100

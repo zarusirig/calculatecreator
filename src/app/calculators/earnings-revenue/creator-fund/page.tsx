@@ -19,6 +19,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { DollarSign, Users, Eye, Cake, CheckCircle, Globe, Video, Handshake, Gift, ShoppingBag } from 'lucide-react';
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 const faqs = [
   {
@@ -291,6 +292,46 @@ export default function CreatorFundCalculatorPage() {
           </div>
 
           <div className="max-w-5xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="The TikTok Creator Fund Calculator estimates your monthly earnings from TikTok's Creator Fund and Creator Rewards Program based on your video views, engagement rate, and content niche. It applies RPM (revenue per 1,000 views) calculations using real-world rate ranges of $0.02-$0.04 per 1,000 views for Creator Fund and up to $1.00+ for Creator Rewards. This helps eligible creators set realistic income expectations and compare Creator Fund income against other monetization methods."
+              howToUse={[
+                'Enter your average monthly video views from TikTok Analytics',
+                'Select your content niche (finance, entertainment, beauty, etc.) to apply the appropriate RPM multiplier',
+                'Input your average engagement rate to factor in engagement-based RPM adjustments',
+                'Review your estimated monthly and annual Creator Fund earnings',
+                'Compare the result against other revenue streams like brand deals and LIVE gifts to prioritize your strategy',
+              ]}
+              examples={[
+                {
+                  scenario: 'Mid-tier creator with consistent views',
+                  input: '500,000 monthly views, 5% engagement, entertainment niche',
+                  output: 'Estimated monthly earnings: $10-$20 (Creator Fund) or $250-$500 (Creator Rewards)',
+                },
+                {
+                  scenario: 'High-engagement niche creator',
+                  input: '200,000 monthly views, 8% engagement, finance niche',
+                  output: 'Estimated monthly earnings: $6-$12 (Creator Fund) or $150-$300 (Creator Rewards)',
+                },
+                {
+                  scenario: 'Viral creator with massive reach',
+                  input: '5,000,000 monthly views, 3% engagement, lifestyle niche',
+                  output: 'Estimated monthly earnings: $100-$200 (Creator Fund) or $2,500-$5,000 (Creator Rewards)',
+                },
+              ]}
+              limitations={[
+                'Creator Fund pays very low RPM ($0.02-$0.04) and is being phased out in favor of Creator Rewards',
+                'Creator Rewards Program is invitation-only and requires videos over 1 minute',
+                'Actual RPM fluctuates daily based on advertiser demand and platform-wide view volumes',
+                'Eligibility requires 10,000+ followers and 100,000+ views in the last 30 days',
+                'Earnings from Creator Fund alone are rarely sufficient as a primary income source',
+              ]}
+              relatedContent={[
+                { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+                { title: 'LIVE Earnings Calculator', href: '/calculators/earnings-revenue/live-earnings/' },
+                { title: 'RPM Calculator', href: '/calculators/commerce-ads/rpm-cpm/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="tiktok-creator-fund"
               formula={`Creator Fund Earnings = (Monthly Views / 1,000) × RPM

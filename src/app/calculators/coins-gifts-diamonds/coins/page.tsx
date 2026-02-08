@@ -8,6 +8,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Coins to USD Calculator: Convert Coins to Money (2026)',
@@ -302,6 +303,45 @@ export default function CoinsCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The TikTok Coins to USD Calculator converts TikTok's virtual coins into real US dollar values. It shows how much viewers pay for coins, how many diamonds creators receive after TikTok's 50% cut, and the actual USD payout creators earn. This helps both viewers understand the cost of gifting and creators understand the real-world value of coins they receive during LIVE streams and video gifts."
+            howToUse={[
+              'Enter the number of TikTok coins you want to convert (e.g., 1,000 coins)',
+              'The calculator instantly displays the USD value viewers paid for those coins at $0.0105 per coin',
+              'View the diamond equivalent creators receive (coins divided by 2) and the creator payout at $0.005 per diamond',
+              'Compare different coin amounts to understand gift values and plan your gifting or streaming strategy',
+            ]}
+            examples={[
+              {
+                scenario: 'Small gift during a LIVE stream',
+                input: '100 coins (equivalent to a Rose gift)',
+                output: 'Viewer cost: $1.05, Creator receives: 50 diamonds ($0.25)',
+              },
+              {
+                scenario: 'Mid-tier gift from an engaged viewer',
+                input: '5,000 coins (equivalent to a Drama Queen gift)',
+                output: 'Viewer cost: $52.50, Creator receives: 2,500 diamonds ($12.50)',
+              },
+              {
+                scenario: 'Premium gift from a top supporter',
+                input: '34,999 coins (equivalent to a TikTok Universe gift)',
+                output: 'Viewer cost: $367.49, Creator receives: 17,499 diamonds ($87.50)',
+              },
+            ]}
+            limitations={[
+              'Coin prices may vary slightly by region and purchase method (iOS, Android, web)',
+              'TikTok occasionally adjusts conversion rates without advance notice',
+              'The calculator does not account for payment processing fees when creators withdraw earnings',
+              'Bulk coin purchases sometimes offer small discounts not reflected here',
+              'Tax obligations on creator earnings are not included in the payout calculation',
+            ]}
+            relatedContent={[
+              { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
+              { title: 'Gift Value Calculator', href: '/calculators/coins-gifts-diamonds/gift/' },
+              { title: 'LIVE Earnings Calculator', href: '/calculators/earnings-revenue/live-earnings/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="coins"

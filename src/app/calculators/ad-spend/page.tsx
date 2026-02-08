@@ -3,6 +3,7 @@ import { Scale } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -388,6 +389,32 @@ export default function AdSpendCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator determines your recommended TikTok advertising budget by multiplying your target number of results (conversions, leads, or impressions) by the expected cost per result, then adding an optimization buffer to account for the learning phase and creative testing."
+            howToUse={[
+              'Enter your target number of results (sales, leads, or app installs) for the campaign.',
+              'Input your expected cost per result based on industry benchmarks or past campaign data.',
+              'Set your campaign duration in days and choose a buffer percentage (15-25%) for learning phase costs.',
+              'Review the calculated daily, weekly, and monthly budget recommendations.',
+            ]}
+            examples={[
+              { scenario: 'E-commerce product launch', input: '100 target sales, $25 CPA, 30 days, 25% buffer', output: '$3,125 total budget, ~$104/day recommended spend' },
+              { scenario: 'Lead generation campaign', input: '200 target leads, $15 cost per lead, 14 days, 20% buffer', output: '$3,600 total budget, ~$257/day recommended spend' },
+              { scenario: 'Beginner testing phase', input: '20 target conversions, $30 CPA, 7 days, 15% buffer', output: '$690 total budget, ~$99/day recommended spend' },
+            ]}
+            limitations={[
+              'Actual costs vary based on targeting precision, creative quality, competition, and seasonal demand.',
+              'TikTok requires minimum $20/day per campaign and per ad group, which may affect budget distribution.',
+              'The learning phase (first 3-7 days) typically costs 20-50% more than steady-state performance.',
+              'Budget recommendations assume gradual scaling; doubling budget overnight often spikes costs significantly.',
+            ]}
+            relatedContent={[
+              { title: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
+              { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
+              { title: 'Break-Even Calculator', href: '/calculators/break-even/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="ad-spend"
             formula={`Total Budget = Target Results × Cost Per Result × Buffer

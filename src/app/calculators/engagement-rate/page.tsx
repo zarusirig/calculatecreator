@@ -4,6 +4,7 @@ import { BarChart3, Users, Heart, MessageCircle, Share2, TrendingUp, Target, Zap
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -320,6 +321,32 @@ export default function EngagementRateCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator computes your TikTok engagement rate by dividing the sum of your likes, comments, and shares by your follower count, then compares your result against 2026 industry benchmarks by follower tier and content niche to show where you stand."
+              howToUse={[
+                'Enter your total TikTok follower count.',
+                'Input your average likes, comments, and shares per post (use averages from your last 10-20 posts for accuracy, not a single viral video).',
+                'Review your engagement rate percentage and see which performance tier you fall into.',
+                'Compare against niche-specific and follower-tier benchmarks to understand your standing relative to peers.',
+              ]}
+              examples={[
+                { scenario: 'Micro-influencer with strong community', input: '25K followers, 2,500 likes, 150 comments, 75 shares per post', output: '10.9% engagement rate — Excellent tier, premium brand deal potential' },
+                { scenario: 'Mid-tier creator in beauty niche', input: '150K followers, 6,000 likes, 300 comments, 200 shares per post', output: '4.3% engagement rate — Good tier, competitive for standard brand partnerships' },
+                { scenario: 'Large account with passive audience', input: '500K followers, 8,000 likes, 400 comments, 150 shares per post', output: '1.7% engagement rate — Below average for tier, focus on audience re-engagement' },
+              ]}
+              limitations={[
+                'Engagement rates naturally decrease as follower count grows, so compare against your own follower tier rather than smaller accounts.',
+                'A single viral video can heavily skew your average; always calculate across 10-20 recent posts for reliability.',
+                'This calculator uses the follower-based formula (industry standard for brand evaluation), not the views-based formula which yields different results.',
+                'Saves and watch time are not included in the standard formula but are important algorithm signals tracked separately by TikTok.',
+              ]}
+              relatedContent={[
+                { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
+                { title: 'Video Performance Calculator', href: '/calculators/video-performance/' },
+                { title: 'How to Increase Engagement Rate', href: '/guides/increase-engagement-rate-tiktok/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Engagement Rate Calculator"
               formula={`Standard Engagement Rate Formula:

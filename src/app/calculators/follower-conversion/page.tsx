@@ -3,6 +3,7 @@ import { Users, Scale, TrendingUp, Target } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -315,6 +316,32 @@ export default function FollowerConversionCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator maps your complete e-commerce conversion funnel from TikTok followers to paying customers, computing click-through rate, site conversion rate, overall conversion percentage, and revenue per follower so you can pinpoint exactly where potential buyers drop off."
+            howToUse={[
+              'Enter your TikTok follower count and the number of website clicks generated from TikTok during your tracking period.',
+              'Input the number of completed purchases attributed to TikTok traffic and your average order value.',
+              'Review your CTR, site conversion rate, overall conversion rate, and revenue per follower metrics.',
+              'Identify your weakest funnel stage (low CTR suggests weak CTAs; low site conversion suggests poor product pages) and focus optimization there.',
+            ]}
+            examples={[
+              { scenario: 'Handmade jewelry brand', input: '28K followers, 1,400 clicks, 56 purchases, $78 AOV', output: '5% CTR, 4% site conversion, 0.2% overall, $0.156 revenue per follower — strong funnel performance' },
+              { scenario: 'Apparel brand with CTA issues', input: '50K followers, 500 clicks, 20 purchases, $45 AOV', output: '1% CTR, 4% site conversion, 0.04% overall — CTR is the bottleneck, improve call-to-action strategy' },
+              { scenario: 'Digital product creator', input: '15K followers, 1,200 clicks, 30 purchases, $29 AOV', output: '8% CTR, 2.5% site conversion, 0.2% overall, $0.058 revenue per follower — optimize product page for higher conversion' },
+            ]}
+            limitations={[
+              'Requires proper attribution tracking (UTM parameters, unique discount codes, or TikTok Pixel) for accurate input data.',
+              'Revenue per follower assumes consistent performance; actual results fluctuate with seasonality, algorithm changes, and content variation.',
+              'TikTok Shop in-app purchases bypass the site conversion step entirely, so this funnel model does not apply to in-app checkout flows.',
+              'Does not account for lifetime customer value from repeat purchases, email list building, or long-term brand loyalty.',
+            ]}
+            relatedContent={[
+              { title: 'Break-Even Calculator', href: '/calculators/break-even/' },
+              { title: 'Profile Visit Rate Calculator', href: '/calculators/profile-visit-rate/' },
+              { title: 'Follower Growth Calculator', href: '/calculators/follower-growth/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="follower-conversion"
             formula={`CTR = (Website Clicks / Followers) × 100

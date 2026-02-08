@@ -4,6 +4,7 @@ import { Sparkles, Shirt, Home, Smartphone, Check, X } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -252,6 +253,30 @@ export default function AffiliateCommissionCalculatorPage() {
           </div>
 
           <div className="max-w-5xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator estimates your potential earnings from TikTok Shop affiliate marketing by computing commission per sale, expected monthly sales volume based on your conversion rate, and projected monthly and annual income. It helps affiliates compare product niches and set realistic revenue targets."
+              howToUse={[
+                'Enter the retail price of the product you are promoting and the commission rate offered by the seller (typically 5-30% depending on category).',
+                'Enter your expected number of monthly clicks to the affiliate link and your estimated conversion rate (2-5% is typical for TikTok affiliates).',
+                'Review your commission per sale, projected monthly sales count, and estimated monthly and annual earnings to decide if the product is worth promoting.',
+              ]}
+              examples={[
+                { scenario: 'Beauty product affiliate', input: '$40 product, 20% commission, 2,000 monthly clicks, 4% conversion', output: '$8 per sale, 80 sales/month, $640 monthly earnings' },
+                { scenario: 'Tech gadget affiliate', input: '$120 product, 8% commission, 3,000 monthly clicks, 2% conversion', output: '$9.60 per sale, 60 sales/month, $576 monthly earnings' },
+                { scenario: 'Fashion item affiliate', input: '$55 product, 15% commission, 1,500 monthly clicks, 5% conversion', output: '$8.25 per sale, 75 sales/month, $618.75 monthly earnings' },
+              ]}
+              limitations={[
+                'Actual earnings depend heavily on content quality, audience trust, and posting consistency -- the calculator assumes steady traffic that may fluctuate in reality.',
+                'Commission rates can change without notice as sellers adjust their affiliate programs, potentially reducing your earnings overnight.',
+                'Does not account for returns and refunds, which can reduce actual commissions by 5-15% depending on the product category.',
+              ]}
+              relatedContent={[
+                { title: 'Conversion Rate Calculator', href: '/calculators/conversion-rate/' },
+                { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+                { title: 'Lifetime Value Calculator', href: '/calculators/lifetime-value/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="affiliate-commission"
               formula={`Commission per Sale = Product Price × (Commission Rate / 100)

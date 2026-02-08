@@ -30,7 +30,7 @@ export default function PrivacyPage() {
             <h1 className="text-display-md font-bold text-neutral-900">Privacy Policy</h1>
           </div>
         </div>
-        <p className="text-body-md text-neutral-600 mb-8">Last Updated: November 13, 2025</p>
+        <p className="text-body-md text-neutral-600 mb-8">Last Updated: February 8, 2026</p>
 
         <div className="space-y-6">
           <Card>
@@ -84,18 +84,70 @@ export default function PrivacyPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Cookies</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              We use cookies for Google Analytics. These cookies help us understand how visitors use our site. You can disable cookies in your browser settings without affecting calculator functionality.
-            </p>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p className="leading-relaxed">
+                We use cookies for Google Analytics and advertising purposes. These cookies help us understand how visitors use our site and allow us to display relevant advertisements. You can disable cookies in your browser settings without affecting calculator functionality.
+              </p>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">Advertising Cookies</h3>
+                <p>
+                  Google AdSense may use cookies to serve ads based on your prior visits to our website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Ads Settings</a>.
+                </p>
+              </div>
+            </div>
           </Card>
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Third-Party Services</h2>
             <p className="text-body-md text-neutral-700 mb-4">We use the following third-party services:</p>
             <ul className="list-disc list-inside space-y-2 text-body-md text-neutral-700 ml-4">
-              <li><strong>Google Analytics:</strong> Website analytics (subject to Google's privacy policy)</li>
+              <li><strong>Google Analytics:</strong> Website analytics (subject to Google&apos;s privacy policy)</li>
+              <li><strong>Google AdSense:</strong> Display advertising (subject to <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google&apos;s advertising privacy policy</a>)</li>
               <li><strong>Firebase Hosting:</strong> Website hosting (no additional data collection)</li>
             </ul>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Advertising</h2>
+            <div className="space-y-4 text-body-md text-neutral-700">
+              <p>
+                We use Google AdSense to display advertisements on our website. This helps us keep our calculators and resources free for all creators. Here is how advertising works on our site:
+              </p>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">How Google AdSense Works</h3>
+                <p>
+                  Google AdSense uses cookies and similar technologies to serve ads based on your interests and browsing history. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">Personalized vs Non-Personalized Ads</h3>
+                <p>
+                  Depending on your region and consent preferences, you may see personalized ads (based on your browsing behavior and interests) or non-personalized ads (based on the content of the page you are viewing). For users in the European Economic Area (EEA), we default to non-personalized ads unless you provide explicit consent for personalized advertising.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">Opting Out of Personalized Ads</h3>
+                <p>You can opt out of personalized advertising through the following methods:</p>
+                <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
+                  <li>Visit <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Ads Settings</a> to manage your ad preferences</li>
+                  <li>Visit <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">aboutads.info</a> to opt out of third-party vendor cookie use</li>
+                  <li>Use your browser&apos;s privacy settings to block third-party cookies</li>
+                  <li>Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Analytics Opt-out Browser Add-on</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">GDPR and Ad Consent</h3>
+                <p>
+                  For users in the European Union and European Economic Area, we comply with GDPR requirements for advertising consent. We will request your consent before serving personalized advertisements. You may withdraw your consent at any time through the cookie settings on our site or by adjusting your browser preferences.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-2">Ads.txt</h3>
+                <p>
+                  We maintain an <a href="/ads.txt" className="text-primary-600 hover:underline">ads.txt</a> file to declare our authorized digital advertising sellers. This is an IAB-standard mechanism that helps prevent unauthorized inventory sales and ensures transparency in digital advertising.
+                </p>
+              </div>
+            </div>
           </Card>
 
           <Card>
@@ -281,7 +333,7 @@ export default function PrivacyPage() {
               </div>
 
               <p className="mt-4 bg-neutral-100 p-4 rounded">
-                <strong>We do not:</strong> Share your data with affiliate networks, advertising platforms, data brokers, or marketing services. We don't sell data, rent email lists, or participate in cross-site tracking networks.
+                <strong>We do not:</strong> Sell your personal data to data brokers or marketing services. We do not rent email lists or participate in cross-site tracking networks. We use Google AdSense for advertising, which may use cookies as described in our Advertising section above.
               </p>
             </div>
           </Card>
@@ -324,7 +376,7 @@ export default function PrivacyPage() {
               </ul>
 
               <p className="mt-4 p-4 bg-primary-50 border border-primary-200 rounded">
-                <strong>Bottom Line:</strong> We've designed TikTok Creator Calculator with privacy as the foundation, not an afterthought. No personal data collection means no data breaches, no targeted advertising, and no privacy violations.
+                <strong>Bottom Line:</strong> We&apos;ve designed TikTok Creator Calculator with privacy as the foundation, not an afterthought. We display ads to keep our tools free, but we do not collect personal data beyond what is needed for analytics and ad delivery. You can opt out of personalized ads at any time.
               </p>
             </div>
           </Card>

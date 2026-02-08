@@ -7,6 +7,7 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
@@ -303,6 +304,31 @@ export default function TikTokMoneyCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator combines all TikTok income streams into a single comprehensive earnings estimate. It projects total monthly and annual income from Creator Fund/Rewards, brand deals, LIVE gifts, and TikTok Shop commissions based on your follower count, views, engagement, and content niche."
+              howToUse={[
+                'Enter your follower count, average views per video, and engagement rate from TikTok Analytics.',
+                'Select your content niche and indicate which monetization methods you currently use or plan to use.',
+                'Review the combined earnings breakdown showing projected income from each revenue stream.',
+              ]}
+              examples={[
+                { scenario: 'Growing beauty creator', input: '50,000 followers, 25,000 avg views, 6% engagement, beauty niche', output: 'Estimated $2,500-$5,000/month total: ~$100 Creator Fund, ~$2,000-$3,500 brand deals, ~$300 LIVE, ~$200 Shop' },
+                { scenario: 'Established tech reviewer', input: '250,000 followers, 100,000 avg views, 4% engagement, technology niche', output: 'Estimated $15,000-$30,000/month total: ~$400 Creator Rewards, ~$12,000-$25,000 brand deals, ~$500 LIVE, ~$1,500 Shop' },
+              ]}
+              limitations={[
+                'Brand deal income is highly variable and depends on individual negotiation, not just follower count.',
+                'LIVE gift earnings depend on streaming frequency and audience generosity, which are unpredictable.',
+                'TikTok Shop affiliate success varies dramatically by product category and audience buying intent.',
+                'The calculator uses industry averages and your actual income mix may differ significantly from projections.',
+              ]}
+              relatedContent={[
+                { title: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
+                { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
+                { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
+                { title: 'How to Make Money on TikTok Guide', href: '/guides/how-to-make-money-on-tiktok/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Money Calculator"
               formula={`Total Monthly Earnings = Creator Fund + Brand Deals + LIVE Gifts + TikTok Shop

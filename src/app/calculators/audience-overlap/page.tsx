@@ -3,6 +3,7 @@ import { DollarSign, TrendingUp, CreditCard, Users, Frown, Swords, BarChart2 } f
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -366,6 +367,32 @@ export default function AudienceOverlapCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator measures the audience overlap between two TikTok ad campaigns by comparing their audience sizes and shared users, then calculates the overlap percentage, unique reach, wasted budget, and targeting efficiency so you can optimize your campaigns."
+            howToUse={[
+              'Enter the audience size for Campaign A from your TikTok Ads Manager reach estimates.',
+              'Enter the audience size for Campaign B.',
+              'Input the estimated number of overlapping users (compare combined reach vs. individual sums in Ads Manager).',
+              'Review the overlap percentage, unique reach figures, and efficiency score to determine if optimization is needed.',
+            ]}
+            examples={[
+              { scenario: 'Fashion brand with broad targeting', input: 'Audience A: 800K, Audience B: 600K, Overlap: 300K', output: '50% overlap, 1.1M unique reach, significant budget waste (~$2-3K/month on $10K spend)' },
+              { scenario: 'Well-segmented age targeting', input: 'Audience A (18-24): 400K, Audience B (25-34): 350K, Overlap: 30K', output: '8.6% overlap, 720K unique reach, excellent targeting efficiency' },
+              { scenario: 'Lookalike vs. custom audience', input: 'Custom: 200K, Lookalike: 500K, Overlap: 90K', output: '45% overlap on custom audience, recommend excluding custom from lookalike campaign' },
+            ]}
+            limitations={[
+              'TikTok does not provide exact overlap figures like Facebook; overlap must be estimated from combined reach data.',
+              'Calculations assume campaigns run simultaneously; sequential campaigns do not have the same overlap issues.',
+              'Some overlap may be intentional and strategic, such as retargeting engaged users across funnel stages.',
+              'Cross-device users and logged-out traffic can affect actual overlap numbers beyond what is measurable.',
+            ]}
+            relatedContent={[
+              { title: 'Ad Spend Calculator', href: '/calculators/ad-spend/' },
+              { title: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
+              { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="audience-overlap"
             formula={`Overlap Percentage = (Overlap / Smaller Audience) × 100

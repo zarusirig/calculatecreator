@@ -19,6 +19,7 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
@@ -399,6 +400,32 @@ export default function RpmCalculatorPage() {
                 </div>
               </div>
             </Card>
+          </div>
+
+          {/* Tool Explanation */}
+          <div className="mb-10">
+            <ToolExplanationSection
+              whatItDoes="Calculates your TikTok RPM (Revenue Per Mille) by dividing your total Creator Fund earnings by your total views and multiplying by 1,000. This standardized metric reveals exactly how much you earn per 1,000 views, making it easy to compare monetization efficiency across time periods, content types, and niches."
+              howToUse={[
+                'Enter your total Creator Fund revenue earned during a specific time period (e.g., the past 30 days).',
+                'Enter your total video views for the same time period so the calculator can compute your RPM rate.',
+                'Review your RPM result alongside niche benchmarks to see how your monetization efficiency compares to industry averages and identify optimization opportunities.',
+              ]}
+              examples={[
+                { scenario: 'Average creator checking performance', input: 'Total revenue: $50, Total views: 1,000,000', output: 'RPM: $0.05 per 1,000 views. This is at the higher end of TikTok averages ($0.02-$0.05).' },
+                { scenario: 'Finance niche creator in Q4', input: 'Total revenue: $120, Total views: 1,000,000', output: 'RPM: $0.12 per 1,000 views. Top-tier performance driven by high-value niche and holiday advertiser demand.' },
+              ]}
+              limitations={[
+                'RPM covers Creator Fund ad revenue only. It does not include income from LIVE gifts, brand deals, affiliate marketing, or product sales.',
+                'RPM fluctuates daily based on advertiser demand and seasonal trends. Q4 RPMs are typically 3-5x higher than Q1 due to holiday advertising budgets.',
+                'Viewer geography heavily affects RPM. US-based views generate $0.04-$0.08, while views from developing countries may yield under $0.01 per 1K views.',
+              ]}
+              relatedContent={[
+                { title: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+                { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              ]}
+            />
           </div>
 
           {/* Methodology */}

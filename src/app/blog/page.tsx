@@ -6,7 +6,8 @@ import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 import { BlogListingSchema } from '@/components/seo/BlogListingSchema';
 import {
   FileText, TrendingUp, DollarSign, Users, BarChart3, Sparkles,
-  Calculator, BookOpen, Globe, CheckCircle, Clock, Calendar, Zap
+  Calculator, BookOpen, Globe, CheckCircle, Clock, Calendar, Zap,
+  ShoppingCart, Video, Handshake, Target, Receipt, Layers
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -73,6 +74,86 @@ const blogPosts = [
     category: 'Monetization',
     icon: DollarSign,
     readTime: '6 min',
+  },
+  {
+    title: 'How TikTok Creator Rewards Work in 2026: Complete Breakdown',
+    slug: 'how-tiktok-creator-rewards-work-2026',
+    description: 'Learn how the Creator Rewards Program works, including eligibility requirements, RPM rates by niche, and proven strategies to maximize your earnings.',
+    category: 'Monetization',
+    icon: Sparkles,
+    readTime: '10 min',
+  },
+  {
+    title: 'TikTok Shop Affiliate: Complete Beginner\'s Guide for 2026',
+    slug: 'tiktok-shop-affiliate-beginners-guide',
+    description: 'Everything you need to know about earning money as a TikTok Shop affiliate, including commission rates, product selection, and content strategies.',
+    category: 'Monetization',
+    icon: ShoppingCart,
+    readTime: '12 min',
+  },
+  {
+    title: 'Brand Deal Rate Negotiation Tips for TikTok Creators',
+    slug: 'brand-deal-rate-negotiation-tips',
+    description: 'Learn how to price your brand deals, negotiate higher rates, and avoid common mistakes that leave money on the table.',
+    category: 'Creator Business',
+    icon: Handshake,
+    readTime: '10 min',
+  },
+  {
+    title: 'Understanding TikTok RPM Rates: What Creators Actually Earn',
+    slug: 'understanding-tiktok-rpm-rates',
+    description: 'Deep dive into RPM rates across 12 niches with real 2026 data. Learn the factors that determine your per-view earnings and how to optimize them.',
+    category: 'Analytics & Data',
+    icon: BarChart3,
+    readTime: '9 min',
+  },
+  {
+    title: 'TikTok LIVE Streaming Earnings Guide: Maximize Your Income',
+    slug: 'tiktok-live-streaming-earnings-guide',
+    description: 'Master TikTok LIVE monetization with strategies for gifts, viewer engagement, scheduling, and converting LIVE viewers into loyal followers.',
+    category: 'Monetization',
+    icon: Video,
+    readTime: '11 min',
+  },
+  {
+    title: 'Engagement Rate: What Brands Actually Look For in Creators',
+    slug: 'engagement-rate-what-brands-look-for',
+    description: 'Discover the engagement metrics brands prioritize when selecting creators for partnerships, and learn how to optimize your profile for brand deals.',
+    category: 'Growth Strategies',
+    icon: Target,
+    readTime: '9 min',
+  },
+  {
+    title: 'TikTok vs YouTube Shorts Earnings: Platform Comparison 2026',
+    slug: 'tiktok-vs-youtube-shorts-earnings-2026',
+    description: 'Compare RPM rates, audience reach, and monetization features between TikTok and YouTube Shorts with real 2026 earnings data.',
+    category: 'Platform Updates',
+    icon: Globe,
+    readTime: '10 min',
+  },
+  {
+    title: 'Creator Tax Deductions: Complete Guide for Content Creators 2026',
+    slug: 'creator-tax-deductions-complete-guide',
+    description: 'Discover every tax deduction available to content creators, from equipment and home office to travel and professional services.',
+    category: 'Creator Business',
+    icon: Receipt,
+    readTime: '12 min',
+  },
+  {
+    title: 'TikTok Algorithm Changes 2026: What Creators Need to Know',
+    slug: 'tiktok-algorithm-changes-2026',
+    description: 'Stay updated on the latest TikTok algorithm changes and learn how to adapt your content strategy for maximum reach in 2026.',
+    category: 'Platform Updates',
+    icon: TrendingUp,
+    readTime: '8 min',
+  },
+  {
+    title: 'Building Multiple Income Streams on TikTok: Strategy Overview',
+    slug: 'building-multiple-income-streams-tiktok',
+    description: 'Learn how to diversify your TikTok revenue across Creator Rewards, brand deals, TikTok Shop, LIVE gifts, and off-platform monetization.',
+    category: 'Monetization',
+    icon: Layers,
+    readTime: '11 min',
   },
 ];
 
@@ -287,7 +368,7 @@ export default function BlogPage() {
             </div>
             <div className="space-y-6">
               {blogPosts.map((post) => (
-                <Link key={post.slug} href={`/blog/${post.slug}`}>
+                <Link key={post.slug} href={`/blog/${post.slug}/`}>
                   <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
                     <div className="flex items-start gap-4">
                       <div className="p-3 bg-blue-100 rounded-lg">
@@ -301,22 +382,13 @@ export default function BlogPage() {
                           </span>
                         </div>
                         <h2 className="text-heading-md font-semibold text-neutral-900 mb-2">{post.title}</h2>
-                        <p className="text-body-md text-neutral-600 mb-3">{post.description}</p>
-                        <p className="text-body-sm text-neutral-600">
-                          This comprehensive comparison breaks down the earning potential of two major TikTok monetization methods. We analyze actual creator data across multiple follower tiers, calculate effective hourly rates, and identify which content styles favor each revenue stream. You'll learn the minimum requirements for each program, typical earnings ranges by niche, and how to strategically combine both methods for maximum income. The article includes case studies from fitness, beauty, and gaming creators who have optimized their monetization mix.
-                        </p>
+                        <p className="text-body-md text-neutral-600">{post.description}</p>
                       </div>
                       <TrendingUp className="w-5 h-5 text-neutral-400" />
                     </div>
                   </Card>
                 </Link>
               ))}
-            </div>
-            <div className="mt-6 p-6 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="font-semibold text-neutral-900 mb-2">More Featured Content Coming Soon</h3>
-              <p className="text-body-sm text-neutral-700">
-                We're currently developing in-depth guides on TikTok Shop affiliate strategies, Creator Rewards Program optimization, and brand deal negotiation tactics for 2026. Check back regularly as we publish new featured articles weekly, each backed by the latest creator earnings data and platform metrics.
-              </p>
             </div>
           </section>
 

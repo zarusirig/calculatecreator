@@ -3,6 +3,7 @@ import { DollarSign, ShoppingCart, Shirt, Smartphone, Briefcase } from 'lucide-r
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -242,6 +243,30 @@ export default function CustomerAcquisitionCostCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator computes your Customer Acquisition Cost (CAC) by dividing total marketing spend by the number of new customers acquired. It also shows how many customers you can acquire per $1,000 and recommends a minimum Customer Lifetime Value (LTV) needed for a healthy 3:1 LTV:CAC ratio."
+            howToUse={[
+              'Enter your total marketing spend for the campaign period, including ad spend, content creation costs, influencer fees, agency costs, and software tools.',
+              'Enter the number of new first-time customers acquired during that same period (do not count repeat purchases from existing customers).',
+              'Review your CAC, customers-per-$1K metric, and the recommended minimum LTV target to ensure your unit economics are sustainable.',
+            ]}
+            examples={[
+              { scenario: 'E-commerce fashion brand', input: '$5,000 total spend, 100 new customers', output: '$50 CAC, 20 customers per $1K, recommended LTV of $150+' },
+              { scenario: 'SaaS app promotion', input: '$10,000 total spend, 80 new subscribers', output: '$125 CAC, 8 customers per $1K, recommended LTV of $375+' },
+              { scenario: 'Low-ticket impulse product', input: '$2,000 total spend, 200 new buyers', output: '$10 CAC, 100 customers per $1K, recommended LTV of $30+' },
+            ]}
+            limitations={[
+              'CAC calculations are only accurate when all marketing costs are included -- ad spend alone underestimates true acquisition cost by 30-50%.',
+              'Does not account for organic or word-of-mouth customers who would have converted without paid campaigns.',
+              'Seasonal factors such as holiday shopping or back-to-school periods can temporarily inflate or deflate CAC by 20-50%, making short-term snapshots unreliable.',
+            ]}
+            relatedContent={[
+              { title: 'Lifetime Value Calculator', href: '/calculators/lifetime-value/' },
+              { title: 'Conversion Rate Calculator', href: '/calculators/conversion-rate/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="customer-acquisition-cost"
             formula={`Customer Acquisition Cost (CAC) = Total Marketing Spend / New Customers Acquired

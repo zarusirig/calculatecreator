@@ -7,6 +7,7 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { ViralPotentialCalculatorWidget } from '@/components/calculators/viral-potential/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
@@ -310,6 +311,32 @@ export default function ViralPotentialCalculatorPage() {
               ))}
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Viral Potential Calculator predicts how likely your TikTok video is to go viral by analyzing five weighted engagement signals: completion rate, share rate, engagement rate, save rate, and follower count. It produces a 0-100 viral score with actionable insights on which factors to improve for the biggest impact on your reach."
+            howToUse={[
+              'Enter your video completion rate (percentage of viewers who watch the full video) -- this is the most heavily weighted factor at 30%.',
+              'Input your share rate as a percentage of views, found in TikTok Analytics under video engagement metrics.',
+              'Add your combined engagement rate (likes plus comments divided by views) and your save rate.',
+              'Optionally enter your current follower count to factor in your existing reach baseline.',
+              'Review the viral score (0-100) and the per-factor breakdown to identify which metric is dragging your score down the most.',
+            ]}
+            examples={[
+              { scenario: 'Educational "did you know" video with high retention and sharing', input: '85% completion, 6% share rate, 10% engagement, 3% save rate, 50K followers', output: 'Viral score: 82 -- Very High. All signals are firing above benchmarks, especially completion and share rate.' },
+              { scenario: 'Quick trend participation with low watch time and saves', input: '35% completion, 0.8% share rate, 4% engagement, 0.3% save rate, 5K followers', output: 'Viral score: 28 -- Low. Completion rate is the main bottleneck; the hook needs significant improvement.' },
+            ]}
+            limitations={[
+              'Viral potential is probabilistic, not deterministic -- timing, cultural moments, trending sounds, and luck cannot be calculated.',
+              'The weighted formula is based on research patterns, not official TikTok algorithm specifications, which are not public.',
+              'Follower count has diminishing returns as a factor; very large accounts may see less lift from this input.',
+              'Scores are most useful for comparing your own videos against each other rather than against other creators in different niches.',
+            ]}
+            relatedContent={[
+              { title: 'Completion Rate Calculator', href: '/calculators/completion-rate/' },
+              { title: 'Share Ratio Calculator', href: '/calculators/share-ratio/' },
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="viral-potential"

@@ -10,6 +10,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CPMCPVCalculatorWidget } from '@/components/calculators/cpm-cpv/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok CPM & CPV Calculator: Ad Cost Benchmarks (2026)',
@@ -348,6 +349,31 @@ export default function CPMCPVCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+              whatItDoes="This calculator computes your TikTok CPM (Cost Per Mille, or cost per 1,000 impressions) and CPV (Cost Per View) from your campaign spend and impression data. It also shows your impressions-per-dollar ratio and rates your performance against platform benchmarks."
+              howToUse={[
+                'Enter your total ad spend and total impressions from TikTok Ads Manager for the time period you want to analyze.',
+                'Optionally enter video views to calculate CPV alongside CPM.',
+                'Review your CPM, CPV, impressions-per-dollar metric, and the performance rating compared to industry benchmarks.',
+              ]}
+              examples={[
+                { scenario: 'Brand awareness campaign for beauty brand', input: '$5,000 spend, 750,000 impressions', output: '$6.67 CPM (rated Good), 150 impressions per dollar' },
+                { scenario: 'Broad-targeting entertainment ad', input: '$1,000 spend, 500,000 impressions', output: '$2.00 CPM (rated Excellent), 500 impressions per dollar' },
+              ]}
+              limitations={[
+                'CPM alone does not indicate campaign success -- low CPM with poor engagement wastes budget.',
+                'TikTok CPM fluctuates significantly by season, with Q4 costs rising 30-50% above normal levels.',
+                'Different ad formats (In-Feed vs TopView) have vastly different CPM ranges that are not directly comparable.',
+                'Geographic targeting dramatically affects CPM, so cross-region comparisons require context.',
+              ]}
+              relatedContent={[
+                { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
+                { title: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
+                { title: 'TikTok Ad Cost Calculator', href: '/calculators/tiktok-ad-cost/' },
+                { title: 'Ad Revenue Calculator', href: '/calculators/ad-revenue/' },
+              ]}
+            />
+
           <MethodologySection
             calculatorName="cpm-cpv"
             formula={`CPM (Cost Per Mille) = (Ad Spend / Impressions) × 1,000

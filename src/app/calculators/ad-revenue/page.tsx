@@ -4,6 +4,7 @@ import { DollarSign } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
@@ -288,6 +289,32 @@ export default function AdRevenueCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="This calculator estimates your potential ad revenue from TikTok monetization programs (Creator Fund, TikTok Pulse, in-feed ads) by combining your monthly view count, niche-specific CPM rate, and average ad frequency per video to project monthly and annual earnings."
+            howToUse={[
+              'Enter your total monthly video views from your TikTok analytics dashboard.',
+              'Select or input your CPM rate based on your content niche (finance $8-12, tech $6-10, lifestyle $4-6, entertainment $2-4).',
+              'Set your average ad frequency per video (1 for short clips, 1.5-3 for videos over 1 minute with mid-roll ads).',
+              'Review your projected monthly and annual ad revenue breakdown.',
+            ]}
+            examples={[
+              { scenario: 'Mid-tier lifestyle creator', input: '1,000,000 monthly views, $5 CPM, 1 ad per video', output: '$5,000/month ($60,000/year) estimated ad revenue' },
+              { scenario: 'Finance niche creator with longer videos', input: '500,000 monthly views, $10 CPM, 2 ads per video', output: '$10,000/month ($120,000/year) estimated ad revenue' },
+              { scenario: 'Entertainment creator starting out', input: '200,000 monthly views, $3 CPM, 1 ad per video', output: '$600/month ($7,200/year) estimated ad revenue' },
+            ]}
+            limitations={[
+              'CPM rates fluctuate seasonally, with Q4 rates 40-80% higher than Q1 due to holiday advertising demand.',
+              'Actual payouts depend on audience geography; US/UK viewers generate 3-5x higher CPM than viewers from lower-income countries.',
+              'Requires 10K+ followers and enrollment in a TikTok monetization program to qualify for ad revenue.',
+              'Revenue estimates assume consistent monthly view counts, which can vary significantly based on content virality.',
+            ]}
+            relatedContent={[
+              { title: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
+              { title: 'RPM Calculator', href: '/calculators/rpm/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="ad-revenue"

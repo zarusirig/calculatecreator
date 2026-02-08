@@ -4,6 +4,7 @@ import { Handshake, DollarSign, Users, BarChart3, TrendingUp, Target, Zap, Check
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
@@ -302,6 +303,32 @@ export default function BrandDealRateCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator recommends a competitive sponsorship rate for your TikTok brand deals by factoring in your follower count, engagement rate, content niche, and content type to produce a per-post pricing range aligned with current industry standards."
+              howToUse={[
+                'Enter your current TikTok follower count to establish your base pricing tier.',
+                'Input your average engagement rate (calculate from your last 10-20 posts for accuracy).',
+                'Select your primary content niche, as finance and tech command 2-3x higher rates than entertainment.',
+                'Choose the content type (dedicated video, mention, or series) and review your recommended rate range.',
+              ]}
+              examples={[
+                { scenario: 'Micro-influencer in beauty niche', input: '25K followers, 7% engagement rate, beauty niche, dedicated video', output: 'Recommended rate: $800-$1,500 per sponsored post' },
+                { scenario: 'Mid-tier finance creator', input: '75K followers, 6% engagement, finance niche, dedicated video', output: 'Recommended rate: $9,000-$10,000 per sponsored post (niche premium)' },
+                { scenario: 'Large entertainment creator', input: '300K followers, 3% engagement, entertainment niche, dedicated video', output: 'Recommended rate: $7,500-$12,000 per sponsored post' },
+              ]}
+              limitations={[
+                'Rates are industry averages and vary based on individual creator quality, past brand work, and negotiation skills.',
+                'Usage rights (organic reposts, paid ads, whitelisting) can add 25-100% to the base rate but are not included in the default calculation.',
+                'Q4 holiday seasons typically command 20-30% higher rates due to increased advertiser demand.',
+                'New creators without a track record of successful brand partnerships may need to start below suggested rates to build credibility.',
+              ]}
+              relatedContent={[
+                { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+                { title: 'Brand Deal Pricing Guide', href: '/guides/how-to-price-brand-deals/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Brand Deal Rate Calculator"
               formula={`Base Rate = Followers × Rate Per Follower × Engagement Multiplier × Niche Multiplier

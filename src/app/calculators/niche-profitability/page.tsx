@@ -9,6 +9,7 @@ import { NicheProfitabilityCalculatorWidget } from '@/components/calculators/nic
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Niche Profitability Calculator (2026)',
@@ -291,6 +292,29 @@ export default function NicheProfitabilityCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="Compares earning potential across TikTok content niches by applying profitability multipliers (1.0x for entertainment up to 3.0x for finance) to your view count and engagement rate. It reveals how CPM rates, brand deal demand, and audience purchasing power affect your total monetization ceiling."
+            howToUse={[
+              'Select your content niche category from the dropdown (finance, tech, beauty, fitness, lifestyle, entertainment, etc.).',
+              'Enter your current follower count and average engagement rate so the calculator can apply niche-specific multipliers to your baseline earnings.',
+              'Compare the adjusted earnings estimate against other niches to understand your monetization ceiling and identify strategies to increase profitability within your category.',
+            ]}
+            examples={[
+              { scenario: 'Finance creator evaluating their niche advantage', input: 'Niche: Finance, 50K followers, 1M monthly views, 5% engagement', output: 'Niche-adjusted earnings: $135/month ad revenue + estimated $5,000/month brand deals. 3.0x multiplier applied.' },
+              { scenario: 'Comedy creator exploring profitability', input: 'Niche: Entertainment, 50K followers, 1M monthly views, 5% engagement', output: 'Niche-adjusted earnings: $45/month ad revenue + estimated $1,600/month brand deals. 1.0x multiplier shows room for sub-niche optimization.' },
+            ]}
+            limitations={[
+              'Profitability multipliers are industry averages. Exceptional creators in low-value niches can significantly outperform average creators in high-value niches.',
+              'Does not account for individual brand relationships, unique product offerings, or non-standard monetization strategies like courses and consulting.',
+              'Niche boundaries are fluid. Many creators blend niches (e.g., finance comedy), which can produce results between the two category multipliers.',
+            ]}
+            relatedContent={[
+              { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="niche-profitability"

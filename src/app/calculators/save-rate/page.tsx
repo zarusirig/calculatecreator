@@ -9,6 +9,7 @@ import { SaveRateCalculatorWidget } from '@/components/calculators/save-rate/Cal
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Save Rate Calculator: Measure Content Value (2026)',
@@ -258,6 +259,31 @@ export default function SaveRateCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Save Rate Calculator computes your save-to-view ratio, revealing how often viewers bookmark your TikTok content for later reference. Saves are one of the strongest algorithmic signals because they indicate lasting value beyond momentary entertainment -- content worth returning to gets extended distribution on the For You Page and better search rankings."
+            howToUse={[
+              'Open TikTok Creator Tools, go to Analytics, then the Content tab, and select the video you want to analyze.',
+              'Find the "Favorites" count under the engagement metrics section (TikTok labels saves as "Favorites").',
+              'Enter the total views and total saves (favorites) into the calculator fields.',
+              'Review your save rate percentage and compare it to the benchmarks for your specific content niche.',
+            ]}
+            examples={[
+              { scenario: 'Step-by-step cooking tutorial with recipe details', input: '80,000 views, 6,400 saves', output: '8% save rate -- Excellent. Recipe content is inherently save-worthy since viewers want to recreate dishes later.' },
+              { scenario: 'Comedy skit with no educational or reference value', input: '200,000 views, 1,000 saves', output: '0.5% save rate -- Average for entertainment. Comedy is shareable but rarely bookmarked for later.' },
+            ]}
+            limitations={[
+              'Save rate benchmarks differ significantly by content type -- comparing tutorial saves against comedy saves is misleading.',
+              'TikTok counts saves/favorites but does not reveal if users actually revisit saved content later.',
+              'Older videos may accumulate saves over weeks or months, making point-in-time measurements incomplete.',
+              'A low save rate does not necessarily mean poor content -- entertainment and humor are valuable without being save-worthy.',
+            ]}
+            relatedContent={[
+              { title: 'Share Ratio Calculator', href: '/calculators/share-ratio/' },
+              { title: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="save-rate"

@@ -10,6 +10,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Earnings (2026)',
@@ -297,6 +298,29 @@ export default function LiveGiftsCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="Estimates your potential TikTok LIVE streaming income by calculating gift revenue based on your average concurrent viewers, stream duration, streaming frequency, and gift engagement rate. It accounts for TikTok's 50% platform cut and converts diamonds to real dollar amounts."
+              howToUse={[
+                'Enter your average number of concurrent viewers during LIVE streams (check your TikTok LIVE analytics for this number).',
+                'Set your typical stream duration in hours and how many times per week you go LIVE.',
+                'Adjust the gift rate percentage to match your audience engagement level, then review projected per-stream and monthly earnings.',
+              ]}
+              examples={[
+                { scenario: 'New streamer with small audience', input: '50 avg viewers, 1-hour streams, 3x/week, 3% gift rate', output: 'Estimated $22-$75 per stream, $264-$900/month' },
+                { scenario: 'Established creator with loyal community', input: '500 avg viewers, 2-hour streams, 4x/week, 5% gift rate', output: 'Estimated $375-$750 per stream, $6,000-$12,000/month' },
+              ]}
+              limitations={[
+                'Gift income is highly variable and depends heavily on content quality, streamer charisma, and audience loyalty, which cannot be quantified by a calculator.',
+                'TikTok takes approximately 50% of gift value, and withdrawal minimums ($50) and processing times (7-14 days) affect actual take-home pay.',
+                'Projections assume consistent viewer counts, but real streams fluctuate significantly based on time of day, content type, and platform promotion.',
+              ]}
+              relatedContent={[
+                { title: 'Diamond Converter Calculator', href: '/calculators/diamond-converter/' },
+                { title: 'Coins Calculator', href: '/calculators/coins/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok LIVE Gifts Calculator"
               formula={`Monthly LIVE Earnings = Streams per Month × Average Gift Value per Stream

@@ -9,6 +9,7 @@ import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { DiamondConverterCalculatorWidget } from '@/components/calculators/diamond-converter/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Diamond to USD Calculator: Convert Diamonds to Money (2026)',
@@ -132,6 +133,45 @@ export default function DiamondConverterPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">
+            <ToolExplanationSection
+              whatItDoes="The TikTok Diamonds to USD Calculator converts creator diamonds into real-world currency values across multiple currencies including USD, EUR, GBP, and more. Diamonds are the creator-side currency earned from viewer gifts during LIVE streams and video interactions. This tool reveals the actual cash value of your accumulated diamonds after TikTok takes its 50% platform cut, helping you track earnings and plan withdrawals."
+              howToUse={[
+                'Enter the total number of diamonds you have received or want to convert',
+                'Select your preferred payout currency from the dropdown (USD, EUR, GBP, etc.)',
+                'View the converted value instantly based on current exchange rates and the fixed $0.005 per diamond rate',
+                'Use the results to decide when to withdraw based on minimum payout thresholds in your region',
+              ]}
+              examples={[
+                {
+                  scenario: 'New creator checking first week of diamonds',
+                  input: '2,000 diamonds earned from LIVE streaming',
+                  output: '$10.00 USD (below most minimum withdrawal thresholds)',
+                },
+                {
+                  scenario: 'Creator reaching withdrawal threshold',
+                  input: '20,000 diamonds accumulated over a month',
+                  output: '$100.00 USD (meets standard withdrawal minimum)',
+                },
+                {
+                  scenario: 'International creator converting to local currency',
+                  input: '50,000 diamonds converted to EUR',
+                  output: 'Approximately 230 EUR (varies with exchange rate)',
+                },
+              ]}
+              limitations={[
+                'Exchange rates fluctuate daily and the calculator uses approximate current rates',
+                'International bank transfer and payment processing fees are not included',
+                'Minimum withdrawal amounts vary by country and payment method',
+                'Currency conversion fees charged by PayPal or Payoneer are separate from the displayed value',
+                'Diamond values are set by TikTok and could change with platform policy updates',
+              ]}
+              relatedContent={[
+                { title: 'Coins to USD Calculator', href: '/calculators/coins-gifts-diamonds/coins/' },
+                { title: 'Gift Value Calculator', href: '/calculators/coins-gifts-diamonds/gift/' },
+                { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Diamond Converter"
               formula="USD Value = Diamonds × $0.005"

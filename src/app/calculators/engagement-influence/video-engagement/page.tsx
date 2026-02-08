@@ -18,6 +18,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { VideoPerformanceCalculatorWidget } from '@/components/calculators/video-performance/CalculatorWidget';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 // Dynamic imports for E-E-A-T components
 const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
@@ -343,6 +344,47 @@ export default function VideoPerformanceCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="The Video Performance Calculator generates a composite performance score (0-100) for individual TikTok videos by analyzing multiple engagement metrics together. Unlike the basic engagement rate calculator which focuses on account-level performance, this tool evaluates specific videos by weighing engagement rate, reach factor (views relative to followers), and interaction quality (comments and shares vs. passive likes). It helps creators identify which videos truly performed well versus which just got lucky with the algorithm."
+            howToUse={[
+              'Enter your total follower count as a baseline for the reach factor calculation',
+              'Input the total views for the specific video you want to analyze',
+              'Add the number of likes, comments, and shares the video received',
+              'The calculator generates a weighted performance score from 0 to 100',
+              'Review the breakdown showing which components (engagement, reach, quality) drove or dragged your score',
+              'Compare scores across multiple videos to identify your best-performing content formats',
+            ]}
+            examples={[
+              {
+                scenario: 'Viral video with shallow engagement',
+                input: '50K followers, 2M views, 80K likes, 500 comments, 2,000 shares',
+                output: 'Score: 72/100 (Strong reach but low comment-to-like ratio indicates passive viewing)',
+              },
+              {
+                scenario: 'Niche video with deep engagement',
+                input: '50K followers, 100K views, 15K likes, 2,000 comments, 3,000 shares',
+                output: 'Score: 88/100 (Excellent interaction quality - high share and comment ratios)',
+              },
+              {
+                scenario: 'Average performing content',
+                input: '50K followers, 40K views, 2,000 likes, 80 comments, 50 shares',
+                output: 'Score: 45/100 (Below-average reach and low interaction quality)',
+              },
+            ]}
+            limitations={[
+              'The scoring weights are based on general best practices and may not reflect TikTok algorithm priorities exactly',
+              'Watch time and completion rate are not factored in because TikTok does not expose this data publicly',
+              'Scores are relative and most useful when comparing your own videos rather than cross-account',
+              'Newly published videos (under 48 hours) may not have reached their full distribution yet',
+              'Different content types (tutorials vs. entertainment) have inherently different engagement patterns',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-influence/engagement/' },
+              { title: 'Brand Deal Rate Calculator', href: '/calculators/engagement-influence/influencer-pricing/' },
+              { title: 'Creator Fund Calculator', href: '/calculators/earnings-revenue/creator-fund/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="video-performance"
             formula={`Performance Score Components:

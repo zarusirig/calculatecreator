@@ -9,6 +9,7 @@ import { ProductionCostCalculatorWidget } from '@/components/calculators/product
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Video Production Cost Calculator (2026)',
@@ -289,6 +290,32 @@ export default function ProductionCostCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Production Cost Calculator reveals your true cost per TikTok video by combining equipment amortization, software subscriptions, and your labor time valued at an appropriate hourly rate. It helps you understand whether your content creation is actually profitable after accounting for all expenses, not just the obvious ones."
+            howToUse={[
+              'Enter your total equipment costs (camera, lighting, microphone) -- these will be amortized over a 24-month lifespan.',
+              'Add your monthly software subscriptions for editing tools, analytics platforms, and scheduling apps.',
+              'Input the average hours you spend per video (filming, editing, planning, and posting) and your target hourly rate.',
+              'Specify how many videos you produce per month to calculate the per-video cost breakdown.',
+              'Compare your cost per video against your average revenue per video to determine profitability.',
+            ]}
+            examples={[
+              { scenario: 'Beginner creator using phone and free software', input: '$500 equipment, $0/month software, 3 hours/video at $25/hr, 12 videos/month', output: 'Cost per video: $76.74 -- mostly labor cost, equipment adds only $1.74/video' },
+              { scenario: 'Intermediate creator with dedicated gear and paid tools', input: '$3,000 equipment, $65/month software, 2 hours/video at $50/hr, 20 videos/month', output: 'Cost per video: $109.50 -- labor remains the largest component at $100/video' },
+            ]}
+            limitations={[
+              'Does not include indirect costs such as internet, electricity, home office space, or rent allocation.',
+              'Equipment amortization uses a fixed 24-month period, which may not match actual equipment lifespan for all gear.',
+              'Your hourly rate is self-reported and may not accurately reflect true opportunity cost.',
+              'Per-video costs assume uniform production effort; some videos may take significantly longer than others.',
+            ]}
+            relatedContent={[
+              { title: 'Break Even Calculator', href: '/calculators/break-even/' },
+              { title: 'Content Calendar ROI Calculator', href: '/calculators/content-calendar-roi/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="production-cost"

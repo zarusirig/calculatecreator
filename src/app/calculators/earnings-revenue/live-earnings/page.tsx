@@ -9,6 +9,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Income (2026)',
@@ -250,6 +251,46 @@ export default function LiveGiftsCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="The TikTok LIVE Earnings Calculator estimates how much money you can earn from virtual gifts during TikTok LIVE streams. It factors in your average concurrent viewers, gifts-per-viewer rate, average gift size, and streaming frequency to project per-stream and monthly earnings. The calculator accounts for TikTok's 50% platform fee on all gifts, giving you realistic net income projections for your LIVE streaming business."
+            howToUse={[
+              'Enter your average number of concurrent viewers during a typical LIVE stream',
+              'Set your estimated gifts-per-viewer rate (how many viewers send gifts on average)',
+              'Input the average gift value in coins (50 coins is a common average)',
+              'Specify how many LIVE streams you plan to do per month',
+              'Review per-stream earnings and monthly projections after TikTok takes its 50% cut',
+            ]}
+            examples={[
+              {
+                scenario: 'New creator starting LIVE streaming',
+                input: '50 avg viewers, 0.3 gifts/viewer, 50 avg coins, 8 streams/month',
+                output: 'Per stream: ~$3.75, Monthly: ~$30 (after 50% platform fee)',
+              },
+              {
+                scenario: 'Growing creator with engaged audience',
+                input: '300 avg viewers, 0.5 gifts/viewer, 100 avg coins, 12 streams/month',
+                output: 'Per stream: ~$37.50, Monthly: ~$450 (after 50% platform fee)',
+              },
+              {
+                scenario: 'Established LIVE streamer',
+                input: '1,500 avg viewers, 0.8 gifts/viewer, 200 avg coins, 16 streams/month',
+                output: 'Per stream: ~$600, Monthly: ~$9,600 (after 50% platform fee)',
+              },
+            ]}
+            limitations={[
+              'Gift income is highly variable and depends on audience mood, timing, and spending power',
+              'TikTok takes 50% of all gift value before creator payout',
+              'Viewer count fluctuates significantly between streams and is not guaranteed',
+              'Minimum withdrawal threshold of $50 in diamonds must be met before cashing out',
+              'Stream length, time of day, and content quality all significantly affect gifting rates',
+            ]}
+            relatedContent={[
+              { title: 'Coins to USD Calculator', href: '/calculators/coins-gifts-diamonds/coins/' },
+              { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
+              { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
+            ]}
+          />
+
           <MethodologySection calculatorName="live-gifts" formula={`Per-Stream Earnings = (Avg Viewers × 2) × Gifts/Viewer × Avg Gift Value (50 coins) / 2 × $0.005
 
 Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'Viewer Turnover', value: '2x - assumes viewers join/leave during stream' }, { label: 'Avg Gift Value', value: '50 coins (ranges 5-5000)' }, { label: 'Diamond Conversion', value: '$0.005 per diamond (50% of coin value)' }]} dataSources={['TikTok Creator Portal', 'Creator surveys Q4 2024']} limitations="Actual earnings depend on audience generosity, stream engagement, and viewer purchasing power." lastUpdated="November 13, 2025" />

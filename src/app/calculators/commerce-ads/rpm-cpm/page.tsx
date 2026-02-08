@@ -10,6 +10,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok RPM Calculator: Revenue Per 1000 Views (2026)',
@@ -265,6 +266,46 @@ export default function RPMCalculatorPage() {
               ))}
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The TikTok RPM (Revenue Per Mille) Calculator determines how much money you earn per 1,000 video views from TikTok's monetization programs. RPM is the single most important metric for understanding your content's earning efficiency. By inputting your total views and earnings, this tool calculates your actual RPM so you can benchmark against industry averages, identify underperforming content, and optimize your posting strategy for maximum revenue per view."
+            howToUse={[
+              'Enter your total video views for a specific period (weekly, monthly, or per-video)',
+              'Input the total earnings you received from TikTok for that same period',
+              'The calculator divides earnings by views, multiplies by 1,000, and displays your RPM',
+              'Compare your RPM against benchmarks: Excellent ($0.04+), Good ($0.03-$0.04), Average ($0.02-$0.03)',
+              'Track RPM over time to identify trends and the impact of content changes on earning efficiency',
+            ]}
+            examples={[
+              {
+                scenario: 'Creator Fund member checking monthly performance',
+                input: '500,000 views, $15.00 earnings',
+                output: 'RPM: $0.03 (Good - in line with average Creator Fund rates)',
+              },
+              {
+                scenario: 'High-engagement niche creator',
+                input: '200,000 views, $12.00 earnings',
+                output: 'RPM: $0.06 (Excellent - above-average earning efficiency)',
+              },
+              {
+                scenario: 'Viral video with lower engagement quality',
+                input: '2,000,000 views, $30.00 earnings',
+                output: 'RPM: $0.015 (Below average - high views but low engagement depth)',
+              },
+            ]}
+            limitations={[
+              'RPM varies significantly by niche, audience geography, and content type',
+              'Creator Fund RPM rates are different from Creator Rewards Program rates',
+              'Seasonal fluctuations affect RPM (Q4 tends to be higher due to advertiser spending)',
+              'RPM does not account for revenue from brand deals, LIVE gifts, or shop commissions',
+              'TikTok does not publicly disclose its exact RPM calculation methodology',
+            ]}
+            relatedContent={[
+              { title: 'Ad Cost Calculator', href: '/calculators/commerce-ads/ad-cost/' },
+              { title: 'Creator Fund Calculator', href: '/calculators/earnings-revenue/creator-fund/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="rpm"

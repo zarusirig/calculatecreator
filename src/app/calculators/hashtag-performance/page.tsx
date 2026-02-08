@@ -9,6 +9,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { HashtagPerformanceCalculatorWidget } from '@/components/calculators/hashtag-performance/CalculatorWidget';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Hashtag Performance Calculator (2026)',
@@ -315,6 +316,29 @@ export default function HashtagPerformanceCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="Measures how specific hashtags affect your TikTok reach and engagement by comparing your baseline performance (without the hashtag) to your performance when using it. It produces a view lift percentage, engagement lift percentage, and an overall effectiveness score from 0-100."
+            howToUse={[
+              'Post 3-5 videos without the hashtag you want to test, then record the average views and engagement (likes + comments + shares) as your baseline.',
+              'Post 3-5 similar videos using the target hashtag while keeping other variables (posting time, content style) consistent, and record the average views and engagement.',
+              'Enter both sets of data into the calculator to get your view lift, engagement lift, and effectiveness score showing whether that hashtag is worth using.',
+            ]}
+            examples={[
+              { scenario: 'Testing a niche fitness hashtag', input: 'Baseline: 50K views, 2.5K engagement. With #homeworkout: 85K views, 5.1K engagement', output: 'View lift: +70%, Engagement lift: +104%, Effectiveness score: 87/100 (Highly Effective)' },
+              { scenario: 'Evaluating a generic trending hashtag', input: 'Baseline: 30K views, 1.8K engagement. With #fyp: 33K views, 1.9K engagement', output: 'View lift: +10%, Engagement lift: +6%, Effectiveness score: 18/100 (Ineffective)' },
+            ]}
+            limitations={[
+              'Results show correlation, not causation. Other factors like content quality, posting time, and algorithm changes can influence performance alongside hashtags.',
+              'Requires testing across 5-10 videos for statistically reliable results. Single-video comparisons can be misleading due to normal algorithm variability.',
+              'Hashtag performance changes over time as trends shift and competition grows, so retesting monthly is recommended.',
+            ]}
+            relatedContent={[
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Video Performance Calculator', href: '/calculators/video-performance/' },
+              { title: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="hashtag-performance"
             formula={`View Lift = [(Hashtag Views - Baseline Views) / Baseline Views] × 100

@@ -4,6 +4,7 @@ import { CheckCircle, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -389,6 +390,30 @@ export default function CompletionRateCalculatorPage() {
               ))}
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="This calculator determines the percentage of viewers who watch your TikTok video all the way to the end by dividing average watch time by video duration. Completion rate is one of TikTok's top three algorithmic ranking factors, and videos with 80%+ completion frequently go viral regardless of follower count."
+            howToUse={[
+              'Find your video\'s average watch time in TikTok Analytics (Creator Tools > Analytics > Content > select a video).',
+              'Enter the video duration and the average watch time into the calculator fields.',
+              'Review your completion rate percentage and compare it against the length-specific benchmarks to identify whether your hook, pacing, or ending needs optimization.',
+            ]}
+            examples={[
+              { scenario: 'Short-form comedy clip', input: '12-second video, 10.5-second average watch time', output: '87.5% completion rate -- excellent, strong viral potential' },
+              { scenario: 'Product tutorial', input: '45-second video, 30-second average watch time', output: '66.7% completion rate -- good for this length, consider tightening the middle section' },
+              { scenario: 'Storytelling content', input: '90-second video, 38-second average watch time', output: '42.2% completion rate -- average for long-form, needs stronger hooks or pattern interrupts to reduce drop-off' },
+            ]}
+            limitations={[
+              'Shorter videos inherently achieve higher completion rates, so comparing a 10-second clip against a 90-second video is misleading without adjusting for length.',
+              'Completion rates above 100% are possible when viewers loop (rewatch) content, which is actually a positive signal but can make percentage comparisons confusing.',
+              'The calculator uses average watch time, which does not reveal where viewers drop off -- use TikTok\'s retention graph for second-by-second analysis.',
+            ]}
+            relatedContent={[
+              { title: 'Watch Time Calculator', href: '/calculators/watch-time/' },
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+              { title: 'Comment Rate Calculator', href: '/calculators/comment-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="completion-rate"

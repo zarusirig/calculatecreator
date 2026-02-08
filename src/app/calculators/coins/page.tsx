@@ -10,6 +10,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Coins Calculator: Convert Coins to USD & Diamonds (2026)',
@@ -303,6 +304,31 @@ export default function CoinsCalculatorPage() {
 
           {/* Methodology and FAQ */}
           <div className="max-w-4xl mx-auto">
+            <ToolExplanationSection
+              whatItDoes="This calculator converts TikTok coins to their real-money USD value and shows how many diamonds a creator receives from gift purchases. It helps both viewers understand the true cost of sending gifts and creators understand what they actually earn from coin-based gifts."
+              howToUse={[
+                'Enter the number of TikTok coins you want to convert, or select a coin bundle to see its value.',
+                'Optionally choose your local currency for region-specific pricing.',
+                'View the instant conversion showing USD cost to the viewer, diamonds received by the creator, and the creator payout amount.',
+              ]}
+              examples={[
+                { scenario: 'Viewer checking gift cost', input: '1,000 coins', output: 'Viewer cost: ~$15.20, Creator receives: 500 diamonds ($2.50)' },
+                { scenario: 'Creator calculating LIVE earnings', input: '5,000 coins received from gifts in a stream', output: 'Creator receives: 2,500 diamonds worth $12.50 (TikTok keeps $25.10)' },
+              ]}
+              limitations={[
+                'Coin prices vary slightly by region and are set by Apple App Store and Google Play Store pricing tiers.',
+                'TikTok may change coin bundle pricing or introduce promotional bonus coins at any time.',
+                'The 50% platform fee is fixed and cannot be negotiated, so creators always receive half the coin value.',
+                'Tax obligations on creator earnings vary by country and are not factored into the conversion.',
+              ]}
+              relatedContent={[
+                { title: 'Diamond Converter', href: '/calculators/diamond-converter/' },
+                { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+                { title: 'Complete TikTok Coin Guide', href: '/guides/tiktok-coin-converter-complete-guide/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Coins Calculator"
               formula={`Coin to USD: Coins × $0.0152 = USD cost

@@ -9,6 +9,7 @@ import { SponsorshipROICalculatorWidget } from '@/components/calculators/sponsor
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Sponsorship ROI Calculator: Measure Brand Deal Returns (2026)',
@@ -401,6 +402,32 @@ export default function SponsorshipROICalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="The Sponsorship ROI Calculator evaluates the profitability of brand deals and partnerships by comparing the total revenue generated (sponsorship fee plus conversion-driven sales) against your total costs (production time, equipment, and other expenses). It helps you decide which deals to accept, which to negotiate, and which to decline."
+            howToUse={[
+              'Enter the sponsorship fee -- the total payment you will receive from the brand (net of any agency cuts).',
+              'Calculate and input all production costs including your time at market hourly rate, equipment, props, location fees, and editing.',
+              'Estimate expected reach using your 30-day average video views or the brand promotional support projections.',
+              'Set a realistic conversion rate (1% for new partnerships, 2-3% for established fits) and the average order value from the brand.',
+              'Review the ROI percentage to determine if the deal is worth pursuing, needs renegotiation, or should be declined.',
+            ]}
+            examples={[
+              { scenario: 'Mid-tier fashion creator with strong audience trust', input: '$5,000 fee, $500 production cost, 100,000 expected views, 2% conversion, $50 avg order', output: 'ROI of 1,718% -- exceptional partnership worth expanding into a long-term deal' },
+              { scenario: 'New creator accepting first brand deal with unfamiliar product', input: '$500 fee, $300 production cost, 20,000 expected views, 0.5% conversion, $30 avg order', output: 'ROI of -63% -- deal loses money. Negotiate a higher fee or lower deliverables before accepting.' },
+            ]}
+            limitations={[
+              'Does not account for intangible benefits like brand prestige, networking opportunities, or long-term relationship value.',
+              'Conversion rate estimates are projections -- actual results depend on audience trust, product fit, and content quality.',
+              'Revenue calculations assume all conversions are directly attributable to your content, which may overcount if other channels contribute.',
+              'Does not factor in agency commissions, platform fees, or tax implications that reduce your net income.',
+            ]}
+            relatedContent={[
+              { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
+              { title: 'Break Even Calculator', href: '/calculators/break-even/' },
+              { title: 'Content Value Calculator', href: '/calculators/content-value/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="sponsorship-roi"
             formula={`ROI% = [(Revenue - Cost) / Cost] × 100

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { Scale } from 'lucide-react';
@@ -365,6 +366,32 @@ export default function BreakEvenCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator determines exactly how many units you need to sell to cover your ad spend by dividing your total campaign budget by the profit margin per unit, while also projecting the traffic and conversion metrics required to hit that sales target."
+            howToUse={[
+              'Enter your total ad spend budget for the campaign.',
+              'Input your product selling price and cost per unit (including production, shipping, and platform fees).',
+              'Optionally add your average cost per click and expected conversion rate for funnel projections.',
+              'Review the break-even unit count, required traffic, and projected timeline to profitability.',
+            ]}
+            examples={[
+              { scenario: 'Phone case launch on TikTok Shop', input: '$800 ad spend, $35 price, $12 cost, $0.42 CPC, 2.8% conversion', output: '35 units to break even, 1,905 clicks needed, projected 53 sales (65% ROI)' },
+              { scenario: 'High-ticket digital course', input: '$2,000 ad spend, $297 price, $0 cost (digital), $1.50 CPC, 1.5% conversion', output: '7 units to break even, 1,333 clicks needed, projected 20 sales (very profitable)' },
+              { scenario: 'Low-margin physical product', input: '$500 ad spend, $25 price, $15 cost, $0.30 CPC, 2% conversion', output: '50 units to break even, 1,667 clicks needed, projected 33 sales (not profitable yet)' },
+            ]}
+            limitations={[
+              'Does not automatically include hidden costs like TikTok Shop commission (2-8%), payment processing (~3%), or returns/chargebacks (2-5%).',
+              'Assumes constant CPC and conversion rates, but both fluctuate during the learning phase and as campaigns scale.',
+              'Does not factor in the value of your time spent creating content; add your hourly rate to fixed costs for a true break-even.',
+              'Product cost and CPC may change at higher volumes, affecting the actual break-even point.',
+            ]}
+            relatedContent={[
+              { title: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
+              { title: 'Ad Spend Calculator', href: '/calculators/ad-spend/' },
+              { title: 'Ad Revenue Calculator', href: '/calculators/ad-revenue/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="break-even"
             formula={`Profit per Unit = Product Price - Product Cost

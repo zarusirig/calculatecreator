@@ -8,6 +8,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { MilestoneTrackerCalculatorWidget } from '@/components/calculators/milestone-tracker/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
@@ -440,6 +441,29 @@ export default function MilestoneTrackerCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="Calculates how many days it will take to reach key TikTok follower milestones (1K, 10K, 50K, 100K, and beyond) based on your current follower count and daily growth rate. It shows your progress percentage toward each milestone and estimated arrival dates using compound growth modeling."
+            howToUse={[
+              'Enter your current follower count and select your target milestone (e.g., 10,000 followers for Creator Fund eligibility).',
+              'Input your daily growth rate, which you can calculate by tracking followers over 7-14 days using the formula: [(End - Start) / Start / Days] x 100.',
+              'Review the estimated days to reach your milestone, your current progress percentage, and projected dates for each major follower threshold.',
+            ]}
+            examples={[
+              { scenario: 'Creator approaching Creator Fund eligibility', input: 'Current: 5,000 followers, Daily growth rate: 2%, Target: 10,000', output: '35 days to reach 10K, currently 50% progress, estimated date displayed' },
+              { scenario: 'Micro-influencer targeting brand deal threshold', input: 'Current: 28,000 followers, Daily growth rate: 1.5%, Target: 50,000', output: '39 days to reach 50K, currently 56% progress toward milestone' },
+            ]}
+            limitations={[
+              'Assumes a constant daily growth rate, but real growth fluctuates due to viral content, algorithm changes, and posting consistency.',
+              'Percentage growth naturally decreases as your follower count increases, so long-term projections may overestimate growth for larger accounts.',
+              'Does not account for seasonal factors, niche-specific trends, or unfollows that can slow net growth below the projected rate.',
+            ]}
+            relatedContent={[
+              { title: 'Follower Growth Calculator', href: '/calculators/follower-growth/' },
+              { title: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
+              { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="milestone-tracker"
             formula={`Days to Milestone = log(Target / Current) / log(1 + Daily Growth Rate)

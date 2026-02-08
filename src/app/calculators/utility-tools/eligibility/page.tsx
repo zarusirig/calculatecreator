@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 const faqData = [
   {
@@ -489,6 +490,47 @@ export default function EligibilityCalculatorPage() {
                 </Link>
               </div>
             </Card>
+
+            <ToolExplanationSection
+              whatItDoes="The TikTok Monetization Eligibility Checker evaluates your account against the official requirements for every TikTok monetization program. It checks your follower count, video views, age, account age, and location against thresholds for Creator Fund, Creator Rewards, LIVE Gifts, TikTok Shop Affiliate, and Series (Paid Content). Get instant pass/fail results for each program so you know exactly which revenue streams you can access today and what milestones remain to unlock the rest."
+              howToUse={[
+                'Enter your current TikTok follower count from your profile page',
+                'Input your total video views from the last 30 days (found in TikTok Analytics)',
+                'Set your age and account age in days',
+                'Check the box if you are based in an eligible country (US, UK, Germany, France, etc.)',
+                'Review the results cards showing which programs you qualify for and which requirements you still need to meet',
+                'Focus on the easiest-to-reach milestones first (LIVE Gifts at 1K followers, Shop at no minimum)',
+              ]}
+              examples={[
+                {
+                  scenario: 'New creator just starting out',
+                  input: '500 followers, 5,000 views (30 days), age 22, US-based',
+                  output: 'Eligible: None yet. Closest: TikTok Shop (needs 1,000 followers) and LIVE Gifts (needs 1,000 followers)',
+                },
+                {
+                  scenario: 'Growing creator hitting first milestone',
+                  input: '3,000 followers, 40,000 views (30 days), age 25, US-based',
+                  output: 'Eligible: LIVE Gifts, TikTok Shop Affiliate. Not yet eligible: Creator Fund (needs 10K followers + 100K views)',
+                },
+                {
+                  scenario: 'Established creator checking all programs',
+                  input: '15,000 followers, 250,000 views (30 days), age 28, US-based',
+                  output: 'Eligible: All programs (Creator Fund, Creator Rewards, LIVE Gifts, Shop, Series)',
+                },
+              ]}
+              limitations={[
+                'This tool checks numerical thresholds only and cannot verify account standing or guideline compliance',
+                'Creator Rewards Program is invitation-only even if you meet the baseline requirements',
+                'TikTok may update eligibility requirements without advance notice',
+                'Regional requirements may differ from the standard thresholds shown here',
+                'Meeting all requirements does not guarantee approval as TikTok reviews applications individually',
+              ]}
+              relatedContent={[
+                { title: 'Creator Fund Calculator', href: '/calculators/earnings-revenue/creator-fund/' },
+                { title: 'LIVE Earnings Calculator', href: '/calculators/earnings-revenue/live-earnings/' },
+                { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
+              ]}
+            />
 
             <FAQSection
               pageName="Eligibility Checker"

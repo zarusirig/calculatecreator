@@ -7,6 +7,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { CreatorTaxCalculatorWidget } from '@/components/calculators/creator-tax/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Tax Calculator: Estimate Your Taxes (2026)',
@@ -297,6 +298,47 @@ export default function CreatorTaxCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Creator Tax Calculator estimates your total tax obligations as a self-employed content creator, including federal income tax, state income tax, and the often-overlooked self-employment tax (15.3%). It calculates your effective tax rate, shows how business expense deductions reduce your taxable income, and generates quarterly estimated payment amounts so you can avoid IRS underpayment penalties. Designed specifically for creators who earn income from TikTok, YouTube, brand deals, and other content monetization."
+            howToUse={[
+              'Enter your total annual gross creator income from all sources (TikTok, brand deals, Shop, etc.)',
+              'Input your total business expenses (equipment, software, home office, internet, education)',
+              'Select your state to apply the correct state income tax rate (or 0% for no-income-tax states)',
+              'Review the breakdown showing federal tax, state tax, self-employment tax, and total tax burden',
+              'Check the quarterly payment estimate to know how much to set aside every three months',
+              'Experiment with different expense amounts to see how deductions reduce your tax bill',
+            ]}
+            examples={[
+              {
+                scenario: 'Part-time creator with modest income',
+                input: '$25,000 gross income, $5,000 business expenses, Texas (0% state tax)',
+                output: 'Estimated total tax: ~$4,700 (SE tax: $3,060, Federal: $1,640, State: $0). Quarterly payment: ~$1,175',
+              },
+              {
+                scenario: 'Full-time creator with significant deductions',
+                input: '$75,000 gross income, $15,000 business expenses, New York (6.5% effective state rate)',
+                output: 'Estimated total tax: ~$18,500 (SE tax: $9,180, Federal: $5,420, State: $3,900). Quarterly payment: ~$4,625',
+              },
+              {
+                scenario: 'High-earning creator in high-tax state',
+                input: '$150,000 gross income, $30,000 business expenses, California (9.3% effective state rate)',
+                output: 'Estimated total tax: ~$40,000 (SE tax: $18,360, Federal: $13,500, State: $11,160). Quarterly payment: ~$10,000',
+              },
+            ]}
+            limitations={[
+              'This is a simplified estimate and does not replace professional tax advice from a CPA',
+              'Does not account for retirement contributions (Solo 401k, SEP IRA) which significantly reduce taxable income',
+              'Health insurance premiums, dependent credits, and other deductions are not included',
+              'S-Corp election can reduce self-employment tax but requires separate calculation',
+              'State tax calculations use simplified average rates rather than progressive state brackets',
+            ]}
+            relatedContent={[
+              { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              { title: 'Eligibility Checker', href: '/calculators/utility-tools/eligibility/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="utility-tools/tax"

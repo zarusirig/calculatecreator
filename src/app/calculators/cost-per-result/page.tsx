@@ -9,6 +9,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CostPerResultCalculatorWidget } from '@/components/calculators/cost-per-result/CalculatorWidget';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Cost Per Result Calculator: Measure Ad Efficiency (2026)',
@@ -340,6 +341,31 @@ export default function CostPerResultCalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+              whatItDoes="This calculator divides your total TikTok ad spend by the number of results achieved to determine your cost per result (CPR). It supports multiple result types including clicks (CPC), conversions (CPA), video views (CPV), leads (CPL), and engagements (CPE), then benchmarks your performance against industry averages."
+              howToUse={[
+                'Enter your total ad spend and the number of results (clicks, conversions, leads, etc.) from TikTok Ads Manager.',
+                'Select the result type that matches your campaign objective.',
+                'Review your CPR, results-per-dollar ratio, and how your costs compare to TikTok industry benchmarks.',
+              ]}
+              examples={[
+                { scenario: 'E-commerce conversion campaign', input: '$2,500 spend, 125 purchases', output: '$20.00 CPA -- rated excellent for an $85 average order value (23.5% of revenue)' },
+                { scenario: 'Lead generation campaign', input: '$1,000 spend, 80 leads', output: '$12.50 CPL -- rated good against the $5-$50 industry benchmark range' },
+              ]}
+              limitations={[
+                'CPR does not capture result quality -- a low CPC with poor conversion rates may still waste budget.',
+                'TikTok attribution windows (7-day click, 1-day view) may undercount or overcount conversions.',
+                'The first 3-7 days of a campaign are a learning phase with artificially inflated costs.',
+                'Benchmarks are industry averages and may not reflect your specific product, audience, or competitive landscape.',
+              ]}
+              relatedContent={[
+                { title: 'CPM/CPV Calculator', href: '/calculators/cpm-cpv/' },
+                { title: 'Campaign ROI Calculator', href: '/calculators/campaign-roi/' },
+                { title: 'TikTok Ad Cost Calculator', href: '/calculators/tiktok-ad-cost/' },
+                { title: 'Customer Acquisition Cost Calculator', href: '/calculators/customer-acquisition-cost/' },
+              ]}
+            />
+
           <MethodologySection
             calculatorName="cost-per-result"
             formula={`Cost Per Result (CPR) = Total Ad Spend / Total Results

@@ -9,6 +9,7 @@ import { DollarSign, RotateCcw, TrendingUp, Users, BarChart2, Target, Tag, Shopp
 import { TikTokAdCostCalculatorWidget } from '@/components/calculators/tiktok-ad-cost/CalculatorWidget';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Ad Cost Calculator: CPM, CPV & Budget Estimator (2026)',
@@ -221,6 +222,46 @@ export default function TikTokAdCostCalculatorPage() {
           </div>
 
           <div className="max-w-4xl mx-auto mt-12">
+            <ToolExplanationSection
+              whatItDoes="The TikTok Ad Cost Calculator estimates your total advertising spend based on daily budget, campaign duration, and target CPM (cost per 1,000 impressions). It projects total impressions, estimated clicks, and projected ROI to help brands and marketers plan TikTok ad campaigns effectively. Whether you are running In-Feed Ads, TopView, or Spark Ads, this tool translates budget into expected reach and performance metrics."
+              howToUse={[
+                'Enter your planned daily ad budget (minimum $20/day on TikTok)',
+                'Set the campaign duration in days to calculate total spend',
+                'Input your target CPM based on your industry and ad format (typically $6-$15)',
+                'Review projected impressions, estimated clicks (based on average CTR), and cost efficiency metrics',
+                'Adjust inputs to compare different budget scenarios before launching your campaign',
+              ]}
+              examples={[
+                {
+                  scenario: 'Small business testing TikTok ads',
+                  input: '$50/day budget, 14-day campaign, $10 CPM',
+                  output: 'Total spend: $700, Estimated impressions: 70,000, Est. clicks: 700-1,400',
+                },
+                {
+                  scenario: 'E-commerce brand running holiday campaign',
+                  input: '$200/day budget, 30-day campaign, $8 CPM',
+                  output: 'Total spend: $6,000, Estimated impressions: 750,000, Est. clicks: 7,500-15,000',
+                },
+                {
+                  scenario: 'Creator promoting their own product',
+                  input: '$20/day budget, 7-day campaign, $12 CPM',
+                  output: 'Total spend: $140, Estimated impressions: 11,667, Est. clicks: 117-233',
+                },
+              ]}
+              limitations={[
+                'Actual CPM varies based on audience targeting, ad quality, competition, and time of year',
+                'TikTok uses auction-based pricing so costs fluctuate in real time',
+                'Click-through rates and conversion rates depend heavily on creative quality',
+                'Holiday periods (Q4, Black Friday) can increase CPM by 50-200%',
+                'Results are estimates only and do not guarantee specific campaign performance',
+              ]}
+              relatedContent={[
+                { title: 'RPM Calculator', href: '/calculators/commerce-ads/rpm-cpm/' },
+                { title: 'Shop Profit Calculator', href: '/calculators/commerce-ads/shop-profit/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              ]}
+            />
+
             <MethodologySection
               calculatorName="TikTok Ad Cost Calculator"
               formula="CPM = (Total Ad Spend ÷ Impressions) × 1,000"

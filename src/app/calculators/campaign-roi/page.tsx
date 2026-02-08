@@ -3,6 +3,7 @@ import { TrendingUp, ShoppingCart, Smartphone, Target, Palette } from 'lucide-re
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
@@ -267,6 +268,32 @@ export default function CampaignROICalculatorPage() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <ToolExplanationSection
+            whatItDoes="This calculator measures the profitability of your TikTok advertising campaigns by computing both ROI percentage and ROAS (Return on Ad Spend) from your actual ad spend, additional costs, and attributed revenue, so you can determine whether to scale, optimize, or pause a campaign."
+            howToUse={[
+              'Enter your total ad spend for the campaign period.',
+              'Input the total revenue generated and attributed to this campaign (use UTM parameters, discount codes, or TikTok Pixel for tracking).',
+              'Optionally add additional costs such as creator fees, production costs, or agency fees.',
+              'Review your ROI percentage, ROAS multiple, and net profit to decide your next scaling action.',
+            ]}
+            examples={[
+              { scenario: 'Profitable e-commerce campaign', input: '$2,000 ad spend, $6,000 revenue, $500 additional costs', output: '140% ROI, 2.4x ROAS, $3,500 net profit — optimize before aggressive scaling' },
+              { scenario: 'High-performing lead gen campaign', input: '$1,500 ad spend, $8,000 revenue, $0 additional costs', output: '433% ROI, 5.3x ROAS, $6,500 profit — scale aggressively' },
+              { scenario: 'Underperforming brand awareness push', input: '$5,000 ad spend, $4,000 revenue, $1,000 additional costs', output: '-33% ROI, 0.67x ROAS, $2,000 loss — pause and fix targeting or creative' },
+            ]}
+            limitations={[
+              'Attribution is imperfect; multi-touch journeys and view-through conversions mean some revenue may go untracked.',
+              'Early campaigns (under 7 days) show lower ROI during the algorithm learning phase, which is not representative of long-term performance.',
+              'Calculations use gross revenue by default; for net ROI, multiply revenue by your profit margin before entering.',
+              'Seasonal factors significantly affect ROI, with Q4 holiday campaigns typically performing 20-40% better than Q1.',
+            ]}
+            relatedContent={[
+              { title: 'Ad Spend Calculator', href: '/calculators/ad-spend/' },
+              { title: 'Break-Even Calculator', href: '/calculators/break-even/' },
+              { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
+            ]}
+          />
+
           <MethodologySection
             calculatorName="campaign-roi"
             formula={`Return on Investment (ROI) = [(Revenue - Cost) / Cost] × 100

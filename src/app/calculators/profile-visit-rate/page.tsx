@@ -10,6 +10,7 @@ import { ProfileVisitRateCalculatorWidget } from '@/components/calculators/profi
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Profile Visit Rate Calculator (2026)',
@@ -295,6 +296,31 @@ export default function ProfileVisitRateCalculatorPage() {
               ))}
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Profile Visit Rate Calculator measures what percentage of your video viewers are curious enough to click through to your TikTok profile. This funnel metric is the critical bridge between getting views and gaining followers -- without profile visits, even viral videos fail to convert into lasting audience growth."
+            howToUse={[
+              'Open TikTok Analytics by navigating to Profile, then Creator Tools, then Analytics.',
+              'Enter the total views for the video you want to analyze in the first field.',
+              'Enter the number of profile visits attributed to that video (found under the video analytics section).',
+              'Review your profile visit rate percentage and compare it against the niche-specific benchmarks displayed alongside your results.',
+            ]}
+            examples={[
+              { scenario: 'Finance education video with strong call-to-action', input: '100,000 views, 12,000 profile visits', output: '12% profile visit rate -- Excellent. Educational finance content typically drives high curiosity.' },
+              { scenario: 'Dance trend video without any profile mention', input: '500,000 views, 5,000 profile visits', output: '1% profile visit rate -- Below average. Trend content rarely motivates viewers to explore your profile.' },
+            ]}
+            limitations={[
+              'TikTok Analytics may not attribute profile visits to specific videos with perfect accuracy, especially when multiple videos are performing simultaneously.',
+              'Profile visit rate varies dramatically by niche -- a 5% rate is excellent for entertainment but average for educational content.',
+              'Does not measure what happens after the profile visit (follow rate, content browsing depth, or link clicks).',
+              'Anonymous and logged-out viewers may visit profiles without being tracked in analytics.',
+            ]}
+            relatedContent={[
+              { title: 'Follower Growth Calculator', href: '/calculators/follower-growth/' },
+              { title: 'Follower Conversion Calculator', href: '/calculators/follower-conversion/' },
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="profile-visit-rate"

@@ -10,6 +10,7 @@ import { ShareRatioCalculatorWidget } from '@/components/calculators/share-ratio
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Share Rate Calculator: Measure Viral Potential (2026)',
@@ -273,6 +274,31 @@ export default function ShareRatioCalculatorPage() {
               </div>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="The Share Ratio Calculator measures what percentage of your viewers actively share your TikTok videos with others. Shares are the single most powerful engagement signal on TikTok because they require deliberate effort, carry personal endorsement risk, and expose your content to entirely new audience networks -- triggering exponential reach growth."
+            howToUse={[
+              'Go to TikTok Creator Tools, then Analytics, then the Content tab, and select the video you want to evaluate.',
+              'Find the "Shares" count under the engagement metrics for that video.',
+              'Enter the total view count and total shares into the calculator.',
+              'Review your share ratio percentage and the accompanying analysis of where it falls against platform benchmarks.',
+            ]}
+            examples={[
+              { scenario: 'Relatable humor video that friends tag each other in', input: '150,000 views, 9,000 shares', output: '6% share ratio -- Excellent. Relatable comedy drives high shares because viewers immediately think of specific people to send it to.' },
+              { scenario: 'Educational finance tip about saving money', input: '75,000 views, 3,000 shares', output: '4% share ratio -- Good. Financial tips are shared because viewers want to help friends with useful information.' },
+            ]}
+            limitations={[
+              'Share ratio does not distinguish between shares sent via DM, shared to stories, or shared outside TikTok -- all count equally.',
+              'Niche benchmarks vary widely; a 2% share rate is excellent for dance content but only average for educational content.',
+              'Controversial or polarizing content may have inflated share rates that do not translate into positive audience growth.',
+              'Shares accumulate over time, so measuring too early (under 24 hours) may undercount the final share ratio.',
+            ]}
+            relatedContent={[
+              { title: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
+              { title: 'Save Rate Calculator', href: '/calculators/save-rate/' },
+              { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="share-ratio"

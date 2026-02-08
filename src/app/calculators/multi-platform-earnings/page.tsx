@@ -9,6 +9,7 @@ import { Banknote, DollarSign, Gem, Smartphone } from 'lucide-react';
 import { MultiPlatformEarningsCalculatorWidget } from '@/components/calculators/multi-platform-earnings/CalculatorWidget';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'Multi-Platform Creator Earnings Calculator (2026)',
@@ -277,6 +278,29 @@ export default function MultiPlatformEarningsCalculatorPage() {
               </p>
             </div>
           </Card>
+
+          <ToolExplanationSection
+            whatItDoes="Compares and combines your estimated ad revenue across TikTok, YouTube, and Instagram using platform-specific RPM rates. It shows which platform delivers the highest return for your view count and calculates your total combined monthly income from all three channels."
+            howToUse={[
+              'Enter your follower count and average monthly views for each platform you are active on (TikTok, YouTube, Instagram).',
+              'The calculator applies platform-specific RPM rates (TikTok: $0.02-0.04, Instagram: $0.50-3, YouTube: $1.50-8 per 1K views) to estimate earnings.',
+              'Review the side-by-side comparison to see which platform generates the most revenue and your total combined monthly earnings across all platforms.',
+            ]}
+            examples={[
+              { scenario: 'Creator with strong TikTok but growing YouTube', input: 'TikTok: 2M views, YouTube: 200K views, Instagram: 500K views', output: 'TikTok: $60, YouTube: $800, Instagram: $750. Total: $1,610/month. YouTube earns 13x more per view than TikTok.' },
+              { scenario: 'Finance niche creator across all platforms', input: 'TikTok: 1M views, YouTube: 500K views, Instagram: 1M views', output: 'TikTok: $30, YouTube: $4,000, Instagram: $1,500. Total: $5,530/month. YouTube dominates despite fewest views.' },
+            ]}
+            limitations={[
+              'Estimates ad revenue only. Brand deals, affiliate income, product sales, and LIVE gifts are not included but can be 5-10x larger than ad revenue.',
+              'Actual RPM varies significantly by niche, audience geography, content quality, and seasonal advertising trends (Q4 pays more than Q1).',
+              'YouTube requires 1K subscribers and 4K watch hours to monetize. Instagram and TikTok monetization eligibility thresholds also apply.',
+            ]}
+            relatedContent={[
+              { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+              { title: 'RPM Calculator', href: '/calculators/rpm/' },
+              { title: 'Ad Revenue Calculator', href: '/calculators/ad-revenue/' },
+            ]}
+          />
 
           <MethodologySection
             calculatorName="multi-platform-earnings"

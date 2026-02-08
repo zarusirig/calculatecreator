@@ -20,6 +20,7 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { VideoPerformanceCalculatorWidget } from '@/components/calculators/video-performance/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
+import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
   title: 'TikTok Video Performance Calculator 2026 | Analyze Your Content',
@@ -423,6 +424,35 @@ export default function VideoPerformanceCalculatorPage() {
                 </li>
               </ul>
             </Card>
+          </div>
+
+          {/* Tool Explanation */}
+          <div className="mb-10">
+            <ToolExplanationSection
+              whatItDoes="The Video Performance Calculator provides a comprehensive analysis of your TikTok video by combining views, likes, comments, shares, and watch time into a weighted performance score. It compares your metrics against 2026 platform benchmarks to show exactly where your content excels and where it needs improvement."
+              howToUse={[
+                'Enter your total video views from TikTok Analytics -- this is the base metric all other rates are calculated from.',
+                'Input likes, comments, and shares to compute your engagement rate breakdown and see which interaction types are strongest.',
+                'Add your average watch time percentage (found in video analytics) to factor in retention quality.',
+                'Review the overall performance score, engagement rate, and virality indicators compared to platform averages.',
+                'Use the per-metric breakdown to identify which specific areas to optimize for your next video.',
+              ]}
+              examples={[
+                { scenario: 'Educational tutorial with strong retention and moderate engagement', input: '100,000 views, 8,000 likes, 500 comments, 300 shares, 75% watch time', output: 'Good performance score with 8.8% engagement rate. Watch time above 70% signals strong algorithm favor.' },
+                { scenario: 'Trending dance video with high views but low interaction depth', input: '500,000 views, 15,000 likes, 200 comments, 100 shares, 40% watch time', output: 'Below average performance score despite high views. 3.06% engagement and 40% watch time indicate passive viewing.' },
+              ]}
+              limitations={[
+                'Performance scores are relative to content niche averages -- a comedy video and a finance tutorial have different benchmark expectations.',
+                'Watch time percentage is self-reported since TikTok Analytics shows it per-video but does not export it easily.',
+                'Algorithm weights change over time as TikTok updates its ranking signals, so benchmark thresholds may shift.',
+                'Does not account for external factors like trending sounds, seasonal topics, or paid promotion that inflate certain metrics.',
+              ]}
+              relatedContent={[
+                { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
+                { title: 'Viral Potential Calculator', href: '/calculators/viral-potential/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
+              ]}
+            />
           </div>
 
           {/* Methodology */}
