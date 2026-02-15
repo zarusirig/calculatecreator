@@ -80,7 +80,7 @@ const alternatives = [
   {
     method: 'Brand Deals',
     availability: 'Worldwide',
-    description: 'Direct sponsorships with brands work in any country. Focus on engagement rate and niche audience to attract sponsors.',
+    description: 'Direct sponsorships with brands work in any country. Focus on your engagement rate and niche audience to attract sponsors.',
     potential: '$100–$10,000+ per post depending on following',
     icon: DollarSign,
   },
@@ -148,15 +148,15 @@ const upcomingExpansions = [
 const faqs = [
   {
     question: 'What is the difference between Creator Fund and Creator Rewards Program?',
-    answer: 'The Creator Rewards Program replaced the Creator Fund in the US and select countries starting in 2023. Key differences: Creator Rewards pays $0.40-$1.00 per 1,000 views (up to 20x higher than the old Fund), requires videos to be 1 minute or longer, and has higher requirements (10K followers, 100K monthly views). The old Creator Fund paid $0.02-$0.04 per 1,000 views for any video length. Creator Rewards focuses on longer-form content and prioritizes watch time over raw view counts.',
+    answer: '**The Creator Rewards Program replaced the Creator Fund in the US and select countries starting in 2023.** Creator Rewards pays $0.40 to $1.00 per 1,000 views (up to 20x higher than the old Fund). It requires videos to be 1 minute or longer and has higher requirements (10K followers, 100K monthly views). The old Creator Fund paid $0.02 to $0.04 per 1,000 views for any video length. Creator Rewards focuses on longer-form content and prioritizes watch time over raw view counts.',
   },
   {
     question: 'Why is Creator Fund not available in my country?',
-    answer: 'TikTok rolls out monetization programs gradually based on advertising market strength, regulatory environment, and user base size. Countries with strong digital advertising markets (US, UK, Germany) get priority access because higher ad revenues enable better creator payouts. TikTok must also navigate local regulations about content creator payments, tax compliance, and data privacy laws. Some regions may never get Creator Fund but receive TikTok Shop or other monetization features instead based on market conditions.',
+    answer: '**TikTok rolls out monetization programs gradually based on advertising market strength, regulatory environment, and user base size.** Countries with strong digital advertising markets (US, UK, Germany) get priority access. Higher ad revenues enable better creator payouts. TikTok navigates local regulations about content creator payments, tax compliance, and data privacy laws. Some regions will never get the Creator Fund but will receive TikTok Shop or other monetization features based on market conditions.',
   },
   {
     question: 'Can I access Creator Fund by using a VPN?',
-    answer: 'No. TikTok verifies your eligibility through multiple signals including phone number, payment information, IP address history, device location, and behavioral patterns. Using a VPN to fake your location violates TikTok\'s Terms of Service and can result in permanent account ban, forfeiture of any earnings, and inability to join any future monetization programs. TikTok\'s fraud detection systems are sophisticated and will flag suspicious activity. Focus on legitimate alternatives available in your region instead.',
+    answer: '**No, TikTok verifies your eligibility through 5 signals: phone number, payment information, IP address history, device location, and behavioral patterns.** Using a VPN to fake your location violates the Terms of Service of TikTok. This results in permanent account ban, forfeiture of earnings, and inability to join future monetization programs. The fraud detection systems of TikTok flag suspicious activity. Focus on legitimate alternatives available in your region instead.',
   },
   {
     question: 'What are the requirements for Creator Rewards Program?',
@@ -164,7 +164,7 @@ const faqs = [
   },
   {
     question: 'How do RPM rates vary by country and why?',
-    answer: 'RPM (revenue per thousand views) varies dramatically by region due to local advertising rates. US Creator Rewards pays $0.40-$1.00 per 1K views because US advertisers pay premium CPM rates ($5-$15 per 1,000 ad impressions). UK/Germany pay $0.25-$0.60 due to strong European advertising markets. Legacy Creator Fund in other regions pays only $0.02-$0.04 because advertiser demand is lower. These differences directly reflect what advertisers are willing to pay to reach audiences in each country—creators earn more when their viewers are in high-value advertising markets.',
+    answer: '**Revenue Per Mille (RPM) varies dramatically by region due to local advertising rates.** US Creator Rewards pays $0.40 to $1.00 per 1K views. US advertisers pay premium Cost Per Mille (CPM) rates ($5 to $15 per 1,000 ad impressions). UK and Germany pay $0.25 to $0.60 due to strong European advertising markets. The legacy Creator Fund in other regions pays only $0.02 to $0.04 because advertiser demand is lower. These differences directly reflect what advertisers pay to reach audiences in each country. Creators earn more when their viewers live in high-value advertising markets.',
   },
   {
     question: 'What is the best monetization alternative for creators in ineligible countries?',
@@ -234,7 +234,7 @@ export default function CreatorFundCountriesPage() {
         <Card className="bg-blue-50 border-blue-200">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">2026 Program Overview</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            TikTok offers two main view-based payment programs: the <strong>Creator Rewards Program</strong> (paying $0.40-$1.00 per 1K views) in select countries, and the legacy <strong>Creator Fund</strong> (paying $0.02-$0.04 per 1K views) in others. Creator Rewards is gradually replacing the Creator Fund in major markets.
+            TikTok offers two main view-based payment programs: the <strong>Creator Rewards Program</strong> (paying $0.40 to $1.00 per 1K views) in select countries, and the legacy <strong>Creator Fund</strong> (paying $0.02 to $0.04 per 1K views) in others. Creator Rewards is gradually replacing the Creator Fund in major markets.
           </p>
           <div className="grid md:grid-cols-3 gap-4 mt-4">
             <div className="p-3 bg-white rounded-lg text-center">
@@ -313,14 +313,14 @@ export default function CreatorFundCountriesPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Understanding Regional Eligibility</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Regional availability of Creator Fund and Creator Rewards depends on multiple factors including advertising market maturity, regulatory framework, payment infrastructure, and TikTok's strategic priorities in each market.
+            Regional availability of Creator Fund and Creator Rewards depends on multiple factors including advertising market maturity, regulatory framework, payment infrastructure, and the strategic priorities of TikTok in each market.
           </p>
 
           <div className="space-y-4">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
               <h3 className="font-semibold text-blue-900 mb-2">Americas: US Leading, Others Following</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                The United States receives the premium Creator Rewards Program with highest global RPM rates ($0.40-$1.00) due to the world's strongest digital advertising market. Canada maintains legacy Creator Fund in select provinces with Creator Rewards expansion expected mid-2026. Mexico and Brazil have limited Creator Fund access with lower RPM rates ($0.01-$0.03) reflecting smaller advertising markets. Most Latin American countries lack Creator Fund but have active TikTok Shop and LIVE gifting communities.
+                The United States receives the premium Creator Rewards Program with the highest global RPM rates ($0.40 to $1.00) due to the strongest digital advertising market in the world. Canada maintains the legacy Creator Fund in select provinces with Creator Rewards expansion expected mid-2026. Mexico and Brazil have limited Creator Fund access with lower RPM rates ($0.01 to $0.03) reflecting smaller advertising markets. Most Latin American countries lack the Creator Fund but have active TikTok Shop and LIVE gifting communities.
               </p>
               <p className="text-body-xs text-blue-800 font-medium">Key insight: Focus on brand deals in Latin America—they pay significantly better than regional Creator Fund rates.</p>
             </div>
@@ -328,7 +328,7 @@ export default function CreatorFundCountriesPage() {
             <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
               <h3 className="font-semibold text-purple-900 mb-2">Europe: Gradual Creator Rewards Expansion</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                Western European countries (UK, Germany, France, Italy, Spain) have received Creator Rewards Program with strong RPM rates ($0.20-$0.80) reflecting mature advertising markets and high-value audiences. The UK leads European markets at $0.30-$0.80 RPM. TikTok Shop launched in France and Italy in Q3 2025, with Creator Rewards following. Netherlands and Poland maintain legacy Creator Fund with Rewards Program rollout expected throughout 2026. Scandinavia and Benelux countries are prioritized for Q2-Q3 2026 expansion.
+                Western European countries (UK, Germany, France, Italy, Spain) have received the Creator Rewards Program with strong RPM rates ($0.20 to $0.80) reflecting mature advertising markets and high-value audiences. The UK leads European markets at $0.30 to $0.80 RPM. TikTok Shop launched in France and Italy in Q3 2025, with Creator Rewards following. The Netherlands and Poland maintain the legacy Creator Fund with Rewards Program rollout expected throughout 2026. TikTok prioritizes Scandinavia and Benelux countries for Q2 to Q3 2026 expansion.
               </p>
               <p className="text-body-xs text-purple-800 font-medium">Key insight: European creators benefit from strong brand deal markets even in countries without Creator Rewards.</p>
             </div>
@@ -336,7 +336,7 @@ export default function CreatorFundCountriesPage() {
             <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
               <h3 className="font-semibold text-orange-900 mb-2">Asia-Pacific: Mixed Availability, Strong Alternatives</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                Asia-Pacific shows the most fragmented monetization landscape. Australia receives Creator Rewards with regional rollout continuing through 2026. Japan and South Korea maintain legacy Creator Fund with strong LIVE gifting cultures that often generate more income than fund payments. Southeast Asian countries (Malaysia, Indonesia, Thailand, Vietnam, Philippines) lack Creator Fund but have extremely active TikTok Shop and LIVE gifting ecosystems. Indonesia's TikTok Shop ban in 2023 (partially lifted 2024) demonstrates regulatory complexity. Singapore offers limited Creator Fund but leads TikTok Shop affiliate earnings in the region.
+                Asia-Pacific shows the most fragmented monetization landscape. Australia receives Creator Rewards with regional rollout continuing through 2026. Japan and South Korea maintain the legacy Creator Fund with strong LIVE gifting cultures that often generate more income than fund payments. Southeast Asian countries (Malaysia, Indonesia, Thailand, Vietnam, Philippines) lack the Creator Fund but have active TikTok Shop and LIVE gifting ecosystems. The TikTok Shop ban in Indonesia in 2023 (partially lifted 2024) demonstrates regulatory complexity. Singapore offers limited Creator Fund but leads TikTok Shop affiliate earnings in the region.
               </p>
               <p className="text-body-xs text-orange-800 font-medium">Key insight: Southeast Asian creators often earn more from LIVE gifts and TikTok Shop than Western creators earn from Creator Fund.</p>
             </div>
@@ -344,7 +344,7 @@ export default function CreatorFundCountriesPage() {
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
               <h3 className="font-semibold text-teal-900 mb-2">Middle East & Africa: Emerging Markets</h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                UAE and Saudi Arabia offer limited Creator Fund availability with growing LIVE gifting communities reflecting regional cultural preferences. South Africa and Nigeria lack official Creator Fund but host thriving creator economies based on brand deals and external monetization. The region faces challenges including payment infrastructure limitations, regulatory uncertainty around creator payments, and varying internet penetration rates. However, high engagement rates (often 8-15% vs global average of 4-6%) make Middle Eastern and African creators valuable to brands.
+                UAE and Saudi Arabia offer limited Creator Fund availability with growing LIVE gifting communities reflecting regional cultural preferences. South Africa and Nigeria lack the official Creator Fund but host thriving creator economies based on brand deals and external monetization. The region faces challenges including payment infrastructure limitations, regulatory uncertainty around creator payments, and varying internet penetration rates. High engagement rates (often 8% to 15% vs the global average of 4% to 6%) make Middle Eastern and African creators valuable to brands.
               </p>
               <p className="text-body-xs text-teal-800 font-medium">Key insight: High engagement rates compensate for lack of Creator Fund access—leverage this for premium brand deals.</p>
             </div>
@@ -355,7 +355,7 @@ export default function CreatorFundCountriesPage() {
         <Card className="bg-green-50 border-green-200">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monetization Alternatives for Ineligible Countries</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Not having Creator Fund access doesn't mean you can't earn on TikTok. Many top-earning creators worldwide rely primarily on these alternative monetization methods—often earning 5-10x more than creators who depend solely on Creator Fund.
+            Lacking Creator Fund access does not prevent you from earning on TikTok. Top-earning creators worldwide rely on these alternative monetization methods. They often earn 5 to 10x more than creators who depend solely on the Creator Fund.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {alternatives.map((alt, idx) => (
@@ -446,7 +446,7 @@ export default function CreatorFundCountriesPage() {
             2026 Expansion Roadmap & Upcoming Countries
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok confirmed significant Creator Rewards Program expansion throughout 2026, prioritizing markets with strong advertising growth and established TikTok Shop presence. Here's what we know about upcoming launches based on official announcements and market signals.
+            TikTok confirmed significant Creator Rewards Program expansion throughout 2026, prioritizing markets with strong advertising growth and established TikTok Shop presence. Here is what we know about upcoming launches based on official announcements and market signals.
           </p>
 
           <div className="overflow-x-auto mb-6">
@@ -515,7 +515,7 @@ export default function CreatorFundCountriesPage() {
             <div>
               <h3 className="font-semibold text-red-900 mb-3 text-heading-md">Critical Warning: VPN Use & Compliance Issues</h3>
               <p className="text-body-md text-neutral-700 mb-4">
-                Using a VPN or fake location to access Creator Fund in ineligible regions is a violation of TikTok's Terms of Service that can result in severe consequences. Here's what you need to know about why this doesn't work and what happens if you try.
+                Using a VPN or fake location to access the Creator Fund in ineligible regions violates the Terms of Service of TikTok and results in severe consequences. Here is what you need to know about why this does not work and what happens when you try.
               </p>
 
               <div className="space-y-3">
@@ -546,7 +546,7 @@ export default function CreatorFundCountriesPage() {
                 <div className="p-3 bg-white rounded-lg border border-red-200">
                   <h4 className="font-semibold text-neutral-900 mb-2">What About "Successful" VPN Stories?</h4>
                   <p className="text-body-sm text-neutral-700 mb-2">
-                    Some creators claim to successfully access Creator Fund via VPN. Here's the reality: TikTok's fraud detection often takes 30-90 days to flag suspicious accounts. These creators may receive initial approval but face sudden account termination when behavioral patterns are analyzed. Even if you get past initial verification, you cannot receive payments without matching bank details from an eligible country—the scheme fails at payout stage.
+                    Some creators claim to access the Creator Fund via VPN. Here is the reality: the fraud detection of TikTok often takes 30 to 90 days to flag suspicious accounts. These creators receive initial approval but face sudden account termination when behavioral patterns are analyzed. You cannot receive payments without matching bank details from an eligible country, even after passing initial verification. The scheme fails at the payout stage.
                   </p>
                 </div>
               </div>

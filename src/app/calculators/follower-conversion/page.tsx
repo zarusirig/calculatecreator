@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good conversion rate for TikTok?',
-    answer: 'Overall conversion (follower to purchase): Excellent 5%+, Good 2-5%, Average 0.5-2%. However, CTR (5-10%) and site conversion (2-5%) matter more for optimization. Most issues are in CTR (weak CTA) or site conversion (poor product pages).',
+    answer: '**Overall conversion (follower to purchase) benchmarks are as follows.** Excellent: 5%+. Good: 2% to 5%. Average: 0.5% to 2%. Click-Through Rate (CTR) of 5% to 10% and site conversion of 2% to 5% matter more for optimization. Most issues occur in CTR (weak CTA) or site conversion (poor product pages).',
   },
   {
     question: 'How do I improve my conversion rate?',
-    answer: 'Improve CTR: Stronger CTAs, bio link optimization, content that drives action. Improve Conversion: Better product pages, social proof, limited-time offers, abandoned cart recovery, retargeting ads, lower friction checkout.',
+    answer: '**Improve CTR with stronger CTAs, bio link optimization, and content that drives action.** Improve conversion with better product pages, social proof, limited-time offers, abandoned cart recovery, retargeting ads, and lower friction checkout.',
   },
   {
     question: 'How do I track follower conversions?',
-    answer: 'Use link tracking tools (Bitly, Linktree, Shopify), UTM parameters to track traffic source, TikTok Pixel for ad tracking, Google Analytics for behavior, and Shopify/WooCommerce for sales attribution.',
+    answer: '**Use 5 tracking methods.** Link tracking tools (Bitly, Linktree, Shopify), UTM parameters to track traffic source, TikTok Pixel for ad tracking, Google Analytics for behavior, and Shopify or WooCommerce for sales attribution.',
   },
   {
     question: 'What is good revenue per follower?',
-    answer: '$0.10+ per follower is excellent for e-commerce. $0.05-0.10 is good. Under $0.05 needs improvement. Example: 10K followers at $0.10 = $1,000 revenue. This metric helps calculate follower ROI and growth targets.',
+    answer: '**$0.10+ per follower is excellent for e-commerce.** $0.05 to $0.10 is good. Under $0.05 needs improvement. Example: 10K followers at $0.10 equals $1,000 revenue. This metric helps calculate follower Return on Investment (ROI) and growth targets.',
   },
 ];
 
@@ -79,7 +79,9 @@ export default function FollowerConversionCalculatorPage() {
             TikTok Follower Conversion Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your complete e-commerce conversion funnel from TikTok followers to paying customers using click-through rates and purchase conversion metrics. This calculator tracks your CTR (typically 5-10% for successful creators), site conversion rate (2-5% benchmark), and overall conversion to reveal where you're losing potential buyers. Measure revenue per follower to understand audience monetization effectiveness and identify exactly where to focus optimization efforts for maximum impact.
+            Calculate your complete e-commerce conversion funnel from TikTok followers to paying customers. Use click-through rates and purchase conversion metrics. This calculator tracks your CTR (typically 5% to 10% for successful creators), site conversion rate (2% to 5% benchmark), and overall conversion.
+
+            Discover where you lose potential buyers. Measure revenue per follower to understand audience monetization effectiveness. Identify exactly where to focus optimization efforts for maximum impact.
           </p>
         </div>
 
@@ -373,19 +375,19 @@ Revenue: $3,750 ($0.075 per follower)`}
             faqs={[
               {
                 question: 'What is a good conversion rate for TikTok?',
-                answer: 'Overall conversion (follower to purchase): Excellent 5%+, Good 2-5%, Average 0.5-2%. However, CTR (5-10%) and site conversion (2-5%) matter more for optimization. Most issues are in CTR (weak CTA) or site conversion (poor product pages).',
+                answer: '**Overall conversion (follower to purchase) benchmarks are as follows.** Excellent: 5%+. Good: 2% to 5%. Average: 0.5% to 2%. Click-Through Rate (CTR) of 5% to 10% and site conversion of 2% to 5% matter more for optimization. Most issues occur in CTR (weak CTA) or site conversion (poor product pages).',
               },
               {
                 question: 'How do I improve my conversion rate?',
-                answer: 'Improve CTR: Stronger CTAs, bio link optimization, content that drives action. Improve Conversion: Better product pages, social proof, limited-time offers, abandoned cart recovery, retargeting ads, lower friction checkout.',
+                answer: '**Improve CTR with stronger CTAs, bio link optimization, and content that drives action.** Improve conversion with better product pages, social proof, limited-time offers, abandoned cart recovery, retargeting ads, and lower friction checkout.',
               },
               {
                 question: 'How do I track follower conversions?',
-                answer: 'Use link tracking tools (Bitly, Linktree, Shopify), UTM parameters to track traffic source, TikTok Pixel for ad tracking, Google Analytics for behavior, and Shopify/WooCommerce for sales attribution.',
+                answer: '**Use 5 tracking methods.** Link tracking tools (Bitly, Linktree, Shopify), UTM parameters to track traffic source, TikTok Pixel for ad tracking, Google Analytics for behavior, and Shopify or WooCommerce for sales attribution.',
               },
               {
                 question: 'What is good revenue per follower?',
-                answer: '$0.10+ per follower is excellent for e-commerce. $0.05-0.10 is good. Under $0.05 needs improvement. Example: 10K followers at $0.10 = $1,000 revenue. This metric helps calculate follower ROI and growth targets.',
+                answer: '**$0.10+ per follower is excellent for e-commerce.** $0.05 to $0.10 is good. Under $0.05 needs improvement. Example: 10K followers at $0.10 equals $1,000 revenue. This metric helps calculate follower Return on Investment (ROI) and growth targets.',
               },
               {
                 question: 'How often should I measure my conversion funnel?',

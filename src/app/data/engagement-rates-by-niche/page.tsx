@@ -106,13 +106,13 @@ export default function EngagementRatesPage() {
           </h2>
           <div className="space-y-4 text-body-md text-neutral-700">
             <p>
-              Engagement rate measures how actively your audience interacts with your content relative to your follower count. It's calculated as: <strong>(Likes + Comments + Shares) ÷ Followers × 100</strong>. This metric is crucial because it indicates content quality and audience connection—not just reach.
+              Engagement rate measures how actively your audience interacts with your content relative to your follower count. The formula is: <strong>(Likes + Comments + Shares) divided by Followers multiplied by 100</strong>. This metric indicates content quality and audience connection, not just reach.
             </p>
             <p>
-              On TikTok, engagement rates are significantly higher than other platforms (Instagram averages 1-3%, Facebook 0.5-1%). This is because TikTok's algorithm prioritizes content discovery over follower-based feeds, leading to more active engagement from new viewers.
+              TikTok engagement rates are higher than other platforms (Instagram averages 1% to 3%, Facebook 0.5% to 1%). The algorithm of TikTok prioritizes content discovery over follower-based feeds, leading to more active engagement from new viewers.
             </p>
             <p>
-              Brands increasingly prioritize engagement rate over follower count when selecting creators for partnerships. A creator with 50K followers and 8% engagement often delivers better ROI than one with 500K followers and 2% engagement.
+              Brands prioritize engagement rate over follower count when selecting creators for partnerships. A creator with 50K followers and 8% engagement often delivers better ROI than one with 500K followers and 2% engagement.
             </p>
           </div>
         </Card>
@@ -123,7 +123,7 @@ export default function EngagementRatesPage() {
             Engagement Rates by Content Niche
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Data collected from analysis of 50,000+ TikTok accounts across all niches (Q4 2024 - Q1 2026):
+            Data collected from analysis of 50,000+ TikTok accounts across all niches (Q4 2024 to Q1 2026).
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">
@@ -179,7 +179,7 @@ export default function EngagementRatesPage() {
             Engagement Rates by Follower Count
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Engagement rates naturally decrease as follower counts increase. Here's what to expect at each tier:
+            Engagement rates naturally decrease as follower counts increase. Here is what to expect at each tier.
           </p>
           <div className="space-y-4">
             {engagementByFollowerSize.map((tier, index) => (
@@ -265,12 +265,12 @@ export default function EngagementRatesPage() {
             {[
               {
                 title: 'Master the Hook',
-                desc: 'The first 1-3 seconds determine whether viewers watch or scroll. Start with a question, surprising statement, or visual hook that creates curiosity.',
+                desc: 'The first 1 to 3 seconds determine whether viewers watch or scroll. Start with a question, surprising statement, or visual hook that creates curiosity.',
                 icon: <TrendingUp className="w-6 h-6 text-primary-600" />
               },
               {
                 title: 'Post at Optimal Times',
-                desc: 'Analyze your audience analytics to find when your followers are most active. Generally, 7-9 AM and 7-11 PM in your target timezone perform best.',
+                desc: 'Analyze your audience analytics to find when your followers are most active. Generally, 7 to 9 AM and 7 to 11 PM in your target timezone perform best.',
                 icon: <Clock className="w-6 h-6 text-primary-600" />
               },
               {
@@ -285,7 +285,7 @@ export default function EngagementRatesPage() {
               },
               {
                 title: 'Use Trending Elements Wisely',
-                desc: 'Incorporate trending sounds, effects, and formats while keeping your unique voice. Don\'t just copy—add your own twist.',
+                desc: 'Incorporate trending sounds, effects, and formats while keeping your unique voice. Add your own twist rather than copying directly.',
                 icon: <Music className="w-6 h-6 text-primary-600" />
               },
               {
@@ -311,7 +311,7 @@ export default function EngagementRatesPage() {
             Performance Quality Benchmarks
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Understanding where your engagement rate falls within quality tiers helps you set realistic improvement goals:
+            Understanding where your engagement rate falls within quality tiers helps you set realistic improvement goals.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">
@@ -365,7 +365,7 @@ export default function EngagementRatesPage() {
             Niche-Specific Engagement Strategies
           </h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Different niches require different tactics to maximize engagement. Here are proven strategies by content category:
+            Different niches require different tactics to maximize engagement. Here are proven strategies by content category.
           </p>
           <div className="space-y-4">
             <div className="p-4 bg-purple-50 border-l-4 border-purple-500 rounded-lg">
@@ -439,7 +439,7 @@ export default function EngagementRatesPage() {
           </div>
           <div className="mt-6 p-4 bg-primary-50 rounded-lg border border-primary-200">
             <p className="text-body-sm text-neutral-800">
-              <strong>Pro Tip:</strong> Don't just chase engagement rate. A 5% engagement rate with high-intent followers (who buy products) is more valuable than 10% engagement from casual viewers. Focus on attracting the right audience for your monetization goals.
+              <strong>Pro Tip:</strong> Do not chase engagement rate alone. A 5% engagement rate with high-intent followers (who buy products) is more valuable than 10% engagement from casual viewers. Focus on attracting the right audience for your monetization goals.
             </p>
           </div>
         </Card>
@@ -471,23 +471,23 @@ export default function EngagementRatesPage() {
           faqs={[
             {
               question: 'What is a good engagement rate on TikTok in 2026?',
-              answer: 'A good engagement rate on TikTok is 3-8% across most niches. Excellent performance is 10%+ engagement. The platform average is around 6.2%. Engagement rates naturally decrease as follower counts increase, so nano creators (1K-10K followers) average 8.8%, while mega creators (1M+) average 2.4%. Focus on beating your niche average rather than platform-wide benchmarks.'
+              answer: '**A good engagement rate on TikTok is 3% to 8% across most niches.** Excellent performance is 10%+ engagement. The platform average is around 6.2%. Engagement rates naturally decrease as follower counts increase. Nano creators (1K to 10K followers) average 8.8%, while mega creators (1M+) average 2.4%. Focus on beating your niche average rather than platform-wide benchmarks.'
             },
             {
               question: 'Which TikTok niche has the highest engagement rate?',
-              answer: 'Dance & Choreography leads with 9.2% average engagement, followed by Pets & Animals (8.9%), and Comedy & Entertainment (8.5%). These niches benefit from highly shareable, visually engaging content. However, lower-engagement niches like Finance (4.8%) often have better monetization potential through brand deals and products despite lower interaction rates.'
+              answer: '**Dance and Choreography leads with 9.2% average engagement, followed by Pets and Animals (8.9%), and Comedy and Entertainment (8.5%).** These niches benefit from highly shareable, visually engaging content. Lower-engagement niches like Finance (4.8%) often have better monetization potential through brand deals and products despite lower interaction rates.'
             },
             {
               question: 'How do I calculate my TikTok engagement rate?',
-              answer: 'Use this formula: (Likes + Comments + Shares) ÷ Followers × 100 = Engagement Rate %. For accurate assessment, calculate across your last 10-20 videos and average the results. Compare your rate to your niche average (not platform average) to understand your performance. Use our Engagement Rate Calculator for automated tracking.'
+              answer: '**Use this formula: (Likes + Comments + Shares) divided by Followers multiplied by 100 = Engagement Rate %.** For accurate assessment, calculate across your last 10 to 20 videos and average the results. Compare your rate to your niche average (not the platform average) to understand your performance. Use our Engagement Rate Calculator for automated tracking.'
             },
             {
               question: 'Why is my engagement rate dropping over time?',
-              answer: 'Engagement rates naturally decline as follower counts increase because not all followers remain active. Other causes include: inconsistent posting schedule, content quality decline, over-promotional content, inactive follower base from viral videos, or algorithm changes. To recover, return to content formats that performed well, improve hooks and watch time, and engage more with comments in the first hour after posting.'
+              answer: '**Engagement rates naturally decline as follower counts increase because not all followers remain active.** Other causes include inconsistent posting schedule, content quality decline, over-promotional content, inactive follower base from viral videos, and algorithm changes. To recover, return to content formats that performed well, improve hooks and watch time, and engage more with comments in the first hour after posting.'
             },
             {
               question: 'Does engagement rate affect brand deal opportunities?',
-              answer: 'Yes, significantly. Brands increasingly prioritize engagement rate over follower count when selecting creators. A creator with 50K followers and 8% engagement often receives better rates than one with 500K followers and 2% engagement. High engagement signals an active, loyal audience that trusts your recommendations, leading to better campaign performance and higher conversion rates for brands.'
+              answer: '**Yes, engagement rate directly affects brand deal opportunities.** Brands prioritize engagement rate over follower count when selecting creators. A creator with 50K followers and 8% engagement often receives better rates than one with 500K followers and 2% engagement. High engagement signals an active, loyal audience that trusts your recommendations, leading to better campaign performance and higher conversion rates for brands.'
             }
           ]}
         />

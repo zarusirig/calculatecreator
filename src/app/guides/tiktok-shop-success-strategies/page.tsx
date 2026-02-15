@@ -17,35 +17,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much can you realistically earn with TikTok Shop affiliate?',
-    answer: 'Beginner affiliates (10K-50K followers) typically earn $200-1,000/month. Mid-tier (50K-200K) earn $1,000-5,000/month. Top performers (200K+) can earn $5,000-50,000+/month depending on niche, commission rates, and conversion strategy.',
+    answer: '**Beginner affiliates with 10K to 50K followers typically earn $200 to $1,000 per month.** Mid-tier creators with 50K to 200K earn $1,000 to $5,000 per month. Top performers with 200K or more earn $5,000 to $50,000 or more per month depending on niche, commission rates, and conversion strategy.',
   },
   {
     question: 'What products sell best on TikTok Shop?',
-    answer: 'Top categories: beauty/skincare (15-20% CVR), fashion accessories (10-15% CVR), home gadgets (8-12% CVR), pet products (10-15% CVR), and fitness items (8-12% CVR). Products under $50 with visual transformation potential perform best.',
+    answer: '**Top categories include beauty and skincare (15% to 20% Conversion Rate (CVR)), fashion accessories (10% to 15% CVR), home gadgets (8% to 12% CVR), pet products (10% to 15% CVR), and fitness items (8% to 12% CVR).** Products under $50 with visual transformation potential perform best.',
   },
   {
     question: 'Do I need a large following to succeed with TikTok Shop?',
-    answer: 'No! Nano-influencers (1K-10K) often have higher conversion rates (3-5%) than mega-influencers (1-2%) due to stronger audience trust. Focus on engagement quality over follower count.',
+    answer: '**No, a large following is not necessary.** Nano-influencers with 1K to 10K followers often have higher conversion rates (3% to 5%) than mega-influencers (1% to 2%) due to stronger audience trust. Focus on engagement quality over follower count.',
   },
   {
     question: 'How do I qualify for TikTok Shop affiliate program?',
-    answer: 'Requirements vary by region but typically: 1,000+ followers, account in good standing, 18+ years old, and link a PayPal account. Some regions require business registration for higher-tier access.',
+    answer: '**Requirements vary by region but typically include 1,000 or more followers, an account in good standing, age 18 or older, and a linked PayPal account.** Some regions require business registration for higher-tier access.',
   },
   {
     question: 'What commission rates should I expect?',
-    answer: 'Commission rates range from 5-30% depending on product category and brand. Beauty/fashion average 10-15%, electronics 5-8%, home goods 12-20%. Negotiate higher rates with brands directly when possible.',
+    answer: '**Commission rates range from 5% to 30% depending on product category and brand.** Beauty and fashion average 10% to 15%, electronics 5% to 8%, home goods 12% to 20%. Negotiate higher rates with brands directly.',
   },
   {
     question: 'Should I focus on organic content or TikTok Shop LIVE?',
-    answer: 'Both! Organic videos drive discovery (60-70% of sales). LIVE sessions create urgency and higher conversion rates (30-40% of sales). Successful sellers use both strategies complementarily.',
+    answer: '**Use both organic content and LIVE sessions.** Organic videos drive discovery and account for 60% to 70% of sales. LIVE sessions create urgency and deliver higher conversion rates, making up 30% to 40% of sales. Successful sellers combine both strategies.',
   },
   {
     question: 'How long does it take to see results with TikTok Shop?',
-    answer: 'Initial sales can happen within days, but consistent $1,000+/month income typically takes 30-60 days of testing products, refining content, and building buyer audience. Expect 3-6 months to optimize and scale.',
+    answer: '**Initial sales happen within days, but consistent $1,000 or more per month income typically takes 30 to 60 days.** This period involves testing products, refining content, and building a buyer audience. Expect 3 to 6 months to optimize and scale.',
   },
   {
     question: 'What is the average conversion rate for TikTok Shop?',
-    answer: 'Average TikTok Shop conversion rates: 1-3% for general audience, 3-5% for targeted niche audience, 5-10% for highly engaged micro-communities. LIVE sessions can see 10-20% conversion rates with proper strategy.',
+    answer: '**Average TikTok Shop conversion rates are 1% to 3% for a general audience.** Targeted niche audiences achieve 3% to 5%. Highly engaged micro-communities reach 5% to 10%. LIVE sessions with proper strategy see 10% to 20% conversion rates.',
   },
 ];
 
@@ -119,7 +119,13 @@ export default function TikTokShopSuccessStrategiesPage() {
       <section className="py-8">
         <div className="container-custom max-w-4xl">
           <p className="text-body-lg text-neutral-700 leading-relaxed">
-            TikTok Shop represents one of the fastest-growing creator monetization opportunities in 2026, combining the platform's entertainment-first approach with sophisticated e-commerce infrastructure that converts viewers into buyers at unprecedented rates compared to traditional online shopping. With integrated shopping features built directly into the content experience, creators can earn significant affiliate commissions ranging from 10-30% depending on product category, or sell their own products with transaction fees substantially lower than traditional e-commerce platforms like Shopify or Amazon while maintaining complete control over margins and customer relationships. The platform's unique algorithm combines social proof through live viewer counts and real-time comments, impulse buying behavior driven by limited-time offers and scarcity tactics, and frictionless checkout that keeps users within the TikTok ecosystem to create conversion rates 2-3 times higher than conventional e-commerce approaches where customers must leave the platform. Success requires mastering three interconnected skills: strategic product selection based on commission rates and audience alignment to maximize earnings per sale, compelling content creation that demonstrates value without feeling overly promotional or salesy, and conversion optimization through urgency tactics and trust-building authenticity that transforms casual viewers into committed buyers who return for future purchases.
+            TikTok Shop represents one of the fastest-growing creator monetization opportunities in 2026. The platform combines an entertainment-first approach with sophisticated e-commerce infrastructure. Viewers convert to buyers at rates higher than traditional online shopping.
+
+            Creators earn affiliate commissions ranging from 10% to 30% depending on the product category. Selling your own products keeps transaction fees lower than platforms like Shopify or Amazon. You maintain complete control over margins and customer relationships.
+
+            The algorithm uses 3 powerful conversion drivers (social proof, impulse buying behavior, and frictionless checkout). Live viewer counts and real-time comments provide social proof. Limited-time offers drive impulse buying. In-app checkout keeps users in the TikTok ecosystem. The result is conversion rates 2 to 3 times higher than conventional e-commerce.
+
+            Success requires mastering 3 interconnected skills. First, select products strategically based on commission rates and audience alignment. Second, create compelling content that demonstrates value without feeling overly promotional. Third, optimize conversions through urgency tactics and trust-building authenticity.
           </p>
         </div>
       </section>
@@ -131,7 +137,11 @@ export default function TikTokShopSuccessStrategiesPage() {
               TikTok Shop Opportunity in 2025
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok Shop represents one of the fastest-growing creator monetization opportunities, combining the platform's entertainment-first approach with sophisticated e-commerce infrastructure that converts viewers into buyers at unprecedented rates. With integrated shopping features built directly into the content experience, creators can earn significant affiliate commissions ranging from 10-30% depending on product category, or sell their own products with transaction fees substantially lower than traditional e-commerce platforms like Shopify or Amazon. The platform's unique algorithm combines social proof through live viewer counts and real-time comments, impulse buying behavior driven by limited-time offers and scarcity tactics, and frictionless checkout that keeps users within the TikTok ecosystem to create conversion rates 2-3 times higher than conventional e-commerce. Success requires mastering three interconnected skills: strategic product selection based on commission rates and audience alignment, compelling content creation that demonstrates value without feeling overly promotional, and conversion optimization through urgency tactics and trust-building authenticity that transforms casual viewers into committed buyers.
+              TikTok Shop is one of the fastest-growing creator monetization opportunities. The platform combines an entertainment-first approach with e-commerce infrastructure that converts viewers into buyers at high rates.
+
+              Creators earn affiliate commissions of 10% to 30% depending on the product category. You sell your own products with transaction fees lower than platforms like Shopify or Amazon. The algorithm uses social proof, impulse buying triggers, and frictionless checkout to create conversion rates 2 to 3 times higher than conventional e-commerce.
+
+              Success requires mastering 3 interconnected skills. First, select products strategically based on commission rates and audience alignment. Second, create compelling content that demonstrates value without feeling promotional. Third, optimize conversions through urgency tactics and authenticity that transforms viewers into committed buyers.
             </p>
           </div>
         </Card>

@@ -9,7 +9,7 @@ import { BookOpen, DollarSign, Globe, Gift, ShoppingBag, Calendar, CreditCard, F
 
 export const metadata: Metadata = {
   title: 'TikTok Reference Data & Official Rates | Creator Resources 2026',
-  description: 'Official TikTok reference data including Creator Fund payment schedules, eligible countries, LIVE gift values, Shop commission rates, and payout timelines.',
+  description: 'Official TikTok reference data including Creator Fund payment schedules, eligible countries, LIVE gift values, TikTok Shop commission rates, and payout timelines.',
   keywords: ['tiktok reference', 'creator fund countries', 'tiktok payment schedule', 'live gift values', 'shop commission rates', 'tiktok payout'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/',
@@ -26,28 +26,28 @@ const references = [
   {
     name: 'Creator Fund Eligible Countries',
     slug: 'creator-fund-countries',
-    description: 'Complete list of countries where TikTok Creator Fund is available with eligibility requirements.',
+    description: 'Full list of countries where the TikTok Creator Fund is available, with eligibility requirements.',
     icon: Globe,
     category: 'Eligibility',
   },
   {
     name: 'Creator Fund Countries (Detailed)',
     slug: 'creator-fund-eligible-countries',
-    description: 'In-depth guide to Creator Fund availability by region with application requirements and alternatives.',
+    description: 'In-depth guide to the Creator Fund availability by region, with application requirements and alternatives.',
     icon: FileText,
     category: 'Eligibility',
   },
   {
     name: 'Creator Fund Payment Schedule',
     slug: 'creator-fund-payment-schedule',
-    description: 'When and how TikTok pays Creator Fund earnings including processing times and payment methods.',
+    description: 'Learn how TikTok pays Creator Fund earnings, including processing times and payment methods.',
     icon: Calendar,
     category: 'Payments',
   },
   {
     name: 'LIVE Gifts Value Chart',
     slug: 'live-gifts-value-chart',
-    description: 'Complete chart of TikTok LIVE gift values in coins, diamonds, and USD with creator payout amounts.',
+    description: 'Full chart of TikTok LIVE gift values in coins, diamonds, and USD, with creator payout amounts.',
     icon: Gift,
     category: 'LIVE',
   },
@@ -61,7 +61,7 @@ const references = [
   {
     name: 'Shop Payment Schedule',
     slug: 'shop-payment-schedule',
-    description: 'TikTok Shop payout timeline for sellers and affiliates including settlement periods and withdrawal options.',
+    description: 'TikTok Shop payout timeline for sellers and affiliates, including settlement periods and withdrawal options.',
     icon: CreditCard,
     category: 'Payments',
   },
@@ -77,27 +77,27 @@ const references = [
 const faqs = [
   {
     question: 'How often does TikTok update their official rates and policies?',
-    answer: 'TikTok typically updates policies quarterly, with major changes announced 30 days in advance. Creator Fund RPM rates can fluctuate monthly based on the fund pool and total eligible views. Shop commission rates are usually stable but may change during promotional periods. We update our reference data within 24-48 hours of any official TikTok announcement.',
+    answer: '**TikTok updates policies quarterly, with major changes announced 30 days in advance.** Creator Fund Revenue Per Mille (RPM) rates fluctuate monthly based on the fund pool and total eligible views. Shop commission rates remain stable but change during promotional periods. We update our reference data within 24 to 48 hours of any official TikTok announcement.',
   },
   {
     question: 'Which countries have TikTok Creator Fund?',
-    answer: 'As of 2026, the TikTok Creator Fund (now Creator Rewards) is available in the US, UK, Germany, France, Italy, Spain, and Brazil. Each country has specific eligibility requirements including minimum follower counts (typically 10K), view thresholds (100K views in 30 days), and age requirements (18+). Some regions have alternative programs like the Creativity Program.',
+    answer: '**As of 2026, the TikTok Creator Fund (now Creator Rewards) is available in 7 countries: the US, UK, Germany, France, Italy, Spain, and Brazil.** Each country has specific eligibility requirements. These include minimum follower counts (10K), view thresholds (100K views in 30 days), and age requirements (18+). Some regions offer alternative programs like the Creativity Program.',
   },
   {
     question: 'When does TikTok pay creators?',
-    answer: 'Creator Fund/Rewards payments are processed monthly, typically 30-45 days after the earning period. LIVE gift diamond withdrawals can be requested once you reach the $50 minimum, with payouts processed within 7-14 business days. TikTok Shop pays on a bi-weekly schedule, with funds available 7-14 days after the settlement period ends.',
+    answer: '**Creator Fund and Rewards payments are processed monthly, 30 to 45 days after the earning period.** LIVE gift diamond withdrawals require a $50 minimum, with payouts processed within 7 to 14 business days. TikTok Shop pays on a bi-weekly schedule. Funds become available 7 to 14 days after the settlement period ends.',
   },
   {
     question: 'What percentage does TikTok take from LIVE gifts?',
-    answer: 'TikTok takes approximately 50% of LIVE gift value. When viewers purchase coins and send gifts, creators receive about half the coin value as diamonds. For example, a gift costing 100 coins ($1.50) gives the creator roughly 50 diamonds ($0.25). The exact percentage may vary slightly by region.',
+    answer: '**TikTok takes about 50% of the LIVE gift value.** Viewers purchase coins and send gifts. Creators receive about half the coin value as diamonds. For example, a gift costing 100 coins ($1.50) gives the creator roughly 50 diamonds ($0.25). The exact percentage varies slightly by region.',
   },
   {
     question: 'What are TikTok Shop commission rates?',
-    answer: 'TikTok Shop commission rates vary by product category: Electronics (2-4%), Fashion (5-10%), Beauty (8-12%), Home & Garden (6-10%), and Food & Beverages (10-15%). Affiliate creators typically earn 5-20% commission on referred sales. Rates may increase during promotional campaigns or for top-performing sellers.',
+    answer: '**TikTok Shop commission rates vary by product category.** Electronics pay 2 to 4%, Fashion 5 to 10%, Beauty 8 to 12%, Home and Garden 6 to 10%, and Food and Beverages 10 to 15%. Affiliate creators earn 5 to 20% commission on referred sales. Rates increase during promotional campaigns or for top-performing sellers.',
   },
   {
     question: 'How do I know if reference data is accurate?',
-    answer: 'Our reference data is sourced directly from TikTok\'s official Creator Portal, Seller Center, and press releases. We cross-reference with creator community reports and update within 48 hours of any changes. Each reference page includes a "Last Updated" date so you know the information is current.',
+    answer: '**We source our reference data directly from the official TikTok Creator Portal, the Seller Center, and press releases.** We cross-reference with creator community reports and update within 48 hours of any changes. Each reference page includes a "Last Updated" date so you know the information is current.',
   },
 ];
 
@@ -148,7 +148,7 @@ export default function ReferencePage() {
               TikTok Reference Data & Official Rates
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-              Your comprehensive resource library for TikTok creator monetization. Access official data on Creator Fund eligibility, payment schedules, LIVE gift values, Shop commission rates, and payout timelines. We maintain accurate, up-to-date information sourced directly from TikTok's official documentation and creator portals, updated within 48 hours of any policy changes.
+              This is your resource library for TikTok creator monetization. Access official data on Creator Fund eligibility, payment schedules, LIVE gift values, Shop commission rates, and payout timelines. We maintain accurate, up-to-date information sourced directly from the official TikTok documentation and creator portals. All data is updated within 48 hours of any policy changes.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ export default function ReferencePage() {
             </h2>
             <div className="space-y-6 text-body-md text-neutral-700">
               <p>
-                Misinformation about TikTok's monetization programs is rampant online. Outdated blog posts, misleading YouTube videos, and incorrect social media claims can lead creators to make poor decisions about their content strategy and income expectations.
+                Misinformation about the monetization programs of TikTok is common online. Outdated blog posts, misleading YouTube videos, and incorrect social media claims lead creators to make poor decisions about their content strategy and income expectations.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -214,7 +214,7 @@ export default function ReferencePage() {
                     <CheckCircle size={20} /> Accurate Planning
                   </h3>
                   <p className="text-body-sm text-green-800">
-                    Know exactly when payments arrive, what rates to expect, and which programs you're eligible for. Make informed decisions about content investment and revenue diversification.
+                    Know exactly when payments arrive, what rates to expect, and which programs you qualify for. Make informed decisions about content investment and revenue diversification.
                   </p>
                 </div>
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
@@ -222,7 +222,7 @@ export default function ReferencePage() {
                     <Clock size={20} /> Cash Flow Management
                   </h3>
                   <p className="text-body-sm text-blue-800">
-                    Understanding payment schedules helps you plan finances. Creator Fund pays monthly with a 30-45 day delay, while Shop pays bi-weekly. Plan accordingly.
+                    Payment schedules help you plan finances. The Creator Fund pays monthly with a 30 to 45 day delay. The Shop pays bi-weekly. Plan accordingly.
                   </p>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function ReferencePage() {
                     <Globe size={20} /> Regional Awareness
                   </h3>
                   <p className="text-body-sm text-purple-800">
-                    Monetization availability varies by country. Know which programs are available in your region and what alternatives exist if you're not in an eligible country.
+                    Monetization availability varies by country. Know which programs are available in your region. Learn what alternatives exist for ineligible countries.
                   </p>
                 </div>
                 <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
@@ -241,7 +241,7 @@ export default function ReferencePage() {
                     <DollarSign size={20} /> Revenue Optimization
                   </h3>
                   <p className="text-body-sm text-amber-800">
-                    Understanding exact commission rates and gift values helps you optimize which monetization methods to prioritize for maximum earnings.
+                    Exact commission rates and gift values help you prioritize the right monetization methods for maximum earnings.
                   </p>
                 </div>
               </div>
@@ -257,25 +257,25 @@ export default function ReferencePage() {
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">TikTok Creator Portal</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Official documentation from TikTok's Creator Portal including Creator Fund rates, eligibility requirements, and payment schedules directly from the source.
+                  Official documentation from the TikTok Creator Portal includes Creator Fund rates, eligibility requirements, and payment schedules directly from the source.
                 </p>
               </div>
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">TikTok Seller Center</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Commission rates, payment timelines, and policy updates for TikTok Shop sellers and affiliate creators sourced from Seller Center documentation.
+                  Commission rates, payment timelines, and policy updates for TikTok Shop sellers and affiliate creators come from the Seller Center documentation.
                 </p>
               </div>
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">Official Press Releases</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Major policy changes, new feature announcements, and program expansions from TikTok's official newsroom and press releases.
+                  Major policy changes, new feature announcements, and program expansions come from the official TikTok newsroom and press releases.
                 </p>
               </div>
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">Creator Community Verification</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We cross-reference official data with real creator experiences from verified accounts to ensure accuracy and identify regional variations.
+                  We cross-reference official data with real creator experiences from verified accounts to ensure accuracy and to identify regional variations.
                 </p>
               </div>
             </div>
@@ -332,19 +332,19 @@ export default function ReferencePage() {
             <ul className="space-y-3 text-body-md text-amber-800">
               <li className="flex items-start gap-2">
                 <span className="font-bold">•</span>
-                <span>Rates and policies can change without notice. Always verify current information in TikTok's official portals before making major decisions.</span>
+                <span>Rates and policies change without notice. Verify current information in the official TikTok portals before making major decisions.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-bold">•</span>
-                <span>Regional variations exist. Payment methods, processing times, and available programs differ by country.</span>
+                <span>Regional variations exist. Payment methods, processing times, and available programs all differ by country.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-bold">•</span>
-                <span>Creator Fund RPM fluctuates based on total fund pool and eligible views. Treat RPM figures as estimates, not guarantees.</span>
+                <span>The Creator Fund RPM fluctuates based on the total fund pool and eligible views. Treat RPM figures as estimates, not guarantees.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-bold">•</span>
-                <span>This is an unofficial resource. We are not affiliated with TikTok. Always consult official sources for definitive policy information.</span>
+                <span>This is an unofficial resource. We are not affiliated with TikTok. Consult official sources for definitive policy information.</span>
               </li>
             </ul>
           </Card>

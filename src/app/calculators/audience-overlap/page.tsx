@@ -91,7 +91,9 @@ export default function AudienceOverlapCalculatorPage() {
             TikTok Audience Overlap Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach. High overlap above 40% can waste nearly half your budget on duplicate impressions and cause your campaigns to compete against each other in auctions. Use this calculator to measure overlap percentage, understand efficiency impact, and implement targeting strategies that ensure you're reaching new users rather than paying twice for the same audience.
+            Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach. High overlap above 40% wastes nearly half your budget on duplicate impressions. It causes your campaigns to compete against each other in auctions.
+
+            Use this calculator to measure overlap percentage, understand efficiency impact, and implement targeting strategies. Reach new users rather than paying twice for the same audience.
           </p>
         </div>
 
@@ -108,7 +110,7 @@ export default function AudienceOverlapCalculatorPage() {
                 Audience Overlap Benchmarks
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                Understanding overlap levels and their impact:
+                Understanding overlap levels and their impact follows.
               </p>
               <div className="space-y-3">
                 {[
@@ -135,7 +137,7 @@ export default function AudienceOverlapCalculatorPage() {
                 Why Audience Overlap Matters
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                The cost of high audience overlap:
+                The cost of high audience overlap follows.
               </p>
               <div className="space-y-3 text-body-sm">
                 <div className="p-3 bg-error-50 border border-error-200 rounded-lg">
@@ -191,16 +193,16 @@ export default function AudienceOverlapCalculatorPage() {
               </h2>
               <div className="space-y-3">
                 {[
-                  'Use audience exclusions—exclude Audience A users from Audience B targeting',
-                  'Segment by age groups—18-24 in one campaign, 25-34 in another',
-                  'Geographic separation—target different countries, states, or cities',
-                  'Interest differentiation—choose non-overlapping interest categories',
-                  'Behavioral segmentation—engagers vs purchasers vs video viewers',
-                  'Device targeting—iOS in one campaign, Android in another',
-                  'Custom vs lookalike audiences—test them separately, not together',
-                  'Sequential targeting—video viewers → engagers → website visitors → purchasers',
-                  'Funnel stage separation—awareness campaigns exclude conversion audiences',
-                  'Implement frequency caps—limit total impressions per user across campaigns',
+                  'Use audience exclusions. Exclude Audience A users from Audience B targeting',
+                  'Segment by age groups. Place 18 to 24 in one campaign and 25 to 34 in another',
+                  'Separate by geography. Target different countries, states, or cities',
+                  'Differentiate by interests. Choose non-overlapping interest categories',
+                  'Segment by behavior. Separate engagers, purchasers, and video viewers',
+                  'Target by device. Place iOS in one campaign and Android in another',
+                  'Test custom and lookalike audiences separately, not together',
+                  'Apply sequential targeting from video viewers to engagers to website visitors to purchasers',
+                  'Separate by funnel stage. Exclude conversion audiences from awareness campaigns',
+                  'Implement frequency caps. Limit total impressions per user across campaigns',
                 ].map((tip, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 bg-neutral-50 rounded-lg">
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-success-100 text-success-600 flex items-center justify-center text-sm font-semibold">
@@ -217,7 +219,7 @@ export default function AudienceOverlapCalculatorPage() {
                 Common Overlap Scenarios
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                Typical situations causing high audience overlap:
+                Typical situations that cause high audience overlap follow.
               </p>
               <div className="space-y-3">
                 {[
@@ -245,7 +247,7 @@ export default function AudienceOverlapCalculatorPage() {
                 Step-by-Step: Using This Calculator
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                Analyze your audience overlap in 4 simple steps:
+                Analyze your audience overlap in 4 steps.
               </p>
               <div className="space-y-4">
                 <div className="p-4 bg-neutral-50 rounded-lg">

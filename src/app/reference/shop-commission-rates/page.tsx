@@ -61,10 +61,10 @@ export default function ShopCommissionRatesPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Understanding TikTok Shop Affiliate Commissions</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            TikTok Shop affiliate commissions are percentage-based payments you earn when customers purchase products through your affiliate links. Unlike fixed-rate programs, TikTok Shop commission rates vary significantly by product category, brand, and individual product settings. Understanding these variations is crucial for maximizing your earnings as a TikTok Shop affiliate.
+            TikTok Shop affiliate commissions are percentage-based payments you earn when customers purchase products through your affiliate links. TikTok Shop commission rates vary by product category, brand, and individual product settings. Knowing these variations is crucial for maximizing your earnings as a TikTok Shop affiliate.
           </p>
           <p className="text-body-md text-neutral-700 mb-4">
-            Commission rates typically range from 2% to 20%, with beauty and personal care products offering the highest rates and electronics offering the lowest. These rates are set by sellers and can change based on promotional campaigns, inventory levels, and seasonal demand. Premium brands often offer lower commission rates but higher product prices, while smaller brands may offer higher commissions to incentivize promotion.
+            Commission rates range from 2% to 20%. Beauty and personal care products offer the highest rates. Electronics offer the lowest. Sellers set these rates, which change based on promotional campaigns, inventory levels, and seasonal demand. Premium brands often offer lower commission rates but higher product prices. Smaller brands offer higher commissions to incentivize promotion.
           </p>
         </Card>
 
@@ -123,7 +123,7 @@ export default function ShopCommissionRatesPage() {
             <div className="p-5 bg-gradient-to-br from-pink-50 to-white rounded-lg border border-pink-200">
               <h3 className="text-heading-md font-bold text-neutral-900 mb-3">1. Beauty & Personal Care (8% - 20%)</h3>
               <p className="text-body-md text-neutral-700 mb-4">
-                The most lucrative category for TikTok Shop affiliates. Premium skincare brands like serums, anti-aging creams, and luxury cosmetics regularly offer 15-20% commission rates. Korean beauty products (K-beauty), makeup palettes, and trending viral beauty items perform exceptionally well.
+                The most lucrative category for TikTok Shop affiliates. Premium skincare brands like serums, anti-aging creams, and luxury cosmetics regularly offer 15% to 20% commission rates. Korean beauty (K-beauty) products, makeup palettes, and trending viral beauty items perform well.
               </p>
               <div className="bg-white p-4 rounded-lg border border-neutral-200">
                 <h4 className="font-semibold text-neutral-900 mb-2">Best Products to Promote:</h4>
@@ -139,7 +139,7 @@ export default function ShopCommissionRatesPage() {
             <div className="p-5 bg-gradient-to-br from-blue-50 to-white rounded-lg border border-blue-200">
               <h3 className="text-heading-md font-bold text-neutral-900 mb-3">2. Health & Wellness (10% - 18%)</h3>
               <p className="text-body-md text-neutral-700 mb-4">
-                Health supplements, fitness equipment, and wellness products consistently deliver strong commission rates. This category benefits from high customer trust in influencer recommendations and repeat purchases. Protein powders, vitamins, and fitness gadgets are top performers.
+                Health supplements, fitness equipment, and wellness products deliver strong commission rates. This category benefits from high customer trust in influencer recommendations and repeat purchases. Protein powders, vitamins, and fitness gadgets are top performers.
               </p>
               <div className="bg-white p-4 rounded-lg border border-neutral-200">
                 <h4 className="font-semibold text-neutral-900 mb-2">Best Products to Promote:</h4>
@@ -155,7 +155,7 @@ export default function ShopCommissionRatesPage() {
             <div className="p-5 bg-gradient-to-br from-purple-50 to-white rounded-lg border border-purple-200">
               <h3 className="text-heading-md font-bold text-neutral-900 mb-3">3. Fashion & Accessories (10% - 15%)</h3>
               <p className="text-body-md text-neutral-700 mb-4">
-                Fashion items offer solid mid-range commissions with high conversion rates. Jewelry, watches, designer accessories, and trending fashion pieces move quickly on TikTok. The key is promoting items that photograph well and have strong visual appeal in short-form video.
+                Fashion items offer solid mid-range commissions with high conversion rates. Jewelry, watches, designer accessories, and trending fashion pieces move quickly on TikTok. Promote items that photograph well and have strong visual appeal in short-form video.
               </p>
               <div className="bg-white p-4 rounded-lg border border-neutral-200">
                 <h4 className="font-semibold text-neutral-900 mb-2">Best Products to Promote:</h4>
@@ -173,14 +173,14 @@ export default function ShopCommissionRatesPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">How to Maximize Your Commission Earnings</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Choosing the right category is just the first step. Successful TikTok Shop affiliates employ specific strategies to maximize commission earnings within each category.
+            Choosing the right category is the first step. Successful TikTok Shop affiliates employ specific strategies to maximize commission earnings within each category.
           </p>
 
           <div className="space-y-4">
             <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
               <h3 className="font-semibold text-neutral-900 mb-2">1. Focus on High-Commission Categories First</h3>
               <p className="text-body-sm text-neutral-700">
-                Start with Beauty & Personal Care or Health & Wellness categories (12-20% average) rather than Electronics (2-8%). Even if electronics products have higher prices, the commission difference means you need to sell 3-5× more to match beauty product earnings.
+                Start with Beauty and Personal Care or Health and Wellness categories (12% to 20% average) rather than Electronics (2% to 8%). The commission difference means you need to sell 3 to 5 times more electronics to match beauty product earnings, even with higher product prices.
               </p>
             </div>
 
@@ -201,14 +201,14 @@ export default function ShopCommissionRatesPage() {
             <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
               <h3 className="font-semibold text-neutral-900 mb-2">4. Check for Promotional Commission Boosts</h3>
               <p className="text-body-sm text-neutral-700">
-                Many sellers temporarily increase commission rates during product launches or seasonal campaigns. In TikTok Shop Seller Center, look for products with "Boosted Commission" badges - rates can spike from 12% to 25% during promotions.
+                Many sellers temporarily increase commission rates during product launches or seasonal campaigns. Look for products with "Boosted Commission" badges in TikTok Shop Seller Center. Rates spike from 12% to 25% during promotions.
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
               <h3 className="font-semibold text-neutral-900 mb-2">5. Analyze Your Niche-Category Fit</h3>
               <p className="text-body-sm text-neutral-700">
-                If you're a fitness creator, promoting Health & Wellness products (14% avg) will convert better than Beauty products (even at 18%), because your audience trusts your recommendations in that category. Higher conversion rates often outweigh higher commission percentages.
+                Fitness creators promoting Health and Wellness products (14% average) convert better than Beauty products (even at 18%). Your audience trusts your recommendations in that category. Higher conversion rates often outweigh higher commission percentages.
               </p>
             </div>
           </div>
@@ -217,7 +217,7 @@ export default function ShopCommissionRatesPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Commission Negotiation: How Top Affiliates Get Higher Rates</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Once you've established yourself as a successful TikTok Shop affiliate, you can negotiate higher commission rates directly with sellers. Here's how top affiliates secure premium rates:
+            Establishing yourself as a successful TikTok Shop affiliate lets you negotiate higher commission rates directly with sellers. Here is how top affiliates secure premium rates.
           </p>
 
           <div className="space-y-4">
@@ -244,7 +244,7 @@ export default function ShopCommissionRatesPage() {
             <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
               <h3 className="font-semibold text-yellow-900 mb-2">Realistic Expectations</h3>
               <p className="text-body-sm text-yellow-800">
-                Most successful negotiations result in 2-5% commission increases (e.g., 12% → 15%), not doubling rates. Sellers have profit margins to protect. Focus on volume discounts and exclusive product access rather than massive rate increases.
+                Most successful negotiations result in 2% to 5% commission increases (for example, 12% to 15%), not doubling rates. Sellers have profit margins to protect. Focus on volume discounts and exclusive product access rather than massive rate increases.
               </p>
             </div>
           </div>
@@ -256,35 +256,35 @@ export default function ShopCommissionRatesPage() {
             <div className="p-4 bg-neutral-50 rounded-lg">
               <h3 className="font-semibold text-neutral-900 mb-2">Can commission rates change after I promote a product?</h3>
               <p className="text-body-sm text-neutral-700">
-                Yes. Sellers can modify commission rates at any time. The rate locked when a customer clicks your link is the rate you earn, but future sales may have different rates. Check commission rates weekly to avoid promoting products with reduced commissions.
+                **Yes, sellers modify commission rates at any time.** The rate locked when a customer clicks your link is the rate you earn. Future sales have different rates. Check commission rates weekly to avoid promoting products with reduced commissions.
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg">
               <h3 className="font-semibold text-neutral-900 mb-2">Do higher-priced products always mean higher commissions?</h3>
               <p className="text-body-sm text-neutral-700">
-                No. A $500 electronics item at 3% commission earns $15. A $100 beauty product at 18% commission earns $18. Always calculate actual dollar commission (price × rate) rather than assuming expensive = better.
+                **No, higher-priced products do not guarantee higher commissions.** A $500 electronics item at 3% commission earns $15. A $100 beauty product at 18% commission earns $18. Always calculate the actual dollar commission (price multiplied by rate) rather than assuming expensive equals better.
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg">
               <h3 className="font-semibold text-neutral-900 mb-2">Are commission rates the same globally?</h3>
               <p className="text-body-sm text-neutral-700">
-                No. Rates vary by region. US TikTok Shop generally offers 8-20% commissions, while Southeast Asian markets (Indonesia, Thailand) may offer 5-15%. Regional competition and market maturity affect commission structures.
+                **No, commission rates differ by region.** US TikTok Shop generally offers 8% to 20% commissions. Southeast Asian markets (Indonesia, Thailand) offer 5% to 15%. Regional competition and market maturity affect commission structures.
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg">
               <h3 className="font-semibold text-neutral-900 mb-2">What happens if commission rates drop mid-campaign?</h3>
               <p className="text-body-sm text-neutral-700">
-                Sales generated before the rate change earn the old commission. New sales after the change earn the new (lower) rate. If a product's commission drops significantly, pause promotion and find alternative products with better rates.
+                **Sales generated before the rate change earn the old commission.** New sales after the change earn the new (lower) rate. Pause promotion and find alternative products with better rates when the commission of a product drops significantly.
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg">
               <h3 className="font-semibold text-neutral-900 mb-2">How do I find products with the highest commission rates?</h3>
               <p className="text-body-sm text-neutral-700">
-                In TikTok Shop Affiliate Dashboard: Go to "Product Gallery" → Sort by "Commission Rate (High to Low)". Filter by category to find top-paying products in your niche. Bookmark high-commission products for quick access.
+                **Open the TikTok Shop Affiliate Dashboard and go to "Product Gallery."** Sort by "Commission Rate (High to Low)." Filter by category to find top-paying products in your niche. Bookmark high-commission products for quick access.
               </p>
             </div>
           </div>

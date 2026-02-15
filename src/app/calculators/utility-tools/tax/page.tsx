@@ -21,19 +21,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'How accurate is this tax calculator?',
-    answer: 'This calculator provides a reasonable estimate based on 2024 tax brackets and standard deduction. However, it\'s a simplified model that doesn\'t account for all deductions, credits, or special situations (dependents, retirement contributions, itemized deductions, etc.). Use it for planning purposes, but work with a CPA for exact calculations, especially if you earn over $50,000 or have complex finances.',
+    answer: '**This calculator provides a reasonable estimate based on 2024 tax brackets and the standard deduction.** It is a simplified model. It does not account for all deductions, credits, or special situations (dependents, retirement contributions, itemized deductions). Use it for planning purposes. Work with a Certified Public Accountant (CPA) for exact calculations, especially if you earn over $50,000 or have complex finances.',
   },
   {
     question: 'How much should I set aside for taxes?',
-    answer: 'General rule: Set aside 25-35% of gross income. If you\'re in a high-tax state or making $100K+, aim for 35-40%. Better to over-save than face penalties. Open a separate savings account and transfer tax money immediately when paid. Use this calculator quarterly to adjust your savings rate based on year-to-date earnings.',
+    answer: '**Set aside 25% to 35% of gross income as a general rule.** In a high-tax state or making $100K+, aim for 35% to 40%. It is better to over-save than face penalties. Open a separate savings account and transfer tax money immediately after payment. Use this calculator quarterly to adjust your savings rate based on year-to-date earnings.',
   },
   {
     question: 'Do I need to pay quarterly taxes?',
-    answer: 'Yes! If you expect to owe $1,000+ in taxes, you must make quarterly estimated payments (April 15, June 16, September 15, January 15). Failing to pay quarterly results in penalties. Use this calculator to estimate your annual tax, then divide by 4 for quarterly payments. Adjust each quarter based on actual income. Use IRS Form 1040-ES or work with a CPA.',
+    answer: '**Yes. Make quarterly estimated payments if you expect to owe $1,000+ in taxes.** Deadlines are April 15, June 16, September 15, and January 15. Failing to pay quarterly results in penalties. Use this calculator to estimate your annual tax, then divide by 4 for quarterly payments. Adjust each quarter based on actual income. Use IRS Form 1040-ES or work with a CPA.',
   },
   {
     question: 'Should I form an LLC or S-Corp?',
-    answer: 'LLC: Simple, protects personal assets, pass-through taxation. S-Corp: Can save on self-employment taxes if making $60K+, but requires payroll and more paperwork. Consult a CPA - generally LLC for beginners, consider S-Corp when consistently making $75K+ annually. This calculator assumes sole proprietorship; S-Corp calculations differ significantly.',
+    answer: '**A Limited Liability Company (LLC) is simple, protects personal assets, and offers pass-through taxation.** An S-Corporation (S-Corp) saves on self-employment taxes for creators making $60K+. It requires payroll and more paperwork. Consult a CPA. Generally choose an LLC for beginners. Consider an S-Corp when consistently making $75K+ annually. This calculator assumes sole proprietorship. S-Corp calculations differ significantly.',
   },
 ];
 
@@ -77,7 +77,9 @@ export default function CreatorTaxCalculatorPage() {
             TikTok Creator Tax Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Estimate your tax obligations as a content creator. Plan for federal, state, and self-employment taxes with accurate calculations based on 2026 tax brackets. This calculator helps creators set aside appropriate amounts for quarterly tax payments, understand deductions, and avoid penalties. Essential for managing creator income responsibly and staying compliant with tax requirements. Calculate your effective tax rate including self-employment tax obligations and see how business expense deductions reduce your tax burden. Get quarterly payment estimates to avoid IRS penalties and understand the true after-tax value of your creator earnings.
+            Estimate your tax obligations as a content creator. Plan for 3 tax types (federal, state, and self-employment) with accurate calculations based on 2026 tax brackets. This calculator helps creators set aside appropriate amounts for quarterly tax payments, understand deductions, and avoid penalties.
+
+            Calculate your effective tax rate including self-employment tax obligations. See how business expense deductions reduce your tax burden. Get quarterly payment estimates to avoid Internal Revenue Service (IRS) penalties. Understand the true after-tax value of your creator earnings.
           </p>
         </div>
 
@@ -108,7 +110,7 @@ export default function CreatorTaxCalculatorPage() {
               </h2>
               <div className="space-y-4 text-body-md text-neutral-700">
                 <p>
-                  As a self-employed content creator, you're responsible for three types of taxes: federal income tax, state income tax (if applicable), and self-employment tax. Understanding how each is calculated helps you plan your finances and avoid surprises.
+                  As a self-employed content creator, you are responsible for 3 types of taxes (federal income tax, state income tax if applicable, and self-employment tax). Understanding how each is calculated helps you plan your finances and avoid surprises.
                 </p>
 
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
@@ -121,7 +123,7 @@ export default function CreatorTaxCalculatorPage() {
                 <div className="p-4 bg-green-50 rounded-lg border border-green-200">
                   <h3 className="font-semibold text-green-900 mb-2">Self-Employment Tax</h3>
                   <p className="text-body-sm text-green-800">
-                    A flat 15.3% on your net earnings (after business expenses), consisting of 12.4% for Social Security and 2.9% for Medicare. This applies to the first $160,200 of net income in 2024. Unlike W-2 employees whose employers pay half, self-employed creators pay the full amount - but you can deduct half of it from your taxable income.
+                    A flat 15.3% on your net earnings (after business expenses). This consists of 12.4% for Social Security and 2.9% for Medicare. It applies to the first $160,200 of net income in 2024. W-2 employees have their employers pay half. Self-employed creators pay the full amount. You deduct half of it from your taxable income.
                   </p>
                 </div>
 
@@ -386,17 +388,17 @@ Total Tax: $21,695 (33.4% effective rate)`}
               {
                 question: 'How accurate is this tax calculator?',
                 answer:
-                  'This calculator provides a reasonable estimate based on 2024 tax brackets and standard deduction. However, it\'s a simplified model that doesn\'t account for all deductions, credits, or special situations (dependents, retirement contributions, itemized deductions, etc.). Use it for planning purposes, but work with a CPA for exact calculations, especially if you earn over $50,000 or have complex finances.',
+                  '**This calculator provides a reasonable estimate based on 2024 tax brackets and the standard deduction.** It is a simplified model. It does not account for all deductions, credits, or special situations (dependents, retirement contributions, itemized deductions). Use it for planning purposes. Work with a Certified Public Accountant (CPA) for exact calculations, especially if you earn over $50,000 or have complex finances.',
               },
               {
                 question: 'Why is my effective tax rate different from my tax bracket?',
                 answer:
-                  'Your tax bracket is the highest rate applied to your income (marginal rate), but your effective tax rate is the average rate you pay on all income. Because federal taxes use progressive brackets, you pay 10% on the first portion of income, 12% on the next portion, etc. For example, someone in the 22% bracket might have an effective rate of only 15% when all brackets are averaged.',
+                  '**Your tax bracket is the highest rate applied to your income (marginal rate). Your effective tax rate is the average rate you pay on all income.** Federal taxes use progressive brackets. You pay 10% on the first portion of income, 12% on the next portion, and so on. For example, someone in the 22% bracket has an effective rate of only 15% after averaging all brackets.',
               },
               {
                 question: 'How much should I set aside for taxes?',
                 answer:
-                  'General rule: Set aside 25-35% of gross income. If you\'re in a high-tax state or making $100K+, aim for 35-40%. Better to over-save than face penalties. Open a separate savings account and transfer tax money immediately when paid. Use this calculator quarterly to adjust your savings rate based on year-to-date earnings.',
+                  '**Set aside 25% to 35% of gross income as a general rule.** In a high-tax state or making $100K+, aim for 35% to 40%. It is better to over-save than face penalties. Open a separate savings account and transfer tax money immediately after payment. Use this calculator quarterly to adjust your savings rate based on year-to-date earnings.',
               },
               {
                 question: 'What business expenses should I include in the calculator?',
@@ -406,12 +408,12 @@ Total Tax: $21,695 (33.4% effective rate)`}
               {
                 question: 'Do I need to pay quarterly taxes?',
                 answer:
-                  'Yes! If you expect to owe $1,000+ in taxes, you must make quarterly estimated payments (April 15, June 16, September 15, January 15). Failing to pay quarterly results in penalties. Use this calculator to estimate your annual tax, then divide by 4 for quarterly payments. Adjust each quarter based on actual income. Use IRS Form 1040-ES or work with a CPA.',
+                  '**Yes. Make quarterly estimated payments if you expect to owe $1,000+ in taxes.** Deadlines are April 15, June 16, September 15, and January 15. Failing to pay quarterly results in penalties. Use this calculator to estimate your annual tax, then divide by 4 for quarterly payments. Adjust each quarter based on actual income. Use IRS Form 1040-ES or work with a CPA.',
               },
               {
                 question: 'Should I form an LLC or S-Corp?',
                 answer:
-                  'LLC: Simple, protects personal assets, pass-through taxation. S-Corp: Can save on self-employment taxes if making $60K+, but requires payroll and more paperwork. Consult a CPA - generally LLC for beginners, consider S-Corp when consistently making $75K+ annually. This calculator assumes sole proprietorship; S-Corp calculations differ significantly.',
+                  '**A Limited Liability Company (LLC) is simple, protects personal assets, and offers pass-through taxation.** An S-Corporation (S-Corp) saves on self-employment taxes for creators making $60K+. It requires payroll and more paperwork. Consult a CPA. Generally choose an LLC for beginners. Consider an S-Corp when consistently making $75K+ annually. This calculator assumes sole proprietorship. S-Corp calculations differ significantly.',
               },
             ]}
           />

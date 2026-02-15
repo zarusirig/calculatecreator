@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good ROI for a sponsorship deal?',
-    answer: 'Excellent: 200%+ (tripling your investment), Good: 100-200% (doubling), Acceptable: 25-100% (profitable but modest). However, first-time brand partnerships may have lower ROI but open doors for future deals. Consider both financial and strategic value. Top-tier creators consistently achieve 300-500% ROI on their best partnerships through strong audience trust and perfect product-audience fit.',
+    answer: '**Excellent ROI is 200%+, tripling your investment.** Good is 100% to 200%, doubling your money. Acceptable is 25% to 100%, profitable but modest. First-time brand partnerships have lower ROI but open doors for future deals. Consider both financial and strategic value. Top-tier creators consistently achieve 300% to 500% ROI on their best partnerships through strong audience trust and perfect product-audience fit.',
   },
   {
     question: 'How do I estimate conversion rate for a sponsorship?',
-    answer: 'Check past sponsored content performance, use industry benchmarks (typical TikTok conversion is 1-3%), or ask the brand for their historical data. Start conservative - use 1% for new partnerships, 2-3% if you have strong audience trust and the product fits your niche. Established creator-brand fits with exclusive discount codes can achieve 3-5%. Always track with unique codes or affiliate links to measure actual performance.',
+    answer: '**Check past sponsored content performance, use industry benchmarks, or ask the brand for historical data.** Typical TikTok conversion is 1% to 3%. Start conservative. Use 1% for new partnerships and 2% to 3% when you have strong audience trust and the product fits your niche. Established creator-brand fits with exclusive discount codes achieve 3% to 5%. Always track with unique codes or affiliate links to measure actual performance.',
   },
   {
     question: 'Should I accept sponsorships with negative ROI?',
-    answer: 'Generally no, unless: (1) The brand is highly prestigious and opens future doors, (2) It\'s your first brand deal and you need portfolio building, (3) The brand offers non-monetary benefits (products, exposure, long-term partnership). Never consistently accept losing deals. Remember that opportunity cost matters - time spent on unprofitable deals prevents you from pursuing profitable opportunities.',
+    answer: '**Generally no, do not accept sponsorships with negative ROI.** Exceptions exist when the brand is highly prestigious and opens future doors, when it is your first brand deal and you need portfolio building, or when the brand offers non-monetary benefits like products, exposure, and long-term partnership. Never consistently accept losing deals. Opportunity cost matters. Time spent on unprofitable deals prevents you from pursuing profitable opportunities.',
   },
   {
     question: 'How can I negotiate better sponsorship terms?',
-    answer: 'Leverage: (1) Show your engagement rate and past conversion data with performance reports, (2) Offer package deals (multiple videos for better rates and reduced negotiation time), (3) Request higher fees or lower deliverables if ROI calculations show marginal profitability, (4) Ask for performance bonuses tied to conversions or reach milestones, (5) Negotiate usage rights - limit how brands can repurpose your content and charge extra for extended usage, (6) Request exclusive discount codes with higher commission rates.',
+    answer: '**Use 6 leverage points for better sponsorship terms.** Show your engagement rate and past conversion data with performance reports. Offer package deals with multiple videos for better rates and reduced negotiation time. Request higher fees or lower deliverables when ROI calculations show marginal profitability. Ask for performance bonuses tied to conversions or reach milestones. Negotiate usage rights to limit how brands repurpose your content and charge extra for extended usage. Request exclusive discount codes with higher commission rates.',
   },
 ];
 

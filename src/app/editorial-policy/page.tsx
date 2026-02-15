@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Editorial Policy | TikTok Creator Calculator',
   description:
-    'Our commitment to accuracy, transparency, and editorial independence. Learn how we research, fact-check, and maintain the highest standards for TikTok creator economy content.',
+    'Our commitment to accuracy, transparency, and editorial independence. Explore how we research, fact-check, and maintain the highest standards for TikTok creator economy content.',
   alternates: {
     canonical: 'https://calculatecreator.com/editorial-policy/',
   },
@@ -17,7 +17,7 @@ export default function EditorialPolicyPage() {
     <>
       <WebPageSchema
         title="Editorial Policy | TikTok Creator Calculator"
-        description="Our commitment to accuracy, transparency, and editorial independence. Learn how we research, fact-check, and maintain the highest standards for TikTok creator economy content."
+        description="Our commitment to accuracy, transparency, and editorial independence. Explore how we research, fact-check, and maintain the highest standards for TikTok creator economy content."
         url="https://calculatecreator.com/editorial-policy/"
       />
       <div className="min-h-screen bg-neutral-50 py-12">
@@ -49,22 +49,22 @@ export default function EditorialPolicyPage() {
                   At TikTok Creator Calculator, we hold ourselves to the highest
                   editorial standards. Every piece of content we publish,
                   whether it is a calculator, guide, benchmark, or data point,
-                  is built on three core principles: accuracy, transparency, and
-                  independence.
+                  is built on 3 core principles (accuracy, transparency, and
+                  independence).
                 </p>
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-2">
                     Accuracy
                   </h3>
                   <p className="leading-relaxed">
-                    We are committed to providing the most accurate and
-                    up-to-date information available in the TikTok creator
-                    economy. Our calculator formulas are built from aggregated
-                    data across thousands of creator accounts, verified against
-                    multiple independent sources, and updated regularly to
-                    reflect platform changes. When exact figures are unavailable,
-                    we clearly present ranges and estimates with appropriate
-                    context, so creators can make informed decisions rather than
+                    We provide the most accurate and up-to-date information
+                    available in the TikTok creator economy. Our calculator
+                    formulas are built from aggregated data across thousands
+                    of creator accounts. We verify them against multiple
+                    independent sources and update them regularly to reflect
+                    platform changes. We clearly present ranges and estimates
+                    with appropriate context when exact figures are unavailable.
+                    This helps creators make informed decisions instead of
                     relying on guesswork.
                   </p>
                 </div>
@@ -73,12 +73,12 @@ export default function EditorialPolicyPage() {
                     Transparency
                   </h3>
                   <p className="leading-relaxed">
-                    We believe creators deserve to know exactly how our numbers
-                    are derived. Every calculator includes a methodology section
-                    explaining the formulas, data sources, and assumptions
-                    behind the results. When our estimates carry limitations, we
-                    disclose them openly. We never obscure our methods or present
-                    estimates as guaranteed outcomes.
+                    Creators deserve to know exactly how we derive our numbers.
+                    Every calculator includes a methodology section that
+                    explains the formulas, data sources, and assumptions
+                    behind the results. We disclose limitations openly when
+                    our estimates carry them. We never obscure our methods or
+                    present estimates as guaranteed outcomes.
                   </p>
                 </div>
                 <div>
@@ -86,12 +86,12 @@ export default function EditorialPolicyPage() {
                     Independence
                   </h3>
                   <p className="leading-relaxed">
-                    Our editorial content is produced independently and is not
-                    influenced by advertisers, sponsors, affiliates, or any
-                    external parties. We maintain a strict separation between our
-                    editorial operations and our business operations. The
-                    recommendations and data we present are driven solely by
-                    research and analysis, never by commercial relationships.
+                    We produce our editorial content independently. Advertisers,
+                    sponsors, affiliates, and external parties do not influence
+                    it. We maintain a strict separation between our editorial
+                    operations and our business operations. Research and analysis
+                    drive the recommendations and data we present, never
+                    commercial relationships.
                   </p>
                 </div>
               </div>
@@ -131,12 +131,12 @@ export default function EditorialPolicyPage() {
                     Step 2: Writing and Development
                   </h3>
                   <p className="leading-relaxed">
-                    Content is drafted by team members with direct expertise in
-                    the relevant subject area. A creator economy taxation article
-                    is written by our CPA, Emily Thompson. Calculator formulas
-                    are developed by our data analyst, Michael Chen. LIVE
-                    streaming guides draw on Jessica Rodriguez&apos;s experience
-                    earning over $250K from TikTok LIVE gifts. This ensures
+                    Team members with direct expertise in the relevant subject
+                    area draft content. Our CPA, Emily Thompson, writes
+                    creator economy taxation articles. Our data analyst,
+                    Michael Chen, develops calculator formulas. LIVE streaming
+                    guides draw on the experience of Jessica Rodriguez, who
+                    earned over $250K from TikTok LIVE gifts. This ensures
                     every piece is grounded in real-world experience and
                     domain-specific knowledge.
                   </p>
@@ -147,12 +147,12 @@ export default function EditorialPolicyPage() {
                     Step 3: Fact-Checking and Verification
                   </h3>
                   <p className="leading-relaxed">
-                    Before publication, all content undergoes an independent
-                    fact-checking review. Data points are verified against their
-                    original sources. Calculator outputs are tested against known
+                    All content undergoes an independent fact-checking review
+                    before publication. We verify data points against their
+                    original sources. We test calculator outputs against known
                     creator earnings to validate accuracy within acceptable
-                    margins. Claims about platform features, policies, or rates
-                    are cross-referenced with official TikTok documentation and
+                    margins. We cross-reference claims about platform features,
+                    policies, and rates with official TikTok documentation and
                     multiple third-party sources.
                   </p>
                 </div>
@@ -176,13 +176,12 @@ export default function EditorialPolicyPage() {
                     Step 5: Publication and Monitoring
                   </h3>
                   <p className="leading-relaxed">
-                    After passing editorial review, content is published and
-                    enters our ongoing monitoring cycle. We track user feedback,
-                    check for platform changes that may affect accuracy, and
-                    schedule regular reviews to ensure content remains current.
-                    Published content is never considered &quot;final&quot; but
-                    rather a living resource that evolves alongside the creator
-                    economy.
+                    Content enters our ongoing monitoring cycle after passing
+                    editorial review. We track user feedback, check for platform
+                    changes that affect accuracy, and schedule regular reviews to
+                    ensure content remains current. Published content is never
+                    considered &quot;final&quot; but rather a living resource
+                    that evolves alongside the creator economy.
                   </p>
                 </div>
               </div>
@@ -206,14 +205,14 @@ export default function EditorialPolicyPage() {
                     Multi-Source Verification
                   </h3>
                   <p className="leading-relaxed">
-                    No single data point is published based on a single source.
-                    We require cross-referencing from at least two independent
+                    We never publish a data point based on a single source.
+                    We require cross-referencing from at least 2 independent
                     sources before presenting a figure as fact. For critical
-                    metrics such as Creator Fund RPM rates, brand deal
-                    benchmarks, and platform commission structures, we aim for
-                    three or more independent data sources. When sources
-                    conflict, we present the range of reported values along with
-                    context about why estimates may differ.
+                    metrics (Creator Fund RPM rates, brand deal benchmarks, and
+                    platform commission structures), we use 3 or more
+                    independent data sources. We present the range of reported
+                    values with context about why estimates differ when sources
+                    conflict.
                   </p>
                 </div>
 

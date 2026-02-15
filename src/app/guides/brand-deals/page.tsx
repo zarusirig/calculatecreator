@@ -100,7 +100,10 @@ export default function BrandDealsGuidePage() {
           <section className="py-8 bg-white -mx-4 px-4 mb-8">
             <div className="max-w-4xl mx-auto">
               <p className="text-body-lg text-neutral-700 leading-relaxed">
-                Brand deals are the #1 income stream for TikTok creators across ALL tiers, from nano-influencers with 1,000 followers to mega-influencers with millions. The average brand deal across all tiers is $285, but understanding your true worth and how to negotiate effectively can dramatically increase your earnings. Brand deals generate 10-50x more than Creator Rewards for the same audience size, making them the most lucrative monetization path for serious creators. In 2026, the influencer marketing industry has grown to $21 billion+, with brands increasingly allocating budget to micro and nano-influencers who deliver higher engagement and better ROI than mega-influencers. Yet many creators undercharge because they don&apos;t understand market rates, fail to factor in usage rights and exclusivity, or accept the first offer without negotiating. This comprehensive guide provides the exact rate benchmarks, pricing models, negotiation scripts, and contract frameworks used by top creators to command premium rates while building sustainable brand partnerships.
+                Brand deals are the number 1 income stream for TikTok creators across all tiers, from nano-influencers with 1,000 followers to mega-influencers with millions. The average brand deal across all tiers is $285. Brand deals generate 10 to 50x more than Creator Rewards for the same audience size, making them the most lucrative monetization path.
+              </p>
+              <p className="text-body-lg text-neutral-700 leading-relaxed mt-4">
+                In 2026, the influencer marketing industry has grown to $21 billion+. Brands increasingly allocate budget to micro and nano-influencers who deliver higher engagement and better ROI than mega-influencers. Many creators undercharge because they do not understand market rates, fail to factor in usage rights and exclusivity, or accept the first offer without negotiating. This guide provides exact rate benchmarks, pricing models, negotiation scripts, and contract frameworks used by top creators.
               </p>
             </div>
           </section>
@@ -134,7 +137,13 @@ export default function BrandDealsGuidePage() {
                 </h2>
                 <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
                   <p>
-                    Brand deals are the single most lucrative income stream for TikTok creators across every follower tier. While Creator Rewards and TikTok Shop affiliate commissions provide passive income, brand deals represent active, negotiable revenue that scales with your influence and negotiation skills. The average brand deal across all creator tiers is $285, but this number varies wildly: nano-influencers (1K-10K followers) average $50-$500 per post, while mega-influencers (1M+) command $500,000-$2,000,000+ per sponsored video. What makes brand deals so powerful is the earning potential relative to other monetization streams—a creator with 50,000 followers might earn $50/month from Creator Rewards but $1,000-$5,000 per month from brand deals, a 10-50x multiplier. The influencer marketing industry reached $21 billion in 2026, with brands shifting budgets from traditional advertising to creator partnerships because authentic endorsements from trusted voices deliver measurably better ROI than banner ads or TV commercials.
+                    Brand deals are the single most lucrative income stream for TikTok creators across every follower tier. Creator Rewards and TikTok Shop affiliate commissions provide passive income. Brand deals represent active, negotiable revenue that scales with your influence and negotiation skills.
+                  </p>
+                  <p>
+                    The average brand deal across all creator tiers is $285. This number varies widely: nano-influencers (1K to 10K followers) average $50 to $500 per post, while mega-influencers (1M+) command $500,000 to $2,000,000+ per sponsored video. A creator with 50,000 followers earns roughly $50/month from Creator Rewards but $1,000 to $5,000 per month from brand deals, a 10 to 50x multiplier.
+                  </p>
+                  <p>
+                    The influencer marketing industry reached $21 billion in 2026. Brands shifted budgets from traditional advertising to creator partnerships because authentic endorsements deliver measurably better ROI than banner ads or TV commercials.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -166,7 +175,7 @@ export default function BrandDealsGuidePage() {
                   <div className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-2 border-yellow-300 mt-6">
                     <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><Lightbulb className="w-5 h-5 text-yellow-600" /> Key Insight: Engagement Rate Matters More Than Follower Count</h3>
                     <p className="text-sm text-neutral-700">
-                      A micro-influencer with 50K followers and 8% engagement rate often delivers better ROI for brands than a mega-influencer with 2M followers and 2% engagement. Authentic engagement translates to higher conversion rates, making engaged niche audiences more valuable than large but disengaged followings. Lead with your engagement rate in negotiations if it&apos;s above 5%.
+                      A micro-influencer with 50K followers and 8% engagement rate delivers better ROI for brands than a mega-influencer with 2M followers and 2% engagement. Authentic engagement translates to higher conversion rates. Engaged niche audiences are more valuable than large but disengaged followings. Lead with your engagement rate in negotiations when it exceeds 5%.
                     </p>
                   </div>
                 </div>
@@ -182,7 +191,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Understanding the five primary pricing models for brand deals is essential for choosing the right structure for your brand partnerships. Each model has different risk profiles, income potential, and suitability depending on your audience size, niche, and content performance consistency.
+                    Understanding the 5 primary pricing models for brand deals is essential for choosing the right structure. Each model has different risk profiles, income potential, and suitability depending on your audience size, niche, and content performance consistency.
                   </p>
 
                   <div>
@@ -217,7 +226,7 @@ export default function BrandDealsGuidePage() {
 
                       <div className="p-5 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border-l-4 border-green-500">
                         <div className="mb-3">
-                          <h4 className="font-bold text-neutral-900 text-lg">2. CPM-Based ($5-$20 per 1K views)</h4>
+                          <h4 className="font-bold text-neutral-900 text-lg">2. CPM-Based ($5 to $20 per 1K views)</h4>
                           <p className="text-sm text-neutral-600 italic">Payment based on actual views</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-neutral-700 mb-3">
@@ -269,7 +278,7 @@ export default function BrandDealsGuidePage() {
 
                       <div className="p-5 bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg border-l-4 border-orange-500">
                         <div className="mb-3">
-                          <h4 className="font-bold text-neutral-900 text-lg">4. Revenue Share (5-30%)</h4>
+                          <h4 className="font-bold text-neutral-900 text-lg">4. Revenue Share (5 to 30%)</h4>
                           <p className="text-sm text-neutral-600 italic">Percentage of sales generated</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-neutral-700 mb-3">
@@ -381,7 +390,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Understanding market rate benchmarks by follower tier is the foundation of confident pricing. These benchmarks represent the standard range across industries, with premium niches (finance, tech, beauty) commanding 20-30% above baseline.
+                    Understanding market rate benchmarks by follower tier is the foundation of confident pricing. These benchmarks represent the standard range across industries. Premium niches (finance, tech, and beauty) command 20 to 30% above baseline.
                   </p>
 
                   <div>
@@ -403,35 +412,35 @@ export default function BrandDealsGuidePage() {
                             <td className="p-3">1K-10K</td>
                             <td className="p-3 text-green-600 font-semibold">$50-$500</td>
                             <td className="p-3">$0.05-$0.10</td>
-                            <td className="p-3">8-15%</td>
+                            <td className="p-3">8 to 15%</td>
                           </tr>
                           <tr>
                             <td className="p-3 font-semibold">Micro</td>
                             <td className="p-3">10K-100K</td>
                             <td className="p-3 text-green-600 font-semibold">$500-$5,000</td>
                             <td className="p-3">$0.05-$0.10</td>
-                            <td className="p-3">5-10%</td>
+                            <td className="p-3">5 to 10%</td>
                           </tr>
                           <tr>
                             <td className="p-3 font-semibold">Mid-Tier</td>
                             <td className="p-3">100K-500K</td>
                             <td className="p-3 text-blue-600 font-semibold">$5,000-$50,000</td>
                             <td className="p-3">$0.05-$0.10</td>
-                            <td className="p-3">3-6%</td>
+                            <td className="p-3">3 to 6%</td>
                           </tr>
                           <tr>
                             <td className="p-3 font-semibold">Macro</td>
                             <td className="p-3">500K-1M</td>
                             <td className="p-3 text-orange-600 font-semibold">$50,000-$500,000</td>
                             <td className="p-3">$0.10-$0.50</td>
-                            <td className="p-3">2-4%</td>
+                            <td className="p-3">2 to 4%</td>
                           </tr>
                           <tr>
                             <td className="p-3 font-semibold">Mega</td>
                             <td className="p-3">1M+</td>
                             <td className="p-3 text-red-600 font-semibold">$500,000-$2,000,000+</td>
                             <td className="p-3">$0.50-$2.00</td>
-                            <td className="p-3">1-3%</td>
+                            <td className="p-3">1 to 3%</td>
                           </tr>
                         </tbody>
                       </table>
@@ -439,7 +448,7 @@ export default function BrandDealsGuidePage() {
 
                     <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
                       <p className="text-sm text-neutral-700">
-                        <strong>Important Note:</strong> Rates vary significantly by niche, engagement rate, and content quality. Premium niches (Finance, Tech, Beauty) command +20-30% above baseline rates. Always lead with engagement rate if it&apos;s above 5%.
+                        <strong>Important Note:</strong> Rates vary significantly by niche, engagement rate, and content quality. Premium niches (Finance, Tech, Beauty) command +20 to 30% above baseline rates. Always lead with engagement rate if it&apos;s above 5%.
                       </p>
                     </div>
                   </div>
@@ -447,7 +456,7 @@ export default function BrandDealsGuidePage() {
                   <div className="p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border-2 border-orange-200">
                     <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><Lightbulb className="w-5 h-5 text-orange-600" /> Key Insight: Engagement Rate Matters More Than Follower Count</h3>
                     <p className="text-sm text-neutral-700">
-                      A micro-influencer with 50K followers and 8% engagement rate delivers measurably better ROI for brands than a mega-influencer with 2M followers and 2% engagement. Engaged audiences convert at higher rates, making authentic niche communities more valuable than large disengaged followings. Calculate your engagement rate and lead with it in negotiations if it&apos;s above industry average.
+                      A micro-influencer with 50K followers and 8% engagement rate delivers measurably better ROI for brands than a mega-influencer with 2M followers and 2% engagement. Engaged audiences convert at higher rates. Authentic niche communities are more valuable than large disengaged followings. Calculate your engagement rate and lead with it in negotiations when it exceeds the industry average.
                     </p>
                   </div>
 
@@ -469,7 +478,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    A professional rate card is essential for pitching brands and streamlining negotiations. It establishes your baseline pricing while allowing flexibility for custom packages and add-ons.
+                    A professional rate card is essential for pitching brands and streamlining negotiations. It establishes your baseline pricing while allowing flexibility for custom packages.
                   </p>
 
                   <div>
@@ -562,7 +571,7 @@ export default function BrandDealsGuidePage() {
                       <div className="p-4 bg-white border-2 border-neutral-200 rounded-lg">
                         <h4 className="font-semibold text-neutral-900 mb-2">Don&apos;ts</h4>
                         <ul className="space-y-1 text-sm text-neutral-700">
-                          <li>&bull; Don&apos;t anchor too low—start 20-30% above target</li>
+                          <li>&bull; Don&apos;t anchor too low—start 20 to 30% above target</li>
                           <li>&bull; Don&apos;t make it overly complex (1-2 pages max)</li>
                           <li>&bull; Don&apos;t lock yourself in—state &quot;rates subject to change&quot;</li>
                           <li>&bull; Don&apos;t include personal contact info publicly</li>
@@ -590,7 +599,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Usage rights (how long and where brands can use your content) and whitelisting (brands running your content as paid ads) are separate, billable components that creators often give away for free. Understanding how to price these adds thousands to your deal value.
+                    Usage rights (how long and where brands use your content) and whitelisting (brands running your content as paid ads) are separate, billable components. Creators often give these away for free. Understanding how to price them adds thousands to the value of your deal.
                   </p>
 
                   <div>
@@ -638,7 +647,7 @@ export default function BrandDealsGuidePage() {
                       </p>
                       <div className="space-y-3">
                         <div className="flex items-center justify-between p-3 bg-white rounded-lg text-sm">
-                          <span><strong>Standard Whitelisting Fee:</strong> 20-25% of base rate per 30-day window</span>
+                          <span><strong>Standard Whitelisting Fee:</strong> 20 to 25% of base rate per 30-day window</span>
                           <span className="text-xs text-purple-600 font-semibold">Most Common</span>
                         </div>
                         <div className="flex items-center justify-between p-3 bg-white rounded-lg text-sm">
@@ -646,7 +655,7 @@ export default function BrandDealsGuidePage() {
                           <span className="text-xs text-green-600 font-semibold">+$1,000-$1,250</span>
                         </div>
                         <div className="flex items-center justify-between p-3 bg-white rounded-lg text-sm">
-                          <span><strong>Extended Whitelisting (60-90 days):</strong> Charge 30-40% uplift</span>
+                          <span><strong>Extended Whitelisting (60 to 90 days):</strong> Charge 30 to 40% uplift</span>
                           <span className="text-xs text-orange-600 font-semibold">Higher Value</span>
                         </div>
                       </div>
@@ -678,7 +687,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Exclusivity clauses prevent you from working with competing brands during a specified period. Because this limits your future income opportunities, exclusivity must be compensated proportionally. Many creators unknowingly agree to broad exclusivity that locks them out of an entire category for months without additional payment.
+                    Exclusivity clauses prevent you from working with competing brands during a specified period. This limits your future income opportunities, so exclusivity must be compensated proportionally. Many creators unknowingly agree to broad exclusivity that locks them out of an entire category for months without additional payment.
                   </p>
 
                   <div>
@@ -763,7 +772,7 @@ export default function BrandDealsGuidePage() {
                   <div className="p-5 bg-red-50 rounded-lg border-l-4 border-red-500">
                     <h4 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><AlertTriangle className="w-5 h-5 text-red-600" /> Real Creator Story: 6 Months of Lost Income</h4>
                     <p className="text-sm text-neutral-700">
-                      A fitness creator signed a $2,000 brand deal for a supplement company without reading the exclusivity clause. Buried in the contract was a 6-month broad exclusivity preventing them from promoting ANY fitness, nutrition, or wellness products. They lost an estimated $15,000-$20,000 in brand deal opportunities during that period—all for a single $2,000 payment. Always specify narrow category exclusivity and shorter durations.
+                      A fitness creator signed a $2,000 brand deal for a supplement company without reading the exclusivity clause. Buried in the contract was a 6-month broad exclusivity preventing promotion of any fitness, nutrition, or wellness products. They lost an estimated $15,000 to $20,000 in brand deal opportunities during that period. Specify narrow category exclusivity and shorter durations.
                     </p>
                   </div>
 
@@ -811,6 +820,7 @@ export default function BrandDealsGuidePage() {
                     A strong contract protects both parties and prevents costly disputes. These 10 clauses are non-negotiable for professional creator-brand partnerships. Never proceed without a written agreement.
                   </p>
 
+
                   <div className="space-y-4">
                     {[
                       {
@@ -821,7 +831,7 @@ export default function BrandDealsGuidePage() {
                       {
                         number: 2,
                         title: 'Compensation & Payment Terms',
-                        description: 'Total payment amount, payment schedule (50% upfront / 50% on delivery is standard), payment method (wire, PayPal, check), and late payment penalties (1.5-2% per month is standard for Net 30/45/60 terms).',
+                        description: 'Total payment amount, payment schedule (50% upfront / 50% on delivery is standard), payment method (wire, PayPal, check), and late payment penalties (1.5 to 2% per month is standard for Net 30/45/60 terms).',
                       },
                       {
                         number: 3,
@@ -851,7 +861,7 @@ export default function BrandDealsGuidePage() {
                       {
                         number: 8,
                         title: 'Exclusivity Terms (If Applicable)',
-                        description: 'If brand requires exclusivity, specify: exact category (narrow, not broad), duration (30-90 days max unless premium compensation), geographic scope (US vs worldwide), and the additional fee for exclusivity (15-30% uplift minimum).',
+                        description: 'If brand requires exclusivity, specify: exact category (narrow, not broad), duration (30-90 days max unless premium compensation), geographic scope (US vs worldwide), and the additional fee for exclusivity (15 to 30% uplift minimum).',
                       },
                       {
                         number: 9,
@@ -896,23 +906,23 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Negotiation is a skill that directly impacts your earnings. The difference between accepting the first offer and confidently negotiating can be thousands of dollars per deal. Master these five rules and use the script templates below to maximize your brand deal income.
+                    Negotiation directly impacts your earnings. The difference between accepting the first offer and confidently negotiating reaches thousands of dollars per deal. Master these 5 rules and use the script templates below to maximize your brand deal income.
                   </p>
 
                   <div>
                     <h3 className="text-heading-lg font-semibold text-neutral-900 mb-4">5 Golden Rules of Brand Deal Negotiation</h3>
                     <div className="space-y-3">
                       <div className="p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border-l-4 border-green-500">
-                        <h4 className="font-semibold text-neutral-900 mb-2">Rule 1: Always Start 20-30% Above Your Target</h4>
+                        <h4 className="font-semibold text-neutral-900 mb-2">Rule 1: Always Start 20 to 30% Above Your Target</h4>
                         <p className="text-sm text-neutral-700">
                           Brands expect negotiation and typically have budget flexibility they won&apos;t reveal upfront. If your target is $1,000, quote $1,200-$1,300. This gives you room to &quot;compromise&quot; while still hitting your goal. Anchoring high sets the negotiation range in your favor.
                         </p>
                       </div>
 
                       <div className="p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border-l-4 border-blue-500">
-                        <h4 className="font-semibold text-neutral-900 mb-2">Rule 2: Never Accept First Offer (Counter +15-20%)</h4>
+                        <h4 className="font-semibold text-neutral-900 mb-2">Rule 2: Never Accept First Offer (Counter +15 to 20%)</h4>
                         <p className="text-sm text-neutral-700">
-                          Even if the first offer seems fair, ALWAYS counter with 15-20% more. Example: Brand offers $1,000. Respond: &quot;Thank you for the offer! Based on my engagement metrics and audience demographics, I typically work at $1,200 for this deliverable. Can we meet there?&quot; You&apos;ll be surprised how often they say yes.
+                          Even if the first offer seems fair, ALWAYS counter with 15 to 20% more. Example: Brand offers $1,000. Respond: &quot;Thank you for the offer! Based on my engagement metrics and audience demographics, I typically work at $1,200 for this deliverable. Can we meet there?&quot; You&apos;ll be surprised how often they say yes.
                         </p>
                       </div>
 
@@ -947,7 +957,7 @@ export default function BrandDealsGuidePage() {
                         <h4 className="font-semibold text-neutral-900 mb-3">Script 1: Initial Rate Quote (Anchoring High)</h4>
                         <div className="p-4 bg-white rounded-lg text-sm text-neutral-700 space-y-2">
                           <p><em>&quot;Thank you for reaching out! I&apos;d love to collaborate with [Brand Name]. Based on my engagement rate of [X]% and average views of [Y] per post, my standard rate for a single in-feed TikTok video with 30-day usage rights is $[Z].&quot;</em></p>
-                          <p><em>&quot;This includes [specific deliverables: length, style, key messaging, posting timeline]. Usage rights for paid ads (Spark Ads) would be an additional [20-25%]. Does this align with your budget for this campaign?&quot;</em></p>
+                          <p><em>&quot;This includes [specific deliverables: length, style, key messaging, posting timeline]. Usage rights for paid ads (Spark Ads) would be an additional [20 to 25%]. Does this align with your budget for this campaign?&quot;</em></p>
                         </div>
                       </div>
 
@@ -955,7 +965,7 @@ export default function BrandDealsGuidePage() {
                         <h4 className="font-semibold text-neutral-900 mb-3">Script 2: Counter-Offer When Rate Is Too Low</h4>
                         <div className="p-4 bg-white rounded-lg text-sm text-neutral-700 space-y-2">
                           <p><em>&quot;Thank you for the offer of $[X]. I appreciate you considering me for this campaign.&quot;</em></p>
-                          <p><em>&quot;After reviewing my analytics, my recent posts in this niche average [Y] views with [Z]% engagement, which translates to a $[implied CPM] CPM. Based on these metrics and the scope of work, my rate for this deliverable is $[X + 15-20%].&quot;</em></p>
+                          <p><em>&quot;After reviewing my analytics, my recent posts in this niche average [Y] views with [Z]% engagement, which translates to a $[implied CPM] CPM. Based on these metrics and the scope of work, my rate for this deliverable is $[X + 15 to 20%].&quot;</em></p>
                           <p><em>&quot;I&apos;m confident I can deliver excellent results for your brand at this rate. Would you be open to meeting at $[counter-offer]?&quot;</em></p>
                         </div>
                       </div>
@@ -989,7 +999,7 @@ export default function BrandDealsGuidePage() {
 
                 <div className="space-y-6">
                   <p className="text-body-lg text-neutral-700">
-                    Payment terms define when you receive payment after delivering your content. Understanding standard industry terms and negotiating favorable payment structures protects your cash flow and ensures you get paid on time.
+                    Payment terms define when you receive payment after delivering content. Understanding standard industry terms and negotiating favorable payment structures protects your cash flow.
                   </p>
 
                   <div>
@@ -1179,7 +1189,7 @@ export default function BrandDealsGuidePage() {
                 faqs={[
                   {
                     question: 'How much should I charge for a TikTok brand deal?',
-                    answer: 'Brand deal rates vary by follower tier: Nano (1K-10K) charge $50-$500, Micro (10K-100K) charge $500-$5,000, Mid-Tier (100K-500K) charge $5,000-$50,000, Macro (500K-1M) charge $50,000-$500,000, and Mega (1M+) charge $500,000-$2M+. Rates also depend on engagement rate, niche (premium niches like finance/tech command +20-30% above baseline), usage rights, and exclusivity. Use our Brand Deal Rate Calculator to determine your exact rate.',
+                    answer: 'Brand deal rates vary by follower tier: Nano (1K-10K) charge $50-$500, Micro (10K-100K) charge $500-$5,000, Mid-Tier (100K-500K) charge $5,000-$50,000, Macro (500K-1M) charge $50,000-$500,000, and Mega (1M+) charge $500,000-$2M+. Rates also depend on engagement rate, niche (premium niches like finance/tech command +20 to 30% above baseline), usage rights, and exclusivity. Use our Brand Deal Rate Calculator to determine your exact rate.',
                   },
                   {
                     question: 'What percentage does TikTok take from brand deals?',
@@ -1199,7 +1209,7 @@ export default function BrandDealsGuidePage() {
                   },
                   {
                     question: 'What is whitelisting and how much should I charge?',
-                    answer: 'Whitelisting (also called Spark Ads authorization) means granting the brand permission to run your organic content as their paid ad. Engagement from whitelisted ads flows back to your profile. Charge 20-25% of your base rate per 30-day whitelisting period. Example: $5,000 base rate + 30-day whitelisting = $6,000-$6,250 total. Extended whitelisting (60-90 days) should be 30-40% uplift.',
+                    answer: 'Whitelisting (also called Spark Ads authorization) means granting the brand permission to run your organic content as their paid ad. Engagement from whitelisted ads flows back to your profile. Charge 20 to 25% of your base rate per 30-day whitelisting period. Example: $5,000 base rate + 30-day whitelisting = $6,000-$6,250 total. Extended whitelisting (60 to 90 days) should be 30 to 40% uplift.',
                   },
                   {
                     question: 'Should I accept product-only brand deals?',
@@ -1207,7 +1217,7 @@ export default function BrandDealsGuidePage() {
                   },
                   {
                     question: 'How do I negotiate a higher brand deal rate?',
-                    answer: 'Follow these negotiation tactics: (1) Start 20-30% above your target to anchor high, (2) Never accept first offer—counter with +15-20%, (3) Lead with engagement rate if above 5%, (4) Offer value-adds instead of discounting (e.g., add story frames instead of cutting price), (5) Know your walk-away rate and politely decline lowball offers. Research your metrics first using our Engagement Rate Calculator.',
+                    answer: 'Follow these negotiation tactics: (1) Start 20-30% above your target to anchor high, (2) Never accept first offer—counter with +15 to 20%, (3) Lead with engagement rate if above 5%, (4) Offer value-adds instead of discounting (e.g., add story frames instead of cutting price), (5) Know your walk-away rate and politely decline lowball offers. Research your metrics first using our Engagement Rate Calculator.',
                   },
                   {
                     question: 'What payment terms are standard for brand deals?',

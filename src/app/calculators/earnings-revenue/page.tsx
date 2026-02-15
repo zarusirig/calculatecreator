@@ -18,7 +18,7 @@ const calculators = [
   {
     name: 'LIVE Earnings Calculator',
     slug: 'live-earnings',
-    description: 'Estimate earnings from TikTok LIVE streaming based on viewers, duration, and gifting rate.',
+    description: 'Estimate earnings from TikTok LIVE streaming. Enter viewers, duration, and gifting rate.',
     icon: Gift,
   },
   {
@@ -66,22 +66,22 @@ const earningsByFollowerTier = [
 const calculatorBenefits = [
   {
     title: 'LIVE Earnings Projections',
-    description: 'Calculate hourly and session earnings based on viewer count, gifting rate, and stream duration. Understand how audience size and engagement directly impact LIVE revenue.',
+    description: 'Calculate hourly and session earnings based on viewer count, gifting rate, and stream duration. Audience size and engagement directly impact LIVE revenue.',
     icon: Gift,
   },
   {
     title: 'Total Revenue Estimation',
-    description: 'Combine all income streams—Creator Rewards, brand deals, LIVE gifts, and TikTok Shop—into one comprehensive earnings forecast to set realistic monthly income goals.',
+    description: 'Combine all income streams (Creator Rewards, brand deals, LIVE gifts, and TikTok Shop) into one earnings forecast. Set realistic monthly income goals.',
     icon: Banknote,
   },
   {
     title: 'Creator Fund Breakdown',
-    description: 'Estimate monthly and annual Creator Rewards earnings based on video views, engagement rate, and content frequency. See how consistent posting affects passive income.',
+    description: 'Estimate monthly and annual Creator Rewards earnings based on video views, engagement rate, and content frequency. Consistent posting directly affects passive income.',
     icon: DollarSign,
   },
   {
     title: 'Revenue Optimization',
-    description: 'Identify which monetization method provides the best return on effort. Compare Creator Fund vs brand deals vs LIVE streaming to focus your time strategically.',
+    description: 'Identify which monetization method provides the best return on effort. Compare Creator Fund, brand deals, and LIVE streaming to focus your time strategically.',
     icon: TrendingUp,
   },
 ];
@@ -89,22 +89,22 @@ const calculatorBenefits = [
 const trackingBenefits = [
   {
     title: 'Set Realistic Income Goals',
-    description: 'Understand your current earning potential and create achievable monthly targets based on your follower count, engagement rate, and content niche.',
+    description: 'Understand current earning potential. Create achievable monthly targets based on follower count, engagement rate, and content niche.',
     icon: Target,
   },
   {
     title: 'Identify Revenue Gaps',
-    description: 'Discover which monetization streams you are underutilizing. Many creators earn 80% from one method when they could diversify for stability.',
+    description: 'Discover which monetization streams you are underutilizing. Many creators earn 80% from 1 method when they could diversify for stability.',
     icon: BarChart3,
   },
   {
     title: 'Track Growth Progress',
-    description: 'Monitor how earnings increase as you gain followers and improve engagement. Celebrate milestones and adjust strategy when growth stalls.',
+    description: 'Monitor how earnings increase as you gain followers and improve engagement. Adjust strategy when growth stalls.',
     icon: TrendingUp,
   },
   {
     title: 'Make Data-Driven Decisions',
-    description: 'Stop guessing whether to focus on LIVE streaming, brand partnerships, or Creator Fund. Let actual earnings data guide your content strategy.',
+    description: 'Stop guessing which revenue stream to prioritize. Let actual earnings data guide your content strategy across LIVE streaming, brand partnerships, and Creator Fund.',
     icon: Calculator,
   },
 ];
@@ -159,10 +159,10 @@ const revenueStreamComparison = [
 const maximizeEarningsStrategies = [
   {
     title: 'Diversify Revenue Streams',
-    description: 'Top creators earn from 4-6 different sources, not just one. Combine Creator Rewards for passive income, 1-2 brand deals monthly for high payouts, weekly LIVE sessions for community building, and TikTok Shop for scalable commissions. This protects against algorithm changes and platform policy shifts.',
+    description: 'Top creators earn from 4 to 6 different sources, not just 1. Combine Creator Rewards for passive income, 1 to 2 brand deals monthly for high payouts, weekly LIVE sessions for community building, and TikTok Shop for scalable commissions. This protects against algorithm changes and platform policy shifts.',
     icon: Lightbulb,
     actionItems: [
-      'Set up Creator Rewards if you have 10K+ followers',
+      'Set up Creator Rewards if you have 10,000 or more followers',
       'Apply to TikTok Shop Creator Marketplace',
       'Schedule at least 1 LIVE session weekly',
       'Create a media kit and pitch 5 brands in your niche',
@@ -170,10 +170,10 @@ const maximizeEarningsStrategies = [
   },
   {
     title: 'Optimize for High-Value Niches',
-    description: 'Finance, tech, and B2B creators earn 3-5× more than entertainment creators with the same follower count. Brand budgets in these niches are significantly higher, and audiences have higher purchasing power. Consider pivoting or adding educational/value-driven content to your mix.',
+    description: 'Finance, tech, and B2B creators earn 3 to 5 times more than entertainment creators with the same follower count. Brand budgets in these niches are higher, and audiences have greater purchasing power. Consider adding educational or value-driven content to your mix.',
     icon: Target,
     actionItems: [
-      'Research brand deal rates in your current vs adjacent niches',
+      'Research brand deal rates in your current and adjacent niches',
       'Add educational content that solves specific problems',
       'Position yourself as a niche expert, not generalist',
       'Partner with B2B brands for premium sponsorships',
@@ -181,7 +181,7 @@ const maximizeEarningsStrategies = [
   },
   {
     title: 'Increase Engagement Rate',
-    description: 'Creators with 10%+ engagement charge 2-3× baseline brand deal rates and see higher Creator Rewards payouts. Engagement signals quality to both algorithms and brands. Focus on community building through responding to comments, creating series content, and asking questions that encourage interaction.',
+    description: 'Creators with 10% or higher engagement charge 2 to 3 times baseline brand deal rates and see higher Creator Rewards payouts. Engagement signals quality to both algorithms and brands. Focus on community building by responding to comments, creating series content, and asking questions that encourage interaction.',
     icon: Rocket,
     actionItems: [
       'Respond to every comment in the first hour after posting',
@@ -192,7 +192,7 @@ const maximizeEarningsStrategies = [
   },
   {
     title: 'Track and Optimize Performance',
-    description: 'Use analytics to identify your most profitable content types, best posting times, and highest-earning revenue streams. Most creators underestimate earnings by 40-60% because they do not track performance. Set up a simple spreadsheet to log monthly income by source and adjust strategy quarterly.',
+    description: 'Use analytics to identify your most profitable content types, best posting times, and highest-earning revenue streams. Most creators underestimate earnings by 40% to 60% because they do not track performance. Set up a spreadsheet to log monthly income by source and adjust strategy quarterly.',
     icon: LineChart,
     actionItems: [
       'Track earnings by source in a monthly spreadsheet',
@@ -206,43 +206,43 @@ const maximizeEarningsStrategies = [
 const faqs = [
   {
     question: 'How much can I earn from TikTok as a creator?',
-    answer: 'TikTok earnings vary widely based on follower count and monetization strategy. Micro-influencers (10K-50K followers) typically earn $160-$750/month, mid-tier creators (50K-500K) earn $1,200-$12,000/month, and large creators (500K+) can earn $11,000-$50,000+ monthly when combining Creator Fund, brand deals, and LIVE gifts.',
+    answer: 'TikTok earnings vary widely based on follower count and monetization strategy. Micro-influencers (10,000 to 50,000 followers) typically earn $160 to $750 per month. Mid-tier creators (50,000 to 500,000) earn $1,200 to $12,000 per month. Large creators (500,000 or more) earn $11,000 to $50,000 or more monthly when combining Creator Fund, brand deals, and LIVE gifts.',
   },
   {
     question: 'What is the TikTok Creator Fund and how much does it pay?',
-    answer: 'The Creator Fund pays $0.02-$0.04 per 1,000 views (average $0.03). To qualify, you need 10K+ followers, 100K+ views in the last 30 days, be 18+, and live in an eligible country. While payments are low compared to YouTube, it provides passive income while you focus on brand deals and LIVE streaming.',
+    answer: 'The Creator Fund pays $0.02 to $0.04 per 1,000 views (average $0.03). Qualifying requires 10,000 or more followers, 100,000 or more views in the last 30 days, age 18 or older, and residence in an eligible country. Payments are low compared to YouTube. However, it provides passive income while you focus on brand deals and LIVE streaming.',
   },
   {
     question: 'How do TikTok LIVE gifts work?',
-    answer: 'Viewers purchase coins and send virtual gifts during your LIVE streams. Gifts convert to diamonds at roughly 2 coins = 1 diamond. TikTok takes 50%, so you keep about $0.005 per diamond. A streamer with 100 viewers can earn $50-$200 per hour depending on engagement and audience loyalty.',
+    answer: 'Viewers purchase coins and send virtual gifts during LIVE streams. Gifts convert to diamonds at roughly 2 coins per 1 diamond. TikTok takes 50%, so you keep about $0.005 per diamond. A streamer with 100 viewers earns $50 to $200 per hour depending on engagement and audience loyalty.',
   },
   {
     question: 'Which TikTok revenue stream pays the most?',
-    answer: 'Brand deals generate the highest income for most creators, typically 10-50× more than Creator Fund for the same audience size. A creator with 100K followers earning $30/month from Creator Fund can charge $1,000-$3,000 per brand deal. However, LIVE gifts can be most lucrative for highly engaging personalities with dedicated communities who stream regularly.',
+    answer: 'Brand deals generate the highest income for most creators, typically 10 to 50 times more than Creator Fund for the same audience size. A creator with 100,000 followers earning $30 per month from Creator Fund charges $1,000 to $3,000 per brand deal. LIVE gifts are the most lucrative option for engaging personalities with dedicated communities who stream regularly.',
   },
   {
     question: 'How has the Creator Rewards Program changed TikTok earnings in 2026?',
-    answer: 'The Creator Rewards Program (formerly Creator Fund) pays significantly better rates in 2026: $0.40-$1.00 per 1,000 views versus the old $0.02-$0.04. This 10-20× increase means a creator with 1 million monthly views can now earn $400-$1,000 instead of just $20-$40. The program prioritizes longer videos (1+ minute) and higher engagement content.',
+    answer: 'The Creator Rewards Program (formerly Creator Fund) pays better rates in 2026: $0.40 to $1.00 per 1,000 views versus the old $0.02 to $0.04. This 10 to 20 times increase means a creator with 1 million monthly views now earns $400 to $1,000 instead of $20 to $40. The program prioritizes longer videos (1 minute or more) and higher engagement content.',
   },
   {
     question: 'What is TikTok Shop and how much can I earn from it?',
-    answer: 'TikTok Shop allows creators to earn commissions by promoting products in videos or LIVE streams. Commission rates typically range from 5-20% depending on the product category. With TikTok Shop GMV (Gross Merchandise Value) reaching $40 billion in 2026 (145% YoY growth), top affiliates earn $5,000-$50,000+ monthly from Shop commissions alone.',
+    answer: 'TikTok Shop allows creators to earn commissions by promoting products in videos or LIVE streams. Commission rates range from 5% to 20% depending on the product category. TikTok Shop Gross Merchandise Value (GMV) reached $40 billion in 2026 with 145% year-over-year growth. Top affiliates earn $5,000 to $50,000 or more monthly from Shop commissions alone.',
   },
   {
     question: 'Do I need a business account to track my TikTok earnings?',
-    answer: 'While not required for these calculators, switching to a business or creator account gives you access to TikTok Analytics, which provides detailed view counts, engagement rates, and follower demographics. This data makes earnings projections more accurate. You can switch to a creator account for free in Settings > Manage Account.',
+    answer: 'A business account is not required for these calculators. Switching to a business or creator account gives you access to TikTok Analytics. It provides detailed view counts, engagement rates, and follower demographics. This data makes earnings projections more accurate. Switch to a creator account for free in Settings, then Manage Account.',
   },
   {
     question: 'How accurate are TikTok earnings calculators?',
-    answer: 'Earnings calculators provide estimates based on platform averages and industry benchmarks. Actual earnings vary by niche (finance pays 3-5× more than general content), audience quality (engaged followers vs passive viewers), and individual monetization strategy. Use calculators as planning tools, not guarantees. Track your real earnings over 3-6 months for personalized benchmarks.',
+    answer: 'Earnings calculators provide estimates based on platform averages and industry benchmarks. Actual earnings vary by niche (finance pays 3 to 5 times more than general content), audience quality (engaged followers versus passive viewers), and individual monetization strategy. Use calculators as planning tools, not guarantees. Track real earnings over 3 to 6 months for personalized benchmarks.',
   },
   {
     question: 'Should I focus on one revenue stream or diversify?',
-    answer: 'Diversification is critical for long-term creator sustainability. Top-earning creators in 2026 generate income from 4-6 different streams, protecting against algorithm changes, platform policy shifts, and seasonal fluctuations. Start with Creator Rewards as your passive baseline, add 1-2 brand deals monthly, schedule weekly LIVE sessions for community engagement, and integrate TikTok Shop for scalable commissions. This multi-stream approach typically generates 3-5× more income than relying solely on one method.',
+    answer: 'Diversification is critical for long-term creator sustainability. Top-earning creators in 2026 generate income from 4 to 6 different streams. This protects against algorithm changes, platform policy shifts, and seasonal fluctuations. Start with Creator Rewards as your passive baseline. Add 1 to 2 brand deals monthly. Schedule weekly LIVE sessions for community engagement. Integrate TikTok Shop for scalable commissions. This multi-stream approach generates 3 to 5 times more income than relying on 1 method.',
   },
   {
     question: 'How can I transition from part-time to full-time TikTok creator?',
-    answer: 'Build a financial runway of 6-12 months expenses before going full-time. Aim for consistent monthly earnings of 1.5-2× your current salary for at least 6 months to account for income variability and self-employment taxes (25-30% of gross income). Diversify revenue streams so no single source accounts for more than 50% of income. Set up quarterly tax payments, track all business expenses for deductions, and maintain separate personal and business accounts. Most successful full-time creators have 50K+ followers and earn from at least 3 different monetization methods.',
+    answer: 'Build a financial runway of 6 to 12 months of expenses before going full-time. Aim for consistent monthly earnings of 1.5 to 2 times your current salary for at least 6 months. This accounts for income variability and self-employment taxes (25% to 30% of gross income). Diversify revenue streams so no single source accounts for more than 50% of income. Set up quarterly tax payments, track all business expenses for deductions, and maintain separate personal and business accounts. Most successful full-time creators have 50,000 or more followers and earn from at least 3 different monetization methods.',
   },
 ];
 
@@ -278,7 +278,7 @@ export default function EarningsRevenuePage() {
             Earnings & Revenue Calculators
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your TikTok earnings from all revenue streams including Creator Fund ($0.02-$0.04/1K views), LIVE gifts (50% payout), brand deals ($10-$30/1K followers), and TikTok Shop commissions. These tools help creators estimate monthly and annual income potential based on real-world benchmarks, allowing you to understand which monetization method offers the best return on your time and effort investment.
+            Calculate TikTok earnings from all revenue streams. These include Creator Fund ($0.02 to $0.04 per 1,000 views), LIVE gifts (50% payout), brand deals ($10 to $30 per 1,000 followers), and TikTok Shop commissions. Estimate monthly and annual income potential based on real-world benchmarks. Understand which monetization method offers the best return on your time and effort.
           </p>
         </div>
 
@@ -314,7 +314,7 @@ export default function EarningsRevenuePage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900">2026 TikTok Earnings Landscape</h2>
             </div>
             <p className="text-body-md text-neutral-700 mb-6">
-              The creator economy has transformed dramatically in 2026. TikTok's monetization infrastructure has matured, offering creators multiple high-paying revenue streams that rival YouTube and Instagram.
+              The creator economy transformed in 2026. TikTok monetization infrastructure has matured. Creators now access multiple high-paying revenue streams that rival YouTube and Instagram.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-5 bg-white rounded-lg border border-primary-200">
@@ -323,10 +323,10 @@ export default function EarningsRevenuePage() {
                   <h3 className="font-semibold text-neutral-900">Creator Rewards Program Upgrade</h3>
                 </div>
                 <p className="text-body-sm text-neutral-700 mb-3">
-                  TikTok's Creator Rewards Program now pays <strong>$0.40-$1.00 per 1,000 views</strong> (up from the old Creator Fund's $0.02-$0.04). This 10-20× increase means creators with 1M monthly views earn $400-$1,000 instead of just $20-$40.
+                  The Creator Rewards Program now pays <strong>$0.40 to $1.00 per 1,000 views</strong> (up from the old Creator Fund rate of $0.02 to $0.04). This 10 to 20 times increase means creators with 1 million monthly views earn $400 to $1,000 instead of $20 to $40.
                 </p>
                 <p className="text-body-sm text-neutral-600">
-                  Requirements: 10K+ followers, 1-minute+ videos, high engagement rate. Longer-form content (3-10 minutes) earns premium rates.
+                  Requirements: 10,000 or more followers, 1 minute or longer videos, and high engagement rate. Longer-form content (3 to 10 minutes) earns premium rates.
                 </p>
               </div>
               <div className="p-5 bg-white rounded-lg border border-primary-200">
@@ -335,16 +335,16 @@ export default function EarningsRevenuePage() {
                   <h3 className="font-semibold text-neutral-900">TikTok Shop Explosion</h3>
                 </div>
                 <p className="text-body-sm text-neutral-700 mb-3">
-                  TikTok Shop has grown <strong>145% year-over-year</strong>, reaching <strong>$40 billion GMV</strong> in 2026. Creators earn 5-20% commission on sales, with top affiliates making $10,000-$100,000+ monthly.
+                  TikTok Shop has grown <strong>145% year-over-year</strong>, reaching <strong>$40 billion GMV</strong> in 2026. Creators earn 5% to 20% commission on sales. Top affiliates make $10,000 to $100,000 or more monthly.
                 </p>
                 <p className="text-body-sm text-neutral-600">
-                  LIVE shopping events consistently outperform static posts, with conversion rates 3-5× higher during live streams.
+                  LIVE shopping events consistently outperform static posts. Conversion rates are 3 to 5 times higher during live streams.
                 </p>
               </div>
             </div>
             <div className="mt-6 p-4 bg-blue-100 rounded-lg">
               <p className="text-body-sm text-blue-900">
-                <strong>Key Insight:</strong> Diversification is critical. Top-earning creators in 2026 generate income from 4-6 different streams, ensuring stability when individual platforms change policies or algorithms.
+                <strong>Key Insight:</strong> Diversification is critical. Top-earning creators in 2026 generate income from 4 to 6 different streams. This ensures stability when platforms change policies or algorithms.
               </p>
             </div>
           </Card>
@@ -353,7 +353,7 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-8">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Monthly Earnings by Follower Tier</h2>
             <p className="text-body-md text-neutral-700 mb-6">
-              Real-world earnings data for TikTok creators at different follower milestones. These estimates combine Creator Rewards, brand deals, LIVE gifts, and TikTok Shop affiliate commissions based on 2026 benchmarks.
+              Review real-world earnings data for TikTok creators at different follower milestones. These estimates combine Creator Rewards, brand deals, LIVE gifts, and TikTok Shop affiliate commissions based on 2026 benchmarks.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -386,7 +386,7 @@ export default function EarningsRevenuePage() {
             </div>
             <div className="mt-6 p-4 bg-neutral-50 rounded-lg">
               <p className="text-body-sm text-neutral-600">
-                <strong>Note:</strong> Actual earnings vary by niche (finance/tech creators earn 2-3× more than entertainment), engagement rate (6%+ earns premium brand deals), and content quality. These figures represent averages across all niches.
+                <strong>Note:</strong> Actual earnings vary by niche (finance and tech creators earn 2 to 3 times more than entertainment), engagement rate (6% or higher earns premium brand deals), and content quality. These figures represent averages across all niches.
               </p>
             </div>
           </Card>
@@ -395,7 +395,7 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-8">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Revenue Stream Comparison: Which Pays Best?</h2>
             <p className="text-body-md text-neutral-700 mb-6">
-              Understanding the tradeoffs between Creator Rewards, LIVE gifts, TikTok Shop, and brand deals helps you allocate time strategically. Each revenue stream has different pay rates, time investments, and requirements.
+              Understand the tradeoffs between Creator Rewards, LIVE gifts, TikTok Shop, and brand deals. Allocate time strategically. Each revenue stream has different pay rates, time investments, and requirements.
             </p>
             <div className="space-y-4">
               {revenueStreamComparison.map((stream, idx) => (
@@ -445,7 +445,7 @@ export default function EarningsRevenuePage() {
             </div>
             <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
               <p className="text-body-sm text-blue-900">
-                <strong>Strategic Insight:</strong> Most successful creators combine all four streams. Use Creator Rewards for passive baseline income, brand deals for high-value payouts, LIVE gifts for community building, and TikTok Shop for scalable commissions. This diversification protects against platform changes and maximizes total earnings.
+                <strong>Strategic Insight:</strong> Most successful creators combine all 4 streams. Use Creator Rewards for passive baseline income. Use brand deals for high-value payouts. Use LIVE gifts for community building. Use TikTok Shop for scalable commissions. This diversification protects against platform changes and maximizes total earnings.
               </p>
             </div>
           </Card>
@@ -457,7 +457,7 @@ export default function EarningsRevenuePage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900">Maximize Your TikTok Earnings</h2>
             </div>
             <p className="text-body-md text-neutral-700 mb-6">
-              Strategic creators earn 3-5× more than those who post randomly. These proven strategies help you optimize revenue across all monetization streams.
+              Strategic creators earn 3 to 5 times more than those who post randomly. These proven strategies help you optimize revenue across all monetization streams.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {maximizeEarningsStrategies.map((strategy, idx) => (
@@ -485,7 +485,7 @@ export default function EarningsRevenuePage() {
             </div>
             <div className="mt-6 p-4 bg-yellow-100 rounded-lg border border-yellow-300">
               <p className="text-body-sm text-yellow-900">
-                <strong>Reality Check:</strong> Building sustainable creator income takes 6-12 months of consistent effort. Focus on one new revenue stream per quarter rather than trying to activate everything at once. Most creators see breakthrough earnings growth between months 8-14.
+                <strong>Reality Check:</strong> Building sustainable creator income takes 6 to 12 months of consistent effort. Focus on 1 new revenue stream per quarter. Avoid trying to activate everything at once. Most creators see breakthrough earnings growth between months 8 to 14.
               </p>
             </div>
           </Card>
@@ -494,7 +494,7 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-8">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">How These Calculators Work</h2>
             <p className="text-body-md text-neutral-700 mb-6">
-              Our earnings calculators use real-world data from thousands of TikTok creators, platform payment structures, and current industry benchmarks to provide accurate income estimates.
+              These earnings calculators use real-world data from thousands of TikTok creators, platform payment structures, and current industry benchmarks. They provide accurate income estimates.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {calculatorBenefits.map((benefit, idx) => (
@@ -523,7 +523,7 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-8">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Why Track Your TikTok Earnings</h2>
             <p className="text-body-md text-neutral-700 mb-6">
-              Most creators underestimate their earning potential by 40-60% because they don't track income across all revenue streams. Regular earnings analysis helps you maximize creator income and make strategic decisions.
+              Most creators underestimate earning potential by 40% to 60% because they do not track income across all revenue streams. Regular earnings analysis helps maximize creator income and make strategic decisions.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               {trackingBenefits.map((benefit, idx) => (
@@ -538,7 +538,7 @@ export default function EarningsRevenuePage() {
             </div>
             <div className="mt-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
               <p className="text-body-sm text-neutral-700">
-                <strong>Pro Tip:</strong> Set up a simple spreadsheet to track actual earnings against calculator projections. After 3 months, you'll have personalized conversion rates that make future estimates 80%+ accurate for your specific audience.
+                <strong>Pro Tip:</strong> Set up a spreadsheet to track actual earnings against calculator projections. After 3 months, you have personalized conversion rates that make future estimates 80% or more accurate for your specific audience.
               </p>
             </div>
           </Card>

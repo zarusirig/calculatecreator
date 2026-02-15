@@ -16,27 +16,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is multi-platform attribution and why does it matter?',
-    answer: 'Multi-platform attribution tracks which platforms drive specific results (traffic, conversions, revenue). It matters because it shows where to invest time and helps prove ROI to brands. Without it, you\'re guessing which platforms actually drive business results.',
+    answer: '**Multi-platform attribution tracks which platforms drive specific results like traffic, conversions, and revenue.** It shows where to invest time and helps prove ROI to brands. You are guessing which platforms drive business results without it.',
   },
   {
     question: 'How do I track which platform drives the most revenue?',
-    answer: 'Use unique tracking links (UTM parameters) for each platform, set up platform-specific landing pages, track conversions in Google Analytics or similar tools, and compare revenue by traffic source. Most creators find 80% of revenue comes from just 1-2 platforms.',
+    answer: '**Use unique tracking links with Urchin Tracking Module (UTM) parameters for each platform.** Set up platform-specific landing pages. Track conversions in Google Analytics or similar tools. Compare revenue by traffic source. Most creators find 80% of revenue comes from just 1 to 2 platforms.',
   },
   {
     question: 'What are UTM parameters and how do creators use them?',
-    answer: 'UTM parameters are tags added to URLs that identify traffic sources. Example: yoursite.com?utm_source=tiktok&utm_campaign=spring2026. This tells analytics tools exactly where visitors came from, allowing precise ROI tracking.',
+    answer: '**UTM parameters are tags added to URLs that identify traffic sources.** Example: yoursite.com?utm_source=tiktok&utm_campaign=spring2026. This tells analytics tools exactly where visitors came from. It enables precise ROI tracking.',
   },
   {
     question: 'Should I focus on all platforms or just my best performer?',
-    answer: 'Focus 60-70% effort on your best-performing platform (highest ROI), 20-30% on a growing secondary platform, and 10% experimenting with new platforms. Diversification reduces risk, but spreading too thin reduces overall results.',
+    answer: '**Focus 60 to 70% of effort on your best-performing platform with the highest ROI.** Dedicate 20 to 30% to a growing secondary platform and 10% to experimenting with new platforms. Diversification reduces risk, but spreading too thin reduces overall results.',
   },
   {
     question: 'How do I handle audience overlap across platforms?',
-    answer: 'Use platform-specific content strategies (avoid cross-posting identical content), track unique visitors vs. total reach, survey your audience about where they follow you, and use cross-platform pixels to identify multi-platform followers.',
+    answer: '**Use platform-specific content strategies and avoid cross-posting identical content.** Track unique visitors versus total reach. Survey your audience about where they follow you. Use cross-platform pixels to identify multi-platform followers.',
   },
   {
     question: 'What metrics should I track for each platform?',
-    answer: 'Track: time invested, content created, follower growth rate, engagement rate, traffic sent to external links, conversion rate, and revenue generated. Calculate ROI = (Revenue - Time Cost) / Time Cost for each platform.',
+    answer: '**Track 7 key metrics: time invested, content created, follower growth rate, engagement rate, traffic sent to external links, conversion rate, and revenue generated.** Calculate ROI using this formula: ROI = (Revenue minus Time Cost) divided by Time Cost for each platform.',
   },
   {
     question: 'How often should I analyze multi-platform performance?',
@@ -117,7 +117,10 @@ export default function MultiPlatformAttributionPage() {
               Why Multi-Platform Presence Matters
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Today's successful creators rarely rely on a single platform for their entire business strategy, recognizing that platform diversification is essential for sustainable income and risk mitigation. Modern creator economics demand multi-platform presence: TikTok might drive initial awareness and discovery through viral short-form content, YouTube builds long-term authority and trust with in-depth videos, Instagram converts browsers into buyers through visual storytelling and shopping features, and email lists provide stability when algorithms change unpredictably or platforms decline. However, here lies the fundamental challenge that most creators struggle with daily - without proper multi-platform attribution tracking, you cannot accurately answer critical business questions that determine your success or failure. Which specific platform actually generates the most revenue for your business? Where should you invest your limited time and resources for maximum return on investment? What is the real ROI of each platform when you account for time invested in content creation? Which platform's audience is most valuable for your specific monetization model and offers? How do different platforms work together in your customer journey funnel, and which combinations drive the highest conversions? Without precise attribution data answering these questions with hard numbers, you are essentially running a potentially multi-million dollar creator business while flying completely blind, making strategic decisions based on vanity metrics and gut feelings rather than revenue data that actually matters for your bottom line.
+              Successful creators rarely rely on a single platform for their entire business. Platform diversification protects sustainable income and reduces risk. TikTok drives initial awareness through viral short-form content. YouTube builds long-term authority with in-depth videos. Instagram converts browsers into buyers through visual storytelling and shopping features. Email lists provide stability when algorithms change or platforms decline.
+            </p>
+            <p className="text-body-md text-neutral-700 mb-4">
+              The fundamental challenge remains: most creators lack proper multi-platform attribution tracking. They guess which platform generates the most revenue, where to invest time for maximum return, and what the real ROI of each platform is. Attribution data answers these questions with hard numbers instead of vanity metrics and gut feelings.
             </p>
             <ul className="text-body-md text-neutral-700 space-y-2 list-disc list-inside mb-4">
               <li>Which platform actually drives my revenue?</li>
@@ -157,29 +160,25 @@ export default function MultiPlatformAttributionPage() {
             <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">Challenge 1: Cross-Platform Audience Overlap</h4>
               <p className="text-body-sm text-neutral-700">
-                30-60% of your audience follows you on multiple platforms. Without proper tracking, you may double-count
-                reach and overestimate total audience size.
+                30 to 60% of your audience follows you on multiple platforms. You double-count reach and overestimate total audience size without proper tracking.
               </p>
             </div>
             <div className="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-500">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">Challenge 2: Indirect Attribution</h4>
               <p className="text-body-sm text-neutral-700">
-                Someone discovers you on TikTok, researches on YouTube, then purchases via Instagram link. Which platform
-                gets credit? Most tools only show "last-click" attribution.
+                A viewer discovers you on TikTok, researches on YouTube, then purchases via an Instagram link. Most tools only show "last-click" attribution, making it unclear which platform deserves credit.
               </p>
             </div>
             <div className="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">Challenge 3: Platform-Specific Metrics</h4>
               <p className="text-body-sm text-neutral-700">
-                TikTok measures views, YouTube tracks watch time, Instagram counts reach. Comparing apples to oranges makes
-                ROI analysis difficult without standardized metrics.
+                TikTok measures views, YouTube tracks watch time, and Instagram counts reach. ROI analysis becomes difficult without standardized metrics across platforms.
               </p>
             </div>
             <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
               <h4 className="text-body-md font-semibold text-neutral-900 mb-2">Challenge 4: Time Investment Tracking</h4>
               <p className="text-body-sm text-neutral-700">
-                Creating one YouTube video might take 8 hours vs. 20 minutes for a TikTok. Without tracking time investment,
-                you can't calculate true ROI.
+                Creating 1 YouTube video takes approximately 8 hours versus 20 minutes for a TikTok. True ROI remains invisible without tracking time investment per platform.
               </p>
             </div>
           </div>
@@ -196,7 +195,7 @@ export default function MultiPlatformAttributionPage() {
                 1. Traffic Source Tracking
               </h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                Measure how much traffic each platform sends to your key destinations (website, email sign-up, product pages).
+                Measure how much traffic each platform sends to your key destinations (website, email sign-up, and product pages).
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-white rounded">
@@ -221,7 +220,7 @@ export default function MultiPlatformAttributionPage() {
                 2. Conversion Attribution
               </h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                Track which platforms drive actual conversions: sales, sign-ups, downloads, appointments.
+                Track which platforms drive actual conversions (sales, sign-ups, downloads, and appointments).
               </p>
               <div className="overflow-x-auto">
                 <table className="w-full text-body-sm">
@@ -236,22 +235,22 @@ export default function MultiPlatformAttributionPage() {
                     <tr className="border-b border-purple-100">
                       <td className="py-2 px-3">TikTok</td>
                       <td className="py-2 px-3">Awareness, discovery</td>
-                      <td className="py-2 px-3">0.5-2%</td>
+                      <td className="py-2 px-3">0.5 to 2%</td>
                     </tr>
                     <tr className="border-b border-purple-100">
                       <td className="py-2 px-3">YouTube</td>
                       <td className="py-2 px-3">Education, consideration</td>
-                      <td className="py-2 px-3">2-5%</td>
+                      <td className="py-2 px-3">2 to 5%</td>
                     </tr>
                     <tr className="border-b border-purple-100">
                       <td className="py-2 px-3">Instagram</td>
                       <td className="py-2 px-3">Conversion, sales</td>
-                      <td className="py-2 px-3">3-8%</td>
+                      <td className="py-2 px-3">3 to 8%</td>
                     </tr>
                     <tr>
                       <td className="py-2 px-3">Email</td>
                       <td className="py-2 px-3">Retention, repeat sales</td>
-                      <td className="py-2 px-3">10-25%</td>
+                      <td className="py-2 px-3">10 to 25%</td>
                     </tr>
                   </tbody>
                 </table>
@@ -325,7 +324,7 @@ export default function MultiPlatformAttributionPage() {
                 5. Audience Overlap Analysis
               </h3>
               <p className="text-body-sm text-neutral-700 mb-3">
-                Understand how much of your audience follows you on multiple platforms to avoid double-counting.
+                Identify how much of your audience follows you on multiple platforms to avoid double-counting.
               </p>
               <div className="space-y-3">
                 <div className="p-3 bg-white rounded">
@@ -340,10 +339,10 @@ export default function MultiPlatformAttributionPage() {
                 <div className="p-3 bg-white rounded">
                   <p className="text-body-sm font-semibold text-neutral-900 mb-2">Typical Overlap Ranges:</p>
                   <ul className="text-body-sm text-neutral-700 space-y-1">
-                    <li>• TikTok + Instagram: 40-60% overlap</li>
-                    <li>• TikTok + YouTube: 20-40% overlap</li>
-                    <li>• YouTube + Instagram: 30-50% overlap</li>
-                    <li>• All three platforms: 15-30% overlap</li>
+                    <li>• TikTok + Instagram: 40 to 60% overlap</li>
+                    <li>• TikTok + YouTube: 20 to 40% overlap</li>
+                    <li>• YouTube + Instagram: 30 to 50% overlap</li>
+                    <li>• All three platforms: 15 to 30% overlap</li>
                   </ul>
                 </div>
               </div>
@@ -382,7 +381,7 @@ export default function MultiPlatformAttributionPage() {
               <ul className="space-y-2 text-body-sm text-neutral-700">
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
-                  <span><strong>Hootsuite/Buffer:</strong> Cross-platform analytics ($20-100/mo)</span>
+                  <span><strong>Hootsuite/Buffer:</strong> Cross-platform analytics ($20 to $100/mo)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-600 mr-2">•</span>
@@ -406,7 +405,7 @@ export default function MultiPlatformAttributionPage() {
             UTM Parameters for Creators
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            UTM parameters are the foundation of accurate attribution. Add these to every link you share:
+            Urchin Tracking Module (UTM) parameters are the foundation of accurate attribution. Add these to every link you share:
           </p>
           <div className="space-y-4">
             <div className="p-4 bg-neutral-50 rounded-lg">
@@ -499,7 +498,7 @@ export default function MultiPlatformAttributionPage() {
               <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
               <div>
                 <p className="text-body-sm font-semibold text-neutral-900">Reallocate Resources</p>
-                <p className="text-body-sm text-neutral-700">Invest 60-70% in best performer, 20-30% in secondary, 10% in testing</p>
+                <p className="text-body-sm text-neutral-700">Invest 60 to 70% in best performer, 20 to 30% in secondary, 10% in testing</p>
               </div>
             </div>
             <div className="flex items-start">

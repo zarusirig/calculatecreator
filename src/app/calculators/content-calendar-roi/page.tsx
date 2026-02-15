@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'Is content planning worth the time?',
-    answer: 'Yes, if done efficiently. 2-4 hours monthly planning (15-30 videos) typically yields 20-30% performance improvement through better topics, timing, and consistency. This translates to 150-300% ROI for most creators. However, avoid over-planning - diminishing returns after 4 hours.',
+    answer: '**Yes, content planning is worth the time when done efficiently.** Planning 2 to 4 hours monthly for 15 to 30 videos yields 20% to 30% performance improvement through better topics, timing, and consistency. This translates to 150% to 300% Return on Investment (ROI) for most creators. Avoid over-planning. Diminishing returns occur after 4 hours.',
   },
   {
     question: 'What should I include in content planning?',
-    answer: 'Essential elements: (1) Topic research and trend analysis, (2) Posting schedule with optimal times, (3) Content format variety, (4) Hook and CTA planning, (5) Hashtag strategy, (6) Batch filming schedule. Use tools like Notion, Trello, or dedicated content planners.',
+    answer: '**Include 6 essential elements in content planning.** Topic research and trend analysis. Posting schedule with optimal times. Content format variety. Hook and Call-to-Action (CTA) planning. Hashtag strategy. Batch filming schedule. Use tools like Notion, Trello, or dedicated content planners.',
   },
   {
     question: 'How far ahead should I plan content?',
-    answer: 'Sweet spot: 2-4 weeks ahead. This allows: (1) Batch filming efficiency, (2) Flexibility for trending topics, (3) Reduced daily stress, (4) Strategic content mix. Don\'t plan 3+ months ahead - trends change too quickly. Balance structure with agility.',
+    answer: '**The sweet spot is 2 to 4 weeks ahead.** This allows batch filming efficiency, flexibility for trending topics, reduced daily stress, and strategic content mix. Do not plan 3+ months ahead. Trends change too quickly. Balance structure with agility.',
   },
   {
     question: 'What if my planning doesn\'t improve performance?',
-    answer: 'Common issues: (1) Planning without execution (consistency matters), (2) Ignoring analytics (plan based on data, not assumptions), (3) Over-planning same content types (need variety), (4) Not adjusting based on results. Solution: Plan → Execute → Measure → Adjust. Use analytics to validate your planning effectiveness.',
+    answer: '**4 common issues cause planning to fail.** Planning without execution (consistency matters). Ignoring analytics (plan based on data, not assumptions). Over-planning same content types (need variety). Not adjusting based on results. Follow this cycle: Plan, Execute, Measure, Adjust. Use analytics to validate the effectiveness of your planning.',
   },
 ];
 
@@ -79,7 +79,7 @@ export default function ContentCalendarROICalculatorPage() {
             Content Calendar ROI Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate the return on investment for strategic content planning and scheduling. This calculator measures whether your planning time translates to better performance by comparing planning costs against revenue improvements from optimized posting schedules, topic selection, and consistency. Essential for creators who want to justify time spent on content strategy, improve efficiency, and ensure their planning efforts drive measurable business results.
+            Calculate the Return on Investment (ROI) for strategic content planning and scheduling. This calculator measures whether your planning time translates to better performance. It compares planning costs against revenue improvements from optimized posting schedules, topic selection, and consistency. Essential for creators who want to justify time spent on content strategy, improve efficiency, and ensure their planning efforts drive measurable business results.
           </p>
         </div>
 
@@ -109,8 +109,8 @@ export default function ContentCalendarROICalculatorPage() {
               </h2>
               <div className="space-y-4 text-body-md text-neutral-700">
                 <p>
-                  Strategic content planning improves performance through better topic
-                  selection, timing optimization, and consistent posting.
+                  Strategic content planning improves performance through 3 methods (better topic
+                  selection, timing optimization, and consistent posting).
                 </p>
                 <p>
                   <strong>Planning advantages:</strong>
@@ -155,13 +155,13 @@ export default function ContentCalendarROICalculatorPage() {
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                The Content Calendar ROI Calculator helps creators determine whether strategic planning time translates to measurable revenue gains. Many creators resist planning, preferring to "post what feels right" or react to trends. However, data consistently shows that creators who invest 2-4 hours monthly in strategic planning see 20-30% performance improvements across views, engagement, and earnings.
+                The Content Calendar ROI Calculator helps creators determine whether strategic planning time translates to measurable revenue gains. Many creators resist planning, preferring to "post what feels right" or react to trends. Data consistently shows that creators who invest 2 to 4 hours monthly in strategic planning see 20% to 30% performance improvements across views, engagement, and earnings.
               </p>
               <p>
-                Strategic planning isn't about rigid adherence to schedules - it's about informed decision-making. When you plan content, you research trending topics, analyze your best-performing formats, optimize posting times based on data, and ensure content variety. This research phase prevents wasted effort on low-performing content ideas and maximizes every minute spent creating.
+                Strategic planning is not about rigid adherence to schedules. It is about informed decision-making. Plan content by researching trending topics, analyzing your best-performing formats, optimizing posting times based on data, and ensuring content variety. This research phase prevents wasted effort on low-performing content ideas and maximizes every minute spent creating.
               </p>
               <p>
-                The ROI compounds over time. Your first planning session might yield 15-20% improvement. As you refine your process and learn what works, subsequent sessions drive 25-35%+ gains. Planning also enables batch production - filming 5-10 videos in one session saves hours versus one-off creation, dramatically improving your hourly earnings rate.
+                The ROI compounds over time. Your first planning session yields 15% to 20% improvement. Subsequent sessions drive 25% to 35%+ gains as you refine your process and learn what works. Planning enables batch production. Filming 5 to 10 videos in one session saves hours versus one-off creation, dramatically improving your hourly earnings rate.
               </p>
             </div>
           </Card>
@@ -347,19 +347,19 @@ ROI: [($500 - $200) / $200] × 100 = 150%`}
             faqs={[
               {
                 question: 'Is content planning worth the time?',
-                answer: 'Yes, if done efficiently. 2-4 hours monthly planning (15-30 videos) typically yields 20-30% performance improvement through better topics, timing, and consistency. This translates to 150-300% ROI for most creators. However, avoid over-planning - diminishing returns after 4 hours.',
+                answer: '**Yes, content planning is worth the time when done efficiently.** Planning 2 to 4 hours monthly for 15 to 30 videos yields 20% to 30% performance improvement through better topics, timing, and consistency. This translates to 150% to 300% Return on Investment (ROI) for most creators. Avoid over-planning. Diminishing returns occur after 4 hours.',
               },
               {
                 question: 'What should I include in content planning?',
-                answer: 'Essential elements: (1) Topic research and trend analysis, (2) Posting schedule with optimal times, (3) Content format variety, (4) Hook and CTA planning, (5) Hashtag strategy, (6) Batch filming schedule. Use tools like Notion, Trello, or dedicated content planners.',
+                answer: '**Include 6 essential elements in content planning.** Topic research and trend analysis. Posting schedule with optimal times. Content format variety. Hook and Call-to-Action (CTA) planning. Hashtag strategy. Batch filming schedule. Use tools like Notion, Trello, or dedicated content planners.',
               },
               {
                 question: 'How far ahead should I plan content?',
-                answer: 'Sweet spot: 2-4 weeks ahead. This allows: (1) Batch filming efficiency, (2) Flexibility for trending topics, (3) Reduced daily stress, (4) Strategic content mix. Don\'t plan 3+ months ahead - trends change too quickly. Balance structure with agility.',
+                answer: '**The sweet spot is 2 to 4 weeks ahead.** This allows batch filming efficiency, flexibility for trending topics, reduced daily stress, and strategic content mix. Do not plan 3+ months ahead. Trends change too quickly. Balance structure with agility.',
               },
               {
                 question: 'What if my planning doesn\'t improve performance?',
-                answer: 'Common issues: (1) Planning without execution (consistency matters), (2) Ignoring analytics (plan based on data, not assumptions), (3) Over-planning same content types (need variety), (4) Not adjusting based on results. Solution: Plan → Execute → Measure → Adjust. Use analytics to validate your planning effectiveness.',
+                answer: '**4 common issues cause planning to fail.** Planning without execution (consistency matters). Ignoring analytics (plan based on data, not assumptions). Over-planning same content types (need variety). Not adjusting based on results. Follow this cycle: Plan, Execute, Measure, Adjust. Use analytics to validate the effectiveness of your planning.',
               },
             ]}
           />

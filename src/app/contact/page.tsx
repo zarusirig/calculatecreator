@@ -5,7 +5,7 @@ import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Contact TikTok Creator Calculator | Support',
-  description: 'Have questions about our calculators? Need help optimizing your TikTok earnings? Contact us for support, feedback, or partnership inquiries.',
+  description: 'Have questions about our calculators? Get help optimizing your TikTok earnings. Contact us for support, feedback, or partnership inquiries.',
   alternates: {
     canonical: 'https://calculatecreator.com/contact/',
   },
@@ -16,7 +16,7 @@ export default function ContactPage() {
     <>
       <WebPageSchema
         title="Contact TikTok Creator Calculator | Support"
-        description="Have questions about our calculators? Need help optimizing your TikTok earnings? Contact us for support, feedback, or partnership inquiries."
+        description="Have questions about our calculators? Get help optimizing your TikTok earnings. Contact us for support, feedback, or partnership inquiries."
         url="https://calculatecreator.com/contact/"
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-12">
@@ -32,7 +32,7 @@ export default function ContactPage() {
           </h1>
         </div>
         <p className="text-body-lg text-neutral-600 text-center mb-12">
-          We'd love to hear from you. Whether you have questions, feedback, or ideas for improvement, our team is here to help TikTok creators succeed.
+          We love hearing from you. Our team is here to help TikTok creators succeed, whether you have questions, feedback, or ideas for improvement.
         </p>
 
         <div className="space-y-6">
@@ -41,13 +41,13 @@ export default function ContactPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">About TikTok Creator Calculator</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                TikTok Creator Calculator was built by creators, for creators. We understand the challenges of navigating TikTok monetization, estimating earnings potential, and negotiating fair brand deal rates. Our mission is to provide accurate, data-driven tools that empower creators to make informed decisions about their content careers.
+                Creators built TikTok Creator Calculator for creators. We understand the challenges of navigating TikTok monetization, estimating earnings potential, and negotiating fair brand deal rates. Our mission is to provide accurate, data-driven tools that empower creators to make informed decisions about their content careers.
               </p>
               <p>
-                Since launching in 2023, we've helped over 500,000 creators calculate their potential earnings, understand RPM benchmarks, and negotiate better brand partnerships. Our calculators are updated regularly with the latest industry data to ensure accuracy and relevance in the ever-evolving creator economy.
+                Since launching in 2023, we have helped over 500,000 creators calculate their potential earnings. They understand Revenue Per Mille (RPM) benchmarks and negotiate better brand partnerships. We update our calculators regularly with the latest industry data to ensure accuracy and relevance in the evolving creator economy.
               </p>
               <p>
-                We're committed to transparency, accuracy, and creator education. Every metric, formula, and benchmark on our site is backed by industry research, creator surveys, and publicly available data sources.
+                We commit to transparency, accuracy, and creator education. Industry research, creator surveys, and publicly available data sources back every metric, formula, and benchmark on our site.
               </p>
             </div>
           </Card>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     Feature Requests & Suggestions
                   </h3>
                   <p className="text-body-sm text-neutral-600 mb-3">
-                    Have an idea for a new calculator, feature, or improvement? We'd love to hear it!
+                    Have an idea for a new calculator, feature, or improvement? We want to hear it.
                   </p>
                   <p className="text-body-md text-primary-600 font-medium">
                     features@calculatecreator.com
@@ -183,7 +183,7 @@ export default function ContactPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Response Times & Expectations</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                We strive to respond to all inquiries promptly and professionally. Here's what you can expect when you contact us:
+                We respond to all inquiries promptly and professionally. Here is what to expect when you contact us.
               </p>
               <div className="space-y-3">
                 <div className="p-4 bg-neutral-50 rounded-lg">
@@ -211,17 +211,17 @@ export default function ContactPage() {
                 <div className="p-4 bg-neutral-50 rounded-lg">
                   <h3 className="font-semibold text-neutral-900 mb-2">Operating Hours</h3>
                   <p className="text-body-sm text-neutral-700">
-                    Our support team operates Monday through Friday, 9 AM - 6 PM EST. Emails received outside business hours or on weekends will be addressed on the next business day.
+                    Our support team operates Monday through Friday, 9 AM to 6 PM EST. We address emails received outside business hours or on weekends on the next business day.
                   </p>
                 </div>
 
                 <div className="p-4 bg-neutral-50 rounded-lg">
                   <h3 className="font-semibold text-neutral-900 mb-2">For Urgent Issues</h3>
                   <p className="text-body-sm text-neutral-700 mb-2">
-                    If you have a critical bug report or time-sensitive inquiry, please include [URGENT] in your email subject line. We prioritize these messages and aim to respond within 12 hours during business days.
+                    Include [URGENT] in your email subject line for critical bug reports or time-sensitive inquiries. We prioritize these messages and respond within 12 hours during business days.
                   </p>
                   <p className="text-body-xs text-neutral-600 italic">
-                    Examples of urgent issues: Calculator producing incorrect results, payment processing errors, security concerns
+                    Examples of urgent issues include calculators producing incorrect results, payment processing errors, and security concerns
                   </p>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function ContactPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Before You Contact Us: Check Our FAQs</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                You might find answers faster by checking our comprehensive FAQ sections and resources. Here's where to look:
+                Find answers faster by checking our FAQ sections and resources. Here is where to look.
               </p>
               <div className="space-y-3">
                 <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
@@ -267,63 +267,63 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">How accurate are your calculators?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Our calculators are based on aggregated industry data, creator surveys, and publicly available information from thousands of TikTok accounts. While we strive for accuracy, individual results will vary based on factors like niche, audience demographics, engagement rates, and TikTok's evolving algorithms. Our estimates typically fall within 15-25% of actual earnings for most creators. We update our data quarterly to maintain accuracy.
+                  **Our calculators are based on aggregated industry data, creator surveys, and publicly available information from thousands of TikTok accounts.** Individual results vary based on factors like niche, audience demographics, engagement rates, and the evolving algorithms of TikTok. Our estimates typically fall within 15% to 25% of actual earnings for most creators. We update our data quarterly to maintain accuracy.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Where do you get your data?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We compile data from multiple sources: (1) Anonymous creator surveys and earnings reports, (2) Industry research reports from social media marketing agencies, (3) Publicly shared creator earnings on forums and social media, (4) TikTok's official Creator Fund documentation, (5) Brand partnership platforms like AspireIQ, CreatorIQ, and Grin. All data sources are cited in our methodology sections.
+                  **We compile data from 5 sources.** These are anonymous creator surveys and earnings reports; industry research reports from social media marketing agencies; publicly shared creator earnings on forums and social media; official Creator Fund documentation from TikTok; and brand partnership platforms like AspireIQ, CreatorIQ, and Grin. All data sources are cited in our methodology sections.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Are your tools free to use?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Yes! All our calculators and resources are completely free with no hidden fees, registration requirements, or premium tiers. We're funded through ethical advertising and affiliate partnerships (clearly disclosed). Our mission is to make creator education accessible to everyone, regardless of budget.
+                  **Yes, all our calculators and resources are completely free with no hidden fees, registration requirements, or premium tiers.** Ethical advertising and affiliate partnerships (clearly disclosed) fund our work. Our mission is to make creator education accessible to everyone, regardless of budget.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Do you collect or store my data?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We do not store any data you enter into our calculators. All calculations happen in your browser, and inputs are never sent to our servers or third parties. We use privacy-friendly analytics (Google Analytics) to track aggregate usage patterns (like which calculators are most popular) but never collect personal information or calculation inputs. See our Privacy Policy for full details.
+                  **We do not store any data you enter into our calculators.** All calculations happen in your browser. Inputs are never sent to our servers or third parties. We use privacy-friendly analytics (Google Analytics) to track aggregate usage patterns (like which calculators are most popular). We never collect personal information or calculation inputs. See our Privacy Policy for full details.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Can you help me negotiate a brand deal?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  While we can't provide individual consulting or negotiation services, our Brand Deal Calculator and contract template resources give you the tools to confidently negotiate fair rates. We recommend our comprehensive brand deal guide for step-by-step negotiation strategies and pricing frameworks based on follower count and engagement.
+                  **We do not provide individual consulting or negotiation services.** Our Brand Deal Calculator and contract template resources give you the tools to negotiate fair rates with confidence. Use our comprehensive brand deal guide for step-by-step negotiation strategies and pricing frameworks based on follower count and engagement.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Why don't you have a calculator for [platform/feature]?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We're constantly expanding our calculator library based on creator demand and data availability. If you'd like to see a specific calculator (Instagram Reels, YouTube Shorts, etc.), please email features@calculatecreator.com. We prioritize new calculators based on community requests and data reliability.
+                  **We constantly expand our calculator library based on creator demand and data availability.** Email features@calculatecreator.com to request a specific calculator (Instagram Reels, YouTube Shorts, etc.). We prioritize new calculators based on community requests and data reliability.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Are you affiliated with TikTok?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  No. TikTok Creator Calculator is an independent resource not affiliated with, endorsed by, or sponsored by TikTok, ByteDance, or any social media platform. We're a third-party educational resource built by and for creators. All our data is compiled from public sources, not provided directly by TikTok.
+                  **No, TikTok Creator Calculator is an independent resource.** We are not affiliated with, endorsed by, or sponsored by TikTok, ByteDance, or any social media platform. We are a third-party educational resource built by and for creators. We compile all our data from public sources, not directly from TikTok.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Can I embed your calculators on my website?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Currently, we don't offer embeddable calculator widgets. However, you're welcome to link to our calculators from your website, blog, or social media. If you're interested in a partnership or custom embedding solution, contact business@calculatecreator.com.
+                  **We do not currently offer embeddable calculator widgets.** Link to our calculators from your website, blog, or social media. For a partnership or custom embedding solution, contact business@calculatecreator.com.
                 </p>
               </div>
 
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">How can I support your work?</h3>
                 <p className="text-body-sm text-neutral-700">
-                  The best way to support us is to share our calculators with other creators who might find them helpful! You can also follow us on social media, provide feedback to help us improve, or consider our affiliate partners when relevant. We don't accept donations, as our goal is sustainability through ethical advertising rather than dependence on user contributions.
+                  **The best way to support us is to share our calculators with other creators who find them helpful.** Follow us on social media, provide feedback to help us improve, or consider our affiliate partners when relevant. We do not accept donations. Our goal is sustainability through ethical advertising rather than dependence on user contributions.
                 </p>
               </div>
             </div>
@@ -358,37 +358,37 @@ export default function ContactPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Our Commitment to You</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                When you contact us, you can expect:
+                Expect the following when you contact us.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-600 mt-1" />
                   <div>
-                    <strong>Respectful, professional communication</strong> - Every inquiry is treated with care and respect, whether you're a creator with 1,000 or 1,000,000 followers.
+                    <strong>Respectful, professional communication</strong> - We treat every inquiry with care and respect, whether you have 1,000 or 1,000,000 followers.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-600 mt-1" />
                   <div>
-                    <strong>Transparent, honest answers</strong> - We'll never make promises we can't keep or provide misleading information. If we don't know something, we'll tell you.
+                    <strong>Transparent, honest answers</strong> - We never make promises we cannot keep or provide misleading information. We tell you directly when we do not know something.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-600 mt-1" />
                   <div>
-                    <strong>Actionable guidance</strong> - We aim to provide specific, practical advice that helps you make informed decisions about your creator career.
+                    <strong>Actionable guidance</strong> - We provide specific, practical advice that helps you make informed decisions about your creator career.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-600 mt-1" />
                   <div>
-                    <strong>Privacy protection</strong> - Your inquiries and any information shared with us remain confidential and are never shared with third parties.
+                    <strong>Privacy protection</strong> - Your inquiries and any information you share with us remain confidential. We never share them with third parties.
                   </div>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 flex-shrink-0 text-green-600 mt-1" />
                   <div>
-                    <strong>Continuous improvement</strong> - We take your feedback seriously and use it to improve our calculators, fix bugs, and develop new features.
+                    <strong>Continuous improvement</strong> - We take your feedback seriously. We use it to improve our calculators, fix bugs, and develop new features.
                   </div>
                 </li>
               </ul>
@@ -400,7 +400,7 @@ export default function ContactPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">What We Cannot Assist With</h2>
             <div className="space-y-3 text-body-md text-neutral-700">
               <p>
-                To set proper expectations, here are topics we're unable to help with:
+                To set proper expectations, here are topics we do not assist with.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
@@ -476,7 +476,7 @@ export default function ContactPage() {
           <Card className="bg-primary-light border-primary-200">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Ready to Reach Out?</h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Choose the appropriate email address above based on your inquiry type, and we&apos;ll get back to you as soon as possible. We read every email personally and appreciate you taking the time to reach out.
+              Choose the appropriate email address above based on your inquiry type. We get back to you as soon as possible. We read every email personally and appreciate you taking the time to reach out.
             </p>
             <div className="grid md:grid-cols-3 gap-3">
               <div className="p-3 bg-white rounded text-center">
@@ -498,7 +498,7 @@ export default function ContactPage() {
           <Card className="bg-neutral-100 border-neutral-300">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">Disclaimer</h2>
             <p className="text-body-sm text-neutral-700">
-              TikTok Creator Calculator is an independent educational resource and is not affiliated with, endorsed by, or sponsored by TikTok, ByteDance, Meta, YouTube, or any social media platform. All calculator results are estimates based on industry data and should not be considered guaranteed earnings predictions. Individual results will vary based on numerous factors including content quality, audience demographics, engagement rates, niche, and platform algorithm changes.
+              TikTok Creator Calculator is an independent educational resource. It is not affiliated with, endorsed by, or sponsored by TikTok, ByteDance, Meta, YouTube, or any social media platform. All calculator results are estimates based on industry data and are not guaranteed earnings predictions. Individual results vary based on content quality, audience demographics, engagement rates, niche, and platform algorithm changes.
             </p>
           </Card>
         </div>

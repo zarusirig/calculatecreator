@@ -126,27 +126,27 @@ export default function CreatorFundRatesByCountryPage() {
   const faqs = [
     {
       question: 'Why do US creators earn 5-10x more than creators in developing countries?',
-      answer: 'Advertiser willingness-to-pay is tied to GDP and consumer purchasing power. A US viewer clicking an ad might spend $50-$500 on the advertised product (credit card, software, course). A viewer in a lower-GDP country might spend $5-$20. Advertisers pay for conversions, so they bid higher for US traffic. This creates the RPM gap: US $0.03-$0.05 vs. emerging markets $0.005-$0.015.',
+      answer: '**Advertiser willingness to pay is tied to GDP and consumer purchasing power.** A US viewer clicking an ad spends $50 to $500 on the advertised product (credit card, software, course). A viewer in a lower-GDP country spends $5 to $20. Advertisers pay for conversions, so they bid higher for US traffic. This creates the RPM gap: US $0.03 to $0.05 versus emerging markets $0.005 to $0.015.',
     },
     {
       question: 'Can I change my location to get higher RPM?',
-      answer: 'No. TikTok detects your actual location via IP address, device settings, and SIM card. Using VPNs to fake location violates Terms of Service and can result in Creator Fund ban. Instead, optimize for higher-paying audiences by: (1) Posting during peak hours in US/UK timezones, (2) Using English language, (3) Creating content that appeals to Western viewers, and (4) Using trending sounds popular in Tier 1 countries.',
+      answer: '**No, TikTok detects your actual location via IP address, device settings, and SIM card.** Using VPNs to fake location violates the Terms of Service and results in a Creator Fund ban. Instead, optimize for higher-paying audiences by posting during peak hours in US/UK timezones, using English language, creating content that appeals to Western viewers, and using trending sounds popular in Tier 1 countries.',
     },
     {
       question: 'What if the Creator Fund isn\'t available in my country?',
-      answer: 'Focus on alternative monetization: (1) TikTok LIVE gifts (available in 100+ countries), (2) Brand deals (international brands work with creators globally), (3) TikTok Shop affiliate (expanding to more countries in 2025), (4) Promote your own products/services, (5) Drive traffic to YouTube (monetization available in more countries). Many non-US creators earn more from these methods than Creator Fund anyway.',
+      answer: '**Focus on alternative monetization methods available in your region.** TikTok LIVE gifts are available in 100+ countries. International brands work with creators globally through brand deals. TikTok Shop affiliate is expanding to more countries. Promote your own products and services. Drive traffic to YouTube where monetization is available in more countries. Many non-US creators earn more from these methods than the Creator Fund.',
     },
     {
       question: 'How do I maximize earnings if I\'m in a low-RPM country?',
-      answer: 'Four strategies: (1) Volume approach (aim for 10M+ views/month instead of 1M), (2) Target international audiences (create content in English about globally appealing topics), (3) Focus on brand deals (companies pay based on your audience value, not Creator Fund rates), (4) Build products/courses to sell (your audience is your asset, monetize directly). Example: Indonesian creator with 500K followers might earn $30/month from Creator Fund but $2,000/month from brand deals.',
+      answer: '**Use 4 strategies to maximize earnings in a low-RPM country.** First, take the volume approach and aim for 10M+ views per month instead of 1M. Second, target international audiences by creating content in English about globally appealing topics. Third, focus on brand deals where companies pay based on your audience value, not Creator Fund rates. Fourth, build products and courses to sell directly to your audience. Example: an Indonesian creator with 500K followers earns $30 per month from the Creator Fund but $2,000 per month from brand deals.',
     },
     {
       question: 'Do bilingual creators earn more?',
-      answer: 'Yes, strategically. If you speak both a Tier 1 language (English, German, French) and a high-population language (Spanish, Arabic, Hindi), you can target premium advertisers while reaching massive audiences. Best approach: Create content in the premium language to maximize RPM, then repurpose/subtitle for the broader audience. Example: Spanish-speaking creator making English content gets US rates ($0.03-$0.05 RPM) instead of Latin America rates ($0.01-$0.02).',
+      answer: '**Yes, bilingual creators earn more when they use strategic language targeting.** Creators who speak both a Tier 1 language (English, German, French) and a high-population language (Spanish, Arabic, Hindi) target premium advertisers while reaching massive audiences. Create content in the premium language to maximize RPM, then repurpose and subtitle for the broader audience. Example: a Spanish-speaking creator making English content gets US rates ($0.03 to $0.05 RPM) instead of Latin America rates ($0.01 to $0.02).',
     },
     {
       question: 'Will Creator Fund expand to more countries in 2025?',
-      answer: 'TikTok has announced plans to expand but hasn\'t confirmed specific countries. Likely expansion targets: India (if regulatory issues resolve), Russia, Turkey, and additional Southeast Asian markets. However, expansion doesn\'t guarantee high rates—new markets typically start at $0.008-$0.015 RPM. Monitor the official TikTok Creator Portal for announcements. In the meantime, focus on monetization methods available in your country.',
+      answer: '**TikTok has announced expansion plans but has not confirmed specific countries.** Likely expansion targets include India (if regulatory issues resolve), Russia, Turkey, and additional Southeast Asian markets. Expansion does not guarantee high rates. New markets typically start at $0.008 to $0.015 RPM. Monitor the official TikTok Creator Portal for announcements. Focus on monetization methods available in your country in the meantime.',
     },
   ];
 
@@ -205,10 +205,10 @@ export default function CreatorFundRatesByCountryPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <p className="text-body-md text-neutral-700 leading-relaxed mb-4">
-                TikTok Creator Fund earnings are <strong>heavily influenced by viewer geography</strong>. A creator in the United States earning $0.04 per 1,000 views could see their RPM drop to $0.008 if their audience shifts to a developing market—a <strong>5x decrease</strong> for the exact same content.
+                TikTok Creator Fund earnings are <strong>heavily influenced by viewer geography</strong>. A creator in the United States earning $0.04 per 1,000 views sees their RPM drop to $0.008 when their audience shifts to a developing market. That is a <strong>5x decrease</strong> for the exact same content.
               </p>
               <p className="text-body-md text-neutral-700 leading-relaxed">
-                This happens because advertisers pay based on purchasing power. A view from someone in New York (median income $70K+) is worth more to advertisers than a view from someone in a lower-GDP region where the median income might be $3K-$10K annually.
+                Advertisers pay based on purchasing power. A view from someone in New York (median income $70K+) is worth more to advertisers than a view from someone in a lower-GDP region where the median income is $3K to $10K annually.
               </p>
             </div>
             <div className="p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-blue-200">
@@ -235,7 +235,7 @@ export default function CreatorFundRatesByCountryPage() {
               <div>
                 <h4 className="font-semibold text-yellow-900 mb-2">Important Context</h4>
                 <p className="text-body-sm text-neutral-700">
-                  These RPM ranges are <strong>averages from real creator reports (January 2025)</strong>. Your actual rate depends on: niche (finance pays more than comedy), engagement (high completion rates boost RPM), watch time, and seasonal advertiser demand (Q4 pays 20-40% more). Use these as benchmarks, not guarantees.
+                  These RPM ranges are <strong>averages from real creator reports (January 2025)</strong>. Your actual rate depends on niche (finance pays more than comedy), engagement (high completion rates boost RPM), watch time, and seasonal advertiser demand (Q4 pays 20% to 40% more). Use these as benchmarks, not guarantees.
                 </p>
               </div>
             </div>
@@ -375,7 +375,7 @@ export default function CreatorFundRatesByCountryPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Creator Fund Availability Status</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            As of January 2025, TikTok Creator Fund is available in these countries/regions:
+            As of January 2025, the TikTok Creator Fund is available in these countries and regions.
           </p>
           <div className="grid md:grid-cols-3 gap-3 mb-6">
             {[
@@ -394,10 +394,10 @@ export default function CreatorFundRatesByCountryPage() {
           <div className="p-4 bg-red-50 border-l-4 border-red-500 rounded-lg">
             <h4 className="font-semibold text-red-900 mb-2">Not Yet Available:</h4>
             <p className="text-body-sm text-neutral-700 mb-2">
-              Creator Fund is <strong>not currently available</strong> in: India, China (Douyin separate), Russia, Turkey, and most Central Asian countries.
+              The Creator Fund is <strong>not currently available</strong> in India, China (Douyin separate), Russia, Turkey, and most Central Asian countries.
             </p>
             <p className="text-body-sm text-neutral-700">
-              If you're in these regions, focus on TikTok LIVE gifts, brand deals, and TikTok Shop affiliate programs which have broader availability.
+              Focus on TikTok LIVE gifts, brand deals, and TikTok Shop affiliate programs if you are in these regions. These alternatives have broader availability.
             </p>
           </div>
         </Card>

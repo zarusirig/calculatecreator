@@ -18,31 +18,31 @@ export default function TikTokShopPaymentSchedulePage() {
   const faqs = [
     {
       question: 'When do I get my first payment?',
-      answer: 'After your first full month of earning commissions. If you start mid-month, earnings count for that month and are paid the following month. Example: Start affiliate January 15 → January 15–31 earnings paid mid-February.',
+      answer: '**You receive your first payment after your first full month of earning commissions.** Starting mid-month means those earnings count for that month and are paid the following month. Example: Start affiliate January 15; January 15 to 31 earnings paid mid-February.',
     },
     {
       question: 'Can I change my payment method?',
-      answer: 'Yes, anytime. Changes take effect for next payment cycle. If you change mid-cycle, that month\'s payment goes to previous method.',
+      answer: '**Yes, change your payment method at any time.** Changes take effect for the next payment cycle. Changing mid-cycle sends that payment to the previous method.',
     },
     {
       question: 'What if I don\'t receive payment on time?',
-      answer: 'Wait 5 business days past expected date. Then: (1) Check dashboard for payment status, (2) Verify payment method is correct, (3) Check PayPal/bank for incoming payment, (4) Contact TikTok Support if still missing.',
+      answer: '**Wait 5 business days past the expected date.** Then follow these steps: firstly, check the dashboard for payment status; secondly, verify the payment method is correct; thirdly, check PayPal or your bank for incoming payment. Contact TikTok Support if the payment is still missing.',
     },
     {
       question: 'Do I get paid for clicks or only sales?',
-      answer: 'Only sales. You earn commission when a customer purchases a product through your affiliate link. Clicks alone don\'t generate income.',
+      answer: '**You earn from sales only, not clicks.** You earn commission when a customer purchases a product through your affiliate link. Clicks alone do not generate income.',
     },
     {
       question: 'Can I request early payment or withdraw before end of month?',
-      answer: 'No. TikTok Shop operates on fixed monthly schedule. Early withdrawal not available.',
+      answer: '**No, TikTok Shop operates on a fixed monthly schedule.** Early withdrawal is not available.',
     },
     {
       question: 'Are there any payment limits (maximum)?',
-      answer: 'No maximum. If you earn $10,000 in a month, you\'ll receive $10,000 (minus any returns/refunds).',
+      answer: '**No, there is no maximum limit.** Earning $10,000 in a month means you receive $10,000 (minus any returns or refunds).',
     },
     {
       question: 'What happens if my account is suspended?',
-      answer: 'Pending payments are typically held until issue is resolved. If account is permanently banned, payments may be forfeited (check TikTok Shop terms).',
+      answer: '**Pending payments are held until the issue is resolved.** TikTok forfeits payments for permanently banned accounts. Check the TikTok Shop terms for details.',
     },
   ];
 
@@ -94,7 +94,7 @@ export default function TikTokShopPaymentSchedulePage() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
             <h3 className="font-semibold text-green-900 mb-2">Quick Answer</h3>
             <p className="text-body-md text-green-800">
-              TikTok Shop affiliate commissions are paid monthly, typically mid-month for the previous month's sales, with a 7–10 day processing time.
+              TikTok Shop affiliate commissions are paid monthly, mid-month for the sales of the previous month, with a 7 to 10 day processing time.
             </p>
           </div>
         </Card>
@@ -306,21 +306,21 @@ export default function TikTokShopPaymentSchedulePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">International Payment Considerations</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok Shop payment processing varies by region. Here's what international affiliates need to know:
+            TikTok Shop payment processing varies by region. Here is what international affiliates need to know.
           </p>
 
           <div className="space-y-4">
             <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
               <h3 className="font-semibold text-neutral-900 mb-2">Currency Conversion for Non-US Creators</h3>
               <p className="text-body-sm text-neutral-700">
-                Payments automatically convert from USD to your local currency at the time of processing. Exchange rates fluctuate daily, so your final amount may differ slightly from dashboard estimates. TikTok uses mid-market exchange rates (similar to those on Google Finance).
+                Payments automatically convert from USD to your local currency at the time of processing. Exchange rates fluctuate daily. Your final amount differs slightly from dashboard estimates. TikTok uses mid-market exchange rates (similar to those on Google Finance).
               </p>
             </div>
 
             <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
               <h3 className="font-semibold text-neutral-900 mb-2">Extended Processing Times for International Bank Transfers</h3>
               <p className="text-body-sm text-neutral-700">
-                International bank transfers can take 7-12 business days (vs 5-7 days for US transfers) due to intermediary banking systems. PayPal is generally faster for international creators, processing in 2-5 business days regardless of country.
+                International bank transfers take 7 to 12 business days (vs 5 to 7 days for US transfers) due to intermediary banking systems. PayPal is faster for international creators, processing in 2 to 5 business days regardless of country.
               </p>
             </div>
 
@@ -337,7 +337,7 @@ export default function TikTokShopPaymentSchedulePage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Tax Implications of TikTok Shop Payments</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Understanding tax obligations helps you avoid surprises during tax season:
+            Tax obligations help you avoid surprises during tax season.
           </p>
 
           <div className="space-y-4">

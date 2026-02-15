@@ -18,39 +18,39 @@ export default function TikTokMonetizationRequirementsPage() {
   const faqs = [
     {
       question: 'Can I monetize TikTok with less than 10,000 followers?',
-      answer: 'Yes! While Creator Fund requires 10K followers, you can earn through LIVE Gifts (1K followers), TikTok Shop affiliate (0 followers in most regions), and brand deals at any follower count if you have engagement.',
+      answer: '**Yes, you monetize TikTok with fewer than 10,000 followers.** The Creator Fund requires 10K followers, but you earn through LIVE Gifts at 1K followers, TikTok Shop affiliate at 0 followers in most regions, and brand deals at any follower count with good engagement.',
     },
     {
       question: 'How long does it take to meet monetization requirements?',
-      answer: 'Timeline varies by effort and content quality. Average creators reach 1K followers (LIVE eligible) in 2-4 months, and 10K followers (Creator Fund eligible) in 6-12 months with consistent posting.',
+      answer: '**The timeline varies by effort and content quality.** Average creators reach 1K followers (LIVE eligible) in 2 to 4 months and 10K followers (Creator Fund eligible) in 6 to 12 months with consistent posting.',
     },
     {
       question: 'Do I need to be 18 for all monetization features?',
-      answer: 'Yes. All TikTok monetization features require you to be 18 years or older. This includes Creator Fund, LIVE Gifts, TikTok Shop, and Creator Marketplace.',
+      answer: '**Yes, all TikTok monetization features require you to be 18 years or older.** This includes the Creator Fund, LIVE Gifts, TikTok Shop, and Creator Marketplace.',
     },
     {
       question: 'Can I be denied monetization even if I meet requirements?',
-      answer: 'Yes. TikTok reviews content quality, community guideline violations, and account authenticity. Meeting minimum requirements doesn\'t guarantee approval.',
+      answer: '**Yes, TikTok reviews content quality, community guideline violations, and account authenticity.** Meeting minimum requirements does not guarantee approval.',
     },
     {
       question: 'What countries are eligible for TikTok monetization?',
-      answer: 'Eligibility varies by feature. Creator Fund: US, UK, Germany, France, Italy, Spain. LIVE Gifts: 40+ countries. TikTok Shop: US, UK, Southeast Asia. Check current eligibility in your TikTok Creator Tools.',
+      answer: '**Eligibility varies by feature.** The Creator Fund is available in the US, UK, Germany, France, Italy, and Spain. LIVE Gifts covers over 40 countries. TikTok Shop operates in the US, UK, and Southeast Asia. Check current eligibility in your TikTok Creator Tools.',
     },
     {
       question: 'Can I monetize if I already have community guideline violations?',
-      answer: 'It depends. Minor violations that are 90+ days old typically don\'t affect eligibility. Recent or severe violations will disqualify you. Wait until violations age out and ensure clean account history going forward.',
+      answer: '**It depends on the severity and timing of the violation.** Minor violations that are 90 or more days old typically do not affect eligibility. Recent or severe violations disqualify you. Wait until violations age out and ensure clean account history going forward.',
     },
     {
       question: 'Do all my videos need to get 100K views or just total in 30 days?',
-      answer: 'Total views across all videos in the last 30 days must reach 100K. This is a rolling 30-day window. One viral video can meet this requirement, or many smaller videos combined.',
+      answer: '**Total views across all videos in the last 30 days must reach 100K.** This is a rolling 30-day window. One viral video meets this requirement. Alternatively, combine views from many smaller videos.',
     },
     {
       question: 'What happens if my follower count drops below requirements after approval?',
-      answer: 'You typically maintain monetization access even if followers drop slightly below thresholds. However, consistently low engagement or followers may trigger review. Focus on maintaining and growing your audience.',
+      answer: '**You typically maintain monetization access even when followers drop slightly below thresholds.** Consistently low engagement or followers trigger a review. Focus on maintaining and growing your audience.',
     },
     {
       question: 'Can I join Creator Fund if I already monetize through other platforms?',
-      answer: 'Yes! TikTok doesn\'t restrict monetization based on other platforms. Many creators monetize across YouTube, Instagram, and TikTok simultaneously.',
+      answer: '**Yes, TikTok does not restrict monetization based on other platforms.** Creators monetize across YouTube, Instagram, and TikTok at the same time.',
     },
   ];
 
@@ -118,7 +118,13 @@ export default function TikTokMonetizationRequirementsPage() {
       <section className="py-8">
         <div className="container-custom max-w-4xl">
           <p className="text-body-lg text-neutral-700 leading-relaxed">
-            Understanding TikTok monetization requirements is essential for creators at every stage because the platform offers multiple parallel income pathways, each with distinct eligibility criteria, earning potential, and strategic advantages that become accessible at different growth milestones. You don't need to wait until you have hundreds of thousands of followers to start earning—TikTok Shop affiliate programs can be accessed with minimal followers in many regions, LIVE Gifts require just 1,000 followers, while Creator Fund demands 10,000 followers and specific engagement thresholds. This comprehensive guide breaks down the exact follower counts, engagement metrics, geographic restrictions, and account standing requirements for every major TikTok monetization feature including Creator Fund passive income, LIVE Gifts real-time earnings, TikTok Shop affiliate commissions, Creator Marketplace brand partnerships, and premium content opportunities. Whether you're starting from zero followers or looking to unlock your next monetization milestone, knowing the specific criteria, realistic timelines to reach each threshold, common disqualification mistakes to avoid, and optimal application strategies will accelerate your path to consistent TikTok income across multiple revenue streams in 2026.
+            Understanding TikTok monetization requirements is essential for creators at every stage. The platform offers multiple income pathways, each with distinct eligibility criteria, earning potential, and strategic advantages at different growth milestones.
+
+            You do not need hundreds of thousands of followers to start earning. TikTok Shop affiliate programs require minimal followers in most regions. LIVE Gifts require just 1,000 followers. The Creator Fund demands 10,000 followers and specific engagement thresholds.
+
+            This guide breaks down the exact follower counts, engagement metrics, geographic restrictions, and account standing requirements for every major feature. These include Creator Fund passive income, LIVE Gifts real-time earnings, TikTok Shop affiliate commissions, Creator Marketplace brand partnerships, and premium content opportunities.
+
+            Whether you start from zero followers or look to unlock your next milestone, use these criteria and strategies. Realistic timelines, common mistakes to avoid, and application tips accelerate your path to consistent TikTok income in 2026.
           </p>
         </div>
       </section>
@@ -130,7 +136,9 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">TikTok Monetization Overview</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok offers multiple parallel monetization pathways, each with distinct eligibility requirements, earning potential, and strategic advantages for creators at different growth stages. Understanding these requirements is essential because you can qualify for some programs immediately while others demand significant audience building, meaning smart creators strategically pursue multiple income streams rather than waiting to meet every threshold. This comprehensive guide breaks down the exact follower counts, engagement metrics, geographic restrictions, and account standing requirements for every major TikTok monetization feature including Creator Fund, LIVE Gifts, TikTok Shop affiliate programs, Creator Marketplace access, and brand partnership opportunities. Whether you're starting from zero followers or looking to unlock your next monetization milestone, knowing the specific criteria, realistic timelines to reach each threshold, common disqualification mistakes to avoid, and optimal application strategies will accelerate your path to consistent TikTok income across multiple revenue streams.
+            TikTok offers multiple monetization pathways. Each has distinct eligibility requirements, earning potential, and strategic advantages for creators at different growth stages. You qualify for some programs right away while others demand significant audience building. Smart creators pursue multiple income streams rather than waiting to meet every threshold.
+
+            This guide covers the exact follower counts, engagement metrics, geographic restrictions, and account standing requirements for every major feature. These include the Creator Fund, LIVE Gifts, TikTok Shop affiliate programs, Creator Marketplace access, and brand partnership opportunities.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
             <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><BarChart3 className="w-5 h-5" /> Quick Requirements Comparison</h3>
@@ -149,7 +157,7 @@ export default function TikTokMonetizationRequirementsPage() {
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-700">Brand Deals:</span>
-                <span className="font-semibold text-neutral-900">Varies (500-5,000+)</span>
+                <span className="font-semibold text-neutral-900">Varies (500 to 5,000+)</span>
               </div>
             </div>
           </div>
@@ -159,7 +167,7 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">TikTok Creator Fund Requirements</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            The Creator Fund pays creators based on video views and engagement. It's TikTok's primary passive monetization program.
+            The Creator Fund pays creators based on video views and engagement. It is the primary passive monetization program on TikTok.
           </p>
           <div className="space-y-4">
             {[
@@ -215,13 +223,13 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>• Creators receive 50% of gift value</li>
                 <li>• Minimum $50 withdrawal</li>
                 <li>• Pay out to PayPal or bank</li>
-                <li>• 7-14 day processing time</li>
+                <li>• 7 to 14 day processing time</li>
               </ul>
             </div>
           </div>
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
             <p className="text-body-sm text-neutral-800">
-              <strong>Timeline to Qualify:</strong> Most creators reach 1,000 followers in 2-4 months with consistent posting (3-5 videos per week).
+              <strong>Timeline to Qualify:</strong> Most creators reach 1,000 followers in 2 to 4 months with consistent posting (3 to 5 videos per week).
             </p>
           </div>
           <div className="mt-6">
@@ -239,7 +247,7 @@ export default function TikTokMonetizationRequirementsPage() {
           </p>
           <div className="space-y-4 mb-6">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="font-semibold text-neutral-900 mb-3">US Region Requirements:</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">US Region Requirements</h3>
               <ul className="space-y-2 text-body-sm text-neutral-700">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> 18 years or older</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> 5,000+ followers</li>
@@ -248,7 +256,7 @@ export default function TikTokMonetizationRequirementsPage() {
               </ul>
             </div>
             <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
-              <h3 className="font-semibold text-neutral-900 mb-3">UK & Southeast Asia Requirements:</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">UK and Southeast Asia Requirements</h3>
               <ul className="space-y-2 text-body-sm text-neutral-700">
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> 18 years or older</li>
                 <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> Often NO minimum follower count</li>
@@ -258,23 +266,23 @@ export default function TikTokMonetizationRequirementsPage() {
             </div>
           </div>
           <div className="bg-neutral-100 rounded-lg p-4">
-            <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><BarChart3 className="w-5 h-5" /> Commission Rates by Category:</h3>
+            <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2"><BarChart3 className="w-5 h-5" /> Commission Rates by Category</h3>
             <div className="space-y-2 text-body-sm">
               <div className="flex justify-between">
                 <span className="text-neutral-700">Beauty & Personal Care:</span>
-                <span className="font-semibold text-neutral-900">8-20%</span>
+                <span className="font-semibold text-neutral-900">8 to 20%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-700">Fashion & Accessories:</span>
-                <span className="font-semibold text-neutral-900">10-15%</span>
+                <span className="font-semibold text-neutral-900">10 to 15%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-700">Home & Kitchen:</span>
-                <span className="font-semibold text-neutral-900">5-12%</span>
+                <span className="font-semibold text-neutral-900">5 to 12%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-700">Electronics:</span>
-                <span className="font-semibold text-neutral-900">2-8%</span>
+                <span className="font-semibold text-neutral-900">2 to 8%</span>
               </div>
             </div>
           </div>
@@ -293,35 +301,35 @@ export default function TikTokMonetizationRequirementsPage() {
           </p>
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-3">Minimum Requirements for Entry-Level Deals:</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">Minimum Requirements for Entry-Level Deals</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-4 bg-neutral-50 rounded-lg">
-                  <p className="font-semibold text-neutral-900 mb-2">Nano-Influencers (500-5K)</p>
+                  <p className="font-semibold text-neutral-900 mb-2">Nano-Influencers (500 to 5K)</p>
                   <ul className="space-y-1 text-body-sm text-neutral-700">
-                    <li>• 500-5,000 followers</li>
+                    <li>• 500 to 5,000 followers</li>
                     <li>• 5%+ engagement rate</li>
                     <li>• Niche-specific audience</li>
-                    <li>• $50-$200 per post</li>
+                    <li>• $50 to $200 per post</li>
                   </ul>
                 </div>
                 <div className="p-4 bg-neutral-50 rounded-lg">
-                  <p className="font-semibold text-neutral-900 mb-2">Micro-Influencers (5K-50K)</p>
+                  <p className="font-semibold text-neutral-900 mb-2">Micro-Influencers (5K to 50K)</p>
                   <ul className="space-y-1 text-body-sm text-neutral-700">
-                    <li>• 5,000-50,000 followers</li>
+                    <li>• 5,000 to 50,000 followers</li>
                     <li>• 3%+ engagement rate</li>
                     <li>• Consistent content quality</li>
-                    <li>• $200-$1,500 per post</li>
+                    <li>• $200 to $1,500 per post</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-3">TikTok Creator Marketplace Requirements:</h3>
+              <h3 className="font-semibold text-neutral-900 mb-3">TikTok Creator Marketplace Requirements</h3>
               <div className="p-4 bg-purple-50 border border-purple-200 rounded-lg">
                 <p className="text-body-md text-neutral-700 mb-3">
-                  TikTok's official platform connecting creators with brands:
-                </p>
+                  The official platform from TikTok that connects creators with brands.
+</p>
                 <ul className="space-y-2 text-body-sm text-neutral-700">
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> 18 years or older</li>
                   <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 flex-shrink-0 text-green-600 mt-0.5" /> 100,000+ followers (recently lowered from 10K in some regions)</li>
@@ -346,15 +354,15 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Timeline: Zero to Monetization</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Realistic timeline for reaching different monetization milestones with consistent effort:
+            Realistic timeline for reaching different monetization milestones with consistent effort.
           </p>
           <div className="space-y-4">
             {[
               { milestone: '0 Followers → TikTok Shop', time: 'Day 1', effort: 'Available immediately in most regions (UK, SEA) or at 5K followers (US)' },
-              { milestone: '0 → 500 Followers (Nano Brand Deals)', time: '1-2 Months', effort: '3-5 posts per week, niche content, engagement with community' },
-              { milestone: '0 → 1,000 Followers (LIVE Gifts)', time: '2-4 Months', effort: '5-7 posts per week, trend participation, consistent posting schedule' },
-              { milestone: '0 → 10,000 Followers (Creator Fund)', time: '6-12 Months', effort: 'Daily posting, viral content strategy, strong engagement' },
-              { milestone: '0 → 100,000 Followers (Creator Marketplace)', time: '12-24 Months', effort: 'Professional content, clear niche authority, community building' },
+              { milestone: '0 → 500 Followers (Nano Brand Deals)', time: '1 to 2 Months', effort: '3 to 5 posts per week, niche content, engagement with community' },
+              { milestone: '0 → 1,000 Followers (LIVE Gifts)', time: '2 to 4 Months', effort: '5 to 7 posts per week, trend participation, consistent posting schedule' },
+              { milestone: '0 → 10,000 Followers (Creator Fund)', time: '6 to 12 Months', effort: 'Daily posting, viral content strategy, strong engagement' },
+              { milestone: '0 → 100,000 Followers (Creator Marketplace)', time: '12 to 24 Months', effort: 'Professional content, clear niche authority, community building' },
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4 items-start">
                 <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-tiktok-pink to-tiktok-blue text-white flex items-center justify-center font-bold text-body-sm text-center leading-tight p-2">
@@ -378,7 +386,7 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Common Mistakes That Prevent Monetization</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Avoid these pitfalls that delay or prevent monetization eligibility:
+            Avoid these pitfalls that delay or prevent monetization eligibility.
           </p>
           <div className="space-y-4">
             {[
@@ -390,7 +398,7 @@ export default function TikTokMonetizationRequirementsPage() {
               {
                 mistake: 'Reposting Content from Other Creators',
                 consequence: 'Violates originality requirements for Creator Fund. Content ID systems catch reposts and flag accounts.',
-                solution: 'Create 100% original content. Use others\' content as inspiration, not direct replication.',
+                solution: 'Create 100% original content. Use other creators as inspiration, not direct replication.',
               },
               {
                 mistake: 'Ignoring Community Guidelines',
@@ -405,12 +413,12 @@ export default function TikTokMonetizationRequirementsPage() {
               {
                 mistake: 'Posting Inconsistently',
                 consequence: 'Slows follower growth dramatically. Algorithm favors consistent creators with higher distribution.',
-                solution: 'Establish posting schedule (3-5x/week minimum). Batch create content to maintain consistency.',
+                solution: 'Establish a posting schedule (3 to 5 times per week minimum). Batch create content to maintain consistency.',
               },
               {
                 mistake: 'Focusing Only on Follower Count',
-                consequence: 'High followers with low engagement disqualifies you from brand deals and reduces Creator Fund RPM.',
-                solution: 'Prioritize engagement rate over followers. 1K engaged followers > 10K disengaged followers.',
+                consequence: 'High followers with low engagement disqualifies you from brand deals and reduces Creator Fund Revenue Per Mille (RPM).',
+                solution: 'Prioritize engagement rate over followers. 1,000 engaged followers outperform 10,000 disengaged followers.',
               },
               {
                 mistake: 'Not Verifying Age Properly',
@@ -419,7 +427,7 @@ export default function TikTokMonetizationRequirementsPage() {
               },
               {
                 mistake: 'Neglecting Analytics',
-                consequence: 'Miss opportunities to optimize content for monetization requirements. Can\'t track progress toward goals.',
+                consequence: 'Missed opportunities to optimize content for monetization requirements. No way to track progress toward goals.',
                 solution: 'Check analytics weekly. Track progress toward follower and view thresholds. Identify top-performing content.',
               },
             ].map((item, idx) => (
@@ -440,7 +448,7 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Your Step-by-Step Monetization Roadmap</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Follow this proven roadmap to reach monetization eligibility faster:
+            Follow this proven roadmap to reach monetization eligibility faster.
           </p>
 
           <div className="space-y-6">
@@ -452,8 +460,8 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>✓ Research top creators in your niche (content style, posting frequency, engagement tactics)</li>
                 <li>✓ Set up business account and optimize profile (clear bio, relevant links, professional photo)</li>
                 <li>✓ Create content calendar with 30 video ideas</li>
-                <li>✓ Post 3-5 times per week consistently</li>
-                <li>✓ Target: 100-500 followers by end of month</li>
+                <li>✓ Post 3 to 5 times per week consistently</li>
+                <li>✓ Target: 100 to 500 followers by end of month</li>
               </ul>
             </div>
 
@@ -479,7 +487,7 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>✓ Join TikTok Shop affiliate program (if available in your region)</li>
                 <li>✓ Create media kit and reach out to small brands for nano-influencer deals</li>
                 <li>✓ Double down on content formats that drive highest engagement</li>
-                <li>✓ Target: 3,000-5,000 followers and first $100 earned</li>
+                <li>✓ Target: 3,000 to 5,000 followers and first $100 earned</li>
               </ul>
             </div>
 
@@ -487,12 +495,12 @@ export default function TikTokMonetizationRequirementsPage() {
               <div className="absolute -left-3 top-0 w-6 h-6 rounded-full bg-tiktok-pink text-white flex items-center justify-center text-xs font-bold">4</div>
               <h3 className="font-semibold text-neutral-900 mb-2">Month 7-12: Scale to Creator Fund</h3>
               <ul className="space-y-2 text-body-sm text-neutral-700">
-                <li>✓ Increase posting frequency to 5-7x per week</li>
+                <li>✓ Increase posting frequency to 5 to 7 times per week</li>
                 <li>✓ Develop viral content strategy (study viral videos in your niche)</li>
                 <li>✓ Build email list and external audience for long-term stability</li>
-                <li>✓ Aim for 1-3 viral videos (100K+ views each)</li>
+                <li>✓ Aim for 1 to 3 viral videos (100K+ views each)</li>
                 <li>✓ Monitor progress: need 10K followers + 100K views in 30 days</li>
-                <li>✓ Target: 10,000+ followers, Creator Fund application, $500-1,000 total earned</li>
+                <li>✓ Target: 10,000+ followers, Creator Fund application, $500 to $1,000 total earned</li>
               </ul>
             </div>
 
@@ -501,18 +509,18 @@ export default function TikTokMonetizationRequirementsPage() {
               <h3 className="font-semibold text-neutral-900 mb-2">Month 12+: Full Monetization & Scaling</h3>
               <ul className="space-y-2 text-body-sm text-neutral-700">
                 <li>✓ Creator Fund active and earning passive income</li>
-                <li>✓ 2-4 brand deals per month ($200-$1,500 each)</li>
-                <li>✓ Active TikTok Shop promotion (20-30% of income)</li>
+                <li>✓ 2 to 4 brand deals per month ($200 to $1,500 each)</li>
+                <li>✓ Active TikTok Shop promotion (20 to 30% of income)</li>
                 <li>✓ Regular LIVE sessions with gift monetization</li>
                 <li>✓ Build toward 100K followers for Creator Marketplace access</li>
-                <li>✓ Target: $2,000-5,000/month total TikTok income</li>
+                <li>✓ Target: $2,000 to $5,000 per month total TikTok income</li>
               </ul>
             </div>
           </div>
 
           <div className="mt-6 p-4 bg-tiktok-pink/10 border border-tiktok-pink/30 rounded-lg">
             <p className="text-body-sm text-neutral-800">
-              <strong>Pro Tip:</strong> This timeline assumes consistent effort (10-15 hours/week). Results vary based on niche, content quality, and luck. Some creators accelerate faster, others take longer. Focus on controllable factors: consistency, quality, and engagement.
+              <strong>Pro Tip:</strong> This timeline assumes consistent effort (10 to 15 hours per week). Results vary based on niche, content quality, and luck. Some creators accelerate faster. Others take longer. Focus on controllable factors like consistency, quality, and engagement.
             </p>
           </div>
         </Card>
@@ -521,7 +529,7 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">How to Apply for Each Monetization Feature</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Once you meet requirements, here's how to actually apply and get approved:
+            Once you meet the requirements, here is how to apply and get approved.
           </p>
 
           <div className="space-y-6">
@@ -531,11 +539,11 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>Open TikTok app and go to Profile</li>
                 <li>Tap the three lines (menu) in top right corner</li>
                 <li>Select "Creator Tools"</li>
-                <li>Tap "Creator Fund" (if eligible, you'll see the option)</li>
+                <li>Tap "Creator Fund" (if eligible, you see the option)</li>
                 <li>Review requirements and tap "Apply"</li>
                 <li>Complete application form (personal details, tax information)</li>
                 <li>Submit government-issued ID for verification</li>
-                <li>Wait 3-7 days for review</li>
+                <li>Wait 3 to 7 days for review</li>
                 <li>If approved, earnings begin tracking immediately</li>
               </ol>
               <p className="text-body-sm text-neutral-600 mt-3">
@@ -550,7 +558,7 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>Go to Profile → Menu → Creator Tools</li>
                 <li>Select "LIVE Gifts"</li>
                 <li>Complete age verification (government ID required)</li>
-                <li>Accept TikTok's LIVE Gifts agreement</li>
+                <li>Accept the TikTok LIVE Gifts agreement</li>
                 <li>Approval is typically instant if requirements met</li>
                 <li>Go LIVE to start receiving gifts immediately</li>
               </ol>
@@ -584,8 +592,8 @@ export default function TikTokMonetizationRequirementsPage() {
                 <li>Complete comprehensive creator profile</li>
                 <li>Upload portfolio of your best content</li>
                 <li>Set your rates and preferred collaboration types</li>
-                <li>Wait for TikTok review (7-14 days)</li>
-                <li>Once approved, brands can discover and contact you directly</li>
+                <li>Wait for TikTok review (7 to 14 days)</li>
+                <li>After approval, brands discover and contact you directly</li>
               </ol>
               <p className="text-body-sm text-neutral-600 mt-3">
                 <strong>Note:</strong> You can do brand deals before joining Creator Marketplace. The marketplace simply provides an official platform for connections.
@@ -598,30 +606,30 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Smart Income Diversification Strategy</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Don't rely on one income stream. Here's the optimal income mix for sustainable creator business:
+            Avoid relying on one income stream. The optimal income mix for a sustainable creator business follows this breakdown.
           </p>
 
           <div className="space-y-4 mb-6">
             <div className="p-4 bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 rounded-lg">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-semibold text-neutral-900">Brand Deals & Sponsorships</h3>
-                <span className="text-2xl font-bold text-blue-600">50-60%</span>
+                <span className="text-2xl font-bold text-blue-600">50 to 60%</span>
               </div>
               <p className="text-body-sm text-neutral-700 mb-2">
-                Primary income source. Highest earning potential per unit of effort. Single brand deal can equal months of Creator Fund earnings.
+                Primary income source. Highest earning potential per unit of effort. A single brand deal equals months of Creator Fund earnings.
               </p>
               <p className="text-xs text-neutral-600">
-                Example: 20K followers = $300-800 per sponsored post. Post 4-6/month = $1,200-4,800/month
+                Example: 20K followers = $300 to $800 per sponsored post. Post 4 to 6 per month = $1,200 to $4,800 per month
               </p>
             </div>
 
             <div className="p-4 bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 rounded-lg">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-semibold text-neutral-900">TikTok Shop Affiliate</h3>
-                <span className="text-2xl font-bold text-purple-600">20-30%</span>
+                <span className="text-2xl font-bold text-purple-600">20 to 30%</span>
               </div>
               <p className="text-body-sm text-neutral-700 mb-2">
-                Growing income stream. Scalable with content volume. 8-20% commission on product sales driven through your content.
+                Growing income stream. Scalable with content volume. Earn 8 to 20% commission on product sales driven through your content.
               </p>
               <p className="text-xs text-neutral-600">
                 Example: $10,000 in product sales/month at 10% commission = $1,000/month passive income
@@ -631,32 +639,32 @@ export default function TikTokMonetizationRequirementsPage() {
             <div className="p-4 bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-lg">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-semibold text-neutral-900">LIVE Gifts</h3>
-                <span className="text-2xl font-bold text-green-600">10-15%</span>
+                <span className="text-2xl font-bold text-green-600">10 to 15%</span>
               </div>
               <p className="text-body-sm text-neutral-700 mb-2">
-                Community-driven income. Requires consistent LIVE streaming (2-4x per week). Builds strong audience relationships.
+                Community-driven income. Requires consistent LIVE streaming (2 to 4 times per week). Builds strong audience relationships.
               </p>
               <p className="text-xs text-neutral-600">
-                Example: 4 LIVE sessions/week, 100 viewers average, $150-400/week = $600-1,600/month
+                Example: 4 LIVE sessions per week, 100 viewers average, $150 to $400 per week = $600 to $1,600 per month
               </p>
             </div>
 
             <div className="p-4 bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 rounded-lg">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="font-semibold text-neutral-900">Creator Fund</h3>
-                <span className="text-2xl font-bold text-orange-600">5-10%</span>
+                <span className="text-2xl font-bold text-orange-600">5 to 10%</span>
               </div>
               <p className="text-body-sm text-neutral-700 mb-2">
-                Passive background income. Requires no extra effort beyond creating content. Lowest ROI but completely passive.
+                Passive background income. Requires no extra effort beyond creating content. Lowest Return on Investment (ROI) but completely passive.
               </p>
               <p className="text-xs text-neutral-600">
-                Example: 3M views/month at $0.03 RPM = $90/month (supplemental income only)
+                Example: 3M views per month at $0.03 RPM = $90 per month (supplemental income only)
               </p>
             </div>
           </div>
 
           <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <h4 className="font-semibold text-neutral-900 mb-2">Example: $5,000/Month Creator Income Breakdown</h4>
+            <h4 className="font-semibold text-neutral-900 mb-2">Example: $5,000 Per Month Creator Income Breakdown</h4>
             <ul className="space-y-1 text-body-sm text-neutral-700">
               <li>• Brand Deals: $2,800 (56%) - 4 sponsored posts at $700 each</li>
               <li>• TikTok Shop: $1,200 (24%) - $12K sales at 10% commission</li>
@@ -673,13 +681,13 @@ export default function TikTokMonetizationRequirementsPage() {
         <Card className="bg-neutral-100">
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-3">Legal Disclaimer</h3>
           <p className="text-body-sm text-neutral-700 mb-4">
-            This guide provides educational information about TikTok monetization requirements based on publicly available information and creator experiences as of December 2026. Requirements, rates, and program availability are subject to change by TikTok without notice.
+            This guide provides educational information about TikTok monetization requirements based on publicly available information and creator experiences as of December 2026. Requirements, rates, and program availability are subject to change without notice.
           </p>
           <p className="text-body-sm text-neutral-700 mb-4">
-            Actual earnings vary significantly based on content quality, niche, audience demographics, geographic location, and TikTok's algorithm. Past performance and examples cited do not guarantee future results. Meeting minimum requirements does not guarantee acceptance into monetization programs.
+            Actual earnings vary significantly based on content quality, niche, audience demographics, geographic location, and the TikTok algorithm. Past performance and examples cited do not guarantee future results. Meeting minimum requirements does not guarantee acceptance into monetization programs.
           </p>
           <p className="text-body-sm text-neutral-700">
-            Always review TikTok's official Terms of Service, Creator Fund Agreement, and regional monetization guidelines before applying. Consult with tax and legal professionals regarding income reporting requirements in your jurisdiction.
+            Review the official TikTok Terms of Service, Creator Fund Agreement, and regional monetization guidelines before applying. Consult with tax and legal professionals regarding income reporting requirements in your jurisdiction.
           </p>
         </Card>
 

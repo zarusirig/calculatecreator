@@ -17,27 +17,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'Why does my follower count not match my earning potential?',
-    answer: 'Follower count is just one metric. True influence depends on engagement rate, audience demographics, niche authority, and conversion potential. A creator with 50K engaged followers often earns more than one with 200K passive followers.',
+    answer: '**Follower count is just one metric.** True influence depends on engagement rate, audience demographics, niche authority, and conversion potential. A creator with 50K engaged followers often earns more than one with 200K passive followers.',
   },
   {
     question: 'How do brands calculate influencer value?',
-    answer: 'Sophisticated brands use a combination of metrics: engagement rate (weighted heavily), audience demographics (age, location, income), niche relevance, past campaign performance, and content quality. They calculate potential ROI, not just reach.',
+    answer: '**Sophisticated brands use a combination of metrics.** They weigh engagement rate heavily, then evaluate audience demographics (age, location, income), niche relevance, past campaign performance, and content quality. They calculate potential Return on Investment (ROI), not just reach.',
   },
   {
     question: 'What is a good engagement rate for brand deals?',
-    answer: 'For brand deals, aim for: 8%+ for 10K-50K followers, 6%+ for 50K-100K followers, 4%+ for 100K+ followers. Premium brands often require 6%+ regardless of follower count.',
+    answer: '**For brand deals, aim for 8% or higher with 10K to 50K followers, 6% or higher with 50K to 100K, and 4% or higher with 100K or more.** Premium brands often require 6% or higher regardless of follower count.',
   },
   {
     question: 'Can I increase my influence value without growing followers?',
-    answer: 'Absolutely! Focus on improving engagement rate, attracting higher-income demographics, establishing niche expertise, increasing content quality, and building brand alignment. These factors often matter more than follower count.',
+    answer: '**Yes, improve your influence value without growing followers.** Focus on improving engagement rate, attracting higher-income demographics, establishing niche expertise, increasing content quality, and building brand alignment. These factors often matter more than follower count.',
   },
   {
     question: 'How do I use influence value in negotiations?',
-    answer: 'Present your influence score alongside follower count. Show engagement rates, audience demographics, past campaign results, and niche authority. Use this data to justify premium rates and decline lowball offers confidently.',
+    answer: '**Present your influence score alongside follower count.** Show engagement rates, audience demographics, past campaign results, and niche authority. Use this data to justify premium rates and decline lowball offers with confidence.',
   },
   {
     question: 'What is the difference between influence value and market rate?',
-    answer: 'Influence value measures your actual impact potential. Market rate is what brands typically pay in your follower/niche tier. Your influence value should inform your negotiating position within or above market rates.',
+    answer: '**Influence value measures your actual impact potential.** Market rate is what brands typically pay in your follower and niche tier. Your influence value informs your negotiating position within or above market rates.',
   },
 ];
 
@@ -114,7 +114,15 @@ export default function CalculatingTrueInfluenceValuePage() {
               Beyond Follower Count: What Really Matters
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Two creators with identical follower counts can have vastly different earning potential and influence, sometimes differing by 10x or more in their ability to command brand deal rates and convert audiences into customers. The critical difference lies in factors that sophisticated brands actually evaluate when determining partnership value including engagement rate quality, audience demographics and purchasing power, established niche authority and expertise, historical conversion potential from previous campaigns, content production quality, community loyalty signals, and authentic brand alignment capabilities. Understanding your true influence value through this multi-factor framework is absolutely essential for negotiating fair brand deals that reflect your actual impact, building sustainable creator income streams that scale with your expertise rather than just follower count, and avoiding the tragically common mistake of underpricing yourself by 40-60% simply because you only looked at follower-based benchmarks. This comprehensive guide breaks down the seven critical factors that determine your real worth beyond simple follower metrics, provides actionable formulas and calculators to quantify your influence score on a 0-2000 point scale, explains exactly how to present this data in media kits and negotiations, and shows you proven negotiation frameworks for leveraging your influence score to justify premium rates even against creators with larger but less engaged audiences. Whether you currently have 5,000 or 500,000 followers, knowing and articulating your true value transforms you from someone nervously accepting whatever brands offer to a confident professional who commands premium rates backed by concrete performance data.
+              Two creators with identical follower counts have vastly different earning potential. The difference reaches 10 times or more in brand deal rates and audience conversion ability.
+
+              The critical difference lies in 7 factors that brands evaluate. These include engagement rate quality, audience demographics, niche authority, conversion potential, content production quality, community loyalty, and brand alignment capability.
+
+              Understanding your true influence value is essential for 3 reasons. First, negotiate fair brand deals that reflect your actual impact. Second, build sustainable income streams that scale with your expertise. Third, avoid underpricing yourself by 40% to 60% due to follower-based benchmarks alone.
+
+              This guide breaks down the 7 factors that determine your real worth. It provides formulas and calculators to quantify your influence score on a 0 to 2,000 point scale. It explains how to present this data in media kits. It shows proven negotiation frameworks for justifying premium rates.
+
+              Whether you have 5,000 or 500,000 followers, knowing your true value transforms you into a confident professional. Command premium rates backed by concrete performance data.
             </p>
             <p className="text-body-md text-neutral-700 mb-4">
               Understanding your true influence value helps you:

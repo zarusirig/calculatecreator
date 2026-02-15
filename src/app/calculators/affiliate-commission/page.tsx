@@ -24,27 +24,27 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much commission does TikTok Shop affiliate pay?',
-    answer: 'TikTok Shop affiliate commissions typically range from 5-30% depending on the product category. Beauty and fashion products often pay 10-20%, while electronics may pay 5-10%. Some brands offer up to 30% commission for high-margin products. Check each product\'s specific commission rate in TikTok Shop affiliate marketplace.',
+    answer: '**TikTok Shop affiliate commissions range from 5% to 30% depending on the product category.** Beauty and fashion products often pay 10% to 20%. Electronics pay 5% to 10%. Some brands offer up to 30% commission for high-margin products. Check the specific commission rate of each product in the TikTok Shop affiliate marketplace.',
   },
   {
     question: 'How do I become a TikTok Shop affiliate?',
-    answer: 'To join TikTok Shop affiliate program: (1) Have 5,000+ followers, (2) Apply through TikTok Shop Seller Center or Creator Marketplace, (3) Get approved (usually 3-7 days), (4) Browse products in the affiliate marketplace, (5) Add products to your videos. Some regions allow accounts with 1,000+ followers to apply.',
+    answer: '**Follow 5 steps to join the TikTok Shop affiliate program.** Have 5,000+ followers. Apply through TikTok Shop Seller Center or Creator Marketplace. Get approved (usually 3 to 7 days). Browse products in the affiliate marketplace. Add products to your videos. Some regions allow accounts with 1,000+ followers to apply.',
   },
   {
     question: 'When do I get paid for TikTok affiliate sales?',
-    answer: 'TikTok Shop pays affiliate commissions 7-14 days after the order is confirmed and the return window closes. Payments are processed monthly, and you need a minimum balance of $10 (US) to withdraw. Funds can be transferred to your bank account or PayPal, typically within 2-5 business days.',
+    answer: '**TikTok Shop pays affiliate commissions 7 to 14 days after the order is confirmed and the return window closes.** Payments are processed monthly. You need a minimum balance of $10 (US) to withdraw. Transfer funds to your bank account or PayPal within 2 to 5 business days.',
   },
   {
     question: 'What\'s a good conversion rate for TikTok affiliate links?',
-    answer: 'A good TikTok affiliate conversion rate is 2-5%. Top performers achieve 5-10% conversion by creating authentic product reviews, showing real use cases, and building trust with their audience. Factors affecting conversion: product price point, niche alignment, audience trust, video quality, and call-to-action strength.',
+    answer: '**A good TikTok affiliate conversion rate is 2% to 5%.** Top performers achieve 5% to 10% conversion by creating authentic product reviews, showing real use cases, and building trust with their audience. 5 factors affect conversion (product price point, niche alignment, audience trust, video quality, and call-to-action strength).',
   },
   {
     question: 'Can I do TikTok affiliate marketing without showing my face?',
-    answer: 'Yes! Many successful TikTok affiliates use faceless content: product unboxings, hands-only demonstrations, voiceover reviews, aesthetic product photography, comparison videos, or animation. Focus on showcasing the product benefits clearly. Some niches (tech gadgets, home products) work particularly well for faceless affiliate content.',
+    answer: '**Yes, many successful TikTok affiliates use faceless content.** Effective formats include product unboxings, hands-only demonstrations, voiceover reviews, aesthetic product photography, comparison videos, and animation. Focus on showcasing the product benefits clearly. Some niches like tech gadgets and home products work particularly well for faceless affiliate content.',
   },
   {
     question: 'How many products should I promote at once?',
-    answer: 'Focus on 3-5 core products that align with your niche. Promoting too many products dilutes your credibility and confuses your audience. Start with products you genuinely use, master those, then gradually expand. Top affiliates often earn 80% of their income from just 2-3 hero products they consistently recommend.',
+    answer: '**Focus on 3 to 5 core products that align with your niche.** Promoting too many products dilutes your credibility and confuses your audience. Start with products you genuinely use. Master those, then gradually expand. Top affiliates earn 80% of their income from just 2 to 3 hero products they consistently recommend.',
   },
 ];
 
@@ -88,7 +88,7 @@ export default function AffiliateCommissionCalculatorPage() {
               TikTok Affiliate Commission Calculator
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-              Calculate your potential earnings from TikTok Shop affiliate marketing based on product prices, commission rates, and conversion rates. With typical commissions ranging from 5-30% depending on category and conversion rates of 2-5% for successful creators, this calculator helps you project monthly income, compare product niches, and understand how many clicks you need to hit your earning goals.
+              Calculate your potential earnings from TikTok Shop affiliate marketing based on product prices, commission rates, and conversion rates. Typical commissions range from 5% to 30% depending on category. Conversion rates of 2% to 5% are common for successful creators. This calculator helps you project monthly income, compare product niches, and understand how many clicks you need to hit your earning goals.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function AffiliateCommissionCalculatorPage() {
                     { name: 'Expected Sales', description: 'Estimated number of sales from your promotion', example: '100' },
                     { name: 'Conversion Rate', description: 'Percentage of clicks that convert to sales', example: '3%' },
                   ]}
-                  note="TikTok Shop commissions range 5-30% by category. Beauty/fashion typically pay 10-20%."
+                  note="TikTok Shop commissions range from 5% to 30% by category. Beauty and fashion typically pay 10% to 20%."
                 />
               </div>
             </div>
@@ -172,14 +172,14 @@ export default function AffiliateCommissionCalculatorPage() {
                 </h2>
                 <div className="space-y-3">
                   {[
-                    'Choose products you genuinely use and believe in—authenticity converts',
+                    'Choose products you genuinely use and believe in. Authenticity converts',
                     'Show the product in action with real use cases and results',
                     'Create honest reviews mentioning both pros and cons',
-                    'Use clear calls-to-action: "Link in bio" or "Shop now in video"',
-                    'Focus on niche products with passionate audiences (10-50K monthly searches)',
-                    'Post consistently—top affiliates post 1-3 product videos per day',
+                    'Use clear calls-to-action like "Link in bio" or "Shop now in video"',
+                    'Focus on niche products with passionate audiences (10K to 50K monthly searches)',
+                    'Post consistently. Top affiliates post 1 to 3 product videos per day',
                     'Engage with comments to build trust and answer questions',
-                    'Test different price points—$20-$100 products often convert best',
+                    'Test different price points. Products priced $20 to $100 often convert best',
                   ].map((tip, index) => (
                     <div key={index} className="flex items-start space-x-3 p-3 bg-neutral-50 rounded-lg">
                       <span className="flex-shrink-0 w-6 h-6 rounded-full bg-success-100 text-success-600 flex items-center justify-center text-sm font-semibold">
@@ -202,19 +202,19 @@ export default function AffiliateCommissionCalculatorPage() {
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Build Trust First</h3>
                     <p className="text-body-sm text-neutral-700">
-                      Don't jump straight into selling. Build authority by sharing valuable content in your niche for 2-4 weeks before promoting products. Followers are 3× more likely to buy from creators they trust.
+                      Do not jump straight into selling. Build authority by sharing valuable content in your niche for 2 to 4 weeks before promoting products. Followers are 3x more likely to buy from creators they trust.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Show Transformation</h3>
                     <p className="text-body-sm text-neutral-700">
-                      Before/after videos convert 2-4× better than simple product showcases. Show the problem, the solution (product), and the results. This storytelling approach drives higher conversions.
+                      Before and after videos convert 2 to 4x better than simple product showcases. Show 3 elements (the problem, the solution using the product, and the results). This storytelling approach drives higher conversions.
                     </p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-2">Address Objections</h3>
                     <p className="text-body-sm text-neutral-700">
-                      Mention common concerns in your videos: "I know it looks expensive, but it lasts 6 months" or "Yes, shipping takes 5 days, but it's worth the wait." Proactively answering objections increases conversions by 20-30%.
+                      Mention common concerns in your videos. Say things like "I know it looks expensive, but it lasts 6 months" or "Yes, shipping takes 5 days, but it is worth the wait." Answering objections proactively increases conversions by 20% to 30%.
                     </p>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ Annual Earnings = $150 × 12 = $1,800`}
                 'Analysis of 300+ TikTok affiliate creators (10K-500K followers)',
                 'Industry benchmarks from affiliate marketing platforms (ShareASale, Impact)',
               ]}
-              limitations="Actual earnings vary significantly based on content quality, audience trust, product-niche fit, and posting consistency. Seasonal factors (holidays, trends) can cause 2-5× variance in monthly earnings. Building audience trust typically takes 1-3 months before seeing optimal conversion rates."
+              limitations="Actual earnings vary significantly based on content quality, audience trust, product-niche fit, and posting consistency. Seasonal factors like holidays and trends cause 2x to 5x variance in monthly earnings. Building audience trust typically takes 1 to 3 months before reaching optimal conversion rates."
               lastUpdated="November 13, 2025"
             />
 

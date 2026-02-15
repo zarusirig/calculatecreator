@@ -24,43 +24,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What viral score should I aim for?',
-    answer: '60+ indicates above-average viral potential. 80+ means very strong viral candidate. Focus on improving your weakest factors for the biggest gains. Scores of 40-60 are average and unlikely to go viral without optimization.',
+    answer: '**Aim for a score of 60 or higher.** A score of 60+ indicates above-average viral potential. 80+ means a very strong viral candidate. Focus on improving your weakest factors for the biggest gains. Scores of 40 to 60 are average and unlikely to go viral without optimization.',
   },
   {
     question: 'Which factor matters most for going viral?',
-    answer: 'Completion rate is the foundation - without retention, nothing else matters. After that, share rate is the most powerful viral signal. A video with 80% completion and 5% share rate will outperform one with 60% completion and 10% engagement every time.',
+    answer: '**Completion rate is the foundation.** Without retention, nothing else matters. Share rate is the next most powerful viral signal. A video with 80% completion and 5% share rate outperforms one with 60% completion and 10% engagement every time.',
   },
   {
     question: 'Can I predict exactly which videos will go viral?',
-    answer: 'No calculator can guarantee virality. This tool identifies videos with higher probability based on proven engagement patterns. Timing, trends, cultural moments, and luck also play significant roles that cannot be calculated or predicted.',
+    answer: '**No calculator guarantees virality.** This tool identifies videos with higher probability based on proven engagement patterns. Timing, trends, cultural moments, and luck play significant roles that no one predicts or calculates.',
   },
   {
     question: 'How often should I check viral potential?',
-    answer: 'Analyze your best-performing videos to understand what patterns lead to higher scores. Use insights to inform future content strategy. Check individual videos 6-24 hours after posting when initial engagement signals have stabilized.',
+    answer: '**Analyze your best-performing videos to understand patterns that lead to higher scores.** Use insights to inform future content strategy. Check individual videos 6 to 24 hours after posting when initial engagement signals have stabilized.',
   },
   {
     question: 'Why is completion rate weighted so heavily?',
-    answer: 'Completion rate directly signals content quality to the algorithm. TikTok only pushes videos to larger audiences if initial viewers watch most or all of the content. Without high completion, your video never gets the reach needed for virality regardless of other metrics.',
+    answer: '**Completion rate directly signals content quality to the algorithm.** TikTok only pushes videos to larger audiences when initial viewers watch most or all of the content. Your video never gets the reach needed for virality without high completion, regardless of other metrics.',
   },
   {
     question: 'What is a realistic share rate for viral content?',
-    answer: 'Average content gets 0.5-2% share rate. Viral content typically achieves 5%+ shares. Anything above 8% is exceptional. Share rate is the purest indicator of value—people only share content they genuinely find useful, funny, or remarkable.',
+    answer: '**Average content gets a 0.5 to 2% share rate.** Viral content typically achieves 5%+ shares. Anything above 8% is exceptional. Share rate is the purest indicator of value. People only share content they genuinely find useful, funny, or remarkable.',
   },
   {
     question: 'Does follower count really affect viral potential?',
-    answer: 'Yes, but only 10% of the score. Larger follower counts give initial distribution advantages and social proof. However, small accounts (under 10K) regularly go viral with exceptional engagement metrics. Focus on engagement quality over follower quantity.',
+    answer: '**Yes, but follower count accounts for only 10% of the score.** Larger follower counts give initial distribution advantages and social proof. Small accounts under 10K regularly go viral with exceptional engagement metrics. Focus on engagement quality over follower quantity.',
   },
   {
     question: 'How long does it take for a video to go viral on TikTok?',
-    answer: 'Most viral videos show strong signals within 1-6 hours. Some "sleeper" virals can take 24-72 hours. If your video hasn\'t gained traction within 48 hours, it\'s unlikely to go viral organically. The algorithm tests content quickly.',
+    answer: '**Most viral videos show strong signals within 1 to 6 hours.** Some "sleeper" virals take 24 to 72 hours. Your video is unlikely to go viral organically if it has not gained traction within 48 hours. The algorithm tests content quickly.',
   },
   {
     question: 'Can I improve viral potential after posting?',
-    answer: 'Limited options post-publishing. You can respond to every comment to boost engagement signals and encourage the algorithm to re-test the video. Some creators delete and repost during better times, but this resets all engagement data.',
+    answer: '**Options are limited after publishing.** Respond to every comment to boost engagement signals and encourage the algorithm to re-test the video. Some creators delete and repost during better times, but this resets all engagement data.',
   },
   {
     question: 'What niche has the highest viral potential on TikTok?',
-    answer: 'Comedy, relatable content, and controversial takes have the highest share rates. Educational "did you know" content and life hacks achieve high save rates. Beauty and fitness content gets strong engagement. News commentary typically has lower viral potential despite high view counts.',
+    answer: '**Comedy, relatable content, and controversial takes have the highest share rates.** Educational "did you know" content and life hacks achieve high save rates. Beauty and fitness content gets strong engagement. News commentary has lower viral potential despite high view counts.',
   },
 ];
 
@@ -101,7 +101,7 @@ export default function ViralPotentialCalculatorPage() {
             TikTok Viral Potential Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Predict your content's viral likelihood based on key engagement signals including completion rate, share rate, engagement rate, and save rate. This calculator provides a comprehensive viral score from 0-100 and actionable insights to help you understand what makes content go viral. Ideal for creators who want to maximize reach, identify viral patterns in their content, and increase their chances of hitting the For You Page.
+            Predict the viral likelihood of your content based on key engagement signals including completion rate, share rate, engagement rate, and save rate. This calculator provides a comprehensive viral score from 0 to 100 and actionable insights. Understand what makes content go viral. Ideal for creators who want to maximize reach, identify viral patterns in their content, and increase the chances of hitting the For You Page.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function ViralPotentialCalculatorPage() {
               <div className="space-y-4 text-body-md text-neutral-700">
                 <p>
                   Viral potential is calculated from multiple engagement signals that
-                  TikTok's algorithm uses to determine content distribution.
+                  the algorithm of TikTok uses to determine content distribution.
                 </p>
                 <p><strong>Key factors (weighted by importance):</strong></p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
@@ -158,14 +158,14 @@ export default function ViralPotentialCalculatorPage() {
                     range: '80+',
                     color: 'bg-success-DEFAULT',
                     description: 'Strong viral candidate',
-                    interpretation: 'Your content has exceptional viral potential. Multiple engagement signals are firing. Focus on posting at peak times and capitalize on this momentum with consistent content in the same format.'
+                    interpretation: 'Your content has exceptional viral potential. Multiple engagement signals are firing. Post at peak times and capitalize on this momentum with consistent content in the same format.'
                   },
                   {
                     label: 'High',
                     range: '60-80',
                     color: 'bg-secondary-500',
                     description: 'Above average viral potential',
-                    interpretation: 'Your video shows solid viral indicators. One or two improvements to weaker metrics could push this into the viral tier. Analyze which factor is lowest and optimize that element.'
+                    interpretation: 'Your video shows solid viral indicators. 1 or 2 improvements to weaker metrics push this into the viral tier. Analyze which factor is lowest and optimize that element.'
                   },
                   {
                     label: 'Medium',
@@ -229,13 +229,13 @@ export default function ViralPotentialCalculatorPage() {
               How to Increase Your Viral Potential
             </h2>
             <p className="text-body-md text-neutral-700 mb-6">
-              Viral potential is not random—it's engineered through strategic content design. These three areas have the highest impact on your viral score across all engagement metrics.
+              Viral potential is not random. It is engineered through strategic content design. These 3 areas have the highest impact on your viral score across all engagement metrics.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {[
                 {
                   title: 'Perfect the Hook',
-                  description: 'The first 0.5-1 second determines everything. Skip intros, logos, and setup. Start with your strongest moment, boldest claim, or most visually striking frame. Hook quality directly drives completion rate (30% of viral score) and determines if anyone sees the rest of your content.',
+                  description: 'The first 0.5 to 1 second determines everything. Skip intros, logos, and setup. Start with your strongest moment, boldest claim, or most visually striking frame. Hook quality directly drives completion rate (30% of the viral score) and determines whether anyone sees the rest of your content.',
                   icon: '🎯',
                   impact: 'Affects completion rate, engagement, shares'
                 },
@@ -247,7 +247,7 @@ export default function ViralPotentialCalculatorPage() {
                 },
                 {
                   title: 'Optimize Retention',
-                  description: 'Use pattern interrupts every 2-3 seconds: quick cuts, zoom changes, text pops, sound effects. Save the payoff for the last second to maximize rewatches. Completion rate is the foundation metric—without retention, other signals don\'t matter.',
+                  description: 'Use pattern interrupts every 2 to 3 seconds with quick cuts, zoom changes, text pops, and sound effects. Save the payoff for the last second to maximize rewatches. Completion rate is the foundation metric. Without retention, other signals do not matter.',
                   icon: '⏱️',
                   impact: 'Maximizes completion rate (30% weight)'
                 },
@@ -270,14 +270,14 @@ export default function ViralPotentialCalculatorPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { title: 'Master the Hook', description: 'Capture attention in the first 0.5-1 second. No intro, no logo, just pure value.' },
+                { title: 'Master the Hook', description: 'Capture attention in the first 0.5 to 1 second. No intro, no logo, just pure value.' },
                 { title: 'Create Share-Worthy Moments', description: 'Design content people want to send to friends. "Tag someone who needs to see this."' },
                 { title: 'Maximize Completion Rate', description: 'Use curiosity loops, pattern interrupts, and payoffs at the end.' },
-                { title: 'Trigger Emotions', description: 'Content that evokes strong emotions (humor, surprise, inspiration) gets shared more.' },
-                { title: 'Ride Trends Early', description: 'Jump on trends in the first 24-48 hours before saturation.' },
-                { title: 'Optimize for Saves', description: 'Create reference-worthy content (tips, tutorials, lists) that people bookmark.' },
-                { title: 'Encourage Comments', description: 'Ask questions, create controversy (tastefully), spark conversation.' },
-                { title: 'Post Consistently', description: 'The algorithm rewards consistency. 1-3 quality posts daily beats sporadic viral attempts.' },
+                { title: 'Trigger Emotions', description: 'Content that evokes strong emotions (humor, surprise, and inspiration) gets shared more.' },
+                { title: 'Ride Trends Early', description: 'Jump on trends in the first 24 to 48 hours before saturation.' },
+                { title: 'Optimize for Saves', description: 'Create reference-worthy content (tips, tutorials, and lists) that people bookmark.' },
+                { title: 'Encourage Comments', description: 'Ask questions, create tasteful controversy, and spark conversation.' },
+                { title: 'Post Consistently', description: 'The algorithm rewards consistency. 1 to 3 quality posts daily beats sporadic viral attempts.' },
               ].map((strategy, index) => (
                 <div key={index} className="p-4 bg-neutral-50 rounded-lg">
                   <h3 className="font-semibold text-neutral-900 mb-2">{index + 1}. {strategy.title}</h3>
@@ -294,9 +294,9 @@ export default function ViralPotentialCalculatorPage() {
             <div className="space-y-3">
               {[
                 { mistake: 'Slow Start (First 3 Seconds Boring)', fix: 'Hook immediately. Delete your intro.' },
-                { mistake: 'Poor Audio Quality', fix: 'Invest in a lavalier mic. Clear audio = longer watch time.' },
-                { mistake: 'Copying Trends Exactly', fix: 'Add your unique twist. Carbon copies don\'t go viral.' },
-                { mistake: 'Inconsistent Posting', fix: 'Algorithm penalizes sporadic posting. Consistency > perfection.' },
+                { mistake: 'Poor Audio Quality', fix: 'Invest in a lavalier mic. Clear audio leads to longer watch time.' },
+                { mistake: 'Copying Trends Exactly', fix: 'Add your unique twist. Carbon copies do not go viral.' },
+                { mistake: 'Inconsistent Posting', fix: 'The algorithm penalizes sporadic posting. Consistency beats perfection.' },
                 { mistake: 'Ignoring Analytics', fix: 'Study what works. Double down on winning formats.' },
               ].map((item, index) => (
                 <div key={index} className="p-4 bg-error-50 border border-error-200 rounded-lg">
@@ -359,7 +359,7 @@ Viral Score = (75×0.3)+(80×0.25)+(70×0.2)+(60×0.15)+(50×0.1) = 70.5`}
               { label: 'Normalization', value: 'Each factor scaled against TikTok benchmarks' },
             ]}
             dataSources={['TikTok Algorithm Research 2024', 'Creator Analytics Aggregation', 'Viral Content Pattern Analysis']}
-            limitations="Viral potential is probabilistic, not deterministic. Timing, trends, and luck also play significant roles that can't be calculated."
+            limitations="Viral potential is probabilistic, not deterministic. Timing, trends, and luck play significant roles that no one calculates."
             lastUpdated="December 5, 2025"
           />
 

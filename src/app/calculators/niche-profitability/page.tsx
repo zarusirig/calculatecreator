@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is the most profitable TikTok niche?',
-    answer: 'Finance (#1) earns 3x more than average due to high CPM ($8-12 vs $2-4) and premium brand deals. Tech (#2) and Beauty/Fashion (#3) also command premium rates. However, choose based on your expertise and passion - authenticity matters more than niche.',
+    answer: '**Finance (#1) earns 3 times more than average.** This is due to high Cost Per Mille (CPM) ($8 to $12 versus $2 to $4) and premium brand deals. Tech (#2) and Beauty/Fashion (#3) command premium rates. Choose based on your expertise and passion. Authenticity matters more than niche selection.',
   },
   {
     question: 'Can I make money in a low-value niche?',
-    answer: 'Absolutely! Entertainment/comedy creators can still earn well through: (1) High volume (millions of views), (2) Diversification (merch, live gifts, Patreon), (3) Personal brand (speaking, courses), (4) Cross-platform (YouTube pays better). Focus on building audience first.',
+    answer: '**Yes, entertainment and comedy creators earn well through 4 channels.** (1) High volume with millions of views, (2) Diversification through merch, live gifts, and Patreon, (3) Personal brand with speaking and courses, (4) Cross-platform income since YouTube pays better. Focus on building the audience first.',
   },
   {
     question: 'Should I switch niches for better earnings?',
-    answer: 'Only if: (1) You have genuine interest/expertise in new niche, (2) Your audience would follow, (3) You\'re willing to rebuild authority. Pivoting without authenticity fails. Better strategy: add sub-niche elements (e.g., comedy → finance comedy) to increase value.',
+    answer: '**Switch only under 3 conditions.** (1) You have genuine interest or expertise in the new niche. (2) Your audience is likely to follow. (3) You are willing to rebuild authority. Pivoting without authenticity fails. A better strategy is to add sub-niche elements (for example, comedy to finance comedy) to increase value.',
   },
   {
     question: 'How do I increase profitability in my current niche?',
-    answer: 'Strategies: (1) Target high-value audience segments, (2) Create more premium/valuable content, (3) Build email list for direct monetization, (4) Offer services/products aligned with niche, (5) Partner with premium brands, (6) Cross-sell to higher-paying platforms (YouTube, courses).',
+    answer: '**Apply these 6 strategies to boost profitability.** (1) Target high-value audience segments. (2) Create more premium and valuable content. (3) Build an email list for direct monetization. (4) Offer services or products aligned with the niche. (5) Partner with premium brands. (6) Cross-sell to higher-paying platforms like YouTube and courses.',
   },
 ];
 
@@ -79,7 +79,9 @@ export default function NicheProfitabilityCalculatorPage() {
             TikTok Niche Profitability Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Compare earning potential across content niches using profitability multipliers from 1.0x for entertainment to 3.0x for finance. Calculate how CPM rates, brand deal demand, and audience purchasing power impact your monetization ceiling. Essential for creators choosing their niche or optimizing within their current category to maximize revenue per view and follower.
+            Compare earning potential across content niches using profitability multipliers from 1.0x for entertainment to 3.0x for finance. Calculate how 3 factors (CPM rates, brand deal demand, and audience purchasing power) impact your monetization ceiling.
+
+            This tool is essential for creators choosing their niche or optimizing within their current category to maximize revenue per view and follower.
           </p>
         </div>
 
@@ -109,7 +111,7 @@ export default function NicheProfitabilityCalculatorPage() {
               <div className="space-y-4 text-body-md text-neutral-700">
                 <p>
                   Different niches have vastly different monetization potential due to
-                  CPM rates, brand deal demand, and audience purchasing power.
+                  3 factors (CPM rates, brand deal demand, and audience purchasing power).
                 </p>
                 <p>
                   <strong>Top earning niches:</strong>
@@ -155,13 +157,13 @@ export default function NicheProfitabilityCalculatorPage() {
             </h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                Not all TikTok niches are created equal when it comes to monetization. The Niche Profitability Calculator evaluates earning potential based on three critical factors: CPM rates (how much advertisers pay for your audience), brand deal demand (how much companies will sponsor you), and audience purchasing power (how likely your followers are to buy products or services).
+                Not all TikTok niches are equal for monetization. The Niche Profitability Calculator evaluates earning potential based on 3 critical factors (CPM rates, brand deal demand, and audience purchasing power).
               </p>
               <p>
-                Finance and tech niches dominate profitability rankings because they attract high-value advertisers and audiences with disposable income. A finance creator with 50K followers might earn more than an entertainment creator with 500K followers due to these multiplier effects. Finance content commands $8-12 CPM compared to entertainment's $2-4 CPM - a 3-4x difference.
+                Finance and tech niches dominate profitability rankings. They attract high-value advertisers and audiences with disposable income. A finance creator with 50K followers earns more than an entertainment creator with 500K followers due to multiplier effects. Finance content commands $8 to $12 CPM compared to the $2 to $4 CPM of entertainment. That is a 3 to 4 times difference.
               </p>
               <p>
-                However, profitability isn't just about choosing the highest-earning niche. Authenticity and expertise matter tremendously. A passionate entertainment creator will outperform an inauthentic finance creator every time. The key is understanding your niche's monetization ceiling and optimizing within it, or strategically adding high-value sub-niches to your content mix.
+                Profitability is not just about choosing the highest-earning niche. Authenticity and expertise matter tremendously. A passionate entertainment creator outperforms an inauthentic finance creator every time. Understand the monetization ceiling of your niche and optimize within it. Strategically add high-value sub-niches to your content mix.
               </p>
             </div>
           </Card>
@@ -342,7 +344,7 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
               'Brand Deal Rate Benchmarks by Category',
               'Creator Economy Profitability Analysis',
             ]}
-            limitations="Earnings vary by execution quality, personal brand, and audience demographics. A great creator in a low-value niche can outperform average creators in high-value niches."
+            limitations="Earnings vary by 3 factors (execution quality, personal brand, and audience demographics). A great creator in a low-value niche outperforms average creators in high-value niches."
             lastUpdated="November 13, 2025"
           />
 
@@ -351,19 +353,19 @@ Adjusted: $30 × 1.5 × 1.2 = $54/month`}
             faqs={[
               {
                 question: 'What is the most profitable TikTok niche?',
-                answer: 'Finance (#1) earns 3x more than average due to high CPM ($8-12 vs $2-4) and premium brand deals. Tech (#2) and Beauty/Fashion (#3) also command premium rates. However, choose based on your expertise and passion - authenticity matters more than niche.',
+                answer: '**Finance (#1) earns 3 times more than average.** This is due to high Cost Per Mille (CPM) ($8 to $12 versus $2 to $4) and premium brand deals. Tech (#2) and Beauty/Fashion (#3) command premium rates. Choose based on your expertise and passion. Authenticity matters more than niche selection.',
               },
               {
                 question: 'Can I make money in a low-value niche?',
-                answer: 'Absolutely! Entertainment/comedy creators can still earn well through: (1) High volume (millions of views), (2) Diversification (merch, live gifts, Patreon), (3) Personal brand (speaking, courses), (4) Cross-platform (YouTube pays better). Focus on building audience first.',
+                answer: '**Yes, entertainment and comedy creators earn well through 4 channels.** (1) High volume with millions of views, (2) Diversification through merch, live gifts, and Patreon, (3) Personal brand with speaking and courses, (4) Cross-platform income since YouTube pays better. Focus on building the audience first.',
               },
               {
                 question: 'Should I switch niches for better earnings?',
-                answer: 'Only if: (1) You have genuine interest/expertise in new niche, (2) Your audience would follow, (3) You\'re willing to rebuild authority. Pivoting without authenticity fails. Better strategy: add sub-niche elements (e.g., comedy → finance comedy) to increase value.',
+                answer: '**Switch only under 3 conditions.** (1) You have genuine interest or expertise in the new niche. (2) Your audience is likely to follow. (3) You are willing to rebuild authority. Pivoting without authenticity fails. A better strategy is to add sub-niche elements (for example, comedy to finance comedy) to increase value.',
               },
               {
                 question: 'How do I increase profitability in my current niche?',
-                answer: 'Strategies: (1) Target high-value audience segments, (2) Create more premium/valuable content, (3) Build email list for direct monetization, (4) Offer services/products aligned with niche, (5) Partner with premium brands, (6) Cross-sell to higher-paying platforms (YouTube, courses).',
+                answer: '**Apply these 6 strategies to boost profitability.** (1) Target high-value audience segments. (2) Create more premium and valuable content. (3) Build an email list for direct monetization. (4) Offer services or products aligned with the niche. (5) Partner with premium brands. (6) Cross-sell to higher-paying platforms like YouTube and courses.',
               },
             ]}
           />

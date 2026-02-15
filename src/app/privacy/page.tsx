@@ -4,7 +4,7 @@ import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | TikTok Creator Calculator',
-  description: 'Your privacy matters. We don\'t collect personal data or sell information. Learn about our privacy-first approach to TikTok earnings calculators.',
+  description: 'Your privacy matters. We do not collect personal data or sell information. Explore our privacy-first approach to TikTok earnings calculators.',
   alternates: {
     canonical: 'https://calculatecreator.com/privacy/',
   },
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
     <>
       <WebPageSchema
         title="Privacy Policy | TikTok Creator Calculator"
-        description="Your privacy matters. We don't collect personal data or sell information. Learn about our privacy-first approach to TikTok earnings calculators."
+        description="Your privacy matters. We do not collect personal data or sell information. Explore our privacy-first approach to TikTok earnings calculators."
         url="https://calculatecreator.com/privacy/"
       />
       <div className="min-h-screen bg-neutral-50 py-12">
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Our Commitment</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              TikTok Creator Calculator is committed to protecting your privacy. We believe in transparency and minimal data collection. This policy explains what data we collect, how we use it, and your rights.
+              TikTok Creator Calculator is committed to protecting your privacy. We believe in transparency and minimal data collection. This policy explains what data we collect, how we use it, and your rights regarding that data.
             </p>
           </Card>
 
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Analytics Data (Anonymous)</h3>
-                <p>We use Google Analytics 4 to collect anonymous usage statistics:</p>
+                <p>We use Google Analytics 4 (GA4) to collect anonymous usage statistics.</p>
                 <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
                   <li>Pages visited</li>
                   <li>Calculator usage (which calculators are used, but not the values entered)</li>
@@ -86,12 +86,12 @@ export default function PrivacyPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Cookies</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p className="leading-relaxed">
-                We use cookies for Google Analytics and advertising purposes. These cookies help us understand how visitors use our site and allow us to display relevant advertisements. You can disable cookies in your browser settings without affecting calculator functionality.
+                We use cookies for Google Analytics and advertising purposes. These cookies help us understand how visitors use our site and allow us to display relevant advertisements. Disable cookies in your browser settings without affecting calculator functionality.
               </p>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Advertising Cookies</h3>
                 <p>
-                  Google AdSense may use cookies to serve ads based on your prior visits to our website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Ads Settings</a>.
+                  Google AdSense uses cookies to serve ads based on your prior visits to our website or other websites. The use of advertising cookies by Google enables it and its partners to serve ads based on your visit to our site or other sites on the Internet. Opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Ads Settings</a>.
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function PrivacyPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Third-Party Services</h2>
-            <p className="text-body-md text-neutral-700 mb-4">We use the following third-party services:</p>
+            <p className="text-body-md text-neutral-700 mb-4">We use the following third-party services.</p>
             <ul className="list-disc list-inside space-y-2 text-body-md text-neutral-700 ml-4">
               <li><strong>Google Analytics:</strong> Website analytics (subject to Google&apos;s privacy policy)</li>
               <li><strong>Google AdSense:</strong> Display advertising (subject to <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google&apos;s advertising privacy policy</a>)</li>
@@ -111,23 +111,23 @@ export default function PrivacyPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Advertising</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                We use Google AdSense to display advertisements on our website. This helps us keep our calculators and resources free for all creators. Here is how advertising works on our site:
+                We use Google AdSense to display advertisements on our website. This helps us keep our calculators and resources free for all creators. Here is how advertising works on our site.
               </p>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">How Google AdSense Works</h3>
                 <p>
-                  Google AdSense uses cookies and similar technologies to serve ads based on your interests and browsing history. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google&apos;s use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet.
+                  Google AdSense uses cookies and similar technologies to serve ads based on your interests and browsing history. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. The use of advertising cookies by Google enables it and its partners to serve ads to you based on your visit to our site or other sites on the Internet.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Personalized vs Non-Personalized Ads</h3>
                 <p>
-                  Depending on your region and consent preferences, you may see personalized ads (based on your browsing behavior and interests) or non-personalized ads (based on the content of the page you are viewing). For users in the European Economic Area (EEA), we default to non-personalized ads unless you provide explicit consent for personalized advertising.
+                  You see personalized ads (based on your browsing behavior and interests) or non-personalized ads (based on the content of the page you view), depending on your region and consent preferences. For users in the European Economic Area (EEA), we default to non-personalized ads unless you provide explicit consent for personalized advertising.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Opting Out of Personalized Ads</h3>
-                <p>You can opt out of personalized advertising through the following methods:</p>
+                <p>Opt out of personalized advertising through the following methods.</p>
                 <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
                   <li>Visit <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Ads Settings</a> to manage your ad preferences</li>
                   <li>Visit <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">aboutads.info</a> to opt out of third-party vendor cookie use</li>
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">GDPR and Ad Consent</h3>
                 <p>
-                  For users in the European Union and European Economic Area, we comply with GDPR requirements for advertising consent. We will request your consent before serving personalized advertisements. You may withdraw your consent at any time through the cookie settings on our site or by adjusting your browser preferences.
+                  For users in the European Union (EU) and European Economic Area, we comply with General Data Protection Regulation (GDPR) requirements for advertising consent. We request your consent before serving personalized advertisements. Withdraw your consent at any time through the cookie settings on our site or by adjusting your browser preferences.
                 </p>
               </div>
               <div>
@@ -152,7 +152,7 @@ export default function PrivacyPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Your Rights</h2>
-            <p className="text-body-md text-neutral-700 mb-4">Since we don't collect personal data, there's nothing to access, delete, or export. If you have concerns:</p>
+            <p className="text-body-md text-neutral-700 mb-4">We do not collect personal data, so there is nothing to access, delete, or export. Take these steps if you have concerns.</p>
             <ul className="list-disc list-inside space-y-2 text-body-md text-neutral-700 ml-4">
               <li>Disable cookies in your browser</li>
               <li>Use browser privacy mode</li>
@@ -163,14 +163,14 @@ export default function PrivacyPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Children's Privacy</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              Our service is not directed at children under 13. We do not knowingly collect data from children. TikTok's Creator Fund requires users to be 18+, which is our primary audience.
+              Our service is not directed at children under 13. We do not knowingly collect data from children. The Creator Fund of TikTok requires users to be 18 or older, which is our primary audience.
             </p>
           </Card>
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Changes to This Policy</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              We may update this policy occasionally. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the site constitutes acceptance of changes.
+              We update this policy occasionally. We post changes on this page with an updated "Last Updated" date. Continued use of the site constitutes acceptance of changes.
             </p>
           </Card>
 
@@ -209,17 +209,17 @@ export default function PrivacyPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Data Security Measures</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                While we don't collect sensitive personal information, we still implement industry-standard security practices to protect our infrastructure and ensure service reliability:
+                We do not collect sensitive personal information. We still implement industry-standard security practices to protect our infrastructure and ensure service reliability.
               </p>
               <ul className="list-disc list-inside ml-4 space-y-2">
-                <li><strong>HTTPS Encryption:</strong> All traffic to our website uses TLS/SSL encryption to prevent interception</li>
+                <li><strong>HTTPS Encryption:</strong> All traffic to our website uses Transport Layer Security/Secure Sockets Layer (TLS/SSL) encryption to prevent interception</li>
                 <li><strong>Client-Side Processing:</strong> Calculator inputs never leave your browser, eliminating server-side data exposure risks</li>
-                <li><strong>No User Accounts:</strong> Without login systems, there's no password database to breach or account information to compromise</li>
+                <li><strong>No User Accounts:</strong> Without login systems, there is no password database to breach or account information to compromise</li>
                 <li><strong>Regular Updates:</strong> We maintain our hosting platform and dependencies with the latest security patches</li>
                 <li><strong>Minimal Third-Party Code:</strong> We limit external dependencies to reduce potential vulnerability vectors</li>
               </ul>
               <p className="mt-4">
-                Our privacy-first architecture means the best data protection is built into our core design: we simply don't have your data to protect.
+                Our privacy-first architecture means the best data protection is built into our core design. We simply do not have your data to protect.
               </p>
             </div>
           </Card>
@@ -241,7 +241,7 @@ export default function PrivacyPage() {
               </div>
 
               <h3 className="font-semibold text-neutral-900 mb-2 mt-6">Managing Cookie Preferences</h3>
-              <p>You have several options to control cookies:</p>
+              <p>You have 4 options to control cookies.</p>
               <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
                 <li><strong>Browser Settings:</strong> Most browsers allow you to refuse cookies or delete existing ones. Check your browser's help documentation for instructions.</li>
                 <li><strong>Google Analytics Opt-Out:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">Google Analytics Opt-out Browser Add-on</a></li>
@@ -296,7 +296,7 @@ export default function PrivacyPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Data Retention</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                Since we don't collect personal data, there's minimal information to retain. Here's our retention policy for the limited data we do collect:
+                We do not collect personal data, so there is minimal information to retain. Here is our retention policy for the limited data we do collect.
               </p>
 
               <ul className="list-disc list-inside ml-4 space-y-2 mt-3">
@@ -307,7 +307,7 @@ export default function PrivacyPage() {
               </ul>
 
               <p className="mt-4">
-                Our minimal data collection philosophy means there's simply less data to manage, reducing privacy risks and simplifying compliance with data protection regulations.
+                Our minimal data collection philosophy means there is simply less data to manage. This reduces privacy risks and simplifies compliance with data protection regulations.
               </p>
             </div>
           </Card>
@@ -404,7 +404,7 @@ export default function PrivacyPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Contact Us</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                Questions, concerns, or requests regarding this Privacy Policy? We're here to help.
+                Have questions, concerns, or requests regarding this Privacy Policy? We are here to help.
               </p>
 
               <div className="mt-4 space-y-3">
@@ -415,14 +415,14 @@ export default function PrivacyPage() {
               <div className="mt-6 p-4 bg-neutral-100 rounded">
                 <p className="font-semibold mb-2">For Privacy Complaints or Concerns:</p>
                 <p className="text-body-sm">
-                  If you believe we've mishandled your data or violated privacy regulations, please contact us first so we can address your concerns. If you're unsatisfied with our response, you may file a complaint with your local data protection authority.
+                  Contact us first if you believe we have mishandled your data or violated privacy regulations. We address your concerns directly. File a complaint with your local data protection authority if you remain unsatisfied with our response.
                 </p>
               </div>
 
               <div className="mt-6 p-4 bg-primary-50 border border-primary-200 rounded">
                 <p className="font-semibold mb-2">Transparency Commitment</p>
                 <p className="text-body-sm">
-                  We believe in radical transparency about data practices. If you have questions about how our calculators work, what data flows where, or technical details about our privacy architecture, we're happy to explain. Privacy shouldn't require a law degree to understand.
+                  We believe in radical transparency about data practices. Ask us about how our calculators work, what data flows where, or technical details about our privacy architecture. We are happy to explain. Privacy does not require a law degree to understand.
                 </p>
               </div>
             </div>

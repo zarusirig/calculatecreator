@@ -17,35 +17,35 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the most important factor in TikTok\'s algorithm?',
-    answer: 'Completion rate (watch time) is the #1 factor. TikTok wants to keep users on the app, so videos that people watch all the way through—or watch multiple times—get prioritized heavily in the algorithm.',
+    answer: '**Completion rate (watch time) is the number 1 factor.** TikTok wants to keep users on the app. Videos that people watch all the way through or watch multiple times get prioritized heavily in the algorithm.',
   },
   {
     question: 'How does TikTok decide what appears on the For You Page?',
-    answer: 'TikTok tests every video with a small batch of users. Based on completion rate, engagement, and replays from that initial group, the algorithm decides whether to push the video to more users. High-performing videos get exponentially more reach.',
+    answer: '**TikTok tests every video with a small batch of users.** Based on completion rate, engagement, and replays from that initial group, the algorithm decides whether to push the video to more users. High-performing videos get exponentially more reach.',
   },
   {
     question: 'Is shadowbanning real on TikTok?',
-    answer: 'Not in the way most people think. TikTok doesn\'t "shadowban" accounts arbitrarily. However, community guideline violations, repeated low-performing content, or spam behavior can reduce your distribution temporarily. Focus on quality and guidelines.',
+    answer: '**Not in the way most people think.** TikTok does not "shadowban" accounts arbitrarily. Community guideline violations, repeated low-performing content, or spam behavior reduce your distribution temporarily. Focus on quality and guidelines.',
   },
   {
     question: 'How long does it take for TikTok\'s algorithm to recognize quality content?',
-    answer: 'TikTok makes initial distribution decisions within the first 1-2 hours. Viral growth typically happens in 24-72 hours if the algorithm identifies strong signals. Some videos get a second wave of distribution days or weeks later.',
+    answer: '**TikTok makes initial distribution decisions within the first 1 to 2 hours.** Viral growth typically happens in 24 to 72 hours when the algorithm identifies strong signals. Some videos get a second wave of distribution days or weeks later.',
   },
   {
     question: 'Does posting frequency affect the algorithm?',
-    answer: 'Consistency matters more than frequency. Posting 1-3 quality videos daily helps, but posting 10 low-quality videos hurts your account reputation. The algorithm learns from your track record—consistent quality builds algorithmic trust.',
+    answer: '**Consistency matters more than frequency.** Posting 1 to 3 quality videos daily helps. Posting 10 low-quality videos hurts your account reputation. The algorithm learns from your track record. Consistent quality builds algorithmic trust.',
   },
   {
     question: 'Do hashtags still matter for TikTok algorithm?',
-    answer: 'Hashtags help TikTok categorize content but aren\'t the primary ranking factor. Use 3-5 relevant hashtags that describe your niche. Avoid spammy generic tags like #fyp #foryou—they don\'t help and may signal low-quality content.',
+    answer: '**Hashtags help TikTok categorize content but are not the primary ranking factor.** Use 3 to 5 relevant hashtags that describe your niche. Avoid spammy generic tags like #fyp and #foryou. They do not help and may signal low-quality content.',
   },
   {
     question: 'Can I recover from low-performing videos?',
-    answer: 'Yes! One bad video doesn\'t permanently hurt your account. The algorithm weighs recent performance more heavily. Post consistently quality content, and strong new videos will rebuild your algorithmic standing.',
+    answer: '**Yes, one bad video does not permanently hurt your account.** The algorithm weighs recent performance more heavily. Post quality content consistently. Strong new videos rebuild your algorithmic standing.',
   },
   {
     question: 'Should I delete low-performing videos?',
-    answer: 'Generally no. Deleting videos can confuse the algorithm and removes social proof. Instead, focus on creating better content moving forward. However, if a video violates guidelines or misrepresents your brand, deletion is fine.',
+    answer: '**No, deleting videos confuses the algorithm and removes social proof.** Focus on creating better content moving forward. Delete a video only when it violates guidelines or misrepresents your brand.',
   },
 ];
 
@@ -122,17 +122,21 @@ export default function TikTokAlgorithmOptimizationPage() {
               How TikTok's Algorithm Works (2026 Update)
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              TikTok's algorithm is fundamentally different from other social media platforms in how it distributes content and determines what appears on users' For You Pages. Rather than primarily prioritizing follower counts or posting times like Instagram or Facebook's outdated chronological feeds, TikTok focuses almost exclusively on sophisticated content quality signals such as watch time percentages, engagement rates, replay behavior, and user interaction patterns. This democratized approach means even brand-new creators with zero followers can achieve massive viral success and millions of views if their content genuinely resonates with viewers and triggers the right algorithmic signals. The algorithm intelligently tests every single video with a small initial audience batch, carefully analyzes multiple performance metrics within the first few hours after posting, and then makes data-driven decisions whether to expand reach exponentially to larger audiences or limit distribution. Understanding these precise ranking factors, optimization tactics, and algorithmic preferences is absolutely essential for maximizing your For You Page placement consistently, growing your audience organically without paid promotion, and building sustainable long-term success on the platform in 2026 as competition intensifies.
+              The TikTok algorithm differs from other social media platforms. It does not prioritize follower counts or posting times the way Instagram or Facebook do. Instead, TikTok focuses on content quality signals (watch time percentages, engagement rates, replay behavior, and user interaction patterns).
+
+              This approach means brand-new creators with zero followers achieve viral success. Your content simply needs to resonate with viewers and trigger the right algorithmic signals. The algorithm tests every video with a small initial audience batch. It analyzes performance metrics within the first few hours after posting. Then it decides whether to expand reach to larger audiences or limit distribution.
+
+              Understanding these ranking factors and optimization tactics is essential. Use them to maximize your For You Page (FYP) placement, grow your audience organically, and build long-term success on the platform in 2026.
             </p>
             <p className="text-body-md text-neutral-700 mb-4">
-              Here's the process every video goes through:
+              Here is the process every video goes through.
             </p>
             <ol className="text-body-md text-neutral-700 space-y-2 list-decimal list-inside mb-4">
-              <li><strong>Initial Testing:</strong> New video shown to 100-300 users (mix of followers and similar interest users)</li>
-              <li><strong>Performance Evaluation:</strong> Algorithm measures completion rate, replays, shares, comments within first 1-2 hours</li>
-              <li><strong>Distribution Decision:</strong> High-performing videos get pushed to larger audiences (1K-10K users)</li>
-              <li><strong>Viral Amplification:</strong> Exceptionally strong videos continue expanding reach exponentially (100K-1M+)</li>
-              <li><strong>Natural Decline:</strong> Eventually all videos see declining reach as the algorithm tests newer content</li>
+              <li><strong>Initial Testing:</strong> New video shown to 100 to 300 users (a mix of followers and similar interest users)</li>
+              <li><strong>Performance Evaluation:</strong> Algorithm measures completion rate, replays, shares, and comments within the first 1 to 2 hours</li>
+              <li><strong>Distribution Decision:</strong> High-performing videos get pushed to larger audiences (1K to 10K users)</li>
+              <li><strong>Viral Amplification:</strong> Exceptionally strong videos continue expanding reach exponentially (100K to 1M or more)</li>
+              <li><strong>Natural Decline:</strong> All videos eventually see declining reach as the algorithm tests newer content</li>
             </ol>
             <p className="text-body-md text-neutral-700">
               Understanding this process helps you optimize for the metrics that matter most at each stage.

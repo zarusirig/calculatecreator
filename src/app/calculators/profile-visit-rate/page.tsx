@@ -24,43 +24,43 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good profile visit rate on TikTok?',
-    answer: 'Excellent: 10%+ (1 in 10 viewers visits), Good: 5-10%, Average: 2-5%, Below Average: <2%. Educational content typically achieves 8-15% visit rates. Profile visit rate is one of the most important metrics for follower growth because it represents the first step in converting viewers into followers.',
+    answer: '**Excellent is 10%+ where 1 in 10 viewers visits.** Good is 5% to 10%. Average is 2% to 5%. Below average is under 2%. Educational content achieves 8% to 15% visit rates. Profile visit rate is one of the most important metrics for follower growth. It represents the first step in converting viewers into followers.',
   },
   {
     question: 'How can I increase my profile visit rate?',
-    answer: 'Create series/multi-part content, add direct CTAs, showcase unique personality, write a compelling bio, end videos with cliffhangers, reference other content, build consistent branding. The most effective strategy is creating episodic or series content where viewers must visit your profile to find previous parts.',
+    answer: '**Create series and multi-part content, add direct CTAs, and showcase your unique personality.** Write a compelling bio. End videos with cliffhangers. Reference other content. Build consistent branding. The most effective strategy is creating episodic or series content where viewers must visit your profile to find previous parts.',
   },
   {
     question: 'Where can I see profile visits in TikTok Analytics?',
-    answer: 'Go to Profile → Three dots menu → Creator Tools → Analytics → Overview tab. "Profile views" shows total visits. You can also see profile views for individual videos in the video analytics section. Track this metric weekly to identify which content types drive the most profile traffic.',
+    answer: '**Go to Profile, then the three dots menu, then Creator Tools, then Analytics, then the Overview tab.** "Profile views" shows total visits. See profile views for individual videos in the video analytics section. Track this metric weekly to identify which content types drive the most profile traffic.',
   },
   {
     question: 'Why do people visit my profile but not follow?',
-    answer: 'Common reasons: inconsistent content, unclear niche, poor bio, not enough quality content. Create 15-20+ quality videos in one niche before driving traffic. Your profile should immediately communicate what value you provide and why someone should follow. Pin your 3 best videos at the top to make a strong first impression.',
+    answer: '**Common reasons include inconsistent content, unclear niche, poor bio, and not enough quality content.** Create 15 to 20+ quality videos in one niche before driving traffic. Your profile must immediately communicate the value you provide and why someone needs to follow. Pin your 3 best videos at the top to make a strong first impression.',
   },
   {
     question: 'What is the difference between profile visits and profile views?',
-    answer: 'Profile visits and profile views are the same metric on TikTok - both refer to how many times users viewed your profile page. Some creators use "visits" to emphasize the action of clicking through from a video. This metric includes both logged-in users and anonymous viewers.',
+    answer: '**Profile visits and profile views are the same metric on TikTok.** Both refer to how many times users viewed your profile page. Some creators use "visits" to emphasize the action of clicking through from a video. This metric includes both logged-in users and anonymous viewers.',
   },
   {
     question: 'Does profile visit rate affect the TikTok algorithm?',
-    answer: 'Yes, indirectly. While profile visits themselves are not a direct ranking factor, they indicate strong content quality. Videos that drive high profile visits typically also have strong watch time and engagement, which are direct algorithm signals. TikTok wants to surface content that helps creators gain followers.',
+    answer: '**Yes, profile visit rate affects the algorithm indirectly.** Profile visits themselves are not a direct ranking factor. They indicate strong content quality. Videos that drive high profile visits have strong watch time and engagement, which are direct algorithm signals. TikTok wants to surface content that helps creators gain followers.',
   },
   {
     question: 'What is a realistic profile-to-follower conversion rate?',
-    answer: 'Typical conversion rates: 20-30% for niche content with clear value proposition, 15-25% for general entertainment, 10-20% for trend-following content. If 1,000 people visit your profile and 200-300 follow, you are doing well. This rate improves significantly when you have 15+ quality videos on your profile.',
+    answer: '**Typical conversion rates are 20% to 30% for niche content with a clear value proposition.** General entertainment sees 15% to 25%. Trend-following content gets 10% to 20%. You are doing well when 1,000 people visit your profile and 200 to 300 follow. This rate improves significantly when you have 15+ quality videos on your profile.',
   },
   {
     question: 'How do I optimize my profile for visitors?',
-    answer: 'Write a clear bio that explains what you do and who you help. Pin your 3 best-performing videos at the top. Use a high-quality profile photo. Add a call-to-action in your bio. Organize content with hashtags if you have multiple content pillars. Make sure your first 9-12 visible videos are your strongest work.',
+    answer: '**Write a clear bio that explains what you do and who you help.** Pin your 3 best-performing videos at the top. Use a high-quality profile photo. Add a call-to-action in your bio. Organize content with hashtags when you have multiple content pillars. Make sure your first 9 to 12 visible videos are your strongest work.',
   },
   {
     question: 'Why is my profile visit rate dropping?',
-    answer: 'Common causes: switching content niches confuses your audience, following trends instead of creating original content, video quality declined, too many promotional posts, inconsistent posting schedule. Profile visit rate drops when viewers cannot identify what makes you unique or worth following beyond one video.',
+    answer: '**Common causes include switching content niches, which confuses your audience.** Following trends instead of creating original content, declining video quality, too many promotional posts, and inconsistent posting schedule all contribute. Profile visit rate drops when viewers do not identify what makes you unique or worth following beyond one video.',
   },
   {
     question: 'Should I track profile visits per video or overall?',
-    answer: 'Track both. Overall profile visit rate (last 7-30 days) shows account health. Per-video rate helps identify what content types drive curiosity. Videos with 10%+ visit rates should inform your content strategy - make more content like that. Analyze your top 10 videos by profile visit rate quarterly.',
+    answer: '**Track both overall and per-video rates.** Overall profile visit rate (last 7 to 30 days) shows account health. Per-video rate helps identify what content types drive curiosity. Videos with 10%+ visit rates inform your content strategy. Make more content like that. Analyze your top 10 videos by profile visit rate quarterly.',
   },
 ];
 

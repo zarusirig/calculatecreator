@@ -16,7 +16,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'About CalculateCreator | Our Team & Mission',
-  description: 'Meet the team behind CalculateCreator: data analysts, experienced TikTok creators, and monetization experts. Learn about our methodology, data sources, and commitment to accuracy.',
+  description: 'Meet the team behind CalculateCreator, including data analysts, experienced TikTok creators, and monetization experts. Explore our methodology, data sources, and commitment to accuracy.',
   keywords: ['about calculatecreator', 'tiktok calculator team', 'creator economy experts'],
   alternates: {
     canonical: 'https://calculatecreator.com/about/',
@@ -74,7 +74,7 @@ export default function AboutPage() {
               About CalculateCreator
             </h1>
             <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-              Free, transparent, data-driven tools for TikTok creators. Built by creators, data analysts, and industry experts.
+              Free, transparent, data-driven tools for TikTok creators. Creators, data analysts, and industry experts built these tools.
             </p>
           </div>
 
@@ -83,10 +83,10 @@ export default function AboutPage() {
             <div className="text-center">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Our Mission</h2>
               <p className="text-body-lg text-neutral-700 leading-relaxed max-w-3xl mx-auto mb-6">
-                We believe every TikTok creator deserves access to accurate, transparent tools to understand their earning potential and make data-driven decisions about their content strategy.
+                Every TikTok creator deserves access to accurate, transparent tools. These tools help you understand your earning potential and make data-driven decisions about your content strategy.
               </p>
               <p className="text-body-md text-neutral-600 max-w-3xl mx-auto">
-                Too many creators rely on outdated calculators with vague estimates. We built CalculateCreator to change that—providing free, research-backed tools that help creators at every stage of their journey, from first-time monetizers to established influencers.
+                Too many creators rely on outdated calculators with vague estimates. We built CalculateCreator to change that. We provide free, research-backed tools that help creators at every stage, from first-time monetizers to established influencers.
               </p>
             </div>
           </Card>
@@ -102,7 +102,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Data-Driven</h3>
-                    <p className="text-body-sm text-neutral-700">Based on surveys of 500+ creators, official TikTok documentation, and 2024-2025 industry reports</p>
+                    <p className="text-body-sm text-neutral-700">Based on surveys of over 500 creators, official TikTok documentation, and 2024 to 2025 industry reports</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -111,7 +111,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Transparent</h3>
-                    <p className="text-body-sm text-neutral-700">Every calculator shows its methodology, formulas, data sources, and limitations</p>
+                    <p className="text-body-sm text-neutral-700">Every calculator displays its methodology, formulas, data sources, and limitations</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function AboutPage() {
                   </span>
                   <div>
                     <h3 className="font-semibold text-neutral-900 mb-1">Always Free</h3>
-                    <p className="text-body-sm text-neutral-700">No signup, no paywalls, no credit card required—all calculators work instantly</p>
+                    <p className="text-body-sm text-neutral-700">No signup, no paywalls, and no credit card required. All calculators work instantly.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -143,7 +143,7 @@ export default function AboutPage() {
             <div className="text-center mb-8">
               <h2 className="text-display-sm font-bold text-neutral-900 mb-4">Meet Our Team</h2>
               <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-                Our team combines hands-on creator experience with data analysis expertise. Every piece of content is written and reviewed by qualified experts in their field.
+                Our team combines hands-on creator experience with data analysis expertise. Qualified experts in their field write and review every piece of content.
               </p>
             </div>
 
@@ -196,35 +196,35 @@ export default function AboutPage() {
           <Card className="mb-12">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Our Methodology</h2>
             <p className="text-body-md text-neutral-700 mb-6 leading-relaxed">
-              Every calculator on CalculateCreator is built using a rigorous, transparent methodology. Here's how we ensure accuracy:
+              Every calculator on CalculateCreator uses a rigorous, transparent methodology. Here is how we ensure accuracy.
             </p>
 
             <div className="space-y-6">
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">1. Data Collection</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We gather data from multiple sources: quarterly surveys of 500+ TikTok creators, official TikTok Creator Portal documentation, industry reports from CreatorIQ, Influencer Marketing Hub, and AspireIQ, talent agency rate cards, and community feedback from Reddit and Discord creator communities.
+                  We gather data from multiple sources. These include quarterly surveys of over 500 TikTok creators, official TikTok Creator Portal documentation, and industry reports from CreatorIQ, Influencer Marketing Hub, and AspireIQ. We use talent agency rate cards and community feedback from Reddit and Discord creator communities.
                 </p>
               </div>
 
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">2. Formula Development</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Our data analysts develop formulas based on industry-standard calculations, validated against real creator earnings. We show ranges rather than exact numbers to account for the many variables that affect actual earnings.
+                  Our data analysts develop formulas based on industry-standard calculations. They validate formulas against real creator earnings. We show ranges rather than exact numbers to account for the variables that affect actual earnings.
                 </p>
               </div>
 
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">3. Expert Review</h3>
                 <p className="text-body-sm text-neutral-700">
-                  Every calculator is reviewed by at least one subject matter expert before publication. Tax calculators are reviewed by our CPA. Brand deal calculators are reviewed by creators with extensive sponsorship experience.
+                  At least 1 subject matter expert reviews every calculator before publication. Our Certified Public Accountant (CPA) reviews tax calculators. Creators with extensive sponsorship experience review brand deal calculators.
                 </p>
               </div>
 
               <div className="p-4 bg-neutral-50 rounded-lg">
                 <h3 className="font-semibold text-neutral-900 mb-2">4. Ongoing Updates</h3>
                 <p className="text-body-sm text-neutral-700">
-                  We refresh our data quarterly (every 3 months) and immediately update when TikTok announces major changes to monetization programs. Each calculator displays its "Last Updated" date in the methodology section.
+                  We refresh our data quarterly (every 3 months). We update immediately when TikTok announces major changes to monetization programs. Each calculator displays its "Last Updated" date in the methodology section.
                 </p>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function AboutPage() {
           <Card className="mb-12">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Our Data Sources</h2>
             <p className="text-body-md text-neutral-700 mb-6 leading-relaxed">
-              We believe in transparency. Here are the primary sources we use to build our calculators:
+              We believe in transparency. Here are the primary sources we use to build our calculators.
             </p>
 
             <div className="grid md:grid-cols-2 gap-4">
@@ -330,7 +330,7 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-1">Accuracy First</h3>
-                  <p className="text-body-sm text-neutral-700">We prioritize accuracy over engagement. If we can't verify data, we don't publish it.</p>
+                  <p className="text-body-sm text-neutral-700">We prioritize accuracy over engagement. We do not publish data we cannot verify.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -339,7 +339,7 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-1">No Financial Advice</h3>
-                  <p className="text-body-sm text-neutral-700">Our calculators provide estimates for educational purposes. We always recommend consulting professionals for financial decisions.</p>
+                  <p className="text-body-sm text-neutral-700">Our calculators provide estimates for educational purposes. Consult professionals for financial decisions.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -357,7 +357,7 @@ export default function AboutPage() {
                 </span>
                 <div>
                   <h3 className="font-semibold text-neutral-900 mb-1">Regular Review</h3>
-                  <p className="text-body-sm text-neutral-700">All content is reviewed at least quarterly to ensure continued accuracy.</p>
+                  <p className="text-body-sm text-neutral-700">We review all content at least quarterly to ensure continued accuracy.</p>
                 </div>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function AboutPage() {
             <div className="text-center">
               <h2 className="text-heading-lg font-semibold mb-4">Get in Touch</h2>
               <p className="text-body-md opacity-90 mb-6 max-w-2xl mx-auto">
-                Have questions, feedback, or suggestions? We'd love to hear from you. Whether it's a data correction, feature request, or just a hello—we respond to every message.
+                Have questions, feedback, or suggestions? We love hearing from you. We respond to every message, whether it is a data correction, feature request, or a simple hello.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link

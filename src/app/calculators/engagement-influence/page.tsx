@@ -24,7 +24,7 @@ const calculators = [
   {
     name: 'Influencer Pricing Calculator',
     slug: 'influencer-pricing',
-    description: 'Calculate how much you should charge brands for sponsored content based on followers and engagement.',
+    description: 'Determine your rate for sponsored content based on followers and engagement.',
     icon: Handshake,
   },
   {
@@ -38,43 +38,43 @@ const calculators = [
 const faqs = [
   {
     question: 'What is a good engagement rate on TikTok?',
-    answer: 'A good TikTok engagement rate varies by follower count. Nano-influencers (1K-10K followers) should aim for 15-20% engagement, micro-influencers (10K-100K) typically see 8-15%, and large creators (100K+) average 5-10%. Engagement rate is calculated as (likes + comments + shares) / followers × 100. Rates above these benchmarks indicate highly engaged audiences that brands value.',
+    answer: 'A good TikTok engagement rate varies by follower count. Nano-influencers (1,000 to 10,000 followers) aim for 15% to 20% engagement. Micro-influencers (10,000 to 100,000) typically see 8% to 15%. Large creators (100,000 or more) average 5% to 10%. Engagement rate equals (likes + comments + shares) divided by followers times 100. Rates above these benchmarks indicate highly engaged audiences that brands value.',
   },
   {
     question: 'How do brands evaluate influencer rates and pricing?',
-    answer: 'Brands evaluate influencers based on engagement rate (more important than follower count), audience demographics, niche relevance, and past campaign performance. Most use the $10-$30 per 1,000 followers benchmark, but creators with 10%+ engagement can charge 2-3× higher. Brands also consider video quality, posting consistency, and whether the creator\'s audience matches their target demographic.',
+    answer: 'Brands evaluate influencers based on engagement rate (more important than follower count), audience demographics, niche relevance, and past campaign performance. Most use the $10 to $30 per 1,000 followers benchmark. Creators with 10% or higher engagement charge 2 to 3 times more. Brands also consider video quality, posting consistency, and whether the audience of the creator matches their target demographic.',
   },
   {
     question: 'How can I calculate my influencer pricing for brand deals?',
-    answer: 'Start with the baseline of $10-$30 per 1,000 followers, then adjust based on engagement rate. If your engagement is above 10%, multiply by 1.5-2×. Add premiums for exclusivity (20-50%), usage rights (25-100%), and multiple platforms (30-50% each). A creator with 50K followers and 12% engagement could charge $750-$1,500 for a single post, or $2,000+ for full usage rights.',
+    answer: 'Start with the baseline of $10 to $30 per 1,000 followers. Adjust based on engagement rate. Multiply by 1.5 to 2 times if your engagement is above 10%. Add premiums for exclusivity (20% to 50%), usage rights (25% to 100%), and multiple platforms (30% to 50% each). A creator with 50,000 followers and 12% engagement charges $750 to $1,500 for a single post, or $2,000 or more for full usage rights.',
   },
   {
     question: 'What metrics should I track to improve my video engagement?',
-    answer: 'Focus on watch time percentage (aim for 70%+), completion rate (60%+ is excellent), like-to-view ratio (5-10%), comment rate (0.5-2%), and share rate (1-3%). The TikTok algorithm heavily weights watch time and rewatches. Videos with hooks in the first 3 seconds, 15-30 second length, and strong CTAs for engagement consistently outperform longer content.',
+    answer: 'Focus on watch time percentage (aim for 70% or higher), completion rate (60% or higher is excellent), like-to-view ratio (5% to 10%), comment rate (0.5% to 2%), and share rate (1% to 3%). The TikTok algorithm heavily weights watch time and rewatches. Videos with hooks in the first 3 seconds, 15 to 30 second length, and strong Calls to Action (CTAs) for engagement consistently outperform longer content.',
   },
   {
     question: 'How can I improve my engagement rate to get better brand deals?',
-    answer: 'Post consistently (at least 3-5 times per week), engage with your community within the first hour of posting, use trending sounds strategically, and create content that encourages comments (ask questions, create controversy, share relatable experiences). Analyze your top-performing videos and double down on those content types. Engagement rates improve when you respond to comments, use polls/Q&As, and create series that bring viewers back. Most importantly, focus on niche authority rather than broad appeal—brands pay premium rates for engaged niche audiences.',
+    answer: 'Post consistently, at least 3 to 5 times per week. Engage with your community within the first hour of posting. Use trending sounds strategically. Create content that encourages comments by asking questions and sharing relatable experiences. Analyze top-performing videos and double down on those content types. Engagement rates improve when you respond to comments, use polls and Q&As, and create series that bring viewers back. Focus on niche authority rather than broad appeal. Brands pay premium rates for engaged niche audiences.',
   },
   {
     question: 'Should I focus on follower growth or engagement rate?',
-    answer: 'Prioritize engagement rate over follower count. A creator with 20K followers and 15% engagement (3,000 engaged users) is more valuable than one with 100K followers and 3% engagement (3,000 engaged users). Brands increasingly use engagement as the primary metric because it predicts campaign ROI better than follower count. High engagement also helps with algorithmic reach—TikTok promotes videos that generate strong early engagement, creating a compounding growth effect.',
+    answer: 'Prioritize engagement rate over follower count. A creator with 20,000 followers and 15% engagement (3,000 engaged users) is more valuable than one with 100,000 followers and 3% engagement (3,000 engaged users). Brands use engagement as the primary metric because it predicts campaign Return on Investment (ROI) better than follower count. High engagement also helps with algorithmic reach. TikTok promotes videos that generate strong early engagement, creating a compounding growth effect.',
   },
   {
     question: 'How do I negotiate brand deals using my engagement metrics?',
-    answer: 'Lead with engagement rate, not follower count. Present your average engagement rate over the last 30 days, highlight niche relevance, and show past campaign performance if available. Use data to justify premium pricing: "My 12% engagement rate is 2× the industry average for my follower tier, which translates to higher conversion rates for your campaign." Provide a media kit with engagement breakdowns (likes, comments, shares, saves) and audience demographics. If your engagement is above 10%, confidently ask for rates 50-100% above baseline ($10-30 per 1K followers).',
+    answer: 'Lead with engagement rate, not follower count. Present your average engagement rate over the last 30 days. Highlight niche relevance and show past campaign performance if available. Use data to justify premium pricing: "My 12% engagement rate is 2 times the industry average for my follower tier, which translates to higher conversion rates for your campaign." Provide a media kit with engagement breakdowns (likes, comments, shares, saves) and audience demographics. Ask for rates 50% to 100% above baseline ($10 to $30 per 1,000 followers) if your engagement is above 10%.',
   },
   {
     question: 'What engagement benchmarks should I aim for by niche?',
-    answer: 'Engagement benchmarks vary significantly by niche. Comedy and entertainment creators typically achieve 10-18% due to highly shareable content. Beauty and fashion see 8-15% with strong product-driven engagement. Finance and education average 6-12% with more thoughtful, save-focused engagement. Gaming content ranges 7-14% depending on community building. Fitness creators average 9-16% with motivational, aspirational content. Regardless of niche, aim to exceed your category average by 20-30% to command premium brand rates and algorithmic favorability.',
+    answer: 'Engagement benchmarks vary by niche. Comedy and entertainment creators typically achieve 10% to 18% due to highly shareable content. Beauty and fashion see 8% to 15% with strong product-driven engagement. Finance and education average 6% to 12% with more thoughtful, save-focused engagement. Gaming content ranges 7% to 14% depending on community building. Fitness creators average 9% to 16% with motivational content. Aim to exceed your category average by 20% to 30% to command premium brand rates and algorithmic favorability.',
   },
   {
     question: 'How does TikTok\'s algorithm use engagement to distribute content?',
-    answer: 'TikTok\'s 2026 algorithm uses a two-stage distribution system heavily dependent on engagement. First, your video is shown to a small test audience (200-500 users, primarily existing followers). If this group achieves 8-12%+ engagement within 1-2 hours, the algorithm promotes your content to a broader audience (5K-50K users). High engagement in this second wave triggers exponential distribution to millions of users via the For You Page. The algorithm specifically tracks completion rate (60%+ ideal), like rate (5-10%), comment rate (0.5-2%), share rate (1-3%), and save rate (3-5%+). Videos that maintain high engagement across multiple waves can stay on FYP for days or weeks, creating sustained growth.',
+    answer: 'The 2026 TikTok algorithm uses a two-stage distribution system. First, your video is shown to a small test audience (200 to 500 users, primarily existing followers). The algorithm promotes your content to a broader audience (5,000 to 50,000 users) if this group achieves 8% to 12% or higher engagement within 1 to 2 hours. High engagement in this second wave triggers exponential distribution to millions of users via the For You Page. The algorithm tracks completion rate (60% or higher ideal), like rate (5% to 10%), comment rate (0.5% to 2%), share rate (1% to 3%), and save rate (3% to 5% or higher). Videos that maintain high engagement across multiple waves stay on FYP for days or weeks.',
   },
   {
     question: 'Can I recover from low engagement rates, or is my account permanently limited?',
-    answer: 'Low engagement rates are recoverable through strategic content pivots and consistency. TikTok\'s algorithm evaluates each video individually—one high-engagement video can reset your account\'s distribution potential. To recover: (1) Analyze your top 5 performing videos from the past 6 months and identify common elements (topic, format, hook style); (2) Create 10-15 videos doubling down on what worked, using proven hooks and CTAs; (3) Post consistently (4-7 times per week) for 3-4 weeks to give the algorithm sufficient data; (4) Engage aggressively with comments in the first hour. Most creators see engagement improvement within 2-3 weeks. If engagement remains below 3% after 30 days of optimized content, consider creating a fresh account focused on a tighter niche—sometimes starting over with refined positioning is faster than recovering a misaligned account.',
+    answer: 'Low engagement rates are recoverable through strategic content pivots and consistency. The TikTok algorithm evaluates each video individually. One high-engagement video resets the distribution potential of your account. To recover: (1) Analyze your top 5 performing videos from the past 6 months and identify common elements (topic, format, hook style). (2) Create 10 to 15 videos doubling down on what worked, using proven hooks and CTAs. (3) Post consistently (4 to 7 times per week) for 3 to 4 weeks to give the algorithm sufficient data. (4) Engage aggressively with comments in the first hour. Most creators see engagement improvement within 2 to 3 weeks. Consider creating a fresh account focused on a tighter niche if engagement remains below 3% after 30 days of optimized content.',
   },
 ];
 
@@ -110,7 +110,7 @@ export default function EngagementInfluencePage() {
             Engagement & Influence Calculators
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Measure and optimize your TikTok engagement with professional tools used by top creators. Calculate your engagement rate (industry average: 5-15%), determine influencer pricing for brand deals ($10-$30 per 1K followers baseline), and predict video performance based on watch time, completion rate, and interaction metrics. These calculators help you understand your true influence value and negotiate better sponsorship rates.
+            Measure and optimize TikTok engagement with professional tools used by top creators. Calculate engagement rate (industry average: 5% to 15%). Determine influencer pricing for brand deals ($10 to $30 per 1,000 followers baseline). Predict video performance based on watch time, completion rate, and interaction metrics. Understand your true influence value and negotiate better sponsorship rates.
           </p>
         </div>
 
@@ -148,7 +148,7 @@ export default function EngagementInfluencePage() {
               <h2 className="text-heading-md font-semibold text-neutral-900">2026 Engagement Benchmarks by Follower Tier</h2>
             </div>
             <p className="text-body-md text-neutral-700 mb-6">
-              Engagement rates vary significantly by follower count. Smaller creators typically have more engaged communities, while larger creators trade engagement rate for reach. Use these 2026 industry benchmarks to evaluate your performance and identify growth opportunities.
+              Engagement rates vary by follower count. Smaller creators typically have more engaged communities. Larger creators trade engagement rate for reach. Use these 2026 industry benchmarks to evaluate performance and identify growth opportunities.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white p-5 rounded-lg border-2 border-primary-200 hover:border-primary-400 transition-colors">

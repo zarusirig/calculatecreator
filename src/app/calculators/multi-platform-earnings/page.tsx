@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'Which platform pays the most?',
-    answer: 'YouTube pays highest per view ($1.50-8/1K) but requires 1K subs + 4K watch hours. Instagram Reels pay $0.50-3/1K. TikTok pays least ($0.02-0.04/1K) but has fastest growth. Strategy: grow on TikTok, repurpose to Instagram, monetize on YouTube.',
+    answer: '**YouTube pays the highest per view at $1.50 to $8 per 1K views.** It requires 1K subscribers plus 4K watch hours. Instagram Reels pay $0.50 to $3 per 1K. TikTok pays the least at $0.02 to $0.04 per 1K but has the fastest growth. Grow on TikTok, repurpose to Instagram, and monetize on YouTube.',
   },
   {
     question: 'Should I focus on one platform or all three?',
-    answer: 'Start with TikTok (easiest growth), then expand. Repurpose content to Instagram Reels (same vertical format). Once you have an audience, create longer YouTube content for higher monetization. Multi-platform diversifies risk and maximizes reach.',
+    answer: '**Start with TikTok for the easiest growth, then expand.** Repurpose content to Instagram Reels using the same vertical format. Create longer YouTube content for higher monetization once you have an audience. Multi-platform presence diversifies risk and maximizes reach.',
   },
   {
     question: 'How do I repurpose content across platforms?',
-    answer: 'TikTok → Instagram Reels: Direct repost (same format). TikTok → YouTube Shorts: Direct upload. TikTok → YouTube Long-form: Combine multiple TikToks into compilation or expand into 8-15 min video. Use native uploading (don\'t include watermarks).',
+    answer: '**Repurpose TikTok to Instagram Reels as a direct repost using the same format.** Upload TikTok to YouTube Shorts directly. Combine multiple TikToks into a compilation or expand into an 8 to 15 minute YouTube video for long-form. Use native uploading and do not include watermarks.',
   },
   {
     question: 'Why is TikTok RPM so low?',
-    answer: 'TikTok Creator Fund pays $0.02-0.04/1K views, much lower than YouTube. However, TikTok has easiest organic reach. Smart creators use TikTok for audience building, then monetize through: brand deals (10x more than fund), affiliate links, own products, or driving traffic to higher-paying platforms.',
+    answer: '**The TikTok Creator Fund pays $0.02 to $0.04 per 1K views, much lower than YouTube.** TikTok has the easiest organic reach. Smart creators use TikTok for audience building, then monetize through brand deals (10x more than the fund), affiliate links, their own products, and traffic to higher-paying platforms.',
   },
 ];
 
@@ -335,19 +335,19 @@ Total: $3,560/month`}
             faqs={[
               {
                 question: 'Which platform pays the most?',
-                answer: 'YouTube pays highest per view ($1.50-8/1K) but requires 1K subs + 4K watch hours. Instagram Reels pay $0.50-3/1K. TikTok pays least ($0.02-0.04/1K) but has fastest growth. Strategy: grow on TikTok, repurpose to Instagram, monetize on YouTube.',
+                answer: '**YouTube pays the highest per view at $1.50 to $8 per 1K views.** It requires 1K subscribers plus 4K watch hours. Instagram Reels pay $0.50 to $3 per 1K. TikTok pays the least at $0.02 to $0.04 per 1K but has the fastest growth. Grow on TikTok, repurpose to Instagram, and monetize on YouTube.',
               },
               {
                 question: 'Should I focus on one platform or all three?',
-                answer: 'Start with TikTok (easiest growth), then expand. Repurpose content to Instagram Reels (same vertical format). Once you have an audience, create longer YouTube content for higher monetization. Multi-platform diversifies risk and maximizes reach.',
+                answer: '**Start with TikTok for the easiest growth, then expand.** Repurpose content to Instagram Reels using the same vertical format. Create longer YouTube content for higher monetization once you have an audience. Multi-platform presence diversifies risk and maximizes reach.',
               },
               {
                 question: 'How do I repurpose content across platforms?',
-                answer: 'TikTok → Instagram Reels: Direct repost (same format). TikTok → YouTube Shorts: Direct upload. TikTok → YouTube Long-form: Combine multiple TikToks into compilation or expand into 8-15 min video. Use native uploading (don\'t include watermarks).',
+                answer: '**Repurpose TikTok to Instagram Reels as a direct repost using the same format.** Upload TikTok to YouTube Shorts directly. Combine multiple TikToks into a compilation or expand into an 8 to 15 minute YouTube video for long-form. Use native uploading and do not include watermarks.',
               },
               {
                 question: 'Why is TikTok RPM so low?',
-                answer: 'TikTok Creator Fund pays $0.02-0.04/1K views, much lower than YouTube. However, TikTok has easiest organic reach. Smart creators use TikTok for audience building, then monetize through: brand deals (10x more than fund), affiliate links, own products, or driving traffic to higher-paying platforms.',
+                answer: '**The TikTok Creator Fund pays $0.02 to $0.04 per 1K views, much lower than YouTube.** TikTok has the easiest organic reach. Smart creators use TikTok for audience building, then monetize through brand deals (10x more than the fund), affiliate links, their own products, and traffic to higher-paying platforms.',
               },
             ]}
           />

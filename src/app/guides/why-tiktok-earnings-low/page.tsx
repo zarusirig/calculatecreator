@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is a normal RPM for TikTok Creator Fund?',
-    answer: 'Normal RPM ranges from $0.02 to $0.04, with top creators earning $0.05-$0.10. Educational and finance niches typically earn higher RPMs ($0.08-$0.12) while entertainment and comedy earn lower rates ($0.01-$0.03).',
+    answer: '**Normal Revenue Per Mille (RPM) ranges from $0.02 to $0.04.** Top creators earn $0.05 to $0.10. Educational and finance niches typically earn higher RPMs ($0.08 to $0.12) while entertainment and comedy earn lower rates ($0.01 to $0.03).',
   },
   {
     question: 'Why do some creators earn $10 per million views while I earn less?',
-    answer: 'Earnings vary based on engagement rate, audience location, watch time, content niche, and video quality. Creators with US/UK audiences, high completion rates, and educational content earn significantly more per view.',
+    answer: '**Earnings vary based on engagement rate, audience location, watch time, content niche, and video quality.** Creators with US or UK audiences, high completion rates, and educational content earn significantly more per view.',
   },
   {
     question: 'Does posting more videos increase my Creator Fund earnings?',

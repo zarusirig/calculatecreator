@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'How is content value calculated?',
-    answer: 'Content value is based on three factors: (1) Total reach (views), (2) Engagement quality, and (3) Niche monetization potential. High-value niches like finance and tech command 2-3x premiums due to better brand deal rates and audience purchasing power.',
+    answer: '**Content value is based on 3 factors (total reach in views, engagement quality, and niche monetization potential).** High-value niches like finance and tech command 2x to 3x premiums due to better brand deal rates and audience purchasing power.',
   },
   {
     question: 'When would I use a content value calculation?',
-    answer: 'Use cases: (1) Negotiating account acquisition or sale, (2) Licensing your content library to brands/agencies, (3) Pitching to investors or seeking loans, (4) Understanding asset value for tax/accounting, (5) Comparing ROI across different content strategies.',
+    answer: '**Use a content value calculation in 5 situations.** Negotiating account acquisition or sale. Licensing your content library to brands and agencies. Pitching to investors or seeking loans. Understanding asset value for tax and accounting. Comparing ROI across different content strategies.',
   },
   {
     question: 'Does old content still have value?',
-    answer: 'Yes, if it\'s evergreen. Educational, tutorial, and reference content retains value longer. Trending/meme content depreciates quickly. Videos still getting views (even years later) are highly valuable. Check your analytics for "catalog content" that continues performing.',
+    answer: '**Yes, old content retains value when it is evergreen.** Educational, tutorial, and reference content retains value longer. Trending and meme content depreciates quickly. Videos still getting views even years later are highly valuable. Check your analytics for "catalog content" that continues performing.',
   },
   {
     question: 'How can I increase my content portfolio value?',
-    answer: 'Strategies: (1) Pivot to higher-value niches (finance, tech, B2B), (2) Create evergreen content that compounds views, (3) Improve engagement rate (comments/shares worth more), (4) Build a larger content library, (5) Optimize for SEO/discoverability to extend content lifespan.',
+    answer: '**Follow 5 strategies to increase your portfolio value.** Pivot to higher-value niches like finance, tech, and B2B. Create evergreen content that compounds views. Improve engagement rate because comments and shares are worth more. Build a larger content library. Optimize for Search Engine Optimization (SEO) and discoverability to extend the lifespan of content.',
   },
 ];
 

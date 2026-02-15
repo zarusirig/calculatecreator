@@ -23,19 +23,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What should my hourly rate be?',
-    answer: 'Base it on: (1) Your opportunity cost (what else you could earn), (2) Market rates for video editors ($25-100/hr), (3) Your experience level. Beginners: $20-40/hr, Experienced: $50-100/hr, Professionals: $100-200/hr.',
+    answer: '**Base your hourly rate on 3 factors (your opportunity cost, market rates for video editors, and your experience level).** Market rates for video editors range from $25 to $100 per hour. Beginners: $20 to $40 per hour. Experienced: $50 to $100 per hour. Professionals: $100 to $200 per hour.',
   },
   {
     question: 'How can I reduce production costs?',
-    answer: 'Batch filming (shoot 5-10 videos in one session), use templates, improve efficiency with practice, outsource editing ($10-30/video), use phone instead of expensive camera, leverage free tools (CapCut, Canva free plan).',
+    answer: '**Use 6 strategies to reduce production costs.** Batch film by shooting 5 to 10 videos in one session. Use templates. Improve efficiency with practice. Outsource editing at $10 to $30 per video. Use a phone instead of an expensive camera. Leverage free tools like CapCut and the free Canva plan.',
   },
   {
     question: 'Are production costs tax deductible?',
-    answer: 'Yes! As a content creator, equipment, software, props, home office, and internet are typically deductible business expenses. Keep receipts and consult a CPA for specific guidance. Deductions reduce your taxable income.',
+    answer: '**Yes, production costs are tax deductible.** As a content creator, equipment, software, props, home office, and internet are deductible business expenses. Keep receipts and consult a Certified Public Accountant (CPA) for specific guidance. Deductions reduce your taxable income.',
   },
   {
     question: 'When should I upgrade equipment?',
-    answer: 'Upgrade when: (1) Current equipment limits quality/creativity, (2) You can justify ROI (earning enough to cover costs in 3-6 months), (3) Tax deduction makes sense, (4) Clients/brands expect higher production value. Don\'t upgrade just to upgrade.',
+    answer: '**Upgrade when 4 conditions are met.** Current equipment limits quality or creativity. You justify ROI by earning enough to cover costs in 3 to 6 months. The tax deduction makes sense. Clients and brands expect higher production value. Do not upgrade just to upgrade.',
   },
 ];
 
@@ -348,19 +348,19 @@ Total: $106.67 per video`}
             faqs={[
               {
                 question: 'What should my hourly rate be?',
-                answer: 'Base it on: (1) Your opportunity cost (what else you could earn), (2) Market rates for video editors ($25-100/hr), (3) Your experience level. Beginners: $20-40/hr, Experienced: $50-100/hr, Professionals: $100-200/hr.',
+                answer: '**Base your hourly rate on 3 factors (your opportunity cost, market rates for video editors, and your experience level).** Market rates for video editors range from $25 to $100 per hour. Beginners: $20 to $40 per hour. Experienced: $50 to $100 per hour. Professionals: $100 to $200 per hour.',
               },
               {
                 question: 'How can I reduce production costs?',
-                answer: 'Batch filming (shoot 5-10 videos in one session), use templates, improve efficiency with practice, outsource editing ($10-30/video), use phone instead of expensive camera, leverage free tools (CapCut, Canva free plan).',
+                answer: '**Use 6 strategies to reduce production costs.** Batch film by shooting 5 to 10 videos in one session. Use templates. Improve efficiency with practice. Outsource editing at $10 to $30 per video. Use a phone instead of an expensive camera. Leverage free tools like CapCut and the free Canva plan.',
               },
               {
                 question: 'Are production costs tax deductible?',
-                answer: 'Yes! As a content creator, equipment, software, props, home office, and internet are typically deductible business expenses. Keep receipts and consult a CPA for specific guidance. Deductions reduce your taxable income.',
+                answer: '**Yes, production costs are tax deductible.** As a content creator, equipment, software, props, home office, and internet are deductible business expenses. Keep receipts and consult a Certified Public Accountant (CPA) for specific guidance. Deductions reduce your taxable income.',
               },
               {
                 question: 'When should I upgrade equipment?',
-                answer: 'Upgrade when: (1) Current equipment limits quality/creativity, (2) You can justify ROI (earning enough to cover costs in 3-6 months), (3) Tax deduction makes sense, (4) Clients/brands expect higher production value. Don\'t upgrade just to upgrade.',
+                answer: '**Upgrade when 4 conditions are met.** Current equipment limits quality or creativity. You justify ROI by earning enough to cover costs in 3 to 6 months. The tax deduction makes sense. Clients and brands expect higher production value. Do not upgrade just to upgrade.',
               },
             ]}
           />

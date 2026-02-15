@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const faqData = [
     {
       question: 'How much commission can you make from TikTok Shop?',
-      answer: 'TikTok Shop commission rates range from 2-20% depending on product category. Beauty: 8-15%, Fashion: 5-12%, Electronics: 2-8%, Home goods: 10-20%. Average affiliates earn $200-$2000/month. Top affiliates with 100K+ followers earn $5,000-$50,000/month from commissions.'
+      answer: '**TikTok Shop commission rates range from 2% to 20% depending on the product category.** Beauty: 8% to 15%. Fashion: 5% to 12%. Electronics: 2% to 8%. Home goods: 10% to 20%. Average affiliates earn $200 to $2,000 per month. Top affiliates with 100K+ followers earn $5,000 to $50,000 per month from commissions.'
     },
     {
       question: 'What are the best product categories for TikTok Shop affiliates?',
@@ -56,7 +56,7 @@ export default function ShopCommissionCalculatorPage() {
             <ShoppingBag size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Shop Commission Calculator</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your earnings from TikTok Shop affiliate commissions and estimate your monthly revenue potential. This calculator helps affiliates forecast income based on product prices, commission rates, and sales volume. Perfect for creators evaluating TikTok Shop as a monetization strategy or tracking performance across different product categories and niches.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your earnings from TikTok Shop affiliate commissions and estimate your monthly revenue potential. This calculator helps affiliates forecast income based on 3 inputs (product prices, commission rates, and sales volume). It is perfect for creators evaluating TikTok Shop as a monetization strategy or tracking performance across different product categories and niches.</p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
             Learn <Link href="/guides/tiktok-shop-affiliate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the TikTok Shop affiliate program works</Link> or explore <Link href="/guides/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Shop success strategies</Link> to maximize your commissions.
           </p>
@@ -121,7 +121,7 @@ export default function ShopCommissionCalculatorPage() {
               Commission Rates by Product Category
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Average commission rates vary significantly by product type:
+              Average commission rates vary significantly by product type.
             </p>
             <div className="space-y-2">
               {[
@@ -207,7 +207,7 @@ export default function ShopCommissionCalculatorPage() {
               Realistic Earnings Examples
             </h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              Here's what you can realistically earn based on follower count and effort:
+              Realistic earnings based on follower count and effort follow.
             </p>
             <div className="space-y-3">
               {[
@@ -353,7 +353,7 @@ export default function ShopCommissionCalculatorPage() {
             </h2>
             <div className="space-y-4">
               <p className="text-body-md text-neutral-700">
-                Not all products are created equal. Use this framework to choose winners:
+                Not all products perform equally. Use this framework to choose winners.
               </p>
               {[
                 {

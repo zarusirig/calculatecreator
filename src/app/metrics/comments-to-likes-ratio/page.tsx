@@ -97,35 +97,35 @@ const whyBrandsCare = [
 const faqs = [
   {
     question: 'How do I calculate my comments-to-likes ratio?',
-    answer: 'Divide your total comments by total likes on a video or across your profile. For example, if a video has 500 comments and 10,000 likes, your ratio is 500÷10,000 = 0.05 or 1:20 (one comment per 20 likes). You can also express this as a percentage: 5% comment-to-like ratio. Track this across your last 10-20 videos for an accurate average. Use our engagement calculator to automate this calculation and compare your performance to niche benchmarks.',
+    answer: '**Divide your total comments by total likes on a video or across your profile.** For example, a video with 500 comments and 10,000 likes has a ratio of 500 divided by 10,000 = 0.05 or 1:20 (one comment per 20 likes). You also express this as a percentage: 5% comment-to-like ratio. Track this across your last 10 to 20 videos for an accurate average. Use our engagement calculator to automate this calculation and compare your performance to niche benchmarks.',
   },
   {
     question: 'What is a good comments-to-likes ratio on TikTok in 2026?',
-    answer: 'A ratio of 1:10 to 1:15 (one comment per 10-15 likes) is excellent and indicates highly engaged content that brands actively seek. 1:15 to 1:25 is good and above average for most creators. 1:25 to 1:35 is average, while below 1:35 suggests your content is being consumed passively without sparking conversation. Top-performing viral content often achieves 1:5 to 1:8 ratios. However, benchmarks vary significantly by niche—entertainment content naturally achieves higher ratios than aesthetic or music content.',
+    answer: '**A ratio of 1:10 to 1:15 (one comment per 10 to 15 likes) is excellent and indicates highly engaged content that brands actively seek.** 1:15 to 1:25 is good and above average for most creators. 1:25 to 1:35 is average, while below 1:35 suggests passive content consumption without conversation. Top-performing viral content often achieves 1:5 to 1:8 ratios. Benchmarks vary by niche. Entertainment content naturally achieves higher ratios than aesthetic or music content.',
   },
   {
     question: 'Why is comments-to-likes ratio important for brand deals?',
-    answer: 'Brands view high comment ratios as the strongest signal of genuine audience engagement. Comments indicate viewers are processing and responding to content, not just passively double-tapping. Brands pay 20-40% premiums for creators with strong comment ratios because these audiences are more likely to engage with sponsored content, ask product questions, and convert to customers. A creator with 50K followers and a 1:10 ratio is often preferred over a 200K creator with a 1:40 ratio for brand partnerships.',
+    answer: '**Brands view high comment ratios as the strongest signal of genuine audience engagement.** Comments indicate viewers are processing and responding to content, not passively double-tapping. Brands pay 20% to 40% premiums for creators with strong comment ratios because these audiences are more likely to engage with sponsored content, ask product questions, and convert to customers. A creator with 50K followers and a 1:10 ratio is often preferred over a 200K creator with a 1:40 ratio for brand partnerships.',
   },
   {
     question: 'Does comment ratio affect the TikTok algorithm?',
-    answer: 'Yes, significantly. TikTok\'s algorithm weights comments 3-5x more heavily than likes because comments require more effort and indicate genuine engagement. Videos with high comment ratios in the first hour after posting are more likely to be pushed to broader For You page audiences. The algorithm also considers comment velocity (how quickly comments accumulate), reply threads (which increase time-on-content), and comment quality (longer, substantive comments weighted higher than single emojis). This algorithm weighting increased approximately 40% in the late 2025 update.',
+    answer: '**Yes, the algorithm of TikTok weights comments 3 to 5 times more heavily than likes because comments require more effort and indicate genuine engagement.** Videos with high comment ratios in the first hour after posting are more likely to be pushed to broader For You page audiences. The algorithm also considers comment velocity (how quickly comments accumulate), reply threads (which increase time-on-content), and comment quality (longer, substantive comments weighted higher than single emojis). This algorithm weighting increased approximately 40% in the late 2025 update.',
   },
   {
     question: 'How can I increase comments without engagement baiting?',
-    answer: 'Focus on creating genuinely discussion-worthy content. Ask open-ended questions that invite personal experiences. Share unique perspectives or "hot takes" that inspire debate. Teach something valuable and ask viewers about their results or challenges. Tell compelling stories that others can relate to. Respond to existing comments within the first hour to spark conversation threads. Create content that naturally makes viewers want to share their own experiences, ask questions, or offer alternative viewpoints. Avoid cheap tricks like "comment your favorite emoji" which TikTok now flags as low-quality engagement bait.',
+    answer: '**Focus on creating genuinely discussion-worthy content.** Ask open-ended questions that invite personal experiences. Share unique perspectives or "hot takes" that inspire debate. Teach something valuable and ask viewers about their results or challenges. Tell compelling stories that others relate to. Respond to existing comments within the first hour to spark conversation threads. Create content that naturally makes viewers want to share their own experiences, ask questions, or offer alternative viewpoints. Avoid tricks like "comment your favorite emoji" which TikTok now flags as low-quality engagement bait.',
   },
   {
     question: 'What types of content get the most comments on TikTok?',
-    answer: 'Content that sparks emotional responses generates the most comments. Controversy and debates (highest comment ratios), educational "did you know" content with surprising facts, personal stories viewers can relate to, "hot takes" and unpopular opinions in your niche, tutorials that invite questions about implementation, and before/after transformations all drive strong comment engagement. Entertainment content typically gets more likes but proportionally fewer comments. Question-format content and polls consistently outperform passive consumption content for comment generation.',
+    answer: '**Content that sparks emotional responses generates the most comments.** Controversy and debates produce the highest comment ratios. Educational "did you know" content with surprising facts, personal stories viewers relate to, "hot takes" and unpopular opinions in your niche, tutorials that invite questions about implementation, and before/after transformations all drive strong comment engagement. Entertainment content typically gets more likes but proportionally fewer comments. Question-format content and polls outperform passive consumption content for comment generation.',
   },
   {
     question: 'Should I respond to all comments on my videos?',
-    answer: 'Respond to as many comments as possible, especially in the first 1-2 hours after posting when algorithm ranking is determined. You don\'t need to reply to every single comment, but aim for 30-50% response rate. Prioritize comments with questions, interesting perspectives, or those that can spark further discussion threads. Creator replies signal to the algorithm that your content is generating quality engagement. Even liking comments without replying provides a positive signal. Reply threads also increase time-on-content as viewers return to see responses.',
+    answer: '**Respond to as many comments as possible, especially in the first 1 to 2 hours after posting when algorithm ranking is determined.** You do not need to reply to every comment, but aim for 30% to 50% response rate. Prioritize comments with questions, interesting perspectives, or those that spark further discussion threads. Creator replies signal to the algorithm that your content is generating quality engagement. Liking comments without replying also provides a positive signal. Reply threads increase time-on-content as viewers return to see responses.',
   },
   {
     question: 'How does comment ratio compare to other TikTok engagement metrics?',
-    answer: 'Comment ratio is one critical component of overall engagement health. A well-performing TikTok profile typically has: 4-8% overall engagement rate (all interactions divided by followers), 1:15-1:25 comments-to-likes ratio, 1-3% share rate, and 3-8% save rate. Comment ratio specifically indicates audience investment and willingness to actively interact rather than passively consume. Brands often value comment ratio most highly because it predicts campaign performance and conversion potential. Use our engagement rate calculator to analyze all these metrics together for comprehensive performance evaluation.',
+    answer: '**Comment ratio is one critical component of overall engagement health.** A well-performing TikTok profile typically has 4% to 8% overall engagement rate (all interactions divided by followers), 1:15 to 1:25 comments-to-likes ratio, 1% to 3% share rate, and 3% to 8% save rate. Comment ratio indicates audience investment and willingness to actively interact rather than passively consume. Brands value comment ratio most highly because it predicts campaign performance and conversion potential. Use our engagement rate calculator to analyze all these metrics together for comprehensive performance evaluation.',
   },
 ];
 
@@ -181,7 +181,7 @@ export default function CommentsToLikesRatioPage() {
         <Card className="bg-blue-50 border-blue-200">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">What Is Comments-to-Likes Ratio?</h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            The comments-to-likes ratio measures how often viewers leave comments relative to likes. It's calculated by dividing total comments by total likes on a video (or averaged across your content). This metric is a key component of your overall <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline">TikTok engagement rate</Link>.
+            The comments-to-likes ratio measures how often viewers leave comments relative to likes. Divide total comments by total likes on a video (or average across your content) to calculate this metric. This metric is a key component of your overall <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline">TikTok engagement rate</Link>.
           </p>
           <div className="bg-white rounded-lg p-4 mb-4">
             <h3 className="font-semibold text-neutral-900 mb-2">Formula:</h3>
@@ -276,7 +276,7 @@ export default function CommentsToLikesRatioPage() {
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Why Brands Pay Premium for High Comment Ratios</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            Brands often prioritize comment ratio over follower count or even overall engagement rate. Here's why this metric directly impacts your earning potential and why sophisticated brand partnerships teams use it as a primary evaluation criterion:
+            Brands often prioritize comment ratio over follower count or overall engagement rate. Here is why this metric directly impacts your earning potential and why sophisticated brand partnership teams use it as a primary evaluation criterion.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {whyBrandsCare.map((item, idx) => (
@@ -352,7 +352,7 @@ export default function CommentsToLikesRatioPage() {
         <Card className="bg-purple-50 border-purple-200">
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">How TikTok's Algorithm Uses Comment Ratio in 2026</h2>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok's recommendation algorithm heavily weights comments because they signal genuine interest and content quality. Understanding how comments influence distribution can help you optimize your content strategy for maximum reach. The algorithm update in late 2025 increased comment weighting by approximately 40% compared to 2024.
+            The recommendation algorithm of TikTok heavily weights comments because they signal genuine interest and content quality. Understanding how comments influence distribution helps you optimize your content strategy for maximum reach. The algorithm update in late 2025 increased comment weighting by approximately 40% compared to 2024.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>

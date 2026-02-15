@@ -51,32 +51,32 @@ const faqItems = [
   {
     question: 'What is a TikTok video performance calculator?',
     answer:
-      'A TikTok video performance calculator analyzes your video metrics including views, likes, comments, shares, and watch time to provide a comprehensive performance score. It helps you understand how well your content resonates with your audience compared to platform benchmarks.',
+      '**A TikTok video performance calculator analyzes your video metrics (views, likes, comments, shares, and watch time) to provide a comprehensive performance score.** It helps you understand how well your content resonates with your audience compared to platform benchmarks.',
   },
   {
     question: 'What metrics determine TikTok video performance?',
     answer:
-      'Key TikTok video performance metrics include view count, engagement rate (likes + comments + shares / views), average watch time, completion rate, share ratio, and comment-to-like ratio. The algorithm heavily weights watch time and completion rates when determining reach.',
+      '**Key TikTok video performance metrics include 6 measures (view count, engagement rate, average watch time, completion rate, share ratio, and comment-to-like ratio).** Engagement rate equals likes plus comments plus shares divided by views. The algorithm heavily weights watch time and completion rates for determining reach.',
   },
   {
     question: 'What is a good engagement rate for TikTok videos?',
     answer:
-      'A good TikTok video engagement rate in 2026 is between 4-8%. Rates above 10% are considered excellent and indicate highly engaging content. Engagement below 2% suggests your content may not be resonating with your target audience or reaching the right viewers.',
+      '**A good TikTok video engagement rate in 2026 is between 4% to 8%.** Rates above 10% are excellent and indicate highly engaging content. Engagement below 2% suggests your content is not resonating with your target audience or not reaching the right viewers.',
   },
   {
     question: 'How does TikTok measure video watch time?',
     answer:
-      'TikTok measures average watch time as the total watch time divided by total plays. Completion rate shows the percentage of viewers who watch your entire video. Videos with watch times above 80% of their duration typically receive significant algorithmic boost.',
+      '**TikTok measures average watch time as the total watch time divided by total plays.** Completion rate shows the percentage of viewers who watch your entire video. Videos with watch times above 80% of their duration typically receive a significant algorithmic boost.',
   },
   {
     question: 'What is a virality score on TikTok?',
     answer:
-      'A virality score measures how likely your content is to spread organically based on share ratio, engagement velocity, and audience growth rate. High virality scores indicate content that viewers actively share, which triggers TikTok algorithm to push it to broader audiences.',
+      '**A virality score measures how likely your content is to spread organically.** It is based on 3 factors (share ratio, engagement velocity, and audience growth rate). High virality scores indicate content that viewers actively share. This triggers the TikTok algorithm to push it to broader audiences.',
   },
   {
     question: 'Why do some TikTok videos perform better than others?',
     answer:
-      'Video performance depends on hook strength (first 1-3 seconds), content quality, posting time, niche relevance, trending sounds or hashtags, and audience match. Videos that capture attention quickly and maintain watch time consistently outperform others regardless of follower count.',
+      '**Video performance depends on 6 factors (hook strength, content quality, posting time, niche relevance, trending sounds or hashtags, and audience match).** Hook strength covers the first 1 to 3 seconds. Videos that capture attention quickly and maintain watch time consistently outperform others regardless of follower count.',
   },
   {
     question: 'How important is the share ratio for TikTok performance?',
@@ -86,7 +86,7 @@ const faqItems = [
   {
     question: 'What is the ideal TikTok video length for performance?',
     answer:
-      'The ideal TikTok video length in 2026 varies by content type. Short-form (15-30 seconds) works best for entertainment and trends. Educational content performs well at 60-90 seconds. The key is maintaining high completion rates regardless of length.',
+      '**The ideal TikTok video length in 2026 varies by content type.** Short-form (15 to 30 seconds) works best for entertainment and trends. Educational content performs well at 60 to 90 seconds. Maintain high completion rates regardless of length.',
   },
   {
     question: 'How does the comment-to-like ratio affect performance?',
@@ -96,7 +96,7 @@ const faqItems = [
   {
     question: 'When should I analyze my TikTok video performance?',
     answer:
-      'Analyze video performance at 1 hour (initial push), 24 hours (first cycle), 48 hours (secondary push), and 7 days (full cycle) after posting. TikTok algorithm can resurface content weeks later, so periodic checks help identify evergreen performers.',
+      '**Analyze video performance at 4 intervals after posting.** Check at 1 hour (initial push), 24 hours (first cycle), 48 hours (secondary push), and 7 days (full cycle). The TikTok algorithm resurfaces content weeks later. Periodic checks help identify evergreen performers.',
   },
   {
     question: 'How can I improve my TikTok video performance score?',
@@ -106,7 +106,7 @@ const faqItems = [
   {
     question: 'Does video quality affect TikTok performance?',
     answer:
-      'Yes, video quality significantly affects TikTok performance. Videos shot in 1080p or higher with good lighting and clear audio typically outperform lower quality content. TikTok algorithm may deprioritize blurry, pixelated, or watermarked content from other platforms.',
+      '**Yes, video quality significantly affects TikTok performance.** Videos shot in 1080p or higher with good lighting and clear audio typically outperform lower quality content. The TikTok algorithm deprioritizes blurry, pixelated, or watermarked content from other platforms.',
   },
 ];
 
@@ -130,7 +130,7 @@ Total: ~30 points (Good performance)`,
     'Platform analytics data studies',
     'Creator community performance research 2026',
   ],
-  limitations: 'Algorithm changes can shift performance weights. Niche-specific benchmarks may vary significantly. External factors like trending topics and sounds affect performance.',
+  limitations: 'Algorithm changes shift performance weights. Niche-specific benchmarks vary significantly. External factors like trending topics and sounds affect performance.',
   lastUpdated: 'January 2026',
 };
 

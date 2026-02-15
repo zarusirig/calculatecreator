@@ -38,15 +38,15 @@ const calculators = [
 const faqs = [
   {
     question: 'How much is a TikTok coin worth in real money?',
-    answer: 'TikTok coins cost approximately $0.0105-$0.0139 per coin depending on the purchase package. The base rate is roughly 1 coin = $0.0105 USD. Bulk purchases offer better rates: 65 coins cost $0.99 ($0.0152 each), 330 coins cost $4.99 ($0.0151 each), and 16,500 coins cost $249.99 ($0.0151 each). However, creators only receive about 50% of the coin value after TikTok\'s commission.',
+    answer: '**TikTok coins cost approximately $0.0105 to $0.0139 per coin depending on the purchase package.** The base rate is roughly 1 coin = $0.0105 USD. Bulk purchases offer better rates. 65 coins cost $0.99 ($0.0152 each). 330 coins cost $4.99 ($0.0151 each). 16,500 coins cost $249.99 ($0.0151 each). Creators receive about 50% of the coin value after the commission of TikTok.',
   },
   {
     question: 'What percentage does TikTok take from LIVE gifts?',
-    answer: 'TikTok takes approximately 50% commission from LIVE gifts. When viewers send gifts worth $100 in coins, creators receive roughly $50 worth of diamonds. The exact split varies slightly by region and creator tier, but the 50% creator payout is standard. Additionally, payment processing and currency conversion fees may reduce the final payout by another 2-5%.',
+    answer: '**TikTok takes approximately 50% commission from LIVE gifts.** Viewers send gifts worth $100 in coins, and creators receive roughly $50 worth of diamonds. The exact split varies slightly by region and creator tier. The 50% creator payout is standard. Payment processing and currency conversion fees reduce the final payout by another 2% to 5%.',
   },
   {
     question: 'How do I convert TikTok diamonds to cash?',
-    answer: 'Convert diamonds to cash through TikTok\'s Creator Portal once you have at least $50 (10,000 diamonds minimum payout threshold). The conversion rate is approximately $0.005 per diamond, or $50 per 10,000 diamonds. Payouts are processed via PayPal or direct bank transfer within 5-10 business days. You can track your diamond balance and request withdrawals from the LIVE Gifts section of your creator dashboard.',
+    answer: '**Convert diamonds to cash through the Creator Portal of TikTok once you have at least $50 (10,000 diamonds minimum payout threshold).** The conversion rate is approximately $0.005 per diamond, or $50 per 10,000 diamonds. Payouts are processed via PayPal or direct bank transfer within 5 to 10 business days. Track your diamond balance and request withdrawals from the LIVE Gifts section of your creator dashboard.',
   },
   {
     question: 'What are the most valuable TikTok LIVE gifts?',
@@ -129,7 +129,9 @@ export default function CoinsGiftsDiamondsPage() {
             Coins, Gifts & Diamonds Calculators
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Convert TikTok virtual currencies and understand gift values with precision calculators for LIVE streamers. Calculate exact coin-to-USD rates ($0.0105-$0.0139 per coin), convert diamonds to real money ($0.005 per diamond), and determine the actual value of LIVE gifts after TikTok's 50% commission. Essential tools for tracking LIVE earnings, understanding viewer gift values, and optimizing your streaming revenue with accurate currency conversions.
+            Convert TikTok virtual currencies and understand gift values with precision calculators for LIVE streamers. Calculate exact coin-to-USD rates ($0.0105 to $0.0139 per coin). Convert diamonds to real money ($0.005 per diamond). Determine the actual value of LIVE gifts after the 50% commission of TikTok.
+
+            These tools are essential for tracking LIVE earnings, understanding viewer gift values, and optimizing your streaming revenue with accurate currency conversions.
           </p>
         </div>
 

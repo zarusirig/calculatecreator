@@ -66,7 +66,13 @@ export default function TikTokSeriesMonetizationPage() {
       <section className="py-8">
         <div className="container-custom max-w-4xl">
           <p className="text-body-lg text-neutral-700 leading-relaxed">
-            TikTok Series represents a revolutionary shift in creator monetization by enabling paywalled premium content directly within the platform, allowing creators to build sustainable subscription-style revenue without requiring external payment processors or membership platforms like Patreon or OnlyFans for content distribution. This powerful feature allows qualified creators with 10,000+ followers to post curated collections of 2-80 videos, each up to 20 minutes in length, behind customizable price points ranging from $0.99 to $189.99 per series, creating opportunities for educational courses, exclusive behind-the-scenes content, comprehensive tutorials, fitness programs, creative masterclasses, and serialized entertainment that superfans willingly pay to access. Unlike ad-supported content that generates pennies per thousand views through Creator Fund or Creativity Program, Series enables direct monetization where creators retain the majority of revenue from each purchase after platform fees, transforming their most valuable educational or entertaining content into premium products that reward depth over virality and consistent quality. This monetization model particularly benefits creators in education, fitness, business coaching, creative arts, and tutorial-heavy niches where audiences actively seek structured, comprehensive content they can't find in short-form free videos on the platform.
+            TikTok Series enables paywalled premium content directly within the platform. Creators build sustainable subscription-style revenue without external payment processors or membership platforms like Patreon. Qualified creators with 10,000+ followers post curated collections of 2 to 80 videos, each up to 20 minutes long, behind customizable price points ranging from $0.99 to $189.99 per series.
+          </p>
+          <p className="text-body-lg text-neutral-700 leading-relaxed mt-4">
+            Series creates opportunities for educational courses, exclusive behind-the-scenes content, fitness programs, creative masterclasses, and serialized entertainment. Ad-supported content generates pennies per thousand views through the Creator Fund. Series enables direct monetization where creators retain the majority of the revenue from each purchase after platform fees.
+          </p>
+          <p className="text-body-lg text-neutral-700 leading-relaxed mt-4">
+            This monetization model benefits creators in 5 niches (education, fitness, business coaching, creative arts, and tutorials) where audiences actively seek structured content unavailable in short-form free videos.
           </p>
         </div>
       </section>
@@ -74,8 +80,11 @@ export default function TikTokSeriesMonetizationPage() {
       <div className="container-custom max-w-4xl py-12 space-y-8">
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">What is TikTok Series?</h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            TikTok Series enables paywalled premium content directly within the platform. Creators build sustainable subscription-style revenue without external payment processors or membership platforms. Qualified creators with 10,000+ followers post curated collections of 2 to 80 videos, each up to 20 minutes long, behind customizable price points from $0.99 to $189.99 per series.
+          </p>
           <p className="text-body-md text-neutral-700 mb-6">
-            TikTok Series represents a revolutionary shift in creator monetization by enabling paywalled premium content directly within the platform, allowing creators to build sustainable subscription-style revenue without requiring external payment processors or membership platforms. This feature allows qualified creators with 10,000+ followers to post curated collections of 2-80 videos, each up to 20 minutes in length, behind customizable price points ranging from $0.99 to $189.99 per series, creating opportunities for educational courses, exclusive behind-the-scenes content, comprehensive tutorials, fitness programs, creative masterclasses, and serialized entertainment that superfans willingly pay to access. Unlike ad-supported content that generates pennies per thousand views, Series enables direct monetization where creators retain the majority of revenue from each purchase, transforming their most valuable educational or entertaining content into premium products that reward depth over virality. This monetization model particularly benefits creators in education, fitness, business coaching, creative arts, and tutorial-heavy niches where audiences seek structured, comprehensive content they can't find in short-form free videos.
+            Ad-supported content generates pennies per thousand views. Series enables direct monetization where creators retain the majority of the revenue from each purchase. This model transforms valuable educational and entertaining content into premium products that reward depth over virality. Creators in 5 niches (education, fitness, business coaching, creative arts, and tutorials) benefit most where audiences seek structured content unavailable in short-form free videos.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="p-5 bg-blue-50 rounded-lg text-center">
@@ -119,8 +128,11 @@ export default function TikTokSeriesMonetizationPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Pricing Strategy</h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            Strategic pricing directly impacts conversion rates and revenue. Start with lower-priced Series ($4.99 to $9.99) to build social proof and testimonials. Increase prices for subsequent Series as your authority grows.
+          </p>
           <p className="text-body-md text-neutral-700 mb-6">
-            Strategic pricing directly impacts conversion rates and revenue. Start with lower-priced Series ($4.99-$9.99) to build social proof and testimonials, then increase prices for subsequent Series as your authority grows. Consider your audience demographics—younger audiences typically convert better at $4.99-$14.99, while professional development content can command $49.99-$99.99. Use tiered pricing across multiple Series to capture different buyer segments: an entry-level Series attracts price-sensitive viewers, while premium Series monetize your most dedicated fans willing to invest in transformation.
+            Younger audiences typically convert better at $4.99 to $14.99. Professional development content commands $49.99 to $99.99. Use tiered pricing across multiple Series to capture different buyer segments: an entry-level Series attracts price-sensitive viewers, while a premium Series monetizes your most dedicated fans.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full text-body-sm">
@@ -133,10 +145,10 @@ export default function TikTokSeriesMonetizationPage() {
               </thead>
               <tbody>
                 {[
-                  { length: '2-5 episodes (Starter)', price: '$0.99 - $4.99', bestFor: 'Testing concept, building trust' },
-                  { length: '6-15 episodes (Standard)', price: '$9.99 - $29.99', bestFor: 'Comprehensive courses, tutorials' },
-                  { length: '16-40 episodes (Premium)', price: '$39.99 - $99.99', bestFor: 'In-depth masterclasses, programs' },
-                  { length: '40+ episodes (Ultimate)', price: '$99.99 - $189.99', bestFor: 'Complete transformation programs' },
+                  { length: '2 to 5 episodes (Starter)', price: '$0.99 to $4.99', bestFor: 'Testing concept, building trust' },
+                  { length: '6 to 15 episodes (Standard)', price: '$9.99 to $29.99', bestFor: 'Comprehensive courses, tutorials' },
+                  { length: '16 to 40 episodes (Premium)', price: '$39.99 to $99.99', bestFor: 'In-depth masterclasses, programs' },
+                  { length: '40+ episodes (Ultimate)', price: '$99.99 to $189.99', bestFor: 'Complete transformation programs' },
                 ].map((row, idx) => (
                   <tr key={idx} className="border-b border-neutral-100">
                     <td className="py-3 px-4 font-semibold text-neutral-900">{row.length}</td>
@@ -151,8 +163,11 @@ export default function TikTokSeriesMonetizationPage() {
 
         <Card>
           <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Content Ideas for Series</h2>
+          <p className="text-body-md text-neutral-700 mb-4">
+            The most successful Series content provides structured, transformational value that justifies the price point. Educational creators package expertise into comprehensive courses that take viewers from beginner to proficient. Fitness creators excel with progressive programs featuring daily workouts, nutrition guidance, and accountability check-ins.
+          </p>
           <p className="text-body-md text-neutral-700 mb-6">
-            The most successful Series content provides structured, transformational value that justifies the price point. Educational creators thrive by packaging expertise into comprehensive courses that take viewers from beginner to proficient. Fitness creators excel with progressive programs featuring daily workouts, nutrition guidance, and accountability check-ins. Business coaching Series work particularly well when teaching specific skills like freelancing, social media growth, or e-commerce setup with actionable worksheets and templates. Entertainment creators can serialize exclusive content like behind-the-scenes production diaries, extended interviews, or premium storytelling that superfans eagerly consume. The key differentiator is depth and organization—Series content should feel like a premium course or exclusive membership, not just repackaged free content.
+            Business coaching Series work best when teaching specific skills (freelancing, social media growth, or e-commerce setup) with actionable worksheets and templates. Entertainment creators serialize exclusive content like production diaries, extended interviews, or premium storytelling. Series content must feel like a premium course, not repackaged free content.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
             {[
@@ -193,35 +208,35 @@ export default function TikTokSeriesMonetizationPage() {
           faqs={[
             {
               question: 'How much money can I make from TikTok Series?',
-              answer: 'Earnings depend on your audience size and series pricing. A creator with 50K followers selling a $19.99 series might convert 0.5-2% of their audience (250-1,000 sales = $5,000-$20,000). Educational creators with loyal audiences see 1-3% conversion rates. Series works best for niches like fitness, business, creative skills, and education where audiences actively seek structured learning.'
+              answer: '**Earnings depend on your audience size and series pricing.** A creator with 50K followers selling a $19.99 series converts 0.5 to 2% of their audience (250 to 1,000 sales = $5,000 to $20,000). Educational creators with loyal audiences see 1 to 3% conversion rates. Series works best for niches where audiences actively seek structured learning (fitness, business, creative skills, and education).'
             },
             {
               question: 'What are the requirements to create a TikTok Series?',
-              answer: 'You need 10,000+ followers, be 18+ years old, have an account in good standing with no community guideline violations, be located in an eligible country (US, UK, select markets), and complete identity verification. Availability is still rolling out globally, so check Creator Tools to see if you qualify in your region.'
+              answer: '**You need 10,000+ followers and must be 18 years or older.** Your account must have no community guideline violations. You must be located in an eligible country (US, UK, or select markets) and complete identity verification. Availability is still rolling out globally. Check Creator Tools to see your eligibility in your region.'
             },
             {
               question: 'How should I price my TikTok Series?',
-              answer: 'Price based on content length and value. Short series (2-5 episodes): $0.99-$4.99 for testing concepts. Standard series (6-15 episodes): $9.99-$29.99 for comprehensive courses. Premium series (16-40 episodes): $39.99-$99.99 for in-depth programs. Ultimate series (40+ episodes): $99.99-$189.99 for complete transformation programs. Start lower to build trust, then increase for future series.'
+              answer: '**Price based on content length and value.** Short series (2 to 5 episodes): $0.99 to $4.99 for testing concepts. Standard series (6 to 15 episodes): $9.99 to $29.99 for comprehensive courses. Premium series (16 to 40 episodes): $39.99 to $99.99 for in-depth programs. Ultimate series (40+ episodes): $99.99 to $189.99 for complete transformation programs. Start lower to build trust, then increase for future series.'
             },
             {
               question: 'What content works best for paywalled Series?',
-              answer: 'Educational content with clear transformation value performs best: step-by-step courses, skill development programs, comprehensive tutorials, exclusive behind-the-scenes access, and serialized premium content. Avoid putting basic tips behind paywalls—reserve Series for your most valuable, in-depth content that viewers cannot easily find free elsewhere. Think "masterclass" quality, not "quick tip" content.'
+              answer: '**Educational content with clear transformation value performs best.** This includes step-by-step courses, skill development programs, comprehensive tutorials, exclusive behind-the-scenes access, and serialized premium content. Reserve Series for your most valuable, in-depth content that viewers cannot find free elsewhere. Aim for "masterclass" quality, not "quick tip" content.'
             },
             {
               question: 'Can I create multiple Series or just one?',
-              answer: 'You can create unlimited Series. Many successful creators run multiple Series simultaneously at different price points: a low-cost "intro" series ($4.99) to build trust, a mid-tier course ($29.99) for core content, and a premium masterclass ($99.99) for advanced topics. This tiered approach maximizes revenue by serving different audience commitment levels and budgets.'
+              answer: '**You create unlimited Series.** Many successful creators run multiple Series simultaneously at different price points: firstly, a low-cost "intro" series ($4.99) to build trust; secondly, a mid-tier course ($29.99) for core content; thirdly, a premium masterclass ($99.99) for advanced topics. This tiered approach maximizes revenue by serving different audience commitment levels and budgets.'
             },
             {
               question: 'How does TikTok pay creators for Series sales?',
-              answer: 'TikTok pays creators a percentage of Series revenue after platform fees, which vary by region (typically creators keep 60-70% of the sale price). Payments are processed through the Creator Fund payment system. You must meet withdrawal minimums (usually $50) and have payment information set up in Creator Tools to receive payouts.'
+              answer: '**TikTok pays creators a percentage of the Series revenue after platform fees.** Fees vary by region, but creators typically keep 60 to 70% of the sale price. Payments are processed through the Creator Fund payment system. You must meet withdrawal minimums (usually $50) and have payment information set up in Creator Tools to receive payouts.'
             },
             {
               question: 'Can I update or add episodes to a Series after publishing?',
-              answer: 'Yes, you can add new episodes to existing Series, allowing you to expand content based on audience feedback or provide ongoing value. However, you cannot edit or replace already-published episodes. This flexibility lets you start with a core Series and grow it over time, increasing value for existing purchasers.'
+              answer: '**Yes, you add new episodes to existing Series at any time.** This lets you expand content based on audience feedback or provide ongoing value. You cannot edit or replace already-published episodes. Start with a core Series and grow it over time to increase value for existing purchasers.'
             },
             {
               question: 'Should I promote my Series on other platforms?',
-              answer: 'Absolutely. Cross-promotion maximizes Series sales by driving traffic from Instagram, YouTube, email lists, and other platforms where your audience exists. Create teaser content showing Series value, share testimonials from buyers, and use TikTok\'s unique Series link to direct external traffic. Multi-platform promotion typically doubles conversion rates compared to TikTok-only marketing.'
+              answer: '**Yes, cross-promotion maximizes Series sales.** Drive traffic from Instagram, YouTube, email lists, and other platforms where your audience exists. Create teaser content showing the value of the Series. Share testimonials from buyers and use the unique Series link from TikTok to direct external traffic. Multi-platform promotion typically doubles conversion rates compared to TikTok-only marketing.'
             }
           ]}
         />

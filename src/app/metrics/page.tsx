@@ -41,27 +41,27 @@ const metrics = [
 const faqs = [
   {
     question: 'What is the most important TikTok metric for growth?',
-    answer: 'Watch time and completion rate are the most important metrics for TikTok growth. The algorithm prioritizes videos that keep viewers watching until the end. A completion rate above 70% signals high-quality content. Secondary metrics like comments-to-likes ratio, shares, and saves also influence distribution but watch time remains the primary factor.',
+    answer: '**Watch time and completion rate are the most important metrics for TikTok growth.** The algorithm prioritizes videos that keep viewers watching until the end. A completion rate above 70% signals high-quality content. Secondary metrics like comments-to-likes ratio, shares, and saves also influence distribution, but watch time remains the primary factor.',
   },
   {
     question: 'What is a good comments-to-likes ratio on TikTok?',
-    answer: 'A good comments-to-likes ratio on TikTok is 1-5%, meaning 1-5 comments for every 100 likes. Ratios above 3% indicate highly engaging content that sparks conversation. Educational and controversial content typically achieves higher ratios (3-8%), while entertainment content averages 1-2%. Brands particularly value high comment ratios as they indicate genuine audience interest.',
+    answer: '**A good comments-to-likes ratio on TikTok is 1% to 5%, meaning 1 to 5 comments for every 100 likes.** Ratios above 3% indicate highly engaging content that sparks conversation. Educational and controversial content typically achieves higher ratios (3% to 8%), while entertainment content averages 1% to 2%. Brands value high comment ratios as they indicate genuine audience interest.',
   },
   {
     question: 'How does TikTok calculate engagement rate?',
-    answer: 'TikTok engagement rate is calculated as: (Likes + Comments + Shares + Saves) / Views × 100. A good engagement rate is 4-6%, while excellent engagement exceeds 10%. The algorithm weighs different engagement types differently—shares and saves carry more weight than likes because they indicate stronger content value.',
+    answer: '**TikTok engagement rate is calculated as: (Likes + Comments + Shares + Saves) divided by Views multiplied by 100.** A good engagement rate is 4% to 6%, while excellent engagement exceeds 10%. The algorithm weighs different engagement types differently. Shares and saves carry more weight than likes because they indicate stronger content value.',
   },
   {
     question: 'Why are my TikTok metrics dropping?',
-    answer: 'Common reasons for dropping metrics include: posting at inconsistent times, content that doesn\'t match your niche, low video quality or poor audio, algorithm changes, or audience fatigue from repetitive content. Check your analytics to identify which specific metric is declining and adjust your strategy accordingly.',
+    answer: '**Common reasons for dropping metrics include posting at inconsistent times, mismatched niche content, low video quality, poor audio, algorithm changes, and audience fatigue from repetitive content.** Check your analytics to identify which specific metric is declining and adjust your strategy accordingly.',
   },
   {
     question: 'How often should I check my TikTok analytics?',
-    answer: 'Check your TikTok analytics weekly for trend analysis and after each post for immediate performance feedback. Daily checking can lead to overreaction to normal fluctuations. Focus on 7-day and 28-day trends rather than individual video performance. Monthly deep-dives help identify long-term patterns and content strategy effectiveness.',
+    answer: '**Check your TikTok analytics weekly for trend analysis and after each post for immediate performance feedback.** Daily checking leads to overreaction to normal fluctuations. Focus on 7-day and 28-day trends rather than individual video performance. Monthly deep-dives help identify long-term patterns and content strategy effectiveness.',
   },
   {
     question: 'What metrics matter most for brand deals?',
-    answer: 'Brands prioritize engagement rate (4%+ is attractive), comments-to-likes ratio (shows genuine interest), audience demographics (age, location, interests), and average views per video. Follower count matters less than consistent engagement. Brands also look at saves and shares as indicators of content value and purchase intent.',
+    answer: '**Brands prioritize engagement rate (4%+ is attractive), comments-to-likes ratio, audience demographics, and average views per video.** Follower count matters less than consistent engagement. Brands also look at saves and shares as indicators of content value and purchase intent.',
   },
 ];
 
@@ -145,7 +145,7 @@ export default function MetricsPage() {
             </h2>
             <div className="space-y-6 text-body-md text-neutral-700">
               <p>
-                Understanding TikTok metrics is essential for sustainable growth on the platform. While follower count gets the most attention, successful creators know that engagement metrics tell the real story of content performance and audience connection.
+                Understanding TikTok metrics is essential for sustainable growth on the platform. Follower count gets the most attention, but engagement metrics tell the real story of content performance and audience connection.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -154,7 +154,7 @@ export default function MetricsPage() {
                     <CheckCircle size={20} /> Algorithm Signals
                   </h3>
                   <p className="text-body-sm text-green-800">
-                    TikTok's algorithm uses engagement metrics to determine content quality. High comments-to-likes ratios, strong completion rates, and shares signal valuable content worthy of broader distribution on the For You Page.
+                    The algorithm of TikTok uses engagement metrics to determine content quality. High comments-to-likes ratios, strong completion rates, and shares signal valuable content worthy of broader distribution on the For You Page.
                   </p>
                 </div>
                 <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">

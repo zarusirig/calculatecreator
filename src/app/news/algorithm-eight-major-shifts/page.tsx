@@ -6,7 +6,7 @@ import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/Calculator
 
 export const metadata: Metadata = {
   title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025 | TikTok News',
-  description: 'Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior.',
+  description: 'TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior.',
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/',
@@ -18,7 +18,7 @@ export default function AlgorithmEightMajorShiftsPage() {
     <>
       <NewsArticleSchema
         headline="TikTok Algorithm Undergoes Eight Major Shifts in 2025"
-        description="Between January and June 2026, TikTok implemented eight significant algorithmic changes, including enhanced personalization analyzing watch patterns and off-platform behavior."
+        description="TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior."
         url="https://calculatecreator.com/news/algorithm-eight-major-shifts/"
         datePublished="2026-01-03"
         dateModified="2026-01-03"
@@ -90,7 +90,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             Key Takeaway for Creators
           </h2>
           <p className="text-body-md text-violet-800">
-            TikTok's algorithm has evolved significantly in the first half of 2026, with eight major changes affecting how content gets distributed. Understanding these shifts is crucial for maintaining and growing your reach. The focus has shifted heavily toward retention metrics, authentic engagement, and sophisticated personalization.
+            The TikTok algorithm evolved significantly in the first half of 2026. Eight major changes affect how content gets distributed. Understanding these shifts is essential for maintaining and growing your reach. The focus has shifted toward retention metrics, authentic engagement, and sophisticated personalization.
           </p>
         </Card>
 
@@ -104,7 +104,7 @@ export default function AlgorithmEightMajorShiftsPage() {
                 1. Enhanced Personalization Engine
               </h3>
               <p className="text-body-md text-blue-800 mb-2">
-                The algorithm now analyzes deeper watch patterns, including rewatches, pause behaviors, and even when users slow down scrolling to look at content more carefully.
+                The algorithm now analyzes deeper watch patterns. These include rewatches, pause behaviors, and moments when users slow down scrolling to look at content more carefully.
               </p>
               <p className="text-body-sm text-blue-700 italic">
                 <strong>Creator Impact:</strong> Hook viewers in the first 3 seconds and maintain engagement throughout
@@ -128,7 +128,7 @@ export default function AlgorithmEightMajorShiftsPage() {
                 3. Completion Rate Prioritization
               </h3>
               <p className="text-body-md text-green-800 mb-2">
-                Videos that users watch all the way through receive massive distribution boosts, even if shorter than trending content.
+                Videos that users watch all the way through receive massive distribution boosts. This applies even if the video is shorter than trending content.
               </p>
               <p className="text-body-sm text-green-700 italic">
                 <strong>Creator Impact:</strong> Shorter, tight-edited content often outperforms longer videos
@@ -143,7 +143,7 @@ export default function AlgorithmEightMajorShiftsPage() {
                 Content that users watch multiple times receives significantly more distribution than previous algorithms.
               </p>
               <p className="text-body-sm text-amber-700 italic">
-                <strong>Creator Impact:</strong> Create content with replay value (satisfying, funny, or informative)
+                <strong>Creator Impact:</strong> Create content with replay value that is satisfying, funny, or informative
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export default function AlgorithmEightMajorShiftsPage() {
                 5. Engagement Recency Matters More
               </h3>
               <p className="text-body-md text-rose-800 mb-2">
-                The algorithm now weighs recent engagement (last 7 days) much more heavily than historical performance.
+                The algorithm now weighs recent engagement from the last 7 days much more heavily than historical performance.
               </p>
               <p className="text-body-sm text-rose-700 italic">
                 <strong>Creator Impact:</strong> Consistent posting is more important than ever
@@ -176,7 +176,7 @@ export default function AlgorithmEightMajorShiftsPage() {
                 7. Authentic Engagement Emphasis
               </h3>
               <p className="text-body-md text-indigo-800 mb-2">
-                The algorithm can now detect and devalue engagement manipulation, engagement pods, and artificial boosting.
+                The algorithm now detects and devalues engagement manipulation, engagement pods, and artificial boosting.
               </p>
               <p className="text-body-sm text-indigo-700 italic">
                 <strong>Creator Impact:</strong> Focus on genuine engagement; avoid engagement bait tactics

@@ -24,19 +24,19 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good comment rate on TikTok?',
-    answer: 'Excellent: 1%+ (exceptional engagement), Good: 0.5-1% (strong community building), Average: 0.2-0.5% (typical), Below Average: <0.2% (needs improvement). Opinion and Q&A content should aim for 1%+, while educational content typically achieves 0.5-1%.',
+    answer: '**Comment rate benchmarks break into 4 tiers.** Excellent: 1%+ (exceptional engagement). Good: 0.5% to 1% (strong community building). Average: 0.2% to 0.5% (typical). Below Average: less than 0.2% (needs improvement). Opinion and Q&A content aims for 1%+. Educational content typically achieves 0.5% to 1%.',
   },
   {
     question: 'Why do comments matter more than likes?',
-    answer: 'Comments require significantly more effort than likes, indicating deeper engagement. When viewers comment, they extend their watch time (boosting algorithmic performance), often return to check responses, and build community around your content.',
+    answer: '**Comments require significantly more effort than likes, indicating deeper engagement.** Viewers who comment extend their watch time, which boosts algorithmic performance. They often return to check responses. They build community around your content.',
   },
   {
     question: 'How can I increase my comment rate?',
-    answer: 'Ask direct questions, share controversial but respectful opinions, create "this or that" choices, use "wrong answers only" prompts, request audience advice, make relatable call-out content, include specific comment CTAs, and respond to early comments quickly.',
+    answer: '**Use these 8 tactics to increase your comment rate.** Ask direct questions, share controversial but respectful opinions, create "this or that" choices, use "wrong answers only" prompts, request audience advice, make relatable call-out content, include specific comment CTAs, and respond to early comments quickly.',
   },
   {
     question: 'Should I respond to all comments?',
-    answer: 'While responding to every comment is ideal, prioritize: (1) Questions that provide value to all viewers, (2) Thoughtful insights worth highlighting, (3) Early comments in the first hour to boost initial engagement. Aim for 20-30% response rate minimum.',
+    answer: '**Responding to every comment is ideal, but prioritize 3 types.** (1) Questions that provide value to all viewers. (2) Thoughtful insights worth highlighting. (3) Early comments in the first hour to boost initial engagement. Aim for a 20% to 30% response rate minimum.',
   },
 ];
 
@@ -80,7 +80,9 @@ export default function CommentRateCalculatorPage() {
             TikTok Comment Rate Calculator
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate your comment-to-view ratio to measure true community engagement beyond passive likes. This metric reveals how effectively your content sparks conversation and builds loyal audiences. High comment rates signal to TikTok's algorithm that your content is discussion-worthy, earning better distribution. Ideal comment rates range from 0.5-1% for most creators, with exceptional content exceeding 1%.
+            Calculate your comment-to-view ratio to measure true community engagement beyond passive likes. This metric reveals how effectively your content sparks conversation and builds loyal audiences.
+
+            High comment rates signal to the algorithm of TikTok that your content is discussion-worthy. This earns better distribution. Ideal comment rates range from 0.5% to 1% for most creators. Exceptional content exceeds 1%.
           </p>
         </div>
 
@@ -99,18 +101,18 @@ export default function CommentRateCalculatorPage() {
               </h2>
               <div className="space-y-4 text-body-md text-neutral-700">
                 <p>
-                  Comment rate measures what percentage of viewers leave comments on your content.
-                  It's calculated by dividing comments by views and indicates how well your content
+                  Comment rate measures the percentage of viewers who leave comments on your content.
+                  Divide comments by views to calculate it. The result indicates how well your content
                   sparks conversation and builds community.
                 </p>
                 <p>
                   <strong>Why it matters:</strong>
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Comments signal active engagement to TikTok's algorithm</li>
-                  <li>High comment rates build loyal communities around your content</li>
-                  <li>Comments increase video watch time as viewers read discussions</li>
-                  <li>Active comment sections boost content visibility and reach</li>
+                  <li>Signal active engagement to the algorithm of TikTok</li>
+                  <li>Build loyal communities around your content with high comment rates</li>
+                  <li>Increase video watch time as viewers read discussions</li>
+                  <li>Boost content visibility and reach through active comment sections</li>
                 </ul>
               </div>
             </Card>
@@ -314,23 +316,23 @@ This 0.5% comment rate indicates good community engagement`}
             faqs={[
               {
                 question: 'What is a good comment rate on TikTok?',
-                answer: 'Excellent: 1%+ (exceptional engagement), Good: 0.5-1% (strong community building), Average: 0.2-0.5% (typical), Below Average: <0.2% (needs improvement). Opinion and Q&A content should aim for 1%+, while educational content typically achieves 0.5-1%.',
+                answer: '**Comment rate benchmarks break into 4 tiers.** Excellent: 1%+ (exceptional engagement). Good: 0.5% to 1% (strong community building). Average: 0.2% to 0.5% (typical). Below Average: less than 0.2% (needs improvement). Opinion and Q&A content aims for 1%+. Educational content typically achieves 0.5% to 1%.',
               },
               {
                 question: 'Why do comments matter more than likes?',
-                answer: 'Comments require significantly more effort than likes, indicating deeper engagement. When viewers comment, they extend their watch time (boosting algorithmic performance), often return to check responses, and build community around your content.',
+                answer: '**Comments require significantly more effort than likes, indicating deeper engagement.** Viewers who comment extend their watch time, which boosts algorithmic performance. They often return to check responses. They build community around your content.',
               },
               {
                 question: 'How can I increase my comment rate?',
-                answer: 'Ask direct questions, share controversial but respectful opinions, create "this or that" choices, use "wrong answers only" prompts, request audience advice, make relatable call-out content, include specific comment CTAs, and respond to early comments quickly.',
+                answer: '**Use these 8 tactics to increase your comment rate.** Ask direct questions, share controversial but respectful opinions, create "this or that" choices, use "wrong answers only" prompts, request audience advice, make relatable call-out content, include specific comment CTAs, and respond to early comments quickly.',
               },
               {
                 question: 'Where can I see my comment count in TikTok Analytics?',
-                answer: 'Go to Creator Tools → Analytics → Content tab → Select a video → View engagement metrics. Comments are displayed alongside likes, shares, and saves.',
+                answer: '**Open Creator Tools, then Analytics, then the Content tab.** Select a video and view the engagement metrics. Comments are displayed alongside likes, shares, and saves.',
               },
               {
                 question: 'Should I respond to all comments?',
-                answer: 'While responding to every comment is ideal, prioritize: (1) Questions that provide value to all viewers, (2) Thoughtful insights worth highlighting, (3) Early comments in the first hour to boost initial engagement. Aim for 20-30% response rate minimum.',
+                answer: '**Responding to every comment is ideal, but prioritize 3 types.** (1) Questions that provide value to all viewers. (2) Thoughtful insights worth highlighting. (3) Early comments in the first hour to boost initial engagement. Aim for a 20% to 30% response rate minimum.',
               },
             ]}
           />

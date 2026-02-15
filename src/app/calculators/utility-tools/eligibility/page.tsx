@@ -12,23 +12,23 @@ import { ToolExplanationSection } from '@/components/calculator/ToolExplanationS
 const faqData = [
   {
     question: 'What are the requirements for TikTok Creator Fund?',
-    answer: 'Creator Fund requires: 10,000+ followers, 100,000+ video views in the last 30 days, 18+ years old, and residence in an eligible country (US, UK, Germany, France, Italy, Spain). Your account must be in good standing with Community Guidelines.'
+    answer: '**Creator Fund requires 4 things (10,000+ followers, 100,000+ video views in the last 30 days, 18+ years old, and residence in an eligible country).** Eligible countries include the US, UK, Germany, France, Italy, and Spain. Your account must be in good standing with Community Guidelines.'
   },
   {
     question: 'How do I qualify for TikTok LIVE?',
-    answer: 'TikTok LIVE requires 1,000+ followers and 18+ years old to go LIVE. To receive gifts (monetize), you need the same requirements plus your account must be at least 30 days old. Some regions have different requirements.'
+    answer: '**TikTok LIVE requires 1,000+ followers and 18+ years old to go LIVE.** To receive gifts and monetize, you need the same requirements. Your account must be at least 30 days old. Some regions have different requirements.'
   },
   {
     question: 'Can I join multiple TikTok monetization programs?',
-    answer: 'Yes! You can participate in Creator Fund, LIVE Gifts, Shop Affiliate, and Series simultaneously if you meet each program\'s requirements. Many creators diversify income across multiple TikTok monetization streams.'
+    answer: '**Yes, you participate in Creator Fund, LIVE Gifts, Shop Affiliate, and Series simultaneously.** Meet the requirements of each program to qualify. Diversify income across multiple TikTok monetization streams.'
   },
   {
     question: 'What does "account in good standing" mean?',
-    answer: 'Good standing means no recent Community Guidelines violations, no copyright strikes, no fake engagement, and authentic content. Violations can temporarily or permanently disqualify you from monetization programs.'
+    answer: '**Good standing means no recent Community Guidelines violations, no copyright strikes, no fake engagement, and authentic content.** Violations temporarily or permanently disqualify you from monetization programs.'
   },
   {
     question: 'How long does it take to get approved for monetization?',
-    answer: 'Approval times vary by program. Creator Fund: 1-7 days. LIVE access: instant once requirements met. Shop Affiliate: 1-3 days. If you meet requirements but aren\'t approved, contact TikTok support.'
+    answer: '**Approval times vary by program.** Creator Fund takes 1 to 7 days. LIVE access is instant once requirements are met. Shop Affiliate takes 1 to 3 days. Contact TikTok support if you meet requirements but are not approved.'
   },
   {
     question: 'Why was my monetization application rejected?',
@@ -142,7 +142,9 @@ export default function EligibilityCalculatorPage() {
             <CheckCircle size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Monetization Eligibility</h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop. This eligibility checker evaluates your account against official TikTok requirements for all monetization features. Enter your follower count, video views, age, and location to see which programs you can access. Understand exactly what's needed to unlock Creator Fund, LIVE Gifts, Shop Affiliate, Series, and Creator Rewards. Get instant feedback on your eligibility status and know what milestones to reach next for monetization opportunities.</p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for the monetization programs of TikTok including Creator Fund, LIVE, and Shop. This eligibility checker evaluates your account against official TikTok requirements for all monetization features.
+
+            Enter your follower count, video views, age, and location to see which programs you access. Understand exactly what you need to unlock Creator Fund, LIVE Gifts, Shop Affiliate, Series, and Creator Rewards. Get instant feedback on your eligibility status. Know what milestones to reach next for monetization opportunities.</p>
         </div>
 
         <div className="max-w-3xl mx-auto mb-12 space-y-6">

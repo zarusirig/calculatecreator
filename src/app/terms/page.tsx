@@ -36,7 +36,7 @@ export default function TermsPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Acceptance of Terms</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              By accessing and using TikTok Creator Calculator, you agree to these Terms of Service. If you disagree with any part, please discontinue use.
+              By accessing and using TikTok Creator Calculator, you agree to these Terms of Service. Discontinue use if you disagree with any part.
             </p>
           </Card>
 
@@ -73,7 +73,7 @@ export default function TermsPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Data Accuracy</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              We strive for accuracy using verified data sources. However, TikTok's monetization programs change frequently. We update data quarterly but cannot guarantee real-time accuracy. Always verify with official TikTok sources.
+              We strive for accuracy using verified data sources. The monetization programs of TikTok change frequently. We update data quarterly but do not guarantee real-time accuracy. Verify with official TikTok sources.
             </p>
           </Card>
 
@@ -87,7 +87,7 @@ export default function TermsPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Intellectual Property</h2>
             <p className="text-body-md text-neutral-700 mb-4">
-              All content on this site (text, calculators, formulas, design) is owned by TikTok Creator Calculator and protected by copyright.
+              TikTok Creator Calculator owns all content on this site (text, calculators, formulas, design). Copyright law protects this content.
             </p>
             <p className="text-body-md text-neutral-700">
               <strong>You may:</strong> Use calculators for personal purposes, share links to our site<br />
@@ -98,7 +98,7 @@ export default function TermsPage() {
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Changes to Service</h2>
             <p className="text-body-md text-neutral-700 leading-relaxed">
-              We reserve the right to modify, suspend, or discontinue any part of the service at any time without notice. We may also update calculators, change methodologies, or adjust data sources to maintain accuracy.
+              We reserve the right to modify, suspend, or discontinue any part of the service at any time without notice. We update calculators, change methodologies, and adjust data sources to maintain accuracy.
             </p>
           </Card>
 
@@ -126,13 +126,13 @@ export default function TermsPage() {
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Earnings Calculators</h3>
                 <p>
-                  All earnings estimates (Creator Fund, brand deals, LIVE gifts, TikTok Shop) are projections based on industry averages and historical data. Actual earnings depend on numerous factors including but not limited to: content quality, audience engagement, niche competitiveness, geographic location, platform algorithm changes, advertiser demand, and economic conditions. We do not guarantee any level of earnings.
+                  All earnings estimates (Creator Fund, brand deals, LIVE gifts, TikTok Shop) are projections based on industry averages and historical data. Actual earnings depend on content quality, audience engagement, niche competitiveness, geographic location, platform algorithm changes, advertiser demand, and economic conditions. We do not guarantee any level of earnings.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h3>
                 <p>
-                  The Creator Tax Calculator provides estimates for educational purposes only. Tax obligations vary based on individual circumstances, state laws, deductions, credits, and other factors we cannot account for in a general calculator. Always consult a qualified tax professional or CPA for personalized tax advice. We are not responsible for tax filing errors or penalties resulting from use of our calculator.
+                  The Creator Tax Calculator provides estimates for educational purposes only. Tax obligations vary based on individual circumstances, state laws, deductions, credits, and other factors we do not account for in a general calculator. Consult a qualified tax professional or Certified Public Accountant (CPA) for personalized tax advice. We are not responsible for tax filing errors or penalties resulting from use of our calculator.
                 </p>
               </div>
               <div>
@@ -144,7 +144,7 @@ export default function TermsPage() {
               <div>
                 <h3 className="font-semibold text-neutral-900 mb-2">ROI and Business Calculators</h3>
                 <p>
-                  Business calculators (production costs, break-even analysis, sponsorship ROI) use standard financial formulas but cannot account for your unique business circumstances. These tools are for preliminary planning; professional financial advisors should review significant business decisions.
+                  Business calculators (production costs, break-even analysis, sponsorship ROI) use standard financial formulas but do not account for your unique business circumstances. These tools are for preliminary planning. Have professional financial advisors review significant business decisions.
                 </p>
               </div>
             </div>
@@ -154,19 +154,19 @@ export default function TermsPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">TikTok Platform Changes</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                TikTok frequently updates its Creator Fund payments, algorithm, monetization requirements, and platform policies. We strive to keep our calculators current with these changes, but there may be delays between TikTok announcements and our updates.
+                TikTok frequently updates its Creator Fund payments, algorithm, monetization requirements, and platform policies. We strive to keep our calculators current with these changes. There are sometimes delays between TikTok announcements and our updates.
               </p>
 
               <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Known Variables</h3>
               <ul className="list-disc list-inside ml-4 space-y-2">
-                <li><strong>Creator Fund Rates:</strong> TikTok's payment rates fluctuate based on advertiser revenue, view counts, and regional factors. Our calculator uses current averages but cannot predict rate changes.</li>
-                <li><strong>Monetization Thresholds:</strong> Minimum follower counts, age requirements, and eligibility criteria may change. Verify current requirements on TikTok's official creator portal.</li>
-                <li><strong>Regional Availability:</strong> TikTok features and monetization programs vary by country. Our calculators include region-specific data where available, but some features may not be available in your location.</li>
-                <li><strong>New Features:</strong> TikTok regularly launches new monetization features (e.g., Creativity Program, Effect Creator Rewards). We add calculators for new features after sufficient data becomes available to ensure accuracy.</li>
+                <li><strong>Creator Fund Rates:</strong> Payment rates of TikTok fluctuate based on advertiser revenue, view counts, and regional factors. Our calculator uses current averages but does not predict rate changes.</li>
+                <li><strong>Monetization Thresholds:</strong> Minimum follower counts, age requirements, and eligibility criteria change over time. Verify current requirements on the official creator portal of TikTok.</li>
+                <li><strong>Regional Availability:</strong> TikTok features and monetization programs vary by country. Our calculators include region-specific data where available, but some features are not available in every location.</li>
+                <li><strong>New Features:</strong> TikTok regularly launches new monetization features (for example, Creativity Program and Effect Creator Rewards). We add calculators for new features after sufficient data becomes available to ensure accuracy.</li>
               </ul>
 
               <p className="mt-4">
-                We recommend checking TikTok's official documentation and creator resources for the most current platform information.
+                Check the official documentation and creator resources of TikTok for the most current platform information.
               </p>
             </div>
           </Card>
@@ -416,7 +416,7 @@ export default function TermsPage() {
             <div className="space-y-4 text-body-md text-neutral-700">
               <h3 className="font-semibold text-neutral-900 mb-2">Severability</h3>
               <p>
-                If any provision of these Terms is found to be unenforceable or invalid by a court of law, that provision shall be modified to the minimum extent necessary to make it enforceable, or if that's not possible, severed from these Terms. The remaining provisions shall continue in full force and effect.
+                A court of law finding any provision of these Terms unenforceable or invalid triggers modification to the minimum extent necessary. The court severs the provision from these Terms if modification is not possible. The remaining provisions continue in full force and effect.
               </p>
 
               <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Waiver</h3>
@@ -443,7 +443,7 @@ export default function TermsPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Assignment</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                You may not assign, transfer, or delegate your rights or obligations under these Terms without our prior written consent. We may freely assign these Terms or any rights under them to any third party without restriction, including in connection with a merger, acquisition, reorganization, or sale of assets.
+                Do not assign, transfer, or delegate your rights or obligations under these Terms without our prior written consent. We freely assign these Terms or any rights under them to any third party without restriction. This includes assignment in connection with a merger, acquisition, reorganization, or sale of assets.
               </p>
             </div>
           </Card>
@@ -461,7 +461,7 @@ export default function TermsPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Contact</h2>
             <div className="space-y-4 text-body-md text-neutral-700">
               <p>
-                Questions, concerns, or notices regarding these Terms of Service should be sent to:
+                Send questions, concerns, or notices regarding these Terms of Service to the following address.
               </p>
 
               <div className="mt-4 space-y-3">

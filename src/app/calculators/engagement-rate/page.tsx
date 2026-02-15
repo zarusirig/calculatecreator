@@ -24,51 +24,51 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'What is a good engagement rate on TikTok in 2026?',
-    answer: 'A good TikTok engagement rate in 2026 is 4-6% for most creators. Micro-influencers (1K-50K followers) often achieve 6-10%+ rates. Larger accounts (100K+) typically see 2-4%. Rates above 6% are considered excellent and highly attractive to brands.',
+    answer: '**A good TikTok engagement rate in 2026 is 4% to 6% for most creators.** Micro-influencers (1K to 50K followers) often achieve 6% to 10%+ rates. Larger accounts (100K+) see 2% to 4%. Rates above 6% are considered excellent and highly attractive to brands.',
   },
   {
     question: 'How do you calculate TikTok engagement rate?',
-    answer: 'Engagement rate is calculated as: (Likes + Comments + Shares) ÷ Total Followers × 100. Some methods also include saves or divide by views instead of followers. Our calculator supports multiple formulas for comprehensive analysis.',
+    answer: '**Engagement rate is calculated as (Likes + Comments + Shares) divided by Total Followers multiplied by 100.** Some methods include saves or divide by views instead of followers. Our calculator supports multiple formulas for comprehensive analysis.',
   },
   {
     question: 'Why is engagement rate important for creators?',
-    answer: 'Engagement rate is the primary metric brands use to evaluate creators for partnerships. High engagement indicates an active, loyal audience that trusts your recommendations. Brands often pay 20-50% premiums for creators with above-average engagement.',
+    answer: '**Engagement rate is the primary metric that brands use to evaluate creators for partnerships.** High engagement indicates an active, loyal audience that trusts your recommendations. Brands pay 20% to 50% premiums for creators with above-average engagement.',
   },
   {
     question: 'What engagement rate do brands look for?',
-    answer: 'Most brands seek creators with 4%+ engagement rates. Premium brands may require 6%+ for partnerships. However, engagement is evaluated alongside follower count and niche relevance. A 50K account with 8% engagement is often preferred over 500K with 2%.',
+    answer: '**Most brands seek creators with 4%+ engagement rates.** Premium brands require 6%+ for partnerships. Engagement is evaluated alongside follower count and niche relevance. A 50K account with 8% engagement is preferred over 500K with 2%.',
   },
   {
     question: 'Why does engagement rate decrease as followers increase?',
-    answer: 'Larger audiences naturally include more passive followers who rarely engage. The algorithm also shows content to broader, less targeted audiences. This is normal - focus on maintaining quality over chasing vanity follower counts.',
+    answer: '**Larger audiences naturally include more passive followers who rarely engage.** The algorithm shows content to broader, less targeted audiences. This is normal. Focus on maintaining quality over chasing vanity follower counts.',
   },
   {
     question: 'How do I improve my TikTok engagement rate?',
-    answer: 'Key strategies: Post during peak hours when your audience is active, use strong hooks in the first second, ask questions to encourage comments, respond to comments quickly, create duet and stitch-worthy content, and use relevant hashtags to reach interested viewers.',
+    answer: '**Use 6 key strategies to improve engagement.** Post during peak hours when your audience is active. Use strong hooks in the first second. Ask questions to encourage comments. Respond to comments quickly. Create duet and stitch-worthy content. Use relevant hashtags to reach interested viewers.',
   },
   {
     question: 'Does engagement rate affect the TikTok algorithm?',
-    answer: 'Yes significantly. TikTok\'s algorithm prioritizes videos with high engagement in the first 30-60 minutes. Comments and shares are weighted higher than likes. Videos that drive strong early engagement are pushed to the For You Page more aggressively.',
+    answer: '**Yes, engagement rate significantly affects the algorithm.** The algorithm of TikTok prioritizes videos with high engagement in the first 30 to 60 minutes. Comments and shares are weighted higher than likes. Videos that drive strong early engagement are pushed to the For You Page more aggressively.',
   },
   {
     question: 'What is the average TikTok engagement rate by follower count?',
-    answer: 'Average rates by tier: Nano (1K-5K): 8-15%, Micro (5K-50K): 5-8%, Mid-tier (50K-500K): 3-5%, Macro (500K-1M): 2-4%, Mega (1M+): 1-3%. These are industry averages - your rate should be compared to creators in your specific niche.',
+    answer: '**Average rates by tier are as follows.** Nano (1K to 5K): 8% to 15%. Micro (5K to 50K): 5% to 8%. Mid-tier (50K to 500K): 3% to 5%. Macro (500K to 1M): 2% to 4%. Mega (1M+): 1% to 3%. These are industry averages. Compare your rate to creators in your specific niche.',
   },
   {
     question: 'Should I calculate engagement by followers or by views?',
-    answer: 'Both metrics are useful. Engagement by followers shows overall audience loyalty and is what brands typically evaluate. Engagement by views shows how well individual videos perform with new audiences. We recommend tracking both for comprehensive insights.',
+    answer: '**Both metrics are useful.** Engagement by followers shows overall audience loyalty and is what brands evaluate. Engagement by views shows how well individual videos perform with new audiences. Track both for comprehensive insights.',
   },
   {
     question: 'How often should I check my engagement rate?',
-    answer: 'Review engagement weekly or bi-weekly to spot trends. Avoid checking daily as individual videos can skew data. Calculate using your last 10-20 posts for an accurate average. Track changes over time to measure content strategy effectiveness.',
+    answer: '**Review engagement weekly or bi-weekly to spot trends.** Avoid checking daily because individual videos skew data. Calculate using your last 10 to 20 posts for an accurate average. Track changes over time to measure the effectiveness of your content strategy.',
   },
   {
     question: 'What niches have the highest engagement rates on TikTok?',
-    answer: 'High-engagement niches include: Comedy and entertainment (7-12%), Pets and animals (6-10%), Beauty and fashion tutorials (5-8%), Fitness challenges (5-8%). Lower engagement niches include news commentary (2-4%) and brand accounts (1-3%).',
+    answer: '**High-engagement niches include comedy and entertainment at 7% to 12%.** Pets and animals achieve 6% to 10%. Beauty and fashion tutorials reach 5% to 8%. Fitness challenges hit 5% to 8%. Lower engagement niches include news commentary at 2% to 4% and brand accounts at 1% to 3%.',
   },
   {
     question: 'Can I have too high an engagement rate?',
-    answer: 'Extremely high rates (20%+) can sometimes indicate fake engagement or very small audiences. However, genuinely viral content or highly niche accounts can achieve authentic high engagement. Brands verify authenticity through engagement patterns and audience quality.',
+    answer: '**Extremely high rates of 20%+ sometimes indicate fake engagement or very small audiences.** Genuinely viral content or highly niche accounts achieve authentic high engagement. Brands verify authenticity through engagement patterns and audience quality.',
   },
 ];
 
@@ -111,7 +111,7 @@ export default function EngagementRateCalculatorPage() {
               TikTok Engagement Rate Calculator 2026
             </h1>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
-              Calculate your TikTok engagement rate instantly and compare against 2026 industry benchmarks. Engagement rate is the most important metric brands evaluate when considering creator partnerships. Our calculator analyzes your likes, comments, shares, and follower count to determine your performance tier and earning potential. Whether you are pitching to brands or optimizing your content strategy, understanding your engagement rate is essential for success on TikTok in 2026. Higher engagement rates directly correlate with better brand deal opportunities and algorithm performance.
+              Calculate your TikTok engagement rate instantly and compare against 2026 industry benchmarks. Engagement rate is the most important metric that brands evaluate for creator partnerships. Our calculator analyzes your likes, comments, shares, and follower count to determine your performance tier and earning potential. Understanding your engagement rate is essential for success on TikTok in 2026, whether you are pitching to brands or optimizing your content strategy. Higher engagement rates directly correlate with better brand deal opportunities and algorithm performance.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-neutral-500">
               <span className="flex items-center gap-1"><BarChart3 size={16} /> Industry Benchmarks</span>
@@ -214,7 +214,7 @@ export default function EngagementRateCalculatorPage() {
                 <CheckCircle size={24} className="text-success-600" /> What Counts as Engagement
               </h2>
               <p className="text-body-md text-neutral-700 mb-4">
-                TikTok engagement includes multiple interaction types, each weighted differently by the algorithm:
+                TikTok engagement includes multiple interaction types. The algorithm weights each one differently.
               </p>
               <div className="space-y-3">
                 {[
@@ -301,7 +301,7 @@ export default function EngagementRateCalculatorPage() {
               <div className="space-y-4 text-body-sm">
                 <div className="p-4 bg-success-50 rounded-lg border border-success-200">
                   <h4 className="font-semibold text-success-800 mb-1">8%+ Engagement Rate</h4>
-                  <p className="text-neutral-700">Premium partnerships, exclusive campaigns, ambassador programs. Can command 50-100% rate premiums.</p>
+                  <p className="text-neutral-700">Premium partnerships, exclusive campaigns, and ambassador programs. Command 50% to 100% rate premiums.</p>
                 </div>
                 <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
                   <h4 className="font-semibold text-primary-800 mb-1">5-8% Engagement Rate</h4>
@@ -309,7 +309,7 @@ export default function EngagementRateCalculatorPage() {
                 </div>
                 <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
                   <h4 className="font-semibold text-neutral-800 mb-1">3-5% Engagement Rate</h4>
-                  <p className="text-neutral-700">Competitive market, may need to lower rates or focus on volume. Improve engagement for better deals.</p>
+                  <p className="text-neutral-700">Competitive market. You need to lower rates or focus on volume. Improve engagement for better deals.</p>
                 </div>
                 <div className="p-4 bg-warning-50 rounded-lg border border-warning-200">
                   <h4 className="font-semibold text-warning-800 mb-1">Below 3% Engagement</h4>

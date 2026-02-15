@@ -79,7 +79,9 @@ export default function NicheSelectionPage() {
         {/* Introduction */}
         <Card>
           <p className="text-body-lg text-neutral-700 leading-relaxed mb-4">
-            Choosing the right niche is arguably the most important decision you'll make as a TikTok creator, directly impacting your growth potential, monetization opportunities, content sustainability, and long-term success on the platform. A well-chosen niche allows you to establish clear authority and expertise, attract a highly engaged audience, command premium brand deal rates, create content consistently without burnout, and stand out in an increasingly crowded creator economy. The mistake many new creators make is either going too broad (trying to appeal to everyone) or picking a niche based solely on what seems profitable without considering their own knowledge, passion, and unique perspective. This comprehensive niche selection guide walks you through a proven framework for identifying profitable content categories that align with your strengths, analyzing competition and market demand, understanding monetization potential across different niches, and developing a strategic approach to niche positioning that sets you up for sustainable creator success and maximum earning potential.
+            Choosing the right niche is the most important decision you make as a TikTok creator. It directly impacts your growth potential, monetization opportunities, content sustainability, and long-term success. A well-chosen niche lets you establish clear authority, attract an engaged audience, command premium brand deal rates, create content without burnout, and stand out in the creator economy.
+
+            New creators often make 2 mistakes. They go too broad and try to appeal to everyone. Or they pick a niche based on profit alone without considering their own knowledge, passion, and unique perspective. This guide walks you through a proven framework for identifying profitable content categories that align with your strengths. Learn to analyze competition and market demand, understand monetization potential across different niches, and develop a strategic approach to niche positioning.
           </p>
         </Card>
 
@@ -488,23 +490,23 @@ export default function NicheSelectionPage() {
           faqs={[
             {
               question: 'How specific should my niche be when starting on TikTok?',
-              answer: 'Start ultra-specific within a sub-niche for the first 3-6 months to establish authority quickly. For example, "budget meal prep for college students" rather than "cooking." Once you have 10K+ followers and proven content, gradually expand to adjacent topics. Being the top creator in a micro-niche is more valuable than being mediocre in a broad category.'
+              answer: '**Start ultra-specific within a sub-niche for the first 3 to 6 months to establish authority quickly.** Choose "budget meal prep for college students" rather than "cooking." Gradually expand to adjacent topics once you have 10K+ followers and proven content. Being the top creator in a micro-niche is more valuable than being mediocre in a broad category.'
             },
             {
               question: 'Can I be successful in a saturated niche like beauty or fitness?',
-              answer: 'Yes, but you need a unique angle or target a specific underserved demographic. Instead of "beauty tips," try "makeup for mature skin over 50" or "beauty on a $20 budget." Saturation means proven demand—success comes from differentiation, not avoiding competition. Find gaps in content formats, target audiences, or problem-solving approaches.'
+              answer: '**Yes, but you need a unique angle or a specific underserved demographic.** Try "makeup for mature skin over 50" or "beauty on a $20 budget" instead of "beauty tips." Saturation means proven demand. Success comes from differentiation, not from avoiding competition. Find gaps in content formats, target audiences, or problem-solving approaches.'
             },
             {
               question: 'What if I have expertise in multiple unrelated areas?',
-              answer: 'Pick ONE niche for your main account, then create separate accounts for other topics once you have proven success. Trying to cover finance + gaming + fitness on one account confuses the algorithm and dilutes your brand. Most successful multi-niche creators built authority in one area first, then expanded. Focus beats fragmentation.'
+              answer: '**Pick 1 niche for your main account, then create separate accounts for other topics once you prove success.** Covering finance, gaming, and fitness on 1 account confuses the algorithm and dilutes your brand. Most successful multi-niche creators built authority in 1 area first, then expanded. Focus beats fragmentation.'
             },
             {
               question: 'How do I know if my niche has enough monetization potential?',
-              answer: 'Check these signals: 1) Are there products or services people buy related to your niche? 2) Do brands advertise in this space? 3) Would someone pay $20-100 for a course on this topic? 4) Are there established creators earning from it? If yes to 3+ questions, monetization potential exists. Entertainment niches are fun but harder to monetize than educational/aspirational niches.'
+              answer: '**Check these 4 signals to gauge monetization potential.** First, are there products or services people buy related to your niche? Second, do brands advertise in this space? Third, would someone pay $20 to $100 for a course on this topic? Fourth, are there established creators earning from it? Monetization potential exists if you answer yes to 3+ questions. Entertainment niches are fun but harder to monetize than educational or aspirational niches.'
             },
             {
               question: 'Should I choose a profitable niche I am not passionate about?',
-              answer: 'No—you will burn out. Creating 100+ videos on a topic you do not care about is unsustainable. Find the overlap between profitable niches AND your genuine interests/expertise. If you love gaming but it is hard to monetize, pivot to "productivity for gamers" or "career advice for esports." Combine passion with profit for long-term success.'
+              answer: '**No, you will burn out.** Creating 100+ videos on a topic you do not care about is unsustainable. Find the overlap between profitable niches and your genuine interests or expertise. Pivot to "productivity for gamers" or "career advice for esports" if you love gaming but find it hard to monetize. Combine passion with profit for long-term success.'
             }
           ]}
         />

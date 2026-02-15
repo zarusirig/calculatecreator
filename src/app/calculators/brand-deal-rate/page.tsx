@@ -24,51 +24,51 @@ export const metadata: Metadata = {
 const faqData = [
   {
     question: 'How much should I charge for a TikTok brand deal?',
-    answer: 'Typical rates by follower count: 5K-10K followers: $100-$500/post, 10K-50K: $500-$2,500/post, 50K-100K: $2,500-$5,000/post, 100K-500K: $5,000-$15,000/post, 500K+: $15,000-$50,000+/post. Rates vary by niche, engagement, and usage rights.',
+    answer: '**Typical rates by follower count are as follows.** 5K to 10K followers: $100 to $500 per post. 10K to 50K: $500 to $2,500 per post. 50K to 100K: $2,500 to $5,000 per post. 100K to 500K: $5,000 to $15,000 per post. 500K+: $15,000 to $50,000+ per post. Rates vary by niche, engagement, and usage rights.',
   },
   {
     question: 'What factors affect brand deal pricing?',
-    answer: 'Key factors include: follower count, engagement rate (most important), content niche, audience demographics, past brand work quality, usage rights requested, exclusivity terms, number of deliverables, and turnaround time. High engagement can double your rates.',
+    answer: '**Key factors include follower count, engagement rate (the most important), and content niche.** Audience demographics, past brand work quality, usage rights requested, exclusivity terms, number of deliverables, and turnaround time all play a role. High engagement doubles your rates.',
   },
   {
     question: 'What is a good engagement rate for brand deals?',
-    answer: 'Brands typically seek creators with 4%+ engagement rates. Premium brands may require 6%+ for partnerships. A creator with 50K followers and 8% engagement often earns more than someone with 200K followers and 2% engagement.',
+    answer: '**Brands seek creators with 4%+ engagement rates.** Premium brands require 6%+ for partnerships. A creator with 50K followers and 8% engagement earns more than someone with 200K followers and 2% engagement.',
   },
   {
     question: 'Should I charge more for usage rights?',
-    answer: 'Yes! Usage rights can add 25-100% to your base rate. Organic usage (brand reposts): add 25-50%. Paid advertising usage: add 50-100%. Exclusivity (no competitor posts): add 25-50%. Whitelisting (ads from your account): add 50-100%.',
+    answer: '**Yes, usage rights add 25% to 100% to your base rate.** Organic usage through brand reposts adds 25% to 50%. Paid advertising usage adds 50% to 100%. Exclusivity with no competitor posts adds 25% to 50%. Whitelisting for ads from your account adds 50% to 100%.',
   },
   {
     question: 'How do I negotiate brand deal rates?',
-    answer: 'Start 20-30% higher than your target rate. Provide a media kit with analytics. Emphasize engagement over follower count. Ask about usage rights and exclusivity first. Be willing to offer package deals for multiple posts.',
+    answer: '**Start 20% to 30% higher than your target rate.** Provide a media kit with analytics. Emphasize engagement over follower count. Ask about usage rights and exclusivity first. Offer package deals for multiple posts.',
   },
   {
     question: 'What niches command the highest brand deal rates?',
-    answer: 'Highest-paying niches: Finance/investing (2-3x average), Technology/SaaS, Health/wellness with credentials, B2B/business, Luxury lifestyle. Average-paying: Beauty, fashion, fitness. Lower-paying: Entertainment, comedy, gaming.',
+    answer: '**The highest-paying niches include finance and investing at 2x to 3x the average.** Technology and SaaS, health and wellness with credentials, B2B and business, and luxury lifestyle all pay premium rates. Average-paying niches include beauty, fashion, and fitness. Lower-paying niches include entertainment, comedy, and gaming.',
   },
   {
     question: 'Do brand deals pay more than Creator Fund?',
-    answer: 'Significantly more. A creator earning $50/month from Creator Fund with 50K followers could earn $1,000-$3,000 from a single brand deal. Most successful creators earn 10-50x more from brand deals than Creator Fund.',
+    answer: '**Yes, brand deals pay significantly more.** A creator earning $50 per month from the Creator Fund with 50K followers earns $1,000 to $3,000 from a single brand deal. Most successful creators earn 10x to 50x more from brand deals than the Creator Fund.',
   },
   {
     question: 'How many brand deals should I do per month?',
-    answer: 'Most creators recommend 2-4 sponsored posts per month maximum to maintain authenticity. Posting too much sponsored content can hurt engagement and audience trust. Quality over quantity leads to higher long-term rates.',
+    answer: '**Most creators recommend 2 to 4 sponsored posts per month maximum to maintain authenticity.** Posting too much sponsored content hurts engagement and audience trust. Quality over quantity leads to higher long-term rates.',
   },
   {
     question: 'What should I include in my brand deal deliverables?',
-    answer: 'Common deliverables: 1-3 TikTok videos, specific talking points or script approval, caption requirements, hashtag usage, link in bio placement, posting within specific timeframe, performance reports post-campaign, and revisions if needed.',
+    answer: '**Common deliverables include 1 to 3 TikTok videos.** Include specific talking points or script approval, caption requirements, hashtag usage, link in bio placement, posting within a specific timeframe, performance reports after the campaign, and revisions when needed.',
   },
   {
     question: 'How do I find brand deals?',
-    answer: 'Methods include: Influencer platforms (AspireIQ, Grin, Creator.co), direct brand outreach with media kit, TikTok Creator Marketplace, talent agencies and managers, responding to brand DMs professionally, networking with other creators.',
+    answer: '**Use 6 methods to find brand deals.** Join influencer platforms like AspireIQ, Grin, and Creator.co. Do direct brand outreach with a media kit. List on TikTok Creator Marketplace. Work with talent agencies and managers. Respond to brand DMs professionally. Network with other creators.',
   },
   {
     question: 'Should I accept free products instead of payment?',
-    answer: 'Generally no for established creators (5K+ followers). Free products devalue your work and set poor precedent. Exceptions: high-value products you genuinely want, brands you want to build relationships with, or truly passionate collaborations.',
+    answer: '**Generally no for established creators with 5K+ followers.** Free products devalue your work and set poor precedent. Exceptions include high-value products you genuinely want, brands you want to build relationships with, and truly passionate collaborations.',
   },
   {
     question: 'What metrics should I show brands?',
-    answer: 'Essential metrics: follower count, engagement rate, average video views, audience demographics (age, location, gender), past sponsored content performance, growth rate, niche relevance, and any case studies from previous partnerships.',
+    answer: '**Show brands these essential metrics.** Follower count, engagement rate, average video views, audience demographics (age, location, and gender), past sponsored content performance, growth rate, niche relevance, and case studies from previous partnerships.',
   },
 ];
 
