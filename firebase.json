@@ -8,6 +8,71 @@
     ],
     "redirects": [
       {
+        "source": "/calculators/coins-to-usd{,/}",
+        "destination": "/calculators/coins/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-rate/good-engagement-rate-tiktok{,/}",
+        "destination": "/calculators/engagement-rate/good-tiktok-engagement-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/gift-value{,/}",
+        "destination": "/calculators/coins-gifts-diamonds/gift/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/influencer-pricing{,/}",
+        "destination": "/calculators/engagement-influence/influencer-pricing/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/live-earnings{,/}",
+        "destination": "/calculators/earnings-revenue/live-earnings/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/tiktok-gift-value{,/}",
+        "destination": "/calculators/coins-gifts-diamonds/gift/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/tiktok-gifts{,/}",
+        "destination": "/calculators/live-gifts/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/tiktok-shop{,/}",
+        "destination": "/calculators/commerce-ads/shop-profit/",
+        "type": 301
+      },
+      {
+        "source": "/guides/best-times-to-go-live{,/}",
+        "destination": "/guides/best-times-go-live/",
+        "type": 301
+      },
+      {
+        "source": "/guides/how-much-to-charge-for-sponsorships{,/}",
+        "destination": "/guides/how-much-to-charge-sponsorship/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-live-earnings{,/}",
+        "destination": "/guides/tiktok-live-earnings-guide/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-live-gifts{,/}",
+        "destination": "/guides/tiktok-gifts/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-live-requirements{,/}",
+        "destination": "/guides/how-to-qualify-for-tiktok-live/",
+        "type": 301
+      },
+      {
         "source": "/guides/how-to-get-brand-deals-complete{,/}",
         "destination": "/guides/how-to-get-brand-deals/",
         "type": 301
