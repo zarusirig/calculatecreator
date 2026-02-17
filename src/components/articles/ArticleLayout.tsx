@@ -4,7 +4,9 @@ import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSche
 import { ArticleFrontmatter } from '@/lib/content/types';
 import { getRelatedArticleLinks } from '@/lib/content';
 import { AdPlacement } from '@/components/ads/AdPlacement';
-import { Calculator, Clock, Calendar, ArrowRight, ChevronRight } from 'lucide-react';
+import { ArticleAuthorBio } from '@/components/articles/ArticleAuthorBio';
+import { resolveAuthorFromFrontmatter } from '@/lib/constants/authors';
+import { Calculator, Clock, Calendar, ArrowRight, ArrowUpRight } from 'lucide-react';
 
 interface ArticleLayoutProps {
   frontmatter: ArticleFrontmatter;
@@ -73,62 +75,74 @@ function buildSchemaItems(section: string, frontmatter: ArticleFrontmatter) {
 
 function RelatedContentNav({ frontmatter }: { frontmatter: ArticleFrontmatter }) {
   const links = getRelatedArticleLinks(frontmatter);
-  const hasLinks = links.parent || links.siblings.length > 0 || links.related.length > 0 || links.children.length > 0;
+  const relatedSections = [
+    { label: 'Core Context', items: links.parent ? [links.parent] : [] },
+    { label: 'Sibling Topics', items: links.siblings },
+    { label: 'Next Reads', items: links.children },
+    { label: 'Related Deep Dives', items: links.related },
+  ];
 
-  if (!hasLinks) return null;
+  const seenLinks = new Set<string>();
+  const dedupedSections = relatedSections
+    .map((section) => {
+      const items = section.items.filter((article): article is NonNullable<typeof article> => Boolean(article));
+      const uniqueItems = items.filter((article) => {
+        const key = `${article.frontmatter.category}/${article.frontmatter.slug}`;
+        if (seenLinks.has(key)) return false;
+        seenLinks.add(key);
+        return true;
+      });
+
+      return {
+        label: section.label,
+        items: uniqueItems,
+      };
+    })
+    .filter(section => section.items.length > 0);
+
+  if (dedupedSections.length === 0) return null;
 
   return (
-    <nav className="mt-12 p-6 bg-white border border-neutral-200 rounded-xl" aria-label="Related content">
-      <h3 className="text-heading-lg font-bold text-neutral-900 mb-4">
-        Related Content
-      </h3>
-      <div className="space-y-3">
-        {links.parent && (
-          <Link
-            href={`/${links.parent.frontmatter.category}/${links.parent.frontmatter.slug}/`}
-            className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-primary-50 transition-colors group"
+    <nav className="mt-12 rounded-2xl border border-neutral-200 bg-white p-5 md:p-6" aria-label="Related content">
+      <div className="mb-5 border-b border-neutral-100 pb-4">
+        <p className="text-body-xs font-semibold uppercase tracking-[0.14em] text-primary-600 mb-2">
+          Continue Reading
+        </p>
+        <h3 className="text-heading-lg font-bold text-neutral-900">
+          Related Content
+        </h3>
+      </div>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        {dedupedSections.map((section) => (
+          <section
+            key={section.label}
+            className="rounded-xl border border-neutral-200 bg-neutral-50/70 p-4"
+            aria-label={section.label}
           >
-            <ChevronRight size={16} className="text-primary-500 group-hover:translate-x-0.5 transition-transform" />
-            <span className="text-body-md text-neutral-700 group-hover:text-primary-600">
-              {links.parent.frontmatter.title}
-            </span>
-          </Link>
-        )}
-        {links.siblings.map((article) => (
-          <Link
-            key={article!.frontmatter.slug}
-            href={`/${article!.frontmatter.category}/${article!.frontmatter.slug}/`}
-            className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-primary-50 transition-colors group"
-          >
-            <ChevronRight size={16} className="text-neutral-400 group-hover:text-primary-500 group-hover:translate-x-0.5 transition-transform" />
-            <span className="text-body-md text-neutral-700 group-hover:text-primary-600">
-              {article!.frontmatter.title}
-            </span>
-          </Link>
-        ))}
-        {links.children.map((article) => (
-          <Link
-            key={article!.frontmatter.slug}
-            href={`/${article!.frontmatter.category}/${article!.frontmatter.slug}/`}
-            className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-primary-50 transition-colors group"
-          >
-            <ChevronRight size={16} className="text-neutral-400 group-hover:text-primary-500 group-hover:translate-x-0.5 transition-transform" />
-            <span className="text-body-md text-neutral-700 group-hover:text-primary-600">
-              {article!.frontmatter.title}
-            </span>
-          </Link>
-        ))}
-        {links.related.map((article) => (
-          <Link
-            key={article!.frontmatter.slug}
-            href={`/${article!.frontmatter.category}/${article!.frontmatter.slug}/`}
-            className="flex items-center gap-2 p-3 rounded-lg bg-neutral-50 hover:bg-primary-50 transition-colors group"
-          >
-            <ChevronRight size={16} className="text-neutral-400 group-hover:text-primary-500 group-hover:translate-x-0.5 transition-transform" />
-            <span className="text-body-md text-neutral-700 group-hover:text-primary-600">
-              {article!.frontmatter.title}
-            </span>
-          </Link>
+            <p className="mb-3 text-body-xs font-semibold uppercase tracking-[0.14em] text-neutral-600">
+              {section.label}
+            </p>
+            <ul className="space-y-2.5">
+              {section.items.map((article) => (
+                <li key={`${article.frontmatter.category}-${article.frontmatter.slug}`}>
+                  <Link
+                    href={`/${article.frontmatter.category}/${article.frontmatter.slug}/`}
+                    className="group flex items-start justify-between gap-3 rounded-lg border border-neutral-200 bg-white px-3 py-2.5 transition-colors hover:border-primary-200 hover:bg-primary-50/60"
+                  >
+                    <span className="text-body-sm text-neutral-700 transition-colors group-hover:text-primary-700">
+                      {article.frontmatter.title}
+                    </span>
+                    <ArrowUpRight
+                      size={15}
+                      className="mt-0.5 shrink-0 text-neutral-400 transition-colors group-hover:text-primary-600"
+                      aria-hidden="true"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
       </div>
     </nav>
@@ -144,6 +158,14 @@ export function ArticleLayout({
   const canonicalUrl = `https://calculatecreator.com/${section}/${frontmatter.slug}/`;
   const breadcrumbItems = buildBreadcrumbItems(section, frontmatter);
   const schemaItems = buildSchemaItems(section, frontmatter);
+  const resolvedAuthor = resolveAuthorFromFrontmatter(frontmatter.author);
+
+  // Build social links for sameAs
+  const sameAs = [
+    resolvedAuthor.socialLinks?.tiktok,
+    resolvedAuthor.socialLinks?.twitter,
+    resolvedAuthor.socialLinks?.linkedin,
+  ].filter(Boolean) as string[];
 
   return (
     <>
@@ -155,6 +177,14 @@ export function ArticleLayout({
         datePublished={frontmatter.publishDate}
         dateModified={frontmatter.updatedDate || frontmatter.publishDate}
         keywords={[frontmatter.primaryKeyword, ...frontmatter.secondaryKeywords]}
+        personAuthor={{
+          name: resolvedAuthor.name,
+          jobTitle: resolvedAuthor.role,
+          url: resolvedAuthor.authorUrl
+            ? `https://calculatecreator.com${resolvedAuthor.authorUrl}`
+            : undefined,
+          sameAs: sameAs.length > 0 ? sameAs : undefined,
+        }}
       />
       <BreadcrumbSchema items={schemaItems} />
 
@@ -171,21 +201,30 @@ export function ArticleLayout({
             <p className="text-body-lg text-neutral-600 mb-4">
               {frontmatter.metaDescription}
             </p>
-            <div className="flex flex-wrap items-center gap-4 text-body-sm text-neutral-500">
-              <span className="flex items-center gap-1.5">
-                <Clock size={16} />
-                {readTime} min read
+            <div className="flex flex-wrap items-center gap-2.5 text-body-sm">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-neutral-600">
+                <Clock size={15} />
+                <span className="font-medium text-neutral-700">{readTime} min read</span>
               </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar size={16} />
-                {formatDate(frontmatter.publishDate)}
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-neutral-600">
+                <Calendar size={15} />
+                <span className="font-medium text-neutral-700">{formatDate(frontmatter.publishDate)}</span>
               </span>
               {frontmatter.updatedDate && (
-                <span className="text-neutral-400">
-                  Updated {formatDate(frontmatter.updatedDate)}
+                <span className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-neutral-600">
+                  <span className="font-medium text-neutral-700">Updated {formatDate(frontmatter.updatedDate)}</span>
                 </span>
               )}
-              <span className="text-neutral-400">By {frontmatter.author}</span>
+              <span className="inline-flex items-center rounded-full border border-neutral-200 bg-white px-3 py-1.5 text-neutral-600">
+                By{' '}
+                {resolvedAuthor.authorUrl ? (
+                  <Link href={resolvedAuthor.authorUrl} className="ml-1 text-primary-600 hover:text-primary-700 font-medium">
+                    {resolvedAuthor.name}
+                  </Link>
+                ) : (
+                  <span className="ml-1 font-medium text-neutral-700">{resolvedAuthor.name}</span>
+                )}
+              </span>
             </div>
           </header>
 
@@ -215,7 +254,7 @@ export function ArticleLayout({
           )}
 
           {/* Article Content (MDX rendered via prose) */}
-          <article className="prose prose-lg max-w-none
+          <article className="article-content prose prose-lg max-w-none
             prose-headings:font-display prose-headings:text-neutral-900 prose-headings:font-bold
             prose-h2:text-display-sm prose-h2:mt-12 prose-h2:mb-6
             prose-h3:text-heading-lg prose-h3:mt-8 prose-h3:mb-4
@@ -228,6 +267,13 @@ export function ArticleLayout({
             {children}
           </article>
           <AdPlacement placement="mid-article" />
+
+          {/* Author Bio */}
+          <ArticleAuthorBio
+            author={resolvedAuthor}
+            showExpertise={true}
+            showCredentials={true}
+          />
 
           {/* Calculator CTA (bottom) */}
           {frontmatter.showCalculatorCTA && frontmatter.parentCalculator && (

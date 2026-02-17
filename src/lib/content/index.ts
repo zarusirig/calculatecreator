@@ -6,6 +6,72 @@ import { ArticleFrontmatter, ArticleData } from './types';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
+function sanitizeBlogContent(rawContent: string): string {
+  const lines = rawContent.replace(/\r\n/g, '\n').split('\n');
+  const firstSectionHeadingIndex = lines.findIndex(line => line.trim().startsWith('## '));
+  const artifactScanLimit = firstSectionHeadingIndex === -1
+    ? Math.min(lines.length, 80)
+    : firstSectionHeadingIndex;
+  const hasReadTimeArtifact = lines
+    .slice(0, Math.min(lines.length, 80))
+    .some(line => /readTime\s*=\s*"[^"]+"/i.test(line));
+
+  const cleanedIntroLines = lines.map((line, index) => {
+    if (!hasReadTimeArtifact || index >= artifactScanLimit) return line;
+    const trimmed = line.trim();
+
+    if (!trimmed) return line;
+    if (/readTime\s*=\s*"[^"]+"/i.test(trimmed)) return '';
+    if (trimmed === '/>' || trimmed === '|') return '';
+    if (/^#\s+/.test(trimmed)) return '';
+    if (/^published:/i.test(trimmed)) return '';
+    if (/^updated:/i.test(trimmed)) return '';
+    if (/^by\s+/i.test(trimmed)) return '';
+    if (/^\d+\s*min read$/i.test(trimmed)) return '';
+
+    return line;
+  });
+
+  const normalizedRelatedSectionLines: string[] = [];
+  let inRelatedLinksSection = false;
+
+  for (const line of cleanedIntroLines) {
+    const trimmed = line.trim();
+
+    if (/^#{2,3}\s+Related (Content|Resources)\s*$/i.test(trimmed)) {
+      inRelatedLinksSection = true;
+      normalizedRelatedSectionLines.push(line);
+      continue;
+    }
+
+    if (inRelatedLinksSection) {
+      if (!trimmed) {
+        normalizedRelatedSectionLines.push('');
+        continue;
+      }
+
+      if (/^#{1,6}\s+/.test(trimmed)) {
+        inRelatedLinksSection = false;
+        normalizedRelatedSectionLines.push(line);
+        continue;
+      }
+
+      const markdownLinkMatch = trimmed.match(/^\[(.+)\]\(([^)]+)\)$/);
+      if (markdownLinkMatch) {
+        normalizedRelatedSectionLines.push(`- [${markdownLinkMatch[1]}](${markdownLinkMatch[2]})`);
+        continue;
+      }
+    }
+
+    normalizedRelatedSectionLines.push(line);
+  }
+
+  return normalizedRelatedSectionLines
+    .join('\n')
+    .replace(/^\s*\n+/, '')
+    .replace(/\n{4,}/g, '\n\n\n');
+}
+
 /**
  * Recursively find all .mdx files in a directory
  */
@@ -30,10 +96,13 @@ function getMdxFiles(dir: string): string[] {
 function parseArticle(filePath: string): ArticleData {
   const raw = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(raw);
-  const readTime = Math.ceil(readingTime(content).minutes);
+  const relativePath = path.relative(CONTENT_DIR, filePath);
+  const isBlogArticle = relativePath.split(path.sep)[0] === 'blog';
+  const normalizedContent = isBlogArticle ? sanitizeBlogContent(content) : content;
+  const readTime = Math.ceil(readingTime(normalizedContent).minutes);
   return {
     frontmatter: data as ArticleFrontmatter,
-    content,
+    content: normalizedContent,
     readTime,
     filePath,
   };
