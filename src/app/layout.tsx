@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import '@/styles/globals.css';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     default: 'CalculateCreator - Creator Benchmarks and Calculators',
     template: '%s',
   },
-  description: "Explore TikTok layout.tsx content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  description: "Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.",
   keywords: [
     'creator calculator',
     'creator benchmarks',
@@ -69,13 +70,26 @@ export const metadata: Metadata = {
   },
 };
 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+  display: 'swap',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-display',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         {/* Favicon & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />

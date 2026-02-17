@@ -93,6 +93,13 @@ export interface ArticleSchemaProps {
     name: string;
     url?: string;
   };
+  /** When provided, uses Person schema type for the author instead of Organization */
+  personAuthor?: {
+    name: string;
+    jobTitle?: string;
+    url?: string;
+    sameAs?: string[];
+  };
   image?: string;
   keywords?: string[];
   articleBody?: string;
@@ -105,6 +112,7 @@ export function ArticleSchema({
   datePublished,
   dateModified,
   author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
+  personAuthor,
   image,
   keywords,
   articleBody,
@@ -117,11 +125,19 @@ export function ArticleSchema({
     url,
     datePublished,
     dateModified,
-    author: {
-      '@type': 'Organization',
-      name: author.name,
-      url: author.url,
-    },
+    author: personAuthor
+      ? {
+        '@type': 'Person' as const,
+        name: personAuthor.name,
+        ...(personAuthor.jobTitle && { jobTitle: personAuthor.jobTitle }),
+        ...(personAuthor.url && { url: personAuthor.url }),
+        ...(personAuthor.sameAs && personAuthor.sameAs.length > 0 && { sameAs: personAuthor.sameAs }),
+      }
+      : {
+        '@type': 'Organization' as const,
+        name: author.name,
+        url: author.url,
+      },
     publisher: {
       '@type': 'Organization',
       name: 'TikTok Calculator',

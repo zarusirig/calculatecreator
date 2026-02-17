@@ -1,0 +1,5172 @@
+[
+  {
+    "path": "content/guides/complete-tiktok-calculator-guide.mdx",
+    "route": "/guides/complete-tiktok-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 0,
+    "hasUniqueIntro": false,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "Weak intro signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0,
+    "risk": "high"
+  },
+  {
+    "path": "src/app/data/reference/page.tsx",
+    "route": "/data/reference/",
+    "sourceType": "app-page",
+    "wordCount": 148,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.51,
+    "risk": "high"
+  },
+  {
+    "path": "content/data/creator-fund-rates-by-country.mdx",
+    "route": "/data/creator-fund-rates-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 208,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "high"
+  },
+  {
+    "path": "src/app/data/platform-comparisons/page.tsx",
+    "route": "/data/platform-comparisons/",
+    "sourceType": "app-page",
+    "wordCount": 255,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.48,
+    "risk": "high"
+  },
+  {
+    "path": "content/guides/beauty-creators-earnings.mdx",
+    "route": "/guides/beauty-creators-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 287,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "high"
+  },
+  {
+    "path": "src/app/data/engagement/page.tsx",
+    "route": "/data/engagement/",
+    "sourceType": "app-page",
+    "wordCount": 292,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.46,
+    "risk": "high"
+  },
+  {
+    "path": "content/guides/how-to-join-creator-fund-complete.mdx",
+    "route": "/guides/how-to-join-creator-fund-complete/",
+    "sourceType": "mdx",
+    "wordCount": 296,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "high"
+  },
+  {
+    "path": "src/app/search/page.tsx",
+    "route": "/search/",
+    "sourceType": "app-page",
+    "wordCount": 69,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": true,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected",
+      "Utility page - should be noindex"
+    ],
+    "sharedSimilarity": 0.68,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/bookmarks/page.tsx",
+    "route": "/bookmarks/",
+    "sourceType": "app-page",
+    "wordCount": 74,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": true,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected",
+      "Utility page - should be noindex"
+    ],
+    "sharedSimilarity": 0.68,
+    "risk": "medium"
+  },
+  {
+    "path": "content/guides/finance-creators-earnings.mdx",
+    "route": "/guides/finance-creators-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 327,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "medium"
+  },
+  {
+    "path": "content/guides/tiktok-live-earnings-guide.mdx",
+    "route": "/guides/tiktok-live-earnings-guide/",
+    "sourceType": "mdx",
+    "wordCount": 336,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/contact/page.tsx",
+    "route": "/contact/",
+    "sourceType": "app-page",
+    "wordCount": 391,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/guides/niches/page.tsx",
+    "route": "/guides/niches/",
+    "sourceType": "app-page",
+    "wordCount": 433,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.39,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/guides/business/page.tsx",
+    "route": "/guides/business/",
+    "sourceType": "app-page",
+    "wordCount": 438,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.43,
+    "risk": "medium"
+  },
+  {
+    "path": "content/data/brand-deal-rates-by-niche.mdx",
+    "route": "/data/brand-deal-rates-by-niche/",
+    "sourceType": "mdx",
+    "wordCount": 439,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "content/guides/how-to-get-brand-deals-complete.mdx",
+    "route": "/guides/how-to-get-brand-deals-complete/",
+    "sourceType": "mdx",
+    "wordCount": 443,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "content/guides/how-to-get-1000-followers-live.mdx",
+    "route": "/guides/how-to-get-1000-followers-live/",
+    "sourceType": "mdx",
+    "wordCount": 448,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/compliance/advertising-disclosure/page.tsx",
+    "route": "/compliance/advertising-disclosure/",
+    "sourceType": "app-page",
+    "wordCount": 497,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [
+      "Below 500 words"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/calculators/page.tsx",
+    "route": "/calculators/",
+    "sourceType": "app-page",
+    "wordCount": 511,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.96,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/tools/page.tsx",
+    "route": "/tools/",
+    "sourceType": "app-page",
+    "wordCount": 516,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.96,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-pay-per-1000-views.mdx",
+    "route": "/calculators/tiktok-money/tiktok-pay-per-1000-views/",
+    "sourceType": "mdx",
+    "wordCount": 615,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-creator-fund/creator-fund-payment-schedule.mdx",
+    "route": "/calculators/tiktok-creator-fund/creator-fund-payment-schedule/",
+    "sourceType": "mdx",
+    "wordCount": 760,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/coins/tiktok-coin-prices-by-country.mdx",
+    "route": "/calculators/coins/tiktok-coin-prices-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 877,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/coins/most-expensive-tiktok-gifts.mdx",
+    "route": "/calculators/coins/most-expensive-tiktok-gifts/",
+    "sourceType": "mdx",
+    "wordCount": 928,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-creator-fund/maximize-creator-fund-rpm.mdx",
+    "route": "/calculators/tiktok-creator-fund/maximize-creator-fund-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 985,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/coins/coins-to-dollars-chart.mdx",
+    "route": "/calculators/coins/coins-to-dollars-chart/",
+    "sourceType": "mdx",
+    "wordCount": 1163,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-creator-fund/creator-fund-pay-per-view.mdx",
+    "route": "/calculators/tiktok-creator-fund/creator-fund-pay-per-view/",
+    "sourceType": "mdx",
+    "wordCount": 1251,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/commerce-ads/shop-profit/tiktok-shop-commission-rates.mdx",
+    "route": "/calculators/commerce-ads/shop-profit/tiktok-shop-commission-rates/",
+    "sourceType": "mdx",
+    "wordCount": 1319,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/engagement-rate/engagement-rate-by-followers.mdx",
+    "route": "/calculators/engagement-rate/engagement-rate-by-followers/",
+    "sourceType": "mdx",
+    "wordCount": 1333,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/follower-growth/follower-milestones-unlocks.mdx",
+    "route": "/calculators/follower-growth/follower-milestones-unlocks/",
+    "sourceType": "mdx",
+    "wordCount": 1357,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/rpm/tiktok-cpm-vs-rpm.mdx",
+    "route": "/calculators/rpm/tiktok-cpm-vs-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 1358,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/earnings-revenue/live-earnings/best-times-go-live-tiktok.mdx",
+    "route": "/calculators/earnings-revenue/live-earnings/best-times-go-live-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1437,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/rpm/what-is-tiktok-rpm.mdx",
+    "route": "/calculators/rpm/what-is-tiktok-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 1456,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers.mdx",
+    "route": "/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers/",
+    "sourceType": "mdx",
+    "wordCount": 1458,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.33,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/niche-profitability/pivot-tiktok-niche.mdx",
+    "route": "/calculators/niche-profitability/pivot-tiktok-niche/",
+    "sourceType": "mdx",
+    "wordCount": 1473,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-creator-fund/creator-rewards-vs-creator-fund.mdx",
+    "route": "/calculators/tiktok-creator-fund/creator-rewards-vs-creator-fund/",
+    "sourceType": "mdx",
+    "wordCount": 1561,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/hashtag-performance/hashtag-performance-metrics.mdx",
+    "route": "/calculators/hashtag-performance/hashtag-performance-metrics/",
+    "sourceType": "mdx",
+    "wordCount": 1573,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-earnings-by-country.mdx",
+    "route": "/calculators/tiktok-money/tiktok-earnings-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 1641,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.43,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/brand-deal-rate/tiktok-brand-deal-rates-2026.mdx",
+    "route": "/calculators/brand-deal-rate/tiktok-brand-deal-rates-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1643,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.33,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/earnings-revenue/live-earnings/tiktok-live-earnings-per-hour.mdx",
+    "route": "/calculators/earnings-revenue/live-earnings/tiktok-live-earnings-per-hour/",
+    "sourceType": "mdx",
+    "wordCount": 1671,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/commerce-ads/shop-profit/tiktok-shop-seller-fees.mdx",
+    "route": "/calculators/commerce-ads/shop-profit/tiktok-shop-seller-fees/",
+    "sourceType": "mdx",
+    "wordCount": 1677,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/rpm/increase-tiktok-rpm.mdx",
+    "route": "/calculators/rpm/increase-tiktok-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 1704,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/rpm/seasonal-tiktok-rpm.mdx",
+    "route": "/calculators/rpm/seasonal-tiktok-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 1720,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/conversion-rate/tiktok-conversion-rate-optimization.mdx",
+    "route": "/calculators/conversion-rate/tiktok-conversion-rate-optimization/",
+    "sourceType": "mdx",
+    "wordCount": 1725,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/watch-time/watch-time-metrics-explained.mdx",
+    "route": "/calculators/watch-time/watch-time-metrics-explained/",
+    "sourceType": "mdx",
+    "wordCount": 1745,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/commerce-ads/shop-profit/viral-tiktok-shop-products.mdx",
+    "route": "/calculators/commerce-ads/shop-profit/viral-tiktok-shop-products/",
+    "sourceType": "mdx",
+    "wordCount": 1765,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/follower-growth/follower-growth-rate-normal.mdx",
+    "route": "/calculators/follower-growth/follower-growth-rate-normal/",
+    "sourceType": "mdx",
+    "wordCount": 1770,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/coins/how-to-buy-tiktok-coins.mdx",
+    "route": "/calculators/coins/how-to-buy-tiktok-coins/",
+    "sourceType": "mdx",
+    "wordCount": 1887,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/engagement-rate/algorithm-engagement-rate.mdx",
+    "route": "/calculators/engagement-rate/algorithm-engagement-rate/",
+    "sourceType": "mdx",
+    "wordCount": 1943,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/earnings-revenue/live-earnings/tiktok-live-requirements.mdx",
+    "route": "/calculators/earnings-revenue/live-earnings/tiktok-live-requirements/",
+    "sourceType": "mdx",
+    "wordCount": 1946,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/coins/tiktok-coin-value-usd.mdx",
+    "route": "/calculators/coins/tiktok-coin-value-usd/",
+    "sourceType": "mdx",
+    "wordCount": 2068,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/how-tiktok-money-calculator-works.mdx",
+    "route": "/calculators/tiktok-money/how-tiktok-money-calculator-works/",
+    "sourceType": "mdx",
+    "wordCount": 2068,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/rpm/tiktok-rpm-by-country.mdx",
+    "route": "/calculators/rpm/tiktok-rpm-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 2111,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.43,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/commerce-ads/shop-profit/best-selling-tiktok-shop-products.mdx",
+    "route": "/calculators/commerce-ads/shop-profit/best-selling-tiktok-shop-products/",
+    "sourceType": "mdx",
+    "wordCount": 2113,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-money-1m-followers.mdx",
+    "route": "/calculators/tiktok-money/tiktok-money-1m-followers/",
+    "sourceType": "mdx",
+    "wordCount": 2220,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-money-10k-followers.mdx",
+    "route": "/calculators/tiktok-money/tiktok-money-10k-followers/",
+    "sourceType": "mdx",
+    "wordCount": 2247,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/engagement-rate/good-tiktok-engagement-rate.mdx",
+    "route": "/calculators/engagement-rate/good-tiktok-engagement-rate/",
+    "sourceType": "mdx",
+    "wordCount": 2380,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "medium"
+  },
+  {
+    "path": "content/calculators/tiktok-money/why-tiktok-earnings-low.mdx",
+    "route": "/calculators/tiktok-money/why-tiktok-earnings-low/",
+    "sourceType": "mdx",
+    "wordCount": 2420,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal",
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/benchmarks/page.tsx",
+    "route": "/benchmarks/",
+    "sourceType": "app-page",
+    "wordCount": 505,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.33,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/methodology/page.tsx",
+    "route": "/methodology/",
+    "sourceType": "app-page",
+    "wordCount": 508,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-become-shop-affiliate.mdx",
+    "route": "/guides/how-to-become-shop-affiliate/",
+    "sourceType": "mdx",
+    "wordCount": 513,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/tools/rpm/page.tsx",
+    "route": "/tools/rpm/",
+    "sourceType": "app-page",
+    "wordCount": 547,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-creator-marketplace.mdx",
+    "route": "/guides/tiktok-creator-marketplace/",
+    "sourceType": "mdx",
+    "wordCount": 570,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-increase-creator-fund-earnings.mdx",
+    "route": "/guides/how-to-increase-creator-fund-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 574,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/monetization/page.tsx",
+    "route": "/guides/monetization/",
+    "sourceType": "app-page",
+    "wordCount": 586,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.37,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-join-creator-fund.mdx",
+    "route": "/guides/how-to-join-creator-fund/",
+    "sourceType": "mdx",
+    "wordCount": 593,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-creator-fund-works.mdx",
+    "route": "/guides/how-creator-fund-works/",
+    "sourceType": "mdx",
+    "wordCount": 614,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/growth/page.tsx",
+    "route": "/guides/growth/",
+    "sourceType": "app-page",
+    "wordCount": 650,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/brand-deal-rates-by-followers.mdx",
+    "route": "/data/brand-deal-rates-by-followers/",
+    "sourceType": "mdx",
+    "wordCount": 657,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-live-earnings-expectations.mdx",
+    "route": "/guides/tiktok-live-earnings-expectations/",
+    "sourceType": "mdx",
+    "wordCount": 675,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/rpm-rates-by-niche.mdx",
+    "route": "/data/rpm-rates-by-niche/",
+    "sourceType": "mdx",
+    "wordCount": 697,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/best-times-go-live.mdx",
+    "route": "/guides/best-times-go-live/",
+    "sourceType": "mdx",
+    "wordCount": 711,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/spark-ads-for-creators.mdx",
+    "route": "/guides/spark-ads-for-creators/",
+    "sourceType": "mdx",
+    "wordCount": 752,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/creator-fund-vs-live-gifts.mdx",
+    "route": "/blog/creator-fund-vs-live-gifts/",
+    "sourceType": "mdx",
+    "wordCount": 782,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-engagement-rate-calculator-guide.mdx",
+    "route": "/guides/tiktok-engagement-rate-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 788,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-creator-fund.mdx",
+    "route": "/guides/tiktok-creator-fund/",
+    "sourceType": "mdx",
+    "wordCount": 800,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-qualify-for-tiktok-live.mdx",
+    "route": "/guides/how-to-qualify-for-tiktok-live/",
+    "sourceType": "mdx",
+    "wordCount": 809,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.19,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/editorial-policy/page.tsx",
+    "route": "/editorial-policy/",
+    "sourceType": "app-page",
+    "wordCount": 824,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/increase-engagement-rate-tiktok.mdx",
+    "route": "/guides/increase-engagement-rate-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 827,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/about/page.tsx",
+    "route": "/about/",
+    "sourceType": "app-page",
+    "wordCount": 835,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/maximize-creator-fund-rpm.mdx",
+    "route": "/guides/maximize-creator-fund-rpm/",
+    "sourceType": "mdx",
+    "wordCount": 840,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-payment-delays.mdx",
+    "route": "/guides/tiktok-payment-delays/",
+    "sourceType": "mdx",
+    "wordCount": 849,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/earnings/page.tsx",
+    "route": "/data/earnings/",
+    "sourceType": "app-page",
+    "wordCount": 867,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.42,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-negotiate-brand-deals.mdx",
+    "route": "/guides/how-to-negotiate-brand-deals/",
+    "sourceType": "mdx",
+    "wordCount": 870,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement-rates-by-niche.mdx",
+    "route": "/data/engagement-rates-by-niche/",
+    "sourceType": "mdx",
+    "wordCount": 871,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-shop-affiliate.mdx",
+    "route": "/guides/tiktok-shop-affiliate/",
+    "sourceType": "mdx",
+    "wordCount": 875,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-ad-budget-calculator-guide.mdx",
+    "route": "/guides/tiktok-ad-budget-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 879,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-increase-engagement.mdx",
+    "route": "/guides/how-to-increase-engagement/",
+    "sourceType": "mdx",
+    "wordCount": 893,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-get-brand-deals.mdx",
+    "route": "/guides/how-to-get-brand-deals/",
+    "sourceType": "mdx",
+    "wordCount": 896,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-live.mdx",
+    "route": "/guides/tiktok-live/",
+    "sourceType": "mdx",
+    "wordCount": 905,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/calculating-true-influence-value.mdx",
+    "route": "/guides/calculating-true-influence-value/",
+    "sourceType": "mdx",
+    "wordCount": 930,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-rpm-calculator-guide.mdx",
+    "route": "/guides/tiktok-rpm-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 969,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-algorithm-engagement.mdx",
+    "route": "/guides/tiktok-algorithm-engagement/",
+    "sourceType": "mdx",
+    "wordCount": 981,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/multi-platform-attribution-creators.mdx",
+    "route": "/guides/multi-platform-attribution-creators/",
+    "sourceType": "mdx",
+    "wordCount": 996,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-go-viral.mdx",
+    "route": "/guides/how-to-go-viral/",
+    "sourceType": "mdx",
+    "wordCount": 1024,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/faq/page.tsx",
+    "route": "/faq/",
+    "sourceType": "app-page",
+    "wordCount": 1032,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-coin-converter-complete-guide.mdx",
+    "route": "/guides/tiktok-coin-converter-complete-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1045,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/analytics-metrics-master-guide.mdx",
+    "route": "/guides/analytics-metrics-master-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1046,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/why-tiktok-earnings-low.mdx",
+    "route": "/guides/why-tiktok-earnings-low/",
+    "sourceType": "mdx",
+    "wordCount": 1058,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/multi-platform-strategy.mdx",
+    "route": "/guides/multi-platform-strategy/",
+    "sourceType": "mdx",
+    "wordCount": 1060,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-make-money-on-tiktok.mdx",
+    "route": "/guides/how-to-make-money-on-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1083,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/earnings-revenue/live-earnings/get-more-viewers-tiktok-live.mdx",
+    "route": "/calculators/earnings-revenue/live-earnings/get-more-viewers-tiktok-live/",
+    "sourceType": "mdx",
+    "wordCount": 1110,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/fitness-creators-earnings.mdx",
+    "route": "/guides/fitness-creators-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1123,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/hashtag-strategy.mdx",
+    "route": "/guides/hashtag-strategy/",
+    "sourceType": "mdx",
+    "wordCount": 1166,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/creator-rewards-payout-update-2026.mdx",
+    "route": "/blog/creator-rewards-payout-update-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1169,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-algorithm-changes-2026.mdx",
+    "route": "/blog/tiktok-algorithm-changes-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1174,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-spark-ads-update-2026.mdx",
+    "route": "/blog/tiktok-spark-ads-update-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1174,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/earnings-revenue/live-earnings/tiktok-live-battles.mdx",
+    "route": "/calculators/earnings-revenue/live-earnings/tiktok-live-battles/",
+    "sourceType": "mdx",
+    "wordCount": 1178,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-much-to-charge-sponsorship.mdx",
+    "route": "/guides/how-much-to-charge-sponsorship/",
+    "sourceType": "mdx",
+    "wordCount": 1194,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-vs-youtube-shorts-earnings-2026.mdx",
+    "route": "/blog/tiktok-vs-youtube-shorts-earnings-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1197,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/content-strategy-2025.mdx",
+    "route": "/guides/content-strategy-2025/",
+    "sourceType": "mdx",
+    "wordCount": 1197,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-make-first-1000-dollars.mdx",
+    "route": "/guides/how-to-make-first-1000-dollars/",
+    "sourceType": "mdx",
+    "wordCount": 1200,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-holiday-strategy-q2.mdx",
+    "route": "/blog/tiktok-holiday-strategy-q2/",
+    "sourceType": "mdx",
+    "wordCount": 1204,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-ban-update-april-2026.mdx",
+    "route": "/blog/tiktok-ban-update-april-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1205,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-shop.mdx",
+    "route": "/guides/tiktok-shop/",
+    "sourceType": "mdx",
+    "wordCount": 1207,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/creator-tax-deductions-complete-guide.mdx",
+    "route": "/blog/creator-tax-deductions-complete-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1217,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/page.tsx",
+    "route": "/guides/",
+    "sourceType": "app-page",
+    "wordCount": 1223,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-shop-expansion-2026.mdx",
+    "route": "/blog/tiktok-shop-expansion-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1226,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-algorithm-optimization.mdx",
+    "route": "/guides/tiktok-algorithm-optimization/",
+    "sourceType": "mdx",
+    "wordCount": 1230,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/terms/page.tsx",
+    "route": "/terms/",
+    "sourceType": "app-page",
+    "wordCount": 1238,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/tiktok-series-monetization/page.tsx",
+    "route": "/guides/tiktok-series-monetization/",
+    "sourceType": "app-page",
+    "wordCount": 1241,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-pay.mdx",
+    "route": "/guides/tiktok-pay/",
+    "sourceType": "mdx",
+    "wordCount": 1242,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-creator-insurance.mdx",
+    "route": "/guides/business/tiktok-creator-insurance/",
+    "sourceType": "mdx",
+    "wordCount": 1275,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/get-paid-faster-tiktok.mdx",
+    "route": "/guides/monetization/get-paid-faster-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1320,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-live-shopping.mdx",
+    "route": "/guides/tiktok-live-shopping/",
+    "sourceType": "mdx",
+    "wordCount": 1348,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niche-selection.mdx",
+    "route": "/guides/niche-selection/",
+    "sourceType": "mdx",
+    "wordCount": 1354,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/creator-tax-strategy.mdx",
+    "route": "/guides/creator-tax-strategy/",
+    "sourceType": "mdx",
+    "wordCount": 1360,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/compliance/sponsorship-disclosure/page.tsx",
+    "route": "/compliance/sponsorship-disclosure/",
+    "sourceType": "app-page",
+    "wordCount": 1377,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/how-to-price-brand-deals.mdx",
+    "route": "/guides/how-to-price-brand-deals/",
+    "sourceType": "mdx",
+    "wordCount": 1386,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/diamonds/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/diamonds/",
+    "sourceType": "app-page",
+    "wordCount": 1392,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/video-performance/video-performance-score.mdx",
+    "route": "/calculators/video-performance/video-performance-score/",
+    "sourceType": "mdx",
+    "wordCount": 1393,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-shop-success-strategies.mdx",
+    "route": "/guides/tiktok-shop-success-strategies/",
+    "sourceType": "mdx",
+    "wordCount": 1394,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-monetization-requirements.mdx",
+    "route": "/guides/tiktok-monetization-requirements/",
+    "sourceType": "mdx",
+    "wordCount": 1395,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/best-shop-niches/page.tsx",
+    "route": "/guides/best-shop-niches/",
+    "sourceType": "app-page",
+    "wordCount": 1399,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-gifts.mdx",
+    "route": "/guides/tiktok-gifts/",
+    "sourceType": "mdx",
+    "wordCount": 1405,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-new-features-2026.mdx",
+    "route": "/blog/tiktok-new-features-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1414,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/how-tiktok-creator-rewards-work-2026.mdx",
+    "route": "/blog/how-tiktok-creator-rewards-work-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1424,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-live-ranking-changes-2026.mdx",
+    "route": "/blog/tiktok-live-ranking-changes-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1432,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-algorithm-update-april-2026.mdx",
+    "route": "/blog/tiktok-algorithm-update-april-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1443,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/new-tiktok-monetization-features-2026.mdx",
+    "route": "/blog/new-tiktok-monetization-features-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1461,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/reference/tiktok-video-length-limits.mdx",
+    "route": "/data/reference/tiktok-video-length-limits/",
+    "sourceType": "mdx",
+    "wordCount": 1461,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-shop-affiliate-beginners-guide.mdx",
+    "route": "/blog/tiktok-shop-affiliate-beginners-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1465,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-diamonds.mdx",
+    "route": "/guides/tiktok-diamonds/",
+    "sourceType": "mdx",
+    "wordCount": 1465,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-creator-fund-worth-it-2026.mdx",
+    "route": "/blog/tiktok-creator-fund-worth-it-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1470,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/comedy-tiktok-earnings.mdx",
+    "route": "/guides/niches/comedy-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1488,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/education-tiktok-earnings.mdx",
+    "route": "/guides/niches/education-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1494,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/micro-influencers-make-money-tiktok.mdx",
+    "route": "/guides/monetization/micro-influencers-make-money-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1496,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/platform-comparisons/tiktok-vs-instagram-reels-2026.mdx",
+    "route": "/data/platform-comparisons/tiktok-vs-instagram-reels-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1497,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/repurpose-tiktok-content.mdx",
+    "route": "/guides/growth/repurpose-tiktok-content/",
+    "sourceType": "mdx",
+    "wordCount": 1498,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-advertising-rates-benchmarks.mdx",
+    "route": "/data/earnings/tiktok-advertising-rates-benchmarks/",
+    "sourceType": "mdx",
+    "wordCount": 1499,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/commerce-ads/ad-cost/page.tsx",
+    "route": "/calculators/commerce-ads/ad-cost/",
+    "sourceType": "app-page",
+    "wordCount": 1505,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.44,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-content-pillars.mdx",
+    "route": "/guides/growth/tiktok-content-pillars/",
+    "sourceType": "mdx",
+    "wordCount": 1506,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/food-cooking-tiktok-earnings.mdx",
+    "route": "/guides/niches/food-cooking-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1507,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/influencer-rate-calculator-guide.mdx",
+    "route": "/guides/influencer-rate-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1517,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/platform-comparisons/tiktok-vs-youtube-shorts-2026.mdx",
+    "route": "/data/platform-comparisons/tiktok-vs-youtube-shorts-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1523,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/charli-damelio-tiktok-earnings.mdx",
+    "route": "/blog/charli-damelio-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1525,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/why-creator-fund-earnings-dropped.mdx",
+    "route": "/guides/why-creator-fund-earnings-dropped/",
+    "sourceType": "mdx",
+    "wordCount": 1526,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/engagement/page.tsx",
+    "route": "/calculators/engagement-influence/engagement/",
+    "sourceType": "app-page",
+    "wordCount": 1535,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-shop-summer-trends-2026.mdx",
+    "route": "/blog/tiktok-shop-summer-trends-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1535,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/save-rate/page.tsx",
+    "route": "/calculators/save-rate/",
+    "sourceType": "app-page",
+    "wordCount": 1536,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/diversify-tiktok-income-streams.mdx",
+    "route": "/guides/monetization/diversify-tiktok-income-streams/",
+    "sourceType": "mdx",
+    "wordCount": 1545,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/reference/tiktok-business-vs-creator-account.mdx",
+    "route": "/data/reference/tiktok-business-vs-creator-account/",
+    "sourceType": "mdx",
+    "wordCount": 1554,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/customer-acquisition-cost/page.tsx",
+    "route": "/calculators/customer-acquisition-cost/",
+    "sourceType": "app-page",
+    "wordCount": 1561,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.42,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/q1-2026-tiktok-rpm-report.mdx",
+    "route": "/blog/q1-2026-tiktok-rpm-report/",
+    "sourceType": "mdx",
+    "wordCount": 1563,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/recover-tiktok-growth-plateau.mdx",
+    "route": "/guides/growth/recover-tiktok-growth-plateau/",
+    "sourceType": "mdx",
+    "wordCount": 1566,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/building-multiple-income-streams-tiktok.mdx",
+    "route": "/blog/building-multiple-income-streams-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1568,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/lifetime-value/page.tsx",
+    "route": "/calculators/lifetime-value/",
+    "sourceType": "app-page",
+    "wordCount": 1573,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.38,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-analytics-guide.mdx",
+    "route": "/guides/growth/tiktok-analytics-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1574,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/fashion-tiktok-earnings.mdx",
+    "route": "/guides/niches/fashion-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1581,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/fulltime-vs-parttime-creator-earnings.mdx",
+    "route": "/data/earnings/fulltime-vs-parttime-creator-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1586,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-vs-youtube-rpm-by-niche.mdx",
+    "route": "/data/earnings/tiktok-vs-youtube-rpm-by-niche/",
+    "sourceType": "mdx",
+    "wordCount": 1590,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-affiliate-without-shop.mdx",
+    "route": "/guides/monetization/tiktok-affiliate-without-shop/",
+    "sourceType": "mdx",
+    "wordCount": 1590,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/completion-rate-by-video-length.mdx",
+    "route": "/data/engagement/completion-rate-by-video-length/",
+    "sourceType": "mdx",
+    "wordCount": 1592,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-shadowban-fix.mdx",
+    "route": "/guides/growth/tiktok-shadowban-fix/",
+    "sourceType": "mdx",
+    "wordCount": 1592,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/diy-crafts-tiktok-earnings.mdx",
+    "route": "/guides/niches/diy-crafts-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1595,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/music-tiktok-monetization.mdx",
+    "route": "/guides/niches/music-tiktok-monetization/",
+    "sourceType": "mdx",
+    "wordCount": 1597,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/monetization-requirements-checklist.mdx",
+    "route": "/guides/monetization/monetization-requirements-checklist/",
+    "sourceType": "mdx",
+    "wordCount": 1599,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/gaming-tiktok-monetization.mdx",
+    "route": "/guides/niches/gaming-tiktok-monetization/",
+    "sourceType": "mdx",
+    "wordCount": 1599,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/video-performance/page.tsx",
+    "route": "/calculators/video-performance/",
+    "sourceType": "app-page",
+    "wordCount": 1602,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.33,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings.mdx",
+    "route": "/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1603,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/tiktok-save-rate-benchmarks.mdx",
+    "route": "/data/engagement/tiktok-save-rate-benchmarks/",
+    "sourceType": "mdx",
+    "wordCount": 1604,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-monetization-by-country.mdx",
+    "route": "/guides/monetization/tiktok-monetization-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 1610,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/comment-rate/page.tsx",
+    "route": "/calculators/comment-rate/",
+    "sourceType": "app-page",
+    "wordCount": 1612,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/short-vs-long-tiktok-videos.mdx",
+    "route": "/guides/growth/short-vs-long-tiktok-videos/",
+    "sourceType": "mdx",
+    "wordCount": 1614,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/live-gift-earnings-optimization.mdx",
+    "route": "/guides/live-gift-earnings-optimization/",
+    "sourceType": "mdx",
+    "wordCount": 1617,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-ban-status-2026.mdx",
+    "route": "/blog/tiktok-ban-status-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1621,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/seasonal-tiktok-earnings-trends.mdx",
+    "route": "/data/earnings/seasonal-tiktok-earnings-trends/",
+    "sourceType": "mdx",
+    "wordCount": 1623,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/tiktok-ad-cost/page.tsx",
+    "route": "/calculators/tiktok-ad-cost/",
+    "sourceType": "app-page",
+    "wordCount": 1624,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.44,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/engagement-rate/engagement-rate-brand-deals.mdx",
+    "route": "/calculators/engagement-rate/engagement-rate-brand-deals/",
+    "sourceType": "mdx",
+    "wordCount": 1632,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/best-posting-times-tiktok.mdx",
+    "route": "/guides/growth/best-posting-times-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1633,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/privacy/page.tsx",
+    "route": "/privacy/",
+    "sourceType": "app-page",
+    "wordCount": 1636,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-sounds-music-distribution.mdx",
+    "route": "/guides/growth/tiktok-sounds-music-distribution/",
+    "sourceType": "mdx",
+    "wordCount": 1637,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-live-streaming-earnings-guide.mdx",
+    "route": "/blog/tiktok-live-streaming-earnings-guide/",
+    "sourceType": "mdx",
+    "wordCount": 1640,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/campaign-roi/page.tsx",
+    "route": "/calculators/campaign-roi/",
+    "sourceType": "app-page",
+    "wordCount": 1643,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.42,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/khaby-lame-tiktok-earnings.mdx",
+    "route": "/blog/khaby-lame-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1644,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/spring-2026-tiktok-trends.mdx",
+    "route": "/blog/spring-2026-tiktok-trends/",
+    "sourceType": "mdx",
+    "wordCount": 1648,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.19,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/understanding-tiktok-rpm-rates.mdx",
+    "route": "/blog/understanding-tiktok-rpm-rates/",
+    "sourceType": "mdx",
+    "wordCount": 1648,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/asmr-tiktok-earnings.mdx",
+    "route": "/guides/niches/asmr-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1649,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-engagement-decline-2026.mdx",
+    "route": "/blog/tiktok-engagement-decline-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1651,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/creator-fund/page.tsx",
+    "route": "/calculators/earnings-revenue/creator-fund/",
+    "sourceType": "app-page",
+    "wordCount": 1652,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.5,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/q1-2026-creator-earnings-report.mdx",
+    "route": "/blog/q1-2026-creator-earnings-report/",
+    "sourceType": "mdx",
+    "wordCount": 1667,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/commerce-ads/rpm-cpm/page.tsx",
+    "route": "/calculators/commerce-ads/rpm-cpm/",
+    "sourceType": "app-page",
+    "wordCount": 1668,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/engagement-rate/engagement-rate-vs-views.mdx",
+    "route": "/calculators/engagement-rate/engagement-rate-vs-views/",
+    "sourceType": "mdx",
+    "wordCount": 1668,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/affiliate-commission/page.tsx",
+    "route": "/calculators/affiliate-commission/",
+    "sourceType": "app-page",
+    "wordCount": 1671,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-shop-gmv-growth.mdx",
+    "route": "/data/earnings/tiktok-shop-gmv-growth/",
+    "sourceType": "mdx",
+    "wordCount": 1671,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/get-on-fyp-consistently.mdx",
+    "route": "/guides/growth/get-on-fyp-consistently/",
+    "sourceType": "mdx",
+    "wordCount": 1675,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-series-monetization.mdx",
+    "route": "/guides/monetization/tiktok-series-monetization/",
+    "sourceType": "mdx",
+    "wordCount": 1684,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/micro-vs-macro-engagement-rate.mdx",
+    "route": "/data/engagement/micro-vs-macro-engagement-rate/",
+    "sourceType": "mdx",
+    "wordCount": 1685,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/brand-deal-rate-negotiation-tips.mdx",
+    "route": "/blog/brand-deal-rate-negotiation-tips/",
+    "sourceType": "mdx",
+    "wordCount": 1687,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/watch-time/page.tsx",
+    "route": "/calculators/watch-time/",
+    "sourceType": "app-page",
+    "wordCount": 1688,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/diamond-converter/page.tsx",
+    "route": "/calculators/diamond-converter/",
+    "sourceType": "app-page",
+    "wordCount": 1695,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/creator-fund-shutdown-implications.mdx",
+    "route": "/blog/creator-fund-shutdown-implications/",
+    "sourceType": "mdx",
+    "wordCount": 1696,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-algorithm-changes-2026-roundup.mdx",
+    "route": "/blog/tiktok-algorithm-changes-2026-roundup/",
+    "sourceType": "mdx",
+    "wordCount": 1704,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/tiktok-share-rate-benchmarks.mdx",
+    "route": "/data/engagement/tiktok-share-rate-benchmarks/",
+    "sourceType": "mdx",
+    "wordCount": 1709,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/posting-frequency-engagement-correlation.mdx",
+    "route": "/data/engagement/posting-frequency-engagement-correlation/",
+    "sourceType": "mdx",
+    "wordCount": 1719,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/live-gifts/page.tsx",
+    "route": "/calculators/live-gifts/",
+    "sourceType": "app-page",
+    "wordCount": 1720,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.38,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-hashtag-strategy-2026.mdx",
+    "route": "/guides/growth/tiktok-hashtag-strategy-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1722,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-subscription-recurring-revenue.mdx",
+    "route": "/guides/monetization/tiktok-subscription-recurring-revenue/",
+    "sourceType": "mdx",
+    "wordCount": 1723,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/llc-for-tiktok-creators.mdx",
+    "route": "/guides/business/llc-for-tiktok-creators/",
+    "sourceType": "mdx",
+    "wordCount": 1725,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/passive-income-tiktok-creators.mdx",
+    "route": "/guides/monetization/passive-income-tiktok-creators/",
+    "sourceType": "mdx",
+    "wordCount": 1733,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-algorithm-update-march-2026.mdx",
+    "route": "/blog/tiktok-algorithm-update-march-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1742,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/gift/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/gift/",
+    "sourceType": "app-page",
+    "wordCount": 1744,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-batch-content-creation.mdx",
+    "route": "/guides/growth/tiktok-batch-content-creation/",
+    "sourceType": "mdx",
+    "wordCount": 1748,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/when-to-hire-manager-tiktok.mdx",
+    "route": "/guides/business/when-to-hire-manager-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1759,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-community-guidelines-strikes.mdx",
+    "route": "/guides/business/tiktok-community-guidelines-strikes/",
+    "sourceType": "mdx",
+    "wordCount": 1761,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.19,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/creator-rewards-vs-youtube-shorts-fund.mdx",
+    "route": "/blog/creator-rewards-vs-youtube-shorts-fund/",
+    "sourceType": "mdx",
+    "wordCount": 1768,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/avg-engagement-rate-follower-count-2026.mdx",
+    "route": "/data/engagement/avg-engagement-rate-follower-count-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1769,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/conversion-rate/page.tsx",
+    "route": "/calculators/conversion-rate/",
+    "sourceType": "app-page",
+    "wordCount": 1773,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-creator-economy-size.mdx",
+    "route": "/data/earnings/tiktok-creator-economy-size/",
+    "sourceType": "mdx",
+    "wordCount": 1784,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/parenting-tiktok-earnings.mdx",
+    "route": "/guides/niches/parenting-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1785,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/engagement-rate/increase-engagement-rate.mdx",
+    "route": "/calculators/engagement-rate/increase-engagement-rate/",
+    "sourceType": "mdx",
+    "wordCount": 1789,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/summer-content-ideas-tiktok-2026.mdx",
+    "route": "/blog/summer-content-ideas-tiktok-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1794,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-creator-income-distribution.mdx",
+    "route": "/data/earnings/tiktok-creator-income-distribution/",
+    "sourceType": "mdx",
+    "wordCount": 1802,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/engagement-rate/engagement-rate-dropping.mdx",
+    "route": "/calculators/engagement-rate/engagement-rate-dropping/",
+    "sourceType": "mdx",
+    "wordCount": 1804,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-audience-demographics-analysis.mdx",
+    "route": "/guides/growth/tiktok-audience-demographics-analysis/",
+    "sourceType": "mdx",
+    "wordCount": 1805,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/first-1000-dollars-tiktok.mdx",
+    "route": "/guides/monetization/first-1000-dollars-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1805,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/mid-year-tiktok-monetization-check.mdx",
+    "route": "/blog/mid-year-tiktok-monetization-check/",
+    "sourceType": "mdx",
+    "wordCount": 1807,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-germany-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-germany-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1807,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-seo-search-ranking.mdx",
+    "route": "/guides/growth/tiktok-seo-search-ranking/",
+    "sourceType": "mdx",
+    "wordCount": 1808,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/best-tiktok-niches-money-2026.mdx",
+    "route": "/blog/best-tiktok-niches-money-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1810,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/tiktok-creator-fund/creator-fund-eligibility-2026.mdx",
+    "route": "/calculators/tiktok-creator-fund/creator-fund-eligibility-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1811,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/pet-tiktok-monetization.mdx",
+    "route": "/guides/niches/pet-tiktok-monetization/",
+    "sourceType": "mdx",
+    "wordCount": 1814,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-france-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-france-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1815,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-mexico-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-mexico-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1824,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.4,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-creators-quit-jobs-income.mdx",
+    "route": "/blog/tiktok-creators-quit-jobs-income/",
+    "sourceType": "mdx",
+    "wordCount": 1829,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/niche-profitability/niche-profitability-evaluation.mdx",
+    "route": "/calculators/niche-profitability/niche-profitability-evaluation/",
+    "sourceType": "mdx",
+    "wordCount": 1834,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/posting-time/page.tsx",
+    "route": "/calculators/posting-time/",
+    "sourceType": "app-page",
+    "wordCount": 1841,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/selling-digital-products-tiktok.mdx",
+    "route": "/guides/monetization/selling-digital-products-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1842,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-exit-strategies.mdx",
+    "route": "/guides/business/tiktok-exit-strategies/",
+    "sourceType": "mdx",
+    "wordCount": 1843,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.19,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-nigeria-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-nigeria-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1848,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.37,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/engagement/tiktok-likes-to-views-ratio.mdx",
+    "route": "/data/engagement/tiktok-likes-to-views-ratio/",
+    "sourceType": "mdx",
+    "wordCount": 1850,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/profile-visit-rate/page.tsx",
+    "route": "/calculators/profile-visit-rate/",
+    "sourceType": "app-page",
+    "wordCount": 1857,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-intellectual-property-protection.mdx",
+    "route": "/guides/business/tiktok-intellectual-property-protection/",
+    "sourceType": "mdx",
+    "wordCount": 1860,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/engagement-rate-what-brands-look-for.mdx",
+    "route": "/blog/engagement-rate-what-brands-look-for/",
+    "sourceType": "mdx",
+    "wordCount": 1863,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-philippines-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-philippines-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1863,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.4,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/rpm/page.tsx",
+    "route": "/calculators/rpm/",
+    "sourceType": "app-page",
+    "wordCount": 1867,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/mrbeast-tiktok-strategy-breakdown.mdx",
+    "route": "/blog/mrbeast-tiktok-strategy-breakdown/",
+    "sourceType": "mdx",
+    "wordCount": 1868,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-merch-strategies.mdx",
+    "route": "/guides/monetization/tiktok-merch-strategies/",
+    "sourceType": "mdx",
+    "wordCount": 1868,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins/page.tsx",
+    "route": "/calculators/coins/",
+    "sourceType": "app-page",
+    "wordCount": 1875,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-photo-carousel-engagement.mdx",
+    "route": "/guides/growth/tiktok-photo-carousel-engagement/",
+    "sourceType": "mdx",
+    "wordCount": 1882,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/payout/page.tsx",
+    "route": "/calculators/utility-tools/payout/",
+    "sourceType": "app-page",
+    "wordCount": 1889,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/fun-niche/moon-phase/page.tsx",
+    "route": "/calculators/fun-niche/moon-phase/",
+    "sourceType": "app-page",
+    "wordCount": 1893,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-india-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-india-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1893,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/ad-spend/page.tsx",
+    "route": "/calculators/ad-spend/",
+    "sourceType": "app-page",
+    "wordCount": 1902,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/commerce-ads/page.tsx",
+    "route": "/calculators/commerce-ads/",
+    "sourceType": "app-page",
+    "wordCount": 1905,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/average-tiktok-earnings-per-views.mdx",
+    "route": "/data/earnings/average-tiktok-earnings-per-views/",
+    "sourceType": "mdx",
+    "wordCount": 1905,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/financial-planning-tiktok-creators.mdx",
+    "route": "/guides/monetization/financial-planning-tiktok-creators/",
+    "sourceType": "mdx",
+    "wordCount": 1906,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-earnings-growth-timeline.mdx",
+    "route": "/data/earnings/tiktok-earnings-growth-timeline/",
+    "sourceType": "mdx",
+    "wordCount": 1907,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/share-ratio/page.tsx",
+    "route": "/calculators/share-ratio/",
+    "sourceType": "app-page",
+    "wordCount": 1912,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates.mdx",
+    "route": "/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates/",
+    "sourceType": "mdx",
+    "wordCount": 1912,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/engagement-rate/engagement-rate-by-niche.mdx",
+    "route": "/calculators/engagement-rate/engagement-rate-by-niche/",
+    "sourceType": "mdx",
+    "wordCount": 1916,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/multi-platform-earnings/page.tsx",
+    "route": "/calculators/multi-platform-earnings/",
+    "sourceType": "app-page",
+    "wordCount": 1925,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/brand-deal-rate/brand-deal-red-flags.mdx",
+    "route": "/calculators/brand-deal-rate/brand-deal-red-flags/",
+    "sourceType": "mdx",
+    "wordCount": 1926,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-copyright-fair-use.mdx",
+    "route": "/guides/business/tiktok-copyright-fair-use/",
+    "sourceType": "mdx",
+    "wordCount": 1928,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/ftc-disclosure-tiktok.mdx",
+    "route": "/guides/business/ftc-disclosure-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1932,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-brazil-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-brazil-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1939,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.41,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/tech-tiktok-earnings.mdx",
+    "route": "/guides/niches/tech-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1950,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/brand-deal-rate/brands-calculate-influencer-roi.mdx",
+    "route": "/calculators/brand-deal-rate/brands-calculate-influencer-roi/",
+    "sourceType": "mdx",
+    "wordCount": 1953,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-analytics-api-creators.mdx",
+    "route": "/guides/growth/tiktok-analytics-api-creators/",
+    "sourceType": "mdx",
+    "wordCount": 1953,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/niches/travel-tiktok-earnings.mdx",
+    "route": "/guides/niches/travel-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1956,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/",
+    "sourceType": "app-page",
+    "wordCount": 1960,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/viral-potential/page.tsx",
+    "route": "/calculators/viral-potential/",
+    "sourceType": "app-page",
+    "wordCount": 1961,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-vs-lemon8-creators.mdx",
+    "route": "/blog/tiktok-vs-lemon8-creators/",
+    "sourceType": "mdx",
+    "wordCount": 1965,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/cpm-cpv/page.tsx",
+    "route": "/calculators/cpm-cpv/",
+    "sourceType": "app-page",
+    "wordCount": 1986,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.37,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/brand-deals.mdx",
+    "route": "/guides/brand-deals/",
+    "sourceType": "mdx",
+    "wordCount": 1991,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/complete-tiktok-diamond-guide.mdx",
+    "route": "/guides/complete-tiktok-diamond-guide/",
+    "sourceType": "mdx",
+    "wordCount": 2001,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/fun-niche/page.tsx",
+    "route": "/calculators/fun-niche/",
+    "sourceType": "app-page",
+    "wordCount": 2014,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/seven-ways-make-money-tiktok.mdx",
+    "route": "/guides/monetization/seven-ways-make-money-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 2014,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/video-engagement/page.tsx",
+    "route": "/calculators/engagement-influence/video-engagement/",
+    "sourceType": "app-page",
+    "wordCount": 2016,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.33,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/cost-per-result/page.tsx",
+    "route": "/calculators/cost-per-result/",
+    "sourceType": "app-page",
+    "wordCount": 2021,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.37,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/live-earnings/page.tsx",
+    "route": "/calculators/earnings-revenue/live-earnings/",
+    "sourceType": "app-page",
+    "wordCount": 2023,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.38,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/ad-revenue/page.tsx",
+    "route": "/calculators/ad-revenue/",
+    "sourceType": "app-page",
+    "wordCount": 2026,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/page.tsx",
+    "route": "/data/",
+    "sourceType": "app-page",
+    "wordCount": 2026,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-indonesia-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-indonesia-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 2028,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.38,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-consulting-creator.mdx",
+    "route": "/guides/monetization/tiktok-consulting-creator/",
+    "sourceType": "mdx",
+    "wordCount": 2029,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/niche-profitability/page.tsx",
+    "route": "/calculators/niche-profitability/",
+    "sourceType": "app-page",
+    "wordCount": 2044,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/completion-rate/page.tsx",
+    "route": "/calculators/completion-rate/",
+    "sourceType": "app-page",
+    "wordCount": 2045,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/glossary/page.tsx",
+    "route": "/glossary/",
+    "sourceType": "app-page",
+    "wordCount": 2046,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/audience-overlap/page.tsx",
+    "route": "/calculators/audience-overlap/",
+    "sourceType": "app-page",
+    "wordCount": 2056,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-canada-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-canada-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 2074,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.47,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/tax/page.tsx",
+    "route": "/calculators/utility-tools/tax/",
+    "sourceType": "app-page",
+    "wordCount": 2094,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/brand-deal-rate/page.tsx",
+    "route": "/calculators/brand-deal-rate/",
+    "sourceType": "app-page",
+    "wordCount": 2100,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/platform-comparisons/tiktok-vs-youtube-vs-twitch-live.mdx",
+    "route": "/data/platform-comparisons/tiktok-vs-youtube-vs-twitch-live/",
+    "sourceType": "mdx",
+    "wordCount": 2139,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/brand-deal-contract-negotiate.mdx",
+    "route": "/guides/business/brand-deal-contract-negotiate/",
+    "sourceType": "mdx",
+    "wordCount": 2145,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/content-calendar-roi/page.tsx",
+    "route": "/calculators/content-calendar-roi/",
+    "sourceType": "app-page",
+    "wordCount": 2151,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/production-cost/tiktok-creator-equipment-guide.mdx",
+    "route": "/calculators/production-cost/tiktok-creator-equipment-guide/",
+    "sourceType": "mdx",
+    "wordCount": 2155,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/content-value/page.tsx",
+    "route": "/calculators/content-value/",
+    "sourceType": "app-page",
+    "wordCount": 2160,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/top-tiktok-creators-income.mdx",
+    "route": "/data/earnings/top-tiktok-creators-income/",
+    "sourceType": "mdx",
+    "wordCount": 2163,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/blog/page.tsx",
+    "route": "/blog/",
+    "sourceType": "app-page",
+    "wordCount": 2172,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-money-100k-followers.mdx",
+    "route": "/calculators/tiktok-money/tiktok-money-100k-followers/",
+    "sourceType": "mdx",
+    "wordCount": 2173,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/international-creator-tax-implications.mdx",
+    "route": "/guides/business/international-creator-tax-implications/",
+    "sourceType": "mdx",
+    "wordCount": 2186,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-australia-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-australia-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 2196,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.47,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/page.tsx",
+    "route": "/calculators/earnings-revenue/",
+    "sourceType": "app-page",
+    "wordCount": 2211,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/tiktok-creator-fund/page.tsx",
+    "route": "/calculators/tiktok-creator-fund/",
+    "sourceType": "app-page",
+    "wordCount": 2212,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.5,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/watch-time/tiktok-hook-strategies.mdx",
+    "route": "/calculators/watch-time/tiktok-hook-strategies/",
+    "sourceType": "mdx",
+    "wordCount": 2228,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/production-cost/page.tsx",
+    "route": "/calculators/production-cost/",
+    "sourceType": "app-page",
+    "wordCount": 2247,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/tiktok-course-creation-guide.mdx",
+    "route": "/guides/monetization/tiktok-course-creation-guide/",
+    "sourceType": "mdx",
+    "wordCount": 2247,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/hashtag-performance/page.tsx",
+    "route": "/calculators/hashtag-performance/",
+    "sourceType": "app-page",
+    "wordCount": 2266,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/platform-comparisons/creator-monetization-platforms-2026.mdx",
+    "route": "/data/platform-comparisons/creator-monetization-platforms-2026/",
+    "sourceType": "mdx",
+    "wordCount": 2277,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/eligibility/page.tsx",
+    "route": "/calculators/utility-tools/eligibility/",
+    "sourceType": "app-page",
+    "wordCount": 2283,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-rate/page.tsx",
+    "route": "/calculators/engagement-rate/",
+    "sourceType": "app-page",
+    "wordCount": 2295,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-creator-burnout-guide.mdx",
+    "route": "/guides/business/tiktok-creator-burnout-guide/",
+    "sourceType": "mdx",
+    "wordCount": 2301,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.19,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/content-repurposing-roi-analysis.mdx",
+    "route": "/guides/growth/content-repurposing-roi-analysis/",
+    "sourceType": "mdx",
+    "wordCount": 2314,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-side-hustle-beginner-2026.mdx",
+    "route": "/blog/tiktok-side-hustle-beginner-2026/",
+    "sourceType": "mdx",
+    "wordCount": 2327,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/business/tiktok-creator-taxes-guide.mdx",
+    "route": "/guides/business/tiktok-creator-taxes-guide/",
+    "sourceType": "mdx",
+    "wordCount": 2330,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/follower-growth/page.tsx",
+    "route": "/calculators/follower-growth/",
+    "sourceType": "app-page",
+    "wordCount": 2349,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/coins/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/coins/",
+    "sourceType": "app-page",
+    "wordCount": 2370,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/follower-conversion/page.tsx",
+    "route": "/calculators/follower-conversion/",
+    "sourceType": "app-page",
+    "wordCount": 2406,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-ab-testing-content.mdx",
+    "route": "/guides/growth/tiktok-ab-testing-content/",
+    "sourceType": "mdx",
+    "wordCount": 2411,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-uk-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-uk-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 2412,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.46,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/earnings/tiktok-pay-us-earnings.mdx",
+    "route": "/data/earnings/tiktok-pay-us-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 2479,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.46,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/tiktok-money/tiktok-pay-per-million-views.mdx",
+    "route": "/calculators/tiktok-money/tiktok-pay-per-million-views/",
+    "sourceType": "mdx",
+    "wordCount": 2497,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/page.tsx",
+    "route": "/calculators/utility-tools/",
+    "sourceType": "app-page",
+    "wordCount": 2584,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-creators-100k-income-2026.mdx",
+    "route": "/blog/tiktok-creators-100k-income-2026/",
+    "sourceType": "mdx",
+    "wordCount": 2660,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/brand-deal-rate/tiktok-media-kit.mdx",
+    "route": "/calculators/brand-deal-rate/tiktok-media-kit/",
+    "sourceType": "mdx",
+    "wordCount": 2692,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/influencer-pricing/page.tsx",
+    "route": "/calculators/engagement-influence/influencer-pricing/",
+    "sourceType": "app-page",
+    "wordCount": 2702,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/page.tsx",
+    "route": "/calculators/engagement-influence/",
+    "sourceType": "app-page",
+    "wordCount": 2711,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/break-even/page.tsx",
+    "route": "/calculators/break-even/",
+    "sourceType": "app-page",
+    "wordCount": 2821,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/milestone-tracker/page.tsx",
+    "route": "/calculators/milestone-tracker/",
+    "sourceType": "app-page",
+    "wordCount": 2824,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/sponsorship-roi/page.tsx",
+    "route": "/calculators/sponsorship-roi/",
+    "sourceType": "app-page",
+    "wordCount": 2834,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "content/calculators/viral-potential/how-to-go-viral-tiktok.mdx",
+    "route": "/calculators/viral-potential/how-to-go-viral-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 2858,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/creator-rewards-program.mdx",
+    "route": "/guides/creator-rewards-program/",
+    "sourceType": "mdx",
+    "wordCount": 2927,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/tiktok-coins.mdx",
+    "route": "/guides/tiktok-coins/",
+    "sourceType": "mdx",
+    "wordCount": 2931,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/commerce-ads/shop-profit/page.tsx",
+    "route": "/calculators/commerce-ads/shop-profit/",
+    "sourceType": "app-page",
+    "wordCount": 2944,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/tiktok-ads-hub/page.tsx",
+    "route": "/guides/tiktok-ads-hub/",
+    "sourceType": "app-page",
+    "wordCount": 3301,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/tiktok-growth-hub/page.tsx",
+    "route": "/guides/tiktok-growth-hub/",
+    "sourceType": "app-page",
+    "wordCount": 3327,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/monetization-calculator-hub/page.tsx",
+    "route": "/guides/monetization-calculator-hub/",
+    "sourceType": "app-page",
+    "wordCount": 3359,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/tiktok-money/page.tsx",
+    "route": "/calculators/tiktok-money/",
+    "sourceType": "app-page",
+    "wordCount": 3362,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/money/page.tsx",
+    "route": "/calculators/earnings-revenue/money/",
+    "sourceType": "app-page",
+    "wordCount": 3366,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/monetization/how-to-make-money-tiktok.mdx",
+    "route": "/guides/monetization/how-to-make-money-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 3970,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/growth/tiktok-algorithm-explained.mdx",
+    "route": "/guides/growth/tiktok-algorithm-explained/",
+    "sourceType": "mdx",
+    "wordCount": 4083,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.27,
+    "risk": "low"
+  }
+]

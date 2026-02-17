@@ -2,7 +2,10 @@ import type { Metadata } from 'next';
 import { HeroBlock } from '@/components/blocks/HeroBlock';
 import { ToolGridBlock } from '@/components/blocks/ToolGridBlock';
 import { CategoryChipsBlock } from '@/components/blocks/CategoryChipsBlock';
+import { HowItWorksBlock } from '@/components/blocks/HowItWorksBlock';
 import { TrustBlock } from '@/components/blocks/TrustBlock';
+import { DataSourcesBlock } from '@/components/blocks/DataSourcesBlock';
+import { ExpertTeamBlock } from '@/components/blocks/ExpertTeamBlock';
 import { GuideGridBlock } from '@/components/blocks/GuideGridBlock';
 import { BenchmarksPreviewBlock } from '@/components/blocks/BenchmarksPreviewBlock';
 import { FAQBlock } from '@/components/blocks/FAQBlock';
@@ -16,13 +19,13 @@ import {
 } from '@/lib/content/site-data';
 
 export const metadata: Metadata = {
-  title: "TikTok Page.tsx for Creator Earnings and Growth Guide",
-  description: "Explore TikTok page.tsx content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: "TikTok Creator Calculators — Earnings, Engagement & Growth Tools | CalculateCreator",
+  description: "Free TikTok creator calculators for earnings estimates, engagement benchmarks, and growth projections. Transparent assumptions, expert-reviewed methodology, updated weekly.",
   alternates: {
     canonical: 'https://calculatecreator.com/',
   },
   openGraph: {
-    title: 'CalculateCreator',
+    title: 'TikTok Creator Calculators — Earnings, Engagement & Growth Tools | CalculateCreator',
     description:
       'Creator benchmarks made simple. Inputs, results, assumptions, and next actions in one flow.',
     url: 'https://calculatecreator.com/',
@@ -42,7 +45,10 @@ export default function HomePage() {
           tools={toolDirectoryItems.filter((tool) => tool.popular).slice(0, 6)}
         />
         <CategoryChipsBlock />
+        <HowItWorksBlock />
         <TrustBlock />
+        <DataSourcesBlock />
+        <ExpertTeamBlock />
         <GuideGridBlock guides={featuredGuides} />
         <BenchmarksPreviewBlock stats={benchmarkStats} />
         <FAQBlock items={homeFaqs} />
