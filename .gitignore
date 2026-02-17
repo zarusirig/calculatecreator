@@ -44,3 +44,11 @@ next-env.d.ts
 # Firebase
 .firebase/
 firebase-debug.log
+
+# Local agent/editor metadata
+.agent/
+.cursor/
+.trae/
+
+# Local stale build artifacts
+.next_stale_*/
