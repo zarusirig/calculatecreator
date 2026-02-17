@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
 Allow: /ads.txt
+Allow: /_next/
 
 Disallow: /api/
-Disallow: /_next/
 Disallow: /admin/
 Disallow: /tmp/
 
