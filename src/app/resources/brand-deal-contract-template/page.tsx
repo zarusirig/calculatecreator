@@ -6,8 +6,8 @@ import { Calendar, Clock, FileText, CheckCircle, AlertTriangle, Scale } from 'lu
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Brand Deal Contract Template (Free Download)',
-  description: 'Free brand deal contract template for TikTok creators. Includes complete agreement, clause explanations, red flags to avoid, and how to protect yourself.',
+  title: "TikTok Brand Deal Contract Template for Creator Earnings",
+  description: "Explore TikTok brand deal contract template content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step",
   keywords: ['brand deal contract template', 'tiktok sponsorship agreement', 'influencer contract template', 'tiktok brand deal contract', 'creator contract'],
   alternates: {
     canonical: 'https://calculatecreator.com/resources/brand-deal-contract-template/',
@@ -113,7 +113,7 @@ export default function BrandDealContractTemplatePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Brand Deal Contract Template
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Free contract template to protect yourself in brand partnerships
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

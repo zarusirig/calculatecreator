@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Dinheiro TikTok Brasil 2026 | Fundos e Recompensas',
-  description:
-    'Calcule ganhos no TikTok para o Brasil: Creator Fund, Creator Rewards, parcerias e presentes ao vivo. RPM 2026, grátis e sem cadastro.',
+  title: "TikTok Pt Br Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok pt br calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/pt-br/',
     languages: {

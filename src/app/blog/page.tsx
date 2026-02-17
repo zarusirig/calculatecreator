@@ -12,9 +12,9 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok Creator Blog: Tips, Guides & Insights | CalculateCreator',
+    absolute: 'TikTok Creator Blog — Earnings, Growth, and News',
   },
-  description: 'Get expert insights on TikTok monetization, creator earnings, and platform strategies. Maximize your income as a content creator with data-driven guides.',
+  description: "Follow this TikTok blog update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok blog', 'creator tips', 'tiktok monetization', 'creator earnings blog', 'tiktok strategy', 'tiktok income'],
   alternates: {
     canonical: 'https://calculatecreator.com/blog/',

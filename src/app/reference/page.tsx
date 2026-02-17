@@ -8,8 +8,8 @@ import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/
 import { BookOpen, DollarSign, Globe, Gift, ShoppingBag, Calendar, CreditCard, FileText, CheckCircle, Clock, ArrowRight, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Reference Data & Official Rates | Creator Resources 2026',
-  description: 'Official TikTok reference data including Creator Fund payment schedules, eligible countries, LIVE gift values, TikTok Shop commission rates, and payout timelines.',
+  title: "TikTok Reference Data and Benchmark Insights Guide",
+  description: "Review TikTok reference data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok reference', 'creator fund countries', 'tiktok payment schedule', 'live gift values', 'shop commission rates', 'tiktok payout'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/',

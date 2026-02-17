@@ -5,8 +5,8 @@ import { Calendar, Clock, DollarSign, AlertCircle } from 'lucide-react';
 import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Payment Schedule: When Do You Get Paid? 2026',
-  description: 'Complete TikTok Shop payout schedule, processing times, minimum thresholds, payment methods, and troubleshooting for delayed payments.',
+  title: "TikTok Shop Payment Schedule Data and Benchmark Insights",
+  description: "Review TikTok shop payment schedule data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok shop payment', 'shop payout schedule', 'when paid tiktok shop', 'commission payout', 'tiktok shop seller payment'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/shop-payment-schedule/',

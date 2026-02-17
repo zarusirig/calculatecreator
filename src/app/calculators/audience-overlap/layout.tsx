@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Audience Overlap Calculator | Cross-Platform Analytics',
-  description: 'Calculate audience overlap between platforms and accounts. Understand your cross-platform reach and identify unique vs. shared followers.',
+  title: "TikTok Audience Overlap Calculator and Earnings Tool",
+  description: "Use this TikTok audience overlap calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['audience overlap', 'cross-platform analytics', 'follower overlap', 'audience analysis'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/audience-overlap/',

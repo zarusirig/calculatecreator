@@ -7,14 +7,15 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: 'TikTok Brand Deal Rate Calculator: Price Your Sponsorships (2026)',
-  description: 'Calculate your TikTok brand deal rates based on followers, engagement, and niche. Learn what to charge for sponsored content with our free pricing calculator.',
+  title: "TikTok Brand Deal Rate Calculator and Earnings Tool",
+  description: "Use this TikTok brand deal rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['brand deal rate calculator', 'tiktok sponsorship rates', 'influencer pricing', 'how much to charge brands', 'tiktok brand deals', 'sponsored content pricing'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',
@@ -370,6 +371,8 @@ Recommended rate: $9,000-$10,000 per post`}
                 { name: 'Video Performance Calculator', slug: 'video-performance', description: 'Analyze video metrics', icon: 'Video' },
               ]}
             />
+
+            <RelatedGuides calculatorPath="/calculators/brand-deal-rate" />
           </div>
 
           {/* EEAT Section */}

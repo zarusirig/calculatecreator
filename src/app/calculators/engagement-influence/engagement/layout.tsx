@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Engagement Rate Calculator | Free & Accurate 2026',
-  description: 'Calculate your TikTok engagement rate in seconds. Compare to industry benchmarks (5%+ is excellent). Free engagement calculator with detailed analytics for creators and brands.',
+  title: "TikTok Engagement Calculator and Earnings Tool Guide",
+  description: "Use this TikTok engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok engagement rate calculator', 'tiktok engagement calculator', 'engagement rate calculator', 'tiktok metrics calculator', 'calculate tiktok engagement', 'tiktok analytics calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-rate/',

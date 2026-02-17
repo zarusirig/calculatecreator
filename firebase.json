@@ -6,6 +6,73 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [
+      {
+        "source": "/guides/how-to-get-brand-deals-complete{,/}",
+        "destination": "/guides/how-to-get-brand-deals/",
+        "type": 301
+      },
+      {
+        "source": "/guides/how-to-join-creator-fund-complete{,/}",
+        "destination": "/guides/how-to-join-creator-fund/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-coin-converter-complete-guide{,/}",
+        "destination": "/guides/tiktok-coins/",
+        "type": 301
+      },
+      {
+        "source": "/guides/how-creator-fund-works{,/}",
+        "destination": "/guides/tiktok-creator-fund/",
+        "type": 301
+      },
+      {
+        "source": "/guides/increase-engagement-rate-tiktok{,/}",
+        "destination": "/guides/how-to-increase-engagement/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-live-earnings-expectations{,/}",
+        "destination": "/guides/tiktok-live-earnings-guide/",
+        "type": 301
+      },
+      {
+        "source": "/guides/how-to-price-brand-deals{,/}",
+        "destination": "/guides/brand-deals/",
+        "type": 301
+      },
+      {
+        "source": "/reference/creator-fund-eligible-countries{,/}",
+        "destination": "/reference/creator-fund-countries/",
+        "type": 301
+      },
+      {
+        "source": "/reference/tiktok-shop-payment-schedule{,/}",
+        "destination": "/reference/shop-payment-schedule/",
+        "type": 301
+      },
+      {
+        "source": "/advanced/creator-tax-deductions-guide{,/}",
+        "destination": "/advanced/creator-tax-deductions/",
+        "type": 301
+      },
+      {
+        "source": "/resources/brand-deal-contract-template{,/}",
+        "destination": "/resources/brand-deal-contract/",
+        "type": 301
+      },
+      {
+        "source": "/guides/creator-rewards-program{,/}",
+        "destination": "/blog/how-tiktok-creator-rewards-work-2026/",
+        "type": 301
+      },
+      {
+        "source": "/blog/tiktok-vs-youtube-shorts-earnings-2026{,/}",
+        "destination": "/comparisons/tiktok-vs-youtube-earnings/",
+        "type": 301
+      }
+    ],
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico)",

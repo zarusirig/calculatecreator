@@ -6,8 +6,8 @@ import { Calendar, Globe, ClipboardList } from 'lucide-react';
 import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Eligible Countries 2026: Complete List',
-  description: 'Complete list of TikTok Creator Fund eligible countries with requirements, payment methods, and alternatives for ineligible regions.',
+  title: "TikTok Creator Fund Eligible Countries Data and Benchmark",
+  description: "Review TikTok creator fund eligible countries data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision",
   keywords: ['tiktok creator fund eligible countries', 'creator fund countries', 'creator fund availability', 'is creator fund in my country', 'tiktok monetization by country'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/creator-fund-eligible-countries/',
@@ -272,7 +272,7 @@ export default function CreatorFundEligibleCountriesPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Creator Fund Eligible Countries 2026
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Complete list with requirements, payment methods, and expansion timeline
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Calculator: Estimate Your Earnings (2026)',
-  description: 'Calculate your TikTok Creator Fund earnings based on views, engagement rate, and content niche. Get accurate RPM estimates and monthly income projections.',
+  title: "TikTok Creator Fund Calculator and Earnings Tool Guide",
+  description: "Use this TikTok creator fund calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment', 'tiktok monetization'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/earnings-revenue/creator-fund/',

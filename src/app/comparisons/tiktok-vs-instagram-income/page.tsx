@@ -6,8 +6,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs Instagram Creator Income: Which Pays More? 2026',
-  description: 'Complete comparison of creator earnings on TikTok vs Instagram. Monetization options, brand deal rates, and which platform is better for your niche.',
+  title: "TikTok Tiktok Vs Instagram Income Comparison for Creator",
+  description: "Compare TikTok tiktok vs instagram income outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
   keywords: ['tiktok vs instagram earnings', 'creator income comparison', 'which platform pays more', 'tiktok instagram money'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-instagram-income/',
@@ -64,7 +64,7 @@ export default function TikTokVsInstagramIncomePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok vs Instagram Creator Income
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Complete 2026 comparison: Which platform pays creators more?
           </p>
         </div>

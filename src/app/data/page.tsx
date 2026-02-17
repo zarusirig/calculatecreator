@@ -8,9 +8,9 @@ import { Database, TrendingUp, Globe, Users, DollarSign, BarChart3, FileText, Me
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok Creator Data & Benchmarks Hub | 2026 Industry Rates | CalculateCreator',
+    absolute: 'TikTok Data Hub — Earnings Benchmarks and Rates',
   },
-  description: 'Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2026.',
+  description: "Review TikTok data data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
   alternates: {
     canonical: 'https://calculatecreator.com/data/',
@@ -173,7 +173,7 @@ export default function DataIndexPage() {
               TikTok Creator Data Hub
             </h1>
           </div>
-          <p className="text-heading-md text-white/90 mb-6 leading-relaxed">
+          <p className="text-heading-md text-white/90 mb-6 leading-relaxed">TikTok creators: 
             Industry-standard benchmarks for Creator Fund earnings, brand deal rates, and engagement metrics. Make data-driven decisions about your creator business.
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

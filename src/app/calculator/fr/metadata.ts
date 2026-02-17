@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Calculateur TikTok France 2026 | Revenus & Creator Fund',
-  description:
-    'Calcule tes gains TikTok pour la France : Creator Fund, Creator Rewards, partenariats et cadeaux LIVE. Données RPM 2026, gratuit.',
+  title: "TikTok Fr Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok fr calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/fr/',
     languages: {

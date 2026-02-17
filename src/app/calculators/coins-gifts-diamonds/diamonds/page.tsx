@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Diamond to USD Calculator: Convert Diamonds to Money (2026)',
-  description: 'Convert TikTok diamonds to real money. Calculate how much your LIVE gifts are worth in USD, EUR, and other currencies with our free converter.',
+  title: "TikTok Diamonds Calculator and Earnings Tool Guide",
+  description: "Use this TikTok diamonds calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok diamond calculator', 'diamonds to usd', 'tiktok live earnings', 'diamond converter', 'gift value calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins-gifts-diamonds/diamonds/',

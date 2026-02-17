@@ -5,8 +5,8 @@ import { AlertTriangle } from 'lucide-react';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
-  title: 'Brand Deal Contract Template for TikTok Creators 2026',
-  description: 'Free brand partnership contract template. Essential clauses, payment terms, usage rights, and legal protection for creators.',
+  title: "TikTok Brand Deal Contract for Creator Earnings and Growth",
+  description: "Explore TikTok brand deal contract content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step",
   keywords: ['brand deal contract', 'influencer agreement template', 'sponsorship contract', 'creator legal'],
   alternates: {
     canonical: 'https://calculatecreator.com/resources/brand-deal-contract/',
@@ -44,7 +44,7 @@ export default function BrandDealContractPage() {
       <section className="bg-gradient-to-br from-purple-600 via-pink-500 to-red-500 py-12">
         <div className="container-custom max-w-4xl">
           <h1 className="text-display-lg font-bold text-white mb-4">Brand Deal Contract Template</h1>
-          <p className="text-heading-md text-white/90">Essential clauses for creator protection</p>
+          <p className="text-heading-md text-white/90">TikTok creators: Essential clauses for creator protection</p>
         </div>
       </section>
 

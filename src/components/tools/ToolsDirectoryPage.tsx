@@ -1,0 +1,103 @@
+import Link from 'next/link';
+import { ToolsDirectoryClient } from '@/components/tools/ToolsDirectoryClient';
+import { toolDirectoryItems } from '@/lib/content/site-data';
+import { Container } from '@/components/layout/Container';
+
+interface ToolsDirectoryPageProps {
+  title?: string;
+  description?: string;
+  initialFilters?: {
+    platform?: string;
+    goal?: string;
+    metric?: string;
+  };
+}
+
+export function ToolsDirectoryPage({
+  title = 'Creator Tools Directory',
+  description = 'Search, filter, and compare calculators by platform, goal, and metric.',
+  initialFilters,
+}: ToolsDirectoryPageProps) {
+  return (
+    <div className="pb-16 pt-10">
+      <Container>
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div className="max-w-3xl">
+            <h1 className="text-display-sm font-bold text-neutral-900 md:text-display-md">{title}</h1>
+            <p className="mt-3 text-body-md text-neutral-600">{description}</p>
+          </div>
+          <Link href="/methodology/" className="btn btn-secondary btn-md">
+            Methodology
+          </Link>
+        </div>
+
+        <div id="popular" className="mb-6">
+          <p className="text-sm text-neutral-600">
+            One dominant intent: find the right calculator quickly, then run a clear estimate.
+          </p>
+        </div>
+
+        <ToolsDirectoryClient tools={toolDirectoryItems} initialFilters={initialFilters} />
+
+        <section className="mt-8 grid gap-4 lg:grid-cols-2">
+          <article className="card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">How to pick the right calculator</h2>
+            <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-neutral-700">
+              <li>Start with your primary decision: earnings estimate, engagement benchmark, or pricing model.</li>
+              <li>Filter by platform and metric so your inputs match the workflow you are evaluating.</li>
+              <li>Use the methodology link on each tool before relying on one result for business planning.</li>
+              <li>Run at least two scenarios, including a conservative case, to avoid overconfidence.</li>
+            </ol>
+            <p className="mt-4 text-sm leading-relaxed text-neutral-700">
+              Calculator outputs on CalculateCreator are directional. They help you compare options
+              quickly, but they are not legal, tax, or financial guarantees.
+            </p>
+          </article>
+
+          <article className="card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Coverage and update policy</h2>
+            <p className="mt-4 text-sm leading-relaxed text-neutral-700">
+              This directory includes legacy calculator routes and newer tool templates so internal
+              links remain stable while the product evolves. We keep long-standing
+              <code className="mx-1 rounded bg-neutral-100 px-1 py-0.5 text-xs">/calculators/</code>
+              URLs active and expose
+              <code className="mx-1 rounded bg-neutral-100 px-1 py-0.5 text-xs">/tools/</code>
+              as an alternate discovery layer.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Assumptions and benchmark context are reviewed regularly. If a calculator appears
+              stale or unclear, use{' '}
+              <Link href="/contact/" className="link">
+                Contact
+              </Link>{' '}
+              to report the issue and include the exact page URL so we can triage quickly.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              For broader context, pair tools with the{' '}
+              <Link href="/benchmarks/" className="link">
+                Benchmarks hub
+              </Link>{' '}
+              and relevant guides before making high-impact creator-business decisions.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              If you prefer deeper metric definitions before running a tool, review the{' '}
+              <Link href="/glossary/" className="link">
+                glossary
+              </Link>{' '}
+              and the{' '}
+              <Link href="/faq/" className="link">
+                FAQ
+              </Link>{' '}
+              to understand terminology, limits, and interpretation standards used across this
+              directory.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              This directory is intentionally structured for fast comparison, repeat use, and clear
+              links to methodology on every major decision path.
+            </p>
+          </article>
+        </section>
+      </Container>
+    </div>
+  );
+}

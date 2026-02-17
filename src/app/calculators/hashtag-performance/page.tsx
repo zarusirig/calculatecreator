@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Hashtag Performance Calculator (2026)',
-  description: 'Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy for maximum discovery.',
+  title: "TikTok Hashtag Performance Calculator and Earnings Tool",
+  description: "Use this TikTok hashtag performance calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/hashtag-performance/',
@@ -78,7 +78,7 @@ export default function HashtagPerformanceCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Hashtag Performance Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Analyze hashtag effectiveness by comparing view and engagement metrics with and without specific hashtags. Calculate view lift, engagement lift, and effectiveness scores. Identify high-performing hashtags that expand your reach. This tool is perfect for creators who want to optimize their 3 to 5 hashtag strategy using data-driven insights. Test different hashtags by measuring baseline performance versus hashtag performance to find your best set of tags. Get numerical effectiveness scores that show which hashtags truly drive discovery.
           </p>
         </div>

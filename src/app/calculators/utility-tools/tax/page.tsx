@@ -10,8 +10,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Tax Calculator: Estimate Your Taxes (2026)',
-  description: 'Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator.',
+  title: "TikTok Tax Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok tax calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/tax/',
@@ -76,7 +76,7 @@ export default function CreatorTaxCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Creator Tax Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Estimate your tax obligations as a content creator. Plan for 3 tax types (federal, state, and self-employment) with accurate calculations based on 2026 tax brackets. This calculator helps creators set aside appropriate amounts for quarterly tax payments, understand deductions, and avoid penalties.
 
             Calculate your effective tax rate including self-employment tax obligations. See how business expense deductions reduce your tax burden. Get quarterly payment estimates to avoid Internal Revenue Service (IRS) penalties. Understand the true after-tax value of your creator earnings.

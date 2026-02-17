@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Kalkulator Wang TikTok Malaysia 2026 | Creator Fund & Rewards',
-  description:
-    'Kira pendapatan TikTok untuk Malaysia: Creator Fund, Creator Rewards, tawaran jenama dan hadiah LIVE. Data RPM 2026, percuma.',
+  title: "TikTok My Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok my calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/my/',
     languages: {

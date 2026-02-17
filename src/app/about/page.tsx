@@ -1,477 +1,214 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Card } from '@/components/ui/Card';
-import { AUTHORS } from '@/lib/constants/authors';
-import {
-  Hand,
-  BarChart3,
-  Search,
-  Gift,
-  RefreshCw,
-  Calculator,
-  BookOpen,
-  Newspaper,
-  CheckCircle,
-} from 'lucide-react';
+import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: 'About CalculateCreator | Our Team & Mission',
-  description: 'Meet the team behind CalculateCreator, including data analysts, experienced TikTok creators, and monetization experts. Explore our methodology, data sources, and commitment to accuracy.',
-  keywords: ['about calculatecreator', 'tiktok calculator team', 'creator economy experts'],
+  title: "About and CalculateCreator Platform Details Guide 2026",
+  description: "Review about information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
   alternates: {
     canonical: 'https://calculatecreator.com/about/',
   },
 };
 
-// Organization Schema for SEO
 const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "CalculateCreator",
-  "url": "https://calculatecreator.com",
-  "logo": "https://calculatecreator.com/logo.png",
-  "description": "Free, data-driven tools for TikTok creators to calculate earnings, track metrics, and grow their business.",
-  "foundingDate": "2024",
-  "sameAs": [],
-  "knowsAbout": [
-    "TikTok Creator Fund",
-    "Influencer Marketing",
-    "Social Media Monetization",
-    "Creator Economy",
-    "Brand Deals",
-    "TikTok Analytics"
-  ]
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'CalculateCreator',
+  url: 'https://calculatecreator.com',
+  logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+  description:
+    'CalculateCreator helps creators estimate, compare, and benchmark earnings and performance metrics with transparent assumptions.',
+  sameAs: [],
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: 'contact@calculatecreator.com',
+      url: 'https://calculatecreator.com/contact/',
+    },
+  ],
 };
 
 export default function AboutPage() {
-  const teamMembers = Object.values(AUTHORS);
-
   return (
     <>
-      {/* Organization Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
-      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
-        <div className="container-custom max-w-5xl">
-          {/* Breadcrumb */}
-          <nav className="flex items-center space-x-2 text-body-sm mb-6">
-            <Link href="/" className="text-neutral-600 hover:text-primary-600">Home</Link>
-            <span className="text-neutral-400">&rarr;</span>
-            <span className="text-neutral-900 font-medium">About</span>
-          </nav>
+      <div className="pb-16 pt-10">
+        <Container className="max-w-4xl">
+          <h1 className="text-display-sm font-bold text-neutral-900">About CalculateCreator</h1>
+          <p className="mt-4 text-body-md text-neutral-700">
+            CalculateCreator is an independent product and editorial platform focused on one job:
+            helping creators make better decisions with numbers they can actually understand.
+            We publish creator calculators, benchmark pages, and practical guides for people who
+            want a clear view of earnings potential, engagement performance, and growth tradeoffs.
+            We are not a get-rich-quick brand. We are a numbers-first team that believes good
+            decision making starts with transparent assumptions.
+          </p>
 
-          {/* Header */}
-          <div className="text-center mb-12">
-            <img
-              src="/images/calculate-creator-transparent-v2.png"
-              alt="CalculateCreator logo - About our team and mission"
-              className="h-16 w-auto mx-auto mb-6"
-            />
-            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
-              About CalculateCreator
-            </h1>
-            <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-              Free, transparent, data-driven tools for TikTok creators. Creators, data analysts, and industry experts built these tools.
+          <section className="mt-8 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Our mission</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Our mission is to make creator analytics practical for everyday use. Most creators do
+              not have analyst teams, internal dashboards, or paid data subscriptions. They have a
+              phone, a publishing schedule, and business decisions they need to make quickly. We
+              built CalculateCreator so creators can estimate likely outcomes in minutes instead of
+              guessing in the dark.
             </p>
-          </div>
-
-          {/* Mission Section */}
-          <Card className="mb-12 bg-gradient-to-br from-primary-50 to-secondary-50 border-primary-200">
-            <div className="text-center">
-              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Our Mission</h2>
-              <p className="text-body-lg text-neutral-700 leading-relaxed max-w-3xl mx-auto mb-6">
-                Every TikTok creator deserves access to accurate, transparent tools. These tools help you understand your earning potential and make data-driven decisions about your content strategy.
-              </p>
-              <p className="text-body-md text-neutral-600 max-w-3xl mx-auto">
-                Too many creators rely on outdated calculators with vague estimates. We built CalculateCreator to change that. We provide free, research-backed tools that help creators at every stage, from first-time monetizers to established influencers.
-              </p>
-            </div>
-          </Card>
-
-          {/* Why We Built This */}
-          <Card className="mb-12">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Why We Built CalculateCreator</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
-                    <BarChart3 size={18} />
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">Data-Driven</h3>
-                    <p className="text-body-sm text-neutral-700">Based on surveys of over 500 creators, official TikTok documentation, and 2024 to 2025 industry reports</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
-                    <Search size={18} />
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">Transparent</h3>
-                    <p className="text-body-sm text-neutral-700">Every calculator displays its methodology, formulas, data sources, and limitations</p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
-                    <Gift size={18} />
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">Always Free</h3>
-                    <p className="text-body-sm text-neutral-700">No signup, no paywalls, and no credit card required. All calculators work instantly.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center">
-                    <RefreshCw size={18} />
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">Regularly Updated</h3>
-                    <p className="text-body-sm text-neutral-700">We refresh data quarterly and immediately respond to major platform changes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          {/* Meet Our Team Section */}
-          <section className="mb-12">
-            <div className="text-center mb-8">
-              <h2 className="text-display-sm font-bold text-neutral-900 mb-4">Meet Our Team</h2>
-              <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
-                Our team combines hands-on creator experience with data analysis expertise. Qualified experts in their field write and review every piece of content.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {teamMembers.map((author) => (
-                <Card key={author.id} className="hover:shadow-md transition-shadow">
-                  <div className="flex items-start space-x-4">
-                    {/* Avatar */}
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white flex items-center justify-center text-xl font-bold">
-                      {author.name.split(' ').map((n) => n[0]).join('')}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
-                        {author.name}
-                      </h3>
-                      <p className="text-body-sm text-primary-600 font-medium mb-3">{author.role}</p>
-                      <p className="text-body-sm text-neutral-700 mb-3 line-clamp-3">{author.bio}</p>
-
-                      {/* Expertise Tags */}
-                      <div className="flex flex-wrap gap-2 mb-3">
-                        {author.expertise.slice(0, 3).map((area) => (
-                          <span
-                            key={area}
-                            className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-neutral-100 text-neutral-700"
-                          >
-                            {area}
-                          </span>
-                        ))}
-                      </div>
-
-                      {/* Credentials */}
-                      <div className="space-y-1">
-                        {author.credentials.slice(0, 2).map((credential, index) => (
-                          <div key={index} className="flex items-center space-x-2 text-body-xs text-neutral-600">
-                            <svg className="w-4 h-4 text-success-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span>{credential}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We design every page around a single intent: inputs, result, meaning, and next step.
+              That approach keeps our tools useful for new creators and experienced operators. It
+              also keeps us honest about limitations. Creator income can change fast based on niche,
+              region, platform policy, seasonality, and content quality. Our role is to provide
+              directional models and context, not promises.
+            </p>
           </section>
 
-          {/* Our Methodology Section */}
-          <Card className="mb-12">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Our Methodology</h2>
-            <p className="text-body-md text-neutral-700 mb-6 leading-relaxed">
-              Every calculator on CalculateCreator uses a rigorous, transparent methodology. Here is how we ensure accuracy.
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">What we do</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              CalculateCreator publishes two core products.
             </p>
-
-            <div className="space-y-6">
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <h3 className="font-semibold text-neutral-900 mb-2">1. Data Collection</h3>
-                <p className="text-body-sm text-neutral-700">
-                  We gather data from multiple sources. These include quarterly surveys of over 500 TikTok creators, official TikTok Creator Portal documentation, and industry reports from CreatorIQ, Influencer Marketing Hub, and AspireIQ. We use talent agency rate cards and community feedback from Reddit and Discord creator communities.
-                </p>
-              </div>
-
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <h3 className="font-semibold text-neutral-900 mb-2">2. Formula Development</h3>
-                <p className="text-body-sm text-neutral-700">
-                  Our data analysts develop formulas based on industry-standard calculations. They validate formulas against real creator earnings. We show ranges rather than exact numbers to account for the variables that affect actual earnings.
-                </p>
-              </div>
-
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <h3 className="font-semibold text-neutral-900 mb-2">3. Expert Review</h3>
-                <p className="text-body-sm text-neutral-700">
-                  At least 1 subject matter expert reviews every calculator before publication. Our Certified Public Accountant (CPA) reviews tax calculators. Creators with extensive sponsorship experience review brand deal calculators.
-                </p>
-              </div>
-
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <h3 className="font-semibold text-neutral-900 mb-2">4. Ongoing Updates</h3>
-                <p className="text-body-sm text-neutral-700">
-                  We refresh our data quarterly (every 3 months). We update immediately when TikTok announces major changes to monetization programs. Each calculator displays its "Last Updated" date in the methodology section.
-                </p>
-              </div>
-            </div>
-          </Card>
-
-          {/* Data Sources Section */}
-          <Card className="mb-12">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Our Data Sources</h2>
-            <p className="text-body-md text-neutral-700 mb-6 leading-relaxed">
-              We believe in transparency. Here are the primary sources we use to build our calculators.
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              First, we build calculators for key creator workflows. These include tools for RPM,
+              total earnings, engagement rate, brand deal pricing, shop commission, tax set-aside,
+              and multi-platform comparisons. We also maintain supporting utilities for conversion
+              analysis, content value, and campaign ROI. You can browse them in our{' '}
+              <Link href="/tools/" className="link">
+                tools directory
+              </Link>{' '}
+              and legacy{' '}
+              <Link href="/calculators/" className="link">
+                calculators directory
+              </Link>
+              .
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Second, we publish editorial guides and benchmark explainers that show how to use
+              calculator outputs in real decisions. Instead of dumping raw numbers, we explain what
+              ranges mean, what assumptions matter, and when a metric is too uncertain to trust.
+              That editorial layer is a major part of our product, not an afterthought.
+            </p>
+          </section>
 
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
-                <h3 className="font-semibold text-neutral-900 mb-2">Official Sources</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary-500">•</span>
-                    <span>TikTok Creator Portal Documentation</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary-500">•</span>
-                    <span>TikTok for Business Ad Rate Cards</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary-500">•</span>
-                    <span>TikTok Shop Seller Center</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-primary-500">•</span>
-                    <span>IRS Self-Employment Guidelines</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-secondary-50 rounded-lg border border-secondary-200">
-                <h3 className="font-semibold text-neutral-900 mb-2">Industry Research</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-secondary-500">•</span>
-                    <span>Influencer Marketing Hub Reports</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-secondary-500">•</span>
-                    <span>CreatorIQ Benchmark Studies</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-secondary-500">•</span>
-                    <span>AspireIQ Rate Data</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-secondary-500">•</span>
-                    <span>Social Blade Analytics</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-success-50 rounded-lg border border-success-200">
-                <h3 className="font-semibold text-neutral-900 mb-2">Creator Surveys</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-success-500">•</span>
-                    <span>Quarterly surveys of 500+ TikTok creators</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-success-500">•</span>
-                    <span>Anonymous earnings data collection</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-success-500">•</span>
-                    <span>Community feedback and validation</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="p-4 bg-warning-50 rounded-lg border border-warning-200">
-                <h3 className="font-semibold text-neutral-900 mb-2">Community Data</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-warning-500">•</span>
-                    <span>Reddit r/TikTokCreators earnings reports</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-warning-500">•</span>
-                    <span>Discord creator community feedback</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-warning-500">•</span>
-                    <span>User-submitted corrections and updates</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Card>
-
-          {/* Editorial Standards */}
-          <Card className="mb-12">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Our Editorial Standards</h2>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-success-100 text-success-600 flex items-center justify-center">
-                  <CheckCircle size={20} />
-                </span>
-                <div>
-                  <h3 className="font-semibold text-neutral-900 mb-1">Accuracy First</h3>
-                  <p className="text-body-sm text-neutral-700">We prioritize accuracy over engagement. We do not publish data we cannot verify.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-success-100 text-success-600 flex items-center justify-center">
-                  <CheckCircle size={20} />
-                </span>
-                <div>
-                  <h3 className="font-semibold text-neutral-900 mb-1">No Financial Advice</h3>
-                  <p className="text-body-sm text-neutral-700">Our calculators provide estimates for educational purposes. Consult professionals for financial decisions.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-success-100 text-success-600 flex items-center justify-center">
-                  <CheckCircle size={20} />
-                </span>
-                <div>
-                  <h3 className="font-semibold text-neutral-900 mb-1">Full Disclosure</h3>
-                  <p className="text-body-sm text-neutral-700">We clearly label limitations, assumptions, and potential conflicts of interest.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-success-100 text-success-600 flex items-center justify-center">
-                  <CheckCircle size={20} />
-                </span>
-                <div>
-                  <h3 className="font-semibold text-neutral-900 mb-1">Regular Review</h3>
-                  <p className="text-body-sm text-neutral-700">We review all content at least quarterly to ensure continued accuracy.</p>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          {/* Independence Notice */}
-          <Card className="mb-12 bg-neutral-100 border-neutral-300">
-            <div className="text-center">
-              <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">Independence Statement</h2>
-              <p className="text-body-md text-neutral-700 leading-relaxed max-w-3xl mx-auto">
-                CalculateCreator is an independent platform. We are <strong>not affiliated with, endorsed by, or connected to TikTok, ByteDance Ltd, or any social media company</strong>. "TikTok" is a registered trademark of ByteDance Ltd. Our tools are educational resources based on publicly available information and creator-submitted data.
-              </p>
-            </div>
-          </Card>
-
-          {/* Trust & Credibility */}
-          <Card className="mb-12">
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Why Creators Trust Us</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-3">Proven Track Record</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start">
-                    <span className="text-success-500 mr-2">✓</span>
-                    <span><strong>500,000+ creators</strong> have used our calculators to plan their monetization strategy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-success-500 mr-2">✓</span>
-                    <span><strong>Referenced by industry publications</strong> including Social Media Examiner, Influencer Marketing Hub</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-success-500 mr-2">✓</span>
-                    <span><strong>Trusted by marketing agencies</strong> for influencer vetting and campaign planning</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-success-500 mr-2">✓</span>
-                    <span><strong>Used in creator education programs</strong> at universities and digital marketing courses</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-3">Our Commitment to Quality</h3>
-                <ul className="space-y-2 text-body-sm text-neutral-700">
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">•</span>
-                    <span><strong>Quarterly data updates</strong> to maintain accuracy with platform changes</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">•</span>
-                    <span><strong>Expert review process</strong> for every calculator and guide before publication</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">•</span>
-                    <span><strong>Transparent methodology</strong> with sources cited for all calculations</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">•</span>
-                    <span><strong>Community feedback integration</strong> from thousands of real creators</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-primary-500 mr-2">•</span>
-                    <span><strong>Privacy-first approach</strong> with no data collection or account requirements</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Card>
-
-          {/* Contact CTA */}
-          <Card className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
-            <div className="text-center">
-              <h2 className="text-heading-lg font-semibold mb-4">Get in Touch</h2>
-              <p className="text-body-md opacity-90 mb-6 max-w-2xl mx-auto">
-                Have questions, feedback, or suggestions? We love hearing from you. We respond to every message, whether it is a data correction, feature request, or a simple hello.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-semibold rounded-lg hover:bg-neutral-100 transition-colors"
-                >
-                  Contact Us &rarr;
-                </Link>
-                <Link
-                  href="/faq/"
-                  className="inline-flex items-center px-6 py-3 bg-white/20 text-white font-semibold rounded-lg hover:bg-white/30 transition-colors"
-                >
-                  View FAQ
-                </Link>
-              </div>
-            </div>
-          </Card>
-
-          {/* Quick Links */}
-          <div className="mt-12">
-            <h2 className="text-heading-md font-semibold text-neutral-900 mb-6 text-center">Explore Our Tools</h2>
-            <div className="grid md:grid-cols-3 gap-4">
-              <Link href="/calculators/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
-                <Calculator size={28} className="text-primary-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-neutral-900 mb-1">All Calculators</h3>
-                <p className="text-body-sm text-neutral-600">35+ free creator tools</p>
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">How we get our data</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We combine public platform documentation, creator-reported ranges, campaign norms,
+              and historical benchmark distributions to build assumption sets. We do not claim to
+              have direct internal access to TikTok, YouTube, or any platform. We use aggregated
+              public and community signals, then convert those signals into transparent calculator
+              inputs.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Every major calculator includes methodology and assumptions so users can see what is
+              driving the result. If a payout range is volatile, we say so. If a model has known
+              blind spots, we document them. We prefer a clear estimate with caveats over a false
+              sense of precision.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We review benchmark assumptions weekly and revise when there are meaningful changes in
+              monetization programs, market behavior, or input quality. You can review our process
+              in the{' '}
+              <Link href="/methodology/" className="link">
+                methodology page
+              </Link>{' '}
+              and full editorial workflow in our{' '}
+              <Link href="/editorial-policy/" className="link">
+                editorial policy
               </Link>
-              <Link href="/guides/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
-                <BookOpen size={28} className="text-primary-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-neutral-900 mb-1">Creator Guides</h3>
-                <p className="text-body-sm text-neutral-600">In-depth monetization guides</p>
+              .
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Our team</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              CalculateCreator is run by a small cross-functional team of monetization analysts,
+              data researchers, editors, and frontend engineers. We work directly on calculator
+              logic, content QA, and publishing infrastructure in the same repository. The team
+              follows a publish-review-refresh workflow so formulas, copy, and metadata are audited
+              together.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We treat creator analytics as an applied discipline. That means we care about model
+              structure, input clarity, and reproducibility more than catchy claims. We test tools,
+              read feedback, and revise assumptions continuously. When we find errors, we correct
+              them and document updates in policy pages and methodology blocks.
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Values and independence</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We operate with four core values: clarity, transparency, consistency, and editorial
+              independence. Our pages are designed to make assumptions visible and units explicit.
+              We avoid sensational claims and avoid language that implies guaranteed outcomes.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              CalculateCreator is not affiliated with, endorsed by, or sponsored by TikTok,
+              ByteDance, or any social platform. "TikTok" is a trademark of its owner and appears
+              on our site for descriptive purposes only.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We fund operations through advertising and related publishing revenue. Ads do not
+              determine calculator outputs or editorial conclusions. Our advertising standards and
+              controls are documented in the{' '}
+              <Link href="/compliance/advertising-disclosure/" className="link">
+                advertising disclosure
               </Link>
-              <Link href="/news/" className="p-4 bg-white rounded-lg border border-neutral-200 hover:shadow-md transition-shadow text-center">
-                <Newspaper size={28} className="text-primary-600 mx-auto mb-2" />
-                <h3 className="font-semibold text-neutral-900 mb-1">TikTok News</h3>
-                <p className="text-body-sm text-neutral-600">Latest platform updates</p>
-              </Link>
-            </div>
-          </div>
-        </div>
+              .
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Who we serve</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              We serve solo creators, creator managers, small agencies, and brand-side teams that
+              need quick directional modeling. We are especially useful for people who need to
+              compare options: whether to prioritize RPM improvement, brand deal volume, shop
+              conversion, or cross-platform strategy.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              If you want to suggest a calculator, report a data issue, or ask how a formula was
+              built, contact us directly. We review product and data feedback continuously and use
+              that feedback to prioritize updates.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Our readers often use CalculateCreator before negotiation calls, campaign planning
+              sessions, and monthly performance reviews. That practical use case shapes how we write
+              and design every page: concise inputs, explicit units, transparent assumptions, and a
+              clear next action.
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Continue reading</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+              <li>
+                <Link href="/editorial-policy/" className="link">
+                  Editorial Policy
+                </Link>{' '}
+                for our content process, corrections policy, and AI usage disclosures.
+              </li>
+              <li>
+                <Link href="/methodology/" className="link">
+                  Methodology
+                </Link>{' '}
+                for how assumptions are assembled and updated.
+              </li>
+              <li>
+                <Link href="/contact/" className="link">
+                  Contact
+                </Link>{' '}
+                to report errors, request features, or ask data questions.
+              </li>
+            </ul>
+          </section>
+        </Container>
       </div>
     </>
   );

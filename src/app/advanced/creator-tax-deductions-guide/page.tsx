@@ -6,8 +6,8 @@ import { Calendar, Clock, DollarSign, AlertTriangle, XCircle } from 'lucide-reac
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
-  title: 'Creator Tax Deductions Guide: What TikTok Creators Can Write Off 2026',
-  description: 'Complete guide to tax deductions for TikTok creators. Learn what you can write off, how to track expenses, and tax strategies to reduce your tax bill.',
+  title: "TikTok Creator Tax Deductions Guide for Creator Earnings",
+  description: "Explore TikTok creator tax deductions guide content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step",
   keywords: ['creator tax deductions', 'tiktok creator taxes', 'influencer tax write offs', 'content creator tax deductions', 'what can creators deduct'],
   alternates: {
     canonical: 'https://calculatecreator.com/advanced/creator-tax-deductions-guide/',

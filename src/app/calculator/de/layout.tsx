@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs.de;
 
 export const metadata: Metadata = {
-  title: 'TikTok Rechner: Einnahmen 2026 | Deutschland',
-  description: 'Kostenloser TikTok-Rechner für Creator Fund, Markendeals und LIVE-Geschenke. Berechnen Sie Ihre Einnahmen in Euro für den deutschen Markt.',
+  title: "TikTok De Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok de calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok rechner', 'tiktok einnahmen berechnen', 'tiktok geld verdienen', 'creator fund deutschland', 'tiktok monetarisierung'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/de/',

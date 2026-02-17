@@ -5,8 +5,8 @@ import { BarChart3, Rocket, Clock, Video, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'TikTok Video Performance Calculator: Analyze Content Success (2026)',
-  description: 'Calculate your TikTok video performance score based on views, engagement, and reach. Identify top-performing content patterns and optimize your strategy.',
+  title: "TikTok Video Engagement Calculator and Earnings Tool",
+  description: "Use this TikTok video engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['video performance calculator', 'tiktok video analytics', 'content performance score', 'tiktok metrics calculator', 'video success tracker'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-influence/video-engagement/',
@@ -103,7 +103,7 @@ export default function VideoPerformanceCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Video Performance Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">TikTok creators: 
             Analyze your video performance with a comprehensive score based on views, engagement metrics, and reach beyond your follower base. This calculator evaluates multiple dimensions including view-to-follower ratio, engagement rate, and interaction quality to provide a 0-100 performance score. Ideal for creators who want to identify top-performing content patterns, understand what makes videos successful, optimize future content strategy, and demonstrate their value to potential brand partners through data-driven performance insights.
           </p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">

@@ -52,9 +52,9 @@ const newsFaqs = [
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok News Today - Latest Creator Updates & Platform Changes | CalculateCreator',
+    absolute: 'TikTok Creator News — Platform and Earnings Updates',
   },
-  description: 'Stay updated with the latest TikTok news. Covers algorithm changes, monetization updates, new features, TikTok Shop developments, and safety announcements that affect creators.',
+  description: "Follow this TikTok news update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok news', 'creator updates', 'tiktok changes', 'platform news', 'social media news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/',

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Viral Potential Calculator 2026 | CalculateCreator',
-  description: 'Analyze your video\'s viral potential score. Calculate likelihood of hitting FYP based on engagement, shares, saves & completion metrics.',
+  title: "TikTok Viral Potential Calculator and Earnings Tool",
+  description: "Use this TikTok viral potential calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['viral potential calculator', 'tiktok viral score', 'virality predictor'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/viral-potential/',

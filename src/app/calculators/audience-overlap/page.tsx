@@ -12,8 +12,8 @@ import { AudienceOverlapCalculatorWidget } from '@/components/calculators/audien
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: 'TikTok Audience Overlap Calculator: Optimize Ad Targeting (2026)',
-  description: 'Calculate audience overlap between TikTok ad campaigns. Reduce wasted ad spend and optimize targeting efficiency with our free overlap calculator.',
+  title: "TikTok Audience Overlap Calculator and Earnings Tool",
+  description: "Use this TikTok audience overlap calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['audience overlap calculator', 'tiktok ad targeting', 'campaign optimization', 'ad audience analysis', 'targeting efficiency'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/audience-overlap/',

@@ -3,6 +3,7 @@ Allow: /
 Allow: /ads.txt
 
 Disallow: /api/
+Disallow: /_next/
 Disallow: /admin/
 Disallow: /tmp/
 

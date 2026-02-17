@@ -5,8 +5,8 @@ import { BarChart3, Clock, CheckCircle, XCircle } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Retention Metrics Become Priority for TikTok Content Distribution | TikTok News',
-  description: 'Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok.',
+  title: "TikTok Retention Metrics Priority News and Creator Update",
+  description: "Follow this TikTok retention metrics priority update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/retention-metrics-priority/',
@@ -78,7 +78,7 @@ export default function RetentionMetricsPriorityPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             Retention Metrics Become Priority for Content Distribution
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Watch time checkpoints at 3s, 15s, and 60s now critical for FYP algorithm
           </p>
         </div>

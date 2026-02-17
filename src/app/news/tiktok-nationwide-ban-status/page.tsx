@@ -5,8 +5,8 @@ import { CheckCircle, BarChart3, RefreshCw, Briefcase, AlertTriangle } from 'luc
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Understanding TikTok\'s De Jure Nationwide Ban Status | TikTok News',
-  description: 'While a nationwide TikTok ban technically took effect on January 19, 2026, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating.',
+  title: "TikTok Tiktok Nationwide Ban Status News and Creator Update",
+  description: "Follow this TikTok tiktok nationwide ban status update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-nationwide-ban-status/',

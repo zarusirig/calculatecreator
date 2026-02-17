@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
@@ -13,8 +14,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund Calculator: Estimate Your Earnings (2026)',
-  description: 'Calculate your TikTok Creator Fund earnings based on views, engagement rate, and content niche. Get accurate RPM estimates with our free calculator. Updated for 2026 rates.',
+  title: "TikTok Tiktok Creator Fund Calculator and Earnings Tool",
+  description: "Use this TikTok tiktok creator fund calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment', 'tiktok monetization', 'creator rewards program'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/tiktok-creator-fund/',
@@ -387,6 +388,8 @@ Monthly earnings: 1,000 × $0.047 = $47`}
                 { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Measure your engagement performance', icon: 'BarChart3' },
               ]}
             />
+
+            <RelatedGuides calculatorPath="/calculators/tiktok-creator-fund" />
           </div>
 
           {/* EEAT Section */}

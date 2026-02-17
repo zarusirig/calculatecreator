@@ -13,8 +13,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Affiliate Commission Calculator (2026)',
-  description: 'Calculate your TikTok Shop affiliate earnings. Estimate commissions by product category, conversion rates, and sales volume with our free calculator.',
+  title: "TikTok Affiliate Commission Calculator and Earnings Tool",
+  description: "Use this TikTok affiliate commission calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['tiktok shop affiliate', 'affiliate commission calculator', 'tiktok shop earnings', 'affiliate marketing calculator', 'commission estimator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/affiliate-commission/',

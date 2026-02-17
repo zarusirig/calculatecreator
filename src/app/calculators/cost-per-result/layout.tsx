@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cost Per Result Calculator | TikTok & Social Media Ad Performance',
-  description: 'Calculate your cost per result (CPR) for any advertising campaign. Track performance, optimize spend, and improve ROI with accurate CPR calculations.',
+  title: "TikTok Cost Per Result Calculator and Earnings Tool",
+  description: "Use this TikTok cost per result calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['cost per result', 'cpr calculator', 'ad performance', 'advertising metrics', 'campaign cost'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/cost-per-result/',

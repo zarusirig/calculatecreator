@@ -5,8 +5,8 @@ import { Film, Scissors, Music, FileText, Clock, BarChart3, Palette, Lightbulb, 
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News',
-  description: 'In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities.',
+  title: "TikTok Ai Outline Smart Split Features News and Creator",
+  description: "Follow this TikTok ai outline smart split features update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/ai-outline-smart-split-features/',
@@ -82,7 +82,7 @@ export default function AIOutlineSmartSplitPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Launches AI Outline and Smart Split Features for Creators
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Two new AI-powered tools designed to streamline video creation and enhance editing capabilities
           </p>
         </div>

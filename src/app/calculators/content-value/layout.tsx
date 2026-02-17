@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Content Value Calculator 2026 | CalculateCreator',
-  description: 'Calculate the monetary value of your TikTok content. Determine post worth for licensing deals, content partnerships & brand negotiations.',
+  title: "TikTok Content Value Calculator and Earnings Tool Guide",
+  description: "Use this TikTok content value calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['content value calculator', 'post value', 'tiktok content worth'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/content-value/',

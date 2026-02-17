@@ -4,8 +4,8 @@ import { Card } from '@/components/ui/Card';
 import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Commission Rates by Category 2026: Complete Reference',
-  description: 'Complete breakdown of TikTok Shop affiliate commission rates by product category. Find the most profitable categories and optimize your earnings.',
+  title: "TikTok Shop Commission Rates Data and Benchmark Insights",
+  description: "Review TikTok shop commission rates data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok shop commission rates', 'affiliate commission', 'shop rates by category', 'tiktok shop earnings'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/shop-commission-rates/',
@@ -51,7 +51,7 @@ export default function ShopCommissionRatesPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Commission Rates 2026
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Complete breakdown of affiliate commission rates by product category
           </p>
         </div>

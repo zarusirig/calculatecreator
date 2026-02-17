@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs.es;
 
 export const metadata: Metadata = {
-  title: 'Calculadora TikTok: Ganancias 2026 | España',
-  description: 'Calculadora gratuita de TikTok para Fondo de Creadores, colaboraciones de marca y regalos LIVE. Calcula tus ingresos potenciales en mercados hispanohablantes.',
+  title: "TikTok Es Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok es calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['calculadora de tiktok', 'ganancias tiktok', 'dinero tiktok', 'fondo de creadores', 'monetización tiktok'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/es/',

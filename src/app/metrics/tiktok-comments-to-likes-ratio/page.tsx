@@ -6,8 +6,8 @@ import { Calendar, Clock, BarChart3 } from 'lucide-react';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Comments-to-Likes Ratio: What\'s Good & How to Improve It',
-  description: 'Learn what a good comments-to-likes ratio is on TikTok, why it matters for the algorithm, and 8 strategies to improve yours.',
+  title: "TikTok Tiktok Comments To Likes Ratio Data and Benchmark",
+  description: "Review TikTok tiktok comments to likes ratio data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision",
   keywords: ['tiktok comments to likes ratio', 'tiktok engagement ratio', 'good comments to likes ratio', 'improve comment ratio tiktok', 'tiktok algorithm engagement'],
   alternates: {
     canonical: 'https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/',
@@ -144,7 +144,7 @@ export default function TikTokCommentsToLikesRatioPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Comments-to-Likes Ratio
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             What's good, why it matters, and how to improve it
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

@@ -24,8 +24,13 @@ export const ADS_CONFIG = {
     '/terms/',
     '/contact/',
     '/about/',
+    '/faq/',
+    '/glossary/',
+    '/methodology/',
     '/editorial-policy/',
     '/compliance/',
+    '/search/',
+    '/bookmarks/',
   ],
 } as const;
 

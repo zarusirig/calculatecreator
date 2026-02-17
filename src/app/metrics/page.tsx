@@ -7,8 +7,8 @@ import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/
 import { BarChart3, TrendingUp, MessageCircle, ThumbsUp, Target, Zap, CheckCircle, AlertCircle, Lightbulb, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Metrics & Analytics Guide | Engagement Benchmarks 2026',
-  description: 'Understand TikTok engagement metrics including comments-to-likes ratio, engagement rates, and performance benchmarks. Free guides for creators to analyze content performance.',
+  title: "TikTok Metrics Data and Benchmark Insights Guide 2026",
+  description: "Review TikTok metrics data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok metrics', 'engagement analytics', 'comments to likes ratio', 'tiktok benchmarks', 'creator analytics', 'performance metrics'],
   alternates: {
     canonical: 'https://calculatecreator.com/metrics/',

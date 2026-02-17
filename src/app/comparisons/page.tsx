@@ -9,9 +9,9 @@ import { Scale, TrendingUp, DollarSign, ShoppingBag, Video, Zap, Users, Clock, T
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok Platform Comparisons: Earnings & Monetization 2026 | CalculateCreator',
+    absolute: 'TikTok Comparison Guides — Earnings and RPM Data',
   },
-  description: 'Compare TikTok earnings vs YouTube, Instagram, and other platforms. Data-driven comparisons of Creator Fund, brand deals, LIVE streaming, and Shop monetization.',
+  description: "Compare TikTok comparisons outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations for creators.",
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/',
   },
@@ -143,7 +143,7 @@ export default function ComparisonsPage() {
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
               Platform Comparisons
             </h1>
-            <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-4">
+            <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-4">TikTok creators: 
               Data-driven comparisons to help you choose the right platform and monetization strategy for your creator business.
             </p>
             <p className="text-body-md text-neutral-600 max-w-3xl mx-auto">

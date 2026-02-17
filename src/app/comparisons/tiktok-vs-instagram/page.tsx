@@ -6,8 +6,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Clock, DollarSign, CheckCircle, XCircle, Music, Zap, Camera, Briefcase, Dumbbell, Utensils, BookOpen, Package } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs Instagram Creator Income: Complete Comparison 2026',
-  description: 'Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with 2026 data.',
+  title: "TikTok Tiktok Vs Instagram Comparison for Creator Earnings",
+  description: "Compare TikTok tiktok vs instagram outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations for",
   keywords: ['tiktok vs instagram creator income', 'instagram vs tiktok earnings', 'tiktok monetization vs instagram', 'creator platform comparison', 'tiktok vs instagram reels'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-instagram/',

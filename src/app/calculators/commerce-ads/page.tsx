@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { TrendingUp, ShoppingBag, DollarSign, Globe, Target, Zap, BarChart, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Commerce & Ads Calculators | TikTok Creator Tools',
-  description: 'Calculate your TikTok RPM, CPM, shop profits, and ad costs. Free tools to optimize your commerce and advertising revenue.',
+  title: "TikTok Commerce Ads Calculator and Earnings Tool Guide",
+  description: "Use this TikTok commerce ads calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/commerce-ads/',
   },

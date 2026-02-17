@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Niche Profitability Calculator (2026)',
-  description: 'Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing.',
+  title: "TikTok Niche Profitability Calculator and Earnings Tool",
+  description: "Use this TikTok niche profitability calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories', 'niche comparison'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/niche-profitability/',
@@ -78,7 +78,7 @@ export default function NicheProfitabilityCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Niche Profitability Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Compare earning potential across content niches using profitability multipliers from 1.0x for entertainment to 3.0x for finance. Calculate how 3 factors (CPM rates, brand deal demand, and audience purchasing power) impact your monetization ceiling.
 
             This tool is essential for creators choosing their niche or optimizing within their current category to maximize revenue per view and follower.

@@ -5,8 +5,8 @@ import { CheckCircle, AlertTriangle, Mail } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Ban Enforcement Delayed Until December 16, 2025 | TikTok News',
-  description: 'The White House has extended TikTok\'s enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution.',
+  title: "TikTok Tiktok Ban Delayed December 2025 News and Creator",
+  description: "Follow this TikTok tiktok ban delayed december 2025 update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/',
@@ -82,7 +82,7 @@ export default function TikTokBanDelayedPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Ban Enforcement Delayed Until December 16, 2025
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             White House extends enforcement deadline for fourth time as administration pursues qualified divestiture solution
           </p>
         </div>

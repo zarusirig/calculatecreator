@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Share Ratio Calculator 2026 | CalculateCreator',
-  description: 'Calculate share-to-view ratio to measure viral potential. High share rates (3%+) signal strong algorithm performance and reach.',
+  title: "TikTok Share Ratio Calculator and Earnings Tool Guide",
+  description: "Use this TikTok share ratio calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['share ratio calculator', 'share to view', 'tiktok shares'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/share-ratio/',

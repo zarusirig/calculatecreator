@@ -19,6 +19,7 @@ interface InputFieldProps {
   required?: boolean;
   disabled?: boolean;
   icon?: React.ReactNode;
+  unit?: string;
 }
 
 export function InputField({
@@ -37,11 +38,14 @@ export function InputField({
   required,
   disabled,
   icon,
+  unit,
 }: InputFieldProps) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = type === 'number' ? parseFloat(e.target.value) || 0 : e.target.value;
+    const rawValue = e.target.value;
+    const cleanedValue = type === 'number' ? rawValue.replace(/,/g, '') : rawValue;
+    const newValue = type === 'number' ? parseFloat(cleanedValue) || 0 : cleanedValue;
     onChange(newValue);
   };
 
@@ -84,29 +88,33 @@ export function InputField({
       </div>
 
       <div className="relative">
-        {icon && (
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400">
-            {icon}
-          </div>
-        )}
-        <input
-          id={id}
-          type={type}
-          value={value}
-          onChange={handleChange}
-          placeholder={placeholder}
-          min={min}
-          max={max}
-          step={step}
-          required={required}
-          disabled={disabled}
-          className={cn(
-            'input',
-            icon ? 'pl-10' : '',
-            error ? 'input-error' : '',
-            disabled ? 'opacity-50 cursor-not-allowed' : ''
+        <div className={cn('input-shell', error && 'input-error')}>
+          {icon && (
+            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400">
+              {icon}
+            </div>
           )}
-        />
+          <input
+            id={id}
+            type={type}
+            value={value}
+            onChange={handleChange}
+            placeholder={placeholder}
+            min={min}
+            max={max}
+            step={step}
+            required={required}
+            disabled={disabled}
+            className={cn(
+              'input',
+              icon ? 'pl-10' : '',
+              unit ? 'pr-14' : '',
+              error ? 'input-error' : '',
+              disabled ? 'opacity-50 cursor-not-allowed' : ''
+            )}
+          />
+          {unit ? <span className="input-addon">{unit}</span> : null}
+        </div>
       </div>
 
       {helperText && !error && (

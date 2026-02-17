@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Follower Growth Rate Calculator (2026)',
-  description: 'Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance.',
+  title: "TikTok Follower Growth Calculator and Earnings Tool",
+  description: "Use this TikTok follower growth calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/follower-growth/',
@@ -79,7 +79,7 @@ export default function FollowerGrowthCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Follower Growth Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Project your future follower count based on your current daily growth rate using compound growth modeling. This calculator helps creators set realistic milestone goals, track progress toward monetization thresholds, and benchmark growth performance against industry standards. Essential for both new creators building their first 1,000 followers and established accounts scaling to 100K+.
           </p>
         </div>

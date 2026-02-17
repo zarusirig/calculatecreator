@@ -6,14 +6,15 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Commission Calculator: Seller Fees Explained (2026)',
-  description: 'Calculate TikTok Shop commissions and seller fees. Understand referral fees, payment processing costs, and net profit per sale.',
+  title: "TikTok Shop Profit Calculator and Earnings Tool Guide",
+  description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/commerce-ads/shop-profit/',
@@ -619,6 +620,8 @@ Annual Earnings: $120 × 12 = $1,440`}
               }
             ]}
           />
+
+          <RelatedGuides calculatorPath="/calculators/commerce-ads/shop-profit" />
         </div>
       </div>
     </div>

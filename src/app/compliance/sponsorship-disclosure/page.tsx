@@ -6,8 +6,8 @@ import { Scale, CheckCircle, Calendar, XCircle, Shield, Users } from 'lucide-rea
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Sponsorship Disclosure Guidelines: FTC Compliance 2026',
-  description: 'Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations.',
+  title: "Sponsorship Disclosure and CalculateCreator Platform Details",
+  description: "Review sponsorship disclosure information for CalculateCreator, including policy context, methodology transparency, and practical guidance for",
   keywords: ['tiktok ftc compliance', 'sponsorship disclosure', 'how to disclose sponsored content', 'tiktok ad disclosure'],
   alternates: {
     canonical: 'https://calculatecreator.com/compliance/sponsorship-disclosure/',

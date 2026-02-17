@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok RPM Calculator: Revenue Per 1000 Views (2026)',
-  description: 'Calculate your TikTok RPM (revenue per mille). Understand how much you earn per 1000 views from Creator Fund and compare to benchmarks.',
+  title: "TikTok Rpm Cpm Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok rpm cpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['rpm calculator', 'tiktok rpm', 'revenue per thousand views', 'creator fund rpm', 'earnings per view'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/commerce-ads/rpm-cpm/',

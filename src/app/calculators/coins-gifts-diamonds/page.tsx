@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Coins, Gem, Gift, TrendingUp, DollarSign, Users, ArrowRight, Target, Clock, Zap, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Coins, Gifts & Diamonds Calculators | TikTok Creator Tools',
-  description: 'Convert TikTok coins, calculate gift values, and understand diamond conversions. Free tools for LIVE streamers.',
+  title: "TikTok Coins Gifts Diamonds Calculator and Earnings Tool",
+  description: "Use this TikTok coins gifts diamonds calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins-gifts-diamonds/',
   },

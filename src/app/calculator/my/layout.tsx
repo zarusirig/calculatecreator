@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs.my;
 
 export const metadata: Metadata = {
-  title: 'Kalkulator TikTok: Pendapatan 2026 | Malaysia',
-  description: 'Kalkulator TikTok percuma untuk Dana Pencipta, tawaran jenama dan hadiah LIVE. Kirakan potensi pendapatan anda dalam Ringgit Malaysia.',
+  title: "TikTok My Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok my calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['kalkulator tiktok', 'pendapatan tiktok', 'wang tiktok', 'dana pencipta', 'monetisasi tiktok'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/my/',

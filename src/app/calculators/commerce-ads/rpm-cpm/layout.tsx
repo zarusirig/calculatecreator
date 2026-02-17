@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'RPM Calculator 2026 | CalculateCreator',
-  description: 'Calculate TikTok Revenue Per Mille (RPM). Track earnings per 1,000 views to optimize content strategy and maximize Creator Fund income.',
+  title: "TikTok Rpm Cpm Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok rpm cpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok rpm calculator', 'revenue per mille', 'tiktok rpm rate', 'views to earnings'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/rpm/',

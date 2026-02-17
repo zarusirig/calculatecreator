@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Content Calendar ROI Calculator (2026)',
-  description: 'Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth.',
+  title: "TikTok Content Calendar Roi Calculator and Earnings Tool",
+  description: "Use this TikTok content calendar roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/content-calendar-roi/',
@@ -78,7 +78,7 @@ export default function ContentCalendarROICalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             Content Calendar ROI Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Calculate the Return on Investment (ROI) for strategic content planning and scheduling. This calculator measures whether your planning time translates to better performance. It compares planning costs against revenue improvements from optimized posting schedules, topic selection, and consistency. Essential for creators who want to justify time spent on content strategy, improve efficiency, and ensure their planning efforts drive measurable business results.
           </p>
         </div>

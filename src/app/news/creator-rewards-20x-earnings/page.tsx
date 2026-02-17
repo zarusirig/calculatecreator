@@ -5,8 +5,8 @@ import { CheckCircle, BarChart3, Users, MessageCircle, Target } from 'lucide-rea
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Creator Rewards Offers Up to 20x Higher Earnings Than Creator Fund | TikTok News',
-  description: 'The new Creator Rewards Program provides revenue-per-mille rates ranging from $0.40 to $1.00 per 1,000 qualified views, up to 20 times higher than the previous Creator Fund.',
+  title: "TikTok Creator Rewards 20x Earnings News and Creator Update",
+  description: "Follow this TikTok creator rewards 20x earnings update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['creator rewards', 'tiktok earnings', 'creator fund comparison', 'monetization rates', 'rpm'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/creator-rewards-20x-earnings/',
@@ -78,7 +78,7 @@ export default function CreatorRewards20xEarningsPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             Creator Rewards Offers Up to 20x Higher Earnings
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             New program delivers $0.40-$1.00 per 1K views vs. Creator Fund's $0.02-$0.04
           </p>
         </div>

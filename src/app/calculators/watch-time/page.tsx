@@ -13,8 +13,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Watch Time Calculator: Measure Retention Rate (2026)',
-  description: 'Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success.',
+  title: "TikTok Watch Time Calculator and Earnings Tool Guide",
+  description: "Use this TikTok watch time calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time', 'tiktok algorithm metric'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/watch-time/',

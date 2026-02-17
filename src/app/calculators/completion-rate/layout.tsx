@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Completion Rate Calculator 2026 | CalculateCreator',
-  description: 'Calculate video completion rate to boost algorithm ranking. Videos with 80%+ completion get 3x more reach. Optimize your content length.',
+  title: "TikTok Completion Rate Calculator and Earnings Tool",
+  description: "Use this TikTok completion rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['completion rate calculator', 'tiktok completion', 'watch through rate'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/completion-rate/',

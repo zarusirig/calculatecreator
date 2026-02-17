@@ -14,8 +14,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Engagement Rate Calculator: Free Tool (2026)',
-  description: 'Calculate your TikTok engagement rate instantly. Compare to benchmarks, understand what good engagement looks like, and improve your content strategy.',
+  title: "TikTok Engagement Calculator and Earnings Tool Guide",
+  description: "Use this TikTok engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['engagement rate calculator', 'tiktok engagement', 'engagement rate formula', 'good engagement rate', 'tiktok analytics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-influence/engagement/',

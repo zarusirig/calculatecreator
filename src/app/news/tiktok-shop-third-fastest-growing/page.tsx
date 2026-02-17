@@ -5,8 +5,8 @@ import { Target, Users, Zap, DollarSign, TrendingUp, Rocket } from 'lucide-react
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Becomes Third-Fastest Growing Brand in the US | TikTok News',
-  description: 'According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability.',
+  title: "TikTok Tiktok Shop Third Fastest Growing News and Creator",
+  description: "Follow this TikTok tiktok shop third fastest growing update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/',
@@ -78,7 +78,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Ranks as Third-Fastest Growing Brand in the US
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Morning Consult research reveals explosive growth in consumer favorability
           </p>
         </div>

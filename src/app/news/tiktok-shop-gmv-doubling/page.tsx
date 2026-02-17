@@ -5,8 +5,8 @@ import { Globe, Smartphone, Briefcase, Users, DollarSign, Gift, Rocket } from 'l
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Projected to Double GMV by End of 2026 | TikTok News',
-  description: 'Industry projections indicate TikTok Shop\'s global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce.',
+  title: "TikTok Tiktok Shop Gmv Doubling News and Creator Update",
+  description: "Follow this TikTok tiktok shop gmv doubling update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling/',
@@ -78,7 +78,7 @@ export default function TikTokShopGMVDoublingPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop GMV Projected to Double by End of 2026
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Industry analysts forecast explosive growth outpacing traditional social commerce competitors
           </p>
         </div>

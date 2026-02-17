@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Coins Calculator | Convert Coins to USD 2026',
-  description: 'Convert TikTok coins to USD and diamonds with our free calculator. Accurate conversion rates for LIVE gifts, creator earnings, and gift values. Calculate coin-to-dollar conversions instantly.',
+  title: "TikTok Coins Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok coins calculator', 'tiktok coin calculator', 'coins to usd', 'tiktok coins to money', 'coin value calculator', 'tiktok currency converter'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins/',

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Follower Milestone Tracker | TikTok Growth Progress',
-  description: 'Track your progress toward follower milestones. Calculate estimated time to reach your next growth goal based on current growth rate.',
+  title: "TikTok Milestone Tracker Calculator and Earnings Tool",
+  description: "Use this TikTok milestone tracker calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['milestone tracker', 'follower goals', 'growth tracker', 'tiktok milestones'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/milestone-tracker/',

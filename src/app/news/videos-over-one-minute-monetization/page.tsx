@@ -5,8 +5,8 @@ import { XCircle, CheckCircle, Target, Timer, BarChart3 } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Only Videos Longer Than One Minute Eligible for TikTok Monetization | TikTok News',
-  description: 'The Creator Rewards Program exclusively focuses on videos longer than one minute, pushing creators toward longer-form content.',
+  title: "TikTok Videos Over One Minute Monetization News and Creator",
+  description: "Follow this TikTok videos over one minute monetization update for creator earnings implications, platform changes, monetization context, and actionable",
   keywords: ['tiktok monetization', 'video length', 'one minute videos', 'creator rewards eligibility', 'long form content'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/videos-over-one-minute-monetization/',
@@ -78,7 +78,7 @@ export default function VideosOverOneMinuteMonetizationPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             Only Videos Over 1 Minute Now Eligible for Monetization
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Creator Rewards Program exclusively rewards longer-form content
           </p>
         </div>

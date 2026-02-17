@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Follower Conversion Rate Calculator (2026)',
-  description: 'Calculate how effectively your TikTok views convert to followers. Optimize content to grow your audience faster with our free conversion calculator.',
+  title: "TikTok Follower Conversion Calculator and Earnings Tool",
+  description: "Use this TikTok follower conversion calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['follower conversion rate', 'views to followers', 'tiktok growth calculator', 'follower growth rate', 'conversion optimization'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/follower-conversion/',

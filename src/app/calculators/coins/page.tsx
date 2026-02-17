@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
@@ -13,8 +14,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Coins Calculator: Convert Coins to USD & Diamonds (2026)',
-  description: 'Calculate TikTok coin values in USD and diamonds. Understand coin prices, gift values, and how much creators earn from your coin purchases. Free converter tool.',
+  title: "TikTok Coins Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok coins calculator', 'tiktok coins to usd', 'tiktok coin price', 'coins to diamonds', 'tiktok gift calculator', 'buy tiktok coins'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins/',
@@ -367,6 +368,8 @@ TikTok keeps: $15.20 - $2.50 = $12.70 (50%)`}
                 { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Estimate view-based earnings', icon: 'DollarSign' },
               ]}
             />
+
+            <RelatedGuides calculatorPath="/calculators/coins" />
           </div>
 
           {/* EEAT Section */}

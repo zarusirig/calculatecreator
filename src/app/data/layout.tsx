@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | CalculateCreator',
-    default: 'TikTok Creator Data & Insights | CalculateCreator',
+    template: '%s',
+    default: 'TikTok Creator Data and Benchmark Insights',
   },
 };
 

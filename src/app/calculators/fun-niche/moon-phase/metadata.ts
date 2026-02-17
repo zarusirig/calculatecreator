@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Moon Phase Content Planner | Fun TikTok Tool (Entertainment Only)',
-  description:
-    'Fun moon phase planner for TikTok posts. Entertainment-only; uses accurate lunar phases. Includes FAQs and usage tips.',
+  title: "TikTok Moon Phase Calculator and Earnings Tool Guide",
+  description: "Use this TikTok moon phase calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/fun-niche/moon-phase/',
   },

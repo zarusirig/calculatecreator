@@ -5,8 +5,8 @@ import { Calendar, Gem, Gift, DollarSign, Coins } from 'lucide-react';
 import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Gifts Value Chart 2026: Complete Price & Earnings Guide',
-  description: 'Complete chart of all TikTok LIVE gift values, coin costs, creator earnings (50% split), and diamonds to USD conversion rates.',
+  title: "TikTok Live Gifts Value Chart Data and Benchmark Insights",
+  description: "Review TikTok live gifts value chart data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok live gifts value', 'gift prices', 'diamonds to usd', 'live gifts chart', 'creator earnings gifts'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/live-gifts-value-chart/',
@@ -61,7 +61,7 @@ export default function LiveGiftsValueChartPage() {
       <section className="bg-gradient-to-br from-tiktok-pink via-tiktok-red to-tiktok-blue py-12">
         <div className="container-custom max-w-6xl">
           <h1 className="text-display-lg font-bold text-white mb-4">TikTok LIVE Gifts Value Chart 2026</h1>
-          <p className="text-heading-md text-white/90 mb-6">Complete reference for all gift values, prices, and creator earnings</p>
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: Complete reference for all gift values, prices, and creator earnings</p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
             <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Updated: November 2025</span>
             <span className="flex items-center gap-1"><Gem className="w-4 h-4" /> All Gift Values</span>

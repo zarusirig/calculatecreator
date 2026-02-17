@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Break-Even Calculator (2026)',
-  description: 'Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams.',
+  title: "TikTok Break Even Calculator and Earnings Tool Guide",
+  description: "Use this TikTok break even calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator', 'creator economics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/break-even/',
@@ -78,7 +78,7 @@ export default function BreakEvenCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Break Even Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Calculate how many sales you need to break even on your ad spend or product launch. This calculator uses your contribution margin per unit and total fixed costs to determine the exact number of units required for profitability. Essential for campaign planning, product launches, and budget decisions. Understand your profitability threshold before investing in paid advertising.
           </p>
         </div>

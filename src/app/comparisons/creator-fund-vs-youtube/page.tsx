@@ -4,8 +4,8 @@ import { Card } from '@/components/ui/Card';
 import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund vs YouTube Partner Program: 2026 Comparison',
-  description: 'Complete comparison of TikTok Creator Fund vs YouTube monetization. RPM rates, requirements, earnings potential, and which platform pays more.',
+  title: "TikTok Creator Fund Vs Youtube Comparison for Creator",
+  description: "Compare TikTok creator fund vs youtube outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations for",
   keywords: ['tiktok vs youtube earnings', 'creator fund vs youtube', 'tiktok rpm vs youtube', 'platform comparison'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/creator-fund-vs-youtube/',
@@ -64,7 +64,7 @@ export default function CreatorFundVsYouTubePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Creator Fund vs YouTube: 2026 Comparison
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Which platform pays creators more for video content?
           </p>
         </div>

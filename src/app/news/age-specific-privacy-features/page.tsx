@@ -5,8 +5,8 @@ import { Moon, MessageCircle, Users, Shield, BookOpen, GraduationCap } from 'luc
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News',
-  description: 'TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements.',
+  title: "TikTok Age Specific Privacy Features News and Creator Update",
+  description: "Follow this TikTok age specific privacy features update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/age-specific-privacy-features/',
@@ -78,7 +78,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             Age-Specific Privacy Features for Internet Safety Day 2026
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Comprehensive age-based controls including nighttime restrictions and enhanced family protections
           </p>
         </div>

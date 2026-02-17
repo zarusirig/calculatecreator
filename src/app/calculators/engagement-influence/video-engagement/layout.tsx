@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Video Performance Calculator 2026 | CalculateCreator',
-  description: 'Predict TikTok video views and engagement before posting. Analyze performance factors to optimize content for maximum reach and virality.',
+  title: "TikTok Video Engagement Calculator and Earnings Tool",
+  description: "Use this TikTok video engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['video performance calculator', 'tiktok views predictor', 'video success calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/video-performance/',

@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Monetization Eligibility Checker (2026)',
-  description:
-    'Check if you qualify for TikTok Creator Fund, Creator Rewards, LIVE gifts, and TikTok Shop. Uses 2026 requirements and thresholds.',
+  title: "TikTok Eligibility Calculator and Earnings Tool Guide",
+  description: "Use this TikTok eligibility calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/eligibility/',
   },

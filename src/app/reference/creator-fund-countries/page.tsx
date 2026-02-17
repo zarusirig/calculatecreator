@@ -9,8 +9,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Creator Fund & Rewards Program: Eligible Countries 2026',
-  description: 'Complete list of countries where TikTok Creator Fund and Creator Rewards Program are available. Regional requirements, RPM rates, and monetization alternatives for ineligible regions.',
+  title: "TikTok Creator Fund Countries Data and Benchmark Insights",
+  description: "Review TikTok creator fund countries data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['creator fund countries', 'tiktok monetization countries', 'eligible regions', 'creator fund availability', 'creator rewards program countries'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/creator-fund-countries/',

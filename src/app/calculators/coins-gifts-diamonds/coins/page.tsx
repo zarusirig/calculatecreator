@@ -11,8 +11,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Coins to USD Calculator: Convert Coins to Money (2026)',
-  description: 'Convert TikTok coins to real money. Calculate the USD value of TikTok coins, gifts, and diamonds with our free currency converter.',
+  title: "TikTok Coins Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok coins calculator', 'coins to usd', 'tiktok coin value', 'tiktok gift calculator', 'coins converter'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins-gifts-diamonds/coins/',

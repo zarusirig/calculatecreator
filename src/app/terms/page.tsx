@@ -1,498 +1,316 @@
 import type { Metadata } from 'next';
-import { Card } from '@/components/ui/Card';
-import { WebPageSchema } from '@/components/seo/WebPageSchema';
+import Link from 'next/link';
+import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | TikTok Creator Calculator',
-  description: 'Usage guidelines, disclaimers, and terms for TikTok Creator Calculator. Free tools provided as-is for informational purposes.',
+  title: "Terms and CalculateCreator Platform Details Guide 2026",
+  description: "Review terms information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
   alternates: {
     canonical: 'https://calculatecreator.com/terms/',
+  },
+};
+
+const LAST_UPDATED = 'February 17, 2026';
+const termsSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Terms of Service',
+  description:
+    'Terms of Service for calculatecreator.com covering estimate disclaimers, user responsibilities, intellectual property, and liability limits.',
+  url: 'https://calculatecreator.com/terms/',
+  dateModified: LAST_UPDATED,
+  publisher: {
+    '@type': 'Organization',
+    name: 'CalculateCreator',
+    url: 'https://calculatecreator.com',
   },
 };
 
 export default function TermsPage() {
   return (
     <>
-      <WebPageSchema
-        title="Terms of Service | TikTok Creator Calculator"
-        description="Usage guidelines, disclaimers, and terms for TikTok Creator Calculator. Free tools provided as-is for informational purposes."
-        url="https://calculatecreator.com/terms/"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(termsSchema) }}
       />
-      <div className="min-h-screen bg-neutral-50 py-12">
-      <div className="container-custom max-w-4xl">
-        <div className="flex items-center space-x-3 mb-8">
-          <img
-            src="/images/calculate-creator-transparent-v2.png"
-            alt="CalculateCreator logo - Terms of Service"
-            className="h-12 w-auto"
-          />
-          <div>
-            <h1 className="text-display-md font-bold text-neutral-900">Terms of Service</h1>
-          </div>
-        </div>
-        <p className="text-body-md text-neutral-600 mb-8">Last Updated: November 13, 2025</p>
 
-        <div className="space-y-6">
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Acceptance of Terms</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              By accessing and using TikTok Creator Calculator, you agree to these Terms of Service. Discontinue use if you disagree with any part.
-            </p>
-          </Card>
+      <div className="pb-16 pt-10">
+        <Container className="max-w-4xl">
+        <h1 className="text-display-sm font-bold text-neutral-900">Terms of Service</h1>
+        <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Use of Service</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p><strong>Permitted Use:</strong></p>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Personal estimation of TikTok earnings</li>
-                <li>Research and planning for content strategy</li>
-                <li>Educational purposes</li>
-                <li>Benchmarking and negotiation preparation</li>
-              </ul>
-              <p className="mt-4"><strong>Prohibited Use:</strong></p>
-              <ul className="list-disc list-inside ml-4 space-y-1">
-                <li>Commercial redistribution of calculator code or data</li>
-                <li>Scraping or automated data extraction</li>
-                <li>Misrepresentation of calculator outputs as guarantees</li>
-                <li>Any illegal or fraudulent activity</li>
-              </ul>
-            </div>
-          </Card>
+        <p className="mt-5 text-sm leading-relaxed text-neutral-700">
+          These Terms of Service ("Terms") govern your use of calculatecreator.com and related
+          content, tools, calculators, and benchmark pages published by CalculateCreator. By
+          accessing or using the site, you agree to these Terms. If you do not agree, do not use
+          the site.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+          These Terms apply to all publicly accessible sections of the website, including legacy
+          calculator routes, newer tools routes, article pages, benchmark pages, and trust pages.
+          Additional notices may appear on specific pages to clarify assumptions or limitations for
+          that page type.
+        </p>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Disclaimers</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p><strong>Estimates Only:</strong> Our calculators provide estimates based on industry averages and reported creator earnings. Actual earnings may vary significantly.</p>
-              <p><strong>No Guarantees:</strong> We do not guarantee any specific earnings. TikTok earnings depend on factors we cannot predict: algorithm changes, audience behavior, content quality, and more.</p>
-              <p><strong>Not Financial Advice:</strong> Our tools are educational. We are not financial advisors. Consult a professional for financial planning.</p>
-              <p><strong>No TikTok Affiliation:</strong> We are not affiliated with, endorsed by, or connected to TikTok, ByteDance Ltd, or any social media platform.</p>
-            </div>
-          </Card>
+        <section className="mt-8 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">1. Description of service</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            CalculateCreator provides informational tools and educational content for creator
+            economics and performance modeling. Services include calculator pages, benchmarks,
+            guides, glossaries, and compliance resources. We may add, remove, or modify features at
+            any time to improve quality, maintain security, or align with policy and legal
+            requirements.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            We do not provide brokerage services, investment advisory services, accounting services,
+            legal representation, or tax filing services through this website.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Feature availability may vary by route as templates are upgraded. We may retire older
+            interfaces, reclassify tools, or adjust content architecture as part of product
+            maintenance without prior notice.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Data Accuracy</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              We strive for accuracy using verified data sources. The monetization programs of TikTok change frequently. We update data quarterly but do not guarantee real-time accuracy. Verify with official TikTok sources.
-            </p>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">2. Accuracy and estimate disclaimer</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Calculator outputs are estimates based on user inputs and published assumptions. They are
+            intended for planning, benchmarking, and educational use only.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700 font-medium text-neutral-900">
+            TikTok rates change frequently. Our calculator results are estimates based on aggregated
+            data and should not be treated as guaranteed earnings.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Platform payouts, brand pricing, ad rates, conversion behavior, and regional policies
+            can shift quickly. You are responsible for verifying any high-impact decision with your
+            own records and professional advisors where appropriate.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Examples shown on calculator pages are instructional scenarios. They are not promises of
+            future performance and should not be represented to clients, sponsors, or partners as
+            guaranteed outcomes.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Limitation of Liability</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              TO THE FULLEST EXTENT PERMITTED BY LAW, TIKTOK CREATOR CALCULATOR SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM USE OF OUR SERVICE, INCLUDING BUT NOT LIMITED TO LOST EARNINGS, BUSINESS DECISIONS BASED ON CALCULATOR OUTPUTS, OR TECHNICAL ERRORS.
-            </p>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">3. No professional advice</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Content on CalculateCreator does not constitute financial, tax, accounting, legal,
+            investment, or business advisory services. Any action you take based on site content is
+            at your own discretion and risk.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            If you need professional advice, consult a qualified professional licensed in your
+            jurisdiction.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Intellectual Property</h2>
-            <p className="text-body-md text-neutral-700 mb-4">
-              TikTok Creator Calculator owns all content on this site (text, calculators, formulas, design). Copyright law protects this content.
-            </p>
-            <p className="text-body-md text-neutral-700">
-              <strong>You may:</strong> Use calculators for personal purposes, share links to our site<br />
-              <strong>You may not:</strong> Copy calculator code, republish our content, or create derivative works without permission
-            </p>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">4. User responsibilities</h2>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Use the site lawfully and in good faith.</li>
+            <li>Do not attempt to disrupt, overload, or compromise site operations.</li>
+            <li>Do not scrape at abusive rates or attempt to bypass technical controls.</li>
+            <li>Do not misrepresent calculator outputs as guaranteed financial outcomes.</li>
+            <li>Do not post or transmit malicious code through site interactions.</li>
+            <li>Respect intellectual property rights and attribution requirements.</li>
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            You are responsible for how you apply outputs from calculatecreator.com in your own
+            business context. Use independent judgment before making spending, hiring, contracting,
+            tax, or legal decisions.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Changes to Service</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              We reserve the right to modify, suspend, or discontinue any part of the service at any time without notice. We update calculators, change methodologies, and adjust data sources to maintain accuracy.
-            </p>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">5. Prohibited uses</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            You may not use CalculateCreator to engage in fraud, illegal conduct, deceptive
+            advertising, harassment, unauthorized data extraction, or any behavior that violates
+            applicable law or third-party rights. We may restrict access if we detect abuse,
+            security threats, or policy violations.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Automated querying intended to replicate or repackage proprietary calculators at scale
+            without permission may be treated as abusive use and may result in blocking.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">User Conduct</h2>
-            <p className="text-body-md text-neutral-700 mb-4">You agree not to:</p>
-            <ul className="list-disc list-inside space-y-2 text-body-md text-neutral-700 ml-4">
-              <li>Attempt to hack, disrupt, or overload our servers</li>
-              <li>Use bots or automated tools to access the service</li>
-              <li>Misrepresent yourself or impersonate others</li>
-              <li>Submit false or misleading information</li>
-            </ul>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">6. Intellectual property</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Unless otherwise noted, site content and tooling, including text, design elements,
+            formulas, and custom software implementation, are owned by CalculateCreator or licensed
+            to us. You may reference public pages with attribution and links to original URLs.
+            Unauthorized reproduction or redistribution of substantial proprietary content may
+            violate copyright or other laws.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            "TikTok" and related marks are trademarks of their respective owners. CalculateCreator
+            is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Limited quotations for commentary, research, or educational discussion should include
+            source attribution and should not imply ownership transfer or partnership.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Governing Law</h2>
-            <p className="text-body-md text-neutral-700 leading-relaxed">
-              These Terms are governed by the laws of the United States. Any disputes shall be resolved in accordance with applicable law.
-            </p>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">7. Third-party links and services</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Our site may link to third-party websites, tools, and resources. We provide those links
+            for convenience and context. We do not control or guarantee third-party content,
+            availability, or privacy practices. Your interactions with third-party services are
+            governed by their own policies.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Specific Calculator Terms</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-2">Earnings Calculators</h3>
-                <p>
-                  All earnings estimates (Creator Fund, brand deals, LIVE gifts, TikTok Shop) are projections based on industry averages and historical data. Actual earnings depend on content quality, audience engagement, niche competitiveness, geographic location, platform algorithm changes, advertiser demand, and economic conditions. We do not guarantee any level of earnings.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h3>
-                <p>
-                  The Creator Tax Calculator provides estimates for educational purposes only. Tax obligations vary based on individual circumstances, state laws, deductions, credits, and other factors we do not account for in a general calculator. Consult a qualified tax professional or Certified Public Accountant (CPA) for personalized tax advice. We are not responsible for tax filing errors or penalties resulting from use of our calculator.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-2">Growth and Performance Calculators</h3>
-                <p>
-                  Projections for follower growth, viral potential, and performance metrics are based on historical patterns and statistical modeling. Social media algorithms change frequently, and past performance does not guarantee future results. Use these projections as guidance for planning, not as promises of specific outcomes.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-neutral-900 mb-2">ROI and Business Calculators</h3>
-                <p>
-                  Business calculators (production costs, break-even analysis, sponsorship ROI) use standard financial formulas but do not account for your unique business circumstances. These tools are for preliminary planning. Have professional financial advisors review significant business decisions.
-                </p>
-              </div>
-            </div>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">8. Advertising and monetization</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            CalculateCreator is funded in part through advertising, including Google AdSense.
+            Advertising helps us keep tools publicly accessible without user paywalls. Advertising
+            does not determine calculator outputs or editorial conclusions.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            For details, review our{' '}
+            <Link href="/compliance/advertising-disclosure/" className="link">
+              Advertising Disclosure
+            </Link>{' '}
+            and{' '}
+            <Link href="/privacy/" className="link">
+              Privacy Policy
+            </Link>
+            .
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">TikTok Platform Changes</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                TikTok frequently updates its Creator Fund payments, algorithm, monetization requirements, and platform policies. We strive to keep our calculators current with these changes. There are sometimes delays between TikTok announcements and our updates.
-              </p>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">9. Disclaimer of warranties</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            The site is provided on an "as is" and "as available" basis. To the maximum extent
+            permitted by law, CalculateCreator disclaims all warranties, express or implied,
+            including merchantability, fitness for a particular purpose, and non-infringement.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            We do not warrant uninterrupted access, error-free operation, or complete accuracy of
+            every estimate at all times.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Temporary interruptions may occur during deployment, maintenance, infrastructure issues,
+            or third-party outages. We aim to restore availability promptly but cannot guarantee
+            continuous service.
+          </p>
+        </section>
 
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Known Variables</h3>
-              <ul className="list-disc list-inside ml-4 space-y-2">
-                <li><strong>Creator Fund Rates:</strong> Payment rates of TikTok fluctuate based on advertiser revenue, view counts, and regional factors. Our calculator uses current averages but does not predict rate changes.</li>
-                <li><strong>Monetization Thresholds:</strong> Minimum follower counts, age requirements, and eligibility criteria change over time. Verify current requirements on the official creator portal of TikTok.</li>
-                <li><strong>Regional Availability:</strong> TikTok features and monetization programs vary by country. Our calculators include region-specific data where available, but some features are not available in every location.</li>
-                <li><strong>New Features:</strong> TikTok regularly launches new monetization features (for example, Creativity Program and Effect Creator Rewards). We add calculators for new features after sufficient data becomes available to ensure accuracy.</li>
-              </ul>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">10. Limitation of liability</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            To the fullest extent permitted by law, CalculateCreator and its operators are not
+            liable for indirect, incidental, special, consequential, or punitive damages arising out
+            of or related to your use of the site. This includes lost profits, lost opportunities,
+            business interruption, data loss, or reliance on estimated results.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            In jurisdictions where liability limits are restricted, our liability is limited to the
+            minimum extent permitted by applicable law.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Nothing in these Terms excludes liability that cannot be excluded under applicable law,
+            including statutory rights that remain mandatory in your jurisdiction.
+          </p>
+        </section>
 
-              <p className="mt-4">
-                Check the official documentation and creator resources of TikTok for the most current platform information.
-              </p>
-            </div>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">11. Indemnification</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            You agree to defend, indemnify, and hold harmless CalculateCreator, its operators, and
+            contributors from claims, liabilities, damages, and costs (including reasonable legal
+            fees) arising from your misuse of the site, your violation of these Terms, or your
+            violation of law or third-party rights.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Warranty Disclaimer</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p className="uppercase font-semibold">
-                THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
-              </p>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">12. Modifications and service changes</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            We may revise these Terms and modify site functionality at any time. When Terms are
+            revised, we update the Last Updated date on this page. Continued use of the site after
+            updates indicates acceptance of the revised Terms.
+          </p>
+        </section>
 
-              <p>We specifically disclaim:</p>
-              <ul className="list-disc list-inside ml-4 space-y-2">
-                <li><strong>Accuracy Warranties:</strong> While we strive for accuracy, we do not warrant that calculator results are error-free or current</li>
-                <li><strong>Availability Warranties:</strong> We do not guarantee uninterrupted or error-free service. The website may be down for maintenance or technical issues</li>
-                <li><strong>Fitness for Purpose:</strong> We do not warrant that our calculators are suitable for your specific business needs or decisions</li>
-                <li><strong>Merchantability:</strong> No warranty that the service meets commercial quality standards for any particular purpose</li>
-                <li><strong>Non-Infringement:</strong> While we respect intellectual property, we do not warrant our service is completely free from potential third-party claims</li>
-              </ul>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">13. Governing law</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            These Terms are governed by applicable laws of the jurisdiction in which the site
+            operator is established, without regard to conflict-of-law rules. Any disputes arising
+            from these Terms shall be handled in courts of competent jurisdiction, subject to
+            mandatory consumer protection laws where applicable.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Before formal proceedings, we encourage users to contact us so we can attempt a practical
+            resolution in good faith.
+          </p>
+        </section>
 
-              <p className="mt-4">
-                Some jurisdictions do not allow disclaimer of implied warranties, so portions of this disclaimer may not apply to you. You may have additional consumer rights under local law.
-              </p>
-            </div>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">14. Severability</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            If any provision of these Terms is found unenforceable, the remaining provisions will
+            remain in effect to the maximum extent permitted by law.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Indemnification</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                You agree to indemnify, defend, and hold harmless TikTok Creator Calculator, its owners, operators, employees, and affiliates from any claims, losses, damages, liabilities, including legal fees, arising out of:
-              </p>
-              <ul className="list-disc list-inside ml-4 space-y-2 mt-3">
-                <li>Your use or misuse of the service</li>
-                <li>Your violation of these Terms of Service</li>
-                <li>Your violation of any third-party rights, including intellectual property or privacy rights</li>
-                <li>Any business or financial decisions made based on calculator results</li>
-                <li>Any dispute between you and a third party related to use of our service</li>
-              </ul>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">15. Termination and suspension</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            We may suspend or limit access where needed to protect site security, prevent abuse, or
+            comply with legal obligations. You may stop using the site at any time. Provisions that
+            reasonably should survive termination, including intellectual property, disclaimers, and
+            liability limits, will continue to apply.
+          </p>
+        </section>
 
-              <p className="mt-4">
-                This indemnification obligation survives termination of your use of the service and these Terms.
-              </p>
-            </div>
-          </Card>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">16. Entire agreement</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            These Terms, together with linked policies, represent the complete agreement between you
+            and CalculateCreator regarding use of calculatecreator.com. If there is a conflict
+            between these Terms and page-level notices, the more specific notice controls for that
+            context.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Headings are provided for readability and do not limit interpretation of any provision.
+            Any waiver of a right under these Terms must be explicit and does not waive future
+            enforcement. Delays in enforcement do not reduce our ability to apply these Terms later.
+          </p>
+        </section>
 
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Limitation of Liability - Detailed</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p className="uppercase font-semibold">
-                IN NO EVENT SHALL TIKTOK CREATOR CALCULATOR BE LIABLE FOR:
-              </p>
-
-              <div className="space-y-3 mt-4">
-                <div>
-                  <p className="font-semibold">Financial Losses</p>
-                  <p>Lost earnings, business opportunities, or revenue based on calculator projections or business decisions informed by our tools.</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Tax Liabilities</p>
-                  <p>Underpayment penalties, interest, or audit costs arising from use of our tax calculator. Always consult a tax professional.</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Brand Deal Disputes</p>
-                  <p>Pricing disputes, contract issues, or payment problems related to sponsorships negotiated using our Brand Deal Rate Calculator.</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Account Issues</p>
-                  <p>TikTok account suspensions, monetization denials, or violations of TikTok's policies related to actions taken based on our calculators.</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Data Loss</p>
-                  <p>Loss of calculator inputs or results. We do not store your data, and you are responsible for saving any information you wish to retain.</p>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Consequential Damages</p>
-                  <p>Any indirect, incidental, special, punitive, or consequential damages, including but not limited to lost profits, lost data, business interruption, or reputational harm.</p>
-                </div>
-              </div>
-
-              <p className="mt-4 p-4 bg-neutral-100 rounded">
-                <strong>Maximum Liability:</strong> If, despite these limitations, we are found liable for any damages, our total liability shall not exceed $100 USD or the amount you paid to use our service (which is $0, as we are free), whichever is greater.
-              </p>
-
-              <p className="mt-3 text-body-sm">
-                Some jurisdictions do not allow limitation of liability for consequential damages, so this limitation may not fully apply to you.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Dispute Resolution and Arbitration</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <h3 className="font-semibold text-neutral-900 mb-2">Informal Resolution</h3>
-              <p>
-                Before filing any formal dispute, you agree to contact us at legal@calculatecreator.com and attempt to resolve the issue informally. Most disputes can be resolved quickly through direct communication.
-              </p>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Binding Arbitration</h3>
-              <p>
-                If informal resolution fails, any dispute arising from these Terms or use of our service shall be resolved through binding arbitration rather than in court, except that:
-              </p>
-              <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
-                <li>Either party may seek injunctive relief in court for intellectual property violations</li>
-                <li>Small claims court disputes under the jurisdictional limit may be filed in small claims court</li>
-              </ul>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Class Action Waiver</h3>
-              <p>
-                You agree to resolve disputes individually. You waive the right to participate in class actions, class arbitrations, or representative actions. Any dispute must be filed individually.
-              </p>
-
-              <p className="mt-4 text-body-sm italic">
-                Note: Some jurisdictions do not allow arbitration agreements or class action waivers. If you reside in such a jurisdiction, this section may not apply to you.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Service Modifications and Termination</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                We reserve the right to modify, suspend, or discontinue any aspect of TikTok Creator Calculator at any time, with or without notice, including:
-              </p>
-              <ul className="list-disc list-inside ml-4 space-y-2 mt-3">
-                <li>Adding, removing, or modifying calculators</li>
-                <li>Changing calculation methodologies or formulas</li>
-                <li>Updating design, features, or functionality</li>
-                <li>Implementing usage limits or access restrictions</li>
-                <li>Discontinuing the entire service</li>
-              </ul>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Termination Rights</h3>
-              <p>We may terminate or restrict your access to the service if:</p>
-              <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
-                <li>You violate these Terms of Service</li>
-                <li>You engage in prohibited activities (scraping, hacking, abuse)</li>
-                <li>Your use threatens service stability or other users</li>
-                <li>Required by law or legal process</li>
-              </ul>
-
-              <p className="mt-4">
-                You may stop using the service at any time. Since we don't require accounts, simply discontinue accessing the website.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Copyright and DMCA</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                All content on TikTok Creator Calculator - including text, graphics, calculators, formulas, code, and documentation - is protected by copyright and owned by TikTok Creator Calculator or licensed to us.
-              </p>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Copyright Infringement Claims</h3>
-              <p>
-                If you believe content on our site infringes your copyright, submit a DMCA notice to legal@calculatecreator.com with:
-              </p>
-              <ul className="list-disc list-inside ml-4 space-y-1 mt-2">
-                <li>Identification of the copyrighted work claimed to be infringed</li>
-                <li>Identification of the infringing material and its location on our site</li>
-                <li>Your contact information (address, phone, email)</li>
-                <li>A statement that you have a good faith belief the use is unauthorized</li>
-                <li>A statement of accuracy under penalty of perjury</li>
-                <li>Physical or electronic signature of the copyright owner or authorized agent</li>
-              </ul>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Trademark Notice</h3>
-              <p>
-                "TikTok" is a trademark of ByteDance Ltd. We are not affiliated with, endorsed by, or sponsored by TikTok or ByteDance. Our use of "TikTok" is purely descriptive to indicate the subject matter of our calculators.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Acceptable Use Policy</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                Beyond the prohibited uses listed earlier, you specifically agree not to:
-              </p>
-
-              <div className="space-y-3 mt-4">
-                <div>
-                  <p className="font-semibold">Technical Abuse</p>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Overload servers with excessive requests</li>
-                    <li>Reverse engineer calculator algorithms or code</li>
-                    <li>Probe, scan, or test system vulnerabilities</li>
-                    <li>Bypass rate limiting or access controls</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Content Misuse</p>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Copy or republish our content without permission</li>
-                    <li>Create derivative tools or competitive services using our calculators</li>
-                    <li>Remove copyright notices or attribution</li>
-                    <li>Frame or embed our content on other websites without authorization</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="font-semibold">Harmful Activities</p>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Introduce malware, viruses, or malicious code</li>
-                    <li>Phishing or attempting to collect other users' information</li>
-                    <li>Impersonate our service or employees</li>
-                    <li>Violate any applicable laws or regulations</li>
-                  </ul>
-                </div>
-              </div>
-
-              <p className="mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded">
-                <strong>Enforcement:</strong> Violations may result in immediate termination of access, legal action, and cooperation with law enforcement if criminal activity is suspected.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Third-Party Resources and Links</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                Our website may link to third-party websites, resources, or services (including TikTok's official documentation, creator resources, and educational content). These links are provided for convenience only.
-              </p>
-
-              <ul className="list-disc list-inside ml-4 space-y-2 mt-3">
-                <li>We do not endorse or make representations about third-party sites</li>
-                <li>We are not responsible for third-party content, accuracy, or policies</li>
-                <li>Third-party sites have their own terms and privacy policies</li>
-                <li>We are not liable for damages from your use of third-party services</li>
-              </ul>
-
-              <p className="mt-4">
-                You acknowledge that when you click external links, you leave our site and these Terms no longer apply. Review the terms and privacy policies of any third-party site you visit.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Severability and Waiver</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <h3 className="font-semibold text-neutral-900 mb-2">Severability</h3>
-              <p>
-                A court of law finding any provision of these Terms unenforceable or invalid triggers modification to the minimum extent necessary. The court severs the provision from these Terms if modification is not possible. The remaining provisions continue in full force and effect.
-              </p>
-
-              <h3 className="font-semibold text-neutral-900 mb-2 mt-4">Waiver</h3>
-              <p>
-                Our failure to enforce any right or provision of these Terms does not constitute a waiver of that right or provision. No waiver shall be effective unless in writing and signed by an authorized representative of TikTok Creator Calculator.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Entire Agreement</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                These Terms of Service, together with our Privacy Policy, constitute the entire agreement between you and TikTok Creator Calculator regarding use of our service. They supersede all prior or contemporaneous communications, proposals, or agreements, whether oral or written.
-              </p>
-
-              <p className="mt-3">
-                Any amendments or modifications to these Terms must be in writing and posted on this page. We will update the "Last Updated" date when changes are made.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Assignment</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                Do not assign, transfer, or delegate your rights or obligations under these Terms without our prior written consent. We freely assign these Terms or any rights under them to any third party without restriction. This includes assignment in connection with a merger, acquisition, reorganization, or sale of assets.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Force Majeure</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including but not limited to acts of God, war, terrorism, riots, embargoes, acts of civil or military authorities, fire, floods, accidents, pandemics, strikes, or shortages of transportation, fuel, energy, labor, or materials.
-              </p>
-            </div>
-          </Card>
-
-          <Card>
-            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">Contact</h2>
-            <div className="space-y-4 text-body-md text-neutral-700">
-              <p>
-                Send questions, concerns, or notices regarding these Terms of Service to the following address.
-              </p>
-
-              <div className="mt-4 space-y-3">
-                <p><strong>Email:</strong> <a href="mailto:legal@calculatecreator.com" className="text-primary-600 hover:underline">legal@calculatecreator.com</a></p>
-                <p><strong>Subject Line:</strong> Include "Terms of Service" for faster routing</p>
-                <p><strong>Response Time:</strong> We aim to respond to legal inquiries within 5 business days</p>
-              </div>
-
-              <div className="mt-6 p-4 bg-neutral-100 rounded">
-                <p className="font-semibold mb-2">For Specific Issues:</p>
-                <ul className="list-disc list-inside ml-4 space-y-1 text-body-sm">
-                  <li>Privacy questions: privacy@calculatecreator.com</li>
-                  <li>Copyright claims: legal@calculatecreator.com (DMCA notices)</li>
-                  <li>Technical support: Use our contact form or general inquiries email</li>
-                  <li>Business inquiries: business@calculatecreator.com</li>
-                </ul>
-              </div>
-            </div>
-          </Card>
-
-          <div className="mt-8 p-6 bg-neutral-100 rounded-lg">
-            <p className="text-body-sm text-neutral-600 italic mb-4">
-              By using TikTok Creator Calculator, you acknowledge that you have read, understood, and agree to these Terms of Service and our Privacy Policy.
-            </p>
-            <p className="text-body-sm text-neutral-600">
-              <strong>Effective Date:</strong> These Terms are effective as of the "Last Updated" date shown at the top of this page. Continued use after updates constitutes acceptance of modified Terms.
-            </p>
-          </div>
-        </div>
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">17. Contact</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Terms inquiries: <a href="mailto:contact@calculatecreator.com" className="link">contact@calculatecreator.com</a>
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-neutral-700">
+            Privacy inquiries: <a href="mailto:privacy@calculatecreator.com" className="link">privacy@calculatecreator.com</a>
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Related trust pages:{' '}
+            <Link href="/privacy/" className="link">
+              Privacy Policy
+            </Link>{' '}
+            and{' '}
+            <Link href="/contact/" className="link">
+              Contact
+            </Link>
+            .
+          </p>
+        </section>
+        </Container>
       </div>
-    </div>
     </>
   );
 }

@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: 'TikTok Content Value Calculator: What Your Videos Are Worth (2026)',
-  description: 'Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche.',
+  title: "TikTok Content Value Calculator and Earnings Tool Guide",
+  description: "Use this TikTok content value calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/content-value/',
@@ -78,7 +78,7 @@ export default function ContentValueCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Content Value Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Estimate the total monetary value of your content portfolio based on average views, engagement rates, and niche monetization potential. This calculator multiplies your per-video value by total video count to determine your catalog worth. Useful for account acquisitions, licensing negotiations, investor pitches, business insurance, or simply understanding your content library as a financial asset worth protecting.
           </p>
         </div>

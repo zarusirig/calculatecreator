@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Receipt, Wallet, CheckCircle, AlertCircle, DollarSign, Shield, TrendingUp, Calendar, Percent, FileText, Users, Target, Gift, ShoppingBag } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Utility Tools | TikTok Creator Calculators',
-  description: 'Access essential utility calculators for TikTok creators. Calculate taxes, estimate payouts, and check monetization eligibility.',
+  title: "TikTok Utility Tools Calculator and Earnings Tool Guide",
+  description: "Use this TikTok utility tools calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/',
   },

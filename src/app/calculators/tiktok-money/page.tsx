@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -13,8 +14,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: 'TikTok Money Calculator: Estimate Your Total Earnings (2026)',
-  description: 'Calculate how much money you can make on TikTok from all income streams. Estimate Creator Fund, brand deals, LIVE gifts, and TikTok Shop earnings with our free calculator.',
+  title: "TikTok Tiktok Money Calculator and Earnings Tool Guide",
+  description: "Use this TikTok tiktok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'how much money on tiktok', 'tiktok income', 'tiktok monetization calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/tiktok-money/',
@@ -372,6 +373,8 @@ Total: ~$13,700/month`}
                 { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Measure your engagement', icon: 'BarChart3' },
               ]}
             />
+
+            <RelatedGuides calculatorPath="/calculators/tiktok-money" />
           </div>
 
           {/* EEAT Section */}

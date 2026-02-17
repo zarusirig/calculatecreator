@@ -6,8 +6,8 @@ import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/Calculator
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Search Volume Increases by Over 40% Year-Over-Year | TikTok News',
-  description: 'Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising.',
+  title: "TikTok Search Volume Increase 40 Percent News and Creator",
+  description: "Follow this TikTok search volume increase 40 percent update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/search-volume-increase-40-percent/',
@@ -79,7 +79,7 @@ export default function SearchVolumeIncrease40PercentPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Search Volume Increases 40% Year-Over-Year
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Platform invests heavily in search infrastructure as billions of daily searches reshape content discovery
           </p>
         </div>

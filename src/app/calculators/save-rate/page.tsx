@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Save Rate Calculator: Measure Content Value (2026)',
-  description: 'Calculate your TikTok save rate. Learn how often viewers bookmark your content. Save rate is a key signal for the algorithm.',
+  title: "TikTok Save Rate Calculator and Earnings Tool Guide",
+  description: "Use this TikTok save rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric', 'tiktok algorithm signal'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/save-rate/',

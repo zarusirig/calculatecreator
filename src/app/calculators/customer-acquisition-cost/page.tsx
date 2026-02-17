@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Customer Acquisition Cost (CAC) Calculator (2026)',
-  description: 'Calculate your TikTok customer acquisition cost. Measure CAC by campaign, optimize marketing spend, and improve customer lifetime value ratio.',
+  title: "TikTok Customer Acquisition Cost Calculator and Earnings",
+  description: "Use this TikTok customer acquisition cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['customer acquisition cost', 'cac calculator', 'tiktok marketing cost', 'ltv cac ratio', 'acquisition cost calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/customer-acquisition-cost/',

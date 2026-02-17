@@ -5,8 +5,8 @@ import { CheckCircle, Briefcase, BarChart3, RefreshCw } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'US-China Deal Reached to Keep TikTok Operational | TikTok News',
-  description: 'A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok\'s operations in the United States through collaboration.',
+  title: "TikTok Us China Deal Tiktok Operational News and Creator",
+  description: "Follow this TikTok us china deal tiktok operational update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/',

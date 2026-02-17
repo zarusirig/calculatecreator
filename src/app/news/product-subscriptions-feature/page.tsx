@@ -5,8 +5,8 @@ import { Sparkles, Heart, Coffee, Home, DollarSign, BarChart3, Target, CheckCirc
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Introduces Product Subscriptions Feature | TikTok News',
-  description: 'TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers.',
+  title: "TikTok Product Subscriptions Feature News and Creator Update",
+  description: "Follow this TikTok product subscriptions feature update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/product-subscriptions-feature/',
@@ -78,7 +78,7 @@ export default function ProductSubscriptionsFeaturePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Introduces Product Subscriptions Feature
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             New recurring revenue model enables subscription-based purchasing for consumable products
           </p>
         </div>

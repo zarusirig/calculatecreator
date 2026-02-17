@@ -1,9 +1,27 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
 import { trackNavigation } from '@/lib/analytics/ga4';
-import { Globe } from 'lucide-react';
+
+const footerLinks = {
+  product: [
+    { label: 'Tools', href: '/tools/' },
+    { label: 'Guides', href: '/guides/' },
+    { label: 'Benchmarks', href: '/benchmarks/' },
+  ],
+  company: [
+    { label: 'About', href: '/about/' },
+    { label: 'Contact', href: '/contact/' },
+    { label: 'FAQ', href: '/faq/' },
+    { label: 'Glossary', href: '/glossary/' },
+  ],
+  legal: [
+    { label: 'Privacy', href: '/privacy/' },
+    { label: 'Terms', href: '/terms/' },
+    { label: 'Editorial Policy', href: '/editorial-policy/' },
+    { label: 'Advertising Disclosure', href: '/compliance/advertising-disclosure/' },
+  ],
+};
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,222 +30,84 @@ export function Footer() {
     trackNavigation('footer', label, href);
   };
 
-  const footerSections = [
-    {
-      title: 'Calculators',
-      links: [
-        { href: '/calculators/tiktok-creator-fund/', label: 'Creator Fund Calculator' },
-        { href: '/calculators/engagement-rate/', label: 'Engagement Rate' },
-        { href: '/calculators/brand-deal-rate/', label: 'Brand Deal Rate' },
-        { href: '/calculators/live-gifts/', label: 'LIVE Gifts' },
-        { href: '/calculators/tiktok-money/', label: 'Money Calculator' },
-        { href: '/calculators/rpm/', label: 'RPM Calculator' },
-        { href: '/calculators/commerce-ads/shop-profit/', label: 'Shop Commission' },
-        { href: '/calculators/coins/', label: 'Coins Converter' },
-        { href: '/calculators/', label: 'All Calculators' },
-      ],
-    },
-    {
-      title: 'Guides & Resources',
-      links: [
-        { href: '/guides/how-to-make-money-on-tiktok/', label: 'Make Money on TikTok' },
-        { href: '/guides/tiktok-creator-fund/', label: 'Creator Fund Guide' },
-        { href: '/guides/brand-deals/', label: 'Brand Deals' },
-        { href: '/guides/how-to-get-brand-deals/', label: 'Get Brand Deals' },
-        { href: '/guides/how-to-negotiate-brand-deals/', label: 'Negotiate Deals' },
-        { href: '/guides/tiktok-live/', label: 'LIVE Monetization' },
-        { href: '/guides/tiktok-shop-affiliate/', label: 'Shop Affiliate' },
-        { href: '/guides/how-to-make-first-1000-dollars/', label: 'Make First $1,000' },
-        { href: '/guides/', label: 'All Guides' },
-      ],
-    },
-    {
-      title: 'News & Updates',
-      links: [
-        { href: '/news/', label: 'Latest TikTok News' },
-        { href: '/blog/', label: 'Blog' },
-        { href: '/comparisons/', label: 'Platform Comparisons' },
-        { href: '/niches/', label: 'Niche Earnings' },
-      ],
-    },
-    {
-      title: 'Data & Insights',
-      links: [
-        { href: '/data/brand-deal-rates-by-followers/', label: 'Brand Deal Rates' },
-        { href: '/data/rpm-rates-by-niche/', label: 'RPM Rates by Niche' },
-        { href: '/data/engagement-rates-by-niche/', label: 'Engagement Benchmarks' },
-        { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube' },
-        { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram' },
-        { href: '/comparisons/creator-fund-vs-brand-deals/', label: 'Fund vs Brand Deals' },
-        { href: '/data/', label: 'All Data' },
-      ],
-    },
-    {
-      title: 'Niche Earnings',
-      links: [
-        { href: '/niches/beauty-earnings/', label: 'Beauty Creators' },
-        { href: '/niches/finance-earnings/', label: 'Finance Creators' },
-        { href: '/niches/fitness-earnings/', label: 'Fitness Creators' },
-        { href: '/niches/', label: 'All Niches' },
-      ],
-    },
-    {
-      title: 'Global Calculators',
-      hasGlobeIcon: true,
-      links: [
-        { href: '/region/', label: 'Global TikTok Stats' },
-        { href: '/calculator/de/', label: 'Deutsch (DE)' },
-        { href: '/calculator/es/', label: 'Español (ES)' },
-        { href: '/calculator/fr/', label: 'Français (FR)' },
-        { href: '/calculator/it/', label: 'Italiano (IT)' },
-        { href: '/calculator/pt-br/', label: 'Português (BR)' },
-        { href: '/calculator/my/', label: 'Bahasa Malaysia (MY)' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { href: '/about/', label: 'About Us' },
-        { href: '/contact/', label: 'Contact Us' },
-        { href: '/faq/', label: 'FAQ' },
-        { href: '/privacy/', label: 'Privacy Policy' },
-        { href: '/terms/', label: 'Terms of Service' },
-        { href: '/editorial-policy/', label: 'Editorial Policy' },
-        { href: '/compliance/advertising-disclosure/', label: 'Advertising Disclosure' },
-        { href: '/glossary/', label: 'Glossary' },
-      ],
-    },
-  ];
-
   return (
-    <footer className="bg-neutral-900 text-white mt-20">
+    <footer className="mt-20 border-t border-neutral-200 bg-white">
       <div className="container-custom py-12">
-        {/* E-E-A-T Section */}
-        <div className="mb-12 pb-12 border-b border-neutral-800">
-          <div className="max-w-4xl">
-            <div className="flex items-center space-x-2 mb-4">
-              <img
-                src="/images/calculate-creator-transparent-v2.png"
-                alt="TikTok Creator Calculator"
-                className="h-10 w-auto"
-              />
-              <span className="text-heading-md font-bold">
-                TikTok Creator Calculator
-              </span>
-            </div>
-            <p className="text-body-md text-neutral-400 mb-6 leading-relaxed">
-              Free, data-driven tools for TikTok creators. We provide transparent calculators and guides
-              based on real creator data, industry research, and official TikTok documentation. Our
-              methodology is always explained, and our tools are regularly updated to reflect the latest
-              platform changes.
+        <div className="grid gap-10 md:grid-cols-4">
+          <div>
+            <p className="text-base font-semibold text-neutral-900">CalculateCreator</p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-neutral-600">
+              Creator benchmarks and calculators with transparent assumptions, clear inputs, and
+              practical outputs.
             </p>
-            <div className="flex flex-wrap gap-6 text-label-sm text-neutral-500">
-              <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span>Data-Driven Methodology</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <span>Privacy First - No Data Collection</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <svg className="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-                <span>Always Free & Updated</span>
-              </div>
-            </div>
+          </div>
+
+          <div>
+            <p className="mb-3 text-sm font-semibold text-neutral-900">Product</p>
+            <ul className="space-y-2">
+              {footerLinks.product.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+                    onClick={() => handleLinkClick(item.label, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="mb-3 text-sm font-semibold text-neutral-900">Company</p>
+            <ul className="space-y-2">
+              {footerLinks.company.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+                    onClick={() => handleLinkClick(item.label, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="mb-3 text-sm font-semibold text-neutral-900">Legal</p>
+            <ul className="space-y-2">
+              {footerLinks.legal.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+                    onClick={() => handleLinkClick(item.label, item.href)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  href="/sitemap/"
+                  className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+                  onClick={() => handleLinkClick('HTML Sitemap', '/sitemap/')}
+                >
+                  HTML Sitemap
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-7 gap-8 mb-12">
-          {footerSections.map((section) => (
-            <div key={section.title}>
-              <h4 className="text-heading-sm font-semibold mb-4 flex items-center gap-2">
-                {'hasGlobeIcon' in section && section.hasGlobeIcon && <Globe size={16} />}
-                {section.title}
-              </h4>
-              <ul className="space-y-2">
-                {section.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                      onClick={() => handleLinkClick(link.label, link.href)}
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        {/* Bottom Section */}
-        <div className="pt-8 border-t border-neutral-800">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 mb-4">
-            <p className="text-body-sm text-neutral-400 text-center md:text-left">
-              &copy; {currentYear} TikTok Creator Calculator. All rights reserved.
-            </p>
-            <div className="flex items-center space-x-4">
-              <Link
-                href="/privacy/"
-                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Privacy Policy Footer', '/privacy/')}
-              >
-                Privacy
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link
-                href="/terms/"
-                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Terms Footer', '/terms/')}
-              >
-                Terms
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link
-                href="/contact/"
-                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Contact Footer', '/contact/')}
-              >
-                Contact
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link
-                href="/editorial-policy/"
-                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Editorial Policy Footer', '/editorial-policy/')}
-              >
-                Editorial Policy
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link
-                href="/compliance/advertising-disclosure/"
-                className="text-body-sm text-neutral-400 hover:text-white transition-colors"
-                onClick={() => handleLinkClick('Ad Disclosure Footer', '/compliance/advertising-disclosure/')}
-              >
-                Ad Disclosure
-              </Link>
-            </div>
-          </div>
-
-          <div className="text-center md:text-left">
-            <p className="text-label-sm text-neutral-500 mb-2">
-              Not affiliated with TikTok, ByteDance Ltd., or any of their subsidiaries. All trademarks
-              are property of their respective owners.
-            </p>
-            <p className="text-label-sm text-neutral-600">
-              Our calculators provide estimates based on available data and should be used for informational
-              purposes only. Actual earnings may vary based on numerous factors.
-            </p>
-          </div>
+        <div className="mt-10 border-t border-neutral-200 pt-6">
+          <p className="text-xs text-neutral-500">
+            © {currentYear} CalculateCreator. Estimates are directional, not guarantees. Your
+            inputs stay in your browser.
+          </p>
         </div>
       </div>
     </footer>

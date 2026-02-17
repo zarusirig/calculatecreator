@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A solid contract protects both you and the brand in a sponsorship deal. Whether you're negotiating your first $500 deal or a $10,000 campaign, having clear written terms prevents misunderstandings, ensures you get paid, and defines expectations for both parties.
+TikTok creators: A solid contract protects both you and the brand in a sponsorship deal. Whether you're negotiating your first $500 deal or a $10,000 campaign, having clear written terms prevents misunderstandings, ensures you get paid, and defines expectations for both parties.
 
 This free contract template covers all essential elements of a TikTok brand partnership agreement.
 

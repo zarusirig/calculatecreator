@@ -5,8 +5,8 @@ import { Tv, GraduationCap, MessageSquare, Award } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News',
-  description: 'Users can now mention "Liked" and "Favorited" videos in their content, expanding cross-referencing capabilities on the platform.',
+  title: "TikTok Mention Liked Favorited Videos News and Creator",
+  description: "Follow this TikTok mention liked favorited videos update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/mention-liked-favorited-videos/',
@@ -78,7 +78,7 @@ export default function MentionLikedFavoritedVideosPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Adds Mention Features for Liked and Favorited Videos
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             New cross-referencing capabilities make it easier to share and reference saved content
           </p>
         </div>

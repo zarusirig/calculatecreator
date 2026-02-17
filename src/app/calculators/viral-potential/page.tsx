@@ -13,8 +13,8 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: 'TikTok Viral Potential Calculator: Predict Content Virality (2026)',
-  description: 'Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach.',
+  title: "TikTok Viral Potential Calculator and Earnings Tool",
+  description: "Use this TikTok viral potential calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/viral-potential/',
@@ -100,7 +100,7 @@ export default function ViralPotentialCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Viral Potential Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Predict the viral likelihood of your content based on key engagement signals including completion rate, share rate, engagement rate, and save rate. This calculator provides a comprehensive viral score from 0 to 100 and actionable insights. Understand what makes content go viral. Ideal for creators who want to maximize reach, identify viral patterns in their content, and increase the chances of hitting the For You Page.
           </p>
         </div>

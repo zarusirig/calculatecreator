@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Ad Cost Calculator: CPM, CPV & Budget Estimator (2026)',
-  description: 'Calculate TikTok advertising costs including CPM, CPV rates, and campaign ROI. Get 2026 benchmarks and plan your TikTok ad budget effectively.',
+  title: "TikTok Ad Cost Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok ad cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok ad cost calculator', 'tiktok cpm', 'tiktok cpv', 'tiktok advertising budget', 'tiktok ads pricing'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/commerce-ads/ad-cost/',

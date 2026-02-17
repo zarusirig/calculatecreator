@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CampaignROICalculatorWidget } from '@/components/calculators/campaign-roi/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: 'TikTok Campaign ROI Calculator: Measure Ad Performance (2026)',
-  description: 'Calculate your TikTok advertising campaign ROI. Measure ROAS, track conversions, and optimize ad spend with our free campaign ROI calculator.',
+  title: "TikTok Campaign Roi Calculator and Earnings Tool Guide",
+  description: "Use this TikTok campaign roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['campaign roi calculator', 'tiktok roas', 'ad performance calculator', 'marketing roi', 'tiktok ads roi'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/campaign-roi/',

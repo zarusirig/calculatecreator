@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Fitness Creators TikTok Earnings: FitTok Income Data 2026',
-  description: 'How much fitness creators earn on TikTok in 2026. Brand deal rates by follower tier, affiliate income, supplement sponsorships, and monetization strategies for FitTok.',
+  title: "TikTok Fitness Earnings for Creator Earnings and Growth",
+  description: "Explore TikTok fitness earnings content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
   keywords: ['fittok earnings', 'fitness creator income', 'workout influencer rates', 'fitness tiktok money', 'gym creator earnings'],
   alternates: {
     canonical: 'https://calculatecreator.com/niches/fitness-earnings/',
@@ -281,7 +281,7 @@ export default function FitnessEarningsPage() {
               Fitness Creators TikTok Earnings
             </h1>
           </div>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Complete 2026 income guide for FitTok creators with real earnings data, brand deal rates, and monetization strategies
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

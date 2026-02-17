@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Moon Phase Posting Guide | TikTok Content Calendar Tool 2026',
-  description: 'Align your TikTok content with lunar energy. Fun tool for creators who believe in cosmic timing - get content recommendations based on moon phases.',
+  title: "TikTok Moon Phase Calculator and Earnings Tool Guide",
+  description: "Use this TikTok moon phase calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['moon phase posting', 'lunar content calendar', 'tiktok astrology', 'cosmic timing', 'content planning'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/fun-niche/moon-phase/',

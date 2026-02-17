@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Campaign ROI Calculator 2026 | CalculateCreator',
-  description: 'Calculate marketing campaign ROI and ROAS on TikTok. Measure profitability, track ad spend efficiency & optimize campaign performance.',
+  title: "TikTok Campaign Roi Calculator and Earnings Tool Guide",
+  description: "Use this TikTok campaign roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['campaign roi calculator', 'tiktok roi', 'marketing roi', 'roas calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/campaign-roi/',

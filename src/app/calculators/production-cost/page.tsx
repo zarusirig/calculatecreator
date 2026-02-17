@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Video Production Cost Calculator (2026)',
-  description: 'Calculate content production costs for TikTok videos. Budget equipment, editing, and time costs to understand your true content investment.',
+  title: "TikTok Production Cost Calculator and Earnings Tool",
+  description: "Use this TikTok production cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['production cost calculator', 'content creation cost', 'video production budget', 'creator expenses', 'content cost analysis'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/production-cost/',
@@ -78,7 +78,7 @@ export default function ProductionCostCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Production Cost Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Calculate your true cost per video by factoring in equipment amortization, software subscriptions, and most importantly your time value at appropriate hourly rates. Understand production costs to evaluate ROI, price services accurately, claim tax deductions, and identify efficiency improvements. Critical for determining whether your content creation is actually profitable after accounting for all expenses.
           </p>
         </div>

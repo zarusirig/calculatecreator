@@ -1,54 +1,29 @@
 import type { Metadata } from 'next';
-import { Bricolage_Grotesque, IBM_Plex_Sans, JetBrains_Mono } from 'next/font/google';
 import '@/styles/globals.css';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ErrorBoundary } from '@/components/error/ErrorBoundary';
-
-// Distinctive display font for headings - bold and impactful
-const bricolage = Bricolage_Grotesque({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-display',
-  weight: ['400', '600', '700', '800'],
-});
-
-// Technical but readable body font
-const ibmPlex = IBM_Plex_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-body',
-  weight: ['400', '500', '600', '700'],
-});
-
-// Monospace for calculator numbers and data
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-mono',
-  weight: ['400', '500', '600', '700'],
-});
+import { CookieConsent } from '@/components/consent/CookieConsent';
 
 export const metadata: Metadata = {
   title: {
-    default: 'TikTok Creator Calculator - Earnings, Engagement & Analytics Tools',
-    template: '%s | TikTok Creator Calculator',
+    default: 'CalculateCreator - Creator Benchmarks and Calculators',
+    template: '%s',
   },
-  description:
-    'Free TikTok calculators for creators: estimate Creator Fund earnings, engagement rates, brand deal rates, LIVE gifts, and more. Data-driven tools with transparent methodology.',
+  description: "Explore TikTok layout.tsx content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
   keywords: [
-    'tiktok calculator',
-    'tiktok money calculator',
-    'tiktok engagement rate calculator',
-    'tiktok creator fund calculator',
-    'tiktok earnings calculator',
-    'tiktok brand deal calculator',
+    'creator calculator',
+    'creator benchmarks',
+    'rpm calculator',
+    'engagement calculator',
+    'earnings calculator',
+    'creator analytics tools',
   ],
-  authors: [{ name: 'TikTok Creator Calculator' }],
-  creator: 'TikTok Creator Calculator',
-  publisher: 'TikTok Creator Calculator',
+  authors: [{ name: 'CalculateCreator' }],
+  creator: 'CalculateCreator',
+  publisher: 'CalculateCreator',
   robots: {
     index: true,
     follow: true,
@@ -68,10 +43,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'TikTok Creator Calculator - Earnings & Analytics Tools',
+    title: 'CalculateCreator - Creator Benchmarks and Calculators',
     description:
-      'Free TikTok calculators for creators: estimate earnings, engagement rates, brand deal rates, and more.',
-    siteName: 'TikTok Creator Calculator',
+      'A calm, trustworthy creator analytics product for estimates, comparisons, and benchmarks.',
+    siteName: 'CalculateCreator',
     url: 'https://calculatecreator.com',
     images: [
       {
@@ -84,9 +59,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TikTok Creator Calculator',
+    title: 'CalculateCreator',
     description:
-      'Free TikTok calculators for creators: estimate earnings, engagement rates, and more.',
+      'Creator benchmarks and calculators with transparent assumptions.',
     images: ['https://calculatecreator.com/home/hero-dashboard-1600.webp'],
   },
   verification: {
@@ -100,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${ibmPlex.variable} ${jetbrains.variable}`}>
+    <html lang="en">
       <head>
         {/* Favicon & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -108,31 +83,10 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
 
         {/* Preload critical resources for better performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-
-        {/* Google AdSense verification */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6191764023643150"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        />
-
-        {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X90GQYNEHW" />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-X90GQYNEHW');
-          `}
-        </Script>
       </head>
-      <body className="font-sans">
+      <body className="font-sans bg-neutral-50 text-neutral-900">
 
         {/* Service Worker Registration */}
         <Script id="service-worker" strategy="afterInteractive">
@@ -158,6 +112,7 @@ export default function RootLayout({
           <Footer />
           <WebVitals />
         </div>
+        <CookieConsent />
       </body>
     </html>
   );

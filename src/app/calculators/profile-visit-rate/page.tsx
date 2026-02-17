@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok Profile Visit Rate Calculator (2026)',
-  description: 'Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content.',
+  title: "TikTok Profile Visit Rate Calculator and Earnings Tool",
+  description: "Use this TikTok profile visit rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator', 'profile conversion'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/profile-visit-rate/',
@@ -100,7 +100,7 @@ export default function ProfileVisitRateCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Profile Visit Rate Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
             Calculate how effectively your content drives profile visits by measuring the percentage of viewers who click through to your profile. Track this key funnel metric to understand content curiosity, optimize profile conversion rates, and identify whether your videos inspire viewers to learn more about you. Essential for creators focused on follower growth and building engaged communities beyond viral views.
           </p>
         </div>

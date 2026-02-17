@@ -4,15 +4,21 @@ import { generateHubPageSchemas, hubPageConfigs } from '@/lib/seo/hub-page-schem
 const config = hubPageConfigs.calculators;
 
 export const metadata: Metadata = {
-  title: 'TikTok Calculators: 28 Free Tools for Creators 2026',
-  description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 500,000+ creators worldwide.',
-  keywords: ['tiktok calculator', 'tiktok earnings calculator', 'tiktok money calculator', 'creator fund calculator', 'engagement rate calculator', 'brand deal calculator'],
+  title: "TikTok Calculators Calculator and Earnings Tool Guide",
+  description: "Use this TikTok calculators calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  keywords: [
+    'creator calculator',
+    'earnings calculator',
+    'engagement calculator',
+    'benchmark tools',
+    'creator analytics',
+  ],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/',
   },
   openGraph: {
-    title: 'TikTok Calculators: 28 Free Tools for Creators',
-    description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 500,000+ creators.',
+    title: 'Calculators | CalculateCreator',
+    description: 'Estimate and benchmark creator metrics with clear workflows and transparent assumptions.',
     url: 'https://calculatecreator.com/calculators/',
     type: 'website',
   },

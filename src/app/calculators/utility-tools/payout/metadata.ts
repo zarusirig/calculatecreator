@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Payout Calculator (After Fees) 2026',
-  description:
-    'Estimate your TikTok payouts after platform fees and payment processing. Supports LIVE gifts, Creator Fund, and Shop commissions. Updated 2026.',
+  title: "TikTok Payout Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok payout calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/payout/',
   },

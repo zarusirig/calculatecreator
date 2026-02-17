@@ -9,9 +9,9 @@ import { Sparkles, DollarSign, TrendingUp, Dumbbell, PiggyBank, Target, Users, B
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok Niche Earnings Guides: Income by Content Category 2026 | CalculateCreator',
+    absolute: 'TikTok Niche Earnings — Income by Content Category',
   },
-  description: 'Explore TikTok earnings by niche. Real income data for beauty, finance, fitness creators with brand deal rates and monetization strategies.',
+  description: "Explore TikTok niches content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
   alternates: {
     canonical: 'https://calculatecreator.com/niches/',
   },

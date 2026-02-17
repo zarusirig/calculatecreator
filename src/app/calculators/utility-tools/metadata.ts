@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Utility Tools for TikTok Creators | Tax, Payout & Eligibility (2026)',
-  description:
-    'Tax calculator, payout calculator, and eligibility checker for TikTok creators. 2026 tax brackets, platform fees, and monetization rules.',
+  title: "TikTok Utility Tools Calculator and Earnings Tool Guide",
+  description: "Use this TikTok utility tools calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/',
   },

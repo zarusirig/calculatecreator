@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Brand Deal Calculator 2026 | CalculateCreator',
-  description: 'Calculate what to charge brands for sponsored posts. Get accurate rates based on followers, engagement & niche. Maximize your sponsorship income.',
+  title: "TikTok Influencer Pricing Calculator and Earnings Tool",
+  description: "Use this TikTok influencer pricing calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['brand deal calculator', 'influencer rate calculator', 'sponsored post pricing', 'tiktok sponsorship rates'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',

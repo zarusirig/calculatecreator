@@ -32,9 +32,9 @@ const guideFaqs = [
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'TikTok Creator Guides: Monetization & Growth 2026 | CalculateCreator',
+    absolute: 'TikTok Creator Guides — Monetization and Growth',
   },
-  description: 'Expert guides on TikTok monetization, brand deals, algorithm optimization, and audience growth. Data-backed strategies from successful creators.',
+  description: "Read this TikTok guides guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/guides/',
   },

@@ -13,8 +13,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'TikTok Video Completion Rate Calculator (2026)',
-  description: 'Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance.',
+  title: "TikTok Completion Rate Calculator and Earnings Tool",
+  description: "Use this TikTok completion rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/completion-rate/',

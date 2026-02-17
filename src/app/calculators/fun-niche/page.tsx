@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Moon, Sparkles, Brain, Heart, TrendingUp, Calendar, CheckCircle, Lightbulb } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Fun & Niche Calculators | TikTok Creator Tools',
-  description: 'Fun and unique calculators for TikTok creators. Explore niche tools like moon phase timing for optimal posting.',
+  title: "TikTok Fun Niche Calculator and Earnings Tool Guide",
+  description: "Use this TikTok fun niche calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/fun-niche/',
   },

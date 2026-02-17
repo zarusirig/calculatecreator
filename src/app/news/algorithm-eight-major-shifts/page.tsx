@@ -5,8 +5,8 @@ import { CheckCircle, XCircle } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025 | TikTok News',
-  description: 'TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior.',
+  title: "TikTok Algorithm Eight Major Shifts News and Creator Update",
+  description: "Follow this TikTok algorithm eight major shifts update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/',
@@ -78,7 +78,7 @@ export default function AlgorithmEightMajorShiftsPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Algorithm Undergoes Eight Major Shifts in 2025
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Enhanced personalization, retention focus, and off-platform behavior tracking reshape content distribution
           </p>
         </div>

@@ -114,7 +114,7 @@ export default function MoonPhaseCalculatorPage() {
             <Moon size={40} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-white mb-4">Moon Phase Posting Guide</h1>
-          <p className="text-body-lg text-indigo-200 max-w-2xl mx-auto">Align your content with lunar energy. A fun tool for creators who believe in cosmic timing! Discover which moon phase matches your posting date and get content recommendations based on lunar energy. From New Moon fresh starts to Full Moon peak energy, this calculator suggests optimal content types for each lunar phase. Perfect for creators who follow astrology, want creative inspiration, or simply enjoy adding cosmic intention to their posting schedule. Remember this is entertainment only but can add meaningful ritual to your content planning process.</p>
+          <p className="text-body-lg text-indigo-200 max-w-2xl mx-auto">TikTok creators: Align your content with lunar energy. A fun tool for creators who believe in cosmic timing! Discover which moon phase matches your posting date and get content recommendations based on lunar energy. From New Moon fresh starts to Full Moon peak energy, this calculator suggests optimal content types for each lunar phase. Perfect for creators who follow astrology, want creative inspiration, or simply enjoy adding cosmic intention to their posting schedule. Remember this is entertainment only but can add meaningful ritual to your content planning process.</p>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">

@@ -6,14 +6,15 @@ import { Card } from '@/components/ui/Card';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Income (2026)',
-  description: 'Calculate your TikTok LIVE gift earnings. Estimate income from virtual gifts, roses, lions, and other TikTok LIVE rewards.',
+  title: "TikTok Live Earnings Calculator and Earnings Tool Guide",
+  description: "Use this TikTok live earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/earnings-revenue/live-earnings/',
@@ -308,6 +309,8 @@ Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'V
           </Card>
 
           <RelatedCalculators currentCalculator="live-gifts" calculators={[{ name: 'Coins Calculator', slug: 'coins', description: 'Convert TikTok coins to USD', icon: 'Coins' }, { name: 'TikTok Money Calculator', slug: 'tiktok-money', description: 'Total earnings including LIVE', icon: 'Banknote' }]} />
+
+          <RelatedGuides calculatorPath="/calculators/earnings-revenue/live-earnings" />
         </div>
       </div>
     </div>

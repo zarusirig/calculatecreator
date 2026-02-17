@@ -10,8 +10,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Beauty Creators TikTok Earnings Guide: Realistic Income Data 2026',
-  description: 'Complete earnings guide for beauty creators on TikTok in 2026. Income by follower tier, brand deal rates, affiliate commissions, and monetization strategies.',
+  title: "TikTok Beauty Earnings for Creator Earnings and Growth",
+  description: "Explore TikTok beauty earnings content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
   keywords: ['beauty creator earnings', 'tiktok beauty income', 'beauty influencer rates', 'makeup creator money', 'skincare creator earnings'],
   alternates: {
     canonical: 'https://calculatecreator.com/niches/beauty-earnings/',
@@ -329,7 +329,7 @@ export default function BeautyEarningsPage() {
               Beauty Creators TikTok Earnings Guide
             </h1>
           </div>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Realistic income data, brand deal rates, and monetization strategies for beauty creators in 2026
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs.fr;
 
 export const metadata: Metadata = {
-  title: 'Calculatrice TikTok: Revenus 2026 | France',
-  description: 'Calculatrice TikTok gratuite pour Fonds des Créateurs, partenariats de marque et cadeaux LIVE. Calculez vos revenus potentiels en euros pour la France.',
+  title: "TikTok Fr Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok fr calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['calculatrice tiktok', 'revenus tiktok', 'argent tiktok', 'fonds des créateurs', 'monétisation tiktok'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/fr/',

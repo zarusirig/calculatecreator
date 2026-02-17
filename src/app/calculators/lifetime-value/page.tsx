@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: 'Customer Lifetime Value (LTV) Calculator for TikTok (2026)',
-  description: 'Calculate customer lifetime value from TikTok traffic. Measure LTV, optimize your LTV:CAC ratio, and improve customer retention strategies.',
+  title: "TikTok Lifetime Value Calculator and Earnings Tool",
+  description: "Use this TikTok lifetime value calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'ltv cac ratio', 'customer retention'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/lifetime-value/',

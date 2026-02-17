@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { DollarSign, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, Clock, MessageCircle, Calendar, Gift, AlertTriangle, Gem, ShoppingCart, FileText, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Monetization Calculator Hub 2026 | Complete Income Strategy Guide',
-  description: 'Master every TikTok income stream with our comprehensive monetization hub. From Creator Fund and brand deals to TikTok Shop and affiliate marketing - calculate, optimize, and scale your earnings.',
+  title: "TikTok Monetization Calculator Hub Guide and Creator",
+  description: "Read this TikTok monetization calculator hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical",
   keywords: ['tiktok monetization', 'tiktok earnings', 'creator fund', 'brand deals', 'tiktok shop', 'affiliate marketing', 'live gifts', 'tiktok income'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/monetization-calculator-hub/',

@@ -5,8 +5,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { CheckCircle, XCircle, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop vs Amazon Associates: Affiliate Earnings Comparison 2026',
-  description: 'Compare TikTok Shop vs Amazon Associates affiliate programs. Commission rates, requirements, earning potential, and which platform is better for creators.',
+  title: "TikTok Tiktok Shop Vs Amazon Comparison for Creator Earnings",
+  description: "Compare TikTok tiktok shop vs amazon outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations for",
   keywords: ['tiktok shop vs amazon', 'affiliate comparison', 'commission rates', 'creator affiliate programs'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon/',
@@ -65,7 +65,7 @@ export default function TikTokShopVsAmazonPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop vs Amazon Associates: 2026 Comparison
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">Which affiliate program pays creators more?</p>
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: Which affiliate program pays creators more?</p>
         </div>
       </section>
 

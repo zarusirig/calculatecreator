@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'CAC Calculator 2026 | CalculateCreator',
-  description: 'Calculate Customer Acquisition Cost for TikTok marketing. Track how much you spend to acquire each customer and improve ROI efficiency.',
+  title: "TikTok Customer Acquisition Cost Calculator and Earnings",
+  description: "Use this TikTok customer acquisition cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['cac calculator', 'customer acquisition cost', 'tiktok cac', 'marketing roi'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/customer-acquisition-cost/',

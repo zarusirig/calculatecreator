@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Payout Calculator | Net Earnings After Fees 2026',
-  description: 'Calculate your actual TikTok payout after platform fees and payment processing. See what you really receive from LIVE gifts, Creator Fund, and Shop earnings.',
+  title: "TikTok Payout Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok payout calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok payout calculator', 'creator earnings after fees', 'tiktok platform fees', 'live gift payout', 'net earnings calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/payout/',

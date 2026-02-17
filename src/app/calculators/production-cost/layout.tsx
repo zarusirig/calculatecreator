@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Production Cost Calculator 2026 | CalculateCreator',
-  description: 'Calculate video production costs and content ROI. Track equipment, time & overhead expenses to price services and maximize profit.',
+  title: "TikTok Production Cost Calculator and Earnings Tool",
+  description: "Use this TikTok production cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['production cost calculator', 'content cost', 'video production roi'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/production-cost/',

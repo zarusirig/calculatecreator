@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Calculadora de Dinero TikTok España 2026 | Fondos y Recompensas',
-  description:
-    'Calcula tus ganancias en TikTok para España: Creator Fund, Creator Rewards, marcas y regalos LIVE. Datos RPM 2026, gratis y sin registro.',
+  title: "TikTok Es Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok es calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/es/',
     languages: {

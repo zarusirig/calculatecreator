@@ -7,8 +7,8 @@ import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: 'Earnings & Revenue Calculators | TikTok Creator Tools',
-  description: 'Calculate your TikTok earnings from LIVE gifts, Creator Fund, and total revenue. Free tools to estimate your creator income.',
+  title: "TikTok Earnings Revenue Calculator and Earnings Tool",
+  description: "Use this TikTok earnings revenue calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/earnings-revenue/',
   },

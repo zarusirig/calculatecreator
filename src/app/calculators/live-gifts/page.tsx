@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE Gifts Calculator: Estimate Streaming Earnings (2026)',
-  description: 'Calculate your TikTok LIVE gift earnings. Estimate how much you can make from streaming based on viewers, stream frequency, and gift rates. Free earnings calculator.',
+  title: "TikTok Live Gifts Calculator and Earnings Tool Guide",
+  description: "Use this TikTok live gifts calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok live gifts calculator', 'live streaming earnings', 'tiktok live money', 'gift earnings calculator', 'tiktok streaming income'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/live-gifts/',

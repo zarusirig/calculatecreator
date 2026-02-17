@@ -5,8 +5,8 @@ import { ShoppingBag, Users, Package, Radio } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Shop Expands to France, Germany, and Italy | TikTok News',
-  description: 'In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence.',
+  title: "TikTok Tiktok Shop Europe Expansion News and Creator Update",
+  description: "Follow this TikTok tiktok shop europe expansion update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/',
@@ -78,7 +78,7 @@ export default function TikTokShopEuropeExpansionPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Expands to France, Germany, and Italy
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Major European expansion despite regulatory uncertainty in the United States
           </p>
         </div>

@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { Megaphone, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, DollarSign, BarChart3, Zap, TrendingUp, ShoppingCart, Users, AlertTriangle, Layers } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Ads Hub 2026 | Complete Advertising Strategy & Cost Guide',
-  description: 'Master TikTok advertising with our comprehensive ads hub. Learn ad formats, budget planning, ROAS benchmarks, Spark Ads, TikTok Shop advertising, and advanced optimization strategies.',
+  title: "TikTok Tiktok Ads Hub Guide and Creator Strategy Guide",
+  description: "Read this TikTok tiktok ads hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
   keywords: ['tiktok ads', 'tiktok advertising', 'tiktok ad cost', 'spark ads', 'tiktok shop ads', 'tiktok campaign roi', 'tiktok cpm', 'tiktok ad budget'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/tiktok-ads-hub/',

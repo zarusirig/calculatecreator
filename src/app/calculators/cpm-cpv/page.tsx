@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok CPM & CPV Calculator: Ad Cost Benchmarks (2026)',
-  description: 'Calculate TikTok CPM (cost per 1000 impressions) and CPV (cost per view). Compare your ad costs to industry benchmarks with our free calculator.',
+  title: "TikTok Cpm Cpv Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok cpm cpv calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok cpm calculator', 'cpv calculator', 'cost per view', 'cost per thousand', 'tiktok ad benchmarks'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/cpm-cpv/',

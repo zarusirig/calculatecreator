@@ -15,6 +15,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
@@ -22,9 +23,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
-  description:
-    'Calculate your TikTok RPM (Revenue Per Mille) and estimate earnings per 1,000 views. See how your content performance compares to industry benchmarks and optimize your Creator Fund revenue in 2026.',
+  title: "TikTok Rpm Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok rpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: [
     'tiktok rpm calculator',
     'revenue per mille',
@@ -441,6 +441,10 @@ export default function RpmCalculatorPage() {
           {/* Related Calculators */}
           <div className="mb-10">
             <RelatedCalculators calculators={relatedCalculators} currentCalculator="RPM Calculator" variant="dark" />
+          </div>
+
+          <div className="mb-10">
+            <RelatedGuides calculatorPath="/calculators/rpm" />
           </div>
 
           {/* Author Byline */}

@@ -5,8 +5,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { CheckCircle, XCircle, Lightbulb, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok LIVE vs YouTube LIVE Earnings: 2026 Comparison Guide',
-  description: 'Compare TikTok LIVE gifts vs YouTube Super Chat earnings, requirements, payment structures, and which platform pays live streamers more.',
+  title: "TikTok Tiktok Live Vs Youtube Live Comparison for Creator",
+  description: "Compare TikTok tiktok live vs youtube live outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
   keywords: ['tiktok live vs youtube', 'live streaming earnings', 'super chat vs gifts', 'live monetization comparison'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/',
@@ -65,7 +65,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok LIVE vs YouTube LIVE: Earnings Comparison
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">Which platform pays live streamers more in 2025?</p>
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: Which platform pays live streamers more in 2025?</p>
         </div>
       </section>
 

@@ -7,14 +7,15 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
+import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: 'TikTok Engagement Rate Calculator: Free Tool with 2026 Benchmarks',
-  description: 'Calculate your TikTok engagement rate for free. Compare against 2026 benchmarks by follower tier and niche. Understand what brands look for when evaluating creators.',
+  title: "TikTok Engagement Rate Calculator and Earnings Tool",
+  description: "Use this TikTok engagement rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['tiktok engagement rate calculator', 'engagement rate', 'tiktok analytics', 'engagement calculator', 'tiktok metrics', 'influencer engagement'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-rate/',
@@ -389,6 +390,8 @@ For accurate results, calculate average engagement across your last 10-20 posts.
                 { name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Calculate Creator Fund earnings', icon: 'DollarSign' },
               ]}
             />
+
+            <RelatedGuides calculatorPath="/calculators/engagement-rate" />
           </div>
 
           {/* EEAT Section */}

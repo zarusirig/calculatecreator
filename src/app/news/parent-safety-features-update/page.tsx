@@ -5,8 +5,8 @@ import { BarChart3, Lock, Clock, Shield, CheckCircle } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Unveils New Safety Features for Parents | TikTok News',
-  description: 'In July 2026, TikTok announced new safety measures giving parents more control over teens\' accounts, including greater visibility into account activity and customizable settings.',
+  title: "TikTok Parent Safety Features Update News and Creator Update",
+  description: "Follow this TikTok parent safety features update update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/parent-safety-features-update/',
@@ -78,7 +78,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Unveils New Safety Features for Parents
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Enhanced parental controls give families more visibility and customization options
           </p>
         </div>

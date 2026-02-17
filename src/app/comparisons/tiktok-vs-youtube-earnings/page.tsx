@@ -6,8 +6,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Scale, DollarSign, Music, Video, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok vs YouTube Earnings: Which Platform Pays More in 2025?',
-  description: 'Complete comparison of TikTok vs YouTube creator earnings. See RPM rates, monetization requirements, and which platform makes more money per view.',
+  title: "TikTok Tiktok Vs Youtube Earnings Comparison for Creator",
+  description: "Compare TikTok tiktok vs youtube earnings outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
   keywords: ['tiktok vs youtube', 'tiktok youtube earnings comparison', 'which pays more tiktok or youtube', 'creator fund vs adsense', 'tiktok youtube monetization'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/',
@@ -153,7 +153,7 @@ export default function TikTokVsYouTubeEarningsPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok vs YouTube Earnings
           </h1>
-          <p className="text-heading-md text-white/90 mb-6">
+          <p className="text-heading-md text-white/90 mb-6">TikTok creators: 
             Complete comparison: Which platform pays creators more in 2025? See RPM, requirements, and real earnings data
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">

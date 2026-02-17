@@ -5,8 +5,8 @@ import { Tv, Tag, Battery, Smartphone, Palette } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News',
-  description: 'TikTok added new playback options including "Disable HDR videos" and "Display object tags," giving users more control over their viewing experience.',
+  title: "TikTok Playback Settings Update News and Creator Update",
+  description: "Follow this TikTok playback settings update update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/playback-settings-update/',
@@ -78,7 +78,7 @@ export default function PlaybackSettingsUpdatePage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Introduces New Playback Settings
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             Disable HDR videos and display object tags for enhanced viewing control
           </p>
         </div>

@@ -5,8 +5,8 @@ import { XCircle, CheckCircle, BarChart3, Eye, Clock, Globe } from 'lucide-react
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: 'Creator Fund Replaced with Creator Rewards Program | TikTok News',
-  description: 'TikTok officially discontinued the Creator Fund and launched the Creator Rewards Program with dramatically increased requirements: 10,000 followers and 100,000 monthly views.',
+  title: "TikTok Creator Rewards Program Launch News and Creator",
+  description: "Follow this TikTok creator rewards program launch update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/creator-rewards-program-launch/',
@@ -78,7 +78,7 @@ export default function CreatorRewardsProgramLaunchPage() {
           <h1 className="text-display-lg font-bold text-white mb-4">
             Creator Fund Replaced with Creator Rewards Program
           </h1>
-          <p className="text-heading-md text-white/90">
+          <p className="text-heading-md text-white/90">TikTok creators: 
             New program offers up to 20x higher earnings but requires 10K followers and 100K monthly views
           </p>
         </div>

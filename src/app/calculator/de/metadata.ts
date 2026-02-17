@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TikTok Geld Rechner Deutschland 2026 | Einnahmen & Creator Fund',
-  description:
-    'Berechne TikTok Einnahmen in Deutschland: Creator Fund, Creator Rewards, Markendeals & LIVE Geschenke. Aktuelle RPM-Daten 2026, kostenlose Tools.',
+  title: "TikTok De Calculator and Earnings Tool Guide 2026",
+  description: "Use this TikTok de calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/de/',
     languages: {

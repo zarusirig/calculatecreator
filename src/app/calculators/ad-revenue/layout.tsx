@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Ad Revenue Calculator 2026 | CalculateCreator',
-  description: 'Estimate TikTok ad revenue potential from video views. Calculate earnings from TikTok\'s advertising programs and monetization features.',
+  title: "TikTok Ad Revenue Calculator and Earnings Tool Guide",
+  description: "Use this TikTok ad revenue calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok ad revenue', 'ad earnings calculator', 'tiktok ads calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/ad-revenue/',
