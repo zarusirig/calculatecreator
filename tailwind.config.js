@@ -132,6 +132,12 @@ module.exports = {
           'text-2': '#94A3B8',
           'text-muted': '#64748B',
         },
+        tiktok: {
+          pink: '#FE2C55',
+          red: '#FF0050',
+          blue: '#25F4EE',
+          black: '#010101',
+        },
       },
       fontFamily: {
         display: ['var(--font-display)', 'var(--font-body)', 'system-ui', 'sans-serif'],

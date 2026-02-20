@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { getAllArticles } from '@/lib/content';
+import path from 'path';
 
 export const metadata: Metadata = {
   title: "TikTok Sitemap for Creator Earnings and Growth Guide",
@@ -39,6 +41,24 @@ const sitemapGroups = [
 ];
 
 export default function HtmlSitemapPage() {
+  const allArticles = getAllArticles();
+  const contentDir = path.join(process.cwd(), 'content');
+  const articlesBySection: Record<string, { title: string; href: string }[]> = {};
+
+  for (const article of allArticles) {
+    const rel = path.relative(contentDir, article.filePath);
+    const section = rel.split(path.sep)[0];
+    if (!articlesBySection[section]) {
+      articlesBySection[section] = [];
+    }
+    articlesBySection[section].push({
+      title: article.frontmatter.title,
+      href: ('/' + rel.replace(/\\/g, '/').replace(/\.mdx$/, '') + '/').replace(/\/\/+/g, '/')
+    });
+  }
+
+  const sections = Object.keys(articlesBySection).sort();
+
   return (
     <div className="pb-16 pt-10">
       <Container className="max-w-4xl">
@@ -115,6 +135,33 @@ export default function HtmlSitemapPage() {
           can always reach the latest TikTok tools, earnings data, and strategy references from one
           index page.
         </p>
+
+        <h2 className="mt-12 text-heading-md font-semibold text-neutral-900 border-b border-neutral-200 pb-3">
+          Complete Article Directory
+        </h2>
+        <p className="mt-3 text-body-md text-neutral-600 mb-6">
+          Find all our published guides, calculations, and data deep-dives organized by category below.
+        </p>
+
+        <div className="grid gap-8 md:grid-cols-2">
+          {sections.map((section) => (
+            <section key={section} className="card p-6 bg-neutral-50/50">
+              <h3 className="text-heading-sm font-semibold text-neutral-900 capitalize mb-4 pb-2 border-b border-neutral-200">
+                {section} Articles
+              </h3>
+              <ul className="space-y-3">
+                {articlesBySection[section].map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="text-sm text-neutral-700 hover:text-primary-700 leading-snug block">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+
       </Container>
     </div>
   );
