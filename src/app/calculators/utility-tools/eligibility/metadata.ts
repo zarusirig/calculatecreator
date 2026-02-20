@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Eligibility Calculator and Earnings Tool Guide",
+  title: "TikTok Eligibility Calculator",
   description: "Use this TikTok eligibility calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/eligibility/',

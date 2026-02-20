@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Hashtag Performance Calculator and Earnings Tool",
-  description: "Use this TikTok hashtag performance calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "TikTok Hashtag Performance Calculator — Optimize Your Tags",
+  description: "Analyze your TikTok hashtag performance. Calculate reach impact, discover optimal tag combinations, and measure hashtag-driven engagement gains.",
   keywords: ['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/hashtag-performance/',
@@ -46,7 +46,6 @@ export default function HashtagPerformanceCalculatorPage() {
         name="TikTok Hashtag Performance Calculator"
         description="Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy for maximum discovery."
         url="https://calculatecreator.com/calculators/hashtag-performance/"
-        aggregateRating={{ ratingValue: 4.6, reviewCount: 1432 }}
         datePublished="2024-02-28"
         dateModified="2025-11-13"
         keywords={['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags']}

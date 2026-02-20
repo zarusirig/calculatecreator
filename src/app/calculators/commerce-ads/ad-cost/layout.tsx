@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Ad Cost Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Ad Cost Calculator 2026",
   description: "Use this TikTok ad cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok ad cost', 'advertising cost calculator', 'tiktok ads budget'],
   alternates: {

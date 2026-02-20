@@ -4,7 +4,7 @@ import { Banknote, DollarSign, Handshake, Gift, ShoppingBag, TrendingUp, PieChar
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Money Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Money Calculator 2026",
   description: "Use this TikTok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'tiktok income estimator', 'how much tiktok pays', 'tiktok monetization calculator'],
   alternates: {
@@ -19,6 +19,7 @@ import { FAQSchema, CalculatorSchema, BreadcrumbSchema } from '@/components/seo/
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 // FAQ data for schema markup
 const faqData = [
@@ -63,7 +64,6 @@ export default function TikTokMoneyCalculatorPage() {
         name="TikTok Money Calculator"
         description="Calculate your total TikTok earnings from all income streams: Creator Fund, brand deals, LIVE gifts, and TikTok Shop. Get comprehensive monetization estimates for any follower count."
         url="https://calculatecreator.com/calculators/earnings-revenue/money/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 3247 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok money calculator', 'tiktok earnings calculator', 'tiktok income estimator', 'how much tiktok pays']}
@@ -89,6 +89,10 @@ export default function TikTokMoneyCalculatorPage() {
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
             Want to understand <Link href="/guides/how-to-make-money-on-tiktok/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">all ways to make money on TikTok</Link>? Or calculate your <Link href="/calculators/engagement-rate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok engagement rate</Link> to maximize your earnings potential.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="earnings-revenue/money" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -828,6 +832,10 @@ Total: $2,715/month`} assumptions={[
             { name: 'LIVE Gifts Calculator', slug: 'live-gifts', description: 'LIVE streaming earnings', icon: 'Gift' },
             { name: 'Engagement Rate Calculator', slug: 'engagement-rate', description: 'Track engagement to maximize income', icon: 'TrendingUp' }
           ]} />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="earnings-revenue/money" variant="full" />
+          </div>
 
           <Card className="bg-neutral-100 border-neutral-300">
             <h2 className="text-heading-md font-semibold text-neutral-900 mb-3">Professional Disclaimer</h2>

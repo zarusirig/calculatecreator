@@ -8,9 +8,10 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { CreatorTaxCalculatorWidget } from '@/components/calculators/creator-tax/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Tax Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Tax Calculator 2026",
   description: "Use this TikTok tax calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
   alternates: {
@@ -44,7 +45,6 @@ export default function CreatorTaxCalculatorPage() {
         name="TikTok Creator Tax Calculator"
         description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
         url="https://calculatecreator.com/calculators/utility-tools/tax/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 2156 }}
         datePublished="2024-01-20"
         dateModified="2025-11-13"
         keywords={['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator']}
@@ -81,6 +81,10 @@ export default function CreatorTaxCalculatorPage() {
 
             Calculate your effective tax rate including self-employment tax obligations. See how business expense deductions reduce your tax burden. Get quarterly payment estimates to avoid Internal Revenue Service (IRS) penalties. Understand the true after-tax value of your creator earnings.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="utility-tools/tax" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -417,6 +421,10 @@ Total Tax: $21,695 (33.4% effective rate)`}
               },
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="utility-tools/tax" variant="full" />
+          </div>
 
           <RelatedCalculators
             currentCalculator="utility-tools/tax"

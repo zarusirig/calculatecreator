@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Live Earnings Calculator and Earnings Tool Guide",
+  title: "TikTok Live Earnings Calculator",
   description: "Use this TikTok live earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok live gifts calculator', 'tiktok diamonds', 'live stream earnings', 'gift conversion'],
   alternates: {

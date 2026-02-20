@@ -11,9 +11,10 @@ import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Live Earnings Calculator and Earnings Tool Guide",
+  title: "TikTok Live Earnings Calculator",
   description: "Use this TikTok live earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards'],
   alternates: {
@@ -52,13 +53,17 @@ export default function LiveGiftsCalculatorPage() {
         <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' }]} />
 
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-secondary text-white mb-6">
+          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-primary text-white mb-6">
             <Gift size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok LIVE Gifts Calculator</h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Estimate your earnings from TikTok LIVE streaming based on average viewers, stream duration, and gifting rate. This calculator helps creators forecast LIVE income, plan streaming schedules, and understand the relationship between audience size and earnings. Use realistic metrics to project monthly revenue and set achievable LIVE streaming goals for consistent growth. Calculate expected diamond earnings per stream and monthly income potential based on viewer engagement. Perfect for creators planning to monetize through LIVE streaming or optimizing existing stream strategy for higher gift revenue.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="earnings-revenue/live-earnings" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -311,6 +316,10 @@ Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'V
           <RelatedCalculators currentCalculator="live-gifts" calculators={[{ name: 'Coins Calculator', slug: 'coins', description: 'Convert TikTok coins to USD', icon: 'Coins' }, { name: 'TikTok Money Calculator', slug: 'tiktok-money', description: 'Total earnings including LIVE', icon: 'Banknote' }]} />
 
           <RelatedGuides calculatorPath="/calculators/earnings-revenue/live-earnings" />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="earnings-revenue/live-earnings" variant="full" />
+          </div>
         </div>
       </div>
     </div>

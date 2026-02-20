@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { TrendingUp, ShoppingBag, DollarSign, Globe, Target, Zap, BarChart, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Commerce Ads Calculator and Earnings Tool Guide",
-  description: "Use this TikTok commerce ads calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Commerce Ads Calculator — Estimate Shopping Ad ROAS",
+  description: "Calculate your TikTok Shop and commerce ad performance. Estimate ROAS, conversion rates, and revenue from product-focused TikTok advertising.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/commerce-ads/',
   },
@@ -89,11 +89,6 @@ export default function CommerceAdsPage() {
           name: calc.name,
           description: calc.description,
           slug: calc.slug,
-          aggregateRating: calc.slug === 'rpm-cpm'
-            ? { ratingValue: 4.7, reviewCount: 1543 }
-            : calc.slug === 'shop-profit'
-            ? { ratingValue: 4.5, reviewCount: 734 }
-            : { ratingValue: 4.4, reviewCount: 378 }
         }))}
         keywords={[
           'TikTok RPM calculator',

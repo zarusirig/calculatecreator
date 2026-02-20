@@ -13,8 +13,8 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Ad Revenue Calculator and Earnings Tool Guide",
-  description: "Use this TikTok ad revenue calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Ad Revenue Calculator — Estimate Ad Income 2026",
+  description: "Estimate your TikTok ad revenue from in-feed ads, Spark Ads, and promoted content. Free calculator with 2026 CPM rates and revenue benchmarks.",
   keywords: ['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator', 'ad revenue estimator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/ad-revenue/',
@@ -47,7 +47,6 @@ export default function AdRevenueCalculatorPage() {
         name="TikTok Ad Revenue Calculator"
         description="Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency."
         url="https://calculatecreator.com/calculators/ad-revenue/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1856 }}
         datePublished="2024-03-01"
         dateModified="2025-11-13"
         keywords={['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator']}

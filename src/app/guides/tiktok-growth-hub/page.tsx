@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { TrendingUp, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, BarChart3, Zap, Eye, Hash, MessageCircle, Clock, Share2, Users, Flame, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Growth Hub Guide and Creator Strategy",
-  description: "Read this TikTok tiktok growth hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
+  title: "TikTok Growth Hub Guide and Creator Strategy",
+  description: "Read this TikTok growth hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
   keywords: ['tiktok growth', 'tiktok algorithm', 'tiktok engagement rate', 'tiktok viral', 'tiktok hashtags', 'tiktok analytics', 'tiktok followers', 'tiktok content strategy'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/tiktok-growth-hub/',

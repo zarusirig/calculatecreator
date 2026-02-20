@@ -8,6 +8,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 const faqData = [
   {
@@ -145,6 +146,10 @@ export default function EligibilityCalculatorPage() {
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Check if you qualify for the monetization programs of TikTok including Creator Fund, LIVE, and Shop. This eligibility checker evaluates your account against official TikTok requirements for all monetization features.
 
             Enter your follower count, video views, age, and location to see which programs you access. Understand exactly what you need to unlock Creator Fund, LIVE Gifts, Shop Affiliate, Series, and Creator Rewards. Get instant feedback on your eligibility status. Know what milestones to reach next for monetization opportunities.</p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="utility-tools/eligibility" />
         </div>
 
         <div className="max-w-3xl mx-auto mb-12 space-y-6">
@@ -538,6 +543,10 @@ export default function EligibilityCalculatorPage() {
               pageName="Eligibility Checker"
               faqs={faqData}
             />
+
+            <div className="mt-12">
+              <PageEEAT pageSlug="utility-tools/eligibility" variant="full" />
+            </div>
           </div>
         </div>
       </div>

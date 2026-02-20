@@ -174,10 +174,10 @@ export function ArticleAuthorBio({
                                     </a>
                                 ))}
                                 <Link
-                                    href="/about/"
+                                    href={author.authorUrl || '/about/'}
                                     className="text-body-sm text-primary-600 hover:text-primary-700 font-medium ml-auto"
                                 >
-                                    Meet Our Team →
+                                    View Full Profile →
                                 </Link>
                             </div>
                         </div>

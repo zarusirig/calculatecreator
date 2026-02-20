@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Comment Rate Calculator and Earnings Tool Guide",
-  description: "Use this TikTok comment rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Comment Rate Calculator — Measure Comment Engagement",
+  description: "Calculate your TikTok comment rate and compare against niche benchmarks. Understand how comment engagement impacts algorithm reach and content performance.",
   keywords: ['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement', 'tiktok analytics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/comment-rate/',
@@ -47,7 +47,6 @@ export default function CommentRateCalculatorPage() {
         name="TikTok Comment Rate Calculator"
         description="Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is."
         url="https://calculatecreator.com/calculators/comment-rate/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1567 }}
         datePublished="2024-05-01"
         dateModified="2025-12-05"
         keywords={['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement']}

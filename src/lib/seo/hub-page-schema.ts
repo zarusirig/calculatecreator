@@ -54,7 +54,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/',
       logo: {
         '@type': 'ImageObject',

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Shop Profit Calculator and Earnings Tool Guide",
+  title: "TikTok Shop Profit Calculator",
   description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok shop calculator', 'tiktok affiliate commission', 'shop earnings', 'product commission'],
   alternates: {

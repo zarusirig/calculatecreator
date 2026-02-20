@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ToolsDirectoryPage } from '@/components/tools/ToolsDirectoryPage';
 
 export const metadata: Metadata = {
-  title: "TikTok Calculators Calculator and Earnings Tool Guide",
+  title: "TikTok Calculators Calculator",
   description: "Use this TikTok calculators calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/',

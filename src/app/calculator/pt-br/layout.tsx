@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs['pt-br'];
 
 export const metadata: Metadata = {
-  title: "TikTok Pt Br Calculator and Earnings Tool Guide 2026",
-  description: "Use this TikTok pt br calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
+  title: "Calculadora TikTok — Calcule Seus Ganhos 2026",
+  description: "Calcule seus ganhos no TikTok. Fundo de Criadores, acordos com marcas e presentes ao vivo para o mercado brasileiro.",
   keywords: ['calculadora do tiktok', 'ganhos tiktok', 'dinheiro tiktok', 'fundo de criadores', 'monetização tiktok'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/pt-br/',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Calculadora do TikTok: Calcule Seus Ganhos 2026',
-    description: 'Calcule seu potencial de ganhos no TikTok. Fundo de Criadores, parcerias com marcas e presentes em LIVE.',
+    title: 'Calculadora TikTok: Calcule Seus Ganhos 2026',
+    description: 'Calcule seus ganhos no TikTok. Fundo de Criadores, acordos com marcas e presentes ao vivo para o mercado brasileiro.',
     url: 'https://calculatecreator.com/calculator/pt-br/',
     locale: 'pt_BR',
     type: 'website',

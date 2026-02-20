@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Multi Platform Earnings Calculator and Earnings Tool",
+  title: "TikTok Multi Platform Earnings Calculator",
   description: "Use this TikTok multi platform earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['multi platform calculator', 'platform comparison', 'cross platform earnings'],
   alternates: {

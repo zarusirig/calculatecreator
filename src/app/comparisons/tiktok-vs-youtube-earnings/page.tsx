@@ -6,8 +6,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { Calendar, Scale, DollarSign, Music, Video, CheckCircle, XCircle, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Vs Youtube Earnings Comparison for Creator",
-  description: "Compare TikTok tiktok vs youtube earnings outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
+  title: "TikTok Vs Youtube Earnings Comparison for Creator",
+  description: "Compare TikTok vs youtube earnings outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
   keywords: ['tiktok vs youtube', 'tiktok youtube earnings comparison', 'which pays more tiktok or youtube', 'creator fund vs adsense', 'tiktok youtube monetization'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/',

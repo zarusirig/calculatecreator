@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Profile Visit Rate Calculator and Earnings Tool",
-  description: "Use this TikTok profile visit rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Profile Visit Rate Calculator — Track Profile Clicks",
+  description: "Calculate your TikTok profile visit rate from video views. Benchmark against top creators and optimize your content to drive more profile visits.",
   keywords: ['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator', 'profile conversion'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/profile-visit-rate/',
@@ -71,7 +71,6 @@ export default function ProfileVisitRateCalculatorPage() {
         name="TikTok Profile Visit Rate Calculator"
         description="Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content."
         url="https://calculatecreator.com/calculators/profile-visit-rate/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1978 }}
         datePublished="2024-04-10"
         dateModified="2025-11-13"
         keywords={['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator']}

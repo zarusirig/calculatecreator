@@ -36,10 +36,10 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     dateModified = '2026-02-01',
   } = config;
 
-  // Schema 1: SoftwareApplication
+  // Schema 1: WebApplication
   const softwareApplicationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
+    '@type': 'WebApplication',
     name: title,
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web Browser',
@@ -49,13 +49,6 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
       '@type': 'Offer',
       price: '0',
       priceCurrency: currency,
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '2500',
-      bestRating: '5',
-      worstRating: '1',
     },
     featureList: [
       'Creator Fund earnings calculator',
@@ -77,7 +70,7 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     ],
     provider: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/',
     },
   };
@@ -92,7 +85,7 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     inLanguage: languageCode,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/',
     },
     about: {

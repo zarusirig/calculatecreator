@@ -10,12 +10,12 @@ import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-money/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Money Calculator and Earnings Tool Guide",
-  description: "Use this TikTok tiktok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Money Calculator — Estimate All Earnings 2026",
+  description: "Calculate your total TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions. Free calculator with 2026 rate data for all income streams.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'how much money on tiktok', 'tiktok income', 'tiktok monetization calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/tiktok-money/',
@@ -80,10 +80,10 @@ export default function TikTokMoneyCalculatorPage() {
         name="TikTok Money Calculator"
         description="Calculate your total TikTok earnings from all income streams including Creator Fund, brand deals, LIVE gifts, and TikTok Shop."
         url="https://calculatecreator.com/calculators/tiktok-money/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 4521 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok money calculator', 'tiktok earnings', 'tiktok income calculator', 'how much money tiktok']}
+        personAuthor={getPersonAuthorForSchema('tiktok-money')}
       />
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
@@ -345,6 +345,29 @@ Brand Deals: 4 × $3,000 = $12,000/month
 LIVE Gifts: 4 × $200 = $800/month
 TikTok Shop: $5,000 GMV × 15% = $750/month
 Total: ~$13,700/month`}
+              calculationExample={{
+                steps: [
+                  {
+                    step: 'Calculate Creator Fund earnings',
+                    formula: 'Fund = (Monthly Views / 1,000) × RPM',
+                    values: '(1,000,000 / 1,000) × $0.03',
+                    result: '$30/month from Creator Fund',
+                  },
+                  {
+                    step: 'Calculate brand deal potential',
+                    formula: 'Deals = Followers × Rate × Deals/Month',
+                    values: '200,000 × $0.015 × 2 deals',
+                    result: '$6,000/month from brand deals',
+                  },
+                  {
+                    step: 'Sum all revenue streams',
+                    formula: 'Total = Fund + Deals + LIVE + Shop',
+                    values: '$30 + $6,000 + $500 + $200',
+                    result: '$6,730 total monthly earnings',
+                  },
+                ],
+                finalResult: '$6,730/month total for a 200K-follower creator with diversified income',
+              }}
               assumptions={[
                 { label: 'Income Mix', value: 'Brand deals typically represent 50-70% of creator income' },
                 { label: 'Creator Fund Rates', value: 'Legacy Fund: $0.02-$0.04, Creator Rewards: $0.40-$1.00' },

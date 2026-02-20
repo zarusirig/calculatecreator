@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Lifetime Value Calculator and Earnings Tool",
+  title: "TikTok Lifetime Value Calculator",
   description: "Use this TikTok lifetime value calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['ltv calculator', 'customer lifetime value', 'customer value', 'retention metrics'],
   alternates: {

@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Content Calendar Roi Calculator and Earnings Tool",
-  description: "Use this TikTok content calendar roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "TikTok Content Calendar ROI Calculator — Optimize Posting",
+  description: "Calculate the ROI of your TikTok posting schedule. Optimize content frequency, timing, and format mix to maximize revenue per hour invested.",
   keywords: ['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/content-calendar-roi/',
@@ -46,7 +46,6 @@ export default function ContentCalendarROICalculatorPage() {
         name="TikTok Content Calendar ROI Calculator"
         description="Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth."
         url="https://calculatecreator.com/calculators/content-calendar-roi/"
-        aggregateRating={{ ratingValue: 4.7, reviewCount: 1543 }}
         datePublished="2024-03-15"
         dateModified="2025-11-13"
         keywords={['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning']}

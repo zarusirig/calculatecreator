@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { BarChart3, Rocket, Clock, Video, X, Check } from 'lucide-react';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Video Engagement Calculator and Earnings Tool",
+  title: "TikTok Video Engagement Calculator",
   description: "Use this TikTok video engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['video performance calculator', 'tiktok video analytics', 'content performance score', 'tiktok metrics calculator', 'video success tracker'],
   alternates: {
@@ -19,14 +18,7 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { VideoPerformanceCalculatorWidget } from '@/components/calculators/video-performance/CalculatorWidget';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
-
-// Dynamic imports for E-E-A-T components
-const PageAuthorByline = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageAuthorByline })), {
-  ssr: false
-});
-const PageEEAT = dynamic(() => import('@/lib/eeat/page-eeat').then(mod => ({ default: mod.PageEEAT })), {
-  ssr: false
-});
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 // FAQ data for schema markup
 const faqData = [
@@ -67,10 +59,6 @@ export default function VideoPerformanceCalculatorPage() {
         name="TikTok Video Performance Calculator"
         description="Calculate a comprehensive performance score for your TikTok videos based on views, engagement, reach, and audience interaction metrics."
         url="https://calculatecreator.com/calculators/video-performance/"
-        aggregateRating={{
-          ratingValue: 4.8,
-          reviewCount: 1583,
-        }}
         datePublished="2024-01-15"
         dateModified="2025-12-04"
         keywords={['tiktok video performance', 'video analytics', 'content performance score', 'tiktok metrics']}
@@ -113,7 +101,7 @@ export default function VideoPerformanceCalculatorPage() {
 
         {/* Author Byline */}
         <div className="max-w-5xl mx-auto mb-8">
-          <PageAuthorByline pageSlug="video-performance" />
+          <PageAuthorByline pageSlug="engagement-influence/video-engagement" />
         </div>
 
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -530,7 +518,7 @@ export default function VideoPerformanceCalculatorPage() {
 
           {/* E-E-A-T Section: Author Bio, Review Info, Citations, Disclaimers */}
           <div className="mt-12">
-            <PageEEAT pageSlug="video-performance" variant="full" />
+            <PageEEAT pageSlug="engagement-influence/video-engagement" variant="full" />
           </div>
         </div>
       </div>

@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Posting Time Calculator and Earnings Tool Guide",
-  description: "Use this TikTok posting time calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Posting Time Calculator — Best Times to Post 2026",
+  description: "Find the best times to post on TikTok for your audience. Calculate optimal posting windows by timezone, niche, and day of week for maximum reach.",
   keywords: ['best posting time tiktok', 'when to post tiktok', 'posting schedule calculator', 'tiktok timing optimizer', 'post time analysis'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/posting-time/',
@@ -67,10 +67,6 @@ export default function PostingTimeCalculatorPage() {
         name="TikTok Best Time to Post Calculator"
         description="Find the optimal times to post on TikTok based on your audience location, timezone, and content type to maximize engagement and reach."
         url="https://calculatecreator.com/calculators/posting-time/"
-        aggregateRating={{
-          ratingValue: 4.8,
-          reviewCount: 1247,
-        }}
         datePublished="2024-01-15"
         dateModified="2025-12-04"
         keywords={['best time to post tiktok', 'tiktok posting schedule', 'optimal posting time', 'tiktok algorithm timing']}

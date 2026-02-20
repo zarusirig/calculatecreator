@@ -24,7 +24,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'sarah-johnson',
     name: 'Sarah Johnson',
     role: 'Senior Creator Strategist',
-    authorUrl: '/about/#sarah-johnson',
+    authorUrl: '/authors/sarah-johnson/',
     credentials: [
       '5+ years TikTok creator experience',
       'Managed 100+ brand partnerships',
@@ -47,7 +47,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'michael-chen',
     name: 'Michael Chen',
     role: 'Data Analyst & Creator Economist',
-    authorUrl: '/about/#michael-chen',
+    authorUrl: '/authors/michael-chen/',
     credentials: [
       'MS in Data Science',
       '3+ years analyzing creator economy trends',
@@ -70,7 +70,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'jessica-rodriguez',
     name: 'Jessica Rodriguez',
     role: 'LIVE Streaming & Engagement Expert',
-    authorUrl: '/about/#jessica-rodriguez',
+    authorUrl: '/authors/jessica-rodriguez/',
     credentials: [
       '4+ years TikTok LIVE streaming',
       '$250K+ earned from LIVE gifts',
@@ -93,7 +93,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'david-kim',
     name: 'David Kim',
     role: 'E-commerce & TikTok Shop Specialist',
-    authorUrl: '/about/#david-kim',
+    authorUrl: '/authors/david-kim/',
     credentials: [
       'MBA in E-commerce',
       '$1M+ in TikTok Shop sales',
@@ -115,7 +115,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'emily-thompson',
     name: 'Emily Thompson, CPA',
     role: 'Creator Tax & Finance Advisor',
-    authorUrl: '/about/#emily-thompson',
+    authorUrl: '/authors/emily-thompson/',
     credentials: [
       'Certified Public Accountant (CPA)',
       '8+ years tax accounting experience',
@@ -137,7 +137,7 @@ export const AUTHORS: Record<string, Author> = {
     id: 'alex-martinez',
     name: 'Alex Martinez',
     role: 'Algorithm & Growth Expert',
-    authorUrl: '/about/#alex-martinez',
+    authorUrl: '/authors/alex-martinez/',
     credentials: [
       'Computer Science degree',
       '6+ years in social media growth',

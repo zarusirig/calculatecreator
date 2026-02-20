@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Pt Br Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Pt Br Calculator 2026",
   description: "Use this TikTok pt br calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/pt-br/',

@@ -1,8 +1,21 @@
 import { Card } from '@/components/ui/Card';
 
+export interface CalculationStep {
+  step: string;
+  formula: string;
+  values: string;
+  result: string;
+}
+
+export interface CalculationExample {
+  steps: CalculationStep[];
+  finalResult: string;
+}
+
 interface MethodologySectionProps {
   calculatorName: string;
   formula: string;
+  calculationExample?: CalculationExample;
   assumptions: { label: string; value: string }[];
   dataSources: string[];
   limitations: string;
@@ -19,6 +32,7 @@ interface MethodologySectionProps {
 export function MethodologySection({
   calculatorName,
   formula,
+  calculationExample,
   assumptions,
   dataSources,
   limitations,
@@ -56,6 +70,37 @@ export function MethodologySection({
               <code className="text-body-sm text-neutral-800">{formula}</code>
             </pre>
           </div>
+
+          {/* Worked Example */}
+          {calculationExample && (
+            <div>
+              <h4 className="text-heading-sm font-semibold text-neutral-900 mb-3">
+                Worked Example
+              </h4>
+              <div className="space-y-3">
+                {calculationExample.steps.map((step, index) => (
+                  <div key={index} className="p-3 bg-neutral-50 rounded-lg border border-neutral-100">
+                    <div className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 text-primary-700 flex items-center justify-center text-xs font-bold mt-0.5">
+                        {index + 1}
+                      </span>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-body-sm font-semibold text-neutral-900">{step.step}</p>
+                        <pre className="mt-1 text-body-xs text-neutral-600 font-mono whitespace-pre-wrap">{step.formula}</pre>
+                        <p className="mt-1 text-body-xs text-neutral-500">Values: {step.values}</p>
+                        <p className="mt-1 text-body-sm font-medium text-primary-700">= {step.result}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                <div className="p-3 bg-primary-50 rounded-lg border border-primary-200">
+                  <p className="text-body-sm font-semibold text-primary-800">
+                    Final Result: {calculationExample.finalResult}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Assumptions */}
           <div>

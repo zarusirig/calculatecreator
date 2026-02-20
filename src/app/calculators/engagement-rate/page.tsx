@@ -9,13 +9,13 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: "TikTok Engagement Rate Calculator and Earnings Tool",
-  description: "Use this TikTok engagement rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Engagement Rate Calculator — Check Your Rate Free",
+  description: "Calculate your TikTok engagement rate instantly. Compare against 2026 benchmarks by niche and follower count. Used by 50,000+ creators to optimize content strategy.",
   keywords: ['tiktok engagement rate calculator', 'engagement rate', 'tiktok analytics', 'engagement calculator', 'tiktok metrics', 'influencer engagement'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-rate/',
@@ -80,10 +80,10 @@ export default function EngagementRateCalculatorPage() {
         name="TikTok Engagement Rate Calculator"
         description="Calculate your TikTok engagement rate and compare against 2026 benchmarks. Understand what brands look for when evaluating creator partnerships."
         url="https://calculatecreator.com/calculators/engagement-rate/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 3156 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'influencer analytics']}
+        personAuthor={getPersonAuthorForSchema('engagement-rate')}
       />
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
@@ -362,6 +362,29 @@ Account with 50,000 followers
 Engagement Rate = (5,000 + 200 + 100) ÷ 50,000 × 100 = 10.6%
 
 For accurate results, calculate average engagement across your last 10-20 posts.`}
+              calculationExample={{
+                steps: [
+                  {
+                    step: 'Sum all engagement actions',
+                    formula: 'Total Engagement = Likes + Comments + Shares',
+                    values: '5,000 + 200 + 100',
+                    result: '5,300 total engagements',
+                  },
+                  {
+                    step: 'Divide by follower count',
+                    formula: 'Ratio = Total Engagement / Followers',
+                    values: '5,300 / 50,000',
+                    result: '0.106',
+                  },
+                  {
+                    step: 'Convert to percentage',
+                    formula: 'Engagement Rate = Ratio × 100',
+                    values: '0.106 × 100',
+                    result: '10.6%',
+                  },
+                ],
+                finalResult: '10.6% engagement rate — Excellent tier, strong brand deal potential',
+              }}
               assumptions={[
                 { label: 'Engagement Metrics', value: 'Includes likes, comments, and shares as standard' },
                 { label: 'Calculation Base', value: 'Divided by follower count (industry standard for brand evaluation)' },

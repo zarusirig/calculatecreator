@@ -5,8 +5,8 @@ import { CheckCircle, BarChart3, RefreshCw, Briefcase, AlertTriangle } from 'luc
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Nationwide Ban Status News and Creator Update",
-  description: "Follow this TikTok tiktok nationwide ban status update for creator earnings implications, platform changes, monetization context, and actionable next",
+  title: "TikTok Nationwide Ban Status News and Creator Update",
+  description: "Follow this TikTok nationwide ban status update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-nationwide-ban-status/',

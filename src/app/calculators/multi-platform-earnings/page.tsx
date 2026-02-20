@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Multi Platform Earnings Calculator and Earnings Tool",
-  description: "Use this TikTok multi platform earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "Multi-Platform Earnings Calculator — TikTok, YouTube & More",
+  description: "Compare your earnings across TikTok, YouTube, Instagram, and other platforms. Calculate total creator income and identify your most profitable channel.",
   keywords: ['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
@@ -46,7 +46,6 @@ export default function MultiPlatformEarningsCalculatorPage() {
         name="Multi-Platform Creator Earnings Calculator"
         description="Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media."
         url="https://calculatecreator.com/calculators/multi-platform-earnings/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 2034 }}
         datePublished="2024-02-15"
         dateModified="2025-11-13"
         keywords={['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income']}

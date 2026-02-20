@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Comment Rate Calculator and Earnings Tool Guide",
+  title: "TikTok Comment Rate Calculator",
   description: "Use this TikTok comment rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['comment rate', 'tiktok comments', 'engagement metrics', 'comment ratio calculator'],
   alternates: {

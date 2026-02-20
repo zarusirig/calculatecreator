@@ -5,7 +5,7 @@ import { RpmToolExperience } from '@/components/tools/RpmToolExperience';
 import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Rpm Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Rpm Calculator 2026",
   description: "Use this TikTok rpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/rpm/',

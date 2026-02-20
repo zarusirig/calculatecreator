@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Completion Rate Calculator and Earnings Tool",
+  title: "TikTok Completion Rate Calculator",
   description: "Use this TikTok completion rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['completion rate calculator', 'tiktok completion', 'watch through rate'],
   alternates: {

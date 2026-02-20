@@ -23,8 +23,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Rpm Calculator and Earnings Tool Guide 2026",
-  description: "Use this TikTok rpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
+  title: "TikTok RPM Calculator — Revenue Per 1,000 Views",
+  description: "Calculate your TikTok RPM (Revenue Per Mille). Compare your rate against 2026 benchmarks by niche, region, and engagement metrics.",
   keywords: [
     'tiktok rpm calculator',
     'revenue per mille',

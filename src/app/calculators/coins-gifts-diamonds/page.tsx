@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Coins, Gem, Gift, TrendingUp, DollarSign, Users, ArrowRight, Target, Clock, Zap, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Coins Gifts Diamonds Calculator and Earnings Tool",
-  description: "Use this TikTok coins gifts diamonds calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "TikTok Coins, Gifts & Diamonds Calculator — Full Converter",
+  description: "Convert between TikTok coins, gifts, and diamonds in one tool. See the full value chain from purchase to creator payout with real-time 2026 rates.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins-gifts-diamonds/',
   },
@@ -89,11 +89,6 @@ export default function CoinsGiftsDiamondsPage() {
           name: calc.name,
           description: calc.description,
           slug: calc.slug,
-          aggregateRating: calc.slug === 'coins'
-            ? { ratingValue: 4.6, reviewCount: 1234 }
-            : calc.slug === 'diamonds'
-            ? { ratingValue: 4.7, reviewCount: 1089 }
-            : { ratingValue: 4.5, reviewCount: 892 }
         }))}
         keywords={[
           'TikTok coins calculator',

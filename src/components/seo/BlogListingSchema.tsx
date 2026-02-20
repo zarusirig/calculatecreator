@@ -7,10 +7,10 @@ export function BlogListingSchema() {
     url: 'https://calculatecreator.com/blog/',
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png'
+        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png'
       }
     },
     blogPost: [

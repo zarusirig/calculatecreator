@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Money Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Money Calculator 2026",
   description: "Use this TikTok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'how much money can you make on tiktok', 'tiktok income calculator', 'tiktok revenue calculator', 'tiktok earnings estimator'],
   alternates: {

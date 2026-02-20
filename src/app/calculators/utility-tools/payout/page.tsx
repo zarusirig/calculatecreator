@@ -8,6 +8,7 @@ import { Card } from '@/components/ui/Card';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 const faqData = [
   {
@@ -83,6 +84,10 @@ export default function PayoutCalculatorPage() {
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">Creator Payout Calculator</h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate your actual payout after platform fees and payment processing charges. This calculator shows what you'll really receive from TikTok earnings after all deductions are applied. Factor in TikTok's platform fees ranging from 20-50% depending on monetization method, plus payment processing fees from PayPal, Payoneer, or bank transfer. Essential for accurate income planning and understanding the true value of gross earnings. Compare different payment methods to maximize your take-home revenue and set realistic earnings expectations for all TikTok monetization streams.</p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="utility-tools/payout" />
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">
@@ -490,6 +495,10 @@ export default function PayoutCalculatorPage() {
               pageName="Payout Calculator"
               faqs={faqData}
             />
+
+            <div className="mt-12">
+              <PageEEAT pageSlug="utility-tools/payout" variant="full" />
+            </div>
           </div>
         </div>
       </div>

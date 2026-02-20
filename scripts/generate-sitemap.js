@@ -184,8 +184,25 @@ function generate() {
     return { route, lastmod, priority, changefreq };
   });
 
+  // Pass 3: Author profile pages (dynamic [authorSlug] routes skipped by findPages)
+  const authorSlugs = [
+    'sarah-johnson',
+    'michael-chen',
+    'jessica-rodriguez',
+    'david-kim',
+    'emily-thompson',
+    'alex-martinez',
+  ];
+  const authorUrls = authorSlugs.map((slug) => ({
+    route: `/authors/${slug}/`,
+    lastmod: new Date().toISOString().split('T')[0],
+    priority: '0.5',
+    changefreq: 'monthly',
+  }));
+  console.log(`Added ${authorUrls.length} author pages`);
+
   // Combine and sort
-  const urls = [...staticUrls, ...mdxUrls].sort((a, b) => {
+  const urls = [...staticUrls, ...mdxUrls, ...authorUrls].sort((a, b) => {
     // Sort: homepage first, then by priority desc, then alphabetically
     if (a.route === '/') return -1;
     if (b.route === '/') return 1;
@@ -214,7 +231,7 @@ ${urls
 `;
 
   fs.writeFileSync(OUTPUT, xml, 'utf-8');
-  console.log(`Sitemap written to ${OUTPUT} with ${urls.length} URLs (${staticUrls.length} static + ${mdxUrls.length} MDX)`);
+  console.log(`Sitemap written to ${OUTPUT} with ${urls.length} URLs (${staticUrls.length} static + ${mdxUrls.length} MDX + ${authorUrls.length} authors)`);
 }
 
 generate();

@@ -11,9 +11,10 @@ import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Shop Profit Calculator and Earnings Tool Guide",
+  title: "TikTok Shop Profit Calculator",
   description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {
@@ -61,6 +62,10 @@ export default function ShopCommissionCalculatorPage() {
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
             Learn <Link href="/guides/tiktok-shop-affiliate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the TikTok Shop affiliate program works</Link> or explore <Link href="/guides/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Shop success strategies</Link> to maximize your commissions.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="commerce-ads/shop-profit" />
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -622,6 +627,10 @@ Annual Earnings: $120 × 12 = $1,440`}
           />
 
           <RelatedGuides calculatorPath="/calculators/commerce-ads/shop-profit" />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="commerce-ads/shop-profit" variant="full" />
+          </div>
         </div>
       </div>
     </div>

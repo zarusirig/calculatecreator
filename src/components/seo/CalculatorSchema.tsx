@@ -5,13 +5,16 @@ export interface CalculatorSchemaProps {
   description: string;
   url: string;
   category?: string;
-  aggregateRating?: {
-    ratingValue: number;
-    reviewCount: number;
-  };
   author?: {
     name: string;
     url?: string;
+  };
+  /** When provided, uses Person schema type for the author instead of Organization */
+  personAuthor?: {
+    name: string;
+    jobTitle?: string;
+    url?: string;
+    sameAs?: string[];
   };
   datePublished?: string;
   dateModified?: string;
@@ -28,8 +31,8 @@ export function CalculatorSchema({
   description,
   url,
   category = 'BusinessApplication',
-  aggregateRating,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
+  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
+  personAuthor,
   datePublished,
   dateModified,
   offers = { price: '0', priceCurrency: 'USD' },
@@ -38,7 +41,7 @@ export function CalculatorSchema({
 }: CalculatorSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
+    '@type': 'WebApplication',
     name,
     description,
     url,
@@ -50,22 +53,19 @@ export function CalculatorSchema({
       priceCurrency: offers.priceCurrency,
       availability: 'https://schema.org/InStock',
     },
-    ...(aggregateRating && {
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: aggregateRating.ratingValue.toString(),
-        reviewCount: aggregateRating.reviewCount.toString(),
-        bestRating: '5',
-        worstRating: '1',
-      },
-    }),
-    ...(author && {
-      author: {
-        '@type': 'Organization',
+    author: personAuthor
+      ? {
+        '@type': 'Person' as const,
+        name: personAuthor.name,
+        ...(personAuthor.jobTitle && { jobTitle: personAuthor.jobTitle }),
+        ...(personAuthor.url && { url: personAuthor.url }),
+        ...(personAuthor.sameAs && personAuthor.sameAs.length > 0 && { sameAs: personAuthor.sameAs }),
+      }
+      : {
+        '@type': 'Organization' as const,
         name: author.name,
         url: author.url,
       },
-    }),
     ...(datePublished && { datePublished }),
     ...(dateModified && { dateModified }),
     ...(image && { image }),
@@ -111,7 +111,7 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
+  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
   personAuthor,
   image,
   keywords,
@@ -140,11 +140,11 @@ export function ArticleSchema({
       },
     publisher: {
       '@type': 'Organization',
-      name: 'TikTok Calculator',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png',
+        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
       },
     },
     ...(image && {
@@ -229,9 +229,9 @@ export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'TikTok Calculator',
+    name: 'CalculateCreator',
     url: 'https://calculatecreator.com/',
-    logo: 'https://calculatecreator.com/logo.png',
+    logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
     description:
       'Free TikTok calculators for creators to estimate earnings, engagement rates, and growth metrics. Data-driven tools trusted by 50,000+ TikTok creators.',
     sameAs: [
@@ -257,7 +257,7 @@ export function WebSiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'TikTok Calculator',
+    name: 'CalculateCreator',
     url: 'https://calculatecreator.com/',
     description:
       'Free TikTok calculators and tools for creators. Calculate earnings, engagement rates, follower growth, and more.',
@@ -466,7 +466,7 @@ export function NewsArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TikTok Calculator', url: 'https://calculatecreator.com/' },
+  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
   image,
   keywords,
   articleBody,
@@ -486,11 +486,11 @@ export function NewsArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TikTok Calculator',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png',
+        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
       },
     },
     ...(image && {
@@ -521,10 +521,6 @@ export interface CollectionPageSchemaProps {
     name: string;
     description: string;
     slug: string;
-    aggregateRating?: {
-      ratingValue: number;
-      reviewCount: number;
-    };
   }>;
   keywords?: string[];
   about?: {
@@ -552,7 +548,7 @@ export function CollectionPageSchema({
       '@type': 'ListItem',
       position: index + 1,
       item: {
-        '@type': 'SoftwareApplication',
+        '@type': 'WebApplication',
         name: calc.name,
         description: calc.description,
         url: `${url}/${calc.slug}`,
@@ -563,15 +559,6 @@ export function CollectionPageSchema({
           price: '0',
           priceCurrency: 'USD',
         },
-        ...(calc.aggregateRating && {
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: calc.aggregateRating.ratingValue,
-            reviewCount: calc.aggregateRating.reviewCount,
-            bestRating: 5,
-            worstRating: 1,
-          },
-        }),
       },
     })),
   };

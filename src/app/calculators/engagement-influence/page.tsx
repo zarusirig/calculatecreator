@@ -7,8 +7,8 @@ import { CollectionPageSchema, FAQSchema, BreadcrumbSchema } from '@/components/
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Engagement Influence Calculator and Earnings Tool",
-  description: "Use this TikTok engagement influence calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "TikTok Engagement Influence Calculator — Measure Your Impact",
+  description: "Measure your TikTok influence score based on engagement quality, audience loyalty, and content performance. Compare against creators in your niche.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-influence/',
   },

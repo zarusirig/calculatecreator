@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import type { Author } from '@/lib/constants/authors';
 
@@ -39,7 +40,13 @@ export function AuthorBio({
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
-            {author.name}
+            {author.authorUrl ? (
+              <Link href={author.authorUrl} className="hover:text-primary-600 transition-colors">
+                {author.name}
+              </Link>
+            ) : (
+              author.name
+            )}
           </h3>
           <p className="text-body-sm text-primary-600 mb-2">{author.role}</p>
           <p className="text-body-sm text-neutral-700 leading-relaxed">{author.bio}</p>

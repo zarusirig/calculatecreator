@@ -7,14 +7,14 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Live Gifts Calculator and Earnings Tool Guide",
-  description: "Use this TikTok live gifts calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok LIVE Gifts Calculator — Estimate Streaming Income",
+  description: "Calculate your TikTok LIVE gift earnings. Convert coins, diamonds, and gifts to real money with our free streaming revenue calculator.",
   keywords: ['tiktok live gifts calculator', 'live streaming earnings', 'tiktok live money', 'gift earnings calculator', 'tiktok streaming income'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/live-gifts/',
@@ -79,10 +79,10 @@ export default function LiveGiftsCalculatorPage() {
         name="TikTok LIVE Gifts Calculator"
         description="Estimate your TikTok LIVE streaming gift earnings based on viewers, stream frequency, and engagement rates."
         url="https://calculatecreator.com/calculators/live-gifts/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1987 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok live gifts', 'live streaming earnings', 'gift calculator', 'tiktok streaming income']}
+        personAuthor={getPersonAuthorForSchema('live-gifts')}
       />
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema

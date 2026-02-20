@@ -10,12 +10,12 @@ import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
 
 export const metadata: Metadata = {
-  title: "TikTok Brand Deal Rate Calculator and Earnings Tool",
-  description: "Use this TikTok brand deal rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Brand Deal Rate Calculator — Price Your Sponsorships",
+  description: "Calculate fair rates for TikTok brand deals based on your follower count, engagement rate, and niche. Get data-driven sponsorship pricing for 2026.",
   keywords: ['brand deal rate calculator', 'tiktok sponsorship rates', 'influencer pricing', 'how much to charge brands', 'tiktok brand deals', 'sponsored content pricing'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',
@@ -80,10 +80,10 @@ export default function BrandDealRateCalculatorPage() {
         name="TikTok Brand Deal Rate Calculator"
         description="Calculate your TikTok brand deal rates based on followers, engagement rate, and niche. Learn what to charge for sponsored content."
         url="https://calculatecreator.com/calculators/brand-deal-rate/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 3421 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['brand deal calculator', 'sponsorship rates', 'influencer pricing', 'tiktok brand deals']}
+        personAuthor={getPersonAuthorForSchema('brand-deal-rate')}
       />
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
@@ -343,6 +343,29 @@ Base: 75,000 × $0.05 = $3,750
 Engagement (6% = 1.3x): $3,750 × 1.3 = $4,875
 Niche (finance = 2x): $4,875 × 2 = $9,750
 Recommended rate: $9,000-$10,000 per post`}
+              calculationExample={{
+                steps: [
+                  {
+                    step: 'Calculate base rate from followers',
+                    formula: 'Base Rate = Followers × $0.01-$0.02',
+                    values: '100,000 × $0.015',
+                    result: '$1,500 base rate',
+                  },
+                  {
+                    step: 'Apply engagement premium',
+                    formula: 'Adjusted = Base × (1 + Engagement Premium)',
+                    values: '$1,500 × 1.25 (for 7% engagement, 25% premium)',
+                    result: '$1,875 engagement-adjusted rate',
+                  },
+                  {
+                    step: 'Apply niche multiplier',
+                    formula: 'Final Rate = Adjusted × Niche Multiplier',
+                    values: '$1,875 × 1.4 (tech/finance niche)',
+                    result: '$2,625 recommended rate per post',
+                  },
+                ],
+                finalResult: '$2,625 per sponsored post for 100K-follower tech creator with 7% engagement',
+              }}
               assumptions={[
                 { label: 'Base Rates', value: '$0.01-$0.10 per follower depending on tier' },
                 { label: 'Engagement Impact', value: 'High engagement can double effective rates' },

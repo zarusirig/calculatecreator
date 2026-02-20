@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Follower Growth Calculator and Earnings Tool",
+  title: "TikTok Follower Growth Calculator",
   description: "Use this TikTok follower growth calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['follower growth calculator', 'tiktok growth projector', 'follower prediction'],
   alternates: {

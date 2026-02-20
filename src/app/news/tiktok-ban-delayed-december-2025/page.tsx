@@ -5,8 +5,8 @@ import { CheckCircle, AlertTriangle, Mail } from 'lucide-react';
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Ban Delayed December 2025 News and Creator",
-  description: "Follow this TikTok tiktok ban delayed december 2025 update for creator earnings implications, platform changes, monetization context, and actionable next",
+  title: "TikTok Ban Delayed December 2025 News and Creator",
+  description: "Follow this TikTok ban delayed december 2025 update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/',

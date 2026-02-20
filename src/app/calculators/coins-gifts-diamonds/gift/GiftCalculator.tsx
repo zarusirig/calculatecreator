@@ -11,6 +11,7 @@ import { CalculatorSchema, FAQSchema } from '@/components/seo/CalculatorSchema';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import Link from 'next/link';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 const giftData = [
   { name: 'Rose', coins: 1, diamonds: 0.5, usd: 0.0025 },
@@ -109,7 +110,6 @@ export function GiftCalculator() {
         ]}
         datePublished="2024-01-25"
         dateModified="2026-01-27"
-        aggregateRating={{ ratingValue: 4.5, reviewCount: 892 }}
       />
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
@@ -125,6 +125,10 @@ export function GiftCalculator() {
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Gift Value Calculator</h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Calculate the real value of TikTok LIVE gifts in coins, diamonds, and USD for creators. Enter any gift quantity to see instant conversions showing what viewers pay versus what creators actually earn from virtual gifts. Perfect for understanding the economics behind popular gifts like roses, universes, and lions during LIVE streams, including the 50% platform fee split.</p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="coins-gifts-diamonds/gift" />
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">
@@ -483,6 +487,10 @@ Universe (44,999 coins):
                 }
               ]}
             />
+
+            <div className="mt-12">
+              <PageEEAT pageSlug="coins-gifts-diamonds/gift" variant="full" />
+            </div>
           </div>
         </div>
       </div>

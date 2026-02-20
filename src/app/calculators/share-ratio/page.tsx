@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Share Ratio Calculator and Earnings Tool Guide",
-  description: "Use this TikTok share ratio calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Share Ratio Calculator — Track Shares Per View",
+  description: "Calculate your TikTok share ratio and viral sharing potential. Measure how often viewers share your content and benchmark against top-performing creators.",
   keywords: ['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio', 'content shareability'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/share-ratio/',
@@ -63,7 +63,6 @@ export default function ShareRatioCalculatorPage() {
         name="TikTok Share Rate Calculator"
         description="Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential."
         url="https://calculatecreator.com/calculators/share-ratio/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 2387 }}
         datePublished="2024-02-28"
         dateModified="2025-12-05"
         keywords={['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio']}

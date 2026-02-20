@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Production Cost Calculator and Earnings Tool",
+  title: "TikTok Production Cost Calculator",
   description: "Use this TikTok production cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['production cost calculator', 'content cost', 'video production roi'],
   alternates: {

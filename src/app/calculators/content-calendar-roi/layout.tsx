@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Content Calendar Roi Calculator and Earnings Tool",
+  title: "TikTok Content Calendar Roi Calculator",
   description: "Use this TikTok content calendar roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['content calendar roi', 'posting strategy roi', 'content planning'],
   alternates: {

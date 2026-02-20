@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Diamonds Calculator and Earnings Tool Guide",
+  title: "TikTok Diamonds Calculator",
   description: "Use this TikTok diamonds calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok diamond converter', 'tiktok diamond calculator', 'diamonds to usd', 'tiktok diamonds to money', 'diamond value calculator', 'convert tiktok diamonds'],
   alternates: {

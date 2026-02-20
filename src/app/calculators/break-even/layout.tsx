@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Break Even Calculator and Earnings Tool Guide",
+  title: "TikTok Break Even Calculator",
   description: "Use this TikTok break even calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['break-even calculator', 'tiktok break even', 'roi calculator'],
   alternates: {

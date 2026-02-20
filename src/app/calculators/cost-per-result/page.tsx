@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Cost Per Result Calculator and Earnings Tool",
-  description: "Use this TikTok cost per result calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Cost Per Result Calculator — CPA & CPR Estimator",
+  description: "Calculate your TikTok cost per result across campaign objectives. Estimate CPA, CPL, and cost per install with 2026 benchmark data by industry.",
   keywords: ['cost per result calculator', 'tiktok cpr', 'ad efficiency calculator', 'campaign cost calculator', 'tiktok ads cost'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/cost-per-result/',
@@ -58,10 +58,6 @@ export default function CostPerResultCalculatorPage() {
         name="TikTok Cost Per Result Calculator"
         description="Calculate cost per result for your TikTok ad campaigns. Measure CPC, CPA, CPV, CPL, CPE and optimize your advertising efficiency."
         url="https://calculatecreator.com/calculators/cost-per-result/"
-        aggregateRating={{
-          ratingValue: 4.8,
-          reviewCount: 892,
-        }}
         datePublished="2024-01-15"
         dateModified="2025-12-05"
         keywords={['cost per result', 'tiktok cpr', 'cpc calculator', 'cpa calculator', 'tiktok ad costs']}

@@ -117,6 +117,17 @@ export default function MethodologyPage() {
             estimates for contracts, staffing, or budgeting decisions.
           </p>
         </section>
+
+        <div className="mt-10 text-sm text-neutral-500">
+          <p>
+            Related:{' '}
+            <Link href="/corrections-policy/" className="text-primary-600 underline">Corrections Policy</Link>
+            {' · '}
+            <Link href="/sources-policy/" className="text-primary-600 underline">Sources Policy</Link>
+            {' · '}
+            <Link href="/editorial-policy/" className="text-primary-600 underline">Editorial Policy</Link>
+          </p>
+        </div>
       </Container>
     </div>
   );

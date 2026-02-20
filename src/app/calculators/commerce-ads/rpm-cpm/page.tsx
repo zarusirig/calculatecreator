@@ -11,9 +11,10 @@ import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { RpmCalculatorWidget } from '@/components/calculators/rpm/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Rpm Cpm Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Rpm Cpm Calculator 2026",
   description: "Use this TikTok rpm cpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['rpm calculator', 'tiktok rpm', 'revenue per thousand views', 'creator fund rpm', 'earnings per view'],
   alternates: {
@@ -80,6 +81,10 @@ export default function RPMCalculatorPage() {
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
             Calculate your <Link href="/calculators/tiktok-creator-fund/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Creator Fund earnings</Link> or learn <Link href="/guides/maximize-creator-fund-rpm/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how to maximize your TikTok RPM rate</Link> for higher payouts.
           </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="commerce-ads/rpm-cpm" />
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -324,6 +329,10 @@ RPM: ($3.00 / 100,000) × 1000 = $0.030`}
           <FAQSection pageName="RPM Calculator" faqs={faqData} />
 
           <RelatedCalculators currentCalculator="rpm" calculators={[{ name: 'Creator Fund Calculator', slug: 'tiktok-creator-fund', description: 'Estimate Creator Fund earnings', icon: 'DollarSign' }]} />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="commerce-ads/rpm-cpm" variant="full" />
+          </div>
         </div>
       </div>
     </div>

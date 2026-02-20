@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Creator Fund Calculator and Earnings Tool Guide",
+  title: "TikTok Creator Fund Calculator",
   description: "Use this TikTok creator fund calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment'],
   alternates: {

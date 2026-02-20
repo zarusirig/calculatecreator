@@ -4,7 +4,7 @@ import { generateHubPageSchemas, hubPageConfigs } from '@/lib/seo/hub-page-schem
 const config = hubPageConfigs.calculators;
 
 export const metadata: Metadata = {
-  title: "TikTok Calculators Calculator and Earnings Tool Guide",
+  title: "TikTok Calculators Calculator",
   description: "Use this TikTok calculators calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: [
     'creator calculator',

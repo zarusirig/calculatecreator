@@ -8,14 +8,14 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { RelatedGuides } from '@/components/calculator/RelatedGuides';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
-import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Creator Fund Calculator and Earnings Tool",
-  description: "Use this TikTok tiktok creator fund calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
+  title: "TikTok Creator Fund Calculator — Estimate Fund Earnings 2026",
+  description: "Calculate your TikTok Creator Fund and Rewards Program earnings. See RPM rates, view-based payments, and monthly income projections.",
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment', 'tiktok monetization', 'creator rewards program'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/tiktok-creator-fund/',
@@ -80,10 +80,10 @@ export default function TikTokCreatorFundCalculatorPage() {
         name="TikTok Creator Fund Calculator"
         description="Calculate your TikTok Creator Fund earnings based on views, engagement rate, and content niche. Get accurate RPM estimates and monthly income projections."
         url="https://calculatecreator.com/calculators/tiktok-creator-fund/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 2847 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm', 'creator rewards program']}
+        personAuthor={getPersonAuthorForSchema('tiktok-creator-fund')}
       />
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
@@ -360,6 +360,29 @@ Engagement Multipliers:
 Example: 1M views/month, 6% engagement, finance niche
 Base RPM: $0.03 × 1.2 (engagement) × 1.3 (niche) = $0.047
 Monthly earnings: 1,000 × $0.047 = $47`}
+              calculationExample={{
+                steps: [
+                  {
+                    step: 'Calculate base earnings from views',
+                    formula: 'Base Earnings = (Monthly Views / 1,000) × RPM',
+                    values: '(500,000 / 1,000) × $0.03',
+                    result: '$15.00 base monthly earnings',
+                  },
+                  {
+                    step: 'Apply engagement multiplier',
+                    formula: 'Adjusted = Base × Engagement Multiplier',
+                    values: '$15.00 × 1.2 (for 6% engagement rate)',
+                    result: '$18.00 adjusted earnings',
+                  },
+                  {
+                    step: 'Apply niche multiplier',
+                    formula: 'Final = Adjusted × Niche Multiplier',
+                    values: '$18.00 × 1.3 (finance niche premium)',
+                    result: '$23.40 estimated monthly earnings',
+                  },
+                ],
+                finalResult: '$23.40/month from Creator Fund with 500K monthly views in finance niche',
+              }}
               assumptions={[
                 { label: 'Base RPM Range', value: 'Creator Fund pays $0.02–$0.04 per 1K views on average' },
                 { label: 'Engagement Impact', value: 'Higher engagement rates increase RPM by 20-50%' },

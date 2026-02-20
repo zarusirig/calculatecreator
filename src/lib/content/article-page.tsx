@@ -28,58 +28,26 @@ function trimToWordBoundary(text: string, maxLength: number): string {
 }
 
 function normalizeSeoTitle(rawTitle: string, primaryKeyword: string): string {
-  let title = rawTitle.replace(/\s+\|\s*CalculateCreator$/i, '').replace(/\s+/g, ' ').trim();
-  const keyword = primaryKeyword.replace(/\s+/g, ' ').trim();
-
-  if (!title) title = keyword || 'TikTok Creator Guide';
-  if (keyword && !title.toLowerCase().includes(keyword.toLowerCase()) && title.length < 50) {
-    title = `${keyword} - ${title}`;
-  }
-  if (!/\btiktok\b/i.test(title) && /\btiktok\b/i.test(keyword)) {
-    title = `TikTok ${title}`;
+  if (rawTitle && rawTitle.trim()) {
+    const cleaned = rawTitle.replace(/\s+\|\s*CalculateCreator$/i, '').replace(/\s+/g, ' ').trim();
+    return trimToWordBoundary(cleaned, 60);
   }
 
-  if (title.length > 60) {
-    title = trimToWordBoundary(title, 60);
-  }
-
-  if (title.length < 30) {
-    const expansion = keyword && !title.toLowerCase().includes(keyword.toLowerCase())
-      ? ` - ${keyword}`
-      : ' - TikTok Creator Guide';
-    title = trimToWordBoundary(`${title}${expansion}`, 60);
-  }
-
-  return title;
+  const keyword = primaryKeyword ? primaryKeyword.replace(/\s+/g, ' ').trim() : '';
+  return trimToWordBoundary(keyword || 'TikTok Creator Guide', 60);
 }
 
 function normalizeSeoDescription(rawDescription: string, primaryKeyword: string): string {
-  const keyword = primaryKeyword.replace(/\s+/g, ' ').trim();
-  let description = rawDescription.replace(/\s+/g, ' ').trim();
-
-  if (!description) {
-    description = keyword
-      ? `Learn ${keyword} with practical data, benchmarks, and optimization strategies for TikTok creators.`
-      : 'Get practical TikTok creator benchmarks, earnings context, and optimization guidance.';
+  if (rawDescription && rawDescription.trim()) {
+    return trimToWordBoundary(rawDescription.trim(), 155);
   }
 
-  if (keyword && !description.toLowerCase().includes(keyword.toLowerCase())) {
-    description = `${keyword}: ${description}`;
-  }
-  if (!/\btiktok\b/i.test(description)) {
-    description = `TikTok creators: ${description}`;
-  }
+  const keyword = primaryKeyword ? primaryKeyword.replace(/\s+/g, ' ').trim() : '';
+  let description = keyword
+    ? `Learn about ${keyword} with practical data and optimization strategies.`
+    : 'Practical TikTok creator data, earnings context, and optimization guidance.';
 
-  if (description.length > 155) {
-    description = trimToWordBoundary(description, 155);
-  }
-
-  if (description.length < 130) {
-    const extension = ' Includes benchmarks, monetization context, and actionable next steps.';
-    description = trimToWordBoundary(`${description}${extension}`, 155);
-  }
-
-  return description;
+  return trimToWordBoundary(description, 155);
 }
 
 const mdxComponents = {

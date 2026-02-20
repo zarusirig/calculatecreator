@@ -5,8 +5,8 @@ import { ComparisonSchema } from '@/components/seo/ComparisonSchema';
 import { CheckCircle, XCircle, Lightbulb, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Live Vs Youtube Live Comparison for Creator",
-  description: "Compare TikTok tiktok live vs youtube live outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
+  title: "TikTok Live Vs Youtube Live Comparison for Creator",
+  description: "Compare TikTok live vs youtube live outcomes using earnings context, engagement benchmarks, monetization tradeoffs, and practical recommendations",
   keywords: ['tiktok live vs youtube', 'live streaming earnings', 'super chat vs gifts', 'live monetization comparison'],
   alternates: {
     canonical: 'https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/',

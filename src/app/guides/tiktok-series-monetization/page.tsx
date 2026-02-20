@@ -6,8 +6,8 @@ import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Series Monetization Guide and Creator Strategy",
-  description: "Read this TikTok tiktok series monetization guide for creator earnings context, engagement benchmarks, monetization requirements, and practical",
+  title: "TikTok Series Monetization Guide and Creator Strategy",
+  description: "Read this TikTok series monetization guide for creator earnings context, engagement benchmarks, monetization requirements, and practical",
   keywords: ['tiktok series', 'paywalled content tiktok', 'tiktok premium content', 'series monetization'],
   alternates: {
     canonical: 'https://calculatecreator.com/guides/tiktok-series-monetization/',

@@ -12,8 +12,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Sponsorship Roi Calculator and Earnings Tool",
-  description: "Use this TikTok sponsorship roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Sponsorship ROI Calculator — Measure Deal Performance",
+  description: "Calculate the ROI of your TikTok sponsorship deals. Measure brand partnership performance with engagement, reach, and revenue-per-deal metrics.",
   keywords: ['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator', 'sponsorship profitability'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/sponsorship-roi/',
@@ -46,7 +46,6 @@ export default function SponsorshipROICalculatorPage() {
         name="TikTok Sponsorship ROI Calculator"
         description="Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations."
         url="https://calculatecreator.com/calculators/sponsorship-roi/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1523 }}
         datePublished="2024-07-12"
         dateModified="2025-11-13"
         keywords={['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator']}

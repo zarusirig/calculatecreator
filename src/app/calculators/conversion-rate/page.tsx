@@ -12,8 +12,8 @@ import { Target } from 'lucide-react';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Conversion Rate Calculator and Earnings Tool",
-  description: "Use this TikTok conversion rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Conversion Rate Calculator — Track Sales Conversions",
+  description: "Calculate your TikTok conversion rate from views to sales, signups, or clicks. Benchmark against 2026 industry averages by niche and content type.",
   keywords: ['conversion rate calculator', 'tiktok sales conversion', 'ecommerce conversion', 'funnel optimization', 'tiktok shop conversion'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/conversion-rate/',
@@ -66,10 +66,6 @@ export default function ConversionRateCalculatorPage() {
         name="TikTok Conversion Rate Calculator"
         description="Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers."
         url="https://calculatecreator.com/calculators/conversion-rate/"
-        aggregateRating={{
-          ratingValue: 4.7,
-          reviewCount: 756,
-        }}
         datePublished="2024-01-15"
         dateModified="2025-11-13"
         keywords={['tiktok conversion rate', 'conversion calculator', 'tiktok traffic conversion', 'conversion optimization']}

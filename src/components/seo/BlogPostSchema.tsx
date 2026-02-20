@@ -38,15 +38,15 @@ export function BlogPostSchema({
     dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       url: 'https://calculatecreator.com/'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png'
+        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png'
       }
     },
     mainEntityOfPage: {

@@ -5,8 +5,8 @@ import { Globe, Smartphone, Briefcase, Users, DollarSign, Gift, Rocket } from 'l
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Shop Gmv Doubling News and Creator Update",
-  description: "Follow this TikTok tiktok shop gmv doubling update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
+  title: "TikTok Shop Gmv Doubling News and Creator Update",
+  description: "Follow this TikTok shop gmv doubling update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-gmv-doubling/',

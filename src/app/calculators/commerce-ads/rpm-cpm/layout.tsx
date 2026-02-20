@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Rpm Cpm Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Rpm Cpm Calculator 2026",
   description: "Use this TikTok rpm cpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok rpm calculator', 'revenue per mille', 'tiktok rpm rate', 'views to earnings'],
   alternates: {

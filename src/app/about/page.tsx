@@ -201,6 +201,18 @@ export default function AboutPage() {
                 for how assumptions are assembled and updated.
               </li>
               <li>
+                <Link href="/corrections-policy/" className="link">
+                  Corrections Policy
+                </Link>{' '}
+                for how we handle error reports and content fixes.
+              </li>
+              <li>
+                <Link href="/sources-policy/" className="link">
+                  Sources Policy
+                </Link>{' '}
+                for how we evaluate and document data sources.
+              </li>
+              <li>
                 <Link href="/contact/" className="link">
                   Contact
                 </Link>{' '}

@@ -14,8 +14,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Coins Calculator and Earnings Tool Guide 2026",
-  description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
+  title: "TikTok Coins Calculator — Coins to USD Converter 2026",
+  description: "Convert TikTok coins to USD, diamonds, and real money. See how much coins cost to buy and what creators actually receive after TikTok's 50% commission.",
   keywords: ['tiktok coins calculator', 'tiktok coins to usd', 'tiktok coin price', 'coins to diamonds', 'tiktok gift calculator', 'buy tiktok coins'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/coins/',
@@ -80,7 +80,6 @@ export default function CoinsCalculatorPage() {
         name="TikTok Coins Calculator"
         description="Calculate TikTok coin values, convert coins to USD and diamonds, and understand gift pricing with our free calculator."
         url="https://calculatecreator.com/calculators/coins/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 2341 }}
         datePublished="2024-01-15"
         dateModified="2026-01-15"
         keywords={['tiktok coins calculator', 'coins to usd', 'tiktok coin price', 'coins to diamonds']}

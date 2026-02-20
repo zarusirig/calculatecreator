@@ -5,8 +5,8 @@ import { calculatorConfigs } from '@/lib/seo/international-calculator-configs';
 const config = calculatorConfigs.my;
 
 export const metadata: Metadata = {
-  title: "TikTok My Calculator and Earnings Tool Guide 2026",
-  description: "Use this TikTok my calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
+  title: "Kalkulator TikTok — Kira Pendapatan 2026",
+  description: "Kira pendapatan TikTok anda. Dana Pencipta, tawaran jenama, dan hadiah langsung untuk pasaran Malaysia.",
   keywords: ['kalkulator tiktok', 'pendapatan tiktok', 'wang tiktok', 'dana pencipta', 'monetisasi tiktok'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/my/',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Kalkulator TikTok: Kira Pendapatan Anda 2026',
-    description: 'Kirakan potensi pendapatan anda di TikTok. Dana Pencipta, tawaran jenama, dan hadiah LIVE.',
+    description: 'Kira pendapatan TikTok anda. Dana Pencipta, tawaran jenama, dan hadiah langsung untuk pasaran Malaysia.',
     url: 'https://calculatecreator.com/calculator/my/',
     locale: 'ms_MY',
     type: 'website',

@@ -13,8 +13,8 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Viral Potential Calculator and Earnings Tool",
-  description: "Use this TikTok viral potential calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Viral Potential Calculator — Will Your Video Go Viral?",
+  description: "Estimate your TikTok video's viral potential. Score your content based on engagement velocity, share rate, and algorithm-friendly signals.",
   keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/viral-potential/',
@@ -71,7 +71,6 @@ export default function ViralPotentialCalculatorPage() {
         name="TikTok Viral Potential Calculator"
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
         url="https://calculatecreator.com/calculators/viral-potential/"
-        aggregateRating={{ ratingValue: 4.8, reviewCount: 1889 }}
         datePublished="2024-05-05"
         dateModified="2025-12-05"
         keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}

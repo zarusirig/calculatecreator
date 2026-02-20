@@ -12,8 +12,8 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 
 export const metadata: Metadata = {
-  title: "TikTok Break Even Calculator and Earnings Tool Guide",
-  description: "Use this TikTok break even calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Break-Even Calculator — When Will You Profit?",
+  description: "Calculate when your TikTok content creation becomes profitable. Factor in production costs, equipment, and time investment against your creator revenue streams.",
   keywords: ['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator', 'creator economics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/break-even/',
@@ -46,7 +46,6 @@ export default function BreakEvenCalculatorPage() {
         name="TikTok Creator Break-Even Calculator"
         description="Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams."
         url="https://calculatecreator.com/calculators/break-even/"
-        aggregateRating={{ ratingValue: 4.7, reviewCount: 1243 }}
         datePublished="2024-04-15"
         dateModified="2025-11-13"
         keywords={['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator']}

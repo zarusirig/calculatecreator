@@ -12,8 +12,8 @@ import { AdSpendCalculatorWidget } from '@/components/calculators/ad-spend/Calcu
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Ad Spend Calculator and Earnings Tool Guide",
-  description: "Use this TikTok ad spend calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Ad Spend Calculator — Plan Your Ad Budget 2026",
+  description: "Plan your TikTok advertising budget with accurate cost estimates. Calculate CPM, CPC, and total spend for in-feed ads, TopView, and branded campaigns.",
   keywords: ['tiktok ad budget', 'tiktok advertising cost', 'ad spend calculator', 'tiktok marketing budget', 'campaign budget planner'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/ad-spend/',
@@ -58,10 +58,6 @@ export default function AdSpendCalculatorPage() {
         name="TikTok Ad Spend Calculator"
         description="Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Plan daily, weekly, and monthly budgets."
         url="https://calculatecreator.com/calculators/ad-spend/"
-        aggregateRating={{
-          ratingValue: 4.7,
-          reviewCount: 743,
-        }}
         datePublished="2024-01-15"
         dateModified="2025-12-05"
         keywords={['tiktok ad budget', 'ad spend calculator', 'tiktok budget planning', 'campaign budget']}

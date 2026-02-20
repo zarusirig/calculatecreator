@@ -13,8 +13,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Follower Growth Calculator and Earnings Tool",
-  description: "Use this TikTok follower growth calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Follower Growth Calculator — Project Your Growth 2026",
+  description: "Project your TikTok follower growth over time. Estimate when you will hit milestones based on current growth rate, posting frequency, and engagement.",
   keywords: ['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/follower-growth/',
@@ -47,7 +47,6 @@ export default function FollowerGrowthCalculatorPage() {
         name="TikTok Follower Growth Rate Calculator"
         description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
         url="https://calculatecreator.com/calculators/follower-growth/"
-        aggregateRating={{ ratingValue: 4.9, reviewCount: 2287 }}
         datePublished="2024-01-25"
         dateModified="2025-11-13"
         keywords={['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics']}

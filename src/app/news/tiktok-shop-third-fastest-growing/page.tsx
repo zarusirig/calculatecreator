@@ -5,8 +5,8 @@ import { Target, Users, Zap, DollarSign, TrendingUp, Rocket } from 'lucide-react
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Shop Third Fastest Growing News and Creator",
-  description: "Follow this TikTok tiktok shop third fastest growing update for creator earnings implications, platform changes, monetization context, and actionable next",
+  title: "TikTok Shop Third Fastest Growing News and Creator",
+  description: "Follow this TikTok shop third fastest growing update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/',

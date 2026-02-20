@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Viral Potential Calculator and Earnings Tool",
+  title: "TikTok Viral Potential Calculator",
   description: "Use this TikTok viral potential calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['viral potential calculator', 'tiktok viral score', 'virality predictor'],
   alternates: {

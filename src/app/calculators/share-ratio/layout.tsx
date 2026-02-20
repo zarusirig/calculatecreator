@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Share Ratio Calculator and Earnings Tool Guide",
+  title: "TikTok Share Ratio Calculator",
   description: "Use this TikTok share ratio calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['share ratio calculator', 'share to view', 'tiktok shares'],
   alternates: {

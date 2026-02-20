@@ -11,6 +11,7 @@ import { BenchmarksPreviewBlock } from '@/components/blocks/BenchmarksPreviewBlo
 import { FAQBlock } from '@/components/blocks/FAQBlock';
 import { CTAStripBlock } from '@/components/blocks/CTAStripBlock';
 import { Container } from '@/components/layout/Container';
+import { HomepageSchema } from '@/components/seo/HomepageSchema';
 import {
   benchmarkStats,
   featuredGuides,
@@ -30,12 +31,21 @@ export const metadata: Metadata = {
       'Creator benchmarks made simple. Inputs, results, assumptions, and next actions in one flow.',
     url: 'https://calculatecreator.com/',
     type: 'website',
+    images: [
+      {
+        url: 'https://calculatecreator.com/home/hero-dashboard-1600.webp',
+        width: 1200,
+        height: 630,
+        alt: 'TikTok Creator Calculators - Free Earnings & Analytics Tools',
+      },
+    ],
   },
 };
 
 export default function HomePage() {
   return (
     <div>
+      <HomepageSchema />
       <HeroBlock />
 
       <Container>

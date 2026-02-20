@@ -2309,6 +2309,42 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://calculatecreator.com/authors/alex-martinez/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/authors/david-kim/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/authors/emily-thompson/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/authors/jessica-rodriguez/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/authors/michael-chen/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/authors/sarah-johnson/</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://calculatecreator.com/benchmarks/</loc>
     <lastmod>2026-02-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -2323,6 +2359,12 @@
   <url>
     <loc>https://calculatecreator.com/contact/</loc>
     <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/corrections-policy/</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2395,6 +2437,12 @@
   <url>
     <loc>https://calculatecreator.com/sitemap/</loc>
     <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://calculatecreator.com/sources-policy/</loc>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

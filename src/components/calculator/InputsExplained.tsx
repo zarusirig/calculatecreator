@@ -11,6 +11,8 @@ export interface InputItem {
   description: string;
   example?: string;
   required?: boolean;
+  unit?: string;
+  validRange?: string;
 }
 
 export interface InputsExplainedProps {
@@ -35,7 +37,8 @@ export function InputsExplained({
             <tr className="border-b border-neutral-200">
               <th className="pb-3 pr-4 text-body-sm font-semibold text-neutral-900">Input</th>
               <th className="pb-3 pr-4 text-body-sm font-semibold text-neutral-900">Description</th>
-              <th className="pb-3 text-body-sm font-semibold text-neutral-900">Example</th>
+              <th className="pb-3 pr-4 text-body-sm font-semibold text-neutral-900">Example</th>
+              <th className="pb-3 text-body-sm font-semibold text-neutral-900">Range</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-neutral-100">
@@ -54,8 +57,11 @@ export function InputsExplained({
                 <td className="py-3 pr-4 text-body-sm text-neutral-700">
                   {input.description}
                 </td>
-                <td className="py-3 text-body-sm font-mono text-primary-600 whitespace-nowrap">
-                  {input.example || '—'}
+                <td className="py-3 pr-4 text-body-sm font-mono text-primary-600 whitespace-nowrap">
+                  {input.example ? `${input.example}${input.unit ? ` ${input.unit}` : ''}` : '—'}
+                </td>
+                <td className="py-3 text-body-sm text-neutral-500 whitespace-nowrap">
+                  {input.validRange || '—'}
                 </td>
               </tr>
             ))}

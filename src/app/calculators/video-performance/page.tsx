@@ -23,8 +23,8 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Video Performance Calculator and Earnings Tool",
-  description: "Use this TikTok video performance calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+  title: "TikTok Video Performance Calculator — Analyze Your Videos",
+  description: "Analyze your TikTok video performance metrics. Calculate view-through rates, engagement scores, and estimated reach to optimize future content.",
   keywords: [
     'tiktok video performance calculator',
     'video analytics calculator',

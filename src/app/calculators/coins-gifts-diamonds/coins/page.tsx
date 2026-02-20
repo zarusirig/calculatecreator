@@ -9,9 +9,10 @@ import { FAQSchema } from '@/components/seo/CalculatorSchema';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Coins Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Coins Calculator 2026",
   description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok coins calculator', 'coins to usd', 'tiktok coin value', 'tiktok gift calculator', 'coins converter'],
   alternates: {
@@ -55,6 +56,10 @@ export default function CoinsCalculatorPage() {
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Coins Calculator</h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">Convert TikTok coins to USD and calculate diamond payouts for creators. This calculator helps viewers understand gift costs and creators estimate LIVE earnings from virtual gifts. Essential for anyone participating in TikTok's virtual economy, whether you're sending gifts or receiving them during streams. Calculate exact conversion rates between coins, diamonds, and dollars using current 2026 pricing. Understand TikTok's 50% platform fee and plan your LIVE streaming income or gifting budget accurately.</p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mb-8">
+          <PageAuthorByline pageSlug="coins-gifts-diamonds/coins" />
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6">
@@ -424,6 +429,10 @@ Example:
               }
             ]}
           />
+
+          <div className="mt-12">
+            <PageEEAT pageSlug="coins-gifts-diamonds/coins" variant="full" />
+          </div>
         </div>
       </div>
     </div>

@@ -16,9 +16,9 @@ export function HomepageSchema() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'CalculateCreator.com',
+    name: 'CalculateCreator',
     url: 'https://calculatecreator.com/',
-    logo: 'https://calculatecreator.com/logo.png',
+    logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
     description: 'Free TikTok earnings calculators and monetization tools for creators. Calculate Creator Fund earnings, brand deal rates, LIVE gifts, and Shop commissions.',
     sameAs: [
       'https://twitter.com/calculatecreator',
@@ -36,12 +36,12 @@ export function HomepageSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': 'https://calculatecreator.com/#website',
-    name: 'CalculateCreator.com',
+    name: 'CalculateCreator',
     url: 'https://calculatecreator.com/',
     description: 'Calculate TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions. 35+ free calculators with transparent methodology.',
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator.com',
+      name: 'CalculateCreator',
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -134,7 +134,7 @@ export function HomepageSchema() {
         '@type': 'ListItem',
         position: index + 1,
         item: {
-          '@type': 'SoftwareApplication',
+          '@type': 'WebApplication',
           name: config?.name || slug,
           description: config?.description || '',
           url: `https://calculatecreator.com/calculators/${slug}/`,
@@ -145,15 +145,6 @@ export function HomepageSchema() {
             price: '0',
             priceCurrency: 'USD',
           },
-          ...(config?.aggregateRating && {
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: config.aggregateRating.ratingValue,
-              reviewCount: config.aggregateRating.reviewCount,
-              bestRating: 5,
-              worstRating: 1,
-            },
-          }),
         },
       };
     }),

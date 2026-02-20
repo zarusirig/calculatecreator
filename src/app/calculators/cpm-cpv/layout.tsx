@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Cpm Cpv Calculator and Earnings Tool Guide 2026",
+  title: "TikTok Cpm Cpv Calculator 2026",
   description: "Use this TikTok cpm cpv calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok cpm calculator', 'cpv calculator', 'ad cost calculator', 'tiktok advertising'],
   alternates: {

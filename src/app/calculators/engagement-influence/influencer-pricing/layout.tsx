@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Influencer Pricing Calculator and Earnings Tool",
+  title: "TikTok Influencer Pricing Calculator",
   description: "Use this TikTok influencer pricing calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['brand deal calculator', 'influencer rate calculator', 'sponsored post pricing', 'tiktok sponsorship rates'],
   alternates: {

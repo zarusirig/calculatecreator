@@ -8,6 +8,7 @@ import { AuthorBio } from '@/components/eeat/AuthorBio';
 import { ReviewBadge, ReviewSection } from '@/components/eeat/ReviewBadge';
 import { Disclaimer, MultipleDisclaimers } from '@/components/eeat/Disclaimer';
 import { Citations, DataSourceBadge } from '@/components/eeat/Citations';
+import { ContentFreshness } from '@/components/eeat/ContentFreshness';
 import { PersonSchema } from '@/components/seo/CalculatorSchema';
 import { getAuthor } from '@/lib/constants/authors';
 import { getPageMetadata, getDefaultPageMetadata } from '@/lib/constants/page-metadata';
@@ -37,9 +38,10 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
           name={author.name}
           jobTitle={author.role}
           description={author.bio}
+          url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
           knowsAbout={author.expertise}
           affiliation={{
-            name: 'TikTok Calculator',
+            name: 'CalculateCreator',
             url: 'https://calculatecreator.com',
           }}
         />
@@ -74,12 +76,22 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
         name={author.name}
         jobTitle={author.role}
         description={author.bio}
+        url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'TikTok Calculator',
+          name: 'CalculateCreator',
           url: 'https://calculatecreator.com',
         }}
       />
+
+      {/* Content Freshness */}
+      {metadata.verificationDate && (
+        <ContentFreshness
+          verificationDate={metadata.verificationDate}
+          verificationMethod={metadata.verificationMethod}
+          changelog={metadata.changelog}
+        />
+      )}
 
       {/* Author Bio */}
       <AuthorBio author={author} variant="compact" />
@@ -129,9 +141,10 @@ export function PageAuthorByline({ pageSlug, variant = 'light' }: { pageSlug: st
         name={author.name}
         jobTitle={author.role}
         description={author.bio}
+        url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'TikTok Calculator',
+          name: 'CalculateCreator',
           url: 'https://calculatecreator.com',
         }}
       />
@@ -183,4 +196,29 @@ export function PageCitations({ pageSlug }: { pageSlug: string }) {
  */
 export function PageDataSource({ source, url }: { source: string; url?: string }) {
   return <DataSourceBadge source={source} url={url} variant="official" />;
+}
+
+/**
+ * Get personAuthor object for CalculatorSchema from a page slug.
+ * Returns the shape expected by CalculatorSchema's personAuthor prop.
+ */
+export function getPersonAuthorForSchema(pageSlug: string) {
+  const metadata = getPageMetadata(pageSlug) || getDefaultPageMetadata();
+  const author = getAuthor(metadata.author);
+  if (!author) return undefined;
+
+  const sameAs = [
+    author.socialLinks?.tiktok,
+    author.socialLinks?.twitter,
+    author.socialLinks?.linkedin,
+  ].filter(Boolean) as string[];
+
+  return {
+    name: author.name,
+    jobTitle: author.role,
+    url: author.authorUrl
+      ? `https://calculatecreator.com${author.authorUrl}`
+      : undefined,
+    sameAs: sameAs.length > 0 ? sameAs : undefined,
+  };
 }

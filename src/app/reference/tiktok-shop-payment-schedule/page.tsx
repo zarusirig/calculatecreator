@@ -6,8 +6,8 @@ import { Calendar, Clock, DollarSign } from 'lucide-react';
 import { ReferenceSchema } from '@/components/seo/ReferenceSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Shop Payment Schedule Data and Benchmark",
-  description: "Review TikTok tiktok shop payment schedule data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
+  title: "TikTok Shop Payment Schedule Data and Benchmark",
+  description: "Review TikTok shop payment schedule data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
   keywords: ['tiktok shop payment schedule', 'when does tiktok shop pay', 'tiktok affiliate payment timeline', 'tiktok shop payout date', 'tiktok shop payment processing'],
   alternates: {
     canonical: 'https://calculatecreator.com/reference/tiktok-shop-payment-schedule/',

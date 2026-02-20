@@ -7,8 +7,8 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { Receipt, Wallet, CheckCircle, AlertCircle, DollarSign, Shield, TrendingUp, Calendar, Percent, FileText, Users, Target, Gift, ShoppingBag } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Utility Tools Calculator and Earnings Tool Guide",
-  description: "Use this TikTok utility tools calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Utility Tools — Free Creator Toolkit 2026",
+  description: "Access free TikTok creator utility tools. Character counters, hashtag generators, posting schedulers, and more — everything you need to manage your content.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/',
   },

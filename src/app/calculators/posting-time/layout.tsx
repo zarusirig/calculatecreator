@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Posting Time Calculator and Earnings Tool Guide",
+  title: "TikTok Posting Time Calculator",
   description: "Use this TikTok posting time calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['best posting time', 'tiktok posting schedule', 'optimal post time'],
   alternates: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Affiliate Commission Calculator and Earnings Tool",
+  title: "TikTok Affiliate Commission Calculator",
   description: "Use this TikTok affiliate commission calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['tiktok affiliate calculator', 'shop affiliate earnings', 'commission calculator', 'affiliate income'],
   alternates: {

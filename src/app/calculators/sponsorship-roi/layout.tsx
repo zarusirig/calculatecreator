@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Sponsorship Roi Calculator and Earnings Tool",
+  title: "TikTok Sponsorship Roi Calculator",
   description: "Use this TikTok sponsorship roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['sponsorship roi calculator', 'brand deal roi', 'partnership calculator'],
   alternates: {

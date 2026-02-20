@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Audience Overlap Calculator and Earnings Tool",
+  title: "TikTok Audience Overlap Calculator",
   description: "Use this TikTok audience overlap calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['audience overlap', 'cross-platform analytics', 'follower overlap', 'audience analysis'],
   alternates: {

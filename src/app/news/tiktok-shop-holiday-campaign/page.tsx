@@ -5,8 +5,8 @@ import { Gift, ShoppingBag, Smartphone, Video, FileVideo, Package, DollarSign } 
 import { NewsArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Shop Holiday Campaign News and Creator Update",
-  description: "Follow this TikTok tiktok shop holiday campaign update for creator earnings implications, platform changes, monetization context, and actionable next",
+  title: "TikTok Shop Holiday Campaign News and Creator Update",
+  description: "Follow this TikTok shop holiday campaign update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy'],
   alternates: {
     canonical: 'https://calculatecreator.com/news/tiktok-shop-holiday-campaign/',

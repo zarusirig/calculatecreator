@@ -6,8 +6,8 @@ import { Calendar, Clock, BarChart3 } from 'lucide-react';
 import { ArticleSchema } from '@/components/seo/ArticleSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Tiktok Comments To Likes Ratio Data and Benchmark",
-  description: "Review TikTok tiktok comments to likes ratio data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision",
+  title: "TikTok Comments To Likes Ratio Data and Benchmark",
+  description: "Review TikTok comments to likes ratio data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision",
   keywords: ['tiktok comments to likes ratio', 'tiktok engagement ratio', 'good comments to likes ratio', 'improve comment ratio tiktok', 'tiktok algorithm engagement'],
   alternates: {
     canonical: 'https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/',

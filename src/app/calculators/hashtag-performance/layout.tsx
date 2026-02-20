@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Hashtag Performance Calculator and Earnings Tool",
+  title: "TikTok Hashtag Performance Calculator",
   description: "Use this TikTok hashtag performance calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['hashtag calculator', 'hashtag performance', 'tiktok hashtags'],
   alternates: {

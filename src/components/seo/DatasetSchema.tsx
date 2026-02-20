@@ -18,7 +18,7 @@ export function DatasetSchema({
   url,
   datePublished = '2024-01-15',
   dateModified = '2026-01-27',
-  creator = 'CalculateCreator.com',
+  creator = 'CalculateCreator',
   keywords = [],
   distribution = [],
 }: DatasetSchemaProps) {

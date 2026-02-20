@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Creator Fund Calculator and Earnings Tool Guide",
+  title: "TikTok Creator Fund Calculator",
   description: "Use this TikTok creator fund calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment', 'tiktok monetization'],
   alternates: {
@@ -20,6 +20,7 @@ import { DollarSign, Users, Eye, Cake, CheckCircle, Globe, Video, Handshake, Gif
 import { CreatorFundCalculatorWidget } from '@/components/calculators/tiktok-creator-fund/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 const faqs = [
   {
@@ -63,10 +64,6 @@ export default function CreatorFundCalculatorPage() {
         name="TikTok Creator Fund Calculator"
         description="Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche."
         url="https://calculatecreator.com/calculators/tiktok-creator-fund/"
-        aggregateRating={{
-          ratingValue: 4.8,
-          reviewCount: 1247,
-        }}
         datePublished="2024-01-15"
         dateModified="2026-01-31"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment']}
@@ -79,29 +76,32 @@ export default function CreatorFundCalculatorPage() {
           { name: 'Creator Fund Calculator', url: 'https://calculatecreator.com/calculators/tiktok-creator-fund/' },
         ]}
       />
-      <div className="min-h-screen py-8 relative">
+      <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-8 relative">
         <div className="container-custom relative z-10">
           <Breadcrumb
             items={[
               { label: 'Calculators', href: '/calculators/' },
               { label: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
             ]}
-            variant="dark"
           />
 
           <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-primary gradient-animated text-white mb-6 glow-purple animate-float shadow-2xl">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-primary gradient-animated text-white mb-6 shadow-2xl">
               <DollarSign size={40} />
             </div>
-            <h1 className="text-display-md md:text-display-lg font-display font-bold text-white mb-4 drop-shadow-2xl animate-slide-up">
+            <h1 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 mb-4 animate-slide-up">
               TikTok Creator Fund Calculator
             </h1>
-            <p className="text-body-lg text-white/90 max-w-2xl mx-auto mb-3 animate-slide-up stagger-1">
+            <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3 animate-slide-up stagger-1">
               Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche. The Creator Fund typically pays $0.02-$0.04 per 1,000 views, with rates varying by engagement quality and audience location. Whether you're just qualifying for the fund or already earning, use this calculator to project your income and understand which factors impact your RPM most.
             </p>
-            <p className="text-body-md text-white/80 max-w-2xl mx-auto animate-slide-up stagger-2">
-              Want to understand <Link href="/guides/tiktok-creator-fund/" className="text-accent-400 hover:text-accent-300 underline font-medium transition-colors">how the Creator Fund works</Link>? Or explore <Link href="/guides/how-to-make-money-on-tiktok/" className="text-secondary-400 hover:text-secondary-300 underline font-medium transition-colors">all TikTok monetization methods</Link> including higher-paying alternatives.
+            <p className="text-body-md text-neutral-600 max-w-2xl mx-auto animate-slide-up stagger-2">
+              Want to understand <Link href="/guides/tiktok-creator-fund/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the Creator Fund works</Link>? Or explore <Link href="/guides/how-to-make-money-on-tiktok/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">all TikTok monetization methods</Link> including higher-paying alternatives.
             </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto mb-8">
+            <PageAuthorByline pageSlug="earnings-revenue/creator-fund" />
           </div>
 
           <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-8 lg:mb-12">
@@ -398,6 +398,10 @@ Monthly earnings: (500 × $0.036) = $18.00`}
               ]}
               variant="dark"
             />
+
+            <div className="mt-12">
+              <PageEEAT pageSlug="earnings-revenue/creator-fund" variant="full" />
+            </div>
           </div>
         </div>
       </div>

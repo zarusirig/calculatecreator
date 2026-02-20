@@ -48,7 +48,6 @@ export const metadata: Metadata = {
     description:
       'A calm, trustworthy creator analytics product for estimates, comparisons, and benchmarks.',
     siteName: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
     images: [
       {
         url: 'https://calculatecreator.com/home/hero-dashboard-1600.webp',
