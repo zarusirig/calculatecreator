@@ -8,6 +8,26 @@
     ],
     "redirects": [
       {
+        "source": "/tools{,/}",
+        "destination": "/calculators/",
+        "type": 301
+      },
+      {
+        "source": "/tools/rpm{,/}",
+        "destination": "/calculators/rpm/",
+        "type": 301
+      },
+      {
+        "source": "/metrics/tiktok-comments-to-likes-ratio{,/}",
+        "destination": "/metrics/comments-to-likes-ratio/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins-gifts-diamonds/money-gun{,/}",
+        "destination": "/calculators/coins-gifts-diamonds/gift/",
+        "type": 301
+      },
+      {
         "source": "/calculators/coins-to-usd{,/}",
         "destination": "/calculators/coins/",
         "type": 301
@@ -30,6 +50,11 @@
       {
         "source": "/calculators/live-earnings{,/}",
         "destination": "/calculators/earnings-revenue/live-earnings/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/fun-niche/moon-phase{,/}",
+        "destination": "/calculators/",
         "type": 301
       },
       {
@@ -135,6 +160,156 @@
       {
         "source": "/blog/tiktok-vs-youtube-shorts-earnings-2026{,/}",
         "destination": "/comparisons/tiktok-vs-youtube-earnings/",
+        "type": 301
+      },
+      {
+        "source": "/compliance{,/}",
+        "destination": "/compliance/advertising-disclosure/",
+        "type": 301
+      },
+      {
+        "source": "/guides/region{,/}",
+        "destination": "/guides/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-shop-niches{,/}",
+        "destination": "/guides/best-shop-niches/",
+        "type": 301
+      },
+      {
+        "source": "/guides/calculator-guide{,/}",
+        "destination": "/guides/complete-tiktok-calculator-guide/",
+        "type": 301
+      },
+      {
+        "source": "/guides/first-1000-dollars{,/}",
+        "destination": "/guides/how-to-make-first-1000-dollars/",
+        "type": 301
+      },
+      {
+        "source": "/guides/low-tiktok-earnings{,/}",
+        "destination": "/guides/why-tiktok-earnings-low/",
+        "type": 301
+      },
+      {
+        "source": "/guides/tiktok-creator-fund-guide{,/}",
+        "destination": "/guides/tiktok-creator-fund/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/brand-deal{,/}",
+        "destination": "/calculators/brand-deal-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/creator-fund{,/}",
+        "destination": "/calculators/tiktok-creator-fund/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/commerce-ads/shop-profit//",
+        "destination": "/calculators/commerce-ads/shop-profit/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/rpm//",
+        "destination": "/calculators/rpm/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/video-performance//",
+        "destination": "/calculators/viral-potential/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/save-rate//",
+        "destination": "/calculators/save-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/viral-potential//",
+        "destination": "/calculators/viral-potential/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/earnings-revenue/live-earnings//",
+        "destination": "/calculators/earnings-revenue/live-earnings/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/production-cost//",
+        "destination": "/calculators/production-cost/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/follower-growth//",
+        "destination": "/calculators/follower-growth/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/coins//",
+        "destination": "/calculators/coins/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/posting-time//",
+        "destination": "/calculators/posting-time/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/engagement-rate//",
+        "destination": "/calculators/engagement-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/completion-rate//",
+        "destination": "/calculators/completion-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/cpm-cpv//",
+        "destination": "/calculators/cpm-cpv/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/conversion-rate//",
+        "destination": "/calculators/conversion-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/tiktok-creator-fund//",
+        "destination": "/calculators/tiktok-creator-fund/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/multi-platform-earnings//",
+        "destination": "/calculators/multi-platform-earnings/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/brand-deal-rate//",
+        "destination": "/calculators/brand-deal-rate/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/niche-profitability//",
+        "destination": "/calculators/niche-profitability/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/tiktok-money//",
+        "destination": "/calculators/tiktok-money/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/hashtag-performance//",
+        "destination": "/calculators/hashtag-performance/",
+        "type": 301
+      },
+      {
+        "source": "/calculators/watch-time//",
+        "destination": "/calculators/completion-rate/",
         "type": 301
       }
     ],
