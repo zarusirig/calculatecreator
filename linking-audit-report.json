@@ -1,98 +1,72 @@
 {
   "summary": {
-    "totalPages": 189,
-    "hubPages": 9,
-    "orphanPages": 1,
-    "deepPages": 1,
-    "missingBreadcrumbs": 22,
+    "totalPages": 415,
+    "hubPages": 10,
+    "orphanPages": 0,
+    "deepPages": 0,
+    "missingBreadcrumbs": 0,
     "missingRelated": 0
   },
   "hubPages": [
     {
-      "url": "/",
-      "outboundCount": 100,
-      "inboundCount": 189
-    },
-    {
-      "url": "/calculators/",
-      "outboundCount": 86,
-      "inboundCount": 189
-    },
-    {
       "url": "/guides/",
-      "outboundCount": 71,
-      "inboundCount": 189
+      "outboundCount": 69,
+      "inboundCount": 415
     },
     {
       "url": "/news/",
-      "outboundCount": 71,
-      "inboundCount": 189
-    },
-    {
-      "url": "/data/",
-      "outboundCount": 61,
-      "inboundCount": 189
-    },
-    {
-      "url": "/comparisons/",
-      "outboundCount": 54,
-      "inboundCount": 189
-    },
-    {
-      "url": "/niches/",
-      "outboundCount": 52,
-      "inboundCount": 189
+      "outboundCount": 68,
+      "inboundCount": 415
     },
     {
       "url": "/blog/",
-      "outboundCount": 51,
-      "inboundCount": 189
+      "outboundCount": 58,
+      "inboundCount": 41
+    },
+    {
+      "url": "/calculators/",
+      "outboundCount": 58,
+      "inboundCount": 415
+    },
+    {
+      "url": "/data/",
+      "outboundCount": 56,
+      "inboundCount": 259
+    },
+    {
+      "url": "/",
+      "outboundCount": 54,
+      "inboundCount": 415
     },
     {
       "url": "/region/",
-      "outboundCount": 51,
-      "inboundCount": 189
-    }
-  ],
-  "orphanPages": [
-    "/404/"
-  ],
-  "deepPages": [
+      "outboundCount": 54,
+      "inboundCount": 7
+    },
     {
-      "url": "/404/",
-      "depth": "unreachable"
+      "url": "/comparisons/",
+      "outboundCount": 53,
+      "inboundCount": 3
+    },
+    {
+      "url": "/reference/",
+      "outboundCount": 51,
+      "inboundCount": 415
+    },
+    {
+      "url": "/niches/",
+      "outboundCount": 48,
+      "inboundCount": 4
     }
   ],
-  "noBreadcrumb": [
-    "/calculators/brand-deal-rate/",
-    "/calculators/coins/",
-    "/calculators/coins-gifts-diamonds/coins/",
-    "/calculators/coins-gifts-diamonds/diamonds/",
-    "/calculators/coins-gifts-diamonds/gift/",
-    "/calculators/commerce-ads/rpm-cpm/",
-    "/calculators/commerce-ads/shop-profit/",
-    "/calculators/diamond-converter/",
-    "/calculators/earnings-revenue/live-earnings/",
-    "/calculators/engagement-influence/influencer-pricing/",
-    "/calculators/engagement-rate/",
-    "/calculators/live-gifts/",
-    "/calculators/rpm/",
-    "/calculators/tiktok-ad-cost/",
-    "/calculators/tiktok-creator-fund/",
-    "/calculators/tiktok-money/",
-    "/calculators/video-performance/",
-    "/guides/complete-tiktok-diamond-guide/",
-    "/guides/tiktok-ad-budget-calculator-guide/",
-    "/guides/tiktok-coin-converter-complete-guide/",
-    "/guides/tiktok-engagement-rate-calculator-guide/",
-    "/guides/tiktok-rpm-calculator-guide/"
-  ],
+  "orphanPages": [],
+  "deepPages": [],
+  "noBreadcrumb": [],
   "noRelated": [],
   "clickDepthDistribution": {
     "0": 1,
-    "1": 99,
-    "2": 83,
-    "3": 11,
-    "4": 2
+    "1": 53,
+    "2": 342,
+    "3": 66
   }
 }

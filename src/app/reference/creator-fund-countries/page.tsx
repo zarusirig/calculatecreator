@@ -188,7 +188,7 @@ export default function CreatorFundCountriesPage() {
         description="Complete list of countries where TikTok Creator Fund and Creator Rewards Program are available. Regional requirements, RPM rates, and monetization alternatives for ineligible regions."
         url="https://calculatecreator.com/reference/creator-fund-countries/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
 

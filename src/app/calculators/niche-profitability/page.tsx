@@ -12,7 +12,7 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Niche Profitability Calculator — Highest Paying Niches",
+  title: "TikTok Niche Profitability Calculator for Creators",
   description: "Calculate the profitability of any TikTok niche. Compare RPM, brand deal rates, and monetization potential across content categories for 2026.",
   keywords: ['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories', 'niche comparison'],
   alternates: {
@@ -47,7 +47,7 @@ export default function NicheProfitabilityCalculatorPage() {
         description="Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing."
         url="https://calculatecreator.com/calculators/niche-profitability/"
         datePublished="2024-06-15"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories']}
       />
       <FAQSchema faqs={faqData} />

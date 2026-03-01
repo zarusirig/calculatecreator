@@ -21,7 +21,7 @@ export default function TikTokShopGMVDoublingPage() {
         description="Industry projections indicate TikTok Shop's global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce."
         url="https://calculatecreator.com/news/tiktok-shop-gmv-doubling/"
         datePublished="2026-01-05"
-        dateModified="2026-01-05"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
         keywords={['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections']}
       />

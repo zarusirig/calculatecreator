@@ -81,7 +81,7 @@ export default function BrandDealRateCalculatorPage() {
         description="Calculate your TikTok brand deal rates based on followers, engagement rate, and niche. Learn what to charge for sponsored content."
         url="https://calculatecreator.com/calculators/brand-deal-rate/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         keywords={['brand deal calculator', 'sponsorship rates', 'influencer pricing', 'tiktok brand deals']}
         personAuthor={getPersonAuthorForSchema('brand-deal-rate')}
       />

@@ -47,7 +47,7 @@ export default function SponsorshipROICalculatorPage() {
         description="Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations."
         url="https://calculatecreator.com/calculators/sponsorship-roi/"
         datePublished="2024-07-12"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator']}
       />
       <FAQSchema faqs={faqData} />

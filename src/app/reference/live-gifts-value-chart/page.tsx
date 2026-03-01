@@ -45,7 +45,7 @@ export default function LiveGiftsValueChartPage() {
         description="Complete chart of all TikTok LIVE gift values, coin costs, creator earnings (50% split), and diamonds to USD conversion rates."
         url="https://calculatecreator.com/reference/live-gifts-value-chart/"
         datePublished="2024-01-20"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
       <nav className="bg-white border-b border-neutral-200 py-3">

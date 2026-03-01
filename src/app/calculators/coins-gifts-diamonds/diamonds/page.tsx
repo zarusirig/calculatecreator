@@ -12,7 +12,7 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Diamonds Calculator",
+  title: "TikTok Diamonds to USD Calculator 2026",
   description: "Use this TikTok diamonds calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok diamond calculator', 'diamonds to usd', 'tiktok live earnings', 'diamond converter', 'gift value calculator'],
   alternates: {

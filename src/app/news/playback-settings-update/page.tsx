@@ -21,7 +21,7 @@ export default function PlaybackSettingsUpdatePage() {
         description="TikTok added new playback options including 'Disable HDR videos' and 'Display object tags,' giving users more control over their viewing experience."
         url="https://calculatecreator.com/news/playback-settings-update/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-features-1024.webp"
         keywords={['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features']}
       />

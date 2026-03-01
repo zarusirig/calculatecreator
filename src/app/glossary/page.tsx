@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "TikTok Glossary for Creator Earnings and Growth Guide",
@@ -339,6 +340,7 @@ export default function GlossaryPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-5xl">
+          <Breadcrumb items={[{ label: 'Glossary', href: '/glossary/' }]} />
           <h1 className="text-display-sm font-bold text-neutral-900">Creator Glossary</h1>
           <p className="mt-4 max-w-3xl text-body-md text-neutral-700">TikTok creators: 
             This glossary defines key monetization, analytics, and creator-business terms used
@@ -365,8 +367,8 @@ export default function GlossaryPage() {
             <h2 className="text-heading-md font-semibold text-neutral-900">Related resources</h2>
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
               <li>
-                <Link href="/tools/" className="link">
-                  Tools Directory
+                <Link href="/calculators/" className="link">
+                  Calculators Directory
                 </Link>{' '}
                 for calculator workflows.
               </li>

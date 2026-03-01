@@ -41,7 +41,7 @@ export default function TikTokVsInstagramIncomePage() {
         description="Complete comparison of creator earnings on TikTok vs Instagram. Monetization options, brand deal rates, and which platform is better for your niche."
         url="https://calculatecreator.com/comparisons/tiktok-vs-instagram-income/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok Creator Income"
         subjectB="Instagram Creator Income"
         faqs={faqs}

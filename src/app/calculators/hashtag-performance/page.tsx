@@ -47,7 +47,7 @@ export default function HashtagPerformanceCalculatorPage() {
         description="Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy for maximum discovery."
         url="https://calculatecreator.com/calculators/hashtag-performance/"
         datePublished="2024-02-28"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags']}
       />
       <FAQSchema faqs={faqData} />

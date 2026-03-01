@@ -72,7 +72,7 @@ export default function WatchTimeCalculatorPage() {
         description="Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success."
         url="https://calculatecreator.com/calculators/watch-time/"
         datePublished="2024-04-18"
-        dateModified="2025-12-05"
+        dateModified="2026-03-01"
         keywords={['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time']}
       />
       <FAQSchema faqs={faqData} />

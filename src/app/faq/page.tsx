@@ -73,9 +73,9 @@ const faqs = [
       'No. CalculateCreator provides educational estimates and planning tools. Results should not be interpreted as financial, legal, tax, accounting, or investment advice. Platform rates and payouts can shift quickly. For decisions with legal or tax impact, consult a qualified advisor licensed in your jurisdiction.',
   },
   {
-    question: 'Why are there both /calculators/ and /tools/ routes?',
+    question: 'Are calculator URLs standardized to one route?',
     answer:
-      'We maintain the long-standing /calculators/ URL structure while rolling out a newer /tools/ experience. This protects internal linking integrity and avoids premature migration risk. Where duplicate tool experiences exist, canonical strategy is applied so search engines understand preferred URLs. We will revisit full URL consolidation only after adequate performance and indexing data is available.',
+      'Yes. /calculators/ is the primary route family for tool discovery and individual calculators. Legacy /tools/ aliases may still resolve in some contexts, but they are treated as redirects to the canonical /calculators/ paths so internal links and indexation signals stay consistent.',
   },
   {
     question: 'How can I stay updated when policies or calculators change?',

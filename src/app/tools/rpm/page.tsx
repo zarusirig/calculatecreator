@@ -3,12 +3,17 @@ import Link from 'next/link';
 import { ToolPageTemplate } from '@/components/tools/ToolPageTemplate';
 import { RpmToolExperience } from '@/components/tools/RpmToolExperience';
 import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
+import { CalculatorSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Rpm Calculator 2026",
+  title: "TikTok RPM Calculator for Creators 2026",
   description: "Use this TikTok rpm calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/rpm/',
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 
@@ -38,6 +43,12 @@ const faqItems = [
 export default function RpmToolPage() {
   return (
     <>
+      <CalculatorSchema
+        name="TikTok RPM Calculator"
+        description="Estimate TikTok revenue per 1,000 views and compare monetization efficiency across scenarios."
+        url="https://calculatecreator.com/calculators/rpm/"
+        keywords={['tiktok rpm calculator', 'creator rpm', 'revenue per 1000 views']}
+      />
       <FAQPageSchema
         faqs={faqItems}
         title="RPM Calculator FAQs"
@@ -47,8 +58,8 @@ export default function RpmToolPage() {
 
       <ToolPageTemplate
         breadcrumbs={[
-          { label: 'Tools', href: '/tools/' },
-          { label: 'TikTok', href: '/tools/' },
+          { label: 'Calculators', href: '/calculators/' },
+          { label: 'TikTok', href: '/calculators/' },
           { label: 'RPM Calculator' },
         ]}
         title="RPM Calculator"

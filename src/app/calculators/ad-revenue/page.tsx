@@ -48,7 +48,7 @@ export default function AdRevenueCalculatorPage() {
         description="Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency."
         url="https://calculatecreator.com/calculators/ad-revenue/"
         datePublished="2024-03-01"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator']}
       />
       <FAQSchema faqs={faqData} />

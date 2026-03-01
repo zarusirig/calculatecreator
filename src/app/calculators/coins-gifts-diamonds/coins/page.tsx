@@ -12,7 +12,7 @@ import { ToolExplanationSection } from '@/components/calculator/ToolExplanationS
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Coins Calculator 2026",
+  title: "TikTok Coins to USD Calculator 2026",
   description: "Use this TikTok coins calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok coins calculator', 'coins to usd', 'tiktok coin value', 'tiktok gift calculator', 'coins converter'],
   alternates: {

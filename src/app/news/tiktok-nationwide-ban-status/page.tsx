@@ -21,7 +21,7 @@ export default function TikTokNationwideBanStatusPage() {
         description="While a nationwide TikTok ban technically took effect on January 19, 2026, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating."
         url="https://calculatecreator.com/news/tiktok-nationwide-ban-status/"
         datePublished="2025-11-01"
-        dateModified="2025-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-regulatory-1024.webp"
         keywords={['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news']}
       />

@@ -21,7 +21,7 @@ export default function AgeSpecificPrivacyFeaturesPage() {
         description="TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements."
         url="https://calculatecreator.com/news/age-specific-privacy-features/"
         datePublished="2026-02-01"
-        dateModified="2026-02-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-safety-1024.webp"
         keywords={['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection']}
       />

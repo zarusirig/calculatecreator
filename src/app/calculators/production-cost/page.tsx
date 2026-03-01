@@ -47,7 +47,7 @@ export default function ProductionCostCalculatorPage() {
         description="Calculate content production costs for TikTok videos. Budget equipment, editing, and time costs to understand your true content investment."
         url="https://calculatecreator.com/calculators/production-cost/"
         datePublished="2024-05-20"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['production cost calculator', 'content creation cost', 'video production budget', 'creator expenses']}
       />
       <FAQSchema faqs={faqData} />

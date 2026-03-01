@@ -11,7 +11,7 @@ import { ToolExplanationSection } from '@/components/calculator/ToolExplanationS
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Tax Calculator 2026",
+  title: "TikTok Creator Tax Calculator 2026",
   description: "Use this TikTok tax calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
   alternates: {
@@ -46,7 +46,7 @@ export default function CreatorTaxCalculatorPage() {
         description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
         url="https://calculatecreator.com/calculators/utility-tools/tax/"
         datePublished="2024-01-20"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator']}
       />
       <FAQSchema faqs={faqData} />

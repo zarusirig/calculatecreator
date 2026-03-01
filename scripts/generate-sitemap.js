@@ -7,6 +7,60 @@ const SITE_URL = 'https://calculatecreator.com';
 const APP_DIR = path.join(__dirname, '..', 'src', 'app');
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
 const OUTPUT = path.join(__dirname, '..', 'public', 'sitemap.xml');
+const FIREBASE_CONFIG = path.join(__dirname, '..', 'firebase.json');
+const EXCLUDED_ROUTE_PATTERNS = [
+  /^\/404\/$/,
+  /^\/bookmarks\/$/,
+  /^\/search\/$/,
+  /^\/calculator\/(de|es|fr|it|my|pt-br)\/$/,
+  /^\/calculators\/fun-niche\/$/,
+  /^\/calculators\/fun-niche\/moon-phase\/$/,
+];
+
+function normalizeRoute(route) {
+  if (typeof route !== 'string' || !route.startsWith('/')) return null;
+  const pathOnly = route.split(/[?#]/)[0];
+  if (pathOnly === '/') return '/';
+  return pathOnly.endsWith('/') ? pathOnly : `${pathOnly}/`;
+}
+
+function expandOptionalSlash(source) {
+  if (typeof source !== 'string') return [];
+  if (source.includes('{,/}')) {
+    const base = source.replace('{,/}', '');
+    return [base, `${base}/`];
+  }
+  return [source];
+}
+
+function isLiteralInternalPath(route) {
+  if (typeof route !== 'string') return false;
+  const stripped = route.replace('{,/}', '');
+  return stripped.startsWith('/') && !/[\\*:\(\)]/.test(stripped);
+}
+
+function loadRedirectSourceRoutes() {
+  const routes = new Set();
+  if (!fs.existsSync(FIREBASE_CONFIG)) return routes;
+
+  try {
+    const firebase = JSON.parse(fs.readFileSync(FIREBASE_CONFIG, 'utf-8'));
+    const redirects = firebase?.hosting?.redirects || [];
+    for (const rule of redirects) {
+      if (!isLiteralInternalPath(rule?.source)) continue;
+      for (const variant of expandOptionalSlash(rule.source)) {
+        const normalized = normalizeRoute(variant);
+        if (normalized) routes.add(normalized);
+      }
+    }
+  } catch (error) {
+    console.warn(`Unable to parse ${FIREBASE_CONFIG}: ${error.message}`);
+  }
+
+  return routes;
+}
+
+const REDIRECT_SOURCE_ROUTES = loadRedirectSourceRoutes();
 
 // Priority and changefreq rules based on route patterns
 function getRouteConfig(route) {
@@ -136,53 +190,63 @@ function mdxToRoute(filePath) {
   return route;
 }
 
+function shouldIncludeRoute(route) {
+  return !EXCLUDED_ROUTE_PATTERNS.some((pattern) => pattern.test(route))
+    && !REDIRECT_SOURCE_ROUTES.has(route);
+}
+
 function generate() {
   console.log('Generating sitemap...');
+  console.log(`Loaded ${REDIRECT_SOURCE_ROUTES.size} redirect source routes from firebase.json`);
 
   // Pass 1: Static page.tsx files (existing pages)
   const pageFiles = findPages(APP_DIR);
   console.log(`Found ${pageFiles.length} static pages`);
 
-  const staticUrls = pageFiles.map((filePath) => {
-    const route = fileToRoute(filePath);
-    const lastmod = getLastModified(filePath);
-    const config = getRouteConfig(route);
-    return { route, lastmod, ...config };
-  });
+  const staticUrls = pageFiles
+    .map((filePath) => {
+      const route = fileToRoute(filePath);
+      const lastmod = getLastModified(filePath);
+      const config = getRouteConfig(route);
+      return { route, lastmod, ...config };
+    })
+    .filter((entry) => shouldIncludeRoute(entry.route));
 
   // Pass 2: MDX content files (new articles)
   const mdxFiles = findMdxFiles(CONTENT_DIR);
   console.log(`Found ${mdxFiles.length} MDX articles`);
 
-  const mdxUrls = mdxFiles.map((filePath) => {
-    const route = mdxToRoute(filePath);
-    const lastmod = getLastModified(filePath);
+  const mdxUrls = mdxFiles
+    .map((filePath) => {
+      const route = mdxToRoute(filePath);
+      const lastmod = getLastModified(filePath);
 
-    // Read frontmatter to get priority and dates
-    let priority = '0.6';
-    let changefreq = 'monthly';
-    try {
-      const raw = fs.readFileSync(filePath, 'utf-8');
-      const { data } = matter(raw);
-      if (data.priorityScore) {
-        priority = (data.priorityScore / 100).toFixed(1);
-      }
-      if (data.updatedDate) {
-        const updatedDate = new Date(data.updatedDate).toISOString().split('T')[0];
-        // Use the more recent of git date and frontmatter date
-        if (updatedDate > lastmod) {
-          return { route, lastmod: updatedDate, priority, changefreq };
+      // Read frontmatter to get priority and dates
+      let priority = '0.6';
+      let changefreq = 'monthly';
+      try {
+        const raw = fs.readFileSync(filePath, 'utf-8');
+        const { data } = matter(raw);
+        if (data.priorityScore) {
+          priority = (data.priorityScore / 100).toFixed(1);
         }
+        if (data.updatedDate) {
+          const updatedDate = new Date(data.updatedDate).toISOString().split('T')[0];
+          // Use the more recent of git date and frontmatter date
+          if (updatedDate > lastmod) {
+            return { route, lastmod: updatedDate, priority, changefreq };
+          }
+        }
+        if (data.section === 'core') {
+          changefreq = 'weekly';
+        }
+      } catch {
+        // Fall through with defaults
       }
-      if (data.section === 'core') {
-        changefreq = 'weekly';
-      }
-    } catch {
-      // Fall through with defaults
-    }
 
-    return { route, lastmod, priority, changefreq };
-  });
+      return { route, lastmod, priority, changefreq };
+    })
+    .filter((entry) => shouldIncludeRoute(entry.route));
 
   // Pass 3: Author profile pages (dynamic [authorSlug] routes skipped by findPages)
   const authorSlugs = [
@@ -193,12 +257,14 @@ function generate() {
     'emily-thompson',
     'alex-martinez',
   ];
-  const authorUrls = authorSlugs.map((slug) => ({
-    route: `/authors/${slug}/`,
-    lastmod: new Date().toISOString().split('T')[0],
-    priority: '0.5',
-    changefreq: 'monthly',
-  }));
+  const authorUrls = authorSlugs
+    .map((slug) => ({
+      route: `/authors/${slug}/`,
+      lastmod: new Date().toISOString().split('T')[0],
+      priority: '0.5',
+      changefreq: 'monthly',
+    }))
+    .filter((entry) => shouldIncludeRoute(entry.route));
   console.log(`Added ${authorUrls.length} author pages`);
 
   // Combine and sort

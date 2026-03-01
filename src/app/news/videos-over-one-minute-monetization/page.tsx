@@ -21,7 +21,7 @@ export default function VideosOverOneMinuteMonetizationPage() {
         description="The Creator Rewards Program exclusively focuses on videos longer than one minute, pushing creators toward longer-form content."
         url="https://calculatecreator.com/news/videos-over-one-minute-monetization/"
         datePublished="2026-01-01"
-        dateModified="2026-01-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-monetization-1024.webp"
         keywords={['tiktok monetization', 'video length', 'one minute videos', 'creator rewards eligibility', 'long form content']}
       />

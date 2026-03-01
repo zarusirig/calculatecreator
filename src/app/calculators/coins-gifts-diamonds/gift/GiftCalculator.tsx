@@ -109,7 +109,7 @@ export function GiftCalculator() {
           'diamond earnings',
         ]}
         datePublished="2024-01-25"
-        dateModified="2026-01-27"
+        dateModified="2026-03-01"
       />
       <FAQSchema faqs={faqData} />
       <div className="container-custom">

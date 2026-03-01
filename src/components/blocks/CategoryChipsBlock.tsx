@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 const chips = [
-  { label: 'Platform: TikTok', href: '/tools/' },
-  { label: 'Goal: Earnings', href: '/tools/' },
-  { label: 'Goal: Engagement', href: '/tools/' },
-  { label: 'Goal: Growth', href: '/tools/' },
-  { label: 'Metric: RPM', href: '/tools/' },
-  { label: 'Metric: ROI', href: '/tools/' },
+  { label: 'Platform: TikTok', href: '/calculators/' },
+  { label: 'Goal: Earnings', href: '/calculators/' },
+  { label: 'Goal: Engagement', href: '/calculators/' },
+  { label: 'Goal: Growth', href: '/calculators/' },
+  { label: 'Metric: RPM', href: '/calculators/' },
+  { label: 'Metric: ROI', href: '/calculators/' },
 ];
 
 export function CategoryChipsBlock() {

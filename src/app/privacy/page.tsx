@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'February 17, 2026';
+const LAST_UPDATED = 'March 1, 2026';
 const privacySchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',

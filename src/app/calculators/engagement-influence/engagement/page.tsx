@@ -14,7 +14,7 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 
 export const metadata: Metadata = {
-  title: "TikTok Engagement Calculator",
+  title: "TikTok Engagement Rate Calculator 2026",
   description: "Use this TikTok engagement calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['engagement rate calculator', 'tiktok engagement', 'engagement rate formula', 'good engagement rate', 'tiktok analytics'],
   alternates: {
@@ -59,7 +59,7 @@ export default function EngagementRateCalculatorPage() {
         description="Calculate your TikTok engagement rate and compare to industry benchmarks. Essential for brand deals, algorithm performance, and growth tracking."
         url="https://calculatecreator.com/calculators/engagement-rate/"
         datePublished="2024-01-15"
-        dateModified="2025-12-04"
+        dateModified="2026-03-01"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok analytics', 'social media engagement']}
       />
       <FAQSchema faqs={faqData} />

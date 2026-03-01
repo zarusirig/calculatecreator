@@ -80,7 +80,7 @@ export default function TikTokAdCostCalculatorPage() {
         description="Estimate TikTok advertising costs based on your campaign goals, targeting, and ad format. Calculate CPM, CPC, and total budget."
         url="https://calculatecreator.com/calculators/tiktok-ad-cost/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         keywords={['tiktok ad cost', 'tiktok advertising', 'tiktok cpm', 'tiktok marketing budget']}
       />
       <FAQSchema faqs={faqData} />

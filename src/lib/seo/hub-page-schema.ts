@@ -30,7 +30,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     items = [],
     faqs,
     datePublished = '2025-01-01',
-    dateModified = '2026-02-01',
+    dateModified = '2026-03-01',
   } = config;
 
   // Schema 1: CollectionPage

@@ -21,7 +21,7 @@ export default function ProductSubscriptionsFeaturePage() {
         description="TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers."
         url="https://calculatecreator.com/news/product-subscriptions-feature/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
         keywords={['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features']}
       />

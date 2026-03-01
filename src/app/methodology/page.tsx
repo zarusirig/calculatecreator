@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "TikTok Methodology for Creator Earnings and Growth",
@@ -14,6 +15,7 @@ export default function MethodologyPage() {
   return (
     <div className="pb-16 pt-10">
       <Container className="max-w-4xl">
+        <Breadcrumb items={[{ label: 'Methodology', href: '/methodology/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">Methodology</h1>
         <p className="mt-4 text-body-md text-neutral-700">TikTok creators: 
           CalculateCreator provides directional estimates, not guarantees. This page explains how we
@@ -118,16 +120,20 @@ export default function MethodologyPage() {
           </p>
         </section>
 
-        <div className="mt-10 text-sm text-neutral-500">
-          <p>
-            Related:{' '}
-            <Link href="/corrections-policy/" className="text-primary-600 underline">Corrections Policy</Link>
-            {' · '}
-            <Link href="/sources-policy/" className="text-primary-600 underline">Sources Policy</Link>
-            {' · '}
-            <Link href="/editorial-policy/" className="text-primary-600 underline">Editorial Policy</Link>
-          </p>
-        </div>
+        <section className="mt-10 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            <Link href="/corrections-policy/" className="btn btn-secondary btn-sm">
+              Corrections Policy
+            </Link>
+            <Link href="/sources-policy/" className="btn btn-secondary btn-sm">
+              Sources Policy
+            </Link>
+            <Link href="/editorial-policy/" className="btn btn-secondary btn-sm">
+              Editorial Policy
+            </Link>
+          </div>
+        </section>
       </Container>
     </div>
   );

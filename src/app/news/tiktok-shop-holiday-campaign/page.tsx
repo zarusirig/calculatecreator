@@ -21,7 +21,7 @@ export default function TikTokShopHolidayCampaignPage() {
         description="TikTok Shop announces its largest holiday shopping campaign in November 2026. It combines creator storytelling with in-app purchasing."
         url="https://calculatecreator.com/news/tiktok-shop-holiday-campaign/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
         keywords={['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy']}
       />

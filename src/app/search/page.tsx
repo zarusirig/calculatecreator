@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "TikTok Search for Creator Earnings and Growth Guide",
   description: "Explore TikTok search content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  alternates: {
+    canonical: 'https://calculatecreator.com/search/',
+  },
   robots: {
     index: false,
     follow: false,
@@ -19,6 +23,7 @@ export default function SearchPage() {
   return (
     <div className="pb-16 pt-10">
       <Container className="max-w-3xl">
+        <Breadcrumb items={[{ label: 'Search', href: '/search/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">Search</h1>
         <p className="mt-3 text-body-md text-neutral-600">
           TikTok creators can use this page as a structured search bridge while on-site search is
@@ -58,7 +63,7 @@ export default function SearchPage() {
           income and optimization tasks:
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <Link href="/tools/" className="btn btn-secondary btn-sm">
+          <Link href="/calculators/" className="btn btn-secondary btn-sm">
             All TikTok Calculators
           </Link>
           <Link href="/guides/" className="btn btn-secondary btn-sm">
@@ -95,8 +100,31 @@ export default function SearchPage() {
         <p className="mt-3 text-body-md text-neutral-600">
           Consistency in search habits improves decision speed and reduces reporting errors over time.
         </p>
+        <section className="mt-8 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+          <p className="mt-3 text-body-sm text-neutral-700">
+            Use these navigation pages to jump between tools, saved workflows, and the full site map.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/bookmarks/" className="btn btn-secondary btn-sm">
+              Saved Workflows
+            </Link>
+            <Link href="/sitemap/" className="btn btn-secondary btn-sm">
+              HTML Sitemap
+            </Link>
+            <Link href="/tools/" className="btn btn-secondary btn-sm">
+              Tools Alias
+            </Link>
+            <Link href="/calculators/" className="btn btn-secondary btn-sm">
+              Calculator Directory
+            </Link>
+            <Link href="/guides/" className="btn btn-secondary btn-sm">
+              Creator Guides
+            </Link>
+          </div>
+        </section>
         <div className="mt-6">
-          <Link href="/tools/" className="btn btn-primary btn-md">
+          <Link href="/calculators/" className="btn btn-primary btn-md">
             Open tools
           </Link>
         </div>

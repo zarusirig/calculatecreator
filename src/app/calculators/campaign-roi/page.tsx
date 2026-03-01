@@ -51,7 +51,7 @@ export default function CampaignROICalculatorPage() {
         description="Calculate return on investment for your TikTok marketing campaigns to measure profitability and performance."
         url="https://calculatecreator.com/calculators/campaign-roi/"
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['campaign roi calculator', 'tiktok roi', 'roas calculator', 'marketing roi']}
       />
       <FAQSchema faqs={faqs} />

@@ -21,7 +21,7 @@ export default function AlgorithmEightMajorShiftsPage() {
         description="TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior."
         url="https://calculatecreator.com/news/algorithm-eight-major-shifts/"
         datePublished="2026-01-03"
-        dateModified="2026-01-03"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-algorithm-1024.webp"
         keywords={['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes']}
       />

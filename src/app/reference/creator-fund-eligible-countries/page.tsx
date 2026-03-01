@@ -250,7 +250,7 @@ export default function CreatorFundEligibleCountriesPage() {
         description="Complete list of TikTok Creator Fund eligible countries with requirements, payment methods, and alternatives for ineligible regions."
         url="https://calculatecreator.com/reference/creator-fund-eligible-countries/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
       {/* Breadcrumb */}

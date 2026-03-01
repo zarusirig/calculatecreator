@@ -22,7 +22,7 @@ export default function TikTokSeriesMonetizationPage() {
         description="How to monetize with TikTok Series (paywalled content). Requirements, pricing strategies, earnings potential, and best practices for premium content."
         url="https://calculatecreator.com/guides/tiktok-series-monetization/"
         datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['tiktok series', 'paywalled content tiktok', 'tiktok premium content', 'series monetization']}
       />
       <div className="min-h-screen bg-neutral-50">

@@ -15,7 +15,7 @@ import { EngagementRateCalculatorWidget } from '@/components/calculators/engagem
 
 export const metadata: Metadata = {
   title: "TikTok Engagement Rate Calculator — Check Your Rate Free",
-  description: "Calculate your TikTok engagement rate instantly. Compare against 2026 benchmarks by niche and follower count. Used by 50,000+ creators to optimize content strategy.",
+  description: "Use this TikTok engagement rate calculator to benchmark your rate by niche and follower tier with 2026 data for pricing, content, and growth decisions.",
   keywords: ['tiktok engagement rate calculator', 'engagement rate', 'tiktok analytics', 'engagement calculator', 'tiktok metrics', 'influencer engagement'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/engagement-rate/',
@@ -81,7 +81,7 @@ export default function EngagementRateCalculatorPage() {
         description="Calculate your TikTok engagement rate and compare against 2026 benchmarks. Understand what brands look for when evaluating creator partnerships."
         url="https://calculatecreator.com/calculators/engagement-rate/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'influencer analytics']}
         personAuthor={getPersonAuthorForSchema('engagement-rate')}
       />

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Payout Calculator 2026",
+  title: "TikTok Creator Payout Calculator 2026",
   description: "Use this TikTok payout calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok payout calculator', 'creator earnings after fees', 'tiktok platform fees', 'live gift payout', 'net earnings calculator'],
   alternates: {

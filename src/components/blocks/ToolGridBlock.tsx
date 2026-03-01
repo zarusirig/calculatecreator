@@ -37,7 +37,7 @@ export function ToolGridBlock({
             placeholder="Search calculators by goal, platform, or metric"
             className="w-full border-0 p-0 text-sm text-neutral-600 placeholder:text-neutral-400 focus:outline-none"
           />
-          <Link href="/tools/" className="btn btn-secondary btn-sm">
+          <Link href="/calculators/" className="btn btn-secondary btn-sm">
             Search
           </Link>
         </div>
@@ -58,7 +58,7 @@ export function ToolGridBlock({
 
       {showViewAll ? (
         <div className="mt-8">
-          <Link href="/tools/" className="btn btn-secondary btn-md">
+          <Link href="/calculators/" className="btn btn-secondary btn-md">
             View all calculators
           </Link>
         </div>

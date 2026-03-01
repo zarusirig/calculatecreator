@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/fun-niche/',
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const calculators = [

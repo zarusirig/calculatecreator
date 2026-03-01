@@ -47,7 +47,7 @@ export default function MultiPlatformEarningsCalculatorPage() {
         description="Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media."
         url="https://calculatecreator.com/calculators/multi-platform-earnings/"
         datePublished="2024-02-15"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income']}
       />
       <FAQSchema faqs={faqData} />

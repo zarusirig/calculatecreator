@@ -48,7 +48,7 @@ export default function FollowerGrowthCalculatorPage() {
         description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
         url="https://calculatecreator.com/calculators/follower-growth/"
         datePublished="2024-01-25"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics']}
       />
       <FAQSchema faqs={faqData} />

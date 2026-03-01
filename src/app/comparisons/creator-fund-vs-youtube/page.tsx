@@ -43,7 +43,7 @@ export default function CreatorFundVsYouTubePage() {
         description="Complete comparison of TikTok Creator Fund vs YouTube monetization. RPM rates, requirements, earnings potential, and which platform pays more."
         url="https://calculatecreator.com/comparisons/creator-fund-vs-youtube/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok Creator Fund"
         subjectB="YouTube Partner Program"
         faqs={faqs}

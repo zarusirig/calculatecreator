@@ -21,7 +21,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'tiktok-creator-fund',
     keywords: ['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment'],
     datePublished: '2024-01-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
     author: 'michael-chen',
     reviewedBy: 'sarah-johnson',
@@ -32,7 +32,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'engagement-rate',
     keywords: ['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'engagement percentage'],
     datePublished: '2024-01-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'brand-deal-rate': {
@@ -41,7 +41,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'brand-deal-rate',
     keywords: ['brand deal calculator', 'influencer rate calculator', 'sponsored post pricing', 'tiktok sponsorship rates'],
     datePublished: '2024-01-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'live-gifts': {
@@ -50,7 +50,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'live-gifts',
     keywords: ['tiktok live gifts calculator', 'tiktok diamonds', 'live stream earnings', 'gift conversion'],
     datePublished: '2024-01-20',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'tiktok-money': {
@@ -59,7 +59,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'tiktok-money',
     keywords: ['tiktok money calculator', 'tiktok earnings', 'how much money tiktok', 'tiktok income calculator'],
     datePublished: '2024-01-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'rpm': {
@@ -68,7 +68,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'rpm',
     keywords: ['tiktok rpm calculator', 'revenue per mille', 'tiktok rpm rate', 'views to earnings'],
     datePublished: '2024-01-20',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'commerce-ads/shop-profit': {
@@ -77,7 +77,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'commerce-ads/shop-profit',
     keywords: ['tiktok shop calculator', 'tiktok affiliate commission', 'shop earnings', 'product commission'],
     datePublished: '2024-02-01',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'coins': {
@@ -86,7 +86,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'coins',
     keywords: ['tiktok coins calculator', 'coins to money', 'diamond conversion', 'tiktok currency'],
     datePublished: '2024-01-25',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'video-performance': {
@@ -95,7 +95,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'video-performance',
     keywords: ['video performance calculator', 'tiktok views predictor', 'video success calculator'],
     datePublished: '2024-02-10',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'follower-growth': {
@@ -104,7 +104,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'follower-growth',
     keywords: ['follower growth calculator', 'tiktok growth projector', 'follower prediction'],
     datePublished: '2024-02-05',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'watch-time': {
@@ -113,7 +113,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'watch-time',
     keywords: ['watch time calculator', 'tiktok completion rate', 'average watch time'],
     datePublished: '2024-02-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'viral-potential': {
@@ -122,7 +122,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'viral-potential',
     keywords: ['viral potential calculator', 'tiktok viral score', 'virality predictor'],
     datePublished: '2024-02-20',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'completion-rate': {
@@ -131,7 +131,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'completion-rate',
     keywords: ['completion rate calculator', 'tiktok completion', 'watch through rate'],
     datePublished: '2024-02-25',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'ad-revenue': {
@@ -140,7 +140,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'ad-revenue',
     keywords: ['tiktok ad revenue', 'ad earnings calculator', 'tiktok ads calculator'],
     datePublished: '2024-03-01',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'sponsorship-roi': {
@@ -149,7 +149,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'sponsorship-roi',
     keywords: ['sponsorship roi calculator', 'brand deal roi', 'partnership calculator'],
     datePublished: '2024-03-05',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'content-value': {
@@ -158,7 +158,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'content-value',
     keywords: ['content value calculator', 'post value', 'tiktok content worth'],
     datePublished: '2024-03-10',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'niche-profitability': {
@@ -167,7 +167,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'niche-profitability',
     keywords: ['niche profitability', 'tiktok niche calculator', 'best niches'],
     datePublished: '2024-03-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'production-cost': {
@@ -176,7 +176,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'production-cost',
     keywords: ['production cost calculator', 'content cost', 'video production roi'],
     datePublished: '2024-03-20',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'utility-tools/tax': {
@@ -185,7 +185,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'utility-tools/tax',
     keywords: ['creator tax calculator', 'influencer taxes', 'tiktok income tax'],
     datePublished: '2024-03-25',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
 
   },
   'break-even': {
@@ -194,7 +194,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'break-even',
     keywords: ['break-even calculator', 'tiktok break even', 'roi calculator'],
     datePublished: '2024-03-30',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'follower-conversion': {
     name: 'TikTok Follower Conversion Calculator',
@@ -202,7 +202,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'follower-conversion',
     keywords: ['follower conversion calculator', 'view to follower rate', 'conversion rate'],
     datePublished: '2024-04-01',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'share-ratio': {
     name: 'TikTok Share-to-View Ratio Calculator',
@@ -210,7 +210,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'share-ratio',
     keywords: ['share ratio calculator', 'share to view', 'tiktok shares'],
     datePublished: '2024-04-05',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'save-rate': {
     name: 'TikTok Save Rate Calculator',
@@ -218,7 +218,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'save-rate',
     keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate'],
     datePublished: '2024-04-10',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'profile-visit-rate': {
     name: 'TikTok Profile Visit Rate Calculator',
@@ -226,7 +226,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'profile-visit-rate',
     keywords: ['profile visit rate', 'profile views calculator', 'visitor rate'],
     datePublished: '2024-04-15',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'hashtag-performance': {
     name: 'TikTok Hashtag Performance Calculator',
@@ -234,7 +234,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'hashtag-performance',
     keywords: ['hashtag calculator', 'hashtag performance', 'tiktok hashtags'],
     datePublished: '2024-04-20',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'posting-time': {
     name: 'TikTok Best Posting Time Calculator',
@@ -242,7 +242,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'posting-time',
     keywords: ['best posting time', 'tiktok posting schedule', 'optimal post time'],
     datePublished: '2024-04-25',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'content-calendar-roi': {
     name: 'TikTok Content Calendar ROI Calculator',
@@ -250,7 +250,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'content-calendar-roi',
     keywords: ['content calendar roi', 'posting strategy roi', 'content planning'],
     datePublished: '2024-05-01',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'multi-platform-earnings': {
     name: 'Multi-Platform Earnings Comparison Calculator',
@@ -258,7 +258,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'multi-platform-earnings',
     keywords: ['multi platform calculator', 'platform comparison', 'cross platform earnings'],
     datePublished: '2024-05-05',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'cpm-cpv': {
     name: 'TikTok CPM/CPV Calculator',
@@ -266,7 +266,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'cpm-cpv',
     keywords: ['tiktok cpm calculator', 'cpv calculator', 'ad cost calculator', 'tiktok advertising'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'affiliate-commission': {
     name: 'TikTok Affiliate Commission Calculator',
@@ -274,7 +274,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'affiliate-commission',
     keywords: ['tiktok affiliate calculator', 'shop affiliate earnings', 'commission calculator', 'affiliate income'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'conversion-rate': {
     name: 'TikTok Conversion Rate Calculator',
@@ -282,7 +282,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'conversion-rate',
     keywords: ['conversion rate calculator', 'tiktok conversion', 'traffic conversion', 'conversion optimization'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'customer-acquisition-cost': {
     name: 'TikTok Customer Acquisition Cost (CAC) Calculator',
@@ -290,7 +290,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'customer-acquisition-cost',
     keywords: ['cac calculator', 'customer acquisition cost', 'tiktok cac', 'marketing roi'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'lifetime-value': {
     name: 'TikTok Customer Lifetime Value (LTV) Calculator',
@@ -298,7 +298,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'lifetime-value',
     keywords: ['ltv calculator', 'customer lifetime value', 'customer value', 'retention metrics'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'campaign-roi': {
     name: 'TikTok Campaign ROI Calculator',
@@ -306,7 +306,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'campaign-roi',
     keywords: ['campaign roi calculator', 'tiktok roi', 'marketing roi', 'roas calculator'],
     datePublished: '2025-11-13',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
   'diamond-converter': {
     name: 'TikTok Diamond Converter',
@@ -314,7 +314,7 @@ export const CALCULATOR_SCHEMAS: Record<string, CalculatorSchemaConfig> = {
     slug: 'diamond-converter',
     keywords: ['tiktok diamond converter', 'diamonds to money', 'tiktok payout', 'diamond value'],
     datePublished: '2024-01-25',
-    dateModified: '2025-11-13',
+    dateModified: '2026-03-01',
   },
 };
 

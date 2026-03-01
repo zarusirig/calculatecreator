@@ -72,7 +72,7 @@ export default function ProfileVisitRateCalculatorPage() {
         description="Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content."
         url="https://calculatecreator.com/calculators/profile-visit-rate/"
         datePublished="2024-04-10"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator']}
       />
       <FAQSchema faqs={faqData} />

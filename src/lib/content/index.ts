@@ -6,6 +6,13 @@ import { ArticleFrontmatter, ArticleData } from './types';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
+function normalizeInternalPath(route?: string): string {
+  if (!route) return '';
+  const withLeadingSlash = route.startsWith('/') ? route : `/${route}`;
+  const trimmed = withLeadingSlash.replace(/\/+$/, '');
+  return trimmed || '/';
+}
+
 function sanitizeBlogContent(rawContent: string): string {
   const lines = rawContent.replace(/\r\n/g, '\n').split('\n');
   const firstSectionHeadingIndex = lines.findIndex(line => line.trim().startsWith('## '));
@@ -144,9 +151,12 @@ export function getAllArticles(): ArticleData[] {
 export function getArticleSlugsForDirectory(subdir: string): string[] {
   const dir = path.join(CONTENT_DIR, subdir);
   if (!fs.existsSync(dir)) return [];
-  return getMdxFiles(dir).map(filePath => {
-    return path.basename(filePath, '.mdx');
-  });
+  // Single-segment [articleSlug] routes must only include files directly in this directory.
+  // Nested files belong to catch-all routes and should not be emitted here.
+  return fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter(entry => entry.isFile() && entry.name.endsWith('.mdx'))
+    .map(entry => path.basename(entry.name, '.mdx'));
 }
 
 /**
@@ -165,8 +175,9 @@ export function getArticleSlugs(section: string): string[][] {
  * Get articles that link to a specific calculator
  */
 export function getArticlesByCalculator(calculatorPath: string): ArticleData[] {
+  const normalizedCalculatorPath = normalizeInternalPath(calculatorPath);
   return getAllArticles().filter(
-    article => article.frontmatter.parentCalculator === calculatorPath
+    article => normalizeInternalPath(article.frontmatter.parentCalculator) === normalizedCalculatorPath
   );
 }
 
@@ -175,10 +186,14 @@ export function getArticlesByCalculator(calculatorPath: string): ArticleData[] {
  */
 export function getRelatedArticleLinks(frontmatter: ArticleFrontmatter) {
   const allArticles = getAllArticles();
+  const normalizeArticlePath = (articlePath: string) => normalizeInternalPath(articlePath);
+
   const findByPath = (articlePath: string) => {
+    const normalizedArticlePath = normalizeArticlePath(articlePath);
     return allArticles.find(a => {
-      const fullPath = `/${a.frontmatter.category}/${a.frontmatter.slug}`;
-      return fullPath === articlePath || `/${a.frontmatter.slug}` === articlePath;
+      const fullPath = normalizeArticlePath(`/${a.frontmatter.category}/${a.frontmatter.slug}`);
+      const shortPath = normalizeArticlePath(`/${a.frontmatter.slug}`);
+      return fullPath === normalizedArticlePath || shortPath === normalizedArticlePath;
     });
   };
 

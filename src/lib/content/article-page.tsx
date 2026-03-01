@@ -80,6 +80,9 @@ export function createArticlePageExports(contentDir: string) {
     const canonicalPath = `/${section}/${frontmatter.slug}`;
     const title = normalizeSeoTitle(frontmatter.title, frontmatter.primaryKeyword);
     const description = normalizeSeoDescription(frontmatter.metaDescription, frontmatter.primaryKeyword);
+    const robots = frontmatter.noindex
+      ? { index: false, follow: false }
+      : undefined;
 
     return {
       title,
@@ -111,6 +114,7 @@ export function createArticlePageExports(contentDir: string) {
       alternates: {
         canonical: `https://calculatecreator.com${canonicalPath}/`,
       },
+      robots,
     };
   }
 
@@ -168,6 +172,9 @@ export function createCatchAllArticlePageExports(contentDir: string) {
     const canonicalPath = `/${section}/${slugPath}`;
     const title = normalizeSeoTitle(frontmatter.title, frontmatter.primaryKeyword);
     const description = normalizeSeoDescription(frontmatter.metaDescription, frontmatter.primaryKeyword);
+    const robots = frontmatter.noindex
+      ? { index: false, follow: false }
+      : undefined;
 
     return {
       title,
@@ -199,6 +206,7 @@ export function createCatchAllArticlePageExports(contentDir: string) {
       alternates: {
         canonical: `https://calculatecreator.com${canonicalPath}/`,
       },
+      robots,
     };
   }
 

@@ -10,7 +10,7 @@ interface CollectionSchemaProps {
   description: string;
   url: string;
   items: CollectionItem[];
-  collectionType?: 'Calculators' | 'Guides' | 'News';
+  collectionType?: 'Calculators' | 'Guides' | 'News' | 'Data';
 }
 
 export function CollectionSchema({
@@ -20,6 +20,13 @@ export function CollectionSchema({
   items,
   collectionType = 'Calculators',
 }: CollectionSchemaProps) {
+  const itemType =
+    collectionType === 'Calculators'
+      ? 'SoftwareApplication'
+      : collectionType === 'Data'
+        ? 'Dataset'
+        : 'Article';
+
   const collectionPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -56,7 +63,7 @@ export function CollectionSchema({
       '@type': 'ListItem',
       position: index + 1,
       item: {
-        '@type': collectionType === 'Calculators' ? 'SoftwareApplication' : 'Article',
+        '@type': itemType,
         name: item.name,
         description: item.description,
         url: item.url,

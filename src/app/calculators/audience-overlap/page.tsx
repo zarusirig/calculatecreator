@@ -12,7 +12,7 @@ import { AudienceOverlapCalculatorWidget } from '@/components/calculators/audien
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Audience Overlap Calculator — Analyze Shared Followers",
+  title: "TikTok Audience Overlap Calculator for Shared Followers",
   description: "Analyze audience overlap between TikTok accounts. Find shared followers, unique reach potential, and collaboration opportunities for creator partnerships.",
   keywords: ['audience overlap calculator', 'tiktok ad targeting', 'campaign optimization', 'ad audience analysis', 'targeting efficiency'],
   alternates: {
@@ -59,7 +59,7 @@ export default function AudienceOverlapCalculatorPage() {
         description="Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach."
         url="https://calculatecreator.com/calculators/audience-overlap/"
         datePublished="2024-01-15"
-        dateModified="2025-12-05"
+        dateModified="2026-03-01"
         keywords={['audience overlap', 'tiktok targeting', 'campaign optimization', 'audience analysis']}
       />
       <FAQSchema faqs={faqs} />

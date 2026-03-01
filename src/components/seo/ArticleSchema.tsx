@@ -12,8 +12,8 @@ export function ArticleSchema({
   description,
   url,
   category,
-  datePublished = '2026-01-15T00:00:00Z',
-  dateModified = '2026-01-27T00:00:00Z',
+  datePublished = '2026-03-01T00:00:00Z',
+  dateModified = '2026-03-01T00:00:00Z',
 }: ArticleSchemaProps) {
   const articleSchema = {
     '@context': 'https://schema.org',

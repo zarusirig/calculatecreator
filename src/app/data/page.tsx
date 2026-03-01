@@ -112,12 +112,6 @@ export default function DataIndexPage() {
           description: 'Benchmark ratios for measuring comment engagement relative to likes',
           insights: 'Healthy ratio: 1-5% (1-5 comments per 100 likes)',
         },
-        {
-          name: 'TikTok Comments Analysis',
-          url: '/metrics/tiktok-comments-to-likes-ratio',
-          description: 'Detailed TikTok comments-to-likes ratio benchmarks and optimization tips',
-          insights: 'Comment engagement signals high audience interest',
-        },
       ],
     },
   ];

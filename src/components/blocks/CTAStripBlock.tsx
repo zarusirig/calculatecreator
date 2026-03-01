@@ -16,7 +16,7 @@ export function CTAStripBlock() {
               Used only to calculate this result. Your inputs stay in your browser.
             </p>
           </div>
-          <Link href="/tools/" className="btn btn-primary btn-lg">
+          <Link href="/calculators/" className="btn btn-primary btn-lg">
             Explore tools
           </Link>
         </div>

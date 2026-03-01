@@ -15,6 +15,10 @@ export const metadata: Metadata = {
       'pt-br': 'https://calculatecreator.com/calculator/pt-br/',
     },
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'Kalkulator TikTok Malaysia | RPM 2026',
     description:
@@ -29,4 +33,3 @@ export const metadata: Metadata = {
     description: 'Kira pendapatan dengan RPM 2026. Percuma.',
   },
 };
-

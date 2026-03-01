@@ -61,7 +61,7 @@ export function Breadcrumb({
   return (
     <nav
       className={`flex items-center text-body-sm ${className}`}
-      aria-label="Breadcrumb navigation"
+      aria-label="Breadcrumb"
       itemScope
       itemType="https://schema.org/BreadcrumbList"
     >

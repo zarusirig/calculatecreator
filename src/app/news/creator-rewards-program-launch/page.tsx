@@ -21,7 +21,7 @@ export default function CreatorRewardsProgramLaunchPage() {
         description="TikTok officially discontinued the Creator Fund and launched the Creator Rewards Program with dramatically increased requirements: 10,000 followers and 100,000 monthly views."
         url="https://calculatecreator.com/news/creator-rewards-program-launch/"
         datePublished="2026-01-01"
-        dateModified="2026-01-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-monetization-1024.webp"
         keywords={['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program']}
       />

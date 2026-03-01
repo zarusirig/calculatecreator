@@ -33,7 +33,7 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     rpmMax,
     guideTitle,
     datePublished = '2025-01-15',
-    dateModified = '2026-02-01',
+    dateModified = '2026-03-01',
   } = config;
 
   // Schema 1: WebApplication

@@ -13,7 +13,7 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Viral Potential Calculator — Will Your Video Go Viral?",
+  title: "TikTok Viral Potential Calculator for Creator Videos",
   description: "Estimate your TikTok video's viral potential. Score your content based on engagement velocity, share rate, and algorithm-friendly signals.",
   keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
   alternates: {
@@ -72,7 +72,7 @@ export default function ViralPotentialCalculatorPage() {
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
         url="https://calculatecreator.com/calculators/viral-potential/"
         datePublished="2024-05-05"
-        dateModified="2025-12-05"
+        dateModified="2026-03-01"
         keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}
       />
       <FAQSchema faqs={faqData} />

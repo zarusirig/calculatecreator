@@ -33,7 +33,7 @@ export default function BestShopNichesPage() {
         description="Discover the most profitable TikTok Shop niches for affiliates and sellers. Commission rates, competition analysis, and best products to promote."
         url="https://calculatecreator.com/guides/best-shop-niches/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
       />
       <div className="min-h-screen bg-neutral-50">
         <nav className="bg-white border-b border-neutral-200 py-3">

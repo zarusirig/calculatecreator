@@ -21,7 +21,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
         description="According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability."
         url="https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
         keywords={['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research']}
       />

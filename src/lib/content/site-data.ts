@@ -61,7 +61,7 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'RPM Calculator',
-    href: '/tools/rpm/',
+    href: '/calculators/rpm/',
     description: 'Benchmark revenue per 1,000 views and compare your monetization efficiency.',
     platform: 'TikTok',
     goal: 'Earnings',
@@ -95,6 +95,15 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
     goal: 'Growth',
     metric: 'Follower growth',
     updatedAt: 'Nov 13, 2025',
+  },
+  {
+    title: 'Audience Overlap Calculator',
+    href: '/calculators/audience-overlap/',
+    description: 'Estimate overlap between creator audiences to assess collaboration and sponsorship fit.',
+    platform: 'TikTok',
+    goal: 'Growth',
+    metric: 'Audience overlap',
+    updatedAt: 'Feb 24, 2026',
   },
   {
     title: 'Viral Potential Calculator',

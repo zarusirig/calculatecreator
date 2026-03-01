@@ -11,6 +11,20 @@ export function generateStaticParams() {
   return AUTHOR_SLUGS.map((authorSlug) => ({ authorSlug }));
 }
 
+function countWords(value: string): number {
+  return value.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function estimatedAuthorWordCount(author: Author): number {
+  return countWords(
+    [
+      author.bio,
+      ...author.credentials,
+      ...author.expertise,
+    ].join(' ')
+  );
+}
+
 export function generateMetadata({
   params,
 }: {
@@ -20,11 +34,16 @@ export function generateMetadata({
   if (!author) {
     return { title: 'Author Not Found' };
   }
+  const isThinAuthorProfile = estimatedAuthorWordCount(author) < 300;
   return {
     title: `${author.name} — ${author.role} | CalculateCreator`,
     description: author.bio,
     alternates: {
       canonical: `https://calculatecreator.com/authors/${params.authorSlug}/`,
+    },
+    robots: {
+      index: !isThinAuthorProfile,
+      follow: true,
     },
   };
 }
@@ -286,6 +305,27 @@ export default function AuthorPage({
               </div>
             </div>
           )}
+
+          <section className="mb-10 rounded-xl border border-neutral-200 bg-white p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+            <p className="mt-3 text-body-sm text-neutral-700">
+              Explore the main hubs where our editorial and calculator assumptions are maintained.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link href="/calculators/" className="btn btn-secondary btn-sm">
+                Calculator Directory
+              </Link>
+              <Link href="/guides/" className="btn btn-secondary btn-sm">
+                Creator Guides
+              </Link>
+              <Link href="/data/" className="btn btn-secondary btn-sm">
+                Data & Insights
+              </Link>
+              <Link href="/methodology/" className="btn btn-secondary btn-sm">
+                Methodology
+              </Link>
+            </div>
+          </section>
 
           {/* Back Link */}
           <div className="pt-6 border-t border-neutral-200">

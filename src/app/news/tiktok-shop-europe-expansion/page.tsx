@@ -21,7 +21,7 @@ export default function TikTokShopEuropeExpansionPage() {
         description="In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence."
         url="https://calculatecreator.com/news/tiktok-shop-europe-expansion/"
         datePublished="2026-03-27"
-        dateModified="2026-03-27"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-shop-1024.webp"
         keywords={['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international']}
       />

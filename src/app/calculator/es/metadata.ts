@@ -15,6 +15,10 @@ export const metadata: Metadata = {
       'ms': 'https://calculatecreator.com/calculator/my/',
     },
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'Calculadora de Dinero TikTok España | RPM 2026',
     description:
@@ -29,4 +33,3 @@ export const metadata: Metadata = {
     description: 'Calcula ganancias TikTok con datos RPM 2026. Gratis.',
   },
 };
-

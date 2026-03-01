@@ -195,6 +195,12 @@ export default function CommentsToLikesRatioPage() {
           <p className="text-body-md text-neutral-700">
             This metric matters because <strong>comments require more effort than likes</strong>. A viewer who comments has stopped scrolling, processed your content, and felt compelled to respond. This indicates deeper engagement that brands and the <Link href="/guides/tiktok-algorithm-optimization/" className="text-primary-600 hover:text-primary-700 underline">TikTok algorithm</Link> both value highly. High comment ratios directly correlate with stronger <Link href="/calculators/brand-deal-rate/" className="text-primary-600 hover:text-primary-700 underline">brand deal rates</Link> and better content distribution.
           </p>
+          <p className="mt-3 text-body-sm text-neutral-600">
+            Legacy path available:{' '}
+            <Link href="/metrics/tiktok-comments-to-likes-ratio/" className="text-primary-600 hover:text-primary-700 underline">
+              /metrics/tiktok-comments-to-likes-ratio/
+            </Link>
+          </p>
         </Card>
 
         {/* Benchmarks */}

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { BenchmarksHubClient } from '@/components/benchmarks/BenchmarksHubClient';
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export default function BenchmarksPage() {
   return (
     <div className="pb-16 pt-10">
       <Container>
+        <Breadcrumb items={[{ label: 'Benchmarks', href: '/benchmarks/' }]} />
         <div className="mb-8 max-w-3xl">
           <h1 className="text-display-sm font-bold text-neutral-900 md:text-display-md">Benchmarks</h1>
           <p className="mt-3 text-body-md text-neutral-600">TikTok creators: 
@@ -67,8 +69,8 @@ export default function BenchmarksPage() {
               Editorial Policy
             </Link>
             . For practical usage examples, explore the{' '}
-            <Link href="/tools/" className="link">
-              tools directory
+            <Link href="/calculators/" className="link">
+              calculators directory
             </Link>{' '}
             and related guides.
           </p>

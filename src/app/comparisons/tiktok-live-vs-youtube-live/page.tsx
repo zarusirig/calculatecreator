@@ -44,7 +44,7 @@ export default function TikTokLiveVsYouTubeLivePage() {
         description="Compare TikTok LIVE gifts vs YouTube Super Chat earnings, requirements, payment structures, and which platform pays live streamers more."
         url="https://calculatecreator.com/comparisons/tiktok-live-vs-youtube-live/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok LIVE Gifts"
         subjectB="YouTube LIVE Super Chat"
         faqs={faqs}

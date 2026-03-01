@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "TikTok Bookmarks for Creator Earnings and Growth Guide",
   description: "Explore TikTok bookmarks content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  alternates: {
+    canonical: 'https://calculatecreator.com/bookmarks/',
+  },
   robots: {
     index: false,
     follow: false,
@@ -19,6 +23,7 @@ export default function BookmarksPage() {
   return (
     <div className="pb-16 pt-10">
       <Container className="max-w-3xl">
+        <Breadcrumb items={[{ label: 'Saved', href: '/bookmarks/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">Saved</h1>
         <p className="mt-3 text-body-md text-neutral-600">
           TikTok creators can use this saved area as a working checklist while bookmark persistence
@@ -80,8 +85,28 @@ export default function BookmarksPage() {
           This simple operating rhythm helps creators avoid reactive pivots and builds a reliable
           archive of assumptions, outcomes, and next actions tied to measurable creator performance.
         </p>
+        <section className="mt-8 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+          <p className="mt-3 text-body-sm text-neutral-700">
+            Use these links when you need benchmark context, strategy references, and site navigation support.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/calculators/" className="btn btn-secondary btn-sm">
+              Calculator Directory
+            </Link>
+            <Link href="/guides/" className="btn btn-secondary btn-sm">
+              Creator Guides
+            </Link>
+            <Link href="/data/" className="btn btn-secondary btn-sm">
+              Data & Insights
+            </Link>
+            <Link href="/search/" className="btn btn-secondary btn-sm">
+              Search Hub
+            </Link>
+          </div>
+        </section>
         <div className="mt-6">
-          <Link href="/tools/" className="btn btn-secondary btn-md">
+          <Link href="/calculators/" className="btn btn-secondary btn-md">
             Browse tools
           </Link>
         </div>

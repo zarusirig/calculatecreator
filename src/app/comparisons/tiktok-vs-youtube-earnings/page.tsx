@@ -128,7 +128,7 @@ export default function TikTokVsYouTubeEarningsPage() {
         description="Complete comparison of TikTok vs YouTube creator earnings. See RPM rates, monetization requirements, and which platform makes more money per view."
         url="https://calculatecreator.com/comparisons/tiktok-vs-youtube-earnings/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok Creator Earnings"
         subjectB="YouTube Creator Earnings"
         faqs={faqs}

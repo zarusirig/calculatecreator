@@ -21,7 +21,7 @@ export default function USChinaDealPage() {
         description="A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok's operations in the United States through collaboration."
         url="https://calculatecreator.com/news/us-china-deal-tiktok-operational/"
         datePublished="2026-09-15"
-        dateModified="2026-09-15"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-regulatory-1024.webp"
         keywords={['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news']}
       />

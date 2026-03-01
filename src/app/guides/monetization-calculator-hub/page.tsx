@@ -52,7 +52,7 @@ export default function MonetizationCalculatorHubPage() {
         description="Comprehensive guide to TikTok monetization covering Creator Fund, brand deals, LIVE gifts, TikTok Shop, affiliate marketing, and multi-income strategies with calculators and optimization tips."
         url="https://calculatecreator.com/guides/monetization-calculator-hub/"
         datePublished="2025-11-13"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
       />
       <BreadcrumbSchema

@@ -21,7 +21,7 @@ export default function RetentionMetricsPriorityPage() {
         description="Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok."
         url="https://calculatecreator.com/news/retention-metrics-priority/"
         datePublished="2026-01-01"
-        dateModified="2026-01-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-algorithm-1024.webp"
         keywords={['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance']}
       />

@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { getAllArticles } from '@/lib/content';
 import path from 'path';
 
 export const metadata: Metadata = {
   title: "TikTok Sitemap for Creator Earnings and Growth Guide",
   description: "Explore TikTok sitemap content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  alternates: {
+    canonical: 'https://calculatecreator.com/sitemap/',
+  },
 };
 
 const sitemapGroups = [
@@ -14,7 +18,9 @@ const sitemapGroups = [
     title: 'Product',
     links: [
       { label: 'Home', href: '/' },
-      { label: 'Tools', href: '/tools/' },
+      { label: 'Calculators', href: '/calculators/' },
+      { label: 'Tools (Alias)', href: '/tools/' },
+      { label: 'Legacy RPM Tool', href: '/tools/rpm/' },
       { label: 'Benchmarks', href: '/benchmarks/' },
       { label: 'Methodology', href: '/methodology/' },
     ],
@@ -62,6 +68,7 @@ export default function HtmlSitemapPage() {
   return (
     <div className="pb-16 pt-10">
       <Container className="max-w-4xl">
+        <Breadcrumb items={[{ label: 'Sitemap', href: '/sitemap/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">HTML Sitemap</h1>
         <p className="mt-3 max-w-3xl text-body-md text-neutral-600">
           TikTok creators can use this sitemap to jump directly to earnings calculators, monetization
@@ -111,7 +118,7 @@ export default function HtmlSitemapPage() {
           comparisons, niche earnings pages, and creator business references.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
-          <Link href="/tools/" className="btn btn-secondary btn-sm">
+          <Link href="/calculators/" className="btn btn-secondary btn-sm">
             TikTok Calculators
           </Link>
           <Link href="/data/" className="btn btn-secondary btn-sm">
@@ -161,6 +168,32 @@ export default function HtmlSitemapPage() {
             </section>
           ))}
         </div>
+        <section className="mt-8 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+          <p className="mt-3 text-body-sm text-neutral-700">
+            Use these pages to move from navigation into active planning and recurring creator operations.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <Link href="/search/" className="btn btn-secondary btn-sm">
+              Search Hub
+            </Link>
+            <Link href="/bookmarks/" className="btn btn-secondary btn-sm">
+              Saved Workflows
+            </Link>
+            <Link href="/methodology/" className="btn btn-secondary btn-sm">
+              Methodology
+            </Link>
+              <Link href="/editorial-policy/" className="btn btn-secondary btn-sm">
+                Editorial Policy
+              </Link>
+              <Link href="/metrics/tiktok-comments-to-likes-ratio/" className="btn btn-secondary btn-sm">
+                Legacy Metrics URL
+              </Link>
+              <Link href="/resources/brand-deal-contract-template/" className="btn btn-secondary btn-sm">
+                Contract Template URL
+              </Link>
+            </div>
+          </section>
 
       </Container>
     </div>

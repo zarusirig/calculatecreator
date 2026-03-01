@@ -21,7 +21,7 @@ export default function MentionLikedFavoritedVideosPage() {
         description="Users can now mention 'Liked' and 'Favorited' videos in their content, expanding cross-referencing capabilities on the platform."
         url="https://calculatecreator.com/news/mention-liked-favorited-videos/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-features-1024.webp"
         keywords={['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing']}
       />

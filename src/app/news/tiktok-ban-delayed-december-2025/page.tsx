@@ -21,7 +21,7 @@ export default function TikTokBanDelayedPage() {
         description="The White House has extended TikTok's enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution."
         url="https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/"
         datePublished="2025-09-24"
-        dateModified="2025-09-24"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-regulatory-1024.webp"
         keywords={['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture']}
       />

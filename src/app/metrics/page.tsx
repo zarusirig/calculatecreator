@@ -29,13 +29,6 @@ const metrics = [
     icon: MessageCircle,
     benchmark: '1-5%',
   },
-  {
-    name: 'TikTok Comments-to-Likes Ratio Guide',
-    slug: 'tiktok-comments-to-likes-ratio',
-    description: 'Comprehensive guide to understanding and improving your comments-to-likes ratio for better algorithmic performance.',
-    icon: BarChart3,
-    benchmark: '2-4% optimal',
-  },
 ];
 
 const faqs = [

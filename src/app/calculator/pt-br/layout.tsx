@@ -11,14 +11,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://calculatecreator.com/calculator/pt-br/',
     languages: {
-      'en': 'https://calculatecreator.com/region/',
+      'en': 'https://calculatecreator.com/calculators/tiktok-money/',
       'de': 'https://calculatecreator.com/calculator/de/',
       'es': 'https://calculatecreator.com/calculator/es/',
       'fr': 'https://calculatecreator.com/calculator/fr/',
       'it': 'https://calculatecreator.com/calculator/it/',
       'pt-BR': 'https://calculatecreator.com/calculator/pt-br/',
       'ms': 'https://calculatecreator.com/calculator/my/',
+      'x-default': 'https://calculatecreator.com/calculators/tiktok-money/',
     },
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
   openGraph: {
     title: 'Calculadora TikTok: Calcule Seus Ganhos 2026',

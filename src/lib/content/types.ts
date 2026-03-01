@@ -14,6 +14,7 @@ export interface ArticleFrontmatter {
   // SEO
   primaryKeyword: string;
   secondaryKeywords: string[];
+  noindex?: boolean;
 
   // Information Tree
   parentArticle: string;

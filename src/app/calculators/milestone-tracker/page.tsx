@@ -47,7 +47,7 @@ export default function MilestoneTrackerCalculatorPage() {
         description="Track your TikTok creator milestones. See when you will hit monetization thresholds, follower goals, and unlock new features."
         url="https://calculatecreator.com/calculators/milestone-tracker/"
         datePublished="2024-03-20"
-        dateModified="2025-12-04"
+        dateModified="2026-03-01"
         keywords={['milestone tracker', 'tiktok milestones', 'creator goals', 'monetization requirements', 'growth tracker']}
       />
       <FAQSchema faqs={faqData} />

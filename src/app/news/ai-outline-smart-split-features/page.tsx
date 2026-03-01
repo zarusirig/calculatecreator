@@ -21,7 +21,7 @@ export default function AIOutlineSmartSplitPage() {
         description="In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities."
         url="https://calculatecreator.com/news/ai-outline-smart-split-features/"
         datePublished="2026-11-01"
-        dateModified="2026-11-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-features-1024.webp"
         keywords={['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news']}
       />

@@ -44,7 +44,7 @@ export default function TikTokShopVsAmazonPage() {
         description="Compare TikTok Shop vs Amazon Associates affiliate programs. Commission rates, requirements, earning potential, and which platform is better for creators."
         url="https://calculatecreator.com/comparisons/tiktok-shop-vs-amazon/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok Shop Affiliate"
         subjectB="Amazon Associates"
         faqs={faqs}

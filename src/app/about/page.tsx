@@ -77,10 +77,6 @@ export default function AboutPage() {
               total earnings, engagement rate, brand deal pricing, shop commission, tax set-aside,
               and multi-platform comparisons. We also maintain supporting utilities for conversion
               analysis, content value, and campaign ROI. You can browse them in our{' '}
-              <Link href="/tools/" className="link">
-                tools directory
-              </Link>{' '}
-              and legacy{' '}
               <Link href="/calculators/" className="link">
                 calculators directory
               </Link>

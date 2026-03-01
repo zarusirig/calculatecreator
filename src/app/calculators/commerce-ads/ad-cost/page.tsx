@@ -47,7 +47,7 @@ export default function TikTokAdCostCalculatorPage() {
         description="Calculate TikTok advertising costs including CPM, CPV rates, and campaign ROI. Get 2026 benchmarks and plan your TikTok ad budget effectively."
         url="https://calculatecreator.com/calculators/tiktok-ad-cost/"
         datePublished="2024-01-15"
-        dateModified="2025-11-01"
+        dateModified="2026-03-01"
         keywords={['tiktok ad cost calculator', 'tiktok cpm', 'tiktok cpv', 'tiktok advertising budget']}
       />
       <FAQSchema faqs={faqData} />

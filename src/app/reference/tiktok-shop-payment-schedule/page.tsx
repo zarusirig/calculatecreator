@@ -53,7 +53,7 @@ export default function TikTokShopPaymentSchedulePage() {
         description="Complete guide to TikTok Shop payment schedule, processing times, minimum thresholds, payment methods, and troubleshooting delayed payments."
         url="https://calculatecreator.com/reference/tiktok-shop-payment-schedule/"
         datePublished="2024-02-01"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
       {/* Breadcrumb */}

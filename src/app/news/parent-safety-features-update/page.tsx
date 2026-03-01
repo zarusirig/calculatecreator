@@ -21,7 +21,7 @@ export default function ParentSafetyFeaturesUpdatePage() {
         description="In July 2026, TikTok announced new safety measures giving parents more control over teens' accounts, including greater visibility into account activity and customizable settings."
         url="https://calculatecreator.com/news/parent-safety-features-update/"
         datePublished="2026-07-01"
-        dateModified="2026-07-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-safety-1024.webp"
         keywords={['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety']}
       />

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Sources Policy | CalculateCreator',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'February 20, 2026';
+const LAST_UPDATED = 'March 1, 2026';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -38,15 +39,16 @@ export default function SourcesPolicyPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
+          <Breadcrumb items={[{ label: 'Sources Policy', href: '/sources-policy/' }]} />
           <h1 className="text-display-sm font-bold text-neutral-900">
             Sources Policy
           </h1>
-          <p className="mt-3 text-sm text-neutral-600">
+          <div className="mt-3 text-sm text-neutral-600">
             Last Updated: {LAST_UPDATED}
-          </p>
+          </div>
 
           <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator tools and content rely on verifiable data. This page
+            CalculateCreator TikTok tools and content rely on verifiable data. This page
             explains how we select sources, rank their reliability, handle
             undisclosed data, and keep information current.
           </p>
@@ -208,31 +210,20 @@ export default function SourcesPolicyPage() {
             </p>
           </section>
 
-          <div className="mt-10 text-sm text-neutral-500">
-            <p>
-              Related:{' '}
-              <Link
-                href="/editorial-policy/"
-                className="text-primary-600 underline"
-              >
+          <section className="mt-10 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link href="/editorial-policy/" className="btn btn-secondary btn-sm">
                 Editorial Policy
               </Link>
-              {' · '}
-              <Link
-                href="/corrections-policy/"
-                className="text-primary-600 underline"
-              >
+              <Link href="/corrections-policy/" className="btn btn-secondary btn-sm">
                 Corrections Policy
               </Link>
-              {' · '}
-              <Link
-                href="/methodology/"
-                className="text-primary-600 underline"
-              >
+              <Link href="/methodology/" className="btn btn-secondary btn-sm">
                 Methodology
               </Link>
-            </p>
-          </div>
+            </div>
+          </section>
         </Container>
       </div>
     </>

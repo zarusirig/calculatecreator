@@ -45,7 +45,7 @@ export default function CreatorFundVsBrandDealsPage() {
         description="Compare TikTok Creator Fund earnings vs brand deal sponsorships. See which monetization method pays better at your follower tier with real 2026 data."
         url="https://calculatecreator.com/comparisons/creator-fund-vs-brand-deals/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok Creator Fund"
         subjectB="Brand Deal Sponsorships"
         faqs={faqs}

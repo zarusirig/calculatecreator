@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "TikTok Moon Phase Calculator",
-  description: "Use this TikTok moon phase calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Moon Phase Content Planner",
+  description: "Plan moon-phase themed TikTok content with date-specific lunar stages, posting ideas, and creator prompts for entertainment-focused scheduling workflows.",
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/fun-niche/moon-phase/',
   },
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
   },
   openGraph: {
     title: 'Moon Phase Content Planner for TikTok',
@@ -22,4 +22,3 @@ export const metadata: Metadata = {
     description: 'Entertainment-only moon phase content planner.',
   },
 };
-

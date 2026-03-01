@@ -14,7 +14,7 @@ import { ToolExplanationSection } from '@/components/calculator/ToolExplanationS
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Shop Profit Calculator",
+  title: "TikTok Shop Profit & Commission Calculator",
   description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {

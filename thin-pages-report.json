@@ -1,152 +1,5 @@
 [
   {
-    "path": "content/guides/complete-tiktok-calculator-guide.mdx",
-    "route": "/guides/complete-tiktok-calculator-guide/",
-    "sourceType": "mdx",
-    "wordCount": 0,
-    "hasUniqueIntro": false,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "Weak intro signal",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0,
-    "risk": "high"
-  },
-  {
-    "path": "src/app/data/reference/page.tsx",
-    "route": "/data/reference/",
-    "sourceType": "app-page",
-    "wordCount": 148,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.51,
-    "risk": "high"
-  },
-  {
-    "path": "content/data/creator-fund-rates-by-country.mdx",
-    "route": "/data/creator-fund-rates-by-country/",
-    "sourceType": "mdx",
-    "wordCount": 208,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.23,
-    "risk": "high"
-  },
-  {
-    "path": "src/app/data/platform-comparisons/page.tsx",
-    "route": "/data/platform-comparisons/",
-    "sourceType": "app-page",
-    "wordCount": 255,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.48,
-    "risk": "high"
-  },
-  {
-    "path": "content/guides/beauty-creators-earnings.mdx",
-    "route": "/guides/beauty-creators-earnings/",
-    "sourceType": "mdx",
-    "wordCount": 287,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.31,
-    "risk": "high"
-  },
-  {
-    "path": "src/app/data/engagement/page.tsx",
-    "route": "/data/engagement/",
-    "sourceType": "app-page",
-    "wordCount": 292,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.46,
-    "risk": "high"
-  },
-  {
-    "path": "content/guides/how-to-join-creator-fund-complete.mdx",
-    "route": "/guides/how-to-join-creator-fund-complete/",
-    "sourceType": "mdx",
-    "wordCount": 296,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.24,
-    "risk": "high"
-  },
-  {
-    "path": "src/app/search/page.tsx",
-    "route": "/search/",
-    "sourceType": "app-page",
-    "wordCount": 69,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": true,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected",
-      "Utility page - should be noindex"
-    ],
-    "sharedSimilarity": 0.68,
-    "risk": "medium"
-  },
-  {
-    "path": "src/app/bookmarks/page.tsx",
-    "route": "/bookmarks/",
-    "sourceType": "app-page",
-    "wordCount": 74,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": true,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected",
-      "Utility page - should be noindex"
-    ],
-    "sharedSimilarity": 0.68,
-    "risk": "medium"
-  },
-  {
     "path": "content/guides/finance-creators-earnings.mdx",
     "route": "/guides/finance-creators-earnings/",
     "sourceType": "mdx",
@@ -159,7 +12,7 @@
       "Below 500 words",
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.22,
     "risk": "medium"
   },
   {
@@ -179,57 +32,10 @@
     "risk": "medium"
   },
   {
-    "path": "src/app/contact/page.tsx",
-    "route": "/contact/",
-    "sourceType": "app-page",
-    "wordCount": 391,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words"
-    ],
-    "sharedSimilarity": 0.23,
-    "risk": "medium"
-  },
-  {
-    "path": "src/app/guides/niches/page.tsx",
-    "route": "/guides/niches/",
-    "sourceType": "app-page",
-    "wordCount": 433,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.39,
-    "risk": "medium"
-  },
-  {
-    "path": "src/app/guides/business/page.tsx",
-    "route": "/guides/business/",
-    "sourceType": "app-page",
-    "wordCount": 438,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words",
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.43,
-    "risk": "medium"
-  },
-  {
     "path": "content/data/brand-deal-rates-by-niche.mdx",
     "route": "/data/brand-deal-rates-by-niche/",
     "sourceType": "mdx",
-    "wordCount": 439,
+    "wordCount": 441,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -238,7 +44,7 @@
       "Below 500 words",
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.23,
+    "sharedSimilarity": 0.2,
     "risk": "medium"
   },
   {
@@ -274,50 +80,35 @@
     "risk": "medium"
   },
   {
-    "path": "src/app/compliance/advertising-disclosure/page.tsx",
-    "route": "/compliance/advertising-disclosure/",
+    "path": "src/app/search/page.tsx",
+    "route": "/search/",
     "sourceType": "app-page",
-    "wordCount": 497,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [
-      "Below 500 words"
-    ],
-    "sharedSimilarity": 0.22,
-    "risk": "medium"
-  },
-  {
-    "path": "src/app/calculators/page.tsx",
-    "route": "/calculators/",
-    "sourceType": "app-page",
-    "wordCount": 511,
+    "wordCount": 576,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
-    "hasNoindex": false,
+    "hasNoindex": true,
     "notes": [
-      "Tool page without strong FAQ signal",
-      "No schema signal detected"
+      "No schema signal detected",
+      "Utility page - should be noindex"
     ],
-    "sharedSimilarity": 0.96,
+    "sharedSimilarity": 0.41,
     "risk": "medium"
   },
   {
-    "path": "src/app/tools/page.tsx",
-    "route": "/tools/",
+    "path": "src/app/bookmarks/page.tsx",
+    "route": "/bookmarks/",
     "sourceType": "app-page",
-    "wordCount": 516,
+    "wordCount": 584,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
-    "hasNoindex": false,
+    "hasNoindex": true,
     "notes": [
-      "Tool page without strong FAQ signal",
-      "No schema signal detected"
+      "No schema signal detected",
+      "Utility page - should be noindex"
     ],
-    "sharedSimilarity": 0.96,
+    "sharedSimilarity": 0.41,
     "risk": "medium"
   },
   {
@@ -334,6 +125,36 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.34,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/calculators/page.tsx",
+    "route": "/calculators/",
+    "sourceType": "app-page",
+    "wordCount": 714,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [
+      "Tool page without strong FAQ signal"
+    ],
+    "sharedSimilarity": 0.98,
+    "risk": "medium"
+  },
+  {
+    "path": "src/app/tools/page.tsx",
+    "route": "/tools/",
+    "sourceType": "app-page",
+    "wordCount": 725,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": true,
+    "notes": [
+      "Tool page without strong FAQ signal"
+    ],
+    "sharedSimilarity": 0.98,
     "risk": "medium"
   },
   {
@@ -397,7 +218,7 @@
       "Tool page without strong FAQ signal",
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.29,
+    "sharedSimilarity": 0.3,
     "risk": "medium"
   },
   {
@@ -532,7 +353,7 @@
     "path": "content/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers.mdx",
     "route": "/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers/",
     "sourceType": "mdx",
-    "wordCount": 1458,
+    "wordCount": 1460,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
@@ -669,7 +490,7 @@
       "Tool page without strong FAQ signal",
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.3,
     "risk": "medium"
   },
   {
@@ -929,36 +750,6 @@
     "risk": "medium"
   },
   {
-    "path": "src/app/benchmarks/page.tsx",
-    "route": "/benchmarks/",
-    "sourceType": "app-page",
-    "wordCount": 505,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.33,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/methodology/page.tsx",
-    "route": "/methodology/",
-    "sourceType": "app-page",
-    "wordCount": 508,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/how-to-become-shop-affiliate.mdx",
     "route": "/guides/how-to-become-shop-affiliate/",
     "sourceType": "mdx",
@@ -974,16 +765,18 @@
     "risk": "low"
   },
   {
-    "path": "src/app/tools/rpm/page.tsx",
-    "route": "/tools/rpm/",
-    "sourceType": "app-page",
-    "wordCount": 547,
+    "path": "content/guides/complete-tiktok-calculator-guide.mdx",
+    "route": "/guides/complete-tiktok-calculator-guide/",
+    "sourceType": "mdx",
+    "wordCount": 535,
     "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
+    "hasFAQ": false,
+    "hasSchema": false,
     "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.27,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.21,
     "risk": "low"
   },
   {
@@ -1013,22 +806,33 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.23,
+    "sharedSimilarity": 0.24,
     "risk": "low"
   },
   {
-    "path": "src/app/guides/monetization/page.tsx",
-    "route": "/guides/monetization/",
+    "path": "src/app/contact/page.tsx",
+    "route": "/contact/",
     "sourceType": "app-page",
-    "wordCount": 586,
+    "wordCount": 576,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/reference/page.tsx",
+    "route": "/data/reference/",
+    "sourceType": "app-page",
+    "wordCount": 580,
     "hasUniqueIntro": true,
     "hasFAQ": false,
-    "hasSchema": false,
+    "hasSchema": true,
     "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.37,
+    "notes": [],
+    "sharedSimilarity": 0.46,
     "risk": "low"
   },
   {
@@ -1047,6 +851,19 @@
     "risk": "low"
   },
   {
+    "path": "src/app/data/platform-comparisons/page.tsx",
+    "route": "/data/platform-comparisons/",
+    "sourceType": "app-page",
+    "wordCount": 596,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.51,
+    "risk": "low"
+  },
+  {
     "path": "content/guides/how-creator-fund-works.mdx",
     "route": "/guides/how-creator-fund-works/",
     "sourceType": "mdx",
@@ -1062,25 +879,49 @@
     "risk": "low"
   },
   {
-    "path": "src/app/guides/growth/page.tsx",
-    "route": "/guides/growth/",
+    "path": "src/app/guides/niches/page.tsx",
+    "route": "/guides/niches/",
     "sourceType": "app-page",
-    "wordCount": 650,
+    "wordCount": 639,
     "hasUniqueIntro": true,
     "hasFAQ": false,
-    "hasSchema": false,
+    "hasSchema": true,
     "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.34,
+    "notes": [],
+    "sharedSimilarity": 0.61,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/business/page.tsx",
+    "route": "/guides/business/",
+    "sourceType": "app-page",
+    "wordCount": 644,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.58,
+    "risk": "low"
+  },
+  {
+    "path": "content/guides/beauty-creators-earnings.mdx",
+    "route": "/guides/beauty-creators-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 647,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.23,
     "risk": "low"
   },
   {
     "path": "content/data/brand-deal-rates-by-followers.mdx",
     "route": "/data/brand-deal-rates-by-followers/",
     "sourceType": "mdx",
-    "wordCount": 657,
+    "wordCount": 659,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1089,6 +930,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/engagement/page.tsx",
+    "route": "/data/engagement/",
+    "sourceType": "app-page",
+    "wordCount": 663,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.48,
     "risk": "low"
   },
   {
@@ -1107,10 +961,51 @@
     "risk": "low"
   },
   {
+    "path": "src/app/compliance/advertising-disclosure/page.tsx",
+    "route": "/compliance/advertising-disclosure/",
+    "sourceType": "app-page",
+    "wordCount": 685,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.37,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/benchmarks/page.tsx",
+    "route": "/benchmarks/",
+    "sourceType": "app-page",
+    "wordCount": 694,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.45,
+    "risk": "low"
+  },
+  {
+    "path": "content/data/creator-fund-rates-by-country.mdx",
+    "route": "/data/creator-fund-rates-by-country/",
+    "sourceType": "mdx",
+    "wordCount": 694,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.23,
+    "risk": "low"
+  },
+  {
     "path": "content/data/rpm-rates-by-niche.mdx",
     "route": "/data/rpm-rates-by-niche/",
     "sourceType": "mdx",
-    "wordCount": 697,
+    "wordCount": 699,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1119,6 +1014,21 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/methodology/page.tsx",
+    "route": "/methodology/",
+    "sourceType": "app-page",
+    "wordCount": 705,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.37,
     "risk": "low"
   },
   {
@@ -1134,6 +1044,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/tools/rpm/page.tsx",
+    "route": "/tools/rpm/",
+    "sourceType": "app-page",
+    "wordCount": 731,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": true,
+    "notes": [],
+    "sharedSimilarity": 0.38,
     "risk": "low"
   },
   {
@@ -1155,7 +1078,7 @@
     "path": "content/blog/creator-fund-vs-live-gifts.mdx",
     "route": "/blog/creator-fund-vs-live-gifts/",
     "sourceType": "mdx",
-    "wordCount": 782,
+    "wordCount": 784,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1163,7 +1086,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.27,
+    "sharedSimilarity": 0.28,
     "risk": "low"
   },
   {
@@ -1179,6 +1102,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/monetization/page.tsx",
+    "route": "/guides/monetization/",
+    "sourceType": "app-page",
+    "wordCount": 795,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.58,
     "risk": "low"
   },
   {
@@ -1212,19 +1148,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/editorial-policy/page.tsx",
-    "route": "/editorial-policy/",
-    "sourceType": "app-page",
-    "wordCount": 824,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/increase-engagement-rate-tiktok.mdx",
     "route": "/guides/increase-engagement-rate-tiktok/",
     "sourceType": "mdx",
@@ -1240,23 +1163,10 @@
     "risk": "low"
   },
   {
-    "path": "src/app/about/page.tsx",
-    "route": "/about/",
-    "sourceType": "app-page",
-    "wordCount": 835,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.3,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/maximize-creator-fund-rpm.mdx",
     "route": "/guides/maximize-creator-fund-rpm/",
     "sourceType": "mdx",
-    "wordCount": 840,
+    "wordCount": 842,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
@@ -1283,25 +1193,23 @@
     "risk": "low"
   },
   {
-    "path": "src/app/data/earnings/page.tsx",
-    "route": "/data/earnings/",
+    "path": "src/app/guides/growth/page.tsx",
+    "route": "/guides/growth/",
     "sourceType": "app-page",
-    "wordCount": 867,
+    "wordCount": 861,
     "hasUniqueIntro": true,
     "hasFAQ": false,
-    "hasSchema": false,
+    "hasSchema": true,
     "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.42,
+    "notes": [],
+    "sharedSimilarity": 0.52,
     "risk": "low"
   },
   {
     "path": "content/guides/how-to-negotiate-brand-deals.mdx",
     "route": "/guides/how-to-negotiate-brand-deals/",
     "sourceType": "mdx",
-    "wordCount": 870,
+    "wordCount": 872,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1316,7 +1224,7 @@
     "path": "content/data/engagement-rates-by-niche.mdx",
     "route": "/data/engagement-rates-by-niche/",
     "sourceType": "mdx",
-    "wordCount": 871,
+    "wordCount": 873,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1324,7 +1232,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.29,
+    "sharedSimilarity": 0.28,
     "risk": "low"
   },
   {
@@ -1354,7 +1262,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.28,
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -1406,7 +1314,7 @@
     "path": "content/guides/calculating-true-influence-value.mdx",
     "route": "/guides/calculating-true-influence-value/",
     "sourceType": "mdx",
-    "wordCount": 930,
+    "wordCount": 932,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
@@ -1414,7 +1322,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.21,
+    "sharedSimilarity": 0.22,
     "risk": "low"
   },
   {
@@ -1451,7 +1359,7 @@
     "path": "content/guides/multi-platform-attribution-creators.mdx",
     "route": "/guides/multi-platform-attribution-creators/",
     "sourceType": "mdx",
-    "wordCount": 996,
+    "wordCount": 998,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1478,16 +1386,29 @@
     "risk": "low"
   },
   {
-    "path": "src/app/faq/page.tsx",
-    "route": "/faq/",
+    "path": "src/app/editorial-policy/page.tsx",
+    "route": "/editorial-policy/",
     "sourceType": "app-page",
-    "wordCount": 1032,
+    "wordCount": 1031,
     "hasUniqueIntro": true,
-    "hasFAQ": true,
+    "hasFAQ": false,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/about/page.tsx",
+    "route": "/about/",
+    "sourceType": "app-page",
+    "wordCount": 1038,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.36,
     "risk": "low"
   },
   {
@@ -1509,7 +1430,7 @@
     "path": "content/guides/analytics-metrics-master-guide.mdx",
     "route": "/guides/analytics-metrics-master-guide/",
     "sourceType": "mdx",
-    "wordCount": 1046,
+    "wordCount": 1048,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1539,7 +1460,7 @@
     "path": "content/guides/multi-platform-strategy.mdx",
     "route": "/guides/multi-platform-strategy/",
     "sourceType": "mdx",
-    "wordCount": 1060,
+    "wordCount": 1062,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1547,7 +1468,20 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.25,
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/earnings/page.tsx",
+    "route": "/data/earnings/",
+    "sourceType": "app-page",
+    "wordCount": 1070,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.61,
     "risk": "low"
   },
   {
@@ -1626,21 +1560,6 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/tiktok-algorithm-changes-2026.mdx",
-    "route": "/blog/tiktok-algorithm-changes-2026/",
-    "sourceType": "mdx",
-    "wordCount": 1174,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
     "path": "content/blog/tiktok-spark-ads-update-2026.mdx",
     "route": "/blog/tiktok-spark-ads-update-2026/",
     "sourceType": "mdx",
@@ -1653,6 +1572,21 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-algorithm-changes-2026.mdx",
+    "route": "/blog/tiktok-algorithm-changes-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1176,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
     "risk": "low"
   },
   {
@@ -1686,21 +1620,6 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/tiktok-vs-youtube-shorts-earnings-2026.mdx",
-    "route": "/blog/tiktok-vs-youtube-shorts-earnings-2026/",
-    "sourceType": "mdx",
-    "wordCount": 1197,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/content-strategy-2025.mdx",
     "route": "/guides/content-strategy-2025/",
     "sourceType": "mdx",
@@ -1713,6 +1632,21 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.27,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/tiktok-vs-youtube-shorts-earnings-2026.mdx",
+    "route": "/blog/tiktok-vs-youtube-shorts-earnings-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1199,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
     "risk": "low"
   },
   {
@@ -1761,10 +1695,23 @@
     "risk": "low"
   },
   {
+    "path": "src/app/faq/page.tsx",
+    "route": "/faq/",
+    "sourceType": "app-page",
+    "wordCount": 1207,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
     "path": "content/guides/tiktok-shop.mdx",
     "route": "/guides/tiktok-shop/",
     "sourceType": "mdx",
-    "wordCount": 1207,
+    "wordCount": 1209,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1772,14 +1719,14 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.23,
+    "sharedSimilarity": 0.22,
     "risk": "low"
   },
   {
     "path": "content/blog/creator-tax-deductions-complete-guide.mdx",
     "route": "/blog/creator-tax-deductions-complete-guide/",
     "sourceType": "mdx",
-    "wordCount": 1217,
+    "wordCount": 1219,
     "hasUniqueIntro": true,
     "hasFAQ": false,
     "hasSchema": false,
@@ -1788,19 +1735,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.27,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/guides/page.tsx",
-    "route": "/guides/",
-    "sourceType": "app-page",
-    "wordCount": 1223,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -1831,32 +1765,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/terms/page.tsx",
-    "route": "/terms/",
-    "sourceType": "app-page",
-    "wordCount": 1238,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.23,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/guides/tiktok-series-monetization/page.tsx",
-    "route": "/guides/tiktok-series-monetization/",
-    "sourceType": "app-page",
-    "wordCount": 1241,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.23,
     "risk": "low"
   },
   {
@@ -1950,23 +1858,10 @@
     "risk": "low"
   },
   {
-    "path": "src/app/compliance/sponsorship-disclosure/page.tsx",
-    "route": "/compliance/sponsorship-disclosure/",
-    "sourceType": "app-page",
-    "wordCount": 1377,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/how-to-price-brand-deals.mdx",
     "route": "/guides/how-to-price-brand-deals/",
     "sourceType": "mdx",
-    "wordCount": 1386,
+    "wordCount": 1388,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -1975,19 +1870,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/coins-gifts-diamonds/diamonds/page.tsx",
-    "route": "/calculators/coins-gifts-diamonds/diamonds/",
-    "sourceType": "app-page",
-    "wordCount": 1392,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
@@ -2036,23 +1918,23 @@
     "risk": "low"
   },
   {
-    "path": "src/app/guides/best-shop-niches/page.tsx",
-    "route": "/guides/best-shop-niches/",
+    "path": "src/app/guides/page.tsx",
+    "route": "/guides/",
     "sourceType": "app-page",
-    "wordCount": 1399,
+    "wordCount": 1403,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.26,
+    "sharedSimilarity": 0.3,
     "risk": "low"
   },
   {
     "path": "content/guides/tiktok-gifts.mdx",
     "route": "/guides/tiktok-gifts/",
     "sourceType": "mdx",
-    "wordCount": 1405,
+    "wordCount": 1407,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2079,10 +1961,36 @@
     "risk": "low"
   },
   {
+    "path": "src/app/guides/tiktok-series-monetization/page.tsx",
+    "route": "/guides/tiktok-series-monetization/",
+    "sourceType": "app-page",
+    "wordCount": 1421,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.24,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/terms/page.tsx",
+    "route": "/terms/",
+    "sourceType": "app-page",
+    "wordCount": 1421,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
     "path": "content/blog/how-tiktok-creator-rewards-work-2026.mdx",
     "route": "/blog/how-tiktok-creator-rewards-work-2026/",
     "sourceType": "mdx",
-    "wordCount": 1424,
+    "wordCount": 1426,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2157,7 +2065,7 @@
     "path": "content/blog/tiktok-shop-affiliate-beginners-guide.mdx",
     "route": "/blog/tiktok-shop-affiliate-beginners-guide/",
     "sourceType": "mdx",
-    "wordCount": 1465,
+    "wordCount": 1467,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2172,7 +2080,7 @@
     "path": "content/guides/tiktok-diamonds.mdx",
     "route": "/guides/tiktok-diamonds/",
     "sourceType": "mdx",
-    "wordCount": 1465,
+    "wordCount": 1467,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2180,7 +2088,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.26,
+    "sharedSimilarity": 0.25,
     "risk": "low"
   },
   {
@@ -2289,19 +2197,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/commerce-ads/ad-cost/page.tsx",
-    "route": "/calculators/commerce-ads/ad-cost/",
-    "sourceType": "app-page",
-    "wordCount": 1505,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.44,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/growth/tiktok-content-pillars.mdx",
     "route": "/guides/growth/tiktok-content-pillars/",
     "sourceType": "mdx",
@@ -2335,7 +2230,7 @@
     "path": "content/guides/influencer-rate-calculator-guide.mdx",
     "route": "/guides/influencer-rate-calculator-guide/",
     "sourceType": "mdx",
-    "wordCount": 1517,
+    "wordCount": 1519,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2362,25 +2257,10 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/charli-damelio-tiktok-earnings.mdx",
-    "route": "/blog/charli-damelio-tiktok-earnings/",
-    "sourceType": "mdx",
-    "wordCount": 1525,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.29,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/why-creator-fund-earnings-dropped.mdx",
     "route": "/guides/why-creator-fund-earnings-dropped/",
     "sourceType": "mdx",
-    "wordCount": 1526,
+    "wordCount": 1528,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2389,19 +2269,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/engagement-influence/engagement/page.tsx",
-    "route": "/calculators/engagement-influence/engagement/",
-    "sourceType": "app-page",
-    "wordCount": 1535,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -2417,19 +2284,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.22,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/save-rate/page.tsx",
-    "route": "/calculators/save-rate/",
-    "sourceType": "app-page",
-    "wordCount": 1536,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -2463,16 +2317,16 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/customer-acquisition-cost/page.tsx",
-    "route": "/calculators/customer-acquisition-cost/",
+    "path": "src/app/compliance/sponsorship-disclosure/page.tsx",
+    "route": "/compliance/sponsorship-disclosure/",
     "sourceType": "app-page",
-    "wordCount": 1561,
+    "wordCount": 1557,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.42,
+    "sharedSimilarity": 0.24,
     "risk": "low"
   },
   {
@@ -2506,31 +2360,16 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/building-multiple-income-streams-tiktok.mdx",
-    "route": "/blog/building-multiple-income-streams-tiktok/",
-    "sourceType": "mdx",
-    "wordCount": 1568,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/lifetime-value/page.tsx",
-    "route": "/calculators/lifetime-value/",
+    "path": "src/app/calculators/coins-gifts-diamonds/diamonds/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/diamonds/",
     "sourceType": "app-page",
-    "wordCount": 1573,
+    "wordCount": 1571,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.38,
+    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
@@ -2546,6 +2385,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/guides/best-shop-niches/page.tsx",
+    "route": "/guides/best-shop-niches/",
+    "sourceType": "app-page",
+    "wordCount": 1580,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
     "risk": "low"
   },
   {
@@ -2699,19 +2551,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/video-performance/page.tsx",
-    "route": "/calculators/video-performance/",
-    "sourceType": "app-page",
-    "wordCount": 1602,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.33,
-    "risk": "low"
-  },
-  {
     "path": "content/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings.mdx",
     "route": "/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings/",
     "sourceType": "mdx",
@@ -2757,19 +2596,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/comment-rate/page.tsx",
-    "route": "/calculators/comment-rate/",
-    "sourceType": "app-page",
-    "wordCount": 1612,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.35,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/growth/short-vs-long-tiktok-videos.mdx",
     "route": "/guides/growth/short-vs-long-tiktok-videos/",
     "sourceType": "mdx",
@@ -2788,7 +2614,7 @@
     "path": "content/guides/live-gift-earnings-optimization.mdx",
     "route": "/guides/live-gift-earnings-optimization/",
     "sourceType": "mdx",
-    "wordCount": 1617,
+    "wordCount": 1619,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2830,19 +2656,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/tiktok-ad-cost/page.tsx",
-    "route": "/calculators/tiktok-ad-cost/",
-    "sourceType": "app-page",
-    "wordCount": 1624,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.44,
-    "risk": "low"
-  },
-  {
     "path": "content/calculators/engagement-rate/engagement-rate-brand-deals.mdx",
     "route": "/calculators/engagement-rate/engagement-rate-brand-deals/",
     "sourceType": "mdx",
@@ -2873,19 +2686,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/privacy/page.tsx",
-    "route": "/privacy/",
-    "sourceType": "app-page",
-    "wordCount": 1636,
-    "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.2,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/growth/tiktok-sounds-music-distribution.mdx",
     "route": "/guides/growth/tiktok-sounds-music-distribution/",
     "sourceType": "mdx",
@@ -2904,7 +2704,7 @@
     "path": "content/blog/tiktok-live-streaming-earnings-guide.mdx",
     "route": "/blog/tiktok-live-streaming-earnings-guide/",
     "sourceType": "mdx",
-    "wordCount": 1640,
+    "wordCount": 1642,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -2913,19 +2713,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/campaign-roi/page.tsx",
-    "route": "/calculators/campaign-roi/",
-    "sourceType": "app-page",
-    "wordCount": 1643,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.42,
     "risk": "low"
   },
   {
@@ -2959,21 +2746,6 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/understanding-tiktok-rpm-rates.mdx",
-    "route": "/blog/understanding-tiktok-rpm-rates/",
-    "sourceType": "mdx",
-    "wordCount": 1648,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/niches/asmr-tiktok-earnings.mdx",
     "route": "/guides/niches/asmr-tiktok-earnings/",
     "sourceType": "mdx",
@@ -2986,6 +2758,21 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/understanding-tiktok-rpm-rates.mdx",
+    "route": "/blog/understanding-tiktok-rpm-rates/",
+    "sourceType": "mdx",
+    "wordCount": 1650,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.3,
     "risk": "low"
   },
   {
@@ -3004,16 +2791,18 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/earnings-revenue/creator-fund/page.tsx",
-    "route": "/calculators/earnings-revenue/creator-fund/",
-    "sourceType": "app-page",
-    "wordCount": 1652,
+    "path": "content/blog/charli-damelio-tiktok-earnings.mdx",
+    "route": "/blog/charli-damelio-tiktok-earnings/",
+    "sourceType": "mdx",
+    "wordCount": 1653,
     "hasUniqueIntro": true,
     "hasFAQ": true,
-    "hasSchema": true,
+    "hasSchema": false,
     "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.5,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -3032,19 +2821,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/commerce-ads/rpm-cpm/page.tsx",
-    "route": "/calculators/commerce-ads/rpm-cpm/",
-    "sourceType": "app-page",
-    "wordCount": 1668,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.43,
-    "risk": "low"
-  },
-  {
     "path": "content/calculators/engagement-rate/engagement-rate-vs-views.mdx",
     "route": "/calculators/engagement-rate/engagement-rate-vs-views/",
     "sourceType": "mdx",
@@ -3057,19 +2833,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.26,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/affiliate-commission/page.tsx",
-    "route": "/calculators/affiliate-commission/",
-    "sourceType": "app-page",
-    "wordCount": 1671,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.32,
     "risk": "low"
   },
   {
@@ -3133,59 +2896,16 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/brand-deal-rate-negotiation-tips.mdx",
-    "route": "/blog/brand-deal-rate-negotiation-tips/",
-    "sourceType": "mdx",
-    "wordCount": 1687,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/watch-time/page.tsx",
-    "route": "/calculators/watch-time/",
+    "path": "src/app/calculators/commerce-ads/ad-cost/page.tsx",
+    "route": "/calculators/commerce-ads/ad-cost/",
     "sourceType": "app-page",
-    "wordCount": 1688,
+    "wordCount": 1686,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.39,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/diamond-converter/page.tsx",
-    "route": "/calculators/diamond-converter/",
-    "sourceType": "app-page",
-    "wordCount": 1695,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.43,
-    "risk": "low"
-  },
-  {
-    "path": "content/blog/creator-fund-shutdown-implications.mdx",
-    "route": "/blog/creator-fund-shutdown-implications/",
-    "sourceType": "mdx",
-    "wordCount": 1696,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.29,
+    "sharedSimilarity": 0.44,
     "risk": "low"
   },
   {
@@ -3204,6 +2924,21 @@
     "risk": "low"
   },
   {
+    "path": "content/blog/building-multiple-income-streams-tiktok.mdx",
+    "route": "/blog/building-multiple-income-streams-tiktok/",
+    "sourceType": "mdx",
+    "wordCount": 1709,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
     "path": "content/data/engagement/tiktok-share-rate-benchmarks.mdx",
     "route": "/data/engagement/tiktok-share-rate-benchmarks/",
     "sourceType": "mdx",
@@ -3216,6 +2951,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/engagement/page.tsx",
+    "route": "/calculators/engagement-influence/engagement/",
+    "sourceType": "app-page",
+    "wordCount": 1719,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -3234,8 +2982,8 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/live-gifts/page.tsx",
-    "route": "/calculators/live-gifts/",
+    "path": "src/app/calculators/save-rate/page.tsx",
+    "route": "/calculators/save-rate/",
     "sourceType": "app-page",
     "wordCount": 1720,
     "hasUniqueIntro": true,
@@ -3243,7 +2991,7 @@
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.38,
+    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -3322,16 +3070,16 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/coins-gifts-diamonds/gift/page.tsx",
-    "route": "/calculators/coins-gifts-diamonds/gift/",
+    "path": "src/app/calculators/customer-acquisition-cost/page.tsx",
+    "route": "/calculators/customer-acquisition-cost/",
     "sourceType": "app-page",
-    "wordCount": 1744,
+    "wordCount": 1746,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.28,
+    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
@@ -3347,6 +3095,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/lifetime-value/page.tsx",
+    "route": "/calculators/lifetime-value/",
+    "sourceType": "app-page",
+    "wordCount": 1758,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
     "risk": "low"
   },
   {
@@ -3410,15 +3171,17 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/conversion-rate/page.tsx",
-    "route": "/calculators/conversion-rate/",
-    "sourceType": "app-page",
-    "wordCount": 1773,
+    "path": "content/blog/creator-fund-shutdown-implications.mdx",
+    "route": "/blog/creator-fund-shutdown-implications/",
+    "sourceType": "mdx",
+    "wordCount": 1782,
     "hasUniqueIntro": true,
     "hasFAQ": true,
-    "hasSchema": true,
+    "hasSchema": false,
     "hasNoindex": false,
-    "notes": [],
+    "notes": [
+      "No schema signal detected"
+    ],
     "sharedSimilarity": 0.29,
     "risk": "low"
   },
@@ -3453,6 +3216,19 @@
     "risk": "low"
   },
   {
+    "path": "src/app/calculators/video-performance/page.tsx",
+    "route": "/calculators/video-performance/",
+    "sourceType": "app-page",
+    "wordCount": 1788,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.33,
+    "risk": "low"
+  },
+  {
     "path": "content/calculators/engagement-rate/increase-engagement-rate.mdx",
     "route": "/calculators/engagement-rate/increase-engagement-rate/",
     "sourceType": "mdx",
@@ -3480,6 +3256,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.21,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/comment-rate/page.tsx",
+    "route": "/calculators/comment-rate/",
+    "sourceType": "app-page",
+    "wordCount": 1796,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -3588,18 +3377,16 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/best-tiktok-niches-money-2026.mdx",
-    "route": "/blog/best-tiktok-niches-money-2026/",
-    "sourceType": "mdx",
-    "wordCount": 1810,
+    "path": "src/app/calculators/tiktok-ad-cost/page.tsx",
+    "route": "/calculators/tiktok-ad-cost/",
+    "sourceType": "app-page",
+    "wordCount": 1811,
     "hasUniqueIntro": true,
-    "hasFAQ": false,
-    "hasSchema": false,
+    "hasFAQ": true,
+    "hasSchema": true,
     "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.26,
+    "notes": [],
+    "sharedSimilarity": 0.44,
     "risk": "low"
   },
   {
@@ -3648,6 +3435,19 @@
     "risk": "low"
   },
   {
+    "path": "src/app/privacy/page.tsx",
+    "route": "/privacy/",
+    "sourceType": "app-page",
+    "wordCount": 1819,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.2,
+    "risk": "low"
+  },
+  {
     "path": "content/data/earnings/tiktok-pay-mexico-earnings.mdx",
     "route": "/data/earnings/tiktok-pay-mexico-earnings/",
     "sourceType": "mdx",
@@ -3660,6 +3460,34 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.4,
+    "risk": "low"
+  },
+  {
+    "path": "content/blog/brand-deal-rate-negotiation-tips.mdx",
+    "route": "/blog/brand-deal-rate-negotiation-tips/",
+    "sourceType": "mdx",
+    "wordCount": 1826,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": false,
+    "hasNoindex": false,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/campaign-roi/page.tsx",
+    "route": "/calculators/campaign-roi/",
+    "sourceType": "app-page",
+    "wordCount": 1829,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
@@ -3690,19 +3518,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/posting-time/page.tsx",
-    "route": "/calculators/posting-time/",
-    "sourceType": "app-page",
-    "wordCount": 1841,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -3766,16 +3581,16 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/profile-visit-rate/page.tsx",
-    "route": "/calculators/profile-visit-rate/",
+    "path": "src/app/calculators/affiliate-commission/page.tsx",
+    "route": "/calculators/affiliate-commission/",
     "sourceType": "app-page",
-    "wordCount": 1857,
+    "wordCount": 1859,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.33,
     "risk": "low"
   },
   {
@@ -3794,21 +3609,6 @@
     "risk": "low"
   },
   {
-    "path": "content/blog/engagement-rate-what-brands-look-for.mdx",
-    "route": "/blog/engagement-rate-what-brands-look-for/",
-    "sourceType": "mdx",
-    "wordCount": 1863,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": false,
-    "hasNoindex": false,
-    "notes": [
-      "No schema signal detected"
-    ],
-    "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
     "path": "content/data/earnings/tiktok-pay-philippines-earnings.mdx",
     "route": "/data/earnings/tiktok-pay-philippines-earnings/",
     "sourceType": "mdx",
@@ -3824,16 +3624,18 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/rpm/page.tsx",
-    "route": "/calculators/rpm/",
-    "sourceType": "app-page",
-    "wordCount": 1867,
+    "path": "content/blog/engagement-rate-what-brands-look-for.mdx",
+    "route": "/blog/engagement-rate-what-brands-look-for/",
+    "sourceType": "mdx",
+    "wordCount": 1865,
     "hasUniqueIntro": true,
     "hasFAQ": true,
-    "hasSchema": true,
+    "hasSchema": false,
     "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.43,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.25,
     "risk": "low"
   },
   {
@@ -3867,16 +3669,29 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/coins/page.tsx",
-    "route": "/calculators/coins/",
+    "path": "src/app/calculators/watch-time/page.tsx",
+    "route": "/calculators/watch-time/",
     "sourceType": "app-page",
-    "wordCount": 1875,
+    "wordCount": 1874,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.35,
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/diamond-converter/page.tsx",
+    "route": "/calculators/diamond-converter/",
+    "sourceType": "app-page",
+    "wordCount": 1878,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
@@ -3895,32 +3710,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/utility-tools/payout/page.tsx",
-    "route": "/calculators/utility-tools/payout/",
-    "sourceType": "app-page",
-    "wordCount": 1889,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.29,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/fun-niche/moon-phase/page.tsx",
-    "route": "/calculators/fun-niche/moon-phase/",
-    "sourceType": "app-page",
-    "wordCount": 1893,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
     "path": "content/data/earnings/tiktok-pay-india-earnings.mdx",
     "route": "/data/earnings/tiktok-pay-india-earnings/",
     "sourceType": "mdx",
@@ -3933,32 +3722,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.3,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/ad-spend/page.tsx",
-    "route": "/calculators/ad-spend/",
-    "sourceType": "app-page",
-    "wordCount": 1902,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.32,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/commerce-ads/page.tsx",
-    "route": "/calculators/commerce-ads/",
-    "sourceType": "app-page",
-    "wordCount": 1905,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
     "risk": "low"
   },
   {
@@ -4007,19 +3770,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/share-ratio/page.tsx",
-    "route": "/calculators/share-ratio/",
-    "sourceType": "app-page",
-    "wordCount": 1912,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
     "path": "content/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates.mdx",
     "route": "/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates/",
     "sourceType": "mdx",
@@ -4047,19 +3797,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/multi-platform-earnings/page.tsx",
-    "route": "/calculators/multi-platform-earnings/",
-    "sourceType": "app-page",
-    "wordCount": 1925,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.3,
     "risk": "low"
   },
   {
@@ -4104,7 +3841,7 @@
     "notes": [
       "No schema signal detected"
     ],
-    "sharedSimilarity": 0.25,
+    "sharedSimilarity": 0.24,
     "risk": "low"
   },
   {
@@ -4135,6 +3872,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/live-gifts/page.tsx",
+    "route": "/calculators/live-gifts/",
+    "sourceType": "app-page",
+    "wordCount": 1951,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
     "risk": "low"
   },
   {
@@ -4183,29 +3933,16 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/coins-gifts-diamonds/page.tsx",
-    "route": "/calculators/coins-gifts-diamonds/",
+    "path": "src/app/calculators/conversion-rate/page.tsx",
+    "route": "/calculators/conversion-rate/",
     "sourceType": "app-page",
-    "wordCount": 1960,
+    "wordCount": 1957,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.27,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/viral-potential/page.tsx",
-    "route": "/calculators/viral-potential/",
-    "sourceType": "app-page",
-    "wordCount": 1961,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.3,
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -4224,23 +3961,25 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/cpm-cpv/page.tsx",
-    "route": "/calculators/cpm-cpv/",
-    "sourceType": "app-page",
-    "wordCount": 1986,
+    "path": "content/blog/best-tiktok-niches-money-2026.mdx",
+    "route": "/blog/best-tiktok-niches-money-2026/",
+    "sourceType": "mdx",
+    "wordCount": 1968,
     "hasUniqueIntro": true,
     "hasFAQ": true,
-    "hasSchema": true,
+    "hasSchema": false,
     "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.37,
+    "notes": [
+      "No schema signal detected"
+    ],
+    "sharedSimilarity": 0.26,
     "risk": "low"
   },
   {
     "path": "content/guides/brand-deals.mdx",
     "route": "/guides/brand-deals/",
     "sourceType": "mdx",
-    "wordCount": 1991,
+    "wordCount": 1993,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -4267,19 +4006,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/fun-niche/page.tsx",
-    "route": "/calculators/fun-niche/",
-    "sourceType": "app-page",
-    "wordCount": 2014,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
     "path": "content/guides/monetization/seven-ways-make-money-tiktok.mdx",
     "route": "/guides/monetization/seven-ways-make-money-tiktok/",
     "sourceType": "mdx",
@@ -4292,71 +4018,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.3,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/engagement-influence/video-engagement/page.tsx",
-    "route": "/calculators/engagement-influence/video-engagement/",
-    "sourceType": "app-page",
-    "wordCount": 2016,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.33,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/cost-per-result/page.tsx",
-    "route": "/calculators/cost-per-result/",
-    "sourceType": "app-page",
-    "wordCount": 2021,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.37,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/earnings-revenue/live-earnings/page.tsx",
-    "route": "/calculators/earnings-revenue/live-earnings/",
-    "sourceType": "app-page",
-    "wordCount": 2023,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.38,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/ad-revenue/page.tsx",
-    "route": "/calculators/ad-revenue/",
-    "sourceType": "app-page",
-    "wordCount": 2026,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.3,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/data/page.tsx",
-    "route": "/data/",
-    "sourceType": "app-page",
-    "wordCount": 2026,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.25,
     "risk": "low"
   },
   {
@@ -4390,55 +4051,81 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/niche-profitability/page.tsx",
-    "route": "/calculators/niche-profitability/",
+    "path": "src/app/calculators/posting-time/page.tsx",
+    "route": "/calculators/posting-time/",
     "sourceType": "app-page",
-    "wordCount": 2044,
+    "wordCount": 2030,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.28,
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/completion-rate/page.tsx",
-    "route": "/calculators/completion-rate/",
+    "path": "src/app/calculators/commerce-ads/rpm-cpm/page.tsx",
+    "route": "/calculators/commerce-ads/rpm-cpm/",
     "sourceType": "app-page",
-    "wordCount": 2045,
+    "wordCount": 2042,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.39,
+    "sharedSimilarity": 0.43,
     "risk": "low"
   },
   {
-    "path": "src/app/glossary/page.tsx",
-    "route": "/glossary/",
+    "path": "src/app/calculators/profile-visit-rate/page.tsx",
+    "route": "/calculators/profile-visit-rate/",
     "sourceType": "app-page",
     "wordCount": 2046,
     "hasUniqueIntro": true,
-    "hasFAQ": false,
+    "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.22,
+    "sharedSimilarity": 0.3,
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/audience-overlap/page.tsx",
-    "route": "/calculators/audience-overlap/",
+    "path": "src/app/calculators/coins/page.tsx",
+    "route": "/calculators/coins/",
     "sourceType": "app-page",
-    "wordCount": 2056,
+    "wordCount": 2060,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.27,
+    "sharedSimilarity": 0.34,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/gift/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/gift/",
+    "sourceType": "app-page",
+    "wordCount": 2069,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/fun-niche/moon-phase/page.tsx",
+    "route": "/calculators/fun-niche/moon-phase/",
+    "sourceType": "app-page",
+    "wordCount": 2073,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": true,
+    "notes": [],
+    "sharedSimilarity": 0.31,
     "risk": "low"
   },
   {
@@ -4457,29 +4144,81 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/utility-tools/tax/page.tsx",
-    "route": "/calculators/utility-tools/tax/",
+    "path": "src/app/calculators/rpm/page.tsx",
+    "route": "/calculators/rpm/",
     "sourceType": "app-page",
-    "wordCount": 2094,
+    "wordCount": 2080,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.43,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/ad-spend/page.tsx",
+    "route": "/calculators/ad-spend/",
+    "sourceType": "app-page",
+    "wordCount": 2088,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/commerce-ads/page.tsx",
+    "route": "/calculators/commerce-ads/",
+    "sourceType": "app-page",
+    "wordCount": 2088,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/creator-fund/page.tsx",
+    "route": "/calculators/earnings-revenue/creator-fund/",
+    "sourceType": "app-page",
+    "wordCount": 2092,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.53,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/share-ratio/page.tsx",
+    "route": "/calculators/share-ratio/",
+    "sourceType": "app-page",
+    "wordCount": 2097,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/multi-platform-earnings/page.tsx",
+    "route": "/calculators/multi-platform-earnings/",
+    "sourceType": "app-page",
+    "wordCount": 2113,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
     "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/brand-deal-rate/page.tsx",
-    "route": "/calculators/brand-deal-rate/",
-    "sourceType": "app-page",
-    "wordCount": 2100,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.34,
     "risk": "low"
   },
   {
@@ -4494,6 +4233,19 @@
     "notes": [
       "No schema signal detected"
     ],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/coins-gifts-diamonds/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/",
+    "sourceType": "app-page",
+    "wordCount": 2141,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
     "sharedSimilarity": 0.28,
     "risk": "low"
   },
@@ -4513,16 +4265,16 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/content-calendar-roi/page.tsx",
-    "route": "/calculators/content-calendar-roi/",
+    "path": "src/app/calculators/viral-potential/page.tsx",
+    "route": "/calculators/viral-potential/",
     "sourceType": "app-page",
-    "wordCount": 2151,
+    "wordCount": 2149,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.24,
+    "sharedSimilarity": 0.3,
     "risk": "low"
   },
   {
@@ -4541,19 +4293,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/content-value/page.tsx",
-    "route": "/calculators/content-value/",
-    "sourceType": "app-page",
-    "wordCount": 2160,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
     "path": "content/data/earnings/top-tiktok-creators-income.mdx",
     "route": "/data/earnings/top-tiktok-creators-income/",
     "sourceType": "mdx",
@@ -4569,8 +4308,8 @@
     "risk": "low"
   },
   {
-    "path": "src/app/blog/page.tsx",
-    "route": "/blog/",
+    "path": "src/app/calculators/cpm-cpv/page.tsx",
+    "route": "/calculators/cpm-cpv/",
     "sourceType": "app-page",
     "wordCount": 2172,
     "hasUniqueIntro": true,
@@ -4578,7 +4317,7 @@
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.29,
+    "sharedSimilarity": 0.37,
     "risk": "low"
   },
   {
@@ -4594,6 +4333,19 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/data/page.tsx",
+    "route": "/data/",
+    "sourceType": "app-page",
+    "wordCount": 2186,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.26,
     "risk": "low"
   },
   {
@@ -4627,21 +4379,34 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/earnings-revenue/page.tsx",
-    "route": "/calculators/earnings-revenue/",
+    "path": "src/app/calculators/fun-niche/page.tsx",
+    "route": "/calculators/fun-niche/",
     "sourceType": "app-page",
-    "wordCount": 2211,
+    "wordCount": 2197,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": true,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/cost-per-result/page.tsx",
+    "route": "/calculators/cost-per-result/",
+    "sourceType": "app-page",
+    "wordCount": 2206,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.29,
+    "sharedSimilarity": 0.37,
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/tiktok-creator-fund/page.tsx",
-    "route": "/calculators/tiktok-creator-fund/",
+    "path": "src/app/calculators/ad-revenue/page.tsx",
+    "route": "/calculators/ad-revenue/",
     "sourceType": "app-page",
     "wordCount": 2212,
     "hasUniqueIntro": true,
@@ -4649,7 +4414,7 @@
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.5,
+    "sharedSimilarity": 0.31,
     "risk": "low"
   },
   {
@@ -4668,16 +4433,68 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/production-cost/page.tsx",
-    "route": "/calculators/production-cost/",
+    "path": "src/app/calculators/completion-rate/page.tsx",
+    "route": "/calculators/completion-rate/",
     "sourceType": "app-page",
-    "wordCount": 2247,
+    "wordCount": 2231,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.21,
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/niche-profitability/page.tsx",
+    "route": "/calculators/niche-profitability/",
+    "sourceType": "app-page",
+    "wordCount": 2232,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/glossary/page.tsx",
+    "route": "/glossary/",
+    "sourceType": "app-page",
+    "wordCount": 2235,
+    "hasUniqueIntro": true,
+    "hasFAQ": false,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/audience-overlap/page.tsx",
+    "route": "/calculators/audience-overlap/",
+    "sourceType": "app-page",
+    "wordCount": 2240,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/payout/page.tsx",
+    "route": "/calculators/utility-tools/payout/",
+    "sourceType": "app-page",
+    "wordCount": 2241,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
     "risk": "low"
   },
   {
@@ -4696,19 +4513,6 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/hashtag-performance/page.tsx",
-    "route": "/calculators/hashtag-performance/",
-    "sourceType": "app-page",
-    "wordCount": 2266,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
     "path": "content/data/platform-comparisons/creator-monetization-platforms-2026.mdx",
     "route": "/data/platform-comparisons/creator-monetization-platforms-2026/",
     "sourceType": "mdx",
@@ -4721,32 +4525,6 @@
       "No schema signal detected"
     ],
     "sharedSimilarity": 0.28,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/utility-tools/eligibility/page.tsx",
-    "route": "/calculators/utility-tools/eligibility/",
-    "sourceType": "app-page",
-    "wordCount": 2283,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.27,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/engagement-rate/page.tsx",
-    "route": "/calculators/engagement-rate/",
-    "sourceType": "app-page",
-    "wordCount": 2295,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {
@@ -4780,6 +4558,19 @@
     "risk": "low"
   },
   {
+    "path": "src/app/calculators/engagement-influence/video-engagement/page.tsx",
+    "route": "/calculators/engagement-influence/video-engagement/",
+    "sourceType": "app-page",
+    "wordCount": 2320,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.32,
+    "risk": "low"
+  },
+  {
     "path": "content/blog/tiktok-side-hustle-beginner-2026.mdx",
     "route": "/blog/tiktok-side-hustle-beginner-2026/",
     "sourceType": "mdx",
@@ -4810,42 +4601,68 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/follower-growth/page.tsx",
-    "route": "/calculators/follower-growth/",
+    "path": "src/app/calculators/content-calendar-roi/page.tsx",
+    "route": "/calculators/content-calendar-roi/",
     "sourceType": "app-page",
-    "wordCount": 2349,
+    "wordCount": 2341,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.24,
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/coins-gifts-diamonds/coins/page.tsx",
-    "route": "/calculators/coins-gifts-diamonds/coins/",
+    "path": "src/app/calculators/content-value/page.tsx",
+    "route": "/calculators/content-value/",
     "sourceType": "app-page",
-    "wordCount": 2370,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.27,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/follower-conversion/page.tsx",
-    "route": "/calculators/follower-conversion/",
-    "sourceType": "app-page",
-    "wordCount": 2406,
+    "wordCount": 2344,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
     "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/blog/page.tsx",
+    "route": "/blog/",
+    "sourceType": "app-page",
+    "wordCount": 2353,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/live-earnings/page.tsx",
+    "route": "/calculators/earnings-revenue/live-earnings/",
+    "sourceType": "app-page",
+    "wordCount": 2380,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.39,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/earnings-revenue/page.tsx",
+    "route": "/calculators/earnings-revenue/",
+    "sourceType": "app-page",
+    "wordCount": 2391,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
@@ -4879,6 +4696,45 @@
     "risk": "low"
   },
   {
+    "path": "src/app/calculators/brand-deal-rate/page.tsx",
+    "route": "/calculators/brand-deal-rate/",
+    "sourceType": "app-page",
+    "wordCount": 2424,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.36,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/production-cost/page.tsx",
+    "route": "/calculators/production-cost/",
+    "sourceType": "app-page",
+    "wordCount": 2438,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.22,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/hashtag-performance/page.tsx",
+    "route": "/calculators/hashtag-performance/",
+    "sourceType": "app-page",
+    "wordCount": 2456,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
     "path": "content/data/earnings/tiktok-pay-us-earnings.mdx",
     "route": "/data/earnings/tiktok-pay-us-earnings/",
     "sourceType": "mdx",
@@ -4909,16 +4765,81 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/utility-tools/page.tsx",
-    "route": "/calculators/utility-tools/",
+    "path": "src/app/calculators/follower-growth/page.tsx",
+    "route": "/calculators/follower-growth/",
     "sourceType": "app-page",
-    "wordCount": 2584,
+    "wordCount": 2539,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/tiktok-creator-fund/page.tsx",
+    "route": "/calculators/tiktok-creator-fund/",
+    "sourceType": "app-page",
+    "wordCount": 2540,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.53,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/tax/page.tsx",
+    "route": "/calculators/utility-tools/tax/",
+    "sourceType": "app-page",
+    "wordCount": 2556,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.28,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/follower-conversion/page.tsx",
+    "route": "/calculators/follower-conversion/",
+    "sourceType": "app-page",
+    "wordCount": 2592,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
     "sharedSimilarity": 0.29,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-rate/page.tsx",
+    "route": "/calculators/engagement-rate/",
+    "sourceType": "app-page",
+    "wordCount": 2596,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.35,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/utility-tools/eligibility/page.tsx",
+    "route": "/calculators/utility-tools/eligibility/",
+    "sourceType": "app-page",
+    "wordCount": 2619,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.26,
     "risk": "low"
   },
   {
@@ -4952,68 +4873,29 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/engagement-influence/influencer-pricing/page.tsx",
-    "route": "/calculators/engagement-influence/influencer-pricing/",
+    "path": "src/app/calculators/coins-gifts-diamonds/coins/page.tsx",
+    "route": "/calculators/coins-gifts-diamonds/coins/",
     "sourceType": "app-page",
-    "wordCount": 2702,
+    "wordCount": 2695,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.31,
+    "sharedSimilarity": 0.27,
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/engagement-influence/page.tsx",
-    "route": "/calculators/engagement-influence/",
+    "path": "src/app/calculators/utility-tools/page.tsx",
+    "route": "/calculators/utility-tools/",
     "sourceType": "app-page",
-    "wordCount": 2711,
+    "wordCount": 2767,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.3,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/break-even/page.tsx",
-    "route": "/calculators/break-even/",
-    "sourceType": "app-page",
-    "wordCount": 2821,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.25,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/milestone-tracker/page.tsx",
-    "route": "/calculators/milestone-tracker/",
-    "sourceType": "app-page",
-    "wordCount": 2824,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.31,
-    "risk": "low"
-  },
-  {
-    "path": "src/app/calculators/sponsorship-roi/page.tsx",
-    "route": "/calculators/sponsorship-roi/",
-    "sourceType": "app-page",
-    "wordCount": 2834,
-    "hasUniqueIntro": true,
-    "hasFAQ": true,
-    "hasSchema": true,
-    "hasNoindex": false,
-    "notes": [],
-    "sharedSimilarity": 0.25,
+    "sharedSimilarity": 0.28,
     "risk": "low"
   },
   {
@@ -5032,10 +4914,23 @@
     "risk": "low"
   },
   {
+    "path": "src/app/calculators/engagement-influence/page.tsx",
+    "route": "/calculators/engagement-influence/",
+    "sourceType": "app-page",
+    "wordCount": 2893,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.3,
+    "risk": "low"
+  },
+  {
     "path": "content/guides/creator-rewards-program.mdx",
     "route": "/guides/creator-rewards-program/",
     "sourceType": "mdx",
-    "wordCount": 2927,
+    "wordCount": 2929,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": false,
@@ -5062,10 +4957,49 @@
     "risk": "low"
   },
   {
-    "path": "src/app/calculators/commerce-ads/shop-profit/page.tsx",
-    "route": "/calculators/commerce-ads/shop-profit/",
+    "path": "src/app/calculators/break-even/page.tsx",
+    "route": "/calculators/break-even/",
     "sourceType": "app-page",
-    "wordCount": 2944,
+    "wordCount": 3013,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/milestone-tracker/page.tsx",
+    "route": "/calculators/milestone-tracker/",
+    "sourceType": "app-page",
+    "wordCount": 3016,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.31,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/sponsorship-roi/page.tsx",
+    "route": "/calculators/sponsorship-roi/",
+    "sourceType": "app-page",
+    "wordCount": 3021,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.25,
+    "risk": "low"
+  },
+  {
+    "path": "src/app/calculators/engagement-influence/influencer-pricing/page.tsx",
+    "route": "/calculators/engagement-influence/influencer-pricing/",
+    "sourceType": "app-page",
+    "wordCount": 3026,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
@@ -5075,10 +5009,23 @@
     "risk": "low"
   },
   {
+    "path": "src/app/calculators/commerce-ads/shop-profit/page.tsx",
+    "route": "/calculators/commerce-ads/shop-profit/",
+    "sourceType": "app-page",
+    "wordCount": 3361,
+    "hasUniqueIntro": true,
+    "hasFAQ": true,
+    "hasSchema": true,
+    "hasNoindex": false,
+    "notes": [],
+    "sharedSimilarity": 0.33,
+    "risk": "low"
+  },
+  {
     "path": "src/app/guides/tiktok-ads-hub/page.tsx",
     "route": "/guides/tiktok-ads-hub/",
     "sourceType": "app-page",
-    "wordCount": 3301,
+    "wordCount": 3480,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
@@ -5091,7 +5038,7 @@
     "path": "src/app/guides/tiktok-growth-hub/page.tsx",
     "route": "/guides/tiktok-growth-hub/",
     "sourceType": "app-page",
-    "wordCount": 3327,
+    "wordCount": 3497,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
@@ -5104,39 +5051,39 @@
     "path": "src/app/guides/monetization-calculator-hub/page.tsx",
     "route": "/guides/monetization-calculator-hub/",
     "sourceType": "app-page",
-    "wordCount": 3359,
+    "wordCount": 3537,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.3,
+    "sharedSimilarity": 0.29,
     "risk": "low"
   },
   {
     "path": "src/app/calculators/tiktok-money/page.tsx",
     "route": "/calculators/tiktok-money/",
     "sourceType": "app-page",
-    "wordCount": 3362,
+    "wordCount": 3670,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.39,
+    "sharedSimilarity": 0.4,
     "risk": "low"
   },
   {
     "path": "src/app/calculators/earnings-revenue/money/page.tsx",
     "route": "/calculators/earnings-revenue/money/",
     "sourceType": "app-page",
-    "wordCount": 3366,
+    "wordCount": 3808,
     "hasUniqueIntro": true,
     "hasFAQ": true,
     "hasSchema": true,
     "hasNoindex": false,
     "notes": [],
-    "sharedSimilarity": 0.34,
+    "sharedSimilarity": 0.35,
     "risk": "low"
   },
   {

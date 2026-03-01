@@ -45,7 +45,7 @@ export default function CreatorFundPaymentSchedulePage() {
         description="Complete guide to TikTok Creator Fund payment schedule, processing times, minimum thresholds, payment methods, and what to do if your payment is delayed."
         url="https://calculatecreator.com/reference/creator-fund-payment-schedule/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
       {/* Breadcrumb */}

@@ -22,7 +22,7 @@ export default function SearchVolumeIncrease40PercentPage() {
         description="Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising."
         url="https://calculatecreator.com/news/search-volume-increase-40-percent/"
         datePublished="2026-01-01"
-        dateModified="2026-01-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-algorithm-1024.webp"
         keywords={['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery']}
       />

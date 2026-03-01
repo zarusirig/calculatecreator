@@ -21,7 +21,7 @@ export default function CreatorRewards20xEarningsPage() {
         description="The new Creator Rewards Program provides revenue-per-mille rates ranging from $0.40 to $1.00 per 1,000 qualified views, up to 20 times higher than the previous Creator Fund."
         url="https://calculatecreator.com/news/creator-rewards-20x-earnings/"
         datePublished="2026-01-01"
-        dateModified="2026-01-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-monetization-1024.webp"
         keywords={['creator rewards', 'tiktok earnings', 'creator fund comparison', 'monetization rates', 'rpm']}
       />

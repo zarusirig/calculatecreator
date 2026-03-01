@@ -109,6 +109,7 @@ async function audit() {
   // First pass: collect all pages and their outbound links
   for (const file of htmlFiles) {
     const url = fileToUrl(file);
+    if (url === '/404/') continue;
     const html = fs.readFileSync(file, 'utf-8');
     const outboundLinks = extractInternalLinks(html);
 

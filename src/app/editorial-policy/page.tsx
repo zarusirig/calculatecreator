@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "Editorial Policy and CalculateCreator Platform Details",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'February 17, 2026';
+const LAST_UPDATED = 'March 1, 2026';
 const editorialPolicySchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -36,6 +37,7 @@ export default function EditorialPolicyPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
+        <Breadcrumb items={[{ label: 'Editorial Policy', href: '/editorial-policy/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">Editorial Policy</h1>
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
@@ -201,7 +203,7 @@ export default function EditorialPolicyPage() {
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">9. Related policies</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">9. Related Resources</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
             <li>
               <Link href="/about/" className="link">

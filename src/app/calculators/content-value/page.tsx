@@ -12,7 +12,7 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
-  title: "TikTok Content Value Calculator — What Is Your Content Worth?",
+  title: "TikTok Content Value Calculator for Creator Earnings",
   description: "Calculate the monetary value of your TikTok content. Estimate earned media value per video based on views, engagement, and equivalent ad spend.",
   keywords: ['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator'],
   alternates: {
@@ -47,7 +47,7 @@ export default function ContentValueCalculatorPage() {
         description="Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche."
         url="https://calculatecreator.com/calculators/content-value/"
         datePublished="2024-04-01"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator']}
       />
       <FAQSchema faqs={faqData} />

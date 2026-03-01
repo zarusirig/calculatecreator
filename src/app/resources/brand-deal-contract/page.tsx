@@ -69,6 +69,13 @@ export default function BrandDealContractPage() {
             <p>
               This guide covers the critical elements every creator should include in brand partnership agreements, common red flags to avoid, negotiation strategies, and payment structures that protect your interests while maintaining positive brand relationships.
             </p>
+            <p>
+              Need a full copy-ready agreement block? Open the{' '}
+              <Link href="/resources/brand-deal-contract-template/" className="text-primary-600 underline">
+                brand deal contract template
+              </Link>{' '}
+              version.
+            </p>
           </div>
         </Card>
 
@@ -738,4 +745,3 @@ export default function BrandDealContractPage() {
     </div>
   );
 }
-

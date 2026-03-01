@@ -47,7 +47,7 @@ export default function SaveRateCalculatorPage() {
         description="Calculate your TikTok save rate. Learn how often viewers bookmark your content. Save rate is a key signal for the algorithm."
         url="https://calculatecreator.com/calculators/save-rate/"
         datePublished="2024-03-22"
-        dateModified="2025-12-05"
+        dateModified="2026-03-01"
         keywords={['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric']}
       />
       <FAQSchema faqs={faqData} />

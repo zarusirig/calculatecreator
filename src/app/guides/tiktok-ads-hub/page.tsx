@@ -51,7 +51,7 @@ export default function TikTokAdsHubPage() {
         description="Comprehensive guide to TikTok advertising covering ad formats, budget planning, ROAS benchmarks, Spark Ads, TikTok Shop advertising, and advanced campaign optimization strategies with calculators."
         url="https://calculatecreator.com/guides/tiktok-ads-hub/"
         datePublished="2026-02-06"
-        dateModified="2026-02-06"
+        dateModified="2026-03-01"
         keywords={['tiktok ads', 'tiktok advertising cost', 'spark ads', 'tiktok shop ads', 'campaign roi', 'tiktok cpm']}
       />
       <BreadcrumbSchema

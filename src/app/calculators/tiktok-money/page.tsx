@@ -15,7 +15,7 @@ import { TikTokMoneyCalculatorWidget } from '@/components/calculators/tiktok-mon
 
 export const metadata: Metadata = {
   title: "TikTok Money Calculator — Estimate All Earnings 2026",
-  description: "Calculate your total TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions. Free calculator with 2026 rate data for all income streams.",
+  description: "Calculate total TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions with 2026 rate benchmarks and practical planning tips.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'how much money on tiktok', 'tiktok income', 'tiktok monetization calculator'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/tiktok-money/',
@@ -81,7 +81,7 @@ export default function TikTokMoneyCalculatorPage() {
         description="Calculate your total TikTok earnings from all income streams including Creator Fund, brand deals, LIVE gifts, and TikTok Shop."
         url="https://calculatecreator.com/calculators/tiktok-money/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         keywords={['tiktok money calculator', 'tiktok earnings', 'tiktok income calculator', 'how much money tiktok']}
         personAuthor={getPersonAuthorForSchema('tiktok-money')}
       />

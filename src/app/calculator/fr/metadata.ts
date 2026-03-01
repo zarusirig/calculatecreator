@@ -15,6 +15,10 @@ export const metadata: Metadata = {
       'ms': 'https://calculatecreator.com/calculator/my/',
     },
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'Calculateur TikTok France | RPM 2026',
     description:
@@ -29,4 +33,3 @@ export const metadata: Metadata = {
     description: 'Calcule tes revenus TikTok avec les RPM 2026. Gratuit.',
   },
 };
-

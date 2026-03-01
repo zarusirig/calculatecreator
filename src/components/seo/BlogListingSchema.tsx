@@ -19,8 +19,8 @@ export function BlogListingSchema() {
         headline: 'Creator Fund vs LIVE Gifts: Which Pays More?',
         url: 'https://calculatecreator.com/blog/creator-fund-vs-live-gifts/',
         description: 'Compare TikTok Creator Fund earnings vs LIVE streaming gift revenue. See which monetization method works best for your content style.',
-        datePublished: '2026-01-15',
-        dateModified: '2026-01-21'
+        datePublished: '2026-03-01',
+        dateModified: '2026-03-01'
       }
     ]
   };

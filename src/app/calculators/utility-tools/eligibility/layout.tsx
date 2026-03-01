@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Eligibility Calculator",
-  description: "Use this TikTok eligibility calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  title: "TikTok Monetization Eligibility Checker",
+  description: "Check TikTok monetization eligibility across Creator Fund, LIVE Gifts, Shop, and Rewards with account threshold guidance and milestone planning details.",
   keywords: ['tiktok eligibility', 'creator fund requirements', 'tiktok monetization requirements', 'live gifts eligibility', 'tiktok shop requirements'],
   alternates: {
     canonical: 'https://calculatecreator.com/calculators/utility-tools/eligibility/',

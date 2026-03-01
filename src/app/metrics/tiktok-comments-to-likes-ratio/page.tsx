@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/',
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function TikTokCommentsToLikesRatioPage() {
@@ -122,7 +126,7 @@ export default function TikTokCommentsToLikesRatioPage() {
       <ArticleSchema
         title="TikTok Comments-to-Likes Ratio: What's Good & How to Improve It"
         description="Learn what a good comments-to-likes ratio is on TikTok, why it matters for the algorithm, and 8 strategies to improve yours."
-        url="https://calculatecreator.com/metrics/tiktok-comments-to-likes-ratio/"
+        url="https://calculatecreator.com/metrics/comments-to-likes-ratio/"
         category="Metrics"
       />
       {/* Breadcrumb */}

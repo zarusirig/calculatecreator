@@ -100,7 +100,35 @@ function RelatedContentNav({ frontmatter }: { frontmatter: ArticleFrontmatter })
     })
     .filter(section => section.items.length > 0);
 
-  if (dedupedSections.length === 0) return null;
+  const categoryRoot = frontmatter.category.split('/')[0];
+  const fallbackLinks = [
+    { label: 'All Calculators', href: '/calculators/' },
+    { label: 'Creator Guides', href: '/guides/' },
+    { label: 'Data & Insights', href: '/data/' },
+    { label: 'Creator News', href: '/news/' },
+  ].filter((link) => !link.href.startsWith(`/${categoryRoot}/`));
+
+  if (dedupedSections.length === 0) {
+    return (
+      <nav className="mt-12 rounded-2xl border border-neutral-200 bg-white p-5 md:p-6" aria-label="Related content">
+        <div className="mb-5 border-b border-neutral-100 pb-4">
+          <p className="text-body-xs font-semibold uppercase tracking-[0.14em] text-primary-600 mb-2">
+            Continue Reading
+          </p>
+          <h3 className="text-heading-lg font-bold text-neutral-900">
+            Related Content
+          </h3>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {fallbackLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="btn btn-secondary btn-sm">
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </nav>
+    );
+  }
 
   return (
     <nav className="mt-12 rounded-2xl border border-neutral-200 bg-white p-5 md:p-6" aria-label="Related content">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: "Advertising Disclosure and CalculateCreator Platform Details",
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'February 17, 2026';
+const LAST_UPDATED = 'March 1, 2026';
 const advertisingDisclosureSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
@@ -36,6 +37,12 @@ export default function AdvertisingDisclosurePage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
+        <Breadcrumb
+          items={[
+            { label: 'Compliance', href: '/compliance/' },
+            { label: 'Advertising Disclosure', href: '/compliance/advertising-disclosure/' },
+          ]}
+        />
         <h1 className="text-display-sm font-bold text-neutral-900">Advertising Disclosure</h1>
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
@@ -144,7 +151,7 @@ export default function AdvertisingDisclosurePage() {
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">6. Questions and related policies</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">6. Related Resources and policy links</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             For advertising or disclosure questions, contact{' '}
             <a href="mailto:contact@calculatecreator.com" className="link">

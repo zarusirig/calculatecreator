@@ -56,7 +56,7 @@ export default function AffiliateCommissionCalculatorPage() {
         description="Calculate your potential earnings from TikTok Shop affiliate marketing and product commissions."
         url="https://calculatecreator.com/calculators/affiliate-commission/"
         datePublished="2024-01-15"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['tiktok affiliate calculator', 'tiktok shop commission', 'affiliate earnings', 'tiktok affiliate income']}
       />
       <FAQSchema faqs={faqs} />

@@ -72,7 +72,7 @@ export default function CompletionRateCalculatorPage() {
         description="Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance."
         url="https://calculatecreator.com/calculators/completion-rate/"
         datePublished="2024-02-10"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics']}
       />
       <FAQSchema faqs={faqData} />

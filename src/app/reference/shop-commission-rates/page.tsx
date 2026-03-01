@@ -33,7 +33,7 @@ export default function ShopCommissionRatesPage() {
         description="Complete breakdown of TikTok Shop affiliate commission rates by product category. Find the most profitable categories and optimize your earnings."
         url="https://calculatecreator.com/reference/shop-commission-rates/"
         datePublished="2024-02-01"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         hasTable={true}
       />
       <nav className="bg-white border-b border-neutral-200 py-3">

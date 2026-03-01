@@ -15,6 +15,10 @@ export const metadata: Metadata = {
       'ms': 'https://calculatecreator.com/calculator/my/',
     },
   },
+  robots: {
+    index: false,
+    follow: true,
+  },
   openGraph: {
     title: 'TikTok Geld Rechner Deutschland | 2026 RPM & Einnahmen',
     description:
@@ -29,4 +33,3 @@ export const metadata: Metadata = {
     description: 'Berechne TikTok Creator Fund & Rewards Einnahmen mit aktuellen 2026 RPM-Werten.',
   },
 };
-

@@ -47,7 +47,7 @@ export default function BreakEvenCalculatorPage() {
         description="Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams."
         url="https://calculatecreator.com/calculators/break-even/"
         datePublished="2024-04-15"
-        dateModified="2025-11-13"
+        dateModified="2026-03-01"
         keywords={['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator']}
       />
       <FAQSchema faqs={faqData} />

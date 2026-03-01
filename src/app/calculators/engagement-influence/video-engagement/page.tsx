@@ -60,7 +60,7 @@ export default function VideoPerformanceCalculatorPage() {
         description="Calculate a comprehensive performance score for your TikTok videos based on views, engagement, reach, and audience interaction metrics."
         url="https://calculatecreator.com/calculators/video-performance/"
         datePublished="2024-01-15"
-        dateModified="2025-12-04"
+        dateModified="2026-03-01"
         keywords={['tiktok video performance', 'video analytics', 'content performance score', 'tiktok metrics']}
       />
       <FAQSchema faqs={faqData} />

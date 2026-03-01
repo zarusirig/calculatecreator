@@ -65,7 +65,7 @@ export default function TikTokVsInstagramPage() {
         description="Compare TikTok and Instagram creator earnings, monetization options, and which platform pays better at each follower tier with 2026 data."
         url="https://calculatecreator.com/comparisons/tiktok-vs-instagram/"
         datePublished="2024-11-01"
-        dateModified="2025-11-15"
+        dateModified="2026-03-01"
         subjectA="TikTok"
         subjectB="Instagram"
         faqs={faqs}

@@ -4,7 +4,7 @@ import { Banknote, DollarSign, Handshake, Gift, ShoppingBag, TrendingUp, PieChar
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Money Calculator 2026",
+  title: "TikTok Money & Earnings Calculator 2026",
   description: "Use this TikTok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'tiktok income estimator', 'how much tiktok pays', 'tiktok monetization calculator'],
   alternates: {
@@ -65,7 +65,7 @@ export default function TikTokMoneyCalculatorPage() {
         description="Calculate your total TikTok earnings from all income streams: Creator Fund, brand deals, LIVE gifts, and TikTok Shop. Get comprehensive monetization estimates for any follower count."
         url="https://calculatecreator.com/calculators/earnings-revenue/money/"
         datePublished="2024-01-15"
-        dateModified="2026-01-15"
+        dateModified="2026-03-01"
         keywords={['tiktok money calculator', 'tiktok earnings calculator', 'tiktok income estimator', 'how much tiktok pays']}
       />
       <FAQSchema faqs={faqData} />

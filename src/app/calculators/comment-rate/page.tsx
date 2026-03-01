@@ -48,7 +48,7 @@ export default function CommentRateCalculatorPage() {
         description="Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is."
         url="https://calculatecreator.com/calculators/comment-rate/"
         datePublished="2024-05-01"
-        dateModified="2025-12-05"
+        dateModified="2026-03-01"
         keywords={['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement']}
       />
       <FAQSchema faqs={faqData} />

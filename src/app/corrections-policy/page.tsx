@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Corrections Policy | CalculateCreator',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'February 20, 2026';
+const LAST_UPDATED = 'March 1, 2026';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -38,18 +39,20 @@ export default function CorrectionsPolicyPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
+          <Breadcrumb items={[{ label: 'Corrections Policy', href: '/corrections-policy/' }]} />
           <h1 className="text-display-sm font-bold text-neutral-900">
             Corrections Policy
           </h1>
-          <p className="mt-3 text-sm text-neutral-600">
+          <div className="mt-3 text-sm text-neutral-600">
             Last Updated: {LAST_UPDATED}
-          </p>
+          </div>
 
           <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator is committed to accuracy. When we get something wrong — whether
-            it is a formula error, outdated data point, or misleading statement — we correct
-            it promptly and transparently. This page explains how to report errors and how
-            we handle corrections.
+            CalculateCreator is committed to accuracy across every TikTok calculator, guide,
+            and data page. When we get something wrong — whether it is a formula error,
+            outdated data point, or misleading statement — we correct it promptly and
+            transparently. This page explains how to report errors and how we handle
+            corrections.
           </p>
 
           <section className="mt-8 card p-6">
@@ -163,31 +166,20 @@ export default function CorrectionsPolicyPage() {
             </p>
           </section>
 
-          <div className="mt-10 text-sm text-neutral-500">
-            <p>
-              Related:{' '}
-              <Link
-                href="/editorial-policy/"
-                className="text-primary-600 underline"
-              >
+          <section className="mt-10 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Related Resources</h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link href="/editorial-policy/" className="btn btn-secondary btn-sm">
                 Editorial Policy
               </Link>
-              {' · '}
-              <Link
-                href="/sources-policy/"
-                className="text-primary-600 underline"
-              >
+              <Link href="/sources-policy/" className="btn btn-secondary btn-sm">
                 Sources Policy
               </Link>
-              {' · '}
-              <Link
-                href="/methodology/"
-                className="text-primary-600 underline"
-              >
+              <Link href="/methodology/" className="btn btn-secondary btn-sm">
                 Methodology
               </Link>
-            </p>
-          </div>
+            </div>
+          </section>
         </Container>
       </div>
     </>

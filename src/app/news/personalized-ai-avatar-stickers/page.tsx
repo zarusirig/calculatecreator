@@ -21,7 +21,7 @@ export default function PersonalizedAIAvatarStickersPage() {
         description="TikTok rolled out AI-powered personalized avatar stickers in October 2026. Users can create custom stickers based on their likeness."
         url="https://calculatecreator.com/news/personalized-ai-avatar-stickers/"
         datePublished="2026-10-01"
-        dateModified="2026-10-01"
+        dateModified="2026-03-01"
         image="https://calculatecreator.com/news/news-features-1024.webp"
         keywords={['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news']}
       />

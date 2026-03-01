@@ -65,7 +65,7 @@ export default function CreatorFundCalculatorPage() {
         description="Estimate your monthly and annual earnings from the TikTok Creator Fund based on your views, engagement rate, and content niche."
         url="https://calculatecreator.com/calculators/tiktok-creator-fund/"
         datePublished="2024-01-15"
-        dateModified="2026-01-31"
+        dateModified="2026-03-01"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'tiktok rpm calculator', 'creator fund payment']}
       />
       <FAQSchema faqs={faqs} />
