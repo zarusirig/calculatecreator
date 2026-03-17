@@ -87,7 +87,7 @@ export default function KalkulatorTikTokMY() {
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Laman Utama</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/region/" className="text-neutral-600 hover:text-primary-600">Statistik TikTok Global</Link>
+          <Link href="/data/earnings/" className="text-neutral-600 hover:text-primary-600">Statistik TikTok Global</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Bahasa Malaysia</span>
         </nav>
@@ -103,7 +103,7 @@ export default function KalkulatorTikTokMY() {
             Kirakan potensi pendapatan anda di TikTok: Dana Pencipta, tawaran jenama, dan hadiah LIVE. Dioptimumkan untuk pasaran Malaysia dengan kadar RPM terkini.
           </p>
           <div className="mt-4">
-            <Link href="/region/" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
+            <Link href="/data/earnings/" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
               <Globe className="w-4 h-4" />
               <span>Lihat statistik TikTok untuk semua negara</span>
             </Link>

@@ -621,7 +621,7 @@ export default function UtilityToolsPage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Money Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate total earnings across all monetization streams</p>
               </Link>
-              <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/diamond-converter/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Convert TikTok diamonds to cash payouts</p>
               </Link>
@@ -629,7 +629,7 @@ export default function UtilityToolsPage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Creator Tax Strategy</h4>
                 <p className="text-body-sm text-neutral-700">Advanced tax planning for content creators</p>
               </Link>
-              <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Complete Guide</h4>
                 <p className="text-body-sm text-neutral-700">Everything you need to know about joining the Creator Fund</p>
               </Link>

@@ -125,7 +125,7 @@ export default function BrandDealRateCalculatorPage() {
               <span className="flex items-center gap-1"><Award size={16} /> Industry Standards</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Learn negotiation strategies in our <Link href="/guides/how-to-price-brand-deals/" className="text-primary-600 hover:text-primary-700 underline">brand deal pricing guide</Link> or explore <Link href="/data/brand-deal-rates-by-niche/" className="text-primary-600 hover:text-primary-700 underline">rates by niche</Link>.
+              Learn negotiation strategies in our <Link href="/guides/brand-deals/" className="text-primary-600 hover:text-primary-700 underline">brand deal pricing guide</Link> or explore <Link href="/data/brand-deal-rates-by-niche/" className="text-primary-600 hover:text-primary-700 underline">rates by niche</Link>.
             </p>
           </div>
 
@@ -320,7 +320,7 @@ export default function BrandDealRateCalculatorPage() {
               relatedContent={[
                 { title: 'Engagement Rate Calculator', href: '/calculators/engagement-rate/' },
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
-                { title: 'Brand Deal Pricing Guide', href: '/guides/how-to-price-brand-deals/' },
+                { title: 'Brand Deal Pricing Guide', href: '/guides/brand-deals/' },
               ]}
             />
 

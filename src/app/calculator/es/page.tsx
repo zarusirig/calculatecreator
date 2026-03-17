@@ -96,7 +96,7 @@ export default function CalculadoraTikTokES() {
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Inicio</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/region/" className="text-neutral-600 hover:text-primary-600">Estadísticas Globales de TikTok</Link>
+          <Link href="/data/earnings/" className="text-neutral-600 hover:text-primary-600">Estadísticas Globales de TikTok</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Español</span>
         </nav>
@@ -113,7 +113,7 @@ export default function CalculadoraTikTokES() {
           </p>
           <div className="mt-4">
             <Link
-              href="/region/"
+              href="/data/earnings/"
               className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700"
             >
               <Globe className="w-4 h-4" />

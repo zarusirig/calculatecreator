@@ -311,6 +311,11 @@
         "type": 301
       },
       {
+        "source": "/guides/niches/beauty-tiktok-earnings{,/}",
+        "destination": "/guides/beauty-creators-earnings/",
+        "type": 301
+      },
+      {
         "source": "/niches/finance-earnings{,/}",
         "destination": "/guides/niches/",
         "type": 301

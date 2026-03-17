@@ -60,8 +60,8 @@ export function Header() {
         { href: '/data/brand-deal-rates-by-followers/', label: 'TikTok Brand Deal Rates by Followers' },
         { href: '/data/rpm-rates-by-niche/', label: 'TikTok RPM Rates by Niche' },
         { href: '/data/engagement-rates-by-niche/', label: 'TikTok Engagement Rate Benchmarks' },
-        { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube Earnings' },
-        { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram Earnings' },
+        { href: '/data/platform-comparisons/', label: 'TikTok vs YouTube Earnings' },
+        { href: '/data/platform-comparisons/', label: 'TikTok vs Instagram Earnings' },
       ],
     },
     {

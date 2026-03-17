@@ -496,7 +496,7 @@ export default function BlogPage() {
                 <h4 className="font-semibold text-neutral-900 mb-1">Calculators</h4>
                 <p className="text-body-sm text-neutral-600">Estimate earnings and plan your strategy</p>
               </Link>
-              <Link href="/comparisons/" className="p-5 bg-white rounded-lg border border-neutral-200 hover:border-blue-400 hover:shadow-md transition-all">
+              <Link href="/data/platform-comparisons/" className="p-5 bg-white rounded-lg border border-neutral-200 hover:border-blue-400 hover:shadow-md transition-all">
                 <BarChart3 className="w-8 h-8 text-purple-600 mb-3" />
                 <h4 className="font-semibold text-neutral-900 mb-1">Comparisons</h4>
                 <p className="text-body-sm text-neutral-600">Compare income strategies side by side</p>

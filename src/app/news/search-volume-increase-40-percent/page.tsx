@@ -464,14 +464,14 @@ export default function SearchVolumeIncrease40PercentPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-3">
             <Link
-              href="/guides/tiktok-algorithm-optimization/"
+              href="/guides/growth/tiktok-algorithm-explained/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">TikTok Algorithm Guide</span>
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/hashtag-strategy/"
+              href="/guides/growth/tiktok-hashtag-strategy-2026/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Hashtag Strategy Guide</span>

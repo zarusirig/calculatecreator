@@ -59,9 +59,9 @@ export function Footer() {
         { href: '/data/brand-deal-rates-by-followers/', label: 'Brand Deal Rates' },
         { href: '/data/rpm-rates-by-niche/', label: 'RPM Rates by Niche' },
         { href: '/data/engagement-rates-by-niche/', label: 'Engagement Benchmarks' },
-        { href: '/comparisons/tiktok-vs-youtube-earnings/', label: 'TikTok vs YouTube' },
-        { href: '/comparisons/tiktok-vs-instagram/', label: 'TikTok vs Instagram' },
-        { href: '/comparisons/creator-fund-vs-brand-deals/', label: 'Fund vs Brand Deals' },
+        { href: '/data/platform-comparisons/', label: 'TikTok vs YouTube' },
+        { href: '/data/platform-comparisons/', label: 'TikTok vs Instagram' },
+        { href: '/data/platform-comparisons/', label: 'Fund vs Brand Deals' },
       ],
     },
     {

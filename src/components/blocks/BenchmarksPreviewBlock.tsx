@@ -19,7 +19,7 @@ export function BenchmarksPreviewBlock({ stats }: BenchmarksPreviewBlockProps) {
             Snapshot ranges to benchmark your current performance.
           </p>
         </div>
-        <Link href="/benchmarks/" className="btn btn-secondary btn-md">
+        <Link href="/data/" className="btn btn-secondary btn-md">
           View benchmarks
         </Link>
       </div>

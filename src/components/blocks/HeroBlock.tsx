@@ -219,7 +219,7 @@ export function HeroBlock() {
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                   <Link
-                    href="/benchmarks/"
+                    href="/data/"
                     className="inline-flex items-center gap-2 rounded-xl border border-white/10 px-6 py-3 text-sm font-medium text-white/70 transition-all hover:border-white/20 hover:text-white"
                   >
                     See Real Benchmarks

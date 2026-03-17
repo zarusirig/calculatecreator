@@ -108,7 +108,7 @@ export default function DataIndexPage() {
       datasets: [
         {
           name: 'Comments to Likes Ratio',
-          url: '/metrics/comments-to-likes-ratio',
+          url: '/data/engagement',
           description: 'Benchmark ratios for measuring comment engagement relative to likes',
           insights: 'Healthy ratio: 1-5% (1-5 comments per 100 likes)',
         },
@@ -549,7 +549,7 @@ export default function DataIndexPage() {
               <h4 className="font-semibold text-neutral-900 mb-2">How to Make Money on TikTok</h4>
               <p className="text-body-sm text-neutral-600">Complete guide to all monetization methods and realistic earnings expectations</p>
             </Link>
-            <Link href="/guides/how-to-price-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
+            <Link href="/guides/brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
               <h4 className="font-semibold text-neutral-900 mb-2">How to Price Brand Deals</h4>
               <p className="text-body-sm text-neutral-600">Step-by-step framework for setting competitive sponsorship rates</p>
             </Link>

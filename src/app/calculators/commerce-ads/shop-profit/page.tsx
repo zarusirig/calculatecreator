@@ -497,8 +497,8 @@ export default function ShopCommissionCalculatorPage() {
               'Commission earnings are subject to a hold period (14-30 days) before payout for returns processing',
             ]}
             relatedContent={[
-              { title: 'Ad Cost Calculator', href: '/calculators/commerce-ads/ad-cost/' },
-              { title: 'RPM Calculator', href: '/calculators/commerce-ads/rpm-cpm/' },
+              { title: 'Ad Cost Calculator', href: '/calculators/tiktok-ad-cost/' },
+              { title: 'RPM Calculator', href: '/calculators/rpm/' },
               { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
             ]}
           />

@@ -101,7 +101,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'CPM',
     definition:
       'CPM (cost per mille) is the advertiser-side cost for 1,000 impressions. It reflects market demand, audience quality, and placement context. Creators monitor CPM-related concepts to understand ad market conditions, but they should not confuse CPM with direct creator payout metrics.',
-    relatedHref: '/calculators/commerce-ads/rpm-cpm/',
+    relatedHref: '/calculators/rpm/',
     relatedLabel: 'RPM and CPM Tool',
   },
   {
@@ -115,7 +115,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Creator Marketplace',
     definition:
       'Creator Marketplace refers to platform-managed environments where brands and creators connect for collaborations. It can reduce discovery friction but does not guarantee fair pricing. Creators still need clear rate logic, deliverable definitions, and negotiation standards before accepting campaigns.',
-    relatedHref: '/guides/tiktok-series-monetization/',
+    relatedHref: '/guides/monetization/tiktok-series-monetization/',
     relatedLabel: 'Monetization Guide',
   },
   {
@@ -129,7 +129,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Diamonds',
     definition:
       'Diamonds are a converted value creators receive from supported gifting systems. They represent a payout intermediary, not necessarily the original purchase value of viewer transactions. Understanding diamond conversion helps creators evaluate net live-stream income more accurately.',
-    relatedHref: '/calculators/coins-gifts-diamonds/diamonds/',
+    relatedHref: '/calculators/diamond-converter/',
     relatedLabel: 'Diamonds Converter',
   },
   {
@@ -143,7 +143,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'EPM',
     definition:
       'EPM commonly means earnings per mille in creator operations and is conceptually similar to RPM in many contexts. Teams use EPM-style metrics to compare income efficiency across formats or channels. Clear definition is important because organizations sometimes use EPM and RPM with different scope rules.',
-    relatedHref: '/calculators/commerce-ads/rpm-cpm/',
+    relatedHref: '/calculators/rpm/',
     relatedLabel: 'RPM Benchmarks Tool',
   },
   {
@@ -269,7 +269,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'TikTok Series',
     definition:
       'TikTok Series refers to structured content collections or paid-access formats where creators package related content for deeper audience value. Series strategies often prioritize depth over virality and can support recurring revenue patterns. Planning should include completion behavior and perceived content value.',
-    relatedHref: '/guides/tiktok-series-monetization/',
+    relatedHref: '/guides/monetization/tiktok-series-monetization/',
     relatedLabel: 'Series Monetization Guide',
   },
   {

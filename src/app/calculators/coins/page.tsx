@@ -124,7 +124,7 @@ export default function CoinsCalculatorPage() {
               <span className="flex items-center gap-1"><Gift size={16} /> Gift Calculator</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Want to understand the full system? Read our <Link href="/guides/tiktok-coin-converter-complete-guide/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok coin guide</Link> or learn about <Link href="/guides/complete-tiktok-diamond-guide/" className="text-primary-600 hover:text-primary-700 underline">how diamonds work for creators</Link>.
+              Want to understand the full system? Read our <Link href="/guides/tiktok-coins/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok coin guide</Link> or learn about <Link href="/guides/complete-tiktok-diamond-guide/" className="text-primary-600 hover:text-primary-700 underline">how diamonds work for creators</Link>.
             </p>
           </div>
 
@@ -315,7 +315,7 @@ export default function CoinsCalculatorPage() {
                 { title: 'Diamond Converter', href: '/calculators/diamond-converter/' },
                 { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
-                { title: 'Complete TikTok Coin Guide', href: '/guides/tiktok-coin-converter-complete-guide/' },
+                { title: 'Complete TikTok Coin Guide', href: '/guides/tiktok-coins/' },
               ]}
             />
 

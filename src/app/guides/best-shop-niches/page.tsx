@@ -442,11 +442,11 @@ export default function BestShopNichesPage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-4">
-            <Link href="/reference/shop-commission-rates/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/data/reference/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-2">Commission Rates</h4>
               <p className="text-body-sm text-neutral-700">All category rates</p>
             </Link>
-            <Link href="/guides/how-to-become-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/tiktok-shop-affiliate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-2">Become Affiliate</h4>
               <p className="text-body-sm text-neutral-700">Join TikTok Shop</p>
             </Link>

@@ -54,7 +54,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: '$200-$10,000+',
     note: 'Range expands by follower tier and deliverables',
     toolHref: '/calculators/brand-deal-rate/',
-    guideHref: '/guides/tiktok-series-monetization/',
+    guideHref: '/guides/monetization/tiktok-series-monetization/',
   },
   {
     id: 'tiktok-shop-commission',

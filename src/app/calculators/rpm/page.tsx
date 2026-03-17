@@ -227,7 +227,7 @@ export default function RpmCalculatorPage() {
               </Link>{' '}
               or explore{' '}
               <Link
-                href="/guides/maximize-creator-fund-rpm/"
+                href="/calculators/tiktok-creator-fund/maximize-creator-fund-rpm/"
                 className="text-cyan-400 hover:underline"
               >
                 strategies to maximize your RPM

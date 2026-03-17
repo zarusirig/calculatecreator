@@ -432,7 +432,7 @@ export default function PayoutCalculatorPage() {
             <Card className="p-8 mb-12">
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/diamond-converter/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Convert TikTok diamonds to cash value</p>
                 </Link>
@@ -485,7 +485,7 @@ export default function PayoutCalculatorPage() {
                 'Processing times vary (7-30 days) and are not reflected in the payout amount calculation',
               ]}
               relatedContent={[
-                { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
+                { title: 'Diamond to USD Calculator', href: '/calculators/diamond-converter/' },
                 { title: 'Tax Calculator', href: '/calculators/utility-tools/tax/' },
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
               ]}

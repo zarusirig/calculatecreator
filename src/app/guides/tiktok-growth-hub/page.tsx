@@ -281,7 +281,7 @@ export default function TikTokGrowthHubPage() {
 
                   <div className="p-4 bg-blue-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      For the latest algorithm changes, read our coverage of the <Link href="/news/algorithm-eight-major-shifts/" className="text-primary-600 underline">8 major algorithm shifts</Link> and <Link href="/news/retention-metrics-priority/" className="text-primary-600 underline">retention metrics becoming top priority</Link>. Deep-dive into optimization strategies in our <Link href="/guides/tiktok-algorithm-optimization/" className="text-primary-600 underline">Algorithm Optimization guide</Link> and <Link href="/guides/tiktok-algorithm-engagement/" className="text-primary-600 underline">Algorithm & Engagement guide</Link>.
+                      For the latest algorithm changes, read our coverage of the <Link href="/news/algorithm-eight-major-shifts/" className="text-primary-600 underline">8 major algorithm shifts</Link> and <Link href="/news/retention-metrics-priority/" className="text-primary-600 underline">retention metrics becoming top priority</Link>. Deep-dive into optimization strategies in our <Link href="/guides/growth/tiktok-algorithm-explained/" className="text-primary-600 underline">Algorithm Optimization guide</Link> and <Link href="/guides/growth/tiktok-algorithm-explained/" className="text-primary-600 underline">Algorithm & Engagement guide</Link>.
                     </p>
                   </div>
                 </div>
@@ -369,7 +369,7 @@ export default function TikTokGrowthHubPage() {
 
                     <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
                       <p className="text-sm text-neutral-700">
-                        <strong>Engagement Rate Formula:</strong> (Likes + Comments + Shares + Saves) / Views &times; 100. Use our <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Engagement Rate Calculator</Link> for instant analysis and the <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Engagement Influence Calculator</Link> to see how rate impacts monetization. For video-specific analysis, try the <Link href="/calculators/engagement-influence/video-engagement/" className="text-primary-600 underline">Video Engagement Calculator</Link>.
+                        <strong>Engagement Rate Formula:</strong> (Likes + Comments + Shares + Saves) / Views &times; 100. Use our <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Engagement Rate Calculator</Link> for instant analysis and the <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Engagement Influence Calculator</Link> to see how rate impacts monetization. For video-specific analysis, try the <Link href="/calculators/engagement-rate/" className="text-primary-600 underline">Video Engagement Calculator</Link>.
                       </p>
                     </div>
                   </div>
@@ -429,7 +429,7 @@ export default function TikTokGrowthHubPage() {
 
                   <div className="p-4 bg-blue-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      For niche-specific engagement data, explore our <Link href="/data/engagement-rates-by-niche/" className="text-primary-600 underline">engagement rates by niche</Link> dataset. Track individual metric performance with the <Link href="/calculators/comment-rate/" className="text-primary-600 underline">Comment Rate Calculator</Link>, <Link href="/calculators/save-rate/" className="text-primary-600 underline">Save Rate Calculator</Link>, and <Link href="/calculators/share-ratio/" className="text-primary-600 underline">Share Ratio Calculator</Link>. Also check our guide on <Link href="/guides/increase-engagement-rate-tiktok/" className="text-primary-600 underline">increasing engagement rate</Link> for advanced strategies.
+                      For niche-specific engagement data, explore our <Link href="/data/engagement-rates-by-niche/" className="text-primary-600 underline">engagement rates by niche</Link> dataset. Track individual metric performance with the <Link href="/calculators/comment-rate/" className="text-primary-600 underline">Comment Rate Calculator</Link>, <Link href="/calculators/save-rate/" className="text-primary-600 underline">Save Rate Calculator</Link>, and <Link href="/calculators/share-ratio/" className="text-primary-600 underline">Share Ratio Calculator</Link>. Also check our guide on <Link href="/guides/how-to-increase-engagement/" className="text-primary-600 underline">increasing engagement rate</Link> for advanced strategies.
                     </p>
                   </div>
                 </div>
@@ -632,7 +632,7 @@ export default function TikTokGrowthHubPage() {
 
                   <div className="mt-4">
                     <p className="text-sm text-neutral-700">
-                      Track your hashtag performance with the <Link href="/calculators/hashtag-performance/" className="text-primary-600 underline">Hashtag Performance Calculator</Link> and explore our full <Link href="/guides/hashtag-strategy/" className="text-primary-600 underline">Hashtag Strategy guide</Link>. For term definitions, visit the <Link href="/glossary/" className="text-primary-600 underline">TikTok Creator Glossary</Link>.
+                      Track your hashtag performance with the <Link href="/calculators/hashtag-performance/" className="text-primary-600 underline">Hashtag Performance Calculator</Link> and explore our full <Link href="/guides/growth/tiktok-hashtag-strategy-2026/" className="text-primary-600 underline">Hashtag Strategy guide</Link>. For term definitions, visit the <Link href="/glossary/" className="text-primary-600 underline">TikTok Creator Glossary</Link>.
                     </p>
                   </div>
                 </div>
@@ -734,7 +734,7 @@ export default function TikTokGrowthHubPage() {
 
                   <div className="p-4 bg-yellow-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      Deep-dive into viral strategies with our <Link href="/guides/how-to-go-viral/" className="text-primary-600 underline">How to Go Viral guide</Link>. Track your video completion rates with the <Link href="/calculators/completion-rate/" className="text-primary-600 underline">Completion Rate Calculator</Link> and monitor the <Link href="/metrics/comments-to-likes-ratio/" className="text-primary-600 underline">comments-to-likes ratio benchmarks</Link> for viral distribution signals.
+                      Deep-dive into viral strategies with our <Link href="/calculators/viral-potential/how-to-go-viral-tiktok/" className="text-primary-600 underline">How to Go Viral guide</Link>. Track your video completion rates with the <Link href="/calculators/completion-rate/" className="text-primary-600 underline">Completion Rate Calculator</Link> and monitor the <Link href="/data/engagement/" className="text-primary-600 underline">comments-to-likes ratio benchmarks</Link> for viral distribution signals.
                     </p>
                   </div>
                 </div>
@@ -983,11 +983,11 @@ export default function TikTokGrowthHubPage() {
             <Card>
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Guides</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/guides/how-to-go-viral/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <Link href="/calculators/viral-potential/how-to-go-viral-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
                   <h4 className="font-semibold text-neutral-900 mb-2">How to Go Viral on TikTok</h4>
                   <p className="text-body-sm text-neutral-700">Proven strategies for viral content creation</p>
                 </Link>
-                <Link href="/guides/tiktok-algorithm-optimization/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+                <Link href="/guides/growth/tiktok-algorithm-explained/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
                   <h4 className="font-semibold text-neutral-900 mb-2">Algorithm Optimization Guide</h4>
                   <p className="text-body-sm text-neutral-700">Master the For You Page algorithm</p>
                 </Link>

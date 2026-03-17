@@ -417,7 +417,7 @@ export default function TikTokAdsHubPage() {
                         </div>
                       </div>
                       <p className="mt-4 text-sm text-neutral-600">
-                        Use the <Link href="/calculators/ad-spend/" className="text-primary-600 underline">Ad Spend Calculator</Link> to plan your budget allocation across campaigns and the <Link href="/calculators/commerce-ads/rpm-cpm/" className="text-primary-600 underline">RPM/CPM Calculator</Link> to forecast impressions at your budget level.
+                        Use the <Link href="/calculators/ad-spend/" className="text-primary-600 underline">Ad Spend Calculator</Link> to plan your budget allocation across campaigns and the <Link href="/calculators/rpm/" className="text-primary-600 underline">RPM/CPM Calculator</Link> to forecast impressions at your budget level.
                       </p>
                     </div>
                   </div>
@@ -648,7 +648,7 @@ export default function TikTokAdsHubPage() {
 
                     <div className="mt-4 p-4 bg-yellow-50 rounded-lg">
                       <p className="text-sm text-neutral-700">
-                        Learn more about pricing Spark Ads deals in our <Link href="/guides/spark-ads-for-creators/" className="text-primary-600 underline">Spark Ads for Creators guide</Link>, and use the <Link href="/calculators/sponsorship-roi/" className="text-primary-600 underline">Sponsorship ROI Calculator</Link> to evaluate deal profitability. For general brand deal pricing, see our <Link href="/guides/how-to-price-brand-deals/" className="text-primary-600 underline">pricing guide</Link>.
+                        Learn more about pricing Spark Ads deals in our <Link href="/guides/spark-ads-for-creators/" className="text-primary-600 underline">Spark Ads for Creators guide</Link>, and use the <Link href="/calculators/sponsorship-roi/" className="text-primary-600 underline">Sponsorship ROI Calculator</Link> to evaluate deal profitability. For general brand deal pricing, see our <Link href="/guides/brand-deals/" className="text-primary-600 underline">pricing guide</Link>.
                       </p>
                     </div>
                   </div>
@@ -740,7 +740,7 @@ export default function TikTokAdsHubPage() {
                         <Link href="/calculators/commerce-ads/shop-profit/">
                           <Button variant="primary">Calculate Shop Profit</Button>
                         </Link>
-                        <Link href="/calculators/commerce-ads/ad-cost/">
+                        <Link href="/calculators/tiktok-ad-cost/">
                           <Button variant="secondary">Calculate Commerce Ad Cost</Button>
                         </Link>
                       </div>
@@ -749,7 +749,7 @@ export default function TikTokAdsHubPage() {
 
                   <div className="mt-4 p-4 bg-blue-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      For the latest on TikTok Shop&apos;s expansion and GMV growth, see our coverage on <Link href="/news/tiktok-shop-gmv-doubling/" className="text-primary-600 underline">TikTok Shop GMV doubling</Link> and <Link href="/news/tiktok-shop-europe-expansion/" className="text-primary-600 underline">European market expansion</Link>. Compare selling on TikTok Shop vs Amazon in our <Link href="/comparisons/tiktok-shop-vs-amazon/" className="text-primary-600 underline">detailed comparison</Link>. For commission structures, check the <Link href="/reference/shop-commission-rates/" className="text-primary-600 underline">Shop Commission Rates reference</Link>.
+                      For the latest on TikTok Shop&apos;s expansion and GMV growth, see our coverage on <Link href="/news/tiktok-shop-gmv-doubling/" className="text-primary-600 underline">TikTok Shop GMV doubling</Link> and <Link href="/news/tiktok-shop-europe-expansion/" className="text-primary-600 underline">European market expansion</Link>. Compare selling on TikTok Shop vs Amazon in our <Link href="/data/platform-comparisons/" className="text-primary-600 underline">detailed comparison</Link>. For commission structures, check the <Link href="/data/reference/" className="text-primary-600 underline">Shop Commission Rates reference</Link>.
                     </p>
                   </div>
                 </div>
@@ -861,7 +861,7 @@ export default function TikTokAdsHubPage() {
 
                   <div className="p-4 bg-blue-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      Compare TikTok ad performance against other platforms using our <Link href="/comparisons/tiktok-vs-instagram/" className="text-primary-600 underline">TikTok vs Instagram comparison</Link>. For niche-specific ad rate data, check our <Link href="/data/rpm-rates-by-niche/" className="text-primary-600 underline">RPM rates by niche</Link> and <Link href="/data/brand-deal-rates-by-niche/" className="text-primary-600 underline">brand deal rates by niche</Link> datasets.
+                      Compare TikTok ad performance against other platforms using our <Link href="/data/platform-comparisons/" className="text-primary-600 underline">TikTok vs Instagram comparison</Link>. For niche-specific ad rate data, check our <Link href="/data/rpm-rates-by-niche/" className="text-primary-600 underline">RPM rates by niche</Link> and <Link href="/data/brand-deal-rates-by-niche/" className="text-primary-600 underline">brand deal rates by niche</Link> datasets.
                     </p>
                   </div>
                 </div>
@@ -973,7 +973,7 @@ export default function TikTokAdsHubPage() {
 
                   <div className="mt-4 p-4 bg-blue-50 rounded-lg">
                     <p className="text-sm text-neutral-700">
-                      For a comprehensive budget planning deep dive, read our <Link href="/guides/tiktok-ad-budget-calculator-guide/" className="text-primary-600 underline">TikTok Ad Budget Calculator Guide</Link>. For brand deal and influence valuation, check the <Link href="/guides/calculating-true-influence-value/" className="text-primary-600 underline">Calculating True Influence Value guide</Link>. View <Link href="/region/" className="text-primary-600 underline">regional ad data</Link> for country-specific benchmarks.
+                      For a comprehensive budget planning deep dive, read our <Link href="/guides/tiktok-ad-budget-calculator-guide/" className="text-primary-600 underline">TikTok Ad Budget Calculator Guide</Link>. For brand deal and influence valuation, check the <Link href="/guides/calculating-true-influence-value/" className="text-primary-600 underline">Calculating True Influence Value guide</Link>. View <Link href="/data/earnings/" className="text-primary-600 underline">regional ad data</Link> for country-specific benchmarks.
                     </p>
                   </div>
                 </div>

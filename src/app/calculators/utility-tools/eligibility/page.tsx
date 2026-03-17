@@ -377,7 +377,7 @@ export default function EligibilityCalculatorPage() {
                     <div>
                       <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">Engage With Your Community</h3>
                       <p className="text-body-md text-neutral-700">
-                        Reply to comments within the first hour of posting to boost engagement rate. Create response videos to popular comments to drive additional views. Higher engagement signals quality content to TikTok's algorithm, increasing distribution. Engaged followers are more likely to watch multiple videos, compounding your 30-day view totals. Use our <Link href="/calculators/engagement-influence/" className="text-primary-600 hover:text-primary-700 underline">Influence Calculator</Link> to measure community strength.
+                        Reply to comments within the first hour of posting to boost engagement rate. Create response videos to popular comments to drive additional views. Higher engagement signals quality content to TikTok's algorithm, increasing distribution. Engaged followers are more likely to watch multiple videos, compounding your 30-day view totals. Use our <Link href="/calculators/" className="text-primary-600 hover:text-primary-700 underline">Influence Calculator</Link> to measure community strength.
                       </p>
                     </div>
                   </div>
@@ -467,7 +467,7 @@ export default function EligibilityCalculatorPage() {
                   </div>
                   <div className="mt-6 p-4 bg-white rounded-lg border border-red-200">
                     <p className="text-body-sm text-neutral-800">
-                      <strong>Reapplication Timeline:</strong> If rejected, wait 30 days before reapplying. Use this time to fix issues, remove violative content, and build genuine engagement. Repeated rapid applications without addressing root causes lead to permanent disqualification. Check our <Link href="/guides/how-to-price-brand-deals/" className="text-primary-600 hover:text-primary-700 underline">Brand Deal Pricing Guide</Link> for alternative monetization while building eligibility.
+                      <strong>Reapplication Timeline:</strong> If rejected, wait 30 days before reapplying. Use this time to fix issues, remove violative content, and build genuine engagement. Repeated rapid applications without addressing root causes lead to permanent disqualification. Check our <Link href="/guides/brand-deals/" className="text-primary-600 hover:text-primary-700 underline">Brand Deal Pricing Guide</Link> for alternative monetization while building eligibility.
                     </p>
                   </div>
                 </div>
@@ -491,7 +491,7 @@ export default function EligibilityCalculatorPage() {
                   <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Calculate net earnings after platform fees</p>
                 </Link>
-                <Link href="/guides/how-to-join-creator-fund-complete/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Join Creator Fund Guide</h4>
                   <p className="text-body-sm text-neutral-700">Complete guide to qualifying for TikTok monetization</p>
                 </Link>

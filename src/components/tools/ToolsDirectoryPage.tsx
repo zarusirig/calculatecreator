@@ -105,7 +105,7 @@ export function ToolsDirectoryPage({
               </p>
               <p className="mt-3 text-sm leading-relaxed text-neutral-700">
                 For broader context, pair tools with the{' '}
-                <Link href="/benchmarks/" className="link">
+                <Link href="/data/" className="link">
                   Benchmarks hub
                 </Link>{' '}
                 and relevant guides before making high-impact creator-business decisions.
@@ -141,13 +141,13 @@ export function ToolsDirectoryPage({
               <Link href="/data/" className="btn btn-secondary btn-sm">
                 Data & Insights
               </Link>
-              <Link href="/benchmarks/" className="btn btn-secondary btn-sm">
+              <Link href="/data/" className="btn btn-secondary btn-sm">
                 Benchmarks
               </Link>
-              <Link href="/comparisons/" className="btn btn-secondary btn-sm">
+              <Link href="/data/platform-comparisons/" className="btn btn-secondary btn-sm">
                 Platform Comparisons
               </Link>
-              <Link href="/reference/" className="btn btn-secondary btn-sm">
+              <Link href="/data/reference/" className="btn btn-secondary btn-sm">
                 Reference Tables
               </Link>
               <Link href="/blog/" className="btn btn-secondary btn-sm">
@@ -156,10 +156,10 @@ export function ToolsDirectoryPage({
               <Link href="/methodology/" className="btn btn-secondary btn-sm">
                 Methodology
               </Link>
-              <Link href="/calculators/fun-niche/" className="btn btn-secondary btn-sm">
+              <Link href="/calculators/" className="btn btn-secondary btn-sm">
                 Fun & Niche Tools
               </Link>
-              <Link href="/calculators/fun-niche/moon-phase/" className="btn btn-secondary btn-sm">
+              <Link href="/calculators/" className="btn btn-secondary btn-sm">
                 Moon Phase Calculator
               </Link>
               {isToolsAliasPage ? (

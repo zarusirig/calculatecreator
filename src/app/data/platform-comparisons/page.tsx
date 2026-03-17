@@ -43,7 +43,7 @@ export default function PlatformComparisonsHubPage() {
               Multi-Platform Earnings Calculator
             </Link>{' '}
             and validate assumptions with our detailed{' '}
-            <Link href="/comparisons/" className="text-primary-700 hover:text-primary-800">
+            <Link href="/data/platform-comparisons/" className="text-primary-700 hover:text-primary-800">
               TikTok comparison guides
             </Link>.
             This approach helps creators avoid spreading effort across channels that add workload

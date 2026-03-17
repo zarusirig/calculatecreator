@@ -190,7 +190,7 @@ export default function HtmlSitemapPage() {
               <Link href="/metrics/tiktok-comments-to-likes-ratio/" className="btn btn-secondary btn-sm">
                 Legacy Metrics URL
               </Link>
-              <Link href="/resources/brand-deal-contract-template/" className="btn btn-secondary btn-sm">
+              <Link href="/guides/business/" className="btn btn-secondary btn-sm">
                 Contract Template URL
               </Link>
             </div>

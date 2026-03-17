@@ -483,7 +483,7 @@ export default function SponsorshipDisclosurePage() {
               </h4>
               <p className="text-body-sm text-neutral-700">Complete guide to TikTok sponsorships</p>
             </Link>
-            <Link href="/resources/brand-deal-contract/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/guides/business/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <Shield className="w-4 h-4 flex-shrink-0 text-blue-600" />
                 Brand Deal Contract Template

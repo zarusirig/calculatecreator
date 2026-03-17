@@ -125,7 +125,7 @@ export default function EngagementRateCalculatorPage() {
               <span className="flex items-center gap-1"><Award size={16} /> Brand Standards</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Learn <Link href="/guides/increase-engagement-rate-tiktok/" className="text-primary-600 hover:text-primary-700 underline">proven strategies to increase your engagement rate</Link> or understand <Link href="/guides/tiktok-algorithm-optimization/" className="text-primary-600 hover:text-primary-700 underline">how engagement affects the algorithm</Link>.
+              Learn <Link href="/guides/how-to-increase-engagement/" className="text-primary-600 hover:text-primary-700 underline">proven strategies to increase your engagement rate</Link> or understand <Link href="/guides/growth/tiktok-algorithm-explained/" className="text-primary-600 hover:text-primary-700 underline">how engagement affects the algorithm</Link>.
             </p>
           </div>
 
@@ -334,7 +334,7 @@ export default function EngagementRateCalculatorPage() {
               relatedContent={[
                 { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
                 { title: 'Video Performance Calculator', href: '/calculators/video-performance/' },
-                { title: 'How to Increase Engagement Rate', href: '/guides/increase-engagement-rate-tiktok/' },
+                { title: 'How to Increase Engagement Rate', href: '/guides/how-to-increase-engagement/' },
               ]}
             />
 

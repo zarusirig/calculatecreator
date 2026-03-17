@@ -87,7 +87,7 @@ export default function CalculatriceTikTokFR() {
           <nav className="flex items-center space-x-2 text-body-sm mb-6">
             <Link href="/" className="text-neutral-600 hover:text-primary-600">Accueil</Link>
           <span className="text-neutral-400">→</span>
-          <Link href="/region/" className="text-neutral-600 hover:text-primary-600">Statistiques Mondiales TikTok</Link>
+          <Link href="/data/earnings/" className="text-neutral-600 hover:text-primary-600">Statistiques Mondiales TikTok</Link>
           <span className="text-neutral-400">→</span>
           <span className="text-neutral-900 font-medium">Français</span>
         </nav>
@@ -103,7 +103,7 @@ export default function CalculatriceTikTokFR() {
             Calculez votre potentiel de revenus sur TikTok: Fonds des Créateurs, partenariats de marque et cadeaux LIVE. Optimisé pour le marché français avec des taux RPM actuels.
           </p>
           <div className="mt-4">
-            <Link href="/region/" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
+            <Link href="/data/earnings/" className="inline-flex items-center space-x-2 text-body-sm text-primary-600 hover:text-primary-700">
               <Globe className="w-4 h-4" />
               <span>Voir les statistiques TikTok pour tous les pays</span>
             </Link>

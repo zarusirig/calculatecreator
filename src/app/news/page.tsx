@@ -779,7 +779,7 @@ export default function NewsPage() {
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/guides/tiktok-algorithm-optimization/"
+                href="/guides/growth/tiktok-algorithm-explained/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Algorithm Guide</span>
