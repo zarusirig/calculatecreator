@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Use this TikTok payout calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok payout calculator', 'creator earnings after fees', 'tiktok platform fees', 'live gift payout', 'net earnings calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/utility-tools/payout/',
+    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/payout/',
   },
 };
 
@@ -39,14 +39,14 @@ export default function PayoutLayout({ children }: { children: React.ReactNode }
       <CalculatorSchema
         name="Creator Payout Calculator"
         description="Calculate your actual payout after platform fees and payment processing charges."
-        url="https://calculatecreator.com/calculators/utility-tools/payout/"
+        url="https://tiktokcalculator.net/calculators/utility-tools/payout/"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
-          { name: 'Payout Calculator', url: 'https://calculatecreator.com/calculators/utility-tools/payout/' }
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Utility Tools', url: 'https://tiktokcalculator.net/calculators/utility-tools/' },
+          { name: 'Payout Calculator', url: 'https://tiktokcalculator.net/calculators/utility-tools/payout/' }
         ]}
       />
       {children}

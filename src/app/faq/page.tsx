@@ -4,18 +4,19 @@ import { Container } from '@/components/layout/Container';
 import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
-  title: "TikTok Faq for Creator Earnings and Growth Guide 2026",
-  description: "Explore TikTok faq content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'TT Calculator FAQ',
+  description:
+    'Find answers about calculator accuracy, assumptions, privacy, updates, methodology, and how TT Calculator handles creator earnings estimates.',
   alternates: {
-    canonical: 'https://calculatecreator.com/faq/',
+    canonical: 'https://tiktokcalculator.net/faq/',
   },
 };
 
 const faqs = [
   {
-    question: 'What is CalculateCreator?',
+    question: 'What is TT Calculator?',
     answer:
-      'CalculateCreator is a creator analytics product and editorial site that helps people estimate, compare, and benchmark outcomes such as RPM, projected earnings, engagement rate, deal pricing, and conversion performance. We focus on clear inputs, transparent assumptions, and readable outputs. The site is designed for creators, managers, and small teams that need practical directional models without requiring enterprise analytics tools.',
+      'TT Calculator is a creator analytics product and editorial site that helps people estimate, compare, and benchmark outcomes such as RPM, projected earnings, engagement rate, deal pricing, and conversion performance. We focus on clear inputs, transparent assumptions, and readable outputs. The site is designed for creators, managers, and small teams that need practical directional models without requiring enterprise analytics tools.',
   },
   {
     question: 'How accurate are your calculators?',
@@ -33,12 +34,12 @@ const faqs = [
       'We review assumptions weekly and prioritize updates when there are material changes in platform policies, monetization programs, or observed market behavior. We also update individual pages when users report a calculation issue or a stale assumption. Policy and trust pages include explicit last-updated dates so readers can verify freshness.',
   },
   {
-    question: 'Is CalculateCreator affiliated with TikTok or ByteDance?',
+    question: 'Is TT Calculator affiliated with TikTok or ByteDance?',
     answer:
-      'No. CalculateCreator is independent and is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance. We reference platform names descriptively because our tools are designed around creator workflows that happen on those platforms. Trademark ownership remains with the respective companies.',
+      'No. TT Calculator is independent and is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance. We reference platform names descriptively because our tools are designed around creator workflows that happen on those platforms. Trademark ownership remains with the respective companies.',
   },
   {
-    question: 'How does CalculateCreator make money?',
+    question: 'How does TT Calculator make money?',
     answer:
       'We monetize through advertising, including Google AdSense. Advertising helps fund calculator development, editorial maintenance, infrastructure, and data review work so tools remain free to use. Advertising does not control calculator outputs or editorial conclusions. We document this separation in our Advertising Disclosure and Editorial Policy pages.',
   },
@@ -53,14 +54,14 @@ const faqs = [
       'Our tools cover creator scenarios such as ad-based earnings projections, RPM analysis, engagement benchmarks, brand deal estimates, shop commission modeling, tax planning, and multi-platform comparisons. Coverage may vary by route as we expand templates and migrate legacy pages. The tools directory lists currently available calculators and links to related guides.',
   },
   {
-    question: 'Can I cite CalculateCreator data in my own article or deck?',
+    question: 'Can I cite TT Calculator data in my own article or deck?',
     answer:
       'Yes, with attribution. Link to the relevant page and mention the date you accessed the data because benchmark ranges can change over time. If you are using outputs in client-facing or financial materials, include the assumptions and limitations so readers understand that estimates are directional. We do not grant exclusivity over public benchmark summaries.',
   },
   {
     question: 'How do I report a bug or incorrect benchmark?',
     answer:
-      'Email contact@calculatecreator.com or bugs@calculatecreator.com with the exact URL, what you expected, what happened, and any source supporting your claim. We triage issues by impact, then patch formulas, copy, or assumptions as needed. Our correction workflow and editorial standards are documented in the Editorial Policy page.',
+      'Email contact@tiktokcalculator.net or bugs@tiktokcalculator.net with the exact URL, what you expected, what happened, and any source supporting your claim. We triage issues by impact, then patch formulas, copy, or assumptions as needed. Our correction workflow and editorial standards are documented in the Editorial Policy page.',
   },
   {
     question: 'Do you use AI to produce content?',
@@ -70,7 +71,7 @@ const faqs = [
   {
     question: 'Are your calculators financial, legal, or tax advice?',
     answer:
-      'No. CalculateCreator provides educational estimates and planning tools. Results should not be interpreted as financial, legal, tax, accounting, or investment advice. Platform rates and payouts can shift quickly. For decisions with legal or tax impact, consult a qualified advisor licensed in your jurisdiction.',
+      'No. TT Calculator provides educational estimates and planning tools. Results should not be interpreted as financial, legal, tax, accounting, or investment advice. Platform rates and payouts can shift quickly. For decisions with legal or tax impact, consult a qualified advisor licensed in your jurisdiction.',
   },
   {
     question: 'Are calculator URLs standardized to one route?',
@@ -89,16 +90,16 @@ export default function FAQPage() {
     <>
       <FAQPageSchema
         faqs={faqs}
-        title="CalculateCreator Frequently Asked Questions"
-        description="Common questions about tools, methodology, privacy, and monetization policy on calculatecreator.com"
-        url="https://calculatecreator.com/faq/"
+        title="TT Calculator Frequently Asked Questions"
+        description="Common questions about tools, methodology, privacy, and monetization policy on tiktokcalculator.net"
+        url="https://tiktokcalculator.net/faq/"
       />
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
           <h1 className="text-display-sm font-bold text-neutral-900">Frequently Asked Questions</h1>
           <p className="mt-4 text-body-md text-neutral-700">TikTok creators: 
-            This page answers the most common questions we receive about CalculateCreator: how our
+            This page answers the most common questions we receive about TT Calculator: how our
             calculators work, how we update assumptions, how we handle privacy, and how we fund the
             site. If your question is not listed, contact us and we will add coverage where useful.
           </p>
@@ -124,7 +125,7 @@ export default function FAQPage() {
                 <Link href="/about/" className="link">
                   About
                 </Link>{' '}
-                to learn who runs CalculateCreator and how the product is maintained.
+                to learn who runs TT Calculator and how the product is maintained.
               </li>
               <li>
                 <Link href="/privacy/" className="link">

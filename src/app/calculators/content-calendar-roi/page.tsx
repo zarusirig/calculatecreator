@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate the ROI of your TikTok posting schedule. Optimize content frequency, timing, and format mix to maximize revenue per hour invested.",
   keywords: ['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/content-calendar-roi/',
+    canonical: 'https://tiktokcalculator.net/calculators/content-calendar-roi/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function ContentCalendarROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Content Calendar ROI Calculator"
         description="Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth."
-        url="https://calculatecreator.com/calculators/content-calendar-roi/"
+        url="https://tiktokcalculator.net/calculators/content-calendar-roi/"
         datePublished="2024-03-15"
         dateModified="2026-03-01"
         keywords={['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning']}
@@ -53,9 +53,9 @@ export default function ContentCalendarROICalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Content Calendar ROI Calculator', url: 'https://calculatecreator.com/calculators/content-calendar-roi/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Content Calendar ROI Calculator', url: 'https://tiktokcalculator.net/calculators/content-calendar-roi/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

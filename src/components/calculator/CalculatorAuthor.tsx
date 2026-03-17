@@ -48,8 +48,8 @@ export function CalculatorAuthor({
           description={author.bio}
           knowsAbout={author.expertise}
           affiliation={{
-            name: 'CalculateCreator',
-            url: 'https://calculatecreator.com',
+            name: 'TT Calculator',
+            url: 'https://tiktokcalculator.net',
           }}
         />
 
@@ -97,8 +97,8 @@ export function CalculatorAuthor({
         description={author.bio}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'CalculateCreator',
-          url: 'https://calculatecreator.com',
+          name: 'TT Calculator',
+          url: 'https://tiktokcalculator.net',
         }}
       />
 

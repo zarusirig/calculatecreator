@@ -23,7 +23,7 @@ const benchmarkRows: BenchmarkRow[] = [
     metric: 'RPM',
     range: '$0.05-$0.12',
     note: 'Often higher with US-heavy audiences',
-    toolHref: '/calculators/commerce-ads/rpm-cpm/',
+    toolHref: '/calculators/rpm/',
     guideHref: '/guides/monetization-calculator-hub/',
   },
   {
@@ -33,7 +33,7 @@ const benchmarkRows: BenchmarkRow[] = [
     metric: 'RPM',
     range: '$0.02-$0.05',
     note: 'Directional estimate from broad creator samples',
-    toolHref: '/calculators/commerce-ads/rpm-cpm/',
+    toolHref: '/calculators/rpm/',
     guideHref: '/guides/tiktok-growth-hub/',
   },
   {
@@ -43,7 +43,7 @@ const benchmarkRows: BenchmarkRow[] = [
     metric: 'Engagement rate',
     range: '2%-8%',
     note: 'Short-format content benchmark range',
-    toolHref: '/calculators/engagement-influence/engagement/',
+    toolHref: '/calculators/engagement-rate/',
     guideHref: '/guides/tiktok-growth-hub/',
   },
   {
@@ -53,7 +53,7 @@ const benchmarkRows: BenchmarkRow[] = [
     metric: 'Deal value',
     range: '$200-$10,000+',
     note: 'Range expands by follower tier and deliverables',
-    toolHref: '/calculators/engagement-influence/influencer-pricing/',
+    toolHref: '/calculators/brand-deal-rate/',
     guideHref: '/guides/tiktok-series-monetization/',
   },
   {
@@ -126,7 +126,7 @@ export function BenchmarksHubClient() {
           </label>
 
           <div className="flex items-end">
-            <p className="text-sm text-neutral-600">Updated weekly.</p>
+            <p className="text-sm text-neutral-600">Updated when methodology changes.</p>
           </div>
         </div>
       </div>

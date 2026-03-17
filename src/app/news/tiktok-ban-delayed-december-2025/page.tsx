@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok ban delayed december 2025 update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/',
+    canonical: 'https://tiktokcalculator.net/news/tiktok-ban-delayed-december-2025/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokBanDelayedPage() {
       <NewsArticleSchema
         headline="TikTok Ban Enforcement Delayed Until December 16, 2025"
         description="The White House has extended TikTok's enforcement delay for the fourth time, moving the deadline to December 16, 2025 as the administration pursues a qualified divestiture solution."
-        url="https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/"
+        url="https://tiktokcalculator.net/news/tiktok-ban-delayed-december-2025/"
         datePublished="2025-09-24"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-regulatory-1024.webp"
+        image="https://tiktokcalculator.net/news/news-regulatory-1024.webp"
         keywords={['tiktok ban', 'tiktok delay', 'tiktok enforcement', 'tiktok news', 'divestiture']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'TikTok Ban Delayed', url: 'https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'TikTok Ban Delayed', url: 'https://tiktokcalculator.net/news/tiktok-ban-delayed-december-2025/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

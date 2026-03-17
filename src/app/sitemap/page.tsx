@@ -6,10 +6,11 @@ import { getAllArticles } from '@/lib/content';
 import path from 'path';
 
 export const metadata: Metadata = {
-  title: "TikTok Sitemap for Creator Earnings and Growth Guide",
-  description: "Explore TikTok sitemap content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'Site Map | TT Calculator',
+  description:
+    'Browse TT Calculator sections, calculators, guides, data pages, policy pages, and creator resources from one directory.',
   alternates: {
-    canonical: 'https://calculatecreator.com/sitemap/',
+    canonical: 'https://tiktokcalculator.net/sitemap/',
   },
 };
 

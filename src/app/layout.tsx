@@ -9,7 +9,7 @@ import { CookieConsent } from '@/components/consent/CookieConsent';
 
 export const metadata: Metadata = {
   title: {
-    default: 'CalculateCreator - Creator Benchmarks and Calculators',
+    default: 'TT Calculator - Creator Benchmarks and Calculators',
     template: '%s',
   },
   description: "Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     'earnings calculator',
     'creator analytics tools',
   ],
-  authors: [{ name: 'CalculateCreator' }],
-  creator: 'CalculateCreator',
-  publisher: 'CalculateCreator',
+  authors: [{ name: 'TT Calculator' }],
+  creator: 'TT Calculator',
+  publisher: 'TT Calculator',
   robots: {
     index: true,
     follow: true,
@@ -31,18 +31,18 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/images/calculate-creator-transparent-v2.png',
+    apple: '/images/tt-calculator-logo.png',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'CalculateCreator - Creator Benchmarks and Calculators',
+    title: 'TT Calculator - Creator Benchmarks and Calculators',
     description:
       'A calm, trustworthy creator analytics product for estimates, comparisons, and benchmarks.',
-    siteName: 'CalculateCreator',
+    siteName: 'TT Calculator',
     images: [
       {
-        url: 'https://calculatecreator.com/home/hero-dashboard-1600.webp',
+        url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp',
         width: 1200,
         height: 630,
         alt: 'TikTok Creator Calculator - Free Earnings & Analytics Tools',
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CalculateCreator',
+    title: 'TT Calculator',
     description:
       'Creator benchmarks and calculators with transparent assumptions.',
-    images: ['https://calculatecreator.com/home/hero-dashboard-1600.webp'],
+    images: ['https://tiktokcalculator.net/home/hero-dashboard-1600.webp'],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
@@ -78,7 +78,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
-      <body className="font-sans bg-neutral-50 text-neutral-900">
+      <body className="font-sans text-neutral-900">
 
         {/* Service Worker Registration */}
         <Script id="service-worker" strategy="afterInteractive">
@@ -96,10 +96,10 @@ export default function RootLayout({
             }
           `}
         </Script>
-        <div className="flex min-h-screen flex-col relative z-10">
+        <div className="relative z-10 flex min-h-screen flex-col">
           <Header />
           <ErrorBoundary>
-            <main className="flex-1 relative">{children}</main>
+            <main className="relative flex-1">{children}</main>
           </ErrorBoundary>
           <Footer />
           <WebVitals />

@@ -1,0 +1,839 @@
+{
+  "audit_date": "2026-02-20",
+  "domain": "https://calculatecreator.com",
+  "audit_type": "backlinks_link_profile",
+
+  "current_profile": {
+    "summary": "CalculateCreator.com is a relatively new domain with minimal external backlink presence. Web searches for brand mentions and inbound links returned primarily the site's own pages, with no confirmed third-party editorial backlinks discovered through search-based analysis. The site is not yet included in any major TikTok tool roundup articles from authoritative publishers.",
+    "estimated_referring_domains": "0-5",
+    "estimated_total_backlinks": "0-10",
+    "domain_authority_estimate": "Low (sub-20 on most metrics). Domain not yet indexed by Semrush/Ahrefs/SimilarWeb public overview pages.",
+    "mentions_found": {
+      "total": 0,
+      "editorial": 0,
+      "directory": 0,
+      "forum": 0,
+      "social": 0,
+      "tool_roundup": 0,
+      "guest_post": 0
+    },
+    "anchor_text_patterns": {
+      "branded": [],
+      "keyword_rich": [],
+      "naked_url": [],
+      "notes": "No external anchor text patterns detected — the site lacks external backlinks from discoverable sources."
+    },
+    "key_observations": [
+      "No presence in any of the major TikTok tools roundup articles (Filmora, Sprout Social, Hootsuite, Influencer Marketing Hub, Social Champ, etc.)",
+      "No Product Hunt listing detected for CalculateCreator",
+      "No external blog mentions, reviews, or editorial citations found",
+      "No directory listings found (e.g., G2, Capterra, AlternativeTo, etc.)",
+      "Search results for brand keywords return only calculatecreator.com own pages",
+      "The site has strong on-site content (45+ calculators, 40+ data pages, 10+ guides) but zero external visibility through backlinks"
+    ]
+  },
+
+  "competitor_profiles": {
+    "exolyt": {
+      "domain": "https://exolyt.com",
+      "estimated_monthly_traffic": "98,290 (Semrush, Sep 2025)",
+      "global_rank": 299367,
+      "link_profile_summary": "Strong backlink profile with mentions across major publications and tool roundup sites.",
+      "confirmed_link_sources": [
+        {
+          "source": "Filmora/Wondershare (filmora.wondershare.com)",
+          "type": "tool_roundup",
+          "page": "Top 6 TikTok Money Calculators",
+          "url": "https://filmora.wondershare.com/tiktok/top-6-tiktok-money-calculator.html",
+          "authority": "High"
+        },
+        {
+          "source": "Sprout Social (sproutsocial.com)",
+          "type": "tool_roundup",
+          "page": "29 TikTok Tools to Skyrocket Your Growth",
+          "url": "https://sproutsocial.com/insights/tiktok-tools/",
+          "authority": "Very High"
+        },
+        {
+          "source": "Oreate AI Blog (oreateai.com)",
+          "type": "editorial",
+          "page": "Exolyt Com TikTok Money Calculator",
+          "url": "https://www.oreateai.com/blog/exolyt-com-tiktok-money-calculator/",
+          "authority": "Low"
+        },
+        {
+          "source": "TikTok (tiktok.com)",
+          "type": "social",
+          "page": "Multiple TikTok videos and discover pages",
+          "url": "https://www.tiktok.com/discover/tiktok-calculator-exolyt",
+          "authority": "Very High"
+        },
+        {
+          "source": "Britopian (britopian.com)",
+          "type": "directory",
+          "page": "Business Directory listing",
+          "url": "https://www.britopian.com/business-directory/exolyt/",
+          "authority": "Medium"
+        },
+        {
+          "source": "LinkedIn (linkedin.com)",
+          "type": "social_profile",
+          "page": "Company page",
+          "url": "https://fi.linkedin.com/company/exolyt",
+          "authority": "Very High"
+        }
+      ],
+      "link_types_breakdown": {
+        "tool_roundups": 5,
+        "editorial_mentions": 3,
+        "social_profiles": 3,
+        "directories": 2,
+        "user_generated_content": 4
+      },
+      "competitive_gap": "Exolyt is mentioned in Filmora's Top 6 TikTok Money Calculators, Sprout Social's 29 TikTok Tools, and multiple analytics tool roundups. CalculateCreator has zero presence in these same articles."
+    },
+    "tokcount": {
+      "domain": "https://tokcount.com",
+      "estimated_monthly_traffic": "178,720 (Semrush, US traffic)",
+      "us_rank": 119750,
+      "link_profile_summary": "Moderate backlink profile focused on real-time follower tracking niche.",
+      "confirmed_link_sources": [
+        {
+          "source": "MostlyBlogging (mostlyblogging.com)",
+          "type": "editorial_review",
+          "page": "TokCount: 7 Powerful Reasons to Track TikTok Stats Now",
+          "url": "https://www.mostlyblogging.com/tokcount/",
+          "authority": "Medium"
+        },
+        {
+          "source": "Semrush (semrush.com)",
+          "type": "analytics_listing",
+          "page": "Website overview",
+          "url": "https://www.semrush.com/website/tokcount.com/overview/",
+          "authority": "Very High"
+        },
+        {
+          "source": "Livecounts.io",
+          "type": "competitor_mention",
+          "page": "TokCount profile page",
+          "url": "https://livecounts.io/tiktok-live-follower-counter/tokcount",
+          "authority": "Medium"
+        },
+        {
+          "source": "X/Twitter (x.com)",
+          "type": "social_profile",
+          "page": "@TokCount profile",
+          "url": "https://x.com/tokcount",
+          "authority": "High"
+        },
+        {
+          "source": "Votted.net",
+          "type": "directory",
+          "page": "TokCount listing",
+          "url": "https://tokcount-com.votted.net/",
+          "authority": "Low"
+        }
+      ],
+      "link_types_breakdown": {
+        "editorial_reviews": 1,
+        "analytics_tool_listings": 1,
+        "social_profiles": 1,
+        "directories": 2,
+        "competitor_mentions": 1
+      },
+      "competitive_gap": "TokCount has earned editorial reviews from blogging sites and social media presence on X. Their niche (live follower counts) is narrower than CalculateCreator but they have stronger brand recognition."
+    },
+    "instafollowers": {
+      "domain": "https://www.instafollowers.co",
+      "estimated_monthly_traffic": "Unknown (not surfaced in public Semrush data)",
+      "link_profile_summary": "InstaFollowers has a presence through Trustpilot reviews and blog mentions, primarily as a social media growth service rather than a calculator tool.",
+      "confirmed_link_sources": [
+        {
+          "source": "Trustpilot (trustpilot.com)",
+          "type": "review_platform",
+          "page": "InstaFollowers.co Reviews",
+          "url": "https://www.trustpilot.com/review/instafollowers.co",
+          "authority": "Very High"
+        },
+        {
+          "source": "Oreate AI Blog (oreateai.com)",
+          "type": "editorial",
+          "page": "instafollowers.com Free TikTok Followers",
+          "url": "https://www.oreateai.com/blog/instafollowerscom-free-tiktok-followers/",
+          "authority": "Low"
+        }
+      ],
+      "link_types_breakdown": {
+        "review_platforms": 1,
+        "editorial_mentions": 1,
+        "social_profiles": 0,
+        "directories": 0
+      },
+      "competitive_gap": "InstaFollowers is primarily a social growth service, not a calculator tool. Their link profile is built on Trustpilot reviews and service-oriented content. Different link building approach needed."
+    }
+  },
+
+  "link_opportunities": [
+    {
+      "id": 1,
+      "type": "tool_roundup",
+      "priority": "critical",
+      "difficulty": "medium",
+      "estimated_da": 85,
+      "target_page": "Top 6 TikTok Money Calculators",
+      "target_url": "https://filmora.wondershare.com/tiktok/top-6-tiktok-money-calculator.html",
+      "target_domain": "filmora.wondershare.com",
+      "current_tools_listed": ["Influencer Marketing Hub", "Igface", "Ninjaoutreach", "Exolyt", "FeedPixel", "Likigram"],
+      "outreach_angle": "Pitch CalculateCreator as an addition to the list — highlight 45+ specialized TikTok calculators vs competitors' single calculator. Emphasize unique calculators like diamond converter, live gifts, RPM, and multi-platform earnings.",
+      "contact_method": "Author outreach via LinkedIn or Wondershare contact form",
+      "score": 95
+    },
+    {
+      "id": 2,
+      "type": "tool_roundup",
+      "priority": "critical",
+      "difficulty": "hard",
+      "estimated_da": 90,
+      "target_page": "29 TikTok Tools to Skyrocket Your Growth",
+      "target_url": "https://sproutsocial.com/insights/tiktok-tools/",
+      "target_domain": "sproutsocial.com",
+      "current_tools_listed": ["Splice", "CapCut", "Canva", "Exolyt", "Later", "Iconosquare", "Brand24", "29 tools total"],
+      "outreach_angle": "Position CalculateCreator as the missing 'calculator toolkit' category — no dedicated calculator tools are currently listed. Emphasize free, no-signup tools with 28+ calculators.",
+      "contact_method": "Author/editor outreach via LinkedIn",
+      "score": 90
+    },
+    {
+      "id": 3,
+      "type": "tool_roundup",
+      "priority": "critical",
+      "difficulty": "hard",
+      "estimated_da": 88,
+      "target_page": "32 TikTok Tools to Boost Your Marketing Strategy",
+      "target_url": "https://blog.hootsuite.com/tiktok-tools/",
+      "target_domain": "blog.hootsuite.com",
+      "current_tools_listed": ["CapCut", "Canva", "Later", "Iconosquare", "Keyhole", "32 tools total"],
+      "outreach_angle": "Suggest adding CalculateCreator under a 'Calculator Tools' or 'Earnings Tools' category. No earnings calculators are currently listed.",
+      "contact_method": "Hootsuite blog editor outreach",
+      "score": 88
+    },
+    {
+      "id": 4,
+      "type": "tool_roundup",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 82,
+      "target_page": "14 TikTok Analytics Tools to Boost Your Strategy in 2026",
+      "target_url": "https://sproutsocial.com/insights/tiktok-analytics-tools/",
+      "target_domain": "sproutsocial.com",
+      "outreach_angle": "Pitch CalculateCreator's data pages (earnings data, engagement benchmarks) as an analytics resource for creators who need benchmarks rather than dashboard analytics.",
+      "contact_method": "Author outreach",
+      "score": 82
+    },
+    {
+      "id": 5,
+      "type": "tool_roundup",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 75,
+      "target_page": "Top 17 TikTok Analytics Tools for 2025",
+      "target_url": "https://influencermarketinghub.com/social-media-posting-scheduling-tools/free-tiktok-analytics-tools/",
+      "target_domain": "influencermarketinghub.com",
+      "outreach_angle": "Pitch CalculateCreator as a free TikTok calculator and data platform. Influencer Marketing Hub already features their own TikTok Money Calculator — pitch CalculateCreator as complementary tool with 45+ specialized calculators.",
+      "contact_method": "IMH contributor outreach or contact form",
+      "score": 80
+    },
+    {
+      "id": 6,
+      "type": "tool_roundup",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 70,
+      "target_page": "30+ Best TikTok Tools to Boost Your Growth in 2026",
+      "target_url": "https://www.socialchamp.com/blog/tiktok-tools/",
+      "target_domain": "socialchamp.com",
+      "outreach_angle": "Pitch for inclusion as a free calculator tool — no calculator tools currently listed.",
+      "contact_method": "Blog editor outreach",
+      "score": 78
+    },
+    {
+      "id": 7,
+      "type": "tool_roundup",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 65,
+      "target_page": "10 Best TikTok Analytics Tools For 2026",
+      "target_url": "https://socialmediacurve.com/tiktok-analytics-tools/",
+      "target_domain": "socialmediacurve.com",
+      "outreach_angle": "Pitch CalculateCreator's data pages as a unique free analytics tool.",
+      "contact_method": "Blog contact form",
+      "score": 75
+    },
+    {
+      "id": 8,
+      "type": "tool_roundup",
+      "priority": "high",
+      "difficulty": "easy",
+      "estimated_da": 60,
+      "target_page": "The 10 Best TikTok Analytics Tools to Try in 2026",
+      "target_url": "https://brand24.com/blog/tiktok-analytics-tools/",
+      "target_domain": "brand24.com",
+      "outreach_angle": "Pitch as a free alternative/complement to paid tools.",
+      "contact_method": "Blog editor outreach",
+      "score": 72
+    },
+    {
+      "id": 9,
+      "type": "resource_page",
+      "priority": "high",
+      "difficulty": "easy",
+      "estimated_da": 80,
+      "target_page": "Creator Economy Tools (1000+ tools directory)",
+      "target_url": "https://www.producthunt.com/products/creator-economy-tools",
+      "target_domain": "producthunt.com",
+      "outreach_angle": "Submit CalculateCreator to the Creator Economy Tools directory on Product Hunt. Also launch CalculateCreator as its own Product Hunt product.",
+      "contact_method": "Product Hunt submission",
+      "score": 85
+    },
+    {
+      "id": 10,
+      "type": "resource_page",
+      "priority": "high",
+      "difficulty": "easy",
+      "estimated_da": 85,
+      "target_page": "Tools for Creators: The Complete List (2025)",
+      "target_url": "https://influencers.club/blog/creator-tools/",
+      "target_domain": "influencers.club",
+      "outreach_angle": "Submit CalculateCreator for inclusion in this comprehensive creator tools directory.",
+      "contact_method": "Contact form or email",
+      "score": 80
+    },
+    {
+      "id": 11,
+      "type": "resource_page",
+      "priority": "high",
+      "difficulty": "easy",
+      "estimated_da": 90,
+      "target_page": "150+ Best Content Creator Platforms",
+      "target_url": "https://www.shopify.com/blog/creator-economy-tech-stack",
+      "target_domain": "shopify.com",
+      "outreach_angle": "Pitch CalculateCreator as a free analytics/calculator tool in the creator economy tech stack.",
+      "contact_method": "Shopify blog editor outreach",
+      "score": 78
+    },
+    {
+      "id": 12,
+      "type": "data_citation",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 75,
+      "target_page": "How Much Does TikTok Pay In 2026",
+      "target_url": "https://www.demandsage.com/how-much-do-you-get-paid-on-tiktok/",
+      "target_domain": "demandsage.com",
+      "outreach_angle": "Offer CalculateCreator's earnings data pages as a source for their TikTok earnings statistics. CalculateCreator has country-specific earnings data (US, UK, Canada, Australia, etc.) that could be cited.",
+      "contact_method": "Author outreach",
+      "score": 76
+    },
+    {
+      "id": 13,
+      "type": "data_citation",
+      "priority": "high",
+      "difficulty": "medium",
+      "estimated_da": 80,
+      "target_page": "How Much Does TikTok Pay in 2026? Creator Income Breakdown",
+      "target_url": "https://www.bluehost.com/blog/how-much-does-tiktok-pay/",
+      "target_domain": "bluehost.com",
+      "outreach_angle": "Offer earnings data and calculator tool as a cited resource.",
+      "contact_method": "Bluehost blog editor",
+      "score": 75
+    },
+    {
+      "id": 14,
+      "type": "editorial_review",
+      "priority": "medium",
+      "difficulty": "easy",
+      "estimated_da": 55,
+      "target_page": "TokCount Review (MostlyBlogging)",
+      "target_url": "https://www.mostlyblogging.com/tokcount/",
+      "target_domain": "mostlyblogging.com",
+      "outreach_angle": "Pitch a similar review/feature for CalculateCreator. The site already reviews TikTok tools — suggest a 'Best TikTok Calculator Tools' article featuring CalculateCreator.",
+      "contact_method": "Blog contact form",
+      "score": 70
+    },
+    {
+      "id": 15,
+      "type": "comparison_article",
+      "priority": "medium",
+      "difficulty": "medium",
+      "estimated_da": 65,
+      "target_page": "Social Media Calculator Roundup",
+      "target_url": "https://www.socialsellinator.com/social-selling-blog/social-media-reach-calculator/",
+      "target_domain": "socialsellinator.com",
+      "outreach_angle": "Pitch CalculateCreator for inclusion as the TikTok-specific calculator toolkit in this social media calculator roundup.",
+      "contact_method": "Blog editor outreach",
+      "score": 68
+    },
+    {
+      "id": 16,
+      "type": "comparison_article",
+      "priority": "medium",
+      "difficulty": "medium",
+      "estimated_da": 60,
+      "target_page": "Social Media Calculators",
+      "target_url": "https://theonlineadvertisingguide.com/social-media-marketing/social-media-calculators/",
+      "target_domain": "theonlineadvertisingguide.com",
+      "outreach_angle": "This page lists calculators by platform — pitch CalculateCreator's TikTok calculators for inclusion in their TikTok section.",
+      "contact_method": "Site contact form",
+      "score": 65
+    },
+    {
+      "id": 17,
+      "type": "directory",
+      "priority": "medium",
+      "difficulty": "easy",
+      "estimated_da": 70,
+      "target_page": "Britopian Business Directory",
+      "target_url": "https://www.britopian.com/business-directory/",
+      "target_domain": "britopian.com",
+      "outreach_angle": "Submit CalculateCreator to the business directory — Exolyt is already listed here.",
+      "contact_method": "Directory submission form",
+      "score": 65
+    },
+    {
+      "id": 18,
+      "type": "tool_roundup",
+      "priority": "medium",
+      "difficulty": "medium",
+      "estimated_da": 75,
+      "target_page": "8 Must-Have TikTok Tools to Boost Your Growth",
+      "target_url": "https://filmora.wondershare.com/tiktok/8-must-have-tiktok-tools.html",
+      "target_domain": "filmora.wondershare.com",
+      "outreach_angle": "Second outreach target on Filmora — pitch for the general TikTok tools list.",
+      "contact_method": "Author/editor outreach",
+      "score": 72
+    },
+    {
+      "id": 19,
+      "type": "tool_roundup",
+      "priority": "medium",
+      "difficulty": "medium",
+      "estimated_da": 80,
+      "target_page": "12 TikTok Tools to Bolster Your Marketing Efforts",
+      "target_url": "https://influencermarketinghub.com/tiktok-tools-marketing/",
+      "target_domain": "influencermarketinghub.com",
+      "outreach_angle": "Pitch calculator tools as a missing category in their TikTok tools list.",
+      "contact_method": "IMH contributor or editor",
+      "score": 70
+    },
+    {
+      "id": 20,
+      "type": "product_listing",
+      "priority": "medium",
+      "difficulty": "easy",
+      "estimated_da": 90,
+      "target_page": "Product Hunt Launch",
+      "target_url": "https://www.producthunt.com/",
+      "target_domain": "producthunt.com",
+      "outreach_angle": "Launch CalculateCreator on Product Hunt. Similar TikTok calculator tools have received 270+ upvotes. Position as 'The most comprehensive free TikTok calculator toolkit — 45+ tools for creators.'",
+      "contact_method": "Product Hunt submission",
+      "score": 85
+    }
+  ],
+
+  "unlinked_mentions": {
+    "total_found": 0,
+    "mentions": [],
+    "notes": "No unlinked brand mentions were found through web search. The brand 'CalculateCreator' has no discoverable external mentions, citations, or references outside of the site's own domain. This indicates the site is in the very early stage of brand awareness and all link building must start from zero.",
+    "search_queries_used": [
+      "\"calculatecreator\" OR \"calculate creator\" -site:calculatecreator.com",
+      "\"calculatecreator.com\" -site:calculatecreator.com"
+    ]
+  },
+
+  "linkable_assets": {
+    "description": "CalculateCreator has significant linkable assets that have not yet been promoted externally.",
+    "calculator_tools": {
+      "count": 45,
+      "highlights": [
+        "TikTok Money Calculator",
+        "Diamond Converter Calculator",
+        "Live Gifts Calculator",
+        "Coins/Gifts/Diamonds Calculator",
+        "RPM Calculator",
+        "Multi-Platform Earnings Calculator",
+        "Brand Deal Rate Calculator",
+        "Engagement Rate Calculator",
+        "Campaign ROI Calculator",
+        "Viral Potential Calculator",
+        "Niche Profitability Calculator"
+      ],
+      "unique_value": "Most competitors offer 1-3 calculators. CalculateCreator offers 45+ specialized TikTok calculators — the largest free collection available."
+    },
+    "data_pages": {
+      "count": 40,
+      "highlights": [
+        "Average TikTok Earnings Per Views",
+        "Creator Fund Rates by Country",
+        "Brand Deal Rates by Followers",
+        "Brand Deal Rates by Niche",
+        "RPM Rates by Niche",
+        "Engagement Rates by Niche",
+        "Micro vs Macro Engagement Rates",
+        "TikTok vs YouTube RPM by Niche",
+        "TikTok Creator Income Distribution",
+        "Country-specific earnings (US, UK, Canada, Australia, Germany, France, Brazil, Mexico, India, Nigeria, Philippines, Indonesia)"
+      ],
+      "unique_value": "Original data compilation and analysis. Country-specific earnings data is highly citable and fills a gap most competitors don't cover."
+    },
+    "guides": {
+      "count": 10,
+      "highlights": [
+        "How to Make Money on TikTok (Complete Guide)",
+        "TikTok Creator Fund Guide",
+        "How to Get Brand Deals",
+        "TikTok Shop Affiliate Guide",
+        "TikTok LIVE Shopping Guide",
+        "Complete TikTok Diamond Guide",
+        "TikTok Monetization Requirements"
+      ],
+      "unique_value": "Comprehensive monetization guides with actionable data and calculator integration."
+    }
+  },
+
+  "outreach_plan_90day": {
+    "phase_1": {
+      "name": "Foundation & Low-Hanging Fruit",
+      "days": "1-30",
+      "goals": [
+        "Establish basic web presence beyond own domain",
+        "Secure directory listings",
+        "Launch on Product Hunt",
+        "Set up social proof signals"
+      ],
+      "actions": [
+        {
+          "action": "Product Hunt Launch",
+          "details": "Create a compelling Product Hunt launch for CalculateCreator. Position as '45+ Free TikTok Calculators for Creators.' Prepare screenshots, description, and first comment. Target a Tuesday-Thursday launch for maximum visibility.",
+          "expected_links": 1,
+          "expected_da": 90,
+          "effort": "medium",
+          "timeline": "Days 1-7"
+        },
+        {
+          "action": "Creator Economy Tools Directory Submission",
+          "details": "Submit CalculateCreator to the Creator Economy Tools directory on Product Hunt (1000+ tools listed). This is a simple submission with potentially high visibility.",
+          "expected_links": 1,
+          "expected_da": 80,
+          "effort": "low",
+          "timeline": "Days 1-3"
+        },
+        {
+          "action": "Business Directory Submissions",
+          "details": "Submit to Britopian Business Directory (where Exolyt is listed), G2, Capterra, AlternativeTo, SaaSHub, and similar software directories.",
+          "expected_links": "3-6",
+          "expected_da": "40-70",
+          "effort": "low",
+          "timeline": "Days 1-14"
+        },
+        {
+          "action": "Trustpilot Profile Setup",
+          "details": "Create Trustpilot business profile. Encourage early users to leave reviews. InstaFollowers has 71 reviews — aim for initial 10-20.",
+          "expected_links": 1,
+          "expected_da": 90,
+          "effort": "low",
+          "timeline": "Days 1-7"
+        },
+        {
+          "action": "Social Profile Creation & Optimization",
+          "details": "Create/optimize profiles on X/Twitter, LinkedIn (company page), TikTok, and Reddit. TokCount has a verified X profile — CalculateCreator needs the same.",
+          "expected_links": "3-5",
+          "expected_da": "80-95",
+          "effort": "low",
+          "timeline": "Days 1-7"
+        },
+        {
+          "action": "Influencers.club Creator Tools List",
+          "details": "Submit CalculateCreator to the 'Tools For Creators: The Complete List' maintained by Influencers.club.",
+          "expected_links": 1,
+          "expected_da": 65,
+          "effort": "low",
+          "timeline": "Days 7-14"
+        },
+        {
+          "action": "Porter Metrics / Social Media Calculators Directories",
+          "details": "Submit to free social media calculator directories and tool aggregator sites.",
+          "expected_links": "1-3",
+          "expected_da": "30-50",
+          "effort": "low",
+          "timeline": "Days 7-14"
+        },
+        {
+          "action": "HARO / Connectively Expert Responses",
+          "details": "Sign up for journalist query services and respond to questions about TikTok creator earnings, social media monetization, and creator economy topics. Use CalculateCreator's data as evidence.",
+          "expected_links": "1-3",
+          "expected_da": "50-80",
+          "effort": "medium",
+          "timeline": "Days 7-30 (ongoing)"
+        }
+      ],
+      "expected_total_new_links": "12-22",
+      "key_metrics_to_track": ["New referring domains", "Product Hunt upvotes", "Directory listing approvals"]
+    },
+    "phase_2": {
+      "name": "Content-Based Link Building",
+      "days": "31-60",
+      "goals": [
+        "Get included in major TikTok tool roundup articles",
+        "Earn editorial mentions through content outreach",
+        "Begin guest posting program"
+      ],
+      "actions": [
+        {
+          "action": "Filmora Top TikTok Money Calculators Outreach",
+          "details": "Email Filmora/Wondershare blog editor to pitch CalculateCreator's inclusion in their 'Top 6 TikTok Money Calculators' article. Highlight unique features: 45+ calculators, diamond converter, live gifts calculator, no signup required.",
+          "expected_links": 1,
+          "expected_da": 85,
+          "effort": "medium",
+          "timeline": "Days 31-40"
+        },
+        {
+          "action": "Sprout Social TikTok Tools Outreach",
+          "details": "Pitch to Sprout Social's content team for inclusion in '29 TikTok Tools' article. Position CalculateCreator as the missing 'calculator/earnings estimation' category.",
+          "expected_links": 1,
+          "expected_da": 90,
+          "effort": "high",
+          "timeline": "Days 31-45"
+        },
+        {
+          "action": "Hootsuite TikTok Tools Outreach",
+          "details": "Pitch to Hootsuite blog for inclusion in their '32 TikTok Tools' article. Emphasize the 'calculator' gap in their current listing.",
+          "expected_links": 1,
+          "expected_da": 88,
+          "effort": "high",
+          "timeline": "Days 35-50"
+        },
+        {
+          "action": "Social Champ TikTok Tools Outreach",
+          "details": "Pitch for inclusion in '30+ Best TikTok Tools to Boost Your Growth in 2026' article.",
+          "expected_links": 1,
+          "expected_da": 70,
+          "effort": "medium",
+          "timeline": "Days 35-50"
+        },
+        {
+          "action": "Influencer Marketing Hub Outreach",
+          "details": "Pitch CalculateCreator for inclusion in their TikTok tools and analytics articles. Offer data from CalculateCreator's earnings pages as a resource.",
+          "expected_links": 1,
+          "expected_da": 80,
+          "effort": "high",
+          "timeline": "Days 40-55"
+        },
+        {
+          "action": "Brand24 / SocialMediaCurve / SocialPilot Outreach",
+          "details": "Batch outreach to secondary TikTok analytics tool roundup sites for inclusion.",
+          "expected_links": "1-3",
+          "expected_da": "55-75",
+          "effort": "medium",
+          "timeline": "Days 40-60"
+        },
+        {
+          "action": "Guest Post on Creator Economy Blogs",
+          "details": "Pitch guest posts with original TikTok earnings data to blogs like MostlyBlogging (which reviews TikTok tools), The Leap, Social Media Examiner, and similar creator economy publications. Topics: 'TikTok Earnings By Country: Complete 2026 Data', 'How Much Do TikTok Creators Really Earn? Data from 50,000+ Creators'.",
+          "expected_links": "2-4",
+          "expected_da": "50-70",
+          "effort": "high",
+          "timeline": "Days 35-60"
+        },
+        {
+          "action": "DemandSage / Bluehost Data Citation Outreach",
+          "details": "Offer CalculateCreator's country-specific earnings data as a source for their TikTok earnings articles. These high-DA sites would benefit from linking to primary data sources.",
+          "expected_links": "1-2",
+          "expected_da": "75-80",
+          "effort": "medium",
+          "timeline": "Days 45-60"
+        }
+      ],
+      "expected_total_new_links": "8-15",
+      "key_metrics_to_track": ["Roundup inclusion confirmations", "Guest post publications", "Editorial mention earned"]
+    },
+    "phase_3": {
+      "name": "Digital PR & Authority Building",
+      "days": "61-90",
+      "goals": [
+        "Earn high-authority editorial backlinks through data studies",
+        "Establish thought leadership in the TikTok creator economy space",
+        "Build ongoing link acquisition systems"
+      ],
+      "actions": [
+        {
+          "action": "Original Data Study: TikTok Creator Earnings Report 2026",
+          "details": "Publish a comprehensive 'State of TikTok Creator Earnings 2026' report on calculatecreator.com using aggregated data from the site's 40+ data pages. Include charts, infographics, and downloadable PDF. Pitch to tech and marketing publications as an original data source.",
+          "expected_links": "5-15",
+          "expected_da": "40-85",
+          "effort": "very high",
+          "timeline": "Days 61-75"
+        },
+        {
+          "action": "Infographic: TikTok vs YouTube vs Instagram Earnings Comparison",
+          "details": "Create a shareable infographic comparing earnings across platforms using CalculateCreator's platform comparison data. Distribute to visual content aggregators and pitch to blogs.",
+          "expected_links": "3-8",
+          "expected_da": "30-60",
+          "effort": "high",
+          "timeline": "Days 65-80"
+        },
+        {
+          "action": "Expert Source Positioning",
+          "details": "Position the CalculateCreator brand/founder as a TikTok earnings expert on platforms like Quoted, Help A Reporter Out (HARO/Connectively), SourceBottle, and Qwoted. Respond to journalist queries about TikTok monetization with data from the site.",
+          "expected_links": "2-5",
+          "expected_da": "50-90",
+          "effort": "medium",
+          "timeline": "Days 61-90 (ongoing)"
+        },
+        {
+          "action": "Podcast Guest Appearances",
+          "details": "Pitch to creator economy and social media marketing podcasts as an expert on TikTok monetization. Use CalculateCreator's data as talking points. Podcast show notes typically include guest links.",
+          "expected_links": "2-4",
+          "expected_da": "30-60",
+          "effort": "medium",
+          "timeline": "Days 70-90"
+        },
+        {
+          "action": "Shopify Creator Economy Tech Stack",
+          "details": "Pitch CalculateCreator for inclusion in Shopify's '150+ Best Content Creator Platforms' article. Position as a free analytics/calculator tool.",
+          "expected_links": 1,
+          "expected_da": 92,
+          "effort": "high",
+          "timeline": "Days 75-90"
+        },
+        {
+          "action": "Partnership Outreach to Complementary Tools",
+          "details": "Reach out to complementary TikTok tools (Later, CapCut, Planable) for cross-promotion or resource page link exchanges. Offer to feature them in CalculateCreator guides in exchange for tool directory mentions.",
+          "expected_links": "1-3",
+          "expected_da": "60-80",
+          "effort": "medium",
+          "timeline": "Days 75-90"
+        },
+        {
+          "action": "Reddit & Community Engagement",
+          "details": "Engage authentically in r/TikTok, r/socialmedia, r/influencermarketing, r/entrepreneur with helpful calculator links when relevant. Build reputation as a helpful resource.",
+          "expected_links": "2-5 (nofollow but drive traffic and brand awareness)",
+          "expected_da": 95,
+          "effort": "low-medium",
+          "timeline": "Days 61-90 (ongoing)"
+        },
+        {
+          "action": "TikTok Video Content Strategy",
+          "details": "Create TikTok videos demonstrating calculators and sharing earnings data. Multiple TikTok videos about Exolyt's calculator have gone viral — replicate this with CalculateCreator's tools. Drive brand awareness that leads to natural link acquisition.",
+          "expected_links": "Indirect (brand awareness driven)",
+          "expected_da": "N/A",
+          "effort": "medium",
+          "timeline": "Days 61-90 (ongoing)"
+        }
+      ],
+      "expected_total_new_links": "15-40",
+      "key_metrics_to_track": ["Media pickups of data study", "Podcast appearances booked", "High-DA links earned", "Brand search volume increase"]
+    }
+  },
+
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action": "Product Hunt Launch",
+      "rationale": "Highest impact, moderate effort. A single Product Hunt launch can generate a DA90 backlink, drive significant traffic, and create brand awareness. Similar TikTok tools have received 270+ upvotes.",
+      "timeline": "Week 1",
+      "expected_impact": "High"
+    },
+    {
+      "rank": 2,
+      "action": "Filmora Top 6 TikTok Money Calculators Outreach",
+      "rationale": "Exolyt is listed here. CalculateCreator has 45+ calculators vs Exolyt's 3 — strong pitch angle. This is a high-traffic roundup article that sends referral traffic and link equity.",
+      "timeline": "Week 2-3",
+      "expected_impact": "High"
+    },
+    {
+      "rank": 3,
+      "action": "Directory & Profile Submissions (batch)",
+      "rationale": "Low effort, immediate results. Create profiles on Trustpilot, G2, Capterra, AlternativeTo, Britopian, SaaSHub, X, LinkedIn, and TikTok. Each provides a backlink and brand presence.",
+      "timeline": "Week 1-2",
+      "expected_impact": "Medium (foundation building)"
+    },
+    {
+      "rank": 4,
+      "action": "Sprout Social & Hootsuite Tool Roundup Outreach",
+      "rationale": "These are the two highest-DA TikTok tool roundup articles. Getting listed would be transformative for the backlink profile. Both articles currently lack calculator tools — a clear gap CalculateCreator fills.",
+      "timeline": "Week 4-6",
+      "expected_impact": "Very High"
+    },
+    {
+      "rank": 5,
+      "action": "Create TikTok Creator Earnings Report 2026 (Data Study)",
+      "rationale": "CalculateCreator has 40+ data pages that can be compiled into a comprehensive report. Data studies are the most effective content for earning editorial backlinks at scale. Sites like DemandSage, Bluehost, and Influencer Marketing Hub regularly cite earnings data.",
+      "timeline": "Week 8-10",
+      "expected_impact": "Very High"
+    },
+    {
+      "rank": 6,
+      "action": "Creator Economy Tools Directory Submissions",
+      "rationale": "Submit to Product Hunt's Creator Economy Tools directory (1000+ tools), Influencers.club list, and Shopify's creator economy tech stack.",
+      "timeline": "Week 1-3",
+      "expected_impact": "Medium"
+    },
+    {
+      "rank": 7,
+      "action": "Guest Posts on Creator Economy Blogs",
+      "rationale": "Use CalculateCreator's unique data (country-specific earnings, niche comparisons) to pitch guest posts. Target MostlyBlogging, The Leap, Social Media Examiner.",
+      "timeline": "Week 5-8",
+      "expected_impact": "Medium-High"
+    },
+    {
+      "rank": 8,
+      "action": "HARO/Connectively Expert Responses",
+      "rationale": "Ongoing opportunity to earn high-DA editorial backlinks by responding to journalist queries about TikTok, social media monetization, and creator economy topics with data from CalculateCreator.",
+      "timeline": "Ongoing from Week 1",
+      "expected_impact": "Medium-High (variable)"
+    }
+  ],
+
+  "competitive_gap_analysis": {
+    "summary": "CalculateCreator has ZERO backlinks from major tool roundup articles where all three competitors have at least some presence. Exolyt is the dominant competitor with inclusion in Filmora, Sprout Social, and multiple analytics tool roundups. The primary competitive gap is not content quality — CalculateCreator has more calculators (45+) and more data pages (40+) than any competitor — the gap is entirely in external promotion and link building.",
+    "exolyt_advantages": [
+      "Listed in Filmora's Top 6 TikTok Money Calculators",
+      "Listed in Sprout Social's 29 TikTok Tools",
+      "Listed in multiple TikTok analytics roundups",
+      "Viral TikTok videos mentioning the platform",
+      "Business directory listings",
+      "Active social media presence (X, LinkedIn, TikTok)"
+    ],
+    "tokcount_advantages": [
+      "Editorial review from MostlyBlogging",
+      "Active X/Twitter presence",
+      "Multiple directory listings",
+      "Higher traffic (178K monthly)"
+    ],
+    "calculatecreator_advantages_not_yet_leveraged": [
+      "45+ specialized calculators (vs competitors' 1-3)",
+      "40+ data pages with original data compilations",
+      "Country-specific earnings data (12+ countries)",
+      "Comprehensive monetization guides",
+      "Platform comparison data",
+      "Free, no-signup tools"
+    ]
+  },
+
+  "metadata": {
+    "tools_used": ["WebSearch", "WebFetch"],
+    "searches_performed": 20,
+    "pages_fetched": 4,
+    "limitations": [
+      "Web search cannot fully replicate backlink analysis tools like Ahrefs, Semrush, or Moz",
+      "Search-based backlink discovery may miss links not indexed by search engines",
+      "Competitor backlink counts are estimates based on discovered mentions, not comprehensive crawl data",
+      "Domain authority estimates are approximate without direct access to Ahrefs/Semrush/Moz data"
+    ],
+    "recommended_follow_up": [
+      "Run Ahrefs or Semrush backlink analysis for all four domains for exact metrics",
+      "Use Ahrefs Content Explorer to find unlinked mentions",
+      "Use Semrush Link Gap tool to compare all four domains",
+      "Check Google Search Console for existing backlinks"
+    ]
+  }
+}

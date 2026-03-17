@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate the monetary value of your TikTok content. Estimate earned media value per video based on views, engagement, and equivalent ad spend.",
   keywords: ['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/content-value/',
+    canonical: 'https://tiktokcalculator.net/calculators/content-value/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function ContentValueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Content Value Calculator"
         description="Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche."
-        url="https://calculatecreator.com/calculators/content-value/"
+        url="https://tiktokcalculator.net/calculators/content-value/"
         datePublished="2024-04-01"
         dateModified="2026-03-01"
         keywords={['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator']}
@@ -53,9 +53,9 @@ export default function ContentValueCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Content Value Calculator', url: 'https://calculatecreator.com/calculators/content-value/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Content Value Calculator', url: 'https://tiktokcalculator.net/calculators/content-value/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

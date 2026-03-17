@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate when your TikTok content creation becomes profitable. Factor in production costs, equipment, and time investment against your creator revenue streams.",
   keywords: ['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator', 'creator economics'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/break-even/',
+    canonical: 'https://tiktokcalculator.net/calculators/break-even/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function BreakEvenCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Break-Even Calculator"
         description="Calculate when your TikTok content creation becomes profitable. Find your break-even point based on production costs and revenue streams."
-        url="https://calculatecreator.com/calculators/break-even/"
+        url="https://tiktokcalculator.net/calculators/break-even/"
         datePublished="2024-04-15"
         dateModified="2026-03-01"
         keywords={['break even calculator', 'tiktok profitability', 'creator break even', 'content roi calculator']}
@@ -53,9 +53,9 @@ export default function BreakEvenCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Break Even Calculator', url: 'https://calculatecreator.com/calculators/break-even/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Break Even Calculator', url: 'https://tiktokcalculator.net/calculators/break-even/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

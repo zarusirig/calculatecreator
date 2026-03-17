@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate TikTok CPM (cost per 1,000 impressions) and CPV (cost per view). Compare ad costs by format, targeting, and industry for 2026 campaigns.",
   keywords: ['tiktok cpm calculator', 'cpv calculator', 'cost per view', 'cost per thousand', 'tiktok ad benchmarks'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/cpm-cpv/',
+    canonical: 'https://tiktokcalculator.net/calculators/cpm-cpv/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function CPMCPVCalculatorPage() {
       <CalculatorSchema
         name="TikTok CPM/CPV Calculator"
         description="Calculate Cost Per Mille (CPM) and Cost Per View (CPV) for your TikTok ad campaigns to measure advertising efficiency."
-        url="https://calculatecreator.com/calculators/cpm-cpv/"
+        url="https://tiktokcalculator.net/calculators/cpm-cpv/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok cpm calculator', 'cost per mille', 'cpv calculator', 'tiktok ad cost']}
@@ -78,9 +78,9 @@ export default function CPMCPVCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'CPM/CPV Calculator', url: 'https://calculatecreator.com/calculators/cpm-cpv/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'CPM/CPV Calculator', url: 'https://tiktokcalculator.net/calculators/cpm-cpv/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">

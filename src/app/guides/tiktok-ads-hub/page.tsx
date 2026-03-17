@@ -9,17 +9,18 @@ import Link from 'next/link';
 import { Megaphone, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, DollarSign, BarChart3, Zap, TrendingUp, ShoppingCart, Users, AlertTriangle, Layers } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Ads Hub Guide and Creator Strategy Guide",
-  description: "Read this TikTok ads hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
+  title: 'TikTok Ads Hub | Costs, Spark Ads, and Campaign Strategy',
+  description:
+    'Learn how TikTok ad costs, Spark Ads, Shop campaigns, and ROAS benchmarks fit into a more profitable creator or brand strategy.',
   keywords: ['tiktok ads', 'tiktok advertising', 'tiktok ad cost', 'spark ads', 'tiktok shop ads', 'tiktok campaign roi', 'tiktok cpm', 'tiktok ad budget'],
   alternates: {
-    canonical: 'https://calculatecreator.com/guides/tiktok-ads-hub/',
+    canonical: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/',
   },
   openGraph: {
     title: 'TikTok Ads Hub 2026 | Complete Advertising Strategy & Cost Guide',
     description: 'Master TikTok advertising. Calculate ad costs, optimize ROAS, run Spark Ads, and build profitable TikTok ad campaigns.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/tiktok-ads-hub/',
+    url: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -49,16 +50,16 @@ export default function TikTokAdsHubPage() {
       <ArticleSchema
         headline="TikTok Ads Hub 2026: Complete Advertising Strategy & Cost Guide"
         description="Comprehensive guide to TikTok advertising covering ad formats, budget planning, ROAS benchmarks, Spark Ads, TikTok Shop advertising, and advanced campaign optimization strategies with calculators."
-        url="https://calculatecreator.com/guides/tiktok-ads-hub/"
+        url="https://tiktokcalculator.net/guides/tiktok-ads-hub/"
         datePublished="2026-02-06"
         dateModified="2026-03-01"
         keywords={['tiktok ads', 'tiktok advertising cost', 'spark ads', 'tiktok shop ads', 'campaign roi', 'tiktok cpm']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
-          { name: 'TikTok Ads Hub', url: 'https://calculatecreator.com/guides/tiktok-ads-hub/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Guides', url: 'https://tiktokcalculator.net/guides/' },
+          { name: 'TikTok Ads Hub', url: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/' },
         ]}
       />
 

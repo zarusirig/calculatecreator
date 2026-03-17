@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Measure the ROI of your TikTok marketing campaigns. Calculate return on ad spend, cost per acquisition, and revenue generated from TikTok promotions.",
   keywords: ['campaign roi calculator', 'tiktok roas', 'ad performance calculator', 'marketing roi', 'tiktok ads roi'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/campaign-roi/',
+    canonical: 'https://tiktokcalculator.net/calculators/campaign-roi/',
   },
 };
 
@@ -49,7 +49,7 @@ export default function CampaignROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Campaign ROI Calculator"
         description="Calculate return on investment for your TikTok marketing campaigns to measure profitability and performance."
-        url="https://calculatecreator.com/calculators/campaign-roi/"
+        url="https://tiktokcalculator.net/calculators/campaign-roi/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['campaign roi calculator', 'tiktok roi', 'roas calculator', 'marketing roi']}
@@ -57,9 +57,9 @@ export default function CampaignROICalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Campaign ROI Calculator', url: 'https://calculatecreator.com/calculators/campaign-roi/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Campaign ROI Calculator', url: 'https://tiktokcalculator.net/calculators/campaign-roi/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">

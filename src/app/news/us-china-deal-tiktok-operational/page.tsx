@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok us china deal tiktok operational update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/',
+    canonical: 'https://tiktokcalculator.net/news/us-china-deal-tiktok-operational/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function USChinaDealPage() {
       <NewsArticleSchema
         headline="US-China Deal Reached to Keep TikTok Operational"
         description="A framework agreement announced in September 2026 between the Trump administration and China aims to maintain TikTok's operations in the United States through collaboration."
-        url="https://calculatecreator.com/news/us-china-deal-tiktok-operational/"
+        url="https://tiktokcalculator.net/news/us-china-deal-tiktok-operational/"
         datePublished="2026-09-15"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-regulatory-1024.webp"
+        image="https://tiktokcalculator.net/news/news-regulatory-1024.webp"
         keywords={['tiktok deal', 'us china', 'tiktok operational', 'bytedance', 'tiktok news']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'US-China TikTok Deal', url: 'https://calculatecreator.com/news/us-china-deal-tiktok-operational/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'US-China TikTok Deal', url: 'https://tiktokcalculator.net/news/us-china-deal-tiktok-operational/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

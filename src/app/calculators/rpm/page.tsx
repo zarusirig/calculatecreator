@@ -12,6 +12,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import { Card } from '@/components/ui/Card';
+import { DataTable } from '@/components/ui/DataTable';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
@@ -35,13 +36,13 @@ export const metadata: Metadata = {
     'rpm calculator 2026',
   ],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/rpm/',
+    canonical: 'https://tiktokcalculator.net/calculators/rpm/',
   },
   openGraph: {
     title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
     description:
       'Calculate your TikTok RPM and estimate earnings per 1,000 views. Compare your performance to industry benchmarks.',
-    url: 'https://calculatecreator.com/calculators/rpm/',
+    url: 'https://tiktokcalculator.net/calculators/rpm/',
     type: 'website',
   },
 };
@@ -159,7 +160,7 @@ export default function RpmCalculatorPage() {
       <CalculatorSchema
         name="TikTok RPM Calculator"
         description="Calculate your TikTok RPM (Revenue Per Mille) and estimate earnings per 1,000 views with industry benchmarks."
-        url="https://calculatecreator.com/calculators/rpm/"
+        url="https://tiktokcalculator.net/calculators/rpm/"
       />
       <FAQSchema faqs={faqItems} />
       <BreadcrumbSchema
@@ -188,6 +189,9 @@ export default function RpmCalculatorPage() {
             <h1 className="mb-4 text-4xl font-bold text-white md:text-5xl">
               TikTok RPM Calculator
             </h1>
+            <p className="mx-auto mb-4 max-w-2xl text-lg font-medium text-gray-100">
+              TikTok RPM (Revenue Per Mille) is your earnings per 1,000 views, calculated as (Total Earnings / Total Views) x 1,000. The average TikTok RPM in 2026 is $0.02–$0.05, with top niches reaching $0.08–$0.12.
+            </p>
             <p className="mx-auto mb-6 max-w-2xl text-lg text-gray-300">
               Calculate your Revenue Per Mille (RPM) to understand exactly how
               much you earn per 1,000 TikTok views. Compare your monetization
@@ -311,34 +315,20 @@ export default function RpmCalculatorPage() {
                 <Eye className="mr-2 h-5 w-5 text-blue-400" />
                 RPM Benchmarks by Niche
               </h2>
-              <div className="space-y-3">
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Finance & Business</span>
-                  <span className="font-medium text-green-400">
-                    $0.08-$0.12
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Technology & Software</span>
-                  <span className="font-medium text-green-400">
-                    $0.06-$0.10
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Education & Tutorials</span>
-                  <span className="font-medium text-blue-400">$0.05-$0.08</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Lifestyle & Beauty</span>
-                  <span className="font-medium text-blue-400">$0.03-$0.06</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-300">Entertainment & Comedy</span>
-                  <span className="font-medium text-yellow-400">
-                    $0.01-$0.03
-                  </span>
-                </div>
-              </div>
+              <DataTable
+                caption="TikTok RPM by Content Niche (2026)"
+                headers={['Content Niche', 'RPM Range']}
+                rows={[
+                  ['Finance & Business', '$0.08-$0.12'],
+                  ['Technology & Software', '$0.06-$0.10'],
+                  ['Education & Tutorials', '$0.05-$0.08'],
+                  ['Lifestyle & Beauty', '$0.03-$0.06'],
+                  ['Entertainment & Comedy', '$0.01-$0.03'],
+                ]}
+                highlightFirst
+                sortable
+                footnote="RPMs peak during Q4 (Oct-Dec) due to holiday advertising demand."
+              />
             </Card>
 
             <Card className="bg-gray-800/50 p-6">
@@ -405,7 +395,7 @@ export default function RpmCalculatorPage() {
           {/* Tool Explanation */}
           <div className="mb-10">
             <ToolExplanationSection
-              whatItDoes="Calculates your TikTok RPM (Revenue Per Mille) by dividing your total Creator Fund earnings by your total views and multiplying by 1,000. This standardized metric reveals exactly how much you earn per 1,000 views, making it easy to compare monetization efficiency across time periods, content types, and niches."
+              whatItDoes="Calculates your TikTok RPM (Revenue Per Mille) by dividing your total Creator Fund earnings by your total views and multiplying by 1,000. This standardized metric shows your earnings per 1,000 views, making it easier to compare monetization efficiency across time periods, content types, and niches."
               howToUse={[
                 'Enter your total Creator Fund revenue earned during a specific time period (e.g., the past 30 days).',
                 'Enter your total video views for the same time period so the calculator can compute your RPM rate.',

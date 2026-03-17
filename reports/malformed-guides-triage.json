@@ -1,0 +1,1987 @@
+{
+  "generatedAt": "2026-03-14T18:56:47.788Z",
+  "summary": {
+    "totalFiles": 118,
+    "repairCandidates": 11,
+    "rewriteOrQuarantineCandidates": 35,
+    "cleanFiles": 72,
+    "patternTotals": {
+      "imagePrefix": 6,
+      "inlineCreatorPrefix": 8,
+      "danglingJsx": 15,
+      "deepIndentText": 1218,
+      "deepIndentMarkup": 2326,
+      "deepIndentNumeric": 86,
+      "blankBursts": 1141
+    }
+  },
+  "rewriteOrQuarantineCandidates": [
+    {
+      "path": "content/guides/how-to-increase-creator-fund-earnings.mdx",
+      "severityScore": 8,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "dangling_jsx_artifacts",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 5,
+        "deepIndentText": 11,
+        "deepIndentMarkup": 27,
+        "deepIndentNumeric": 0,
+        "blankBursts": 19
+      }
+    },
+    {
+      "path": "content/guides/calculating-true-influence-value.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 53,
+        "deepIndentMarkup": 49,
+        "deepIndentNumeric": 0,
+        "blankBursts": 20
+      }
+    },
+    {
+      "path": "content/guides/how-to-price-brand-deals.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 54,
+        "deepIndentMarkup": 61,
+        "deepIndentNumeric": 0,
+        "blankBursts": 34
+      }
+    },
+    {
+      "path": "content/guides/influencer-rate-calculator-guide.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "metric_card_fragments",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 10,
+        "deepIndentMarkup": 75,
+        "deepIndentNumeric": 9,
+        "blankBursts": 20
+      }
+    },
+    {
+      "path": "content/guides/live-gift-earnings-optimization.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 56,
+        "deepIndentMarkup": 113,
+        "deepIndentNumeric": 0,
+        "blankBursts": 41
+      }
+    },
+    {
+      "path": "content/guides/maximize-creator-fund-rpm.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 19,
+        "deepIndentMarkup": 49,
+        "deepIndentNumeric": 0,
+        "blankBursts": 15
+      }
+    },
+    {
+      "path": "content/guides/multi-platform-attribution-creators.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 45,
+        "deepIndentMarkup": 69,
+        "deepIndentNumeric": 5,
+        "blankBursts": 30
+      }
+    },
+    {
+      "path": "content/guides/multi-platform-strategy.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 48,
+        "deepIndentMarkup": 47,
+        "deepIndentNumeric": 3,
+        "blankBursts": 32
+      }
+    },
+    {
+      "path": "content/guides/tiktok-diamonds.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 27,
+        "deepIndentMarkup": 49,
+        "deepIndentNumeric": 6,
+        "blankBursts": 34
+      }
+    },
+    {
+      "path": "content/guides/tiktok-gifts.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 33,
+        "deepIndentMarkup": 51,
+        "deepIndentNumeric": 0,
+        "blankBursts": 33
+      }
+    },
+    {
+      "path": "content/guides/why-creator-fund-earnings-dropped.mdx",
+      "severityScore": 7,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 1,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 34,
+        "deepIndentMarkup": 64,
+        "deepIndentNumeric": 0,
+        "blankBursts": 26
+      }
+    },
+    {
+      "path": "content/guides/content-strategy-2025.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 38,
+        "deepIndentMarkup": 26,
+        "deepIndentNumeric": 6,
+        "blankBursts": 25
+      }
+    },
+    {
+      "path": "content/guides/creator-tax-strategy.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 15,
+        "deepIndentMarkup": 106,
+        "deepIndentNumeric": 0,
+        "blankBursts": 34
+      }
+    },
+    {
+      "path": "content/guides/fitness-creators-earnings.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 22,
+        "deepIndentMarkup": 141,
+        "deepIndentNumeric": 0,
+        "blankBursts": 43
+      }
+    },
+    {
+      "path": "content/guides/hashtag-strategy.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 15,
+        "deepIndentMarkup": 12,
+        "deepIndentNumeric": 0,
+        "blankBursts": 18
+      }
+    },
+    {
+      "path": "content/guides/how-much-to-charge-sponsorship.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 26,
+        "deepIndentMarkup": 95,
+        "deepIndentNumeric": 5,
+        "blankBursts": 31
+      }
+    },
+    {
+      "path": "content/guides/how-to-get-1000-followers-live.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "dangling_jsx_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 5,
+        "deepIndentText": 8,
+        "deepIndentMarkup": 9,
+        "deepIndentNumeric": 0,
+        "blankBursts": 12
+      }
+    },
+    {
+      "path": "content/guides/how-to-get-brand-deals-complete.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "dangling_jsx_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 5,
+        "deepIndentText": 6,
+        "deepIndentMarkup": 5,
+        "deepIndentNumeric": 0,
+        "blankBursts": 8
+      }
+    },
+    {
+      "path": "content/guides/how-to-get-brand-deals.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 18,
+        "deepIndentMarkup": 34,
+        "deepIndentNumeric": 0,
+        "blankBursts": 18
+      }
+    },
+    {
+      "path": "content/guides/how-to-go-viral.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 38,
+        "deepIndentMarkup": 90,
+        "deepIndentNumeric": 0,
+        "blankBursts": 34
+      }
+    },
+    {
+      "path": "content/guides/how-to-increase-engagement.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 23,
+        "deepIndentMarkup": 95,
+        "deepIndentNumeric": 3,
+        "blankBursts": 35
+      }
+    },
+    {
+      "path": "content/guides/how-to-make-first-1000-dollars.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 22,
+        "deepIndentMarkup": 33,
+        "deepIndentNumeric": 3,
+        "blankBursts": 29
+      }
+    },
+    {
+      "path": "content/guides/how-to-make-money-on-tiktok.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 17,
+        "deepIndentMarkup": 35,
+        "deepIndentNumeric": 4,
+        "blankBursts": 19
+      }
+    },
+    {
+      "path": "content/guides/how-to-qualify-for-tiktok-live.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 18,
+        "deepIndentMarkup": 31,
+        "deepIndentNumeric": 5,
+        "blankBursts": 23
+      }
+    },
+    {
+      "path": "content/guides/increase-engagement-rate-tiktok.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 25,
+        "deepIndentMarkup": 49,
+        "deepIndentNumeric": 0,
+        "blankBursts": 21
+      }
+    },
+    {
+      "path": "content/guides/niche-selection.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 26,
+        "deepIndentMarkup": 72,
+        "deepIndentNumeric": 3,
+        "blankBursts": 35
+      }
+    },
+    {
+      "path": "content/guides/tiktok-ad-budget-calculator-guide.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 22,
+        "deepIndentMarkup": 45,
+        "deepIndentNumeric": 7,
+        "blankBursts": 25
+      }
+    },
+    {
+      "path": "content/guides/tiktok-algorithm-optimization.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 67,
+        "deepIndentMarkup": 75,
+        "deepIndentNumeric": 0,
+        "blankBursts": 27
+      }
+    },
+    {
+      "path": "content/guides/tiktok-coin-converter-complete-guide.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 39,
+        "deepIndentMarkup": 29,
+        "deepIndentNumeric": 4,
+        "blankBursts": 22
+      }
+    },
+    {
+      "path": "content/guides/tiktok-engagement-rate-calculator-guide.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 25,
+        "deepIndentMarkup": 38,
+        "deepIndentNumeric": 7,
+        "blankBursts": 22
+      }
+    },
+    {
+      "path": "content/guides/tiktok-live-shopping.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 28,
+        "deepIndentMarkup": 94,
+        "deepIndentNumeric": 0,
+        "blankBursts": 38
+      }
+    },
+    {
+      "path": "content/guides/tiktok-monetization-requirements.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 30,
+        "deepIndentMarkup": 77,
+        "deepIndentNumeric": 5,
+        "blankBursts": 25
+      }
+    },
+    {
+      "path": "content/guides/tiktok-shop-affiliate.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 20,
+        "deepIndentMarkup": 11,
+        "deepIndentNumeric": 3,
+        "blankBursts": 15
+      }
+    },
+    {
+      "path": "content/guides/tiktok-shop-success-strategies.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 71,
+        "deepIndentMarkup": 61,
+        "deepIndentNumeric": 0,
+        "blankBursts": 36
+      }
+    },
+    {
+      "path": "content/guides/why-tiktok-earnings-low.mdx",
+      "severityScore": 6,
+      "classification": "rewrite_or_quarantine_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 49,
+        "deepIndentMarkup": 30,
+        "deepIndentNumeric": 0,
+        "blankBursts": 17
+      }
+    }
+  ],
+  "repairCandidates": [
+    {
+      "path": "content/guides/analytics-metrics-master-guide.mdx",
+      "severityScore": 4,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 6,
+        "deepIndentMarkup": 40,
+        "deepIndentNumeric": 4,
+        "blankBursts": 16
+      }
+    },
+    {
+      "path": "content/guides/brand-deals.mdx",
+      "severityScore": 4,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 10,
+        "deepIndentMarkup": 42,
+        "deepIndentNumeric": 0,
+        "blankBursts": 22
+      }
+    },
+    {
+      "path": "content/guides/finance-creators-earnings.mdx",
+      "severityScore": 4,
+      "classification": "repair_candidate",
+      "reasons": [
+        "paragraph_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 15,
+        "deepIndentMarkup": 4,
+        "deepIndentNumeric": 0,
+        "blankBursts": 14
+      }
+    },
+    {
+      "path": "content/guides/how-to-negotiate-brand-deals.mdx",
+      "severityScore": 4,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 12,
+        "deepIndentMarkup": 24,
+        "deepIndentNumeric": 0,
+        "blankBursts": 18
+      }
+    },
+    {
+      "path": "content/guides/tiktok-shop.mdx",
+      "severityScore": 4,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "creator_label_artifacts",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 1,
+        "danglingJsx": 0,
+        "deepIndentText": 8,
+        "deepIndentMarkup": 35,
+        "deepIndentNumeric": 0,
+        "blankBursts": 22
+      }
+    },
+    {
+      "path": "content/guides/how-creator-fund-works.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 14,
+        "deepIndentMarkup": 37,
+        "deepIndentNumeric": 0,
+        "blankBursts": 17
+      }
+    },
+    {
+      "path": "content/guides/how-to-join-creator-fund.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 11,
+        "deepIndentMarkup": 17,
+        "deepIndentNumeric": 0,
+        "blankBursts": 14
+      }
+    },
+    {
+      "path": "content/guides/spark-ads-for-creators.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 14,
+        "deepIndentMarkup": 55,
+        "deepIndentNumeric": 0,
+        "blankBursts": 15
+      }
+    },
+    {
+      "path": "content/guides/tiktok-creator-marketplace.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 10,
+        "deepIndentMarkup": 49,
+        "deepIndentNumeric": 0,
+        "blankBursts": 14
+      }
+    },
+    {
+      "path": "content/guides/tiktok-live-earnings-expectations.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 9,
+        "deepIndentMarkup": 29,
+        "deepIndentNumeric": 0,
+        "blankBursts": 15
+      }
+    },
+    {
+      "path": "content/guides/tiktok-pay.mdx",
+      "severityScore": 3,
+      "classification": "repair_candidate",
+      "reasons": [
+        "list_or_link_indentation_corruption",
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 9,
+        "deepIndentMarkup": 27,
+        "deepIndentNumeric": 4,
+        "blankBursts": 17
+      }
+    }
+  ],
+  "cleanFiles": [
+    {
+      "path": "content/guides/best-times-go-live.mdx",
+      "severityScore": 1,
+      "classification": "clean",
+      "reasons": [
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 14,
+        "deepIndentMarkup": 6,
+        "deepIndentNumeric": 0,
+        "blankBursts": 17
+      }
+    },
+    {
+      "path": "content/guides/how-to-become-shop-affiliate.mdx",
+      "severityScore": 1,
+      "classification": "clean",
+      "reasons": [
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 14,
+        "deepIndentMarkup": 5,
+        "deepIndentNumeric": 0,
+        "blankBursts": 10
+      }
+    },
+    {
+      "path": "content/guides/tiktok-algorithm-engagement.mdx",
+      "severityScore": 1,
+      "classification": "clean",
+      "reasons": [
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 6,
+        "deepIndentMarkup": 3,
+        "deepIndentNumeric": 0,
+        "blankBursts": 7
+      }
+    },
+    {
+      "path": "content/guides/tiktok-live-earnings-guide.mdx",
+      "severityScore": 1,
+      "classification": "clean",
+      "reasons": [
+        "excessive_blank_bursts"
+      ],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 8,
+        "deepIndentMarkup": 6,
+        "deepIndentNumeric": 0,
+        "blankBursts": 7
+      }
+    },
+    {
+      "path": "content/guides/beauty-creators-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/brand-deal-contract-negotiate.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/ftc-disclosure-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/international-creator-tax-implications.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/llc-for-tiktok-creators.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-community-guidelines-strikes.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-copyright-fair-use.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-creator-burnout-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-creator-insurance.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-creator-taxes-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-exit-strategies.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/tiktok-intellectual-property-protection.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/business/when-to-hire-manager-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/complete-tiktok-calculator-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/complete-tiktok-diamond-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/creator-rewards-program.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/best-posting-times-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/content-repurposing-roi-analysis.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/get-on-fyp-consistently.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/recover-tiktok-growth-plateau.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/repurpose-tiktok-content.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/short-vs-long-tiktok-videos.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-ab-testing-content.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-algorithm-explained.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-analytics-api-creators.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-analytics-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-audience-demographics-analysis.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-batch-content-creation.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-content-pillars.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-hashtag-strategy-2026.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-photo-carousel-engagement.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-seo-search-ranking.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-shadowban-fix.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/growth/tiktok-sounds-music-distribution.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/diversify-tiktok-income-streams.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/financial-planning-tiktok-creators.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/first-1000-dollars-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/get-paid-faster-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/how-to-make-money-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/micro-influencers-make-money-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/monetization-requirements-checklist.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/passive-income-tiktok-creators.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/selling-digital-products-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/seven-ways-make-money-tiktok.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-affiliate-without-shop.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-consulting-creator.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-course-creation-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-merch-strategies.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-monetization-by-country.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-series-monetization.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/monetization/tiktok-subscription-recurring-revenue.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/asmr-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/comedy-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/diy-crafts-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/education-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/fashion-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/food-cooking-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/gaming-tiktok-monetization.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/music-tiktok-monetization.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/parenting-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/pet-tiktok-monetization.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/tech-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/niches/travel-tiktok-earnings.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/tiktok-coins.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/tiktok-creator-fund.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/tiktok-live.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/tiktok-payment-delays.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    },
+    {
+      "path": "content/guides/tiktok-rpm-calculator-guide.mdx",
+      "severityScore": 0,
+      "classification": "clean",
+      "reasons": [],
+      "counts": {
+        "imagePrefix": 0,
+        "inlineCreatorPrefix": 0,
+        "danglingJsx": 0,
+        "deepIndentText": 0,
+        "deepIndentMarkup": 0,
+        "deepIndentNumeric": 0,
+        "blankBursts": 0
+      }
+    }
+  ]
+}

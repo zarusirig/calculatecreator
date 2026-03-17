@@ -12,7 +12,7 @@ if (!apiKey) {
     process.exit(1);
 }
 
-const BASE_URL = 'https://calculatecreator.com';
+const BASE_URL = 'https://tiktokcalculator.net';
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 async function getMdxFiles(dir, fileList = []) {
@@ -44,7 +44,7 @@ async function extractFromFirecrawl(liveUrl) {
         },
         body: JSON.stringify({
             urls: [liveUrl],
-            prompt: "You are an expert SEO auditor correcting a page for CalculateCreator.com based on recent audits. Fix spammy titles, generic descriptions, add direct answers, and missing FAQS. Extract the improved components.",
+            prompt: "You are an expert SEO auditor correcting a page for tiktokcalculator.net based on recent audits. Fix spammy titles, generic descriptions, add direct answers, and missing FAQS. Extract the improved components.",
             schema: {
                 type: "object",
                 properties: {

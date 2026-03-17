@@ -3,9 +3,10 @@ import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
 
 export const metadata: Metadata = {
-  title: "TikTok Business Guide and Creator Strategy Guide 2026",
-  description: "Read this TikTok business guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
-  alternates: { canonical: 'https://calculatecreator.com/guides/business/' },
+  title: 'TikTok Creator Business Guides | Taxes, Contracts, and Operations',
+  description:
+    'Browse creator business guides on taxes, contracts, compliance, pricing, and financial planning for a more durable creator business.',
+  alternates: { canonical: 'https://tiktokcalculator.net/guides/business/' },
 };
 
 export default function BusinessHubPage() {

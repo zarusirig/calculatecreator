@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok mention liked favorited videos update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/mention-liked-favorited-videos/',
+    canonical: 'https://tiktokcalculator.net/news/mention-liked-favorited-videos/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function MentionLikedFavoritedVideosPage() {
       <NewsArticleSchema
         headline="TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News"
         description="Users can now mention 'Liked' and 'Favorited' videos in their content, expanding cross-referencing capabilities on the platform."
-        url="https://calculatecreator.com/news/mention-liked-favorited-videos/"
+        url="https://tiktokcalculator.net/news/mention-liked-favorited-videos/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-features-1024.webp"
+        image="https://tiktokcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Mention Liked & Favorited Videos', url: 'https://calculatecreator.com/news/mention-liked-favorited-videos/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Mention Liked & Favorited Videos', url: 'https://tiktokcalculator.net/news/mention-liked-favorited-videos/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

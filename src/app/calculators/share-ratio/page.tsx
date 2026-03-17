@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok share ratio and viral sharing potential. Measure how often viewers share your content and benchmark against top-performing creators.",
   keywords: ['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio', 'content shareability'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/share-ratio/',
+    canonical: 'https://tiktokcalculator.net/calculators/share-ratio/',
   },
 };
 
@@ -62,7 +62,7 @@ export default function ShareRatioCalculatorPage() {
       <CalculatorSchema
         name="TikTok Share Rate Calculator"
         description="Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential."
-        url="https://calculatecreator.com/calculators/share-ratio/"
+        url="https://tiktokcalculator.net/calculators/share-ratio/"
         datePublished="2024-02-28"
         dateModified="2026-03-01"
         keywords={['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio']}
@@ -70,9 +70,9 @@ export default function ShareRatioCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Share Ratio Calculator', url: 'https://calculatecreator.com/calculators/share-ratio/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Share Ratio Calculator', url: 'https://tiktokcalculator.net/calculators/share-ratio/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

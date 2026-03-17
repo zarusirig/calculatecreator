@@ -5,7 +5,7 @@ import { HubListingPage } from '@/components/articles/HubListingPage';
 export const metadata: Metadata = {
   title: "TikTok Earnings Data and Benchmark Insights Guide 2026",
   description: "Review TikTok earnings data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
-  alternates: { canonical: 'https://calculatecreator.com/data/earnings/' },
+  alternates: { canonical: 'https://tiktokcalculator.net/data/earnings/' },
 };
 
 export default function EarningsDataHubPage() {

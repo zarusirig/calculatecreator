@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok video completion rate. See what percentage of viewers watch to the end and how it affects algorithm distribution and reach.",
   keywords: ['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/completion-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/completion-rate/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function CompletionRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Video Completion Rate Calculator"
         description="Calculate your TikTok video completion rate. Measure watch-through rates and optimize content length for better algorithm performance."
-        url="https://calculatecreator.com/calculators/completion-rate/"
+        url="https://tiktokcalculator.net/calculators/completion-rate/"
         datePublished="2024-02-10"
         dateModified="2026-03-01"
         keywords={['completion rate calculator', 'video completion', 'watch through rate', 'tiktok retention', 'video analytics']}
@@ -78,9 +78,9 @@ export default function CompletionRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Completion Rate Calculator', url: 'https://calculatecreator.com/calculators/completion-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Completion Rate Calculator', url: 'https://tiktokcalculator.net/calculators/completion-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

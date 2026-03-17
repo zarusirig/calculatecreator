@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok retention metrics priority update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/retention-metrics-priority/',
+    canonical: 'https://tiktokcalculator.net/news/retention-metrics-priority/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function RetentionMetricsPriorityPage() {
       <NewsArticleSchema
         headline="Retention Metrics Become Priority for TikTok Content Distribution"
         description="Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok."
-        url="https://calculatecreator.com/news/retention-metrics-priority/"
+        url="https://tiktokcalculator.net/news/retention-metrics-priority/"
         datePublished="2026-01-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        image="https://tiktokcalculator.net/news/news-algorithm-1024.webp"
         keywords={['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Retention Metrics Priority', url: 'https://calculatecreator.com/news/retention-metrics-priority/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Retention Metrics Priority', url: 'https://tiktokcalculator.net/news/retention-metrics-priority/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

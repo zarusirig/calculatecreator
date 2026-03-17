@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok average watch time and view duration. Understand how watch time impacts algorithm distribution and optimize for longer viewing.",
   keywords: ['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time', 'tiktok algorithm metric'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/watch-time/',
+    canonical: 'https://tiktokcalculator.net/calculators/watch-time/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function WatchTimeCalculatorPage() {
       <CalculatorSchema
         name="TikTok Watch Time Calculator"
         description="Calculate your TikTok video watch time and retention rate. Understand the most important metric for TikTok algorithm success."
-        url="https://calculatecreator.com/calculators/watch-time/"
+        url="https://tiktokcalculator.net/calculators/watch-time/"
         datePublished="2024-04-18"
         dateModified="2026-03-01"
         keywords={['watch time calculator', 'tiktok retention rate', 'video retention calculator', 'average watch time']}
@@ -78,9 +78,9 @@ export default function WatchTimeCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Watch Time Calculator', url: 'https://calculatecreator.com/calculators/watch-time/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Watch Time Calculator', url: 'https://tiktokcalculator.net/calculators/watch-time/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

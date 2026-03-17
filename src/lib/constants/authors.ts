@@ -1,6 +1,6 @@
 /**
- * Author profiles for E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)
- * All content is authored and reviewed by experienced TikTok creators and industry experts
+ * Public author profiles used across bylines, bio cards, and schema.
+ * These profiles represent internal editorial desks rather than individual public personas.
  */
 
 export interface Author {
@@ -22,60 +22,49 @@ export interface Author {
 export const AUTHORS: Record<string, Author> = {
   'sarah-johnson': {
     id: 'sarah-johnson',
-    name: 'Sarah Johnson',
-    role: 'Senior Creator Strategist',
-    authorUrl: '/authors/sarah-johnson/',
+    name: 'TT Calculator Editorial Desk',
+    role: 'Editorial Desk',
+    authorUrl: '/about/',
     credentials: [
-      '5+ years TikTok creator experience',
-      'Managed 100+ brand partnerships',
-      'Former social media manager at Fortune 500 company',
-      '2M+ followers across platforms',
+      'Maintains editorial standards for calculator and guide pages',
+      'Coordinates revisions when assumptions, wording, or examples need correction',
+      'Works across monetization, pricing, and sponsorship content',
     ],
     expertise: [
       'Brand Deals & Sponsorships',
       'Creator Monetization',
       'Influencer Marketing',
-      'Content Strategy',
+      'Content QA',
     ],
-    bio: 'Sarah is a full-time content creator and monetization expert with over 5 years of experience building profitable TikTok accounts. She has secured over $500K in brand deals and helps creators maximize their earning potential through data-driven strategies.',
-    socialLinks: {
-      twitter: 'https://twitter.com/sarahjcreator',
-      linkedin: 'https://linkedin.com/in/sarahjohnson-creator',
-    },
+    bio: 'This desk manages editorial structure, monetization explainers, and pricing content for TT Calculator. It represents an internal publishing function rather than a single named public spokesperson.',
   },
   'michael-chen': {
     id: 'michael-chen',
-    name: 'Michael Chen',
-    role: 'Data Analyst & Creator Economist',
-    authorUrl: '/authors/michael-chen/',
+    name: 'TT Calculator Research Desk',
+    role: 'Research Desk',
+    authorUrl: '/about/',
     credentials: [
-      'MS in Data Science',
-      '3+ years analyzing creator economy trends',
-      'Published research on social media monetization',
-      'Consulted for 50+ creators on growth strategy',
+      'Reviews public documentation and published market references',
+      'Maintains benchmark notes and source attribution standards',
+      'Flags outdated assumptions and conflicting source material',
     ],
     expertise: [
-      'Creator Fund Analytics',
+      'Creator Program Analysis',
       'RPM Optimization',
       'Algorithm Analysis',
       'Performance Metrics',
     ],
-    bio: 'Michael specializes in analyzing TikTok creator earnings data and platform algorithms. His research has helped thousands of creators understand their metrics and optimize for higher earnings. He tracks Creator Fund rates, engagement benchmarks, and platform trends.',
-    socialLinks: {
-      twitter: 'https://twitter.com/michaelchendata',
-      linkedin: 'https://linkedin.com/in/michaelchen-analyst',
-    },
+    bio: 'This desk is responsible for documenting public-source research, benchmark ranges, and methodology notes used across TT Calculator. It represents a collaborative research workflow rather than an individual analyst profile.',
   },
   'jessica-rodriguez': {
     id: 'jessica-rodriguez',
-    name: 'Jessica Rodriguez',
-    role: 'LIVE Streaming & Engagement Expert',
-    authorUrl: '/authors/jessica-rodriguez/',
+    name: 'TT Calculator LIVE Desk',
+    role: 'LIVE & Community Desk',
+    authorUrl: '/about/',
     credentials: [
-      '4+ years TikTok LIVE streaming',
-      '$250K+ earned from LIVE gifts',
-      'Certified digital marketing professional',
-      'Trained 200+ creators on LIVE best practices',
+      'Maintains LIVE, gifting, and audience-interaction guidance',
+      'Documents feature eligibility, workflow notes, and known limitations',
+      'Coordinates updates for livestream-related tools and guides',
     ],
     expertise: [
       'TikTok LIVE Streaming',
@@ -83,22 +72,17 @@ export const AUTHORS: Record<string, Author> = {
       'Gift Monetization',
       'Community Building',
     ],
-    bio: 'Jessica is a top TikTok LIVE streamer who has earned over $250,000 from gifts and built a loyal community of 500K+ followers. She teaches creators how to maximize LIVE earnings and build engaged audiences.',
-    socialLinks: {
-      tiktok: 'https://tiktok.com/@jessicarlive',
-      twitter: 'https://twitter.com/jessicarlive',
-    },
+    bio: 'This desk covers LIVE monetization, community features, and streaming workflows on TT Calculator. The profile is used for collaborative product and editorial work, not to represent a single streamer identity.',
   },
   'david-kim': {
     id: 'david-kim',
-    name: 'David Kim',
-    role: 'E-commerce & TikTok Shop Specialist',
-    authorUrl: '/authors/david-kim/',
+    name: 'TT Calculator Commerce Desk',
+    role: 'Commerce Desk',
+    authorUrl: '/about/',
     credentials: [
-      'MBA in E-commerce',
-      '$1M+ in TikTok Shop sales',
-      'Former Amazon seller',
-      'TikTok Shop certified partner',
+      'Maintains commerce, affiliate, and product-margin explainers',
+      'Tracks seller-fee, commission, and ad-cost assumptions',
+      'Coordinates updates for shop and affiliate calculators',
     ],
     expertise: [
       'TikTok Shop',
@@ -106,21 +90,17 @@ export const AUTHORS: Record<string, Author> = {
       'E-commerce Strategy',
       'Conversion Optimization',
     ],
-    bio: 'David has generated over $1 million in sales through TikTok Shop and affiliate marketing. He helps creators monetize through product sales and teaches effective e-commerce strategies for the creator economy.',
-    socialLinks: {
-      linkedin: 'https://linkedin.com/in/davidkim-ecommerce',
-    },
+    bio: 'This desk focuses on commerce workflows, affiliate economics, and shop-related planning content across TT Calculator. It reflects internal category ownership rather than a standalone public consultant profile.',
   },
   'emily-thompson': {
     id: 'emily-thompson',
-    name: 'Emily Thompson, CPA',
-    role: 'Creator Tax & Finance Advisor',
-    authorUrl: '/authors/emily-thompson/',
+    name: 'TT Calculator Tax & Operations Desk',
+    role: 'Tax & Operations Desk',
+    authorUrl: '/about/',
     credentials: [
-      'Certified Public Accountant (CPA)',
-      '8+ years tax accounting experience',
-      'Specialized in creator economy taxation',
-      'Advised 300+ influencers on tax strategy',
+      'Maintains tax-planning and business-operations content',
+      'Adds educational disclaimers and planning boundaries where needed',
+      'Coordinates updates for tax, payout, and operating-cost tools',
     ],
     expertise: [
       'Creator Taxation',
@@ -128,21 +108,17 @@ export const AUTHORS: Record<string, Author> = {
       'Expense Deductions',
       'Financial Planning',
     ],
-    bio: 'Emily is a licensed CPA specializing in creator and influencer taxation. She helps content creators navigate tax obligations, maximize deductions, and structure their businesses for optimal financial outcomes.',
-    socialLinks: {
-      linkedin: 'https://linkedin.com/in/emilythompson-cpa',
-    },
+    bio: 'This desk handles educational tax and operations content for TT Calculator. It is a collaborative internal profile used for workflow ownership and does not represent individualized professional advice.',
   },
   'alex-martinez': {
     id: 'alex-martinez',
-    name: 'Alex Martinez',
-    role: 'Algorithm & Growth Expert',
-    authorUrl: '/authors/alex-martinez/',
+    name: 'TT Calculator Growth Desk',
+    role: 'Growth Desk',
+    authorUrl: '/about/',
     credentials: [
-      'Computer Science degree',
-      '6+ years in social media growth',
-      'Grew 10+ accounts to 100K+ followers',
-      'Algorithm researcher & analyst',
+      'Maintains growth, distribution, and engagement explainers',
+      'Tracks platform-change notes and content-performance terminology',
+      'Coordinates updates for algorithm and growth-related calculators',
     ],
     expertise: [
       'TikTok Algorithm',
@@ -150,12 +126,18 @@ export const AUTHORS: Record<string, Author> = {
       'Growth Optimization',
       'Analytics & Metrics',
     ],
-    bio: 'Alex is a growth strategist who has helped dozens of creators reach 100K+ followers by understanding and leveraging the TikTok algorithm. He analyzes platform changes and develops data-backed growth strategies.',
-    socialLinks: {
-      twitter: 'https://twitter.com/alexmgrowth',
-      tiktok: 'https://tiktok.com/@alexmgrowth',
-    },
+    bio: 'This desk covers growth systems, algorithm framing, and performance language across TT Calculator. It represents shared editorial ownership instead of a named public growth expert.',
   },
+};
+
+const LEGACY_AUTHOR_NAME_TO_ID: Record<string, string> = {
+  'sarah johnson': 'sarah-johnson',
+  'michael chen': 'michael-chen',
+  'jessica rodriguez': 'jessica-rodriguez',
+  'david kim': 'david-kim',
+  'emily thompson': 'emily-thompson',
+  'emily thompson, cpa': 'emily-thompson',
+  'alex martinez': 'alex-martinez',
 };
 
 /**
@@ -176,7 +158,7 @@ export function getAuthorsByExpertise(expertise: string): Author[] {
 
 /**
  * Resolve an author from frontmatter 'author' string.
- * Accepts author ID (e.g., 'sarah-johnson'), display name (e.g., 'Sarah Johnson'),
+ * Accepts author ID (e.g., 'sarah-johnson'), display name, or legacy byline name,
  * or falls back to DEFAULT_AUTHOR.
  */
 export function resolveAuthorFromFrontmatter(authorString: string): Author {
@@ -192,10 +174,16 @@ export function resolveAuthorFromFrontmatter(authorString: string): Author {
   );
   if (byName) return byName;
 
+  const legacyAuthorId = LEGACY_AUTHOR_NAME_TO_ID[normalised];
+  if (legacyAuthorId && AUTHORS[legacyAuthorId]) {
+    return AUTHORS[legacyAuthorId];
+  }
+
   // Generic team names → default
   if (
     normalised.includes('team') ||
     normalised.includes('calculatecreator') ||
+    normalised.includes('tt calculator') ||
     normalised.includes('tiktok calculator')
   ) {
     return DEFAULT_AUTHOR;
@@ -209,20 +197,20 @@ export function resolveAuthorFromFrontmatter(authorString: string): Author {
  */
 export const DEFAULT_AUTHOR: Author = {
   id: 'tiktok-calculator-team',
-  name: 'CalculateCreator Team',
+  name: 'TT Calculator Team',
   role: 'Editorial Team',
   authorUrl: '/about/',
   credentials: [
-    'Collective 20+ years creator experience',
-    'Data from 50,000+ creator accounts',
-    'Industry research & analysis',
+    'Maintains shared calculator, guide, and policy content across the site',
+    'Documents assumptions, limitations, and corrections in a common workflow',
+    'Uses team bylines when work is collaborative rather than attributable to one person',
   ],
   expertise: [
     'TikTok Monetization',
     'Creator Analytics',
     'Industry Trends',
   ],
-  bio: 'Our team of experienced creators, data analysts, and industry experts work together to provide accurate, up-to-date information for TikTok creators. All content is thoroughly researched and based on real creator data.',
+  bio: 'TT Calculator publishes calculators and editorial guidance through a shared internal workflow. Team bylines are used when a page reflects collaborative research, editing, and product work rather than a single named contributor.',
 };
 
 /**

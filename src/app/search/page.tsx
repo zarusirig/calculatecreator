@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Search for Creator Earnings and Growth Guide",
-  description: "Explore TikTok search content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'Search | TT Calculator',
+  description:
+    'Search TT Calculator guides, calculators, and benchmark pages by topic, metric, or monetization question.',
   alternates: {
-    canonical: 'https://calculatecreator.com/search/',
+    canonical: 'https://tiktokcalculator.net/search/',
   },
   robots: {
     index: false,

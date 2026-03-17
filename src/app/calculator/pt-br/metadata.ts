@@ -4,15 +4,15 @@ export const metadata: Metadata = {
   title: "TikTok Pt Br Calculator 2026",
   description: "Use this TikTok pt br calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/pt-br/',
+    canonical: 'https://tiktokcalculator.net/calculator/pt-br/',
     languages: {
-      'pt-br': 'https://calculatecreator.com/calculator/pt-br/',
-      'en': 'https://calculatecreator.com/calculators/tiktok-money/',
-      'de': 'https://calculatecreator.com/calculator/de/',
-      'es': 'https://calculatecreator.com/calculator/es/',
-      'fr': 'https://calculatecreator.com/calculator/fr/',
-      'it': 'https://calculatecreator.com/calculator/it/',
-      'ms': 'https://calculatecreator.com/calculator/my/',
+      'pt-br': 'https://tiktokcalculator.net/calculator/pt-br/',
+      'en': 'https://tiktokcalculator.net/calculators/tiktok-money/',
+      'de': 'https://tiktokcalculator.net/calculator/de/',
+      'es': 'https://tiktokcalculator.net/calculator/es/',
+      'fr': 'https://tiktokcalculator.net/calculator/fr/',
+      'it': 'https://tiktokcalculator.net/calculator/it/',
+      'ms': 'https://tiktokcalculator.net/calculator/my/',
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Calculadora TikTok Brasil | RPM 2026',
     description:
       'Estime ganhos do TikTok no Brasil: Fund & Rewards, marcas, presentes LIVE. Atualizado 2026.',
-    url: 'https://calculatecreator.com/calculator/pt-br/',
+    url: 'https://tiktokcalculator.net/calculator/pt-br/',
     locale: 'pt_BR',
     type: 'website',
   },

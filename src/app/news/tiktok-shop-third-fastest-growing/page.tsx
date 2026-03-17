@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok shop third fastest growing update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/',
+    canonical: 'https://tiktokcalculator.net/news/tiktok-shop-third-fastest-growing/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokShopThirdFastestGrowingPage() {
       <NewsArticleSchema
         headline="TikTok Shop Becomes Third-Fastest Growing Brand in the US"
         description="According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability."
-        url="https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/"
+        url="https://tiktokcalculator.net/news/tiktok-shop-third-fastest-growing/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        image="https://tiktokcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'TikTok Shop Growth', url: 'https://calculatecreator.com/news/tiktok-shop-third-fastest-growing/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'TikTok Shop Growth', url: 'https://tiktokcalculator.net/news/tiktok-shop-third-fastest-growing/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

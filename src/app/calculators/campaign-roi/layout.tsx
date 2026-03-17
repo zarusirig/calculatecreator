@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok campaign roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['campaign roi calculator', 'tiktok roi', 'marketing roi', 'roas calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/campaign-roi/',
+    canonical: 'https://tiktokcalculator.net/calculators/campaign-roi/',
   },
   openGraph: {
     title: 'Campaign ROI Calculator 2026',
     description: 'Calculate marketing campaign ROI and ROAS on TikTok.',
-    url: 'https://calculatecreator.com/calculators/campaign-roi/',
+    url: 'https://tiktokcalculator.net/calculators/campaign-roi/',
     type: 'website',
   },
 };

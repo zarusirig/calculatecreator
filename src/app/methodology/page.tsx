@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Methodology for Creator Earnings and Growth",
-  description: "Explore TikTok methodology content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'Methodology | TT Calculator',
+  description:
+    'See how TT Calculator builds assumptions, reviews sources, updates ranges, and explains limitations across tools and content.',
   alternates: {
-    canonical: 'https://calculatecreator.com/methodology/',
+    canonical: 'https://tiktokcalculator.net/methodology/',
   },
 };
 
@@ -17,8 +18,8 @@ export default function MethodologyPage() {
       <Container className="max-w-4xl">
         <Breadcrumb items={[{ label: 'Methodology', href: '/methodology/' }]} />
         <h1 className="text-display-sm font-bold text-neutral-900">Methodology</h1>
-        <p className="mt-4 text-body-md text-neutral-700">TikTok creators: 
-          CalculateCreator provides directional estimates, not guarantees. This page explains how we
+        <p className="mt-4 text-body-md text-neutral-700">
+          TT Calculator provides directional estimates, not guarantees. This page explains how we
           build calculator assumptions, how we evaluate source quality, how often we refresh ranges,
           and what limitations users should expect when using outputs for planning decisions.
         </p>
@@ -99,8 +100,8 @@ export default function MethodologyPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">7. Contact and corrections</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             If you find a suspect assumption or formula behavior, send the URL and issue details to{' '}
-            <a href="mailto:contact@calculatecreator.com" className="link">
-              contact@calculatecreator.com
+            <a href="mailto:contact@tiktokcalculator.net" className="link">
+              contact@tiktokcalculator.net
             </a>
             . Our correction process is documented in the{' '}
             <Link href="/editorial-policy/" className="link">

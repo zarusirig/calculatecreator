@@ -3,28 +3,29 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: "About and CalculateCreator Platform Details Guide 2026",
-  description: "Review about information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
+  title: 'About TT Calculator | Mission, Methodology, and Standards',
+  description:
+    'Learn what TT Calculator does, how we build our tools, and the standards behind our creator earnings estimates, benchmarks, and guides.',
   alternates: {
-    canonical: 'https://calculatecreator.com/about/',
+    canonical: 'https://tiktokcalculator.net/about/',
   },
 };
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'CalculateCreator',
-  url: 'https://calculatecreator.com',
-  logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+  name: 'TT Calculator',
+  url: 'https://tiktokcalculator.net',
+  logo: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
   description:
-    'CalculateCreator helps creators estimate, compare, and benchmark earnings and performance metrics with transparent assumptions.',
+    'TT Calculator helps creators estimate, compare, and benchmark earnings and performance metrics with transparent assumptions.',
   sameAs: [],
   contactPoint: [
     {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'contact@calculatecreator.com',
-      url: 'https://calculatecreator.com/contact/',
+      email: 'contact@tiktokcalculator.net',
+      url: 'https://tiktokcalculator.net/contact/',
     },
   ],
 };
@@ -39,9 +40,9 @@ export default function AboutPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
-          <h1 className="text-display-sm font-bold text-neutral-900">About CalculateCreator</h1>
+          <h1 className="text-display-sm font-bold text-neutral-900">About TT Calculator</h1>
           <p className="mt-4 text-body-md text-neutral-700">
-            CalculateCreator is an independent product and editorial platform focused on one job:
+            TT Calculator is an independent product and editorial platform focused on one job:
             helping creators make better decisions with numbers they can actually understand.
             We publish creator calculators, benchmark pages, and practical guides for people who
             want a clear view of earnings potential, engagement performance, and growth tradeoffs.
@@ -55,7 +56,7 @@ export default function AboutPage() {
               Our mission is to make creator analytics practical for everyday use. Most creators do
               not have analyst teams, internal dashboards, or paid data subscriptions. They have a
               phone, a publishing schedule, and business decisions they need to make quickly. We
-              built CalculateCreator so creators can estimate likely outcomes in minutes instead of
+              built TT Calculator so creators can estimate likely outcomes in minutes instead of
               guessing in the dark.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -70,7 +71,7 @@ export default function AboutPage() {
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">What we do</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              CalculateCreator publishes two core products.
+              TT Calculator publishes two core products.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               First, we build calculators for key creator workflows. These include tools for RPM,
@@ -106,9 +107,9 @@ export default function AboutPage() {
               sense of precision.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We review benchmark assumptions weekly and revise when there are meaningful changes in
-              monetization programs, market behavior, or input quality. You can review our process
-              in the{' '}
+              We review benchmark assumptions on a recurring basis and revise when there are
+              meaningful changes in monetization programs, market behavior, or input quality. You
+              can review our process in the{' '}
               <Link href="/methodology/" className="link">
                 methodology page
               </Link>{' '}
@@ -123,7 +124,7 @@ export default function AboutPage() {
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Our team</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              CalculateCreator is run by a small cross-functional team of monetization analysts,
+              TT Calculator is run by a small cross-functional team of monetization analysts,
               data researchers, editors, and frontend engineers. We work directly on calculator
               logic, content QA, and publishing infrastructure in the same repository. The team
               follows a publish-review-refresh workflow so formulas, copy, and metadata are audited
@@ -145,7 +146,7 @@ export default function AboutPage() {
               We avoid sensational claims and avoid language that implies guaranteed outcomes.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              CalculateCreator is not affiliated with, endorsed by, or sponsored by TikTok,
+              TT Calculator is not affiliated with, endorsed by, or sponsored by TikTok,
               ByteDance, or any social platform. "TikTok" is a trademark of its owner and appears
               on our site for descriptive purposes only.
             </p>
@@ -174,7 +175,7 @@ export default function AboutPage() {
               that feedback to prioritize updates.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              Our readers often use CalculateCreator before negotiation calls, campaign planning
+              Our readers often use TT Calculator before negotiation calls, campaign planning
               sessions, and monthly performance reviews. That practical use case shapes how we write
               and design every page: concise inputs, explicit units, transparent assumptions, and a
               clear next action.

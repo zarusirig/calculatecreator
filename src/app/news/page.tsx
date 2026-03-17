@@ -10,7 +10,7 @@ import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 const newsFaqs = [
   {
     question: 'How often does TikTok release major updates?',
-    answer: '**TikTok releases major feature updates monthly.** Algorithm adjustments happen even more frequently, sometimes weekly. Monetization program changes occur quarterly. Policy and regulatory news is ongoing. Our news page updates within 24 hours of official announcements. This keeps creators informed of all changes that affect their strategy and earnings.'
+    answer: '**TikTok ships product and policy changes regularly, but not on a fixed public cadence.** Treat this page as a reviewed news index rather than a guaranteed real-time alert system, and verify major monetization changes against TikTok support and the official newsroom.'
   },
   {
     question: 'How do algorithm changes affect my existing content?',
@@ -30,7 +30,7 @@ const newsFaqs = [
   },
   {
     question: 'How quickly should I adapt to new monetization requirements?',
-    answer: '**Adapt right away when monetization requirements change.** Creator Rewards replaced the Creator Fund in May 2026. The 1-minute minimum video length requirement took effect instantly. Creators who continued posting 15 to 30 second videos became ineligible for monetization overnight. Set up alerts for monetization category updates. Have a rapid content strategy pivot plan ready.'
+    answer: '**Adapt quickly, but verify first.** Creator Rewards is the current program in supported regions and TikTok support ties it to original public videos longer than 1 minute, but creators should confirm the current rules in support and Creator Tools before making a full content pivot.'
   },
   {
     question: 'Are regulatory updates relevant to international creators?',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok news update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok news', 'creator updates', 'tiktok changes', 'platform news', 'social media news'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/',
+    canonical: 'https://tiktokcalculator.net/news/',
   },
 };
 
@@ -185,28 +185,14 @@ export default function NewsPage() {
       date: '2026-10-01',
       category: 'Discovery',
     },
-    // Monetization (3)
+    // Monetization (1)
     {
       title: 'Creator Fund Replaced with Creator Rewards Program',
       slug: 'creator-rewards-program-launch',
-      description: 'New program requires 10K followers and 100K monthly views but offers up to 20x higher earnings.',
+      description: 'Current program guidance now centers on Creator Rewards, longer original videos, and region eligibility.',
       date: '2026-05-01',
       category: 'Monetization',
       featured: true,
-    },
-    {
-      title: 'Creator Rewards Offers Up to 20x Higher Earnings',
-      slug: 'creator-rewards-20x-earnings',
-      description: 'New program delivers $0.40-$1.00 per 1K views compared to Creator Fund\'s $0.02-$0.04.',
-      date: '2026-05-02',
-      category: 'Monetization',
-    },
-    {
-      title: 'Only Videos Over 1 Minute Now Eligible for Monetization',
-      slug: 'videos-over-one-minute-monetization',
-      description: 'Creator Rewards Program exclusively focuses on longer-form content, pushing creators to adapt strategy.',
-      date: '2026-05-03',
-      category: 'Monetization',
     },
     // Safety (2)
     {
@@ -246,7 +232,7 @@ export default function NewsPage() {
   const schemaItems = newsArticles.map(article => ({
     name: article.title,
     description: article.description,
-    url: `https://calculatecreator.com/news/${article.slug}`,
+    url: `https://tiktokcalculator.net/news/${article.slug}`,
     category: article.category,
   }));
 
@@ -255,7 +241,7 @@ export default function NewsPage() {
       <CollectionSchema
         title="TikTok News Today - Latest Creator Updates & Platform Changes"
         description="Stay updated with the latest TikTok news. Covers algorithm changes, monetization updates, new features, TikTok Shop developments, and safety announcements that affect creators."
-        url="https://calculatecreator.com/news/"
+        url="https://tiktokcalculator.net/news/"
         items={schemaItems}
         collectionType="News"
       />
@@ -276,7 +262,7 @@ export default function NewsPage() {
               TikTok News Today
             </h1>
             <p className="text-body-lg text-white/90 max-w-3xl mx-auto mb-6">
-              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates that affect creators. Fresh news covers everything you need to know about TikTok in 2025.
+              Stay updated with the latest TikTok announcements, feature releases, monetization changes, and platform updates that affect creators.
             </p>
             <p className="text-body-md text-white/80 max-w-3xl mx-auto">
               Our team monitors official TikTok announcements, creator forums, and industry publications to bring you verified updates you can act on. We cover algorithm changes, new monetization features, and all the news that impacts your creator business.
@@ -336,10 +322,10 @@ export default function NewsPage() {
                   <h3 className="text-heading-md font-semibold text-neutral-900">Creator Rewards</h3>
                 </div>
                 <p className="text-body-md text-neutral-700 mb-2">
-                  The Creator Rewards Program replaced the Creator Fund. It offers up to 20x higher earnings for videos over 1 minute.
+                  Creator Rewards is the current creator program in supported regions, while the Creator Fund is now legacy-only.
                 </p>
                 <p className="text-body-sm text-neutral-600">
-                  New requirements include 10K followers and 100K monthly views. Revenue Per Mille (RPM) rates now range from $0.40 to $1.00 per 1K views.
+                  Current documentation emphasizes 10K followers, 100K recent views, eligible regions, and original public videos longer than 1 minute.
                 </p>
               </div>
               <div className="flex flex-col">
@@ -433,7 +419,7 @@ export default function NewsPage() {
                     Maximize Monetization Opportunities
                   </h3>
                   <p className="text-body-md text-neutral-700">
-                    Early awareness of monetization changes helps you adapt your content strategy before competitors do. Creator Rewards launched in May 2026. Creators who pivoted to 1-minute+ videos saw 10x to 20x earnings increases right away. Others continued making short content at old Creator Fund rates.
+                    Early awareness of monetization changes helps you adapt your content strategy before competitors do. The main practical shift is understanding when a program change affects eligibility, content format, or regional access.
                   </p>
                 </div>
               </div>
@@ -672,7 +658,7 @@ export default function NewsPage() {
               </div>
               <div className="flex-1">
                 <p className="text-body-md text-neutral-700 mb-4">
-                  We maintain strict editorial standards to ensure accuracy and relevance for creators. Every news article published on CalculateCreator goes through verification against primary sources before publication. Our team monitors the official TikTok Newsroom, Creator Portal announcements, in-app notifications, and TikTok for Business updates daily.
+                  We maintain strict editorial standards to ensure accuracy and relevance for creators. Every news article published on TT Calculator goes through verification against primary sources before publication. Our team monitors the official TikTok Newsroom, Creator Portal announcements, in-app notifications, and TikTok for Business updates daily.
                 </p>
                 <p className="text-body-md text-neutral-700 mb-4">
                   We cross-reference official announcements with community reports from verified creators, industry publications like Social Media Today and TechCrunch, and regulatory filings for policy news. We test features directly when TikTok releases ambiguous updates. We also consult with creators across multiple niches to understand real-world results before reporting.
@@ -768,7 +754,7 @@ export default function NewsPage() {
                 href="/calculators/tiktok-creator-fund/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
-                <span className="font-semibold text-neutral-900">Creator Rewards Calculator</span>
+                <span className="font-semibold text-neutral-900">Legacy Creator Fund Estimator</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link

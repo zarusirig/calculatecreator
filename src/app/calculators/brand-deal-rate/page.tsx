@@ -12,13 +12,14 @@ import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { BrandDealRateCalculatorWidget } from '@/components/calculators/brand-deal-rate/CalculatorWidget';
+import { DataTable } from '@/components/ui/DataTable';
 
 export const metadata: Metadata = {
   title: "TikTok Brand Deal Rate Calculator — Price Your Sponsorships",
   description: "Calculate fair rates for TikTok brand deals based on your follower count, engagement rate, and niche. Get data-driven sponsorship pricing for 2026.",
   keywords: ['brand deal rate calculator', 'tiktok sponsorship rates', 'influencer pricing', 'how much to charge brands', 'tiktok brand deals', 'sponsored content pricing'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/brand-deal-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/brand-deal-rate/',
   },
 };
 
@@ -79,7 +80,7 @@ export default function BrandDealRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Brand Deal Rate Calculator"
         description="Calculate your TikTok brand deal rates based on followers, engagement rate, and niche. Learn what to charge for sponsored content."
-        url="https://calculatecreator.com/calculators/brand-deal-rate/"
+        url="https://tiktokcalculator.net/calculators/brand-deal-rate/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['brand deal calculator', 'sponsorship rates', 'influencer pricing', 'tiktok brand deals']}
@@ -88,9 +89,9 @@ export default function BrandDealRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Brand Deal Rate Calculator', url: 'https://calculatecreator.com/calculators/brand-deal-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Brand Deal Rate Calculator', url: 'https://tiktokcalculator.net/calculators/brand-deal-rate/' },
         ]}
       />
 
@@ -111,6 +112,9 @@ export default function BrandDealRateCalculatorPage() {
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
               TikTok Brand Deal Rate Calculator 2026
             </h1>
+            <p className="text-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+              TikTok brand deal rates range from $100–$500 per post for nano-creators to $15,000–$50,000+ for accounts with 500K+ followers. Rates depend on engagement rate, content niche, and usage rights. Enter your metrics to get a personalized rate.
+            </p>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
               Calculate what you should charge for TikTok brand deals and sponsored content. Our calculator analyzes your follower count, engagement rate, content niche, and market conditions to recommend competitive sponsorship rates. Brand deals are typically the highest-earning monetization method for TikTok creators, often paying ten to fifty times more than the Creator Fund for the same audience size. Whether you are negotiating your first sponsorship or reviewing your pricing strategy, understanding your market value is essential for maximizing your creator income and building sustainable brand partnerships.
             </p>
@@ -132,6 +136,7 @@ export default function BrandDealRateCalculatorPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
@@ -195,55 +200,44 @@ export default function BrandDealRateCalculatorPage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <Users size={24} className="text-primary-600" /> Rates by Follower Count
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                Industry-standard brand deal pricing tiers:
-              </p>
-              <div className="space-y-3">
-                {[
-                  { tier: 'Nano (1K-5K)', rate: '$50-$250', color: 'bg-neutral-100 text-neutral-700' },
-                  { tier: 'Micro (5K-10K)', rate: '$100-$500', color: 'bg-neutral-100 text-neutral-700' },
-                  { tier: 'Small (10K-50K)', rate: '$500-$2,500', color: 'bg-primary-100 text-primary-700' },
-                  { tier: 'Mid-tier (50K-100K)', rate: '$2,500-$5,000', color: 'bg-primary-100 text-primary-700' },
-                  { tier: 'Macro (100K-500K)', rate: '$5,000-$15,000', color: 'bg-success-100 text-success-700' },
-                  { tier: 'Mega (500K-1M)', rate: '$15,000-$35,000', color: 'bg-success-100 text-success-700' },
-                  { tier: 'Celebrity (1M+)', rate: '$35,000-$100,000+', color: 'bg-warning-100 text-warning-700' },
-                ].map((item) => (
-                  <div key={item.tier} className={`p-3 rounded-lg ${item.color}`}>
-                    <div className="flex items-center justify-between">
-                      <span className="font-semibold">{item.tier}</span>
-                      <span className="text-sm font-mono">{item.rate}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="TikTok Brand Deal Rates by Follower Count (2026)"
+                headers={['Creator Tier', 'Rate Per Post']}
+                rows={[
+                  ['Nano (1K-5K)', '$50-$250'],
+                  ['Micro (5K-10K)', '$100-$500'],
+                  ['Small (10K-50K)', '$500-$2,500'],
+                  ['Mid-tier (50K-100K)', '$2,500-$5,000'],
+                  ['Macro (100K-500K)', '$5,000-$15,000'],
+                  ['Mega (500K-1M)', '$15,000-$35,000'],
+                  ['Celebrity (1M+)', '$35,000-$100,000+'],
+                ]}
+                highlightFirst
+                sortable
+                footnote="Rates vary by niche, engagement rate, and usage rights."
+              />
             </Card>
 
             <Card className="p-6">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <Target size={24} className="text-accent-600" /> Rates by Niche
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                How content niche affects brand deal rates:
-              </p>
-              <div className="space-y-3">
-                {[
-                  { niche: 'Finance/Investing', multiplier: '2-3x average', color: 'bg-success-100 text-success-700' },
-                  { niche: 'Technology/SaaS', multiplier: '1.5-2.5x average', color: 'bg-success-100 text-success-700' },
-                  { niche: 'Health/Wellness', multiplier: '1.5-2x average', color: 'bg-primary-100 text-primary-700' },
-                  { niche: 'Business/B2B', multiplier: '1.5-2x average', color: 'bg-primary-100 text-primary-700' },
-                  { niche: 'Beauty/Fashion', multiplier: '1x average', color: 'bg-neutral-100 text-neutral-700' },
-                  { niche: 'Fitness', multiplier: '1x average', color: 'bg-neutral-100 text-neutral-700' },
-                  { niche: 'Entertainment', multiplier: '0.7-1x average', color: 'bg-warning-100 text-warning-700' },
-                  { niche: 'Gaming', multiplier: '0.5-0.8x average', color: 'bg-warning-100 text-warning-700' },
-                ].map((item) => (
-                  <div key={item.niche} className={`p-3 rounded-lg ${item.color}`}>
-                    <div className="flex items-center justify-between">
-                      <span className="font-semibold">{item.niche}</span>
-                      <span className="text-sm">{item.multiplier}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="Brand Deal Rate Multipliers by Niche"
+                headers={['Content Niche', 'Rate Multiplier']}
+                rows={[
+                  ['Finance/Investing', '2-3x average'],
+                  ['Technology/SaaS', '1.5-2.5x average'],
+                  ['Health/Wellness', '1.5-2x average'],
+                  ['Business/B2B', '1.5-2x average'],
+                  ['Beauty/Fashion', '1x average'],
+                  ['Fitness', '1x average'],
+                  ['Entertainment', '0.7-1x average'],
+                  ['Gaming', '0.5-0.8x average'],
+                ]}
+                highlightFirst
+                footnote="Finance and tech niches command premium rates due to higher advertiser budgets."
+              />
             </Card>
 
             <Card className="p-6">
@@ -367,17 +361,17 @@ Recommended rate: $9,000-$10,000 per post`}
                 finalResult: '$2,625 per sponsored post for 100K-follower tech creator with 7% engagement',
               }}
               assumptions={[
-                { label: 'Base Rates', value: '$0.01-$0.10 per follower depending on tier' },
+                { label: 'Base Rates', value: 'Directional pricing ranges compiled from published benchmark references' },
                 { label: 'Engagement Impact', value: 'High engagement can double effective rates' },
                 { label: 'Niche Value', value: 'Finance/tech pay 2-3x entertainment niches' },
                 { label: 'Market Conditions', value: 'Q4 typically pays 20-30% higher' },
                 { label: 'Usage Rights', value: 'Paid ad rights can double the total fee' },
               ]}
               dataSources={[
-                'Influencer marketing platform rate cards (2026)',
-                'Creator agency pricing databases',
-                'Survey of 5,000+ brand deals across niches',
-                'Industry benchmark studies',
+                'Published influencer marketing rate-card references',
+                'Agency and platform pricing guidance',
+                'Public brand partnership benchmark studies',
+                'Creator economy market references',
               ]}
               limitations="Rates vary significantly based on individual creator quality, brand budget, campaign goals, and negotiation skills. These are guidelines based on industry averages - your specific rate may be higher or lower."
               lastUpdated="January 2026"

@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "Advertising Disclosure and CalculateCreator Platform Details",
-  description: "Review advertising disclosure information for CalculateCreator, including policy context, methodology transparency, and practical guidance for",
+  title: 'Advertising Disclosure | TT Calculator',
+  description:
+    'See how TT Calculator handles ads, monetization, and editorial independence across calculators, guides, and benchmark content.',
   alternates: {
-    canonical: 'https://calculatecreator.com/compliance/advertising-disclosure/',
+    canonical: 'https://tiktokcalculator.net/compliance/advertising-disclosure/',
   },
 };
 
@@ -17,13 +18,13 @@ const advertisingDisclosureSchema = {
   '@type': 'WebPage',
   name: 'Advertising Disclosure',
   description:
-    'Advertising Disclosure for calculatecreator.com explaining AdSense usage, editorial independence, and monetization transparency.',
-  url: 'https://calculatecreator.com/compliance/advertising-disclosure/',
+    'Advertising Disclosure for tiktokcalculator.net explaining AdSense usage, editorial independence, and monetization transparency.',
+  url: 'https://tiktokcalculator.net/compliance/advertising-disclosure/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -47,13 +48,13 @@ export default function AdvertisingDisclosurePage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          CalculateCreator is funded in part through advertising. This page explains how ads appear
-          on calculatecreator.com, how advertising affects (and does not affect) our content, and
+          TT Calculator is funded in part through advertising. This page explains how ads appear
+          on tiktokcalculator.net, how advertising affects (and does not affect) our content, and
           what controls are available to users.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
           We publish this disclosure to make monetization visible, not hidden. Readers should be
-          able to understand how CalculateCreator earns revenue and where those decisions are kept
+          able to understand how TT Calculator earns revenue and where those decisions are kept
           separate from editorial and calculator methodology.
         </p>
 
@@ -77,7 +78,7 @@ export default function AdvertisingDisclosurePage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">2. About our ads (Google AdSense)</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator uses Google AdSense for display advertising. AdSense may use cookies and
+            TT Calculator uses Google AdSense for display advertising. AdSense may use cookies and
             related technologies to serve personalized or non-personalized ads depending on your
             consent settings and region.
           </p>
@@ -128,7 +129,7 @@ export default function AdvertisingDisclosurePage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">4. Affiliate links</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            As of this update, CalculateCreator primarily relies on display advertising. If we add
+            As of this update, TT Calculator primarily relies on display advertising. If we add
             affiliate links on specific pages, we disclose that relationship clearly on-page and in
             this policy. Presence of affiliate monetization, where used, does not change editorial
             evaluation standards.
@@ -154,8 +155,8 @@ export default function AdvertisingDisclosurePage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">6. Related Resources and policy links</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             For advertising or disclosure questions, contact{' '}
-            <a href="mailto:contact@calculatecreator.com" className="link">
-              contact@calculatecreator.com
+            <a href="mailto:contact@tiktokcalculator.net" className="link">
+              contact@tiktokcalculator.net
             </a>
             .
           </p>

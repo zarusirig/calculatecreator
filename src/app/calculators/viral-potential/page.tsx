@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Estimate your TikTok video's viral potential. Score your content based on engagement velocity, share rate, and algorithm-friendly signals.",
   keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/viral-potential/',
+    canonical: 'https://tiktokcalculator.net/calculators/viral-potential/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function ViralPotentialCalculatorPage() {
       <CalculatorSchema
         name="TikTok Viral Potential Calculator"
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
-        url="https://calculatecreator.com/calculators/viral-potential/"
+        url="https://tiktokcalculator.net/calculators/viral-potential/"
         datePublished="2024-05-05"
         dateModified="2026-03-01"
         keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}
@@ -78,9 +78,9 @@ export default function ViralPotentialCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Viral Potential Calculator', url: 'https://calculatecreator.com/calculators/viral-potential/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Viral Potential Calculator', url: 'https://tiktokcalculator.net/calculators/viral-potential/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
@@ -99,7 +99,10 @@ export default function ViralPotentialCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Viral Potential Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
+          <p className="text-body-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+            The TikTok Viral Potential Calculator scores your video from 0–100 based on completion rate, share rate, engagement, and saves. A score of 60+ indicates strong viral potential; 80+ means your content is a top viral candidate.
+          </p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators:
             Predict the viral likelihood of your content based on key engagement signals including completion rate, share rate, engagement rate, and save rate. This calculator provides a comprehensive viral score from 0 to 100 and actionable insights. Understand what makes content go viral. Ideal for creators who want to maximize reach, identify viral patterns in their content, and increase the chances of hitting the For You Page.
           </p>
         </div>

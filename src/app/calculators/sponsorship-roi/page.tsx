@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate the ROI of your TikTok sponsorship deals. Measure brand partnership performance with engagement, reach, and revenue-per-deal metrics.",
   keywords: ['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator', 'sponsorship profitability'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/sponsorship-roi/',
+    canonical: 'https://tiktokcalculator.net/calculators/sponsorship-roi/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function SponsorshipROICalculatorPage() {
       <CalculatorSchema
         name="TikTok Sponsorship ROI Calculator"
         description="Calculate your TikTok sponsorship ROI. Evaluate brand deal profitability, compare partnership opportunities, and make data-driven decisions on collaborations."
-        url="https://calculatecreator.com/calculators/sponsorship-roi/"
+        url="https://tiktokcalculator.net/calculators/sponsorship-roi/"
         datePublished="2024-07-12"
         dateModified="2026-03-01"
         keywords={['sponsorship roi calculator', 'brand deal roi', 'influencer roi', 'tiktok partnership calculator']}
@@ -53,9 +53,9 @@ export default function SponsorshipROICalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Sponsorship ROI Calculator', url: 'https://calculatecreator.com/calculators/sponsorship-roi/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Sponsorship ROI Calculator', url: 'https://tiktokcalculator.net/calculators/sponsorship-roi/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

@@ -36,14 +36,14 @@ export function generateMetadata({
   }
   const isThinAuthorProfile = estimatedAuthorWordCount(author) < 300;
   return {
-    title: `${author.name} — ${author.role} | CalculateCreator`,
+    title: `${author.name} — ${author.role} | TT Calculator`,
     description: author.bio,
     alternates: {
-      canonical: `https://calculatecreator.com/authors/${params.authorSlug}/`,
+      canonical: `https://tiktokcalculator.net/authors/${params.authorSlug}/`,
     },
     robots: {
-      index: !isThinAuthorProfile,
-      follow: true,
+      index: false,
+      follow: !isThinAuthorProfile,
     },
   };
 }
@@ -129,21 +129,21 @@ export default function AuthorPage({
         name={author.name}
         jobTitle={author.role}
         description={author.bio}
-        url={`https://calculatecreator.com/authors/${author.id}/`}
+        url={`https://tiktokcalculator.net/authors/${author.id}/`}
         sameAs={sameAs.length > 0 ? sameAs : undefined}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'CalculateCreator',
-          url: 'https://calculatecreator.com',
+          name: 'TT Calculator',
+          url: 'https://tiktokcalculator.net',
         }}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Authors', url: 'https://calculatecreator.com/authors/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Authors', url: 'https://tiktokcalculator.net/authors/' },
           {
             name: author.name,
-            url: `https://calculatecreator.com/authors/${author.id}/`,
+            url: `https://tiktokcalculator.net/authors/${author.id}/`,
           },
         ]}
       />

@@ -65,7 +65,7 @@ const REPORTS_DIR = path.join(PROJECT_ROOT, 'reports');
 const JSON_OUTPUT = path.join(REPORTS_DIR, 'content-quality-audit.json');
 const CSV_OUTPUT = path.join(REPORTS_DIR, 'content-quality-audit.csv');
 
-const OWN_HOSTS = new Set(['calculatecreator.com', 'www.calculatecreator.com']);
+const OWN_HOSTS = new Set(['tiktokcalculator.net', 'www.tiktokcalculator.net']);
 const DOMAIN_CONTEXT_TOKENS = new Set([
   'tiktok',
   'creator',
@@ -180,8 +180,8 @@ function stripTags(input: string): string {
 function normalize(text: string): string {
   return text
     .toLowerCase()
-    .replace(/\|\s*calculatecreator/gi, '')
-    .replace(/calculatecreator/gi, '')
+    .replace(/\|\s*tt calculator/gi, '')
+    .replace(/tt calculator/gi, '')
     .replace(/[^a-z0-9\s]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();

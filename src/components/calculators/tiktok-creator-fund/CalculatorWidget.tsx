@@ -85,7 +85,7 @@ export function CreatorFundCalculatorWidget() {
     <Card className="lg:sticky lg:top-24 h-fit animate-scale-in overflow-hidden">
       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-primary opacity-10 blur-3xl rounded-full"></div>
       <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-6 relative">
-        Calculate Your Creator Fund Earnings
+        Estimate Legacy Creator Fund Earnings
       </h2>
 
       <InputField
@@ -95,8 +95,8 @@ export function CreatorFundCalculatorWidget() {
         value={inputs.monthlyViews}
         onChange={(value) => handleInputChange('monthlyViews', value)}
         placeholder="e.g., 500000"
-        helperText="Total views on all videos in a typical month"
-        tooltip="Minimum 100,000 views required to qualify for Creator Fund"
+        helperText="Estimated monthly views used in the legacy Creator Fund model"
+        tooltip="Historical Creator Fund threshold: 100,000 views in the last 30 days"
         error={errors.monthlyViews}
         min={100000}
         required
@@ -136,14 +136,14 @@ export function CreatorFundCalculatorWidget() {
         isLoading={isCalculating}
         className="w-full mt-6"
       >
-        Calculate Earnings
+        Estimate Legacy Earnings
       </Button>
 
       {isCalculating && (
         <div className="mt-6 space-y-4">
           <div className="text-center p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl border-2 border-neutral-200">
             <Loading variant="dots" size="lg" className="mb-4" />
-            <p className="text-label-lg text-neutral-600 mb-3">Calculating Your Earnings...</p>
+            <p className="text-label-lg text-neutral-600 mb-3">Estimating Legacy Payouts...</p>
             <ProgressBar progress={calculationProgress} className="max-w-xs mx-auto" />
           </div>
         </div>
@@ -153,7 +153,7 @@ export function CreatorFundCalculatorWidget() {
         <div className="mt-6 space-y-4 animate-slide-up">
           <div className="relative text-center p-8 bg-gradient-to-br from-primary-500 via-accent-500 to-secondary-500 rounded-2xl border-2 border-white/30 overflow-hidden glow-purple">
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent animate-gradient-shift"></div>
-            <p className="text-label-lg text-white/90 mb-2 font-medium relative z-10">Monthly Earnings</p>
+            <p className="text-label-lg text-white/90 mb-2 font-medium relative z-10">Legacy Monthly Estimate</p>
             <p className="text-display-md font-display font-bold text-white drop-shadow-lg relative z-10 font-mono">
               ${results.minMonthly.toFixed(2)}–${results.maxMonthly.toFixed(2)}
             </p>

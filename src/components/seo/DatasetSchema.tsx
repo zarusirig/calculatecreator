@@ -18,7 +18,7 @@ export function DatasetSchema({
   url,
   datePublished = '2024-01-15',
   dateModified = '2026-03-01',
-  creator = 'CalculateCreator',
+  creator = 'TT Calculator',
   keywords = [],
   distribution = [],
 }: DatasetSchemaProps) {
@@ -31,7 +31,7 @@ export function DatasetSchema({
     creator: {
       '@type': 'Organization',
       name: creator,
-      url: 'https://calculatecreator.com/',
+      url: 'https://tiktokcalculator.net/',
     },
     datePublished: datePublished,
     dateModified: dateModified,
@@ -49,13 +49,13 @@ export function DatasetSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Data',
-        item: 'https://calculatecreator.com/data/',
+        item: 'https://tiktokcalculator.net/data/',
       },
       {
         '@type': 'ListItem',

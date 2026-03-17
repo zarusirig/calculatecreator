@@ -440,7 +440,7 @@ export default function PayoutCalculatorPage() {
                   <h4 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Estimate tax obligations on creator earnings</p>
                 </Link>
-                <Link href="/calculators/earnings-revenue/money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/tiktok-money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Money Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Calculate total earnings across all revenue streams</p>
                 </Link>
@@ -487,7 +487,7 @@ export default function PayoutCalculatorPage() {
               relatedContent={[
                 { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
                 { title: 'Tax Calculator', href: '/calculators/utility-tools/tax/' },
-                { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+                { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
               ]}
             />
 

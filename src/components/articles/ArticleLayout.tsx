@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
-import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { ArticleSchema, BreadcrumbSchema, HowToSchema } from '@/components/seo/CalculatorSchema';
 import { ArticleFrontmatter } from '@/lib/content/types';
 import { getRelatedArticleLinks } from '@/lib/content';
 import { AdPlacement } from '@/components/ads/AdPlacement';
@@ -52,7 +52,7 @@ function buildBreadcrumbItems(section: string, frontmatter: ArticleFrontmatter) 
 function buildSchemaItems(section: string, frontmatter: ArticleFrontmatter) {
   const segments = section.split('/');
   const items: { name: string; url: string }[] = [
-    { name: 'Home', url: 'https://calculatecreator.com' },
+    { name: 'Home', url: 'https://tiktokcalculator.net' },
   ];
 
   let path = '';
@@ -62,12 +62,12 @@ function buildSchemaItems(section: string, frontmatter: ArticleFrontmatter) {
       .split('-')
       .map(w => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ');
-    items.push({ name, url: `https://calculatecreator.com${path}/` });
+    items.push({ name, url: `https://tiktokcalculator.net${path}/` });
   }
 
   items.push({
     name: frontmatter.title,
-    url: `https://calculatecreator.com/${section}/${frontmatter.slug}/`,
+    url: `https://tiktokcalculator.net/${section}/${frontmatter.slug}/`,
   });
 
   return items;
@@ -183,7 +183,7 @@ export function ArticleLayout({
   section,
   children,
 }: ArticleLayoutProps) {
-  const canonicalUrl = `https://calculatecreator.com/${section}/${frontmatter.slug}/`;
+  const canonicalUrl = `https://tiktokcalculator.net/${section}/${frontmatter.slug}/`;
   const breadcrumbItems = buildBreadcrumbItems(section, frontmatter);
   const schemaItems = buildSchemaItems(section, frontmatter);
   const resolvedAuthor = resolveAuthorFromFrontmatter(frontmatter.author);
@@ -209,12 +209,23 @@ export function ArticleLayout({
           name: resolvedAuthor.name,
           jobTitle: resolvedAuthor.role,
           url: resolvedAuthor.authorUrl
-            ? `https://calculatecreator.com${resolvedAuthor.authorUrl}`
+            ? `https://tiktokcalculator.net${resolvedAuthor.authorUrl}`
             : undefined,
           sameAs: sameAs.length > 0 ? sameAs : undefined,
         }}
       />
       <BreadcrumbSchema items={schemaItems} />
+      {frontmatter.howToSteps && frontmatter.howToSteps.length > 0 && (
+        <HowToSchema
+          name={frontmatter.title}
+          description={frontmatter.metaDescription}
+          steps={frontmatter.howToSteps}
+          totalTime={frontmatter.howToTotalTime}
+          estimatedCost={frontmatter.howToEstimatedCost}
+          tool={frontmatter.howToTool}
+          supply={frontmatter.howToSupply}
+        />
+      )}
 
       <div className="min-h-screen bg-neutral-50 py-8 md:py-12">
         <div className="container-custom max-w-4xl">
@@ -265,10 +276,10 @@ export function ArticleLayout({
                 </div>
                 <div className="flex-1">
                   <p className="text-body-md font-medium text-neutral-900">
-                    Calculate your exact earnings
+                    Estimate your earnings range
                   </p>
                   <p className="text-body-sm text-neutral-600">
-                    Use our free calculator to get personalized estimates based on your metrics.
+                    Use the calculator to model your numbers with your own metrics and assumptions.
                   </p>
                 </div>
                 <Link
@@ -310,16 +321,16 @@ export function ArticleLayout({
                 <Calculator size={24} className="text-primary-600" />
               </div>
               <h3 className="text-heading-lg font-bold text-neutral-900 mb-2">
-                Ready to calculate your TikTok earnings?
+                Model your TikTok earnings
               </h3>
               <p className="text-body-md text-neutral-600 mb-4 max-w-lg mx-auto">
-                Get personalized earnings estimates based on your follower count, views, and niche.
+                See a directional estimate based on your follower count, views, niche, and inputs.
               </p>
               <Link
                 href={`${frontmatter.parentCalculator}/`}
                 className="btn-primary px-6 py-3 rounded-lg text-body-md font-medium inline-flex items-center gap-2"
               >
-                Use the Calculator <ArrowRight size={18} />
+                Open Calculator <ArrowRight size={18} />
               </Link>
             </div>
           )}

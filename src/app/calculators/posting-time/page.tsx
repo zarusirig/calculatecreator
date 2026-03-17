@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Find the best times to post on TikTok for your audience. Calculate optimal posting windows by timezone, niche, and day of week for maximum reach.",
   keywords: ['best posting time tiktok', 'when to post tiktok', 'posting schedule calculator', 'tiktok timing optimizer', 'post time analysis'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/posting-time/',
+    canonical: 'https://tiktokcalculator.net/calculators/posting-time/',
   },
 };
 
@@ -66,7 +66,7 @@ export default function PostingTimeCalculatorPage() {
       <CalculatorSchema
         name="TikTok Best Time to Post Calculator"
         description="Find the optimal times to post on TikTok based on your audience location, timezone, and content type to maximize engagement and reach."
-        url="https://calculatecreator.com/calculators/posting-time/"
+        url="https://tiktokcalculator.net/calculators/posting-time/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['best time to post tiktok', 'tiktok posting schedule', 'optimal posting time', 'tiktok algorithm timing']}
@@ -74,9 +74,9 @@ export default function PostingTimeCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Posting Time Calculator', url: 'https://calculatecreator.com/calculators/posting-time/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Posting Time Calculator', url: 'https://tiktokcalculator.net/calculators/posting-time/' },
         ]}
       />
 

@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Glossary for Creator Earnings and Growth Guide",
-  description: "Explore TikTok glossary content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'TikTok Creator Glossary | Metrics and Monetization Terms',
+  description:
+    'Definitions for TikTok creator metrics, monetization programs, and analytics terms used across TT Calculator tools and guides.',
   alternates: {
-    canonical: 'https://calculatecreator.com/glossary/',
+    canonical: 'https://tiktokcalculator.net/glossary/',
   },
 };
 
@@ -51,7 +52,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Brand Deal',
     definition:
       'A brand deal is a paid collaboration where a creator produces or distributes sponsored content. Pricing can vary widely based on audience quality, deliverables, exclusivity, usage rights, and timing. Good deal analysis balances immediate payout with long-term audience trust and opportunity cost.',
-    relatedHref: '/calculators/engagement-influence/influencer-pricing/',
+    relatedHref: '/calculators/brand-deal-rate/',
     relatedLabel: 'Brand Deal Rate Calculator',
   },
   {
@@ -65,7 +66,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Coins',
     definition:
       'Coins are virtual units viewers purchase to send gifts during live experiences. The creator payout pathway is not one-to-one with purchase value because platform economics and conversion rules apply. Understanding coins helps creators estimate live-stream monetization outcomes more realistically.',
-    relatedHref: '/calculators/coins-gifts-diamonds/coins/',
+    relatedHref: '/calculators/coins/',
     relatedLabel: 'Coins Calculator',
   },
   {
@@ -107,7 +108,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Creator Fund',
     definition:
       'Creator Fund is a platform monetization model that pays creators based on qualifying performance and policy criteria. Payout rates can fluctuate based on region, program rules, and traffic conditions. Planning should use ranges rather than fixed assumptions because program economics can change.',
-    relatedHref: '/calculators/earnings-revenue/creator-fund/',
+    relatedHref: '/calculators/tiktok-creator-fund/',
     relatedLabel: 'Creator Fund Calculator',
   },
   {
@@ -121,7 +122,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Creator Rewards Program',
     definition:
       'Creator Rewards Program is a payout framework that can replace or supplement older monetization models in some regions. Program requirements and payout behavior may differ from legacy structures. Creators should validate eligibility rules and content constraints before relying on projections.',
-    relatedHref: '/calculators/earnings-revenue/creator-fund/',
+    relatedHref: '/calculators/tiktok-creator-fund/',
     relatedLabel: 'Creator Program Estimator',
   },
   {
@@ -135,7 +136,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Engagement Rate',
     definition:
       'Engagement rate expresses interactions relative to reach, views, or followers, depending on methodology. It is useful for benchmarking content resonance and evaluating campaign quality. Always specify formula choice because engagement rate can look very different under different denominators.',
-    relatedHref: '/calculators/engagement-influence/engagement/',
+    relatedHref: '/calculators/engagement-rate/',
     relatedLabel: 'Engagement Rate Calculator',
   },
   {
@@ -198,14 +199,14 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Micro-Influencer',
     definition:
       'A micro-influencer usually refers to a creator with a smaller but focused audience segment. These creators often deliver stronger niche relevance and community trust than broad-reach accounts. Pricing should account for conversion quality, not only audience size.',
-    relatedHref: '/calculators/engagement-influence/influencer-pricing/',
+    relatedHref: '/calculators/brand-deal-rate/',
     relatedLabel: 'Influencer Pricing Tool',
   },
   {
     term: 'Monetization',
     definition:
       'Monetization is the process of turning attention, influence, or distribution into revenue. For creators, common channels include ads, sponsorships, commissions, product sales, and subscriptions. Healthy monetization balances near-term earnings with audience trust and long-term brand value.',
-    relatedHref: '/calculators/earnings-revenue/money/',
+    relatedHref: '/calculators/tiktok-money/',
     relatedLabel: 'Total Earnings Calculator',
   },
   {
@@ -318,15 +319,15 @@ const glossaryTerms: GlossaryTerm[] = [
 const definedTermSetSchema = {
   '@context': 'https://schema.org',
   '@type': 'DefinedTermSet',
-  name: 'CalculateCreator Creator Economy Glossary',
+  name: 'TT Calculator Creator Economy Glossary',
   description:
-    'Alphabetical glossary of creator monetization, analytics, and platform terms used throughout calculatecreator.com.',
-  url: 'https://calculatecreator.com/glossary/',
+    'Alphabetical glossary of creator monetization, analytics, and platform terms used throughout tiktokcalculator.net.',
+  url: 'https://tiktokcalculator.net/glossary/',
   hasDefinedTerm: glossaryTerms.map((term) => ({
     '@type': 'DefinedTerm',
     name: term.term,
     description: term.definition,
-    url: `https://calculatecreator.com/glossary/#${term.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+    url: `https://tiktokcalculator.net/glossary/#${term.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
   })),
 };
 
@@ -344,7 +345,7 @@ export default function GlossaryPage() {
           <h1 className="text-display-sm font-bold text-neutral-900">Creator Glossary</h1>
           <p className="mt-4 max-w-3xl text-body-md text-neutral-700">TikTok creators: 
             This glossary defines key monetization, analytics, and creator-business terms used
-            across CalculateCreator. Each definition links to at least one related calculator or
+            across TT Calculator. Each definition links to at least one related calculator or
             guide so you can move from concept to action.
           </p>
 

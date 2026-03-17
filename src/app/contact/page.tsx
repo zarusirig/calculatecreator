@@ -3,37 +3,38 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: "Contact and CalculateCreator Platform Details Guide",
-  description: "Review contact information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
+  title: 'Contact TT Calculator',
+  description:
+    'Contact TT Calculator to report an issue, request a tool, or ask a question about methodology, sources, or editorial updates.',
   alternates: {
-    canonical: 'https://calculatecreator.com/contact/',
+    canonical: 'https://tiktokcalculator.net/contact/',
   },
 };
 
 const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'CalculateCreator',
-  url: 'https://calculatecreator.com',
+  name: 'TT Calculator',
+  url: 'https://tiktokcalculator.net',
   contactPoint: [
     {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'contact@calculatecreator.com',
+      email: 'contact@tiktokcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
     {
       '@type': 'ContactPoint',
       contactType: 'technical support',
-      email: 'bugs@calculatecreator.com',
+      email: 'bugs@tiktokcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
     {
       '@type': 'ContactPoint',
       contactType: 'press inquiries',
-      email: 'press@calculatecreator.com',
+      email: 'press@tiktokcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
@@ -50,11 +51,11 @@ export default function ContactPage() {
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
-          <h1 className="text-display-sm font-bold text-neutral-900">Contact CalculateCreator</h1>
+          <h1 className="text-display-sm font-bold text-neutral-900">Contact TT Calculator</h1>
           <p className="mt-4 text-body-md text-neutral-700">
             We read feedback from creators every week. If you find an error, have a methodology
             question, want to suggest a tool, or need help interpreting a result, email us and we
-            will respond. CalculateCreator is a working product, not a static brochure, and your
+            will respond. TT Calculator is a working product, not a static brochure, and your
             feedback directly influences what we publish next.
           </p>
 
@@ -62,8 +63,8 @@ export default function ContactPage() {
             <h2 className="text-heading-md font-semibold text-neutral-900">Primary contact</h2>
             <p className="mt-3 text-sm text-neutral-700">
               Email:{' '}
-              <a href="mailto:contact@calculatecreator.com" className="link">
-                contact@calculatecreator.com
+              <a href="mailto:contact@tiktokcalculator.net" className="link">
+                contact@tiktokcalculator.net
               </a>
             </p>
             <p className="mt-2 text-sm text-neutral-700">
@@ -106,32 +107,32 @@ export default function ContactPage() {
             <div className="mt-3 space-y-3 text-sm text-neutral-700">
               <p>
                 General support:{' '}
-                <a href="mailto:contact@calculatecreator.com" className="link">
-                  contact@calculatecreator.com
+                <a href="mailto:contact@tiktokcalculator.net" className="link">
+                  contact@tiktokcalculator.net
                 </a>
               </p>
               <p>
                 Bug reports:{' '}
-                <a href="mailto:bugs@calculatecreator.com" className="link">
-                  bugs@calculatecreator.com
+                <a href="mailto:bugs@tiktokcalculator.net" className="link">
+                  bugs@tiktokcalculator.net
                 </a>
               </p>
               <p>
                 Data and methodology:{' '}
-                <a href="mailto:data@calculatecreator.com" className="link">
-                  data@calculatecreator.com
+                <a href="mailto:data@tiktokcalculator.net" className="link">
+                  data@tiktokcalculator.net
                 </a>
               </p>
               <p>
                 Partnerships:{' '}
-                <a href="mailto:business@calculatecreator.com" className="link">
-                  business@calculatecreator.com
+                <a href="mailto:business@tiktokcalculator.net" className="link">
+                  business@tiktokcalculator.net
                 </a>
               </p>
               <p>
                 Press:{' '}
-                <a href="mailto:press@calculatecreator.com" className="link">
-                  press@calculatecreator.com
+                <a href="mailto:press@tiktokcalculator.net" className="link">
+                  press@tiktokcalculator.net
                 </a>
               </p>
             </div>
@@ -190,7 +191,7 @@ export default function ContactPage() {
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Important note</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              CalculateCreator is an independent resource. We are not affiliated with, endorsed by,
+              TT Calculator is an independent resource. We are not affiliated with, endorsed by,
               or sponsored by TikTok or ByteDance. Calculator outputs are estimates based on
               transparent assumptions and should not be treated as guaranteed income.
             </p>

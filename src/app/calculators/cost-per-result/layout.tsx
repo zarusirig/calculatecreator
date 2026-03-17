@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok cost per result calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['cost per result', 'cpr calculator', 'ad performance', 'advertising metrics', 'campaign cost'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/cost-per-result/',
+    canonical: 'https://tiktokcalculator.net/calculators/cost-per-result/',
   },
   openGraph: {
     title: 'Cost Per Result Calculator',
     description: 'Calculate and optimize your advertising cost per result.',
-    url: 'https://calculatecreator.com/calculators/cost-per-result/',
+    url: 'https://tiktokcalculator.net/calculators/cost-per-result/',
     type: 'website',
   },
 };

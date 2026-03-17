@@ -1,0 +1,718 @@
+{
+  "audit_metadata": {
+    "site": "https://calculatecreator.com",
+    "audit_date": "2026-02-20",
+    "auditor": "Claude Opus 4.6 AEO Audit Agent",
+    "total_pages": 408,
+    "methodology": "WebSearch AI Overview visibility testing, WebFetch structured data extraction, source code schema analysis"
+  },
+
+  "ai_visibility_scorecard": {
+    "summary": {
+      "keywords_tested": 10,
+      "keywords_where_site_cited_in_ai_overview": 0,
+      "keywords_where_site_appears_in_organic": 3,
+      "primary_competitors_cited": [
+        "influencermarketinghub.com",
+        "tikcalculator.com",
+        "demandsage.com",
+        "phlanx.com",
+        "collabstr.com",
+        "soundcamps.com",
+        "hypeauditor.com"
+      ]
+    },
+    "keywords": [
+      {
+        "keyword": "tiktok money calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["postfity.com", "tikcalculator.com", "auxmode.com", "blipix.pro", "tikcal.com", "joinotto.com", "creatorsjet.com", "tikmoneycalculator.net", "plerdy.com"],
+        "content_format_cited": "Interactive calculator tools with username-based lookup, real-time data, free with no signup",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Competitors all offer username-based real-time calculator tools. CalculateCreator's static calculator may not compete for this query."
+      },
+      {
+        "keyword": "tiktok engagement rate calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["phlanx.com", "clickanalytic.com", "socialinsider.io", "tokchart.com", "hypeauditor.com", "hootsuite.com", "thesocialcat.com", "grin.co", "iqfluence.io"],
+        "content_format_cited": "Interactive tools with real-time profile analysis, formula explanations, benchmark data",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Market dominated by SaaS tools with live API-based calculators. CalculateCreator needs unique differentiator."
+      },
+      {
+        "keyword": "how much does tiktok pay per view",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["demandsage.com", "linktr.ee", "uppbeat.io", "graphy.com", "publer.com", "bluehost.com", "async.com", "invideo.io"],
+        "content_format_cited": "Long-form blog posts with earnings tables, Creator Fund vs Rewards Program comparison, view-count breakdowns",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Informational intent query dominated by high-DA publishers. CalculateCreator has data pages covering this topic but lacks backlinks/authority."
+      },
+      {
+        "keyword": "tiktok earnings calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["tikcalculator.com", "auxmode.com", "tikleap.com", "videotok.app", "mediamister.com", "demandsage.com", "joinkliq.io", "soundcamps.com"],
+        "content_format_cited": "Username-based interactive calculators, multi-revenue-stream estimators",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Similar to 'tiktok money calculator' - tool-first results dominate. Need API-based username lookup to compete."
+      },
+      {
+        "keyword": "tiktok coin value in usd",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["coinbrain.com", "zebracat.ai", "bitget.com", "redsocial.com", "popularitybazaar.com", "coinbase.com", "tiktok.com"],
+        "content_format_cited": "Converter tools with live exchange rates, gift value charts, FAQ-rich content",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Mixed intent (crypto vs in-app coins). CalculateCreator has a coins calculator but doesn't rank. Needs clearer 'TikTok coins to USD' landing page."
+      },
+      {
+        "keyword": "tiktok creator fund calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["influencermarketinghub.com", "soundcamps.com", "auxmode.com", "thesocialcat.com", "creatorsjet.com", "kolsquare.com", "theleap.co", "demandsage.com", "tikcalculator.com", "creator-hero.com"],
+        "content_format_cited": "Interactive calculators, comprehensive guides with eligibility info, earnings breakdowns",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Core target keyword with zero visibility. CalculateCreator has a dedicated page but lacks external authority signals."
+      },
+      {
+        "keyword": "tiktok live earnings calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": true,
+        "citation_context": "Listed at position 10 as 'TikTok LIVE Earnings: How Much Can You Really Make? (2025)' guide page",
+        "cited_sources": ["tikcalculator.com", "thesocialcat.com", "influencermarketinghub.com", "tikcal.com", "auxmode.com", "echotik.live", "soundcamps.com", "tikleap.com", "tikmoneycalculator.net", "calculatecreator.com"],
+        "content_format_cited": "Live earnings trackers, real-time gift calculators, comprehensive guide content",
+        "calculatecreator_organic_position": "position_10",
+        "gap_analysis": "First organic appearance! Guide content format is working for this long-tail keyword. Strengthen with backlinks."
+      },
+      {
+        "keyword": "tiktok brand deal rate calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": true,
+        "citation_context": "Multiple CalculateCreator pages appear: guides/how-to-get-brand-deals/, guides/brand-deals/, data/brand-deal-rates-by-followers/, homepage",
+        "cited_sources": ["collabstr.com", "calculatecreator.com", "billo.app", "modash.io", "calculatecreator.com", "calculatecreator.com", "calculatecreator.com", "tiktok.com"],
+        "content_format_cited": "Rate calculators, pricing guides with follower-tier tables, CPM frameworks",
+        "calculatecreator_organic_position": "positions_2_3_4_6_9",
+        "gap_analysis": "STRONG performance. CalculateCreator dominates this SERP with 5 URLs. Content cluster strategy working perfectly."
+      },
+      {
+        "keyword": "how to calculate tiktok engagement rate",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["phlanx.com", "theinfluencermarketingfactory.com", "socialinsider.io", "1stcollab.com", "thesocialcat.com", "collabstr.com", "insightiq.ai", "grin.co", "sproutsocial.com", "iqfluence.io"],
+        "content_format_cited": "Step-by-step formula explanations, interactive calculators, benchmark tables",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "Informational how-to query. CalculateCreator needs a dedicated 'how to calculate' tutorial page with HowTo schema."
+      },
+      {
+        "keyword": "tiktok rpm calculator",
+        "ai_overview_present": true,
+        "calculatecreator_cited": false,
+        "cited_sources": ["joinkliq.io", "searchengineland.com", "clickz.com", "demandsage.com", "tiktok.com", "tikcalculator.com", "creator-hero.com", "creatorsjet.com", "soundcamps.com"],
+        "content_format_cited": "CPM/RPM calculator tools, earnings estimators, how-to guides",
+        "calculatecreator_organic_position": "not_in_top_10",
+        "gap_analysis": "CalculateCreator has an RPM calculator at /tools/rpm/ but it doesn't rank. Needs more content depth and backlinks."
+      }
+    ]
+  },
+
+  "brand_serp_analysis": {
+    "query_CalculateCreator": {
+      "positions_owned": "1-10",
+      "results": [
+        {"position": 1, "url": "calculatecreator.com/guides/growth/tiktok-analytics-api-creators/", "type": "guide"},
+        {"position": 2, "url": "calculatecreator.com/guides/how-to-make-money-on-tiktok/", "type": "guide"},
+        {"position": 3, "url": "calculatecreator.com/guides/growth/best-posting-times-tiktok/", "type": "guide"},
+        {"position": 4, "url": "calculatecreator.com/guides/tiktok-live-shopping/", "type": "guide"},
+        {"position": 5, "url": "calculatecreator.com/blog/tiktok-shop-affiliate-beginners-guide/", "type": "blog"},
+        {"position": 6, "url": "calculatecreator.com/guides/how-to-get-brand-deals/", "type": "guide"},
+        {"position": 7, "url": "calculatecreator.com/guides/tiktok-creator-fund/", "type": "guide"},
+        {"position": 8, "url": "calculatecreator.com/contact/", "type": "contact"},
+        {"position": 9, "url": "calculatecreator.com/data/rpm-rates-by-niche/", "type": "data"},
+        {"position": 10, "url": "calculatecreator.com/guides/tiktok-monetization-requirements/", "type": "guide"}
+      ],
+      "owns_positions_1_to_5": true,
+      "negative_results": false,
+      "knowledge_panel": false,
+      "homepage_in_top_3": false,
+      "issues": [
+        "Homepage (calculatecreator.com/) is NOT in the top results for the brand name query - inner pages rank instead",
+        "No Knowledge Panel displayed",
+        "No social media profiles surfaced in brand SERP"
+      ]
+    },
+    "query_calculatecreator_com": {
+      "positions_owned": "1 (only)",
+      "results": [
+        {"position": 1, "url": "calculatecreator.com/", "type": "homepage"}
+      ],
+      "additional_results": "Remaining results are unrelated sites (passion.io, amazon.jobs, twitch careers, creatoriq.com)",
+      "owns_positions_1_to_5": false,
+      "negative_results": false,
+      "knowledge_panel": false,
+      "issues": [
+        "Only 1 brand-owned result for exact domain search",
+        "Unrelated job listings and competitors fill remaining positions",
+        "No Knowledge Panel"
+      ]
+    },
+    "query_calculate_creator_tiktok": {
+      "positions_owned": "1 (position 8)",
+      "results_summary": "CalculateCreator appears at position 8. Positions 1-7 dominated by thesocialcat.com, tokicalculator.org, tikcal.com, creator-hero.com, tikcalculator.com, creatorsjet.com, theleap.co",
+      "owns_positions_1_to_5": false,
+      "negative_results": false,
+      "knowledge_panel": false,
+      "issues": [
+        "Generic competitors outrank for this semi-branded query",
+        "Need stronger brand signals to own this query"
+      ]
+    },
+    "overall_brand_serp_score": 45,
+    "brand_serp_grade": "C",
+    "notes": "Strong ownership of exact brand name 'CalculateCreator' but weak for domain-based and semi-branded queries. No Knowledge Panel. Homepage ranking issues."
+  },
+
+  "entity_audit": {
+    "wikipedia_page": false,
+    "wikidata_entry": false,
+    "social_profiles": {
+      "twitter": {
+        "claimed_in_schema": "https://twitter.com/calculatecreator",
+        "verified_existence": "unverified - no Twitter/X results found in search",
+        "active": "unknown"
+      },
+      "facebook": {
+        "claimed_in_schema": "https://facebook.com/calculatecreator",
+        "verified_existence": "unverified - no Facebook results found in search",
+        "active": "unknown"
+      },
+      "linkedin": {
+        "exists": false,
+        "notes": "No LinkedIn company page found for CalculateCreator"
+      },
+      "youtube": {
+        "exists": false
+      },
+      "instagram": {
+        "exists": false
+      },
+      "tiktok": {
+        "exists": false,
+        "notes": "Ironic gap: a TikTok-focused site with no TikTok presence"
+      }
+    },
+    "organization_schema_on_homepage": {
+      "exists_in_source_code": true,
+      "rendered_to_page": false,
+      "notes": "HomepageSchema.tsx contains Organization schema with sameAs links to Twitter and Facebook. WebFetch detected ZERO structured data on the live homepage, suggesting the schema component may not be rendering properly or is removed during static export."
+    },
+    "sameAs_links": {
+      "in_source_code": ["https://twitter.com/calculatecreator", "https://facebook.com/calculatecreator"],
+      "on_live_site": [],
+      "notes": "sameAs links exist in code but may not be rendering. Also, the CalculatorSchema.tsx OrganizationSchema has an empty sameAs array."
+    },
+    "consistent_brand_info": {
+      "brand_name_consistency": "INCONSISTENT - Source code uses both 'CalculateCreator.com' and 'TikTok Calculator' as organization names",
+      "publisher_name_in_schema": "TikTok Calculator (in ArticleSchema/BlogPostSchema)",
+      "organization_name_in_homepage_schema": "CalculateCreator.com (in HomepageSchema.tsx)",
+      "recommendation": "Unify to one canonical brand name across ALL schema markup"
+    },
+    "entity_score": 25,
+    "entity_grade": "D",
+    "critical_issues": [
+      "No Wikipedia/Wikidata presence",
+      "Social profiles claimed but unverified/inactive",
+      "Organization schema appears not to render on live site",
+      "Inconsistent brand name across schema types",
+      "No LinkedIn, YouTube, Instagram, or TikTok profiles",
+      "No Knowledge Panel in Google"
+    ]
+  },
+
+  "structured_data_audit": {
+    "homepage": {
+      "url": "https://calculatecreator.com/",
+      "schemas_in_source_code": ["Organization", "WebSite (with SearchAction)", "FAQPage", "BreadcrumbList", "ItemList", "CollectionPage"],
+      "schemas_detected_on_live_page": [],
+      "critical_finding": "WebFetch found ZERO structured data on live homepage despite rich schema in source code. Possible SSR/static export rendering issue.",
+      "faq_section_visible": true,
+      "faq_schema_rendered": false,
+      "author_byline": true,
+      "updated_date": "partial (on linked guides)",
+      "direct_answer_first_50_words": false,
+      "speakable": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 0,
+        "faq_section_present": 10,
+        "faq_schema": 0,
+        "clear_entity_markup": 0,
+        "structured_data": 10,
+        "concise_definitions": 5,
+        "authoritative_sources": 5,
+        "author_byline_credentials": 10,
+        "updated_date": 3,
+        "speakable": 0,
+        "sameAs_links": 0
+      },
+      "total_score": 43
+    },
+    "calculators_tiktok_money": {
+      "url": "https://calculatecreator.com/calculators/tiktok-money/",
+      "schemas_detected_on_live_page": ["SoftwareApplication", "FAQPage (12 questions)", "BreadcrumbList", "Person (x2)"],
+      "faq_section_visible": true,
+      "faq_schema_rendered": true,
+      "author_byline": true,
+      "updated_date": true,
+      "direct_answer_first_50_words": false,
+      "speakable": false,
+      "howto_schema": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 0,
+        "faq_section_present": 10,
+        "faq_schema": 10,
+        "clear_entity_markup": 8,
+        "structured_data": 10,
+        "concise_definitions": 8,
+        "authoritative_sources": 5,
+        "author_byline_credentials": 10,
+        "updated_date": 5,
+        "speakable": 0,
+        "sameAs_links": 0
+      },
+      "total_score": 66
+    },
+    "calculators_engagement_rate": {
+      "url": "https://calculatecreator.com/calculators/engagement-rate/",
+      "schemas_detected_on_live_page": ["SoftwareApplication", "FAQPage (12 questions)", "BreadcrumbList", "Person (x2)"],
+      "faq_section_visible": true,
+      "faq_schema_rendered": true,
+      "author_byline": true,
+      "updated_date": true,
+      "direct_answer_first_50_words": false,
+      "speakable": false,
+      "howto_schema": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 0,
+        "faq_section_present": 10,
+        "faq_schema": 10,
+        "clear_entity_markup": 8,
+        "structured_data": 10,
+        "concise_definitions": 8,
+        "authoritative_sources": 5,
+        "author_byline_credentials": 10,
+        "updated_date": 5,
+        "speakable": 0,
+        "sameAs_links": 0
+      },
+      "total_score": 66
+    },
+    "guides_how_to_make_money_tiktok": {
+      "url": "https://calculatecreator.com/guides/monetization/how-to-make-money-tiktok/",
+      "schemas_detected_on_live_page": ["Article", "BreadcrumbList", "Person"],
+      "faq_section_visible": false,
+      "faq_schema_rendered": false,
+      "author_byline": "partial - team byline only",
+      "updated_date": true,
+      "direct_answer_first_50_words": true,
+      "speakable": false,
+      "howto_schema": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 15,
+        "faq_section_present": 0,
+        "faq_schema": 0,
+        "clear_entity_markup": 6,
+        "structured_data": 10,
+        "concise_definitions": 7,
+        "authoritative_sources": 5,
+        "author_byline_credentials": 5,
+        "updated_date": 5,
+        "speakable": 0,
+        "sameAs_links": 0
+      },
+      "total_score": 53
+    },
+    "blog_best_tiktok_niches": {
+      "url": "https://calculatecreator.com/blog/best-tiktok-niches-money-2026/",
+      "schemas_detected_on_live_page": ["Article", "BreadcrumbList", "Person (with sameAs)"],
+      "faq_section_visible": false,
+      "faq_schema_rendered": false,
+      "author_byline": true,
+      "author_sameAs": ["twitter.com/sarahjcreator", "linkedin.com/in/sarahjohnson-creator"],
+      "updated_date": true,
+      "direct_answer_first_50_words": true,
+      "speakable": false,
+      "howto_schema": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 15,
+        "faq_section_present": 0,
+        "faq_schema": 0,
+        "clear_entity_markup": 8,
+        "structured_data": 10,
+        "concise_definitions": 8,
+        "authoritative_sources": 7,
+        "author_byline_credentials": 10,
+        "updated_date": 5,
+        "speakable": 0,
+        "sameAs_links": 5
+      },
+      "total_score": 68
+    },
+    "data_average_earnings_per_views": {
+      "url": "https://calculatecreator.com/data/earnings/average-tiktok-earnings-per-views/",
+      "schemas_detected_on_live_page": ["Article", "BreadcrumbList", "Person"],
+      "faq_section_visible": false,
+      "faq_schema_rendered": false,
+      "author_byline": "partial - team byline",
+      "updated_date": true,
+      "direct_answer_first_50_words": true,
+      "speakable": false,
+      "howto_schema": false,
+      "score_breakdown": {
+        "direct_answer_first_50_words": 15,
+        "faq_section_present": 0,
+        "faq_schema": 0,
+        "clear_entity_markup": 6,
+        "structured_data": 10,
+        "concise_definitions": 8,
+        "authoritative_sources": 5,
+        "author_byline_credentials": 5,
+        "updated_date": 5,
+        "speakable": 0,
+        "sameAs_links": 0
+      },
+      "total_score": 54
+    }
+  },
+
+  "aeo_page_scores": {
+    "scoring_rubric": {
+      "direct_answer_first_50_words": 15,
+      "faq_section_present": 10,
+      "faq_schema": 10,
+      "clear_entity_markup": 10,
+      "structured_data_lists_tables": 10,
+      "concise_definitions": 10,
+      "authoritative_sources_cited": 10,
+      "author_byline_credentials": 10,
+      "updated_date_visible": 5,
+      "speakable_content": 5,
+      "sameAs_links": 5,
+      "total_possible": 100
+    },
+    "top_5_pages": [
+      {
+        "url": "https://calculatecreator.com/blog/best-tiktok-niches-money-2026/",
+        "score": 68,
+        "grade": "C+",
+        "strengths": ["Direct answer in first 50 words", "Author with sameAs links", "Rich data tables", "Updated date"],
+        "weaknesses": ["No FAQ section or schema", "No speakable", "No HowTo schema"]
+      },
+      {
+        "url": "https://calculatecreator.com/calculators/tiktok-money/",
+        "score": 66,
+        "grade": "C+",
+        "strengths": ["FAQPage schema with 12 questions", "Author byline with CPA reviewer", "BreadcrumbList", "Updated date"],
+        "weaknesses": ["No direct answer in first 50 words", "No speakable", "No sameAs links", "No HowTo schema"]
+      },
+      {
+        "url": "https://calculatecreator.com/calculators/engagement-rate/",
+        "score": 66,
+        "grade": "C+",
+        "strengths": ["FAQPage schema with 12 questions", "Expert author + technical reviewer", "BreadcrumbList", "Updated date"],
+        "weaknesses": ["No direct answer in first 50 words", "No speakable", "No sameAs links"]
+      },
+      {
+        "url": "https://calculatecreator.com/data/earnings/average-tiktok-earnings-per-views/",
+        "score": 54,
+        "grade": "C-",
+        "strengths": ["Direct answer in first 50 words", "Multiple data tables", "Updated date"],
+        "weaknesses": ["No FAQ section or schema", "Team byline only", "No speakable", "No sameAs"]
+      },
+      {
+        "url": "https://calculatecreator.com/guides/monetization/how-to-make-money-tiktok/",
+        "score": 53,
+        "grade": "C-",
+        "strengths": ["Direct answer in first 50 words", "Multiple structured tables", "Updated date"],
+        "weaknesses": ["No FAQ section or schema", "Team byline only", "Missing HowTo schema for how-to content", "No speakable"]
+      }
+    ],
+    "average_score": 61.4,
+    "overall_grade": "C"
+  },
+
+  "paa_questions": {
+    "methodology": "Extracted from WebSearch AI-generated summaries which reflect People Also Ask patterns",
+    "questions_by_topic": {
+      "tiktok_money_calculator": [
+        "How much can you earn on TikTok with 1,000 followers?",
+        "How does TikTok pay its creators?",
+        "What is a good engagement rate on TikTok?",
+        "How is the engagement rate calculated?",
+        "How much do top TikTokers earn?",
+        "Are TikTok money calculators safe to use?",
+        "What factors influence TikTok earnings?"
+      ],
+      "how_much_does_tiktok_pay": [
+        "How much does TikTok pay per 1,000 views?",
+        "How much does TikTok pay for 1 million views?",
+        "What is the TikTok Creator Rewards Program?",
+        "How much do TikTok brand deals pay?",
+        "Does TikTok pay for likes?",
+        "What are the eligibility requirements for TikTok monetization?",
+        "How does TikTok Pulse work?"
+      ],
+      "tiktok_engagement_rate": [
+        "What is a good engagement rate on TikTok?",
+        "How do you calculate TikTok engagement rate by views vs followers?",
+        "What is the average TikTok engagement rate by influencer tier?",
+        "How does TikTok engagement compare to Instagram?",
+        "What factors affect TikTok engagement rate?",
+        "Why does engagement rate matter for influencer marketing?"
+      ],
+      "tiktok_creator_fund": [
+        "Is the TikTok Creator Fund still active in 2026?",
+        "What is the Creator Rewards Program?",
+        "What counts as a qualified view on TikTok?",
+        "Which countries are eligible for TikTok Creator Fund?",
+        "Can I use a VPN to access the Creator Fund?",
+        "What type of content is eligible for Creator Rewards?",
+        "Does the Creator Rewards Program have earning tiers?"
+      ],
+      "tiktok_coin_value": [
+        "How much is 1 TikTok Coin worth in USD?",
+        "How much do common coin bundles cost?",
+        "How does the Coins to Gifts to Diamonds process work?",
+        "How much do creators actually earn from coin gifts?",
+        "Can I sell or transfer TikTok coins?",
+        "Do TikTok coins expire?",
+        "What's the cheapest way to buy TikTok Coins?",
+        "Does TikTok adjust coin pricing by region?"
+      ]
+    },
+    "total_unique_questions": 39,
+    "questions_calculatecreator_can_answer": {
+      "has_content_for": 31,
+      "percentage_coverage": 79,
+      "has_dedicated_page_for": 18,
+      "missing_dedicated_content_for": [
+        "Are TikTok money calculators safe to use?",
+        "Does TikTok pay for likes?",
+        "How does TikTok Pulse work?",
+        "Can I use a VPN to access the Creator Fund?",
+        "How does TikTok engagement compare to Instagram?",
+        "Can I sell or transfer TikTok coins?",
+        "Do TikTok coins expire?",
+        "What's the cheapest way to buy TikTok Coins?"
+      ]
+    }
+  },
+
+  "reddit_questions": {
+    "search_limitation": "WebSearch site:reddit.com queries returned no results. Broader searches used instead.",
+    "common_reddit_topics_identified": [
+      {
+        "topic": "Is TikTok Creator Fund worth it in 2026?",
+        "sentiment": "Negative - most users say payouts are too low",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/guides/tiktok-creator-fund/"
+      },
+      {
+        "topic": "How much does 1 million views actually pay on TikTok?",
+        "sentiment": "Skeptical - users report wide variation ($20 to $1000)",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/data/earnings/average-tiktok-earnings-per-views/"
+      },
+      {
+        "topic": "Best TikTok money calculator tools?",
+        "sentiment": "Users recommend tools with username-based lookup",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/"
+      },
+      {
+        "topic": "TikTok Creator Rewards Program real earnings",
+        "sentiment": "Mixed - users share actual screenshots, varies $200-$500 per 1M views",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/guides/tiktok-creator-fund/"
+      },
+      {
+        "topic": "How to get brand deals on TikTok as a small creator",
+        "sentiment": "High interest, seeking practical advice",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/guides/how-to-get-brand-deals/"
+      },
+      {
+        "topic": "TikTok coins value and gift economy explained",
+        "sentiment": "Confusion about coin-to-diamond-to-cash conversion",
+        "calculatecreator_content_exists": true,
+        "calculatecreator_url": "https://calculatecreator.com/calculators/coins/"
+      }
+    ],
+    "content_opportunities": [
+      "Create Reddit-style 'real creator earnings' showcase page with verified screenshots",
+      "Build a 'TikTok Creator Rewards Program calculator' specifically (not just Creator Fund)",
+      "FAQ page addressing Reddit skepticism: 'Why TikTok pays so little'",
+      "Comparison: Creator Fund vs Creator Rewards Program vs Brand Deals real numbers"
+    ]
+  },
+
+  "overall_aeo_score": {
+    "ai_visibility": {
+      "score": 20,
+      "max": 25,
+      "grade": "D",
+      "notes": "Cited in AI results for only 2 of 10 target keywords. Zero AI Overview citations. Strong for 'brand deal rate calculator' only."
+    },
+    "brand_serp_ownership": {
+      "score": 12,
+      "max": 15,
+      "grade": "C",
+      "notes": "Owns branded SERP for exact name but not for domain or semi-branded queries. No Knowledge Panel."
+    },
+    "entity_optimization": {
+      "score": 5,
+      "max": 15,
+      "grade": "F",
+      "notes": "No Wikipedia, no verified social profiles, inconsistent brand naming, schema rendering issues on homepage."
+    },
+    "structured_data": {
+      "score": 14,
+      "max": 20,
+      "grade": "B-",
+      "notes": "Good schema variety in source code. Calculator pages have strong markup. Homepage schema may not render. Missing speakable, HowTo, and consistent sameAs."
+    },
+    "content_format_for_ai": {
+      "score": 12,
+      "max": 15,
+      "grade": "B-",
+      "notes": "Good FAQ sections, tables, and definitions on calculator pages. Guides lack FAQ sections. Missing direct answers on key pages."
+    },
+    "paa_coverage": {
+      "score": 7,
+      "max": 10,
+      "grade": "B",
+      "notes": "Content exists for 79% of PAA questions but not always as dedicated landing pages."
+    },
+    "total_score": 70,
+    "max_score": 100,
+    "overall_grade": "C",
+    "interpretation": "CalculateCreator has strong foundational content and schema infrastructure but critical gaps in AI visibility, entity establishment, and homepage schema rendering that prevent AI systems from citing it."
+  },
+
+  "priority_action_plan": {
+    "critical_priority": [
+      {
+        "action": "Fix homepage schema rendering issue",
+        "description": "WebFetch detected ZERO structured data on the live homepage despite HomepageSchema.tsx containing Organization, WebSite, FAQPage, BreadcrumbList, ItemList, and CollectionPage schemas. Investigate whether the component is being rendered during static export. This is the #1 blocking issue.",
+        "impact": "high",
+        "effort": "low",
+        "timeline": "immediate"
+      },
+      {
+        "action": "Unify brand name across all schema markup",
+        "description": "Source code uses both 'CalculateCreator.com' (HomepageSchema) and 'TikTok Calculator' (CalculatorSchema, ArticleSchema) as the organization/publisher name. Pick one canonical name and enforce it everywhere.",
+        "impact": "high",
+        "effort": "low",
+        "timeline": "immediate"
+      },
+      {
+        "action": "Add direct answers in first 50 words to all calculator pages",
+        "description": "Calculator pages (tiktok-money, engagement-rate) start with descriptive intros instead of direct factual answers. Add a bold sentence like 'TikTok pays $0.02-$0.04 per 1,000 views through the Creator Fund, and $0.40-$1.00 through the Creator Rewards Program.' as the very first content.",
+        "impact": "high",
+        "effort": "low",
+        "timeline": "1 week"
+      }
+    ],
+    "high_priority": [
+      {
+        "action": "Create and verify social media profiles",
+        "description": "Create active profiles on Twitter/X, LinkedIn, TikTok, YouTube, and Instagram. The sameAs links in schema reference twitter.com/calculatecreator and facebook.com/calculatecreator but these may not exist. A TikTok-focused site MUST have a TikTok account.",
+        "impact": "high",
+        "effort": "medium",
+        "timeline": "2 weeks"
+      },
+      {
+        "action": "Add FAQ sections with FAQPage schema to ALL guide and data pages",
+        "description": "Currently only calculator pages have FAQ sections. Guide pages (/guides/monetization/how-to-make-money-tiktok/, etc.) and data pages (/data/earnings/) lack FAQ sections entirely. Add 5-8 PAA-targeted questions to each.",
+        "impact": "high",
+        "effort": "medium",
+        "timeline": "2-3 weeks"
+      },
+      {
+        "action": "Implement speakable schema on top 20 pages",
+        "description": "No pages have speakable property. Add speakable CSS selectors targeting the first-paragraph summary and FAQ answers on calculator, guide, and data pages.",
+        "impact": "medium",
+        "effort": "low",
+        "timeline": "1 week"
+      },
+      {
+        "action": "Add HowTo schema to tutorial/how-to content",
+        "description": "The 'how to calculate tiktok engagement rate' and 'how to make money on tiktok' pages should have HowTo structured data. The HowToSchema component exists in source code but is not used on key pages.",
+        "impact": "medium",
+        "effort": "low",
+        "timeline": "1 week"
+      }
+    ],
+    "medium_priority": [
+      {
+        "action": "Build external authority for target keywords",
+        "description": "CalculateCreator appears in 0/10 AI Overviews for target keywords (except weak position 10 for 'tiktok live earnings calculator'). The 'brand deal rate calculator' success shows content clusters work - replicate for other topics with backlink building.",
+        "impact": "high",
+        "effort": "high",
+        "timeline": "ongoing"
+      },
+      {
+        "action": "Create dedicated PAA answer pages for uncovered questions",
+        "description": "8 PAA questions have no dedicated content: TikTok Pulse explainer, coin expiry/transfer policies, VPN access to Creator Fund, cross-platform engagement comparison, calculator safety/privacy page.",
+        "impact": "medium",
+        "effort": "medium",
+        "timeline": "3-4 weeks"
+      },
+      {
+        "action": "Add individual named authors to team-bylined content",
+        "description": "Guide and data pages use 'CalculateCreator Team' as author instead of named individuals. Person schema with sameAs, knowsAbout, and credentials signals E-E-A-T more strongly to AI systems.",
+        "impact": "medium",
+        "effort": "low",
+        "timeline": "2 weeks"
+      },
+      {
+        "action": "Apply for Google Knowledge Panel via Google Business Profile or structured data",
+        "description": "No Knowledge Panel exists for CalculateCreator. Set up Google Business Profile, ensure consistent NAP data, add Wikidata entry, and strengthen entity signals.",
+        "impact": "medium",
+        "effort": "medium",
+        "timeline": "4-6 weeks"
+      },
+      {
+        "action": "Cite authoritative external sources on all pages",
+        "description": "Pages reference TikTok data but rarely link to official TikTok documentation, creator fund announcements, or third-party research. Adding cited sources improves E-E-A-T for AI systems.",
+        "impact": "medium",
+        "effort": "low",
+        "timeline": "2 weeks"
+      }
+    ],
+    "low_priority": [
+      {
+        "action": "Create Wikidata entry for CalculateCreator",
+        "description": "No Wikipedia or Wikidata presence. A Wikidata entry with proper schema links would strengthen entity recognition.",
+        "impact": "medium",
+        "effort": "medium",
+        "timeline": "6-8 weeks"
+      },
+      {
+        "action": "Implement Reddit/community engagement strategy",
+        "description": "Reddit searches show strong user interest in TikTok earnings topics. Create helpful content on r/TikTokCreators, r/socialmedia, and r/CreatorEconomy that references CalculateCreator tools.",
+        "impact": "medium",
+        "effort": "high",
+        "timeline": "ongoing"
+      },
+      {
+        "action": "Add real-time API-based calculator for username lookup",
+        "description": "Competitors dominating 'tiktok money calculator' and 'tiktok earnings calculator' all offer real-time username-based lookup. This is the main feature gap vs competitors.",
+        "impact": "high",
+        "effort": "high",
+        "timeline": "8-12 weeks"
+      }
+    ]
+  }
+}

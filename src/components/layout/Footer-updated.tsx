@@ -107,7 +107,7 @@ export function Footer() {
             <div className="flex items-center space-x-2 mb-4">
               <div className="h-10 w-20 md:w-auto">
                 <OptimizedImage
-                  src="/images/calculate-creator-transparent-v2.png"
+                  src="/images/tt-calculator-logo.png"
                   alt="TikTok Creator Calculator"
                   width={80}
                   height={32}

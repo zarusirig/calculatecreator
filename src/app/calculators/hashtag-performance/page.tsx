@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Analyze your TikTok hashtag performance. Calculate reach impact, discover optimal tag combinations, and measure hashtag-driven engagement gains.",
   keywords: ['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/hashtag-performance/',
+    canonical: 'https://tiktokcalculator.net/calculators/hashtag-performance/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function HashtagPerformanceCalculatorPage() {
       <CalculatorSchema
         name="TikTok Hashtag Performance Calculator"
         description="Analyze TikTok hashtag performance. Compare reach and engagement with and without hashtags to optimize your hashtag strategy for maximum discovery."
-        url="https://calculatecreator.com/calculators/hashtag-performance/"
+        url="https://tiktokcalculator.net/calculators/hashtag-performance/"
         datePublished="2024-02-28"
         dateModified="2026-03-01"
         keywords={['hashtag performance calculator', 'tiktok hashtag analytics', 'hashtag strategy', 'hashtag reach calculator', 'tiktok hashtags']}
@@ -53,9 +53,9 @@ export default function HashtagPerformanceCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Hashtag Performance Calculator', url: 'https://calculatecreator.com/calculators/hashtag-performance/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Hashtag Performance Calculator', url: 'https://tiktokcalculator.net/calculators/hashtag-performance/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

@@ -3,9 +3,10 @@ import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
 
 export const metadata: Metadata = {
-  title: "TikTok Monetization Guide and Creator Strategy Guide",
-  description: "Read this TikTok monetization guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
-  alternates: { canonical: 'https://calculatecreator.com/guides/monetization/' },
+  title: 'TikTok Monetization Guides | Creator Revenue Strategy',
+  description:
+    'Browse monetization guides for TikTok income streams, eligibility rules, pricing, and strategies to build more predictable creator revenue.',
+  alternates: { canonical: 'https://tiktokcalculator.net/guides/monetization/' },
 };
 
 export default function MonetizationHubPage() {

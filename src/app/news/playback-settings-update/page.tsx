@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok playback settings update update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/playback-settings-update/',
+    canonical: 'https://tiktokcalculator.net/news/playback-settings-update/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function PlaybackSettingsUpdatePage() {
       <NewsArticleSchema
         headline="TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News"
         description="TikTok added new playback options including 'Disable HDR videos' and 'Display object tags,' giving users more control over their viewing experience."
-        url="https://calculatecreator.com/news/playback-settings-update/"
+        url="https://tiktokcalculator.net/news/playback-settings-update/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-features-1024.webp"
+        image="https://tiktokcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Playback Settings Update', url: 'https://calculatecreator.com/news/playback-settings-update/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Playback Settings Update', url: 'https://tiktokcalculator.net/news/playback-settings-update/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

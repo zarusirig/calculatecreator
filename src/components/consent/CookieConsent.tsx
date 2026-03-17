@@ -36,7 +36,7 @@ export function CookieConsent() {
           <div className="container-custom">
             <p className="text-sm font-medium text-neutral-900">Cookie and ad consent</p>
             <p className="mt-2 max-w-3xl text-xs leading-relaxed text-neutral-600">
-              CalculateCreator uses cookies and similar technologies for analytics and Google
+              TT Calculator uses cookies and similar technologies for analytics and Google
               AdSense advertising. You can accept personalized ads or continue with
               non-personalized ads. Learn more in our privacy and advertising disclosure pages.
             </p>
@@ -89,7 +89,7 @@ export function CookieConsent() {
           <Script
             id="cc-ga-script"
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-X90GQYNEHW"
+            src="https://www.googletagmanager.com/gtag/js?id=G-KNN9QW52GQ"
             strategy="afterInteractive"
           />
 
@@ -99,7 +99,7 @@ export function CookieConsent() {
               function gtag(){dataLayer.push(arguments);}
               window.gtag = window.gtag || gtag;
               gtag('js', new Date());
-              gtag('config', 'G-X90GQYNEHW', {
+              gtag('config', 'G-KNN9QW52GQ', {
                 anonymize_ip: true,
                 allow_ad_personalization_signals: ${consent === 'accepted' ? 'true' : 'false'}
               });

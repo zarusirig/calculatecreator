@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Project your TikTok follower growth over time. Estimate when you will hit milestones based on current growth rate, posting frequency, and engagement.",
   keywords: ['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/follower-growth/',
+    canonical: 'https://tiktokcalculator.net/calculators/follower-growth/',
   },
 };
 
@@ -46,7 +46,7 @@ export default function FollowerGrowthCalculatorPage() {
       <CalculatorSchema
         name="TikTok Follower Growth Rate Calculator"
         description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
-        url="https://calculatecreator.com/calculators/follower-growth/"
+        url="https://tiktokcalculator.net/calculators/follower-growth/"
         datePublished="2024-01-25"
         dateModified="2026-03-01"
         keywords={['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics']}
@@ -54,9 +54,9 @@ export default function FollowerGrowthCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Follower Growth Calculator', url: 'https://calculatecreator.com/calculators/follower-growth/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Follower Growth Calculator', url: 'https://tiktokcalculator.net/calculators/follower-growth/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
@@ -78,7 +78,10 @@ export default function FollowerGrowthCalculatorPage() {
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
             TikTok Follower Growth Calculator
           </h1>
-          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators: 
+          <p className="text-body-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+            The TikTok Follower Growth Calculator projects your future follower count using compound growth modeling. A healthy growth rate is 2%–5% daily. Enter your current followers and growth rate to see when you will hit 10K, 50K, and 100K milestones.
+          </p>
+          <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">TikTok creators:
             Project your future follower count based on your current daily growth rate using compound growth modeling. This calculator helps creators set realistic milestone goals, track progress toward monetization thresholds, and benchmark growth performance against industry standards. Essential for both new creators building their first 1,000 followers and established accounts scaling to 100K+.
           </p>
         </div>

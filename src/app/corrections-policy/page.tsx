@@ -4,11 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Corrections Policy | CalculateCreator',
+  title: 'Corrections Policy | TT Calculator',
   description:
-    'How CalculateCreator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
+    'How TT Calculator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
   alternates: {
-    canonical: 'https://calculatecreator.com/corrections-policy/',
+    canonical: 'https://tiktokcalculator.net/corrections-policy/',
   },
 };
 
@@ -19,13 +19,13 @@ const schema = {
   '@type': 'WebPage',
   name: 'Corrections Policy',
   description:
-    'How CalculateCreator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
-  url: 'https://calculatecreator.com/corrections-policy/',
+    'How TT Calculator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
+  url: 'https://tiktokcalculator.net/corrections-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -48,7 +48,7 @@ export default function CorrectionsPolicyPage() {
           </div>
 
           <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator is committed to accuracy across every TikTok calculator, guide,
+            TT Calculator is committed to accuracy across every TikTok calculator, guide,
             and data page. When we get something wrong — whether it is a formula error,
             outdated data point, or misleading statement — we correct it promptly and
             transparently. This page explains how to report errors and how we handle
@@ -60,12 +60,12 @@ export default function CorrectionsPolicyPage() {
               1. How to Submit a Correction
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              If you find an error on any CalculateCreator page, contact us at{' '}
+              If you find an error on any TT Calculator page, contact us at{' '}
               <a
-                href="mailto:corrections@calculatecreator.com"
+                href="mailto:corrections@tiktokcalculator.net"
                 className="text-primary-600 underline"
               >
-                corrections@calculatecreator.com
+                corrections@tiktokcalculator.net
               </a>{' '}
               or use our{' '}
               <Link href="/contact/" className="text-primary-600 underline">

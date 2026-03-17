@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Plan your TikTok advertising budget with accurate cost estimates. Calculate CPM, CPC, and total spend for in-feed ads, TopView, and branded campaigns.",
   keywords: ['tiktok ad budget', 'tiktok advertising cost', 'ad spend calculator', 'tiktok marketing budget', 'campaign budget planner'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/ad-spend/',
+    canonical: 'https://tiktokcalculator.net/calculators/ad-spend/',
   },
 };
 
@@ -57,7 +57,7 @@ export default function AdSpendCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Spend Calculator"
         description="Calculate recommended ad spend budget for your TikTok campaigns based on target results and expected costs. Plan daily, weekly, and monthly budgets."
-        url="https://calculatecreator.com/calculators/ad-spend/"
+        url="https://tiktokcalculator.net/calculators/ad-spend/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok ad budget', 'ad spend calculator', 'tiktok budget planning', 'campaign budget']}
@@ -65,9 +65,9 @@ export default function AdSpendCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Ad Spend Calculator', url: 'https://calculatecreator.com/calculators/ad-spend/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Ad Spend Calculator', url: 'https://tiktokcalculator.net/calculators/ad-spend/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">

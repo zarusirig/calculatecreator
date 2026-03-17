@@ -35,13 +35,13 @@ export const metadata: Metadata = {
     'video performance 2026',
   ],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/video-performance/',
+    canonical: 'https://tiktokcalculator.net/calculators/video-performance/',
   },
   openGraph: {
     title: 'TikTok Video Performance Calculator 2026 | Analyze Your Content',
     description:
       'Analyze your TikTok video performance with detailed metrics and 2026 benchmarks.',
-    url: 'https://calculatecreator.com/calculators/video-performance/',
+    url: 'https://tiktokcalculator.net/calculators/video-performance/',
     type: 'website',
   },
 };
@@ -160,7 +160,7 @@ export default function VideoPerformanceCalculatorPage() {
       <CalculatorSchema
         name="TikTok Video Performance Calculator"
         description="Analyze your TikTok video performance with detailed metrics, engagement rates, and virality scores compared to 2026 benchmarks."
-        url="https://calculatecreator.com/calculators/video-performance/"
+        url="https://tiktokcalculator.net/calculators/video-performance/"
       />
       <FAQSchema faqs={faqItems} />
       <BreadcrumbSchema

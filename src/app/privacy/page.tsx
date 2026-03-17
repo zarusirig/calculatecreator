@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: "Privacy and CalculateCreator Platform Details Guide",
-  description: "Review privacy information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
+  title: 'Privacy Policy | TT Calculator',
+  description:
+    'Review how TT Calculator handles cookies, analytics, advertising, local storage, and user data across the site.',
   alternates: {
-    canonical: 'https://calculatecreator.com/privacy/',
+    canonical: 'https://tiktokcalculator.net/privacy/',
   },
 };
 
@@ -16,13 +17,13 @@ const privacySchema = {
   '@type': 'WebPage',
   name: 'Privacy Policy',
   description:
-    'Privacy Policy for calculatecreator.com covering cookies, analytics, advertising, user rights, and data handling.',
-  url: 'https://calculatecreator.com/privacy/',
+    'Privacy Policy for tiktokcalculator.net covering cookies, analytics, advertising, user rights, and data handling.',
+  url: 'https://tiktokcalculator.net/privacy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -40,21 +41,21 @@ export default function PrivacyPage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          This Privacy Policy explains how CalculateCreator ("we," "us," or "our") collects,
-          uses, and protects information when you use calculatecreator.com. We built
-          CalculateCreator to help creators estimate and benchmark outcomes such as RPM,
+          This Privacy Policy explains how TT Calculator ("we," "us," or "our") collects,
+          uses, and protects information when you use tiktokcalculator.net. We built
+          TT Calculator to help creators estimate and benchmark outcomes such as RPM,
           engagement, earnings, and related business metrics. Because trust is part of our product,
           we explain our data handling in plain language and document third-party technologies used
           for analytics and advertising.
         </p>
 
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-          This policy applies to all public pages on calculatecreator.com, including calculator
+          This policy applies to all public pages on tiktokcalculator.net, including calculator
           pages, guides, benchmark pages, and trust pages. By using the site, you acknowledge this
           policy. If you do not agree, you should discontinue use of the site.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-          We built CalculateCreator with a minimal-data mindset. Most features are available without
+          We built TT Calculator with a minimal-data mindset. Most features are available without
           account creation, and we try to process only the data needed to run the site, protect it,
           and improve the quality of tools and editorial content.
         </p>
@@ -116,7 +117,7 @@ export default function PrivacyPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">2. How we use information</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
-            <li>Operate, maintain, and secure calculatecreator.com.</li>
+            <li>Operate, maintain, and secure tiktokcalculator.net.</li>
             <li>Understand product usage patterns and improve user experience.</li>
             <li>Respond to support, correction, and business inquiries.</li>
             <li>Monitor site quality, performance, and abuse prevention.</li>
@@ -173,7 +174,7 @@ export default function PrivacyPage() {
 
           <h3 className="mt-4 text-sm font-semibold text-neutral-900">Firebase Hosting and infrastructure</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator is deployed on Firebase Hosting. Standard hosting logs and operational
+            TT Calculator is deployed on Firebase Hosting. Standard hosting logs and operational
             diagnostics may be processed to deliver and secure the site.
           </p>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
@@ -247,8 +248,8 @@ export default function PrivacyPage() {
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             To submit a privacy request, email{' '}
-            <a href="mailto:privacy@calculatecreator.com" className="link">
-              privacy@calculatecreator.com
+            <a href="mailto:privacy@tiktokcalculator.net" className="link">
+              privacy@tiktokcalculator.net
             </a>
             . We may request additional verification to protect account and data security.
           </p>
@@ -288,9 +289,9 @@ export default function PrivacyPage() {
             sensitive personal information where applicable.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator does not sell personal information in the traditional data-broker sense.
+            TT Calculator does not sell personal information in the traditional data-broker sense.
             To request disclosure or deletion of personal data that may be associated with direct
-            communications, contact privacy@calculatecreator.com.
+            communications, contact privacy@tiktokcalculator.net.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             California residents may also designate an authorized agent to submit requests where
@@ -302,10 +303,10 @@ export default function PrivacyPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">9. Children's privacy (COPPA)</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator is intended for general audiences and creator-business research. We do
+            TT Calculator is intended for general audiences and creator-business research. We do
             not knowingly collect personal information from children under 13. If you believe a
             child under 13 has provided personal information to us, contact us at
-            privacy@calculatecreator.com and we will investigate and take appropriate action.
+            privacy@tiktokcalculator.net and we will investigate and take appropriate action.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Because our site covers social platform monetization topics that may interest younger
@@ -314,7 +315,7 @@ export default function PrivacyPage() {
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Parents or guardians who have concerns about child-related data can contact
-            privacy@calculatecreator.com. We will review reported cases promptly and remove
+            privacy@tiktokcalculator.net. We will review reported cases promptly and remove
             information when appropriate.
           </p>
         </section>
@@ -323,7 +324,7 @@ export default function PrivacyPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">10. Security</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             We use reasonable technical and organizational safeguards to protect data handled through
-            calculatecreator.com. No internet system can be guaranteed fully secure, but we follow a
+            tiktokcalculator.net. No internet system can be guaranteed fully secure, but we follow a
             minimal-data approach and secure deployment practices to reduce exposure.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -356,17 +357,17 @@ export default function PrivacyPage() {
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Prior versions may be retained internally for compliance and record-keeping. We
             encourage users to review this page periodically to stay informed about how data
-            practices evolve at calculatecreator.com.
+            practices evolve at tiktokcalculator.net.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">13. Contact us</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Privacy inquiries: <a href="mailto:privacy@calculatecreator.com" className="link">privacy@calculatecreator.com</a>
+            Privacy inquiries: <a href="mailto:privacy@tiktokcalculator.net" className="link">privacy@tiktokcalculator.net</a>
           </p>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            General support: <a href="mailto:contact@calculatecreator.com" className="link">contact@calculatecreator.com</a>
+            General support: <a href="mailto:contact@tiktokcalculator.net" className="link">contact@tiktokcalculator.net</a>
           </p>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
             We aim to respond within 48 hours on business days.

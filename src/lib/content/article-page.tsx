@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import remarkGfm from 'remark-gfm';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import { SITE_CONFIG, siteUrl } from '@/lib/constants/site-config';
 
 const mdxOptions = {
   mdxOptions: {
@@ -17,7 +18,7 @@ const mdxOptions = {
   },
 };
 
-const DEFAULT_OG_IMAGE = 'https://calculatecreator.com/home/hero-dashboard-1600.webp';
+const DEFAULT_OG_IMAGE = SITE_CONFIG.ogImage;
 
 function trimToWordBoundary(text: string, maxLength: number): string {
   if (text.length <= maxLength) return text;
@@ -29,7 +30,7 @@ function trimToWordBoundary(text: string, maxLength: number): string {
 
 function normalizeSeoTitle(rawTitle: string, primaryKeyword: string): string {
   if (rawTitle && rawTitle.trim()) {
-    const cleaned = rawTitle.replace(/\s+\|\s*CalculateCreator$/i, '').replace(/\s+/g, ' ').trim();
+    const cleaned = rawTitle.replace(/\s+\|\s*(?:CalculateCreator|TT Calculator)$/i, '').replace(/\s+/g, ' ').trim();
     return trimToWordBoundary(cleaned, 60);
   }
 
@@ -94,8 +95,8 @@ export function createArticlePageExports(contentDir: string) {
         type: 'article',
         publishedTime: frontmatter.publishDate,
         modifiedTime: frontmatter.updatedDate,
-        url: `https://calculatecreator.com${canonicalPath}/`,
-        siteName: 'CalculateCreator',
+        url: siteUrl(canonicalPath),
+        siteName: SITE_CONFIG.name,
         images: [
           {
             url: DEFAULT_OG_IMAGE,
@@ -112,7 +113,7 @@ export function createArticlePageExports(contentDir: string) {
         images: [DEFAULT_OG_IMAGE],
       },
       alternates: {
-        canonical: `https://calculatecreator.com${canonicalPath}/`,
+        canonical: siteUrl(canonicalPath),
       },
       robots,
     };
@@ -186,8 +187,8 @@ export function createCatchAllArticlePageExports(contentDir: string) {
         type: 'article',
         publishedTime: frontmatter.publishDate,
         modifiedTime: frontmatter.updatedDate,
-        url: `https://calculatecreator.com${canonicalPath}/`,
-        siteName: 'CalculateCreator',
+        url: siteUrl(canonicalPath),
+        siteName: SITE_CONFIG.name,
         images: [
           {
             url: DEFAULT_OG_IMAGE,
@@ -204,7 +205,7 @@ export function createCatchAllArticlePageExports(contentDir: string) {
         images: [DEFAULT_OG_IMAGE],
       },
       alternates: {
-        canonical: `https://calculatecreator.com${canonicalPath}/`,
+        canonical: siteUrl(canonicalPath),
       },
       robots,
     };

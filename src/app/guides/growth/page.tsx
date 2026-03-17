@@ -3,9 +3,10 @@ import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
 
 export const metadata: Metadata = {
-  title: "TikTok Growth Guide and Creator Strategy Guide 2026",
-  description: "Read this TikTok growth guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
-  alternates: { canonical: 'https://calculatecreator.com/guides/growth/' },
+  title: 'TikTok Growth Guides | Algorithm, Content, and Audience Strategy',
+  description:
+    'Browse growth guides on TikTok SEO, analytics, posting strategy, content testing, and audience development.',
+  alternates: { canonical: 'https://tiktokcalculator.net/guides/growth/' },
 };
 
 export default function GrowthHubPage() {

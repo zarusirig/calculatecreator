@@ -18,7 +18,7 @@ export function GuideCard({
   readingTime,
   updatedAt,
   excerpt,
-  author = 'CalculateCreator Editorial',
+  author = 'TT Calculator Editorial',
   className,
 }: GuideCardProps) {
   return (

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok ad spend calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok ad budget', 'ad spend calculator', 'tiktok budget planning', 'campaign budget'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/ad-spend/',
+    canonical: 'https://tiktokcalculator.net/calculators/ad-spend/',
   },
   openGraph: {
     title: 'TikTok Ad Spend Calculator',
     description: 'Plan your TikTok advertising budget with accurate spend calculations.',
-    url: 'https://calculatecreator.com/calculators/ad-spend/',
+    url: 'https://tiktokcalculator.net/calculators/ad-spend/',
     type: 'website',
   },
 };

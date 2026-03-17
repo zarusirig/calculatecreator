@@ -4,20 +4,20 @@ export function BlogListingSchema() {
     '@type': 'Blog',
     name: 'TikTok Creator Blog',
     description: 'Expert insights on TikTok monetization, creator earnings, and platform strategies',
-    url: 'https://calculatecreator.com/blog/',
+    url: 'https://tiktokcalculator.net/blog/',
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: 'TT Calculator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png'
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png'
       }
     },
     blogPost: [
       {
         '@type': 'BlogPosting',
         headline: 'Creator Fund vs LIVE Gifts: Which Pays More?',
-        url: 'https://calculatecreator.com/blog/creator-fund-vs-live-gifts/',
+        url: 'https://tiktokcalculator.net/blog/creator-fund-vs-live-gifts/',
         description: 'Compare TikTok Creator Fund earnings vs LIVE streaming gift revenue. See which monetization method works best for your content style.',
         datePublished: '2026-03-01',
         dateModified: '2026-03-01'
@@ -33,13 +33,13 @@ export function BlogListingSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/'
+        item: 'https://tiktokcalculator.net/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://calculatecreator.com/blog/'
+        item: 'https://tiktokcalculator.net/blog/'
       }
     ]
   };

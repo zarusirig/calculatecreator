@@ -14,12 +14,12 @@ export const metadata: Metadata = {
     'creator analytics',
   ],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/',
+    canonical: 'https://tiktokcalculator.net/calculators/',
   },
   openGraph: {
-    title: 'Calculators | CalculateCreator',
+    title: 'Calculators | TT Calculator',
     description: 'Estimate and benchmark creator metrics with clear workflows and transparent assumptions.',
-    url: 'https://calculatecreator.com/calculators/',
+    url: 'https://tiktokcalculator.net/calculators/',
     type: 'website',
   },
 };

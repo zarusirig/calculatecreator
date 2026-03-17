@@ -124,7 +124,7 @@ export function CampaignROICalculatorWidget() {
                 Performance: {results.rating === 'break-even' ? 'Break-Even' : results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
               </p>
               <p className="text-body-sm text-neutral-600">
-                {results.rating === 'excellent' && 'Outstanding ROI! Your campaign is highly profitable—scale up!'}
+                {results.rating === 'excellent' && 'Strong ROI. This campaign is performing well and may justify more budget if results stay consistent.'}
                 {results.rating === 'good' && 'Solid ROI. Campaign is profitable and worth continuing.'}
                 {results.rating === 'break-even' && 'Breaking even. Optimize before scaling further.'}
                 {results.rating === 'loss' && 'Losing money. Pause and optimize targeting, creative, or landing page.'}

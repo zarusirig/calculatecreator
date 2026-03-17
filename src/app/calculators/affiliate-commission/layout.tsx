@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok affiliate commission calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['tiktok affiliate calculator', 'shop affiliate earnings', 'commission calculator', 'affiliate income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/affiliate-commission/',
+    canonical: 'https://tiktokcalculator.net/calculators/affiliate-commission/',
   },
   openGraph: {
     title: 'Affiliate Commission Calculator 2026',
     description: 'Calculate TikTok Shop affiliate earnings and commission potential.',
-    url: 'https://calculatecreator.com/calculators/affiliate-commission/',
+    url: 'https://tiktokcalculator.net/calculators/affiliate-commission/',
     type: 'website',
   },
 };

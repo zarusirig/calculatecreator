@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok blog update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok blog', 'creator tips', 'tiktok monetization', 'creator earnings blog', 'tiktok strategy', 'tiktok income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/blog/',
+    canonical: 'https://tiktokcalculator.net/blog/',
   },
 };
 
@@ -190,7 +190,7 @@ const popularTopics = [
 
 const faqs = [
   {
-    question: 'What topics does the CalculateCreator blog cover?',
+    question: 'What topics does the TT Calculator blog cover?',
     answer: '**Our blog covers all aspects of TikTok creator monetization and growth.** Key topics include earning breakdowns by monetization method (Creator Rewards, brand deals, TikTok Shop, LIVE gifts). We cover growth strategies, algorithm optimization, platform updates, and policy changes. Expect niche-specific strategies for fitness, beauty, and finance, plus business advice on taxes, contracts, and pricing your content. We address analytics, engagement metrics, cross-platform strategies, and macro trends in the creator economy.',
   },
   {
@@ -207,14 +207,14 @@ const faqs = [
   },
   {
     question: 'How is your blog different from other TikTok creator resources?',
-    answer: '**CalculateCreator focuses on the business side of content creation.** Other resources cover growth tactics, but we specialize in monetization data, earnings benchmarks, and financial strategies. Our calculator tools provide personalized estimates. Our articles explain the methodology behind the numbers. We do not cover trends, viral challenges, or general social media advice. We focus exclusively on the economics of creator businesses and quantifiable results.',
+    answer: '**TT Calculator focuses on the business side of content creation.** Other resources cover growth tactics, but we specialize in monetization data, earnings benchmarks, and financial strategies. Our calculator tools provide personalized estimates. Our articles explain the methodology behind the numbers. We do not cover trends, viral challenges, or general social media advice. We focus exclusively on the economics of creator businesses and quantifiable results.',
   },
   {
     question: 'Do you cover other platforms besides TikTok?',
     answer: '**Our primary focus is TikTok, but we regularly discuss cross-platform strategies.** These strategies help creators repurpose content to YouTube Shorts, Instagram Reels, and other platforms. Monetization principles like brand deal negotiation and audience building apply across platforms. We compare the monetization rates of TikTok to competitors. This helps you make informed decisions about where to invest your content creation time.',
   },
   {
-    question: 'Who writes the CalculateCreator blog content?',
+    question: 'Who writes the TT Calculator blog content?',
     answer: '**A team with deep experience in creator economics, digital marketing analytics, and TikTok platform mechanics creates our content.** We combine journalistic research standards with data science methodologies. Every article goes through fact-checking and review by active creators to ensure practical relevance. We consult tax professionals, entertainment lawyers, and brand partnership managers to ensure accuracy on business topics.',
   },
   {
@@ -223,7 +223,7 @@ const faqs = [
   },
   {
     question: 'Can I use data from your blog for my own content or research?',
-    answer: '**Yes, we encourage creators to reference our data in their own content, media kits, or business planning.** Cite CalculateCreator as the source and link back to the specific article. Our data is most valuable when shared throughout the creator community. Sharing establishes realistic earning expectations and professional standards. For academic research or media reporting, reach out for more detailed methodology documentation.',
+    answer: '**Yes, we encourage creators to reference our data in their own content, media kits, or business planning.** Cite TT Calculator as the source and link back to the specific article. Our data is most valuable when shared throughout the creator community. Sharing establishes realistic earning expectations and professional standards. For academic research or media reporting, reach out for more detailed methodology documentation.',
   },
   {
     question: 'Do you accept guest posts or contributor articles?',
@@ -278,10 +278,10 @@ export default function BlogPage() {
             <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Your Hub for TikTok Creator Economics</h2>
             <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
               <p>
-                Welcome to the CalculateCreator blog. We translate TikTok monetization into actionable strategies backed by real data. The creator economy evolves at breakneck speed. We cut through the noise to deliver insights that impact your bottom line. Our mission is simple. We help you understand exactly how much you earn, which strategies deliver the best Return on Investment (ROI), and how to optimize every aspect of your creator business.
+                Welcome to the TT Calculator blog. We translate TikTok monetization into actionable strategies backed by real data. The creator economy evolves quickly, so we focus on the changes most likely to affect your decisions. Our mission is simple. We help you understand realistic earning ranges, which strategies support stronger return on investment (ROI), and how to improve the business side of your creator work.
               </p>
               <p>
-                General social media blogs cover surface-level growth tactics. We specialize in the business side of content creation. Every article builds on earnings data collected from thousands of creators, current platform rates, and industry benchmarks. We show you the numbers that prove why each strategy works. Whether you are a micro-creator earning your first dollar or an established influencer optimizing a six-figure income, our content meets you where you are with concrete, measurable strategies.
+                General social media blogs cover surface-level growth tactics. We specialize in the business side of content creation. Every article builds on earnings data collected from thousands of creators, current platform rates, and industry benchmarks. We show you the numbers behind each strategy and where the limits of the data start. Whether you are a new creator earning your first dollar or an established creator optimizing a six-figure business, our content meets you where you are with concrete, measurable strategies.
               </p>
               <p>
                 The TikTok landscape in 2026 is fundamentally different from a year ago. The Creator Rewards Program replaced the old Creator Fund with dramatically higher rates. TikTok Shop is projected to hit $40 billion in Gross Merchandise Volume (GMV). Algorithm changes favor longer-form content and search optimization. Brand deal rates continue to climb as marketers shift budgets to short-form video. Our blog tracks all these changes in real time and updates our guidance as the platform evolves. This is living, breathing strategy that reflects the reality of today.

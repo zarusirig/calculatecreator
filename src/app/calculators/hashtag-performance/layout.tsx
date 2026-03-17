@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok hashtag performance calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['hashtag calculator', 'hashtag performance', 'tiktok hashtags'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/hashtag-performance/',
+    canonical: 'https://tiktokcalculator.net/calculators/hashtag-performance/',
   },
   openGraph: {
     title: 'Hashtag Performance Calculator 2026',
     description: 'Analyze hashtag effectiveness and reach potential.',
-    url: 'https://calculatecreator.com/calculators/hashtag-performance/',
+    url: 'https://tiktokcalculator.net/calculators/hashtag-performance/',
     type: 'website',
   },
 };

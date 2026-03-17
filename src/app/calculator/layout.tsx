@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 // Default layout for localized calculators; individual pages override via metadata files.
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/tiktok-money/',
+    canonical: 'https://tiktokcalculator.net/calculators/tiktok-money/',
     languages: {
-      'en': 'https://calculatecreator.com/calculators/tiktok-money/',
-      'de': 'https://calculatecreator.com/calculator/de/',
-      'es': 'https://calculatecreator.com/calculator/es/',
-      'fr': 'https://calculatecreator.com/calculator/fr/',
-      'it': 'https://calculatecreator.com/calculator/it/',
-      'pt-BR': 'https://calculatecreator.com/calculator/pt-br/',
-      'ms': 'https://calculatecreator.com/calculator/my/',
-      'x-default': 'https://calculatecreator.com/calculators/tiktok-money/',
+      'en': 'https://tiktokcalculator.net/calculators/tiktok-money/',
+      'de': 'https://tiktokcalculator.net/calculator/de/',
+      'es': 'https://tiktokcalculator.net/calculator/es/',
+      'fr': 'https://tiktokcalculator.net/calculator/fr/',
+      'it': 'https://tiktokcalculator.net/calculator/it/',
+      'pt-BR': 'https://tiktokcalculator.net/calculator/pt-br/',
+      'ms': 'https://tiktokcalculator.net/calculator/my/',
+      'x-default': 'https://tiktokcalculator.net/calculators/tiktok-money/',
     },
   },
 };

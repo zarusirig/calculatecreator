@@ -14,18 +14,18 @@ export function ExpertTeamBlock() {
             <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
                 <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.08em] text-primary-700">
-                        Expert-reviewed content
+                        Editorial workflow
                     </p>
                     <h2 className="mt-2 text-heading-xl font-semibold text-neutral-900">
-                        Built by creators and analysts
+                        Internal desks behind the site
                     </h2>
                     <p className="mt-2 max-w-2xl text-body-md text-neutral-600">
-                        Every calculator and guide is created and reviewed by experienced
-                        TikTok creators, data analysts, and industry specialists.
+                        TT Calculator uses shared editorial, research, growth, commerce, and
+                        operations desks to maintain calculators, guides, and methodology notes.
                     </p>
                 </div>
                 <Link href="/about/" className="btn btn-secondary btn-md">
-                    Meet the full team
+                    About our workflow
                 </Link>
             </div>
 

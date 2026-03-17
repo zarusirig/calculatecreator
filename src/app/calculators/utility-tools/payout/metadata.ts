@@ -4,12 +4,12 @@ export const metadata: Metadata = {
   title: "TikTok Creator Payout Calculator 2026",
   description: "Use this TikTok payout calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/utility-tools/payout/',
+    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/payout/',
   },
   openGraph: {
     title: 'TikTok Payout Calculator (After Fees)',
     description: 'See your real take-home after TikTok fees and processors. 2026 rates.',
-    url: 'https://calculatecreator.com/calculators/utility-tools/payout/',
+    url: 'https://tiktokcalculator.net/calculators/utility-tools/payout/',
     type: 'website',
   },
   twitter: {

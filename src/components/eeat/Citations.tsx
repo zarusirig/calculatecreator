@@ -38,8 +38,8 @@ export function Citations({ citations, title = 'Sources & References' }: Citatio
     <Card>
       <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">{title}</h3>
       <p className="text-body-sm text-neutral-600 mb-6">
-        All data and information is sourced from reputable sources to ensure accuracy and
-        reliability.
+        When a page relies on external material, the public references we can attribute directly
+        are listed here.
       </p>
       <ol className="space-y-4">
         {citations.map((citation, index) => {

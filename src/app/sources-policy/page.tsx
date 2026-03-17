@@ -4,11 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Sources Policy | CalculateCreator',
+  title: 'Sources Policy | TT Calculator',
   description:
-    'How CalculateCreator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
+    'How TT Calculator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
   alternates: {
-    canonical: 'https://calculatecreator.com/sources-policy/',
+    canonical: 'https://tiktokcalculator.net/sources-policy/',
   },
 };
 
@@ -19,13 +19,13 @@ const schema = {
   '@type': 'WebPage',
   name: 'Sources Policy',
   description:
-    'How CalculateCreator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
-  url: 'https://calculatecreator.com/sources-policy/',
+    'How TT Calculator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
+  url: 'https://tiktokcalculator.net/sources-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -48,7 +48,7 @@ export default function SourcesPolicyPage() {
           </div>
 
           <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator TikTok tools and content rely on verifiable data. This page
+            TT Calculator TikTok tools and content rely on verifiable data. This page
             explains how we select sources, rank their reliability, handle
             undisclosed data, and keep information current.
           </p>
@@ -193,10 +193,10 @@ export default function SourcesPolicyPage() {
               If you believe a source is outdated, misrepresented, or
               unreliable, please contact us at{' '}
               <a
-                href="mailto:corrections@calculatecreator.com"
+                href="mailto:corrections@tiktokcalculator.net"
                 className="text-primary-600 underline"
               >
-                corrections@calculatecreator.com
+                corrections@tiktokcalculator.net
               </a>
               . We review all source challenges against our quality hierarchy
               and update content when warranted. See our{' '}

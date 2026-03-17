@@ -37,15 +37,15 @@ export function ComparisonSchema({
     dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/'
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/'
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: 'TT Calculator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png'
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png'
       }
     },
     mainEntityOfPage: {
@@ -83,13 +83,13 @@ export function ComparisonSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/'
+        item: 'https://tiktokcalculator.net/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Comparisons',
-        item: 'https://calculatecreator.com/comparisons/'
+        item: 'https://tiktokcalculator.net/comparisons/'
       },
       {
         '@type': 'ListItem',
@@ -115,21 +115,36 @@ export function ComparisonSchema({
 
   const comparisonSchema = {
     '@context': 'https://schema.org',
-    '@type': 'ComparisonTable',
+    '@type': 'WebPage',
     '@id': `${url}#comparison`,
     name: `${subjectA} vs ${subjectB} Comparison`,
     description: `Detailed comparison between ${subjectA} and ${subjectB} for content creators`,
     url: url,
-    about: [
-      {
-        '@type': 'Thing',
-        name: subjectA
-      },
-      {
-        '@type': 'Thing',
-        name: subjectB
-      }
-    ]
+    mainEntity: {
+      '@type': 'ItemList',
+      name: `${subjectA} vs ${subjectB}`,
+      numberOfItems: 2,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@type': 'Thing',
+            name: subjectA,
+            description: `Analysis of ${subjectA} for content creators`
+          }
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          item: {
+            '@type': 'Thing',
+            name: subjectB,
+            description: `Analysis of ${subjectB} for content creators`
+          }
+        }
+      ]
+    }
   };
 
   return (

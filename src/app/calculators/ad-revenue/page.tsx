@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Estimate your TikTok ad revenue from in-feed ads, Spark Ads, and promoted content. Free calculator with 2026 CPM rates and revenue benchmarks.",
   keywords: ['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator', 'ad revenue estimator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/ad-revenue/',
+    canonical: 'https://tiktokcalculator.net/calculators/ad-revenue/',
   },
 };
 
@@ -46,7 +46,7 @@ export default function AdRevenueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Revenue Calculator"
         description="Calculate potential ad revenue from TikTok monetization programs. Estimate earnings based on views, CPM rates, and ad frequency."
-        url="https://calculatecreator.com/calculators/ad-revenue/"
+        url="https://tiktokcalculator.net/calculators/ad-revenue/"
         datePublished="2024-03-01"
         dateModified="2026-03-01"
         keywords={['tiktok ad revenue', 'tiktok monetization calculator', 'creator earnings calculator', 'tiktok cpm calculator']}
@@ -54,9 +54,9 @@ export default function AdRevenueCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Ad Revenue Calculator', url: 'https://calculatecreator.com/calculators/ad-revenue/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Ad Revenue Calculator', url: 'https://tiktokcalculator.net/calculators/ad-revenue/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

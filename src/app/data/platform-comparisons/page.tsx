@@ -6,7 +6,7 @@ import { HubListingPage } from '@/components/articles/HubListingPage';
 export const metadata: Metadata = {
   title: "TikTok Platform Comparisons Data and Benchmark Insights",
   description: "Review TikTok platform comparisons data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
-  alternates: { canonical: 'https://calculatecreator.com/data/platform-comparisons/' },
+  alternates: { canonical: 'https://tiktokcalculator.net/data/platform-comparisons/' },
 };
 
 export default function PlatformComparisonsHubPage() {

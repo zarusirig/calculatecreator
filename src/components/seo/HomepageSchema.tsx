@@ -1,4 +1,5 @@
 import { CALCULATOR_SCHEMAS } from '@/lib/seo/calculator-schemas';
+import { SITE_CONFIG, siteUrl } from '@/lib/constants/site-config';
 
 const PRIMARY_CALCULATOR_SLUGS = [
   'tiktok-money',
@@ -16,38 +17,34 @@ export function HomepageSchema() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com/',
-    logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
-    description: 'Free TikTok earnings calculators and monetization tools for creators. Calculate Creator Fund earnings, brand deal rates, LIVE gifts, and Shop commissions.',
-    sameAs: [
-      'https://twitter.com/calculatecreator',
-      'https://facebook.com/calculatecreator',
-    ],
+    name: SITE_CONFIG.name,
+    url: siteUrl('/'),
+    logo: SITE_CONFIG.logoUrl,
+    description: 'Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.',
+    sameAs: [] as string[],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
-      email: 'support@calculatecreator.com',
-      url: 'https://calculatecreator.com/contact/',
+      availableLanguage: 'English',
     },
   };
 
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://calculatecreator.com/#website',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com/',
-    description: 'Calculate TikTok earnings from Creator Fund, brand deals, LIVE gifts, and Shop commissions. 35+ free calculators with transparent methodology.',
+    '@id': `${SITE_CONFIG.url}/#website`,
+    name: 'TikTok Calculator — Free TikTok Earnings & Engagement Calculator',
+    url: siteUrl('/'),
+    description: 'Free TikTok calculator to estimate earnings per view, engagement rate, brand deal rates, RPM, LIVE gift revenue, and TikTok Shop commissions. 35+ calculators with transparent methodology.',
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: SITE_CONFIG.name,
     },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://calculatecreator.com/search?q={search_term_string}',
+        urlTemplate: `${SITE_CONFIG.url}/search?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -59,50 +56,50 @@ export function HomepageSchema() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'How much do TikTok creators earn per 1,000 views?',
+        name: 'How accurate is the TikTok calculator?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TikTok Creator Fund pays $0.02-$0.04 per 1,000 views ($20-$40 per million views). Your exact RPM depends on engagement rate, content niche, audience location, and video completion rate. Use our Creator Fund Calculator for personalized estimates based on your metrics.',
+          text: 'Our TikTok calculator provides directional estimates based on your actual metrics and commonly reported payout ranges. Results reflect what creators in similar niches and follower tiers typically report. Each calculator shows its assumptions and methodology so you can evaluate the estimate.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How does TikTok RPM work and how can I increase it?',
+        name: 'How does the TikTok money calculator estimate earnings?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'RPM (Revenue Per Mille) measures earnings per 1,000 views. Higher engagement rates, longer watch times, premium content niches (finance, tech), and audiences in high-CPM countries increase your RPM. Our RPM Calculator and optimization guides show you exactly how to maximize your rate.',
+          text: 'The TikTok money calculator combines your view count, engagement rate, content niche, and audience geography to estimate earnings across Creator Fund payouts ($0.02-$0.05 per 1,000 views), brand deals, LIVE gifts, and TikTok Shop commissions. Each revenue stream is calculated separately with transparent methodology.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How do LIVE gifts convert to real money?',
+        name: 'Is this TikTok calculator really free?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TikTok LIVE viewers send virtual gifts purchased with coins. Creators receive diamonds (50% conversion rate) which convert to cash at $0.005 per diamond. A Rose (1 coin) = 0.5 diamonds = $0.0025. Use our Diamond Converter and LIVE Gifts Calculator to estimate potential earnings.',
+          text: 'Yes. All 35+ TikTok calculators are completely free with no signup, no email gate, and no usage limits. Your inputs stay in your browser and are never stored or shared.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How do TikTok Shop commissions pay out?',
+        name: 'What TikTok calculators are available?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'TikTok Shop affiliates earn 5-20% commission on product sales depending on category. Commissions are paid 7-14 days after order confirmation. Our Shop Commission Calculator helps you estimate earnings based on product price, commission rate, and expected sales volume.',
+          text: 'We offer 35+ free TikTok calculators including: TikTok Money Calculator, Engagement Rate Calculator, Brand Deal Rate Calculator, RPM Calculator, Creator Fund Calculator, Coin Converter, LIVE Gift Calculator, Diamond Converter, Shop Commission Calculator, Follower Growth Calculator, Viral Potential Calculator, Watch Time Calculator, and more.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What factors influence TikTok earnings the most?',
+        name: 'How much does TikTok pay per 1 million views?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The five most important factors are: (1) Engagement rate (comments/shares matter more than likes), (2) Content niche (finance/tech pay 2-3x more than entertainment), (3) Audience geography (US/UK audiences pay higher CPMs), (4) Video completion rate (longer watch time = higher RPM), and (5) Posting consistency (1-3 videos daily maximizes views).',
+          text: 'TikTok Creator Fund pays $20-$50 per million views depending on engagement, niche, and audience geography. Brand deals for the same 1 million views can generate $500-$2,500+. Use the TikTok money calculator to see total earning potential across all revenue streams.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How much does 1 million TikTok views actually pay?',
+        name: 'How often is the TikTok calculator updated?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Creator Fund: $20-$40 per million views. Brand deals: $500-$2,500+ depending on engagement. The same 1 million views can generate 10-50x more revenue through sponsorships than Creator Fund alone. Our TikTok Money Calculator shows total earning potential across all streams.',
+          text: 'We update TikTok calculator assumptions when TikTok changes its payout structure, Creator Fund rates, or monetization rules. Benchmark data is reviewed regularly against the latest reported creator earnings in 2026.',
         },
       },
     ],
@@ -116,7 +113,7 @@ export function HomepageSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: siteUrl('/'),
       },
     ],
   };
@@ -124,9 +121,9 @@ export function HomepageSchema() {
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': 'https://calculatecreator.com/#calculator-list',
-    name: 'TikTok Earnings Calculators',
-    description: 'Free calculators for TikTok creators to estimate earnings from Creator Fund, brand deals, LIVE gifts, and more.',
+    '@id': `${SITE_CONFIG.url}/#calculator-list`,
+    name: 'TikTok Calculator — All Free TikTok Calculators',
+    description: 'Free TikTok calculator suite: estimate TikTok earnings, engagement rate, brand deal rates, Creator Fund payouts, LIVE gift revenue, and more.',
     numberOfItems: PRIMARY_CALCULATOR_SLUGS.length,
     itemListElement: PRIMARY_CALCULATOR_SLUGS.map((slug, index) => {
       const config = CALCULATOR_SCHEMAS[slug];
@@ -134,10 +131,10 @@ export function HomepageSchema() {
         '@type': 'ListItem',
         position: index + 1,
         item: {
-          '@type': 'WebApplication',
+          '@type': 'SoftwareApplication',
           name: config?.name || slug,
           description: config?.description || '',
-          url: `https://calculatecreator.com/calculators/${slug}/`,
+          url: siteUrl(`/calculators/${slug}`),
           applicationCategory: 'FinanceApplication',
           operatingSystem: 'Web',
           offers: {
@@ -153,12 +150,12 @@ export function HomepageSchema() {
   const collectionPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    '@id': 'https://calculatecreator.com/#collection',
-    name: 'TikTok Creator Calculator Hub',
-    description: 'Comprehensive collection of free TikTok earnings calculators for creators to maximize their income potential.',
-    url: 'https://calculatecreator.com/',
+    '@id': `${SITE_CONFIG.url}/#collection`,
+    name: 'TikTok Calculator Hub — Free Creator Tools',
+    description: 'Comprehensive TikTok calculator collection: 35+ free tools to estimate TikTok earnings, engagement rate, brand deal pricing, and growth metrics.',
+    url: siteUrl('/'),
     isPartOf: {
-      '@id': 'https://calculatecreator.com/#website',
+      '@id': `${SITE_CONFIG.url}/#website`,
     },
     about: {
       '@type': 'Thing',
@@ -166,7 +163,7 @@ export function HomepageSchema() {
       description: 'Tools and calculators for TikTok content creators to estimate and optimize their earnings.',
     },
     mainEntity: {
-      '@id': 'https://calculatecreator.com/#calculator-list',
+      '@id': `${SITE_CONFIG.url}/#calculator-list`,
     },
     keywords: [
       'TikTok calculator',

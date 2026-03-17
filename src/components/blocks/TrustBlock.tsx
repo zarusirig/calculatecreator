@@ -14,7 +14,7 @@ const trustPoints = [
   },
   {
     title: 'Updated frequency',
-    body: 'Benchmarks and assumptions are reviewed weekly to keep estimates relevant.',
+    body: 'Benchmarks and assumptions are revised when methodology, source material, or platform rules materially change.',
     icon: RefreshCcw,
   },
 ];

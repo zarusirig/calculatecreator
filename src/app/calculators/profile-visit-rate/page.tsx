@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok profile visit rate from video views. Benchmark against top creators and optimize your content to drive more profile visits.",
   keywords: ['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator', 'profile conversion'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/profile-visit-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/profile-visit-rate/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function ProfileVisitRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Profile Visit Rate Calculator"
         description="Calculate your TikTok profile visit rate. Measure how many viewers check your profile after watching your content."
-        url="https://calculatecreator.com/calculators/profile-visit-rate/"
+        url="https://tiktokcalculator.net/calculators/profile-visit-rate/"
         datePublished="2024-04-10"
         dateModified="2026-03-01"
         keywords={['profile visit rate', 'tiktok profile views', 'profile click rate', 'bio click calculator']}
@@ -78,9 +78,9 @@ export default function ProfileVisitRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Profile Visit Rate Calculator', url: 'https://calculatecreator.com/calculators/profile-visit-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Profile Visit Rate Calculator', url: 'https://tiktokcalculator.net/calculators/profile-visit-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

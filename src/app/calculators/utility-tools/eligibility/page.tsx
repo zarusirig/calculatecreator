@@ -291,7 +291,7 @@ export default function EligibilityCalculatorPage() {
             </div>
             <div className="mt-6 p-4 bg-primary-50 rounded-lg border border-primary-200">
               <p className="text-body-sm text-neutral-800">
-                <strong>Strategy Tip:</strong> Start with TikTok Shop (no minimums) and LIVE Gifts (1K followers) while working toward Creator Rewards eligibility (10K followers + invitation). Diversifying across multiple programs maximizes income stability. Use our <Link href="/calculators/earnings-revenue/money/" className="text-primary-600 hover:text-primary-700 underline">Money Calculator</Link> to estimate total earnings potential across all programs.
+                <strong>Strategy Tip:</strong> Start with TikTok Shop (no minimums) and LIVE Gifts (1K followers) while working toward Creator Rewards eligibility (10K followers + invitation). Diversifying across multiple programs maximizes income stability. Use our <Link href="/calculators/tiktok-money/" className="text-primary-600 hover:text-primary-700 underline">Money Calculator</Link> to estimate total earnings potential across all programs.
               </p>
             </div>
           </Card>
@@ -479,7 +479,7 @@ export default function EligibilityCalculatorPage() {
             <Card className="p-8 mb-12">
               <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/calculators/earnings-revenue/creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+                <Link href="/calculators/tiktok-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                   <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Calculator</h4>
                   <p className="text-body-sm text-neutral-700">Estimate monthly earnings from the Creator Fund</p>
                 </Link>
@@ -533,7 +533,7 @@ export default function EligibilityCalculatorPage() {
                 'Meeting all requirements does not guarantee approval as TikTok reviews applications individually',
               ]}
               relatedContent={[
-                { title: 'Creator Fund Calculator', href: '/calculators/earnings-revenue/creator-fund/' },
+                { title: 'Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
                 { title: 'LIVE Earnings Calculator', href: '/calculators/earnings-revenue/live-earnings/' },
                 { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
               ]}

@@ -1,8 +1,8 @@
 // Service Worker for TikTok Creator Calculator
 // Implements caching for better performance and offline functionality
 
-const CACHE_NAME = 'tiktok-calculator-v1';
-const STATIC_CACHE = 'tiktok-static-v1';
+const CACHE_NAME = 'tt-calculator-v1';
+const STATIC_CACHE = 'tt-static-v1';
 
 // Assets to cache immediately
 const STATIC_ASSETS = [

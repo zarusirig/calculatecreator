@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Estimate TikTok advertising costs for your business. Calculate budgets for in-feed ads, branded hashtags, TopView, and Spark Ads with 2026 pricing data.",
   keywords: ['tiktok ad cost calculator', 'tiktok advertising cost', 'tiktok cpm', 'tiktok ads budget', 'tiktok marketing cost', 'tiktok campaign calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/tiktok-ad-cost/',
+    canonical: 'https://tiktokcalculator.net/calculators/tiktok-ad-cost/',
   },
 };
 
@@ -78,7 +78,7 @@ export default function TikTokAdCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Cost Calculator"
         description="Estimate TikTok advertising costs based on your campaign goals, targeting, and ad format. Calculate CPM, CPC, and total budget."
-        url="https://calculatecreator.com/calculators/tiktok-ad-cost/"
+        url="https://tiktokcalculator.net/calculators/tiktok-ad-cost/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok ad cost', 'tiktok advertising', 'tiktok cpm', 'tiktok marketing budget']}
@@ -86,9 +86,9 @@ export default function TikTokAdCostCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'TikTok Ad Cost Calculator', url: 'https://calculatecreator.com/calculators/tiktok-ad-cost/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'TikTok Ad Cost Calculator', url: 'https://tiktokcalculator.net/calculators/tiktok-ad-cost/' },
         ]}
       />
 
@@ -130,6 +130,7 @@ export default function TikTokAdCostCalculatorPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">

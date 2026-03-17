@@ -1,0 +1,1497 @@
+{
+  "audit_date": "2026-02-20",
+  "site": "https://calculatecreator.com",
+  "total_pages_in_sitemap": 408,
+  "pages_audited": 13,
+  "overall_content_score": 68,
+
+  "page_scores": [
+    {
+      "url": "https://calculatecreator.com/",
+      "page_type": "homepage",
+      "score": 72,
+      "breakdown": {
+        "title_tag": {
+          "score": 11,
+          "max": 15,
+          "value": "TikTok Creator Calculators — Earnings, Engagement & Growth Tools | CalculateCreator",
+          "length": 82,
+          "issues": [
+            "Title is 82 characters — exceeds 60-char SERP limit, will truncate",
+            "Brand name at end gets clipped in SERPs",
+            "Primary keyword 'tiktok money calculator' not in title"
+          ]
+        },
+        "meta_description": {
+          "score": 8,
+          "max": 10,
+          "value": "Free TikTok creator calculators for earnings estimates, engagement benchmarks, and growth projections. Transparent assumptions, expert-reviewed methodology, updated weekly.",
+          "length": 167,
+          "issues": [
+            "At 167 chars, exceeds 155-char recommended max — will truncate in SERPs",
+            "No clear CTA (try, calculate, etc.)"
+          ]
+        },
+        "h1_tag": {
+          "score": 6,
+          "max": 10,
+          "value": "Know what your next 30 days can earn.",
+          "issues": [
+            "H1 is creative/branded but contains zero target keywords",
+            "No mention of TikTok, calculator, or earnings in H1",
+            "Search engines may not match this to 'tiktok money calculator' intent"
+          ]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Proper H1>H2>H3 nesting — well structured",
+            "10 H2s and 21 H3s provide strong topical signals",
+            "Minor: some H3s are author names rather than topical headings"
+          ]
+        },
+        "content_depth": {
+          "score": 11,
+          "max": 15,
+          "issues": [
+            "~1,000 words — adequate for homepage but thin vs. competitor homepages",
+            "Good coverage of calculator types, methodology, team, guides",
+            "Missing: comparison tables, data highlights, testimonials"
+          ]
+        },
+        "keyword_usage": {
+          "score": 5,
+          "max": 10,
+          "issues": [
+            "Target keywords NOT in first 100 words",
+            "'tiktok money calculator' absent from hero section",
+            "Keywords appear only in nav links and footer — not in body copy",
+            "No LSI terms like 'earnings estimate', 'creator income' in opening"
+          ]
+        },
+        "internal_links": {
+          "score": 10,
+          "max": 10,
+          "issues": [
+            "Excellent: ~58 internal links covering calculators, guides, data, comparisons",
+            "Good anchor text diversity and keyword relevance",
+            "Strong footer link architecture"
+          ]
+        },
+        "image_optimization": {
+          "score": 3,
+          "max": 10,
+          "issues": [
+            "Only 1 rendered image (logo) — no hero image, no illustrations",
+            "No width/height attributes on images",
+            "No loading='lazy' attributes detected",
+            "No OG image set (only Twitter image set)",
+            "No visual content to engage users or appear in image search"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean root URL, HTTPS, trailing slash consistent"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": [
+            "OG tags present but og:image missing",
+            "Twitter card present with image",
+            "OG description differs from meta description — may cause inconsistency"
+          ]
+        }
+      },
+      "top_fixes": [
+        "Shorten title to under 60 characters: 'TikTok Money Calculator & Creator Earnings Tools | CalculateCreator'",
+        "Add primary keywords to H1 or add visible intro text with 'tiktok money calculator'",
+        "Add hero image with proper alt text, dimensions, and lazy loading",
+        "Trim meta description to under 155 characters with a CTA",
+        "Set og:image explicitly"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/tiktok-money/",
+      "page_type": "calculator",
+      "score": 62,
+      "breakdown": {
+        "title_tag": {
+          "score": 5,
+          "max": 15,
+          "value": "TikTok Tiktok Money Calculator and Earnings Tool Guide",
+          "length": 55,
+          "issues": [
+            "CRITICAL: 'TikTok Tiktok' — duplicate/stutter keyword stuffing in title",
+            "Looks spammy to users and Google — hurts CTR",
+            "Missing year (2026) from title tag despite H1 having it",
+            "Title reads unnaturally — 'and Earnings Tool Guide' is generic"
+          ]
+        },
+        "meta_description": {
+          "score": 2,
+          "max": 10,
+          "value": "Use this TikTok tiktok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+          "length": 155,
+          "issues": [
+            "CRITICAL: 'TikTok tiktok' duplication again in description",
+            "Description appears truncated (ends with 'actionable next')",
+            "No CTA — no 'Try free', 'Calculate now', etc."
+          ]
+        },
+        "h1_tag": {
+          "score": 9,
+          "max": 10,
+          "value": "TikTok Money Calculator 2026",
+          "issues": [
+            "Good: contains primary keyword and year",
+            "Minor: could add 'Free' for CTR improvement"
+          ]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Well-structured H2>H3 hierarchy",
+            "7 H2 sections covering inputs, income streams, earnings tiers, FAQs",
+            "Good keyword distribution across headings"
+          ]
+        },
+        "content_depth": {
+          "score": 14,
+          "max": 15,
+          "issues": [
+            "~3,800 words — excellent depth for a calculator page",
+            "Covers income streams, follower tiers, earnings maximization, FAQs",
+            "Author bio and financial review sections add credibility"
+          ]
+        },
+        "keyword_usage": {
+          "score": 7,
+          "max": 10,
+          "issues": [
+            "Keyword present in H1 and schema markup",
+            "Partial presence in first 100 words (structured data, not prose)",
+            "Good LSI coverage: earnings, income, monetization, followers"
+          ]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Strong internal linking: Creator Fund, Brand Deal, LIVE Gifts calculators",
+            "Links to relevant guides (How to Make Money, Negotiate Deals)",
+            "Self-referential link (/calculators/tiktok-money/) should be removed"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "CRITICAL: Zero images on the page",
+            "No screenshots, charts, or visual aids for a calculator tool",
+            "Missed opportunity for image search traffic and user engagement",
+            "No OG image set — social shares will have no preview"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean, keyword-rich URL: /calculators/tiktok-money/"]
+        },
+        "social_meta": {
+          "score": 1,
+          "max": 5,
+          "issues": [
+            "CRITICAL: No OG tags found",
+            "No Twitter card tags found",
+            "Social shares will have poor/missing previews"
+          ]
+        }
+      },
+      "top_fixes": [
+        "URGENT: Fix title tag — remove 'Tiktok' duplication → 'TikTok Money Calculator 2026 — Estimate Your Creator Earnings'",
+        "URGENT: Fix meta description duplication and add CTA",
+        "URGENT: Add OG and Twitter card meta tags",
+        "Add at least one image (calculator screenshot, earnings chart) with alt text",
+        "Add primary keyword in natural prose in first paragraph"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/engagement-rate/",
+      "page_type": "calculator",
+      "score": 64,
+      "breakdown": {
+        "title_tag": {
+          "score": 7,
+          "max": 15,
+          "value": "TikTok Engagement Rate Calculator and Earnings Tool",
+          "length": 52,
+          "issues": [
+            "Good length (52 chars) and keyword placement",
+            "'and Earnings Tool' is filler — this is not an earnings tool",
+            "Missing year for freshness signal"
+          ]
+        },
+        "meta_description": {
+          "score": 4,
+          "max": 10,
+          "value": "Use this TikTok engagement rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
+          "length": 153,
+          "issues": [
+            "Generic template description — same pattern as money calculator",
+            "Truncated ending ('actionable')",
+            "Says 'estimate earnings' but this is an engagement calculator"
+          ]
+        },
+        "h1_tag": {
+          "score": 9,
+          "max": 10,
+          "value": "TikTok Engagement Rate Calculator 2026",
+          "issues": ["Contains primary keyword and year — strong"]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Well-structured hierarchy with 7 H2s and topical H3s"]
+        },
+        "content_depth": {
+          "score": 12,
+          "max": 15,
+          "issues": [
+            "~3,000 words — good depth",
+            "Covers benchmarks, niche data, boost strategies, brand deal impact"
+          ]
+        },
+        "keyword_usage": {
+          "score": 7,
+          "max": 10,
+          "issues": [
+            "'Engagement rate' in opening paragraph but exact phrase 'engagement rate calculator' not in first 100 words",
+            "Good LSI terms throughout"
+          ]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Strong links to related calculators and guides", "~30+ internal links"]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — only SVG icons",
+            "No charts showing engagement rate benchmarks visually",
+            "No OG image"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword-rich URL"]
+        },
+        "social_meta": {
+          "score": 1,
+          "max": 5,
+          "issues": ["No OG tags or Twitter cards detected"]
+        }
+      },
+      "top_fixes": [
+        "Fix meta description — make specific to engagement rate, not generic earnings template",
+        "Add year to title tag for freshness",
+        "Add OG tags and Twitter card meta",
+        "Add visual content: engagement rate chart by follower tier",
+        "Add exact keyword phrase in first 100 words of body text"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/coins/",
+      "page_type": "calculator",
+      "score": 65,
+      "breakdown": {
+        "title_tag": {
+          "score": 8,
+          "max": 15,
+          "value": "TikTok Coins Calculator and Earnings Tool Guide 2026",
+          "length": 53,
+          "issues": [
+            "Good length and contains keyword + year",
+            "'Earnings Tool Guide' is filler — coins calculator is not primarily an earnings tool"
+          ]
+        },
+        "meta_description": {
+          "score": 3,
+          "max": 10,
+          "value": "Not explicitly visible (schema fallback: Calculate TikTok coin values, convert coins to USD and diamonds...)",
+          "issues": [
+            "Meta description may not be rendering properly in HTML head",
+            "Schema description is good but may not be what Google picks up"
+          ]
+        },
+        "h1_tag": {
+          "score": 9,
+          "max": 10,
+          "value": "TikTok Coins Calculator 2026",
+          "issues": ["Strong — keyword + year"]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Good H2>H3 structure with 8 H2s covering coin bundles, gift values, buying tips"]
+        },
+        "content_depth": {
+          "score": 12,
+          "max": 15,
+          "issues": [
+            "~3,000 words — good depth",
+            "Covers coin pricing, bundles, gift values, buying tips, FAQs"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": ["'TikTok coins' appears in first 100 words — strong keyword placement"]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Good cross-linking to Diamond Converter, LIVE Gifts, Money Calculator, and guides"]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — no gift value charts, coin pricing visuals",
+            "Massive missed opportunity for visual coin/gift guides"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean short URL"]
+        },
+        "social_meta": {
+          "score": 1,
+          "max": 5,
+          "issues": ["No OG tags or Twitter card tags"]
+        }
+      },
+      "top_fixes": [
+        "Add explicit meta description tag in page metadata",
+        "Remove 'Earnings Tool Guide' filler from title — try 'TikTok Coins Calculator 2026 — Convert Coins to USD'",
+        "Add OG + Twitter card meta tags",
+        "Add visual coin pricing chart and gift value images with alt text",
+        "Verify meta description is rendering in HTML head"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/earnings-revenue/",
+      "page_type": "calculator_hub",
+      "score": 67,
+      "breakdown": {
+        "title_tag": {
+          "score": 6,
+          "max": 15,
+          "value": "TikTok Earnings Revenue Calculator and Earnings Tool",
+          "length": 53,
+          "issues": [
+            "'Earnings' appears twice — 'Earnings Revenue' and 'Earnings Tool'",
+            "Not a natural search phrase",
+            "Missing year"
+          ]
+        },
+        "meta_description": {
+          "score": 3,
+          "max": 10,
+          "issues": [
+            "Meta description not explicitly visible in page markup",
+            "May not be rendering properly"
+          ]
+        },
+        "h1_tag": {
+          "score": 7,
+          "max": 10,
+          "value": "Earnings & Revenue Calculators",
+          "issues": [
+            "Missing 'TikTok' keyword in H1",
+            "Good as hub page heading but should include primary entity"
+          ]
+        },
+        "heading_hierarchy": {
+          "score": 10,
+          "max": 10,
+          "issues": ["Excellent structure with 10 H2s and 19 H3s covering all revenue streams"]
+        },
+        "content_depth": {
+          "score": 12,
+          "max": 15,
+          "issues": [
+            "~3,000 words with strong coverage of LIVE, Creator Fund, Shop, Brand Deals",
+            "2026 earnings landscape section adds freshness"
+          ]
+        },
+        "keyword_usage": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "'TikTok earnings' in first 100 words",
+            "Good LSI coverage across revenue streams"
+          ]
+        },
+        "internal_links": {
+          "score": 10,
+          "max": 10,
+          "issues": ["Strong hub linking: 6+ calculator links, guides, and data pages"]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": ["Zero images on page"]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean hierarchical URL"]
+        },
+        "social_meta": {
+          "score": 1,
+          "max": 5,
+          "issues": ["No OG or Twitter card tags"]
+        }
+      },
+      "top_fixes": [
+        "Fix title: 'TikTok Earnings Calculator 2026 — Revenue Estimator Tools'",
+        "Add 'TikTok' to H1: 'TikTok Earnings & Revenue Calculators'",
+        "Add OG and Twitter card meta tags",
+        "Add revenue comparison chart image",
+        "Ensure meta description renders in HTML head"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/brand-deal-rate/",
+      "page_type": "calculator",
+      "score": 66,
+      "breakdown": {
+        "title_tag": {
+          "score": 7,
+          "max": 15,
+          "value": "TikTok Brand Deal Rate Calculator and Earnings Tool",
+          "length": 52,
+          "issues": [
+            "Good keyword placement",
+            "'and Earnings Tool' is generic filler",
+            "Missing year"
+          ]
+        },
+        "meta_description": {
+          "score": 3,
+          "max": 10,
+          "issues": ["Not explicitly visible — may not be rendering"]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "TikTok Brand Deal Rate Calculator 2026",
+          "issues": ["Perfect — keyword + year"]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Well-structured with 8 H2s covering rates, niches, negotiation, deliverables"]
+        },
+        "content_depth": {
+          "score": 14,
+          "max": 15,
+          "issues": [
+            "~4,000 words — excellent depth",
+            "Covers rates by follower count, niche, negotiation tips, deliverable pricing"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": ["'Brand deal' in first 15 words — excellent placement"]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": ["Strong links to pricing guide, engagement calculator, money calculator"]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": ["Zero images — no rate card visuals"]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword-rich URL"]
+        },
+        "social_meta": {
+          "score": 1,
+          "max": 5,
+          "issues": ["No OG or Twitter card tags"]
+        }
+      },
+      "top_fixes": [
+        "Remove 'and Earnings Tool' from title, add year: 'TikTok Brand Deal Rate Calculator 2026 — What to Charge'",
+        "Add explicit meta description",
+        "Add OG + Twitter card meta tags",
+        "Add rate card visual/infographic with alt text",
+        "Self-referential link to /calculators/brand-deal-rate/ should be removed"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/guides/monetization/how-to-make-money-tiktok/",
+      "page_type": "guide",
+      "score": 79,
+      "breakdown": {
+        "title_tag": {
+          "score": 13,
+          "max": 15,
+          "value": "How to Make Money on TikTok — Complete 2026 Guide",
+          "length": 50,
+          "issues": [
+            "Excellent: keyword in first half, year for freshness, within 60 chars",
+            "Minor: could add power word for CTR"
+          ]
+        },
+        "meta_description": {
+          "score": 9,
+          "max": 10,
+          "value": "Learn every way to make money on TikTok in 2026. From Creator Rewards to brand deals, live gifts, TikTok Shop, and affiliate marketing — with real earnings data.",
+          "length": 161,
+          "issues": [
+            "Slightly over 155 chars — may truncate last few words",
+            "Strong CTA and benefit-driven"
+          ]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "How to Make Money on TikTok — Complete 2026 Guide",
+          "issues": ["Perfect — matches title, contains keyword and year"]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "8 H2s and 8 H3s — well-structured",
+            "Each monetization method gets its own H2 section"
+          ]
+        },
+        "content_depth": {
+          "score": 13,
+          "max": 15,
+          "issues": [
+            "~4,000 words — strong comprehensive guide",
+            "Covers all major monetization methods with specific numbers"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "'make money on TikTok' in first 100 words",
+            "Good natural keyword density throughout"
+          ]
+        },
+        "internal_links": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "Good calculator links but could add more data page references",
+            "Double slash issue: /calculators/tiktok-money// (trailing slash bug)"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Only logo image — no guide illustrations",
+            "Missing screenshots, infographics, earnings charts"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean hierarchical URL with keyword"]
+        },
+        "social_meta": {
+          "score": 2,
+          "max": 5,
+          "issues": [
+            "OG and Twitter tags not explicitly found in markup",
+            "JSON-LD has equivalent data but may not render as social previews"
+          ]
+        }
+      },
+      "top_fixes": [
+        "Add images — monetization comparison chart, income breakdown visual",
+        "Fix double-slash URLs in internal links (/calculators/tiktok-money//)",
+        "Add explicit OG and Twitter card meta tags",
+        "Trim meta description to under 155 characters",
+        "Add more internal links to data pages (earnings per view, RPM by niche)"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/guides/growth/tiktok-algorithm-explained/",
+      "page_type": "guide",
+      "score": 80,
+      "breakdown": {
+        "title_tag": {
+          "score": 13,
+          "max": 15,
+          "value": "TikTok Algorithm Explained — How It Decides What Goes Viral",
+          "length": 59,
+          "issues": [
+            "Excellent: keyword in first half, under 60 chars, compelling",
+            "Good emotional hook with 'Goes Viral'"
+          ]
+        },
+        "meta_description": {
+          "score": 7,
+          "max": 10,
+          "value": "tiktok algorithm explained: Understand exactly how the TikTok algorithm works in 2026...",
+          "issues": [
+            "Starts with lowercase keyword — looks unnatural in SERPs",
+            "Appears truncated in source"
+          ]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "TikTok Algorithm Explained — How It Decides What Goes Viral",
+          "issues": ["Perfect match with title, keyword prominent"]
+        },
+        "heading_hierarchy": {
+          "score": 10,
+          "max": 10,
+          "issues": [
+            "6 H2s and 11 H3s — excellent logical structure",
+            "Covers mechanics, ranking signals, distribution, penalties, strategies"
+          ]
+        },
+        "content_depth": {
+          "score": 13,
+          "max": 15,
+          "issues": [
+            "~3,900 words — comprehensive",
+            "Covers technical details, ranking signals, viral mechanics, 2026 changes"
+          ]
+        },
+        "keyword_usage": {
+          "score": 7,
+          "max": 10,
+          "issues": [
+            "'TikTok algorithm' not in first 100 words of body text",
+            "First paragraph discusses video evaluation without naming the algorithm",
+            "Keyword appears in second paragraph"
+          ]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Good links to Engagement Rate, Viral Potential, Watch Time calculators",
+            "Links to related growth guides"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Only logo image",
+            "Missing: algorithm flowchart, distribution diagram, ranking signal visual"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword-rich URL"]
+        },
+        "social_meta": {
+          "score": 5,
+          "max": 5,
+          "issues": [
+            "Full OG tags present with image dimensions",
+            "OG image set with width/height/alt"
+          ]
+        }
+      },
+      "top_fixes": [
+        "Add keyword 'TikTok algorithm' to first paragraph",
+        "Fix meta description — capitalize start, ensure full rendering",
+        "Add visual content: algorithm flowchart, distribution phases diagram",
+        "Add 'Updated for 2026' or year to visible article area",
+        "Consider adding FAQ schema for common algorithm questions"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/guides/growth/best-posting-times-tiktok/",
+      "page_type": "guide",
+      "score": 58,
+      "breakdown": {
+        "title_tag": {
+          "score": 4,
+          "max": 15,
+          "value": "best time to post tiktok - Best Posting Times for TikTok by",
+          "length": 60,
+          "issues": [
+            "CRITICAL: Keyword prepended in lowercase — 'best time to post tiktok - Best Posting Times...'",
+            "Looks spammy and unprofessional in SERPs",
+            "Title truncated — full title likely longer",
+            "Caused by normalizeSeoTitle() function prepending primaryKeyword"
+          ]
+        },
+        "meta_description": {
+          "score": 5,
+          "max": 10,
+          "value": "Best Posting Times for TikTok by Region and Niche. Best time to post tiktok with data, benchmarks, and expert analysis. Includes benchmarks, monetization",
+          "issues": [
+            "Keyword stuffed at beginning",
+            "'benchmarks' appears twice",
+            "Truncated ending",
+            "Template-generated feel"
+          ]
+        },
+        "h1_tag": {
+          "score": 9,
+          "max": 10,
+          "value": "Best Posting Times for TikTok by Region and Niche",
+          "issues": ["Good: descriptive and keyword-rich"]
+        },
+        "heading_hierarchy": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "8 H2s covering US, UK, AU audiences + niche variation + analytics",
+            "Only 2 H3s — could benefit from more subtopics"
+          ]
+        },
+        "content_depth": {
+          "score": 8,
+          "max": 15,
+          "issues": [
+            "~1,900 words — on the thin side for a competitive keyword",
+            "Competitors typically have 3,000+ words on this topic",
+            "Missing: specific time charts per niche, seasonal variation"
+          ]
+        },
+        "keyword_usage": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "'Best time to post on TikTok' in first sentence — good",
+            "Natural keyword usage throughout"
+          ]
+        },
+        "internal_links": {
+          "score": 7,
+          "max": 10,
+          "issues": [
+            "Links to algorithm guide, posting time calculator, engagement calculator",
+            "Double-slash bug: /calculators/posting-time//",
+            "Could add links to niche-specific guides"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — no time zone charts, schedule visuals",
+            "Huge missed opportunity for visual posting schedule"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword URL"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": [
+            "OG and Twitter card present",
+            "But titles inherit the broken keyword-prepended format"
+          ]
+        }
+      },
+      "top_fixes": [
+        "URGENT: Fix normalizeSeoTitle() to not prepend lowercase keyword before title",
+        "Expand content to 3,000+ words — add niche-specific timing data",
+        "Add posting schedule infographic/chart images",
+        "Fix double-slash in CTA links",
+        "Rewrite meta description to be unique and compelling"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/blog/best-tiktok-niches-money-2026/",
+      "page_type": "blog",
+      "score": 64,
+      "breakdown": {
+        "title_tag": {
+          "score": 4,
+          "max": 15,
+          "value": "best tiktok niches 2026 - Best TikTok Niches for Making",
+          "length": 56,
+          "issues": [
+            "CRITICAL: Same keyword prepending bug — lowercase keyword before title",
+            "Looks spammy: 'best tiktok niches 2026 - Best TikTok Niches for Making'",
+            "Truncated — user sees duplicate keywords in SERP"
+          ]
+        },
+        "meta_description": {
+          "score": 5,
+          "max": 10,
+          "value": "Best TikTok Niches for Making Money in 2026. Best tiktok niches 2026 with data, benchmarks, and expert analysis. Includes benchmarks, monetization",
+          "issues": [
+            "Keyword repetition",
+            "'benchmarks' appears twice",
+            "Template-generated — not unique or compelling"
+          ]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "Best TikTok Niches for Making Money in 2026",
+          "issues": ["Excellent — keyword + year + clear intent"]
+        },
+        "heading_hierarchy": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "5 H2s and 5 H3s — adequate but could be deeper",
+            "Good coverage of RPM, brand deals, emerging niches"
+          ]
+        },
+        "content_depth": {
+          "score": 10,
+          "max": 15,
+          "issues": [
+            "~2,500 words — adequate but thin for this competitive keyword",
+            "Competitors have 4,000+ words with individual niche deep-dives"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": ["'best TikTok niches' in first 40 words — excellent"]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Strong: links to niche profitability calculator, earnings data, and monetization guides",
+            "Double-slash issue in CTA links"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Only logo image",
+            "Missing niche comparison charts, RPM visuals"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Good: keyword + year in URL"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": [
+            "OG and Twitter card present",
+            "Titles inherit broken keyword-prepended format"
+          ]
+        }
+      },
+      "top_fixes": [
+        "URGENT: Fix title tag — stop prepending keyword",
+        "Expand content to 3,500+ words with individual niche sections",
+        "Add niche comparison chart image",
+        "Rewrite meta description to be unique",
+        "Fix double-slash CTA links"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/blog/charli-damelio-tiktok-earnings/",
+      "page_type": "blog",
+      "score": 72,
+      "breakdown": {
+        "title_tag": {
+          "score": 11,
+          "max": 15,
+          "value": "How Charli D'Amelio Makes Money on TikTok — Earnings",
+          "length": 53,
+          "issues": [
+            "Good keyword placement and length",
+            "Truncated — missing 'Breakdown' from full title",
+            "Could be more SERP-compelling"
+          ]
+        },
+        "meta_description": {
+          "score": 6,
+          "max": 10,
+          "value": "How Charli D'Amelio Makes Money on TikTok — Earnings Breakdown. Charli damelio earnings with data, benchmarks, and expert analysis.",
+          "issues": [
+            "Starts strong but has template filler at end",
+            "'Charli damelio' lowercase in middle — looks odd"
+          ]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "How Charli D'Amelio Makes Money on TikTok — Earnings Breakdown",
+          "issues": ["Excellent — contains entity name and keyword"]
+        },
+        "heading_hierarchy": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "9 H2s and 3 H3s",
+            "Covers each income stream: brand deals, businesses, Creator Rewards, LIVE, merch"
+          ]
+        },
+        "content_depth": {
+          "score": 8,
+          "max": 15,
+          "issues": [
+            "~1,600 words — thin for a celebrity earnings breakdown",
+            "Competitors have 3,000+ with more specific data points",
+            "Missing: timeline of earnings growth, comparisons with other creators"
+          ]
+        },
+        "keyword_usage": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "Entity name in first sentence — good",
+            "Good coverage of related terms: brand deals, sponsorships, revenue"
+          ]
+        },
+        "internal_links": {
+          "score": 10,
+          "max": 10,
+          "issues": [
+            "Excellent: 15+ unique internal links to relevant calculators, guides, and data",
+            "Natural anchor text variation"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — needs Charli-related infographic or earnings chart",
+            "Celebrity content without images ranks poorly"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword URL"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": [
+            "OG and Twitter card present",
+            "Generic hero image instead of article-specific image"
+          ]
+        }
+      },
+      "top_fixes": [
+        "Expand content to 2,500+ words with more specific earnings data",
+        "Add earnings breakdown infographic or chart image",
+        "Add timeline of Charli's earnings growth",
+        "Create unique social share image for this article",
+        "Fix lowercase keyword in meta description"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/data/earnings/average-tiktok-earnings-per-views/",
+      "page_type": "data",
+      "score": 61,
+      "breakdown": {
+        "title_tag": {
+          "score": 4,
+          "max": 15,
+          "value": "tiktok earnings per views - Average TikTok Earnings Per 1K",
+          "length": 59,
+          "issues": [
+            "CRITICAL: Keyword prepending bug again",
+            "Lowercase 'tiktok earnings per views' looks spammy",
+            "Truncated title"
+          ]
+        },
+        "meta_description": {
+          "score": 5,
+          "max": 10,
+          "value": "Average TikTok Earnings Per 1K 10K 100K 1M Views. Tiktok earnings per views with data, benchmarks...",
+          "issues": [
+            "Keyword repetition",
+            "Template-generated feel",
+            "'Tiktok' lowercase mid-sentence"
+          ]
+        },
+        "h1_tag": {
+          "score": 9,
+          "max": 10,
+          "value": "Average TikTok Earnings Per 1K 10K 100K 1M Views",
+          "issues": ["Good — covers multiple search intents with view count ranges"]
+        },
+        "heading_hierarchy": {
+          "score": 7,
+          "max": 10,
+          "issues": [
+            "5 H2s and 2 H3s — sparse for a data article",
+            "Could use more granular breakdowns"
+          ]
+        },
+        "content_depth": {
+          "score": 8,
+          "max": 15,
+          "issues": [
+            "~1,900 words — thin for high-value data content",
+            "Competitors have detailed tables, multiple data points, and 3,000+ words"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": ["'TikTok earnings per views' in first 100 words"]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Strong links to money calculator, creator fund calculator, multi-platform calculator",
+            "Links to related data pages (seasonal trends, advertising rates)"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — data articles desperately need charts and tables as images",
+            "Missing visual earnings breakdown"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean descriptive URL"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": ["OG and Twitter card present but with keyword-prepended titles"]
+        }
+      },
+      "top_fixes": [
+        "URGENT: Fix keyword-prepended title tag",
+        "Expand to 3,000+ words with more granular earnings data",
+        "Add earnings chart images with proper alt text",
+        "Fix template meta description — make unique and specific",
+        "Add more H3 subheadings for different view count tiers"
+      ]
+    },
+    {
+      "url": "https://calculatecreator.com/data/platform-comparisons/tiktok-vs-youtube-shorts-2026/",
+      "page_type": "data",
+      "score": 73,
+      "breakdown": {
+        "title_tag": {
+          "score": 12,
+          "max": 15,
+          "value": "TikTok vs YouTube Shorts — Complete 2026 Comparison",
+          "length": 52,
+          "issues": [
+            "Good: keyword in first half, year, compelling",
+            "Clean — no keyword prepending issue on this page"
+          ]
+        },
+        "meta_description": {
+          "score": 6,
+          "max": 10,
+          "value": "TikTok vs YouTube Shorts — Complete 2026 Comparison. Tiktok vs youtube shorts with data, benchmarks...",
+          "issues": [
+            "Second sentence repeats keyword in lowercase",
+            "Template filler at end"
+          ]
+        },
+        "h1_tag": {
+          "score": 10,
+          "max": 10,
+          "value": "TikTok vs YouTube Shorts — Complete 2026 Comparison",
+          "issues": ["Perfect — matches title, strong keyword placement"]
+        },
+        "heading_hierarchy": {
+          "score": 8,
+          "max": 10,
+          "issues": [
+            "5 H2s and 5 H3s covering monetization, reach, side-by-side, verdict",
+            "Clean logical structure"
+          ]
+        },
+        "content_depth": {
+          "score": 9,
+          "max": 15,
+          "issues": [
+            "~1,900 words — adequate but competitors go deeper",
+            "Could add more specific RPM comparisons, creator case studies"
+          ]
+        },
+        "keyword_usage": {
+          "score": 9,
+          "max": 10,
+          "issues": ["'TikTok vs YouTube Shorts' in first 100 words"]
+        },
+        "internal_links": {
+          "score": 9,
+          "max": 10,
+          "issues": [
+            "Good cross-linking to RPM calculator, money calculator, multi-platform tool",
+            "Links to related comparison and data pages"
+          ]
+        },
+        "image_optimization": {
+          "score": 1,
+          "max": 10,
+          "issues": [
+            "Zero images — comparison articles need side-by-side visuals",
+            "Missing comparison table as image for featured snippet potential"
+          ]
+        },
+        "url_structure": {
+          "score": 5,
+          "max": 5,
+          "issues": ["Clean keyword URL with year"]
+        },
+        "social_meta": {
+          "score": 4,
+          "max": 5,
+          "issues": [
+            "Full OG and Twitter card present",
+            "Generic hero image rather than comparison-specific graphic"
+          ]
+        }
+      },
+      "top_fixes": [
+        "Add comparison chart image with alt text",
+        "Expand to 2,500+ words with more granular data",
+        "Fix meta description — remove keyword repetition",
+        "Add creator case studies (someone who uses both platforms)",
+        "Create unique social share image for comparisons"
+      ]
+    }
+  ],
+
+  "eeat_analysis": {
+    "overall_score": "Moderate",
+    "experience": {
+      "score": "Weak",
+      "findings": [
+        "No first-hand creator experience documented on the site",
+        "Team described as 'monetization analysts, data researchers, editors' — not creators themselves",
+        "No creator testimonials or case studies from real users",
+        "No screenshots or evidence of using TikTok as creators",
+        "Author bios on articles (Sarah Johnson, Michael Chen) have titles but no verifiable credentials"
+      ],
+      "recommendations": [
+        "Add creator case studies with real earnings screenshots",
+        "Include first-person creator perspectives in guides",
+        "Feature guest posts from actual TikTok creators",
+        "Show 'tested by creators' badges on calculator pages"
+      ]
+    },
+    "expertise": {
+      "score": "Moderate",
+      "findings": [
+        "Author bylines present on articles (Sarah Johnson - Senior Creator Strategist, Michael Chen - Data Analyst)",
+        "Emily Thompson, CPA mentioned on homepage for financial review",
+        "Published methodology and editorial policy pages demonstrate process expertise",
+        "Calculator formulas and assumptions are transparent",
+        "No author pages with individual bios, credentials, or linked profiles"
+      ],
+      "recommendations": [
+        "Create individual author pages with full bios and credentials",
+        "Link author names to verifiable LinkedIn/Twitter profiles",
+        "Add 'Reviewed by [Expert]' badges to financial content",
+        "Publish data methodology details for each calculator"
+      ]
+    },
+    "authoritativeness": {
+      "score": "Weak",
+      "findings": [
+        "No press mentions, media citations, or awards documented",
+        "No user reviews or testimonials",
+        "No partnerships or endorsements from TikTok or industry bodies",
+        "No social proof metrics (user count, calculations performed)",
+        "Domain is relatively new — limited backlink authority"
+      ],
+      "recommendations": [
+        "Add 'As seen in' media logos if applicable",
+        "Display calculator usage counters",
+        "Seek citations from industry publications",
+        "Build resource pages that earn backlinks"
+      ]
+    },
+    "trustworthiness": {
+      "score": "Strong",
+      "findings": [
+        "HTTPS enabled across all pages",
+        "Privacy policy and Terms of Service present (200 status)",
+        "Contact page with email (contact@calculatecreator.com)",
+        "Editorial policy page with correction procedures",
+        "Advertising disclosure page exists",
+        "Sponsorship disclosure page exists",
+        "Methodology page with transparent data sources",
+        "Financial disclaimers on calculator pages",
+        "Tax information disclaimers present",
+        "Not affiliated with TikTok/ByteDance — clearly stated"
+      ],
+      "recommendations": [
+        "Add physical address or business registration",
+        "Add specific source citations with URLs in articles",
+        "Show 'Last verified' dates on data pages",
+        "Add SSL certificate details in footer"
+      ]
+    }
+  },
+
+  "content_decay": [
+    {
+      "url": "https://calculatecreator.com/guides/content-strategy-2025/",
+      "issue": "URL contains '2025' in slug — outdated year",
+      "severity": "high",
+      "details": "Title updated to '2026' but URL still says '2025'. Multiple internal references to 2025 remain (e.g., 'Hashtags That Hurt You in 2025'). Metadata keywords include 'tiktok growth strategy 2025'. Incomplete year refresh.",
+      "fix": "Create new /guides/content-strategy-2026/ URL, 301 redirect from 2025 version, and do complete year reference cleanup"
+    },
+    {
+      "url": "https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/",
+      "issue": "Outdated news article — December 2025 deadline has passed",
+      "severity": "high",
+      "details": "Article written September 2025 frames December 16, 2025 as future event. Uses forward-looking language that is now stale. Reader in 2026 finds guidance no longer applicable.",
+      "fix": "Add 'Update' banner at top noting outcome, link to latest ban status article, or noindex/archive"
+    },
+    {
+      "url": "https://calculatecreator.com/news/tiktok-ban-delayed-december-2025/",
+      "issue": "Published September 2025 — no update since",
+      "severity": "medium",
+      "details": "dateModified same as published. The TikTok ban situation has evolved significantly since September 2025."
+    },
+    {
+      "url": "https://calculatecreator.com/blog/charli-damelio-tiktok-earnings/",
+      "issue": "Thin content — only ~1,600 words for celebrity earnings topic",
+      "severity": "medium",
+      "details": "Celebrity earnings articles from competitors average 3,000+ words. Published Feb 17 2026 but may quickly become outdated as new deals are announced.",
+      "fix": "Expand to 2,500+ words with timeline data, add quarterly update schedule"
+    },
+    {
+      "url": "https://calculatecreator.com/guides/growth/best-posting-times-tiktok/",
+      "issue": "Thin content — only ~1,900 words for high-competition keyword",
+      "severity": "medium",
+      "details": "Competitors rank with 3,000-5,000 word articles including detailed charts. Missing niche-specific timing data.",
+      "fix": "Expand to 3,000+ words, add visual posting schedules"
+    },
+    {
+      "url": "https://calculatecreator.com/data/earnings/average-tiktok-earnings-per-views/",
+      "issue": "Thin data article — ~1,900 words with limited granularity",
+      "severity": "medium",
+      "details": "Data articles need more detailed tables, multiple view count tiers, and monthly update cadence to stay competitive.",
+      "fix": "Expand with per-niche earnings data, add quarterly data refreshes"
+    },
+    {
+      "url": "Multiple calculator pages",
+      "issue": "No 'last updated' date visible to users",
+      "severity": "medium",
+      "details": "Calculator pages like /calculators/tiktok-money/, /calculators/engagement-rate/, /calculators/coins/, /calculators/brand-deal-rate/ show no visible publication or update date. Users cannot verify data freshness.",
+      "fix": "Add visible 'Last updated: [date]' below calculator heading"
+    },
+    {
+      "url": "Site-wide (MDX articles)",
+      "issue": "normalizeSeoTitle() creates spammy keyword-prepended titles",
+      "severity": "critical",
+      "details": "Function in src/lib/content/article-page.tsx prepends primaryKeyword in lowercase when not found in title, creating patterns like 'best time to post tiktok - Best Posting Times for TikTok by'. Affects all MDX-generated articles where primaryKeyword differs from title wording. Creates duplicate keyword appearance that looks spammy to Google and users.",
+      "fix": "Rewrite normalizeSeoTitle() to either: (a) use the title as-is when it contains the topic naturally, or (b) append keyword naturally rather than prepending in lowercase"
+    }
+  ],
+
+  "serp_previews": [
+    {
+      "url": "https://calculatecreator.com/",
+      "title_display": "TikTok Creator Calculators — Earnings, Engagement & Growth ...",
+      "title_truncated": true,
+      "description_display": "Free TikTok creator calculators for earnings estimates, engagement benchmarks, and growth projections. Transparent assumptions, expert-reviewed ...",
+      "description_truncated": true,
+      "url_display": "calculatecreator.com",
+      "issues": ["Title truncates at ~60 chars losing brand name", "Description truncates losing last 12 chars"]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/tiktok-money/",
+      "title_display": "TikTok Tiktok Money Calculator and Earnings Tool Guide",
+      "title_truncated": false,
+      "description_display": "Use this TikTok tiktok money calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable ...",
+      "description_truncated": true,
+      "url_display": "calculatecreator.com > calculators > tiktok-money",
+      "issues": ["CRITICAL: 'TikTok Tiktok' duplication visible to searchers", "Looks like keyword stuffing — damages CTR", "Description also has 'TikTok tiktok' duplication"]
+    },
+    {
+      "url": "https://calculatecreator.com/calculators/engagement-rate/",
+      "title_display": "TikTok Engagement Rate Calculator and Earnings Tool",
+      "title_truncated": false,
+      "description_display": "Use this TikTok engagement rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks ...",
+      "description_truncated": true,
+      "url_display": "calculatecreator.com > calculators > engagement-rate",
+      "issues": ["'and Earnings Tool' is filler — this is an engagement tool not earnings", "Template description identical pattern to money calculator"]
+    },
+    {
+      "url": "https://calculatecreator.com/guides/monetization/how-to-make-money-tiktok/",
+      "title_display": "How to Make Money on TikTok — Complete 2026 Guide",
+      "title_truncated": false,
+      "description_display": "Learn every way to make money on TikTok in 2026. From Creator Rewards to brand deals, live gifts, TikTok Shop, and affiliate marketing — with real ...",
+      "description_truncated": true,
+      "url_display": "calculatecreator.com > guides > monetization > how-to-make-money-tiktok",
+      "issues": ["Best SERP preview of all audited pages", "Description slightly truncated but reads well"]
+    },
+    {
+      "url": "https://calculatecreator.com/guides/growth/tiktok-algorithm-explained/",
+      "title_display": "TikTok Algorithm Explained — How It Decides What Goes Viral",
+      "title_truncated": false,
+      "description_display": "tiktok algorithm explained: Understand exactly how the TikTok algorithm works in 2026. Learn the ranking signals, distribution phases, and ...",
+      "description_truncated": true,
+      "url_display": "calculatecreator.com > guides > growth > tiktok-algorithm-explained",
+      "issues": ["Description starts with lowercase keyword — looks unnatural in SERPs", "Otherwise strong title and preview"]
+    }
+  ],
+
+  "site_wide_issues": [
+    {
+      "issue": "Zero images across ALL calculator pages",
+      "severity": "critical",
+      "affected_pages": "All 6 calculator pages audited (and likely all calculator pages site-wide)",
+      "impact": "Missing image search traffic, poor visual engagement, no social share previews, CLS issues from missing dimensions",
+      "fix": "Add at least 1 hero image per calculator (screenshot, chart, infographic) with alt text, width/height, loading='lazy'"
+    },
+    {
+      "issue": "normalizeSeoTitle() creates spammy title tags on MDX articles",
+      "severity": "critical",
+      "affected_pages": "All MDX-generated articles where primaryKeyword wording differs from title",
+      "impact": "Duplicate keyword appearance, lowercase keyword prepending, poor SERP CTR, possible Google spam signal",
+      "fix": "Rewrite normalizeSeoTitle() in src/lib/content/article-page.tsx"
+    },
+    {
+      "issue": "normalizeSeoDescription() creates template/repetitive meta descriptions",
+      "severity": "high",
+      "affected_pages": "All MDX-generated articles",
+      "impact": "Keyword repetition in descriptions, 'benchmarks' repeated, truncated endings, template-generated feel",
+      "fix": "Rewrite normalizeSeoDescription() to produce unique descriptions or require explicit metaDescription in frontmatter"
+    },
+    {
+      "issue": "Missing OG and Twitter card tags on calculator pages",
+      "severity": "high",
+      "affected_pages": "/calculators/tiktok-money/, /calculators/engagement-rate/, /calculators/coins/, /calculators/earnings-revenue/, /calculators/brand-deal-rate/",
+      "impact": "Poor social sharing previews, no image when shared on social media",
+      "fix": "Add OG and Twitter card meta tags in calculator page metadata exports"
+    },
+    {
+      "issue": "Double-slash bug in CTA internal links",
+      "severity": "medium",
+      "affected_pages": "Multiple guide and blog MDX articles",
+      "impact": "Links like /calculators/tiktok-money// may cause redirect chains or 404s",
+      "fix": "Strip trailing slash before appending path in CTA link generation"
+    },
+    {
+      "issue": "Generic 'and Earnings Tool' suffix in calculator titles",
+      "severity": "medium",
+      "affected_pages": "tiktok-money, engagement-rate, brand-deal-rate, coins calculator pages",
+      "impact": "Wastes title character space, confuses searcher about tool purpose",
+      "fix": "Replace with tool-specific descriptors or remove"
+    },
+    {
+      "issue": "No visible 'last updated' dates on calculator pages",
+      "severity": "medium",
+      "affected_pages": "All calculator pages",
+      "impact": "Users cannot verify data freshness, hurts trust signal",
+      "fix": "Add visible update date below H1 on calculator pages"
+    }
+  ],
+
+  "priority_fixes_list": [
+    {
+      "priority": 1,
+      "fix": "Fix normalizeSeoTitle() in src/lib/content/article-page.tsx — stop prepending lowercase keyword before title",
+      "impact": "Affects ALL MDX article pages (100+ pages), creates spammy SERP appearance",
+      "effort": "Low — single function change",
+      "pages_affected": "100+"
+    },
+    {
+      "priority": 2,
+      "fix": "Fix 'TikTok Tiktok' duplication in /calculators/tiktok-money/ title and description",
+      "impact": "Highest-traffic calculator page showing duplicate keyword to Google",
+      "effort": "Low — edit metadata string in page.tsx",
+      "pages_affected": 1
+    },
+    {
+      "priority": 3,
+      "fix": "Add OG and Twitter card meta tags to all calculator pages",
+      "impact": "5+ high-value pages missing social share metadata",
+      "effort": "Medium — add openGraph and twitter to each calculator page's metadata export",
+      "pages_affected": "5+"
+    },
+    {
+      "priority": 4,
+      "fix": "Fix normalizeSeoDescription() template patterns in article-page.tsx",
+      "impact": "Repetitive/spammy meta descriptions across all MDX articles",
+      "effort": "Low — single function change",
+      "pages_affected": "100+"
+    },
+    {
+      "priority": 5,
+      "fix": "Add images to all calculator pages — at least 1 chart/screenshot per page",
+      "impact": "Image search traffic, user engagement, social previews, CLS improvement",
+      "effort": "High — need to create/source images for each calculator",
+      "pages_affected": "40+"
+    },
+    {
+      "priority": 6,
+      "fix": "Fix double-slash bug in CTA links across MDX articles",
+      "impact": "Broken or redirected links across guide and blog articles",
+      "effort": "Low — fix URL concatenation in article template",
+      "pages_affected": "20+"
+    },
+    {
+      "priority": 7,
+      "fix": "Expand thin content: best-posting-times (1,900w), charli-damelio (1,600w), average-earnings-per-views (1,900w)",
+      "impact": "Three high-value pages underperforming vs competitors",
+      "effort": "Medium — content writing/expansion needed",
+      "pages_affected": 3
+    },
+    {
+      "priority": 8,
+      "fix": "Update/archive stale content: content-strategy-2025, tiktok-ban-delayed-december-2025",
+      "impact": "Outdated content hurts site-wide freshness signals",
+      "effort": "Low-Medium — add update banners, create redirects, refresh content",
+      "pages_affected": 2
+    },
+    {
+      "priority": 9,
+      "fix": "Add visible 'Last updated' dates on all calculator pages",
+      "impact": "User trust and freshness signals",
+      "effort": "Low — template change",
+      "pages_affected": "40+"
+    },
+    {
+      "priority": 10,
+      "fix": "Strengthen E-E-A-T: Create author pages, add verifiable credentials, include creator testimonials",
+      "impact": "Overall site authority for YMYL-adjacent financial content",
+      "effort": "High — need real author bios, testimonials, case studies",
+      "pages_affected": "Site-wide"
+    }
+  ]
+}

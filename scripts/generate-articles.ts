@@ -622,7 +622,7 @@ function buildFrontmatter(row: CsvRow): ArticleFrontmatter {
     priorityScore: Number(row.priorityScore) || 0,
     wordCount: Number(row.wordCount) || 2000,
     publishDate: today,
-    author: "CalculateCreator Team",
+    author: "TT Calculator Team",
     showCalculatorCTA: hasCalc,
     calculatorCTAType: hasCalc ? calculatorCTAType : undefined,
   };

@@ -1,0 +1,1204 @@
+{
+  "audit_date": "2026-02-20",
+  "site": "https://calculatecreator.com",
+  "total_pages": 408,
+
+  "current_coverage": {
+    "by_content_type": {
+      "calculators": {
+        "count": 70,
+        "description": "Interactive calculator tools and their supporting articles",
+        "includes_index_pages": true,
+        "examples": [
+          "/calculators/tiktok-money/",
+          "/calculators/engagement-rate/",
+          "/calculators/coins/",
+          "/calculators/brand-deal-rate/",
+          "/calculators/rpm/"
+        ]
+      },
+      "guides": {
+        "count": 98,
+        "description": "In-depth how-to guides, strategy content, and niche earnings guides",
+        "examples": [
+          "/guides/monetization/how-to-make-money-tiktok/",
+          "/guides/growth/tiktok-algorithm-explained/",
+          "/guides/niches/comedy-tiktok-earnings/",
+          "/guides/business/tiktok-creator-taxes-guide/"
+        ]
+      },
+      "blog": {
+        "count": 38,
+        "description": "News, opinion, timely updates, earnings reports",
+        "examples": [
+          "/blog/tiktok-ban-status-2026/",
+          "/blog/q1-2026-creator-earnings-report/",
+          "/blog/charli-damelio-tiktok-earnings/"
+        ]
+      },
+      "data": {
+        "count": 33,
+        "description": "Data pages, benchmarks, reference tables, country-specific data",
+        "examples": [
+          "/data/earnings/average-tiktok-earnings-per-views/",
+          "/data/engagement/avg-engagement-rate-follower-count-2026/",
+          "/data/platform-comparisons/tiktok-vs-youtube-shorts-2026/"
+        ]
+      },
+      "comparisons": {
+        "count": 8,
+        "description": "Head-to-head platform and income stream comparisons",
+        "examples": [
+          "/comparisons/tiktok-vs-instagram-income/",
+          "/comparisons/tiktok-vs-youtube-earnings/",
+          "/comparisons/creator-fund-vs-brand-deals/"
+        ]
+      },
+      "news": {
+        "count": 20,
+        "description": "TikTok platform news and feature updates",
+        "examples": [
+          "/news/creator-rewards-20x-earnings/",
+          "/news/tiktok-shop-europe-expansion/",
+          "/news/us-china-deal-tiktok-operational/"
+        ]
+      },
+      "reference": {
+        "count": 9,
+        "description": "Quick reference pages, charts, and schedules",
+        "examples": [
+          "/reference/live-gifts-value-chart/",
+          "/reference/creator-fund-countries/",
+          "/reference/shop-commission-rates/"
+        ]
+      },
+      "niches": {
+        "count": 4,
+        "description": "Niche-specific earnings overview pages",
+        "examples": [
+          "/niches/beauty-earnings/",
+          "/niches/finance-earnings/",
+          "/niches/fitness-earnings/"
+        ]
+      },
+      "resources": {
+        "count": 2,
+        "description": "Downloadable templates and resources",
+        "examples": [
+          "/resources/brand-deal-contract-template/",
+          "/resources/brand-deal-contract/"
+        ]
+      },
+      "localized_calculators": {
+        "count": 6,
+        "description": "Calculator pages in other languages (de, es, fr, it, my, pt-br)",
+        "examples": [
+          "/calculator/de/",
+          "/calculator/es/",
+          "/calculator/fr/"
+        ]
+      },
+      "utility_pages": {
+        "count": 14,
+        "description": "About, contact, FAQ, glossary, methodology, terms, privacy, search, sitemap, tools, benchmarks, bookmarks, editorial policy, compliance",
+        "examples": [
+          "/about/",
+          "/faq/",
+          "/glossary/",
+          "/methodology/"
+        ]
+      },
+      "advanced": {
+        "count": 2,
+        "description": "Advanced creator guides",
+        "examples": [
+          "/advanced/creator-tax-deductions-guide/",
+          "/advanced/creator-tax-deductions/"
+        ]
+      },
+      "metrics": {
+        "count": 3,
+        "description": "Metric-specific deep dives",
+        "examples": [
+          "/metrics/",
+          "/metrics/comments-to-likes-ratio/",
+          "/metrics/tiktok-comments-to-likes-ratio/"
+        ]
+      }
+    },
+
+    "by_topic_cluster": {
+      "earnings_money": {
+        "page_count": 62,
+        "strength": "very_strong",
+        "description": "TikTok earnings, money calculators, pay rates, income by followers/views/country",
+        "keywords_covered": [
+          "tiktok money calculator",
+          "tiktok earnings calculator",
+          "tiktok pay per 1000 views",
+          "tiktok pay per million views",
+          "how much tiktok pay",
+          "tiktok earnings by country",
+          "tiktok money 100k followers",
+          "tiktok money 1m followers",
+          "why tiktok earnings low"
+        ]
+      },
+      "engagement_rate": {
+        "page_count": 24,
+        "strength": "strong",
+        "description": "Engagement rate calculations, benchmarks, improvement strategies",
+        "keywords_covered": [
+          "tiktok engagement rate calculator",
+          "good tiktok engagement rate",
+          "engagement rate by followers",
+          "engagement rate by niche",
+          "increase engagement rate",
+          "engagement rate dropping"
+        ]
+      },
+      "coins_gifts_diamonds": {
+        "page_count": 18,
+        "strength": "strong",
+        "description": "TikTok coins, gifts, diamonds, conversions, prices",
+        "keywords_covered": [
+          "tiktok coin value usd",
+          "coins to dollars chart",
+          "how to buy tiktok coins",
+          "most expensive tiktok gifts",
+          "tiktok coin prices by country",
+          "tiktok diamond converter"
+        ]
+      },
+      "brand_deals_sponsorships": {
+        "page_count": 22,
+        "strength": "strong",
+        "description": "Brand deal pricing, negotiations, sponsorship rates, media kits",
+        "keywords_covered": [
+          "tiktok brand deal rates",
+          "tiktok sponsorship rates followers",
+          "tiktok media kit",
+          "brand deal red flags",
+          "brands calculate influencer roi",
+          "how to negotiate brand deals",
+          "how to price brand deals"
+        ]
+      },
+      "creator_fund_rewards": {
+        "page_count": 20,
+        "strength": "strong",
+        "description": "Creator Fund, Creator Rewards Program, eligibility, pay rates, payment schedules",
+        "keywords_covered": [
+          "tiktok creator fund",
+          "creator fund eligibility 2026",
+          "creator fund pay per view",
+          "creator rewards vs creator fund",
+          "maximize creator fund rpm",
+          "how to join creator fund"
+        ]
+      },
+      "tiktok_shop": {
+        "page_count": 14,
+        "strength": "moderate",
+        "description": "TikTok Shop calculator, commission rates, seller fees, affiliate, products",
+        "keywords_covered": [
+          "tiktok shop profit calculator",
+          "tiktok shop commission rates",
+          "tiktok shop seller fees",
+          "tiktok shop affiliate",
+          "best selling tiktok shop products"
+        ]
+      },
+      "live_streaming": {
+        "page_count": 14,
+        "strength": "moderate",
+        "description": "TikTok Live earnings, requirements, strategies, battles",
+        "keywords_covered": [
+          "tiktok live earnings per hour",
+          "tiktok live requirements",
+          "best times go live tiktok",
+          "tiktok live battles",
+          "get more viewers tiktok live"
+        ]
+      },
+      "rpm_cpm": {
+        "page_count": 10,
+        "strength": "moderate",
+        "description": "RPM/CPM rates, calculation guides, by country/niche",
+        "keywords_covered": [
+          "tiktok rpm calculator",
+          "tiktok rpm by country",
+          "tiktok cpm vs rpm",
+          "what is tiktok rpm",
+          "increase tiktok rpm"
+        ]
+      },
+      "growth_algorithm": {
+        "page_count": 28,
+        "strength": "strong",
+        "description": "Algorithm optimization, growth strategies, posting times, hashtags, SEO",
+        "keywords_covered": [
+          "tiktok algorithm explained",
+          "best posting times tiktok",
+          "tiktok hashtag strategy",
+          "tiktok seo search ranking",
+          "how to go viral tiktok",
+          "tiktok shadowban fix"
+        ]
+      },
+      "platform_comparisons": {
+        "page_count": 14,
+        "strength": "moderate",
+        "description": "TikTok vs YouTube, Instagram, Twitch comparisons",
+        "keywords_covered": [
+          "tiktok vs youtube earnings",
+          "tiktok vs instagram income",
+          "tiktok vs youtube shorts",
+          "tiktok vs instagram reels"
+        ]
+      },
+      "monetization_strategy": {
+        "page_count": 30,
+        "strength": "strong",
+        "description": "General monetization how-tos, income diversification, requirements",
+        "keywords_covered": [
+          "how to make money tiktok",
+          "monetization requirements",
+          "diversify income streams",
+          "first 1000 dollars tiktok",
+          "passive income tiktok"
+        ]
+      },
+      "niche_earnings": {
+        "page_count": 18,
+        "strength": "moderate",
+        "description": "Earnings by specific niche (comedy, food, gaming, beauty, etc.)",
+        "keywords_covered": [
+          "comedy tiktok earnings",
+          "food cooking tiktok earnings",
+          "gaming tiktok monetization",
+          "beauty tiktok earnings",
+          "education tiktok earnings"
+        ]
+      },
+      "business_legal": {
+        "page_count": 14,
+        "strength": "moderate",
+        "description": "Creator taxes, LLC setup, FTC disclosures, copyright, contracts",
+        "keywords_covered": [
+          "tiktok creator taxes",
+          "llc for tiktok creators",
+          "ftc disclosure tiktok",
+          "tiktok copyright fair use",
+          "brand deal contract"
+        ]
+      },
+      "ads_commerce": {
+        "page_count": 12,
+        "strength": "moderate",
+        "description": "TikTok ad costs, ad spend calculators, Spark Ads, campaign ROI",
+        "keywords_covered": [
+          "tiktok ad cost calculator",
+          "tiktok ad cost",
+          "campaign roi calculator",
+          "tiktok spark ads"
+        ]
+      },
+      "analytics_metrics": {
+        "page_count": 10,
+        "strength": "weak",
+        "description": "Analytics guides, watch time, video performance, completion rate",
+        "keywords_covered": [
+          "tiktok analytics guide",
+          "watch time metrics",
+          "video performance score",
+          "completion rate by video length"
+        ]
+      },
+      "follower_growth": {
+        "page_count": 6,
+        "strength": "weak",
+        "description": "Follower growth rate, milestones, conversion",
+        "keywords_covered": [
+          "follower growth rate normal",
+          "follower milestones unlocks",
+          "follower conversion"
+        ]
+      },
+      "news_updates": {
+        "page_count": 20,
+        "strength": "moderate",
+        "description": "TikTok ban updates, feature launches, policy changes",
+        "keywords_covered": [
+          "tiktok ban status 2026",
+          "tiktok algorithm update",
+          "tiktok new features 2026",
+          "tiktok shop expansion"
+        ]
+      },
+      "celebrity_creator_earnings": {
+        "page_count": 6,
+        "strength": "weak",
+        "description": "Specific creator earnings breakdowns",
+        "keywords_covered": [
+          "charli damelio tiktok earnings",
+          "khaby lame tiktok earnings",
+          "mrbeast tiktok strategy"
+        ]
+      }
+    },
+
+    "by_search_intent": {
+      "informational": {
+        "count": 245,
+        "percentage": "60%",
+        "description": "How-to guides, explanations, educational content, data pages"
+      },
+      "commercial_investigation": {
+        "count": 105,
+        "percentage": "26%",
+        "description": "Comparisons, benchmarks, rate guides, niche evaluations"
+      },
+      "transactional": {
+        "count": 44,
+        "percentage": "11%",
+        "description": "Calculator tools, converters, interactive tools, templates"
+      },
+      "navigational": {
+        "count": 14,
+        "percentage": "3%",
+        "description": "Homepage, about, contact, legal, sitemap"
+      }
+    }
+  },
+
+  "competitor_gaps": {
+    "exolyt": {
+      "domain": "https://exolyt.com",
+      "strengths": [
+        "Real-time TikTok analytics platform (SaaS tool, not just content)",
+        "Social listening features",
+        "Trend tracking with AI-powered insights",
+        "TikTok search engine feature",
+        "Influencer campaign management",
+        "Account-level analytics with data exports",
+        "YouTube Money Calculator (cross-platform)"
+      ],
+      "content_gaps_for_calculatecreator": [
+        "No real-time account analytics tool (Exolyt has live account analysis)",
+        "No social listening / brand mention tracking content",
+        "No TikTok trend tracking tool or page",
+        "No cross-platform YouTube money calculator",
+        "No data export / integration guides for creators"
+      ]
+    },
+    "tokcount": {
+      "domain": "https://tokcount.com",
+      "strengths": [
+        "Real-time follower counter (dominant for 'tiktok follower count' queries)",
+        "Live video view counter",
+        "Follower comparison tool",
+        "Individual creator profile pages (user-generated URLs)"
+      ],
+      "content_gaps_for_calculatecreator": [
+        "NO real-time follower counter tool",
+        "NO live video view counter",
+        "NO follower comparison tool",
+        "NO individual creator profile/stats pages"
+      ]
+    },
+    "instafollowers": {
+      "domain": "https://www.instafollowers.co",
+      "strengths": [
+        "Multi-platform social media tools (Instagram, YouTube, Twitter, TikTok)",
+        "Blog content about TikTok growth tips",
+        "TikTok-on-PC guides and cross-platform content",
+        "Service-oriented pages (buy followers, likes, etc.)"
+      ],
+      "content_gaps_for_calculatecreator": [
+        "Less relevant competitor - focuses on paid social media services",
+        "Multi-platform tools coverage is broader (Instagram, YouTube, etc.)",
+        "How-to-use-TikTok-on-PC type utility content"
+      ]
+    },
+    "other_competitors_discovered": {
+      "tikcalculator_com": "Ranks for 'tiktok money calculator' and 'tiktok earnings calculator'",
+      "phlanx_com": "Ranks #1 for 'tiktok engagement rate calculator'",
+      "hypeauditor_com": "Ranks for engagement calculator AND influencer pricing calculator",
+      "collabstr_com": "Ranks for influencer pricing calculator",
+      "livecounts_io": "Ranks for 'tiktok follower count real time'",
+      "countik_com": "Ranks for follower counter AND hashtag generator AND analytics",
+      "tokchart_com": "Ranks for trending sounds and engagement calculator",
+      "demandsage_com": "Ranks for 'how much does tiktok pay' informational queries",
+      "simptok_com": "Ranks for 'tiktok shop profit calculator'",
+      "tiktokcoincalculator_com": "Ranks for 'tiktok coin calculator' (dedicated domain)"
+    }
+  },
+
+  "keyword_opportunities": [
+    {
+      "keyword": "tiktok follower count checker",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "high",
+      "priority": "P0_critical",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "Massive search volume, TokCount ranks #1. calculatecreator has NO tool for this. Would drive significant traffic and be a utility anchor."
+    },
+    {
+      "keyword": "tiktok hashtag generator",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "high",
+      "priority": "P0_critical",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "Enormous search volume. Hootsuite, Buffer, Ahrefs all have free tools. calculatecreator has hashtag strategy content but NO generator tool."
+    },
+    {
+      "keyword": "tiktok username checker",
+      "search_volume_estimate": "medium-high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "Many dedicated tools rank. Simple to build, drives repeat visits."
+    },
+    {
+      "keyword": "tiktok bio generator",
+      "search_volume_estimate": "medium-high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "AI-powered bio generators are trending. Social Cat, Media Mister rank. Easy win with GPT integration."
+    },
+    {
+      "keyword": "tiktok trending sounds today",
+      "search_volume_estimate": "very_high",
+      "difficulty_estimate": "high",
+      "priority": "P1_high",
+      "current_coverage": "partial_content_only",
+      "recommended_page_type": "dynamic_data_page_or_tool",
+      "rationale": "Tokchart and Buffer rank. calculatecreator has guide about sounds but no trending tracker."
+    },
+    {
+      "keyword": "tiktok video downloader",
+      "search_volume_estimate": "very_high",
+      "difficulty_estimate": "very_high",
+      "priority": "P2_medium",
+      "current_coverage": "none",
+      "recommended_page_type": "guide_or_roundup",
+      "rationale": "Extremely competitive but huge volume. Not core to brand but could build a guide page."
+    },
+    {
+      "keyword": "tiktok shop profit calculator",
+      "search_volume_estimate": "medium",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "exists_as_calculator",
+      "recommended_page_type": "enhance_existing_calculator",
+      "rationale": "Has /calculators/commerce-ads/shop-profit/ but simptok.com and dashboardly.io outrank. Need to optimize existing page with better tooling."
+    },
+    {
+      "keyword": "tiktok influencer pricing calculator",
+      "search_volume_estimate": "medium-high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "exists_as_calculator",
+      "recommended_page_type": "enhance_existing",
+      "rationale": "Has /calculators/engagement-influence/influencer-pricing/ but HypeAuditor and Collabstr dominate. Need username lookup feature."
+    },
+    {
+      "keyword": "how much does tiktok pay",
+      "search_volume_estimate": "very_high",
+      "difficulty_estimate": "high",
+      "priority": "P0_critical",
+      "current_coverage": "strong_coverage",
+      "recommended_page_type": "optimize_existing",
+      "rationale": "DemandSage, Bluehost, Shopify rank. calculatecreator has extensive content but needs a single definitive page targeting this exact query."
+    },
+    {
+      "keyword": "tiktok analytics tool free",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "guide_exists",
+      "recommended_page_type": "roundup_guide_with_tool",
+      "rationale": "Sprout Social, Countik rank. calculatecreator has analytics guide but not positioned as a 'tool roundup'."
+    },
+    {
+      "keyword": "tiktok creator rewards program 2026",
+      "search_volume_estimate": "medium-high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "strong",
+      "recommended_page_type": "optimize_existing",
+      "rationale": "calculatecreator already ranks for this. Maintain and update content monthly."
+    },
+    {
+      "keyword": "tiktok royalties calculator music",
+      "search_volume_estimate": "medium",
+      "difficulty_estimate": "low",
+      "priority": "P2_medium",
+      "current_coverage": "none",
+      "recommended_page_type": "new_calculator",
+      "rationale": "SoundCamps ranks. Niche opportunity for musicians on TikTok. Expands audience beyond creators."
+    },
+    {
+      "keyword": "youtube money calculator",
+      "search_volume_estimate": "very_high",
+      "difficulty_estimate": "very_high",
+      "priority": "P2_medium",
+      "current_coverage": "none",
+      "recommended_page_type": "new_calculator",
+      "rationale": "Exolyt has this. Cross-platform calculator would expand reach. Highly competitive but adjacent to core audience."
+    },
+    {
+      "keyword": "instagram earnings calculator",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "high",
+      "priority": "P2_medium",
+      "current_coverage": "none",
+      "recommended_page_type": "new_calculator",
+      "rationale": "Natural expansion. Many TikTok creators also use Instagram. Builds topical authority on multi-platform monetization."
+    },
+    {
+      "keyword": "tiktok caption generator",
+      "search_volume_estimate": "medium-high",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "AI-powered caption generators are trending. Easy to build, drives engagement."
+    },
+    {
+      "keyword": "tiktok ad cost 2026",
+      "search_volume_estimate": "medium",
+      "difficulty_estimate": "medium",
+      "priority": "P1_high",
+      "current_coverage": "exists",
+      "recommended_page_type": "optimize_existing",
+      "rationale": "Has /calculators/tiktok-ad-cost/ and /calculators/commerce-ads/ad-cost/. Needs 2026 data update and SEO optimization."
+    },
+    {
+      "keyword": "tiktok coin calculator",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "medium",
+      "priority": "P0_critical",
+      "current_coverage": "strong",
+      "recommended_page_type": "optimize_existing",
+      "rationale": "tiktokcoincalculator.com (dedicated domain) and Zebracat rank. calculatecreator has good content but needs to optimize for exact match."
+    },
+    {
+      "keyword": "tiktok views to money converter",
+      "search_volume_estimate": "medium",
+      "difficulty_estimate": "low",
+      "priority": "P1_high",
+      "current_coverage": "partial",
+      "recommended_page_type": "new_focused_tool_page",
+      "rationale": "Simple conversion tool that targets long-tail queries. Quick win."
+    },
+    {
+      "keyword": "best time to post on tiktok",
+      "search_volume_estimate": "very_high",
+      "difficulty_estimate": "very_high",
+      "priority": "P1_high",
+      "current_coverage": "exists",
+      "recommended_page_type": "optimize_existing",
+      "rationale": "Has /guides/growth/best-posting-times-tiktok/. Exolyt also covers this. Needs data freshness and schema markup."
+    },
+    {
+      "keyword": "tiktok subscriber count live",
+      "search_volume_estimate": "high",
+      "difficulty_estimate": "high",
+      "priority": "P1_high",
+      "current_coverage": "none",
+      "recommended_page_type": "interactive_tool",
+      "rationale": "TokCount, Livecounts, Countik dominate. Requires API integration but would be huge traffic driver."
+    },
+    {
+      "keyword": "tiktok engagement rate by industry",
+      "search_volume_estimate": "medium",
+      "difficulty_estimate": "low",
+      "priority": "P1_high",
+      "current_coverage": "partial",
+      "recommended_page_type": "data_page",
+      "rationale": "Has niche engagement data but not framed as 'by industry'. WebFX and Sprout Social rank for industry benchmarks."
+    }
+  ],
+
+  "topical_authority_map": {
+    "pillar_1_earnings_monetization": {
+      "pillar_page": "/calculators/earnings-revenue/money/",
+      "alternate_pillars": ["/guides/how-to-make-money-on-tiktok/", "/guides/monetization/how-to-make-money-tiktok/"],
+      "cluster_count": 62,
+      "strength": "very_strong",
+      "existing_clusters": [
+        "Money calculator",
+        "Pay per 1000 views",
+        "Pay per million views",
+        "Earnings by country (12 country pages)",
+        "Money by follower count (10k, 100k, 1M)",
+        "Creator Fund rates and eligibility",
+        "Creator Rewards Program",
+        "RPM rates and optimization",
+        "Income distribution data",
+        "Creator economy size"
+      ],
+      "gaps": [
+        "TikTok Creativity Program Beta dedicated page",
+        "'How much does TikTok pay' definitive hub page",
+        "Earnings by content type / video format",
+        "Creator income tax bracket analysis",
+        "Micro-influencer earnings deep dive (separate from money by followers)"
+      ]
+    },
+    "pillar_2_engagement_analytics": {
+      "pillar_page": "/calculators/engagement-influence/engagement/",
+      "cluster_count": 34,
+      "strength": "strong",
+      "existing_clusters": [
+        "Engagement rate calculator",
+        "Good engagement rate benchmarks",
+        "Engagement by followers",
+        "Engagement by niche",
+        "Engagement rate dropping (troubleshooting)",
+        "Algorithm and engagement rate relationship",
+        "Increase engagement rate guides",
+        "Watch time metrics",
+        "Completion rate data",
+        "Analytics guides"
+      ],
+      "gaps": [
+        "TikTok analytics dashboard tutorial",
+        "Engagement rate by industry (B2B framing)",
+        "Comment-to-engagement ratio analysis",
+        "Engagement vs reach ratio explainer",
+        "TikTok impressions vs views explained",
+        "Story/carousel engagement benchmarks"
+      ]
+    },
+    "pillar_3_coins_gifts_live": {
+      "pillar_page": "/calculators/coins-gifts-diamonds/coins/",
+      "cluster_count": 32,
+      "strength": "strong",
+      "existing_clusters": [
+        "Coin value USD converter",
+        "Coins to dollars chart",
+        "How to buy coins",
+        "Most expensive gifts",
+        "Coin prices by country",
+        "Diamond converter",
+        "Live earnings per hour",
+        "Live requirements",
+        "Live battles",
+        "Live gifts value chart"
+      ],
+      "gaps": [
+        "TikTok Universe gift value (most expensive, $500+)",
+        "Gift animation guide / complete gift list",
+        "How to send/receive gifts tutorial",
+        "TikTok Diamonds to USD detailed converter",
+        "Live monetization strategies for beginners",
+        "Galaxy/Lion gift economy explainers"
+      ]
+    },
+    "pillar_4_brand_deals_sponsorships": {
+      "pillar_page": "/calculators/brand-deal-rate/",
+      "cluster_count": 22,
+      "strength": "strong",
+      "existing_clusters": [
+        "Brand deal rate calculator",
+        "Sponsorship rates by followers",
+        "Media kit guide",
+        "Brand deal red flags",
+        "How brands calculate influencer ROI",
+        "Rate negotiation guides",
+        "Contract templates",
+        "FTC disclosures"
+      ],
+      "gaps": [
+        "TikTok Creator Marketplace guide (how to get listed)",
+        "UGC creator rates vs influencer rates",
+        "Whitelisting / Spark Ads creator rates",
+        "Brand deal email templates / outreach scripts",
+        "Micro vs macro influencer rate comparison tool",
+        "Brand deal case studies / success stories"
+      ]
+    },
+    "pillar_5_tiktok_shop": {
+      "pillar_page": "/calculators/commerce-ads/shop-profit/",
+      "cluster_count": 14,
+      "strength": "moderate_needs_expansion",
+      "existing_clusters": [
+        "Shop profit calculator",
+        "Commission rates",
+        "Seller fees",
+        "Best selling products",
+        "Viral shop products",
+        "Shop affiliate earnings",
+        "Shop success strategies"
+      ],
+      "gaps": [
+        "TikTok Shop fee calculator (detailed, with returns)",
+        "TikTok Shop vs Shopify comparison",
+        "TikTok Shop product listing optimization guide",
+        "TikTok Shop analytics dashboard guide",
+        "TikTok Shop advertising (Shop Ads) guide",
+        "How to start TikTok Shop from scratch (beginner guide)",
+        "TikTok Shop fulfillment and shipping guide",
+        "TikTok Shop GMV calculator",
+        "TikTok Shop return rate impact calculator",
+        "Dropshipping on TikTok Shop guide"
+      ]
+    },
+    "pillar_6_growth_algorithm": {
+      "pillar_page": "/guides/growth/tiktok-algorithm-explained/",
+      "cluster_count": 28,
+      "strength": "strong",
+      "existing_clusters": [
+        "Algorithm explained",
+        "Best posting times",
+        "Hashtag strategy",
+        "TikTok SEO / search ranking",
+        "How to go viral",
+        "Shadowban fix",
+        "FYP optimization",
+        "Content pillars",
+        "A/B testing content",
+        "Batch content creation"
+      ],
+      "gaps": [
+        "TikTok SEO keyword research guide",
+        "TikTok search results optimization (in-app search)",
+        "TikTok Explore page / Discover tab strategy",
+        "TikTok duet/stitch strategy for growth",
+        "TikTok collaboration / cross-promotion strategies",
+        "TikTok comment strategy for growth",
+        "TikTok pinned videos strategy"
+      ]
+    },
+    "pillar_7_platform_comparisons": {
+      "pillar_page": "/comparisons/",
+      "cluster_count": 14,
+      "strength": "moderate_needs_expansion",
+      "existing_clusters": [
+        "TikTok vs YouTube earnings",
+        "TikTok vs Instagram income",
+        "TikTok vs YouTube Shorts",
+        "TikTok vs Instagram Reels",
+        "Creator Fund vs brand deals",
+        "TikTok Live vs YouTube Live",
+        "TikTok Shop vs Amazon"
+      ],
+      "gaps": [
+        "TikTok vs Lemon8 earnings (blog exists but not in comparisons hub)",
+        "TikTok vs Threads comparison",
+        "TikTok vs Snapchat Spotlight earnings",
+        "TikTok vs Facebook Reels",
+        "TikTok vs Kick (live streaming comparison)",
+        "Multi-platform earnings calculator (comparing all at once)",
+        "Platform-by-platform monetization threshold comparison"
+      ]
+    }
+  },
+
+  "intent_classification": {
+    "top_20_keywords": [
+      {
+        "keyword": "tiktok money calculator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_calculator",
+        "current_page": "/calculators/earnings-revenue/money/ and /calculators/tiktok-money/",
+        "gap": "no - well covered, needs SERP optimization"
+      },
+      {
+        "keyword": "tiktok engagement rate calculator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_calculator",
+        "current_page": "/calculators/engagement-influence/engagement/ and /calculators/engagement-rate/",
+        "gap": "no - covered, but Phlanx outranks"
+      },
+      {
+        "keyword": "how much does tiktok pay",
+        "intent": "informational",
+        "recommended_page_type": "comprehensive_guide",
+        "current_page": "covered across multiple pages but no single definitive page",
+        "gap": "YES - needs consolidated 'how much does tiktok pay' hub page"
+      },
+      {
+        "keyword": "tiktok follower count",
+        "intent": "transactional",
+        "recommended_page_type": "real_time_tool",
+        "current_page": "none",
+        "gap": "YES - critical missing tool"
+      },
+      {
+        "keyword": "tiktok coin calculator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_converter",
+        "current_page": "/calculators/coins-gifts-diamonds/coins/ and /calculators/coins/",
+        "gap": "no - covered, needs optimization"
+      },
+      {
+        "keyword": "tiktok earnings calculator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_calculator",
+        "current_page": "/calculators/earnings-revenue/",
+        "gap": "no - covered"
+      },
+      {
+        "keyword": "best time to post on tiktok",
+        "intent": "informational",
+        "recommended_page_type": "data_driven_guide",
+        "current_page": "/guides/growth/best-posting-times-tiktok/",
+        "gap": "no - covered, needs freshness update"
+      },
+      {
+        "keyword": "tiktok hashtag generator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_tool",
+        "current_page": "none",
+        "gap": "YES - critical missing tool"
+      },
+      {
+        "keyword": "tiktok shop profit calculator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_calculator",
+        "current_page": "/calculators/commerce-ads/shop-profit/",
+        "gap": "no - exists but needs enhancement"
+      },
+      {
+        "keyword": "tiktok influencer pricing calculator",
+        "intent": "commercial_investigation",
+        "recommended_page_type": "interactive_calculator_with_username_lookup",
+        "current_page": "/calculators/engagement-influence/influencer-pricing/",
+        "gap": "partial - exists but HypeAuditor outranks with username-based tool"
+      },
+      {
+        "keyword": "tiktok creator fund 2026",
+        "intent": "informational",
+        "recommended_page_type": "comprehensive_guide",
+        "current_page": "/guides/tiktok-creator-fund/ and /calculators/tiktok-creator-fund/",
+        "gap": "no - strong coverage"
+      },
+      {
+        "keyword": "tiktok bio generator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_tool",
+        "current_page": "none",
+        "gap": "YES - missing tool opportunity"
+      },
+      {
+        "keyword": "tiktok ad cost 2026",
+        "intent": "commercial_investigation",
+        "recommended_page_type": "data_guide_with_calculator",
+        "current_page": "/calculators/tiktok-ad-cost/ and /calculators/commerce-ads/ad-cost/",
+        "gap": "no - covered, needs 2026 data refresh"
+      },
+      {
+        "keyword": "tiktok engagement rate benchmark",
+        "intent": "informational",
+        "recommended_page_type": "data_page_with_charts",
+        "current_page": "/data/engagement/avg-engagement-rate-follower-count-2026/",
+        "gap": "partial - needs industry/niche framing"
+      },
+      {
+        "keyword": "tiktok username checker",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_tool",
+        "current_page": "none",
+        "gap": "YES - missing tool"
+      },
+      {
+        "keyword": "tiktok caption generator",
+        "intent": "transactional",
+        "recommended_page_type": "interactive_tool",
+        "current_page": "none",
+        "gap": "YES - missing tool"
+      },
+      {
+        "keyword": "tiktok trending sounds",
+        "intent": "informational_navigational",
+        "recommended_page_type": "dynamic_data_page",
+        "current_page": "/guides/growth/tiktok-sounds-music-distribution/ (tangentially)",
+        "gap": "YES - no trending sounds tracker"
+      },
+      {
+        "keyword": "tiktok brand deal rates 2026",
+        "intent": "commercial_investigation",
+        "recommended_page_type": "data_guide",
+        "current_page": "/calculators/brand-deal-rate/tiktok-brand-deal-rates-2026/",
+        "gap": "no - well covered"
+      },
+      {
+        "keyword": "tiktok live gifts value",
+        "intent": "informational",
+        "recommended_page_type": "reference_chart",
+        "current_page": "/reference/live-gifts-value-chart/",
+        "gap": "no - covered"
+      },
+      {
+        "keyword": "tiktok rpm rates 2026",
+        "intent": "informational",
+        "recommended_page_type": "data_page",
+        "current_page": "/calculators/rpm/ and /data/rpm-rates-by-niche/",
+        "gap": "no - strong coverage"
+      }
+    ]
+  },
+
+  "serp_features": {
+    "featured_snippet_opportunities": [
+      {
+        "keyword": "how much does tiktok pay per 1000 views",
+        "current_snippet_holder": "demandsage.com / bluehost.com",
+        "opportunity": "high",
+        "format": "table_or_paragraph",
+        "recommended_action": "Create definitive page with clear answer in first paragraph + comparison table (Creator Fund vs Creator Rewards rates)"
+      },
+      {
+        "keyword": "what is a good engagement rate on tiktok",
+        "current_snippet_holder": "brandwatch.com / shortimize.com",
+        "opportunity": "high",
+        "format": "paragraph_with_range",
+        "recommended_action": "Optimize /calculators/engagement-rate/good-tiktok-engagement-rate/ with direct answer paragraph at top"
+      },
+      {
+        "keyword": "how much is 1 tiktok coin worth",
+        "current_snippet_holder": "various",
+        "opportunity": "high",
+        "format": "paragraph",
+        "recommended_action": "Ensure /calculators/coins/tiktok-coin-value-usd/ has clear '$0.013' answer in first sentence"
+      },
+      {
+        "keyword": "tiktok creator fund requirements",
+        "current_snippet_holder": "various",
+        "opportunity": "medium",
+        "format": "list",
+        "recommended_action": "Add structured requirements list at top of /calculators/tiktok-creator-fund/creator-fund-eligibility-2026/"
+      },
+      {
+        "keyword": "tiktok shop commission rates",
+        "current_snippet_holder": "various",
+        "opportunity": "high",
+        "format": "table",
+        "recommended_action": "Ensure /calculators/commerce-ads/shop-profit/tiktok-shop-commission-rates/ has clear table at top"
+      }
+    ],
+    "people_also_ask_opportunities": [
+      "How much money do you get per 1000 views on TikTok?",
+      "How much does TikTok pay for 1 million views?",
+      "What is a good TikTok engagement rate?",
+      "How much is 1 TikTok coin worth in USD?",
+      "How to calculate TikTok engagement rate?",
+      "Is the TikTok Creator Fund still available?",
+      "How much do TikTok brand deals pay?",
+      "What are TikTok diamonds worth?",
+      "How much do TikTokers make per video?",
+      "How to make money on TikTok with 1000 followers?",
+      "What is a good RPM on TikTok?",
+      "How do TikTok live gifts work?",
+      "How much does TikTok Shop charge sellers?",
+      "What is the TikTok Creator Rewards Program?",
+      "How much do micro-influencers make on TikTok?"
+    ],
+    "ai_overview_risk": {
+      "assessment": "high",
+      "affected_keywords": [
+        "how much does tiktok pay",
+        "tiktok pay per 1000 views",
+        "tiktok coin value",
+        "tiktok engagement rate formula"
+      ],
+      "mitigation": "Focus on interactive tools (calculators) that AI Overviews cannot replicate. Add unique data, proprietary benchmarks, and interactive elements that provide value beyond a text answer."
+    },
+    "video_carousel_opportunities": [
+      {
+        "keyword": "how to go viral on tiktok",
+        "opportunity": "Create short-form video tutorials that appear in video carousels"
+      },
+      {
+        "keyword": "tiktok money calculator how to use",
+        "opportunity": "Screen recording demonstrating the calculator in action"
+      },
+      {
+        "keyword": "how to calculate tiktok engagement rate",
+        "opportunity": "Step-by-step video tutorial"
+      }
+    ]
+  },
+
+  "recommended_new_pages": {
+    "p0_critical": [
+      {
+        "title": "TikTok Follower Count Checker (Real-Time)",
+        "url_suggestion": "/tools/follower-count/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok follower count", "tiktok follower count checker", "tiktok live follower counter"],
+        "estimated_traffic_potential": "very_high",
+        "rationale": "Massive search volume keyword with no current coverage. TokCount dominates. Requires TikTok API integration."
+      },
+      {
+        "title": "TikTok Hashtag Generator (AI-Powered)",
+        "url_suggestion": "/tools/hashtag-generator/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok hashtag generator", "tiktok hashtags for views", "tiktok fyp hashtags"],
+        "estimated_traffic_potential": "very_high",
+        "rationale": "Major tool gap. Hootsuite, Buffer, Ahrefs all rank. Easy to build with AI. Drives repeat visits."
+      },
+      {
+        "title": "How Much Does TikTok Pay in 2026 (Definitive Guide + Calculator)",
+        "url_suggestion": "/guides/how-much-does-tiktok-pay/",
+        "type": "comprehensive_guide_with_calculator",
+        "target_keywords": ["how much does tiktok pay", "tiktok pay rates 2026", "tiktok creator earnings"],
+        "estimated_traffic_potential": "very_high",
+        "rationale": "Highest-volume informational keyword. DemandSage, Shopify, Bluehost rank. Needs ONE definitive hub page."
+      }
+    ],
+    "p1_high": [
+      {
+        "title": "TikTok Bio Generator (AI-Powered)",
+        "url_suggestion": "/tools/bio-generator/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok bio generator", "tiktok bio ideas", "cool tiktok bio"],
+        "estimated_traffic_potential": "high"
+      },
+      {
+        "title": "TikTok Caption Generator",
+        "url_suggestion": "/tools/caption-generator/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok caption generator", "tiktok caption ideas"],
+        "estimated_traffic_potential": "high"
+      },
+      {
+        "title": "TikTok Username Availability Checker",
+        "url_suggestion": "/tools/username-checker/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok username checker", "tiktok username availability"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "TikTok Shop Fee Calculator (Detailed)",
+        "url_suggestion": "/calculators/commerce-ads/shop-fee-calculator/",
+        "type": "interactive_calculator",
+        "target_keywords": ["tiktok shop fee calculator", "tiktok shop fees", "tiktok shop profit margin"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "TikTok Engagement Rate Benchmarks by Industry 2026",
+        "url_suggestion": "/data/engagement/engagement-rate-by-industry-2026/",
+        "type": "data_page",
+        "target_keywords": ["tiktok engagement rate benchmark", "tiktok engagement rate by industry", "average engagement rate tiktok 2026"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "TikTok Views to Money Converter",
+        "url_suggestion": "/tools/views-to-money/",
+        "type": "simple_converter_tool",
+        "target_keywords": ["tiktok views to money", "how much money per view tiktok", "tiktok views calculator"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "TikTok Creator Marketplace Guide (How to Get Listed)",
+        "url_suggestion": "/guides/tiktok-creator-marketplace-guide/",
+        "type": "guide",
+        "target_keywords": ["tiktok creator marketplace", "how to join tiktok creator marketplace", "tiktok tcm"],
+        "estimated_traffic_potential": "medium"
+      },
+      {
+        "title": "TikTok Analytics Free Tools Roundup 2026",
+        "url_suggestion": "/guides/best-tiktok-analytics-tools/",
+        "type": "roundup_guide",
+        "target_keywords": ["tiktok analytics tools free", "best tiktok analytics", "free tiktok analytics"],
+        "estimated_traffic_potential": "high"
+      },
+      {
+        "title": "TikTok Creativity Program Beta Guide 2026",
+        "url_suggestion": "/guides/tiktok-creativity-program-beta/",
+        "type": "guide",
+        "target_keywords": ["tiktok creativity program beta", "tiktok creativity program requirements", "creativity program vs creator fund"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "UGC Creator Rates Guide 2026",
+        "url_suggestion": "/guides/ugc-creator-rates/",
+        "type": "guide_with_calculator",
+        "target_keywords": ["ugc creator rates", "how much to charge for ugc", "ugc pricing guide"],
+        "estimated_traffic_potential": "medium_high"
+      }
+    ],
+    "p2_medium": [
+      {
+        "title": "YouTube Money Calculator",
+        "url_suggestion": "/calculators/youtube-money/",
+        "type": "interactive_calculator",
+        "target_keywords": ["youtube money calculator", "youtube earnings calculator"],
+        "estimated_traffic_potential": "very_high_but_competitive"
+      },
+      {
+        "title": "Instagram Earnings Calculator",
+        "url_suggestion": "/calculators/instagram-earnings/",
+        "type": "interactive_calculator",
+        "target_keywords": ["instagram earnings calculator", "instagram money calculator"],
+        "estimated_traffic_potential": "high_but_competitive"
+      },
+      {
+        "title": "TikTok Music Royalties Calculator",
+        "url_suggestion": "/calculators/music-royalties/",
+        "type": "interactive_calculator",
+        "target_keywords": ["tiktok royalties calculator", "tiktok music earnings"],
+        "estimated_traffic_potential": "medium"
+      },
+      {
+        "title": "TikTok vs Snapchat Spotlight Earnings",
+        "url_suggestion": "/comparisons/tiktok-vs-snapchat-spotlight/",
+        "type": "comparison",
+        "target_keywords": ["tiktok vs snapchat spotlight", "snapchat spotlight earnings vs tiktok"],
+        "estimated_traffic_potential": "medium"
+      },
+      {
+        "title": "How to Start TikTok Shop (Complete Beginner Guide)",
+        "url_suggestion": "/guides/how-to-start-tiktok-shop/",
+        "type": "guide",
+        "target_keywords": ["how to start tiktok shop", "tiktok shop beginner guide", "start selling on tiktok shop"],
+        "estimated_traffic_potential": "high"
+      },
+      {
+        "title": "Dropshipping on TikTok Shop 2026",
+        "url_suggestion": "/guides/tiktok-shop-dropshipping/",
+        "type": "guide",
+        "target_keywords": ["tiktok shop dropshipping", "dropshipping on tiktok"],
+        "estimated_traffic_potential": "medium_high"
+      },
+      {
+        "title": "TikTok Trending Sounds This Week",
+        "url_suggestion": "/data/trending-sounds/",
+        "type": "dynamic_data_page",
+        "target_keywords": ["tiktok trending sounds", "trending tiktok sounds this week", "viral tiktok sounds"],
+        "estimated_traffic_potential": "very_high_but_needs_dynamic_updates"
+      },
+      {
+        "title": "Best TikTok Video Downloaders 2026",
+        "url_suggestion": "/guides/best-tiktok-video-downloaders/",
+        "type": "roundup",
+        "target_keywords": ["tiktok video downloader", "download tiktok without watermark"],
+        "estimated_traffic_potential": "very_high_but_very_competitive"
+      },
+      {
+        "title": "TikTok Account Audit Checklist",
+        "url_suggestion": "/tools/account-audit/",
+        "type": "interactive_tool",
+        "target_keywords": ["tiktok account audit", "tiktok profile audit", "tiktok audit tool"],
+        "estimated_traffic_potential": "medium"
+      },
+      {
+        "title": "Brand Deal Email Templates for TikTok Creators",
+        "url_suggestion": "/resources/brand-deal-email-templates/",
+        "type": "resource_download",
+        "target_keywords": ["brand deal email template", "how to reach out to brands tiktok", "brand collaboration email"],
+        "estimated_traffic_potential": "medium"
+      }
+    ]
+  }
+}

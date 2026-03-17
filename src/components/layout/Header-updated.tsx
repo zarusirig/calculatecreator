@@ -99,7 +99,7 @@ export function Header() {
           >
             <div className="relative h-12 w-5/12 md:h-12 md:w-12">
               <LogoImage
-                src="/images/calculate-creator-transparent-v2.png"
+                src="/images/tt-calculator-logo.png"
                 alt="Calculate Creator Logo"
                 fill
                 className="object-contain"

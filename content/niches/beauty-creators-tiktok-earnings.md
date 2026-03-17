@@ -158,8 +158,8 @@ Beauty content drives action:
 
 **Brand deal rates (per video):**
 - Nano (5K–10K): $100–$300
-- Micro (10K–50K): $300–$1,500
-- Mid-tier (50K–200K): $1,500–$8,000
+- Micro (10K–100K): $300–$1,500
+- Mid-tier (100K–500K): $1,500–$8,000
 - Macro (200K–1M): $8,000–$30,000
 
 **TikTok Shop commission earnings:**

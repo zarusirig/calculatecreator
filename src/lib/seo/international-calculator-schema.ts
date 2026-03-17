@@ -70,8 +70,8 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     ],
     provider: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
   };
 
@@ -85,8 +85,8 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     inLanguage: languageCode,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
     about: {
       '@type': 'Thing',
@@ -127,13 +127,13 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Global TikTok Statistics',
-        item: 'https://calculatecreator.com/region/',
+        item: 'https://tiktokcalculator.net/region/',
       },
       {
         '@type': 'ListItem',
@@ -239,19 +239,19 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     '@type': 'Article',
     headline: guideTitle || title,
     description: description,
-    image: 'https://calculatecreator.com/og-image.png',
+    image: 'https://tiktokcalculator.net/og-image.png',
     author: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png',
+        url: 'https://tiktokcalculator.net/logo.png',
       },
     },
     datePublished: datePublished,

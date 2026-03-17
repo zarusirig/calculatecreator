@@ -30,7 +30,7 @@ export function InternationalCalculatorSchema({
 }: InternationalCalculatorSchemaProps) {
   const softwareApplicationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    '@type': 'SoftwareApplication',
     name: title,
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Web Browser',
@@ -61,8 +61,8 @@ export function InternationalCalculatorSchema({
     ],
     provider: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
   };
 
@@ -75,8 +75,8 @@ export function InternationalCalculatorSchema({
     inLanguage: languageCode,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
     about: {
       '@type': 'Thing',
@@ -86,9 +86,11 @@ export function InternationalCalculatorSchema({
     ...(rpmMin &&
       rpmMax && {
         mainEntity: {
-          '@type': 'FinancialProduct',
-          name: `TikTok Creator Fund - ${countryName}`,
+          '@type': 'SoftwareApplication',
+          name: `TikTok Creator Fund Calculator - ${countryName}`,
           description: `Estimated RPM rates: ${rpmMin}-${rpmMax} per 1,000 views`,
+          applicationCategory: 'FinanceApplication',
+          operatingSystem: 'Web',
         },
       }),
   };
@@ -115,13 +117,13 @@ export function InternationalCalculatorSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Global TikTok Statistics',
-        item: 'https://calculatecreator.com/region/',
+        item: 'https://tiktokcalculator.net/region/',
       },
       {
         '@type': 'ListItem',

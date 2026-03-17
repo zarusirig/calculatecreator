@@ -15,22 +15,22 @@ interface TrustBadgesProps {
 const DEFAULT_BADGES: TrustBadge[] = [
   {
     icon: BarChart3,
-    text: 'Data-Driven Research',
+    text: 'Public-source research',
     color: 'text-blue-600',
   },
   {
     icon: Users,
-    text: '50,000+ Creators Studied',
+    text: 'Methodology notes',
     color: 'text-green-600',
   },
   {
     icon: CheckCircle,
-    text: 'Expert Reviewed',
+    text: 'Assumptions shown',
     color: 'text-purple-600',
   },
   {
     icon: Lock,
-    text: 'Transparent Methodology',
+    text: 'Transparent calculations',
     color: 'text-orange-600',
   },
 ];
@@ -62,11 +62,11 @@ export function TrustBadgesCompact({ className = '' }: { className?: string }) {
     <div className={`flex items-center justify-center space-x-6 text-sm text-neutral-600 ${className}`}>
       <div className="flex items-center space-x-1">
         <BarChart3 className="w-4 h-4" />
-        <span>Data-Driven</span>
+        <span>Source-led</span>
       </div>
       <div className="flex items-center space-x-1">
         <CheckCircle className="w-4 h-4" />
-        <span>Expert Reviewed</span>
+        <span>Assumptions shown</span>
       </div>
       <div className="flex items-center space-x-1">
         <Lock className="w-4 h-4" />

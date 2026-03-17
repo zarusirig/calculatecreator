@@ -15,10 +15,10 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 
 export const metadata: Metadata = {
   title: "TikTok Live Earnings Calculator",
-  description: "Use this TikTok live earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  description: "Estimate TikTok LIVE streaming income from virtual gifts, diamonds, and viewer engagement. Project hourly and monthly earnings for your stream size.",
   keywords: ['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/earnings-revenue/live-earnings/',
+    canonical: 'https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/',
   },
 };
 
@@ -57,6 +57,9 @@ export default function LiveGiftsCalculatorPage() {
             <Gift size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok LIVE Gifts Calculator</h1>
+          <p className="text-body-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+            TikTok LIVE earnings range from $5–$50 per hour for small creators to $300–$1,000+ for established streamers. Creators receive 50% of gift value as diamonds ($0.005 each). Enter your stream metrics to estimate your LIVE income.
+          </p>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
             Estimate your earnings from TikTok LIVE streaming based on average viewers, stream duration, and gifting rate. This calculator helps creators forecast LIVE income, plan streaming schedules, and understand the relationship between audience size and earnings. Use realistic metrics to project monthly revenue and set achievable LIVE streaming goals for consistent growth. Calculate expected diamond earnings per stream and monthly income potential based on viewer engagement. Perfect for creators planning to monetize through LIVE streaming or optimizing existing stream strategy for higher gift revenue.
           </p>
@@ -291,8 +294,8 @@ export default function LiveGiftsCalculatorPage() {
               'Stream length, time of day, and content quality all significantly affect gifting rates',
             ]}
             relatedContent={[
-              { title: 'Coins to USD Calculator', href: '/calculators/coins-gifts-diamonds/coins/' },
-              { title: 'Diamond to USD Calculator', href: '/calculators/coins-gifts-diamonds/diamonds/' },
+              { title: 'Coins to USD Calculator', href: '/calculators/coins/' },
+              { title: 'Diamond to USD Calculator', href: '/calculators/diamond-converter/' },
               { title: 'Payout Calculator', href: '/calculators/utility-tools/payout/' },
             ]}
           />

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok multi platform earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['multi platform calculator', 'platform comparison', 'cross platform earnings'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
+    canonical: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/',
   },
   openGraph: {
     title: 'Platform Earnings Comparison 2026',
     description: 'Compare earnings across TikTok, YouTube & Instagram.',
-    url: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
+    url: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/',
     type: 'website',
   },
 };

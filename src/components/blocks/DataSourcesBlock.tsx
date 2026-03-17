@@ -2,23 +2,23 @@ import { Database, FileText, RefreshCcw, Users } from 'lucide-react';
 
 const sources = [
     {
-        title: 'TikTok Creator Marketplace',
-        body: 'Public engagement and pricing benchmarks from TikTok\'s own creator marketplace data.',
+        title: 'Official documentation',
+        body: 'We use public platform documentation and help-center material when program rules or eligibility affect a calculator.',
         icon: Database,
     },
     {
-        title: 'Published earnings reports',
-        body: 'We cross-reference creator self-reports, platform disclosures, and published industry studies.',
+        title: 'Published references',
+        body: 'We cite public articles, benchmark reports, and explanatory references where they materially inform an estimate.',
         icon: FileText,
     },
     {
         title: 'Community-reported ranges',
-        body: 'Aggregated data from 50,000+ creator accounts analyzed, covering nano to mega tiers.',
+        body: 'Some ranges rely on public creator and community reporting, so outputs should be treated as directional rather than guaranteed.',
         icon: Users,
     },
     {
-        title: 'Weekly benchmark refreshes',
-        body: 'Assumptions and ranges are reviewed every week to reflect the latest Creator Fund and algorithm changes.',
+        title: 'Methodology updates',
+        body: 'We revise assumptions when platform rules, source material, or product logic changes require an update.',
         icon: RefreshCcw,
     },
 ];
@@ -34,8 +34,8 @@ export function DataSourcesBlock() {
                     Where our numbers come from
                 </h2>
                 <p className="mt-2 max-w-2xl text-body-md text-neutral-600">
-                    We never guess. Every assumption and range is backed by real data,
-                    linked to its source, and refreshed regularly.
+                    We show the source categories behind our assumptions and call out where outputs
+                    are directional estimates rather than precise measurements.
                 </p>
             </div>
 

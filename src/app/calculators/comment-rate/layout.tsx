@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok comment rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['comment rate', 'tiktok comments', 'engagement metrics', 'comment ratio calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/comment-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/comment-rate/',
   },
   openGraph: {
     title: 'Comment Rate Calculator',
     description: 'Calculate and optimize your TikTok comment rate.',
-    url: 'https://calculatecreator.com/calculators/comment-rate/',
+    url: 'https://tiktokcalculator.net/calculators/comment-rate/',
     type: 'website',
   },
 };

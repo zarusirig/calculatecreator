@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "TikTok Bookmarks for Creator Earnings and Growth Guide",
-  description: "Explore TikTok bookmarks content with creator earnings context, engagement benchmarks, monetization guidance, and clear next-step recommendations.",
+  title: 'Saved Pages | TT Calculator',
+  description:
+    'Review saved tools, guides, and data pages in one place while local bookmarks are available on this device.',
   alternates: {
-    canonical: 'https://calculatecreator.com/bookmarks/',
+    canonical: 'https://tiktokcalculator.net/bookmarks/',
   },
   robots: {
     index: false,

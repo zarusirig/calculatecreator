@@ -11,13 +11,14 @@ import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { DataTable } from '@/components/ui/DataTable';
 
 export const metadata: Metadata = {
   title: "TikTok LIVE Gifts Calculator — Estimate Streaming Income",
   description: "Calculate your TikTok LIVE gift earnings. Convert coins, diamonds, and gifts to real money with our free streaming revenue calculator.",
   keywords: ['tiktok live gifts calculator', 'live streaming earnings', 'tiktok live money', 'gift earnings calculator', 'tiktok streaming income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/live-gifts/',
+    canonical: 'https://tiktokcalculator.net/calculators/live-gifts/',
   },
 };
 
@@ -78,7 +79,7 @@ export default function LiveGiftsCalculatorPage() {
       <CalculatorSchema
         name="TikTok LIVE Gifts Calculator"
         description="Estimate your TikTok LIVE streaming gift earnings based on viewers, stream frequency, and engagement rates."
-        url="https://calculatecreator.com/calculators/live-gifts/"
+        url="https://tiktokcalculator.net/calculators/live-gifts/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok live gifts', 'live streaming earnings', 'gift calculator', 'tiktok streaming income']}
@@ -87,9 +88,9 @@ export default function LiveGiftsCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'LIVE Gifts Calculator', url: 'https://calculatecreator.com/calculators/live-gifts/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'LIVE Gifts Calculator', url: 'https://tiktokcalculator.net/calculators/live-gifts/' },
         ]}
       />
 
@@ -131,6 +132,7 @@ export default function LiveGiftsCalculatorPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
@@ -193,55 +195,39 @@ export default function LiveGiftsCalculatorPage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <TrendingUp size={24} className="text-success-600" /> LIVE Earnings by Follower Count
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                Realistic monthly LIVE gift earnings (streaming 4x/week):
-              </p>
-              <div className="space-y-3">
-                {[
-                  { tier: '1K-5K Followers', perStream: '$5-$25', monthly: '$80-$400', color: 'bg-neutral-100 text-neutral-700' },
-                  { tier: '5K-10K Followers', perStream: '$20-$50', monthly: '$320-$800', color: 'bg-primary-100 text-primary-700' },
-                  { tier: '10K-50K Followers', perStream: '$50-$200', monthly: '$800-$3,200', color: 'bg-primary-100 text-primary-700' },
-                  { tier: '50K-100K Followers', perStream: '$200-$500', monthly: '$3,200-$8,000', color: 'bg-success-100 text-success-700' },
-                  { tier: '100K+ Followers', perStream: '$500-$2,000+', monthly: '$8,000-$32,000+', color: 'bg-success-100 text-success-700' },
-                ].map((item) => (
-                  <div key={item.tier} className={`p-3 rounded-lg ${item.color}`}>
-                    <div className="font-semibold mb-1">{item.tier}</div>
-                    <div className="flex justify-between text-sm">
-                      <span>{item.perStream}/stream</span>
-                      <span className="font-mono">{item.monthly}/month</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="TikTok LIVE Gift Earnings by Follower Count (4x/week)"
+                headers={['Follower Tier', 'Per Stream', 'Monthly']}
+                rows={[
+                  ['1K-5K Followers', '$5-$25', '$80-$400'],
+                  ['5K-10K Followers', '$20-$50', '$320-$800'],
+                  ['10K-50K Followers', '$50-$200', '$800-$3,200'],
+                  ['50K-100K Followers', '$200-$500', '$3,200-$8,000'],
+                  ['100K+ Followers', '$500-$2,000+', '$8,000-$32,000+'],
+                ]}
+                highlightFirst
+                sortable
+                footnote="Based on streaming 4 times per week, 1-2 hours per session."
+              />
             </Card>
 
             <Card className="p-6">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <Video size={24} className="text-secondary-600" /> Best Content for LIVE
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                Content types that drive the most gift engagement:
-              </p>
-              <div className="space-y-3">
-                {[
-                  { type: 'Q&A / AMA Sessions', gift: 'High', desc: 'Direct audience interaction' },
-                  { type: 'Music / Performances', gift: 'Very High', desc: 'Emotional connection drives gifts' },
-                  { type: 'Challenges / Games', gift: 'High', desc: 'Interactive participation' },
-                  { type: 'Tutorials / How-tos', gift: 'Medium', desc: 'Value-driven content' },
-                  { type: 'Daily Routines / GRWM', gift: 'Medium', desc: 'Parasocial connection' },
-                  { type: 'Collaborations', gift: 'High', desc: 'Combined audiences' },
-                ].map((item) => (
-                  <div key={item.type} className="flex items-center justify-between p-3 bg-neutral-50 rounded-lg">
-                    <div>
-                      <span className="text-body-sm font-semibold text-neutral-900">{item.type}</span>
-                      <p className="text-body-xs text-neutral-600">{item.desc}</p>
-                    </div>
-                    <span className={`text-body-xs px-2 py-1 rounded ${item.gift === 'Very High' ? 'bg-success-100 text-success-700' : item.gift === 'High' ? 'bg-primary-100 text-primary-700' : 'bg-neutral-100 text-neutral-700'}`}>
-                      {item.gift}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="Best LIVE Content Types for Gift Engagement"
+                headers={['Content Type', 'Gift Potential', 'Why It Works']}
+                rows={[
+                  ['Music / Performances', 'Very High', 'Emotional connection drives gifts'],
+                  ['Q&A / AMA Sessions', 'High', 'Direct audience interaction'],
+                  ['Challenges / Games', 'High', 'Interactive participation'],
+                  ['Collaborations', 'High', 'Combined audiences'],
+                  ['Tutorials / How-tos', 'Medium', 'Value-driven content'],
+                  ['Daily Routines / GRWM', 'Medium', 'Parasocial connection'],
+                ]}
+                highlightFirst
+              />
             </Card>
 
             <Card className="p-6">

@@ -766,19 +766,43 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
   },
 };
 
+const INTERNAL_CITATION_PATTERN =
+  /(calculatecreator|tiktok calculator research|tiktok calculator data team|research team)/i;
+
+function sanitizeCitations(citations?: Citation[]): Citation[] | undefined {
+  if (!citations || citations.length === 0) return undefined;
+
+  const publicCitations = citations.filter((citation) => {
+    const sourceText = `${citation.source} ${citation.title}`;
+    return Boolean(citation.url) && !INTERNAL_CITATION_PATTERN.test(sourceText);
+  });
+
+  return publicCitations.length > 0 ? publicCitations : undefined;
+}
+
+function sanitizePageMetadata(metadata?: PageMetadata): PageMetadata | undefined {
+  if (!metadata) return undefined;
+
+  return {
+    author: metadata.author,
+    citations: sanitizeCitations(metadata.citations),
+    disclaimers: metadata.disclaimers,
+  };
+}
+
 /**
  * Get page metadata by slug
  */
 export function getPageMetadata(slug: string): PageMetadata | undefined {
-  return PAGE_METADATA[slug];
+  return sanitizePageMetadata(PAGE_METADATA[slug]);
 }
 
 /**
  * Get default metadata for pages without specific metadata
  */
 export function getDefaultPageMetadata(): PageMetadata {
-  return {
+  return sanitizePageMetadata({
     author: 'tiktok-calculator-team',
     disclaimers: ['general'],
-  };
+  })!;
 }

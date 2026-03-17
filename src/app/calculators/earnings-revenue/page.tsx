@@ -8,9 +8,9 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 
 export const metadata: Metadata = {
   title: "TikTok Earnings & Revenue Calculator for Creators",
-  description: "Calculate your total TikTok revenue across all monetization streams. Combine Creator Fund, brand deals, LIVE gifts, and Shop income in one dashboard.",
+  description: "Calculate your total TikTok revenue across current and legacy monetization streams. Compare Creator Rewards, brand deals, LIVE gifts, and Shop income in one dashboard.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/earnings-revenue/',
+    canonical: 'https://tiktokcalculator.net/calculators/earnings-revenue/',
   },
 };
 
@@ -24,13 +24,15 @@ const calculators = [
   {
     name: 'Money Calculator',
     slug: 'money',
-    description: 'Calculate total earnings from all monetization streams: Creator Fund, brand deals, and LIVE gifts.',
+    href: '/calculators/tiktok-money/',
+    description: 'Calculate total earnings from Creator Rewards, brand deals, LIVE gifts, and TikTok Shop in one place.',
     icon: Banknote,
   },
   {
-    name: 'Creator Fund Calculator',
+    name: 'Legacy Creator Fund Calculator',
     slug: 'creator-fund',
-    description: 'Estimate monthly and annual earnings from the TikTok Creator Fund based on views and engagement.',
+    href: '/calculators/tiktok-creator-fund/',
+    description: "Estimate legacy Creator Fund earnings and compare them with today's broader monetization mix.",
     icon: DollarSign,
   },
 ];
@@ -75,13 +77,13 @@ const calculatorBenefits = [
     icon: Banknote,
   },
   {
-    title: 'Creator Fund Breakdown',
-    description: 'Estimate monthly and annual Creator Rewards earnings based on video views, engagement rate, and content frequency. Consistent posting directly affects passive income.',
+    title: 'Creator Rewards Breakdown',
+    description: 'Estimate monthly and annual Creator Rewards earnings based on qualified views, longer videos, and posting consistency.',
     icon: DollarSign,
   },
   {
     title: 'Revenue Optimization',
-    description: 'Identify which monetization method provides the best return on effort. Compare Creator Fund, brand deals, and LIVE streaming to focus your time strategically.',
+    description: 'Identify which monetization method provides the best return on effort. Compare Creator Rewards, brand deals, LIVE streaming, and Shop activity to focus your time strategically.',
     icon: TrendingUp,
   },
 ];
@@ -104,7 +106,7 @@ const trackingBenefits = [
   },
   {
     title: 'Make Data-Driven Decisions',
-    description: 'Stop guessing which revenue stream to prioritize. Let actual earnings data guide your content strategy across LIVE streaming, brand partnerships, and Creator Fund.',
+    description: 'Stop guessing which revenue stream to prioritize. Let actual earnings data guide your content strategy across LIVE streaming, brand partnerships, and view-based program income.',
     icon: Calculator,
   },
 ];
@@ -116,7 +118,7 @@ const revenueStreamComparison = [
     payRate: '$0.40-$1.00 per 1K views',
     timeInvestment: 'Low (passive)',
     requirements: '10K+ followers, 1+ min videos, high engagement',
-    bestFor: 'Consistent content creators posting 3-5× weekly',
+    bestFor: 'Consistent content creators posting 3-5x weekly',
     pros: 'Passive income, predictable, scales with views',
     cons: 'Lower than brand deals, requires consistent posting',
     monthlyPotential: '$400-$1,000 at 1M monthly views',
@@ -206,11 +208,11 @@ const maximizeEarningsStrategies = [
 const faqs = [
   {
     question: 'How much can I earn from TikTok as a creator?',
-    answer: 'TikTok earnings vary widely based on follower count and monetization strategy. Micro-influencers (10,000 to 50,000 followers) typically earn $160 to $750 per month. Mid-tier creators (50,000 to 500,000) earn $1,200 to $12,000 per month. Large creators (500,000 or more) earn $11,000 to $50,000 or more monthly when combining Creator Fund, brand deals, and LIVE gifts.',
+    answer: 'TikTok earnings vary widely based on follower count, niche, audience location, and which monetization tools you actually use. For most creators, brand deals, LIVE gifts, TikTok Shop, and Creator Rewards all contribute differently. Use this hub to compare streams and build a realistic mix instead of relying on one benchmark.',
   },
   {
-    question: 'What is the TikTok Creator Fund and how much does it pay?',
-    answer: 'The Creator Fund pays $0.02 to $0.04 per 1,000 views (average $0.03). Qualifying requires 10,000 or more followers, 100,000 or more views in the last 30 days, age 18 or older, and residence in an eligible country. Payments are low compared to YouTube. However, it provides passive income while you focus on brand deals and LIVE streaming.',
+    question: 'What is the TikTok Creator Fund and how does it relate to Creator Rewards?',
+    answer: "The original Creator Fund is a legacy program. Current monetization guidance centers on Creator Rewards for eligible accounts, while the Fund remains relevant mostly for historical comparisons and any remaining legacy balances. If you want current view-based earnings, focus on Creator Rewards eligibility inside TikTok's creator tools.",
   },
   {
     question: 'How do TikTok LIVE gifts work?',
@@ -218,15 +220,15 @@ const faqs = [
   },
   {
     question: 'Which TikTok revenue stream pays the most?',
-    answer: 'Brand deals generate the highest income for most creators, typically 10 to 50 times more than Creator Fund for the same audience size. A creator with 100,000 followers earning $30 per month from Creator Fund charges $1,000 to $3,000 per brand deal. LIVE gifts are the most lucrative option for engaging personalities with dedicated communities who stream regularly.',
+    answer: 'For most creators, brand deals and commerce outperform view-based platform payouts. LIVE gifts can also be meaningful for creators who stream consistently. The highest-value mix depends on your niche, audience trust, and whether your content converts into sponsorships or product sales.',
   },
   {
     question: 'How has the Creator Rewards Program changed TikTok earnings in 2026?',
-    answer: 'The Creator Rewards Program (formerly Creator Fund) pays better rates in 2026: $0.40 to $1.00 per 1,000 views versus the old $0.02 to $0.04. This 10 to 20 times increase means a creator with 1 million monthly views now earns $400 to $1,000 instead of $20 to $40. The program prioritizes longer videos (1 minute or more) and higher engagement content.',
+    answer: "Creator Rewards shifted TikTok's view-based monetization toward longer, original public videos and qualified views. It should be treated as a separate current program, not as if the old Creator Fund were still active. Exact payouts vary by account, audience, and region, so this site now treats program rates as directional rather than fixed promises.",
   },
   {
     question: 'What is TikTok Shop and how much can I earn from it?',
-    answer: 'TikTok Shop allows creators to earn commissions by promoting products in videos or LIVE streams. Commission rates range from 5% to 20% depending on the product category. TikTok Shop Gross Merchandise Value (GMV) reached $40 billion in 2026 with 145% year-over-year growth. Top affiliates earn $5,000 to $50,000 or more monthly from Shop commissions alone.',
+    answer: 'TikTok Shop allows creators to earn commissions by promoting products in videos or LIVE streams. Commission rates vary by product category, market, and program structure. For some creators it becomes a major revenue stream, but actual earnings depend on product fit, conversion quality, and posting consistency.',
   },
   {
     question: 'Do I need a business account to track my TikTok earnings?',
@@ -238,7 +240,7 @@ const faqs = [
   },
   {
     question: 'Should I focus on one revenue stream or diversify?',
-    answer: 'Diversification is critical for long-term creator sustainability. Top-earning creators in 2026 generate income from 4 to 6 different streams. This protects against algorithm changes, platform policy shifts, and seasonal fluctuations. Start with Creator Rewards as your passive baseline. Add 1 to 2 brand deals monthly. Schedule weekly LIVE sessions for community engagement. Integrate TikTok Shop for scalable commissions. This multi-stream approach generates 3 to 5 times more income than relying on 1 method.',
+    answer: 'Diversification is critical for long-term creator sustainability. Most creators should treat Creator Rewards, brand deals, LIVE, and TikTok Shop as separate levers rather than depending on any single stream. This reduces risk when platform policies, reach, or advertiser demand changes.',
   },
   {
     question: 'How can I transition from part-time to full-time TikTok creator?',
@@ -251,16 +253,16 @@ export default function EarningsRevenuePage() {
     <>
       <CollectionPageSchema
         name="TikTok Earnings & Revenue Calculators"
-        description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Fund, brand deals, and total revenue across all monetization streams."
-        url="https://calculatecreator.com/calculators/earnings-revenue/"
+        description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Rewards, legacy Creator Fund comparisons, brand deals, and total revenue across all monetization streams."
+        url="https://tiktokcalculator.net/calculators/earnings-revenue/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Earnings & Revenue', url: 'https://calculatecreator.com/calculators/earnings-revenue/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Earnings & Revenue', url: 'https://tiktokcalculator.net/calculators/earnings-revenue/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
@@ -278,7 +280,7 @@ export default function EarningsRevenuePage() {
             Earnings & Revenue Calculators
           </h1>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto">
-            Calculate TikTok earnings from all revenue streams. These include Creator Fund ($0.02 to $0.04 per 1,000 views), LIVE gifts (50% payout), brand deals ($10 to $30 per 1,000 followers), and TikTok Shop commissions. Estimate monthly and annual income potential based on real-world benchmarks. Understand which monetization method offers the best return on your time and effort.
+            Calculate TikTok earnings from all major revenue streams. Compare Creator Rewards, legacy Fund context, LIVE gifts, brand deals, and TikTok Shop commissions in one place. Use the calculators as planning tools to understand which monetization mix offers the best return on your time and effort.
           </p>
         </div>
 
@@ -286,7 +288,7 @@ export default function EarningsRevenuePage() {
           {calculators.map((calc) => (
             <Link
               key={calc.slug}
-              href={`/calculators/earnings-revenue/${calc.slug}`}
+              href={(calc as any).href || `/calculators/earnings-revenue/${calc.slug}`}
               className="card card-hover p-6 group"
             >
               <div className="flex items-start space-x-4">
@@ -314,7 +316,7 @@ export default function EarningsRevenuePage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900">2026 TikTok Earnings Landscape</h2>
             </div>
             <p className="text-body-md text-neutral-700 mb-6">
-              The creator economy transformed in 2026. TikTok monetization infrastructure has matured. Creators now access multiple high-paying revenue streams that rival YouTube and Instagram.
+              TikTok monetization now spans multiple products instead of one simple payout system. The important shift is not a single headline RPM, but how creators combine Creator Rewards, sponsorships, commerce, and LIVE revenue into a workable income mix.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-5 bg-white rounded-lg border border-primary-200">
@@ -323,10 +325,10 @@ export default function EarningsRevenuePage() {
                   <h3 className="font-semibold text-neutral-900">Creator Rewards Program Upgrade</h3>
                 </div>
                 <p className="text-body-sm text-neutral-700 mb-3">
-                  The Creator Rewards Program now pays <strong>$0.40 to $1.00 per 1,000 views</strong> (up from the old Creator Fund rate of $0.02 to $0.04). This 10 to 20 times increase means creators with 1 million monthly views earn $400 to $1,000 instead of $20 to $40.
+                  Creator Rewards is the current view-based monetization program for eligible creators. It should be evaluated separately from the legacy Creator Fund, and exact payouts depend on qualified views, region, audience quality, and the account's standing.
                 </p>
                 <p className="text-body-sm text-neutral-600">
-                  Requirements: 10,000 or more followers, 1 minute or longer videos, and high engagement rate. Longer-form content (3 to 10 minutes) earns premium rates.
+                  Common requirements include 10,000 followers, 100,000 recent views, and original public videos over one minute, but creators should verify the latest in-app rules before treating any benchmark as current policy.
                 </p>
               </div>
               <div className="p-5 bg-white rounded-lg border border-primary-200">
@@ -335,10 +337,10 @@ export default function EarningsRevenuePage() {
                   <h3 className="font-semibold text-neutral-900">TikTok Shop Explosion</h3>
                 </div>
                 <p className="text-body-sm text-neutral-700 mb-3">
-                  TikTok Shop has grown <strong>145% year-over-year</strong>, reaching <strong>$40 billion GMV</strong> in 2026. Creators earn 5% to 20% commission on sales. Top affiliates make $10,000 to $100,000 or more monthly.
+                  TikTok Shop is often one of the strongest non-ad revenue streams because it converts content into affiliate or seller income. Earnings vary widely by product fit, audience trust, and the creator's ability to produce repeatable commerce content.
                 </p>
                 <p className="text-body-sm text-neutral-600">
-                  LIVE shopping events consistently outperform static posts. Conversion rates are 3 to 5 times higher during live streams.
+                  LIVE shopping can outperform static content for some categories, but the actual upside depends on audience intent, offer quality, and whether viewers are already comfortable buying through TikTok.
                 </p>
               </div>
             </div>
@@ -548,11 +550,11 @@ export default function EarningsRevenuePage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/engagement-influence/influencer-pricing/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/brand-deal-rate/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Influencer Pricing Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate brand deal rates based on followers and engagement</p>
               </Link>
-              <Link href="/calculators/coins-gifts-diamonds/diamonds/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/diamond-converter/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Convert diamonds from LIVE gifts to real money</p>
               </Link>

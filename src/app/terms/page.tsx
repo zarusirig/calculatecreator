@@ -3,10 +3,11 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 
 export const metadata: Metadata = {
-  title: "Terms and CalculateCreator Platform Details Guide 2026",
-  description: "Review terms information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused use.",
+  title: 'Terms of Use | TT Calculator',
+  description:
+    'Read the terms that govern TT Calculator, including estimate disclaimers, site usage, intellectual property, and liability limits.',
   alternates: {
-    canonical: 'https://calculatecreator.com/terms/',
+    canonical: 'https://tiktokcalculator.net/terms/',
   },
 };
 
@@ -16,13 +17,13 @@ const termsSchema = {
   '@type': 'WebPage',
   name: 'Terms of Service',
   description:
-    'Terms of Service for calculatecreator.com covering estimate disclaimers, user responsibilities, intellectual property, and liability limits.',
-  url: 'https://calculatecreator.com/terms/',
+    'Terms of Service for tiktokcalculator.net covering estimate disclaimers, user responsibilities, intellectual property, and liability limits.',
+  url: 'https://tiktokcalculator.net/terms/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -40,8 +41,8 @@ export default function TermsPage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          These Terms of Service ("Terms") govern your use of calculatecreator.com and related
-          content, tools, calculators, and benchmark pages published by CalculateCreator. By
+          These Terms of Service ("Terms") govern your use of tiktokcalculator.net and related
+          content, tools, calculators, and benchmark pages published by TT Calculator. By
           accessing or using the site, you agree to these Terms. If you do not agree, do not use
           the site.
         </p>
@@ -55,7 +56,7 @@ export default function TermsPage() {
         <section className="mt-8 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">1. Description of service</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator provides informational tools and educational content for creator
+            TT Calculator provides informational tools and educational content for creator
             economics and performance modeling. Services include calculator pages, benchmarks,
             guides, glossaries, and compliance resources. We may add, remove, or modify features at
             any time to improve quality, maintain security, or align with policy and legal
@@ -97,7 +98,7 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">3. No professional advice</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Content on CalculateCreator does not constitute financial, tax, accounting, legal,
+            Content on TT Calculator does not constitute financial, tax, accounting, legal,
             investment, or business advisory services. Any action you take based on site content is
             at your own discretion and risk.
           </p>
@@ -118,7 +119,7 @@ export default function TermsPage() {
             <li>Respect intellectual property rights and attribution requirements.</li>
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You are responsible for how you apply outputs from calculatecreator.com in your own
+            You are responsible for how you apply outputs from tiktokcalculator.net in your own
             business context. Use independent judgment before making spending, hiring, contracting,
             tax, or legal decisions.
           </p>
@@ -127,7 +128,7 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">5. Prohibited uses</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You may not use CalculateCreator to engage in fraud, illegal conduct, deceptive
+            You may not use TT Calculator to engage in fraud, illegal conduct, deceptive
             advertising, harassment, unauthorized data extraction, or any behavior that violates
             applicable law or third-party rights. We may restrict access if we detect abuse,
             security threats, or policy violations.
@@ -142,13 +143,13 @@ export default function TermsPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">6. Intellectual property</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Unless otherwise noted, site content and tooling, including text, design elements,
-            formulas, and custom software implementation, are owned by CalculateCreator or licensed
+            formulas, and custom software implementation, are owned by TT Calculator or licensed
             to us. You may reference public pages with attribution and links to original URLs.
             Unauthorized reproduction or redistribution of substantial proprietary content may
             violate copyright or other laws.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            "TikTok" and related marks are trademarks of their respective owners. CalculateCreator
+            "TikTok" and related marks are trademarks of their respective owners. TT Calculator
             is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -170,7 +171,7 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">8. Advertising and monetization</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            CalculateCreator is funded in part through advertising, including Google AdSense.
+            TT Calculator is funded in part through advertising, including Google AdSense.
             Advertising helps us keep tools publicly accessible without user paywalls. Advertising
             does not determine calculator outputs or editorial conclusions.
           </p>
@@ -191,7 +192,7 @@ export default function TermsPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">9. Disclaimer of warranties</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             The site is provided on an "as is" and "as available" basis. To the maximum extent
-            permitted by law, CalculateCreator disclaims all warranties, express or implied,
+            permitted by law, TT Calculator disclaims all warranties, express or implied,
             including merchantability, fitness for a particular purpose, and non-infringement.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -208,7 +209,7 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">10. Limitation of liability</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            To the fullest extent permitted by law, CalculateCreator and its operators are not
+            To the fullest extent permitted by law, TT Calculator and its operators are not
             liable for indirect, incidental, special, consequential, or punitive damages arising out
             of or related to your use of the site. This includes lost profits, lost opportunities,
             business interruption, data loss, or reliance on estimated results.
@@ -226,7 +227,7 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">11. Indemnification</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You agree to defend, indemnify, and hold harmless CalculateCreator, its operators, and
+            You agree to defend, indemnify, and hold harmless TT Calculator, its operators, and
             contributors from claims, liabilities, damages, and costs (including reasonable legal
             fees) arising from your misuse of the site, your violation of these Terms, or your
             violation of law or third-party rights.
@@ -278,7 +279,7 @@ export default function TermsPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">16. Entire agreement</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             These Terms, together with linked policies, represent the complete agreement between you
-            and CalculateCreator regarding use of calculatecreator.com. If there is a conflict
+            and TT Calculator regarding use of tiktokcalculator.net. If there is a conflict
             between these Terms and page-level notices, the more specific notice controls for that
             context.
           </p>
@@ -292,10 +293,10 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">17. Contact</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Terms inquiries: <a href="mailto:contact@calculatecreator.com" className="link">contact@calculatecreator.com</a>
+            Terms inquiries: <a href="mailto:contact@tiktokcalculator.net" className="link">contact@tiktokcalculator.net</a>
           </p>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            Privacy inquiries: <a href="mailto:privacy@calculatecreator.com" className="link">privacy@calculatecreator.com</a>
+            Privacy inquiries: <a href="mailto:privacy@tiktokcalculator.net" className="link">privacy@tiktokcalculator.net</a>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Related trust pages:{' '}

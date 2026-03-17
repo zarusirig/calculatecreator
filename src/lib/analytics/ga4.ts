@@ -15,7 +15,7 @@ declare global {
  */
 export function trackPageView(url: string): void {
   if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('config', 'G-X90GQYNEHW', {
+    window.gtag('config', 'G-KNN9QW52GQ', {
       page_path: url,
     });
   }

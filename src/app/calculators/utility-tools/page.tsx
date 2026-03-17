@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "TikTok Utility Tools — Free Creator Toolkit 2026",
   description: "Access free TikTok creator utility tools. Character counters, hashtag generators, posting schedulers, and more — everything you need to manage your content.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/utility-tools/',
+    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/',
   },
 };
 
@@ -84,15 +84,15 @@ export default function UtilityToolsPage() {
       <CollectionPageSchema
         name="TikTok Creator Utility Tools"
         description="Essential utility calculators for TikTok creators to manage taxes, calculate payouts after fees, and check monetization eligibility requirements."
-        url="https://calculatecreator.com/calculators/utility-tools/"
+        url="https://tiktokcalculator.net/calculators/utility-tools/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Utility Tools', url: 'https://tiktokcalculator.net/calculators/utility-tools/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">
@@ -617,7 +617,7 @@ export default function UtilityToolsPage() {
           <Card className="p-8 mb-12">
             <h3 className="text-heading-md font-semibold text-neutral-900 mb-6">Related Calculators</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/calculators/earnings-revenue/money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/tiktok-money/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Money Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate total earnings across all monetization streams</p>
               </Link>

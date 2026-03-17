@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Analyze audience overlap between TikTok accounts. Find shared followers, unique reach potential, and collaboration opportunities for creator partnerships.",
   keywords: ['audience overlap calculator', 'tiktok ad targeting', 'campaign optimization', 'ad audience analysis', 'targeting efficiency'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/audience-overlap/',
+    canonical: 'https://tiktokcalculator.net/calculators/audience-overlap/',
   },
 };
 
@@ -57,7 +57,7 @@ export default function AudienceOverlapCalculatorPage() {
       <CalculatorSchema
         name="TikTok Audience Overlap Calculator"
         description="Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach."
-        url="https://calculatecreator.com/calculators/audience-overlap/"
+        url="https://tiktokcalculator.net/calculators/audience-overlap/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['audience overlap', 'tiktok targeting', 'campaign optimization', 'audience analysis']}
@@ -65,9 +65,9 @@ export default function AudienceOverlapCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Audience Overlap Calculator', url: 'https://calculatecreator.com/calculators/audience-overlap/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Audience Overlap Calculator', url: 'https://tiktokcalculator.net/calculators/audience-overlap/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">

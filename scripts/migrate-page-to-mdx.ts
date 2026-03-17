@@ -505,7 +505,7 @@ function generateFrontmatter(opts: {
     `priorityScore: 70`,
     `wordCount: 0`,
     `publishDate: "${TODAY}"`,
-    `author: "CalculateCreator Team"`,
+    `author: "TT Calculator Team"`,
     `showCalculatorCTA: false`,
     `calculatorCTAType: ""`,
     "---",

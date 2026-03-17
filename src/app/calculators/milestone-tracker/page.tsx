@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Track your TikTok follower milestones and predict when you will reach 1K, 10K, 100K, and 1M followers based on your current growth trajectory.",
   keywords: ['milestone tracker', 'tiktok milestones', 'creator goals', 'monetization requirements', 'growth tracker'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/milestone-tracker/',
+    canonical: 'https://tiktokcalculator.net/calculators/milestone-tracker/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function MilestoneTrackerCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Milestone Tracker Calculator"
         description="Track your TikTok creator milestones. See when you will hit monetization thresholds, follower goals, and unlock new features."
-        url="https://calculatecreator.com/calculators/milestone-tracker/"
+        url="https://tiktokcalculator.net/calculators/milestone-tracker/"
         datePublished="2024-03-20"
         dateModified="2026-03-01"
         keywords={['milestone tracker', 'tiktok milestones', 'creator goals', 'monetization requirements', 'growth tracker']}
@@ -53,9 +53,9 @@ export default function MilestoneTrackerCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Milestone Tracker Calculator', url: 'https://calculatecreator.com/calculators/milestone-tracker/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Milestone Tracker Calculator', url: 'https://tiktokcalculator.net/calculators/milestone-tracker/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

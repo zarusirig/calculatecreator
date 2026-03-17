@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok save rate and understand how bookmarks impact algorithm reach. Compare against niche benchmarks to optimize content strategy.",
   keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric', 'tiktok algorithm signal'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/save-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/save-rate/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function SaveRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Save Rate Calculator"
         description="Calculate your TikTok save rate. Learn how often viewers bookmark your content. Save rate is a key signal for the algorithm."
-        url="https://calculatecreator.com/calculators/save-rate/"
+        url="https://tiktokcalculator.net/calculators/save-rate/"
         datePublished="2024-03-22"
         dateModified="2026-03-01"
         keywords={['save rate calculator', 'tiktok saves', 'bookmark rate', 'content value metric']}
@@ -53,9 +53,9 @@ export default function SaveRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Save Rate Calculator', url: 'https://calculatecreator.com/calculators/save-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Save Rate Calculator', url: 'https://tiktokcalculator.net/calculators/save-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

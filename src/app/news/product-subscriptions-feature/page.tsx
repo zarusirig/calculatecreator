@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok product subscriptions feature update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/product-subscriptions-feature/',
+    canonical: 'https://tiktokcalculator.net/news/product-subscriptions-feature/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function ProductSubscriptionsFeaturePage() {
       <NewsArticleSchema
         headline="TikTok Shop Introduces Product Subscriptions Feature"
         description="TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers."
-        url="https://calculatecreator.com/news/product-subscriptions-feature/"
+        url="https://tiktokcalculator.net/news/product-subscriptions-feature/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        image="https://tiktokcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Product Subscriptions', url: 'https://calculatecreator.com/news/product-subscriptions-feature/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Product Subscriptions', url: 'https://tiktokcalculator.net/news/product-subscriptions-feature/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

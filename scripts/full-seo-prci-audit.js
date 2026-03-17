@@ -11,7 +11,7 @@ const LINKING_REPORT_PATH = path.join(ROOT, 'linking-audit-report.json');
 const THIN_REPORT_PATH = path.join(ROOT, 'thin-pages-report.json');
 const CONTENT_REPORT_PATH = path.join(ROOT, 'reports', 'content-quality-audit.json');
 
-const OWN_HOSTS = new Set(['calculatecreator.com', 'www.calculatecreator.com']);
+const OWN_HOSTS = new Set(['tiktokcalculator.net', 'www.tiktokcalculator.net']);
 const STOPWORDS = new Set([
   'the',
   'and',
@@ -1105,7 +1105,7 @@ function run() {
   const payload = {
     generatedAt: new Date().toISOString(),
     methodology:
-      'Heuristic implementation of the 7-module PRCI framework from CalculateCreator_Full_SEO_Audit.docx, enriched with existing internal audit reports.',
+      'Heuristic implementation of the 7-module PRCI framework from TT Calculator_Full_SEO_Audit.docx, enriched with existing internal audit reports.',
     sourceReportsUsed: {
       linkingAudit: fs.existsSync(LINKING_REPORT_PATH),
       thinAudit: fs.existsSync(THIN_REPORT_PATH),

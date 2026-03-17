@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok posting time calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['best posting time', 'tiktok posting schedule', 'optimal post time'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/posting-time/',
+    canonical: 'https://tiktokcalculator.net/calculators/posting-time/',
   },
   openGraph: {
     title: 'Best Posting Time Calculator 2026',
     description: 'Find optimal posting times for your TikTok audience.',
-    url: 'https://calculatecreator.com/calculators/posting-time/',
+    url: 'https://tiktokcalculator.net/calculators/posting-time/',
     type: 'website',
   },
 };

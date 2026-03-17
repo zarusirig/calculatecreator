@@ -329,5 +329,5 @@ export function getCalculatorSchema(slug: string): CalculatorSchemaConfig | unde
  * Get full URL for a calculator
  */
 export function getCalculatorURL(slug: string): string {
-  return `https://calculatecreator.com/calculators/${slug}/`;
+  return `https://tiktokcalculator.net/calculators/${slug}/`;
 }

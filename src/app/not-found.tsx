@@ -19,8 +19,8 @@ export default function NotFound() {
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-16">
       <div className="container-custom max-w-2xl text-center">
         <img
-          src="/images/calculate-creator-transparent-v2.png"
-          alt="CalculateCreator logo"
+          src="/images/tt-calculator-logo.png"
+          alt="TT Calculator logo"
           className="h-12 w-auto mx-auto mb-8"
         />
 

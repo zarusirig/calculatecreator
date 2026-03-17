@@ -167,7 +167,7 @@ Not affiliated with TikTok or ByteDance Ltd.
 
 ## 🔗 Links
 
-- Website: https://calculatecreator.com
+- Website: https://tiktokcalculator.net
 - Documentation: `/docs/README.md`
 
 ## 🙏 Acknowledgments

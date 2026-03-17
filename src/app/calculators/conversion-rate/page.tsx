@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok conversion rate from views to sales, signups, or clicks. Benchmark against 2026 industry averages by niche and content type.",
   keywords: ['conversion rate calculator', 'tiktok sales conversion', 'ecommerce conversion', 'funnel optimization', 'tiktok shop conversion'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/conversion-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/conversion-rate/',
   },
 };
 
@@ -65,7 +65,7 @@ export default function ConversionRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Conversion Rate Calculator"
         description="Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers."
-        url="https://calculatecreator.com/calculators/conversion-rate/"
+        url="https://tiktokcalculator.net/calculators/conversion-rate/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok conversion rate', 'conversion calculator', 'tiktok traffic conversion', 'conversion optimization']}
@@ -73,9 +73,9 @@ export default function ConversionRateCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Conversion Rate Calculator', url: 'https://calculatecreator.com/calculators/conversion-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Conversion Rate Calculator', url: 'https://tiktokcalculator.net/calculators/conversion-rate/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">

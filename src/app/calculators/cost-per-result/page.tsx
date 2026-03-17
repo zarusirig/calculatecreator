@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok cost per result across campaign objectives. Estimate CPA, CPL, and cost per install with 2026 benchmark data by industry.",
   keywords: ['cost per result calculator', 'tiktok cpr', 'ad efficiency calculator', 'campaign cost calculator', 'tiktok ads cost'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/cost-per-result/',
+    canonical: 'https://tiktokcalculator.net/calculators/cost-per-result/',
   },
 };
 
@@ -57,7 +57,7 @@ export default function CostPerResultCalculatorPage() {
       <CalculatorSchema
         name="TikTok Cost Per Result Calculator"
         description="Calculate cost per result for your TikTok ad campaigns. Measure CPC, CPA, CPV, CPL, CPE and optimize your advertising efficiency."
-        url="https://calculatecreator.com/calculators/cost-per-result/"
+        url="https://tiktokcalculator.net/calculators/cost-per-result/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['cost per result', 'tiktok cpr', 'cpc calculator', 'cpa calculator', 'tiktok ad costs']}
@@ -65,9 +65,9 @@ export default function CostPerResultCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Cost Per Result Calculator', url: 'https://calculatecreator.com/calculators/cost-per-result/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Cost Per Result Calculator', url: 'https://tiktokcalculator.net/calculators/cost-per-result/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">

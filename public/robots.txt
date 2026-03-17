@@ -7,4 +7,4 @@ Disallow: /api/
 Disallow: /admin/
 Disallow: /tmp/
 
-Sitemap: https://calculatecreator.com/sitemap.xml
+Sitemap: https://tiktokcalculator.net/sitemap.xml

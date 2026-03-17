@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok personalized ai avatar stickers update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers/',
+    canonical: 'https://tiktokcalculator.net/news/personalized-ai-avatar-stickers/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function PersonalizedAIAvatarStickersPage() {
       <NewsArticleSchema
         headline="TikTok Releases Personalized AI Avatar Stickers | TikTok News"
         description="TikTok rolled out AI-powered personalized avatar stickers in October 2026. Users can create custom stickers based on their likeness."
-        url="https://calculatecreator.com/news/personalized-ai-avatar-stickers/"
+        url="https://tiktokcalculator.net/news/personalized-ai-avatar-stickers/"
         datePublished="2026-10-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-features-1024.webp"
+        image="https://tiktokcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'AI Avatar Stickers', url: 'https://calculatecreator.com/news/personalized-ai-avatar-stickers/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'AI Avatar Stickers', url: 'https://tiktokcalculator.net/news/personalized-ai-avatar-stickers/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

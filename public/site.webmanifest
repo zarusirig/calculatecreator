@@ -1,6 +1,6 @@
 {
-  "name": "TikTok Creator Calculator",
-  "short_name": "CalculateCreator",
+  "name": "TT Calculator",
+  "short_name": "TT Calculator",
   "description": "Free TikTok calculators for creators: estimate earnings, engagement rates, brand deal rates, and more.",
   "start_url": "/",
   "display": "standalone",
@@ -8,7 +8,7 @@
   "theme_color": "#171717",
   "icons": [
     {
-      "src": "/images/calculate-creator-transparent-v2.png",
+      "src": "/images/tt-calculator-logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

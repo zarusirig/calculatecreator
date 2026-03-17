@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok cpm cpv calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   keywords: ['tiktok cpm calculator', 'cpv calculator', 'ad cost calculator', 'tiktok advertising'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/cpm-cpv/',
+    canonical: 'https://tiktokcalculator.net/calculators/cpm-cpv/',
   },
   openGraph: {
     title: 'CPM/CPV Calculator 2026',
     description: 'Calculate Cost Per Mille and Cost Per View for TikTok ads.',
-    url: 'https://calculatecreator.com/calculators/cpm-cpv/',
+    url: 'https://tiktokcalculator.net/calculators/cpm-cpv/',
     type: 'website',
   },
 };

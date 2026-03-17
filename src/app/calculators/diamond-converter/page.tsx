@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Convert TikTok diamonds to USD instantly. Understand the gift-to-diamond-to-cash pipeline and calculate your actual creator payout.",
   keywords: ['tiktok diamond converter', 'diamonds to usd', 'tiktok diamond calculator', 'diamond value', 'tiktok live earnings', 'convert diamonds to money'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/diamond-converter/',
+    canonical: 'https://tiktokcalculator.net/calculators/diamond-converter/',
   },
 };
 
@@ -78,7 +78,7 @@ export default function DiamondConverterPage() {
       <CalculatorSchema
         name="TikTok Diamond Converter"
         description="Convert TikTok diamonds to USD, EUR, GBP, and other currencies. Calculate your LIVE streaming gift earnings with accurate 2026 rates."
-        url="https://calculatecreator.com/calculators/diamond-converter/"
+        url="https://tiktokcalculator.net/calculators/diamond-converter/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok diamond converter', 'diamonds to usd', 'diamond calculator', 'tiktok live earnings']}
@@ -86,9 +86,9 @@ export default function DiamondConverterPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Diamond Converter', url: 'https://calculatecreator.com/calculators/diamond-converter/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Diamond Converter', url: 'https://tiktokcalculator.net/calculators/diamond-converter/' },
         ]}
       />
 
@@ -130,6 +130,7 @@ export default function DiamondConverterPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">

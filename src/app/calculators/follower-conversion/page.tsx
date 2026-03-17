@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok viewer-to-follower conversion rate. See how efficiently your content converts viewers into followers with niche benchmarks.",
   keywords: ['follower conversion rate', 'views to followers', 'tiktok growth calculator', 'follower growth rate', 'conversion optimization'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/follower-conversion/',
+    canonical: 'https://tiktokcalculator.net/calculators/follower-conversion/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function FollowerConversionCalculatorPage() {
       <CalculatorSchema
         name="TikTok Follower Conversion Rate Calculator"
         description="Calculate how effectively your TikTok views convert to followers. Optimize content to grow your audience faster with our free conversion calculator."
-        url="https://calculatecreator.com/calculators/follower-conversion/"
+        url="https://tiktokcalculator.net/calculators/follower-conversion/"
         datePublished="2024-03-08"
         dateModified="2026-03-01"
         keywords={['follower conversion rate', 'views to followers', 'tiktok growth calculator', 'follower growth rate', 'conversion optimization']}
@@ -53,9 +53,9 @@ export default function FollowerConversionCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Follower Conversion Calculator', url: 'https://calculatecreator.com/calculators/follower-conversion/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Follower Conversion Calculator', url: 'https://tiktokcalculator.net/calculators/follower-conversion/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

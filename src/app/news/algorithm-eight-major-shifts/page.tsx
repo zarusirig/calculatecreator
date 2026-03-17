@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok algorithm eight major shifts update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/',
+    canonical: 'https://tiktokcalculator.net/news/algorithm-eight-major-shifts/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function AlgorithmEightMajorShiftsPage() {
       <NewsArticleSchema
         headline="TikTok Algorithm Undergoes Eight Major Shifts in 2025"
         description="TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior."
-        url="https://calculatecreator.com/news/algorithm-eight-major-shifts/"
+        url="https://tiktokcalculator.net/news/algorithm-eight-major-shifts/"
         datePublished="2026-01-03"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        image="https://tiktokcalculator.net/news/news-algorithm-1024.webp"
         keywords={['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Algorithm Changes', url: 'https://calculatecreator.com/news/algorithm-eight-major-shifts/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Algorithm Changes', url: 'https://tiktokcalculator.net/news/algorithm-eight-major-shifts/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

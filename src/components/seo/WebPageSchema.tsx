@@ -14,14 +14,14 @@ export function WebPageSchema({ title, description, url, breadcrumbs = [] }: Web
     name: title,
     description: description,
     isPartOf: {
-      '@id': 'https://calculatecreator.com/#website',
+      '@id': 'https://tiktokcalculator.net/#website',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: 'TT Calculator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
   };
@@ -31,7 +31,7 @@ export function WebPageSchema({ title, description, url, breadcrumbs = [] }: Web
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: 'https://calculatecreator.com/',
+      item: 'https://tiktokcalculator.net/',
     },
     ...breadcrumbs.map((crumb, index) => ({
       '@type': 'ListItem',

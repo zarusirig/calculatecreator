@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   title: {
     absolute: 'TikTok Data Hub — Earnings Benchmarks and Rates',
   },
-  description: "Review TikTok data data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
-  keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
+  description: "Review TikTok benchmark data with monetization context, legacy-versus-current program notes, and interpretation guidance for creator decision making.",
+  keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator rewards rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
   alternates: {
-    canonical: 'https://calculatecreator.com/data/',
+    canonical: 'https://tiktokcalculator.net/data/',
   },
 };
 
@@ -21,8 +21,8 @@ export default function DataIndexPage() {
   const dataCategories = [
     {
       icon: DollarSign,
-      title: 'Creator Fund Rates',
-      description: 'RPM earnings data by niche and country',
+      title: 'View-Based Earnings Data',
+      description: 'RPM-style earnings context by niche and country',
       datasets: [
         {
           name: 'RPM Rates by Niche',
@@ -31,10 +31,10 @@ export default function DataIndexPage() {
           insights: 'Finance niches earn 5-7x more than entertainment',
         },
         {
-          name: 'Creator Fund Rates by Country',
+          name: 'Creator Rewards and Legacy Fund by Country',
           url: '/data/creator-fund-rates-by-country',
-          description: 'Geographic earnings multipliers and availability across 50+ countries',
-          insights: 'US creators earn 3-5x more per view than developing markets',
+          description: 'Geographic earnings multipliers, legacy Fund context, and current program availability notes',
+          insights: 'Regional payout context varies with audience quality, market demand, and program access',
         },
       ],
     },
@@ -76,10 +76,10 @@ export default function DataIndexPage() {
       description: 'Payment schedules and program details',
       datasets: [
         {
-          name: 'Creator Fund Eligible Countries',
+          name: 'Creator Rewards and Legacy Fund Availability',
           url: '/reference/creator-fund-countries',
-          description: 'List of countries where Creator Fund is available with eligibility requirements',
-          insights: 'Available in 25+ countries with varying requirements',
+          description: 'Current Creator Rewards availability guidance plus legacy Fund status',
+          insights: 'Always verify availability inside TikTok support and creator tools',
         },
         {
           name: 'TikTok Shop Payment Schedule',
@@ -119,7 +119,7 @@ export default function DataIndexPage() {
   const faqs = [
     {
       question: 'Where does this data come from?',
-      answer: 'Our datasets combine: (1) Anonymous survey data from 1,000+ active TikTok creators, (2) Publicly disclosed earnings from creator interviews and case studies, (3) Industry reports from influencer marketing platforms like CreatorIQ and AspireIQ, and (4) TikTok Creator Marketplace rate cards. All data is aggregated, anonymized, and updated quarterly (last update: January 2025).',
+      answer: 'These pages combine platform documentation, creator-facing product information, public case studies, and benchmark-oriented editorial analysis. Treat them as directional planning references rather than audited payout ledgers, and verify any current program requirement inside TikTok support or creator tools before acting on it.',
     },
     {
       question: 'How accurate are these benchmarks?',
@@ -135,11 +135,11 @@ export default function DataIndexPage() {
     },
     {
       question: 'How often is this data updated?',
-      answer: 'We update all datasets quarterly (January, April, July, October) to reflect current market conditions. Major updates occur in January (annual benchmark refresh) and July (mid-year adjustment). Follow our news page for update announcements. Last update: January 2025.',
+      answer: 'We review datasets periodically and revise pages when platform programs, creator tooling, or benchmark assumptions materially change. Some pages are legacy context, so always check the visible page date and confirm current program details inside TikTok before treating a benchmark as operational guidance.',
     },
     {
       question: 'What if my earnings don\'t match these benchmarks?',
-      answer: 'Multiple factors affect earnings: (1) Engagement rate (4%+ is healthy, <2% hurts rates), (2) Audience location (US/UK/CA views pay most), (3) Watch time (low completion = lower RPM), (4) Account age (newer accounts may have lower initial rates), (5) Content quality. If you\'re below benchmarks, focus on improving engagement and targeting higher-GDP audiences.',
+      answer: 'Multiple factors affect earnings: engagement rate, audience location, watch time, content format, monetization mix, and whether your videos qualify for current programs. If you are below benchmarks, compare your audience quality, content format, and monetization setup before assuming the benchmark is wrong.',
     },
   ];
 
@@ -147,8 +147,8 @@ export default function DataIndexPage() {
     <div className="min-h-screen bg-neutral-50">
       <DatasetSchema
         title="TikTok Creator Data & Benchmarks Hub"
-        description="Access comprehensive TikTok creator earnings data: Creator Fund RPM by niche, brand deal rates by country, engagement benchmarks, and industry standards for 2026."
-        url="https://calculatecreator.com/data/"
+        description="Access TikTok creator benchmark data with context for Creator Rewards, legacy Fund comparisons, brand deal rates, engagement benchmarks, and industry standards."
+        url="https://tiktokcalculator.net/data/"
         keywords={['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data']}
       />
       <Breadcrumb
@@ -168,7 +168,7 @@ export default function DataIndexPage() {
             </h1>
           </div>
           <p className="text-heading-md text-white/90 mb-6 leading-relaxed">TikTok creators: 
-            Industry-standard benchmarks for Creator Fund earnings, brand deal rates, and engagement metrics. Make data-driven decisions about your creator business.
+            Benchmark-oriented context for Creator Rewards, legacy Fund comparisons, brand deal rates, and engagement metrics. Make more informed decisions about your creator business.
           </p>
           <div className="flex flex-wrap gap-4 text-body-sm text-white/80">
             <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
@@ -178,7 +178,7 @@ export default function DataIndexPage() {
               <Globe className="w-4 h-4" /> Global Coverage
             </span>
             <span className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-              <TrendingUp className="w-4 h-4" /> Updated Quarterly
+              <TrendingUp className="w-4 h-4" /> Periodically Reviewed
             </span>
           </div>
         </div>
@@ -193,15 +193,15 @@ export default function DataIndexPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="space-y-4">
               <p className="text-body-md text-neutral-700 leading-relaxed">
-                TikTok's creator economy is opaque by design. Most creators have no idea if they're being underpaid for brand deals, if their Creator Fund RPM is normal, or how their engagement compares to competitors in their niche.
+                TikTok&apos;s creator economy is opaque by design. Most creators have no idea if they&apos;re being underpaid for brand deals, if their view-based program income is normal, or how their engagement compares to competitors in their niche.
               </p>
               <p className="text-body-md text-neutral-700 leading-relaxed">
-                This information asymmetry hurts creators. Brands exploit it by offering lowball sponsorship rates. Creators waste time on low-RPM content when they could pivot to higher-earning niches. Platform changes go unnoticed until earnings drop.
+                This information asymmetry hurts creators. Brands exploit it by offering lowball sponsorship rates. Creators waste time on low-yield content when they could pivot to stronger monetization paths. Platform changes also go unnoticed until earnings drop.
               </p>
             </div>
             <div className="space-y-4">
               <p className="text-body-md text-neutral-700 leading-relaxed">
-                Our data hub solves this by providing <strong>transparent, actionable benchmarks</strong> based on real creator earnings across thousands of accounts. Use this data to:
+                Our data hub provides <strong>transparent, actionable benchmarks</strong> and editorial context that help you interpret creator earnings data more carefully. Use this data to:
               </p>
               <ul className="space-y-2 text-body-md text-neutral-700">
                 <li className="flex items-start gap-2">
@@ -234,7 +234,7 @@ export default function DataIndexPage() {
             <div className="p-6 bg-green-50 border-l-4 border-green-500 rounded-lg">
               <h3 className="font-semibold text-green-900 mb-2">Real Example: Strategic Niche Pivot</h3>
               <p className="text-body-sm text-neutral-700 leading-relaxed">
-                Marcus, a comedy creator with 150K followers, was earning $40-$60/month from Creator Fund ($0.012 RPM). After analyzing our RPM data, he added "personal finance comedy" content (funny takes on money mistakes) to his mix. His blended RPM jumped to $0.028—over 2x higher—earning $120-$150/month with the same view counts. He maintained his comedy audience while tapping into higher-value advertiser demand.
+                Marcus, a comedy creator with 150K followers, was relying on low-yield view-based payouts. After analyzing RPM and sponsorship benchmarks, he added "personal finance comedy" content to his mix. The result was not just better payout quality, but stronger sponsorship relevance and more monetization options from the same audience.
               </p>
             </div>
           </div>
@@ -249,8 +249,8 @@ export default function DataIndexPage() {
                 <DollarSign className="w-8 h-8 text-purple-600" />
                 <h3 className="font-semibold text-neutral-900">Average RPM</h3>
               </div>
-              <p className="text-display-sm font-bold text-purple-600 mb-2">$0.02-$0.04</p>
-              <p className="text-body-sm text-neutral-600">Creator Fund median rate (varies by niche 5x)</p>
+              <p className="text-display-sm font-bold text-purple-600 mb-2">Varies</p>
+              <p className="text-body-sm text-neutral-600">View-based program earnings vary by program, niche, region, and content format</p>
             </div>
             <div className="p-5 bg-white rounded-lg border border-purple-200">
               <div className="flex items-center gap-3 mb-3">
@@ -271,7 +271,7 @@ export default function DataIndexPage() {
           </div>
           <div className="mt-6 p-4 bg-purple-100 rounded-lg border border-purple-300">
             <p className="text-body-sm text-neutral-700">
-              <strong>Niche Disparity:</strong> Finance creators earn 5-7x more per view than entertainment creators, and charge 2-3x more per follower for brand deals. Niche selection is the single biggest factor in creator earnings potential.
+              <strong>Niche Disparity:</strong> Monetization varies heavily by niche. Finance and B2B categories often command stronger advertiser demand than general entertainment, but audience trust and conversion quality matter as much as raw niche labels.
             </p>
           </div>
         </Card>
@@ -335,7 +335,7 @@ export default function DataIndexPage() {
               <div className="p-4 bg-white rounded-lg border border-green-200">
                 <p className="text-body-sm text-neutral-700 mb-2"><strong>Example Process:</strong></p>
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
-                  <li>Check your Creator Fund dashboard: $42 earned from 1.5M views = $0.028 RPM</li>
+                  <li>Check your current payout dashboard or creator tools and calculate your effective view-based earnings rate from a recent period</li>
                   <li>Visit <Link href="/data/rpm-rates-by-niche/" className="text-green-600 hover:underline">RPM Rates by Niche</Link> and find your category (e.g., Beauty: $0.025-$0.04)</li>
                   <li>You're at the low-mid range—room for optimization</li>
                 </ul>
@@ -352,7 +352,7 @@ export default function DataIndexPage() {
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
                   <li>Is your engagement rate below 4%? (Low engagement = lower RPM and fewer brand deals)</li>
                   <li>Are most viewers from low-CPM countries? (Check analytics: US/UK/CA pay 3-5x more)</li>
-                  <li>Is your completion rate under 50%? (Poor retention hurts Creator Fund earnings)</li>
+                  <li>Is your completion rate under 50%? (Poor retention can hurt view-based program eligibility and overall content performance)</li>
                   <li>Are you in a low-RPM niche but could blend in higher-value content?</li>
                 </ul>
               </div>
@@ -382,7 +382,7 @@ export default function DataIndexPage() {
               <div className="p-4 bg-white rounded-lg border border-orange-200">
                 <p className="text-body-sm text-neutral-700 mb-2"><strong>Decision Framework:</strong></p>
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
-                  <li>Compare RPM ranges across niches (finance: $0.05-$0.07 vs. comedy: $0.01-$0.02)</li>
+                  <li>Compare RPM-style ranges across niches and ask whether your audience would actually sustain a pivot</li>
                   <li>Check brand deal premiums (finance creators charge 2-3x more per follower)</li>
                   <li>Consider hybrid niches (e.g., "funny finance tips" gets better rates than pure comedy)</li>
                   <li>Weigh earning potential against your genuine interest and expertise</li>
@@ -393,10 +393,10 @@ export default function DataIndexPage() {
             <div className="p-5 bg-red-50 border-l-4 border-red-500 rounded-lg">
               <h3 className="text-heading-md font-semibold text-red-900 mb-3">5. Track Changes Over Time</h3>
               <p className="text-body-md text-neutral-700 mb-3">
-                Creator economy rates fluctuate. Revisit benchmarks quarterly to ensure your rates stay competitive and your optimization efforts are working.
+                Creator economy rates fluctuate. Revisit benchmarks regularly to ensure your rates stay competitive and your optimization efforts are working.
               </p>
               <div className="p-4 bg-white rounded-lg border border-red-200">
-                <p className="text-body-sm text-neutral-700 mb-2"><strong>Quarterly Review Checklist:</strong></p>
+                <p className="text-body-sm text-neutral-700 mb-2"><strong>Review Checklist:</strong></p>
                 <ul className="space-y-1 text-body-sm text-neutral-600 list-disc list-inside">
                   <li>Compare current month RPM to previous quarter (improving or declining?)</li>
                   <li>Check if brand deal rates have shifted industry-wide (raise/lower your rate card)</li>
@@ -503,7 +503,7 @@ export default function DataIndexPage() {
             </div>
 
             <p className="text-body-sm italic">
-              <strong>Data Sources:</strong> Aggregated from 1,000+ creator surveys, public earnings disclosures, influencer platform reports, and TikTok Creator Marketplace rate cards. Last updated January 2025. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money/" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
+              <strong>Data Sources:</strong> Platform documentation, creator-facing product information, public disclosures, and benchmark-oriented editorial analysis. Treat the numbers here as directional references, not audited payout guarantees. For personalized estimates based on your specific metrics, use our <Link href="/calculators/tiktok-money/" className="text-yellow-900 hover:underline font-semibold">earnings calculators</Link>.
             </p>
           </div>
         </Card>
@@ -528,7 +528,7 @@ export default function DataIndexPage() {
             <Link href="/calculators/rpm/" className="p-5 bg-white rounded-lg border-2 border-transparent hover:border-purple-400 hover:shadow-lg transition-all text-center">
               <BarChart3 className="w-8 h-8 text-purple-600 mx-auto mb-3" />
               <h4 className="font-semibold text-neutral-900 mb-2">RPM Calculator</h4>
-              <p className="text-body-sm text-neutral-600">Analyze your Creator Fund earnings rate</p>
+              <p className="text-body-sm text-neutral-600">Analyze your effective view-based earnings rate</p>
             </Link>
           </div>
         </Card>
@@ -558,8 +558,8 @@ export default function DataIndexPage() {
               <p className="text-body-sm text-neutral-600">Choose a profitable niche that matches your interests and expertise</p>
             </Link>
             <Link href="/guides/how-to-increase-creator-fund-earnings/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors border border-neutral-200">
-              <h4 className="font-semibold text-neutral-900 mb-2">Increase Creator Fund Earnings</h4>
-              <p className="text-body-sm text-neutral-600">12 proven strategies to boost your RPM and total monthly income</p>
+              <h4 className="font-semibold text-neutral-900 mb-2">Legacy Fund and Creator Rewards Guide</h4>
+              <p className="text-body-sm text-neutral-600">Historical Fund context plus current guidance for improving view-based monetization</p>
             </Link>
           </div>
         </Card>

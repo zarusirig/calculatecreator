@@ -35,7 +35,7 @@ export function CollectionSchema({
     description: description,
     url: url,
     isPartOf: {
-      '@id': 'https://calculatecreator.com/#website',
+      '@id': 'https://tiktokcalculator.net/#website',
     },
     about: {
       '@type': 'Thing',
@@ -44,10 +44,10 @@ export function CollectionSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: 'TT Calculator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
   };
@@ -91,7 +91,7 @@ export function CollectionSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',

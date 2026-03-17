@@ -1,0 +1,804 @@
+{
+  "audit_date": "2026-02-20",
+  "site": "https://calculatecreator.com",
+  "total_pages_in_sitemap": 408,
+  "overall_score": 68,
+  "grade": "C+",
+
+  "category_scores": {
+    "crawlability": {
+      "weight": 15,
+      "score": 82,
+      "weighted_score": 12.3,
+      "sub_checks": {
+        "robots_txt": {
+          "status": "pass",
+          "score": 95,
+          "details": "robots.txt properly configured. Allow: /, /_next/. Blocks /api/, /admin/, /tmp/. Sitemap declared.",
+          "issues": []
+        },
+        "sitemap_xml": {
+          "status": "pass",
+          "score": 90,
+          "details": "sitemap.xml contains 408 URLs matching expectations. Properly formatted with lastmod, changefreq, priority.",
+          "issues": [
+            "All article URLs share the same lastmod date (2026-02-17) rather than actual modification dates",
+            "Many URLs have priority=1.0 which dilutes the signal - should differentiate between page importance"
+          ]
+        },
+        "status_codes": {
+          "status": "pass",
+          "score": 100,
+          "details": "All 30 sampled URLs returned HTTP 200. No 404s, 302s, or 5xx errors found among sitemap URLs.",
+          "issues": []
+        },
+        "redirect_handling": {
+          "status": "warning",
+          "score": 75,
+          "details": "HTTP->HTTPS redirect works (301). Non-trailing-slash URLs redirect to trailing-slash (301) correctly. 26 legacy URL redirects in firebase.json are all 301.",
+          "issues": [
+            "www subdomain returns no response (000) - www.calculatecreator.com is unreachable rather than redirecting to non-www",
+            "Double-slash URLs (/calculators/tiktok-money//) return 307 instead of 301, creating potential crawl confusion"
+          ]
+        },
+        "broken_resources": {
+          "status": "fail",
+          "score": 40,
+          "details": "logo.png referenced in multiple JSON-LD schemas returns 404.",
+          "issues": [
+            "CRITICAL: https://calculatecreator.com/logo.png returns 404 - referenced in publisher.logo across ALL Article and Organization schemas site-wide (affects 200+ pages)"
+          ]
+        },
+        "response_times": {
+          "status": "pass",
+          "score": 90,
+          "details": "TTFB ranges 134-328ms, total load 246-451ms. Brotli compression enabled (117KB -> 12KB compressed).",
+          "issues": []
+        }
+      }
+    },
+
+    "meta_tags": {
+      "weight": 15,
+      "score": 52,
+      "weighted_score": 7.8,
+      "sub_checks": {
+        "title_tags": {
+          "status": "warning",
+          "score": 55,
+          "details": "Homepage title is good (84 chars but informative). Calculator page titles have poor patterns.",
+          "issues": [
+            "CRITICAL: Calculator titles use templated format 'TikTok {Slug} Calculator and Earnings Tool Guide' - keyword-stuffed and unnatural (e.g., 'TikTok Tiktok Money Calculator and Earnings Tool Guide')",
+            "Title tag capitalization issues: 'Tiktok Money' instead of 'TikTok Money' - slug is being title-cased without proper brand casing",
+            "Many calculator titles exceed 60 chars or are generic/repetitive across pages",
+            "News page titles use pattern 'TikTok {slug} News and Creator Update' - slug-derived, not human-written",
+            "MDX article titles are better but some have keyword-first pattern: 'tiktok earnings per views - Average TikTok Earnings Per 1K' (lowercase keyword prefix)"
+          ]
+        },
+        "meta_descriptions": {
+          "status": "warning",
+          "score": 50,
+          "details": "Templated descriptions across page types lack uniqueness and CTAs.",
+          "issues": [
+            "Calculator descriptions all follow pattern: 'Use this TikTok {slug} calculator to estimate earnings, engagement, and monetization outcomes...' - nearly identical across 35+ calculators",
+            "MDX article descriptions repeat headline then add boilerplate: '{Headline}. {keyword} with data, benchmarks, and expert analysis. Includes benchmarks, monetization' - double 'benchmarks'",
+            "Several descriptions are truncated mid-sentence (e.g., 'Includes benchmarks,' ending with comma)",
+            "Homepage meta description is 170 chars - exceeds 155-char best practice",
+            "News pages all share same boilerplate description pattern"
+          ]
+        },
+        "canonical_tags": {
+          "status": "pass",
+          "score": 92,
+          "details": "All sampled pages have self-referencing canonical tags. Proper absolute URLs with trailing slashes.",
+          "issues": [
+            "Minor: canonical uses consistent trailing-slash format, matching sitemap - good"
+          ]
+        },
+        "og_tags": {
+          "status": "fail",
+          "score": 35,
+          "details": "Significant og:url and og:title inheritance issues across multiple page types.",
+          "issues": [
+            "CRITICAL: All 20+ news pages inherit layout default OG tags - og:url points to homepage, og:title says 'CalculateCreator - Creator Benchmarks and Calculators', og:description is generic",
+            "CRITICAL: All 7 comparison pages inherit default OG tags - og:url points to homepage",
+            "CRITICAL: Calculator pages (tiktok-money, engagement-rate, coins, brand-deal-rate) have og:url pointing to /calculators/ instead of their own URL",
+            "Reference, about, faq, glossary pages all inherit default og:url pointing to homepage",
+            "Homepage is missing og:image in its page-level metadata (only set in layout default)",
+            "Total estimated affected pages: 80-100+ pages with wrong og:url"
+          ]
+        },
+        "twitter_cards": {
+          "status": "warning",
+          "score": 55,
+          "details": "Twitter cards present on pages that set metadata, but many pages inherit generic defaults.",
+          "issues": [
+            "News, comparison, reference, and utility pages inherit generic twitter:title 'CalculateCreator' instead of page-specific titles",
+            "All pages use the same hero-dashboard image for twitter:image - no page-specific social images"
+          ]
+        },
+        "robots_meta": {
+          "status": "pass",
+          "score": 90,
+          "details": "Pages that set robots meta use 'index, follow' with proper googlebot directives for max-snippet and max-image-preview.",
+          "issues": [
+            "Some pages (older calculators) do not explicitly set robots meta, relying on layout default which is fine"
+          ]
+        },
+        "viewport": {
+          "status": "pass",
+          "score": 100,
+          "details": "All pages have viewport meta tag: width=device-width, initial-scale=1",
+          "issues": []
+        }
+      }
+    },
+
+    "schema_markup": {
+      "weight": 10,
+      "score": 65,
+      "weighted_score": 6.5,
+      "sub_checks": {
+        "homepage_schema": {
+          "status": "fail",
+          "score": 0,
+          "details": "HomepageSchema component exists in codebase but is NEVER imported or rendered on the homepage.",
+          "issues": [
+            "CRITICAL: Homepage has ZERO JSON-LD structured data. HomepageSchema component at src/components/seo/HomepageSchema.tsx defines Organization, WebSite, FAQPage, BreadcrumbList, ItemList, and CollectionPage schemas but is not imported in src/app/page.tsx",
+            "Missing WebSite schema with SearchAction on homepage - important for sitelinks searchbox in SERPs",
+            "Missing Organization schema on homepage - important for Knowledge Panel"
+          ]
+        },
+        "calculator_schemas": {
+          "status": "pass",
+          "score": 85,
+          "details": "Calculator pages have SoftwareApplication, FAQPage, BreadcrumbList, and Person schemas. Well-structured.",
+          "issues": [
+            "Publisher logo URL (logo.png) returns 404 - invalid ImageObject reference",
+            "Rating values may trigger Google manual review - ensure reviews are legitimate"
+          ]
+        },
+        "article_schemas": {
+          "status": "pass",
+          "score": 80,
+          "details": "MDX articles and blog posts have Article/BreadcrumbList/Person schemas. Guides use Article schema correctly.",
+          "issues": [
+            "Some articles use 'Person' type for 'CalculateCreator Team' - should be Organization",
+            "Publisher logo URL (logo.png) returns 404 across all Article schemas",
+            "datePublished and dateModified are identical on most articles - should reflect actual edit dates"
+          ]
+        },
+        "news_schemas": {
+          "status": "pass",
+          "score": 80,
+          "details": "News pages use NewsArticle schema type with proper headline, dates, and author information.",
+          "issues": [
+            "Publisher logo 404 issue applies here too",
+            "News article images reference /news/ directory images that do exist - good"
+          ]
+        },
+        "comparison_schemas": {
+          "status": "pass",
+          "score": 75,
+          "details": "Comparison pages have Article, FAQPage, BreadcrumbList, and ComparisonTable schemas.",
+          "issues": [
+            "ComparisonTable is not a standard schema.org type - may not be recognized by Google",
+            "datePublished shows 2024-11-01 and dateModified 2025-11-15 - potentially stale"
+          ]
+        },
+        "collection_schemas": {
+          "status": "pass",
+          "score": 80,
+          "details": "Category/hub pages use CollectionPage, ItemList, FAQPage, and BreadcrumbList schemas.",
+          "issues": []
+        }
+      }
+    },
+
+    "internal_linking": {
+      "weight": 15,
+      "score": 72,
+      "weighted_score": 10.8,
+      "sub_checks": {
+        "link_density": {
+          "status": "pass",
+          "score": 85,
+          "details": "Pages average 30-60 internal links. Homepage has ~55-60. Article pages have 25-40. Good coverage.",
+          "issues": []
+        },
+        "navigation_structure": {
+          "status": "warning",
+          "score": 70,
+          "details": "Header navigation is minimal (Guides, News, Search, Run Estimate). Footer has comprehensive links.",
+          "issues": [
+            "Header nav only has 4 links - missing direct links to Calculators, Data, Blog, Comparisons sections",
+            "No mega menu or dropdown navigation despite having 35+ calculator pages",
+            "Blog index, Data section, and Comparisons section not in primary navigation"
+          ]
+        },
+        "breadcrumbs": {
+          "status": "pass",
+          "score": 90,
+          "details": "Breadcrumbs present on all content pages with proper hierarchy. Both visual and JSON-LD breadcrumbs match.",
+          "issues": [
+            "Homepage breadcrumb only has 'Home' - correct behavior"
+          ]
+        },
+        "contextual_links": {
+          "status": "pass",
+          "score": 80,
+          "details": "Article pages include contextual links to related calculators, guides, and data pages within body content.",
+          "issues": [
+            "Some CTA links have double-slash URLs (e.g., /calculators/tiktok-money// or /calculators/niche-profitability//) which redirect via 307",
+            "Related content sections could be more dynamic based on content relationships"
+          ]
+        },
+        "orphan_pages": {
+          "status": "warning",
+          "score": 60,
+          "details": "Some sections have limited incoming links from other content.",
+          "issues": [
+            "Localized calculator pages (/calculator/de/, /calculator/es/, etc.) have minimal internal links from English content",
+            "No hreflang tags connecting English and localized versions",
+            "Some deep data pages (country-specific earnings) may have limited inbound links beyond the data hub"
+          ]
+        },
+        "link_depth": {
+          "status": "pass",
+          "score": 75,
+          "details": "Most content is within 3 clicks from homepage. Some article sub-pages are 4 clicks deep.",
+          "issues": [
+            "Calculator article pages (e.g., /calculators/tiktok-money/tiktok-pay-per-1000-views/) are 4 levels deep",
+            "Some data pages with country specifics are 4 levels deep"
+          ]
+        }
+      }
+    },
+
+    "core_web_vitals": {
+      "weight": 15,
+      "score": 70,
+      "weighted_score": 10.5,
+      "sub_checks": {
+        "ttfb": {
+          "status": "pass",
+          "score": 90,
+          "details": "Time to First Byte: 134-328ms across sampled pages. Well within the 800ms good threshold.",
+          "issues": []
+        },
+        "page_size": {
+          "status": "warning",
+          "score": 55,
+          "details": "Page sizes are large for a static site. Homepage: 115KB, Calculator pages: 166-190KB, Blog: 109KB (uncompressed HTML).",
+          "issues": [
+            "Calculator pages approaching 190KB uncompressed HTML - significant for mobile users",
+            "Earnings-revenue calculator page is 190KB - the largest sampled",
+            "Large JS bundles visible in HTML: multiple async script chunks loaded on every page"
+          ]
+        },
+        "compression": {
+          "status": "pass",
+          "score": 95,
+          "details": "Brotli compression enabled. Homepage compressed from 117KB to 12KB (~90% reduction).",
+          "issues": []
+        },
+        "caching": {
+          "status": "pass",
+          "score": 85,
+          "details": "Good caching strategy: static assets immutable/1yr, calculators/guides 24hr, news 1hr, HTML must-revalidate.",
+          "issues": [
+            "Homepage cache-control is 'max-age=3600' (1hr) rather than matching the calculator pattern of 86400 (24hr)",
+            "Blog pages have 'max-age=3600' instead of 86400 - inconsistent with guides"
+          ]
+        },
+        "font_loading": {
+          "status": "pass",
+          "score": 85,
+          "details": "Two fonts (Inter, Space Grotesk) loaded via next/font with display:swap and preload. WOFF2 format.",
+          "issues": [
+            "Two font families increase total font weight. Consider if Space Grotesk is necessary for all pages"
+          ]
+        },
+        "render_blocking": {
+          "status": "warning",
+          "score": 60,
+          "details": "Multiple CSS files loaded synchronously. JS loaded with async attribute.",
+          "issues": [
+            "Two CSS files loaded with data-precedence (render-blocking by nature)",
+            "Service worker registration script runs on every page via afterInteractive strategy",
+            "DNS prefetch for Google Analytics and GTM even though no GA/GTM scripts visible in layout"
+          ]
+        },
+        "pagespeed_api": {
+          "status": "unavailable",
+          "score": null,
+          "details": "PageSpeed Insights API quota exceeded during testing. Unable to obtain Lighthouse scores.",
+          "issues": [
+            "Could not verify LCP, FID/INP, CLS metrics via API - manual PageSpeed Insights testing recommended"
+          ]
+        }
+      }
+    },
+
+    "image_optimization": {
+      "weight": 10,
+      "score": 60,
+      "weighted_score": 6.0,
+      "sub_checks": {
+        "formats": {
+          "status": "pass",
+          "score": 85,
+          "details": "Hero/OG image uses WebP format (hero-dashboard-1600.webp). News images use WebP.",
+          "issues": [
+            "Logo image (calculate-creator-transparent-v2.png) is still PNG rather than WebP/AVIF"
+          ]
+        },
+        "alt_text": {
+          "status": "warning",
+          "score": 55,
+          "details": "Very few actual <img> tags in content - mostly SVG icons with aria-hidden. Logo has alt text.",
+          "issues": [
+            "Article bodies contain NO inline images at all - purely text content with SVG icons",
+            "No featured images on articles (only the generic OG image)",
+            "The OG image is the same hero-dashboard-1600.webp on every page - no unique social sharing images"
+          ]
+        },
+        "dimensions": {
+          "status": "warning",
+          "score": 50,
+          "details": "Logo <img> tag lacks explicit width/height attributes, risking CLS.",
+          "issues": [
+            "Logo image in 404 page and wherever used lacks width/height attributes",
+            "OG meta images declare 1200x630 correctly"
+          ]
+        },
+        "lazy_loading": {
+          "status": "warning",
+          "score": 50,
+          "details": "No lazy loading attributes found on <img> tags. Limited images make this less impactful.",
+          "issues": [
+            "No loading='lazy' attributes on any detected <img> tags",
+            "Since there are very few images, impact is low but should still be implemented"
+          ]
+        }
+      }
+    },
+
+    "mobile": {
+      "weight": 10,
+      "score": 80,
+      "weighted_score": 8.0,
+      "sub_checks": {
+        "viewport": {
+          "status": "pass",
+          "score": 100,
+          "details": "Proper viewport meta tag on all pages: width=device-width, initial-scale=1",
+          "issues": []
+        },
+        "responsive_design": {
+          "status": "pass",
+          "score": 85,
+          "details": "Tailwind CSS responsive utilities used throughout. Font display:swap prevents FOIT.",
+          "issues": [
+            "Large page sizes (190KB) may impact mobile load times on slow connections"
+          ]
+        },
+        "touch_targets": {
+          "status": "pass",
+          "score": 75,
+          "details": "Navigation links and CTAs appear appropriately sized based on code analysis.",
+          "issues": [
+            "Unable to fully verify without visual testing - recommend Lighthouse mobile audit"
+          ]
+        },
+        "font_sizes": {
+          "status": "pass",
+          "score": 80,
+          "details": "Inter (body) and Space Grotesk (display) with proper sizing via Tailwind.",
+          "issues": []
+        }
+      }
+    },
+
+    "security": {
+      "weight": 5,
+      "score": 88,
+      "weighted_score": 4.4,
+      "sub_checks": {
+        "https": {
+          "status": "pass",
+          "score": 100,
+          "details": "HTTPS enforced with HTTP->HTTPS 301 redirect.",
+          "issues": []
+        },
+        "hsts": {
+          "status": "pass",
+          "score": 100,
+          "details": "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload - excellent configuration.",
+          "issues": []
+        },
+        "csp": {
+          "status": "warning",
+          "score": 75,
+          "details": "CSP present but allows unsafe-inline and unsafe-eval for scripts.",
+          "issues": [
+            "script-src includes 'unsafe-inline' and 'unsafe-eval' - weakens CSP protection significantly",
+            "Consider using nonces or hashes instead of unsafe-inline"
+          ]
+        },
+        "x_frame_options": {
+          "status": "pass",
+          "score": 100,
+          "details": "X-Frame-Options: SAMEORIGIN - prevents clickjacking.",
+          "issues": []
+        },
+        "x_content_type_options": {
+          "status": "pass",
+          "score": 100,
+          "details": "X-Content-Type-Options: nosniff - prevents MIME sniffing.",
+          "issues": []
+        },
+        "referrer_policy": {
+          "status": "pass",
+          "score": 90,
+          "details": "Referrer-Policy: strict-origin-when-cross-origin - good balance of privacy and analytics.",
+          "issues": []
+        },
+        "permissions_policy": {
+          "status": "pass",
+          "score": 90,
+          "details": "Permissions-Policy: camera=(), microphone=(), geolocation=() - restricts unnecessary APIs.",
+          "issues": []
+        },
+        "www_redirect": {
+          "status": "fail",
+          "score": 0,
+          "details": "www.calculatecreator.com returns no response - not configured.",
+          "issues": [
+            "www subdomain is unreachable (connection refused) instead of redirecting to non-www canonical"
+          ]
+        }
+      }
+    },
+
+    "content_structure": {
+      "weight": 5,
+      "score": 75,
+      "weighted_score": 3.75,
+      "sub_checks": {
+        "heading_hierarchy": {
+          "status": "pass",
+          "score": 85,
+          "details": "Single H1 per page. MDX body H1s automatically demoted to H2 via component override. Proper H2/H3 hierarchy.",
+          "issues": [
+            "Some H1 tags match title tags exactly - slight differentiation would be beneficial"
+          ]
+        },
+        "content_length": {
+          "status": "pass",
+          "score": 80,
+          "details": "Article pages have substantial content. Calculator pages combine tool UI with educational content.",
+          "issues": []
+        },
+        "hreflang": {
+          "status": "fail",
+          "score": 20,
+          "details": "Site has 6 localized calculator pages (/calculator/de/, /es/, /fr/, /it/, /my/, /pt-br/) but NO hreflang tags.",
+          "issues": [
+            "CRITICAL: No hreflang tags connecting English and localized versions. Google may treat these as duplicate content or fail to serve the right version",
+            "Localized pages need hreflang annotations pointing to all language variants including x-default"
+          ]
+        },
+        "language_attributes": {
+          "status": "warning",
+          "score": 60,
+          "details": "HTML lang='en' is set globally. Localized pages (/calculator/de/, /calculator/es/) also render with lang='en'.",
+          "issues": [
+            "Localized calculator pages should have appropriate lang attributes (de, es, fr, it, ms, pt-BR) but all use lang='en'"
+          ]
+        },
+        "structured_content": {
+          "status": "pass",
+          "score": 85,
+          "details": "Good use of semantic HTML. Tables, lists, and data are properly structured. FAQ sections use accordion pattern.",
+          "issues": []
+        }
+      }
+    }
+  },
+
+  "issues_found": [
+    {
+      "id": "HOMEPAGE_NO_SCHEMA",
+      "severity": "critical",
+      "category": "schema_markup",
+      "title": "Homepage has zero JSON-LD structured data",
+      "description": "HomepageSchema component exists at src/components/seo/HomepageSchema.tsx but is never imported or rendered in src/app/page.tsx. The homepage is missing Organization, WebSite (with SearchAction), FAQPage, ItemList, CollectionPage, and BreadcrumbList schemas.",
+      "impact": "Missing sitelinks searchbox, Knowledge Panel signals, and FAQ rich results for the homepage - the most important page on the site.",
+      "effort": "low",
+      "fix": "Add 'import { HomepageSchema } from \"@/components/seo/HomepageSchema\"' to src/app/page.tsx and render <HomepageSchema /> in the component.",
+      "affected_pages": 1,
+      "priority": 1
+    },
+    {
+      "id": "OG_URL_INHERITANCE",
+      "severity": "critical",
+      "category": "meta_tags",
+      "title": "80-100+ pages have wrong og:url pointing to homepage",
+      "description": "Pages that don't explicitly set openGraph metadata in their page.tsx inherit the layout.tsx defaults, causing og:url to point to https://calculatecreator.com/ instead of the actual page URL. Affected sections: all news pages (~20), all comparison pages (~7), calculator pages inheriting from calculators/layout.tsx (~15), reference pages, utility pages, about, faq, glossary, etc.",
+      "impact": "Social shares point to wrong URL. Facebook/LinkedIn will show homepage content instead of the shared page. Potential negative signal for social crawlers.",
+      "effort": "medium",
+      "fix": "Either (1) remove the og:url from layout.tsx defaults so Next.js can auto-resolve, or (2) add explicit openGraph metadata with correct URL to each page/layout that doesn't have it. News and comparison pages need the most urgent attention.",
+      "affected_pages": 100,
+      "priority": 2
+    },
+    {
+      "id": "LOGO_PNG_404",
+      "severity": "high",
+      "category": "schema_markup",
+      "title": "Publisher logo (logo.png) returns 404 - referenced in all schemas",
+      "description": "https://calculatecreator.com/logo.png returns HTTP 404. This URL is referenced as the publisher.logo.url in Article, NewsArticle, and Organization schemas across the entire site.",
+      "impact": "Google may show warnings in Search Console for invalid publisher logo. Could affect article rich results eligibility.",
+      "effort": "low",
+      "fix": "Create and deploy logo.png to the public/ directory (or update schema references to use the existing /images/calculate-creator-transparent-v2.png).",
+      "affected_pages": 300,
+      "priority": 3
+    },
+    {
+      "id": "CALCULATOR_TITLE_PATTERN",
+      "severity": "high",
+      "category": "meta_tags",
+      "title": "Calculator page titles are templated and unnatural",
+      "description": "Calculator pages use auto-generated titles like 'TikTok Tiktok Money Calculator and Earnings Tool Guide' - note the double 'TikTok Tiktok' from slug title-casing. Pattern is keyword-stuffed and repetitive across 35+ pages.",
+      "impact": "Poor CTR in SERPs due to unnatural titles. Google may rewrite titles. Double 'TikTok' looks unprofessional.",
+      "effort": "medium",
+      "fix": "Write unique, human-readable titles for each calculator page. Fix the title-casing function to not capitalize brand names from slugs (tiktok-money -> 'Tiktok Money' should be 'TikTok Money').",
+      "affected_pages": 35,
+      "priority": 4
+    },
+    {
+      "id": "META_DESC_BOILERPLATE",
+      "severity": "high",
+      "category": "meta_tags",
+      "title": "Meta descriptions are templated and near-identical across page types",
+      "description": "Calculator pages all share 'Use this TikTok {slug} calculator to estimate earnings...' pattern. MDX articles use '{Headline}. {keyword} with data, benchmarks, and expert analysis. Includes benchmarks, monetization' - note 'benchmarks' appears twice. Some descriptions truncated mid-sentence.",
+      "impact": "Google may ignore duplicate descriptions and generate its own. Missed opportunity for unique CTAs and click-through optimization.",
+      "effort": "medium",
+      "fix": "Write unique meta descriptions for each page type. Fix the normalizeSeoDescription function in article-page.tsx to avoid doubling 'benchmarks'. Ensure descriptions don't truncate mid-sentence.",
+      "affected_pages": 200,
+      "priority": 5
+    },
+    {
+      "id": "NO_HREFLANG",
+      "severity": "high",
+      "category": "content_structure",
+      "title": "Localized pages have no hreflang tags and wrong lang attribute",
+      "description": "Six localized calculator pages (/calculator/de/, /es/, /fr/, /it/, /my/, /pt-br/) exist but have no hreflang annotations and all render with html lang='en' instead of their respective languages.",
+      "impact": "Google cannot determine language targeting. May treat as duplicate content. Wrong language served to users in search results.",
+      "effort": "medium",
+      "fix": "Add hreflang link tags to both the English and localized pages. Update html lang attribute for each localized page.",
+      "affected_pages": 7,
+      "priority": 6
+    },
+    {
+      "id": "WWW_NO_REDIRECT",
+      "severity": "medium",
+      "category": "security",
+      "title": "www subdomain is unreachable instead of redirecting",
+      "description": "https://www.calculatecreator.com returns connection refused (000 status). Should redirect to non-www canonical.",
+      "impact": "Users typing www. will see an error page. Any backlinks to www version are wasted link equity.",
+      "effort": "low",
+      "fix": "Configure DNS and Firebase Hosting to handle www subdomain with 301 redirect to non-www.",
+      "affected_pages": 408,
+      "priority": 7
+    },
+    {
+      "id": "DOUBLE_SLASH_URLS",
+      "severity": "medium",
+      "category": "internal_linking",
+      "title": "Internal links contain double-slash URLs",
+      "description": "Some CTA links in content have trailing double-slashes (e.g., /calculators/tiktok-money// or /calculators/niche-profitability//). These return 307 redirects instead of 301.",
+      "impact": "Redirect chains waste crawl budget. 307 temporary redirects don't pass full link equity.",
+      "effort": "low",
+      "fix": "Find and fix all double-slash hrefs in page content. Search for '//' in href attributes across components.",
+      "affected_pages": 10,
+      "priority": 8
+    },
+    {
+      "id": "CALCULATOR_OG_URL_PARENT",
+      "severity": "medium",
+      "category": "meta_tags",
+      "title": "Some calculator pages have og:url pointing to parent /calculators/",
+      "description": "tiktok-money, engagement-rate, coins, and brand-deal-rate calculator pages have og:url set to https://calculatecreator.com/calculators/ instead of their own URL. This comes from the calculators/layout.tsx inheriting parent openGraph.",
+      "impact": "Social shares from these top calculator pages point to the wrong URL.",
+      "effort": "low",
+      "fix": "Update calculators/layout.tsx to not set og:url, or set each calculator page's og:url explicitly.",
+      "affected_pages": 15,
+      "priority": 9
+    },
+    {
+      "id": "HOMEPAGE_OG_IMAGE_MISSING",
+      "severity": "medium",
+      "category": "meta_tags",
+      "title": "Homepage page-level metadata missing og:image",
+      "description": "The homepage's page-specific openGraph metadata in src/app/page.tsx doesn't include an images array. It relies on layout.tsx default which does include it, but the page override may strip it in some Next.js versions.",
+      "impact": "Social shares of the homepage may lack the preview image on some platforms.",
+      "effort": "low",
+      "fix": "Add images array to the openGraph object in src/app/page.tsx metadata.",
+      "affected_pages": 1,
+      "priority": 10
+    },
+    {
+      "id": "LARGE_PAGE_SIZES",
+      "severity": "medium",
+      "category": "core_web_vitals",
+      "title": "Calculator pages have large HTML sizes (166-190KB)",
+      "description": "Uncompressed HTML for calculator pages ranges from 166KB to 190KB. While Brotli compression reduces transfer size significantly, the DOM size may impact parsing and rendering performance.",
+      "impact": "Slower mobile rendering, increased TBT, potential INP issues on lower-end devices.",
+      "effort": "high",
+      "fix": "Audit calculator page components for unnecessary DOM elements. Consider lazy-loading FAQ sections and below-fold content.",
+      "affected_pages": 35,
+      "priority": 11
+    },
+    {
+      "id": "SAME_OG_IMAGE_ALL_PAGES",
+      "severity": "low",
+      "category": "image_optimization",
+      "title": "All pages share the same OG/social sharing image",
+      "description": "Every page on the site uses hero-dashboard-1600.webp as the og:image and twitter:image. No page-specific social images.",
+      "impact": "All social shares look identical. Reduced click-through from social platforms. No visual differentiation between shared pages.",
+      "effort": "high",
+      "fix": "Generate unique OG images per page or at least per page type (calculator, guide, blog, data, news).",
+      "affected_pages": 408,
+      "priority": 12
+    },
+    {
+      "id": "NAV_TOO_MINIMAL",
+      "severity": "low",
+      "category": "internal_linking",
+      "title": "Header navigation only has 4 links",
+      "description": "Primary navigation contains only Guides, News, Search, and Run Estimate. Missing direct links to Calculators, Blog, Data, Comparisons - the site's main content sections.",
+      "impact": "Important sections are harder to discover. Reduced crawl efficiency for these sections. Users may not find relevant content.",
+      "effort": "medium",
+      "fix": "Add Calculators, Blog, and Data sections to primary navigation. Consider a mega menu for the 35+ calculators.",
+      "affected_pages": 408,
+      "priority": 13
+    },
+    {
+      "id": "SITEMAP_PRIORITY_INFLATION",
+      "severity": "low",
+      "category": "crawlability",
+      "title": "Many sitemap URLs have priority=1.0",
+      "description": "Multiple URLs in sitemap.xml have priority=1.0 including article pages. Priority should differentiate between page importance (homepage=1.0, category=0.8, articles=0.6).",
+      "impact": "Diluted priority signal. Google largely ignores priority values but it's a best practice to differentiate.",
+      "effort": "low",
+      "fix": "Update scripts/generate-sitemap.js to assign appropriate priority values based on page type.",
+      "affected_pages": 0,
+      "priority": 14
+    },
+    {
+      "id": "CSP_UNSAFE",
+      "severity": "low",
+      "category": "security",
+      "title": "CSP allows unsafe-inline and unsafe-eval",
+      "description": "Content-Security-Policy script-src includes 'unsafe-inline' and 'unsafe-eval', significantly weakening XSS protection.",
+      "impact": "Reduced security posture. Not an SEO issue directly but affects trust signals.",
+      "effort": "high",
+      "fix": "Migrate to nonce-based CSP. This requires changes to how inline scripts are handled across the site.",
+      "affected_pages": 408,
+      "priority": 15
+    }
+  ],
+
+  "top_10_priority_fixes": [
+    {
+      "rank": 1,
+      "issue_id": "HOMEPAGE_NO_SCHEMA",
+      "title": "Import and render HomepageSchema on the homepage",
+      "effort": "5 minutes",
+      "impact": "High - enables sitelinks searchbox, Organization Knowledge Panel, FAQ rich results on homepage",
+      "file": "src/app/page.tsx"
+    },
+    {
+      "rank": 2,
+      "issue_id": "OG_URL_INHERITANCE",
+      "title": "Fix og:url inheritance so every page has its own URL",
+      "effort": "1-2 hours",
+      "impact": "Critical - 80-100+ pages currently point social shares to homepage instead of actual content",
+      "file": "src/app/layout.tsx + multiple page/layout files"
+    },
+    {
+      "rank": 3,
+      "issue_id": "LOGO_PNG_404",
+      "title": "Deploy logo.png or update schema references",
+      "effort": "10 minutes",
+      "impact": "High - fixes broken publisher logo across 300+ schema instances",
+      "file": "public/logo.png or schema components"
+    },
+    {
+      "rank": 4,
+      "issue_id": "CALCULATOR_TITLE_PATTERN",
+      "title": "Fix calculator page title generation (double TikTok, keyword stuffing)",
+      "effort": "2-3 hours",
+      "impact": "High - improves CTR for 35+ key money pages with 'TikTok Tiktok' bug",
+      "file": "Calculator layout.tsx files and metadata generators"
+    },
+    {
+      "rank": 5,
+      "issue_id": "META_DESC_BOILERPLATE",
+      "title": "Fix meta description template to avoid doubling 'benchmarks' and truncation",
+      "effort": "1-2 hours",
+      "impact": "Medium - affects 200+ pages with near-identical or broken descriptions",
+      "file": "src/lib/content/article-page.tsx (normalizeSeoDescription function)"
+    },
+    {
+      "rank": 6,
+      "issue_id": "NO_HREFLANG",
+      "title": "Add hreflang tags and correct lang attributes for localized pages",
+      "effort": "2-3 hours",
+      "impact": "Medium - 6 localized pages need proper international targeting",
+      "file": "src/app/calculator/*/layout.tsx files"
+    },
+    {
+      "rank": 7,
+      "issue_id": "WWW_NO_REDIRECT",
+      "title": "Configure www subdomain to redirect to non-www",
+      "effort": "30 minutes",
+      "impact": "Medium - recovers lost traffic and link equity from www URLs",
+      "file": "Firebase Hosting / DNS configuration"
+    },
+    {
+      "rank": 8,
+      "issue_id": "DOUBLE_SLASH_URLS",
+      "title": "Fix double-slash internal links in CTA buttons",
+      "effort": "30 minutes",
+      "impact": "Medium - eliminates 307 redirect chains from internal navigation",
+      "file": "Various component files with href attributes"
+    },
+    {
+      "rank": 9,
+      "issue_id": "CALCULATOR_OG_URL_PARENT",
+      "title": "Fix calculator pages og:url pointing to /calculators/ parent",
+      "effort": "30 minutes",
+      "impact": "Medium - top calculator pages' social shares go to wrong URL",
+      "file": "src/app/calculators/layout.tsx"
+    },
+    {
+      "rank": 10,
+      "issue_id": "HOMEPAGE_OG_IMAGE_MISSING",
+      "title": "Add og:image to homepage page-level metadata",
+      "effort": "5 minutes",
+      "impact": "Low-medium - ensures homepage social shares always have preview image",
+      "file": "src/app/page.tsx"
+    }
+  ],
+
+  "summary_stats": {
+    "total_urls_checked": 50,
+    "status_200": 45,
+    "status_301": 3,
+    "status_307": 2,
+    "status_404": 2,
+    "pages_with_correct_og_url": "~310 of 408 (76%)",
+    "pages_with_wrong_og_url": "~100 of 408 (24%)",
+    "pages_with_json_ld": "~407 of 408 (homepage missing)",
+    "pages_with_canonical": "408 of 408 (100%)",
+    "pages_with_robots_meta": "~380 of 408 (93%)",
+    "pages_with_breadcrumbs": "~407 of 408",
+    "unique_og_images": 1,
+    "compression": "Brotli enabled",
+    "avg_ttfb_ms": 227,
+    "avg_page_size_kb": 152,
+    "security_headers_present": ["HSTS", "X-Frame-Options", "X-Content-Type-Options", "CSP", "Referrer-Policy", "Permissions-Policy"],
+    "security_headers_missing": ["X-XSS-Protection (deprecated but harmless)"]
+  },
+
+  "methodology": {
+    "tools_used": ["curl (HTTP headers, status codes, response times)", "WebFetch (meta tag and schema extraction)", "Source code analysis (Next.js codebase)", "Manual HTML inspection"],
+    "pages_deeply_audited": 15,
+    "pages_header_checked": 30,
+    "pages_status_checked": 50,
+    "pagespeed_status": "API quota exceeded - unable to run Lighthouse",
+    "date": "2026-02-20"
+  }
+}

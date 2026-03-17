@@ -40,6 +40,19 @@ export interface ArticleFrontmatter {
   imageAlt?: string;
   showCalculatorCTA?: boolean;
   calculatorCTAType?: string;
+
+  // HowTo Schema (for step-by-step guide pages)
+  howToSteps?: Array<{
+    name: string;
+    text: string;
+  }>;
+  howToTotalTime?: string;
+  howToEstimatedCost?: {
+    value: string;
+    currency: string;
+  };
+  howToTool?: string[];
+  howToSupply?: string[];
 }
 
 export interface ArticleData {

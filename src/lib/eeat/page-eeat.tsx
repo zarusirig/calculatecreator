@@ -38,11 +38,11 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
           name={author.name}
           jobTitle={author.role}
           description={author.bio}
-          url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
+          url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
           knowsAbout={author.expertise}
           affiliation={{
-            name: 'CalculateCreator',
-            url: 'https://calculatecreator.com',
+            name: 'TT Calculator',
+            url: 'https://tiktokcalculator.net',
           }}
         />
 
@@ -76,11 +76,11 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
         name={author.name}
         jobTitle={author.role}
         description={author.bio}
-        url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
+        url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'CalculateCreator',
-          url: 'https://calculatecreator.com',
+          name: 'TT Calculator',
+          url: 'https://tiktokcalculator.net',
         }}
       />
 
@@ -141,11 +141,11 @@ export function PageAuthorByline({ pageSlug, variant = 'light' }: { pageSlug: st
         name={author.name}
         jobTitle={author.role}
         description={author.bio}
-        url={author.authorUrl ? `https://calculatecreator.com${author.authorUrl}` : undefined}
+        url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
         knowsAbout={author.expertise}
         affiliation={{
-          name: 'CalculateCreator',
-          url: 'https://calculatecreator.com',
+          name: 'TT Calculator',
+          url: 'https://tiktokcalculator.net',
         }}
       />
 
@@ -217,7 +217,7 @@ export function getPersonAuthorForSchema(pageSlug: string) {
     name: author.name,
     jobTitle: author.role,
     url: author.authorUrl
-      ? `https://calculatecreator.com${author.authorUrl}`
+      ? `https://tiktokcalculator.net${author.authorUrl}`
       : undefined,
     sameAs: sameAs.length > 0 ? sameAs : undefined,
   };

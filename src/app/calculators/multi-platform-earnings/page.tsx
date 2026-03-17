@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Compare your earnings across TikTok, YouTube, Instagram, and other platforms. Calculate total creator income and identify your most profitable channel.",
   keywords: ['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/multi-platform-earnings/',
+    canonical: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function MultiPlatformEarningsCalculatorPage() {
       <CalculatorSchema
         name="Multi-Platform Creator Earnings Calculator"
         description="Calculate combined earnings across TikTok, YouTube, Instagram, and other platforms. Compare monetization potential across social media."
-        url="https://calculatecreator.com/calculators/multi-platform-earnings/"
+        url="https://tiktokcalculator.net/calculators/multi-platform-earnings/"
         datePublished="2024-02-15"
         dateModified="2026-03-01"
         keywords={['multi platform earnings', 'creator income calculator', 'cross platform monetization', 'social media earnings', 'influencer income']}
@@ -53,9 +53,9 @@ export default function MultiPlatformEarningsCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Multi-Platform Earnings Calculator', url: 'https://calculatecreator.com/calculators/multi-platform-earnings/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Multi-Platform Earnings Calculator', url: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

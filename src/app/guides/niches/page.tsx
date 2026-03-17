@@ -3,9 +3,10 @@ import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
 
 export const metadata: Metadata = {
-  title: "TikTok Niches Guide and Creator Strategy Guide 2026",
-  description: "Read this TikTok niches guide for creator earnings context, engagement benchmarks, monetization requirements, and practical optimization steps.",
-  alternates: { canonical: 'https://calculatecreator.com/guides/niches/' },
+  title: 'TikTok Niche Guides | Earnings by Content Category',
+  description:
+    'Browse niche guides that compare TikTok earnings, monetization patterns, and business models across major content categories.',
+  alternates: { canonical: 'https://tiktokcalculator.net/guides/niches/' },
 };
 
 export default function NichesHubPage() {

@@ -6,7 +6,7 @@ import { HubListingPage } from '@/components/articles/HubListingPage';
 export const metadata: Metadata = {
   title: "TikTok Engagement Data and Benchmark Insights Guide",
   description: "Review TikTok engagement data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
-  alternates: { canonical: 'https://calculatecreator.com/data/engagement/' },
+  alternates: { canonical: 'https://tiktokcalculator.net/data/engagement/' },
 };
 
 export default function EngagementDataHubPage() {

@@ -21,7 +21,7 @@ export interface GuideItem {
 export const toolDirectoryItems: ToolDirectoryItem[] = [
   {
     title: 'Money Calculator',
-    href: '/calculators/earnings-revenue/money/',
+    href: '/calculators/tiktok-money/',
     description: 'Estimate monthly creator earnings across ads, brand deals, and LIVE revenue.',
     platform: 'TikTok',
     goal: 'Earnings',
@@ -31,8 +31,8 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'Creator Fund Calculator',
-    href: '/calculators/earnings-revenue/creator-fund/',
-    description: 'Model creator fund payouts from views, RPM assumptions, and consistency.',
+    href: '/calculators/tiktok-creator-fund/',
+    description: 'Estimate historical Creator Fund payouts and compare the legacy model with current TikTok monetization paths.',
     platform: 'TikTok',
     goal: 'Earnings',
     metric: 'RPM',
@@ -41,7 +41,7 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'Engagement Rate Calculator',
-    href: '/calculators/engagement-influence/engagement/',
+    href: '/calculators/engagement-rate/',
     description: 'Calculate and benchmark your engagement rate with clear assumptions.',
     platform: 'TikTok',
     goal: 'Engagement',
@@ -51,7 +51,7 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'Brand Deal Rate Calculator',
-    href: '/calculators/engagement-influence/influencer-pricing/',
+    href: '/calculators/brand-deal-rate/',
     description: 'Estimate deal pricing with follower tiers, niche ranges, and deliverables.',
     platform: 'TikTok',
     goal: 'Earnings',
@@ -190,32 +190,41 @@ export const benchmarkStats = [
     note: 'Varies by niche and format',
   },
   {
-    value: 'Weekly',
-    label: 'Benchmark Refresh',
-    note: 'Assumptions updated weekly',
+    value: 'Ongoing',
+    label: 'Method updates',
+    note: 'Assumptions are revised when sources or platform rules materially change',
   },
 ];
 
 export const homeFaqs = [
   {
-    question: 'How accurate are these calculators?',
+    question: 'How accurate is the TikTok calculator?',
     answer:
-      'We provide directional estimates based on your inputs and commonly reported ranges. Results are not guarantees.',
+      'Our TikTok calculator provides directional estimates based on your actual metrics and commonly reported payout ranges. Results are not guarantees — they reflect what creators in similar niches and follower tiers typically report.',
   },
   {
-    question: 'Do you store my calculator inputs?',
-    answer: 'No. Your inputs stay in your browser and are used only for the calculation.',
+    question: 'How does the TikTok money calculator estimate earnings?',
+    answer:
+      'The TikTok money calculator combines your view count, engagement rate, content niche, and audience geography to estimate earnings across Creator Fund payouts, brand deals, LIVE gifts, and TikTok Shop commissions.',
   },
   {
-    question: 'How often are assumptions updated?',
-    answer: 'Assumptions and benchmark ranges are reviewed weekly.',
+    question: 'Is this TikTok calculator really free?',
+    answer:
+      'Yes. All 35+ TikTok calculators are completely free with no signup, no email gate, and no limits. Your inputs stay in your browser and are never stored or shared.',
   },
   {
-    question: 'Can I compare tools for different goals?',
-    answer: 'Yes. Use filters by platform, goal, and metric to compare tools quickly.',
+    question: 'How often is the TikTok calculator updated?',
+    answer:
+      'We update calculator assumptions when TikTok changes its payout structure, Creator Fund rates, or monetization rules. Benchmark data is reviewed regularly against the latest reported creator earnings.',
   },
   {
-    question: 'Where can I review methodology?',
-    answer: 'Every tool links directly to its assumptions and methodology block.',
+    question: 'What TikTok calculators are available?',
+    answer:
+      'We offer 35+ calculators including TikTok Money Calculator, Engagement Rate Calculator, Brand Deal Rate Calculator, RPM Calculator, Creator Fund Calculator, Coin Converter, LIVE Gift Calculator, Shop Commission Calculator, Follower Growth Calculator, and more.',
+  },
+  {
+    question: 'Can I see the methodology behind each TikTok calculator?',
+    answer:
+      'Every TikTok calculator on this site shows its assumptions, data sources, and calculation methodology. You can see exactly how your estimate is calculated and what factors change the result.',
   },
 ];

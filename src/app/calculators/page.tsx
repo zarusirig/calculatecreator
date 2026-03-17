@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "TikTok Calculators Directory for Creators",
   description: "Browse TikTok calculators for earnings, engagement, monetization planning, and growth analysis with transparent assumptions and practical creator benchmarks.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/',
+    canonical: 'https://tiktokcalculator.net/calculators/',
   },
 };
 

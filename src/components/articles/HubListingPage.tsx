@@ -28,7 +28,7 @@ export function HubListingPage({
   supplementaryContent,
 }: HubListingPageProps) {
   const canonicalPath = `/${section}/`;
-  const canonicalUrl = `https://calculatecreator.com${canonicalPath}`;
+  const canonicalUrl = `https://tiktokcalculator.net${canonicalPath}`;
   const isDataHub = section.startsWith('data/');
 
   const breadcrumbItems = [
@@ -39,7 +39,7 @@ export function HubListingPage({
   const collectionItems = articles.map((article) => ({
     name: article.frontmatter.title,
     description: article.frontmatter.metaDescription,
-    url: `https://calculatecreator.com/${article.frontmatter.category}/${article.frontmatter.slug}/`,
+    url: `https://tiktokcalculator.net/${article.frontmatter.category}/${article.frontmatter.slug}/`,
     category: article.frontmatter.articleType,
   }));
 

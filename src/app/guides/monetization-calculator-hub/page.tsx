@@ -9,17 +9,18 @@ import Link from 'next/link';
 import { DollarSign, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, Clock, MessageCircle, Calendar, Gift, AlertTriangle, Gem, ShoppingCart, FileText, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "TikTok Monetization Calculator Hub Guide and Creator",
-  description: "Read this TikTok monetization calculator hub guide for creator earnings context, engagement benchmarks, monetization requirements, and practical",
+  title: 'TikTok Monetization Calculator Hub | Earnings Tools and Strategy',
+  description:
+    'Compare TikTok income streams and calculators for Creator Rewards, brand deals, LIVE gifts, Shop, affiliate revenue, and more.',
   keywords: ['tiktok monetization', 'tiktok earnings', 'creator fund', 'brand deals', 'tiktok shop', 'affiliate marketing', 'live gifts', 'tiktok income'],
   alternates: {
-    canonical: 'https://calculatecreator.com/guides/monetization-calculator-hub/',
+    canonical: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/',
   },
   openGraph: {
     title: 'TikTok Monetization Calculator Hub 2026 | Complete Income Strategy',
     description: 'Master every TikTok income stream. Calculate Creator Fund earnings, price brand deals, optimize TikTok Shop, and build multi-income strategies.',
     type: 'article',
-    url: 'https://calculatecreator.com/guides/monetization-calculator-hub/',
+    url: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/',
   },
   twitter: {
     card: 'summary_large_image',
@@ -50,16 +51,16 @@ export default function MonetizationCalculatorHubPage() {
       <ArticleSchema
         headline="TikTok Monetization Calculator Hub 2026"
         description="Comprehensive guide to TikTok monetization covering Creator Fund, brand deals, LIVE gifts, TikTok Shop, affiliate marketing, and multi-income strategies with calculators and optimization tips."
-        url="https://calculatecreator.com/guides/monetization-calculator-hub/"
+        url="https://tiktokcalculator.net/guides/monetization-calculator-hub/"
         datePublished="2025-11-13"
         dateModified="2026-03-01"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Guides', url: 'https://calculatecreator.com/guides/' },
-          { name: 'Monetization Calculator Hub', url: 'https://calculatecreator.com/guides/monetization-calculator-hub/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Guides', url: 'https://tiktokcalculator.net/guides/' },
+          { name: 'Monetization Calculator Hub', url: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/' },
         ]}
       />
 

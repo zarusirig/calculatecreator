@@ -26,15 +26,15 @@ export function ReferenceSchema({
     dateModified: dateModified || datePublished,
     author: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
+      name: 'TT Calculator',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
     mainEntityOfPage: {
@@ -55,13 +55,13 @@ export function ReferenceSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Reference',
-        item: 'https://calculatecreator.com/reference/',
+        item: 'https://tiktokcalculator.net/reference/',
       },
       {
         '@type': 'ListItem',

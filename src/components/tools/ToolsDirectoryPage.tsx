@@ -25,12 +25,12 @@ export function ToolsDirectoryPage({
   initialFilters,
 }: ToolsDirectoryPageProps) {
   const normalizedCanonicalPath = canonicalPath.endsWith('/') ? canonicalPath : `${canonicalPath}/`;
-  const canonicalUrl = `https://calculatecreator.com${normalizedCanonicalPath}`;
+  const canonicalUrl = `https://tiktokcalculator.net${normalizedCanonicalPath}`;
   const isToolsAliasPage = normalizedCanonicalPath === '/tools/';
   const schemaItems = toolDirectoryItems.map((tool) => ({
     name: tool.title,
     description: tool.description,
-    url: `https://calculatecreator.com${tool.href}`,
+    url: `https://tiktokcalculator.net${tool.href}`,
     category: tool.goal,
   }));
 
@@ -82,7 +82,7 @@ export function ToolsDirectoryPage({
                 <li>Run at least two scenarios, including a conservative case, to avoid overconfidence.</li>
               </ol>
               <p className="mt-4 text-sm leading-relaxed text-neutral-700">
-                Calculator outputs on CalculateCreator are directional. They help you compare options
+                Calculator outputs on TT Calculator are directional. They help you compare options
                 quickly, but they are not legal, tax, or financial guarantees.
               </p>
             </article>
@@ -143,6 +143,15 @@ export function ToolsDirectoryPage({
               </Link>
               <Link href="/benchmarks/" className="btn btn-secondary btn-sm">
                 Benchmarks
+              </Link>
+              <Link href="/comparisons/" className="btn btn-secondary btn-sm">
+                Platform Comparisons
+              </Link>
+              <Link href="/reference/" className="btn btn-secondary btn-sm">
+                Reference Tables
+              </Link>
+              <Link href="/blog/" className="btn btn-secondary btn-sm">
+                Blog
               </Link>
               <Link href="/methodology/" className="btn btn-secondary btn-sm">
                 Methodology

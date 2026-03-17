@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok parent safety features update update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/parent-safety-features-update/',
+    canonical: 'https://tiktokcalculator.net/news/parent-safety-features-update/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function ParentSafetyFeaturesUpdatePage() {
       <NewsArticleSchema
         headline="TikTok Unveils New Safety Features for Parents | TikTok News"
         description="In July 2026, TikTok announced new safety measures giving parents more control over teens' accounts, including greater visibility into account activity and customizable settings."
-        url="https://calculatecreator.com/news/parent-safety-features-update/"
+        url="https://tiktokcalculator.net/news/parent-safety-features-update/"
         datePublished="2026-07-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-safety-1024.webp"
+        image="https://tiktokcalculator.net/news/news-safety-1024.webp"
         keywords={['tiktok safety', 'parental controls', 'teen safety', 'family pairing', 'child safety']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Parent Safety Features', url: 'https://calculatecreator.com/news/parent-safety-features-update/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Parent Safety Features', url: 'https://tiktokcalculator.net/news/parent-safety-features-update/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

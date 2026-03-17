@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   description: "Use this TikTok audience overlap calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['audience overlap', 'cross-platform analytics', 'follower overlap', 'audience analysis'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/audience-overlap/',
+    canonical: 'https://tiktokcalculator.net/calculators/audience-overlap/',
   },
   openGraph: {
     title: 'Audience Overlap Calculator',
     description: 'Analyze audience overlap across platforms and accounts.',
-    url: 'https://calculatecreator.com/calculators/audience-overlap/',
+    url: 'https://tiktokcalculator.net/calculators/audience-overlap/',
     type: 'website',
   },
 };

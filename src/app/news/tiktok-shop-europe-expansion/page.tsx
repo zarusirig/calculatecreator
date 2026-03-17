@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok shop europe expansion update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/',
+    canonical: 'https://tiktokcalculator.net/news/tiktok-shop-europe-expansion/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokShopEuropeExpansionPage() {
       <NewsArticleSchema
         headline="TikTok Shop Expands to France, Germany, and Italy"
         description="In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence."
-        url="https://calculatecreator.com/news/tiktok-shop-europe-expansion/"
+        url="https://tiktokcalculator.net/news/tiktok-shop-europe-expansion/"
         datePublished="2026-03-27"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-shop-1024.webp"
+        image="https://tiktokcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Europe Expansion', url: 'https://calculatecreator.com/news/tiktok-shop-europe-expansion/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Europe Expansion', url: 'https://tiktokcalculator.net/news/tiktok-shop-europe-expansion/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

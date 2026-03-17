@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok age specific privacy features update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/age-specific-privacy-features/',
+    canonical: 'https://tiktokcalculator.net/news/age-specific-privacy-features/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function AgeSpecificPrivacyFeaturesPage() {
       <NewsArticleSchema
         headline="TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News"
         description="TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements."
-        url="https://calculatecreator.com/news/age-specific-privacy-features/"
+        url="https://tiktokcalculator.net/news/age-specific-privacy-features/"
         datePublished="2026-02-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-safety-1024.webp"
+        image="https://tiktokcalculator.net/news/news-safety-1024.webp"
         keywords={['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Age-Specific Privacy Features', url: 'https://calculatecreator.com/news/age-specific-privacy-features/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Age-Specific Privacy Features', url: 'https://tiktokcalculator.net/news/age-specific-privacy-features/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

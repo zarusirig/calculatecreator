@@ -43,9 +43,9 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     url: url,
     isPartOf: {
       '@type': 'WebSite',
-      '@id': 'https://calculatecreator.com/#website',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      '@id': 'https://tiktokcalculator.net/#website',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
     },
     about: {
       '@type': 'Thing',
@@ -54,11 +54,11 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/logo.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
     datePublished,
@@ -106,7 +106,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://calculatecreator.com/',
+        item: 'https://tiktokcalculator.net/',
       },
       {
         '@type': 'ListItem',
@@ -141,7 +141,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     url: url,
     isPartOf: {
       '@type': 'WebSite',
-      '@id': 'https://calculatecreator.com/#website',
+      '@id': 'https://tiktokcalculator.net/#website',
     },
     about: {
       '@type': 'Thing',
@@ -165,13 +165,13 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
 export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> = {
   calculators: {
     title: 'TikTok Calculators: 28 Free Tools',
-    description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI & taxes. Free, data-driven tools used by 50,000+ creators.',
-    url: 'https://calculatecreator.com/calculators/',
+    description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI, and taxes. Free tools with visible assumptions and methodology notes.',
+    url: 'https://tiktokcalculator.net/calculators/',
     collectionType: 'Calculators',
     faqs: [
       {
         question: 'How accurate are these TikTok calculators?',
-        answer: 'Our calculators use verified data from thousands of TikTok accounts and official platform documentation. Earnings estimates are typically within 15-20% of actual results. For best accuracy, ensure you enter current metrics from your TikTok analytics.',
+        answer: 'These calculators are directional planning tools, not guarantees. Accuracy depends on the quality of your inputs, how volatile the monetization category is, and whether the assumptions on the page match your context.',
       },
       {
         question: 'Do I need to create an account to use the calculators?',
@@ -187,11 +187,11 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
       },
       {
         question: 'How often is the calculator data updated?',
-        answer: 'We refresh our benchmark data quarterly to reflect current TikTok rates and industry standards. The latest update includes 2026 Creator Fund rates, brand deal pricing trends, and engagement benchmarks across all major niches.',
+        answer: 'We update assumptions when platform rules, source material, or calculator methodology changes enough to affect the estimate. Some pages may be refreshed more often than others.',
       },
       {
         question: 'What data sources do you use for calculations?',
-        answer: 'We aggregate data from official TikTok documentation, verified creator earnings reports, industry surveys from over 50,000 creators, and real-time market data for brand deal rates and RPM values.',
+        answer: 'Source sets vary by page, but generally include official platform documentation, published benchmark references, and clearly labeled creator-reported ranges where direct official data is unavailable.',
       },
       {
         question: 'Are the calculators available in other languages?',
@@ -206,7 +206,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   niches: {
     title: 'TikTok Niches: Find Your Most Profitable Content Category',
     description: 'Compare earnings potential across 15+ TikTok niches. Data-driven analysis of RPM rates, brand deal potential, and growth opportunities by content category.',
-    url: 'https://calculatecreator.com/niches/',
+    url: 'https://tiktokcalculator.net/niches/',
     collectionType: 'Niches',
     faqs: [
       {
@@ -234,7 +234,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   guides: {
     title: 'TikTok Creator Guides: Expert Strategies for Growth & Monetization',
     description: 'Comprehensive guides covering TikTok monetization, growth strategies, content creation, and creator business management. Written by industry experts.',
-    url: 'https://calculatecreator.com/guides/',
+    url: 'https://tiktokcalculator.net/guides/',
     collectionType: 'Guides',
     faqs: [
       {
@@ -262,7 +262,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   reference: {
     title: 'TikTok Reference Data: Official Rates, Schedules & Requirements',
     description: 'Verified reference data for TikTok creators including Creator Fund rates, payment schedules, eligibility requirements, and commission structures.',
-    url: 'https://calculatecreator.com/reference/',
+    url: 'https://tiktokcalculator.net/reference/',
     collectionType: 'Reference',
     faqs: [
       {
@@ -290,7 +290,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   news: {
     title: 'TikTok News: Latest Platform Updates & Creator Economy Trends',
     description: 'Stay updated with the latest TikTok news, algorithm changes, monetization updates, and creator economy trends affecting your earnings.',
-    url: 'https://calculatecreator.com/news/',
+    url: 'https://tiktokcalculator.net/news/',
     collectionType: 'News',
     faqs: [
       {
@@ -318,7 +318,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   region: {
     title: 'TikTok Statistics by Country: Global Creator Fund & RPM Data',
     description: 'Comprehensive TikTok statistics by country including Creator Fund availability, RPM rates, user demographics, and monetization opportunities worldwide.',
-    url: 'https://calculatecreator.com/region/',
+    url: 'https://tiktokcalculator.net/region/',
     collectionType: 'Reference',
     faqs: [
       {
@@ -346,7 +346,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   comparisons: {
     title: 'Platform Comparisons: TikTok vs YouTube, Instagram & More',
     description: 'Compare TikTok monetization, growth potential, and features against YouTube, Instagram, and other platforms. Data-driven analysis for creators.',
-    url: 'https://calculatecreator.com/comparisons/',
+    url: 'https://tiktokcalculator.net/comparisons/',
     collectionType: 'Comparisons',
     faqs: [
       {
@@ -374,7 +374,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   metrics: {
     title: 'TikTok Metrics Guide: Understanding Your Analytics',
     description: 'Complete guide to TikTok analytics and metrics. Learn what each metric means, industry benchmarks, and how to improve your performance.',
-    url: 'https://calculatecreator.com/metrics/',
+    url: 'https://tiktokcalculator.net/metrics/',
     collectionType: 'Metrics',
     faqs: [
       {
@@ -402,7 +402,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   blog: {
     title: 'TikTok Creator Blog: Tips, Trends & Success Stories',
     description: 'Blog covering TikTok creator tips, industry trends, success stories, and insider insights for content creators at every level.',
-    url: 'https://calculatecreator.com/blog/',
+    url: 'https://tiktokcalculator.net/blog/',
     collectionType: 'Blog',
     faqs: [
       {

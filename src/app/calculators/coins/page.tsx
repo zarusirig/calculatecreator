@@ -12,13 +12,14 @@ import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
 import { CoinsCalculatorWidget } from '@/components/calculators/coins/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
+import { DataTable } from '@/components/ui/DataTable';
 
 export const metadata: Metadata = {
   title: "TikTok Coins Calculator — Coins to USD Converter 2026",
   description: "Convert TikTok coins to USD, diamonds, and real money. See how much coins cost to buy and what creators actually receive after TikTok's 50% commission.",
   keywords: ['tiktok coins calculator', 'tiktok coins to usd', 'tiktok coin price', 'coins to diamonds', 'tiktok gift calculator', 'buy tiktok coins'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/coins/',
+    canonical: 'https://tiktokcalculator.net/calculators/coins/',
   },
 };
 
@@ -79,7 +80,7 @@ export default function CoinsCalculatorPage() {
       <CalculatorSchema
         name="TikTok Coins Calculator"
         description="Calculate TikTok coin values, convert coins to USD and diamonds, and understand gift pricing with our free calculator."
-        url="https://calculatecreator.com/calculators/coins/"
+        url="https://tiktokcalculator.net/calculators/coins/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok coins calculator', 'coins to usd', 'tiktok coin price', 'coins to diamonds']}
@@ -87,9 +88,9 @@ export default function CoinsCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Coins Calculator', url: 'https://calculatecreator.com/calculators/coins/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Coins Calculator', url: 'https://tiktokcalculator.net/calculators/coins/' },
         ]}
       />
 
@@ -110,6 +111,9 @@ export default function CoinsCalculatorPage() {
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
               TikTok Coins Calculator 2026
             </h1>
+            <p className="text-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+              One TikTok coin costs approximately $0.0152 USD. Creators receive 50% of the coin value as diamonds, making 1 coin worth about $0.0076 to the creator. Use this calculator to convert any coin amount to USD instantly.
+            </p>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
               Calculate TikTok coin values, convert coins to USD and diamonds, and understand exactly how much your gifts are worth to creators. Our coins calculator uses 2026 pricing data to show you the real value of TikTok's virtual currency system. Whether you are a viewer planning to support your favorite creators or a creator understanding your gift income, this tool provides instant and accurate conversions between coins, diamonds, and real money. TikTok coins are the currency viewers purchase to send virtual gifts during LIVE streams.
             </p>
@@ -131,6 +135,7 @@ export default function CoinsCalculatorPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
@@ -192,58 +197,43 @@ export default function CoinsCalculatorPage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <ShoppingCart size={24} className="text-primary-600" /> TikTok Coin Bundles
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                Available coin packages and their USD values:
-              </p>
-              <div className="space-y-2">
-                {[
-                  { coins: '65', price: '$0.99', perCoin: '$0.0152' },
-                  { coins: '330', price: '$4.99', perCoin: '$0.0151' },
-                  { coins: '660', price: '$9.99', perCoin: '$0.0151' },
-                  { coins: '1,321', price: '$19.99', perCoin: '$0.0151' },
-                  { coins: '3,303', price: '$49.99', perCoin: '$0.0151' },
-                  { coins: '6,607', price: '$99.99', perCoin: '$0.0151' },
-                ].map((item) => (
-                  <div key={item.coins} className="flex items-center justify-between p-3 bg-primary-50 rounded-lg">
-                    <span className="text-body-sm font-semibold text-neutral-900">{item.coins} coins</span>
-                    <div className="text-right">
-                      <span className="text-body-sm font-semibold text-primary-600">{item.price}</span>
-                      <span className="text-body-xs text-neutral-500 ml-2">({item.perCoin}/coin)</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="TikTok Coin Bundle Pricing (2026)"
+                headers={['Coins', 'Price (USD)', 'Per Coin']}
+                rows={[
+                  ['65', '$0.99', '$0.0152'],
+                  ['330', '$4.99', '$0.0151'],
+                  ['660', '$9.99', '$0.0151'],
+                  ['1,321', '$19.99', '$0.0151'],
+                  ['3,303', '$49.99', '$0.0151'],
+                  ['6,607', '$99.99', '$0.0151'],
+                ]}
+                highlightFirst
+                sortable
+                footnote="Larger bundles offer slightly better value per coin."
+              />
             </Card>
 
             <Card className="p-6">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <Gift size={24} className="text-secondary-600" /> Gift Value Guide
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                What creators actually receive from popular gifts:
-              </p>
-              <div className="space-y-2">
-                {[
-                  { gift: 'Rose', coins: '1', viewer: '$0.015', creator: '$0.0025' },
-                  { gift: 'TikTok Logo', coins: '1', viewer: '$0.015', creator: '$0.0025' },
-                  { gift: 'Finger Heart', coins: '5', viewer: '$0.08', creator: '$0.013' },
-                  { gift: 'Ice Cream Cone', coins: '30', viewer: '$0.46', creator: '$0.075' },
-                  { gift: 'Perfume', coins: '199', viewer: '$3.02', creator: '$0.50' },
-                  { gift: 'Drama Queen', coins: '5,000', viewer: '$76', creator: '$12.50' },
-                  { gift: 'Universe', coins: '34,999', viewer: '$530', creator: '$87.50' },
-                ].map((item) => (
-                  <div key={item.gift} className="flex items-center justify-between p-2 bg-neutral-50 rounded">
-                    <div>
-                      <span className="text-body-sm font-semibold text-neutral-900">{item.gift}</span>
-                      <span className="text-body-xs text-neutral-500 ml-2">({item.coins} coins)</span>
-                    </div>
-                    <div className="text-right text-body-xs">
-                      <span className="text-neutral-600">Cost: {item.viewer}</span>
-                      <span className="text-success-600 ml-2">→ Creator: {item.creator}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="TikTok Gift Values — Viewer Cost vs. Creator Earnings"
+                headers={['Gift', 'Coins', 'Viewer Cost', 'Creator Receives']}
+                rows={[
+                  ['Rose', '1', '$0.015', '$0.0025'],
+                  ['TikTok Logo', '1', '$0.015', '$0.0025'],
+                  ['Finger Heart', '5', '$0.08', '$0.013'],
+                  ['Ice Cream Cone', '30', '$0.46', '$0.075'],
+                  ['Perfume', '199', '$3.02', '$0.50'],
+                  ['Drama Queen', '5,000', '$76', '$12.50'],
+                  ['Universe', '34,999', '$530', '$87.50'],
+                ]}
+                highlightFirst
+                sortable
+                footnote="Creators receive 50% of coin value as diamonds. TikTok keeps the other 50%."
+              />
             </Card>
 
             <Card className="p-6">

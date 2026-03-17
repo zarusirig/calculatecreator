@@ -6,11 +6,12 @@ import { Scale, CheckCircle, Calendar, XCircle, Shield, Users } from 'lucide-rea
 import { WebPageSchema } from '@/components/seo/WebPageSchema';
 
 export const metadata: Metadata = {
-  title: "Sponsorship Disclosure and CalculateCreator Platform Details",
-  description: "Review sponsorship disclosure information for CalculateCreator, including policy context, methodology transparency, and practical guidance for",
+  title: 'Sponsorship Disclosure Guide | TikTok Creator Compliance',
+  description:
+    'Learn when and how to disclose sponsored TikTok content, gifted products, affiliate links, and ongoing brand relationships.',
   keywords: ['tiktok ftc compliance', 'sponsorship disclosure', 'how to disclose sponsored content', 'tiktok ad disclosure'],
   alternates: {
-    canonical: 'https://calculatecreator.com/compliance/sponsorship-disclosure/',
+    canonical: 'https://tiktokcalculator.net/compliance/sponsorship-disclosure/',
   },
 };
 
@@ -35,8 +36,8 @@ export default function SponsorshipDisclosurePage() {
       <WebPageSchema
         title="TikTok Sponsorship Disclosure Guidelines: FTC Compliance 2026"
         description="Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations."
-        url="https://calculatecreator.com/compliance/sponsorship-disclosure/"
-        breadcrumbs={[{ name: 'Compliance', url: 'https://calculatecreator.com/compliance/' }]}
+        url="https://tiktokcalculator.net/compliance/sponsorship-disclosure/"
+        breadcrumbs={[{ name: 'Compliance', url: 'https://tiktokcalculator.net/compliance/' }]}
       />
       <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">

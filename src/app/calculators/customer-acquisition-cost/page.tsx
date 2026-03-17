@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok customer acquisition cost (CAC). Estimate how much it costs to acquire each customer through TikTok ads, content, and Shop campaigns.",
   keywords: ['customer acquisition cost', 'cac calculator', 'tiktok marketing cost', 'ltv cac ratio', 'acquisition cost calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/customer-acquisition-cost/',
+    canonical: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/',
   },
 };
 
@@ -53,7 +53,7 @@ export default function CustomerAcquisitionCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Customer Acquisition Cost (CAC) Calculator"
         description="Calculate how much it costs to acquire a new customer through your TikTok marketing campaigns."
-        url="https://calculatecreator.com/calculators/customer-acquisition-cost/"
+        url="https://tiktokcalculator.net/calculators/customer-acquisition-cost/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['customer acquisition cost', 'cac calculator', 'tiktok cac', 'cost per customer']}
@@ -61,9 +61,9 @@ export default function CustomerAcquisitionCostCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Customer Acquisition Cost Calculator', url: 'https://calculatecreator.com/calculators/customer-acquisition-cost/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Customer Acquisition Cost Calculator', url: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-success-light py-8">

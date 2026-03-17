@@ -4,10 +4,11 @@ import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: "Editorial Policy and CalculateCreator Platform Details",
-  description: "Review editorial policy information for CalculateCreator, including policy context, methodology transparency, and practical guidance for creator-focused",
+  title: 'Editorial Policy | TT Calculator',
+  description:
+    'Review how TT Calculator researches, writes, reviews, updates, and corrects calculator, guide, and benchmark content.',
   alternates: {
-    canonical: 'https://calculatecreator.com/editorial-policy/',
+    canonical: 'https://tiktokcalculator.net/editorial-policy/',
   },
 };
 
@@ -17,13 +18,13 @@ const editorialPolicySchema = {
   '@type': 'WebPage',
   name: 'Editorial Policy',
   description:
-    'Editorial Policy for calculatecreator.com covering research workflow, updates, correction handling, and independence standards.',
-  url: 'https://calculatecreator.com/editorial-policy/',
+    'Editorial Policy for tiktokcalculator.net covering research workflow, updates, correction handling, and independence standards.',
+  url: 'https://tiktokcalculator.net/editorial-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net',
   },
 };
 
@@ -42,14 +43,14 @@ export default function EditorialPolicyPage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          This page explains how CalculateCreator plans, produces, reviews, and updates content
+          This page explains how TT Calculator plans, produces, reviews, and updates content
           across calculators, guides, benchmark pages, and trust pages. Our editorial goal is
           straightforward: publish content that is useful, transparent, and technically defensible.
           We prioritize clarity over hype and assumptions over vague claims.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
           Editorial quality and product quality are treated as the same system on
-          calculatecreator.com. If formula logic improves, explanatory copy and assumptions should
+          tiktokcalculator.net. If formula logic improves, explanatory copy and assumptions should
           improve with it. If benchmark context changes, related pages should be refreshed together.
         </p>
 
@@ -148,8 +149,8 @@ export default function EditorialPolicyPage() {
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             To report an issue, email{' '}
-            <a href="mailto:contact@calculatecreator.com" className="link">
-              contact@calculatecreator.com
+            <a href="mailto:contact@tiktokcalculator.net" className="link">
+              contact@tiktokcalculator.net
             </a>{' '}
             or visit{' '}
             <Link href="/contact/" className="link">
@@ -248,8 +249,8 @@ export default function EditorialPolicyPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">10. Contacting the editorial team</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             For corrections, source challenges, or methodology concerns, email{' '}
-            <a href="mailto:contact@calculatecreator.com" className="link">
-              contact@calculatecreator.com
+            <a href="mailto:contact@tiktokcalculator.net" className="link">
+              contact@tiktokcalculator.net
             </a>{' '}
             and include the exact URL plus your evidence or rationale. We aim to acknowledge
             high-impact reports within 48 hours on business days.

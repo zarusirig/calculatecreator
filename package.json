@@ -1,5 +1,5 @@
 {
-  "name": "tiktok-creator-calculator",
+  "name": "tt-calculator",
   "version": "1.0.0",
   "description": "TikTok Creator Calculator Platform - Comprehensive monetization and analytics tools for TikTok creators",
   "private": true,
@@ -25,6 +25,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "axios": "^1.13.2",
     "dotenv": "^17.3.1",
+    "firebase": "^12.10.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.555.0",
     "next": "^14.2.0",

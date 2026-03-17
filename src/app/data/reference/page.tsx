@@ -6,7 +6,7 @@ import { HubListingPage } from '@/components/articles/HubListingPage';
 export const metadata: Metadata = {
   title: "TikTok Reference Data and Benchmark Insights Guide",
   description: "Review TikTok reference data with benchmark ranges, monetization context, and clear interpretation guidance for creator decision making.",
-  alternates: { canonical: 'https://calculatecreator.com/data/reference/' },
+  alternates: { canonical: 'https://tiktokcalculator.net/data/reference/' },
 };
 
 export default function ReferenceDataHubPage() {

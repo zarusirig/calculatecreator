@@ -1,0 +1,12 @@
+{
+  "default_client": "calculatecreator",
+  "agency_name": "CalculateCreator SEO",
+  "report_branding": {
+    "header": "SEO Audit Report",
+    "footer": "Prepared by CalculateCreator SEO Analysis"
+  },
+  "preferences": {
+    "output_format": "json",
+    "report_format": "markdown"
+  }
+}

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok search volume increase 40 percent update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/search-volume-increase-40-percent/',
+    canonical: 'https://tiktokcalculator.net/news/search-volume-increase-40-percent/',
   },
 };
 
@@ -20,17 +20,17 @@ export default function SearchVolumeIncrease40PercentPage() {
       <NewsArticleSchema
         headline="TikTok Search Volume Increases by Over 40% Year-Over-Year"
         description="Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising."
-        url="https://calculatecreator.com/news/search-volume-increase-40-percent/"
+        url="https://tiktokcalculator.net/news/search-volume-increase-40-percent/"
         datePublished="2026-01-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-algorithm-1024.webp"
+        image="https://tiktokcalculator.net/news/news-algorithm-1024.webp"
         keywords={['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'Search Volume Growth', url: 'https://calculatecreator.com/news/search-volume-increase-40-percent/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'Search Volume Growth', url: 'https://tiktokcalculator.net/news/search-volume-increase-40-percent/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

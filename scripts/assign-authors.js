@@ -35,7 +35,7 @@ function getAuthorForSlug(slug) {
             return rule.author;
         }
     }
-    return 'CalculateCreator Team'; // fallback
+    return 'TT Calculator Team'; // fallback
 }
 
 const files = fs.readdirSync(BLOG_DIR).filter(f => f.endsWith('.mdx'));

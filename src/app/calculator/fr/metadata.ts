@@ -4,15 +4,15 @@ export const metadata: Metadata = {
   title: "TikTok Fr Calculator 2026",
   description: "Use this TikTok fr calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
-    canonical: 'https://calculatecreator.com/calculator/fr/',
+    canonical: 'https://tiktokcalculator.net/calculator/fr/',
     languages: {
-      'fr': 'https://calculatecreator.com/calculator/fr/',
-      'en': 'https://calculatecreator.com/calculators/tiktok-money/',
-      'de': 'https://calculatecreator.com/calculator/de/',
-      'es': 'https://calculatecreator.com/calculator/es/',
-      'it': 'https://calculatecreator.com/calculator/it/',
-      'pt-br': 'https://calculatecreator.com/calculator/pt-br/',
-      'ms': 'https://calculatecreator.com/calculator/my/',
+      'fr': 'https://tiktokcalculator.net/calculator/fr/',
+      'en': 'https://tiktokcalculator.net/calculators/tiktok-money/',
+      'de': 'https://tiktokcalculator.net/calculator/de/',
+      'es': 'https://tiktokcalculator.net/calculator/es/',
+      'it': 'https://tiktokcalculator.net/calculator/it/',
+      'pt-br': 'https://tiktokcalculator.net/calculator/pt-br/',
+      'ms': 'https://tiktokcalculator.net/calculator/my/',
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Calculateur TikTok France | RPM 2026',
     description:
       'Estime les revenus TikTok en France : Fund & Rewards, deals de marque, cadeaux LIVE. Mis à jour 2026.',
-    url: 'https://calculatecreator.com/calculator/fr/',
+    url: 'https://tiktokcalculator.net/calculator/fr/',
     locale: 'fr_FR',
     type: 'website',
   },

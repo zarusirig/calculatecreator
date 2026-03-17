@@ -12,13 +12,14 @@ import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/
 import { PageAuthorByline, PageEEAT, getPersonAuthorForSchema } from '@/lib/eeat/page-eeat';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { EngagementRateCalculatorWidget } from '@/components/calculators/engagement-rate/CalculatorWidget';
+import { DataTable } from '@/components/ui/DataTable';
 
 export const metadata: Metadata = {
   title: "TikTok Engagement Rate Calculator — Check Your Rate Free",
   description: "Use this TikTok engagement rate calculator to benchmark your rate by niche and follower tier with 2026 data for pricing, content, and growth decisions.",
   keywords: ['tiktok engagement rate calculator', 'engagement rate', 'tiktok analytics', 'engagement calculator', 'tiktok metrics', 'influencer engagement'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/engagement-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/engagement-rate/',
   },
 };
 
@@ -79,7 +80,7 @@ export default function EngagementRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Engagement Rate Calculator"
         description="Calculate your TikTok engagement rate and compare against 2026 benchmarks. Understand what brands look for when evaluating creator partnerships."
-        url="https://calculatecreator.com/calculators/engagement-rate/"
+        url="https://tiktokcalculator.net/calculators/engagement-rate/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'influencer analytics']}
@@ -88,9 +89,9 @@ export default function EngagementRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Engagement Rate Calculator', url: 'https://calculatecreator.com/calculators/engagement-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Engagement Rate Calculator', url: 'https://tiktokcalculator.net/calculators/engagement-rate/' },
         ]}
       />
 
@@ -111,6 +112,9 @@ export default function EngagementRateCalculatorPage() {
             <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
               TikTok Engagement Rate Calculator 2026
             </h1>
+            <p className="text-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+              TikTok engagement rate is calculated by dividing total interactions (likes + comments + shares) by followers, then multiplying by 100. The average TikTok engagement rate in 2026 is 4%–6%, with micro-influencers often reaching 8%+.
+            </p>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto mb-4">
               Calculate your TikTok engagement rate instantly and compare against 2026 industry benchmarks. Engagement rate is the most important metric that brands evaluate for creator partnerships. Our calculator analyzes your likes, comments, shares, and follower count to determine your performance tier and earning potential. Understanding your engagement rate is essential for success on TikTok in 2026, whether you are pitching to brands or optimizing your content strategy. Higher engagement rates directly correlate with better brand deal opportunities and algorithm performance.
             </p>
@@ -132,6 +136,7 @@ export default function EngagementRateCalculatorPage() {
 
           {/* Industry Insights Section */}
           <div className="max-w-6xl mx-auto mb-12">
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-6">Key Industry Insights</h2>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <Card className="p-6">
                 <h3 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
@@ -214,54 +219,39 @@ export default function EngagementRateCalculatorPage() {
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <CheckCircle size={24} className="text-success-600" /> What Counts as Engagement
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                TikTok engagement includes multiple interaction types. The algorithm weights each one differently.
-              </p>
-              <div className="space-y-3">
-                {[
-                  { metric: 'Comments', weight: 'Highest weight', desc: 'Indicates deep engagement', Icon: MessageCircle },
-                  { metric: 'Shares', weight: 'High weight', desc: 'Shows content is recommendation-worthy', Icon: Share2 },
-                  { metric: 'Saves', weight: 'High weight', desc: 'Signals valuable, reference content', Icon: Award },
-                  { metric: 'Likes', weight: 'Medium weight', desc: 'Quick positive feedback', Icon: Heart },
-                  { metric: 'Watch Time', weight: 'Critical', desc: 'Completion rate affects distribution', Icon: Eye },
-                ].map((item) => (
-                  <div key={item.metric} className="flex items-center space-x-3 p-3 bg-neutral-50 rounded-lg">
-                    <item.Icon size={20} className="text-secondary-600" />
-                    <div className="flex-1">
-                      <span className="text-body-sm font-semibold text-neutral-900">{item.metric}</span>
-                      <span className="text-body-xs text-neutral-500 ml-2">({item.weight})</span>
-                      <p className="text-body-xs text-neutral-600">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="TikTok Engagement Metrics — Algorithm Weight"
+                headers={['Metric', 'Algorithm Weight', 'Description']}
+                rows={[
+                  ['Comments', 'Highest weight', 'Indicates deep engagement'],
+                  ['Shares', 'High weight', 'Shows content is recommendation-worthy'],
+                  ['Saves', 'High weight', 'Signals valuable, reference content'],
+                  ['Likes', 'Medium weight', 'Quick positive feedback'],
+                  ['Watch Time', 'Critical', 'Completion rate affects distribution'],
+                ]}
+                highlightFirst
+              />
             </Card>
 
             <Card className="p-6">
               <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
                 <Target size={24} className="text-primary-600" /> Engagement by Niche
               </h2>
-              <p className="text-body-md text-neutral-700 mb-4">
-                Average engagement rates vary significantly by content category:
-              </p>
-              <div className="space-y-3">
-                {[
-                  { niche: 'Comedy/Entertainment', rate: '7-12%', color: 'bg-success-100 text-success-700' },
-                  { niche: 'Pets/Animals', rate: '6-10%', color: 'bg-success-100 text-success-700' },
-                  { niche: 'Beauty/Fashion', rate: '5-8%', color: 'bg-primary-100 text-primary-700' },
-                  { niche: 'Fitness/Health', rate: '5-8%', color: 'bg-primary-100 text-primary-700' },
-                  { niche: 'Education/How-to', rate: '4-7%', color: 'bg-secondary-100 text-secondary-700' },
-                  { niche: 'Finance/Business', rate: '3-6%', color: 'bg-neutral-100 text-neutral-700' },
-                  { niche: 'News/Commentary', rate: '2-4%', color: 'bg-warning-100 text-warning-700' },
-                ].map((item) => (
-                  <div key={item.niche} className={`p-3 rounded-lg ${item.color}`}>
-                    <div className="flex items-center justify-between">
-                      <span className="font-semibold">{item.niche}</span>
-                      <span className="text-sm font-mono">{item.rate}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <DataTable
+                caption="Average TikTok Engagement Rate by Niche (2026)"
+                headers={['Content Niche', 'Avg. Engagement Rate']}
+                rows={[
+                  ['Comedy/Entertainment', '7-12%'],
+                  ['Pets/Animals', '6-10%'],
+                  ['Beauty/Fashion', '5-8%'],
+                  ['Fitness/Health', '5-8%'],
+                  ['Education/How-to', '4-7%'],
+                  ['Finance/Business', '3-6%'],
+                  ['News/Commentary', '2-4%'],
+                ]}
+                highlightFirst
+                footnote="Compare your rate to creators in your specific niche, not across all categories."
+              />
             </Card>
 
             <Card className="p-6">
@@ -388,15 +378,15 @@ For accurate results, calculate average engagement across your last 10-20 posts.
               assumptions={[
                 { label: 'Engagement Metrics', value: 'Includes likes, comments, and shares as standard' },
                 { label: 'Calculation Base', value: 'Divided by follower count (industry standard for brand evaluation)' },
-                { label: 'Benchmarks', value: 'Based on 2026 industry data across millions of accounts' },
+                { label: 'Benchmarks', value: 'Based on published creator and platform benchmark references' },
                 { label: 'Niche Variance', value: 'Entertainment niches typically outperform educational content' },
                 { label: 'Follower Impact', value: 'Larger accounts naturally have lower percentage rates' },
               ]}
               dataSources={[
-                'TikTok Creator Portal analytics data (2026)',
-                'Influencer marketing platform benchmarks (AspireIQ, Grin)',
-                'Analysis of 500,000+ TikTok accounts',
-                'Brand partnership requirements database',
+                'TikTok creator documentation and analytics guidance',
+                'Published influencer marketing benchmark reports',
+                'Public social media benchmark studies',
+                'Published brand partnership guidance',
               ]}
               limitations="Engagement rates fluctuate based on content type, posting time, and algorithm changes. Calculate using multiple recent posts for accuracy. Viral videos can skew averages significantly."
               lastUpdated="January 2026"

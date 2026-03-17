@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Check TikTok monetization eligibility across Creator Fund, LIVE Gifts, Shop, and Rewards with account threshold guidance and milestone planning details.",
   keywords: ['tiktok eligibility', 'creator fund requirements', 'tiktok monetization requirements', 'live gifts eligibility', 'tiktok shop requirements'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/utility-tools/eligibility/',
+    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/eligibility/',
   },
 };
 
@@ -39,14 +39,14 @@ export default function EligibilityLayout({ children }: { children: React.ReactN
       <CalculatorSchema
         name="TikTok Monetization Eligibility Checker"
         description="Check if you qualify for TikTok's monetization programs including Creator Fund, LIVE, and Shop."
-        url="https://calculatecreator.com/calculators/utility-tools/eligibility/"
+        url="https://tiktokcalculator.net/calculators/utility-tools/eligibility/"
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Utility Tools', url: 'https://calculatecreator.com/calculators/utility-tools/' },
-          { name: 'Eligibility Checker', url: 'https://calculatecreator.com/calculators/utility-tools/eligibility/' }
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Utility Tools', url: 'https://tiktokcalculator.net/calculators/utility-tools/' },
+          { name: 'Eligibility Checker', url: 'https://tiktokcalculator.net/calculators/utility-tools/eligibility/' }
         ]}
       />
       {children}

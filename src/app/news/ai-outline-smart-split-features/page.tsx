@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok ai outline smart split features update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news'],
   alternates: {
-    canonical: 'https://calculatecreator.com/news/ai-outline-smart-split-features/',
+    canonical: 'https://tiktokcalculator.net/news/ai-outline-smart-split-features/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function AIOutlineSmartSplitPage() {
       <NewsArticleSchema
         headline="TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News"
         description="In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities."
-        url="https://calculatecreator.com/news/ai-outline-smart-split-features/"
+        url="https://tiktokcalculator.net/news/ai-outline-smart-split-features/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://calculatecreator.com/news/news-features-1024.webp"
+        image="https://tiktokcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'News', url: 'https://calculatecreator.com/news/' },
-          { name: 'AI Outline & Smart Split', url: 'https://calculatecreator.com/news/ai-outline-smart-split-features/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
+          { name: 'AI Outline & Smart Split', url: 'https://tiktokcalculator.net/news/ai-outline-smart-split-features/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

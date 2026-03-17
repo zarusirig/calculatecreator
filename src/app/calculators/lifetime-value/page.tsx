@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate the lifetime value of your TikTok followers. Estimate long-term revenue per follower across brand deals, affiliate sales, and product launches.",
   keywords: ['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'ltv cac ratio', 'customer retention'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/lifetime-value/',
+    canonical: 'https://tiktokcalculator.net/calculators/lifetime-value/',
   },
 };
 
@@ -49,7 +49,7 @@ export default function LifetimeValueCalculatorPage() {
       <CalculatorSchema
         name="TikTok Customer Lifetime Value (LTV) Calculator"
         description="Calculate the total value a customer brings over their lifetime to determine how much you can spend on acquisition."
-        url="https://calculatecreator.com/calculators/lifetime-value/"
+        url="https://tiktokcalculator.net/calculators/lifetime-value/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'clv calculator']}
@@ -57,9 +57,9 @@ export default function LifetimeValueCalculatorPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Lifetime Value Calculator', url: 'https://calculatecreator.com/calculators/lifetime-value/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Lifetime Value Calculator', url: 'https://tiktokcalculator.net/calculators/lifetime-value/' },
         ]}
       />
       <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-light py-8">

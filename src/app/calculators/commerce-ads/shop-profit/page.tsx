@@ -12,13 +12,15 @@ import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-co
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
 import { PageAuthorByline, PageEEAT } from '@/lib/eeat/page-eeat';
+import { DataTable } from '@/components/ui/DataTable';
+import { ComparisonTable } from '@/components/ui/ComparisonTable';
 
 export const metadata: Metadata = {
   title: "TikTok Shop Profit & Commission Calculator",
-  description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
+  description: "Calculate TikTok Shop profit after commission fees, shipping, and platform costs. Estimate affiliate and seller earnings per product sold.",
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/commerce-ads/shop-profit/',
+    canonical: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',
   },
 };
 
@@ -58,6 +60,9 @@ export default function ShopCommissionCalculatorPage() {
             <ShoppingBag size={32} />
           </div>
           <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">TikTok Shop Commission Calculator</h1>
+          <p className="text-body-lg font-medium text-neutral-800 max-w-2xl mx-auto mb-3">
+            TikTok Shop profit is calculated as (Product Price x Commission Rate) minus platform fees of 2%–8%. Affiliate commissions range from 5%–20% by category. Enter your product details below to estimate per-sale and monthly earnings.
+          </p>
           <p className="text-body-lg text-neutral-600 max-w-2xl mx-auto mb-3">Calculate your earnings from TikTok Shop affiliate commissions and estimate your monthly revenue potential. This calculator helps affiliates forecast income based on 3 inputs (product prices, commission rates, and sales volume). It is perfect for creators evaluating TikTok Shop as a monetization strategy or tracking performance across different product categories and niches.</p>
           <p className="text-body-md text-neutral-600 max-w-2xl mx-auto">
             Learn <Link href="/guides/tiktok-shop-affiliate/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">how the TikTok Shop affiliate program works</Link> or explore <Link href="/guides/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline font-medium transition-colors">TikTok Shop success strategies</Link> to maximize your commissions.
@@ -126,32 +131,23 @@ export default function ShopCommissionCalculatorPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
               Commission Rates by Product Category
             </h2>
-            <p className="text-body-md text-neutral-700 mb-4">
-              Average commission rates vary significantly by product type.
-            </p>
-            <div className="space-y-2">
-              {[
-                { category: 'Beauty & Cosmetics', rate: '8-15%', avgPrice: '$25', note: 'High-converting category' },
-                { category: 'Fashion & Apparel', rate: '5-12%', avgPrice: '$40', note: 'Volume-based earnings' },
-                { category: 'Home & Kitchen', rate: '5-10%', avgPrice: '$35', note: 'Steady demand' },
-                { category: 'Electronics & Gadgets', rate: '3-8%', avgPrice: '$75', note: 'Higher ticket items' },
-                { category: 'Health & Wellness', rate: '10-20%', avgPrice: '$30', note: 'Premium commissions' },
-                { category: 'Jewelry & Accessories', rate: '10-15%', avgPrice: '$20', note: 'Impulse purchases' },
-                { category: 'Pet Supplies', rate: '8-12%', avgPrice: '$28', note: 'Growing niche' },
-                { category: 'Baby & Kids', rate: '7-12%', avgPrice: '$32', note: 'Loyal audience' },
-              ].map((cat) => (
-                <div key={cat.category} className="flex items-center justify-between p-4 bg-neutral-50 rounded-lg">
-                  <div className="flex-1">
-                    <p className="font-semibold text-neutral-900">{cat.category}</p>
-                    <p className="text-body-sm text-neutral-600">{cat.note}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-semibold text-primary-600">{cat.rate}</p>
-                    <p className="text-body-sm text-neutral-500">Avg: {cat.avgPrice}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <DataTable
+              caption="TikTok Shop Commission Rates by Product Category"
+              headers={['Category', 'Commission Rate', 'Avg. Price', 'Notes']}
+              rows={[
+                ['Beauty & Cosmetics', '8-15%', '$25', 'High-converting category'],
+                ['Fashion & Apparel', '5-12%', '$40', 'Volume-based earnings'],
+                ['Home & Kitchen', '5-10%', '$35', 'Steady demand'],
+                ['Electronics & Gadgets', '3-8%', '$75', 'Higher ticket items'],
+                ['Health & Wellness', '10-20%', '$30', 'Premium commissions'],
+                ['Jewelry & Accessories', '10-15%', '$20', 'Impulse purchases'],
+                ['Pet Supplies', '8-12%', '$28', 'Growing niche'],
+                ['Baby & Kids', '7-12%', '$32', 'Loyal audience'],
+              ]}
+              highlightFirst
+              sortable
+              footnote="Commission rates set by individual sellers and may vary."
+            />
           </Card>
 
           <Card>
@@ -212,54 +208,20 @@ export default function ShopCommissionCalculatorPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
               Realistic Earnings Examples
             </h2>
-            <p className="text-body-md text-neutral-700 mb-4">
-              Realistic earnings based on follower count and effort follow.
-            </p>
-            <div className="space-y-3">
-              {[
-                {
-                  tier: 'Nano Creator (1K-10K followers)',
-                  sales: '5-15 sales/month',
-                  commission: '$50-$200/month',
-                  effort: '3-5 product videos/week'
-                },
-                {
-                  tier: 'Micro Creator (10K-50K followers)',
-                  sales: '15-50 sales/month',
-                  commission: '$200-$800/month',
-                  effort: '5-10 product videos/week + occasional LIVE'
-                },
-                {
-                  tier: 'Mid-Tier Creator (50K-500K followers)',
-                  sales: '50-200 sales/month',
-                  commission: '$800-$5,000/month',
-                  effort: 'Daily content + 2-3 LIVE sessions/week'
-                },
-                {
-                  tier: 'Macro Creator (500K-1M followers)',
-                  sales: '200-500 sales/month',
-                  commission: '$5,000-$15,000/month',
-                  effort: 'Multiple daily posts + LIVE shopping events'
-                },
-                {
-                  tier: 'Mega Creator (1M+ followers)',
-                  sales: '500-2,000+ sales/month',
-                  commission: '$15,000-$50,000+/month',
-                  effort: 'Full-time content + dedicated LIVE shopping strategy'
-                },
-              ].map((example) => (
-                <div key={example.tier} className="p-4 bg-gradient-to-r from-neutral-50 to-info-50 rounded-lg border border-neutral-200">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="font-semibold text-neutral-900">{example.tier}</h4>
-                    <span className="text-heading-md font-bold text-success-600">{example.commission}</span>
-                  </div>
-                  <div className="text-body-sm text-neutral-600 space-y-1">
-                    <p className="flex items-center gap-1"><Package size={14} /> {example.sales}</p>
-                    <p className="flex items-center gap-1"><BarChart3 size={14} /> {example.effort}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <DataTable
+              caption="TikTok Shop Affiliate Earnings by Creator Tier"
+              headers={['Creator Tier', 'Monthly Sales', 'Monthly Commission', 'Effort Required']}
+              rows={[
+                ['Nano (1K-10K followers)', '5-15 sales', '$50-$200', '3-5 product videos/week'],
+                ['Micro (10K-50K followers)', '15-50 sales', '$200-$800', '5-10 videos/week + occasional LIVE'],
+                ['Mid-Tier (50K-500K followers)', '50-200 sales', '$800-$5,000', 'Daily content + 2-3 LIVE/week'],
+                ['Macro (500K-1M followers)', '200-500 sales', '$5,000-$15,000', 'Multiple daily posts + LIVE shopping'],
+                ['Mega (1M+ followers)', '500-2,000+ sales', '$15,000-$50,000+', 'Full-time content + LIVE strategy'],
+              ]}
+              highlightFirst
+              sortable
+              footnote="Estimates assume 8% average commission rate and $35 average product price."
+            />
             <div className="mt-4 p-4 bg-warning-50 border border-warning-200 rounded-lg">
               <p className="text-body-sm text-neutral-700">
                 <strong>Note:</strong> These estimates assume 8% average commission rate and $35 average product price. Actual earnings depend on niche, product selection, and content quality.
@@ -271,44 +233,45 @@ export default function ShopCommissionCalculatorPage() {
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
               TikTok Shop vs. Other Monetization Methods
             </h2>
-            <div className="space-y-3">
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-semibold text-neutral-900 flex items-center gap-2">
-                    <ShoppingBag size={18} className="text-info-600" /> TikTok Shop
-                  </span>
-                  <span className="text-success-600 font-semibold">$200-$5,000/mo (mid-tier)</span>
-                </div>
-                <p className="text-body-sm text-neutral-700">
-                  <strong>Pros:</strong> Passive income, no upfront costs, works with any follower count<br />
-                  <strong>Cons:</strong> Requires consistent product content, commission-based only
-                </p>
-              </div>
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-semibold text-neutral-900 flex items-center gap-2">
-                    <Handshake size={18} className="text-accent-600" /> Brand Deals
-                  </span>
-                  <span className="text-success-600 font-semibold">$500-$10,000/post (mid-tier)</span>
-                </div>
-                <p className="text-body-sm text-neutral-700">
-                  <strong>Pros:</strong> Highest per-post earnings, one-time payment<br />
-                  <strong>Cons:</strong> Requires 10K+ followers, inconsistent deal flow
-                </p>
-              </div>
-              <div className="p-4 bg-neutral-50 rounded-lg">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-semibold text-neutral-900 flex items-center gap-2">
-                    <DollarSign size={18} className="text-primary-600" /> Creator Fund
-                  </span>
-                  <span className="text-success-600 font-semibold">$20-$200/mo (mid-tier)</span>
-                </div>
-                <p className="text-body-sm text-neutral-700">
-                  <strong>Pros:</strong> Fully passive, no extra work required<br />
-                  <strong>Cons:</strong> Lowest earnings, requires 100K+ monthly views
-                </p>
-              </div>
-            </div>
+            <ComparisonTable
+              caption="TikTok Monetization Methods Compared"
+              items={[
+                {
+                  name: 'TikTok Shop',
+                  features: {
+                    'Mid-Tier Earnings': '$200-$5,000/mo',
+                    'Passive Income': true,
+                    'No Upfront Costs': true,
+                    'Any Follower Count': true,
+                    'Consistent Content Required': true,
+                    'One-Time Payments': false,
+                  },
+                },
+                {
+                  name: 'Brand Deals',
+                  features: {
+                    'Mid-Tier Earnings': '$500-$10,000/post',
+                    'Passive Income': false,
+                    'No Upfront Costs': true,
+                    'Any Follower Count': false,
+                    'Consistent Content Required': false,
+                    'One-Time Payments': true,
+                  },
+                },
+                {
+                  name: 'Creator Fund',
+                  features: {
+                    'Mid-Tier Earnings': '$20-$200/mo',
+                    'Passive Income': true,
+                    'No Upfront Costs': true,
+                    'Any Follower Count': false,
+                    'Consistent Content Required': false,
+                    'One-Time Payments': false,
+                  },
+                },
+              ]}
+              footnote="Requires 10K+ followers for Creator Fund and most brand deals. TikTok Shop has no follower minimum."
+            />
           </Card>
 
           <Card>
@@ -536,7 +499,7 @@ export default function ShopCommissionCalculatorPage() {
             relatedContent={[
               { title: 'Ad Cost Calculator', href: '/calculators/commerce-ads/ad-cost/' },
               { title: 'RPM Calculator', href: '/calculators/commerce-ads/rpm-cpm/' },
-              { title: 'TikTok Money Calculator', href: '/calculators/earnings-revenue/money/' },
+              { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
             ]}
           />
 

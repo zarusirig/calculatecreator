@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok comment rate and compare against niche benchmarks. Understand how comment engagement impacts algorithm reach and content performance.",
   keywords: ['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement', 'tiktok analytics'],
   alternates: {
-    canonical: 'https://calculatecreator.com/calculators/comment-rate/',
+    canonical: 'https://tiktokcalculator.net/calculators/comment-rate/',
   },
 };
 
@@ -46,7 +46,7 @@ export default function CommentRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Comment Rate Calculator"
         description="Calculate your TikTok comment rate and compare it to industry benchmarks. Understand how engaged your audience really is."
-        url="https://calculatecreator.com/calculators/comment-rate/"
+        url="https://tiktokcalculator.net/calculators/comment-rate/"
         datePublished="2024-05-01"
         dateModified="2026-03-01"
         keywords={['comment rate calculator', 'tiktok comments', 'engagement metrics', 'audience engagement']}
@@ -54,9 +54,9 @@ export default function CommentRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://calculatecreator.com' },
-          { name: 'Calculators', url: 'https://calculatecreator.com/calculators/' },
-          { name: 'Comment Rate Calculator', url: 'https://calculatecreator.com/calculators/comment-rate/' },
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Comment Rate Calculator', url: 'https://tiktokcalculator.net/calculators/comment-rate/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

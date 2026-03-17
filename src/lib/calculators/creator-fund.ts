@@ -93,7 +93,7 @@ export function validateCreatorFundInput(input: Partial<CreatorFundInput>): {
 
   if (!input.monthlyViews || input.monthlyViews < 100000) {
     errors.monthlyViews =
-      'Monthly views must be at least 100,000 to qualify for Creator Fund';
+      'Monthly views must be at least 100,000 to model the legacy Creator Fund threshold';
   }
 
   if (input.monthlyViews && input.monthlyViews > 1000000000) {

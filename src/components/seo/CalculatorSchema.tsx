@@ -31,7 +31,7 @@ export function CalculatorSchema({
   description,
   url,
   category = 'BusinessApplication',
-  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
+  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
   personAuthor,
   datePublished,
   dateModified,
@@ -41,7 +41,7 @@ export function CalculatorSchema({
 }: CalculatorSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
+    '@type': 'SoftwareApplication',
     name,
     description,
     url,
@@ -111,7 +111,7 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
+  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
   personAuthor,
   image,
   keywords,
@@ -140,11 +140,11 @@ export function ArticleSchema({
       },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
     ...(image && {
@@ -229,11 +229,11 @@ export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com/',
-    logo: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net/',
+    logo: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
     description:
-      'Free TikTok calculators for creators to estimate earnings, engagement rates, and growth metrics. Data-driven tools trusted by 50,000+ TikTok creators.',
+      'Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.',
     sameAs: [
       // Add social media profiles here when available
     ],
@@ -257,13 +257,13 @@ export function WebSiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'CalculateCreator',
-    url: 'https://calculatecreator.com/',
+    name: 'TT Calculator',
+    url: 'https://tiktokcalculator.net/',
     description:
       'Free TikTok calculators and tools for creators. Calculate earnings, engagement rates, follower growth, and more.',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://calculatecreator.com/search?q={search_term_string}',
+      target: 'https://tiktokcalculator.net/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };
@@ -466,7 +466,7 @@ export function NewsArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'CalculateCreator', url: 'https://calculatecreator.com/' },
+  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
   image,
   keywords,
   articleBody,
@@ -486,11 +486,11 @@ export function NewsArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'CalculateCreator',
-      url: 'https://calculatecreator.com/',
+      name: 'TT Calculator',
+      url: 'https://tiktokcalculator.net/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://calculatecreator.com/images/calculate-creator-transparent-v2.png',
+        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
       },
     },
     ...(image && {
@@ -548,7 +548,7 @@ export function CollectionPageSchema({
       '@type': 'ListItem',
       position: index + 1,
       item: {
-        '@type': 'WebApplication',
+        '@type': 'SoftwareApplication',
         name: calc.name,
         description: calc.description,
         url: `${url}/${calc.slug}`,
@@ -571,7 +571,7 @@ export function CollectionPageSchema({
     description,
     url,
     isPartOf: {
-      '@id': 'https://calculatecreator.com/#website',
+      '@id': 'https://tiktokcalculator.net/#website',
     },
     ...(about && {
       about: {

@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const matter = require('gray-matter');
 
-const SITE_URL = 'https://calculatecreator.com';
+const SITE_URL = 'https://tiktokcalculator.net';
 const APP_DIR = path.join(__dirname, '..', 'src', 'app');
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
 const OUTPUT = path.join(__dirname, '..', 'public', 'sitemap.xml');
@@ -15,6 +15,9 @@ const EXCLUDED_ROUTE_PATTERNS = [
   /^\/calculator\/(de|es|fr|it|my|pt-br)\/$/,
   /^\/calculators\/fun-niche\/$/,
   /^\/calculators\/fun-niche\/moon-phase\/$/,
+  /^\/tools\/$/,
+  /^\/tools\/rpm\/$/,
+  /^\/metrics\/tiktok-comments-to-likes-ratio\/$/,
 ];
 
 function normalizeRoute(route) {
@@ -224,9 +227,13 @@ function generate() {
       // Read frontmatter to get priority and dates
       let priority = '0.6';
       let changefreq = 'monthly';
+      let noindex = false;
       try {
         const raw = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(raw);
+        if (data.noindex) {
+          noindex = true;
+        }
         if (data.priorityScore) {
           priority = (data.priorityScore / 100).toFixed(1);
         }
@@ -234,7 +241,7 @@ function generate() {
           const updatedDate = new Date(data.updatedDate).toISOString().split('T')[0];
           // Use the more recent of git date and frontmatter date
           if (updatedDate > lastmod) {
-            return { route, lastmod: updatedDate, priority, changefreq };
+            return { route, lastmod: updatedDate, priority, changefreq, noindex };
           }
         }
         if (data.section === 'core') {
@@ -244,28 +251,15 @@ function generate() {
         // Fall through with defaults
       }
 
-      return { route, lastmod, priority, changefreq };
+      return { route, lastmod, priority, changefreq, noindex };
     })
-    .filter((entry) => shouldIncludeRoute(entry.route));
+    .filter((entry) => shouldIncludeRoute(entry.route) && !entry.noindex);
 
-  // Pass 3: Author profile pages (dynamic [authorSlug] routes skipped by findPages)
-  const authorSlugs = [
-    'sarah-johnson',
-    'michael-chen',
-    'jessica-rodriguez',
-    'david-kim',
-    'emily-thompson',
-    'alex-martinez',
-  ];
-  const authorUrls = authorSlugs
-    .map((slug) => ({
-      route: `/authors/${slug}/`,
-      lastmod: new Date().toISOString().split('T')[0],
-      priority: '0.5',
-      changefreq: 'monthly',
-    }))
-    .filter((entry) => shouldIncludeRoute(entry.route));
-  console.log(`Added ${authorUrls.length} author pages`);
+  // Pass 3: Author profile pages — excluded from sitemap because
+  // thin author profiles are marked noindex (< 300 words).
+  // They will be re-added once author profiles have sufficient content.
+  const authorUrls = [];
+  console.log('Skipped author pages (thin profiles are noindexed)');
 
   // Combine and sort
   const urls = [...staticUrls, ...mdxUrls, ...authorUrls].sort((a, b) => {
