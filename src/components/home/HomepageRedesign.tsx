@@ -636,6 +636,11 @@ export function HomepageRedesign() {
             </div>
           </div>
         </section>
+
+        <p className="mt-10 text-center text-xs leading-5 text-[color:var(--muted)]">
+          TT Calculator is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance Ltd.
+          &quot;TikTok&quot; is a trademark of its respective owner and appears on this site for descriptive purposes only.
+        </p>
       </Container>
     </div>
   );

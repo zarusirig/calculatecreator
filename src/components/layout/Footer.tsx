@@ -178,6 +178,9 @@ export function Footer() {
           <p>© {currentYear} TT Calculator. Free creator calculators and benchmark tools.</p>
           <p>Built to make creator economics easier to reason about.</p>
         </div>
+        <p className="mt-3 text-center text-[10px] leading-4 text-[color:var(--muted)]">
+          TT Calculator is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance Ltd. All trademarks belong to their respective owners.
+        </p>
       </div>
     </footer>
   );

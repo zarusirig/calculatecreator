@@ -388,6 +388,15 @@ export default function PrivacyPage() {
             .
           </p>
         </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">14. Trademark notice</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            TT Calculator is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance
+            Ltd. &quot;TikTok&quot; is a trademark of its respective owner and appears on this site for
+            descriptive purposes only.
+          </p>
+        </section>
         </Container>
       </div>
     </>
