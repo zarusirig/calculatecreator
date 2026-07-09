@@ -863,6 +863,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tiktokcalculator.net/data/reference/creator-fund-countries/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiktokcalculator.net/data/reference/live-gifts-value-chart/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiktokcalculator.net/data/reference/shop-commission-rates/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tiktokcalculator.net/data/reference/shop-payment-schedule/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tiktokcalculator.net/data/reference/tiktok-business-vs-creator-account/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -1979,6 +2003,12 @@
     <priority>0.4</priority>
   </url>
   <url>
+    <loc>https://tiktokcalculator.net/compliance/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://tiktokcalculator.net/compliance/advertising-disclosure/</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>yearly</changefreq>
@@ -1992,7 +2022,7 @@
   </url>
   <url>
     <loc>https://tiktokcalculator.net/privacy/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-03-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>

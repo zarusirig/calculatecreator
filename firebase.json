@@ -163,11 +163,6 @@
         "type": 301
       },
       {
-        "source": "/compliance{,/}",
-        "destination": "/compliance/advertising-disclosure/",
-        "type": 301
-      },
-      {
         "source": "/guides/region{,/}",
         "destination": "/guides/",
         "type": 301
@@ -266,12 +261,12 @@
       },
       {
         "source": "/reference/creator-fund-countries{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/creator-fund-countries/",
         "type": 301
       },
       {
         "source": "/reference/creator-fund-eligible-countries{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/creator-fund-countries/",
         "type": 301
       },
       {
@@ -281,22 +276,22 @@
       },
       {
         "source": "/reference/live-gifts-value-chart{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/live-gifts-value-chart/",
         "type": 301
       },
       {
         "source": "/reference/shop-commission-rates{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/shop-commission-rates/",
         "type": 301
       },
       {
         "source": "/reference/shop-payment-schedule{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/shop-payment-schedule/",
         "type": 301
       },
       {
         "source": "/reference/tiktok-shop-payment-schedule{,/}",
-        "destination": "/data/reference/",
+        "destination": "/data/reference/shop-payment-schedule/",
         "type": 301
       },
 
