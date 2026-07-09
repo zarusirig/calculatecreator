@@ -72,7 +72,7 @@ export default function ViralPotentialCalculatorPage() {
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
         url="https://ttcalculator.net/calculators/viral-potential/"
         datePublished="2024-05-05"
-        dateModified="2026-03-01"
+        dateModified="2025-12-05"
         keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}
       />
       <FAQSchema faqs={faqData} />

@@ -46,7 +46,7 @@ export default function CreatorTaxCalculatorPage() {
         description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
         url="https://ttcalculator.net/calculators/utility-tools/tax/"
         datePublished="2024-01-20"
-        dateModified="2026-03-01"
+        dateModified="2025-11-13"
         keywords={['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator']}
       />
       <FAQSchema faqs={faqData} />

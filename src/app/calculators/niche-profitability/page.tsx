@@ -47,7 +47,7 @@ export default function NicheProfitabilityCalculatorPage() {
         description="Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing."
         url="https://ttcalculator.net/calculators/niche-profitability/"
         datePublished="2024-06-15"
-        dateModified="2026-03-01"
+        dateModified="2025-11-13"
         keywords={['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories']}
       />
       <FAQSchema faqs={faqData} />

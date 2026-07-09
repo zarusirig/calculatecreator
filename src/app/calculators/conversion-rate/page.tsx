@@ -66,8 +66,8 @@ export default function ConversionRateCalculatorPage() {
         name="TikTok Conversion Rate Calculator"
         description="Calculate conversion rate from your TikTok traffic to measure how effectively you're turning visitors into customers."
         url="https://ttcalculator.net/calculators/conversion-rate/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok conversion rate', 'conversion calculator', 'tiktok traffic conversion', 'conversion optimization']}
       />
       <FAQSchema faqs={faqs} />

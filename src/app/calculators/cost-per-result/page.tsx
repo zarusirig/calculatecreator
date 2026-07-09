@@ -58,8 +58,8 @@ export default function CostPerResultCalculatorPage() {
         name="TikTok Cost Per Result Calculator"
         description="Calculate cost per result for your TikTok ad campaigns. Measure CPC, CPA, CPV, CPL, CPE and optimize your advertising efficiency."
         url="https://ttcalculator.net/calculators/cost-per-result/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-12-05"
+        dateModified="2025-12-05"
         keywords={['cost per result', 'tiktok cpr', 'cpc calculator', 'cpa calculator', 'tiktok ad costs']}
       />
       <FAQSchema faqs={faqs} />

@@ -87,8 +87,8 @@ export default function CoinsCalculatorPage() {
         name="TikTok Coins Calculator"
         description="Calculate TikTok coin values, convert coins to USD and diamonds, and understand gift pricing with our free calculator."
         url="https://ttcalculator.net/calculators/coins/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
         keywords={['tiktok coins calculator', 'coins to usd', 'tiktok coin price', 'coins to diamonds']}
       />
       <FAQSchema faqs={faqData} />

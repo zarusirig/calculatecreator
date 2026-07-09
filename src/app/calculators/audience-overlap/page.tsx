@@ -58,8 +58,8 @@ export default function AudienceOverlapCalculatorPage() {
         name="TikTok Audience Overlap Calculator"
         description="Calculate audience overlap between TikTok ad campaigns to optimize targeting, reduce wasted spend, and maximize unique reach."
         url="https://ttcalculator.net/calculators/audience-overlap/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-12-05"
+        dateModified="2025-12-05"
         keywords={['audience overlap', 'tiktok targeting', 'campaign optimization', 'audience analysis']}
       />
       <FAQSchema faqs={faqs} />

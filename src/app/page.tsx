@@ -5,7 +5,7 @@ import { HomepageRedesign } from '@/components/home/HomepageRedesign';
 export const metadata: Metadata = {
   title: 'TikTok Calculator — Free Earnings & Engagement Calculator',
   description:
-    'Free TikTok Calculator to estimate earnings per view, engagement rate, brand deal pricing, and Creator Fund payouts. 35+ TikTok calculators trusted by 100k+ creators — no signup required.',
+    'Free TikTok Calculator to estimate earnings per view, engagement rate, brand deal pricing, and Creator Fund payouts. 35+ free TikTok calculators with transparent methodology — no signup required.',
   alternates: {
     canonical: 'https://ttcalculator.net/',
   },

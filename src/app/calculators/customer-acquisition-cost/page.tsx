@@ -54,8 +54,8 @@ export default function CustomerAcquisitionCostCalculatorPage() {
         name="TikTok Customer Acquisition Cost (CAC) Calculator"
         description="Calculate how much it costs to acquire a new customer through your TikTok marketing campaigns."
         url="https://ttcalculator.net/calculators/customer-acquisition-cost/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['customer acquisition cost', 'cac calculator', 'tiktok cac', 'cost per customer']}
       />
       <FAQSchema faqs={faqs} />

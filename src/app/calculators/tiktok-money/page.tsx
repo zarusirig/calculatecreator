@@ -87,8 +87,8 @@ export default function TikTokMoneyCalculatorPage() {
         name="TikTok Money Calculator"
         description="Calculate your total TikTok earnings from all income streams including Creator Rewards, brand deals, LIVE gifts, TikTok Shop, and legacy Fund comparisons."
         url="https://ttcalculator.net/calculators/tiktok-money/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
         keywords={['tiktok money calculator', 'tiktok earnings', 'tiktok income calculator', 'how much money tiktok']}
         personAuthor={getPersonAuthorForSchema('tiktok-money')}
       />

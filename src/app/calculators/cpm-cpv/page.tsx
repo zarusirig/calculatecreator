@@ -71,8 +71,8 @@ export default function CPMCPVCalculatorPage() {
         name="TikTok CPM/CPV Calculator"
         description="Calculate Cost Per Mille (CPM) and Cost Per View (CPV) for your TikTok ad campaigns to measure advertising efficiency."
         url="https://ttcalculator.net/calculators/cpm-cpv/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['tiktok cpm calculator', 'cost per mille', 'cpv calculator', 'tiktok ad cost']}
       />
       <FAQSchema faqs={faqs} />

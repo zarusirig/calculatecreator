@@ -50,8 +50,8 @@ export default function LifetimeValueCalculatorPage() {
         name="TikTok Customer Lifetime Value (LTV) Calculator"
         description="Calculate the total value a customer brings over their lifetime to determine how much you can spend on acquisition."
         url="https://ttcalculator.net/calculators/lifetime-value/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['lifetime value calculator', 'ltv calculator', 'customer lifetime value', 'clv calculator']}
       />
       <FAQSchema faqs={faqs} />

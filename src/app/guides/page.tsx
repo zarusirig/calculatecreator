@@ -681,7 +681,6 @@ export default function GuidesPage() {
       status: '',
     },
 
-    // Coming Soon (keeping these for future updates)
     {
       title: 'How to Make Money on TikTok',
       slug: 'how-to-make-money-on-tiktok',
@@ -689,7 +688,7 @@ export default function GuidesPage() {
       readTime: '30 min',
       category: 'Monetization',
       featured: true,
-      status: 'Coming Soon',
+      status: '',
     },
     {
       title: 'TikTok Creator Fund Complete Guide',
@@ -698,7 +697,7 @@ export default function GuidesPage() {
       readTime: '25 min',
       category: 'Creator Fund',
       featured: true,
-      status: 'Coming Soon',
+      status: '',
     },
     {
       title: 'Brand Deals & Influencer Pricing Hub',
@@ -716,7 +715,7 @@ export default function GuidesPage() {
       readTime: '20 min',
       category: 'LIVE',
       featured: true,
-      status: 'Coming Soon',
+      status: '',
     },
   ];
 
@@ -764,7 +763,7 @@ export default function GuidesPage() {
         <Card className="mb-12 max-w-5xl mx-auto bg-gradient-to-br from-primary-50 to-secondary-50 border-primary-200">
           <div className="text-center mb-6">
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-3">Expert-Backed Creator Education</h2>
-            <p className="text-body-md text-neutral-700">Over 100,000 creators trust our guides for accurate, actionable advice</p>
+            <p className="text-body-md text-neutral-700">Practical, methodology-first guidance you can apply to your own creator business.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
@@ -775,7 +774,7 @@ export default function GuidesPage() {
             <div className="text-center">
               <div className="flex justify-center mb-2"><BarChart className="w-8 h-8 text-primary-600" /></div>
               <h3 className="font-semibold text-neutral-900 mb-2">Data-Driven Insights</h3>
-              <p className="text-body-sm text-neutral-700">Based on analysis of over 50,000 creator accounts, industry reports, and verified earnings data</p>
+              <p className="text-body-sm text-neutral-700">Built on published industry benchmarks, platform documentation, and clearly-stated assumptions.</p>
             </div>
             <div className="text-center">
               <div className="flex justify-center mb-2"><RotateCcw className="w-8 h-8 text-primary-600" /></div>

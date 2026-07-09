@@ -47,7 +47,7 @@ export default function ContentCalendarROICalculatorPage() {
         description="Calculate the ROI of your content calendar strategy. Measure how posting frequency and timing impact your TikTok earnings and growth."
         url="https://ttcalculator.net/calculators/content-calendar-roi/"
         datePublished="2024-03-15"
-        dateModified="2026-03-01"
+        dateModified="2025-11-13"
         keywords={['content calendar roi', 'posting schedule calculator', 'content strategy roi', 'tiktok posting frequency', 'creator planning']}
       />
       <FAQSchema faqs={faqData} />

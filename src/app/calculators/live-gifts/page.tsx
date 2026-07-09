@@ -86,8 +86,8 @@ export default function LiveGiftsCalculatorPage() {
         name="TikTok LIVE Gifts Calculator"
         description="Estimate your TikTok LIVE streaming gift earnings based on viewers, stream frequency, and engagement rates."
         url="https://ttcalculator.net/calculators/live-gifts/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
         keywords={['tiktok live gifts', 'live streaming earnings', 'gift calculator', 'tiktok streaming income']}
         personAuthor={getPersonAuthorForSchema('live-gifts')}
       />

@@ -83,7 +83,7 @@ export default function TikTokCreatorFundCalculatorPage() {
         name="TikTok Creator Fund Calculator (Legacy Estimate)"
         description="Estimate historical Creator Fund earnings based on views, engagement rate, and content niche, then compare the old model with current TikTok monetization paths."
         url="https://ttcalculator.net/calculators/tiktok-creator-fund/"
-        datePublished="2024-01-15"
+        datePublished="2026-03-15"
         dateModified="2026-03-15"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'legacy creator fund', 'creator rewards program']}
         personAuthor={getPersonAuthorForSchema('tiktok-creator-fund')}

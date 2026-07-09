@@ -67,8 +67,8 @@ export default function PostingTimeCalculatorPage() {
         name="TikTok Best Time to Post Calculator"
         description="Find the optimal times to post on TikTok based on your audience location, timezone, and content type to maximize engagement and reach."
         url="https://ttcalculator.net/calculators/posting-time/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['best time to post tiktok', 'tiktok posting schedule', 'optimal posting time', 'tiktok algorithm timing']}
       />
       <FAQSchema faqs={faqData} />

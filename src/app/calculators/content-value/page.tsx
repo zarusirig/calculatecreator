@@ -47,7 +47,7 @@ export default function ContentValueCalculatorPage() {
         description="Calculate the monetary value of your TikTok content. Estimate what brands should pay for your videos based on reach, engagement, and niche."
         url="https://ttcalculator.net/calculators/content-value/"
         datePublished="2024-04-01"
-        dateModified="2026-03-01"
+        dateModified="2025-11-13"
         keywords={['content value calculator', 'video worth calculator', 'tiktok content pricing', 'creator content value', 'media value calculator']}
       />
       <FAQSchema faqs={faqData} />

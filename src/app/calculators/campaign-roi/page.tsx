@@ -50,8 +50,8 @@ export default function CampaignROICalculatorPage() {
         name="TikTok Campaign ROI Calculator"
         description="Calculate return on investment for your TikTok marketing campaigns to measure profitability and performance."
         url="https://ttcalculator.net/calculators/campaign-roi/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2025-11-13"
+        dateModified="2025-11-13"
         keywords={['campaign roi calculator', 'tiktok roi', 'roas calculator', 'marketing roi']}
       />
       <FAQSchema faqs={faqs} />

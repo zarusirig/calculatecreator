@@ -85,8 +85,8 @@ export default function DiamondConverterPage() {
         name="TikTok Diamond Converter"
         description="Convert TikTok diamonds to USD, EUR, GBP, and other currencies. Calculate your LIVE streaming gift earnings with accurate 2026 rates."
         url="https://ttcalculator.net/calculators/diamond-converter/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
         keywords={['tiktok diamond converter', 'diamonds to usd', 'diamond calculator', 'tiktok live earnings']}
       />
       <FAQSchema faqs={faqData} />

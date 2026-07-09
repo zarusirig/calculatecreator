@@ -64,7 +64,7 @@ export default function ShareRatioCalculatorPage() {
         description="Calculate your TikTok share rate. Measure how often your content gets shared, the strongest signal for viral potential."
         url="https://ttcalculator.net/calculators/share-ratio/"
         datePublished="2024-02-28"
-        dateModified="2026-03-01"
+        dateModified="2025-12-05"
         keywords={['share rate calculator', 'tiktok shares', 'viral potential', 'share ratio']}
       />
       <FAQSchema faqs={faqData} />

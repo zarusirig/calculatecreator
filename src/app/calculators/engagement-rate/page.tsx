@@ -87,8 +87,8 @@ export default function EngagementRateCalculatorPage() {
         name="TikTok Engagement Rate Calculator"
         description="Calculate your TikTok engagement rate and compare against 2026 benchmarks. Understand what brands look for when evaluating creator partnerships."
         url="https://ttcalculator.net/calculators/engagement-rate/"
-        datePublished="2024-01-15"
-        dateModified="2026-03-01"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'influencer analytics']}
         personAuthor={getPersonAuthorForSchema('engagement-rate')}
       />
