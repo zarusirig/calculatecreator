@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "tiktokcalculator-9619d"
-  }
+  },
+  "targets": {
+    "tiktokcalculator-9619d": {
+      "hosting": {
+        "app": [
+          "tiktokcalculator-9619d"
+        ],
+        "legacy": [
+          "tiktokcalculator-legacy"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
