@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatPercent } from '@/lib/utils/format';
 import {
   calculateProfileVisitRate,
   validateProfileVisitRateInput,
@@ -21,7 +22,6 @@ export function ProfileVisitRateCalculatorWidget() {
 
   const [results, setResults] = useState<ProfileVisitRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ProfileVisitRateInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -41,21 +41,16 @@ export function ProfileVisitRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateProfileVisitRate(inputs);
-      setResults(result);
+    const result = calculateProfileVisitRate(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'profile-visit-rate',
-        { ...inputs },
-        { visitRate: result.visitRate, conversionRate: result.conversionRate, rating: result.rating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'profile-visit-rate',
+      { ...inputs },
+      { visitRate: result.visitRate, conversionRate: result.conversionRate, rating: result.rating }
+    );
   };
 
   return (
@@ -107,7 +102,6 @@ export function ProfileVisitRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Profile Visit Rate
@@ -128,7 +122,7 @@ export function ProfileVisitRateCalculatorWidget() {
               Conversion Rate
             </p>
             <p className="text-heading-sm font-semibold text-neutral-900 mb-2">
-              {results.conversionRate.toFixed(1)}%
+              {formatPercent(results.conversionRate)}
             </p>
             <p className="text-body-sm text-neutral-700">
               Percentage of profile visitors who followed you

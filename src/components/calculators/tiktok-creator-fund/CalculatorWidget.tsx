@@ -5,11 +5,12 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
-import { Loading, ProgressBar } from '@/components/ui/Loading';
+import { ResultsDisplay, type ResultListRow } from '@/components/calculator/ResultsDisplay';
 import { calculateCreatorFund, validateCreatorFundInput } from '@/lib/calculators/creator-fund';
 import type { CreatorFundInput, CreatorFundResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function CreatorFundCalculatorWidget() {
   const [inputs, setInputs] = useState<CreatorFundInput>({
@@ -20,8 +21,6 @@ export function CreatorFundCalculatorWidget() {
 
   const [results, setResults] = useState<CreatorFundResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
-  const [calculationProgress, setCalculationProgress] = useState(0);
 
   const nicheOptions = Object.entries(NICHE_DISPLAY_NAMES).map(([value, label]) => ({
     value,
@@ -49,37 +48,34 @@ export function CreatorFundCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setCalculationProgress(0);
-
-    const progressInterval = setInterval(() => {
-      setCalculationProgress(prev => {
-        if (prev >= 90) {
-          clearInterval(progressInterval);
-          return 90;
-        }
-        return prev + 15;
-      });
-    }, 50);
-
-    setTimeout(() => {
-      clearInterval(progressInterval);
-      setCalculationProgress(100);
-
-      const result = calculateCreatorFund(inputs);
-      setResults(result);
-      trackCalculation(
-        'creator-fund',
-        { ...inputs },
-        { min_monthly: result.minMonthly, max_monthly: result.maxMonthly, avg_rpm: result.avgRPM }
-      );
-
-      setTimeout(() => {
-        setIsCalculating(false);
-        setCalculationProgress(0);
-      }, 200);
-    }, 600);
+    const result = calculateCreatorFund(inputs);
+    setResults(result);
+    trackCalculation(
+      'creator-fund',
+      { ...inputs },
+      { min_monthly: result.minMonthly, max_monthly: result.maxMonthly, avg_rpm: result.avgRPM }
+    );
   };
+
+  const rows: ResultListRow[] = results
+    ? [
+        {
+          label: 'Legacy Monthly Estimate',
+          value: `${formatCurrency(results.minMonthly, 'USD', 'en-US', 2)}–${formatCurrency(results.maxMonthly, 'USD', 'en-US', 2)}`,
+          hint: 'Estimated monthly payout range',
+        },
+        {
+          label: 'Annual Estimate',
+          value: `${formatCurrency(results.minAnnual, 'USD', 'en-US', 2)}–${formatCurrency(results.maxAnnual, 'USD', 'en-US', 2)}`,
+          hint: 'Projected annual payout range',
+        },
+        {
+          label: 'Average RPM',
+          value: formatCurrency(results.avgRPM, 'USD', 'en-US', 3),
+          hint: 'Revenue per 1,000 views',
+        },
+      ]
+    : [];
 
   return (
     <Card className="lg:sticky lg:top-24 h-fit animate-scale-in overflow-hidden">
@@ -133,48 +129,22 @@ export function CreatorFundCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Estimate Legacy Earnings
       </Button>
 
-      {isCalculating && (
-        <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-neutral-50 to-neutral-100 rounded-xl border-2 border-neutral-200">
-            <Loading variant="dots" size="lg" className="mb-4" />
-            <p className="text-label-lg text-neutral-600 mb-3">Estimating Legacy Payouts...</p>
-            <ProgressBar progress={calculationProgress} className="max-w-xs mx-auto" />
-          </div>
-        </div>
-      )}
-
-      {results && !isCalculating && (
+      {results && (
         <div className="mt-6 space-y-4 animate-slide-up">
-          <div className="relative text-center p-8 bg-gradient-to-br from-primary-500 via-accent-500 to-secondary-500 rounded-2xl border-2 border-white/30 overflow-hidden glow-purple">
-            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent animate-gradient-shift"></div>
-            <p className="text-label-lg text-white/90 mb-2 font-medium relative z-10">Legacy Monthly Estimate</p>
-            <p className="text-display-md font-display font-bold text-white drop-shadow-lg relative z-10 font-mono">
-              ${results.minMonthly.toFixed(2)}–${results.maxMonthly.toFixed(2)}
-            </p>
-            <p className="text-body-sm text-white/80 mt-2 relative z-10">
-              Annual: ${results.minAnnual.toFixed(2)}–${results.maxAnnual.toFixed(2)}
-            </p>
-          </div>
-
-          <div className="p-4 glass rounded-xl border border-primary-200/30">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-700 font-medium">Your Avg RPM</span>
-              <span className="text-heading-md font-display font-bold text-primary-600 font-mono">
-                ${results.avgRPM.toFixed(3)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-600">Revenue per 1,000 views</p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Legacy Creator Fund Estimate"
+            rows={rows}
+          />
 
           {results.interpretation && (
-            <div className="p-4 glass-dark rounded-xl border border-white/10 backdrop-blur-xl">
-              <p className="text-body-md text-white/90 leading-relaxed">
+            <div className="p-4 bg-neutral-50 rounded-lg">
+              <p className="text-body-md text-neutral-700 leading-relaxed">
                 {results.interpretation}
               </p>
             </div>

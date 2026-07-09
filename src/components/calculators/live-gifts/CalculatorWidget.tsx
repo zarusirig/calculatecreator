@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 import { calculateLiveGifts, validateLiveGiftsInput } from '@/lib/calculators/live-gifts';
 import type { LiveGiftsInput, LiveGiftsResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
@@ -18,7 +19,6 @@ export function LiveGiftsCalculatorWidget() {
 
   const [results, setResults] = useState<LiveGiftsResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof LiveGiftsInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -38,13 +38,9 @@ export function LiveGiftsCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateLiveGifts(inputs);
-      setResults(result);
-      trackCalculation('live-gifts', { ...inputs }, { diamondsEarned: result.diamondsEarned, usdEarnings: result.usdEarnings });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateLiveGifts(inputs);
+    setResults(result);
+    trackCalculation('live-gifts', { ...inputs }, { diamondsEarned: result.diamondsEarned, usdEarnings: result.usdEarnings });
   };
 
   return (
@@ -92,7 +88,7 @@ export function LiveGiftsCalculatorWidget() {
         required
       />
 
-      <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">
+      <Button variant="primary" size="lg" onClick={handleCalculate} className="w-full mt-6">
         Calculate Earnings
       </Button>
 
@@ -108,11 +104,11 @@ export function LiveGiftsCalculatorWidget() {
 
           <div className="mt-4 grid grid-cols-2 gap-4">
             <div className="p-4 bg-white rounded-lg border border-neutral-200 text-center">
-              <p className="text-heading-sm font-semibold text-neutral-900">{results.diamondsEarned.toLocaleString()}</p>
+              <p className="text-heading-sm font-semibold text-neutral-900">{formatNumber(results.diamondsEarned)}</p>
               <p className="text-label-sm text-neutral-600">Diamonds Earned</p>
             </div>
             <div className="p-4 bg-white rounded-lg border border-neutral-200 text-center">
-              <p className="text-heading-sm font-semibold text-primary-600">${results.monthlyPotential.toLocaleString()}</p>
+              <p className="text-heading-sm font-semibold text-primary-600">{formatCurrency(results.monthlyPotential, 'USD', 'en-US', 0)}</p>
               <p className="text-label-sm text-neutral-600">Monthly Potential</p>
             </div>
           </div>

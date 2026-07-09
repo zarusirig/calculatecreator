@@ -13,7 +13,6 @@ export function RpmCalculatorWidget() {
   const [inputs, setInputs] = useState<RPMInput>({ views: 100000, earnings: 3.00 });
   const [results, setResults] = useState<RPMResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof RPMInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -33,13 +32,9 @@ export function RpmCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateRPM(inputs);
-      setResults(result);
-      trackCalculation('rpm', { ...inputs }, { rpm: result.rpm, benchmark: result.benchmark });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateRPM(inputs);
+    setResults(result);
+    trackCalculation('rpm', { ...inputs }, { rpm: result.rpm, benchmark: result.benchmark });
   };
 
   return (
@@ -73,7 +68,7 @@ export function RpmCalculatorWidget() {
         required
       />
 
-      <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">
+      <Button variant="primary" size="lg" onClick={handleCalculate} className="w-full mt-6">
         Calculate RPM
       </Button>
 

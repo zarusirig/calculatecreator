@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ToolsDirectoryClient } from '@/components/tools/ToolsDirectoryClient';
 import { toolDirectoryItems } from '@/lib/content/site-data';
 import { Container } from '@/components/layout/Container';
-import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 
 interface ToolsDirectoryPageProps {
@@ -46,11 +46,10 @@ export function ToolsDirectoryPage({
 
       <div className="pb-16 pt-10">
         <Container>
-          <Breadcrumbs
+          <Breadcrumb
             className="mb-5"
             items={[
-              { label: 'Home', href: '/' },
-              { label: breadcrumbLabel },
+              { label: breadcrumbLabel, href: normalizedCanonicalPath },
             ]}
           />
 

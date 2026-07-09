@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateCoins, validateCoinsInput } from '@/lib/calculators/coins';
 import type { CoinsInput, CoinsResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatNumber } from '@/lib/utils/format';
 
 /**
  * CoinsCalculatorWidget - Client-side interactive calculator widget
@@ -20,7 +21,6 @@ export function CoinsCalculatorWidget() {
   const [inputs, setInputs] = useState<CoinsInput>({ coins: 1000 });
   const [results, setResults] = useState<CoinsResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (value: any) => {
     setInputs({ coins: value });
@@ -34,16 +34,12 @@ export function CoinsCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCoins(inputs);
-      setResults(result);
-      trackCalculation('coins', { coins: inputs.coins }, {
-        usd_value: result.usdValue,
-        diamonds: result.diamonds,
-      });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateCoins(inputs);
+    setResults(result);
+    trackCalculation('coins', { coins: inputs.coins }, {
+      usd_value: result.usdValue,
+      diamonds: result.diamonds,
+    });
   };
 
   return (
@@ -69,7 +65,6 @@ export function CoinsCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Convert Coins
@@ -86,7 +81,7 @@ export function CoinsCalculatorWidget() {
           <div className="p-4 bg-neutral-50 rounded-lg">
             <p className="text-label-md text-neutral-600 mb-1">Diamonds</p>
             <p className="text-heading-lg font-semibold text-neutral-900">
-              {results.diamonds.toLocaleString()}
+              {formatNumber(results.diamonds)}
             </p>
           </div>
         </div>

@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { TrendingUp, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, BarChart3, Zap, Eye, Hash, MessageCircle, Clock, Share2, Users, Flame, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Growth Hub | Algorithm, Engagement, and Content Strategy',
+  title: 'TikTok Growth Hub | Algorithm & Engagement Strategy',
   description:
     'Use the growth hub to improve TikTok reach, engagement, search visibility, and content performance with data-backed guidance.',
   keywords: ['tiktok growth', 'tiktok algorithm', 'tiktok engagement rate', 'tiktok viral', 'tiktok hashtags', 'tiktok analytics', 'tiktok followers', 'tiktok content strategy'],
@@ -135,7 +135,7 @@ export default function TikTokGrowthHubPage() {
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
                   Introduction: Why Engagement Matters More Than Followers
                 </h2>
-                <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
+                <div className="prose max-w-none space-y-4">
                   <p>
                     The biggest misconception in TikTok growth is that follower count equals success. In reality, TikTok&apos;s algorithm distributes content based on engagement signals, not follower count—which means a creator with 5,000 highly engaged followers can outperform someone with 500,000 disengaged followers in reach, monetization potential, and brand deal value. In 2026, brands increasingly evaluate creators by engagement rate rather than follower count, with micro-creators (10K-50K followers) at 8%+ engagement rates often earning more per post than macro-creators with 3% engagement. The shift from follower-centric to engagement-centric metrics represents a fundamental change in how TikTok creators should approach growth strategy, content creation, and audience building.
                   </p>

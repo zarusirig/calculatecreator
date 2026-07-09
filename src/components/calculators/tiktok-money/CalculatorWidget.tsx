@@ -10,6 +10,7 @@ import { calculateTotalMoney, validateMoneyCalculatorInput } from '@/lib/calcula
 import type { MoneyCalculatorInput, MoneyCalculatorResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
 import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function TikTokMoneyCalculatorWidget() {
   const [inputs, setInputs] = useState<MoneyCalculatorInput>({
@@ -23,7 +24,6 @@ export function TikTokMoneyCalculatorWidget() {
 
   const [results, setResults] = useState<MoneyCalculatorResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const nicheOptions = Object.entries(NICHE_DISPLAY_NAMES).map(([value, label]) => ({ value, label }));
 
@@ -48,13 +48,9 @@ export function TikTokMoneyCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateTotalMoney(inputs);
-      setResults(result);
-      trackCalculation('tiktok-money', { ...inputs }, { total_min: result.total.min, total_max: result.total.max });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateTotalMoney(inputs);
+    setResults(result);
+    trackCalculation('tiktok-money', { ...inputs }, { total_min: result.total.min, total_max: result.total.max });
   };
 
   return (
@@ -143,7 +139,6 @@ export function TikTokMoneyCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Earnings
@@ -167,19 +162,19 @@ export function TikTokMoneyCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Creator Fund</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.creatorFund.min.toLocaleString()} - ${results.creatorFund.max.toLocaleString()}
+                  {formatCurrency(results.creatorFund.min, 'USD', 'en-US', results.creatorFund.min < 10 ? 2 : 0)} - {formatCurrency(results.creatorFund.max, 'USD', 'en-US', results.creatorFund.max < 10 ? 2 : 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Brand Deals</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.brandDeals.min.toLocaleString()} - ${results.brandDeals.max.toLocaleString()}
+                  {formatCurrency(results.brandDeals.min, 'USD', 'en-US', results.brandDeals.min < 10 ? 2 : 0)} - {formatCurrency(results.brandDeals.max, 'USD', 'en-US', results.brandDeals.max < 10 ? 2 : 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">LIVE Gifts</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.liveGifts.min.toLocaleString()} - ${results.liveGifts.max.toLocaleString()}
+                  {formatCurrency(results.liveGifts.min, 'USD', 'en-US', results.liveGifts.min < 10 ? 2 : 0)} - {formatCurrency(results.liveGifts.max, 'USD', 'en-US', results.liveGifts.max < 10 ? 2 : 0)}
                 </span>
               </div>
             </div>

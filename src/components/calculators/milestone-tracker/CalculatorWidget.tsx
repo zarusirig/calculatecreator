@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatNumber, formatPercent } from '@/lib/utils/format';
 import {
   calculateMilestoneTracker,
   validateMilestoneTrackerInput,
@@ -24,7 +25,6 @@ export function MilestoneTrackerCalculatorWidget() {
 
   const [results, setResults] = useState<MilestoneTrackerResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof MilestoneTrackerInput, value: string | number) => {
     const numValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -45,21 +45,16 @@ export function MilestoneTrackerCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateMilestoneTracker(inputs);
-      setResults(result);
+    const result = calculateMilestoneTracker(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'milestone-tracker',
-        { ...inputs },
-        { daysToMilestone: result.daysToMilestone, progressPercentage: result.progressPercentage }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'milestone-tracker',
+      { ...inputs },
+      { daysToMilestone: result.daysToMilestone, progressPercentage: result.progressPercentage }
+    );
   };
 
   const commonMilestones = [1000, 5000, 10000, 25000, 50000, 100000, 250000, 500000, 1000000];
@@ -138,7 +133,6 @@ export function MilestoneTrackerCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Milestone ETA
@@ -158,7 +152,7 @@ export function MilestoneTrackerCalculatorWidget() {
             <div className="mb-4">
               <div className="flex justify-between text-sm mb-1">
                 <span className="text-neutral-600">Progress</span>
-                <span className="font-semibold">{results.progressPercentage.toFixed(1)}%</span>
+                <span className="font-semibold">{formatPercent(results.progressPercentage, 1)}</span>
               </div>
               <div className="w-full bg-neutral-200 rounded-full h-3">
                 <div
@@ -171,7 +165,7 @@ export function MilestoneTrackerCalculatorWidget() {
             <div className="grid grid-cols-2 gap-3">
               <div className="text-center p-3 bg-neutral-50 rounded-lg">
                 <p className="text-heading-sm font-semibold text-neutral-900">
-                  {results.followersNeeded.toLocaleString()}
+                  {formatNumber(results.followersNeeded)}
                 </p>
                 <p className="text-label-sm text-neutral-600">
                   Followers Needed

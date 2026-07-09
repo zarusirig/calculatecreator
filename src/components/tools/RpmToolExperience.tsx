@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { Copy, RefreshCcw, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { Input } from '@/components/ui/Input';
+import { InputField } from '@/components/ui/InputField';
 import { Toast } from '@/components/ui/Alert';
 import { calculateRPM, validateRPMInput } from '@/lib/calculators/rpm';
 
@@ -92,11 +92,11 @@ export function RpmToolExperience() {
         <p className="mt-2 text-sm text-neutral-600">Used only to calculate this result.</p>
 
         <div className="mt-6 space-y-4">
-          <Input
+          <InputField
             id="rpm-views"
             label="Views per month"
             value={views}
-            onChange={(e) => setViews(e.target.value)}
+            onChange={(value) => setViews(value as string)}
             onBlur={() => setViews(formatInteger(views))}
             placeholder="100,000"
             helperText="Updated weekly."
@@ -104,16 +104,16 @@ export function RpmToolExperience() {
             inputMode="numeric"
             autoComplete="off"
           />
-          <Input
+          <InputField
             id="rpm-earnings"
             label="Earnings"
             value={earnings}
-            onChange={(e) => setEarnings(e.target.value)}
+            onChange={(value) => setEarnings(value as string)}
             onBlur={() => setEarnings(formatCurrency(earnings))}
             placeholder="3"
             helperText="Your inputs stay in your browser."
             error={errors.earnings}
-            addon="$"
+            unit="$"
             inputMode="decimal"
             autoComplete="off"
           />

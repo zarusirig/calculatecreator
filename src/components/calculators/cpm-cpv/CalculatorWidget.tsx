@@ -4,9 +4,18 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
+import { ResultsDisplay, type ResultListRow } from '@/components/calculator/ResultsDisplay';
 import { calculateCPMCPV, validateCPMCPVInput } from '@/lib/calculators/cpm-cpv';
 import type { CPMCPVInput, CPMCPVResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
+
+const BENCHMARK_MESSAGES: Record<string, string> = {
+  excellent: 'Your CPM is excellent—great targeting and ad efficiency!',
+  good: 'Your CPM is above average—solid campaign performance.',
+  average: 'Your CPM is within typical range for TikTok ads.',
+  expensive: 'Your CPM is higher than average—consider optimizing targeting or creative.',
+};
 
 export function CPMCPVCalculatorWidget() {
   const [inputs, setInputs] = useState<CPMCPVInput>({
@@ -16,7 +25,6 @@ export function CPMCPVCalculatorWidget() {
 
   const [results, setResults] = useState<CPMCPVResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof CPMCPVInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -36,18 +44,41 @@ export function CPMCPVCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCPMCPV(inputs);
-      setResults(result);
-      trackCalculation(
-        'cpm-cpv',
-        { ...inputs },
-        { cpm: result.cpm, cpv: result.cpv }
-      );
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateCPMCPV(inputs);
+    setResults(result);
+    trackCalculation(
+      'cpm-cpv',
+      { ...inputs },
+      { cpm: result.cpm, cpv: result.cpv }
+    );
   };
+
+  const rows: ResultListRow[] = results
+    ? [
+        {
+          label: 'Cost Per Mille (CPM)',
+          value: formatCurrency(results.cpm, 'USD', 'en-US', 2),
+          hint: 'Cost per 1,000 impressions',
+        },
+        {
+          label: 'Cost Per View (CPV)',
+          value: formatCurrency(results.cpv, 'USD', 'en-US', 4),
+          hint: 'Cost for each individual impression',
+        },
+        {
+          label: 'Impressions per $1',
+          value: formatNumber(1000 / results.cpm),
+          hint: 'How many impressions you get for every dollar spent',
+        },
+        ...(results.benchmark
+          ? [{
+              label: 'Performance',
+              value: results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1),
+              hint: BENCHMARK_MESSAGES[results.benchmark] ?? '',
+            }]
+          : []),
+      ]
+    : [];
 
   return (
     <Card className="lg:sticky lg:top-24 h-fit">
@@ -87,7 +118,6 @@ export function CPMCPVCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate CPM/CPV
@@ -95,54 +125,11 @@ export function CPMCPVCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Cost Per Mille (CPM)</p>
-            <p className="text-display-md font-bold text-primary-600">
-              ${results.cpm.toFixed(2)}
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              Cost per 1,000 impressions
-            </p>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Cost Per View (CPV)</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${results.cpv.toFixed(4)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Cost for each individual impression</p>
-          </div>
-
-          {results.benchmark && (
-            <div className={`p-4 rounded-lg border-2 ${
-              results.benchmark === 'excellent' ? 'bg-success-50 border-success-300' :
-              results.benchmark === 'good' ? 'bg-primary-50 border-primary-300' :
-              results.benchmark === 'average' ? 'bg-neutral-50 border-neutral-300' :
-              'bg-warning-50 border-warning-300'
-            }`}>
-              <p className="text-label-md font-semibold mb-1">
-                Performance: {results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1)}
-              </p>
-              <p className="text-body-sm text-neutral-600">
-                {results.benchmark === 'excellent' && 'Your CPM is excellent—great targeting and ad efficiency!'}
-                {results.benchmark === 'good' && 'Your CPM is above average—solid campaign performance.'}
-                {results.benchmark === 'average' && 'Your CPM is within typical range for TikTok ads.'}
-                {results.benchmark === 'expensive' && 'Your CPM is higher than average—consider optimizing targeting or creative.'}
-              </p>
-            </div>
-          )}
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Impressions per $1</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                {(1000 / results.cpm).toFixed(0)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">How many impressions you get for every dollar spent</p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Your CPM/CPV Results"
+            rows={rows}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

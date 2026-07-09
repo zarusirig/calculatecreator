@@ -20,7 +20,6 @@ export function CompletionRateCalculatorWidget() {
 
   const [results, setResults] = useState<CompletionRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof CompletionRateInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +39,16 @@ export function CompletionRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateCompletionRate(inputs);
-      setResults(result);
+    const result = calculateCompletionRate(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'completion-rate',
-        { ...inputs },
-        { completionRate: result.completionRate, rating: result.rating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'completion-rate',
+      { ...inputs },
+      { completionRate: result.completionRate, rating: result.rating }
+    );
   };
 
   return (
@@ -93,7 +87,6 @@ export function CompletionRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Completion Rate

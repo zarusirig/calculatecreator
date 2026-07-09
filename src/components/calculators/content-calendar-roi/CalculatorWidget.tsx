@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateContentCalendarROI, validateContentCalendarROIInput } from '@/lib/calculators/content-calendar-roi';
 import type { ContentCalendarROIInput, ContentCalendarROIResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function ContentCalendarROICalculatorWidget() {
   const [inputs, setInputs] = useState<ContentCalendarROIInput>({
@@ -20,7 +21,6 @@ export function ContentCalendarROICalculatorWidget() {
 
   const [results, setResults] = useState<ContentCalendarROIResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ContentCalendarROIInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +40,16 @@ export function ContentCalendarROICalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateContentCalendarROI(inputs);
-      setResults(result);
+    const result = calculateContentCalendarROI(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'content-calendar-roi',
-        { ...inputs },
-        { roi: result.roi, roiPercentage: result.roiPercentage }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'content-calendar-roi',
+      { ...inputs },
+      { roi: result.roi, roiPercentage: result.roiPercentage }
+    );
   };
 
   return (
@@ -137,7 +132,6 @@ export function ContentCalendarROICalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate ROI
@@ -161,19 +155,19 @@ export function ContentCalendarROICalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Planning Cost</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.planningCost.toLocaleString()}
+                  {formatCurrency(results.planningCost, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Additional Revenue</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.additionalRevenue.toLocaleString()}
+                  {formatCurrency(results.additionalRevenue, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
                 <span className="text-body-sm text-neutral-600">Net Profit</span>
                 <span className={`text-body-sm font-semibold ${results.roi >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                  ${results.roi.toLocaleString()}
+                  {formatCurrency(results.roi, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

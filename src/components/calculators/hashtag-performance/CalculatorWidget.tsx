@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatPercent } from '@/lib/utils/format';
 import {
   calculateHashtagPerformance,
   validateHashtagPerformanceInput,
@@ -25,7 +26,6 @@ export function HashtagPerformanceCalculatorWidget() {
 
   const [results, setResults] = useState<HashtagPerformanceResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof HashtagPerformanceInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -46,21 +46,16 @@ export function HashtagPerformanceCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateHashtagPerformance(inputs);
-      setResults(result);
+    const result = calculateHashtagPerformance(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'hashtag-performance',
-        { ...inputs },
-        { effectivenessScore: result.effectivenessScore, rating: result.rating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'hashtag-performance',
+      { ...inputs },
+      { effectivenessScore: result.effectivenessScore, rating: result.rating }
+    );
   };
 
   return (
@@ -125,7 +120,6 @@ export function HashtagPerformanceCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Analyze Hashtag
@@ -149,13 +143,13 @@ export function HashtagPerformanceCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">View Lift</span>
                 <span className={`text-body-sm font-semibold ${results.viewLift >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                  {results.viewLift >= 0 ? '+' : ''}{results.viewLift.toFixed(1)}%
+                  {results.viewLift >= 0 ? '+' : ''}{formatPercent(results.viewLift, 1)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Engagement Lift</span>
                 <span className={`text-body-sm font-semibold ${results.engagementLift >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                  {results.engagementLift >= 0 ? '+' : ''}{results.engagementLift.toFixed(1)}%
+                  {results.engagementLift >= 0 ? '+' : ''}{formatPercent(results.engagementLift, 1)}
                 </span>
               </div>
             </div>

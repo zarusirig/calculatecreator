@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
+import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatNumber, formatPercent } from '@/lib/utils/format';
 import { trackCalculation } from '@/lib/analytics/ga4';
 
 interface AudienceOverlapInput {
@@ -33,7 +35,6 @@ export function AudienceOverlapCalculatorWidget() {
 
   const [results, setResults] = useState<AudienceOverlapResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof AudienceOverlapInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -71,53 +72,53 @@ export function AudienceOverlapCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const overlapPercentage = ((inputs.overlap / Math.min(inputs.audienceA, inputs.audienceB)) * 100);
-      const uniqueAudienceA = inputs.audienceA - inputs.overlap;
-      const uniqueAudienceB = inputs.audienceB - inputs.overlap;
-      const totalReach = uniqueAudienceA + uniqueAudienceB + inputs.overlap;
-      const combinedAudience = inputs.audienceA + inputs.audienceB;
-      const wastedReach = inputs.overlap;
-      const efficiency = ((totalReach / combinedAudience) * 100);
+    const overlapPercentage = ((inputs.overlap / Math.min(inputs.audienceA, inputs.audienceB)) * 100);
+    const uniqueAudienceA = inputs.audienceA - inputs.overlap;
+    const uniqueAudienceB = inputs.audienceB - inputs.overlap;
+    const totalReach = uniqueAudienceA + uniqueAudienceB + inputs.overlap;
+    const combinedAudience = inputs.audienceA + inputs.audienceB;
+    const wastedReach = inputs.overlap;
+    const efficiency = ((totalReach / combinedAudience) * 100);
 
-      let rating = 'average';
-      let interpretation = '';
+    const overlapPctFmt = formatPercent(overlapPercentage, 1);
+    const totalReachFmt = formatNumber(totalReach);
+    const combinedFmt = formatNumber(combinedAudience);
+    const wastedFmt = formatNumber(wastedReach);
 
-      if (overlapPercentage <= 10) {
-        rating = 'excellent';
-        interpretation = `With only ${overlapPercentage.toFixed(1)}% overlap, your audiences are highly distinct. This is excellent for maximizing unique reach and minimizing wasted ad spend. Your campaigns are targeting different user segments effectively, allowing you to reach ${totalReach.toLocaleString()} unique users. This level of audience separation is ideal for testing different messages, running complementary campaigns, or scaling without saturation.`;
-      } else if (overlapPercentage <= 25) {
-        rating = 'good';
-        interpretation = `Your ${overlapPercentage.toFixed(1)}% audience overlap is within acceptable range. You're reaching ${totalReach.toLocaleString()} unique users with minimal redundancy. This moderate overlap suggests your targeting strategies are reasonably distinct while potentially sharing some high-value user segments. Consider this a healthy balance—audiences aren't identical but share enough similarity to validate your targeting approach.`;
-      } else if (overlapPercentage <= 40) {
-        rating = 'moderate';
-        interpretation = `At ${overlapPercentage.toFixed(1)}% overlap, you're seeing moderate audience duplication. Out of ${combinedAudience.toLocaleString()} total audience slots, you're only reaching ${totalReach.toLocaleString()} unique users. This means ${wastedReach.toLocaleString()} users are being targeted by both campaigns, leading to increased frequency, ad fatigue, and inflated costs. Consider refining your targeting criteria to reduce overlap and improve campaign efficiency.`;
-      } else {
-        rating = 'high';
-        interpretation = `Your ${overlapPercentage.toFixed(1)}% overlap is significantly high, meaning ${wastedReach.toLocaleString()} users are seeing ads from both campaigns. This high duplication wastes budget on repeated impressions, causes ad fatigue faster, and limits your total addressable audience. Reaching only ${totalReach.toLocaleString()} unique users from ${combinedAudience.toLocaleString()} audience slots indicates poor targeting differentiation. Immediately review and separate your audience targeting to maximize reach and minimize waste.`;
-      }
+    let rating = 'average';
+    let interpretation = '';
 
-      setResults({
-        overlapPercentage,
-        uniqueAudienceA,
-        uniqueAudienceB,
-        totalReach,
-        combinedAudience,
-        wastedReach,
-        efficiency,
-        rating,
-        interpretation,
-      });
+    if (overlapPercentage <= 10) {
+      rating = 'excellent';
+      interpretation = `With only ${overlapPctFmt} overlap, your audiences are highly distinct. This is excellent for maximizing unique reach and minimizing wasted ad spend. Your campaigns are targeting different user segments effectively, allowing you to reach ${totalReachFmt} unique users. This level of audience separation is ideal for testing different messages, running complementary campaigns, or scaling without saturation.`;
+    } else if (overlapPercentage <= 25) {
+      rating = 'good';
+      interpretation = `Your ${overlapPctFmt} audience overlap is within acceptable range. You're reaching ${totalReachFmt} unique users with minimal redundancy. This moderate overlap suggests your targeting strategies are reasonably distinct while potentially sharing some high-value user segments. Consider this a healthy balance—audiences aren't identical but share enough similarity to validate your targeting approach.`;
+    } else if (overlapPercentage <= 40) {
+      rating = 'moderate';
+      interpretation = `At ${overlapPctFmt} overlap, you're seeing moderate audience duplication. Out of ${combinedFmt} total audience slots, you're only reaching ${totalReachFmt} unique users. This means ${wastedFmt} users are being targeted by both campaigns, leading to increased frequency, ad fatigue, and inflated costs. Consider refining your targeting criteria to reduce overlap and improve campaign efficiency.`;
+    } else {
+      rating = 'high';
+      interpretation = `Your ${overlapPctFmt} overlap is significantly high, meaning ${wastedFmt} users are seeing ads from both campaigns. This high duplication wastes budget on repeated impressions, causes ad fatigue faster, and limits your total addressable audience. Reaching only ${totalReachFmt} unique users from ${combinedFmt} audience slots indicates poor targeting differentiation. Immediately review and separate your audience targeting to maximize reach and minimize waste.`;
+    }
 
-      trackCalculation(
-        'audience-overlap',
-        { ...inputs },
-        { overlapPercentage, efficiency }
-      );
+    setResults({
+      overlapPercentage,
+      uniqueAudienceA,
+      uniqueAudienceB,
+      totalReach,
+      combinedAudience,
+      wastedReach,
+      efficiency,
+      rating,
+      interpretation,
+    });
 
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'audience-overlap',
+      { ...inputs },
+      { overlapPercentage, efficiency }
+    );
   };
 
   return (
@@ -172,7 +173,6 @@ export function AudienceOverlapCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Overlap
@@ -180,71 +180,19 @@ export function AudienceOverlapCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-warning-50 rounded-xl border-2 border-primary-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Audience Overlap</p>
-            <p className={`text-display-md font-bold ${
-              results.rating === 'excellent' ? 'text-success-600' :
-              results.rating === 'good' ? 'text-primary-600' :
-              results.rating === 'moderate' ? 'text-warning-600' :
-              'text-error-600'
-            }`}>
-              {results.overlapPercentage.toFixed(1)}%
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              {results.wastedReach.toLocaleString()} users targeted by both campaigns
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Total Unique Reach</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                {results.totalReach.toLocaleString()}
-              </p>
-            </div>
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Efficiency</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                {results.efficiency.toFixed(1)}%
-              </p>
-            </div>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="space-y-2 text-body-sm">
-              <div className="flex items-center justify-between">
-                <span className="text-neutral-600">Unique to Audience A:</span>
-                <span className="font-semibold text-neutral-900">
-                  {results.uniqueAudienceA.toLocaleString()}
-                </span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-neutral-600">Unique to Audience B:</span>
-                <span className="font-semibold text-neutral-900">
-                  {results.uniqueAudienceB.toLocaleString()}
-                </span>
-              </div>
-              <div className="flex items-center justify-between pt-2 border-t">
-                <span className="text-neutral-600">Combined Audience Size:</span>
-                <span className="font-semibold text-neutral-900">
-                  {results.combinedAudience.toLocaleString()}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {results.rating && (
-            <div className={`p-4 rounded-lg border-2 ${
-              results.rating === 'excellent' ? 'bg-success-50 border-success-300' :
-              results.rating === 'good' ? 'bg-primary-50 border-primary-300' :
-              results.rating === 'moderate' ? 'bg-warning-50 border-warning-300' :
-              'bg-error-50 border-error-300'
-            }`}>
-              <p className="text-label-md font-semibold mb-1">
-                Overlap Level: {results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
-              </p>
-            </div>
-          )}
+          <ResultsDisplay
+            subtype="list"
+            title="Audience Overlap"
+            rows={[
+              { label: 'Audience Overlap', value: formatPercent(results.overlapPercentage, 1), hint: `${formatNumber(results.wastedReach)} users targeted by both campaigns` },
+              { label: 'Total Unique Reach', value: formatNumber(results.totalReach) },
+              { label: 'Efficiency', value: formatPercent(results.efficiency, 1) },
+              { label: 'Unique to Audience A', value: formatNumber(results.uniqueAudienceA) },
+              { label: 'Unique to Audience B', value: formatNumber(results.uniqueAudienceB) },
+              { label: 'Combined Audience Size', value: formatNumber(results.combinedAudience) },
+              { label: 'Overlap Level', value: results.rating.charAt(0).toUpperCase() + results.rating.slice(1) },
+            ]}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

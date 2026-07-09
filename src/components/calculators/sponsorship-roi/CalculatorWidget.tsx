@@ -14,6 +14,7 @@ import type {
   SponsorshipROIResult,
 } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 
 export function SponsorshipROICalculatorWidget() {
   const [inputs, setInputs] = useState<SponsorshipROIInput>({
@@ -26,7 +27,6 @@ export function SponsorshipROICalculatorWidget() {
 
   const [results, setResults] = useState<SponsorshipROIResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof SponsorshipROIInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -47,21 +47,16 @@ export function SponsorshipROICalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateSponsorshipROI(inputs);
-      setResults(result);
+    const result = calculateSponsorshipROI(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'sponsorship-roi',
-        { ...inputs },
-        { roi: result.roi, roiPercentage: result.roiPercentage }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'sponsorship-roi',
+      { ...inputs },
+      { roi: result.roi, roiPercentage: result.roiPercentage }
+    );
   };
 
   return (
@@ -141,7 +136,6 @@ export function SponsorshipROICalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate ROI
@@ -165,25 +159,25 @@ export function SponsorshipROICalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Total Revenue</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.totalRevenue.toLocaleString()}
+                  {formatCurrency(results.totalRevenue, 'USD', 'en-US', results.totalRevenue < 10 ? 2 : 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Total Cost</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.totalCost.toLocaleString()}
+                  {formatCurrency(results.totalCost, 'USD', 'en-US', results.totalCost < 10 ? 2 : 0)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
                 <span className="text-body-sm text-neutral-600">Net Profit/Loss</span>
                 <span className={`text-body-sm font-semibold ${results.roi >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                  ${results.roi.toLocaleString()}
+                  {formatCurrency(results.roi, 'USD', 'en-US', Math.abs(results.roi) < 10 ? 2 : 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Break-Even Units</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.breakEvenUnits.toLocaleString()}
+                  {formatNumber(results.breakEvenUnits)}
                 </span>
               </div>
             </div>

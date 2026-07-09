@@ -11,7 +11,6 @@ const navItems = [
   { label: 'Tools', href: '/calculators/' },
   { label: 'Benchmarks', href: '/data/' },
   { label: 'Guides', href: '/guides/' },
-  { label: 'Data', href: '/data/' },
   { label: 'Blog', href: '/blog/' },
   { label: 'Comparisons', href: '/data/platform-comparisons/' },
   { label: 'News', href: '/news/' },
@@ -105,6 +104,8 @@ export function Header() {
             type="button"
             className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-[rgba(23,32,51,0.08)] bg-white/60 text-[color:var(--text)] lg:hidden"
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             onClick={() => setIsOpen((open) => !open)}
           >
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -112,7 +113,7 @@ export function Header() {
         </nav>
 
         {isOpen ? (
-          <div className="border-t border-[rgba(23,32,51,0.08)] px-4 py-4 lg:hidden md:px-6">
+          <div id="mobile-menu" className="border-t border-[rgba(23,32,51,0.08)] px-4 py-4 lg:hidden md:px-6">
             <div className="grid gap-2">
               {navItems.map((item) => {
                 const isActive =

@@ -9,6 +9,7 @@ interface InputFieldProps {
   type?: 'text' | 'number' | 'email';
   value: string | number;
   onChange: (value: string | number) => void;
+  onBlur?: React.FocusEventHandler<HTMLInputElement>;
   placeholder?: string;
   helperText?: string;
   tooltip?: string;
@@ -16,6 +17,8 @@ interface InputFieldProps {
   min?: number;
   max?: number;
   step?: number;
+  inputMode?: 'none' | 'text' | 'decimal' | 'numeric' | 'tel' | 'search' | 'email' | 'url';
+  autoComplete?: string;
   required?: boolean;
   disabled?: boolean;
   icon?: React.ReactNode;
@@ -28,6 +31,7 @@ export function InputField({
   type = 'text',
   value,
   onChange,
+  onBlur,
   placeholder,
   helperText,
   tooltip,
@@ -35,6 +39,8 @@ export function InputField({
   min,
   max,
   step,
+  inputMode,
+  autoComplete,
   required,
   disabled,
   icon,
@@ -48,6 +54,15 @@ export function InputField({
     const newValue = type === 'number' ? parseFloat(cleanedValue) || 0 : cleanedValue;
     onChange(newValue);
   };
+
+  // Accessibility: wire the input to its helper/error text via aria-describedby.
+  // Only reference ids that are actually rendered (helper is hidden when error is shown).
+  const describedBy = [
+    helperText && !error ? `${id}-helper` : null,
+    error ? `${id}-error` : null,
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className="mb-4">
@@ -99,12 +114,17 @@ export function InputField({
             type={type}
             value={value}
             onChange={handleChange}
+            onBlur={onBlur}
             placeholder={placeholder}
             min={min}
             max={max}
             step={step}
+            inputMode={inputMode}
+            autoComplete={autoComplete}
             required={required}
             disabled={disabled}
+            aria-invalid={Boolean(error)}
+            aria-describedby={describedBy || undefined}
             className={cn(
               'input',
               icon ? 'pl-10' : '',
@@ -118,11 +138,11 @@ export function InputField({
       </div>
 
       {helperText && !error && (
-        <p className="helper-text">{helperText}</p>
+        <p id={`${id}-helper`} className="helper-text">{helperText}</p>
       )}
 
       {error && (
-        <p className="error-text flex items-center space-x-1">
+        <p id={`${id}-error`} className="error-text flex items-center space-x-1">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"

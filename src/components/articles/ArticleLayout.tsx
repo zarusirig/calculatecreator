@@ -248,7 +248,7 @@ export function ArticleLayout({
 
           {/* Article Header */}
           <header className="mb-8 md:mb-12">
-            <h1 className="text-display-md md:text-display-lg font-bold text-neutral-900 mb-4">
+            <h1 className="text-display-md md:text-display-lg font-display font-bold text-neutral-900 mb-4">
               {frontmatter.title}
             </h1>
             <p className="text-body-lg text-neutral-600 mb-4">
@@ -307,14 +307,7 @@ export function ArticleLayout({
           )}
 
           {/* Article Content (MDX rendered via prose) */}
-          <article className="article-content prose prose-lg max-w-none
-            prose-headings:font-display prose-headings:text-neutral-900 prose-headings:font-bold
-            prose-h2:text-display-sm prose-h2:mt-12 prose-h2:mb-6
-            prose-h3:text-heading-lg prose-h3:mt-8 prose-h3:mb-4
-            prose-p:text-neutral-700 prose-p:leading-relaxed prose-p:mb-4
-            prose-a:text-primary-600 prose-a:underline hover:prose-a:text-primary-700
-            prose-strong:text-neutral-900
-            prose-li:text-neutral-700
+          <article className="article-content prose max-w-none
             prose-table:border-collapse prose-th:bg-neutral-100 prose-th:p-3 prose-td:p-3 prose-td:border prose-td:border-neutral-200
           ">
             {children}
@@ -344,7 +337,7 @@ export function ArticleLayout({
                 href={calculatorHref}
                 className="btn-primary px-6 py-3 rounded-lg text-body-md font-medium inline-flex items-center gap-2"
               >
-                Open Calculator <ArrowRight size={18} />
+                Calculate your earnings <ArrowRight size={18} />
               </Link>
             </div>
           )}

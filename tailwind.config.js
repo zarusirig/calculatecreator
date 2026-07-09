@@ -7,18 +7,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Brand primary (coral). src/styles/globals.css :root is the canonical
+        // source of truth for brand tokens; this ramp mirrors --primary (#ff6b57)
+        // and --primary-hover (#f15742). Keep 600/700 in sync with those vars.
         primary: {
-          DEFAULT: '#6D28D9',
-          50: '#F8F3FF',
-          100: '#F2EAFE',
-          200: '#E5D5FB',
-          300: '#D0B5F5',
-          400: '#AE86EC',
-          500: '#8B5CF6',
-          600: '#7C3AED',
-          700: '#6D28D9',
-          800: '#5B21B6',
-          900: '#4C1D95',
+          DEFAULT: '#ff6b57',
+          50: '#fff3ef',
+          100: '#ffe6df',
+          200: '#ffc9bd',
+          300: '#ffa693',
+          400: '#ff8668',
+          500: '#ff6b57',
+          600: '#ff6b57',
+          700: '#f15742',
+          800: '#d84633',
+          900: '#b3362a',
         },
         secondary: {
           DEFAULT: '#475569',
@@ -160,6 +163,60 @@ module.exports = {
         'label-lg': ['14px', { lineHeight: '1.45', fontWeight: '500' }],
         'label-md': ['13px', { lineHeight: '1.4', fontWeight: '500' }],
         'label-sm': ['12px', { lineHeight: '1.35', fontWeight: '500' }],
+      },
+      // Shared @tailwindcss/typography config: one `prose` class for all
+      // content surfaces. Colors key off the brand tokens in globals.css :root.
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            color: 'var(--text)',
+            p: {
+              lineHeight: '1.7',
+            },
+            strong: {
+              color: 'var(--text)',
+              fontWeight: '700',
+            },
+            a: {
+              color: 'var(--info)',
+              textDecoration: 'none',
+              fontWeight: '500',
+              transition: 'color 160ms ease',
+              '&:hover': {
+                color: 'var(--primary)',
+                textDecoration: 'underline',
+              },
+            },
+            h1: {
+              fontFamily: ['var(--font-display)', 'Georgia', 'serif'],
+              fontWeight: '700',
+              fontSize: '2.25rem',
+              lineHeight: '1.15',
+              letterSpacing: '-0.02em',
+            },
+            h2: {
+              fontFamily: ['var(--font-display)', 'Georgia', 'serif'],
+              fontWeight: '700',
+              fontSize: '1.875rem',
+              lineHeight: '1.2',
+              letterSpacing: '-0.02em',
+            },
+            h3: {
+              fontFamily: ['var(--font-display)', 'Georgia', 'serif'],
+              fontWeight: '700',
+              fontSize: '1.5rem',
+              lineHeight: '1.25',
+              letterSpacing: '-0.01em',
+            },
+            h4: {
+              fontFamily: ['var(--font-display)', 'Georgia', 'serif'],
+              fontWeight: '700',
+              fontSize: '1.25rem',
+              lineHeight: '1.3',
+            },
+          },
+        },
       },
       spacing: {
         '18': '4.5rem',

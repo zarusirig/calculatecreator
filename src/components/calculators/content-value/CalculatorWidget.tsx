@@ -9,6 +9,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateContentValue, validateContentValueInput } from '@/lib/calculators/content-value';
 import type { ContentValueInput, ContentValueResult, ContentNiche } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 
 export function ContentValueCalculatorWidget() {
   const [inputs, setInputs] = useState<ContentValueInput>({
@@ -20,7 +21,6 @@ export function ContentValueCalculatorWidget() {
 
   const [results, setResults] = useState<ContentValueResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const nicheOptions = [
     { value: 'lifestyle', label: 'Lifestyle' },
@@ -57,21 +57,16 @@ export function ContentValueCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateContentValue(inputs);
-      setResults(result);
+    const result = calculateContentValue(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'content-value',
-        { ...inputs },
-        { estimatedValue: result.estimatedValue }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'content-value',
+      { ...inputs },
+      { estimatedValue: result.estimatedValue }
+    );
   };
 
   return (
@@ -136,7 +131,6 @@ export function ContentValueCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Content Value
@@ -149,7 +143,7 @@ export function ContentValueCalculatorWidget() {
             type="single"
             format="currency"
             title="Estimated Content Value"
-            subtitle={`$${results.valuePerVideo.toLocaleString()} per video average`}
+            subtitle={`${formatCurrency(results.valuePerVideo, 'USD', 'en-US', 0)} per video average`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -162,7 +156,7 @@ export function ContentValueCalculatorWidget() {
                   Total Reach
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.totalReach.toLocaleString()} views
+                  {formatNumber(results.totalReach)} views
                 </span>
               </div>
               <div className="flex justify-between">
@@ -170,7 +164,7 @@ export function ContentValueCalculatorWidget() {
                   Value per Video
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.valuePerVideo.toLocaleString()}
+                  {formatCurrency(results.valuePerVideo, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
@@ -178,7 +172,7 @@ export function ContentValueCalculatorWidget() {
                   Total Portfolio Value
                 </span>
                 <span className="text-body-sm font-semibold text-success-DEFAULT">
-                  ${results.estimatedValue.toLocaleString()}
+                  {formatCurrency(results.estimatedValue, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

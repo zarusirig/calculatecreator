@@ -32,7 +32,12 @@ export function CookieConsent() {
   return (
     <>
       {ready && consent === null ? (
-        <div className="fixed inset-x-0 bottom-0 z-[70] border-t border-neutral-200 bg-white p-4 shadow-lg">
+        <div
+          role="dialog"
+          aria-label="Cookie and ad consent"
+          aria-live="polite"
+          className="fixed inset-x-0 bottom-0 z-[70] border-t border-neutral-200 bg-white p-4 shadow-lg"
+        >
           <div className="container-custom">
             <p className="text-sm font-medium text-neutral-900">Cookie and ad consent</p>
             <p className="mt-2 max-w-3xl text-xs leading-relaxed text-neutral-600">

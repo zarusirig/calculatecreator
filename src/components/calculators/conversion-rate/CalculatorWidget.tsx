@@ -5,6 +5,8 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
+import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatNumber, formatPercent } from '@/lib/utils/format';
 import { calculateConversionRate, validateConversionRateInput } from '@/lib/calculators/conversion-rate';
 import type { ConversionRateInput, ConversionRateResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
@@ -18,7 +20,6 @@ export function ConversionRateCalculatorWidget() {
 
   const [results, setResults] = useState<ConversionRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const timeframeOptions = [
     { value: 'day', label: 'Per Day' },
@@ -47,13 +48,9 @@ export function ConversionRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateConversionRate(inputs);
-      setResults(result);
-      trackCalculation('conversion-rate', { ...inputs }, { conversion_rate: result.conversionRate });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateConversionRate(inputs);
+    setResults(result);
+    trackCalculation('conversion-rate', { ...inputs }, { conversion_rate: result.conversionRate });
   };
 
   return (
@@ -105,7 +102,6 @@ export function ConversionRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Conversion Rate
@@ -113,44 +109,15 @@ export function ConversionRateCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Conversion Rate</p>
-            <p className="text-display-md font-bold text-primary-600">
-              {results.conversionRate.toFixed(2)}%
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              {inputs.conversions} conversions from {inputs.visitors.toLocaleString()} visitors
-            </p>
-          </div>
-
-          {results.rating && (
-            <div className={`p-4 rounded-lg border-2 ${
-              results.rating === 'excellent' ? 'bg-success-50 border-success-300' :
-              results.rating === 'good' ? 'bg-primary-50 border-primary-300' :
-              results.rating === 'average' ? 'bg-neutral-50 border-neutral-300' :
-              'bg-warning-50 border-warning-300'
-            }`}>
-              <p className="text-label-md font-semibold mb-1">
-                Performance: {results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
-              </p>
-              <p className="text-body-sm text-neutral-600">
-                {results.rating === 'excellent' && 'Outstanding conversion rate! Your landing page and offer are highly optimized.'}
-                {results.rating === 'good' && 'Above-average conversion rate. Small optimizations could push you higher.'}
-                {results.rating === 'average' && 'Typical conversion rate for TikTok traffic. Room for improvement.'}
-                {results.rating === 'poor' && 'Below average. Focus on landing page optimization and offer clarity.'}
-              </p>
-            </div>
-          )}
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Visitors Needed for 100 Conversions</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                {Math.round(100 / results.conversionRate).toLocaleString()}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Based on your current conversion rate</p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Conversion Rate"
+            rows={[
+              { label: 'Conversion Rate', value: formatPercent(results.conversionRate, 2), hint: `${formatNumber(inputs.conversions)} conversions from ${formatNumber(inputs.visitors)} visitors` },
+              { label: 'Visitors Needed for 100 Conversions', value: formatNumber(Math.round(100 / results.conversionRate)), hint: 'Based on your current conversion rate' },
+              { label: 'Performance', value: results.rating.charAt(0).toUpperCase() + results.rating.slice(1), hint: results.rating === 'excellent' ? 'Outstanding conversion rate! Your landing page and offer are highly optimized.' : results.rating === 'good' ? 'Above-average conversion rate. Small optimizations could push you higher.' : results.rating === 'average' ? 'Typical conversion rate for TikTok traffic. Room for improvement.' : 'Below average. Focus on landing page optimization and offer clarity.' },
+            ]}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

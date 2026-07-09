@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateWatchTime, validateWatchTimeInput } from '@/lib/calculators/watch-time';
 import type { WatchTimeInput, WatchTimeResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatPercentage } from '@/lib/utils/format';
 
 export function WatchTimeCalculatorWidget() {
   const [inputs, setInputs] = useState<WatchTimeInput>({
@@ -18,7 +19,6 @@ export function WatchTimeCalculatorWidget() {
 
   const [results, setResults] = useState<WatchTimeResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof WatchTimeInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -38,15 +38,11 @@ export function WatchTimeCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateWatchTime(inputs);
-      setResults(result);
-      trackCalculation('watch-time', { ...inputs }, { retentionRate: result.retentionRate, rating: result.rating });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateWatchTime(inputs);
+    setResults(result);
+    trackCalculation('watch-time', { ...inputs }, { retentionRate: result.retentionRate, rating: result.rating });
   };
 
   return (
@@ -93,7 +89,7 @@ export function WatchTimeCalculatorWidget() {
         required
       />
 
-      <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">
+      <Button variant="primary" size="lg" onClick={handleCalculate} className="w-full mt-6">
         Calculate Watch Time
       </Button>
 
@@ -109,7 +105,7 @@ export function WatchTimeCalculatorWidget() {
 
           <div className="mt-4 grid grid-cols-2 gap-4">
             <div className="p-4 bg-white rounded-lg border border-neutral-200 text-center">
-              <p className="text-heading-sm font-semibold text-neutral-900">{results.retentionRate.toFixed(1)}%</p>
+              <p className="text-heading-sm font-semibold text-neutral-900">{formatPercentage(results.retentionRate, 1)}</p>
               <p className="text-label-sm text-neutral-600">Retention Rate</p>
             </div>
             <div className="p-4 bg-white rounded-lg border border-neutral-200 text-center">

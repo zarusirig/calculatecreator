@@ -26,7 +26,6 @@ export function VideoPerformanceCalculatorWidget() {
 
   const [results, setResults] = useState<VideoPerformanceResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof VideoPerformanceInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -47,21 +46,16 @@ export function VideoPerformanceCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateVideoPerformance(inputs);
-      setResults(result);
+    const result = calculateVideoPerformance(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'video-performance',
-        { ...inputs },
-        { performanceScore: result.performanceScore, rating: result.rating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'video-performance',
+      { ...inputs },
+      { performanceScore: result.performanceScore, rating: result.rating }
+    );
   };
 
   return (
@@ -139,7 +133,6 @@ export function VideoPerformanceCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Analyze Performance

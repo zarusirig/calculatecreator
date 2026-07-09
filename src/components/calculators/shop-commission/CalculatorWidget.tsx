@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateShopCommission, validateShopCommissionInput } from '@/lib/calculators/shop-commission';
 import type { ShopCommissionInput, ShopCommissionResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function ShopCommissionCalculatorWidget() {
   const [inputs, setInputs] = useState<ShopCommissionInput>({
@@ -18,7 +19,6 @@ export function ShopCommissionCalculatorWidget() {
 
   const [results, setResults] = useState<ShopCommissionResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ShopCommissionInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -39,13 +39,9 @@ export function ShopCommissionCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateShopCommission(inputs);
-      setResults(result);
-      trackCalculation('shop-commission', { ...inputs }, { monthly_commission: result.monthlyCommission, annual: result.annualProjection });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateShopCommission(inputs);
+    setResults(result);
+    trackCalculation('shop-commission', { ...inputs }, { monthly_commission: result.monthlyCommission, annual: result.annualProjection });
   };
 
   return (
@@ -98,7 +94,6 @@ export function ShopCommissionCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Commission
@@ -111,7 +106,7 @@ export function ShopCommissionCalculatorWidget() {
             type="single"
             format="currency"
             title="Monthly Commission"
-            subtitle={`$${results.annualProjection.toLocaleString()} annually`}
+            subtitle={`${formatCurrency(results.annualProjection, 'USD', 'en-US', results.annualProjection < 10 ? 2 : 0)} annually`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -122,13 +117,13 @@ export function ShopCommissionCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Per Sale Commission</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.commissionPerSale.toFixed(2)}
+                  {formatCurrency(results.commissionPerSale, 'USD', 'en-US', 2)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Annual Projection</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.annualProjection.toLocaleString()}
+                  {formatCurrency(results.annualProjection, 'USD', 'en-US', results.annualProjection < 10 ? 2 : 0)}
                 </span>
               </div>
             </div>

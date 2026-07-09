@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateAdRevenue, validateAdRevenueInput } from '@/lib/calculators/ad-revenue';
 import type { AdRevenueInput, AdRevenueResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function AdRevenueCalculatorWidget() {
   const [inputs, setInputs] = useState<AdRevenueInput>({
@@ -18,7 +19,6 @@ export function AdRevenueCalculatorWidget() {
 
   const [results, setResults] = useState<AdRevenueResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof AdRevenueInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -38,21 +38,16 @@ export function AdRevenueCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateAdRevenue(inputs);
-      setResults(result);
+    const result = calculateAdRevenue(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'ad-revenue',
-        { ...inputs },
-        { monthlyRevenue: result.monthlyRevenue, annualRevenue: result.annualRevenue }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'ad-revenue',
+      { ...inputs },
+      { monthlyRevenue: result.monthlyRevenue, annualRevenue: result.annualRevenue }
+    );
   };
 
   return (
@@ -106,7 +101,6 @@ export function AdRevenueCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Ad Revenue
@@ -119,7 +113,7 @@ export function AdRevenueCalculatorWidget() {
             type="single"
             format="currency"
             title="Monthly Revenue"
-            subtitle={`$${results.annualRevenue.toLocaleString()} annual`}
+            subtitle={`${formatCurrency(results.annualRevenue, 'USD', 'en-US', 0)} annual`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -132,7 +126,7 @@ export function AdRevenueCalculatorWidget() {
                   Annual Revenue
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.annualRevenue.toLocaleString()}
+                  {formatCurrency(results.annualRevenue, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
@@ -140,7 +134,7 @@ export function AdRevenueCalculatorWidget() {
                   Revenue per Video
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.revenuePerVideo.toFixed(2)}
+                  {formatCurrency(results.revenuePerVideo, 'USD', 'en-US', 2)}
                 </span>
               </div>
             </div>

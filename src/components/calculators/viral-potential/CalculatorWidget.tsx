@@ -20,7 +20,6 @@ export function ViralPotentialCalculatorWidget() {
 
   const [results, setResults] = useState<ViralPotentialResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ViralPotentialInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,15 +39,11 @@ export function ViralPotentialCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateViralPotential(inputs);
-      setResults(result);
-      trackCalculation('viral-potential', { ...inputs }, { viralScore: result.viralScore, viralChance: result.viralChance });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateViralPotential(inputs);
+    setResults(result);
+    trackCalculation('viral-potential', { ...inputs }, { viralScore: result.viralScore, viralChance: result.viralChance });
   };
 
   return (
@@ -128,7 +123,7 @@ export function ViralPotentialCalculatorWidget() {
         required
       />
 
-      <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">
+      <Button variant="primary" size="lg" onClick={handleCalculate} className="w-full mt-6">
         Calculate Viral Potential
       </Button>
 

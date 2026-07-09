@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatNumber, formatPercent } from '@/lib/utils/format';
 import {
   calculateFollowerGrowth,
   validateFollowerGrowthInput,
@@ -21,7 +22,6 @@ export function FollowerGrowthCalculatorWidget() {
 
   const [results, setResults] = useState<FollowerGrowthResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof FollowerGrowthInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -41,21 +41,16 @@ export function FollowerGrowthCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateFollowerGrowth(inputs);
-      setResults(result);
+    const result = calculateFollowerGrowth(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'follower-growth',
-        { ...inputs },
-        { projectedFollowers: result.projectedFollowers, totalGrowth: result.totalGrowth }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'follower-growth',
+      { ...inputs },
+      { projectedFollowers: result.projectedFollowers, totalGrowth: result.totalGrowth }
+    );
   };
 
   return (
@@ -110,7 +105,6 @@ export function FollowerGrowthCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Growth Projection
@@ -123,7 +117,7 @@ export function FollowerGrowthCalculatorWidget() {
             type="single"
             format="number"
             title="Projected Followers"
-            subtitle={`+${results.totalGrowth.toLocaleString()} followers in ${inputs.projectionDays} days`}
+            subtitle={`+${formatNumber(results.totalGrowth)} followers in ${inputs.projectionDays} days`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -133,7 +127,7 @@ export function FollowerGrowthCalculatorWidget() {
             <div className="grid grid-cols-2 gap-3">
               <div className="text-center">
                 <p className="text-heading-sm font-semibold text-neutral-900">
-                  {results.dailyAverage.toLocaleString()}
+                  {formatNumber(results.dailyAverage)}
                 </p>
                 <p className="text-label-sm text-neutral-600">
                   Daily Average
@@ -141,7 +135,7 @@ export function FollowerGrowthCalculatorWidget() {
               </div>
               <div className="text-center">
                 <p className="text-heading-sm font-semibold text-neutral-900">
-                  {results.growthPercentage.toFixed(1)}%
+                  {formatPercent(results.growthPercentage, 1)}
                 </p>
                 <p className="text-label-sm text-neutral-600">
                   Total Growth

@@ -5,6 +5,8 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
+import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 
 interface CostPerResultInput {
   totalSpend: number;
@@ -29,7 +31,6 @@ export function CostPerResultCalculatorWidget() {
 
   const [results, setResults] = useState<CostPerResultResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const resultTypeOptions = [
     { value: 'click', label: 'Clicks' },
@@ -69,58 +70,61 @@ export function CostPerResultCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const costPerResult = inputs.totalSpend / inputs.results;
-      const resultsPerDollar = inputs.results / inputs.totalSpend;
-      const projectedCost1000 = (costPerResult * 1000);
+    const costPerResult = inputs.totalSpend / inputs.results;
+    const resultsPerDollar = inputs.results / inputs.totalSpend;
+    const projectedCost1000 = (costPerResult * 1000);
 
-      let rating = 'average';
-      let interpretation = '';
+    const cprFmt3 = formatCurrency(costPerResult, 'USD', 'en-US', 3);
+    const cprFmt2 = formatCurrency(costPerResult, 'USD', 'en-US', 2);
+    const cprFmt4 = formatCurrency(costPerResult, 'USD', 'en-US', 4);
+    const resultsFmt = formatNumber(inputs.results);
+    const spendFmt = formatCurrency(inputs.totalSpend, 'USD', 'en-US', 0);
+    const rpdFmt = formatNumber(resultsPerDollar, 2);
 
-      if (inputs.resultType === 'click') {
-        if (costPerResult <= 0.30) rating = 'excellent';
-        else if (costPerResult <= 0.60) rating = 'good';
-        else if (costPerResult <= 1.00) rating = 'average';
-        else rating = 'poor';
-        interpretation = `At $${costPerResult.toFixed(3)} per click, you're ${rating === 'excellent' ? 'achieving outstanding efficiency' : rating === 'good' ? 'performing well' : rating === 'average' ? 'meeting industry average' : 'above typical benchmarks'}. TikTok CPC typically ranges from $0.20-$1.00. ${rating === 'poor' ? 'Consider improving targeting and creative to reduce costs.' : 'Continue monitoring and optimizing your campaigns.'}`;
-      } else if (inputs.resultType === 'conversion') {
-        if (costPerResult <= 10) rating = 'excellent';
-        else if (costPerResult <= 25) rating = 'good';
-        else if (costPerResult <= 50) rating = 'average';
-        else rating = 'poor';
-        interpretation = `Your cost per conversion of $${costPerResult.toFixed(2)} is ${rating}. E-commerce conversions on TikTok typically cost $10-$50. ${rating === 'excellent' ? 'This is highly profitable territory—consider scaling.' : rating === 'poor' ? 'This may not be sustainable. Optimize your funnel and creative.' : 'Continue monitoring ROI to ensure profitability.'}`;
-      } else if (inputs.resultType === 'lead') {
-        if (costPerResult <= 5) rating = 'excellent';
-        else if (costPerResult <= 15) rating = 'good';
-        else if (costPerResult <= 30) rating = 'average';
-        else rating = 'poor';
-        interpretation = `At $${costPerResult.toFixed(2)} per lead, you're in ${rating} territory. TikTok lead costs vary widely by industry ($5-$50+). ${rating === 'excellent' ? 'Excellent efficiency—make sure lead quality matches quantity.' : rating === 'poor' ? 'These leads may be too expensive. Test different targeting or offers.' : 'Evaluate lead quality alongside cost.'}`;
-      } else if (inputs.resultType === 'view') {
-        if (costPerResult <= 0.01) rating = 'excellent';
-        else if (costPerResult <= 0.03) rating = 'good';
-        else if (costPerResult <= 0.06) rating = 'average';
-        else rating = 'poor';
-        interpretation = `Video views at $${costPerResult.toFixed(4)} each ${rating === 'excellent' ? 'are highly efficient' : rating === 'poor' ? 'may be too expensive for brand awareness' : 'align with platform benchmarks'}. TikTok CPV typically ranges from $0.01-$0.06. ${rating === 'excellent' ? 'Great for brand awareness campaigns.' : rating === 'poor' ? 'Consider improving creative for better view rates.' : 'Monitor engagement quality alongside views.'}`;
-      } else if (inputs.resultType === 'engagement') {
-        if (costPerResult <= 0.05) rating = 'excellent';
-        else if (costPerResult <= 0.15) rating = 'good';
-        else if (costPerResult <= 0.30) rating = 'average';
-        else rating = 'poor';
-        interpretation = `Engagements at $${costPerResult.toFixed(3)} each show ${rating} performance. TikTok CPE ranges from $0.05-$0.30. ${rating === 'excellent' ? 'Highly engaging content—leverage this for organic growth.' : rating === 'poor' ? 'Content may not be resonating with your audience.' : 'Decent engagement—optimize for quality interactions.'}`;
-      } else {
-        interpretation = `Your cost per result is $${costPerResult.toFixed(3)}. Based on ${inputs.results.toLocaleString()} results from $${inputs.totalSpend.toLocaleString()} spend, you're getting ${resultsPerDollar.toFixed(2)} results per dollar spent.`;
-      }
+    let rating = 'average';
+    let interpretation = '';
 
-      setResults({
-        costPerResult,
-        resultsPerDollar,
-        projectedCost1000,
-        rating,
-        interpretation,
-      });
-      setIsCalculating(false);
-    }, 500);
+    if (inputs.resultType === 'click') {
+      if (costPerResult <= 0.30) rating = 'excellent';
+      else if (costPerResult <= 0.60) rating = 'good';
+      else if (costPerResult <= 1.00) rating = 'average';
+      else rating = 'poor';
+      interpretation = `At ${cprFmt3} per click, you're ${rating === 'excellent' ? 'achieving outstanding efficiency' : rating === 'good' ? 'performing well' : rating === 'average' ? 'meeting industry average' : 'above typical benchmarks'}. TikTok CPC typically ranges from $0.20-$1.00. ${rating === 'poor' ? 'Consider improving targeting and creative to reduce costs.' : 'Continue monitoring and optimizing your campaigns.'}`;
+    } else if (inputs.resultType === 'conversion') {
+      if (costPerResult <= 10) rating = 'excellent';
+      else if (costPerResult <= 25) rating = 'good';
+      else if (costPerResult <= 50) rating = 'average';
+      else rating = 'poor';
+      interpretation = `Your cost per conversion of ${cprFmt2} is ${rating}. E-commerce conversions on TikTok typically cost $10-$50. ${rating === 'excellent' ? 'This is highly profitable territory—consider scaling.' : rating === 'poor' ? 'This may not be sustainable. Optimize your funnel and creative.' : 'Continue monitoring ROI to ensure profitability.'}`;
+    } else if (inputs.resultType === 'lead') {
+      if (costPerResult <= 5) rating = 'excellent';
+      else if (costPerResult <= 15) rating = 'good';
+      else if (costPerResult <= 30) rating = 'average';
+      else rating = 'poor';
+      interpretation = `At ${cprFmt2} per lead, you're in ${rating} territory. TikTok lead costs vary widely by industry ($5-$50+). ${rating === 'excellent' ? 'Excellent efficiency—make sure lead quality matches quantity.' : rating === 'poor' ? 'These leads may be too expensive. Test different targeting or offers.' : 'Evaluate lead quality alongside cost.'}`;
+    } else if (inputs.resultType === 'view') {
+      if (costPerResult <= 0.01) rating = 'excellent';
+      else if (costPerResult <= 0.03) rating = 'good';
+      else if (costPerResult <= 0.06) rating = 'average';
+      else rating = 'poor';
+      interpretation = `Video views at ${cprFmt4} each ${rating === 'excellent' ? 'are highly efficient' : rating === 'poor' ? 'may be too expensive for brand awareness' : 'align with platform benchmarks'}. TikTok CPV typically ranges from $0.01-$0.06. ${rating === 'excellent' ? 'Great for brand awareness campaigns.' : rating === 'poor' ? 'Consider improving creative for better view rates.' : 'Monitor engagement quality alongside views.'}`;
+    } else if (inputs.resultType === 'engagement') {
+      if (costPerResult <= 0.05) rating = 'excellent';
+      else if (costPerResult <= 0.15) rating = 'good';
+      else if (costPerResult <= 0.30) rating = 'average';
+      else rating = 'poor';
+      interpretation = `Engagements at ${cprFmt3} each show ${rating} performance. TikTok CPE ranges from $0.05-$0.30. ${rating === 'excellent' ? 'Highly engaging content—leverage this for organic growth.' : rating === 'poor' ? 'Content may not be resonating with your audience.' : 'Decent engagement—optimize for quality interactions.'}`;
+    } else {
+      interpretation = `Your cost per result is ${cprFmt3}. Based on ${resultsFmt} results from ${spendFmt} spend, you're getting ${rpdFmt} results per dollar spent.`;
+    }
+
+    setResults({
+      costPerResult,
+      resultsPerDollar,
+      projectedCost1000,
+      rating,
+      interpretation,
+    });
   };
 
   return (
@@ -173,7 +177,6 @@ export function CostPerResultCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Cost Per Result
@@ -181,43 +184,16 @@ export function CostPerResultCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Cost Per Result</p>
-            <p className="text-display-md font-bold text-primary-600">
-              ${results.costPerResult < 1 ? results.costPerResult.toFixed(3) : results.costPerResult.toFixed(2)}
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              {inputs.results.toLocaleString()} results from ${inputs.totalSpend.toLocaleString()} spend
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Results per $1</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                {results.resultsPerDollar.toFixed(2)}
-              </p>
-            </div>
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Cost for 1,000</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                ${results.projectedCost1000.toLocaleString()}
-              </p>
-            </div>
-          </div>
-
-          {results.rating && (
-            <div className={`p-4 rounded-lg border-2 ${
-              results.rating === 'excellent' ? 'bg-success-50 border-success-300' :
-              results.rating === 'good' ? 'bg-primary-50 border-primary-300' :
-              results.rating === 'average' ? 'bg-neutral-50 border-neutral-300' :
-              'bg-warning-50 border-warning-300'
-            }`}>
-              <p className="text-label-md font-semibold mb-1">
-                Performance: {results.rating.charAt(0).toUpperCase() + results.rating.slice(1)}
-              </p>
-            </div>
-          )}
+          <ResultsDisplay
+            subtype="list"
+            title="Cost Per Result"
+            rows={[
+              { label: 'Cost Per Result', value: formatCurrency(results.costPerResult, 'USD', 'en-US', results.costPerResult < 1 ? 3 : 2), hint: `${formatNumber(inputs.results)} results from ${formatCurrency(inputs.totalSpend, 'USD', 'en-US', 0)} spend` },
+              { label: 'Results per $1', value: formatNumber(results.resultsPerDollar, 2) },
+              { label: 'Cost for 1,000', value: formatCurrency(results.projectedCost1000, 'USD', 'en-US', 0) },
+              { label: 'Performance', value: results.rating.charAt(0).toUpperCase() + results.rating.slice(1) },
+            ]}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

@@ -135,7 +135,7 @@ export default function TikTokAdsHubPage() {
                 <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">
                   Introduction: The TikTok Advertising Landscape in 2026
                 </h2>
-                <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
+                <div className="prose max-w-none space-y-4">
                   <p>
                     TikTok advertising has evolved from experimental budgets into a core channel for brands generating billions in revenue. The platform&apos;s unique combination of short-form video, algorithm-driven discovery, and integrated commerce creates advertising opportunities that don&apos;t exist on any other platform. In 2026, TikTok&apos;s ad revenue has surpassed $30 billion globally, with advertisers across every industry—from DTC startups to Fortune 500 companies—allocating significant budget to the platform. The key differentiator is TikTok&apos;s ability to make ads feel like organic content, with top-performing ads often indistinguishable from regular creator posts, resulting in higher engagement and lower cost-per-action compared to traditional social advertising.
                   </p>

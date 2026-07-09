@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { SelectField } from '@/components/ui/SelectField';
+import { ResultsDisplay, type ResultListRow } from '@/components/calculator/ResultsDisplay';
 import {
   calculatePostingTime,
   validatePostingTimeInput,
@@ -13,6 +14,7 @@ import type {
   PostingTimeResult,
 } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatNumber } from '@/lib/utils/format';
 
 export function PostingTimeCalculatorWidget() {
   const [inputs, setInputs] = useState<PostingTimeInput>({
@@ -23,7 +25,6 @@ export function PostingTimeCalculatorWidget() {
 
   const [results, setResults] = useState<PostingTimeResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof PostingTimeInput, value: string) => {
     setInputs((prev) => ({ ...prev, [field]: value }));
@@ -43,21 +44,15 @@ export function PostingTimeCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
+    const result = calculatePostingTime(inputs);
+    setResults(result);
 
-    setTimeout(() => {
-      const result = calculatePostingTime(inputs);
-      setResults(result);
-
-      trackCalculation(
-        'posting-time',
-        { ...inputs },
-        { optimalTimesCount: result.optimalTimes.length }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'posting-time',
+      { ...inputs },
+      { optimalTimesCount: result.optimalTimes.length }
+    );
   };
 
   const timezoneOptions = [
@@ -80,6 +75,14 @@ export function PostingTimeCalculatorWidget() {
     { value: 'promotional', label: 'Promotional' },
     { value: 'inspirational', label: 'Inspirational' },
   ];
+
+  const rows: ResultListRow[] = results
+    ? results.optimalTimes.map((time) => ({
+        label: time.time,
+        value: `Score ${formatNumber(time.score)}`,
+        hint: time.reason,
+      }))
+    : [];
 
   return (
     <Card className="lg:sticky lg:top-24 h-fit">
@@ -124,7 +127,6 @@ export function PostingTimeCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Optimal Times
@@ -132,22 +134,11 @@ export function PostingTimeCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="p-4 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-lg border border-primary-200">
-            <h3 className="text-heading-sm font-semibold text-neutral-900 mb-3">
-              Best Posting Times
-            </h3>
-            <div className="space-y-2">
-              {results.optimalTimes.map((time, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between p-2 bg-white rounded border border-neutral-200"
-                >
-                  <span className="font-semibold text-neutral-900">{time.time}</span>
-                  <span className="text-primary-600 font-medium">Score: {time.score}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Best Posting Times"
+            rows={rows}
+          />
 
           {results.worstTimes && results.worstTimes.length > 0 && (
             <div className="p-4 bg-error-50 rounded-lg border border-error-200">

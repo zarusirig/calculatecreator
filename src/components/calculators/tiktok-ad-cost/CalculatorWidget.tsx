@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateTikTokAdCost, validateTikTokAdCostInput } from '@/lib/calculators/tiktok-ad-cost';
 import type { TikTokAdCostInput, TikTokAdCostResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function TikTokAdCostCalculatorWidget() {
   const [inputs, setInputs] = useState<TikTokAdCostInput>({
@@ -21,7 +22,6 @@ export function TikTokAdCostCalculatorWidget() {
 
   const [results, setResults] = useState<TikTokAdCostResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: string, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -42,18 +42,14 @@ export function TikTokAdCostCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateTikTokAdCost(inputs);
-      setResults(result);
-      trackCalculation('tiktok-ad-cost', inputs, {
-        cpm: result.cpm,
-        cpv: result.cpv,
-        roas: result.roas,
-        profit: result.profit
-      });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateTikTokAdCost(inputs);
+    setResults(result);
+    trackCalculation('tiktok-ad-cost', inputs, {
+      cpm: result.cpm,
+      cpv: result.cpv,
+      roas: result.roas,
+      profit: result.profit
+    });
   };
 
   return (
@@ -144,7 +140,6 @@ export function TikTokAdCostCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Ad Costs
@@ -168,31 +163,31 @@ export function TikTokAdCostCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">CPM (per 1K impressions)</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.cpm.toFixed(2)}
+                  {formatCurrency(results.cpm, 'USD', 'en-US', 2)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">CPV (per view)</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.cpv.toFixed(4)}
+                  {formatCurrency(results.cpv, 'USD', 'en-US', 4)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">CPC (per click)</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.cpc.toFixed(2)}
+                  {formatCurrency(results.cpc, 'USD', 'en-US', 2)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">CPA (per conversion)</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.cpa.toFixed(2)}
+                  {formatCurrency(results.cpa, 'USD', 'en-US', 2)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
                 <span className="text-body-sm text-neutral-600">Profit/Loss</span>
                 <span className={`text-body-sm font-semibold ${results.profit >= 0 ? 'text-success-DEFAULT' : 'text-error-DEFAULT'}`}>
-                  ${results.profit.toFixed(2)}
+                  {formatCurrency(results.profit, 'USD', 'en-US', 2)}
                 </span>
               </div>
             </div>

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatPercent } from '@/lib/utils/format';
 import { calculateCreatorTax, validateCreatorTaxInput } from '@/lib/calculators/creator-tax';
 import type { CreatorTaxInput, CreatorTaxResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
@@ -20,7 +21,6 @@ export function CreatorTaxCalculatorWidget() {
 
   const [results, setResults] = useState<CreatorTaxResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof CreatorTaxInput, value: string | number) => {
     const processedValue = field === 'state' || field === 'filingStatus'
@@ -43,21 +43,16 @@ export function CreatorTaxCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateCreatorTax(inputs);
-      setResults(result);
+    const result = calculateCreatorTax(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'creator-tax',
-        { ...inputs },
-        { totalTax: result.totalTax, effectiveTaxRate: result.effectiveTaxRate }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'creator-tax',
+      { ...inputs },
+      { totalTax: result.totalTax, effectiveTaxRate: result.effectiveTaxRate }
+    );
   };
 
   const stateOptions = [
@@ -132,7 +127,6 @@ export function CreatorTaxCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Tax
@@ -145,7 +139,7 @@ export function CreatorTaxCalculatorWidget() {
             type="single"
             format="currency"
             title="Total Tax Owed"
-            subtitle={`${results.effectiveTaxRate.toFixed(1)}% effective tax rate`}
+            subtitle={`${formatPercent(results.effectiveTaxRate, 1)} effective tax rate`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -158,7 +152,7 @@ export function CreatorTaxCalculatorWidget() {
                   Federal Tax
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.federalTax.toLocaleString()}
+                  {formatCurrency(results.federalTax, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
@@ -166,7 +160,7 @@ export function CreatorTaxCalculatorWidget() {
                   State Tax
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.stateTax.toLocaleString()}
+                  {formatCurrency(results.stateTax, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
@@ -174,7 +168,7 @@ export function CreatorTaxCalculatorWidget() {
                   Self-Employment Tax
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.selfEmploymentTax.toLocaleString()}
+                  {formatCurrency(results.selfEmploymentTax, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
@@ -182,7 +176,7 @@ export function CreatorTaxCalculatorWidget() {
                   Net Income (After Tax)
                 </span>
                 <span className="text-body-sm font-semibold text-success-DEFAULT">
-                  ${results.netIncome.toLocaleString()}
+                  {formatCurrency(results.netIncome, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

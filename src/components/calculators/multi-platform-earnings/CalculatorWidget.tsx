@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency } from '@/lib/utils/format';
 import {
   calculateMultiPlatformEarnings,
   validateMultiPlatformEarningsInput,
@@ -29,7 +30,6 @@ export function MultiPlatformEarningsCalculatorWidget() {
 
   const [results, setResults] = useState<MultiPlatformEarningsResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof MultiPlatformEarningsInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -60,21 +60,16 @@ export function MultiPlatformEarningsCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateMultiPlatformEarnings(inputs);
-      setResults(result);
+    const result = calculateMultiPlatformEarnings(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'multi-platform-earnings',
-        { ...inputs },
-        { totalMin: result.totalEarnings.min, totalMax: result.totalEarnings.max }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'multi-platform-earnings',
+      { ...inputs },
+      { totalMin: result.totalEarnings.min, totalMax: result.totalEarnings.max }
+    );
   };
 
   return (
@@ -158,7 +153,6 @@ export function MultiPlatformEarningsCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Earnings
@@ -182,19 +176,19 @@ export function MultiPlatformEarningsCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">TikTok</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.tiktokEarnings.min.toLocaleString()} - ${results.tiktokEarnings.max.toLocaleString()}
+                  {formatCurrency(results.tiktokEarnings.min, 'USD', 'en-US', 0)} - {formatCurrency(results.tiktokEarnings.max, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">YouTube</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.youtubeEarnings.min.toLocaleString()} - ${results.youtubeEarnings.max.toLocaleString()}
+                  {formatCurrency(results.youtubeEarnings.min, 'USD', 'en-US', 0)} - {formatCurrency(results.youtubeEarnings.max, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Instagram</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.instagramEarnings.min.toLocaleString()} - ${results.instagramEarnings.max.toLocaleString()}
+                  {formatCurrency(results.instagramEarnings.min, 'USD', 'en-US', 0)} - {formatCurrency(results.instagramEarnings.max, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

@@ -5,9 +5,18 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
+import { ResultsDisplay, type ResultListRow } from '@/components/calculator/ResultsDisplay';
 import { calculateCAC, validateCACInput } from '@/lib/calculators/customer-acquisition-cost';
 import type { CACInput, CACResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
+
+const BENCHMARK_MESSAGES: Record<string, string> = {
+  excellent: 'Outstanding CAC! You\'re acquiring customers very efficiently.',
+  good: 'Solid CAC for most businesses. Monitor and maintain this level.',
+  acceptable: 'Typical CAC. Look for optimization opportunities to reduce costs.',
+  high: 'CAC is high—focus on improving conversion rate and targeting.',
+};
 
 export function CustomerAcquisitionCostCalculatorWidget() {
   const [inputs, setInputs] = useState<CACInput>({
@@ -18,7 +27,6 @@ export function CustomerAcquisitionCostCalculatorWidget() {
 
   const [results, setResults] = useState<CACResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const timeframeOptions = [
     { value: 'month', label: 'Monthly' },
@@ -47,14 +55,37 @@ export function CustomerAcquisitionCostCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateCAC(inputs);
-      setResults(result);
-      trackCalculation('customer-acquisition-cost', { ...inputs }, { cac: result.cac });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateCAC(inputs);
+    setResults(result);
+    trackCalculation('customer-acquisition-cost', { ...inputs }, { cac: result.cac });
   };
+
+  const rows: ResultListRow[] = results
+    ? [
+        {
+          label: 'Customer Acquisition Cost',
+          value: formatCurrency(results.cac, 'USD', 'en-US', 2),
+          hint: 'Per new customer',
+        },
+        {
+          label: 'Recommended Minimum LTV',
+          value: formatCurrency(results.cac * 3, 'USD', 'en-US', 2),
+          hint: 'Your customer lifetime value should be at least 3× your CAC',
+        },
+        {
+          label: 'Customers per $1,000 Spent',
+          value: formatNumber(1000 / results.cac, 1),
+          hint: 'Acquisition efficiency metric',
+        },
+        ...(results.benchmark
+          ? [{
+              label: 'Performance',
+              value: results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1),
+              hint: BENCHMARK_MESSAGES[results.benchmark] ?? '',
+            }]
+          : []),
+      ]
+    : [];
 
   return (
     <Card className="lg:sticky lg:top-24 h-fit">
@@ -106,7 +137,6 @@ export function CustomerAcquisitionCostCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate CAC
@@ -114,54 +144,11 @@ export function CustomerAcquisitionCostCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-success-50 to-primary-50 rounded-xl border-2 border-success-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Customer Acquisition Cost</p>
-            <p className="text-display-md font-bold text-success-600">
-              ${results.cac.toFixed(2)}
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              Per new customer
-            </p>
-          </div>
-
-          {results.benchmark && (
-            <div className={`p-4 rounded-lg border-2 ${
-              results.benchmark === 'excellent' ? 'bg-success-50 border-success-300' :
-              results.benchmark === 'good' ? 'bg-primary-50 border-primary-300' :
-              results.benchmark === 'acceptable' ? 'bg-neutral-50 border-neutral-300' :
-              'bg-warning-50 border-warning-300'
-            }`}>
-              <p className="text-label-md font-semibold mb-1">
-                Performance: {results.benchmark.charAt(0).toUpperCase() + results.benchmark.slice(1)}
-              </p>
-              <p className="text-body-sm text-neutral-600">
-                {results.benchmark === 'excellent' && 'Outstanding CAC! You\'re acquiring customers very efficiently.'}
-                {results.benchmark === 'good' && 'Solid CAC for most businesses. Monitor and maintain this level.'}
-                {results.benchmark === 'acceptable' && 'Typical CAC. Look for optimization opportunities to reduce costs.'}
-                {results.benchmark === 'high' && 'CAC is high—focus on improving conversion rate and targeting.'}
-              </p>
-            </div>
-          )}
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Recommended Minimum LTV</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${(results.cac * 3).toFixed(2)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Your customer lifetime value should be at least 3× your CAC</p>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Customers per $1,000 Spent</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                {(1000 / results.cac).toFixed(1)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Acquisition efficiency metric</p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Your CAC Results"
+            rows={rows}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

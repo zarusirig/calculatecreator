@@ -9,6 +9,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateBrandDeal, validateBrandDealInput } from '@/lib/calculators/brand-deal';
 import type { BrandDealInput, BrandDealResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 import { NICHE_DISPLAY_NAMES } from '@/lib/constants/calculator-constants';
 
 export function BrandDealRateCalculatorWidget() {
@@ -21,7 +22,6 @@ export function BrandDealRateCalculatorWidget() {
 
   const [results, setResults] = useState<BrandDealResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const nicheOptions = Object.entries(NICHE_DISPLAY_NAMES).map(
     ([value, label]) => ({ value, label })
@@ -55,13 +55,9 @@ export function BrandDealRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateBrandDeal(inputs);
-      setResults(result);
-      trackCalculation('brand-deal-rate', { ...inputs }, { minRate: result.minRate, maxRate: result.maxRate });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateBrandDeal(inputs);
+    setResults(result);
+    trackCalculation('brand-deal-rate', { ...inputs }, { minRate: result.minRate, maxRate: result.maxRate });
   };
 
   return (
@@ -119,7 +115,7 @@ export function BrandDealRateCalculatorWidget() {
         required
       />
 
-      <Button variant="primary" size="lg" onClick={handleCalculate} isLoading={isCalculating} className="w-full mt-6">
+      <Button variant="primary" size="lg" onClick={handleCalculate} className="w-full mt-6">
         Calculate Rate
       </Button>
 
@@ -136,7 +132,7 @@ export function BrandDealRateCalculatorWidget() {
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
             <p className="text-label-md text-neutral-600 mb-2">Rate Range</p>
             <p className="text-heading-md font-semibold text-neutral-900">
-              ${results.minRate.toLocaleString()} - ${results.maxRate.toLocaleString()}
+              {formatCurrency(results.minRate, 'USD', 'en-US', 0)} - {formatCurrency(results.maxRate, 'USD', 'en-US', 0)}
             </p>
             <p className="text-body-sm text-neutral-600 mt-2">
               per post for {inputs.deliverableType.replace('-', ' ')} content

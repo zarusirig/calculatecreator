@@ -276,7 +276,7 @@ export default function BlogPage() {
         <section className="bg-white py-12 border-b border-neutral-200">
           <div className="container-custom max-w-4xl">
             <h2 className="text-heading-xl font-bold text-neutral-900 mb-6">Your Hub for TikTok Creator Economics</h2>
-            <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
+            <div className="prose max-w-none space-y-4">
               <p>
                 Welcome to the TT Calculator blog. We translate TikTok monetization into actionable strategies backed by real data. The creator economy evolves quickly, so we focus on the changes most likely to affect your decisions. Our mission is simple. We help you understand realistic earning ranges, which strategies support stronger return on investment (ROI), and how to improve the business side of your creator work.
               </p>

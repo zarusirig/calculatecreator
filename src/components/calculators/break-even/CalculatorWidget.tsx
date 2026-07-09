@@ -8,6 +8,7 @@ import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
 import { calculateBreakEven, validateBreakEvenInput } from '@/lib/calculators/break-even';
 import type { BreakEvenInput, BreakEvenResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 
 export function BreakEvenCalculatorWidget() {
   const [inputs, setInputs] = useState<BreakEvenInput>({
@@ -20,7 +21,6 @@ export function BreakEvenCalculatorWidget() {
 
   const [results, setResults] = useState<BreakEvenResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof BreakEvenInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +40,16 @@ export function BreakEvenCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateBreakEven(inputs);
-      setResults(result);
+    const result = calculateBreakEven(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'break-even',
-        { ...inputs },
-        { breakEvenUnits: result.breakEvenUnits }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'break-even',
+      { ...inputs },
+      { breakEvenUnits: result.breakEvenUnits }
+    );
   };
 
   return (
@@ -138,7 +133,6 @@ export function BreakEvenCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Break Even
@@ -164,7 +158,7 @@ export function BreakEvenCalculatorWidget() {
                   Required Clicks
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.requiredClicks.toLocaleString()}
+                  {formatNumber(results.requiredClicks)}
                 </span>
               </div>
               <div className="flex justify-between">
@@ -172,7 +166,7 @@ export function BreakEvenCalculatorWidget() {
                   Required Conversions
                 </span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.requiredConversions.toLocaleString()}
+                  {formatNumber(results.requiredConversions)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
@@ -180,7 +174,7 @@ export function BreakEvenCalculatorWidget() {
                   Break Even Revenue
                 </span>
                 <span className="text-body-sm font-semibold text-success-DEFAULT">
-                  ${results.breakEvenRevenue.toLocaleString()}
+                  {formatCurrency(results.breakEvenRevenue, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

@@ -169,7 +169,7 @@ export function HomepageRedesign() {
                 Free TikTok Calculator
               </span>
 
-              <h1 className="section-heading mt-6 max-w-3xl text-5xl font-bold text-[color:var(--text)] md:text-6xl lg:text-[4.8rem] lg:leading-[1.06]">
+              <h1 className="section-heading mt-6 max-w-3xl text-display-md md:text-display-lg lg:text-display-xl text-[color:var(--text)]">
                 TikTok Calculator — Estimate Earnings, Engagement &amp; Brand Deal Rates
               </h1>
 

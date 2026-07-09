@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatPercent } from '@/lib/utils/format';
 import {
   calculateFollowerConversion,
   validateFollowerConversionInput,
@@ -25,7 +26,6 @@ export function FollowerConversionCalculatorWidget() {
 
   const [results, setResults] = useState<FollowerConversionResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof FollowerConversionInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -46,21 +46,16 @@ export function FollowerConversionCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateFollowerConversion(inputs);
-      setResults(result);
+    const result = calculateFollowerConversion(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'follower-conversion',
-        { ...inputs },
-        { overallConversionRate: result.overallConversionRate, revenue: result.revenue }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'follower-conversion',
+      { ...inputs },
+      { overallConversionRate: result.overallConversionRate, revenue: result.revenue }
+    );
   };
 
   return (
@@ -126,7 +121,6 @@ export function FollowerConversionCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Conversion
@@ -139,7 +133,7 @@ export function FollowerConversionCalculatorWidget() {
             type="single"
             format="percentage"
             title="Overall Conversion Rate"
-            subtitle={`$${results.revenuePerFollower.toFixed(2)} per follower`}
+            subtitle={`${formatCurrency(results.revenuePerFollower, 'USD', 'en-US', 2)} per follower`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -150,19 +144,19 @@ export function FollowerConversionCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Click-Through Rate</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.clickThroughRate.toFixed(2)}%
+                  {formatPercent(results.clickThroughRate, 2)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Conversion Rate</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.conversionRate.toFixed(2)}%
+                  {formatPercent(results.conversionRate, 2)}
                 </span>
               </div>
               <div className="flex justify-between border-t pt-2">
                 <span className="text-body-sm text-neutral-600">Total Revenue</span>
                 <span className="text-body-sm font-semibold text-success-DEFAULT">
-                  ${results.revenue.toLocaleString()}
+                  {formatCurrency(results.revenue, 'USD', 'en-US', 0)}
                 </span>
               </div>
             </div>

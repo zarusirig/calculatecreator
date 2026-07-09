@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 import {
   calculateProductionCost,
   validateProductionCostInput,
@@ -26,7 +27,6 @@ export function ProductionCostCalculatorWidget() {
 
   const [results, setResults] = useState<ProductionCostResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ProductionCostInput, value: string | number) => {
     const processedValue = typeof value === 'string' ? parseFloat(value) || 0 : value;
@@ -47,21 +47,16 @@ export function ProductionCostCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateProductionCost(inputs);
-      setResults(result);
+    const result = calculateProductionCost(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'production-cost',
-        { ...inputs },
-        { costPerVideo: result.costPerVideo, monthlyCost: result.monthlyCost }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'production-cost',
+      { ...inputs },
+      { costPerVideo: result.costPerVideo, monthlyCost: result.monthlyCost }
+    );
   };
 
   return (
@@ -139,7 +134,6 @@ export function ProductionCostCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Costs
@@ -152,7 +146,7 @@ export function ProductionCostCalculatorWidget() {
             type="single"
             format="currency"
             title="Cost Per Video"
-            subtitle={`$${results.monthlyCost.toLocaleString()}/month total`}
+            subtitle={`${formatCurrency(results.monthlyCost, 'USD', 'en-US', 0)}/month total`}
           />
 
           <div className="mt-4 p-4 bg-white rounded-lg border border-neutral-200">
@@ -163,13 +157,13 @@ export function ProductionCostCalculatorWidget() {
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Annual Cost</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  ${results.annualCost.toLocaleString()}
+                  {formatCurrency(results.annualCost, 'USD', 'en-US', 0)}
                 </span>
               </div>
               <div className="flex justify-between">
                 <span className="text-body-sm text-neutral-600">Break-Even Views/Video</span>
                 <span className="text-body-sm font-semibold text-neutral-900">
-                  {results.breakEvenViews.toLocaleString()}
+                  {formatNumber(results.breakEvenViews)}
                 </span>
               </div>
             </div>

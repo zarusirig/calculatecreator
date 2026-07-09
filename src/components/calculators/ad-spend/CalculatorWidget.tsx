@@ -5,6 +5,8 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { SelectField } from '@/components/ui/SelectField';
+import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatCurrency, formatNumber } from '@/lib/utils/format';
 
 interface AdSpendInput {
   targetResults: number;
@@ -33,7 +35,6 @@ export function AdSpendCalculatorWidget() {
 
   const [results, setResults] = useState<AdSpendResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const timeframeOptions = [
     { value: '7', label: '7 Days (1 Week)' },
@@ -80,43 +81,45 @@ export function AdSpendCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const days = parseInt(inputs.timeframe);
-      const totalBudget = inputs.targetResults * inputs.costPerResult;
+    const days = parseInt(inputs.timeframe);
+    const totalBudget = inputs.targetResults * inputs.costPerResult;
 
-      const bufferMultiplier = inputs.campaignType === 'conversion' ? 1.25 : 1.15;
-      const budgetWithBuffer = totalBudget * bufferMultiplier;
+    const bufferMultiplier = inputs.campaignType === 'conversion' ? 1.25 : 1.15;
+    const budgetWithBuffer = totalBudget * bufferMultiplier;
 
-      const dailyBudget = budgetWithBuffer / days;
-      const weeklyBudget = dailyBudget * 7;
-      const monthlyBudget = dailyBudget * 30;
+    const dailyBudget = budgetWithBuffer / days;
+    const weeklyBudget = dailyBudget * 7;
+    const monthlyBudget = dailyBudget * 30;
 
-      let interpretation = '';
+    const targetResultsFmt = formatNumber(inputs.targetResults);
+    const costPerResultFmt = formatCurrency(inputs.costPerResult, 'USD', 'en-US', 2);
+    const totalBudgetFmt = formatCurrency(totalBudget, 'USD', 'en-US', 0);
+    const budgetWithBufferFmt = formatCurrency(budgetWithBuffer, 'USD', 'en-US', 0);
+    const dailyBudgetFmt = formatCurrency(dailyBudget, 'USD', 'en-US', 2);
 
-      if (inputs.campaignType === 'conversion') {
-        interpretation = `To achieve ${inputs.targetResults.toLocaleString()} conversions over ${days} days at $${inputs.costPerResult.toFixed(2)} per conversion, you'll need a total budget of $${totalBudget.toLocaleString()}. We recommend $${budgetWithBuffer.toLocaleString()} (25% buffer) to account for TikTok's learning phase and optimization. This works out to $${dailyBudget.toFixed(2)} per day. Start with a smaller daily budget for the first 7 days to test and optimize before scaling.`;
-      } else if (inputs.campaignType === 'traffic') {
-        interpretation = `For ${inputs.targetResults.toLocaleString()} clicks at $${inputs.costPerResult.toFixed(2)} per click, budget $${budgetWithBuffer.toLocaleString()} over ${days} days ($${dailyBudget.toFixed(2)}/day). Traffic campaigns optimize quickly—expect costs to stabilize within 3-5 days. Monitor click quality and bounce rates to ensure you're getting valuable traffic.`;
-      } else if (inputs.campaignType === 'awareness') {
-        interpretation = `Brand awareness campaigns need $${budgetWithBuffer.toLocaleString()} to reach ${inputs.targetResults.toLocaleString()} results over ${days} days. At $${dailyBudget.toFixed(2)} per day, you'll maximize reach while staying within budget. Awareness campaigns benefit from longer run times (30+ days) for better frequency and recall.`;
-      } else if (inputs.campaignType === 'engagement') {
-        interpretation = `To generate ${inputs.targetResults.toLocaleString()} engagements, allocate $${budgetWithBuffer.toLocaleString()} over ${days} days ($${dailyBudget.toFixed(2)} daily). Engagement campaigns typically optimize quickly—test different content styles to find what resonates. High engagement can boost organic reach significantly.`;
-      } else if (inputs.campaignType === 'leads') {
-        interpretation = `Lead generation requires $${budgetWithBuffer.toLocaleString()} for ${inputs.targetResults.toLocaleString()} leads over ${days} days. Daily budget of $${dailyBudget.toFixed(2)} allows consistent lead flow. Focus on lead quality over quantity—track lead-to-customer conversion rates to optimize your spend.`;
-      }
+    let interpretation = '';
 
-      setResults({
-        totalBudget,
-        dailyBudget,
-        weeklyBudget,
-        monthlyBudget,
-        projectedResults: inputs.targetResults,
-        budgetWithBuffer,
-        interpretation,
-      });
-      setIsCalculating(false);
-    }, 500);
+    if (inputs.campaignType === 'conversion') {
+      interpretation = `To achieve ${targetResultsFmt} conversions over ${days} days at ${costPerResultFmt} per conversion, you'll need a total budget of ${totalBudgetFmt}. We recommend ${budgetWithBufferFmt} (25% buffer) to account for TikTok's learning phase and optimization. This works out to ${dailyBudgetFmt} per day. Start with a smaller daily budget for the first 7 days to test and optimize before scaling.`;
+    } else if (inputs.campaignType === 'traffic') {
+      interpretation = `For ${targetResultsFmt} clicks at ${costPerResultFmt} per click, budget ${budgetWithBufferFmt} over ${days} days (${dailyBudgetFmt}/day). Traffic campaigns optimize quickly—expect costs to stabilize within 3-5 days. Monitor click quality and bounce rates to ensure you're getting valuable traffic.`;
+    } else if (inputs.campaignType === 'awareness') {
+      interpretation = `Brand awareness campaigns need ${budgetWithBufferFmt} to reach ${targetResultsFmt} results over ${days} days. At ${dailyBudgetFmt} per day, you'll maximize reach while staying within budget. Awareness campaigns benefit from longer run times (30+ days) for better frequency and recall.`;
+    } else if (inputs.campaignType === 'engagement') {
+      interpretation = `To generate ${targetResultsFmt} engagements, allocate ${budgetWithBufferFmt} over ${days} days (${dailyBudgetFmt} daily). Engagement campaigns typically optimize quickly—test different content styles to find what resonates. High engagement can boost organic reach significantly.`;
+    } else if (inputs.campaignType === 'leads') {
+      interpretation = `Lead generation requires ${budgetWithBufferFmt} for ${targetResultsFmt} leads over ${days} days. Daily budget of ${dailyBudgetFmt} allows consistent lead flow. Focus on lead quality over quantity—track lead-to-customer conversion rates to optimize your spend.`;
+    }
+
+    setResults({
+      totalBudget,
+      dailyBudget,
+      weeklyBudget,
+      monthlyBudget,
+      projectedResults: inputs.targetResults,
+      budgetWithBuffer,
+      interpretation,
+    });
   };
 
   return (
@@ -180,7 +183,6 @@ export function AdSpendCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Budget
@@ -188,54 +190,19 @@ export function AdSpendCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-success-50 to-primary-50 rounded-xl border-2 border-success-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Recommended Total Budget</p>
-            <p className="text-display-md font-bold text-success-600">
-              ${results.budgetWithBuffer.toLocaleString()}
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              Includes optimization buffer for best results
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Daily Budget</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                ${results.dailyBudget.toFixed(2)}
-              </p>
-            </div>
-            <div className="p-4 bg-white rounded-lg border border-neutral-200">
-              <p className="text-label-sm text-neutral-600 mb-1">Base Cost</p>
-              <p className="text-heading-md font-semibold text-neutral-900">
-                ${results.totalBudget.toLocaleString()}
-              </p>
-            </div>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Weekly Budget</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${results.weeklyBudget.toFixed(2)}
-              </span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-label-md text-neutral-600">Monthly Budget</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${results.monthlyBudget.toFixed(2)}
-              </span>
-            </div>
-          </div>
-
-          <div className="p-4 bg-primary-50 border-2 border-primary-200 rounded-lg">
-            <p className="text-label-md font-semibold mb-2 text-primary-900">
-              Expected Results: {results.projectedResults.toLocaleString()}
-            </p>
-            <p className="text-body-sm text-neutral-700">
-              With the recommended budget and learning phase optimization
-            </p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Recommended Budget Breakdown"
+            subtitle="Includes optimization buffer for best results"
+            rows={[
+              { label: 'Recommended Total Budget', value: formatCurrency(results.budgetWithBuffer, 'USD', 'en-US', 0), hint: 'With optimization buffer' },
+              { label: 'Base Cost', value: formatCurrency(results.totalBudget, 'USD', 'en-US', 0) },
+              { label: 'Daily Budget', value: formatCurrency(results.dailyBudget, 'USD', 'en-US', 2) },
+              { label: 'Weekly Budget', value: formatCurrency(results.weeklyBudget, 'USD', 'en-US', 2) },
+              { label: 'Monthly Budget', value: formatCurrency(results.monthlyBudget, 'USD', 'en-US', 2) },
+              { label: 'Expected Results', value: formatNumber(results.projectedResults), hint: 'With the recommended budget and learning-phase optimization' },
+            ]}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

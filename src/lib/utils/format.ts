@@ -4,15 +4,29 @@
  */
 
 /**
- * Format a number as currency (USD)
+ * Format a number as currency.
+ *
+ * @param amount - The numeric amount to format.
+ * @param currency - ISO 4217 currency code (default "USD").
+ * @param locale - BCP 47 locale tag (default "en-US").
+ * @param decimals - Optional fixed fraction digits. When omitted, the
+ *   locale/currency default is used (e.g. 2 for USD), preserving prior behavior.
  */
-export function formatCurrency(value: number, decimals: number = 2): string {
-  return new Intl.NumberFormat('en-US', {
+export function formatCurrency(
+  amount: number,
+  currency: string = 'USD',
+  locale: string = 'en-US',
+  decimals?: number
+): string {
+  const options: Intl.NumberFormatOptions = {
     style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: decimals,
-    maximumFractionDigits: decimals,
-  }).format(value);
+    currency,
+  };
+  if (decimals !== undefined) {
+    options.minimumFractionDigits = decimals;
+    options.maximumFractionDigits = decimals;
+  }
+  return new Intl.NumberFormat(locale, options).format(amount);
 }
 
 /**
@@ -20,6 +34,13 @@ export function formatCurrency(value: number, decimals: number = 2): string {
  */
 export function formatPercentage(value: number, decimals: number = 1): string {
   return `${value.toFixed(decimals)}%`;
+}
+
+/**
+ * Format a number as a percentage (alias of {@link formatPercentage}).
+ */
+export function formatPercent(value: number, decimals: number = 1): string {
+  return formatPercentage(value, decimals);
 }
 
 /**
@@ -43,6 +64,13 @@ export function formatCompactNumber(value: number): string {
 }
 
 /**
+ * Format a number in compact form (alias of {@link formatCompactNumber}).
+ */
+export function formatCompact(value: number): string {
+  return formatCompactNumber(value);
+}
+
+/**
  * Format a number range
  */
 export function formatRange(
@@ -52,7 +80,7 @@ export function formatRange(
 ): string {
   switch (type) {
     case 'currency':
-      return `${formatCurrency(min, 0)}–${formatCurrency(max, 0)}`;
+      return `${formatCurrency(min, 'USD', 'en-US', 0)}–${formatCurrency(max, 'USD', 'en-US', 0)}`;
     case 'percentage':
       return `${formatPercentage(min)}–${formatPercentage(max)}`;
     case 'number':

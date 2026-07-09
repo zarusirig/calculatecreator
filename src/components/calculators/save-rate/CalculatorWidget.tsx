@@ -20,7 +20,6 @@ export function SaveRateCalculatorWidget() {
 
   const [results, setResults] = useState<SaveRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof SaveRateInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +39,16 @@ export function SaveRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateSaveRate(inputs);
-      setResults(result);
+    const result = calculateSaveRate(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'save-rate',
-        { ...inputs },
-        { saveRate: result.saveRate, contentValueRating: result.contentValueRating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'save-rate',
+      { ...inputs },
+      { saveRate: result.saveRate, contentValueRating: result.contentValueRating }
+    );
   };
 
   return (
@@ -93,7 +87,6 @@ export function SaveRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Save Rate

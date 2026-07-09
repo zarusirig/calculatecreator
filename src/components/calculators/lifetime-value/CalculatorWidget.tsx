@@ -4,9 +4,11 @@ import React, { useState } from 'react';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
+import { ResultsDisplay, type ResultListRow } from '@/components/calculator/ResultsDisplay';
 import { calculateLTV, validateLTVInput } from '@/lib/calculators/lifetime-value';
 import type { LTVInput, LTVResult } from '@/types/calculator';
 import { trackCalculation } from '@/lib/analytics/ga4';
+import { formatCurrency } from '@/lib/utils/format';
 
 export function LifetimeValueCalculatorWidget() {
   const [inputs, setInputs] = useState<LTVInput>({
@@ -17,7 +19,6 @@ export function LifetimeValueCalculatorWidget() {
 
   const [results, setResults] = useState<LTVResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof LTVInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -37,14 +38,35 @@ export function LifetimeValueCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateLTV(inputs);
-      setResults(result);
-      trackCalculation('lifetime-value', { ...inputs }, { ltv: result.ltv });
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateLTV(inputs);
+    setResults(result);
+    trackCalculation('lifetime-value', { ...inputs }, { ltv: result.ltv });
   };
+
+  const rows: ResultListRow[] = results
+    ? [
+        {
+          label: 'Customer Lifetime Value',
+          value: formatCurrency(results.ltv, 'USD', 'en-US', 2),
+          hint: 'Total value per customer',
+        },
+        {
+          label: 'Monthly Value per Customer',
+          value: formatCurrency(results.monthlyValue, 'USD', 'en-US', 2),
+          hint: 'Average revenue per customer per month',
+        },
+        {
+          label: 'Total Revenue Over Lifetime',
+          value: formatCurrency(results.totalRevenue, 'USD', 'en-US', 2),
+          hint: 'Expected total purchases from one customer',
+        },
+        {
+          label: 'Maximum CAC (at 3:1 ratio)',
+          value: formatCurrency(results.ltv / 3, 'USD', 'en-US', 2),
+          hint: 'You can spend up to this amount to acquire a customer profitably',
+        },
+      ]
+    : [];
 
   return (
     <Card className="lg:sticky lg:top-24 h-fit">
@@ -100,7 +122,6 @@ export function LifetimeValueCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate LTV
@@ -108,45 +129,11 @@ export function LifetimeValueCalculatorWidget() {
 
       {results && (
         <div className="mt-6 space-y-4">
-          <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-success-50 rounded-xl border-2 border-primary-200">
-            <p className="text-label-lg text-neutral-600 mb-2">Customer Lifetime Value</p>
-            <p className="text-display-md font-bold text-primary-600">
-              ${results.ltv.toFixed(2)}
-            </p>
-            <p className="text-body-sm text-neutral-600 mt-2">
-              Total value per customer
-            </p>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Monthly Value per Customer</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${results.monthlyValue.toFixed(2)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Average revenue per customer per month</p>
-          </div>
-
-          <div className="p-4 bg-white rounded-lg border border-neutral-200">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-600">Total Revenue Over Lifetime</span>
-              <span className="text-heading-md font-semibold text-neutral-900">
-                ${results.totalRevenue.toFixed(2)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-500">Expected total purchases from one customer</p>
-          </div>
-
-          <div className="p-4 bg-success-50 border-2 border-success-300 rounded-lg">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-label-md text-neutral-700">Maximum CAC (at 3:1 ratio)</span>
-              <span className="text-heading-md font-semibold text-success-700">
-                ${(results.ltv / 3).toFixed(2)}
-              </span>
-            </div>
-            <p className="text-body-xs text-neutral-600">You can spend up to this amount to acquire a customer profitably</p>
-          </div>
+          <ResultsDisplay
+            subtype="list"
+            title="Your LTV Results"
+            rows={rows}
+          />
 
           {results.interpretation && (
             <div className="p-4 bg-neutral-50 rounded-lg">

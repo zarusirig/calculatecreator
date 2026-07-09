@@ -20,7 +20,6 @@ export function ShareRatioCalculatorWidget() {
 
   const [results, setResults] = useState<ShareRatioResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof ShareRatioInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +39,16 @@ export function ShareRatioCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateShareRatio(inputs);
-      setResults(result);
+    const result = calculateShareRatio(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'share-ratio',
-        { ...inputs },
-        { shareRatio: result.shareRatio, viralityRating: result.viralityRating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'share-ratio',
+      { ...inputs },
+      { shareRatio: result.shareRatio, viralityRating: result.viralityRating }
+    );
   };
 
   return (
@@ -93,7 +87,6 @@ export function ShareRatioCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Share Ratio

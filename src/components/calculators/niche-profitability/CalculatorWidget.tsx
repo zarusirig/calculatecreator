@@ -26,7 +26,6 @@ export function NicheProfitabilityCalculatorWidget() {
 
   const [results, setResults] = useState<NicheProfitabilityResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof NicheProfitabilityInput, value: string | number) => {
     const processedValue = field === 'niche'
@@ -49,21 +48,16 @@ export function NicheProfitabilityCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateNicheProfitability(inputs);
-      setResults(result);
+    const result = calculateNicheProfitability(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'niche-profitability',
-        { ...inputs },
-        { estimatedMonthlyEarnings: result.estimatedMonthlyEarnings.min }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'niche-profitability',
+      { ...inputs },
+      { estimatedMonthlyEarnings: result.estimatedMonthlyEarnings.min }
+    );
   };
 
   const nicheOptions = [
@@ -142,7 +136,6 @@ export function NicheProfitabilityCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Profitability

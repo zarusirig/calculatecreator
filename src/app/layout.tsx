@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Fraunces, Manrope, IBM_Plex_Mono } from 'next/font/google';
 import '@/styles/globals.css';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
@@ -6,6 +7,32 @@ import { Footer } from '@/components/layout/Footer';
 import { WebVitals } from '@/components/performance/WebVitals';
 import { ErrorBoundary } from '@/components/error/ErrorBoundary';
 import { CookieConsent } from '@/components/consent/CookieConsent';
+
+// Self-hosted fonts via next/font — eliminates the render-blocking Google
+// Fonts @import (PERF-1) and the fonts.googleapis.com/fonts.gstatic.com
+// round-trip. CSS variables are consumed by globals.css (--font-body /
+// --font-display / --font-mono) and the Tailwind fontFamily config, so all
+// existing class/variable references keep working unchanged.
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  display: 'swap',
+  variable: '--font-fraunces',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-manrope',
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  display: 'swap',
+  variable: '--font-ibm-plex-mono',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -45,7 +72,7 @@ export const metadata: Metadata = {
         url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp',
         width: 1200,
         height: 630,
-        alt: 'TikTok Creator Calculator - Free Earnings & Analytics Tools',
+        alt: 'TT Calculator - Free Earnings & Analytics Tools',
       },
     ],
   },
@@ -67,7 +94,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${manrope.variable} ${ibmPlexMono.variable}`}
+    >
       <head>
         {/* Favicon & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -79,6 +109,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
       </head>
       <body className="font-sans text-neutral-900">
+        <a href="#main" className="skip-link">Skip to content</a>
 
         {/* Service Worker Registration */}
         <Script id="service-worker" strategy="afterInteractive">
@@ -99,7 +130,7 @@ export default function RootLayout({
         <div className="relative z-10 flex min-h-screen flex-col">
           <Header />
           <ErrorBoundary>
-            <main className="relative flex-1">{children}</main>
+            <main id="main" className="relative flex-1">{children}</main>
           </ErrorBoundary>
           <Footer />
           <WebVitals />

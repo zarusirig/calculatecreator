@@ -30,6 +30,15 @@ export function SelectField({
     onChange(e.target.value);
   };
 
+  // Accessibility: wire the select to its helper/error text via aria-describedby.
+  // Only reference ids that are actually rendered (helper is hidden when error is shown).
+  const describedBy = [
+    helperText && !error ? `${id}-helper` : null,
+    error ? `${id}-error` : null,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
     <div className="mb-4">
       <label htmlFor={id} className="label">
@@ -43,6 +52,8 @@ export function SelectField({
         onChange={handleChange}
         required={required}
         disabled={disabled}
+        aria-invalid={Boolean(error)}
+        aria-describedby={describedBy || undefined}
         className={cn(
           'input appearance-none bg-white bg-[url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3e%3cpolyline points=\'6 9 12 15 18 9\'%3e%3c/polyline%3e%3c/svg%3e")] bg-[length:1.5em_1.5em] bg-[right_0.5rem_center] bg-no-repeat pr-10',
           error && 'input-error',
@@ -58,11 +69,11 @@ export function SelectField({
       </select>
 
       {helperText && !error && (
-        <p className="helper-text">{helperText}</p>
+        <p id={`${id}-helper`} className="helper-text">{helperText}</p>
       )}
 
       {error && (
-        <p className="error-text flex items-center space-x-1">
+        <p id={`${id}-error`} className="error-text flex items-center space-x-1">
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"

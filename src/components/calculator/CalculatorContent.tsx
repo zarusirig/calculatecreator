@@ -29,7 +29,7 @@ export function WhyItMatters({
 }: WhyItMattersProps) {
   return (
     <Card>
-      <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+      <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-4">
         {title || `Why ${metricName} Matters`}
       </h2>
       <div className="space-y-4 text-body-md text-neutral-700">
@@ -78,7 +78,7 @@ export function HowToImprove({
 }: HowToImproveProps) {
   return (
     <Card>
-      <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+      <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-4">
         {title || `How to Improve Your ${metricName}`}
       </h2>
       {intro && (
@@ -94,7 +94,7 @@ export function HowToImprove({
               {tip.icon || (index + 1)}
             </div>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-1">{tip.title}</h3>
+              <h3 className="font-display font-bold text-neutral-900 mb-1">{tip.title}</h3>
               <p className="text-body-sm text-neutral-700">{tip.description}</p>
             </div>
           </div>
@@ -140,7 +140,7 @@ export function RealExample({
 }: RealExampleProps) {
   return (
     <Card>
-      <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+      <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-4">
         {title}
       </h2>
       <p className="text-body-md text-neutral-700 mb-4 leading-relaxed">{scenario}</p>
@@ -148,7 +148,7 @@ export function RealExample({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Inputs */}
         <div className="p-4 bg-neutral-50 rounded-lg">
-          <h3 className="text-label-md font-semibold text-neutral-900 mb-3">Inputs</h3>
+          <h3 className="text-label-md font-display font-bold text-neutral-900 mb-3">Inputs</h3>
           <div className="space-y-2">
             {inputs.map((input, index) => (
               <div key={index} className="flex justify-between text-body-sm">
@@ -161,7 +161,7 @@ export function RealExample({
 
         {/* Result */}
         <div className="p-4 bg-primary-50 rounded-lg border border-primary-200">
-          <h3 className="text-label-md font-semibold text-neutral-900 mb-3">Result</h3>
+          <h3 className="text-label-md font-display font-bold text-neutral-900 mb-3">Result</h3>
           <div className="text-center">
             <p className="text-display-sm font-bold text-primary-600">{result.value}</p>
             <p className="text-body-sm text-neutral-700">{result.label}</p>
@@ -223,7 +223,7 @@ export function BenchmarksSection({
 }: BenchmarksSectionProps) {
   return (
     <Card>
-      <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+      <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-4">
         {title || `${metricName} Benchmarks`}
       </h2>
       {intro && (
@@ -276,7 +276,7 @@ export function FormulaExplanation({
 }: FormulaExplanationProps) {
   return (
     <Card>
-      <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">{title}</h2>
+      <h2 className="text-heading-lg font-display font-bold text-neutral-900 mb-4">{title}</h2>
 
       {/* Formula Display */}
       <div className="p-4 bg-neutral-900 rounded-lg mb-4">
@@ -289,7 +289,7 @@ export function FormulaExplanation({
 
       {variables && variables.length > 0 && (
         <div className="p-4 bg-neutral-50 rounded-lg">
-          <h3 className="text-label-md font-semibold text-neutral-900 mb-3">Variables Explained</h3>
+          <h3 className="text-label-md font-display font-bold text-neutral-900 mb-3">Variables Explained</h3>
           <div className="space-y-2">
             {variables.map((variable, index) => (
               <div key={index} className="flex items-start space-x-3">
@@ -323,7 +323,7 @@ export interface QuickFactsProps {
 export function QuickFacts({ title = 'Quick Facts', facts }: QuickFactsProps) {
   return (
     <Card className="bg-gradient-to-br from-primary-50 to-secondary-50 border-primary-200">
-      <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">{title}</h2>
+      <h2 className="text-heading-md font-display font-bold text-neutral-900 mb-4">{title}</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {facts.map((fact, index) => (
           <div key={index} className="text-center p-3 bg-white rounded-lg shadow-sm">
@@ -356,7 +356,7 @@ export interface RelatedResourcesProps {
 export function RelatedResources({ title = 'Related Resources', resources }: RelatedResourcesProps) {
   return (
     <Card>
-      <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">{title}</h2>
+      <h2 className="text-heading-md font-display font-bold text-neutral-900 mb-4">{title}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {resources.map((resource, index) => (
           <Link
@@ -366,7 +366,7 @@ export function RelatedResources({ title = 'Related Resources', resources }: Rel
           >
             <span className="text-2xl flex-shrink-0">{resource.icon}</span>
             <div>
-              <h3 className="font-semibold text-neutral-900 mb-1">{resource.title}</h3>
+              <h3 className="font-display font-bold text-neutral-900 mb-1">{resource.title}</h3>
               <p className="text-body-sm text-neutral-600">{resource.description}</p>
               <span className="inline-block mt-2 text-label-sm text-primary-600 font-medium">
                 {resource.type === 'calculator' && 'Use Calculator →'}

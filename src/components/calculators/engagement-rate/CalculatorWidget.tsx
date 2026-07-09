@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { InputField } from '@/components/ui/InputField';
 import { ResultsDisplay } from '@/components/calculator/ResultsDisplay';
+import { formatPercent } from '@/lib/utils/format';
 import {
   calculateEngagementRate,
   validateEngagementRateInput,
@@ -23,7 +24,6 @@ export function EngagementRateCalculatorWidget() {
 
   const [results, setResults] = useState<EngagementRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof EngagementRateInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -43,17 +43,13 @@ export function EngagementRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
-    setTimeout(() => {
-      const result = calculateEngagementRate(inputs);
-      setResults(result);
-      trackCalculation(
-        'engagement-rate',
-        { ...inputs },
-        { rate: result.rate, rating: result.rating }
-      );
-      setIsCalculating(false);
-    }, 500);
+    const result = calculateEngagementRate(inputs);
+    setResults(result);
+    trackCalculation(
+      'engagement-rate',
+      { ...inputs },
+      { rate: result.rate, rating: result.rating }
+    );
   };
 
   return (
@@ -119,7 +115,6 @@ export function EngagementRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Engagement Rate
@@ -154,7 +149,7 @@ export function EngagementRateCalculatorWidget() {
                     <Heart size={16} className="text-primary-600" /> Likes
                   </span>
                   <span className="font-semibold text-neutral-900">
-                    {results.additionalMetrics.likesPercentage}%
+                    {formatPercent(Number(results.additionalMetrics.likesPercentage), 0)}
                   </span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-neutral-200">
@@ -162,7 +157,7 @@ export function EngagementRateCalculatorWidget() {
                     <MessageCircle size={16} className="text-primary-600" /> Comments
                   </span>
                   <span className="font-semibold text-neutral-900">
-                    {results.additionalMetrics.commentsPercentage}%
+                    {formatPercent(Number(results.additionalMetrics.commentsPercentage), 0)}
                   </span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-white rounded-lg border border-neutral-200">
@@ -170,7 +165,7 @@ export function EngagementRateCalculatorWidget() {
                     <RefreshCw size={16} className="text-primary-600" /> Shares
                   </span>
                   <span className="font-semibold text-neutral-900">
-                    {results.additionalMetrics.sharesPercentage}%
+                    {formatPercent(Number(results.additionalMetrics.sharesPercentage), 0)}
                   </span>
                 </div>
               </div>

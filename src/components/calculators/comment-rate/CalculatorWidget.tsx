@@ -20,7 +20,6 @@ export function CommentRateCalculatorWidget() {
 
   const [results, setResults] = useState<CommentRateResult | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isCalculating, setIsCalculating] = useState(false);
 
   const handleInputChange = (field: keyof CommentRateInput, value: string | number) => {
     setInputs((prev) => ({ ...prev, [field]: typeof value === 'string' ? parseFloat(value) || 0 : value }));
@@ -40,21 +39,16 @@ export function CommentRateCalculatorWidget() {
       return;
     }
 
-    setIsCalculating(true);
     setErrors({});
 
-    setTimeout(() => {
-      const result = calculateCommentRate(inputs);
-      setResults(result);
+    const result = calculateCommentRate(inputs);
+    setResults(result);
 
-      trackCalculation(
-        'comment-rate',
-        { ...inputs },
-        { commentRate: result.commentRate, engagementRating: result.engagementRating }
-      );
-
-      setIsCalculating(false);
-    }, 500);
+    trackCalculation(
+      'comment-rate',
+      { ...inputs },
+      { commentRate: result.commentRate, engagementRating: result.engagementRating }
+    );
   };
 
   return (
@@ -93,7 +87,6 @@ export function CommentRateCalculatorWidget() {
         variant="primary"
         size="lg"
         onClick={handleCalculate}
-        isLoading={isCalculating}
         className="w-full mt-6"
       >
         Calculate Comment Rate
