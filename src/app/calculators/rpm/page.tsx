@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/rpm/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
     description:
       'Calculate your TikTok RPM and estimate earnings per 1,000 views. Compare your performance to industry benchmarks.',

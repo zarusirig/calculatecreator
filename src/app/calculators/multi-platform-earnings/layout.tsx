@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Platform Earnings Comparison 2026',
     description: 'Compare earnings across TikTok, YouTube & Instagram.',
     url: 'https://tiktokcalculator.net/calculators/multi-platform-earnings/',

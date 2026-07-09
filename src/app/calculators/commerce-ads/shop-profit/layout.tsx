@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Shop Commission Calculator 2026',
     description: 'Calculate TikTok Shop affiliate earnings and commissions.',
     url: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/utility-tools/tax/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Creator Tax Calculator 2026',
     description: 'Estimate tax obligations on TikTok creator income.',
     url: 'https://tiktokcalculator.net/calculators/utility-tools/tax/',

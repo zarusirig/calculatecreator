@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/campaign-roi/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Campaign ROI Calculator 2026',
     description: 'Calculate marketing campaign ROI and ROAS on TikTok.',
     url: 'https://tiktokcalculator.net/calculators/campaign-roi/',

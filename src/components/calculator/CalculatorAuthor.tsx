@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { AuthorBio } from '@/components/eeat/AuthorBio';
 import { ReviewBadge } from '@/components/eeat/ReviewBadge';
 import { PersonSchema } from '@/components/seo/CalculatorSchema';
-import { getAuthor } from '@/lib/constants/authors';
+import { AUTHORS, getAuthor } from '@/lib/constants/authors';
 import { getPageMetadata, getDefaultPageMetadata } from '@/lib/constants/page-metadata';
 
 export interface CalculatorAuthorProps {
@@ -36,6 +36,10 @@ export function CalculatorAuthor({
   const displayDate = lastUpdated || metadata.reviewDate;
 
   if (!author) return null;
+
+  // Link author attribution to the author's own profile page when a static
+  // /authors/<id>/ page exists; fall back to /about/ otherwise.
+  const authorProfileUrl = AUTHORS[author.id] ? `/authors/${author.id}/` : '/about/';
 
   // Compact variant - inline byline
   if (variant === 'compact') {
@@ -76,7 +80,7 @@ export function CalculatorAuthor({
               />
             )}
             <Link
-              href="/about/"
+              href={authorProfileUrl}
               className="text-body-xs text-primary-600 hover:text-primary-700 font-medium"
             >
               Meet Our Team →
@@ -138,7 +142,7 @@ export function CalculatorAuthor({
         {/* Meet the Team Link */}
         <div className="flex items-center justify-center">
           <Link
-            href="/about/"
+            href={authorProfileUrl}
             className="inline-flex items-center space-x-2 text-primary-600 hover:text-primary-700 font-medium"
           >
             <span>Meet Our Full Team</span>

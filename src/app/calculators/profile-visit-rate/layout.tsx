@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/profile-visit-rate/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Profile Visit Calculator 2026',
     description: 'Calculate profile visit rate from video views.',
     url: 'https://tiktokcalculator.net/calculators/profile-visit-rate/',

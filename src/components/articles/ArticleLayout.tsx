@@ -24,6 +24,15 @@ function formatDate(dateStr: string): string {
   });
 }
 
+/**
+ * Collapse repeated slashes in an internal path (while preserving the
+ * protocol's '://') so concatenating a base that already ends in '/'
+ * with another '/' cannot produce a double-slash 404 URL.
+ */
+function normalizeInternalHref(href: string): string {
+  return href.replace(/([^:]\/)\/+/g, '$1');
+}
+
 function buildBreadcrumbItems(section: string, frontmatter: ArticleFrontmatter) {
   const segments = section.split('/');
   const items: { label: string; href: string }[] = [];
@@ -188,6 +197,10 @@ export function ArticleLayout({
   const schemaItems = buildSchemaItems(section, frontmatter);
   const resolvedAuthor = resolveAuthorFromFrontmatter(frontmatter.author);
 
+  // Normalize so a parentCalculator value that already ends in '/'
+  // (e.g. '/calculators/tiktok-money/') does not yield a double slash.
+  const calculatorHref = normalizeInternalHref(`${frontmatter.parentCalculator ?? ''}/`);
+
   // Build social links for sameAs
   const sameAs = [
     resolvedAuthor.socialLinks?.tiktok,
@@ -202,6 +215,7 @@ export function ArticleLayout({
         headline={frontmatter.title}
         description={frontmatter.metaDescription}
         url={canonicalUrl}
+        image={frontmatter.featuredImage ? `https://tiktokcalculator.net${frontmatter.featuredImage}` : 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp'}
         datePublished={frontmatter.publishDate}
         dateModified={frontmatter.updatedDate || frontmatter.publishDate}
         keywords={[frontmatter.primaryKeyword, ...frontmatter.secondaryKeywords]}
@@ -283,7 +297,7 @@ export function ArticleLayout({
                   </p>
                 </div>
                 <Link
-                  href={`${frontmatter.parentCalculator}/`}
+                  href={calculatorHref}
                   className="flex-shrink-0 btn-primary px-4 py-2 rounded-lg text-body-sm font-medium"
                 >
                   Open Calculator <ArrowRight size={16} className="ml-1 inline" />
@@ -327,7 +341,7 @@ export function ArticleLayout({
                 See a directional estimate based on your follower count, views, niche, and inputs.
               </p>
               <Link
-                href={`${frontmatter.parentCalculator}/`}
+                href={calculatorHref}
                 className="btn-primary px-6 py-3 rounded-lg text-body-md font-medium inline-flex items-center gap-2"
               >
                 Open Calculator <ArrowRight size={18} />

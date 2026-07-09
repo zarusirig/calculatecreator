@@ -1,28 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { AUTHORS, type Author } from '@/lib/constants/authors';
+import { AUTHORS } from '@/lib/constants/authors';
 import { PAGE_METADATA } from '@/lib/constants/page-metadata';
 import { CALCULATOR_SCHEMAS } from '@/lib/seo/calculator-schemas';
-import { PersonSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { AuthorPersonSchema } from '@/lib/eeat/page-eeat';
 
 const AUTHOR_SLUGS = Object.keys(AUTHORS);
 
 export function generateStaticParams() {
   return AUTHOR_SLUGS.map((authorSlug) => ({ authorSlug }));
-}
-
-function countWords(value: string): number {
-  return value.trim().split(/\s+/).filter(Boolean).length;
-}
-
-function estimatedAuthorWordCount(author: Author): number {
-  return countWords(
-    [
-      author.bio,
-      ...author.credentials,
-      ...author.expertise,
-    ].join(' ')
-  );
 }
 
 export function generateMetadata({
@@ -34,7 +21,6 @@ export function generateMetadata({
   if (!author) {
     return { title: 'Author Not Found' };
   }
-  const isThinAuthorProfile = estimatedAuthorWordCount(author) < 300;
   return {
     title: `${author.name} — ${author.role} | TT Calculator`,
     description: author.bio,
@@ -42,8 +28,8 @@ export function generateMetadata({
       canonical: `https://tiktokcalculator.net/authors/${params.authorSlug}/`,
     },
     robots: {
-      index: false,
-      follow: !isThinAuthorProfile,
+      index: true,
+      follow: true,
     },
   };
 }
@@ -117,25 +103,11 @@ export default function AuthorPage({
   const authoredPages = pages.filter((p) => p.role === 'author');
   const reviewedPages = pages.filter((p) => p.role === 'reviewer');
 
-  const sameAs = [
-    author.socialLinks?.tiktok,
-    author.socialLinks?.twitter,
-    author.socialLinks?.linkedin,
-  ].filter(Boolean) as string[];
-
   return (
     <>
-      <PersonSchema
-        name={author.name}
-        jobTitle={author.role}
-        description={author.bio}
+      <AuthorPersonSchema
+        author={author}
         url={`https://tiktokcalculator.net/authors/${author.id}/`}
-        sameAs={sameAs.length > 0 ? sameAs : undefined}
-        knowsAbout={author.expertise}
-        affiliation={{
-          name: 'TT Calculator',
-          url: 'https://tiktokcalculator.net',
-        }}
       />
       <BreadcrumbSchema
         items={[

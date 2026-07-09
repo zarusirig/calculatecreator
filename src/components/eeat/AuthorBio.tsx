@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
+import { AUTHORS } from '@/lib/constants/authors';
 import type { Author } from '@/lib/constants/authors';
 
 export interface AuthorBioProps {
@@ -16,6 +17,10 @@ export function AuthorBio({
   showCredentials = true,
   showExpertise = true,
 }: AuthorBioProps) {
+  // Link to the author's own profile page when a static /authors/<id>/
+  // page exists; fall back to /about/ for team/default profiles.
+  const authorProfileUrl = AUTHORS[author.id] ? `/authors/${author.id}/` : '/about/';
+
   if (variant === 'inline') {
     return (
       <div className="flex items-center space-x-3 text-body-sm text-neutral-700">
@@ -41,7 +46,7 @@ export function AuthorBio({
         <div className="flex-1 min-w-0">
           <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
             {author.authorUrl ? (
-              <Link href={author.authorUrl} className="hover:text-primary-600 transition-colors">
+              <Link href={authorProfileUrl} className="hover:text-primary-600 transition-colors">
                 {author.name}
               </Link>
             ) : (

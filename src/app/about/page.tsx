@@ -19,6 +19,7 @@ const organizationSchema = {
   logo: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
   description:
     'TT Calculator helps creators estimate, compare, and benchmark earnings and performance metrics with transparent assumptions.',
+  // TODO: add real social profiles
   sameAs: [],
   contactPoint: [
     {

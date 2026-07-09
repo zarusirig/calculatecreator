@@ -1,0 +1,880 @@
+{
+  "audit": "Full In-Depth SEO Audit",
+  "property": "https://tiktokcalculator.net",
+  "date": "2026-07-09",
+  "method": "Semantic-SEO (Koray) + full technical/on-page/off-page; 7 parallel sub-audits + Ahrefs off-page + live curl",
+  "caveats": [
+    "No first-party Google Search Console data (Ahrefs workspace has no verified project for this domain) — verify GSC.",
+    "Core Web Vitals are lab/heuristic only (no CrUX/PSI field data).",
+    "Some findings marked \"suspected\" in part files need a confirmation pass."
+  ],
+  "summary_counts": {
+    "total": 86,
+    "Critical": 4,
+    "High": 21,
+    "Medium": 31,
+    "Low": 30
+  },
+  "findings": [
+    {
+      "id": "IL-1",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Critical",
+      "effort": "S",
+      "title": "252 \"Open Calculator\" CTAs are broken double-slash 404s",
+      "impact": "The primary conversion CTA on blog/news/author pages points to a URL with a trailing double slash (/calculators/tiktok-money//). Firebase serves out/<path>//index.html, which does not exist → 404 (or at best a normalization redirect). PageRank is dumped into a dead URL and users hitting the money CTA land on an error page.",
+      "fix": "Single-root-cause bug — a CTA template concatenates basePath + \"/\" + slug + \"/\" where basePath or slug already carries a slash. Find the component that renders the \"Open Calculator\" button (grep the calculator-slug join in blog/news/author templates), normalize with a /\\/{2,}/ → / collapse or path.posix.join, and rebuild. One fix clears all 252."
+    },
+    {
+      "id": "OFF-1",
+      "dimension": "off-page-authority",
+      "part_file": "reports/audit-parts/08-offpage-authority.md",
+      "severity": "Critical",
+      "effort": "M",
+      "title": "Backlink profile is spam/PBN-dominated — likely purchased cheap-SEO packages",
+      "impact": "Association with link schemes violates Google's link-spam policy. At best these links are ignored (wasted); at worst they contribute to algorithmic distrust that suppresses the whole site. This is the most plausible single explanation for DR 0 + 0 organic traffic despite 314 refdomains and 300+ pages of content.",
+      "fix": "(1) Export the full referring-domains list from Ahrefs/GSC. (2) Build and submit a disavow file covering the spam/PBN domains (all is_spam:true + the *-seo.site, *.agency, *.shop clusters). (3) STOP buying any Fiverr/PBN link packages. (4) If a Google manual action exists, file reconsideration after disavow. (5) Pursue legitimate links instead (see OFF-3)."
+    },
+    {
+      "id": "OFF-2",
+      "dimension": "off-page-authority",
+      "part_file": "reports/audit-parts/08-offpage-authority.md",
+      "severity": "Critical",
+      "effort": "M",
+      "title": "Toxic / spam anchor-text profile",
+      "impact": "The anchor text pointing at the domain is dominated by spam sales-pitch phrases and off-topic (casino/crypto) terms — a strong link-scheme fingerprint and brand-safety problem.",
+      "fix": "Same disavow action as OFF-1 removes most toxic anchors. Going forward, earn descriptive editorial/branded anchors from real creator-economy / marketing publications."
+    },
+    {
+      "id": "QE-7",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Critical",
+      "effort": "S",
+      "title": "Creator Rewards RPM conflated with old Creator Fund rate ($0.02–$0.05) on 2 pages",
+      "impact": "Two pages state the CURRENT primary program pays 10–40x LESS than it does, directly contradicting canonical (CREATOR_REWARDS.RPM_MIN/MAX = 0.50–2.00) and the site's own other pages. This is a factually false core claim on money/monetization pages — the worst kind of E-E-A-T signal for a YMYL topic.",
+      "fix": "Rewrite both pages to separate the two programs: Creator Fund (legacy) $0.02–$0.05; Creator Rewards (current) $0.50–$2.00. Stop equating \"Creator Rewards = formerly Creator Fund pays $0.02–$0.05\"."
+    },
+    {
+      "id": "IL-2",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "High",
+      "effort": "S",
+      "title": "Site-wide footer links to 3 redirected hub URLs (2,121 extra-hop links)",
+      "impact": "Every one of the 353 content pages carries footer links to /benchmarks/, /comparisons/, and /reference/, all of which 301-redirect to their new /data/... homes. This forces a redirect hop on every internal crawl path to those hubs, dilutes/delays link-equity flow site-wide, and wastes crawl budget at scale.",
+      "fix": "Update the footer/global-nav component to point directly at the canonical destinations (/data/, /data/platform-comparisons/, /data/reference/). Three string edits in one shared layout component eliminate 2,121 redirect hops."
+    },
+    {
+      "id": "IL-3",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "4 built pages are shadowed by their own redirect (self-competing / crawl waste)",
+      "impact": "Four URLs exist as fully built pages in out/ AND are listed as redirect sources in firebase.json. Firebase evaluates redirects before static files, so these real pages are 301'd away and can never be served/indexed — the rendered HTML is dead weight, internal links to them hop, and the link-strategy code still references two of them.",
+      "fix": "Decide per URL — either (a) remove the redirect and keep the page canonical, or (b) delete the built page and its inbound links. For video-performance/watch-time, reconcile semantic-links.ts with the redirect intent (currently the code and Firebase disagree). Rebuild after resolving."
+    },
+    {
+      "id": "IL-5",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "High",
+      "effort": "S",
+      "title": "6 author pages are fully orphaned (no inbound links) — E-E-A-T signal loss",
+      "impact": "All six author-profile pages have zero inbound internal links, so PageRank never reaches them and crawlers can only find them via the sitemap. Bylines link to the generic /about/ page instead of the individual author entity, undermining author-entity / E-E-A-T signals that the site's \"desk\"/author framing is trying to establish.",
+      "fix": "Point article bylines and \"View full profile\" links to the specific /authors/<name>/ page; add an author index or link authors from /about/. This also lifts them out of the unreachable set."
+    },
+    {
+      "id": "MON-1",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "High",
+      "effort": "S",
+      "title": "CSP script-src / frame-src too narrow for AdSense runtime domains",
+      "impact": "revenue-policy — blocked ad fraud/quality scripts and iframes can suppress fill and throw console CSP violations once ads serve.",
+      "fix": "extend script-src with https://adservice.google.com https://partner.googleadservices.com https://*.adtrafficquality.google, extend frame-src with https://*.adtrafficquality.google https://fundingchoicesmessages.google.com, and add googletagmanager/google-analytics to img-src/connect-src if those directives are later added. (Currently no default-src/connect-src/img-src directives exist, so network/img/xhr are unrestricted — only script-src and frame-src bite.)"
+    },
+    {
+      "id": "MON-2",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "Consent uses a homegrown banner, not a Google-certified / IAB-TCF CMP",
+      "impact": "revenue-policy — Google AdSense requires a Google-certified CMP for serving personalized/non-personalized ads to EEA/UK/Switzerland users; a non-certified banner risks ad-serving suspension for that traffic.",
+      "fix": "replace or wrap with a Google-certified CMP (e.g. Google's own Funding Choices / Privacy & messaging, or a certified vendor) before enabling ads for EEA traffic; keep the existing Consent Mode v2 wiring as the signal layer."
+    },
+    {
+      "id": "OFF-3",
+      "dimension": "off-page-authority",
+      "part_file": "reports/audit-parts/08-offpage-authority.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "Essentially zero genuine editorial backlinks",
+      "impact": "Even setting spam aside, there is no authoritative editorial link equity, so the site has nothing to rank on in competitive creator-monetization SERPs.",
+      "fix": "Launch a legitimate link-earning program: (a) get listed in reputable creator-tool directories, (b) original data studies (e.g., \"TikTok creator earnings benchmarks 2026\") that journalists cite — the site already has data assets in content/data/ to package as linkable research, (c) HARO/expert-quote outreach, (d) partnerships with creator-economy newsletters."
+    },
+    {
+      "id": "OFF-4",
+      "dimension": "off-page-authority",
+      "part_file": "reports/audit-parts/08-offpage-authority.md",
+      "severity": "High",
+      "effort": "S",
+      "title": "Zero organic keyword footprint — indexation/visibility must be verified in GSC",
+      "impact": "0 organic keywords in Ahrefs means either the site is too new/low-authority to rank, is not (fully) indexed, or is being algorithmically suppressed. Cannot distinguish these without first-party data.",
+      "fix": "(1) Verify the property in Google Search Console and check Coverage/Pages report (indexed vs excluded counts) and Manual Actions/Security Issues. (2) Run site:tiktokcalculator.net to gauge index size. (3) Cross-reference with the indexation findings in the technical audit (Part 03). (4) Re-pull Ahrefs in 30–60 days to see if any keywords emerge after fixes."
+    },
+    {
+      "id": "OP-1",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "Templated, auto-generated meta descriptions on 151 pages (43% of site)",
+      "impact": "Near-identical machine-generated tails suppress SERP CTR and read as programmatically scaled content — a quality-signal risk on an AdSense site.",
+      "fix": "Replace the templated tail with page-specific value propositions (what the reader gets, one differentiating stat). Prioritize the ~110 blog/calculator/data indexable pages. Target 140–158 chars, unique lead clause per page."
+    },
+    {
+      "id": "PERF-1",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "Web fonts loaded via CSS @import from Google Fonts — render-blocking, no preconnect, 3 families",
+      "impact": "CWV — hurts LCP (render-blocking dependency chain) and CLS (FOUT swap across 3 families). Lab/heuristic.",
+      "fix": "self-host the fonts (or use next/font which inlines + preloads + size-adjust to kill FOUT/CLS), or at minimum move to <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin> + <link rel=\"stylesheet\"> in <head> instead of CSS @import, and trim weights to those actually used."
+    },
+    {
+      "id": "QE-1",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "Cannibalization cluster map (21 clusters)",
+      "impact": "Multiple URLs split link equity and relevance signals for the same head query; Google will pick one and may pick the wrong one, suppressing the intended money page.",
+      "fix": "Assign one canonical target per head query; convert the rest to supporting intents with differentiated titles/H1s, or consolidate + 301. Highest-priority merges: C5 (identical engagement-rate-by-niche), C6 (identical increase engagement), C18 (two diamond guides), C1/C4/C8 (biggest URL fan-out). Add rel=canonical from satellites to the chosen hub and re-point internal anchors to the canonical."
+    },
+    {
+      "id": "QE-11",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "TikTok Shop commission \"standard\" rate and max are inconsistent; two conflicting \"restructure\" announcements",
+      "impact": "The Shop-affiliate commission — core to all commerce calculators — has no consistent standard (5% / 10% / 5-15% / 8-10%) or ceiling (20% / 25%), and two blog posts announce mutually exclusive official changes (fabrication risk on a YMYL claim).",
+      "fix": "Standardize to canonical 5% standard / 2–20% range. Remove or reconcile the two contradictory \"restructure\" claims (verify against a real TikTok source or delete the fabricated specifics)."
+    },
+    {
+      "id": "QE-18",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "Two blog posts present contradictory \"official\" 2026 monetization changes (fabrication/E-E-A-T risk)",
+      "impact": "tiktok-new-features-2026 and new-tiktok-monetization-features-2026 (cluster C17) describe different, mutually exclusive official program changes with specific dates and percentages that cannot both be true — reads as fabricated data on a YMYL topic.",
+      "fix": "Verify each claimed change against a primary TikTok source; remove unverifiable specifics; merge the two posts."
+    },
+    {
+      "id": "QE-4",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "TikTok coin USD value stated 5 different ways across pages",
+      "impact": "The headline \"how much is a coin worth\" fact — the site's core calculator premise — is inconsistent; undermines trust and calculator credibility.",
+      "fix": "Replace every hardcoded coin value with the canonical $0.0106 (in-app)/$0.0105 (web); purge the \"66 coins for $0.99 / $0.015\" old-pricing block in tiktok-live-streaming-earnings-guide.mdx and creator-fund-vs-live-gifts.mdx."
+    },
+    {
+      "id": "QE-5",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "\"Universe\" gift coin cost: 34,999 vs 44,999 (contradicts canonical + 6 sibling pages)",
+      "impact": "The flagship \"most expensive gift\" fact is wrong on the main gifts hub, including in its meta description (indexed).",
+      "fix": "Standardize to canonical 34,999 (or add the 44,999 tier to creator-data.ts GIFTS if TikTok truly ships two — but then fix the 6 pages that omit it). Correct tiktok-gifts.mdx meta description."
+    },
+    {
+      "id": "QE-6",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "Same Universe gift → creator payout stated as $87.50 / $175 / $185.50 / $226 / $265",
+      "impact": "For the identical 34,999-coin gift, the \"what the creator earns\" number varies ~3x page-to-page — a glaring math inconsistency on money pages built around this exact calculation. Root cause: pages mix two incompatible formulas (\"50% of coin purchase price\" using different coin rates vs. \"coins→diamonds→USD\").",
+      "fix": "Pick ONE canonical gift-payout formula (recommend the coins→diamonds→USD path = coins × 0.0025, since diamond value is the fixed cash-out rate) and regenerate every gift payout figure and the GIFTS table in creator-data.ts to match. Reconcile giftCreatorPayout()."
+    },
+    {
+      "id": "QE-8",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "Creator Rewards / \"Creativity Program\" RPM otherwise ranges $0.40–$2.05 across pages",
+      "impact": "Even excluding QE-7, the current-program RPM is quoted as $0.40–$1.00, $0.50–$1.50, $0.50–$2.00, avg $1.05, up to $2.05 — no consistent range; also the program is named inconsistently (\"Creator Rewards\", \"Creativity Program\", \"TikTok Pulse\").",
+      "fix": "Standardize the range to canonical $0.50–$2.00 and the program name to \"Creator Rewards Program\" site-wide (note \"Creativity Program\" was the former name; use once as an alias, not as the primary term). Treat TikTok Pulse as a separate entity."
+    },
+    {
+      "id": "QE-9",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "Follower-tier boundaries contradict canonical on the majority of pages",
+      "impact": "The tier taxonomy (used for brand-deal pricing, engagement benchmarks, earnings estimates across dozens of pages) is inconsistent; the canonical FOLLOWER_TIERS (explicitly \"resolved\" in INC-003/Contradiction #8) is contradicted by the dominant content convention.",
+      "fix": "Decide the canonical taxonomy (recommend aligning content to the code, or vice-versa) and mass-correct tier labels/ranges. This is the single most widespread inconsistency."
+    },
+    {
+      "id": "SCH-1",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "244 Article/NewsArticle entities have no image property",
+      "impact": "Google's Article rich-result guidelines list image as a recommended (effectively required for the enhanced card) property. Without it, guides, blog posts, data pages, and news articles are ineligible for the richest Article/News presentation and lose thumbnail eligibility in Discover/News.",
+      "fix": "Pass a real image (absolute URL, ideally 1200px+ 16:9 or 1:1) to every Article/BlogPosting/NewsArticle. Reuse the page's OG image where a bespoke asset doesn't exist (SITE_CONFIG.ogImage as a last-resort fallback)."
+    },
+    {
+      "id": "SF-3",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "High",
+      "effort": "M",
+      "title": "Glossary / definitional entity layer is essentially absent",
+      "impact": "Removes the disambiguation + entity-definition base layer the strategy relies on; kills a planned internal-link tier (\"every calculator links to 2–3 glossary nodes\") and cedes definitional featured-snippet queries (\"what is RPM\", \"what is a diamond\").",
+      "fix": "Generate individual /glossary/[term]/ pages for core entities/metrics (RPM, CPM, diamond, coin, engagement rate, completion rate, GMV, Creator Rewards, Spark Ads, etc.) with Definition + Article schema, and wire calculator→glossary links."
+    },
+    {
+      "id": "SF-4",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "High",
+      "effort": "S",
+      "title": "Author / E-E-A-T \"outer section\" is orphaned from the sitemap",
+      "impact": "The supplementary author section — the Koray \"outer/author section\" that builds authorship authority — is undiscoverable to crawlers via the sitemap, suppressing E-E-A-T entity association between authors and the topic.",
+      "fix": "Add /authors/*, the missing blog post, and the two calculator hub pages to the sitemap generator; verify author pages carry Person schema and link to their bylined articles bidirectionally."
+    },
+    {
+      "id": "SF-5",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "High",
+      "effort": "L",
+      "title": "~26 of 43 calculator entities are attribute-orphans (tool page only, no Root/Rare/Unique articles)",
+      "impact": "Most calculator entities have no attribute/sub-topic coverage, so they cannot build topical authority around their own entity — the tool ranks alone with no supporting cluster, the opposite of the 8 well-built clusters.",
+      "fix": "Prioritize attribute articles for the highest-value orphans (live-gifts, multi-platform-earnings, affiliate-commission, cpm-cpv) — 3–5 Root/Rare attribute pages each (e.g., for live-gifts: gift→diamond conversion, gift value chart, LIVE earnings per hour, withdrawal). De-prioritize or merge the lowest-intent orphans (audience-overlap, cost-per-result, milestone-tracker)."
+    },
+    {
+      "id": "EEAT-1",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Organization sameAs is empty and layout author is a generic brand string",
+      "impact": "trust / E-E-A-T — weak entity verification for YMYL-adjacent creator-earnings content; no author-as-person signals.",
+      "fix": "populate Organization sameAs with real profiles (TikTok, LinkedIn, X, Wikidata/Crunchbase if any); ensure article/tool bylines resolve to real Person entities with credentials + sameAs, and that those persons are the ones referenced in JSON-LD author/reviewedBy."
+    },
+    {
+      "id": "IL-4",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Contextual + breadcrumb links to redirected calculator/legacy URLs (~104 links)",
+      "impact": "Beyond the footer big-3, ~104 in-content and breadcrumb links target redirected URLs, adding hops and pointing crawlers at pre-migration paths. Breadcrumb hops are especially bad because breadcrumbs define the canonical hierarchy.",
+      "fix": "Sweep contextual/breadcrumb hrefs and replace redirected sources with their canonical destinations; regenerate author-page and breadcrumb link sets from the current URL map rather than legacy slugs."
+    },
+    {
+      "id": "IL-6",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "27 pages at depth > 3 and 20 pages unreachable from the homepage",
+      "impact": "Deep/unreachable pages receive minimal internal PageRank and slower crawl/refresh. Several are commercially or topically important guides buried at depth 4–5.",
+      "fix": "Add contextual links from depth-1/2 hubs to the buried /guides/business/ and /guides/niches/ clusters; surface commerce/utility hubs in the calculators hub. Re-run BFS after IL-1/IL-2 fixes to confirm the ~11 non-orphan unreachables rejoin the graph."
+    },
+    {
+      "id": "IL-7",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "41 inner pages render no breadcrumb navigation",
+      "impact": "Breadcrumbs anchor silo hierarchy for both users and BreadcrumbList schema; missing them on inner pages weakens hierarchy signals and removes an internal-link path upward to hubs.",
+      "fix": "Ensure the breadcrumb component renders on every non-root template, especially calculator hub roots (/calculators/rpm/), news articles, and author pages; emit matching BreadcrumbList JSON-LD."
+    },
+    {
+      "id": "IL-8",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "115 incomplete hub↔spoke link pairs (silo integrity gaps)",
+      "impact": "In a hub-and-spoke silo, each hub should list its spokes and each spoke should link back to its hub. 115 of the parent/child pairs across 32 hub directories are missing one direction, leaving spokes under-linked and hubs not fully consolidating their cluster.",
+      "fix": "After fixing IL-1 and IL-7, re-run the hub-spoke check; then add explicit \"all articles in this cluster\" lists on hub pages and a \"part of <hub>\" backlink on every spoke. Cross-check against SEMANTIC_RELATIONSHIPS in semantic-links.ts so the intended graph is what actually renders."
+    },
+    {
+      "id": "IL-9",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "2 calculator hub pages are near-orphans (only linked from boilerplate)",
+      "impact": "/calculators/commerce-ads/ and /calculators/utility-tools/ receive no contextual inbound links — only footer/nav boilerplate — so they get little topical PageRank and read as disconnected mid-level hubs rather than integrated silo nodes.",
+      "fix": "Link these hubs contextually from the main /calculators/ hub and from sibling calculators (e.g., shop-profit, ad-cost content) with descriptive anchors."
+    },
+    {
+      "id": "OP-2",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "og:image missing on 52 indexable pages — including 48 calculator pages",
+      "impact": "Social/AI-surface shares of the core calculator tools render with no preview image, lowering click appeal on the site's most link-worthy pages.",
+      "fix": "Emit a default og:image (and og:url = canonical) in the shared layout so every page inherits at least the hero; ideally give calculator hubs a category-specific card."
+    },
+    {
+      "id": "OP-3",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "75 meta descriptions under 120 characters (21% of site)",
+      "impact": "Under-uses available SERP width; combined with OP-1 many are both short AND templated, doubling the weakness.",
+      "fix": "Expand to 140–158 chars while de-templating (fold into OP-1 rewrite pass)."
+    },
+    {
+      "id": "OP-4",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Generic Twitter Card metadata on 110 pages",
+      "impact": "X/Twitter (and some AI card renderers) show brand \"TT Calculator\" + a boilerplate description instead of the page-specific og:title, wasting the card's headline slot.",
+      "fix": "Default twitter:title/twitter:description to mirror og:title/og:description in the layout (remove the hardcoded brand string)."
+    },
+    {
+      "id": "PERF-2",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Large uncompressed JS payload incl. 110 KB legacy polyfills",
+      "impact": "CWV — TBT/INP and hydration cost, especially on interactive calculator pages. Lab/heuristic.",
+      "fix": "verify browserslist targets modern browsers so Next drops the legacy polyfill chunk; audit 2117 and fd9d1056 shared chunks for heavy libs that could be dynamically imported; ensure calculators hydrate only the interactive island rather than the whole page."
+    },
+    {
+      "id": "PERF-3",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Very large static HTML payloads (365 KB calculator page)",
+      "impact": "CWV — larger transfer + main-thread HTML/RSC parse before hydration. Lab/heuristic.",
+      "fix": "confirm gzip/brotli is active at the edge (Cloudflare/Firebase) — brotli would cut this ~4–5×; trim redundant/duplicate JSON-LD (e.g. multiple schema graphs), and reduce per-page schema to what earns rich results."
+    },
+    {
+      "id": "QE-10",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Creator Fund RPM upper bound: $0.04 vs $0.05 (and avg $0.03 vs $0.033)",
+      "impact": "Roughly half the pages cap the legacy Fund at $0.04, half at $0.05 (canonical CREATOR_FUND.RPM_MAX = 0.05); average given as both $0.03 and $0.033.",
+      "fix": "Standardize to canonical $0.02–$0.05, avg $0.03; sweep-replace $0.04 caps and $0.033 avg."
+    },
+    {
+      "id": "QE-12",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Diamond withdrawal minimum: $10 / 2,000 diamonds (canonical) vs $50 / 10,000 diamonds",
+      "impact": "Payout-threshold fact wrong on a LIVE-earnings page — directly misleads creators on when they can cash out.",
+      "fix": "Correct tiktok-live-streaming-earnings-guide.mdx to canonical tiered minimum and 5-15 day processing."
+    },
+    {
+      "id": "QE-13",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Max coin package price conflict ($65.99 vs $69.99) and legacy 16,500-coin package still present",
+      "impact": "Coin-purchase pages disagree on the largest package price and one page lists a package the canonical file says was removed (MAX_PURCHASE_COINS corrected from 16,500 → 6,607).",
+      "fix": "Standardize largest package to canonical 6,607 / $69.99; delete the 16,500 row or promote it to canonical if it genuinely exists (then update creator-data.ts)."
+    },
+    {
+      "id": "QE-14",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Platform average engagement rate: 4.07% (canonical) vs 4.4% vs 4-6% vs 2-4% vs 3-5%",
+      "impact": "The benchmark creators measure themselves against differs by page; canonical 4.07% is used cleanly in /data/ but contradicted in blog/guides.",
+      "fix": "Use canonical 4.07% wherever a single platform-average number is cited; where a band is needed, standardize one band."
+    },
+    {
+      "id": "QE-15",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Brand-deal per-follower rate inconsistent (and per-follower vs per-1,000 framings disagree)",
+      "impact": "Core brand-deal pricing input differs widely; the two dominant framings mathematically contradict each other.",
+      "fix": "Reconcile the two framings to one canonical baseline; if $10–$30/1,000 is the intended baseline, update PER_FOLLOWER_RATE to $0.01–$0.03 (or vice-versa) and sweep content."
+    },
+    {
+      "id": "QE-19",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Content dates are stale and never differentiated (publishDate == dateModified), ~5 months behind \"today\"",
+      "impact": "Every page shows an old, identical publish/modified date; no freshness signal despite \"2026\" evergreen positioning. Also inconsistent with the canonical audit narrative.",
+      "fix": "Set dateModified on substantively updated pages to a current date; align the site's date story (frontmatter vs schema vs canonical LAST_VERIFIED). Don't leave datePublished==dateModified on refreshed content."
+    },
+    {
+      "id": "QE-1a",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Duplicated blog/news \"algorithm change 2026\" pages are direct title twins",
+      "impact": "tiktok-algorithm-changes-2026 vs tiktok-algorithm-changes-2026-roundup are the same query with barely differentiated titles (\"TikTok Algorithm Changes in 2026: What Creators Need to Know\" vs \"How the TikTok Algorithm Changed in 2026 — Creator Impact\"); April + March update posts further fragment.",
+      "fix": "Keep tiktok-algorithm-explained as evergreen hub; make dated posts chronological updates that canonicalize/link up to it."
+    },
+    {
+      "id": "QE-2",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "16 legacy .md source files are near-duplicates of live .mdx pages (not built, but repo risk)",
+      "impact": "The content loader (src/lib/content/index.ts getMdxFiles(), lines 309-322 & 386) globs .mdx only, so these .md files are not built and not in the sitemap — but they are byte-for-byte topic duplicates of live pages sitting in the repo. Any loader change to include .md, or a stray link, would publish duplicate/cannibalizing content. They also pollute internal search/grep and author workflows.",
+      "fix": "Delete the orphan .md files (or move outside content/). Verify none are referenced by internal links before deletion."
+    },
+    {
+      "id": "SCH-2",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Medium",
+      "effort": "L",
+      "title": "Disconnected entity graph — no @graph, @id on only 34 of 1,117 entities",
+      "impact": "Each schema block is an isolated island. The author Person, the Article, the Organization publisher, and the BreadcrumbList on a given page are never linked by @id, so search engines cannot resolve that the article's author is the same entity described on the author page, or that the publisher is the site's Organization. This weakens entity/Knowledge-Graph consolidation and E-E-A-T attribution.",
+      "fix": "Adopt a single @graph per page (or consistent @id cross-references): give the site Organization a stable @id (https://tiktokcalculator.net/#organization), the WebSite #website, each author Person https://tiktokcalculator.net/authors/<id>/#person, and reference those @ids from Article.author, Article.publisher, and the standalone Person instead of duplicating inline objects."
+    },
+    {
+      "id": "SCH-3",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Author Person entities lack sameAs and image; Organization sameAs is empty",
+      "impact": "Person and Organization entities with no sameAs (social/authority links) and no image give Google no way to disambiguate or corroborate the entity, blunting author-authority and brand Knowledge-Graph signals — the core payoff of publishing Person schema for E-E-A-T.",
+      "fix": "Populate Organization.sameAs with the brand's real social/profile URLs (the site already has a footer TikTok reference). For authors, either add real sameAs profile URLs, or — since these are internal desks, not individuals — consider modeling them as Organization/team sub-entities and add an image (logo/avatar). At minimum give each author Person a stable @id and an image."
+    },
+    {
+      "id": "SCH-4",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Two calculator sub-hub pages lack BreadcrumbList and any primary page entity",
+      "impact": "These landing pages emit only FAQPage + Person + Organization — no SoftwareApplication, CollectionPage, or Article to describe what the page *is*, and no BreadcrumbList for breadcrumb rich results. They are structurally orphaned in the schema.",
+      "fix": "Add a BreadcrumbList and a primary entity appropriate to the page's role — CollectionPage + ItemList if it's a sub-category hub linking child calculators, or SoftwareApplication if it hosts a calculator. Confirm the FAQ block renders visibly."
+    },
+    {
+      "id": "SCH-5",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "News articles use Organization author, no Person byline, no image",
+      "impact": "For NewsArticle, Google strongly favors a named author (Person) and an image; an Organization-only author with no image weakens Top-Stories/News eligibility and E-E-A-T relative to the site's guides (which do attribute a Person).",
+      "fix": "Attribute news posts to a Person author (link by @id per SCH-2), add dateModified upkeep and an image. Normalize the 4 Organization-author guides to Person for consistency."
+    },
+    {
+      "id": "SF-1",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Brand / central-entity name is inconsistent across the stack",
+      "impact": "A fuzzy brand entity weakens entity consolidation and E-E-A-T; search engines see three different \"brand\" strings for one site, diluting the branded n-gram.",
+      "fix": "Standardize on one brand string that carries the entity token (e.g., \"TikTok Calculator\" / \"TikTokCalculator.net\"). Update site-config.ts name, retire calculatecreator.com references in region.md, and reflect the canonical brand in Organization schema."
+    },
+    {
+      "id": "SF-11",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Metrics entity coverage is scattered; dedicated /metrics node is a 1-file stub",
+      "impact": "Performance-metric entities (watch time, completion rate, save/share rate, comments-to-likes, follower growth) lack a coherent metrics cluster, so metric attribute content is dispersed and can't consolidate authority for the \"TikTok metrics/benchmarks\" intent.",
+      "fix": "Establish a metrics hub (reuse the engagement-rate guide as the parent), consolidate /data/engagement/* benchmark pages under it, and give each metric calculator 2–3 attribute pages (benchmark, by-niche, how-to-improve)."
+    },
+    {
+      "id": "SF-6",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "\"TikTok LIVE gifts\" entity is fragmented across 4 URL locations (weak topical border)",
+      "impact": "A 10K/mo primary-keyword sub-entity (planned as a 16-page cluster) has no single canonical hub; its attribute content does not ladder to its calculator, splitting internal PageRank and confusing the topical border between \"LIVE gifts\", \"diamonds\", and \"live earnings\".",
+      "fix": "Designate one canonical LIVE hub (e.g., /guides/tiktok-live/), point the live-gifts + diamond-converter calculators and the 7 live-earnings attribute pages to it, and set clear contextual borders (gifts vs diamonds vs cash-out) to avoid overlap."
+    },
+    {
+      "id": "SF-7",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Topical-map taxonomy drift — planned category hubs abandoned, map now stale",
+      "impact": "The documented topical map is no longer a faithful governance artifact; its category hubs (/comparisons, /reference, /niches) are near-empty stubs while real content moved elsewhere, so the map can't be used to detect gaps or borders.",
+      "fix": "Rewrite TOPICAL_MAP_COMPREHENSIVE.md to the as-built taxonomy (guides subfolders + data clusters) so it can govern future coverage; remove/redirect the abandoned near-empty category dirs."
+    },
+    {
+      "id": "SF-8",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Site is ~2× the documented plan with no updated map (unplanned sprawl → cannibalization risk)",
+      "impact": "Growth outran the topical map, creating suspected intra-topic cannibalization and no authoritative source of truth for what should exist.",
+      "fix": "Run a title/H1 + primary-keyword cannibalization pass across the 110 guides; merge or differentiate overlapping pairs; freeze new page creation to the updated map from SF-7."
+    },
+    {
+      "id": "SF-9",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Half-built localized /calculator/[lang]/ pages — thin, English shell, off-sitemap, path collision",
+      "impact": "Untranslated duplicate variants of the core calculator plus a /calculator vs /calculators path split create thin/duplicate-content and crawl-confusion risk around the site's most important tool.",
+      "fix": "Either fully localize (translated copy, hreflang, lang attr, localized rate tables per region.md) and add to sitemap, or remove the /calculator/[lang]/ pages and consolidate on the canonical English /calculators/ tool to avoid duplication."
+    },
+    {
+      "id": "TECH-1",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Medium",
+      "effort": "S",
+      "title": "Redirect chain: 2-hop 301 (A→B→C)",
+      "impact": "Wastes crawl budget and leaks a little link equity on every hit; the intermediate URL /guides/why-tiktok-earnings-low/ is both a redirect target AND a redirect source.",
+      "fix": "In firebase.json, repoint rule 36 destination directly to the final target /calculators/tiktok-money/why-tiktok-earnings-low/ so it is a single hop."
+    },
+    {
+      "id": "TECH-2",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Medium",
+      "effort": "M",
+      "title": "Author pages are noindex, nofollow and the /authors/ hub 404s",
+      "impact": "E-E-A-T author entities are invisible to search. Article bylines link to author pages that are non-indexable, and the parent hub returns 404, so authorship signals cannot be crawled or attributed.",
+      "fix": "Decide the author strategy. If authors are real E-E-A-T signals, make individual author pages index, follow, build an /authors/ hub page, and add both to the sitemap. If authors are not to be exposed, remove the byline links to avoid nofollow/404 dead-ends. At minimum, stop 404-ing /authors/."
+    },
+    {
+      "id": "IL-10",
+      "dimension": "internal-linking",
+      "part_file": "reports/audit-parts/06-internal-linking.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "Repetitive / exact-match anchor patterns on high-frequency links",
+      "impact": "A handful of anchors repeat at very high volume with identical text, and several are exact-match calculator names — mild over-optimization risk and reduced anchor diversity, though none are spammy keyword stuffing.",
+      "fix": "Diversify the highest-frequency exact-match anchors with natural variants (e.g., \"estimate your TikTok earnings\", \"creator-fund payout calculator\"); this is polish, not urgent."
+    },
+    {
+      "id": "MON-3",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Two divergent ad components; AdUnit bypasses the global enable flag",
+      "impact": "revenue-policy / correctness — risk of ads rendering without the intended master switch, and duplicated/hardcoded publisher ID.",
+      "fix": "consolidate on one component; make AdUnit also respect ADS_CONFIG.enabled and read the client ID from ADS_CONFIG.clientId instead of a hardcoded literal."
+    },
+    {
+      "id": "MON-4",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Ad infrastructure present but inactive; re-audit density when slots are enabled",
+      "impact": "revenue-policy — informational; guards against future \"ads-heavy / thin content\" exposure.",
+      "fix": "before activation, add slot IDs, confirm ≤ policy-reasonable ad density, and spot-check that tool pages meet content-depth after ads are inserted."
+    },
+    {
+      "id": "OFF-5",
+      "dimension": "off-page-authority",
+      "part_file": "reports/audit-parts/08-offpage-authority.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "No competitor benchmarking possible yet (context, not a defect)",
+      "impact": "With 0 organic keywords, Ahrefs cannot compute organic competitors, so competitive gap analysis must be done manually from target keywords rather than from overlap data.",
+      "fix": "Manually define the competitor set (e.g., other TikTok money/earnings calculators and creator-economy resources) and do a keyword-gap analysis against them via Keywords Explorer once priorities are set."
+    },
+    {
+      "id": "OP-10",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Google verification HTML file is indexable, thin, and metadata-less",
+      "impact": "/google4b06c114ba4c08d7 is the only indexable page that is missing a description, has 0 H1s, 8 words, and no canonical — a stray thin page Google could crawl.",
+      "fix": "Leave as-is (GSC needs it) but confirm it is not in the sitemap; optionally block via robots.txt path rule."
+    },
+    {
+      "id": "OP-5",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "Inconsistent brand-suffix handling across titles",
+      "impact": "Mixed brand naming (\"TikTok Calculator\" vs \"TT Calculator\" vs none) dilutes the brand signal and looks unsystematic in SERPs.",
+      "fix": "Adopt one convention (e.g. Primary Keyword | TikTok Calculator), apply consistently to indexable content pages; keep utility pages Purpose | TikTok Calculator."
+    },
+    {
+      "id": "OP-6",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Suspected heading-hierarchy skips on 33 indexable pages",
+      "impact": "H1→H3 (or H2→H4) jumps weaken document outline semantics for assistive tech and parsers. Low ranking impact.",
+      "fix": "Verify flagged templates; ensure each h3 is nested under an h2. Prioritize /calculators/, /data/, /blog/ hubs."
+    },
+    {
+      "id": "OP-7",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "og:url absent on 45 indexable pages",
+      "impact": "Missing og:url removes an explicit canonical hint for social/AI crawlers; page-level canonical link tags still present so risk is minor.",
+      "fix": "Populate og:url from the canonical in the shared layout (same fix as OP-2)."
+    },
+    {
+      "id": "OP-8",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Nine titles exceed 60 characters (2 exceed 70)",
+      "impact": "Likely pixel-truncation in SERPs; the homepage tail \"[2026]\" and desk labels get cut.",
+      "fix": "Trim to ≤60 chars, keeping the primary keyword in the leading 55."
+    },
+    {
+      "id": "OP-9",
+      "dimension": "on-page",
+      "part_file": "reports/audit-parts/04-onpage.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Author-page title redundancy",
+      "impact": "Titles repeat the desk name and brand twice; awkward but low impact since author pages are noindex.",
+      "fix": "Simplify to \"{Name} — {Desk} | TikTok Calculator\"; trim descriptions to ≤160. Low priority (noindex)."
+    },
+    {
+      "id": "PERF-4",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "1.46 MB raw hero-dashboard.png deployed, suspected unreferenced",
+      "impact": "CWV/deploy hygiene — wasted deploy bytes; a latent LCP risk if any template ever points at the raw PNG (because images.unoptimized: true gives no automatic responsive/webp fallback).",
+      "fix": "confirm no template references the raw PNG; if unused, delete it from public/home/ so it stops shipping. If it is used anywhere, swap to the existing AVIF/WebP responsive set."
+    },
+    {
+      "id": "PERF-5",
+      "dimension": "monetization-cwv",
+      "part_file": "reports/audit-parts/07-monetization-cwv.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Service worker present; caching strategy not verified",
+      "impact": "CWV/freshness — a stale-serving SW can mask deploys or serve outdated ad/consent code. Content not read this pass.",
+      "fix": "verify the SW uses network-first (or versioned cache-busting) for HTML so users get fresh content after deploys, and that it never caches the AdSense/consent scripts."
+    },
+    {
+      "id": "QE-16",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Slug/title year mismatch signals stale intent",
+      "impact": "/guides/content-strategy-2025/ renders title \"TikTok Content Strategy 2026: Complete Creator Playbook\" — slug says 2025, title says 2026; weakens the year-qualified query match and looks stale in the URL.",
+      "fix": "Migrate to /guides/content-strategy-2026/ (or drop the year from the slug) with a 301."
+    },
+    {
+      "id": "QE-17",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "Transactional/tool intent well covered; a few calculators lack a matching explainer, a few explainers lack a tool",
+      "impact": "Mostly healthy. Standalone calculator tool routes (/calculators/ad-revenue/, /diamond-converter/, /live-gifts/, /milestone-tracker/, /utility-tools/eligibility|payout|tax/, etc.) exist in the sitemap without a paired informational article, while some info clusters (RPM, engagement) have many articles. Transactional (\"calculator\"), commercial-investigation (\"rates/how much\"), and informational (\"what is/how to\") intents are all represented — no major intent gap found.",
+      "fix": "Optionally add short explainer sections/FAQ to orphan tool routes for query coverage; low priority."
+    },
+    {
+      "id": "QE-20",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Duplicated boilerplate intro block (verbatim paragraph repeated within a page)",
+      "impact": "guides/tiktok-live-shopping.mdx repeats its ~120-word opening paragraph almost verbatim at lines 47 and 56 (only the tail differs). Thin/duplicated copy.",
+      "fix": "Delete the duplicate paragraph."
+    },
+    {
+      "id": "QE-21",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "\"TikTok Pulse\" and \"Creativity Program\" introduced as distinct programs without consistent definition",
+      "impact": "q1-2026-creator-earnings-report.mdx and tiktok-vs-lemon8-creators.mdx cite \"TikTok Pulse\" ($2.05 RPM) and \"Creativity Program\" alongside \"Creator Rewards\" without reconciling the three names, risking entity confusion for both readers and LLMs.",
+      "fix": "Define the entity hierarchy once (Creator Rewards Program, formerly Creativity Program Beta; Pulse = ad-revenue-share, separate) and use consistently."
+    },
+    {
+      "id": "QE-22",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Legacy brand string \"CalculateCreator\" survives in code paths (not user-facing, but latent)",
+      "impact": "No user-facing leakage found (0 hits in content/ and 0 in out/*.html visible text/meta), but the legacy brand is still referenced in source normalization/title-cleanup, so a regression could surface it.",
+      "fix": "None urgent; confirm no title in content still ends with \"| CalculateCreator\" (the cleanup regex implies some once did). Track for removal."
+    },
+    {
+      "id": "QE-3",
+      "dimension": "query-eav-consistency",
+      "part_file": "reports/audit-parts/02-query-eav-consistency.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Same slug exists as both .md and .mdx (why-creator-fund-earnings-dropped)",
+      "impact": "content/guides/why-creator-fund-earnings-dropped.md and .mdx coexist; only .mdx builds (/guides/why-creator-fund-earnings-dropped/). The .md is a stale pre-migration copy (raw # H1, no frontmatter) with the same content — confusing and a latent duplicate-publish risk.",
+      "fix": "Delete the .md."
+    },
+    {
+      "id": "SCH-6",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Brand-name inconsistency across schema (Organization/Person \"TT Calculator\" vs WebSite/titles \"TikTok Calculator\")",
+      "impact": "Mixed brand naming inside structured data can fragment the entity and confuse which string is the canonical brand name in the Knowledge Graph.",
+      "fix": "Pick one canonical brand name and use it for Organization.name/WebSite.name/publisher; put the descriptive variant in alternateName or WebSite.description, not name."
+    },
+    {
+      "id": "SCH-7",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Seven pages emit zero JSON-LD (including the methodology content page)",
+      "impact": "Most are utility pages (search/sitemap/bookmarks/404/Google-verification) where missing schema is fine, but methodology/ is a substantive, frequently-cited trust page that would benefit from at least WebPage + BreadcrumbList (and arguably Article), and its absence leaves an E-E-A-T anchor page unstructured.",
+      "fix": "Add WebPage + BreadcrumbList to methodology/ (and optionally about-linked Organization). Leave search/sitemap/404/verification as-is."
+    },
+    {
+      "id": "SCH-8",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Glossary hub DefinedTermSet has no BreadcrumbList",
+      "impact": "The glossary index (42 DefinedTerm entries in one DefinedTermSet) is the only content hub with no BreadcrumbList, an inconsistency vs every other hub and a small loss of breadcrumb eligibility.",
+      "fix": "Add a BreadcrumbList (Home → Glossary). Optionally wrap in a CollectionPage/WebPage referencing the DefinedTermSet by @id."
+    },
+    {
+      "id": "SCH-9",
+      "dimension": "schema",
+      "part_file": "reports/audit-parts/05-schema.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Suspected FAQ schema ↔ visible-content mismatch on 2 sub-hub pages (international pages = false negatives)",
+      "impact": "FAQPage mainEntity Q&A that is not visibly present on the page violates Google's FAQ policy (schema must match on-page content) and risks manual action if the FAQ is schema-only.",
+      "fix": "Verify the FAQ block renders visibly on shop-profit and live-earnings; if it does not, remove the FAQPage schema or render the Q&A. No action needed for the international pages beyond confirming the localized FAQ renders (expected OK)."
+    },
+    {
+      "id": "SF-10",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Mild topical-border blur in /news: TikTok-app product news vs creator-economy",
+      "impact": "A handful of news items attach to \"TikTok the app\" rather than the site's central sub-entity (creator monetization/analytics), slightly diluting the source-context focus.",
+      "fix": "Reframe borderline news toward creator impact (e.g., \"what the AI avatar stickers mean for creator engagement\"), or keep them but ensure each links back to a monetization/analytics hub so they ladder to the central entity."
+    },
+    {
+      "id": "SF-2",
+      "dimension": "semantic-foundation",
+      "part_file": "reports/audit-parts/01-semantic-foundation.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Two intended pillar hubs live under non-canonical, renamed slugs",
+      "impact": "The documented topical map anchors two head-term clusters (\"how to grow on TikTok\" 30K/mo; \"TikTok engagement rate\" 6K/mo) to URLs that do not exist, breaking map-to-site traceability and any planned internal-link anchors.",
+      "fix": "Either update the topical map to the live slugs, or (if migrating) 301 the canonical hub slugs and consolidate. Ensure the growth/engagement hubs use the head-term slug, not a \"-calculator-guide\" variant."
+    },
+    {
+      "id": "TECH-3",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "4 redirect sources shadow real built pages (dead build artifacts)",
+      "impact": "These pages are fully built into out/ yet are permanently unreachable because Firebase redirects fire before static files are served. They are wasted build output and a sign of config drift; correctly excluded from the sitemap so no indexing harm, but they should not exist in the build.",
+      "fix": "Remove these 4 routes from the Next.js source/build so out/ doesn't ship pages that are immediately redirected. Keeps build ↔ redirect config consistent."
+    },
+    {
+      "id": "TECH-4",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "sw.js served with 1-year immutable Cache-Control",
+      "impact": "The service worker script is cached public, max-age=31536000, immutable. HTTP-cache-level SW update starvation; clients can be slow to pick up a changed SW (browsers do re-check the SW byte-for-byte ~every 24h per spec, which limits the damage, but the header is still wrong for a SW).",
+      "fix": "Add an explicit header rule for sw.js with Cache-Control: public, max-age=0, must-revalidate (or no-cache) ahead of the generic *.js rule."
+    },
+    {
+      "id": "TECH-5",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "Weak Content-Security-Policy (no default-src, object-src, or base-uri)",
+      "impact": "The CSP only constrains script-src and frame-src; with no default-src fallback, img-src, style-src, connect-src, object-src, base-uri, and form-action are unrestricted. script-src also allows 'unsafe-inline' and 'unsafe-eval', materially weakening XSS mitigation. Not a ranking blocker, but a real hardening gap.",
+      "fix": "Add default-src 'self', object-src 'none', base-uri 'self', and explicit img-src/style-src/connect-src allowlists. Consider nonce/hash-based scripts to drop 'unsafe-inline'/'unsafe-eval' where GTM/AdSense allow."
+    },
+    {
+      "id": "TECH-6",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "Uniform lastmod across the sitemap (weak freshness signal)",
+      "impact": "332 of 333 URLs carry the identical lastmod 2026-03-18 (1 URL = 2026-03-19). Bulk-identical dates tell Google the field is a build timestamp, not a real content-change signal, so it gets discounted.",
+      "fix": "Derive lastmod per-URL from actual content/file modification time in scripts/generate-sitemap.js rather than stamping the build date on every entry."
+    },
+    {
+      "id": "TECH-7",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "S",
+      "title": "/*.html cache rule never matches clean URLs; / served on CDN default",
+      "impact": "The /*.html → max-age=0, must-revalidate header rule is effectively dead because live page URLs are clean (/, /calculators/) with no .html suffix, so Firebase never matches them against it. The homepage / matches none of the section rules either and falls back to the CDN default max-age=3600, meaning a homepage edit can be served stale for up to an hour.",
+      "fix": "Add an explicit header rule for / (and any other top-level clean URLs) with the intended HTML caching policy, or accept the 1h default. Low priority."
+    },
+    {
+      "id": "TECH-8",
+      "dimension": "technical-crawl-index",
+      "part_file": "reports/audit-parts/03-technical-crawl-index.md",
+      "severity": "Low",
+      "effort": "M",
+      "title": "6 localized /calculator/{de,es,fr,it,my,pt-br}/ pages are noindex — verify intent",
+      "impact": "Localized calculator variants ship as noindex, follow. If these are meant to capture non-English search demand they are being suppressed; if they are placeholder/duplicate shells, noindex is correct but they add crawl surface. Note this is the singular /calculator/ tree (distinct from the canonical /calculators/ tree; /calculator{,/} itself 301s to /calculators/).",
+      "fix": "Decide localization strategy. If pursuing i18n, translate content, add hreflang alternates, make them index, and add to sitemap. Otherwise leave as-is or remove."
+    }
+  ]
+}

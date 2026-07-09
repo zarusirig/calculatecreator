@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface FAQ {
   question: string;
   answer: string;
@@ -239,7 +241,7 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     '@type': 'Article',
     headline: guideTitle || title,
     description: description,
-    image: 'https://tiktokcalculator.net/og-image.png',
+    image: SITE_CONFIG.ogImage,
     author: {
       '@type': 'Organization',
       name: 'TT Calculator',
@@ -251,7 +253,7 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
       url: 'https://tiktokcalculator.net/',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
     datePublished: datePublished,

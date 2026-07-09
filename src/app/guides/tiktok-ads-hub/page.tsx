@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
 import Link from 'next/link';
 import { Megaphone, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, DollarSign, BarChart3, Zap, TrendingUp, ShoppingCart, Users, AlertTriangle, Layers } from 'lucide-react';
 
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Master TikTok advertising. Calculate ad costs, optimize ROAS, run Spark Ads, and build profitable TikTok ad campaigns.',
     type: 'article',
     url: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/',
+    images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Ads Hub 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -54,6 +56,7 @@ export default function TikTokAdsHubPage() {
         datePublished="2026-02-06"
         dateModified="2026-03-01"
         keywords={['tiktok ads', 'tiktok advertising cost', 'spark ads', 'tiktok shop ads', 'campaign roi', 'tiktok cpm']}
+        image={SITE_CONFIG.ogImage}
       />
       <BreadcrumbSchema
         items={[

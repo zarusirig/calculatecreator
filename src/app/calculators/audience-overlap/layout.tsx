@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/audience-overlap/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Audience Overlap Calculator',
     description: 'Analyze audience overlap across platforms and accounts.',
     url: 'https://tiktokcalculator.net/calculators/audience-overlap/',

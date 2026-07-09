@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/posting-time/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Best Posting Time Calculator 2026',
     description: 'Find optimal posting times for your TikTok audience.',
     url: 'https://tiktokcalculator.net/calculators/posting-time/',

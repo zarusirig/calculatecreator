@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
 import Link from 'next/link';
 import { DollarSign, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, Clock, MessageCircle, Calendar, Gift, AlertTriangle, Gem, ShoppingCart, FileText, XCircle } from 'lucide-react';
 
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Master every TikTok income stream. Calculate Creator Fund earnings, price brand deals, optimize TikTok Shop, and build multi-income strategies.',
     type: 'article',
     url: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/',
+    images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Monetization Calculator Hub 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -55,6 +57,7 @@ export default function MonetizationCalculatorHubPage() {
         datePublished="2025-11-13"
         dateModified="2026-03-01"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
+        image={SITE_CONFIG.ogImage}
       />
       <BreadcrumbSchema
         items={[

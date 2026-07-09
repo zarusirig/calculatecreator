@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://tiktokcalculator.net/calculators/earnings-revenue/',
   },
+  openGraph: {
+    url: 'https://tiktokcalculator.net/calculators/earnings-revenue/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+  },
 };
 
 const calculators = [

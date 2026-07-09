@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { ArticleSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
 import Link from 'next/link';
 import { TrendingUp, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, BarChart3, Zap, Eye, Hash, MessageCircle, Clock, Share2, Users, Flame, Award } from 'lucide-react';
 
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
     description: 'Master TikTok growth. Understand the algorithm, boost engagement, go viral, and build a sustainable audience with data-driven strategies.',
     type: 'article',
     url: 'https://tiktokcalculator.net/guides/tiktok-growth-hub/',
+    images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Growth Hub 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -54,6 +56,7 @@ export default function TikTokGrowthHubPage() {
         datePublished="2026-02-06"
         dateModified="2026-03-01"
         keywords={['tiktok growth', 'tiktok algorithm', 'engagement rate', 'viral content', 'hashtag strategy', 'tiktok analytics']}
+        image={SITE_CONFIG.ogImage}
       />
       <BreadcrumbSchema
         items={[

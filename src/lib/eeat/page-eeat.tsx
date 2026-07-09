@@ -9,9 +9,48 @@ import { ReviewBadge, ReviewSection } from '@/components/eeat/ReviewBadge';
 import { Disclaimer, MultipleDisclaimers } from '@/components/eeat/Disclaimer';
 import { Citations, DataSourceBadge } from '@/components/eeat/Citations';
 import { ContentFreshness } from '@/components/eeat/ContentFreshness';
-import { PersonSchema } from '@/components/seo/CalculatorSchema';
-import { getAuthor } from '@/lib/constants/authors';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+import { getAuthor, type Author } from '@/lib/constants/authors';
 import { getPageMetadata, getDefaultPageMetadata } from '@/lib/constants/page-metadata';
+
+/**
+ * Author Person JSON-LD emitter (SCH-3).
+ * The shared PersonSchema component does not support an `image` field, so this
+ * local emitter renders the author Person schema with `image` (author avatar if
+ * present in authors.ts, else the SITE_CONFIG default) and a graceful `sameAs`
+ * (omitted entirely when no author social profiles exist).
+ */
+export function AuthorPersonSchema({ author, url }: { author: Author; url?: string }) {
+  const sameAs = [
+    author.socialLinks?.tiktok,
+    author.socialLinks?.twitter,
+    author.socialLinks?.linkedin,
+  ].filter(Boolean) as string[];
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: author.name,
+    jobTitle: author.role,
+    description: author.bio,
+    image: author.image || SITE_CONFIG.ogImage,
+    ...(url && { url }),
+    ...(sameAs.length > 0 && { sameAs }),
+    ...(author.expertise.length > 0 && { knowsAbout: author.expertise }),
+    affiliation: {
+      '@type': 'Organization',
+      name: SITE_CONFIG.org.name,
+      url: SITE_CONFIG.url,
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
 export interface PageEEATProps {
   pageSlug: string;
@@ -34,16 +73,9 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
     return (
       <>
         {/* Author Schema */}
-        <PersonSchema
-          name={author.name}
-          jobTitle={author.role}
-          description={author.bio}
+        <AuthorPersonSchema
+          author={author}
           url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
-          knowsAbout={author.expertise}
-          affiliation={{
-            name: 'TT Calculator',
-            url: 'https://tiktokcalculator.net',
-          }}
         />
 
         {/* Inline author credit */}
@@ -72,16 +104,9 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
   return (
     <div className="space-y-8">
       {/* Author Schema for SEO */}
-      <PersonSchema
-        name={author.name}
-        jobTitle={author.role}
-        description={author.bio}
+      <AuthorPersonSchema
+        author={author}
         url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
-        knowsAbout={author.expertise}
-        affiliation={{
-          name: 'TT Calculator',
-          url: 'https://tiktokcalculator.net',
-        }}
       />
 
       {/* Content Freshness */}
@@ -137,16 +162,9 @@ export function PageAuthorByline({ pageSlug, variant = 'light' }: { pageSlug: st
   return (
     <>
       {/* Author Schema */}
-      <PersonSchema
-        name={author.name}
-        jobTitle={author.role}
-        description={author.bio}
+      <AuthorPersonSchema
+        author={author}
         url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
-        knowsAbout={author.expertise}
-        affiliation={{
-          name: 'TT Calculator',
-          url: 'https://tiktokcalculator.net',
-        }}
       />
 
       <div className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4 border-t border-b ${borderColor}`}>

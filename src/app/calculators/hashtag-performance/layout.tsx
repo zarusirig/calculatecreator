@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/hashtag-performance/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Hashtag Performance Calculator 2026',
     description: 'Analyze hashtag effectiveness and reach potential.',
     url: 'https://tiktokcalculator.net/calculators/hashtag-performance/',

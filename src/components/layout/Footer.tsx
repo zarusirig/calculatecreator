@@ -14,7 +14,7 @@ const pathwayLinks = [
   {
     title: 'Study the benchmarks',
     description: 'Use ranges before you price a deal or call a post a miss.',
-    href: '/benchmarks/',
+    href: '/data/',
     icon: BarChart3,
   },
   {
@@ -30,7 +30,7 @@ const footerColumns = [
     heading: 'Explore',
     links: [
       { label: 'All calculators', href: '/calculators/' },
-      { label: 'Benchmarks', href: '/benchmarks/' },
+      { label: 'Benchmarks', href: '/data/' },
       { label: 'Guides', href: '/guides/' },
       { label: 'News', href: '/news/' },
     ],
@@ -51,8 +51,8 @@ const footerColumns = [
       { label: 'Data & Earnings', href: '/data/earnings/' },
       { label: 'Engagement Data', href: '/data/engagement/' },
       { label: 'Platform Comparisons', href: '/data/platform-comparisons/' },
-      { label: 'Comparisons', href: '/comparisons/' },
-      { label: 'Reference', href: '/reference/' },
+      { label: 'Comparisons', href: '/data/platform-comparisons/' },
+      { label: 'Reference', href: '/data/reference/' },
     ],
   },
   {

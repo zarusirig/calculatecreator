@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Calculators | TT Calculator',
     description: 'Estimate and benchmark creator metrics with clear workflows and transparent assumptions.',
     url: 'https://tiktokcalculator.net/calculators/',

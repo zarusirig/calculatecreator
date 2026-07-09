@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/utility-tools/payout/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'TikTok Payout Calculator (After Fees)',
     description: 'See your real take-home after TikTok fees and processors. 2026 rates.',
     url: 'https://tiktokcalculator.net/calculators/utility-tools/payout/',

@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 const matter = require('gray-matter');
 
 const SITE_URL = 'https://tiktokcalculator.net';
@@ -126,15 +125,29 @@ function getRouteConfig(route) {
   return { priority: '0.5', changefreq: 'monthly' };
 }
 
-// Get last git commit date for a file
-function getLastModified(filePath) {
+const BUILD_DATE = new Date().toISOString().split('T')[0];
+
+function toISODate(value) {
+  if (value === undefined || value === null || value === '') return null;
+  const d = new Date(value);
+  return Number.isNaN(d.getTime()) ? null : d.toISOString().split('T')[0];
+}
+
+// Derive a per-URL <lastmod> from the real content modification time.
+// Priority: an explicit frontmatter modification date (passed by the caller),
+// else the source file's fs.statSync mtime, else the build date as a last resort.
+function getLastModified(filePath, frontmatterDate) {
+  const fromFrontmatter = toISODate(frontmatterDate);
+  if (fromFrontmatter) return fromFrontmatter;
+
   try {
-    const date = execSync(`git log -1 --format=%aI -- "${filePath}"`, { encoding: 'utf-8' }).trim();
-    if (date) return date.split('T')[0];
+    const { mtime } = fs.statSync(filePath);
+    const fromMtime = toISODate(mtime);
+    if (fromMtime) return fromMtime;
   } catch {
     // fall through
   }
-  return new Date().toISOString().split('T')[0];
+  return BUILD_DATE;
 }
 
 // Recursively find all page.tsx files
@@ -222,12 +235,12 @@ function generate() {
   const mdxUrls = mdxFiles
     .map((filePath) => {
       const route = mdxToRoute(filePath);
-      const lastmod = getLastModified(filePath);
 
       // Read frontmatter to get priority and dates
       let priority = '0.6';
       let changefreq = 'monthly';
       let noindex = false;
+      let frontmatterDate = null;
       try {
         const raw = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(raw);
@@ -237,29 +250,47 @@ function generate() {
         if (data.priorityScore) {
           priority = (data.priorityScore / 100).toFixed(1);
         }
-        if (data.updatedDate) {
-          const updatedDate = new Date(data.updatedDate).toISOString().split('T')[0];
-          // Use the more recent of git date and frontmatter date
-          if (updatedDate > lastmod) {
-            return { route, lastmod: updatedDate, priority, changefreq, noindex };
-          }
-        }
         if (data.section === 'core') {
           changefreq = 'weekly';
         }
+        // Per-URL lastmod: prefer an explicit content modification date from
+        // frontmatter, then fall back to the page's publish date.
+        frontmatterDate =
+          data.dateModified ||
+          data.updatedAt ||
+          data.updatedDate ||
+          data.publishDate ||
+          null;
       } catch {
         // Fall through with defaults
       }
 
+      const lastmod = getLastModified(filePath, frontmatterDate);
       return { route, lastmod, priority, changefreq, noindex };
     })
     .filter((entry) => shouldIncludeRoute(entry.route) && !entry.noindex);
 
-  // Pass 3: Author profile pages — excluded from sitemap because
-  // thin author profiles are marked noindex (< 300 words).
-  // They will be re-added once author profiles have sufficient content.
-  const authorUrls = [];
-  console.log('Skipped author pages (thin profiles are noindexed)');
+  // Pass 3: Author profile pages. These E-E-A-T author bios are being made
+  // indexable, so include them explicitly — they have no page.tsx/MDX source
+  // that the passes above would discover.
+  const AUTHOR_SLUGS = [
+    'alex-martinez',
+    'david-kim',
+    'emily-thompson',
+    'jessica-rodriguez',
+    'michael-chen',
+    'sarah-johnson',
+  ];
+  const AUTHORS_SOURCE = path.join(__dirname, '..', 'src', 'lib', 'constants', 'authors.ts');
+  const authorUrls = AUTHOR_SLUGS
+    .map((slug) => {
+      const route = `/authors/${slug}/`;
+      const lastmod = getLastModified(AUTHORS_SOURCE);
+      const config = getRouteConfig(route);
+      return { route, lastmod, ...config };
+    })
+    .filter((entry) => shouldIncludeRoute(entry.route));
+  console.log(`Added ${authorUrls.length} author pages`);
 
   // Combine and sort
   const urls = [...staticUrls, ...mdxUrls, ...authorUrls].sort((a, b) => {

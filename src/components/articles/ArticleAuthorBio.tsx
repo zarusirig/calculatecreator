@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Author, resolveAuthorFromFrontmatter, DEFAULT_AUTHOR } from '@/lib/constants/authors';
+import { AUTHORS, Author, resolveAuthorFromFrontmatter, DEFAULT_AUTHOR } from '@/lib/constants/authors';
 import { PersonSchema } from '@/components/seo/CalculatorSchema';
 
 export interface ArticleAuthorBioProps {
@@ -25,6 +25,11 @@ export function ArticleAuthorBio({
     showCredentials = false,
 }: ArticleAuthorBioProps) {
     const author = directAuthor || resolveAuthorFromFrontmatter(authorString || '');
+
+    // Link bylines to the author's own profile page when one exists
+    // (a static /authors/<id>/ page is generated for every entry in AUTHORS).
+    // Team/default profiles have no dedicated page, so fall back to /about/.
+    const authorProfileUrl = AUTHORS[author.id] ? `/authors/${author.id}/` : '/about/';
 
     const socialLinks = [
         author.socialLinks?.tiktok && { label: 'TikTok', url: author.socialLinks.tiktok },
@@ -96,7 +101,7 @@ export function ArticleAuthorBio({
                                 <h4 className="text-heading-md font-bold text-neutral-900">
                                     {author.authorUrl ? (
                                         <Link
-                                            href={author.authorUrl}
+                                            href={authorProfileUrl}
                                             className="hover:text-primary-600 transition-colors"
                                         >
                                             {author.name}
@@ -174,7 +179,7 @@ export function ArticleAuthorBio({
                                     </a>
                                 ))}
                                 <Link
-                                    href={author.authorUrl || '/about/'}
+                                    href={authorProfileUrl}
                                     className="text-body-sm text-primary-600 hover:text-primary-700 font-medium ml-auto"
                                 >
                                     View Full Profile →

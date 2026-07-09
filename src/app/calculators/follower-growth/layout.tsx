@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/follower-growth/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Follower Growth Calculator 2026',
     description: 'Project future follower count and growth milestones.',
     url: 'https://tiktokcalculator.net/calculators/follower-growth/',

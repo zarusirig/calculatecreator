@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/cost-per-result/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Cost Per Result Calculator',
     description: 'Calculate and optimize your advertising cost per result.',
     url: 'https://tiktokcalculator.net/calculators/cost-per-result/',

@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://tiktokcalculator.net/calculators/diamond-converter/',
   },
+  openGraph: {
+    url: 'https://tiktokcalculator.net/calculators/diamond-converter/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+  },
 };
 
 const faqData = [

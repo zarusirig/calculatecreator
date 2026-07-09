@@ -4,6 +4,7 @@ import { Card } from '@/components/ui/Card';
 import { CheckCircle, XCircle } from 'lucide-react';
 import { ArticleSchema } from '@/components/seo/CalculatorSchema';
 import { FAQSection } from '@/components/calculator/FAQSection';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
 
 export const metadata: Metadata = {
   title: 'Best TikTok Shop Niches | Categories, Margins, and Creator Fit',
@@ -35,6 +36,7 @@ export default function BestShopNichesPage() {
         url="https://tiktokcalculator.net/guides/best-shop-niches/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
+        image={SITE_CONFIG.ogImage}
       />
       <div className="min-h-screen bg-neutral-50">
         <nav className="bg-white border-b border-neutral-200 py-3">

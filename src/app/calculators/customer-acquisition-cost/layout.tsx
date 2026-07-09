@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     canonical: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/',
   },
   openGraph: {
+    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'CAC Calculator 2026',
     description: 'Calculate Customer Acquisition Cost for TikTok marketing.',
     url: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/',
