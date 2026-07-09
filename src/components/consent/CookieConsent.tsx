@@ -111,20 +111,15 @@ export function CookieConsent() {
             `}
           </Script>
 
+          {/* AdSense loader lives unconditionally in <head> (see layout.tsx) so
+              it is present for AdSense verification and loads exactly once. Here
+              we only tune personalization based on the visitor's consent choice. */}
           <Script id="cc-adsense-mode" strategy="afterInteractive">
             {`
               window.adsbygoogle = window.adsbygoogle || [];
               window.adsbygoogle.requestNonPersonalizedAds = ${consent === 'accepted' ? 0 : 1};
             `}
           </Script>
-
-          <Script
-            id="cc-adsense-script"
-            async
-            strategy="afterInteractive"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6191764023643150"
-            crossOrigin="anonymous"
-          />
         </>
       ) : null}
     </>

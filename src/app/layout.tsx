@@ -118,6 +118,16 @@ export default function RootLayout({
         {/* Preload critical resources for better performance */}
         <link rel="dns-prefetch" href="//www.google-analytics.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+        {/* Google AdSense loader — must be present unconditionally in <head>
+            so AdSense site verification and ad serving work. Personalization
+            consent is handled via Google Consent Mode + requestNonPersonalizedAds
+            in CookieConsent. Load this script exactly once (no duplicate loader). */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6191764023643150"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body className="font-sans text-neutral-900">
         <a href="#main" className="skip-link">Skip to content</a>

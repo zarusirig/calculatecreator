@@ -762,7 +762,7 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/data/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1170,7 +1170,7 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/news/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1229,6 +1229,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ttcalculator.net/blog/tiktok-vs-youtube-shorts-earnings-2026/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ttcalculator.net/blog/understanding-tiktok-rpm-rates/</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1236,25 +1242,25 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/ad-revenue/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/ad-spend/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/affiliate-commission/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/audience-overlap/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1266,13 +1272,13 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/break-even/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/campaign-roi/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1284,7 +1290,7 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/comment-rate/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1296,43 +1302,43 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/completion-rate/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/content-calendar-roi/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/content-value/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/conversion-rate/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/cost-per-result/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/cpm-cpv/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/customer-acquisition-cost/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1356,25 +1362,25 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/follower-conversion/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/follower-growth/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/hashtag-performance/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/lifetime-value/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1386,37 +1392,37 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/milestone-tracker/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/multi-platform-earnings/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/niche-profitability/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/posting-time/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/production-cost/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/profile-visit-rate/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1428,19 +1434,19 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/save-rate/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/share-ratio/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/sponsorship-roi/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1476,13 +1482,25 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/utility-tools/tax/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ttcalculator.net/calculators/video-performance/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/calculators/viral-potential/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ttcalculator.net/calculators/watch-time/</loc>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1692,7 +1710,7 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/guides/monetization/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1722,7 +1740,7 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/guides/niches/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1854,133 +1872,133 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/data/earnings/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/data/engagement/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/data/platform-comparisons/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/data/reference/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/age-specific-privacy-features/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/ai-outline-smart-split-features/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/algorithm-eight-major-shifts/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/creator-rewards-program-launch/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/mention-liked-favorited-videos/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/parent-safety-features-update/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/personalized-ai-avatar-stickers/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/playback-settings-update/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/product-subscriptions-feature/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/retention-metrics-priority/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/search-volume-increase-40-percent/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-ban-delayed-december-2025/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-nationwide-ban-status/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-shop-europe-expansion/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-shop-gmv-doubling/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-shop-holiday-campaign/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/tiktok-shop-third-fastest-growing/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/news/us-china-deal-tiktok-operational/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2034,25 +2052,25 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/contact/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/corrections-policy/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/faq/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/glossary/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2064,19 +2082,19 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/sitemap/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/sources-policy/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/editorial-policy/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -2088,25 +2106,25 @@
   </url>
   <url>
     <loc>https://ttcalculator.net/compliance/advertising-disclosure/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/compliance/sponsorship-disclosure/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/privacy/</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
     <loc>https://ttcalculator.net/terms/</loc>
-    <lastmod>2026-03-18</lastmod>
+    <lastmod>2026-07-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
