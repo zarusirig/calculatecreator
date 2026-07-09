@@ -43,120 +43,205 @@ export default function AboutPage() {
         <Container className="max-w-4xl">
           <h1 className="text-display-sm font-bold text-neutral-900">About TT Calculator</h1>
           <p className="mt-4 text-body-md text-neutral-700">
-            TT Calculator is an independent product and editorial platform focused on one job:
-            helping creators make better decisions with numbers they can actually understand.
-            We publish creator calculators, benchmark pages, and practical guides for people who
-            want a clear view of earnings potential, engagement performance, and growth tradeoffs.
-            We are not a get-rich-quick brand. We are a numbers-first team that believes good
-            decision making starts with transparent assumptions.
+            TT Calculator is an independent product and editorial platform for TikTok creators. We
+            publish <strong>35+ free calculators</strong>, benchmark pages, and practical guides
+            that convert earnings potential, engagement performance, and growth tradeoffs into
+            numbers creators understand. The site is not a get-rich-quick brand. We are a
+            numbers-first team: good decisions start with transparent assumptions.
           </p>
 
           <section className="mt-8 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Our mission</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              Our mission is to make creator analytics practical for everyday use. Most creators do
-              not have analyst teams, internal dashboards, or paid data subscriptions. They have a
-              phone, a publishing schedule, and business decisions they need to make quickly. We
-              built TT Calculator so creators can estimate likely outcomes in minutes instead of
-              guessing in the dark.
+              Our mission is to make creator analytics practical for everyday use. Most creators
+              lack analyst teams, internal dashboards, and paid data subscriptions. They have a
+              phone, a publishing schedule, and fast business decisions. TT Calculator lets creators
+              estimate likely outcomes in minutes instead of guessing in the dark.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We design every page around a single intent: inputs, result, meaning, and next step.
-              That approach keeps our tools useful for new creators and experienced operators. It
-              also keeps us honest about limitations. Creator income can change fast based on niche,
-              region, platform policy, seasonality, and content quality. Our role is to provide
-              directional models and context, not promises.
+              We design every page around a single intent: inputs, result, meaning, next step. That
+              approach keeps our tools useful for new creators and experienced operators. It also
+              keeps us honest about limitations. Creator income shifts with niche, region, platform
+              policy, seasonality, and content quality. Our role is directional models and context,
+              not promises.
             </p>
           </section>
 
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">What we do</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              TT Calculator publishes two core products.
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              First, we build calculators for key creator workflows. These include tools for RPM,
-              total earnings, engagement rate, brand deal pricing, shop commission, tax set-aside,
-              and multi-platform comparisons. We also maintain supporting utilities for conversion
-              analysis, content value, and campaign ROI. You can browse them in our{' '}
+              TT Calculator publishes two core products. First, we build{' '}
+              <strong>35+ free calculators</strong> for the workflows creators actually run: RPM
+              and total earnings, engagement rate, brand deal pricing, Shop commission, LIVE gift
+              value, tax set-aside, and multi-platform comparisons. Supporting utilities cover
+              conversion analysis, content value, and campaign ROI. Browse the full set in our{' '}
               <Link href="/calculators/" className="link">
-                calculators directory
+                TikTok calculators directory
               </Link>
               .
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               Second, we publish editorial guides and benchmark explainers that show how to use
               calculator outputs in real decisions. Instead of dumping raw numbers, we explain what
-              ranges mean, what assumptions matter, and when a metric is too uncertain to trust.
-              That editorial layer is a major part of our product, not an afterthought.
+              ranges mean, which assumptions matter, and when a metric is too uncertain to trust.
+              That editorial layer is a core part of the product, not an afterthought.
             </p>
           </section>
 
           <section className="mt-6 card p-6">
-            <h2 className="text-heading-md font-semibold text-neutral-900">How we get our data</h2>
+            <h2 className="text-heading-md font-semibold text-neutral-900">What we cover</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We combine public platform documentation, creator-reported ranges, campaign norms,
-              and historical benchmark distributions to build assumption sets. We do not claim to
-              have direct internal access to TikTok, YouTube, or any platform. We use aggregated
-              public and community signals, then convert those signals into transparent calculator
-              inputs.
+              Coverage spans six creator decision areas, each backed by dedicated calculators:
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+              <li>
+                <strong>Earnings and revenue:</strong> RPM, ad revenue projections, Creator Rewards
+                estimates, and multi-platform earnings.
+              </li>
+              <li>
+                <strong>Engagement:</strong> engagement rate, comment rate, completion rate, share
+                ratio, and watch time.
+              </li>
+              <li>
+                <strong>Brand deals and commerce:</strong> brand deal rates, affiliate commission,
+                campaign ROI, sponsorship ROI, and conversion rate.
+              </li>
+              <li>
+                <strong>TikTok Shop and LIVE:</strong> live gifts, coin value, diamond conversion,
+                and Shop ad performance.
+              </li>
+              <li>
+                <strong>Growth and content:</strong> follower growth, posting time, hashtag
+                performance, viral potential, and video performance.
+              </li>
+              <li>
+                <strong>Financial planning:</strong> break-even, customer acquisition cost, lifetime
+                value, and production cost.
+              </li>
+            </ul>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Our editorial model</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              TT Calculator runs a desk-based editorial model. <strong>Six desks</strong> own the
+              work, and none rely on a single named expert. This structure keeps coverage
+              consistent, makes ownership traceable, and protects estimates from individual bias.
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+              <li>
+                <strong>Editorial desk</strong> owns calculator copy, guides, and the
+                publish-review-refresh workflow.
+              </li>
+              <li>
+                <strong>Research desk</strong> owns benchmark sourcing, assumption bands, and source
+                documentation.
+              </li>
+              <li>
+                <strong>LIVE desk</strong> owns TikTok LIVE earnings tools: gift value, coin
+                conversion, diamond value, and Creator Rewards estimates.
+              </li>
+              <li>
+                <strong>Commerce desk</strong> owns brand deal, affiliate, Shop, and campaign ROI
+                calculators.
+              </li>
+              <li>
+                <strong>Tax desk</strong> owns financial-planning tools: break-even, customer
+                acquisition cost, lifetime value, and production cost.
+              </li>
+              <li>
+                <strong>Growth desk</strong> owns engagement, follower growth, posting time, and
+                niche profitability tools.
+              </li>
+            </ul>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              The desks are internal functions, not personas. When we cite a benchmark, the source
+              trail and the owning desk are visible in the methodology block on each page.
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">
+              How estimates and benchmarks are produced
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Estimates and benchmarks start with public platform documentation, creator-reported
+              ranges, campaign norms, and historical benchmark distributions. We do not claim direct
+              internal access to TikTok, YouTube, or any platform. We aggregate public and community
+              signals, then convert those signals into transparent calculator inputs.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              Every major calculator includes methodology and assumptions so users can see what is
-              driving the result. If a payout range is volatile, we say so. If a model has known
+              Every major calculator exposes its methodology and assumptions so users see what
+              drives the result. If a payout range is volatile, we say so. If a model carries known
               blind spots, we document them. We prefer a clear estimate with caveats over a false
               sense of precision.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We review benchmark assumptions on a recurring basis and revise when there are
-              meaningful changes in monetization programs, market behavior, or input quality. You
-              can review our process in the{' '}
+              We review benchmark assumptions on a recurring schedule and revise when monetization
+              programs, market behavior, or input quality change materially. Our full process lives
+              on the{' '}
               <Link href="/methodology/" className="link">
-                methodology page
+                Methodology
               </Link>{' '}
-              and full editorial workflow in our{' '}
+              page, and the publishing workflow is documented in the{' '}
               <Link href="/editorial-policy/" className="link">
-                editorial policy
+                Editorial Policy
               </Link>
               .
             </p>
           </section>
 
           <section className="mt-6 card p-6">
-            <h2 className="text-heading-md font-semibold text-neutral-900">Our team</h2>
+            <h2 className="text-heading-md font-semibold text-neutral-900">
+              What makes TT Calculator different
+            </h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              TT Calculator is run by a small cross-functional team of monetization analysts,
-              data researchers, editors, and frontend engineers. We work directly on calculator
-              logic, content QA, and publishing infrastructure in the same repository. The team
-              follows a publish-review-refresh workflow so formulas, copy, and metadata are audited
-              together.
+              Four commitments separate the site from generic earnings estimators:
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We treat creator analytics as an applied discipline. That means we care about model
-              structure, input clarity, and reproducibility more than catchy claims. We test tools,
-              read feedback, and revise assumptions continuously. When we find errors, we correct
-              them and document updates in policy pages and methodology blocks.
-            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+              <li>
+                <strong>Transparent assumptions:</strong> each calculator shows the inputs and bands
+                driving the result.
+              </li>
+              <li>
+                <strong>No signup:</strong> every tool loads and runs without an account, paywall, or
+                email gate.
+              </li>
+              <li>
+                <strong>Methodology shown:</strong> assumptions, formulas, and limitations appear
+                on-page and link to the{' '}
+                <Link href="/methodology/" className="link">
+                  Methodology
+                </Link>{' '}
+                page.
+              </li>
+              <li>
+                <strong>Privacy by design:</strong> calculator inputs are processed in the browser,
+                not shipped to a server for estimation.
+              </li>
+            </ul>
           </section>
 
           <section className="mt-6 card p-6">
-            <h2 className="text-heading-md font-semibold text-neutral-900">Values and independence</h2>
+            <h2 className="text-heading-md font-semibold text-neutral-900">
+              Values and independence
+            </h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We operate with four core values: clarity, transparency, consistency, and editorial
-              independence. Our pages are designed to make assumptions visible and units explicit.
-              We avoid sensational claims and avoid language that implies guaranteed outcomes.
+              We operate on four values: clarity, transparency, consistency, and editorial
+              independence. Our pages make assumptions visible and units explicit. We avoid
+              sensational claims and language that implies guaranteed outcomes.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               TT Calculator is not affiliated with, endorsed by, or sponsored by TikTok,
-              ByteDance, or any social platform. "TikTok" is a trademark of its owner and appears
-              on our site for descriptive purposes only.
+              ByteDance, or any social platform. &quot;TikTok&quot; is a trademark of its owner and
+              appears on this site for descriptive purposes only.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               We fund operations through advertising and related publishing revenue. Ads do not
-              determine calculator outputs or editorial conclusions. Our advertising standards and
-              controls are documented in the{' '}
+              determine calculator outputs or editorial conclusions. Our advertising standards are
+              documented in the{' '}
               <Link href="/compliance/advertising-disclosure/" className="link">
-                advertising disclosure
+                Advertising Disclosure
               </Link>
               .
             </p>
@@ -165,21 +250,23 @@ export default function AboutPage() {
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Who we serve</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              We serve solo creators, creator managers, small agencies, and brand-side teams that
-              need quick directional modeling. We are especially useful for people who need to
-              compare options: whether to prioritize RPM improvement, brand deal volume, shop
-              conversion, or cross-platform strategy.
+              TT Calculator serves solo creators, creator managers, small agencies, and brand-side
+              teams that need quick directional modeling. The site fits people comparing options:
+              RPM improvement versus brand deal volume, Shop conversion versus cross-platform
+              strategy, or growth investment versus content cost.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              If you want to suggest a calculator, report a data issue, or ask how a formula was
-              built, contact us directly. We review product and data feedback continuously and use
-              that feedback to prioritize updates.
+              Readers use TT Calculator before negotiation calls, campaign planning sessions, and
+              monthly performance reviews. That practical use case shapes every page: concise
+              inputs, explicit units, transparent assumptions, and a clear next action.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              Our readers often use TT Calculator before negotiation calls, campaign planning
-              sessions, and monthly performance reviews. That practical use case shapes how we write
-              and design every page: concise inputs, explicit units, transparent assumptions, and a
-              clear next action.
+              To suggest a calculator, report a data issue, or ask how a formula was built, reach
+              the team on the{' '}
+              <Link href="/contact/" className="link">
+                Contact TT Calculator
+              </Link>{' '}
+              page.
             </p>
           </section>
 
@@ -190,7 +277,7 @@ export default function AboutPage() {
                 <Link href="/editorial-policy/" className="link">
                   Editorial Policy
                 </Link>{' '}
-                for our content process, corrections policy, and AI usage disclosures.
+                for our content process, corrections handling, and AI usage disclosures.
               </li>
               <li>
                 <Link href="/methodology/" className="link">
@@ -211,8 +298,14 @@ export default function AboutPage() {
                 for how we evaluate and document data sources.
               </li>
               <li>
+                <Link href="/faq/" className="link">
+                  Frequently Asked Questions
+                </Link>{' '}
+                for answers on accuracy, privacy, and how tools are funded.
+              </li>
+              <li>
                 <Link href="/contact/" className="link">
-                  Contact
+                  Contact TT Calculator
                 </Link>{' '}
                 to report errors, request features, or ask data questions.
               </li>

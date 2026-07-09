@@ -49,6 +49,7 @@ firebase-debug.log
 .agent/
 .cursor/
 .trae/
+.playwright-mcp/
 
 # Local stale build artifacts
 .next_stale_*/

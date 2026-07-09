@@ -7,7 +7,7 @@ const PRIMARY_CALCULATOR_SLUGS = [
   'rpm',
   'brand-deal-rate',
   'live-gifts',
-  'shop-commission',
+  'commerce-ads/shop-profit',
   'engagement-rate',
   'coins',
   'diamond-converter',

@@ -63,6 +63,98 @@ export default function ReferenceDataHubPage() {
             Keep a dated note of each reference check you use in monthly planning so you can quickly
             audit why a forecast changed when TikTok updates payout rules or eligibility thresholds.
           </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            What TikTok reference data this site publishes
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            This hub publishes six core reference datasets that creators use for forecasting,
+            eligibility checks, and payout modeling:
+          </p>
+          <ul className="mt-3 list-disc pl-5 text-body-md text-neutral-700 space-y-2">
+            <li>Creator Rewards Program eligibility and availability by country.</li>
+            <li>TikTok Shop commission rates by category and seller tier.</li>
+            <li>TikTok Shop payment and settlement schedule windows.</li>
+            <li>LIVE gift values and coin conversion charts.</li>
+            <li>Video length limits by account type and program.</li>
+            <li>Business versus creator account feature differences.</li>
+          </ul>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Each dataset lives in a dedicated child article. Review{' '}
+            <Link href="/data/reference/creator-fund-countries/" className="text-primary-700 hover:text-primary-800">
+              Creator Rewards Program countries
+            </Link>, the{' '}
+            <Link href="/data/reference/shop-commission-rates/" className="text-primary-700 hover:text-primary-800">
+              Shop commission rates
+            </Link>, the{' '}
+            <Link href="/data/reference/shop-payment-schedule/" className="text-primary-700 hover:text-primary-800">
+              Shop payment schedule
+            </Link>, and the{' '}
+            <Link href="/data/reference/live-gifts-value-chart/" className="text-primary-700 hover:text-primary-800">
+              LIVE gifts value chart
+            </Link>{' '}
+            before building any revenue model.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            How reference data is sourced and updated
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Reference values originate from TikTok's official creator documentation, the seller help
+            center, and in-app program pages. Each figure carries a logged source and publication date,
+            and editors re-verify payout-critical pages on a fixed cadence. Read the full verification
+            process in our{' '}
+            <Link href="/methodology/" className="text-primary-700 hover:text-primary-800">
+              data methodology
+            </Link>{' '}
+            and the source selection rules in our{' '}
+            <Link href="/sources-policy/" className="text-primary-700 hover:text-primary-800">
+              sources policy
+            </Link>.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            How to use TikTok reference data
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Reference data becomes useful only when each value feeds a specific forecast input. Pair
+            payout windows with cash-flow dates, commission rates with margin models, and eligibility
+            thresholds with program access checks:
+          </p>
+          <ul className="mt-3 list-disc pl-5 text-body-md text-neutral-700 space-y-2">
+            <li>Map each reference value to one forecast input so payout timing, commission, and eligibility each anchor a line in the model.</li>
+            <li>Re-verify figures before each monthly model or campaign launch, since TikTok updates payout rules and category rates on short notice.</li>
+            <li>Feed confirmed values into the payout and coins calculators on this page to translate platform rules into creator earnings estimates.</li>
+            <li>Record the source date beside each input so a later forecast change traces back to a specific policy update instead of a silent error.</li>
+          </ul>
+          <p className="mt-3 text-body-md text-neutral-700">
+            This workflow turns static reference tables into a repeatable forecasting routine, so policy
+            updates surface as dated, auditable changes rather than unnoticed drift in the numbers.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            TikTok reference FAQ
+          </h2>
+          <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
+            When does TikTok Shop pay creators?
+          </h3>
+          <p className="mt-3 text-body-md text-neutral-700">
+            TikTok Shop pays on a <strong className="font-semibold text-neutral-900">monthly cycle</strong>: earnings calculate during the first 10–15 days of the following month, initiate around mid-month, and land <strong className="font-semibold text-neutral-900">1–7 days later</strong> through PayPal or bank transfer.
+          </p>
+          <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
+            What is the TikTok Shop referral fee?
+          </h3>
+          <p className="mt-3 text-body-md text-neutral-700">
+            TikTok Shop charges sellers a flat <strong className="font-semibold text-neutral-900">6% referral fee on most US categories in 2026</strong>, with jewelry at 5%.
+          </p>
+          <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
+            What are the TikTok Creator Rewards eligibility requirements?
+          </h3>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Creator Rewards requires <strong className="font-semibold text-neutral-900">10,000 followers, 100,000 views in the last 30 days, and age 18 or older</strong>, and pays on eligible videos over one minute.
+          </p>
+          <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
+            What is the typical TikTok Shop affiliate commission?
+          </h3>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Sellers set creator affiliate commissions, which typically range from <strong className="font-semibold text-neutral-900">5–25%</strong> of the sale.
+          </p>
         </>
       }
     />

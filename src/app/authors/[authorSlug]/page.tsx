@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { AUTHORS } from '@/lib/constants/authors';
+import { AUTHORS, type Author } from '@/lib/constants/authors';
 import { PAGE_METADATA } from '@/lib/constants/page-metadata';
 import { CALCULATOR_SCHEMAS } from '@/lib/seo/calculator-schemas';
 import { BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
@@ -10,6 +10,20 @@ const AUTHOR_SLUGS = Object.keys(AUTHORS);
 
 export function generateStaticParams() {
   return AUTHOR_SLUGS.map((authorSlug) => ({ authorSlug }));
+}
+
+/**
+ * Build a ~150-character meta description from the desk's editorial focus
+ * (falling back to the bio when no focus paragraph is defined).
+ */
+function buildDescription(author: Author): string {
+  const source = author.editorialFocus || author.bio;
+  const firstSentenceEnd = source.search(/\.\s/);
+  const firstSentence =
+    firstSentenceEnd === -1 ? source : source.slice(0, firstSentenceEnd + 1);
+  return firstSentence.length <= 155
+    ? firstSentence
+    : firstSentence.slice(0, 152).trimEnd() + '…';
 }
 
 export function generateMetadata({
@@ -22,8 +36,8 @@ export function generateMetadata({
     return { title: 'Author Not Found' };
   }
   return {
-    title: `${author.role} | TT Calculator`,
-    description: author.bio,
+    title: `${author.role} — TT Calculator Editorial`,
+    description: buildDescription(author),
     alternates: {
       canonical: `https://ttcalculator.net/authors/${params.authorSlug}/`,
     },
@@ -145,6 +159,30 @@ export default function AuthorPage({
               </p>
             </div>
           </div>
+
+          {/* What This Desk Covers */}
+          {author.editorialFocus && (
+            <section className="mb-10 bg-white rounded-xl border border-neutral-200 p-6 shadow-sm">
+              <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">
+                What This Desk Covers
+              </h2>
+              <p className="text-body-md text-neutral-700 leading-relaxed">
+                {author.editorialFocus}
+              </p>
+            </section>
+          )}
+
+          {/* How We Approach This Area */}
+          {author.methodologyNote && (
+            <section className="mb-10 bg-white rounded-xl border border-neutral-200 p-6 shadow-sm">
+              <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">
+                How We Approach This Area
+              </h2>
+              <p className="text-body-md text-neutral-700 leading-relaxed">
+                {author.methodologyNote}
+              </p>
+            </section>
+          )}
 
           {/* Expertise & Credentials */}
           <div className="grid md:grid-cols-2 gap-6 mb-10">
@@ -297,6 +335,38 @@ export default function AuthorPage({
                 Methodology
               </Link>
             </div>
+          </section>
+
+          {/* Editorial Model */}
+          <section className="mb-10 rounded-xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <h2 className="text-heading-md font-semibold text-neutral-900 mb-4">
+              About TT Calculator&apos;s Editorial Model
+            </h2>
+            <p className="text-body-md text-neutral-700 leading-relaxed">
+              TT Calculator publishes under a desk-based authorship model rather
+              than individual bylines. Each author profile names an internal
+              editorial function — Editorial, Research, LIVE, Commerce, Tax
+              &amp; Operations, or Growth — because every page reflects
+              collaborative research, calculator maintenance, and structured
+              review. The six desks divide the 35+ calculators and guides on the
+              site by subject area so each topic has a clear owner. Read the
+              full{' '}
+              <Link
+                href="/about/"
+                className="text-primary-600 hover:text-primary-700 font-medium"
+              >
+                about TT Calculator
+              </Link>{' '}
+              page and our{' '}
+              <Link
+                href="/methodology/"
+                className="text-primary-600 hover:text-primary-700 font-medium"
+              >
+                methodology
+              </Link>{' '}
+              page for details on how calculators are built and how assumptions
+              stay current.
+            </p>
           </section>
 
           {/* Back Link */}

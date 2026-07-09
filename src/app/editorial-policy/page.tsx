@@ -43,76 +43,117 @@ export default function EditorialPolicyPage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          This page explains how TT Calculator plans, produces, reviews, and updates content
-          across calculators, guides, benchmark pages, and trust pages. Our editorial goal is
-          straightforward: publish content that is useful, transparent, and technically defensible.
-          We prioritize clarity over hype and assumptions over vague claims.
+          This page documents how TT Calculator plans, produces, reviews, and updates content across
+          calculators, guides, benchmark pages, and trust pages. The editorial standard is direct:
+          publish content that is useful, transparent, and technically defensible. Clarity outranks
+          hype, and stated assumptions outrank vague claims.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-          Editorial quality and product quality are treated as the same system on
-          ttcalculator.net. If formula logic improves, explanatory copy and assumptions should
-          improve with it. If benchmark context changes, related pages should be refreshed together.
+          Editorial quality and product quality run as one system on ttcalculator.net. When formula
+          logic improves, explanatory copy and assumptions improve with it. When benchmark context
+          shifts, related pages refresh together.
         </p>
 
         <section className="mt-8 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">1. Commitment to accuracy</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We present calculator outputs as directional estimates, not guaranteed outcomes. Creator
-            monetization depends on many moving variables, including geography, niche, seasonality,
-            algorithm changes, advertiser demand, and conversion quality. Our editorial standard is
-            to explain those variables rather than hide them.
+            Calculator outputs are{' '}
+            <strong className="font-semibold text-neutral-900">directional estimates, not guaranteed outcomes</strong>.
+            Creator monetization depends on moving variables including geography, niche, seasonality,
+            algorithm changes, advertiser demand, and conversion quality. The editorial standard
+            explains those variables rather than hiding them.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We explicitly label assumptions, date major updates, and avoid certainty language where
-            precision is not justified. If a range is unstable, we say so. If a data point is weak,
-            we either qualify it or remove it.
+            Every page labels its assumptions, dates major updates, and avoids certainty language
+            where precision is unjustified. Unstable ranges are called unstable, and weak data points
+            are qualified or removed.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">2. Content creation process</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">2. Desk-based authorship model</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We use a multi-step workflow for both product and editorial pages.
+            TT Calculator operates an internal desk model rather than a roster of named individual
+            experts. Each desk owns a content domain and is accountable for the assumptions, copy, and
+            corrections inside it. Attribution on a page points to the responsible desk, not to a
+            personal byline the site does not maintain.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Six desks divide the editorial workload.
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Editorial desk: review, voice consistency, and trust-policy alignment</li>
+            <li>Research desk: data sourcing, benchmark bands, and source-quality grading</li>
+            <li>LIVE desk: livestream gift economics and creator monetization during streams</li>
+            <li>Commerce desk: TikTok Shop, affiliate economics, and seller revenue</li>
+            <li>Tax desk: earnings-to-tax context and jurisdiction-aware guidance</li>
+            <li>Growth desk: audience metrics, benchmarking, and platform comparison</li>
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            The desk model keeps continuity when contributors change. Ownership of a topic lives in
+            the desk, so turnover in any single contributor does not break the editorial chain.
+          </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">3. Content creation process</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Product and editorial pages share a multi-step workflow.
           </p>
           <h3 className="mt-4 text-sm font-semibold text-neutral-900">Research</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            We gather inputs from platform documentation, creator-reported ranges, historical
-            observations, and community knowledge. We track whether each source is primary,
-            secondary, or anecdotal.
+            The Research desk gathers inputs from platform documentation, creator-reported ranges,
+            historical observations, and community knowledge. Each source is tagged primary,
+            secondary, or anecdotal before it enters a draft.
           </p>
           <h3 className="mt-4 text-sm font-semibold text-neutral-900">Drafting</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            Writers create draft copy with explicit units, assumptions, and limitations. Drafts are
-            written for practical decision support, not keyword stuffing.
+            The responsible desk drafts copy with explicit units, assumptions, and limitations. Drafts
+            target practical decision support, not keyword stuffing.
           </p>
           <h3 className="mt-4 text-sm font-semibold text-neutral-900">Review</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            Reviewers check formula logic, consistency of terminology, factual claims, link
-            integrity, and trust-policy alignment. We verify that copy does not imply guaranteed
-            income.
+            The Editorial desk checks formula logic, terminology consistency, factual claims, link
+            integrity, and trust-policy alignment. Reviewers confirm that copy never implies
+            guaranteed income.
           </p>
           <h3 className="mt-4 text-sm font-semibold text-neutral-900">Publication</h3>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            Pages are published with metadata, canonical settings, and schema where relevant. Trust
-            pages include update dates and cross-links to supporting policies.
+            Pages ship with metadata, canonical settings, and schema where relevant. Trust pages
+            carry update dates and cross-links to supporting policies.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">3. Data sources and calculator methodology</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">4. Fact-checking standards</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We do not claim privileged access to internal TikTok systems. Our methodology uses public
-            and community-visible signals, then converts them into transparent assumption bands.
-            These bands are shown in calculator pages so users can adjust inputs according to their
-            own situation.
+            Every numeric claim, eligibility threshold, and program term passes a three-check
+            standard before publication.
+          </p>
+          <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Verify the claim against at least one primary or high-reliability source.</li>
+            <li>Confirm the source is current and not superseded by a later platform change.</li>
+            <li>Quote or paraphrase the claim with the source category attached.</li>
+          </ol>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Claims that fail the standard are removed or rewritten as qualified ranges. The Research
+            desk logs the source category behind each retained number so a later reviewer can retrace
+            the decision.
+          </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">5. Data sources and calculator methodology</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            TT Calculator claims no privileged access to internal TikTok systems. The methodology uses
+            public and community-visible signals, then converts them into transparent assumption bands
+            shown on calculator pages. Users adjust inputs to their own situation and watch the result
+            move.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Whenever possible, we include a "How we estimate" section and an assumptions block. Our
-            team treats methodology transparency as a trust requirement, not an optional extra.
-            Users should be able to see exactly why a result moved when an input changed.
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            For a practical overview, see{' '}
+            Calculator pages carry a &quot;How we estimate&quot; section and an assumptions block
+            wherever the structure allows. Methodology transparency is a trust requirement, not an
+            optional extra. The practical overview lives in the{' '}
             <Link href="/methodology/" className="link">
               Methodology
             </Link>
@@ -121,96 +162,129 @@ export default function EditorialPolicyPage() {
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">4. Update and refresh policy</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">6. Update and refresh policy</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We run weekly assumption reviews and prioritize updates to pages with higher decision
-            impact. Major trigger events include changes to monetization programs, ad-rate behavior,
-            and widely observed platform policy shifts.
+            Assumption reviews run weekly, with priority for pages of higher decision impact. Trigger
+            events include monetization-program changes, ad-rate behavior, and widely observed
+            platform policy shifts.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Not every page updates on the same cadence, but each trust and policy page is dated so
-            readers can evaluate freshness. If a page is stale relative to new platform realities,
-            we prefer to revise promptly rather than preserve outdated estimates.
+            Each trust and policy page is dated so readers evaluate freshness directly. Stale
+            assumptions are revised promptly rather than preserved for convenience.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">5. Corrections policy</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">7. Handling TikTok&apos;s rapidly changing policies</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We accept correction requests from users, partners, and readers. When a correction is
-            submitted, we review source quality, assess impact, and patch copy or formulas if the
-            issue is valid.
+            TikTok updates monetization rules, eligibility gates, and eligible markets on short
+            notice. TT Calculator tracks those changes and routes them through a fixed response
+            process.
+          </p>
+          <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Monitor TikTok&apos;s official program documentation and creator-facing announcements.</li>
+            <li>Flag changes that affect eligibility, payout structure, or available markets.</li>
+            <li>Revise the affected assumption bands and calculator logic.</li>
+            <li>Update related guide, benchmark, and trust pages with a refreshed date.</li>
+          </ol>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Where a change is confirmed but details remain unclear, affected pages state the open
+            question instead of inventing a precise figure.
+          </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">8. Corrections policy</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Correction requests from users, partners, and readers enter the same review queue.
+            Submitted issues trigger source review, impact assessment, and a copy or formula patch
+            when the issue is valid.
           </p>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
-            <li>High-impact formula errors are prioritized first.</li>
-            <li>Factual copy issues are reviewed and corrected in regular editorial cycles.</li>
-            <li>Broken links and structural issues are fixed as part of ongoing maintenance.</li>
-            <li>Material policy changes are reflected in trust pages with updated dates.</li>
+            <li>High-impact formula errors take priority over all other work.</li>
+            <li>Factual copy issues are corrected inside the regular editorial cycle.</li>
+            <li>Broken links and structural problems are fixed during ongoing maintenance.</li>
+            <li>Material policy changes land in trust pages with refreshed dates.</li>
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            To report an issue, email{' '}
+            The detailed workflow for error reports and content fixes sits in the{' '}
+            <Link href="/corrections-policy/" className="link">
+              Corrections Policy
+            </Link>
+            . To report an issue, email{' '}
             <a href="mailto:contact@ttcalculator.net" className="link">
               contact@ttcalculator.net
             </a>{' '}
             or visit{' '}
             <Link href="/contact/" className="link">
-              Contact
+              Contact TT Calculator
             </Link>
             .
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">6. Editorial independence</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">9. Editorial independence</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Advertising revenue supports operations, but it does not dictate calculator assumptions
-            or editorial positions. We separate monetization decisions from content logic. Our
-            editors and reviewers are expected to preserve analytical integrity even when commercial
-            incentives exist.
+            Advertising revenue funds operations but dictates neither calculator assumptions nor
+            editorial positions. Monetization decisions stay separate from content logic, and editors
+            preserve analytical integrity even where commercial incentives exist.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We are NOT affiliated with, endorsed by, or sponsored by TikTok or ByteDance. Brand,
-            platform, and program names are used descriptively.
+            TT Calculator is{' '}
+            <strong className="font-semibold text-neutral-900">not affiliated with, endorsed by, or sponsored by TikTok or ByteDance</strong>.
+            Brand, platform, and program names appear descriptively. Monetization transparency lives
+            in the{' '}
+            <Link href="/compliance/advertising-disclosure/" className="link">
+              Advertising Disclosure
+            </Link>
+            .
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">7. AI usage disclosure</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">10. AI usage disclosure</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We may use AI-assisted tools for drafting, summarization, formatting support, and
-            workflow acceleration. AI assistance does not replace final human review. We do not
-            publish critical claims, formulas, or policy content without editorial sign-off.
+            AI-assisted tools support drafting, summarization, formatting, and workflow acceleration.
+            AI assistance does not replace final human review. No critical claim, formula, or policy
+            content publishes without editorial sign-off.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Our reviewers validate output quality, check factual coherence, verify links, and enforce
+            Reviewers validate output quality, check factual coherence, verify links, and enforce
             voice and compliance standards before publication.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">8. Reader trust commitments</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">11. Reader trust commitments</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
-            <li>We label estimates as estimates.</li>
-            <li>We expose assumptions and limitations.</li>
-            <li>We maintain accessible contact channels for corrections.</li>
-            <li>We disclose ad monetization clearly.</li>
-            <li>We avoid misleading guarantees and manipulative copy.</li>
+            <li>Estimates are labeled as estimates.</li>
+            <li>Assumptions and limitations stay visible.</li>
+            <li>Accessible contact channels accept corrections.</li>
+            <li>Ad monetization is disclosed clearly.</li>
+            <li>Misleading guarantees and manipulative copy are excluded.</li>
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            When uncertainty is high, we prioritize explicit caveats over persuasive copy. Our
-            default editorial stance is to reduce overconfidence, especially on monetization claims
-            that can materially affect creator decisions.
+            High uncertainty produces explicit caveats over persuasive copy. The default editorial
+            stance reduces overconfidence, especially on monetization claims that move creator
+            decisions.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">9. Related Resources</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">12. Related Resources</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
             <li>
               <Link href="/about/" className="link">
-                About
+                About TT Calculator
               </Link>{' '}
               for team and mission context.
+            </li>
+            <li>
+              <Link href="/methodology/" className="link">
+                Methodology
+              </Link>{' '}
+              for calculator inputs, outputs, and limits.
             </li>
             <li>
               <Link href="/compliance/advertising-disclosure/" className="link">
@@ -228,32 +302,26 @@ export default function EditorialPolicyPage() {
               <Link href="/corrections-policy/" className="link">
                 Corrections Policy
               </Link>{' '}
-              for how we handle error reports and content fixes.
+              for how error reports and content fixes are handled.
             </li>
             <li>
               <Link href="/sources-policy/" className="link">
                 Sources Policy
               </Link>{' '}
-              for how we evaluate and document data sources.
-            </li>
-            <li>
-              <Link href="/contact/" className="link">
-                Contact
-              </Link>{' '}
-              for error reporting and editorial questions.
+              for how data sources are evaluated and documented.
             </li>
           </ul>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">10. Contacting the editorial team</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">13. Contacting the editorial team</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            For corrections, source challenges, or methodology concerns, email{' '}
+            Corrections, source challenges, and methodology concerns go to{' '}
             <a href="mailto:contact@ttcalculator.net" className="link">
               contact@ttcalculator.net
             </a>{' '}
-            and include the exact URL plus your evidence or rationale. We aim to acknowledge
-            high-impact reports within 48 hours on business days.
+            with the exact URL plus supporting evidence. High-impact reports receive acknowledgment
+            within 48 hours on business days.
           </p>
         </section>
         </Container>

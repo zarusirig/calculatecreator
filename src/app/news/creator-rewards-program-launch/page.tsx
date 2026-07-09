@@ -211,6 +211,62 @@ export default function CreatorRewardsProgramLaunchPage() {
 
           <Card>
             <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              How RPM works in the Creator Rewards Program
+            </h2>
+            <p className="text-body-md text-neutral-700 mb-4">
+              Creator Rewards pays on qualified views, not raw play counts. TikTok begins counting
+              rewards only after a video accrues <strong>1,000 qualified For You feed views</strong>,
+              then multiplies the remaining qualified views by a revenue-per-mille (RPM) rate.
+            </p>
+            <p className="text-body-md text-neutral-700 mb-4">
+              TikTok publishes no official per-view payout rate. Across publicly reported creator
+              data, Creator Rewards RPM commonly falls between <strong>$0.02 and $0.05</strong> per
+              qualified view. Four factors move a creator's RPM: viewer geography, content niche,
+              average watch time, and audience demographics. Niche shifts the rate the most, so
+              finance and business content commonly outearns lip-sync and compilation clips.
+            </p>
+            <p className="text-body-md text-neutral-700">
+              For per-category bands, see the{' '}
+              <Link href="/data/rpm-rates-by-niche/" className="text-primary-600 hover:underline">
+                TikTok RPM rates by niche
+              </Link>{' '}
+              data. The full eligibility breakdown lives in the{' '}
+              <Link href="/guides/creator-rewards-program/" className="text-primary-600 hover:underline">
+                TikTok Creator Rewards Program
+              </Link>{' '}
+              guide.
+            </p>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              What this means for earnings estimates
+            </h2>
+            <p className="text-body-md text-neutral-700 mb-4">
+              Because TikTok withholds official per-view rates, any Creator Rewards earnings figure
+              is a <strong>directional estimate</strong>, not a guaranteed payout. The calculators
+              apply the commonly reported RPM band to a creator's qualified views and return a
+              low-to-high range rather than a single fixed number.
+            </p>
+            <p className="text-body-md text-neutral-700 mb-4">
+              The formulas, source categories, and refresh schedule that produce these ranges are
+              documented in the{' '}
+              <Link href="/methodology/" className="text-primary-600 hover:underline">methodology</Link>{' '}
+              reference. The{' '}
+              <Link href="/calculators/tiktok-money/" className="text-primary-600 hover:underline">
+                TikTok Money Calculator
+              </Link>{' '}
+              applies the same RPM band to estimate total creator earnings.
+            </p>
+            <p className="text-body-md text-neutral-700">
+              Three practices keep estimates realistic: enter a niche-specific RPM instead of the
+              platform average, count qualified views instead of total views, and rerun the estimate
+              monthly as benchmarks refresh.
+            </p>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
               What creators should do now
             </h2>
             <ol className="space-y-4">
@@ -236,6 +292,44 @@ export default function CreatorRewardsProgramLaunchPage() {
                 </div>
               </li>
             </ol>
+          </Card>
+
+          <Card>
+            <h2 className="text-heading-lg font-semibold text-neutral-900 mb-4">
+              Creator Rewards Program FAQ
+            </h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-1">
+                  Is the Creator Rewards Program the same as the old Creator Fund?
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  <strong>No.</strong> Creator Rewards replaces the discontinued Fund and adds three
+                  stricter rules: original content, public videos longer than one minute, and rewards
+                  that begin after 1,000 qualified For You feed views.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-1">
+                  How much does the Creator Rewards Program pay per view?
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  Creator Rewards RPM commonly lands between <strong>$0.02 and $0.05</strong> per
+                  qualified view, based on publicly reported creator data. TikTok publishes no
+                  official per-view rate, so individual payouts fall outside that band depending on
+                  niche and geography.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-neutral-900 mb-1">
+                  Can creators still access money earned from the Creator Fund?
+                </h3>
+                <p className="text-body-md text-neutral-700">
+                  <strong>Yes.</strong> Previously collected Creator Fund earnings remain available,
+                  and enrolling in Creator Rewards does not remove past payouts.
+                </p>
+              </div>
+            </div>
           </Card>
 
           <Card className="bg-gradient-to-br from-primary-50 to-secondary-50">

@@ -285,7 +285,7 @@ No. This prevents easy engagement and will lower overall engagement. Focus on en
 **Optimize further:**
 - Use **TikTok Engagement Rate Calculator** for overall engagement
 - Read **How to Increase Engagement Rate** for comprehensive strategies
-- Learn **TikTok Algorithm Explained** to understand engagement signals
+- Read the **TikTok Algorithm Explained** guide to understand engagement signals
 
 ---
 

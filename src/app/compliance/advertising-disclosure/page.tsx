@@ -48,57 +48,66 @@ export default function AdvertisingDisclosurePage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          TT Calculator is funded in part through advertising. This page explains how ads appear
-          on ttcalculator.net, how advertising affects (and does not affect) our content, and
-          what controls are available to users.
+          TT Calculator earns revenue through display advertising. This page names the ad network
+          used, states where ads appear and where they are blocked, explains how editorial content
+          stays separate from ads, and confirms the site&apos;s independence from TikTok.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-          We publish this disclosure to make monetization visible, not hidden. Readers should be
-          able to understand how TT Calculator earns revenue and where those decisions are kept
-          separate from editorial and calculator methodology.
+          The disclosure makes monetization visible rather than hidden. Readers understand how TT
+          Calculator earns revenue and where those decisions stay separate from editorial and
+          calculator methodology.
         </p>
 
         <section className="mt-8 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">1. How we make money</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">1. How TT Calculator makes money</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We monetize primarily through display advertising. Ads help cover editorial work,
-            calculator development, infrastructure, and maintenance so our tools remain publicly
-            accessible. We do not charge users to run core calculators.
+            Display advertising is the primary revenue source. Ads fund editorial work, calculator
+            development, infrastructure, and maintenance so the tools stay publicly accessible. Core
+            calculators charge users nothing to run.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We may also evaluate additional monetization models over time. If those models are
-            introduced, we update this page and related trust pages.
+            Additional monetization models are evaluated over time. Any new model introduced appears
+            on this page and on the related trust pages before it goes live.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Revenue is used to fund product development, content refresh cycles, technical audits,
-            hosting, and ongoing quality improvements across calculator and guide pages.
+            Revenue funds product development, content refresh cycles, technical audits, hosting, and
+            ongoing quality improvements across calculator and guide pages.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">2. About our ads (Google AdSense)</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">2. Google AdSense usage</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            TT Calculator uses Google AdSense for display advertising. AdSense may use cookies and
-            related technologies to serve personalized or non-personalized ads depending on your
-            consent settings and region.
+            TT Calculator serves display ads through{' '}
+            <strong className="font-semibold text-neutral-900">Google AdSense</strong>. The site&apos;s
+            AdSense publisher ID is{' '}
+            <code className="rounded bg-neutral-100 px-1 py-0.5 text-neutral-900">ca-pub-6191764023643150</code>,
+            loaded in the site <code className="rounded bg-neutral-100 px-1 text-neutral-900">&lt;head&gt;</code>{' '}
+            and tied to ad units placed on content routes.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You can review and manage ad preferences at{' '}
+            Ad units render in four formats: horizontal leaderboards, in-content rectangles, vertical
+            sidebars, and responsive auto-units. Each unit reserves its space before loading to
+            prevent layout shift, and each unit carries an &quot;Advertisement&quot; label above the
+            creative, as AdSense policy requires.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Ad units lazy-load through an intersection observer and render only when they near the
+            viewport, which keeps calculator and guide pages fast. The publisher shares ad revenue
+            with Google under standard AdSense terms; advertisers pay Google directly, not TT
+            Calculator, for each placement.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            AdSense uses cookies and related technologies to serve personalized or non-personalized
+            ads depending on consent settings and region. Manage preferences at{' '}
             <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="link">
               https://adssettings.google.com
-            </a>
-            .
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You can also use industry opt-out controls through the Network Advertising Initiative at{' '}
+            </a>{' '}
+            or use the industry opt-out at{' '}
             <a href="https://optout.networkadvertising.org" target="_blank" rel="noopener noreferrer" className="link">
               https://optout.networkadvertising.org
             </a>
-            .
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Depending on your region and consent state, ads may be personalized or non-personalized.
-            Our consent flow is described in our{' '}
+            . Consent flow details sit in the{' '}
             <Link href="/privacy/" className="link">
               Privacy Policy
             </Link>
@@ -107,54 +116,120 @@ export default function AdvertisingDisclosurePage() {
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">3. Ads do not influence editorial decisions</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">3. Where ads appear and where they do not</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Advertising does not determine calculator assumptions, benchmark ranges, or editorial
-            recommendations. We separate monetization from content logic and policy decisions.
+            Ads render only on designated content routes and never on trust, legal, or compliance
+            pages. The route list is enforced in code, not by editorial discretion.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Our editorial principles and correction process are documented in our{' '}
+            Ads appear on the following content routes:
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Calculator pages</li>
+            <li>Guide pages</li>
+            <li>Blog pages</li>
+            <li>Comparison pages</li>
+            <li>Data hub pages</li>
+            <li>News pages</li>
+            <li>Niche pages</li>
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Ads are blocked on every trust and legal route, including this page:
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
+            <li>Privacy, Terms, and Contact pages</li>
+            <li>About and FAQ pages</li>
+            <li>Glossary and search pages</li>
+            <li>Methodology and Editorial Policy pages</li>
+            <li>Compliance pages, including this Advertising Disclosure</li>
+          </ul>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            On calculator pages, ad zones sit away from input fields and primary action buttons so
+            paid placements never overlap interactive controls.
+          </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">4. Ads do not influence editorial decisions</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Advertising sets neither calculator assumptions, benchmark ranges, nor editorial
+            recommendations. Monetization stays separate from content logic and policy decisions.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            The separation is mechanical as well as editorial: the ad system renders only on allowed
+            routes, while methodology and calculator logic live on routes where ads never load. The
+            principles behind this separation are documented in the{' '}
             <Link href="/editorial-policy/" className="link">
               Editorial Policy
             </Link>
             .
           </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">5. Affiliate links</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We also avoid ad placements that create confusion around interactive controls. On
-            calculator pages, ad zones are intentionally separated from input fields and primary
-            action buttons.
+            TT Calculator runs{' '}
+            <strong className="font-semibold text-neutral-900">no active affiliate program as of this update</strong>.
+            Display advertising is the sole monetization channel in production. This includes no
+            TikTok Shop affiliate relationship and no third-party affiliate links on any page.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            If affiliate links are added on specific pages, the relationship is disclosed on-page and
+            in this policy before the links go live. Affiliate presence, where introduced, changes no
+            editorial evaluation standard.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">4. Affiliate links</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">6. No sponsored or advertorial content</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            As of this update, TT Calculator primarily relies on display advertising. If we add
-            affiliate links on specific pages, we disclose that relationship clearly on-page and in
-            this policy. Presence of affiliate monetization, where used, does not change editorial
-            evaluation standards.
+            TT Calculator publishes{' '}
+            <strong className="font-semibold text-neutral-900">no sponsored posts, paid placements, or advertorial disguised as editorial content</strong>.
+            No brand pays for a calculator result, a benchmark ranking, or a guide recommendation.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            The only paid surface on the site is the clearly labeled AdSense unit. Anything that reads
+            as content is editorially produced and reviewed under the standards in the{' '}
+            <Link href="/editorial-policy/" className="link">
+              Editorial Policy
+            </Link>
+            .
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">5. FTC compliance statement</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">7. Independence from TikTok</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            We follow Federal Trade Commission (FTC) disclosure principles by clearly communicating
-            material monetization relationships and by avoiding deceptive content framing.
-            Advertising and any future affiliate relationships are disclosed so users can evaluate
-            content context transparently.
+            TT Calculator is{' '}
+            <strong className="font-semibold text-neutral-900">not affiliated with, endorsed by, or sponsored by TikTok or ByteDance</strong>.
+            All brand, platform, and program names appear for descriptive identification only.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Our objective is simple: users should never have to guess whether a page is monetized.
-            We keep disclosure language visible, plain, and consistent with U.S. advertising
-            disclosure expectations.
+            AdSense ad creative is served by Google and is not controlled or curated by TikTok.
+            Advertisers pay Google, not TT Calculator, for placement, and TT Calculator receives a
+            share of that ad revenue under Google&apos;s standard publisher terms.
           </p>
         </section>
 
         <section className="mt-6 card p-6">
-          <h2 className="text-heading-md font-semibold text-neutral-900">6. Related Resources and policy links</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">8. FTC compliance statement</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            For advertising or disclosure questions, contact{' '}
+            TT Calculator follows Federal Trade Commission disclosure principles by communicating
+            material monetization relationships clearly and by avoiding deceptive content framing.
+            Advertising and any future affiliate relationship are disclosed so users evaluate content
+            context transparently.
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Users never guess whether a page is monetized. Disclosure language stays visible, plain,
+            and consistent with U.S. advertising disclosure expectations.
+          </p>
+        </section>
+
+        <section className="mt-6 card p-6">
+          <h2 className="text-heading-md font-semibold text-neutral-900">9. Related Resources and policy links</h2>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+            Advertising and disclosure questions go to{' '}
             <a href="mailto:contact@ttcalculator.net" className="link">
               contact@ttcalculator.net
             </a>
@@ -174,8 +249,14 @@ export default function AdvertisingDisclosurePage() {
               for independence and correction standards.
             </li>
             <li>
+              <Link href="/methodology/" className="link">
+                Methodology
+              </Link>{' '}
+              for calculator inputs, outputs, and limitations.
+            </li>
+            <li>
               <Link href="/contact/" className="link">
-                Contact
+                Contact TT Calculator
               </Link>{' '}
               for support and compliance requests.
             </li>

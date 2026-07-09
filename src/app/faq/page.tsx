@@ -19,9 +19,24 @@ const faqs = [
       'TT Calculator is a creator analytics product and editorial site that helps people estimate, compare, and benchmark outcomes such as RPM, projected earnings, engagement rate, deal pricing, and conversion performance. We focus on clear inputs, transparent assumptions, and readable outputs. The site is designed for creators, managers, and small teams that need practical directional models without requiring enterprise analytics tools.',
   },
   {
+    question: 'Is TT Calculator free to use?',
+    answer:
+      'Yes. All 35+ calculators are completely free, with no account, paywall, or usage limit. The site is funded by advertising rather than subscriptions, so tools stay open to every creator. There is no paid plan and no capped trial.',
+  },
+  {
+    question: 'Do I need to create an account or sign in to use the calculators?',
+    answer:
+      'No account is required. Every calculator loads and runs in the browser without login, email, or payment. There is nothing to install and no profile to manage.',
+  },
+  {
     question: 'How accurate are your calculators?',
     answer:
       'Our calculators are directional models, not guarantees. Accuracy depends on your inputs and how closely your niche, audience geography, seasonality, and content quality match the assumptions shown on each page. We intentionally surface assumptions so you can stress-test scenarios rather than rely on one fixed answer. If you need contractual or legal certainty, treat calculator outputs as planning support and verify with your own records and advisors.',
+  },
+  {
+    question: 'What kinds of TikTok calculators does TT Calculator offer?',
+    answer:
+      'TT Calculator offers 35+ tools across six areas: earnings and revenue, engagement, brand deals and commerce, TikTok Shop and LIVE, growth, and financial planning. Specific tools include RPM, engagement rate, brand deal rate, LIVE gift value, and break-even. The calculators directory lists every available tool and links to related guides.',
   },
   {
     question: 'Where do your benchmark ranges come from?',
@@ -39,6 +54,11 @@ const faqs = [
       'No. TT Calculator is independent and is not affiliated with, endorsed by, or sponsored by TikTok or ByteDance. We reference platform names descriptively because our tools are designed around creator workflows that happen on those platforms. Trademark ownership remains with the respective companies.',
   },
   {
+    question: 'Does TT Calculator have an affiliate or business relationship with TikTok?',
+    answer:
+      'No. TT Calculator has no affiliate, partnership, data-sharing, or referral relationship with TikTok or ByteDance. The site is independent and references platform names for descriptive purposes only. Advertising, where shown, is labeled and does not imply an endorsement.',
+  },
+  {
     question: 'How does TT Calculator make money?',
     answer:
       'We monetize through advertising, including Google AdSense. Advertising helps fund calculator development, editorial maintenance, infrastructure, and data review work so tools remain free to use. Advertising does not control calculator outputs or editorial conclusions. We document this separation in our Advertising Disclosure and Editorial Policy pages.',
@@ -49,14 +69,24 @@ const faqs = [
       'No. We do not sell calculator inputs or personal data. Calculator inputs are processed in your browser for estimation. We use analytics and advertising technologies as described in our Privacy Policy, including controls for consent and ad personalization preferences where required. We do not run a data brokerage model.',
   },
   {
+    question: 'Do my calculator inputs leave my browser?',
+    answer:
+      'No. Calculator inputs are processed locally in the browser for estimation, and no input values are sent to or stored on our servers. Privacy-sensitive fields stay on your device. Only the page itself and its assumption set load from the server.',
+  },
+  {
     question: 'What monetization programs do your tools cover?',
     answer:
-      'Our tools cover creator scenarios such as ad-based earnings projections, RPM analysis, engagement benchmarks, brand deal estimates, shop commission modeling, tax planning, and multi-platform comparisons. Coverage may vary by route as we expand templates and migrate legacy pages. The tools directory lists currently available calculators and links to related guides.',
+      'Our tools cover creator scenarios such as ad-based earnings projections, RPM analysis, engagement benchmarks, brand deal estimates, shop commission modeling, tax planning, and multi-platform comparisons. Coverage varies by route as we expand templates and migrate legacy pages. The tools directory lists currently available calculators and links to related guides.',
   },
   {
     question: 'Can I cite TT Calculator data in my own article or deck?',
     answer:
       'Yes, with attribution. Link to the relevant page and mention the date you accessed the data because benchmark ranges can change over time. If you are using outputs in client-facing or financial materials, include the assumptions and limitations so readers understand that estimates are directional. We do not grant exclusivity over public benchmark summaries.',
+  },
+  {
+    question: 'Can I use TT Calculator results in client proposals or negotiations?',
+    answer:
+      'Yes, as planning support. Cite the page, the date you accessed it, and the assumptions shown, because benchmark ranges shift over time. Treat outputs as directional estimates rather than contractual guarantees, and confirm figures with your own records before signing.',
   },
   {
     question: 'How do I report a bug or incorrect benchmark?',
@@ -98,10 +128,10 @@ export default function FAQPage() {
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
           <h1 className="text-display-sm font-bold text-neutral-900">Frequently Asked Questions</h1>
-          <p className="mt-4 text-body-md text-neutral-700">TikTok creators: 
-            This page answers the most common questions we receive about TT Calculator: how our
+          <p className="mt-4 text-body-md text-neutral-700">
+            This page answers the most common questions we receive about TT Calculator: how the
             calculators work, how we update assumptions, how we handle privacy, and how we fund the
-            site. If your question is not listed, contact us and we will add coverage where useful.
+            site. If your question is not listed, contact us and we add coverage where useful.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             We maintain this FAQ as an operational document, not a marketing page. Answers are
@@ -123,9 +153,15 @@ export default function FAQPage() {
             <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-neutral-700">
               <li>
                 <Link href="/about/" className="link">
-                  About
+                  About TT Calculator
                 </Link>{' '}
-                to learn who runs TT Calculator and how the product is maintained.
+                to learn who runs the site and how the product is maintained.
+              </li>
+              <li>
+                <Link href="/methodology/" className="link">
+                  Methodology
+                </Link>{' '}
+                for how assumptions are assembled and refreshed.
               </li>
               <li>
                 <Link href="/privacy/" className="link">
@@ -135,7 +171,7 @@ export default function FAQPage() {
               </li>
               <li>
                 <Link href="/contact/" className="link">
-                  Contact
+                  Contact TT Calculator
                 </Link>{' '}
                 for corrections, feature requests, and technical issues.
               </li>

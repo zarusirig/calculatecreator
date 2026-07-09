@@ -816,18 +816,12 @@ export default function GuidesPage() {
                   <p className="text-body-md text-neutral-600 mb-4">
                     {guide.description}
                   </p>
-                  {guide.status ? (
-                    <div className="text-body-sm text-neutral-500 italic">
-                      This guide is currently being written. Check back soon!
-                    </div>
-                  ) : (
-                    <Link
-                      href={`/guides/${guide.slug}`}
-                      className="btn btn-primary btn-md"
-                    >
-                      Read Guide →
-                    </Link>
-                  )}
+                  <Link
+                    href={`/guides/${guide.slug}`}
+                    className="btn btn-primary btn-md"
+                  >
+                    Read Guide →
+                  </Link>
                 </div>
               ))}
           </div>
