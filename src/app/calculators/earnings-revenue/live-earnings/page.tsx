@@ -7,7 +7,7 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { RelatedGuides } from '@/components/calculator/RelatedGuides';
-import { FAQSchema } from '@/components/seo/CalculatorSchema';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { LiveGiftsCalculatorWidget } from '@/components/calculators/live-gifts/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
@@ -48,6 +48,20 @@ const faqData = [
 export default function LiveGiftsCalculatorPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">
+      <CalculatorSchema
+        name="TikTok LIVE Gifts Calculator"
+        description="Estimate TikTok LIVE streaming income from virtual gifts, diamonds, and viewer engagement. Project hourly and monthly earnings for your stream size."
+        url="https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/"
+        dateModified="2025-11-13"
+        keywords={['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'LIVE Gifts Calculator', url: 'https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/' },
+        ]}
+      />
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
         <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' }]} />

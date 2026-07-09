@@ -7,7 +7,7 @@ import { FAQSection } from '@/components/calculator/FAQSection';
 import { SITE_CONFIG } from '@/lib/constants/site-config';
 
 export const metadata: Metadata = {
-  title: 'Best TikTok Shop Niches | Categories, Margins, and Creator Fit',
+  title: 'Best TikTok Shop Niches | Categories & Margins',
   description:
     'Compare TikTok Shop niches by commission range, competition, and content fit so you can choose products that match your audience.',
   keywords: ['best tiktok shop niches', 'profitable shop categories', 'tiktok affiliate niches', 'shop product selection'],

@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface FAQ {
   question: string;
   answer: string;
@@ -31,6 +33,7 @@ export function BlogPostSchema({
   const articleSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    '@id': `${url}#blogposting`,
     headline: title,
     description: description,
     url: url,
@@ -38,23 +41,28 @@ export function BlogPostSchema({
     dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/'
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png'
+        url: SITE_CONFIG.logoUrl
       }
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: image || SITE_CONFIG.ogImage
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': url
     },
     timeRequired: readTime,
-    ...(image && { image }),
     ...(wordCount && { wordCount }),
     ...(articleSection && { articleSection }),
   };

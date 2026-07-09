@@ -1,8 +1,12 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface CollectionItem {
   name: string;
   description: string;
   url: string;
   category?: string;
+  /** Optional per-item image; falls back to the site default OG image (SCH-1). */
+  image?: string;
 }
 
 interface CollectionSchemaProps {
@@ -35,7 +39,7 @@ export function CollectionSchema({
     description: description,
     url: url,
     isPartOf: {
-      '@id': 'https://tiktokcalculator.net/#website',
+      '@id': `${SITE_CONFIG.url}/#website`,
     },
     about: {
       '@type': 'Thing',
@@ -44,10 +48,11 @@ export function CollectionSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
   };
@@ -67,6 +72,11 @@ export function CollectionSchema({
         name: item.name,
         description: item.description,
         url: item.url,
+        // SCH-1: Article/Dataset items need an image for rich-result eligibility.
+        // Use the item-specific image when provided, else the site default OG image.
+        ...(itemType !== 'SoftwareApplication' && {
+          image: item.image || SITE_CONFIG.ogImage,
+        }),
         ...(collectionType === 'Calculators' && {
           applicationCategory: 'FinanceApplication',
           operatingSystem: 'Web',

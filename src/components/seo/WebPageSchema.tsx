@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface WebPageSchemaProps {
   title: string;
   description: string;
@@ -14,14 +16,15 @@ export function WebPageSchema({ title, description, url, breadcrumbs = [] }: Web
     name: title,
     description: description,
     isPartOf: {
-      '@id': 'https://tiktokcalculator.net/#website',
+      '@id': `${SITE_CONFIG.url}/#website`,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
   };

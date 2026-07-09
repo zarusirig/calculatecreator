@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface ArticleSchemaProps {
   title: string;
   description: string;
@@ -5,6 +7,7 @@ interface ArticleSchemaProps {
   category: string;
   datePublished?: string;
   dateModified?: string;
+  image?: string;
 }
 
 export function ArticleSchema({
@@ -14,10 +17,12 @@ export function ArticleSchema({
   category,
   datePublished = '2026-03-01T00:00:00Z',
   dateModified = '2026-03-01T00:00:00Z',
+  image,
 }: ArticleSchemaProps) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${url}#article`,
     headline: title,
     description: description,
     url: url,
@@ -25,16 +30,22 @@ export function ArticleSchema({
     dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/'
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png'
+        url: SITE_CONFIG.logoUrl
       }
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: image || SITE_CONFIG.ogImage
     },
     mainEntityOfPage: {
       '@type': 'WebPage',

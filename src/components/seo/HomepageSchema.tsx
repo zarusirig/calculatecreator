@@ -17,10 +17,14 @@ export function HomepageSchema() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
+    alternateName: 'TikTok Calculator',
     url: siteUrl('/'),
     logo: SITE_CONFIG.logoUrl,
     description: 'Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.',
+    // NOTE (SCH-3/EEAT-1): sameAs intentionally empty — site has no verified social/profile URLs yet.
+    // Populate from SITE_CONFIG once a shared sameAs constant exists; do not fabricate URLs.
     sameAs: [] as string[],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -33,12 +37,12 @@ export function HomepageSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': `${SITE_CONFIG.url}/#website`,
-    name: 'TikTok Calculator — Free TikTok Earnings & Engagement Calculator',
+    name: SITE_CONFIG.name,
+    alternateName: 'TikTok Calculator — Free TikTok Earnings & Engagement Calculator',
     url: siteUrl('/'),
     description: 'Free TikTok calculator to estimate earnings per view, engagement rate, brand deal rates, RPM, LIVE gift revenue, and TikTok Shop commissions. 35+ calculators with transparent methodology.',
     publisher: {
-      '@type': 'Organization',
-      name: SITE_CONFIG.name,
+      '@id': `${SITE_CONFIG.url}/#organization`,
     },
     potentialAction: {
       '@type': 'SearchAction',

@@ -27,18 +27,24 @@ export function AuthorPersonSchema({ author, url }: { author: Author; url?: stri
     author.socialLinks?.linkedin,
   ].filter(Boolean) as string[];
 
+  // Canonical entity URI for this author desk (SCH-2). /authors/<id>/ pages exist.
+  const personId = `${SITE_CONFIG.url}/authors/${author.id}/#person`;
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': personId,
     name: author.name,
     jobTitle: author.role,
     description: author.bio,
-    image: author.image || SITE_CONFIG.ogImage,
+    // Desks are org sub-entities with no individual headshots; use the brand logo as avatar (SCH-3).
+    image: author.image || SITE_CONFIG.logoUrl,
     ...(url && { url }),
     ...(sameAs.length > 0 && { sameAs }),
     ...(author.expertise.length > 0 && { knowsAbout: author.expertise }),
     affiliation: {
       '@type': 'Organization',
+      '@id': `${SITE_CONFIG.url}/#organization`,
       name: SITE_CONFIG.org.name,
       url: SITE_CONFIG.url,
     },
@@ -238,5 +244,7 @@ export function getPersonAuthorForSchema(pageSlug: string) {
       ? `https://tiktokcalculator.net${author.authorUrl}`
       : undefined,
     sameAs: sameAs.length > 0 ? sameAs : undefined,
+    // SCH-3: give the inline calculator author Person an image (desk avatar).
+    image: author.image || SITE_CONFIG.logoUrl,
   };
 }

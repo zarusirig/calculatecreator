@@ -7,7 +7,7 @@ import { MethodologySection } from '@/components/calculator/MethodologySection';
 import { FAQSection } from '@/components/calculator/FAQSection';
 import { RelatedCalculators } from '@/components/calculator/RelatedCalculators';
 import { RelatedGuides } from '@/components/calculator/RelatedGuides';
-import { FAQSchema } from '@/components/seo/CalculatorSchema';
+import { CalculatorSchema, FAQSchema, BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { ShopCommissionCalculatorWidget } from '@/components/calculators/shop-commission/CalculatorWidget';
 import { InputsExplained } from '@/components/calculator/InputsExplained';
 import { ToolExplanationSection } from '@/components/calculator/ToolExplanationSection';
@@ -51,6 +51,20 @@ const faqData = [
 export default function ShopCommissionCalculatorPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-info-light py-8">
+      <CalculatorSchema
+        name="TikTok Shop Commission Calculator"
+        description="Calculate TikTok Shop profit after commission fees, shipping, and platform costs. Estimate affiliate and seller earnings per product sold."
+        url="https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/"
+        dateModified="2025-11-13"
+        keywords={['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator']}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
+          { name: 'Shop Commission Calculator', url: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/' },
+        ]}
+      />
       <FAQSchema faqs={faqData} />
       <div className="container-custom">
         <Breadcrumb items={[{ label: 'Calculators', href: '/calculators/' }, { label: 'Shop Commission Calculator', href: '/calculators/commerce-ads/shop-profit/' }]} />

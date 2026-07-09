@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils/cn';
+import { ADS_CONFIG } from '@/lib/ads/config';
 
 type AdPlacementType = 'above-tool' | 'below-tool' | 'mid-article' | 'sidebar' | 'footer';
 
@@ -51,7 +52,10 @@ export function AdUnit({ slot, placement, className }: AdUnitProps) {
     }
   }, [isSafeToRender, slot]);
 
-  if (!slot || !isSafeToRender) {
+  // Respect the global ad-enable master switch and configured client ID,
+  // matching the gating in AdSlot.tsx so ads never render when
+  // NEXT_PUBLIC_ADS_ENABLED !== 'true' or no client ID is configured.
+  if (!ADS_CONFIG.enabled || !ADS_CONFIG.clientId || !slot || !isSafeToRender) {
     return null;
   }
 
@@ -73,7 +77,7 @@ export function AdUnit({ slot, placement, className }: AdUnitProps) {
           display: 'block',
           minHeight: getMinHeightByPlacement(placement),
         }}
-        data-ad-client="ca-pub-6191764023643150"
+        data-ad-client={ADS_CONFIG.clientId}
         data-ad-slot={slot}
         data-ad-format="auto"
         data-full-width-responsive="true"

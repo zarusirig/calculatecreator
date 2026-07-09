@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface ReferenceSchemaProps {
   title: string;
   description: string;
@@ -26,15 +28,17 @@ export function ReferenceSchema({
     dateModified: dateModified || datePublished,
     author: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
     mainEntityOfPage: {
@@ -61,7 +65,7 @@ export function ReferenceSchema({
         '@type': 'ListItem',
         position: 2,
         name: 'Reference',
-        item: 'https://tiktokcalculator.net/reference/',
+        item: 'https://tiktokcalculator.net/data/reference/',
       },
       {
         '@type': 'ListItem',

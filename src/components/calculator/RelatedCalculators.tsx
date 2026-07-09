@@ -125,7 +125,7 @@ export function RelatedCalculators({
         {calculators.map((calc) => (
           <Link
             key={calc.slug}
-            href={`/calculators/${calc.slug}`}
+            href={`/calculators/${calc.slug}/`}
             className="card card-hover p-6 group"
             onClick={() => handleClick(calc.slug, calc.name)}
           >

@@ -3,7 +3,7 @@ import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
 
 export const metadata: Metadata = {
-  title: 'TikTok Growth Guides | Algorithm, Content, and Audience Strategy',
+  title: 'TikTok Growth Guides | Algorithm & Content Strategy',
   description:
     'Browse growth guides on TikTok SEO, analytics, posting strategy, content testing, and audience development.',
   alternates: { canonical: 'https://tiktokcalculator.net/guides/growth/' },

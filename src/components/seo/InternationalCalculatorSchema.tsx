@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface FAQ {
   question: string;
   answer: string;
@@ -61,22 +63,25 @@ export function InternationalCalculatorSchema({
     ],
     provider: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
   };
 
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
+    '@id': `${url}#webpage`,
     name: title,
     description: description,
     url: url,
     inLanguage: languageCode,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#website`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
     about: {
       '@type': 'Thing',

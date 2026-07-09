@@ -72,8 +72,8 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     ],
     provider: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
   };
 
@@ -87,8 +87,8 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
     inLanguage: languageCode,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
     about: {
       '@type': 'Thing',
@@ -239,18 +239,21 @@ export function generateInternationalCalculatorSchemas(config: InternationalCalc
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${url}#article`,
     headline: guideTitle || title,
     description: description,
     image: SITE_CONFIG.ogImage,
     author: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
       logo: {
         '@type': 'ImageObject',
         url: SITE_CONFIG.logoUrl,

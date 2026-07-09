@@ -3,6 +3,8 @@ interface FAQ {
   answer: string;
 }
 
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface ComparisonSchemaProps {
   title: string;
   description: string;
@@ -37,16 +39,22 @@ export function ComparisonSchema({
     dateModified: dateModified,
     author: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/'
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png'
+        url: SITE_CONFIG.logoUrl
       }
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: SITE_CONFIG.ogImage
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -89,7 +97,7 @@ export function ComparisonSchema({
         '@type': 'ListItem',
         position: 2,
         name: 'Comparisons',
-        item: 'https://tiktokcalculator.net/comparisons/'
+        item: 'https://tiktokcalculator.net/data/platform-comparisons/'
       },
       {
         '@type': 'ListItem',

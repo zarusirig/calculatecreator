@@ -97,6 +97,7 @@ export default function CommerceAdsPage() {
           name: calc.name,
           description: calc.description,
           slug: calc.slug,
+          url: (calc as any).href ? `https://tiktokcalculator.net${(calc as any).href}` : undefined,
         }))}
         keywords={[
           'TikTok RPM calculator',

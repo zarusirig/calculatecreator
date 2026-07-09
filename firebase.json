@@ -495,6 +495,12 @@
     ],
     "headers": [
       {
+        "source": "**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        ]
+      },
+      {
         "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|ico)",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
@@ -507,12 +513,6 @@
         ]
       },
       {
-        "source": "/sw.js",
-        "headers": [
-          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-        ]
-      },
-      {
         "source": "**/*.@(css|js)",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
@@ -522,6 +522,12 @@
         "source": "_next/static/**",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        ]
+      },
+      {
+        "source": "/sw.js",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
         ]
       },
       {
@@ -540,6 +546,36 @@
         "source": "news/**",
         "headers": [
           { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+        ]
+      },
+      {
+        "source": "blog/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+        ]
+      },
+      {
+        "source": "data/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+        ]
+      },
+      {
+        "source": "authors/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+        ]
+      },
+      {
+        "source": "compliance/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
+        ]
+      },
+      {
+        "source": "calculator/**",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
         ]
       },
       {
@@ -566,7 +602,7 @@
           { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains; preload" },
           { "key": "X-Content-Type-Options", "value": "nosniff" },
           { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-          { "key": "Content-Security-Policy", "value": "frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://adservice.google.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://www.google-analytics.com https://www.googletagmanager.com" },
+          { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pagead2.googlesyndication.com https://www.googletagmanager.com https://www.google-analytics.com https://adservice.google.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://www.googletagservices.com https://*.adtrafficquality.google; frame-src 'self' https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://www.google.com https://*.adtrafficquality.google https://fundingchoicesmessages.google.com https://cse.google.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google https://ep2.adtrafficquality.google https://www.google-analytics.com https://www.googletagmanager.com https://*.adtrafficquality.google; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'" },
           { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
           { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
         ]

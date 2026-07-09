@@ -1,4 +1,11 @@
 import React from 'react';
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
+/** Stable canonical URIs for cross-page entity linking (SCH-2). */
+const ORG_ID = `${SITE_CONFIG.url}/#organization`;
+const SITE_ID = `${SITE_CONFIG.url}/#website`;
+const DEFAULT_ARTICLE_IMAGE = SITE_CONFIG.ogImage;
+const DEFAULT_PERSON_IMAGE = SITE_CONFIG.logoUrl;
 
 export interface CalculatorSchemaProps {
   name: string;
@@ -15,6 +22,7 @@ export interface CalculatorSchemaProps {
     jobTitle?: string;
     url?: string;
     sameAs?: string[];
+    image?: string;
   };
   datePublished?: string;
   dateModified?: string;
@@ -31,7 +39,7 @@ export function CalculatorSchema({
   description,
   url,
   category = 'BusinessApplication',
-  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
+  author = { name: SITE_CONFIG.name, url: `${SITE_CONFIG.url}/` },
   personAuthor,
   datePublished,
   dateModified,
@@ -42,6 +50,7 @@ export function CalculatorSchema({
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
+    '@id': `${url}#calculator`,
     name,
     description,
     url,
@@ -56,13 +65,18 @@ export function CalculatorSchema({
     author: personAuthor
       ? {
         '@type': 'Person' as const,
+        '@id': personAuthor.url
+          ? `${personAuthor.url.replace(/\/$/, '')}#person`
+          : undefined,
         name: personAuthor.name,
         ...(personAuthor.jobTitle && { jobTitle: personAuthor.jobTitle }),
         ...(personAuthor.url && { url: personAuthor.url }),
+        image: personAuthor.image || DEFAULT_PERSON_IMAGE,
         ...(personAuthor.sameAs && personAuthor.sameAs.length > 0 && { sameAs: personAuthor.sameAs }),
       }
       : {
         '@type': 'Organization' as const,
+        '@id': ORG_ID,
         name: author.name,
         url: author.url,
       },
@@ -99,6 +113,7 @@ export interface ArticleSchemaProps {
     jobTitle?: string;
     url?: string;
     sameAs?: string[];
+    image?: string;
   };
   image?: string;
   keywords?: string[];
@@ -111,15 +126,17 @@ export function ArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
+  author = { name: SITE_CONFIG.name, url: `${SITE_CONFIG.url}/` },
   personAuthor,
   image,
   keywords,
   articleBody,
 }: ArticleSchemaProps) {
+  const resolvedImage = image || DEFAULT_ARTICLE_IMAGE;
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
+    '@id': `${url}#article`,
     headline,
     description,
     url,
@@ -128,31 +145,35 @@ export function ArticleSchema({
     author: personAuthor
       ? {
         '@type': 'Person' as const,
+        '@id': personAuthor.url
+          ? `${personAuthor.url.replace(/\/$/, '')}#person`
+          : undefined,
         name: personAuthor.name,
         ...(personAuthor.jobTitle && { jobTitle: personAuthor.jobTitle }),
         ...(personAuthor.url && { url: personAuthor.url }),
+        image: personAuthor.image || DEFAULT_PERSON_IMAGE,
         ...(personAuthor.sameAs && personAuthor.sameAs.length > 0 && { sameAs: personAuthor.sameAs }),
       }
       : {
         '@type': 'Organization' as const,
+        '@id': ORG_ID,
         name: author.name,
         url: author.url,
       },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': ORG_ID,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
-    ...(image && {
-      image: {
-        '@type': 'ImageObject',
-        url: image,
-      },
-    }),
+    image: {
+      '@type': 'ImageObject',
+      url: resolvedImage,
+    },
     ...(keywords && { keywords: keywords.join(', ') }),
     ...(articleBody && { articleBody }),
     inLanguage: 'en-US',
@@ -229,14 +250,16 @@ export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net/',
-    logo: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+    '@id': ORG_ID,
+    name: SITE_CONFIG.name,
+    url: `${SITE_CONFIG.url}/`,
+    logo: SITE_CONFIG.logoUrl,
     description:
       'Free TikTok creator calculators and benchmarks. Transparent earnings estimates, engagement analytics, and growth tools with expert-reviewed methodology.',
-    sameAs: [
-      // Add social media profiles here when available
-    ],
+    // NOTE (SCH-3/EEAT-1): sameAs is intentionally empty — the site has no verified
+    // social/profile URLs today. Populate from a shared constant (e.g. SITE_CONFIG.sameAs)
+    // once real profiles exist; do not fabricate URLs.
+    sameAs: [] as string[],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -257,13 +280,18 @@ export function WebSiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net/',
+    '@id': SITE_ID,
+    name: SITE_CONFIG.name,
+    alternateName: 'TikTok Calculator',
+    url: `${SITE_CONFIG.url}/`,
     description:
       'Free TikTok calculators and tools for creators. Calculate earnings, engagement rates, follower growth, and more.',
+    publisher: {
+      '@id': ORG_ID,
+    },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://tiktokcalculator.net/search?q={search_term_string}',
+      target: `${SITE_CONFIG.url}/search?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
@@ -282,6 +310,7 @@ export interface PersonSchemaProps {
   jobTitle: string;
   description: string;
   url?: string;
+  image?: string;
   sameAs?: string[];
   knowsAbout?: string[];
   affiliation?: {
@@ -295,6 +324,7 @@ export function PersonSchema({
   jobTitle,
   description,
   url,
+  image,
   sameAs,
   knowsAbout,
   affiliation,
@@ -302,15 +332,18 @@ export function PersonSchema({
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    ...(url && { '@id': `${url.replace(/\/$/, '')}#person` }),
     name,
     jobTitle,
     description,
+    image: image || DEFAULT_PERSON_IMAGE,
     ...(url && { url }),
     ...(sameAs && { sameAs }),
     ...(knowsAbout && { knowsAbout }),
     ...(affiliation && {
       affiliation: {
         '@type': 'Organization',
+        '@id': ORG_ID,
         name: affiliation.name,
         url: affiliation.url,
       },
@@ -455,6 +488,14 @@ export interface NewsArticleSchemaProps {
     name: string;
     url?: string;
   };
+  /** When provided, uses Person schema type for the author instead of Organization (SCH-5). */
+  personAuthor?: {
+    name: string;
+    jobTitle?: string;
+    url?: string;
+    sameAs?: string[];
+    image?: string;
+  };
   image?: string;
   keywords?: string[];
   articleBody?: string;
@@ -466,39 +507,54 @@ export function NewsArticleSchema({
   url,
   datePublished,
   dateModified,
-  author = { name: 'TT Calculator', url: 'https://tiktokcalculator.net/' },
+  author = { name: SITE_CONFIG.name, url: `${SITE_CONFIG.url}/` },
+  personAuthor,
   image,
   keywords,
   articleBody,
 }: NewsArticleSchemaProps) {
+  const resolvedImage = image || DEFAULT_ARTICLE_IMAGE;
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
+    '@id': `${url}#newsarticle`,
     headline,
     description,
     url,
     datePublished,
     dateModified,
-    author: {
-      '@type': 'Organization',
-      name: author.name,
-      url: author.url,
-    },
+    author: personAuthor
+      ? {
+        '@type': 'Person' as const,
+        '@id': personAuthor.url
+          ? `${personAuthor.url.replace(/\/$/, '')}#person`
+          : undefined,
+        name: personAuthor.name,
+        ...(personAuthor.jobTitle && { jobTitle: personAuthor.jobTitle }),
+        ...(personAuthor.url && { url: personAuthor.url }),
+        image: personAuthor.image || DEFAULT_PERSON_IMAGE,
+        ...(personAuthor.sameAs && personAuthor.sameAs.length > 0 && { sameAs: personAuthor.sameAs }),
+      }
+      : {
+        '@type': 'Organization' as const,
+        '@id': ORG_ID,
+        name: author.name,
+        url: author.url,
+      },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': ORG_ID,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
-    ...(image && {
-      image: {
-        '@type': 'ImageObject',
-        url: image,
-      },
-    }),
+    image: {
+      '@type': 'ImageObject',
+      url: resolvedImage,
+    },
     ...(keywords && { keywords: keywords.join(', ') }),
     ...(articleBody && { articleBody }),
     inLanguage: 'en-US',
@@ -521,6 +577,7 @@ export interface CollectionPageSchemaProps {
     name: string;
     description: string;
     slug: string;
+    url?: string;
   }>;
   keywords?: string[];
   about?: {
@@ -551,7 +608,7 @@ export function CollectionPageSchema({
         '@type': 'SoftwareApplication',
         name: calc.name,
         description: calc.description,
-        url: `${url}/${calc.slug}`,
+        url: calc.url || `${url.replace(/\/$/, '')}/${calc.slug}`,
         applicationCategory: 'FinanceApplication',
         operatingSystem: 'Web',
         offers: {
@@ -571,7 +628,16 @@ export function CollectionPageSchema({
     description,
     url,
     isPartOf: {
-      '@id': 'https://tiktokcalculator.net/#website',
+      '@id': SITE_ID,
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: SITE_CONFIG.name,
+      logo: {
+        '@type': 'ImageObject',
+        url: SITE_CONFIG.logoUrl,
+      },
     },
     ...(about && {
       about: {

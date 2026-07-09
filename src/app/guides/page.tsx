@@ -1041,6 +1041,9 @@ export default function GuidesPage() {
                   Earnings breakdowns and strategies for beauty, finance, fitness, and more.
                 </p>
                 <div className="flex flex-wrap gap-2">
+                  <Link href="/guides/niches/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Niche Hub →
+                  </Link>
                   <Link href="/guides/beauty-creators-earnings/" className="text-body-sm text-tiktok-pink hover:underline">
                     Beauty →
                   </Link>
@@ -1063,6 +1066,9 @@ export default function GuidesPage() {
                   Tax planning, multi-platform growth, and series monetization strategies.
                 </p>
                 <div className="flex flex-wrap gap-2">
+                  <Link href="/guides/business/" className="text-body-sm text-tiktok-pink hover:underline">
+                    Business Hub →
+                  </Link>
                   <Link href="/guides/creator-tax-strategy/" className="text-body-sm text-tiktok-pink hover:underline">
                     Tax Strategy →
                   </Link>

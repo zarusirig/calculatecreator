@@ -51,7 +51,6 @@ const footerColumns = [
       { label: 'Data & Earnings', href: '/data/earnings/' },
       { label: 'Engagement Data', href: '/data/engagement/' },
       { label: 'Platform Comparisons', href: '/data/platform-comparisons/' },
-      { label: 'Comparisons', href: '/data/platform-comparisons/' },
       { label: 'Reference', href: '/data/reference/' },
     ],
   },

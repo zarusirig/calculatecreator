@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { DollarSign, BookOpen, RefreshCw, CheckCircle, Target, Lightbulb, Clock, MessageCircle, Calendar, Gift, AlertTriangle, Gem, ShoppingCart, FileText, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'TikTok Monetization Calculator Hub | Earnings Tools and Strategy',
+  title: 'TikTok Monetization Calculator Hub | Earnings Tools',
   description:
     'Compare TikTok income streams and calculators for Creator Rewards, brand deals, LIVE gifts, Shop, affiliate revenue, and more.',
   keywords: ['tiktok monetization', 'tiktok earnings', 'creator fund', 'brand deals', 'tiktok shop', 'affiliate marketing', 'live gifts', 'tiktok income'],

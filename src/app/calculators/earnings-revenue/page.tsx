@@ -261,7 +261,7 @@ export default function EarningsRevenuePage() {
         name="TikTok Earnings & Revenue Calculators"
         description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Rewards, legacy Creator Fund comparisons, brand deals, and total revenue across all monetization streams."
         url="https://tiktokcalculator.net/calculators/earnings-revenue/"
-        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
+        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: (c as any).href ? `https://tiktokcalculator.net${(c as any).href}` : undefined }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 import { Breadcrumb } from '@/components/layout/Breadcrumb';
+import { BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 
 export const metadata: Metadata = {
   title: 'Methodology | TT Calculator',
@@ -14,6 +15,36 @@ export const metadata: Metadata = {
 
 export default function MethodologyPage() {
   return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://tiktokcalculator.net' },
+          { name: 'Methodology', url: 'https://tiktokcalculator.net/methodology/' },
+        ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Methodology',
+            description:
+              'How TT Calculator builds calculator assumptions, evaluates source quality, refreshes ranges, and explains limitations across tools and content.',
+            url: 'https://tiktokcalculator.net/methodology/',
+            isPartOf: {
+              '@type': 'WebSite',
+              name: 'TT Calculator',
+              url: 'https://tiktokcalculator.net/',
+            },
+            about: {
+              '@type': 'Thing',
+              name: 'Calculator methodology and assumption sourcing',
+            },
+            inLanguage: 'en-US',
+          }),
+        }}
+      />
     <div className="pb-16 pt-10">
       <Container className="max-w-4xl">
         <Breadcrumb items={[{ label: 'Methodology', href: '/methodology/' }]} />
@@ -137,5 +168,6 @@ export default function MethodologyPage() {
         </section>
       </Container>
     </div>
+    </>
   );
 }

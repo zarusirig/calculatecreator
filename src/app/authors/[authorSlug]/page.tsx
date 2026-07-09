@@ -22,7 +22,7 @@ export function generateMetadata({
     return { title: 'Author Not Found' };
   }
   return {
-    title: `${author.name} — ${author.role} | TT Calculator`,
+    title: `${author.role} | TT Calculator`,
     description: author.bio,
     alternates: {
       canonical: `https://tiktokcalculator.net/authors/${params.authorSlug}/`,

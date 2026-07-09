@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from '@/lib/constants/site-config';
+
 interface FAQ {
   question: string;
   answer: string;
@@ -8,6 +10,8 @@ interface CollectionItem {
   description: string;
   url: string;
   category?: string;
+  /** Optional per-item image; falls back to the site default OG image (SCH-1). */
+  image?: string;
 }
 
 interface HubPageSchemaConfig {
@@ -43,9 +47,9 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     url: url,
     isPartOf: {
       '@type': 'WebSite',
-      '@id': 'https://tiktokcalculator.net/#website',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#website`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
     },
     about: {
       '@type': 'Thing',
@@ -54,11 +58,12 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'TT Calculator',
-      url: 'https://tiktokcalculator.net/',
+      '@id': `${SITE_CONFIG.url}/#organization`,
+      name: SITE_CONFIG.name,
+      url: `${SITE_CONFIG.url}/`,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+        url: SITE_CONFIG.logoUrl,
       },
     },
     datePublished,
@@ -81,6 +86,10 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
         name: item.name,
         description: item.description,
         url: item.url,
+        // SCH-1: Article items need an image for rich-result eligibility.
+        ...(collectionType !== 'Calculators' && {
+          image: item.image || SITE_CONFIG.ogImage,
+        }),
         ...(collectionType === 'Calculators' && {
           applicationCategory: 'FinanceApplication',
           operatingSystem: 'Web',
@@ -262,7 +271,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   reference: {
     title: 'TikTok Reference Data: Official Rates, Schedules & Requirements',
     description: 'Verified reference data for TikTok creators including Creator Fund rates, payment schedules, eligibility requirements, and commission structures.',
-    url: 'https://tiktokcalculator.net/reference/',
+    url: 'https://tiktokcalculator.net/data/reference/',
     collectionType: 'Reference',
     faqs: [
       {

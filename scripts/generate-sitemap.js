@@ -11,7 +11,6 @@ const EXCLUDED_ROUTE_PATTERNS = [
   /^\/404\/$/,
   /^\/bookmarks\/$/,
   /^\/search\/$/,
-  /^\/calculator\/(de|es|fr|it|my|pt-br)\/$/,
   /^\/calculators\/fun-niche\/$/,
   /^\/calculators\/fun-niche\/moon-phase\/$/,
   /^\/tools\/$/,
@@ -63,6 +62,41 @@ function loadRedirectSourceRoutes() {
 }
 
 const REDIRECT_SOURCE_ROUTES = loadRedirectSourceRoutes();
+
+const REPO_ROOT = path.join(__dirname, '..');
+
+// Build a map of file path (relative to repo root) -> last commit date (YYYY-MM-DD)
+// in a single `git log` pass. This yields a deterministic per-URL lastmod that
+// reflects real content changes — unlike fs.statSync mtime, which is uniform on
+// fresh CI checkouts (every file shares the checkout timestamp). Walks commits
+// newest->oldest; the first (newest) occurrence of each file wins. Returns an
+// empty map if git is unavailable so callers fall back to fs mtime / build date.
+function buildGitMtimeMap() {
+  try {
+    const { execSync } = require('child_process');
+    const out = execSync('git log --pretty=format:%ad --date=short --name-only', {
+      encoding: 'utf-8',
+      stdio: ['pipe', 'pipe', 'pipe'],
+      maxBuffer: 30 * 1024 * 1024,
+    });
+    const map = new Map();
+    let currentDate = null;
+    for (const line of out.split('\n')) {
+      const trimmed = line.trim();
+      if (!trimmed) continue;
+      if (/^\d{4}-\d{2}-\d{2}$/.test(trimmed)) {
+        currentDate = trimmed;
+      } else if (currentDate && !map.has(trimmed)) {
+        map.set(trimmed, currentDate);
+      }
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+const GIT_MTIME_MAP = buildGitMtimeMap();
 
 // Priority and changefreq rules based on route patterns
 function getRouteConfig(route) {
@@ -133,12 +167,32 @@ function toISODate(value) {
   return Number.isNaN(d.getTime()) ? null : d.toISOString().split('T')[0];
 }
 
+// Look up the file's last git commit date from the prebuilt map.
+function getGitMtime(filePath) {
+  try {
+    const rel = path.relative(REPO_ROOT, filePath).replace(/\\/g, '/');
+    const fromGit = GIT_MTIME_MAP.get(rel);
+    if (fromGit) return fromGit;
+  } catch {
+    // fall through
+  }
+  return null;
+}
+
 // Derive a per-URL <lastmod> from the real content modification time.
-// Priority: an explicit frontmatter modification date (passed by the caller),
-// else the source file's fs.statSync mtime, else the build date as a last resort.
-function getLastModified(filePath, frontmatterDate) {
-  const fromFrontmatter = toISODate(frontmatterDate);
-  if (fromFrontmatter) return fromFrontmatter;
+// Priority: an explicit frontmatter modification date (dateModified/updatedAt/
+// updatedDate) > git last-commit date > frontmatter publish date > filesystem
+// mtime > build date. Git mtime is preferred over publishDate because a file's
+// publish date is not a modification signal and would hide later content edits.
+function getLastModified(filePath, frontmatterModified, frontmatterPublished) {
+  const fromModified = toISODate(frontmatterModified);
+  if (fromModified) return fromModified;
+
+  const fromGit = getGitMtime(filePath);
+  if (fromGit) return fromGit;
+
+  const fromPublished = toISODate(frontmatterPublished);
+  if (fromPublished) return fromPublished;
 
   try {
     const { mtime } = fs.statSync(filePath);
@@ -240,7 +294,8 @@ function generate() {
       let priority = '0.6';
       let changefreq = 'monthly';
       let noindex = false;
-      let frontmatterDate = null;
+      let frontmatterModified = null;
+      let frontmatterPublished = null;
       try {
         const raw = fs.readFileSync(filePath, 'utf-8');
         const { data } = matter(raw);
@@ -254,18 +309,22 @@ function generate() {
           changefreq = 'weekly';
         }
         // Per-URL lastmod: prefer an explicit content modification date from
-        // frontmatter, then fall back to the page's publish date.
-        frontmatterDate =
+        // frontmatter (dateModified/updatedAt/updatedDate); the publish date is
+        // only a fallback after git last-commit mtime is checked.
+        frontmatterModified =
           data.dateModified ||
           data.updatedAt ||
           data.updatedDate ||
+          null;
+        frontmatterPublished =
           data.publishDate ||
+          data.datePublished ||
           null;
       } catch {
         // Fall through with defaults
       }
 
-      const lastmod = getLastModified(filePath, frontmatterDate);
+      const lastmod = getLastModified(filePath, frontmatterModified, frontmatterPublished);
       return { route, lastmod, priority, changefreq, noindex };
     })
     .filter((entry) => shouldIncludeRoute(entry.route) && !entry.noindex);
