@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok nationwide ban status update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/tiktok-nationwide-ban-status/',
+    canonical: 'https://ttcalculator.net/news/tiktok-nationwide-ban-status/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokNationwideBanStatusPage() {
       <NewsArticleSchema
         headline="Understanding TikTok's De Jure Nationwide Ban Status"
         description="While a nationwide TikTok ban technically took effect on January 19, 2026, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating."
-        url="https://tiktokcalculator.net/news/tiktok-nationwide-ban-status/"
+        url="https://ttcalculator.net/news/tiktok-nationwide-ban-status/"
         datePublished="2025-11-01"
         dateModified="2026-03-01"
-        image="https://tiktokcalculator.net/news/news-regulatory-1024.webp"
+        image="https://ttcalculator.net/news/news-regulatory-1024.webp"
         keywords={['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
-          { name: 'TikTok Ban Status', url: 'https://tiktokcalculator.net/news/tiktok-nationwide-ban-status/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'News', url: 'https://ttcalculator.net/news/' },
+          { name: 'TikTok Ban Status', url: 'https://ttcalculator.net/news/tiktok-nationwide-ban-status/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

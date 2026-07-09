@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description: "Calculate TikTok Shop profit after commission fees, shipping, and platform costs. Estimate affiliate and seller earnings per product sold.",
   keywords: ['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',
+    canonical: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/',
   },
 };
 
@@ -54,15 +54,15 @@ export default function ShopCommissionCalculatorPage() {
       <CalculatorSchema
         name="TikTok Shop Commission Calculator"
         description="Calculate TikTok Shop profit after commission fees, shipping, and platform costs. Estimate affiliate and seller earnings per product sold."
-        url="https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/"
+        url="https://ttcalculator.net/calculators/commerce-ads/shop-profit/"
         dateModified="2025-11-13"
         keywords={['tiktok shop commission', 'seller fees calculator', 'tiktok shop fees', 'referral fee calculator', 'shop profit calculator']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Shop Commission Calculator', url: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Shop Commission Calculator', url: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/' },
         ]}
       />
       <FAQSchema faqs={faqData} />

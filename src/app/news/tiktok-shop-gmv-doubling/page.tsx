@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok shop gmv doubling update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/tiktok-shop-gmv-doubling/',
+    canonical: 'https://ttcalculator.net/news/tiktok-shop-gmv-doubling/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokShopGMVDoublingPage() {
       <NewsArticleSchema
         headline="TikTok Shop Projected to Double GMV by End of 2026"
         description="Industry projections indicate TikTok Shop's global gross merchandise value could double by the end of 2026, outpacing competitors in social commerce."
-        url="https://tiktokcalculator.net/news/tiktok-shop-gmv-doubling/"
+        url="https://ttcalculator.net/news/tiktok-shop-gmv-doubling/"
         datePublished="2026-01-05"
         dateModified="2026-03-01"
-        image="https://tiktokcalculator.net/news/news-shop-1024.webp"
+        image="https://ttcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop gmv', 'social commerce growth', 'tiktok sales', 'e-commerce projections']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
-          { name: 'TikTok Shop GMV Growth', url: 'https://tiktokcalculator.net/news/tiktok-shop-gmv-doubling/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'News', url: 'https://ttcalculator.net/news/' },
+          { name: 'TikTok Shop GMV Growth', url: 'https://ttcalculator.net/news/tiktok-shop-gmv-doubling/' },
         ]}
       />
     <div className="min-h-screen bg-neutral-50">

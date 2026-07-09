@@ -11,7 +11,7 @@ const LINKING_REPORT_PATH = path.join(ROOT, 'linking-audit-report.json');
 const THIN_REPORT_PATH = path.join(ROOT, 'thin-pages-report.json');
 const CONTENT_REPORT_PATH = path.join(ROOT, 'reports', 'content-quality-audit.json');
 
-const OWN_HOSTS = new Set(['tiktokcalculator.net', 'www.tiktokcalculator.net']);
+const OWN_HOSTS = new Set(['ttcalculator.net', 'www.ttcalculator.net']);
 const STOPWORDS = new Set([
   'the',
   'and',

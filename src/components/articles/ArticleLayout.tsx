@@ -61,7 +61,7 @@ function buildBreadcrumbItems(section: string, frontmatter: ArticleFrontmatter) 
 function buildSchemaItems(section: string, frontmatter: ArticleFrontmatter) {
   const segments = section.split('/');
   const items: { name: string; url: string }[] = [
-    { name: 'Home', url: 'https://tiktokcalculator.net' },
+    { name: 'Home', url: 'https://ttcalculator.net' },
   ];
 
   let path = '';
@@ -71,12 +71,12 @@ function buildSchemaItems(section: string, frontmatter: ArticleFrontmatter) {
       .split('-')
       .map(w => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ');
-    items.push({ name, url: `https://tiktokcalculator.net${path}/` });
+    items.push({ name, url: `https://ttcalculator.net${path}/` });
   }
 
   items.push({
     name: frontmatter.title,
-    url: `https://tiktokcalculator.net/${section}/${frontmatter.slug}/`,
+    url: `https://ttcalculator.net/${section}/${frontmatter.slug}/`,
   });
 
   return items;
@@ -192,7 +192,7 @@ export function ArticleLayout({
   section,
   children,
 }: ArticleLayoutProps) {
-  const canonicalUrl = `https://tiktokcalculator.net/${section}/${frontmatter.slug}/`;
+  const canonicalUrl = `https://ttcalculator.net/${section}/${frontmatter.slug}/`;
   const breadcrumbItems = buildBreadcrumbItems(section, frontmatter);
   const schemaItems = buildSchemaItems(section, frontmatter);
   const resolvedAuthor = resolveAuthorFromFrontmatter(frontmatter.author);
@@ -215,7 +215,7 @@ export function ArticleLayout({
         headline={frontmatter.title}
         description={frontmatter.metaDescription}
         url={canonicalUrl}
-        image={frontmatter.featuredImage ? `https://tiktokcalculator.net${frontmatter.featuredImage}` : 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp'}
+        image={frontmatter.featuredImage ? `https://ttcalculator.net${frontmatter.featuredImage}` : 'https://ttcalculator.net/home/hero-dashboard-1600.webp'}
         datePublished={frontmatter.publishDate}
         dateModified={frontmatter.updatedDate || frontmatter.publishDate}
         keywords={[frontmatter.primaryKeyword, ...frontmatter.secondaryKeywords]}
@@ -223,7 +223,7 @@ export function ArticleLayout({
           name: resolvedAuthor.name,
           jobTitle: resolvedAuthor.role,
           url: resolvedAuthor.authorUrl
-            ? `https://tiktokcalculator.net${resolvedAuthor.authorUrl}`
+            ? `https://ttcalculator.net${resolvedAuthor.authorUrl}`
             : undefined,
           sameAs: sameAs.length > 0 ? sameAs : undefined,
         }}

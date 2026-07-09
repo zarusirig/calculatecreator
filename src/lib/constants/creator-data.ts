@@ -2,7 +2,7 @@
  * Centralized Creator Data Constants
  * ===================================
  * Single source of truth for ALL rates, benchmarks, conversion values, and
- * factual data points used across tiktokcalculator.net.
+ * factual data points used across ttcalculator.net.
  *
  * WHY THIS FILE EXISTS:
  * A cross-page consistency audit (2026-03-18) found 19 factual contradictions

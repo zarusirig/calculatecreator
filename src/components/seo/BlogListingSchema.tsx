@@ -7,7 +7,7 @@ export function BlogListingSchema() {
     '@id': `${SITE_CONFIG.url}/blog/#blog`,
     name: 'TikTok Creator Blog',
     description: 'Expert insights on TikTok monetization, creator earnings, and platform strategies',
-    url: 'https://tiktokcalculator.net/blog/',
+    url: 'https://ttcalculator.net/blog/',
     publisher: {
       '@type': 'Organization',
       '@id': `${SITE_CONFIG.url}/#organization`,
@@ -21,7 +21,7 @@ export function BlogListingSchema() {
       {
         '@type': 'BlogPosting',
         headline: 'Creator Fund vs LIVE Gifts: Which Pays More?',
-        url: 'https://tiktokcalculator.net/blog/creator-fund-vs-live-gifts/',
+        url: 'https://ttcalculator.net/blog/creator-fund-vs-live-gifts/',
         description: 'Compare TikTok Creator Fund earnings vs LIVE streaming gift revenue. See which monetization method works best for your content style.',
         image: SITE_CONFIG.ogImage,
         datePublished: '2026-03-01',
@@ -38,13 +38,13 @@ export function BlogListingSchema() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/'
+        item: 'https://ttcalculator.net/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://tiktokcalculator.net/blog/'
+        item: 'https://ttcalculator.net/blog/'
       }
     ]
   };

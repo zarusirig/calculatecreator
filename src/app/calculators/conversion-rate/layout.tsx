@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok conversion rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['conversion rate calculator', 'tiktok conversion', 'traffic conversion', 'conversion optimization'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/conversion-rate/',
+    canonical: 'https://ttcalculator.net/calculators/conversion-rate/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Conversion Rate Calculator 2026',
     description: 'Calculate traffic conversion rate from TikTok to sales.',
-    url: 'https://tiktokcalculator.net/calculators/conversion-rate/',
+    url: 'https://ttcalculator.net/calculators/conversion-rate/',
     type: 'website',
   },
 };

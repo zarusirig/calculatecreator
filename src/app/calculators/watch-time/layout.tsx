@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok watch time calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['watch time calculator', 'tiktok completion rate', 'average watch time'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/watch-time/',
+    canonical: 'https://ttcalculator.net/calculators/watch-time/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Watch Time Calculator 2026',
     description: 'Calculate average watch time and video completion rate.',
-    url: 'https://tiktokcalculator.net/calculators/watch-time/',
+    url: 'https://ttcalculator.net/calculators/watch-time/',
     type: 'website',
   },
 };

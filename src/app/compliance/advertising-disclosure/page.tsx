@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'See how TT Calculator handles ads, monetization, and editorial independence across calculators, guides, and benchmark content.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/compliance/advertising-disclosure/',
+    canonical: 'https://ttcalculator.net/compliance/advertising-disclosure/',
   },
 };
 
@@ -18,13 +18,13 @@ const advertisingDisclosureSchema = {
   '@type': 'WebPage',
   name: 'Advertising Disclosure',
   description:
-    'Advertising Disclosure for tiktokcalculator.net explaining AdSense usage, editorial independence, and monetization transparency.',
-  url: 'https://tiktokcalculator.net/compliance/advertising-disclosure/',
+    'Advertising Disclosure for ttcalculator.net explaining AdSense usage, editorial independence, and monetization transparency.',
+  url: 'https://ttcalculator.net/compliance/advertising-disclosure/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
 };
 
@@ -49,7 +49,7 @@ export default function AdvertisingDisclosurePage() {
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
           TT Calculator is funded in part through advertising. This page explains how ads appear
-          on tiktokcalculator.net, how advertising affects (and does not affect) our content, and
+          on ttcalculator.net, how advertising affects (and does not affect) our content, and
           what controls are available to users.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
@@ -155,8 +155,8 @@ export default function AdvertisingDisclosurePage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">6. Related Resources and policy links</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             For advertising or disclosure questions, contact{' '}
-            <a href="mailto:contact@tiktokcalculator.net" className="link">
-              contact@tiktokcalculator.net
+            <a href="mailto:contact@ttcalculator.net" className="link">
+              contact@ttcalculator.net
             </a>
             .
           </p>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'Compare TikTok Shop niches by commission range, competition, and content fit so you can choose products that match your audience.',
   keywords: ['best tiktok shop niches', 'profitable shop categories', 'tiktok affiliate niches', 'shop product selection'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/guides/best-shop-niches/',
+    canonical: 'https://ttcalculator.net/guides/best-shop-niches/',
   },
 };
 
@@ -33,7 +33,7 @@ export default function BestShopNichesPage() {
       <ArticleSchema
         headline="Best TikTok Shop Niches for Creators: Most Profitable Categories 2026"
         description="Discover the most profitable TikTok Shop niches for affiliates and sellers. Commission rates, competition analysis, and best products to promote."
-        url="https://tiktokcalculator.net/guides/best-shop-niches/"
+        url="https://ttcalculator.net/guides/best-shop-niches/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         image={SITE_CONFIG.ogImage}

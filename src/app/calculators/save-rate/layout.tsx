@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok save rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['save rate calculator', 'tiktok saves', 'bookmark rate'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/save-rate/',
+    canonical: 'https://ttcalculator.net/calculators/save-rate/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Save Rate Calculator 2026',
     description: 'Calculate video save rate to measure content value.',
-    url: 'https://tiktokcalculator.net/calculators/save-rate/',
+    url: 'https://ttcalculator.net/calculators/save-rate/',
     type: 'website',
   },
 };

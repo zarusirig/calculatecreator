@@ -4,15 +4,15 @@ export const metadata: Metadata = {
   title: "TikTok De Calculator 2026",
   description: "Use this TikTok de calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculator/de/',
+    canonical: 'https://ttcalculator.net/calculator/de/',
     languages: {
-      'de': 'https://tiktokcalculator.net/calculator/de/',
-      'en': 'https://tiktokcalculator.net/calculators/tiktok-money/',
-      'es': 'https://tiktokcalculator.net/calculator/es/',
-      'fr': 'https://tiktokcalculator.net/calculator/fr/',
-      'it': 'https://tiktokcalculator.net/calculator/it/',
-      'pt-br': 'https://tiktokcalculator.net/calculator/pt-br/',
-      'ms': 'https://tiktokcalculator.net/calculator/my/',
+      'de': 'https://ttcalculator.net/calculator/de/',
+      'en': 'https://ttcalculator.net/calculators/tiktok-money/',
+      'es': 'https://ttcalculator.net/calculator/es/',
+      'fr': 'https://ttcalculator.net/calculator/fr/',
+      'it': 'https://ttcalculator.net/calculator/it/',
+      'pt-br': 'https://ttcalculator.net/calculator/pt-br/',
+      'ms': 'https://ttcalculator.net/calculator/my/',
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'TikTok Geld Rechner Deutschland | 2026 RPM & Einnahmen',
     description:
       'Schätze TikTok Einnahmen für Deutschland (Creator Fund & Rewards, Markendeals, LIVE Geschenke). 2026 Daten, kostenlos, keine Anmeldung.',
-    url: 'https://tiktokcalculator.net/calculator/de/',
+    url: 'https://ttcalculator.net/calculator/de/',
     locale: 'de_DE',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Review saved tools, guides, and data pages in one place while local bookmarks are available on this device.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/bookmarks/',
+    canonical: 'https://ttcalculator.net/bookmarks/',
   },
   robots: {
     index: false,

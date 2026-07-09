@@ -51,14 +51,14 @@ export function ArticleAuthorBio({
                 description={author.bio}
                 url={
                     author.authorUrl
-                        ? `https://tiktokcalculator.net${author.authorUrl}`
-                        : 'https://tiktokcalculator.net/about/'
+                        ? `https://ttcalculator.net${author.authorUrl}`
+                        : 'https://ttcalculator.net/about/'
                 }
                 sameAs={sameAs.length > 0 ? sameAs : undefined}
                 knowsAbout={author.expertise}
                 affiliation={{
                     name: 'TT Calculator',
-                    url: 'https://tiktokcalculator.net',
+                    url: 'https://ttcalculator.net',
                 }}
             />
 

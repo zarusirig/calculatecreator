@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Search TT Calculator guides, calculators, and benchmark pages by topic, metric, or monetization question.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/search/',
+    canonical: 'https://ttcalculator.net/search/',
   },
   robots: {
     index: false,

@@ -101,7 +101,7 @@ export function CollectionSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/',
+        item: 'https://ttcalculator.net/',
       },
       {
         '@type': 'ListItem',

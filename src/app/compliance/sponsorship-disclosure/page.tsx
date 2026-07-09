@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Learn when and how to disclose sponsored TikTok content, gifted products, affiliate links, and ongoing brand relationships.',
   keywords: ['tiktok ftc compliance', 'sponsorship disclosure', 'how to disclose sponsored content', 'tiktok ad disclosure'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/compliance/sponsorship-disclosure/',
+    canonical: 'https://ttcalculator.net/compliance/sponsorship-disclosure/',
   },
 };
 
@@ -36,8 +36,8 @@ export default function SponsorshipDisclosurePage() {
       <WebPageSchema
         title="TikTok Sponsorship Disclosure Guidelines: FTC Compliance 2026"
         description="Complete FTC compliance guide for TikTok creators. How to properly disclose sponsored content, legal requirements, and avoid violations."
-        url="https://tiktokcalculator.net/compliance/sponsorship-disclosure/"
-        breadcrumbs={[{ name: 'Compliance', url: 'https://tiktokcalculator.net/compliance/' }]}
+        url="https://ttcalculator.net/compliance/sponsorship-disclosure/"
+        breadcrumbs={[{ name: 'Compliance', url: 'https://ttcalculator.net/compliance/' }]}
       />
       <div className="min-h-screen bg-neutral-50">
       <nav className="bg-white border-b border-neutral-200 py-3">

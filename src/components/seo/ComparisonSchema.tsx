@@ -91,13 +91,13 @@ export function ComparisonSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/'
+        item: 'https://ttcalculator.net/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Comparisons',
-        item: 'https://tiktokcalculator.net/data/platform-comparisons/'
+        item: 'https://ttcalculator.net/data/platform-comparisons/'
       },
       {
         '@type': 'ListItem',

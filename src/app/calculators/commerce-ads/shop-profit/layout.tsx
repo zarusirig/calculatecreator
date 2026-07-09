@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok shop profit calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok shop calculator', 'tiktok affiliate commission', 'shop earnings', 'product commission'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',
+    canonical: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Shop Commission Calculator 2026',
     description: 'Calculate TikTok Shop affiliate earnings and commissions.',
-    url: 'https://tiktokcalculator.net/calculators/commerce-ads/shop-profit/',
+    url: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/',
     type: 'website',
   },
 };

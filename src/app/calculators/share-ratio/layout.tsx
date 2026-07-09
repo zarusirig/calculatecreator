@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok share ratio calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['share ratio calculator', 'share to view', 'tiktok shares'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/share-ratio/',
+    canonical: 'https://ttcalculator.net/calculators/share-ratio/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Share Ratio Calculator 2026',
     description: 'Calculate share-to-view ratio to measure viral potential.',
-    url: 'https://tiktokcalculator.net/calculators/share-ratio/',
+    url: 'https://ttcalculator.net/calculators/share-ratio/',
     type: 'website',
   },
 };

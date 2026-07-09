@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Find answers about calculator accuracy, assumptions, privacy, updates, methodology, and how TT Calculator handles creator earnings estimates.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/faq/',
+    canonical: 'https://ttcalculator.net/faq/',
   },
 };
 
@@ -61,7 +61,7 @@ const faqs = [
   {
     question: 'How do I report a bug or incorrect benchmark?',
     answer:
-      'Email contact@tiktokcalculator.net or bugs@tiktokcalculator.net with the exact URL, what you expected, what happened, and any source supporting your claim. We triage issues by impact, then patch formulas, copy, or assumptions as needed. Our correction workflow and editorial standards are documented in the Editorial Policy page.',
+      'Email contact@ttcalculator.net or bugs@ttcalculator.net with the exact URL, what you expected, what happened, and any source supporting your claim. We triage issues by impact, then patch formulas, copy, or assumptions as needed. Our correction workflow and editorial standards are documented in the Editorial Policy page.',
   },
   {
     question: 'Do you use AI to produce content?',
@@ -91,8 +91,8 @@ export default function FAQPage() {
       <FAQPageSchema
         faqs={faqs}
         title="TT Calculator Frequently Asked Questions"
-        description="Common questions about tools, methodology, privacy, and monetization policy on tiktokcalculator.net"
-        url="https://tiktokcalculator.net/faq/"
+        description="Common questions about tools, methodology, privacy, and monetization policy on ttcalculator.net"
+        url="https://ttcalculator.net/faq/"
       />
 
       <div className="pb-16 pt-10">

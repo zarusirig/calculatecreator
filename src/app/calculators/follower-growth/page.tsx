@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Project your TikTok follower growth over time. Estimate when you will hit milestones based on current growth rate, posting frequency, and engagement.",
   keywords: ['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/follower-growth/',
+    canonical: 'https://ttcalculator.net/calculators/follower-growth/',
   },
 };
 
@@ -46,7 +46,7 @@ export default function FollowerGrowthCalculatorPage() {
       <CalculatorSchema
         name="TikTok Follower Growth Rate Calculator"
         description="Calculate your TikTok follower growth rate over time. Track weekly, monthly, and yearly growth to benchmark your account performance."
-        url="https://tiktokcalculator.net/calculators/follower-growth/"
+        url="https://ttcalculator.net/calculators/follower-growth/"
         datePublished="2024-01-25"
         dateModified="2026-03-01"
         keywords={['follower growth calculator', 'tiktok growth rate', 'follower growth rate', 'account growth tracker', 'tiktok analytics']}
@@ -54,9 +54,9 @@ export default function FollowerGrowthCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Follower Growth Calculator', url: 'https://tiktokcalculator.net/calculators/follower-growth/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Follower Growth Calculator', url: 'https://ttcalculator.net/calculators/follower-growth/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

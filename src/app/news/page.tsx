@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok news update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok news', 'creator updates', 'tiktok changes', 'platform news', 'social media news'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/',
+    canonical: 'https://ttcalculator.net/news/',
   },
 };
 
@@ -232,7 +232,7 @@ export default function NewsPage() {
   const schemaItems = newsArticles.map(article => ({
     name: article.title,
     description: article.description,
-    url: `https://tiktokcalculator.net/news/${article.slug}`,
+    url: `https://ttcalculator.net/news/${article.slug}`,
     category: article.category,
   }));
 
@@ -241,7 +241,7 @@ export default function NewsPage() {
       <CollectionSchema
         title="TikTok News Today - Latest Creator Updates & Platform Changes"
         description="Stay updated with the latest TikTok news. Covers algorithm changes, monetization updates, new features, TikTok Shop developments, and safety announcements that affect creators."
-        url="https://tiktokcalculator.net/news/"
+        url="https://ttcalculator.net/news/"
         items={schemaItems}
         collectionType="News"
       />

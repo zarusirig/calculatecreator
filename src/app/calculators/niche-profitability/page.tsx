@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Calculate the profitability of any TikTok niche. Compare RPM, brand deal rates, and monetization potential across content categories for 2026.",
   keywords: ['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories', 'niche comparison'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/niche-profitability/',
+    canonical: 'https://ttcalculator.net/calculators/niche-profitability/',
   },
 };
 
@@ -45,7 +45,7 @@ export default function NicheProfitabilityCalculatorPage() {
       <CalculatorSchema
         name="TikTok Niche Profitability Calculator"
         description="Compare TikTok niche profitability. Find the most lucrative content categories for brand deals, Creator Fund, and affiliate marketing."
-        url="https://tiktokcalculator.net/calculators/niche-profitability/"
+        url="https://ttcalculator.net/calculators/niche-profitability/"
         datePublished="2024-06-15"
         dateModified="2026-03-01"
         keywords={['niche profitability', 'tiktok niche calculator', 'best tiktok niches', 'profitable content categories']}
@@ -53,9 +53,9 @@ export default function NicheProfitabilityCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Niche Profitability Calculator', url: 'https://tiktokcalculator.net/calculators/niche-profitability/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Niche Profitability Calculator', url: 'https://ttcalculator.net/calculators/niche-profitability/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

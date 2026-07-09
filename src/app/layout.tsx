@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Fraunces, Manrope, IBM_Plex_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import '@/styles/globals.css';
 import Script from 'next/script';
 import { Header } from '@/components/layout/Header';
@@ -8,28 +8,39 @@ import { WebVitals } from '@/components/performance/WebVitals';
 import { ErrorBoundary } from '@/components/error/ErrorBoundary';
 import { CookieConsent } from '@/components/consent/CookieConsent';
 
-// Self-hosted fonts via next/font — eliminates the render-blocking Google
-// Fonts @import (PERF-1) and the fonts.googleapis.com/fonts.gstatic.com
-// round-trip. CSS variables are consumed by globals.css (--font-body /
-// --font-display / --font-mono) and the Tailwind fontFamily config, so all
-// existing class/variable references keep working unchanged.
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['600', '700'],
+// Self-hosted fonts via next/font/local — the .woff2 files live in ./fonts and
+// are served from our own origin. This removes the build-time fetch to
+// fonts.googleapis.com/fonts.gstatic.com (which was hanging builds) AND the
+// render-blocking Google Fonts round-trip at runtime. CSS variables are
+// consumed by globals.css (--font-body / --font-display / --font-mono) and the
+// Tailwind fontFamily config, so all existing class/variable references keep
+// working unchanged.
+const fraunces = localFont({
+  src: [
+    { path: './fonts/fraunces-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/fraunces-latin-700-normal.woff2', weight: '700', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-fraunces',
 });
 
-const manrope = Manrope({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+const manrope = localFont({
+  src: [
+    { path: './fonts/manrope-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/manrope-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/manrope-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/manrope-latin-700-normal.woff2', weight: '700', style: 'normal' },
+    { path: './fonts/manrope-latin-800-normal.woff2', weight: '800', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-manrope',
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ['latin'],
-  weight: ['500', '600'],
+const ibmPlexMono = localFont({
+  src: [
+    { path: './fonts/ibm-plex-mono-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/ibm-plex-mono-latin-600-normal.woff2', weight: '600', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-ibm-plex-mono',
 });
@@ -69,7 +80,7 @@ export const metadata: Metadata = {
     siteName: 'TT Calculator',
     images: [
       {
-        url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp',
+        url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp',
         width: 1200,
         height: 630,
         alt: 'TT Calculator - Free Earnings & Analytics Tools',
@@ -81,7 +92,7 @@ export const metadata: Metadata = {
     title: 'TT Calculator',
     description:
       'Creator benchmarks and calculators with transparent assumptions.',
-    images: ['https://tiktokcalculator.net/home/hero-dashboard-1600.webp'],
+    images: ['https://ttcalculator.net/home/hero-dashboard-1600.webp'],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',

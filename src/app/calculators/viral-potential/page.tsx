@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Estimate your TikTok video's viral potential. Score your content based on engagement velocity, share rate, and algorithm-friendly signals.",
   keywords: ['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator', 'tiktok algorithm calculator'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/viral-potential/',
+    canonical: 'https://ttcalculator.net/calculators/viral-potential/',
   },
 };
 
@@ -70,7 +70,7 @@ export default function ViralPotentialCalculatorPage() {
       <CalculatorSchema
         name="TikTok Viral Potential Calculator"
         description="Calculate your TikTok video viral potential based on engagement signals. Get a comprehensive viral score and actionable insights to increase reach."
-        url="https://tiktokcalculator.net/calculators/viral-potential/"
+        url="https://ttcalculator.net/calculators/viral-potential/"
         datePublished="2024-05-05"
         dateModified="2026-03-01"
         keywords={['viral potential calculator', 'tiktok viral score', 'viral predictor', 'content virality calculator']}
@@ -78,9 +78,9 @@ export default function ViralPotentialCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Viral Potential Calculator', url: 'https://tiktokcalculator.net/calculators/viral-potential/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Viral Potential Calculator', url: 'https://ttcalculator.net/calculators/viral-potential/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

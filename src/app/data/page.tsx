@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Review TikTok benchmark data with monetization context, legacy-versus-current program notes, and interpretation guidance for creator decision making.",
   keywords: ['tiktok creator data', 'tiktok earnings benchmarks', 'creator rewards rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/data/',
+    canonical: 'https://ttcalculator.net/data/',
   },
 };
 
@@ -148,7 +148,7 @@ export default function DataIndexPage() {
       <DatasetSchema
         title="TikTok Creator Data & Benchmarks Hub"
         description="Access TikTok creator benchmark data with context for Creator Rewards, legacy Fund comparisons, brand deal rates, engagement benchmarks, and industry standards."
-        url="https://tiktokcalculator.net/data/"
+        url="https://ttcalculator.net/data/"
         keywords={['tiktok creator data', 'tiktok earnings benchmarks', 'creator fund rates', 'brand deal rates', 'tiktok industry standards', 'creator earnings data']}
       />
       <Breadcrumb

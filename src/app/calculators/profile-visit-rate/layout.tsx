@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok profile visit rate calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['profile visit rate', 'profile views calculator', 'visitor rate'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/profile-visit-rate/',
+    canonical: 'https://ttcalculator.net/calculators/profile-visit-rate/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Profile Visit Calculator 2026',
     description: 'Calculate profile visit rate from video views.',
-    url: 'https://tiktokcalculator.net/calculators/profile-visit-rate/',
+    url: 'https://ttcalculator.net/calculators/profile-visit-rate/',
     type: 'website',
   },
 };

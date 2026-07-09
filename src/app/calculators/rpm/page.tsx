@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     'rpm calculator 2026',
   ],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/rpm/',
+    canonical: 'https://ttcalculator.net/calculators/rpm/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'TikTok RPM Calculator 2026 | Revenue Per Mille Estimator',
     description:
       'Calculate your TikTok RPM and estimate earnings per 1,000 views. Compare your performance to industry benchmarks.',
-    url: 'https://tiktokcalculator.net/calculators/rpm/',
+    url: 'https://ttcalculator.net/calculators/rpm/',
     type: 'website',
   },
 };
@@ -161,7 +161,7 @@ export default function RpmCalculatorPage() {
       <CalculatorSchema
         name="TikTok RPM Calculator"
         description="Calculate your TikTok RPM (Revenue Per Mille) and estimate earnings per 1,000 views with industry benchmarks."
-        url="https://tiktokcalculator.net/calculators/rpm/"
+        url="https://ttcalculator.net/calculators/rpm/"
       />
       <FAQSchema faqs={faqItems} />
       <BreadcrumbSchema

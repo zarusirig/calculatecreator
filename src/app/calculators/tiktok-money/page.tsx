@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description: "Calculate total TikTok earnings across Creator Rewards, brand deals, LIVE gifts, Shop commissions, and legacy Fund comparisons with practical planning guidance.",
   keywords: ['tiktok money calculator', 'tiktok earnings calculator', 'how much money on tiktok', 'tiktok income', 'tiktok monetization calculator'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/tiktok-money/',
+    canonical: 'https://ttcalculator.net/calculators/tiktok-money/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/tiktok-money/',
+    url: 'https://ttcalculator.net/calculators/tiktok-money/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -86,7 +86,7 @@ export default function TikTokMoneyCalculatorPage() {
       <CalculatorSchema
         name="TikTok Money Calculator"
         description="Calculate your total TikTok earnings from all income streams including Creator Rewards, brand deals, LIVE gifts, TikTok Shop, and legacy Fund comparisons."
-        url="https://tiktokcalculator.net/calculators/tiktok-money/"
+        url="https://ttcalculator.net/calculators/tiktok-money/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok money calculator', 'tiktok earnings', 'tiktok income calculator', 'how much money tiktok']}
@@ -95,9 +95,9 @@ export default function TikTokMoneyCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'TikTok Money Calculator', url: 'https://tiktokcalculator.net/calculators/tiktok-money/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'TikTok Money Calculator', url: 'https://ttcalculator.net/calculators/tiktok-money/' },
         ]}
       />
 

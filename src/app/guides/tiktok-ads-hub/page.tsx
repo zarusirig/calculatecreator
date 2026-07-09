@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'Learn how TikTok ad costs, Spark Ads, Shop campaigns, and ROAS benchmarks fit into a more profitable creator or brand strategy.',
   keywords: ['tiktok ads', 'tiktok advertising', 'tiktok ad cost', 'spark ads', 'tiktok shop ads', 'tiktok campaign roi', 'tiktok cpm', 'tiktok ad budget'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/',
+    canonical: 'https://ttcalculator.net/guides/tiktok-ads-hub/',
   },
   openGraph: {
     title: 'TikTok Ads Hub 2026 | Complete Advertising Strategy & Cost Guide',
     description: 'Master TikTok advertising. Calculate ad costs, optimize ROAS, run Spark Ads, and build profitable TikTok ad campaigns.',
     type: 'article',
-    url: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/',
+    url: 'https://ttcalculator.net/guides/tiktok-ads-hub/',
     images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Ads Hub 2026' }],
   },
   twitter: {
@@ -52,7 +52,7 @@ export default function TikTokAdsHubPage() {
       <ArticleSchema
         headline="TikTok Ads Hub 2026: Complete Advertising Strategy & Cost Guide"
         description="Comprehensive guide to TikTok advertising covering ad formats, budget planning, ROAS benchmarks, Spark Ads, TikTok Shop advertising, and advanced campaign optimization strategies with calculators."
-        url="https://tiktokcalculator.net/guides/tiktok-ads-hub/"
+        url="https://ttcalculator.net/guides/tiktok-ads-hub/"
         datePublished="2026-02-06"
         dateModified="2026-03-01"
         keywords={['tiktok ads', 'tiktok advertising cost', 'spark ads', 'tiktok shop ads', 'campaign roi', 'tiktok cpm']}
@@ -60,9 +60,9 @@ export default function TikTokAdsHubPage() {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Guides', url: 'https://tiktokcalculator.net/guides/' },
-          { name: 'TikTok Ads Hub', url: 'https://tiktokcalculator.net/guides/tiktok-ads-hub/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Guides', url: 'https://ttcalculator.net/guides/' },
+          { name: 'TikTok Ads Hub', url: 'https://ttcalculator.net/guides/tiktok-ads-hub/' },
         ]}
       />
 

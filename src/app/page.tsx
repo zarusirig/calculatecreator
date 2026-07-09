@@ -7,17 +7,17 @@ export const metadata: Metadata = {
   description:
     'Free TikTok Calculator to estimate earnings per view, engagement rate, brand deal pricing, and Creator Fund payouts. 35+ TikTok calculators trusted by 100k+ creators — no signup required.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/',
+    canonical: 'https://ttcalculator.net/',
   },
   openGraph: {
     title: 'TikTok Calculator — Free TikTok Money, Earnings & Engagement Calculator',
     description:
       'Free TikTok Calculator for creators. Estimate TikTok earnings, engagement rate, brand deal rates, RPM, and LIVE gift revenue with transparent methodology.',
-    url: 'https://tiktokcalculator.net/',
+    url: 'https://ttcalculator.net/',
     type: 'website',
     images: [
       {
-        url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp',
+        url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp',
         width: 1200,
         height: 630,
         alt: 'TikTok Calculator — free earnings, engagement, and money calculators for TikTok creators',

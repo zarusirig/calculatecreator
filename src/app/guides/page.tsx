@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   description:
     'Browse creator guides on TikTok monetization, growth, analytics, contracts, and niche strategy, with practical next steps and clear assumptions.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/guides/',
+    canonical: 'https://ttcalculator.net/guides/',
   },
 };
 
@@ -725,7 +725,7 @@ export default function GuidesPage() {
     .map(guide => ({
       name: guide.title,
       description: guide.description,
-      url: `https://tiktokcalculator.net/guides/${guide.slug}`,
+      url: `https://ttcalculator.net/guides/${guide.slug}`,
       category: guide.category,
     }));
 
@@ -734,7 +734,7 @@ export default function GuidesPage() {
       <CollectionSchema
         title="TikTok Creator Guides: Monetization & Growth 2026"
         description="Expert guides on TikTok monetization, brand deals, algorithm optimization & audience growth. Data-backed strategies from successful creators."
-        url="https://tiktokcalculator.net/guides/"
+        url="https://ttcalculator.net/guides/"
         items={schemaItems}
         collectionType="Guides"
       />

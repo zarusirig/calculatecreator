@@ -59,13 +59,13 @@ export function ReferenceSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/',
+        item: 'https://ttcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Reference',
-        item: 'https://tiktokcalculator.net/data/reference/',
+        item: 'https://ttcalculator.net/data/reference/',
       },
       {
         '@type': 'ListItem',

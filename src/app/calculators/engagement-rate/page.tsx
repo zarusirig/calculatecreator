@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok engagement rate calculator to benchmark your rate by niche and follower tier with 2026 data for pricing, content, and growth decisions.",
   keywords: ['tiktok engagement rate calculator', 'engagement rate', 'tiktok analytics', 'engagement calculator', 'tiktok metrics', 'influencer engagement'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/engagement-rate/',
+    canonical: 'https://ttcalculator.net/calculators/engagement-rate/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/engagement-rate/',
+    url: 'https://ttcalculator.net/calculators/engagement-rate/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -86,7 +86,7 @@ export default function EngagementRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Engagement Rate Calculator"
         description="Calculate your TikTok engagement rate and compare against 2026 benchmarks. Understand what brands look for when evaluating creator partnerships."
-        url="https://tiktokcalculator.net/calculators/engagement-rate/"
+        url="https://ttcalculator.net/calculators/engagement-rate/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok engagement rate', 'engagement calculator', 'tiktok metrics', 'influencer analytics']}
@@ -95,9 +95,9 @@ export default function EngagementRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Engagement Rate Calculator', url: 'https://tiktokcalculator.net/calculators/engagement-rate/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Engagement Rate Calculator', url: 'https://ttcalculator.net/calculators/engagement-rate/' },
         ]}
       />
 

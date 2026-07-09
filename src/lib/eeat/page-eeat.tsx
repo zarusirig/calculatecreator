@@ -81,7 +81,7 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
         {/* Author Schema */}
         <AuthorPersonSchema
           author={author}
-          url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
+          url={author.authorUrl ? `https://ttcalculator.net${author.authorUrl}` : undefined}
         />
 
         {/* Inline author credit */}
@@ -112,7 +112,7 @@ export function PageEEAT({ pageSlug, variant = 'full', theme = 'light' }: PageEE
       {/* Author Schema for SEO */}
       <AuthorPersonSchema
         author={author}
-        url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
+        url={author.authorUrl ? `https://ttcalculator.net${author.authorUrl}` : undefined}
       />
 
       {/* Content Freshness */}
@@ -170,7 +170,7 @@ export function PageAuthorByline({ pageSlug, variant = 'light' }: { pageSlug: st
       {/* Author Schema */}
       <AuthorPersonSchema
         author={author}
-        url={author.authorUrl ? `https://tiktokcalculator.net${author.authorUrl}` : undefined}
+        url={author.authorUrl ? `https://ttcalculator.net${author.authorUrl}` : undefined}
       />
 
       <div className={`flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 py-4 border-t border-b ${borderColor}`}>
@@ -241,7 +241,7 @@ export function getPersonAuthorForSchema(pageSlug: string) {
     name: author.name,
     jobTitle: author.role,
     url: author.authorUrl
-      ? `https://tiktokcalculator.net${author.authorUrl}`
+      ? `https://ttcalculator.net${author.authorUrl}`
       : undefined,
     sameAs: sameAs.length > 0 ? sameAs : undefined,
     // SCH-3: give the inline calculator author Person an image (desk avatar).

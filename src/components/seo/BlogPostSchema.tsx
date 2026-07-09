@@ -75,13 +75,13 @@ export function BlogPostSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/'
+        item: 'https://ttcalculator.net/'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://tiktokcalculator.net/blog/'
+        item: 'https://ttcalculator.net/blog/'
       },
       {
         '@type': 'ListItem',

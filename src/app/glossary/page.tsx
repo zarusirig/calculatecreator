@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Definitions for TikTok creator metrics, monetization programs, and analytics terms used across TT Calculator tools and guides.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/glossary/',
+    canonical: 'https://ttcalculator.net/glossary/',
   },
 };
 
@@ -321,13 +321,13 @@ const definedTermSetSchema = {
   '@type': 'DefinedTermSet',
   name: 'TT Calculator Creator Economy Glossary',
   description:
-    'Alphabetical glossary of creator monetization, analytics, and platform terms used throughout tiktokcalculator.net.',
-  url: 'https://tiktokcalculator.net/glossary/',
+    'Alphabetical glossary of creator monetization, analytics, and platform terms used throughout ttcalculator.net.',
+  url: 'https://ttcalculator.net/glossary/',
   hasDefinedTerm: glossaryTerms.map((term) => ({
     '@type': 'DefinedTerm',
     name: term.term,
     description: term.definition,
-    url: `https://tiktokcalculator.net/glossary/#${term.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+    url: `https://ttcalculator.net/glossary/#${term.term.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
   })),
 };
 

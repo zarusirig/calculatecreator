@@ -25,12 +25,12 @@ export function ToolsDirectoryPage({
   initialFilters,
 }: ToolsDirectoryPageProps) {
   const normalizedCanonicalPath = canonicalPath.endsWith('/') ? canonicalPath : `${canonicalPath}/`;
-  const canonicalUrl = `https://tiktokcalculator.net${normalizedCanonicalPath}`;
+  const canonicalUrl = `https://ttcalculator.net${normalizedCanonicalPath}`;
   const isToolsAliasPage = normalizedCanonicalPath === '/tools/';
   const schemaItems = toolDirectoryItems.map((tool) => ({
     name: tool.title,
     description: tool.description,
-    url: `https://tiktokcalculator.net${tool.href}`,
+    url: `https://ttcalculator.net${tool.href}`,
     category: tool.goal,
   }));
 

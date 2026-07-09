@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'Compare TikTok income streams and calculators for Creator Rewards, brand deals, LIVE gifts, Shop, affiliate revenue, and more.',
   keywords: ['tiktok monetization', 'tiktok earnings', 'creator fund', 'brand deals', 'tiktok shop', 'affiliate marketing', 'live gifts', 'tiktok income'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/',
+    canonical: 'https://ttcalculator.net/guides/monetization-calculator-hub/',
   },
   openGraph: {
     title: 'TikTok Monetization Calculator Hub 2026 | Complete Income Strategy',
     description: 'Master every TikTok income stream. Calculate Creator Fund earnings, price brand deals, optimize TikTok Shop, and build multi-income strategies.',
     type: 'article',
-    url: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/',
+    url: 'https://ttcalculator.net/guides/monetization-calculator-hub/',
     images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Monetization Calculator Hub 2026' }],
   },
   twitter: {
@@ -53,7 +53,7 @@ export default function MonetizationCalculatorHubPage() {
       <ArticleSchema
         headline="TikTok Monetization Calculator Hub 2026"
         description="Comprehensive guide to TikTok monetization covering Creator Fund, brand deals, LIVE gifts, TikTok Shop, affiliate marketing, and multi-income strategies with calculators and optimization tips."
-        url="https://tiktokcalculator.net/guides/monetization-calculator-hub/"
+        url="https://ttcalculator.net/guides/monetization-calculator-hub/"
         datePublished="2025-11-13"
         dateModified="2026-03-01"
         keywords={['tiktok monetization', 'creator fund calculator', 'brand deal pricing', 'tiktok shop earnings', 'live streaming income', 'affiliate marketing']}
@@ -61,9 +61,9 @@ export default function MonetizationCalculatorHubPage() {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Guides', url: 'https://tiktokcalculator.net/guides/' },
-          { name: 'Monetization Calculator Hub', url: 'https://tiktokcalculator.net/guides/monetization-calculator-hub/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Guides', url: 'https://ttcalculator.net/guides/' },
+          { name: 'Monetization Calculator Hub', url: 'https://ttcalculator.net/guides/monetization-calculator-hub/' },
         ]}
       />
 

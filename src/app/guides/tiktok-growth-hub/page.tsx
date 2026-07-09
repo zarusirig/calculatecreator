@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     'Use the growth hub to improve TikTok reach, engagement, search visibility, and content performance with data-backed guidance.',
   keywords: ['tiktok growth', 'tiktok algorithm', 'tiktok engagement rate', 'tiktok viral', 'tiktok hashtags', 'tiktok analytics', 'tiktok followers', 'tiktok content strategy'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/guides/tiktok-growth-hub/',
+    canonical: 'https://ttcalculator.net/guides/tiktok-growth-hub/',
   },
   openGraph: {
     title: 'TikTok Growth Hub 2026 | Complete Algorithm & Engagement Strategy Guide',
     description: 'Master TikTok growth. Understand the algorithm, boost engagement, go viral, and build a sustainable audience with data-driven strategies.',
     type: 'article',
-    url: 'https://tiktokcalculator.net/guides/tiktok-growth-hub/',
+    url: 'https://ttcalculator.net/guides/tiktok-growth-hub/',
     images: [{ url: SITE_CONFIG.ogImage, width: 1200, height: 630, alt: 'TikTok Growth Hub 2026' }],
   },
   twitter: {
@@ -52,7 +52,7 @@ export default function TikTokGrowthHubPage() {
       <ArticleSchema
         headline="TikTok Growth Hub 2026: Complete Algorithm & Engagement Strategy Guide"
         description="Comprehensive guide to TikTok growth covering algorithm mechanics, engagement rate optimization, content strategy, hashtag discovery, viral content patterns, analytics, and milestone-based growth roadmaps."
-        url="https://tiktokcalculator.net/guides/tiktok-growth-hub/"
+        url="https://ttcalculator.net/guides/tiktok-growth-hub/"
         datePublished="2026-02-06"
         dateModified="2026-03-01"
         keywords={['tiktok growth', 'tiktok algorithm', 'engagement rate', 'viral content', 'hashtag strategy', 'tiktok analytics']}
@@ -60,9 +60,9 @@ export default function TikTokGrowthHubPage() {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Guides', url: 'https://tiktokcalculator.net/guides/' },
-          { name: 'TikTok Growth Hub', url: 'https://tiktokcalculator.net/guides/tiktok-growth-hub/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Guides', url: 'https://ttcalculator.net/guides/' },
+          { name: 'TikTok Growth Hub', url: 'https://ttcalculator.net/guides/tiktok-growth-hub/' },
         ]}
       />
 

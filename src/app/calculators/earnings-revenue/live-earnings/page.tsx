@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Estimate TikTok LIVE streaming income from virtual gifts, diamonds, and viewer engagement. Project hourly and monthly earnings for your stream size.",
   keywords: ['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/',
+    canonical: 'https://ttcalculator.net/calculators/earnings-revenue/live-earnings/',
   },
 };
 
@@ -51,15 +51,15 @@ export default function LiveGiftsCalculatorPage() {
       <CalculatorSchema
         name="TikTok LIVE Gifts Calculator"
         description="Estimate TikTok LIVE streaming income from virtual gifts, diamonds, and viewer engagement. Project hourly and monthly earnings for your stream size."
-        url="https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/"
+        url="https://ttcalculator.net/calculators/earnings-revenue/live-earnings/"
         dateModified="2025-11-13"
         keywords={['tiktok live calculator', 'live gift earnings', 'tiktok streaming income', 'virtual gifts calculator', 'live rewards']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'LIVE Gifts Calculator', url: 'https://tiktokcalculator.net/calculators/earnings-revenue/live-earnings/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'LIVE Gifts Calculator', url: 'https://ttcalculator.net/calculators/earnings-revenue/live-earnings/' },
         ]}
       />
       <FAQSchema faqs={faqData} />

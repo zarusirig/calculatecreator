@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     'creator rewards program',
   ],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/tiktok-creator-fund/',
+    canonical: 'https://ttcalculator.net/calculators/tiktok-creator-fund/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/tiktok-creator-fund/',
+    url: 'https://ttcalculator.net/calculators/tiktok-creator-fund/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -82,7 +82,7 @@ export default function TikTokCreatorFundCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Fund Calculator (Legacy Estimate)"
         description="Estimate historical Creator Fund earnings based on views, engagement rate, and content niche, then compare the old model with current TikTok monetization paths."
-        url="https://tiktokcalculator.net/calculators/tiktok-creator-fund/"
+        url="https://ttcalculator.net/calculators/tiktok-creator-fund/"
         datePublished="2024-01-15"
         dateModified="2026-03-15"
         keywords={['tiktok creator fund calculator', 'creator fund earnings', 'legacy creator fund', 'creator rewards program']}
@@ -91,9 +91,9 @@ export default function TikTokCreatorFundCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Creator Fund Calculator', url: 'https://tiktokcalculator.net/calculators/tiktok-creator-fund/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Creator Fund Calculator', url: 'https://ttcalculator.net/calculators/tiktok-creator-fund/' },
         ]}
       />
 

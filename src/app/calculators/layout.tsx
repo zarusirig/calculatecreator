@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     'creator analytics',
   ],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/',
+    canonical: 'https://ttcalculator.net/calculators/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Calculators | TT Calculator',
     description: 'Estimate and benchmark creator metrics with clear workflows and transparent assumptions.',
-    url: 'https://tiktokcalculator.net/calculators/',
+    url: 'https://ttcalculator.net/calculators/',
     type: 'website',
   },
 };

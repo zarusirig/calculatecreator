@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok content calendar roi calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['content calendar roi', 'posting strategy roi', 'content planning'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/content-calendar-roi/',
+    canonical: 'https://ttcalculator.net/calculators/content-calendar-roi/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Content Calendar ROI Calculator 2026',
     description: 'Calculate ROI for your TikTok content calendar.',
-    url: 'https://tiktokcalculator.net/calculators/content-calendar-roi/',
+    url: 'https://ttcalculator.net/calculators/content-calendar-roi/',
     type: 'website',
   },
 };

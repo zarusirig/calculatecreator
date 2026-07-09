@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'TikTok now points creators from the discontinued Creator Fund to Creator Rewards. This page summarizes the current requirements and the main program changes.',
   keywords: ['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/creator-rewards-program-launch/',
+    canonical: 'https://ttcalculator.net/news/creator-rewards-program-launch/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function CreatorRewardsProgramLaunchPage() {
       <NewsArticleSchema
         headline="Creator Fund Replaced with Creator Rewards Program | TikTok News"
         description="TikTok support now directs creators from the discontinued Creator Fund to Creator Rewards, which emphasizes original public videos longer than 1 minute."
-        url="https://tiktokcalculator.net/news/creator-rewards-program-launch/"
+        url="https://ttcalculator.net/news/creator-rewards-program-launch/"
         datePublished="2026-01-01"
         dateModified="2026-03-15"
-        image="https://tiktokcalculator.net/news/news-monetization-1024.webp"
+        image="https://ttcalculator.net/news/news-monetization-1024.webp"
         keywords={['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
-          { name: 'Creator Rewards Launch', url: 'https://tiktokcalculator.net/news/creator-rewards-program-launch/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'News', url: 'https://ttcalculator.net/news/' },
+          { name: 'Creator Rewards Launch', url: 'https://ttcalculator.net/news/creator-rewards-program-launch/' },
         ]}
       />
 

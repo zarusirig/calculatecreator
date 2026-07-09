@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Estimate your TikTok creator taxes including self-employment tax, quarterly payments, and deductible expenses. Built for US-based content creators.",
   keywords: ['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/tax/',
+    canonical: 'https://ttcalculator.net/calculators/utility-tools/tax/',
   },
 };
 
@@ -44,7 +44,7 @@ export default function CreatorTaxCalculatorPage() {
       <CalculatorSchema
         name="TikTok Creator Tax Calculator"
         description="Calculate estimated taxes on your TikTok creator income. Understand self-employment tax, quarterly payments, and deductions with our free calculator."
-        url="https://tiktokcalculator.net/calculators/utility-tools/tax/"
+        url="https://ttcalculator.net/calculators/utility-tools/tax/"
         datePublished="2024-01-20"
         dateModified="2026-03-01"
         keywords={['creator tax calculator', 'tiktok taxes', 'self employment tax', 'influencer taxes', 'quarterly tax calculator']}
@@ -52,9 +52,9 @@ export default function CreatorTaxCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net/' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Creator Tax Calculator', url: 'https://tiktokcalculator.net/calculators/utility-tools/tax/' },
+          { name: 'Home', url: 'https://ttcalculator.net/' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Creator Tax Calculator', url: 'https://ttcalculator.net/calculators/utility-tools/tax/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-secondary-50 py-8">

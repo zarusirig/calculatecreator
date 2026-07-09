@@ -40,8 +40,8 @@ export default function AuthorsHubPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Authors', url: 'https://tiktokcalculator.net/authors/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Authors', url: 'https://ttcalculator.net/authors/' },
         ]}
       />
       <script
@@ -58,7 +58,7 @@ export default function AuthorsHubPage() {
               '@type': 'Person',
               name: author.name,
               jobTitle: author.role,
-              url: `https://tiktokcalculator.net/authors/${author.id}/`,
+              url: `https://ttcalculator.net/authors/${author.id}/`,
             })),
           }),
         }}

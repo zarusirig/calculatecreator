@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'How TT Calculator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/sources-policy/',
+    canonical: 'https://ttcalculator.net/sources-policy/',
   },
 };
 
@@ -20,12 +20,12 @@ const schema = {
   name: 'Sources Policy',
   description:
     'How TT Calculator evaluates, selects, and cites data sources used in calculators, guides, and research pages.',
-  url: 'https://tiktokcalculator.net/sources-policy/',
+  url: 'https://ttcalculator.net/sources-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
 };
 
@@ -193,10 +193,10 @@ export default function SourcesPolicyPage() {
               If you believe a source is outdated, misrepresented, or
               unreliable, please contact us at{' '}
               <a
-                href="mailto:corrections@tiktokcalculator.net"
+                href="mailto:corrections@ttcalculator.net"
                 className="text-primary-600 underline"
               >
-                corrections@tiktokcalculator.net
+                corrections@ttcalculator.net
               </a>
               . We review all source challenges against our quality hierarchy
               and update content when warranted. See our{' '}

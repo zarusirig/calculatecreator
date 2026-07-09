@@ -18,13 +18,13 @@ export const metadata: Metadata = {
   description: "Calculate your TikTok LIVE gift earnings. Convert coins, diamonds, and gifts to real money with our free streaming revenue calculator.",
   keywords: ['tiktok live gifts calculator', 'live streaming earnings', 'tiktok live money', 'gift earnings calculator', 'tiktok streaming income'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/live-gifts/',
+    canonical: 'https://ttcalculator.net/calculators/live-gifts/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/live-gifts/',
+    url: 'https://ttcalculator.net/calculators/live-gifts/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -85,7 +85,7 @@ export default function LiveGiftsCalculatorPage() {
       <CalculatorSchema
         name="TikTok LIVE Gifts Calculator"
         description="Estimate your TikTok LIVE streaming gift earnings based on viewers, stream frequency, and engagement rates."
-        url="https://tiktokcalculator.net/calculators/live-gifts/"
+        url="https://ttcalculator.net/calculators/live-gifts/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok live gifts', 'live streaming earnings', 'gift calculator', 'tiktok streaming income']}
@@ -94,9 +94,9 @@ export default function LiveGiftsCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'LIVE Gifts Calculator', url: 'https://tiktokcalculator.net/calculators/live-gifts/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'LIVE Gifts Calculator', url: 'https://ttcalculator.net/calculators/live-gifts/' },
         ]}
       />
 

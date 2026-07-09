@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Contact TT Calculator to report an issue, request a tool, or ask a question about methodology, sources, or editorial updates.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/contact/',
+    canonical: 'https://ttcalculator.net/contact/',
   },
 };
 
@@ -15,26 +15,26 @@ const contactSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'TT Calculator',
-  url: 'https://tiktokcalculator.net',
+  url: 'https://ttcalculator.net',
   contactPoint: [
     {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'contact@tiktokcalculator.net',
+      email: 'contact@ttcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
     {
       '@type': 'ContactPoint',
       contactType: 'technical support',
-      email: 'bugs@tiktokcalculator.net',
+      email: 'bugs@ttcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
     {
       '@type': 'ContactPoint',
       contactType: 'press inquiries',
-      email: 'press@tiktokcalculator.net',
+      email: 'press@ttcalculator.net',
       availableLanguage: ['English'],
       areaServed: 'Worldwide',
     },
@@ -63,8 +63,8 @@ export default function ContactPage() {
             <h2 className="text-heading-md font-semibold text-neutral-900">Primary contact</h2>
             <p className="mt-3 text-sm text-neutral-700">
               Email:{' '}
-              <a href="mailto:contact@tiktokcalculator.net" className="link">
-                contact@tiktokcalculator.net
+              <a href="mailto:contact@ttcalculator.net" className="link">
+                contact@ttcalculator.net
               </a>
             </p>
             <p className="mt-2 text-sm text-neutral-700">
@@ -107,32 +107,32 @@ export default function ContactPage() {
             <div className="mt-3 space-y-3 text-sm text-neutral-700">
               <p>
                 General support:{' '}
-                <a href="mailto:contact@tiktokcalculator.net" className="link">
-                  contact@tiktokcalculator.net
+                <a href="mailto:contact@ttcalculator.net" className="link">
+                  contact@ttcalculator.net
                 </a>
               </p>
               <p>
                 Bug reports:{' '}
-                <a href="mailto:bugs@tiktokcalculator.net" className="link">
-                  bugs@tiktokcalculator.net
+                <a href="mailto:bugs@ttcalculator.net" className="link">
+                  bugs@ttcalculator.net
                 </a>
               </p>
               <p>
                 Data and methodology:{' '}
-                <a href="mailto:data@tiktokcalculator.net" className="link">
-                  data@tiktokcalculator.net
+                <a href="mailto:data@ttcalculator.net" className="link">
+                  data@ttcalculator.net
                 </a>
               </p>
               <p>
                 Partnerships:{' '}
-                <a href="mailto:business@tiktokcalculator.net" className="link">
-                  business@tiktokcalculator.net
+                <a href="mailto:business@ttcalculator.net" className="link">
+                  business@ttcalculator.net
                 </a>
               </p>
               <p>
                 Press:{' '}
-                <a href="mailto:press@tiktokcalculator.net" className="link">
-                  press@tiktokcalculator.net
+                <a href="mailto:press@ttcalculator.net" className="link">
+                  press@ttcalculator.net
                 </a>
               </p>
             </div>

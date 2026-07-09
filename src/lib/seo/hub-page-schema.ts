@@ -115,7 +115,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/',
+        item: 'https://ttcalculator.net/',
       },
       {
         '@type': 'ListItem',
@@ -150,7 +150,7 @@ export function generateHubPageSchemas(config: HubPageSchemaConfig) {
     url: url,
     isPartOf: {
       '@type': 'WebSite',
-      '@id': 'https://tiktokcalculator.net/#website',
+      '@id': 'https://ttcalculator.net/#website',
     },
     about: {
       '@type': 'Thing',
@@ -175,7 +175,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   calculators: {
     title: 'TikTok Calculators: 28 Free Tools',
     description: 'Complete suite of TikTok calculators for earnings, engagement, growth, ROI, and taxes. Free tools with visible assumptions and methodology notes.',
-    url: 'https://tiktokcalculator.net/calculators/',
+    url: 'https://ttcalculator.net/calculators/',
     collectionType: 'Calculators',
     faqs: [
       {
@@ -215,7 +215,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   niches: {
     title: 'TikTok Niches: Find Your Most Profitable Content Category',
     description: 'Compare earnings potential across 15+ TikTok niches. Data-driven analysis of RPM rates, brand deal potential, and growth opportunities by content category.',
-    url: 'https://tiktokcalculator.net/niches/',
+    url: 'https://ttcalculator.net/niches/',
     collectionType: 'Niches',
     faqs: [
       {
@@ -243,7 +243,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   guides: {
     title: 'TikTok Creator Guides: Expert Strategies for Growth & Monetization',
     description: 'Comprehensive guides covering TikTok monetization, growth strategies, content creation, and creator business management. Written by industry experts.',
-    url: 'https://tiktokcalculator.net/guides/',
+    url: 'https://ttcalculator.net/guides/',
     collectionType: 'Guides',
     faqs: [
       {
@@ -271,7 +271,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   reference: {
     title: 'TikTok Reference Data: Official Rates, Schedules & Requirements',
     description: 'Verified reference data for TikTok creators including Creator Fund rates, payment schedules, eligibility requirements, and commission structures.',
-    url: 'https://tiktokcalculator.net/data/reference/',
+    url: 'https://ttcalculator.net/data/reference/',
     collectionType: 'Reference',
     faqs: [
       {
@@ -299,7 +299,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   news: {
     title: 'TikTok News: Latest Platform Updates & Creator Economy Trends',
     description: 'Stay updated with the latest TikTok news, algorithm changes, monetization updates, and creator economy trends affecting your earnings.',
-    url: 'https://tiktokcalculator.net/news/',
+    url: 'https://ttcalculator.net/news/',
     collectionType: 'News',
     faqs: [
       {
@@ -327,7 +327,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   region: {
     title: 'TikTok Statistics by Country: Global Creator Fund & RPM Data',
     description: 'Comprehensive TikTok statistics by country including Creator Fund availability, RPM rates, user demographics, and monetization opportunities worldwide.',
-    url: 'https://tiktokcalculator.net/region/',
+    url: 'https://ttcalculator.net/region/',
     collectionType: 'Reference',
     faqs: [
       {
@@ -355,7 +355,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   comparisons: {
     title: 'Platform Comparisons: TikTok vs YouTube, Instagram & More',
     description: 'Compare TikTok monetization, growth potential, and features against YouTube, Instagram, and other platforms. Data-driven analysis for creators.',
-    url: 'https://tiktokcalculator.net/comparisons/',
+    url: 'https://ttcalculator.net/comparisons/',
     collectionType: 'Comparisons',
     faqs: [
       {
@@ -383,7 +383,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   metrics: {
     title: 'TikTok Metrics Guide: Understanding Your Analytics',
     description: 'Complete guide to TikTok analytics and metrics. Learn what each metric means, industry benchmarks, and how to improve your performance.',
-    url: 'https://tiktokcalculator.net/metrics/',
+    url: 'https://ttcalculator.net/metrics/',
     collectionType: 'Metrics',
     faqs: [
       {
@@ -411,7 +411,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   blog: {
     title: 'TikTok Creator Blog: Tips, Trends & Success Stories',
     description: 'Blog covering TikTok creator tips, industry trends, success stories, and insider insights for content creators at every level.',
-    url: 'https://tiktokcalculator.net/blog/',
+    url: 'https://ttcalculator.net/blog/',
     collectionType: 'Blog',
     faqs: [
       {

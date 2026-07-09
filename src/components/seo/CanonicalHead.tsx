@@ -7,7 +7,7 @@ export function CanonicalHead() {
 
   // Build the canonical URL with trailing slash
   const cleanPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
-  const canonicalUrl = `https://tiktokcalculator.net${cleanPath}`;
+  const canonicalUrl = `https://ttcalculator.net${cleanPath}`;
 
   return (
     <link rel="canonical" href={canonicalUrl} />

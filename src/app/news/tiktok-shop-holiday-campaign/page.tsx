@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok shop holiday campaign update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/tiktok-shop-holiday-campaign/',
+    canonical: 'https://ttcalculator.net/news/tiktok-shop-holiday-campaign/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function TikTokShopHolidayCampaignPage() {
       <NewsArticleSchema
         headline="TikTok Shop Kicks Off Biggest Holiday Season Ever"
         description="TikTok Shop announces its largest holiday shopping campaign in November 2026. It combines creator storytelling with in-app purchasing."
-        url="https://tiktokcalculator.net/news/tiktok-shop-holiday-campaign/"
+        url="https://ttcalculator.net/news/tiktok-shop-holiday-campaign/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://tiktokcalculator.net/news/news-shop-1024.webp"
+        image="https://ttcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop', 'holiday shopping', 'social commerce', 'tiktok sales', 'creator economy']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
-          { name: 'Holiday Campaign', url: 'https://tiktokcalculator.net/news/tiktok-shop-holiday-campaign/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'News', url: 'https://ttcalculator.net/news/' },
+          { name: 'Holiday Campaign', url: 'https://ttcalculator.net/news/tiktok-shop-holiday-campaign/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

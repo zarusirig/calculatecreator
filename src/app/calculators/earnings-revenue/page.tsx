@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: "TikTok Earnings & Revenue Calculator for Creators",
   description: "Calculate your total TikTok revenue across current and legacy monetization streams. Compare Creator Rewards, brand deals, LIVE gifts, and Shop income in one dashboard.",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/earnings-revenue/',
+    canonical: 'https://ttcalculator.net/calculators/earnings-revenue/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/earnings-revenue/',
+    url: 'https://ttcalculator.net/calculators/earnings-revenue/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -260,15 +260,15 @@ export default function EarningsRevenuePage() {
       <CollectionPageSchema
         name="TikTok Earnings & Revenue Calculators"
         description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Rewards, legacy Creator Fund comparisons, brand deals, and total revenue across all monetization streams."
-        url="https://tiktokcalculator.net/calculators/earnings-revenue/"
-        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: (c as any).href ? `https://tiktokcalculator.net${(c as any).href}` : undefined }))}
+        url="https://ttcalculator.net/calculators/earnings-revenue/"
+        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: (c as any).href ? `https://ttcalculator.net${(c as any).href}` : undefined }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Earnings & Revenue', url: 'https://tiktokcalculator.net/calculators/earnings-revenue/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Earnings & Revenue', url: 'https://ttcalculator.net/calculators/earnings-revenue/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">

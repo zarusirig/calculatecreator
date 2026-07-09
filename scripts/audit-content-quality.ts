@@ -65,7 +65,7 @@ const REPORTS_DIR = path.join(PROJECT_ROOT, 'reports');
 const JSON_OUTPUT = path.join(REPORTS_DIR, 'content-quality-audit.json');
 const CSV_OUTPUT = path.join(REPORTS_DIR, 'content-quality-audit.csv');
 
-const OWN_HOSTS = new Set(['tiktokcalculator.net', 'www.tiktokcalculator.net']);
+const OWN_HOSTS = new Set(['ttcalculator.net', 'www.ttcalculator.net']);
 const DOMAIN_CONTEXT_TOKENS = new Set([
   'tiktok',
   'creator',

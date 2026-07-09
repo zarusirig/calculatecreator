@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Read the terms that govern TT Calculator, including estimate disclaimers, site usage, intellectual property, and liability limits.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/terms/',
+    canonical: 'https://ttcalculator.net/terms/',
   },
 };
 
@@ -17,13 +17,13 @@ const termsSchema = {
   '@type': 'WebPage',
   name: 'Terms of Service',
   description:
-    'Terms of Service for tiktokcalculator.net covering estimate disclaimers, user responsibilities, intellectual property, and liability limits.',
-  url: 'https://tiktokcalculator.net/terms/',
+    'Terms of Service for ttcalculator.net covering estimate disclaimers, user responsibilities, intellectual property, and liability limits.',
+  url: 'https://ttcalculator.net/terms/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
 };
 
@@ -41,7 +41,7 @@ export default function TermsPage() {
         <p className="mt-3 text-sm text-neutral-600">Last Updated: {LAST_UPDATED}</p>
 
         <p className="mt-5 text-sm leading-relaxed text-neutral-700">
-          These Terms of Service ("Terms") govern your use of tiktokcalculator.net and related
+          These Terms of Service ("Terms") govern your use of ttcalculator.net and related
           content, tools, calculators, and benchmark pages published by TT Calculator. By
           accessing or using the site, you agree to these Terms. If you do not agree, do not use
           the site.
@@ -119,7 +119,7 @@ export default function TermsPage() {
             <li>Respect intellectual property rights and attribution requirements.</li>
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            You are responsible for how you apply outputs from tiktokcalculator.net in your own
+            You are responsible for how you apply outputs from ttcalculator.net in your own
             business context. Use independent judgment before making spending, hiring, contracting,
             tax, or legal decisions.
           </p>
@@ -279,7 +279,7 @@ export default function TermsPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">16. Entire agreement</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             These Terms, together with linked policies, represent the complete agreement between you
-            and TT Calculator regarding use of tiktokcalculator.net. If there is a conflict
+            and TT Calculator regarding use of ttcalculator.net. If there is a conflict
             between these Terms and page-level notices, the more specific notice controls for that
             context.
           </p>
@@ -293,10 +293,10 @@ export default function TermsPage() {
         <section className="mt-6 card p-6">
           <h2 className="text-heading-md font-semibold text-neutral-900">17. Contact</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-            Terms inquiries: <a href="mailto:contact@tiktokcalculator.net" className="link">contact@tiktokcalculator.net</a>
+            Terms inquiries: <a href="mailto:contact@ttcalculator.net" className="link">contact@ttcalculator.net</a>
           </p>
           <p className="mt-2 text-sm leading-relaxed text-neutral-700">
-            Privacy inquiries: <a href="mailto:privacy@tiktokcalculator.net" className="link">privacy@tiktokcalculator.net</a>
+            Privacy inquiries: <a href="mailto:privacy@ttcalculator.net" className="link">privacy@ttcalculator.net</a>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             Related trust pages:{' '}

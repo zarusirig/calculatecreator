@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok live earnings calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   keywords: ['tiktok live gifts calculator', 'tiktok diamonds', 'live stream earnings', 'gift conversion'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/live-gifts/',
+    canonical: 'https://ttcalculator.net/calculators/live-gifts/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'LIVE Gifts Calculator 2026',
     description: 'Calculate TikTok LIVE earnings from gifts and diamonds.',
-    url: 'https://tiktokcalculator.net/calculators/live-gifts/',
+    url: 'https://ttcalculator.net/calculators/live-gifts/',
     type: 'website',
   },
 };

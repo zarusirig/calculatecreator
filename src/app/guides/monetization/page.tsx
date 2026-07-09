@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'TikTok Monetization Guides | Creator Revenue Strategy',
   description:
     'Browse monetization guides for TikTok income streams, eligibility rules, pricing, and strategies to build more predictable creator revenue.',
-  alternates: { canonical: 'https://tiktokcalculator.net/guides/monetization/' },
+  alternates: { canonical: 'https://ttcalculator.net/guides/monetization/' },
 };
 
 export default function MonetizationHubPage() {

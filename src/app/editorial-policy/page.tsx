@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Review how TT Calculator researches, writes, reviews, updates, and corrects calculator, guide, and benchmark content.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/editorial-policy/',
+    canonical: 'https://ttcalculator.net/editorial-policy/',
   },
 };
 
@@ -18,13 +18,13 @@ const editorialPolicySchema = {
   '@type': 'WebPage',
   name: 'Editorial Policy',
   description:
-    'Editorial Policy for tiktokcalculator.net covering research workflow, updates, correction handling, and independence standards.',
-  url: 'https://tiktokcalculator.net/editorial-policy/',
+    'Editorial Policy for ttcalculator.net covering research workflow, updates, correction handling, and independence standards.',
+  url: 'https://ttcalculator.net/editorial-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
 };
 
@@ -50,7 +50,7 @@ export default function EditorialPolicyPage() {
         </p>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700">
           Editorial quality and product quality are treated as the same system on
-          tiktokcalculator.net. If formula logic improves, explanatory copy and assumptions should
+          ttcalculator.net. If formula logic improves, explanatory copy and assumptions should
           improve with it. If benchmark context changes, related pages should be refreshed together.
         </p>
 
@@ -149,8 +149,8 @@ export default function EditorialPolicyPage() {
           </ul>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             To report an issue, email{' '}
-            <a href="mailto:contact@tiktokcalculator.net" className="link">
-              contact@tiktokcalculator.net
+            <a href="mailto:contact@ttcalculator.net" className="link">
+              contact@ttcalculator.net
             </a>{' '}
             or visit{' '}
             <Link href="/contact/" className="link">
@@ -249,8 +249,8 @@ export default function EditorialPolicyPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">10. Contacting the editorial team</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             For corrections, source challenges, or methodology concerns, email{' '}
-            <a href="mailto:contact@tiktokcalculator.net" className="link">
-              contact@tiktokcalculator.net
+            <a href="mailto:contact@ttcalculator.net" className="link">
+              contact@ttcalculator.net
             </a>{' '}
             and include the exact URL plus your evidence or rationale. We aim to acknowledge
             high-impact reports within 48 hours on business days.

@@ -1,4 +1,4 @@
-Contact: mailto:bugs@tiktokcalculator.net
+Contact: mailto:bugs@ttcalculator.net
 Preferred-Languages: en
-Canonical: https://tiktokcalculator.net/.well-known/security.txt
+Canonical: https://ttcalculator.net/.well-known/security.txt
 Expires: 2027-02-06T00:00:00.000Z

@@ -25,7 +25,7 @@ export function generateMetadata({
     title: `${author.role} | TT Calculator`,
     description: author.bio,
     alternates: {
-      canonical: `https://tiktokcalculator.net/authors/${params.authorSlug}/`,
+      canonical: `https://ttcalculator.net/authors/${params.authorSlug}/`,
     },
     robots: {
       index: true,
@@ -107,15 +107,15 @@ export default function AuthorPage({
     <>
       <AuthorPersonSchema
         author={author}
-        url={`https://tiktokcalculator.net/authors/${author.id}/`}
+        url={`https://ttcalculator.net/authors/${author.id}/`}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Authors', url: 'https://tiktokcalculator.net/authors/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Authors', url: 'https://ttcalculator.net/authors/' },
           {
             name: author.name,
-            url: `https://tiktokcalculator.net/authors/${author.id}/`,
+            url: `https://ttcalculator.net/authors/${author.id}/`,
           },
         ]}
       />

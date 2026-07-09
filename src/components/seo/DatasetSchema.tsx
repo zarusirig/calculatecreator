@@ -31,7 +31,7 @@ export function DatasetSchema({
     creator: {
       '@type': 'Organization',
       name: creator,
-      url: 'https://tiktokcalculator.net/',
+      url: 'https://ttcalculator.net/',
     },
     datePublished: datePublished,
     dateModified: dateModified,
@@ -49,13 +49,13 @@ export function DatasetSchema({
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://tiktokcalculator.net/',
+        item: 'https://ttcalculator.net/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Data',
-        item: 'https://tiktokcalculator.net/data/',
+        item: 'https://ttcalculator.net/data/',
       },
       {
         '@type': 'ListItem',

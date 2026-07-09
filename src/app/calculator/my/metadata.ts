@@ -4,15 +4,15 @@ export const metadata: Metadata = {
   title: "TikTok My Calculator 2026",
   description: "Use this TikTok my calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next steps.",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculator/my/',
+    canonical: 'https://ttcalculator.net/calculator/my/',
     languages: {
-      'ms': 'https://tiktokcalculator.net/calculator/my/',
-      'en': 'https://tiktokcalculator.net/calculators/tiktok-money/',
-      'de': 'https://tiktokcalculator.net/calculator/de/',
-      'es': 'https://tiktokcalculator.net/calculator/es/',
-      'fr': 'https://tiktokcalculator.net/calculator/fr/',
-      'it': 'https://tiktokcalculator.net/calculator/it/',
-      'pt-br': 'https://tiktokcalculator.net/calculator/pt-br/',
+      'ms': 'https://ttcalculator.net/calculator/my/',
+      'en': 'https://ttcalculator.net/calculators/tiktok-money/',
+      'de': 'https://ttcalculator.net/calculator/de/',
+      'es': 'https://ttcalculator.net/calculator/es/',
+      'fr': 'https://ttcalculator.net/calculator/fr/',
+      'it': 'https://ttcalculator.net/calculator/it/',
+      'pt-br': 'https://ttcalculator.net/calculator/pt-br/',
     },
   },
   robots: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: 'Kalkulator TikTok Malaysia | RPM 2026',
     description:
       'Anggar pendapatan TikTok di Malaysia: Fund & Rewards, jenama, hadiah LIVE. Dikemas kini 2026.',
-    url: 'https://tiktokcalculator.net/calculator/my/',
+    url: 'https://ttcalculator.net/calculator/my/',
     locale: 'ms_MY',
     type: 'website',
   },

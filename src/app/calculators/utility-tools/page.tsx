@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: "TikTok Utility Tools — Free Creator Toolkit 2026",
   description: "Access free TikTok creator utility tools. Character counters, hashtag generators, posting schedulers, and more — everything you need to manage your content.",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/',
+    canonical: 'https://ttcalculator.net/calculators/utility-tools/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/utility-tools/',
+    url: 'https://ttcalculator.net/calculators/utility-tools/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -90,15 +90,15 @@ export default function UtilityToolsPage() {
       <CollectionPageSchema
         name="TikTok Creator Utility Tools"
         description="Essential utility calculators for TikTok creators to manage taxes, calculate payouts after fees, and check monetization eligibility requirements."
-        url="https://tiktokcalculator.net/calculators/utility-tools/"
+        url="https://ttcalculator.net/calculators/utility-tools/"
         calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Utility Tools', url: 'https://tiktokcalculator.net/calculators/utility-tools/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Utility Tools', url: 'https://ttcalculator.net/calculators/utility-tools/' },
         ]}
       />
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 via-white to-primary-50 py-12">

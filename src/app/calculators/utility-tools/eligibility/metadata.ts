@@ -4,13 +4,13 @@ export const metadata: Metadata = {
   title: "TikTok Eligibility Calculator",
   description: "Use this TikTok eligibility calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable next",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/utility-tools/eligibility/',
+    canonical: 'https://ttcalculator.net/calculators/utility-tools/eligibility/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'TikTok Monetization Eligibility Checker (2026)',
     description: 'Verify your eligibility for TikTok monetization programs with 2026 rules.',
-    url: 'https://tiktokcalculator.net/calculators/utility-tools/eligibility/',
+    url: 'https://ttcalculator.net/calculators/utility-tools/eligibility/',
     type: 'website',
   },
   twitter: {

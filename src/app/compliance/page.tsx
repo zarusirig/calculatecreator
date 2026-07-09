@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Compliance hub for TT Calculator: advertising and sponsorship disclosures plus editorial, corrections, and sources policies.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/compliance/',
+    canonical: 'https://ttcalculator.net/compliance/',
   },
 };
 
@@ -52,18 +52,18 @@ const complianceSchema = {
   '@type': 'CollectionPage',
   name: 'Compliance & Disclosures',
   description:
-    'Compliance hub covering advertising and sponsorship disclosures plus editorial, corrections, and sources policies for tiktokcalculator.net.',
-  url: 'https://tiktokcalculator.net/compliance/',
+    'Compliance hub covering advertising and sponsorship disclosures plus editorial, corrections, and sources policies for ttcalculator.net.',
+  url: 'https://ttcalculator.net/compliance/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
   hasPart: [...disclosures, ...relatedPolicies].map((item) => ({
     '@type': 'WebPage',
     name: item.title,
-    url: `https://tiktokcalculator.net${item.href}`,
+    url: `https://ttcalculator.net${item.href}`,
   })),
 };
 
@@ -123,8 +123,8 @@ export default function CompliancePage() {
             <h2 className="text-heading-md font-semibold text-neutral-900">Questions or corrections</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               For disclosure questions, corrections, or compliance concerns, email{' '}
-              <a href="mailto:contact@tiktokcalculator.net" className="link">
-                contact@tiktokcalculator.net
+              <a href="mailto:contact@ttcalculator.net" className="link">
+                contact@ttcalculator.net
               </a>{' '}
               or visit{' '}
               <Link href="/contact/" className="link">

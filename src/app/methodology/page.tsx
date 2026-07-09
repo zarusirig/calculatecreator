@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'See how TT Calculator builds assumptions, reviews sources, updates ranges, and explains limitations across tools and content.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/methodology/',
+    canonical: 'https://ttcalculator.net/methodology/',
   },
 };
 
@@ -18,8 +18,8 @@ export default function MethodologyPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Methodology', url: 'https://tiktokcalculator.net/methodology/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Methodology', url: 'https://ttcalculator.net/methodology/' },
         ]}
       />
       <script
@@ -31,11 +31,11 @@ export default function MethodologyPage() {
             name: 'Methodology',
             description:
               'How TT Calculator builds calculator assumptions, evaluates source quality, refreshes ranges, and explains limitations across tools and content.',
-            url: 'https://tiktokcalculator.net/methodology/',
+            url: 'https://ttcalculator.net/methodology/',
             isPartOf: {
               '@type': 'WebSite',
               name: 'TT Calculator',
-              url: 'https://tiktokcalculator.net/',
+              url: 'https://ttcalculator.net/',
             },
             about: {
               '@type': 'Thing',
@@ -131,8 +131,8 @@ export default function MethodologyPage() {
           <h2 className="text-heading-md font-semibold text-neutral-900">7. Contact and corrections</h2>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             If you find a suspect assumption or formula behavior, send the URL and issue details to{' '}
-            <a href="mailto:contact@tiktokcalculator.net" className="link">
-              contact@tiktokcalculator.net
+            <a href="mailto:contact@ttcalculator.net" className="link">
+              contact@ttcalculator.net
             </a>
             . Our correction process is documented in the{' '}
             <Link href="/editorial-policy/" className="link">

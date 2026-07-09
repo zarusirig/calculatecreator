@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok mention liked favorited videos update for creator earnings implications, platform changes, monetization context, and actionable next",
   keywords: ['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/news/mention-liked-favorited-videos/',
+    canonical: 'https://ttcalculator.net/news/mention-liked-favorited-videos/',
   },
 };
 
@@ -19,17 +19,17 @@ export default function MentionLikedFavoritedVideosPage() {
       <NewsArticleSchema
         headline="TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News"
         description="Users can now mention 'Liked' and 'Favorited' videos in their content, expanding cross-referencing capabilities on the platform."
-        url="https://tiktokcalculator.net/news/mention-liked-favorited-videos/"
+        url="https://ttcalculator.net/news/mention-liked-favorited-videos/"
         datePublished="2026-11-01"
         dateModified="2026-03-01"
-        image="https://tiktokcalculator.net/news/news-features-1024.webp"
+        image="https://ttcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing']}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'News', url: 'https://tiktokcalculator.net/news/' },
-          { name: 'Mention Liked & Favorited Videos', url: 'https://tiktokcalculator.net/news/mention-liked-favorited-videos/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'News', url: 'https://ttcalculator.net/news/' },
+          { name: 'Mention Liked & Favorited Videos', url: 'https://ttcalculator.net/news/mention-liked-favorited-videos/' },
         ]}
       />
       <div className="min-h-screen bg-neutral-50">

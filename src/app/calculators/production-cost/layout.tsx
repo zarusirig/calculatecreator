@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok production cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['production cost calculator', 'content cost', 'video production roi'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/production-cost/',
+    canonical: 'https://ttcalculator.net/calculators/production-cost/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'Production Cost Calculator 2026',
     description: 'Calculate video production costs and content ROI.',
-    url: 'https://tiktokcalculator.net/calculators/production-cost/',
+    url: 'https://ttcalculator.net/calculators/production-cost/',
     type: 'website',
   },
 };

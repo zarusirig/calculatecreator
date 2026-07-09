@@ -34,7 +34,7 @@ export function WebPageSchema({ title, description, url, breadcrumbs = [] }: Web
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: 'https://tiktokcalculator.net/',
+      item: 'https://ttcalculator.net/',
     },
     ...breadcrumbs.map((crumb, index) => ({
       '@type': 'ListItem',

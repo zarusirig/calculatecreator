@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   description: "Convert TikTok diamonds to USD instantly. Understand the gift-to-diamond-to-cash pipeline and calculate your actual creator payout.",
   keywords: ['tiktok diamond converter', 'diamonds to usd', 'tiktok diamond calculator', 'diamond value', 'tiktok live earnings', 'convert diamonds to money'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/diamond-converter/',
+    canonical: 'https://ttcalculator.net/calculators/diamond-converter/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/diamond-converter/',
+    url: 'https://ttcalculator.net/calculators/diamond-converter/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -84,7 +84,7 @@ export default function DiamondConverterPage() {
       <CalculatorSchema
         name="TikTok Diamond Converter"
         description="Convert TikTok diamonds to USD, EUR, GBP, and other currencies. Calculate your LIVE streaming gift earnings with accurate 2026 rates."
-        url="https://tiktokcalculator.net/calculators/diamond-converter/"
+        url="https://ttcalculator.net/calculators/diamond-converter/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok diamond converter', 'diamonds to usd', 'diamond calculator', 'tiktok live earnings']}
@@ -92,9 +92,9 @@ export default function DiamondConverterPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Diamond Converter', url: 'https://tiktokcalculator.net/calculators/diamond-converter/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Diamond Converter', url: 'https://ttcalculator.net/calculators/diamond-converter/' },
         ]}
       />
 

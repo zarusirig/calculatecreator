@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Learn what TT Calculator does, how we build our tools, and the standards behind our creator earnings estimates, benchmarks, and guides.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/about/',
+    canonical: 'https://ttcalculator.net/about/',
   },
 };
 
@@ -15,8 +15,8 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'TT Calculator',
-  url: 'https://tiktokcalculator.net',
-  logo: 'https://tiktokcalculator.net/images/tt-calculator-logo.png',
+  url: 'https://ttcalculator.net',
+  logo: 'https://ttcalculator.net/images/tt-calculator-logo.png',
   description:
     'TT Calculator helps creators estimate, compare, and benchmark earnings and performance metrics with transparent assumptions.',
   // TODO: add real social profiles
@@ -25,8 +25,8 @@ const organizationSchema = {
     {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      email: 'contact@tiktokcalculator.net',
-      url: 'https://tiktokcalculator.net/contact/',
+      email: 'contact@ttcalculator.net',
+      url: 'https://ttcalculator.net/contact/',
     },
   ],
 };

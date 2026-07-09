@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description: "Calculate fair rates for TikTok brand deals based on your follower count, engagement rate, and niche. Get data-driven sponsorship pricing for 2026.",
   keywords: ['brand deal rate calculator', 'tiktok sponsorship rates', 'influencer pricing', 'how much to charge brands', 'tiktok brand deals', 'sponsored content pricing'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/brand-deal-rate/',
+    canonical: 'https://ttcalculator.net/calculators/brand-deal-rate/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/brand-deal-rate/',
+    url: 'https://ttcalculator.net/calculators/brand-deal-rate/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -86,7 +86,7 @@ export default function BrandDealRateCalculatorPage() {
       <CalculatorSchema
         name="TikTok Brand Deal Rate Calculator"
         description="Calculate your TikTok brand deal rates based on followers, engagement rate, and niche. Learn what to charge for sponsored content."
-        url="https://tiktokcalculator.net/calculators/brand-deal-rate/"
+        url="https://ttcalculator.net/calculators/brand-deal-rate/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['brand deal calculator', 'sponsorship rates', 'influencer pricing', 'tiktok brand deals']}
@@ -95,9 +95,9 @@ export default function BrandDealRateCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Brand Deal Rate Calculator', url: 'https://tiktokcalculator.net/calculators/brand-deal-rate/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Brand Deal Rate Calculator', url: 'https://ttcalculator.net/calculators/brand-deal-rate/' },
         ]}
       />
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "Follow this TikTok blog update for creator earnings implications, platform changes, monetization context, and actionable next steps.",
   keywords: ['tiktok blog', 'creator tips', 'tiktok monetization', 'creator earnings blog', 'tiktok strategy', 'tiktok income'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/blog/',
+    canonical: 'https://ttcalculator.net/blog/',
   },
 };
 

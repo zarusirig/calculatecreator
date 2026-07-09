@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   title: "TikTok Commerce Ads Calculator — Estimate Shopping Ad ROAS",
   description: "Calculate your TikTok Shop and commerce ad performance. Estimate ROAS, conversion rates, and revenue from product-focused TikTok advertising.",
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/commerce-ads/',
+    canonical: 'https://ttcalculator.net/calculators/commerce-ads/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/commerce-ads/',
+    url: 'https://ttcalculator.net/calculators/commerce-ads/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -92,12 +92,12 @@ export default function CommerceAdsPage() {
       <CollectionPageSchema
         name="TikTok Commerce & Ads Calculators"
         description="Calculate your TikTok RPM, CPM, shop profits, and ad costs. Free tools to optimize your commerce and advertising revenue."
-        url="https://tiktokcalculator.net/calculators/commerce-ads/"
+        url="https://ttcalculator.net/calculators/commerce-ads/"
         calculators={calculators.map(calc => ({
           name: calc.name,
           description: calc.description,
           slug: calc.slug,
-          url: (calc as any).href ? `https://tiktokcalculator.net${(calc as any).href}` : undefined,
+          url: (calc as any).href ? `https://ttcalculator.net${(calc as any).href}` : undefined,
         }))}
         keywords={[
           'TikTok RPM calculator',
@@ -114,9 +114,9 @@ export default function CommerceAdsPage() {
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Commerce & Ads', url: 'https://tiktokcalculator.net/calculators/commerce-ads/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Commerce & Ads', url: 'https://ttcalculator.net/calculators/commerce-ads/' },
         ]}
       />
       <div className="container-custom">

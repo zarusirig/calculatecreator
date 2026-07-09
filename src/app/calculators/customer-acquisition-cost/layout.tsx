@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok customer acquisition cost calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and",
   keywords: ['cac calculator', 'customer acquisition cost', 'tiktok cac', 'marketing roi'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/',
+    canonical: 'https://ttcalculator.net/calculators/customer-acquisition-cost/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'CAC Calculator 2026',
     description: 'Calculate Customer Acquisition Cost for TikTok marketing.',
-    url: 'https://tiktokcalculator.net/calculators/customer-acquisition-cost/',
+    url: 'https://ttcalculator.net/calculators/customer-acquisition-cost/',
     type: 'website',
   },
 };

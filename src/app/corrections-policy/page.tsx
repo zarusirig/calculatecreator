@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'How TT Calculator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/corrections-policy/',
+    canonical: 'https://ttcalculator.net/corrections-policy/',
   },
 };
 
@@ -20,12 +20,12 @@ const schema = {
   name: 'Corrections Policy',
   description:
     'How TT Calculator handles corrections, updates, and factual errors across calculators, guides, and data pages.',
-  url: 'https://tiktokcalculator.net/corrections-policy/',
+  url: 'https://ttcalculator.net/corrections-policy/',
   dateModified: LAST_UPDATED,
   publisher: {
     '@type': 'Organization',
     name: 'TT Calculator',
-    url: 'https://tiktokcalculator.net',
+    url: 'https://ttcalculator.net',
   },
 };
 
@@ -62,10 +62,10 @@ export default function CorrectionsPolicyPage() {
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               If you find an error on any TT Calculator page, contact us at{' '}
               <a
-                href="mailto:corrections@tiktokcalculator.net"
+                href="mailto:corrections@ttcalculator.net"
                 className="text-primary-600 underline"
               >
-                corrections@tiktokcalculator.net
+                corrections@ttcalculator.net
               </a>{' '}
               or use our{' '}
               <Link href="/contact/" className="text-primary-600 underline">

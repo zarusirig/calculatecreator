@@ -19,13 +19,13 @@ export const metadata: Metadata = {
   description: "Convert TikTok coins to USD, diamonds, and real money. See how much coins cost to buy and what creators actually receive after TikTok's 50% commission.",
   keywords: ['tiktok coins calculator', 'tiktok coins to usd', 'tiktok coin price', 'coins to diamonds', 'tiktok gift calculator', 'buy tiktok coins'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/coins/',
+    canonical: 'https://ttcalculator.net/calculators/coins/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/coins/',
+    url: 'https://ttcalculator.net/calculators/coins/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -86,7 +86,7 @@ export default function CoinsCalculatorPage() {
       <CalculatorSchema
         name="TikTok Coins Calculator"
         description="Calculate TikTok coin values, convert coins to USD and diamonds, and understand gift pricing with our free calculator."
-        url="https://tiktokcalculator.net/calculators/coins/"
+        url="https://ttcalculator.net/calculators/coins/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok coins calculator', 'coins to usd', 'tiktok coin price', 'coins to diamonds']}
@@ -94,9 +94,9 @@ export default function CoinsCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'Coins Calculator', url: 'https://tiktokcalculator.net/calculators/coins/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'Coins Calculator', url: 'https://ttcalculator.net/calculators/coins/' },
         ]}
       />
 

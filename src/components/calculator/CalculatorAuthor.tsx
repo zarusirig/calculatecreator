@@ -53,7 +53,7 @@ export function CalculatorAuthor({
           knowsAbout={author.expertise}
           affiliation={{
             name: 'TT Calculator',
-            url: 'https://tiktokcalculator.net',
+            url: 'https://ttcalculator.net',
           }}
         />
 
@@ -102,7 +102,7 @@ export function CalculatorAuthor({
         knowsAbout={author.expertise}
         affiliation={{
           name: 'TT Calculator',
-          url: 'https://tiktokcalculator.net',
+          url: 'https://ttcalculator.net',
         }}
       />
 

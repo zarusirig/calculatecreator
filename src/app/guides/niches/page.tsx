@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'TikTok Niche Guides | Earnings by Content Category',
   description:
     'Browse niche guides that compare TikTok earnings, monetization patterns, and business models across major content categories.',
-  alternates: { canonical: 'https://tiktokcalculator.net/guides/niches/' },
+  alternates: { canonical: 'https://ttcalculator.net/guides/niches/' },
 };
 
 export default function NichesHubPage() {

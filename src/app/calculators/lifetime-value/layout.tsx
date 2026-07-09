@@ -5,13 +5,13 @@ export const metadata: Metadata = {
   description: "Use this TikTok lifetime value calculator to estimate earnings, engagement, and monetization outcomes with practical creator benchmarks and actionable",
   keywords: ['ltv calculator', 'customer lifetime value', 'customer value', 'retention metrics'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/lifetime-value/',
+    canonical: 'https://ttcalculator.net/calculators/lifetime-value/',
   },
   openGraph: {
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
     title: 'LTV Calculator 2026',
     description: 'Calculate Customer Lifetime Value from TikTok traffic.',
-    url: 'https://tiktokcalculator.net/calculators/lifetime-value/',
+    url: 'https://ttcalculator.net/calculators/lifetime-value/',
     type: 'website',
   },
 };

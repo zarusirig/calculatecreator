@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Browse TT Calculator sections, calculators, guides, data pages, policy pages, and creator resources from one directory.',
   alternates: {
-    canonical: 'https://tiktokcalculator.net/sitemap/',
+    canonical: 'https://ttcalculator.net/sitemap/',
   },
 };
 

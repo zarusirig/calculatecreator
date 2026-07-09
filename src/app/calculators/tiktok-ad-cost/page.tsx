@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   description: "Estimate TikTok advertising costs for your business. Calculate budgets for in-feed ads, branded hashtags, TopView, and Spark Ads with 2026 pricing data.",
   keywords: ['tiktok ad cost calculator', 'tiktok advertising cost', 'tiktok cpm', 'tiktok ads budget', 'tiktok marketing cost', 'tiktok campaign calculator'],
   alternates: {
-    canonical: 'https://tiktokcalculator.net/calculators/tiktok-ad-cost/',
+    canonical: 'https://ttcalculator.net/calculators/tiktok-ad-cost/',
   },
   openGraph: {
-    url: 'https://tiktokcalculator.net/calculators/tiktok-ad-cost/',
+    url: 'https://ttcalculator.net/calculators/tiktok-ad-cost/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://tiktokcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
   },
 };
 
@@ -84,7 +84,7 @@ export default function TikTokAdCostCalculatorPage() {
       <CalculatorSchema
         name="TikTok Ad Cost Calculator"
         description="Estimate TikTok advertising costs based on your campaign goals, targeting, and ad format. Calculate CPM, CPC, and total budget."
-        url="https://tiktokcalculator.net/calculators/tiktok-ad-cost/"
+        url="https://ttcalculator.net/calculators/tiktok-ad-cost/"
         datePublished="2024-01-15"
         dateModified="2026-03-01"
         keywords={['tiktok ad cost', 'tiktok advertising', 'tiktok cpm', 'tiktok marketing budget']}
@@ -92,9 +92,9 @@ export default function TikTokAdCostCalculatorPage() {
       <FAQSchema faqs={faqData} />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://tiktokcalculator.net' },
-          { name: 'Calculators', url: 'https://tiktokcalculator.net/calculators/' },
-          { name: 'TikTok Ad Cost Calculator', url: 'https://tiktokcalculator.net/calculators/tiktok-ad-cost/' },
+          { name: 'Home', url: 'https://ttcalculator.net' },
+          { name: 'Calculators', url: 'https://ttcalculator.net/calculators/' },
+          { name: 'TikTok Ad Cost Calculator', url: 'https://ttcalculator.net/calculators/tiktok-ad-cost/' },
         ]}
       />
 
