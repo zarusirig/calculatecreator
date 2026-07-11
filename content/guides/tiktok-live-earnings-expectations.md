@@ -1,4 +1,10 @@
-# TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2025)
+---
+title: "TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2026)"
+metaDescription: "Realistic TikTok LIVE earnings by follower tier, how Coins convert to Diamonds and USD, what affects your income, and practical tips to maximize LIVE gifts."
+slug: "tiktok-live-earnings-expectations"
+---
+
+# TikTok LIVE Earnings: What to Expect (Realistic Income Guide 2026)
 
 ## Introduction
 
@@ -20,11 +26,11 @@ TikTok LIVE Gifts can be a lucrative monetization stream—but how much can you 
 
 **1. Viewers Buy Coins**
 - Purchase with real money through TikTok app
-- Prices: 100 coins = $0.99, 500 coins = $4.99, etc.
-- TikTok keeps ~30% (standard app store cut)
+- Prices: 65 coins = $0.69, or roughly $0.0106 per coin in-app (about $0.0105 on tiktok.com); the largest single package is 6,607 coins for $69.99
+- On in-app purchases, the ~30% Apple/Google app-store fee is baked into the price — buying on desktop/web is slightly cheaper
 
 **2. Viewers Send Gifts (Costing Coins)**
-- Gifts range from 5 coins (Rose) to 44,999 coins (Universe)
+- Gifts range from 1 coin (Rose) to 34,999 coins (TikTok Universe)
 - Gifts appear as animations during your LIVE
 - More expensive gifts = more impressive animations
 
@@ -34,9 +40,11 @@ TikTok LIVE Gifts can be a lucrative monetization stream—but how much can you 
 - TikTok takes ~50% (viewer spends $1, creator receives $0.50 worth of diamonds)
 
 **4. Creators Cash Out**
-- Minimum withdrawal: $50 (10,000 diamonds)
+- Minimum withdrawal: $10 (2,000 diamonds) for regular creators, $1 (200 diamonds) for new creators
 - Payment via PayPal or bank transfer
-- Processing time: 7–10 days
+- Processing time: 5–15 business days (occasionally up to 21)
+
+TikTok does not publish an official coin-to-diamond or diamond-to-dollar rate — the [LIVE Gifts support page](https://support.tiktok.com/en/live-gifts-wallet/tiktok-live/live-gifts-on-tiktok) only states that Diamonds are awarded based on a creator's popularity. The commonly reported figures above (about $0.0106 per coin and $0.005 per diamond) come from real purchase prices and creator payouts, and all coins, gifts, and diamonds are governed by [TikTok's Virtual Items Policy](https://www.tiktok.com/legal/virtual-items).
 
 ---
 
@@ -145,7 +153,7 @@ TikTok LIVE Gifts can be a lucrative monetization stream—but how much can you 
 
 **What to expect:**
 - LIVE is primary income (often exceeds all other streams combined)
-- Regular Universe gifts (44,999 coins = $449 each)
+- Regular TikTok Universe gifts (34,999 coins, about $371 to send)
 - LIVE battles with other creators (drives massive gifts)
 - Potential for $1,000+ single LIVE sessions
 
@@ -348,7 +356,7 @@ Normal at first. Focus on building engaged community. As viewers feel connected,
 Light encouragement is okay ("Gifts help me keep creating!"). But begging or guilting viewers damages trust. Let gifts come organically.
 
 ### When can I withdraw my earnings?
-Once you reach $50 (10,000 diamonds). Payment processed via PayPal/bank transfer in 7–10 days.
+Once you reach the minimum — $10 (2,000 diamonds) for regular creators, or $1 (200 diamonds) for new creators. Payments process via PayPal or bank transfer in about 5–15 business days (occasionally up to 21).
 
 ### Do LIVE earnings count as income for taxes?
 Yes. LIVE gift earnings are taxable income. Track all earnings for tax filing (1099 in US).
@@ -373,12 +381,12 @@ Yes. LIVE gift earnings are taxable income. Track all earnings for tax filing (1
 
 ## Related Resources
 
-- [TikTok LIVE Earnings Calculator](#)
-- [TikTok LIVE Gifts Value Chart](#)
-- [TikTok Diamonds to USD Converter](#)
-- [How to Get 1,000 Followers for LIVE](#)
-- [TikTok LIVE Monetization Guide](#)
-- [Best Times to Go LIVE on TikTok](#)
+- [TikTok LIVE Earnings Calculator](/calculators/live-gifts/)
+- [TikTok LIVE Gifts Value Chart](/guides/tiktok-gifts/)
+- [TikTok Diamonds to USD Converter](/calculators/diamond-converter/)
+- [How to Get 1,000 Followers for LIVE](/guides/how-to-get-1000-followers-live/)
+- [TikTok LIVE Monetization Guide](/guides/tiktok-live-earnings-guide/)
+- [Best Times to Go LIVE on TikTok](/calculators/earnings-revenue/live-earnings/best-times-go-live-tiktok/)
 
 ---
 
@@ -388,8 +396,8 @@ Yes. LIVE gift earnings are taxable income. Track all earnings for tax filing (1
 
 ---
 
-**Last Updated:** November 13, 2025
-**Word Count:** ~2,900
+**Last Updated:** July 2026
+**Word Count:** ~2,236
 **Reading Time:** 12 minutes
 **Content Type:** Informational Guide (Expectations/Benchmarks)
 **Target Persona:** Aspiring Creator, Scaling Creator (considering LIVE)

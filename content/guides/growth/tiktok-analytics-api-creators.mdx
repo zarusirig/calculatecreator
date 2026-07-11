@@ -36,7 +36,7 @@ headingVector:
   - "H2: How to Improve Your Results"
 articleType: "informative"
 priorityScore: 78
-wordCount: 2500
+wordCount: 2110
 publishDate: "2026-02-17"
 author: "TT Calculator Team"
 showCalculatorCTA: false
@@ -76,7 +76,7 @@ The key endpoints for creator analytics include:
 
 Video-level metrics returned by the API include total views, likes, comments, shares, average watch time, total watch time, and traffic sources. Account-level data includes follower growth, profile views, and audience demographics (age, gender, top territories).
 
-One limitation: TikTok's API does not expose Creator Fund or Creativity Program earnings. Revenue data stays locked inside the TikTok app. Creators who want to correlate earnings with performance metrics need to manually log their payouts or use screenshots.
+One limitation: TikTok's API does not expose earnings from the [Creator Rewards Program](https://support.tiktok.com/en/business-and-creator/creator-rewards-program/creator-rewards-program) (which replaced the Creativity Program beta and legacy Creator Fund) or from LIVE gifts. Revenue data stays locked inside the TikTok app. Creators who want to correlate earnings with performance metrics need to manually log their payouts or use screenshots.
 
 The API also enforces data freshness constraints. Video analytics may lag 24-48 hours behind real-time. Audience demographic data updates weekly. Creators building real-time dashboards should expect this delay and design their reporting accordingly.
 
@@ -121,7 +121,7 @@ The most useful automated metrics to track over time include:
 - **Views per video at 1h, 24h, 48h, and 7d** — reveals how TikTok's algorithm distributes your content over time
 - **Completion rate trends** — available in the [completion rate by video length data](/data/engagement/completion-rate-by-video-length/) section
 - **Follower growth rate per week** — smooths out daily noise
-- **Engagement rate per video** — likes + comments + shares divided by views
+- **Engagement rate per video** — (likes + comments + shares + saves) divided by views
 - **Traffic source mix** — For You page vs. Following vs. Search vs. Profile
 
 ## TikTok Analytics API Data and Rate Limits
@@ -135,7 +135,7 @@ The TikTok API enforces strict rate limits that affect how much data you can pul
 | Advanced | 10,000 requests/day | 365 days | 4-8 weeks |
 | Research API | 1,000 requests/day | Public data only | 2-6 weeks |
 
-Each API call returns up to 20 videos by default (configurable up to 100). A creator with 500 published videos needs at minimum 5 API calls to pull stats for their entire catalog — well within daily limits for any tier above Sandbox.
+These figures are typical of what approved developers report — TikTok adjusts exact quotas per app and over time, so always confirm current limits in the TikTok for Developers portal. Each API call returns up to 20 videos by default (configurable up to 100). A creator with 500 published videos needs at minimum 5 API calls to pull stats for their entire catalog — well within daily limits for any tier above Sandbox.
 
 Response times average 200-500ms per request. Bulk queries (requesting stats for multiple videos in one call) reduce total requests and improve efficiency. The API returns data in UTC timezone, so creators should account for timezone offsets when correlating post times with performance.
 
@@ -153,7 +153,7 @@ Raw data means nothing without a framework for acting on it. Creators who get th
 
 The creators who grow fastest on TikTok treat analytics as a feedback loop, not a report card. Every data point should connect to a specific action — post more of what works, stop doing what does not, and test new variables systematically.
 
-For a complete framework on understanding TikTok's metrics and what they mean for growth, read the full [TikTok analytics guide](/guides/growth/tiktok-analytics-guide/). Creators interested in understanding how TikTok decides which content to distribute should also review the [algorithm explainer](/guides/growth/tiktok-algorithm-explained/).
+For a complete framework on understanding TikTok's metrics and what they mean for growth, read the full [TikTok analytics guide](/guides/growth/tiktok-analytics-guide/). Creators interested in understanding how TikTok decides which content to distribute should also review the [algorithm explainer](/guides/growth/tiktok-algorithm-explained/) alongside TikTok's own [description of its recommendation system](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you), which confirms that user interactions like watch time and completion carry the highest ranking weight — exactly the metrics your tracking pipeline should prioritize.
 
 ## Frequently Asked Questions
 
@@ -161,9 +161,9 @@ For a complete framework on understanding TikTok's metrics and what they mean fo
 
 Individual creators can apply for API access through the TikTok Developer Portal, but approval is not guaranteed and requires a registered app with a clear use case. Most creators find it easier to use third-party platforms that already have authorized API access, such as Pentos, Socialinsider, or Sprout Social. These tools handle authentication and data retrieval without requiring any coding.
 
-### Does the TikTok API show Creator Fund or Creativity Program earnings?
+### Does the TikTok API show Creator Rewards Program earnings?
 
-No. TikTok does not expose revenue data through any public API endpoint. Earnings from the Creator Fund, Creativity Program, or LIVE gifts remain visible only inside the TikTok app. Creators who want to correlate earnings with video performance need to manually record payout data and match it against API-pulled metrics.
+No. TikTok does not expose revenue data through any public API endpoint. Earnings from the Creator Rewards Program (the current monetization program, which pays $0.50-$2.00 per 1,000 qualified views), the legacy Creator Fund, or LIVE gifts remain visible only inside the TikTok app and TikTok Studio. Creators who want to correlate earnings with video performance need to manually record payout data and match it against API-pulled metrics.
 
 ### How far back can I access historical TikTok analytics?
 

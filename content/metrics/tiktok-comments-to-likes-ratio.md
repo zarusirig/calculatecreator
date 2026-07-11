@@ -1,3 +1,9 @@
+---
+title: "TikTok Comments-to-Likes Ratio: What's Good & How to Improve It"
+metaDescription: "What counts as a good TikTok comments-to-likes ratio, benchmark tiers, why it matters for the algorithm and brand deals, and 8 strategies to improve yours."
+slug: "tiktok-comments-to-likes-ratio"
+---
+
 # TikTok Comments-to-Likes Ratio: What's Good & How to Improve It
 
 ## Introduction
@@ -41,14 +47,22 @@ Comments-to-Likes Ratio = Total Comments ÷ Total Likes
 
 ---
 
+## How This Ratio Fits TikTok's Average Engagement
+
+Comments are naturally far rarer than likes on every platform, so read these benchmarks in context. Based on TikTok's average component engagement rates in 2026 — a like rate of roughly 1.2% to 6.8% of views and a comment rate of roughly 0.16% to 0.91% of views, depending on account size — the platform-wide comments-to-likes ratio works out to around **1 comment per 7 to 8 likes** when measured across all views.
+
+That aggregate is pulled upward by high-comment viral posts, so a typical individual video usually lands closer to 1 comment per 15 to 20 likes. Use the benchmark table above to judge a single video, and remember that saves and shares generally carry more weight than either likes or comments in the wider [engagement-quality hierarchy](https://nowadays.media/blog/influencer-engagement-rate-benchmarks-2026-by-platform-niche-follower-tier/) (saves > shares > comments > likes). No engagement-ratio thresholds are published by TikTok; the tiers above are industry conventions, not official benchmarks.
+
+---
+
 ## Why Comments-to-Likes Ratio Matters
 
 ### 1. Algorithm Signal
-TikTok's algorithm values comments more than likes:
-- Comments = active engagement (stronger signal)
-- Likes = passive engagement (weaker signal)
+Creators and analysts widely observe that comments act as a stronger engagement signal than likes, because typing a comment takes more effort than a tap. TikTok officially counts likes, comments, shares, saves, and follows as engagement ([here is how engagement rate is calculated](https://blog.hootsuite.com/calculate-engagement-rate/)), but the platform does not publish how it weights each one:
+- Comments = active engagement (a viewer stopped to type)
+- Likes = passive engagement (a single tap)
 
-**Result:** Videos with high comments-to-likes ratios get more For You Page exposure.
+**In practice:** videos that spark lots of comments tend to hold sustained For You Page distribution, because comment threads keep viewers on the video longer. Treat this as an observed pattern, not a confirmed ranking rule.
 
 ### 2. Community Building
 High comment ratios indicate:
@@ -233,28 +247,19 @@ Videos with explicit comment CTAs have 2–3× higher ratios:
 
 ---
 
-## Case Studies
+## Illustrative Examples
 
-### Example 1: Question-Based Content
+These are hypothetical illustrations of how format changes move the ratio, not measured case studies. Your results will vary with niche and audience.
 
-**Before:**
-- Content: Tutorial videos (no questions)
-- Avg ratio: 1:40 (500 likes, 12 comments)
+### Adding a question to tutorials
 
-**After:** Added questions to end of videos
-- "What tutorial should I do next?"
-- New avg ratio: 1:15 (500 likes, 33 comments)
-- **Improvement: 166%**
+A tutorial account that ends videos with no prompt might average around 1:40 (say, 500 likes and roughly 12 comments). Adding a simple closing question like "What tutorial should I do next?" commonly lifts comment volume, moving a similar video toward 1:15 (around 33 comments) as more viewers reply.
 
 ---
 
-### Example 2: Polarizing Opinion Content
+### A polarizing opinion post
 
-**Creator:** Finance niche
-**Video:** "Unpopular opinion: Credit cards are better than debit cards"
-- 2,000 likes, 300 comments
-- Ratio: 1:6.7 (exceptional)
-- Mix of agreement and respectful debate
+A finance creator posting "Unpopular opinion: credit cards are better than debit cards" can see a much tighter ratio — for example 2,000 likes to 300 comments, or about 1:6.7 — as viewers split between agreement and respectful debate.
 
 ---
 
@@ -283,20 +288,21 @@ No. This prevents easy engagement and will lower overall engagement. Focus on en
 4. Compare to baseline
 
 **Optimize further:**
-- Use **TikTok Engagement Rate Calculator** for overall engagement
-- Read **How to Increase Engagement Rate** for comprehensive strategies
-- Read the **TikTok Algorithm Explained** guide to understand engagement signals
+- Use the [TikTok Engagement Rate Calculator](/calculators/engagement-rate/) for your overall engagement
+- Read [How to Increase TikTok Engagement](/guides/how-to-increase-engagement/) for comprehensive strategies
+- Read the [TikTok Algorithm Explained](/guides/growth/tiktok-algorithm-explained/) guide to understand engagement signals
 
 ---
 
 ## Related Resources
 
-- [TikTok Engagement Rate Calculator](#)
-- [How to Increase TikTok Engagement](#)
-- [TikTok Algorithm Explained](#)
-- [How to Go Viral on TikTok](#)
+- [TikTok Engagement Rate Calculator](/calculators/engagement-rate/)
+- [How to Increase TikTok Engagement](/guides/how-to-increase-engagement/)
+- [TikTok Algorithm Explained](/guides/growth/tiktok-algorithm-explained/)
+- [Average Engagement Rate by Follower Count (2026)](/data/engagement/avg-engagement-rate-follower-count-2026/)
+- [TikTok Likes-to-Views Ratio](/data/engagement/tiktok-likes-to-views-ratio/)
 
 ---
 
-**Last Updated:** November 13, 2025
+**Last Updated:** July 2026
 **Primary Keyword:** TikTok comments to likes ratio

@@ -1,4 +1,10 @@
-# How to Become a TikTok Shop Affiliate: Complete Guide (2025)
+---
+title: "How to Become a TikTok Shop Affiliate: Complete Guide (2026)"
+metaDescription: "Step-by-step guide to joining the TikTok Shop Affiliate program: eligibility rules, the application process, commission rates by category, and how payouts work."
+slug: "how-to-become-tiktok-shop-affiliate"
+---
+
+# How to Become a TikTok Shop Affiliate: Complete Guide (2026)
 
 ## Introduction
 
@@ -39,23 +45,17 @@ TikTok Shop Affiliate program allows creators to earn commissions by promoting p
 
 **United States:**
 - ✅ 18+ years old
-- ✅ 5,000+ followers (lowered from 10K in 2024)
+- ✅ 5,000+ followers (the current US standard for Shop affiliate access)
 - ✅ TikTok Business or Creator account
 - ✅ No Community Guidelines violations in last 90 days
 - ✅ Based in eligible region (US availability expanding)
 
-**United Kingdom:**
+**Other markets (UK, EU, Southeast Asia):**
 - ✅ 18+ years old
-- ✅ 1,000+ followers (lower threshold than US)
-- ✅ Business or Creator account
-- ✅ Based in UK
+- ✅ Follower thresholds vary by country and have historically been lower than the US in some markets — always verify the current figure rather than assuming
+- ✅ Business or Creator account with recent activity
 
-**Southeast Asia (Indonesia, Malaysia, Philippines, Singapore, Thailand, Vietnam):**
-- ✅ 18+ years old
-- ✅ 1,000–5,000 followers (varies by country)
-- ✅ Active account with recent posts
-
-**Note:** Requirements and availability change frequently. Check TikTok Shop Seller Center for latest eligibility by region.
+**Note:** Requirements and availability change frequently. The US 5,000-follower requirement is consistent with [ShortFormNation's 2026 breakdown](https://www.shortformnation.com/blog/tiktok-shop-affiliate-marketing-the-complete-2026-guide); check TikTok Shop Seller Center for the latest eligibility in your region.
 
 ---
 
@@ -222,15 +222,15 @@ TikTok Shop Affiliate program allows creators to earn commissions by promoting p
 
 | Product Category | Avg Commission Rate | Example |
 |------------------|---------------------|---------|
-| Beauty & Cosmetics | 10–20% | $20 lipstick = $2–$4 commission |
-| Fashion & Apparel | 8–15% | $50 dress = $4–$7.50 commission |
-| Electronics | 3–8% | $100 gadget = $3–$8 commission |
-| Home & Kitchen | 10–15% | $30 organizer = $3–$4.50 commission |
-| Health & Wellness | 15–25% | $40 supplement = $6–$10 commission |
-| Toys & Kids | 10–15% | $25 toy = $2.50–$3.75 commission |
-| Pet Supplies | 10–15% | $20 dog toy = $2–$3 commission |
+| Beauty & Cosmetics | 8–20% | $20 lipstick = $1.60–$4.00 commission |
+| Fashion & Apparel | 10–15% | $50 dress = $5.00–$7.50 commission |
+| Electronics | 2–8% | $100 gadget = $2.00–$8.00 commission |
+| Home & Kitchen | 5–12% | $30 organizer = $1.50–$3.60 commission |
+| Health & Wellness | 10–18% | $40 supplement = $4.00–$7.20 commission |
+| Toys & Kids | 8–14% | $25 toy = $2.00–$3.50 commission |
+| Pet Supplies | 8–15% | $20 dog toy = $1.60–$3.00 commission |
 
-**Note:** Individual products vary. Always check specific product's commission rate before promoting.
+**Note:** The site-standard affiliate rate is 5%, with most categories between 2% and 20%. Individual products vary, so always check a specific product's commission rate before promoting. Established creators can negotiate higher rates through Targeted Collaboration.
 
 ---
 
@@ -254,13 +254,11 @@ TikTok Shop Affiliate program allows creators to earn commissions by promoting p
 ### Payment Schedule
 
 **Payment cycle:**
-- Commissions accumulate throughout the month
-- Paid monthly (typically mid-month for previous month's sales)
+- Each sale first clears a settlement window (commonly 15–31 days) that accounts for returns
+- Cleared commissions are paid out on a biweekly cycle
 - Minimum payout: $10 (most regions)
 
-**Example timeline:**
-- January sales → Paid mid-February
-- February sales → Paid mid-March
+**Watch the clawbacks:** Per [Dashboardly](https://www.dashboardly.io/post/tiktok-shop-affiliate-commissions-2026-payouts-clawbacks-profit-math), if a customer returns the product before your commission is paid out, that commission is clawed back — so your effective earnings run a little below gross commission, especially in high-return categories.
 
 **Processing time:**
 - PayPal: 1–3 days after payout date
@@ -399,23 +397,25 @@ Yes. Affiliate commissions are taxable income. Track earnings and report on tax 
 
 ## Related Resources
 
-- [TikTok Shop Commission Calculator](#)
-- [TikTok Shop for Creators Guide](#)
-- [TikTok Affiliate Earnings Calculator](#)
-- [Best TikTok Shop Niches](#)
-- [TikTok Shop Payment Schedule](#)
-- [TikTok Sponsorship Disclosure Guidelines](#)
+- [TikTok Shop Profit Calculator](/calculators/commerce-ads/shop-profit/)
+- [TikTok Shop for Creators Guide](/guides/tiktok-shop/)
+- [Affiliate Commission Calculator](/calculators/affiliate-commission/)
+- [Best TikTok Shop Niches](/guides/best-shop-niches/)
+- [TikTok Shop Affiliate Program Guide](/guides/tiktok-shop-affiliate/)
+- [Affiliate Marketing Without TikTok Shop](/guides/monetization/tiktok-affiliate-without-shop/)
 
 ---
 
 ## Changelog
 
+**July 2026:** Updated for 2026 — aligned commission rates to standard category ranges (2%–20%, 5% standard), corrected payout cadence to biweekly with settlement-window and clawback detail, clarified the US 5,000-follower requirement, added third-party citations, and fixed internal links.
+
 **November 13, 2025:** Initial publication with complete TikTok Shop Affiliate application guide, commission structure, best practices, and common mistakes.
 
 ---
 
-**Last Updated:** November 13, 2025
-**Word Count:** ~2,800
+**Last Updated:** July 2026
+**Word Count:** ~2,050
 **Reading Time:** 11 minutes
 **Content Type:** How-To Guide (Step-by-Step)
 **Target Persona:** Aspiring Creator, Scaling Creator (looking to diversify income)
