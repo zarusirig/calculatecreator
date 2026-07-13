@@ -94,7 +94,7 @@ export function CookieConsent() {
           <Script
             id="cc-ga-script"
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-KNN9QW52GQ"
+            src="https://www.googletagmanager.com/gtag/js?id=G-Q6CB9BK650"
             strategy="afterInteractive"
           />
 
@@ -104,7 +104,7 @@ export function CookieConsent() {
               function gtag(){dataLayer.push(arguments);}
               window.gtag = window.gtag || gtag;
               gtag('js', new Date());
-              gtag('config', 'G-KNN9QW52GQ', {
+              gtag('config', 'G-Q6CB9BK650', {
                 anonymize_ip: true,
                 allow_ad_personalization_signals: ${consent === 'accepted' ? 'true' : 'false'}
               });

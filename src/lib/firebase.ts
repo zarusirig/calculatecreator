@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "tiktokcalculator-9619d.firebasestorage.app",
   messagingSenderId: "52556051249",
   appId: "1:52556051249:web:74ef459080c1edb46e3610",
-  measurementId: "G-KNN9QW52GQ",
+  measurementId: "G-Q6CB9BK650",
 };
 
 export const app = initializeApp(firebaseConfig);
