@@ -28,7 +28,8 @@ function findAllImages(dir, fileList = []) {
     
     if (stat.isDirectory()) {
       findAllImages(filePath, fileList);
-    } else if (/\.(png|jpg|jpeg)$/i.test(file)) {
+    } else if (/\.(png|jpg|jpeg)$/i.test(file) && !/-tiny\.(jpg|jpeg)$/i.test(file)) {
+      // -tiny.jpg files are generated blur placeholders, not sources
       fileList.push(filePath);
     }
   });
