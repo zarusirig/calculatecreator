@@ -13,20 +13,20 @@ export const metadata: Metadata = {
   },
 };
 
-const LAST_UPDATED = 'July 10, 2026';
+const LAST_UPDATED = 'July 13, 2026';
 
 const disclosures = [
   {
     href: '/compliance/advertising-disclosure/',
     title: 'Advertising Disclosure',
     description:
-      'How TT Calculator earns advertising revenue, where ads appear, and how monetization stays separated from calculator logic and editorial positions.',
+      'How TT Calculator earns advertising revenue through Google AdSense, which routes show ads and which never do, and how monetization stays separated from calculator logic and editorial positions.',
   },
   {
     href: '/compliance/sponsorship-disclosure/',
     title: 'Sponsorship Disclosure',
     description:
-      'When sponsored placements or affiliate relationships apply, how they are labeled, and the standards we hold sponsored content to.',
+      'A creator-facing FTC compliance guide: when TikTok creators must disclose sponsored content, the triple disclosure method, penalties for missing disclosures, and UK and EU standards.',
   },
 ];
 
@@ -65,14 +65,14 @@ const faqs = [
       'TT Calculator earns revenue through display advertising served by Google AdSense. Advertising does not influence calculator assumptions, benchmark ranges, or editorial positions.',
   },
   {
+    question: 'Are calculator results financial advice?',
+    answer:
+      'No. Every output is an educational estimate built from published benchmarks and labeled assumptions, not financial, tax, or legal advice. The calculators produce planning ranges, not account-level payouts or guaranteed outcomes.',
+  },
+  {
     question: 'Does TT Calculator sell user data?',
     answer:
       'No. TT Calculator does not sell user data. Calculator inputs run client-side in the browser, and cookies and data processing are documented in the Privacy Policy.',
-  },
-  {
-    question: 'How often are trust and policy pages reviewed?',
-    answer:
-      'Policy and trust pages are reviewed at least quarterly. Calculator assumptions are reviewed weekly, and platform policy changes are reflected within 7 days of an official announcement.',
   },
 ];
 
@@ -103,6 +103,12 @@ const contentStandards = [
   'A visible last-updated or last-verified date',
 ];
 
+const estimateBoundaries = [
+  'Outputs are planning ranges, not payout guarantees or account-level predictions',
+  'The site has no access to individual TikTok account data, so no tool reports what a specific account earns',
+  'Tax tools approximate liability for planning and do not replace a licensed professional',
+];
+
 const updateCadence = [
   'Policy and trust pages: reviewed at least quarterly',
   'Calculator assumptions: reviewed weekly, prioritized on platform changes',
@@ -127,8 +133,9 @@ export default function CompliancePage() {
 
           <p className="mt-5 text-sm leading-relaxed text-neutral-700">
             This hub gathers the transparency and disclosure documents that govern how TT Calculator
-            operates. Advertising and sponsorship disclosures make the site&rsquo;s funding model visible,
-            and monetization decisions stay separate from calculator assumptions and editorial positions.
+            operates: 2 disclosure pages and 4 related policies. Advertising and sponsorship disclosures
+            make the site&rsquo;s funding model visible, and monetization decisions stay separate from
+            calculator assumptions and editorial positions.
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-700">
             TT Calculator is <strong>independent</strong> and is not affiliated with, endorsed by, or
@@ -137,11 +144,46 @@ export default function CompliancePage() {
           </p>
 
           <section className="mt-8 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">What each disclosure page covers</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              The hub contains <strong>two disclosure pages</strong>: one about how this site earns money,
+              and one about how creators disclose their own brand deals.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              The{' '}
+              <Link href="/compliance/advertising-disclosure/" className="link">
+                Advertising Disclosure
+              </Link>{' '}
+              names Google AdSense as the ad network and publishes the site&rsquo;s AdSense publisher ID.
+              It lists the 7 content route groups where ads render, the 11 trust and utility route groups
+              where ads never render, and the four ad formats in use. It also states the site&rsquo;s
+              no-affiliate and no-sponsored-content position and documents ad labeling, placement rules,
+              and the user controls for ad personalization.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              The{' '}
+              <Link href="/compliance/sponsorship-disclosure/" className="link">
+                Sponsorship Disclosure
+              </Link>{' '}
+              is a compliance guide for TikTok creators, not a statement about this site. It covers when
+              FTC rules require disclosure, the triple disclosure method of toggle, hashtag, and verbal
+              statement, FTC penalties that reach $43,280 per violation, and the UK ASA and EU standards.
+              It also answers the common edge cases: gifted products, affiliate links, and long-term brand
+              ambassadorships.
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Content standards</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               TT Calculator applies one editorial standard to every calculator, guide, and benchmark page.
               Each page moves through a four-stage workflow: research, drafting, expert review, then
               publication. Financial and technical claims require reviewer sign-off before release.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Six editorial desks divide the workload: Editorial, Research, LIVE, Commerce, Tax, and
+              Growth. Each desk owns the assumptions, copy, and corrections in its domain, and page
+              attribution points to the responsible desk.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               Every page carries a visible last-updated date, and every calculator exposes its assumptions
@@ -161,15 +203,47 @@ export default function CompliancePage() {
           </section>
 
           <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">Educational estimates only</h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Every output from the site&rsquo;s 35+ calculators is an <strong>educational
+              estimate</strong>, not financial, tax, accounting, legal, or investment advice. Estimates
+              build from published benchmarks and labeled assumptions, and three boundaries apply:
+            </p>
+            <ul className="mt-3 list-disc pl-6 space-y-1 text-sm text-neutral-700">
+              {estimateBoundaries.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Calculators also surface eligibility gates before estimating a stream a creator cannot yet
+              access. Example: TikTok&rsquo;s published Creator Rewards Program eligibility requires at
+              least 10,000 followers and 100,000 views in the prior 30 days, so the tools state that gate
+              alongside the estimate.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              The full no-professional-advice statement appears in the{' '}
+              <Link href="/terms/" className="link">
+                Terms of Service
+              </Link>
+              , and the assumptions behind each estimate appear in the{' '}
+              <Link href="/methodology/" className="link">
+                Methodology
+              </Link>
+              .
+            </p>
+          </section>
+
+          <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Advertising and affiliate disclosure</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               Display advertising funds TT Calculator. Google AdSense serves the ads, and ad placements sit
               apart from calculator inputs and action buttons so monetization never touches formula logic.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              TT Calculator does not run affiliate links at scale today. If a page adds an affiliate
-              relationship, the relationship is labeled on-page and recorded in this hub, and presence of
-              monetization never changes editorial evaluation standards. The{' '}
+              TT Calculator runs no affiliate links today; display advertising is the only monetization
+              channel in production. If a page adds an affiliate relationship, the relationship is labeled
+              on-page and recorded in this hub before the links go live, and presence of monetization never
+              changes editorial evaluation standards. The{' '}
               <Link href="/compliance/advertising-disclosure/" className="link">
                 Advertising Disclosure
               </Link>{' '}
@@ -185,9 +259,10 @@ export default function CompliancePage() {
               contact request.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              TT Calculator does not sell user data. Analytics and ad measurement operate under a documented
-              consent flow, and personalization follows the user&rsquo;s region and consent state. Cookies,
-              consent, and data processing are documented in full in the{' '}
+              TT Calculator does not sell user data. Two third-party Google services run on the site:
+              Google Analytics for aggregate traffic measurement and Google AdSense for display ads. Both
+              operate under a documented consent flow, and personalization follows the user&rsquo;s region
+              and consent state. Cookies, consent, and data processing are documented in full in the{' '}
               <Link href="/privacy/" className="link">
                 Privacy Policy
               </Link>
@@ -209,7 +284,7 @@ export default function CompliancePage() {
               <Link href="/contact/" className="link">
                 Contact
               </Link>{' '}
-              page.
+              page. Barrier reports carry the same 48-hour acknowledgment target as content error reports.
             </p>
           </section>
 
@@ -230,6 +305,14 @@ export default function CompliancePage() {
               proprietary TikTok data. TikTok does not publish exact Creator Fund RPM rates, algorithm
               weights, or gift revenue-share percentages, so those inputs remain labeled estimates.
             </p>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Independence holds in three concrete ways:
+            </p>
+            <ul className="mt-2 list-disc pl-6 space-y-1 text-sm text-neutral-700">
+              <li>No TikTok or ByteDance API partnership, data feed, or account access exists</li>
+              <li>No advertiser previews content or vetoes a formula, ranking, or benchmark</li>
+              <li>All ad revenue arrives through Google, so no direct advertiser relationship exists</li>
+            </ul>
           </section>
 
           <section className="mt-6 card p-6">
@@ -243,6 +326,10 @@ export default function CompliancePage() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Official TikTok or ByteDance announcements trigger off-cycle reviews: affected pages enter
+              the correction queue automatically rather than waiting for the calendar.
+            </p>
           </section>
 
           <section className="mt-8">
@@ -287,19 +374,28 @@ export default function CompliancePage() {
           <section className="mt-6 card p-6">
             <h2 className="text-heading-md font-semibold text-neutral-900">Questions or corrections</h2>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
-              For disclosure questions, corrections, or compliance concerns, email{' '}
+              Three inboxes route compliance messages by topic:{' '}
               <a href="mailto:contact@ttcalculator.net" className="link">
                 contact@ttcalculator.net
               </a>{' '}
-              or visit{' '}
+              for disclosure questions and general concerns,{' '}
+              <a href="mailto:corrections@ttcalculator.net" className="link">
+                corrections@ttcalculator.net
+              </a>{' '}
+              for content errors, and{' '}
+              <a href="mailto:privacy@ttcalculator.net" className="link">
+                privacy@ttcalculator.net
+              </a>{' '}
+              for data requests. The{' '}
               <Link href="/contact/" className="link">
                 Contact
-              </Link>
-              . The{' '}
+              </Link>{' '}
+              page works for all three, and the{' '}
               <Link href="/corrections-policy/" className="link">
                 Corrections Policy
               </Link>{' '}
-              documents the review and response timeline.
+              documents the review and response timeline. Most replies arrive within 1 to 2 business
+              days.
             </p>
           </section>
         </Container>

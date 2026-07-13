@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
+import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Creator Business Guides | Taxes & Contracts',
@@ -10,9 +12,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://ttcalculator.net/guides/business/' },
 };
 
+const businessFaqs = [
+  {
+    question: 'How much should TikTok creators set aside for taxes?',
+    answer: 'TikTok creators set aside 25-35% of every payout for taxes, with 30% as the safe default for incomes between $30,000 and $100,000 a year. US creators pay 15.3% self-employment tax on top of income tax.',
+  },
+  {
+    question: 'Do TikTok creators need an LLC?',
+    answer: 'Creators earning over $50,000 a year gain liability protection and potential tax advantages from an LLC. At higher incomes, an S-Corp election saves $2,000 to $15,000 a year in self-employment tax.',
+  },
+  {
+    question: 'Do TikTok creators have to disclose brand deals?',
+    answer: 'Yes. The FTC requires a clear disclosure such as #ad on every sponsored TikTok post, and liability for missing disclosures is shared between the creator and the brand.',
+  },
+  {
+    question: 'When can a TikTok creator go full-time?',
+    answer: 'Sustainable full-time income starts around $4,000 per month, a level most consistent creators reach between months 18 and 30. Three active income streams and a three-to-six-month expense buffer come first.',
+  },
+];
+
 export default function BusinessHubPage() {
   const articles = getArticlesBySection('guides/business');
   return (
+    <>
+    <FAQPageSchema faqs={businessFaqs} url="https://ttcalculator.net/guides/business/" />
     <HubListingPage
       title="TikTok Creator Business Guides"
       description="Run your TikTok creator career like a business. Taxes, contracts, legal requirements, and financial planning for sustainable income."
@@ -23,6 +46,77 @@ export default function BusinessHubPage() {
       supplementaryContent={
         <>
           <h2 className="text-heading-md font-semibold text-neutral-900">
+            What TikTok creator business guides cover
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            TikTok creator business guides cover the money and legal side of creating: taxes,
+            contracts, disclosure rules, insurance, and exit planning. The{' '}
+            <strong className="font-semibold text-neutral-900">12 guides</strong> in this hub
+            answer one creator question: how do you protect the income your content earns.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            How to use this hub
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Match your next decision to one of three guide groups: taxes and structure, contracts
+            and compliance, or career operations.
+          </p>
+          <ul className="mt-3 list-disc pl-5 text-body-md text-neutral-700 space-y-2">
+            <li>
+              <strong className="font-semibold text-neutral-900">Taxes and structure:</strong> the{' '}
+              <Link href="/guides/business/tiktok-creator-taxes-guide/" className="text-primary-700 hover:text-primary-800">
+                TikTok creator taxes guide by country
+              </Link>{' '}
+              covers what to set aside, the{' '}
+              <Link href="/guides/business/international-creator-tax-implications/" className="text-primary-700 hover:text-primary-800">
+                cross-border tax implications
+              </Link>{' '}
+              guide covers foreign income, and{' '}
+              <Link href="/guides/business/tiktok-creator-insurance/" className="text-primary-700 hover:text-primary-800">
+                TikTok creator insurance
+              </Link>{' '}
+              covers liability cover. Pair them with the LLC guide linked below for entity choice.
+            </li>
+            <li>
+              <strong className="font-semibold text-neutral-900">Contracts and compliance:</strong>{' '}
+              <Link href="/guides/business/brand-deal-contract-negotiate/" className="text-primary-700 hover:text-primary-800">
+                brand deal contract essentials
+              </Link>
+              ,{' '}
+              <Link href="/guides/business/ftc-disclosure-tiktok/" className="text-primary-700 hover:text-primary-800">
+                FTC disclosure requirements
+              </Link>
+              ,{' '}
+              <Link href="/guides/business/tiktok-copyright-fair-use/" className="text-primary-700 hover:text-primary-800">
+                copyright and fair use on TikTok
+              </Link>
+              ,{' '}
+              <Link href="/guides/business/tiktok-intellectual-property-protection/" className="text-primary-700 hover:text-primary-800">
+                TikTok intellectual property protection
+              </Link>
+              , and{' '}
+              <Link href="/guides/business/tiktok-community-guidelines-strikes/" className="text-primary-700 hover:text-primary-800">
+                avoiding community guidelines strikes
+              </Link>{' '}
+              keep deals and accounts safe.
+            </li>
+            <li>
+              <strong className="font-semibold text-neutral-900">Career operations:</strong>{' '}
+              <Link href="/guides/business/when-to-hire-manager-tiktok/" className="text-primary-700 hover:text-primary-800">
+                when to hire a manager
+              </Link>
+              ,{' '}
+              <Link href="/guides/business/tiktok-creator-burnout-guide/" className="text-primary-700 hover:text-primary-800">
+                creator burnout signs and recovery
+              </Link>
+              , and{' '}
+              <Link href="/guides/business/tiktok-exit-strategies/" className="text-primary-700 hover:text-primary-800">
+                TikTok exit strategies
+              </Link>{' '}
+              cover scaling the operation and leaving on your terms.
+            </li>
+          </ul>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
             Run your TikTok creator career as a business
           </h2>
           <p className="mt-3 text-body-md text-neutral-700">
@@ -111,8 +205,26 @@ export default function BusinessHubPage() {
             , which lays out the posting, repurposing, and revenue stacking steps that protect creator
             income when a single platform shifts.
           </p>
+
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            How these guides are maintained
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Six editorial desks maintain this site, and the Tax desk owns earnings-to-tax context
+            and jurisdiction-aware guidance in this hub. The Editorial desk checks formula logic,
+            terminology, and factual claims before publication, and the Research desk grades every
+            cited source. Conflicting sources publish as ranges rather than a single picked number.
+            Guides refresh quarterly, with immediate revisions when tax rules, FTC guidance, or
+            TikTok policies change. The full process sits in the{' '}
+            <Link href="/editorial-policy/" className="text-primary-700 hover:text-primary-800">
+              editorial policy
+            </Link>
+            .
+          </p>
+          <FAQSection faqs={businessFaqs} pageName="TikTok Creator Business Guides" title="Creator business FAQ" />
         </>
       }
     />
+    </>
   );
 }

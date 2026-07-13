@@ -14,6 +14,8 @@ export interface Author {
   editorialFocus?: string;
   /** How this desk sources, verifies, and updates the content it maintains. */
   methodologyNote?: string;
+  /** Reader-facing questions about this desk, rendered with FAQ schema on the author page. */
+  faq?: Array<{ question: string; answer: string }>;
   image?: string;
   authorUrl?: string;
   socialLinks?: {
@@ -43,6 +45,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk manages editorial structure, monetization explainers, and pricing content for TT Calculator. It coordinates how brand-deal, sponsorship, and creator-income topics are written, reviewed, and kept consistent across the 35+ calculators and guides on the site. The profile represents an internal publishing function rather than a single named public spokesperson.',
     editorialFocus: 'The Editorial Desk owns brand-deal, sponsorship, and creator-monetization explainers across TT Calculator. It answers the questions creators ask before negotiating: how to price a sponsored post, what rate to quote an agency, and which income streams stack for a given follower count. The desk maintains the brand-deal-rate, sponsorship-ROI, and niche-profitability pages, plus the how-to-get-brand-deals guide. It enforces a consistent editorial voice so pricing guidance stays uniform from calculator inputs to long-form explainers. Every monetization page on the site passes through this desk for structure and language review.',
     methodologyNote: 'The desk documents every pricing assumption behind its calculators, including the follower-tier, engagement, and niche multipliers built into brand-deal-rate estimates. It revises inputs when public sponsorship benchmarks shift, recording each change alongside the methodology notes for that page. Cross-checks compare three categories of evidence: published creator-rate surveys, agency rate cards, and disclosed deal examples. Disclaimers mark every estimate as a planning range, not a guaranteed offer. Platform monetization-rule changes trigger updates to the affected calculators and their referencing explainers.',
+    faq: [
+      {
+        question: 'What does the Editorial Desk write?',
+        answer: 'The Editorial Desk writes and reviews **every brand-deal, sponsorship, and creator-pricing page** on TT Calculator, including the brand-deal-rate calculator and the how-to-get-brand-deals guide.',
+      },
+      {
+        question: 'Where do the brand-deal rate assumptions come from?',
+        answer: 'Rate assumptions come from **three evidence types: published creator-rate surveys, agency rate cards, and disclosed deal examples**. Each calculator page lists the multipliers it uses for follower tier, engagement, and niche.',
+      },
+      {
+        question: 'Are the pricing estimates guaranteed rates?',
+        answer: 'No. Every estimate is a **planning range, not a guaranteed offer**. Real sponsorship rates depend on the brand, campaign scope, usage rights, and negotiation.',
+      },
+    ],
   },
   'michael-chen': {
     id: 'michael-chen',
@@ -63,6 +79,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk documents public-source research, benchmark ranges, and methodology notes used across TT Calculator. It tracks published creator-program documentation, earnings references, and RPM data points that anchor the calculators on the site. The profile represents a collaborative research workflow rather than an individual analyst.',
     editorialFocus: 'The Research Desk owns benchmark data and source attribution for creator-program, RPM, and earnings content. It answers how creator payouts are calculated, what RPM ranges actually look like by niche, and which program rules change the math. The desk maintains the creator-fund, RPM, and ad-revenue pages, plus the creator-fund guide. Its notes feed the assumptions inside every earnings calculator on the site. The work centers on reading published platform documentation and translating it into inputs creators can act on.',
     methodologyNote: 'The desk cites published platform documentation and disclosed creator earnings, and it labels every benchmark with its source and observation window. It tracks three reference types: official program terms, creator-disclosed earnings, and third-party industry reports. When a platform changes payout formulas or eligibility rules, the desk revises the affected inputs and timestamps the update. Conflicting sources are flagged rather than averaged, so readers see the range, not a smoothed midpoint. The methodology page documents the origin and last-reviewed date of each benchmark.',
+    faq: [
+      {
+        question: 'What does the Research Desk own?',
+        answer: 'The Research Desk owns **benchmark data and source attribution** for creator-program, RPM, and earnings content, including the creator-fund and ad-revenue calculators.',
+      },
+      {
+        question: 'Where do the RPM benchmarks come from?',
+        answer: 'RPM benchmarks come from **three reference types: official program terms, creator-disclosed earnings, and third-party industry reports**. Each benchmark is labeled with its source and observation window.',
+      },
+      {
+        question: 'What happens when sources disagree?',
+        answer: 'Conflicting sources are **flagged and shown as a range**, never averaged into a single number. Readers see the spread so they can plan against the low and high ends.',
+      },
+    ],
   },
   'jessica-rodriguez': {
     id: 'jessica-rodriguez',
@@ -83,6 +113,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk covers LIVE monetization, community features, and streaming workflows on TT Calculator. It maintains the gifting, audience-engagement, and livestream-planning content that creators use before and during a stream. The profile serves collaborative product and editorial work rather than a single streamer identity.',
     editorialFocus: 'The LIVE Desk owns gift-monetization, audience-engagement, and community-building content for livestream creators. It answers what gifts are worth in real currency, which eligibility gates unlock LIVE monetization, and how engagement patterns affect gift revenue. The desk maintains the live-gifts, diamond-converter, and coins pages, where viewers and creators translate virtual currency into dollar values. It also owns the engagement-rate and comment-rate tools streamers use to benchmark session performance. The content targets three moments: pre-stream planning, in-stream optimization, and post-session review.',
     methodologyNote: 'The desk bases gift-value conversions on the published coin-to-diamond and diamond-to-currency rates that platforms disclose. It revises the live-gifts and diamond-converter pages when TikTok adjusts gift pricing, payout shares, or creator-eligible regions. Eligibility notes distinguish requirements the platform publishes from those reported by creators. The desk documents three conversion layers: coin purchase price, diamond allocation, and creator payout share. Each converter lists its assumed rates and the date those rates were last verified.',
+    faq: [
+      {
+        question: 'What does the LIVE Desk cover?',
+        answer: 'The LIVE Desk covers **gift monetization, LIVE eligibility, and stream-performance tools**, including the live-gifts, diamond-converter, and coins calculators.',
+      },
+      {
+        question: 'How are TikTok gift values calculated?',
+        answer: 'Gift values follow **three published conversion layers: coin purchase price, diamond allocation, and creator payout share**. Each converter lists the rates it assumes and the date they were last verified.',
+      },
+      {
+        question: 'When do the converters get updated?',
+        answer: 'The converters are updated **whenever TikTok changes gift pricing, payout shares, or eligible regions**. The revision date appears on each converter page.',
+      },
+    ],
   },
   'david-kim': {
     id: 'david-kim',
@@ -103,6 +147,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk focuses on commerce workflows, affiliate economics, and shop-related planning content across TT Calculator. It maintains the seller-fee, commission, and ad-cost assumptions that drive the shop and affiliate calculators. The profile reflects internal category ownership rather than a standalone public consultant.',
     editorialFocus: 'The Commerce Desk owns TikTok Shop, affiliate, and product-margin content on TT Calculator. It answers how affiliate commissions compound across a catalog, what seller fees subtract from gross revenue, and which conversion rates make a product viable. The desk maintains the affiliate-commission, conversion-rate, and campaign-ROI pages, along with the TikTok ads hub. It connects three commerce layers: product margin, traffic cost, and commission payout. The content helps creators and sellers model profit before they commit ad spend or inventory.',
     methodologyNote: 'The desk tracks published seller-fee schedules, affiliate-commission tiers, and ad-cost benchmarks, and it stores each as a labeled input inside the calculators. It revises assumptions when platforms update commission rates, fulfillment fees, or ad-auction dynamics. The desk separates three data classes: platform-published fee tables, creator-reported margins, and modeled breakeven thresholds. Every commerce calculator exposes its margin, fee, and conversion assumptions so users can override them. The methodology page records the source and last-reviewed date for each input.',
+    faq: [
+      {
+        question: 'What does the Commerce Desk cover?',
+        answer: 'The Commerce Desk covers **TikTok Shop, affiliate commissions, product margins, and ad costs**, including the affiliate-commission, shop-profit, and campaign-ROI calculators.',
+      },
+      {
+        question: 'Where do the fee assumptions come from?',
+        answer: 'Fee assumptions come from **three data classes: platform-published fee tables, creator-reported margins, and modeled break-even thresholds**. Each input is labeled inside the calculator that uses it.',
+      },
+      {
+        question: 'Can I change the calculator assumptions?',
+        answer: 'Yes. Every commerce calculator **exposes its margin, fee, and conversion inputs** so you can replace them with your own numbers before you commit ad spend or inventory.',
+      },
+    ],
   },
   'emily-thompson': {
     id: 'emily-thompson',
@@ -123,6 +181,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk handles educational tax and operations content for TT Calculator. It maintains the planning boundaries, disclaimers, and operating-cost assumptions that frame the financial tools on the site. The profile is a collaborative internal function and does not represent individualized professional advice.',
     editorialFocus: 'The Tax & Operations Desk owns creator-taxation, business-structure, and operating-cost content. It answers which creator expenses are deductible, how payout frequency affects cash planning, and where the line sits between education and personalized advice. The desk maintains the break-even, production-cost, and milestone-tracker pages, which help creators model costs and goals. It attaches educational disclaimers to every tax-adjacent page, marking the content as general guidance. The work covers three operational areas: income planning, expense tracking, and business formation.',
     methodologyNote: 'The desk cites published tax-code structure and IRS-form references, and it avoids giving individualized filing advice. It revises content when tax brackets, deduction thresholds, or reporting forms change. The desk separates three information tiers: general tax principles, jurisdiction-specific rules, and creator-specific planning notes. Every tax-adjacent page names its assumptions and directs readers to a qualified professional for filing decisions. The methodology page documents the educational boundaries and disclaimer standards for this desk.',
+    faq: [
+      {
+        question: 'Does this desk give personal tax advice?',
+        answer: 'No. The Tax & Operations Desk publishes **general, educational tax content only** and directs every filing decision to a qualified tax professional.',
+      },
+      {
+        question: 'What tools does the desk maintain?',
+        answer: 'The desk maintains the **break-even, production-cost, and milestone-tracker calculators**, plus the disclaimers on every tax-adjacent page.',
+      },
+      {
+        question: 'When does tax content get updated?',
+        answer: 'Tax content is revised **when tax brackets, deduction thresholds, or reporting forms change**. Each page names the assumptions it was written under.',
+      },
+    ],
   },
   'alex-martinez': {
     id: 'alex-martinez',
@@ -143,6 +215,20 @@ export const AUTHORS: Record<string, Author> = {
     bio: 'This desk covers growth systems, algorithm framing, and performance language across TT Calculator. It maintains the distribution, engagement-metric, and trend-response content that creators use to plan reach. The profile represents shared editorial ownership rather than a named public growth expert.',
     editorialFocus: 'The Growth Desk owns algorithm, distribution, and performance-metric content on TT Calculator. It answers which engagement signals the platform rewards, how watch-time and completion-rate shape reach, and what a viral-potential score actually measures. The desk maintains the viral-potential, watch-time, and follower-growth pages, along with the growth hub. It frames three growth inputs: content-level engagement, posting cadence, and audience-retention patterns. The content translates algorithm behavior into metrics creators can track and improve.',
     methodologyNote: 'The desk documents platform-published ranking signals and separates them from creator-reported patterns. It revises growth content when TikTok changes its recommendation logic, adds ranking signals, or updates feature eligibility. The desk organizes evidence into three buckets: official algorithm statements, observed performance patterns, and benchmark distributions from the calculators on the site. Every growth calculator exposes the weights behind its scores. Users see exactly how each input combines into the final result. The methodology page records the signal definitions and the last-reviewed date for each score.',
+    faq: [
+      {
+        question: 'What does the Growth Desk cover?',
+        answer: 'The Growth Desk covers **algorithm behavior, content distribution, and performance metrics**, including the viral-potential, watch-time, and follower-growth calculators.',
+      },
+      {
+        question: 'How does the desk verify algorithm claims?',
+        answer: 'The desk separates **official platform statements from creator-reported patterns** and labels each claim with its evidence type, so readers know which signals TikTok has confirmed.',
+      },
+      {
+        question: 'How are the growth scores calculated?',
+        answer: 'Every growth calculator **exposes the weights behind its score**. The page shows how watch time, completion rate, and engagement combine into the final result.',
+      },
+    ],
   },
 };
 

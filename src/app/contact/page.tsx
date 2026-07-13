@@ -1,6 +1,27 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
+import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
+
+const contactFaqs = [
+  {
+    question: 'How fast does TT Calculator reply to email?',
+    answer: '**Most replies take 1 to 2 business days.** Calculator bugs are triaged first. Methodology and sourcing questions take 3 to 5 business days because they require research before we answer.',
+  },
+  {
+    question: 'Does TT Calculator have a phone number or office address?',
+    answer: '**No. Email is the only contact channel.** TT Calculator operates as an online editorial product with five monitored inboxes and no phone line or physical mailing address.',
+  },
+  {
+    question: 'How do I report a wrong calculator result?',
+    answer: 'Send **three things to bugs@ttcalculator.net: the page URL, the input values you used, and the result you expected**. Reports that include all three are usually resolved in one reply.',
+  },
+  {
+    question: 'Can TT Calculator tell me my exact TikTok earnings?',
+    answer: '**No. The calculators produce planning ranges, not account-level payouts.** TT Calculator has no access to individual TikTok account data, so estimates are built from published benchmarks and transparent assumptions.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Contact TT Calculator',
@@ -48,6 +69,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
+      <FAQPageSchema faqs={contactFaqs} />
 
       <div className="pb-16 pt-10">
         <Container className="max-w-4xl">
@@ -217,6 +239,34 @@ export default function ContactPage() {
                 for how ads fund the site.
               </li>
             </ul>
+          </section>
+
+          <section className="mt-6 card p-6">
+            <h2 className="text-heading-md font-semibold text-neutral-900">
+              What happens after you email
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-neutral-700">
+              Every message follows the same three-step workflow:
+            </p>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-neutral-700">
+              <li>
+                <strong>Triage within one business day.</strong> Messages are sorted by type:
+                bug, correction, methodology question, partnership, or press.
+              </li>
+              <li>
+                <strong>Desk assignment.</strong> The message routes to the editorial desk that
+                owns the page — Editorial, Research, LIVE, Commerce, Tax &amp; Operations, or
+                Growth.
+              </li>
+              <li>
+                <strong>Reply and logging.</strong> You get a direct answer. Confirmed errors
+                also enter the corrections log and trigger a page update.
+              </li>
+            </ol>
+          </section>
+
+          <section className="mt-6">
+            <FAQSection faqs={contactFaqs} pageName="Contact" title="Contact FAQ" />
           </section>
 
           <section className="mt-6 card p-6">

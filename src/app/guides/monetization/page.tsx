@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
   title: 'TikTok Monetization Guides | Creator Revenue Strategy',
@@ -10,9 +11,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://ttcalculator.net/guides/monetization/' },
 };
 
+const monetizationFaqs = [
+  {
+    question: 'How many followers do you need to make money on TikTok?',
+    answer: '1,000 followers unlocks LIVE gifts, and 10,000 followers plus 100,000 monthly views and 60-second-plus videos unlocks the Creator Rewards Program.',
+  },
+  {
+    question: 'How much does TikTok pay per 1,000 views?',
+    answer: 'An estimated $0.50 to $2.00 per 1,000 qualified views under the Creator Rewards Program in the US, on original videos over one minute. Niche and viewer location set the rate, with finance and business at the top of the band.',
+  },
+  {
+    question: 'What is the minimum TikTok withdrawal?',
+    answer: '$10 in most countries, with funds arriving 15-30 days after a manual withdrawal request.',
+  },
+  {
+    question: 'Which TikTok income stream has no follower requirement?',
+    answer: 'Brand deals carry no platform minimum, and affiliate marketing outside TikTok Shop also works at any follower count. UGC creation for brands pays without any audience threshold.',
+  },
+];
+
 export default function MonetizationHubPage() {
   const articles = getArticlesBySection('guides/monetization');
   return (
+    <>
+    <FAQPageSchema faqs={monetizationFaqs} url="https://ttcalculator.net/guides/monetization/" />
     <HubListingPage
       title="TikTok Monetization Guides"
       description="Everything you need to know about making money on TikTok. From Creator Fund to brand deals to TikTok Shop — comprehensive guides backed by real earnings data."
@@ -24,6 +46,92 @@ export default function MonetizationHubPage() {
       supplementaryContent={
         <>
           <h2 className="text-heading-md font-semibold text-neutral-900">
+            What TikTok monetization guides cover
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            TikTok monetization guides explain every way creators turn content into income:
+            platform programs, brand deals, affiliate commissions, and off-platform products. The{' '}
+            <strong className="font-semibold text-neutral-900">14 guides</strong> in this hub
+            answer one creator question: which income stream fits your follower count and niche.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
+            How to use this hub
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Start with the guide group that matches your stage: choosing streams, activating
+            platform programs, selling products, or managing the money.
+          </p>
+          <ul className="mt-3 list-disc pl-5 text-body-md text-neutral-700 space-y-2">
+            <li>
+              <strong className="font-semibold text-neutral-900">Choosing streams:</strong>{' '}
+              <Link href="/guides/monetization/seven-ways-make-money-tiktok/" className="text-primary-700 hover:text-primary-800">
+                7 ways to make money on TikTok ranked by income potential
+              </Link>{' '}
+              compares every option,{' '}
+              <Link href="/guides/monetization/micro-influencers-make-money-tiktok/" className="text-primary-700 hover:text-primary-800">
+                how micro-influencers under 10K make money
+              </Link>{' '}
+              covers small accounts, and{' '}
+              <Link href="/guides/monetization/tiktok-monetization-by-country/" className="text-primary-700 hover:text-primary-800">
+                TikTok monetization by country
+              </Link>{' '}
+              shows which markets pay best.
+            </li>
+            <li>
+              <strong className="font-semibold text-neutral-900">Platform programs:</strong>{' '}
+              <Link href="/guides/monetization/tiktok-series-monetization/" className="text-primary-700 hover:text-primary-800">
+                TikTok Series monetization
+              </Link>
+              ,{' '}
+              <Link href="/guides/monetization/tiktok-subscription-recurring-revenue/" className="text-primary-700 hover:text-primary-800">
+                the TikTok subscription feature
+              </Link>
+              ,{' '}
+              <Link href="/guides/monetization/tiktok-affiliate-without-shop/" className="text-primary-700 hover:text-primary-800">
+                TikTok affiliate marketing without TikTok Shop
+              </Link>
+              , and{' '}
+              <Link href="/guides/monetization/get-paid-faster-tiktok/" className="text-primary-700 hover:text-primary-800">
+                how to get paid faster on TikTok
+              </Link>{' '}
+              cover in-app revenue mechanics.
+            </li>
+            <li>
+              <strong className="font-semibold text-neutral-900">Products and services:</strong>{' '}
+              <Link href="/guides/monetization/selling-digital-products-tiktok/" className="text-primary-700 hover:text-primary-800">
+                selling digital products through TikTok
+              </Link>
+              ,{' '}
+              <Link href="/guides/monetization/tiktok-course-creation-guide/" className="text-primary-700 hover:text-primary-800">
+                TikTok course creation
+              </Link>
+              ,{' '}
+              <Link href="/guides/monetization/tiktok-merch-strategies/" className="text-primary-700 hover:text-primary-800">
+                TikTok merch strategies
+              </Link>
+              ,{' '}
+              <Link href="/guides/monetization/tiktok-consulting-creator/" className="text-primary-700 hover:text-primary-800">
+                TikTok consulting
+              </Link>
+              , and{' '}
+              <Link href="/guides/monetization/passive-income-tiktok-creators/" className="text-primary-700 hover:text-primary-800">
+                passive income strategies for TikTok creators
+              </Link>{' '}
+              build revenue TikTok cannot switch off.
+            </li>
+            <li>
+              <strong className="font-semibold text-neutral-900">Managing the money:</strong>{' '}
+              <Link href="/guides/monetization/diversify-tiktok-income-streams/" className="text-primary-700 hover:text-primary-800">
+                how to diversify TikTok income streams
+              </Link>{' '}
+              and{' '}
+              <Link href="/guides/monetization/financial-planning-tiktok-creators/" className="text-primary-700 hover:text-primary-800">
+                financial planning for TikTok creators
+              </Link>{' '}
+              turn irregular payouts into a stable budget.
+            </li>
+          </ul>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
             The five TikTok monetization streams
           </h2>
           <p className="mt-3 text-body-md text-neutral-700">
@@ -93,6 +201,22 @@ export default function MonetizationHubPage() {
           </p>
 
           <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
+            How these guides are maintained
+          </h3>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Six editorial desks maintain this site, and three own content in this hub: the Commerce
+            desk covers Shop and affiliate economics, the LIVE desk covers gift income, and the Tax
+            desk covers financial planning. The Research desk grades every source, and conflicting
+            sources publish as ranges rather than a single picked number. Guides refresh quarterly,
+            with immediate updates when TikTok changes a program — as it did when Creator Rewards
+            replaced the Creator Fund. The full process sits in the{' '}
+            <Link href="/methodology/" className="text-primary-700 hover:text-primary-800">
+              data methodology
+            </Link>
+            .
+          </p>
+
+          <h3 className="mt-6 text-heading-sm font-semibold text-neutral-900">
             TikTok monetization FAQ
           </h3>
           <p className="mt-3 text-body-md text-neutral-700">
@@ -102,16 +226,24 @@ export default function MonetizationHubPage() {
           </p>
           <p className="mt-3 text-body-md text-neutral-700">
             <strong>How much does TikTok pay per 1,000 views?</strong>{' '}
-            <strong>Roughly $0.012 to $0.05 per 1,000 views</strong> under the Creator Rewards Program,
-            with finance near $0.05 and comedy near $0.012. Niche and viewer location set the rate.
+            <strong>An estimated $0.50 to $2.00 per 1,000 qualified views</strong> under the Creator
+            Rewards Program in the US, on original videos over one minute. Niche and viewer location
+            set the rate, with finance and business at the top of the band.
           </p>
           <p className="mt-3 text-body-md text-neutral-700">
             <strong>What is the minimum TikTok withdrawal?</strong>{' '}
             <strong>$10</strong> in most countries, with funds arriving 15-30 days after a manual
             withdrawal request.
           </p>
+          <p className="mt-3 text-body-md text-neutral-700">
+            <strong>Which TikTok income stream has no follower requirement?</strong>{' '}
+            <strong>Brand deals</strong> carry no platform minimum, and affiliate marketing outside
+            TikTok Shop also works at any follower count. UGC creation for brands pays without any
+            audience threshold.
+          </p>
         </>
       }
     />
+    </>
   );
 }

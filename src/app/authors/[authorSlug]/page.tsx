@@ -5,6 +5,9 @@ import { PAGE_METADATA } from '@/lib/constants/page-metadata';
 import { CALCULATOR_SCHEMAS } from '@/lib/seo/calculator-schemas';
 import { BreadcrumbSchema } from '@/components/seo/CalculatorSchema';
 import { AuthorPersonSchema } from '@/lib/eeat/page-eeat';
+import { getArticlesByAuthor } from '@/lib/content';
+import { FAQSection } from '@/components/calculator/FAQSection';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 const AUTHOR_SLUGS = Object.keys(AUTHORS);
 
@@ -116,9 +119,11 @@ export default function AuthorPage({
   const pages = getAuthoredPages(author.id);
   const authoredPages = pages.filter((p) => p.role === 'author');
   const reviewedPages = pages.filter((p) => p.role === 'reviewer');
+  const articles = getArticlesByAuthor(author.id);
 
   return (
     <>
+      {author.faq && author.faq.length > 0 && <FAQPageSchema faqs={author.faq} />}
       <AuthorPersonSchema
         author={author}
         url={`https://ttcalculator.net/authors/${author.id}/`}
@@ -313,6 +318,43 @@ export default function AuthorPage({
                   </Link>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* Articles maintained by this desk */}
+          {articles.length > 0 && (
+            <div className="mb-10">
+              <h2 className="text-heading-lg font-semibold text-neutral-900 mb-2">
+                Articles From This Desk
+              </h2>
+              <p className="text-body-sm text-neutral-600 mb-4">
+                {author.role} researched, wrote, and keeps these {articles.length} articles current.
+                Each one names its sources and its last review date.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {articles.map((article) => (
+                  <Link
+                    key={article.href}
+                    href={article.href}
+                    className="flex flex-col gap-1 p-4 bg-white rounded-lg border border-neutral-200 hover:border-primary-300 hover:shadow-sm transition-all"
+                  >
+                    <span className="text-body-sm font-medium text-neutral-900">
+                      {article.title}
+                    </span>
+                    <span className="text-label-sm text-neutral-500 capitalize">
+                      {article.section}
+                      {article.publishDate ? ` · ${article.publishDate}` : ''}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Desk FAQ */}
+          {author.faq && author.faq.length > 0 && (
+            <div className="mb-10">
+              <FAQSection faqs={author.faq} pageName={author.role} title={`${author.role} FAQ`} />
             </div>
           )}
 

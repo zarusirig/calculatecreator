@@ -432,3 +432,30 @@ export function getRelatedArticleLinks(frontmatter: ArticleFrontmatter) {
     related: frontmatter.relatedArticles?.map(findByPath).filter(Boolean) || [],
   };
 }
+
+/**
+ * Get all MDX articles credited to a desk (by author id, display name, or legacy byline).
+ * Returns lightweight entries for author-page listings, newest first.
+ */
+export function getArticlesByAuthor(authorId: string): Array<{
+  title: string;
+  href: string;
+  publishDate: string;
+  section: string;
+}> {
+  // Deferred import avoids a module cycle (authors.ts has no content imports today,
+  // but keeps this helper self-contained).
+  const { resolveAuthorFromFrontmatter } = require('@/lib/constants/authors');
+  return getAllArticles()
+    .filter((a) => resolveAuthorFromFrontmatter(a.frontmatter.author).id === authorId)
+    .map((a) => {
+      const rel = path.relative(CONTENT_DIR, a.filePath).replace(/\.mdx$/, '');
+      return {
+        title: a.frontmatter.title,
+        href: `/${rel}/`,
+        publishDate: a.frontmatter.publishDate,
+        section: rel.split(path.sep)[0],
+      };
+    })
+    .sort((a, b) => (b.publishDate || '').localeCompare(a.publishDate || ''));
+}

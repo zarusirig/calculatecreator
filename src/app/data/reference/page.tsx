@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getArticlesBySection } from '@/lib/content';
 import { HubListingPage } from '@/components/articles/HubListingPage';
+import { FAQPageSchema } from '@/components/seo/FAQPageSchema';
 
 export const metadata: Metadata = {
   title: "TikTok Reference Data and Benchmark Insights Guide",
@@ -9,9 +10,30 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://ttcalculator.net/data/reference/' },
 };
 
+const referenceFaqs = [
+  {
+    question: 'When does TikTok Shop pay creators?',
+    answer: 'TikTok Shop pays on a monthly cycle: earnings calculate during the first 10-15 days of the following month, initiate around mid-month, and land 1-7 days later through PayPal or bank transfer.',
+  },
+  {
+    question: 'What is the TikTok Shop referral fee?',
+    answer: 'TikTok Shop charges sellers a flat 6% referral fee on most US categories in 2026, with jewelry at 5%.',
+  },
+  {
+    question: 'What are the TikTok Creator Rewards eligibility requirements?',
+    answer: 'Creator Rewards requires 10,000 followers, 100,000 views in the last 30 days, and age 18 or older, and pays on eligible videos over one minute.',
+  },
+  {
+    question: 'What is the typical TikTok Shop affiliate commission?',
+    answer: 'Sellers set creator affiliate commissions, which typically range from 5-25% of the sale.',
+  },
+];
+
 export default function ReferenceDataHubPage() {
   const articles = getArticlesBySection('data/reference');
   return (
+    <>
+    <FAQPageSchema faqs={referenceFaqs} url="https://ttcalculator.net/data/reference/" />
     <HubListingPage
       title="TikTok Reference Data"
       description="Technical reference data for TikTok creators. Gift values, coin prices, payment schedules, and platform requirements — always up to date."
@@ -21,7 +43,22 @@ export default function ReferenceDataHubPage() {
       parentLabel="Data & Insights"
       supplementaryContent={
         <>
-          <h2 className="text-heading-md font-semibold text-neutral-900">Why TikTok reference data matters</h2>
+          <h2 className="text-heading-md font-semibold text-neutral-900">
+            What TikTok reference data covers
+          </h2>
+          <p className="mt-3 text-body-md text-neutral-700">
+            TikTok reference data records the platform&apos;s fixed rules: gift values, coin
+            conversions, Shop commissions, payment schedules, and program eligibility by country.
+            The <strong className="font-semibold text-neutral-900">7 reference pages</strong> in
+            this hub answer one creator question: which exact rate or rule applies to your payout.
+          </p>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Reference values differ from benchmarks because TikTok sets them directly. A gift&apos;s
+            coin price, a category&apos;s referral fee, and a program&apos;s follower threshold are
+            platform rules, not estimates, so these pages track the published values and flag every
+            change with a date.
+          </p>
+          <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">Why TikTok reference data matters</h2>
           <p className="mt-3 text-body-md text-neutral-700">
             Reference pages answer operational questions that directly affect TikTok earnings quality:
             payment timing, country eligibility, gift conversion values, and policy limits. These are
@@ -94,13 +131,34 @@ export default function ReferenceDataHubPage() {
             </Link>{' '}
             before building any revenue model.
           </p>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Three further pages complete the hub&apos;s 7 reference articles. The{' '}
+            <Link href="/data/reference/tiktok-video-length-limits/" className="text-primary-700 hover:text-primary-800">
+              TikTok video length limits and recommendations
+            </Link>{' '}
+            page defines format ceilings by account type, the{' '}
+            <Link href="/data/reference/tiktok-business-vs-creator-account/" className="text-primary-700 hover:text-primary-800">
+              TikTok Business vs Creator account
+            </Link>{' '}
+            comparison explains feature differences, and{' '}
+            <Link href="/data/reference/how-much-is-a-galaxy-on-tiktok/" className="text-primary-700 hover:text-primary-800">
+              how much a Galaxy is on TikTok
+            </Link>{' '}
+            prices the platform&apos;s most-asked-about single gift.
+          </p>
           <h2 className="mt-8 text-heading-md font-semibold text-neutral-900">
             How reference data is sourced and updated
           </h2>
           <p className="mt-3 text-body-md text-neutral-700">
             Reference values originate from TikTok's official creator documentation, the seller help
             center, and in-app program pages. Each figure carries a logged source and publication date,
-            and editors re-verify payout-critical pages on a fixed cadence. Read the full verification
+            and editors re-verify payout-critical pages on a fixed cadence.
+          </p>
+          <p className="mt-3 text-body-md text-neutral-700">
+            Six editorial desks divide ownership of these tables. The LIVE desk maintains gift and
+            coin values, the Commerce desk maintains Shop commission and settlement pages, and the
+            Research desk grades every source before a value publishes. Conflicting sources publish
+            as ranges rather than a single picked number. Read the full verification
             process in our{' '}
             <Link href="/methodology/" className="text-primary-700 hover:text-primary-800">
               data methodology
@@ -158,5 +216,6 @@ export default function ReferenceDataHubPage() {
         </>
       }
     />
+    </>
   );
 }
