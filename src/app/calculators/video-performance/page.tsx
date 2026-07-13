@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: 'https://ttcalculator.net/calculators/video-performance/',
   },
   openGraph: {
-    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/featured/video-performance-1600.webp', width: 1600, height: 1067, alt: 'TikTok Video Performance Calculator — creator workspace scene illustrating the topic' }],
     title: 'TikTok Video Performance Calculator 2026 | Analyze Your Content',
     description:
       'Analyze your TikTok video performance with detailed metrics and 2026 benchmarks.',

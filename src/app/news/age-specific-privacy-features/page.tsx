@@ -20,9 +20,9 @@ export default function AgeSpecificPrivacyFeaturesPage() {
         headline="TikTok Rolls Out Age-Specific Privacy Features for Internet Safety Day | TikTok News"
         description="TikTok introduced comprehensive age-based parental controls in February 2026, including restricted nighttime notifications, comment limitations, and Family Pairing enhancements."
         url="https://ttcalculator.net/news/age-specific-privacy-features/"
-        datePublished="2026-02-01"
+        datePublished="2026-02-10"
         dateModified="2026-03-01"
-        image="https://ttcalculator.net/news/news-safety-1024.webp"
+        image="https://ttcalculator.net/featured/age-specific-privacy-features-1024.webp"
         keywords={['tiktok safety', 'internet safety day', 'age-based controls', 'teen privacy', 'child protection']}
       />
       <BreadcrumbSchema
@@ -50,16 +50,16 @@ export default function AgeSpecificPrivacyFeaturesPage() {
           <picture>
             <source
               type="image/avif"
-              srcSet="/news/news-safety-640.avif 640w, /news/news-safety-1024.avif 1024w, /news/news-safety-1600.avif 1600w"
+              srcSet="/featured/age-specific-privacy-features-640.avif 640w, /featured/age-specific-privacy-features-1024.avif 1024w, /featured/age-specific-privacy-features-1600.avif 1600w"
               sizes="100vw"
             />
             <source
               type="image/webp"
-              srcSet="/news/news-safety-640.webp 640w, /news/news-safety-1024.webp 1024w, /news/news-safety-1600.webp 1600w"
+              srcSet="/featured/age-specific-privacy-features-640.webp 640w, /featured/age-specific-privacy-features-1024.webp 1024w, /featured/age-specific-privacy-features-1600.webp 1600w"
               sizes="100vw"
             />
             <img
-              src="/news/news-safety-1024.webp"
+              src="/featured/age-specific-privacy-features-1024.webp"
               alt="Featured image for Age-Specific Privacy Features for Internet Safety Day 2026"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"

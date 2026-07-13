@@ -20,7 +20,7 @@ export default function ProductSubscriptionsFeaturePage() {
         headline="TikTok Shop Introduces Product Subscriptions Feature"
         description="TikTok introduced Product Subscriptions for TikTok Shop users, enabling recurring revenue models for sellers and convenience for buyers."
         url="https://ttcalculator.net/news/product-subscriptions-feature/"
-        datePublished="2026-11-01"
+        datePublished="2025-11-09"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop subscriptions', 'recurring revenue', 'subscription model', 'tiktok shop features']}
@@ -73,7 +73,7 @@ export default function ProductSubscriptionsFeaturePage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               TikTok Shop
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2026</span>
+            <span className="text-white/80 text-label-sm">Published: November 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Introduces Product Subscriptions Feature
@@ -401,15 +401,15 @@ export default function ProductSubscriptionsFeaturePage() {
           </h2>
           <div className="space-y-3">
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">November 2026</div>
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">November 2025</div>
               <div className="text-body-md text-neutral-700">Product Subscriptions feature officially launched across TikTok Shop US marketplace. Sellers can now enable subscription options.</div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">December 2026</div>
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">December 2025</div>
               <div className="text-body-md text-neutral-700">Expanded product categories eligible for subscriptions. Improved creator dashboard analytics for tracking recurring commission.</div>
             </div>
             <div className="flex gap-4">
-              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">Q1 2027</div>
+              <div className="flex-shrink-0 w-32 font-semibold text-neutral-900">Q1 2026</div>
               <div className="text-body-md text-neutral-700">Expected rollout to UK, Canada, and European markets. New subscription management features for customers including skip orders and delivery customization.</div>
             </div>
           </div>

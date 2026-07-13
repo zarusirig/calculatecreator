@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/production-cost/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/production-cost/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/production-cost-1600.webp', width: 1600, height: 1067, alt: 'TikTok Production Cost Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

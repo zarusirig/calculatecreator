@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/niche-profitability/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/niche-profitability/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/niche-profitability-1600.webp', width: 1600, height: 1067, alt: 'TikTok Niche Profitability Calculator for Creators — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

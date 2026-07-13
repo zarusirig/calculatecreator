@@ -22,6 +22,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/commerce-ads/shop-profit/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/shop-profit-1600.webp', width: 1600, height: 1067, alt: 'TikTok Shop Profit & Commission Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 // FAQ data for schema markup

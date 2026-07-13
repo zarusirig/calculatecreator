@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/completion-rate/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/completion-rate/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/completion-rate-1600.webp', width: 1600, height: 1067, alt: 'TikTok Completion Rate Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

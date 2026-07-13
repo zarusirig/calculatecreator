@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/sponsorship-roi/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/sponsorship-roi/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/sponsorship-roi-1600.webp', width: 1600, height: 1067, alt: 'TikTok Sponsorship ROI Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

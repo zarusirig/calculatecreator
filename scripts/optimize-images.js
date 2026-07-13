@@ -8,8 +8,10 @@ const sharp = require('sharp');
 // - /public/guides/ - Guide featured images (FAL.ai generated, pre-optimized)
 // - /public/news/   - News featured images (FAL.ai generated, pre-optimized)
 // - /public/images/ - Logo/brand assets (don't need responsive variants)
-const IMAGE_DIRS = [];
-const WIDTHS = [640, 1024, 1600, 1920]; // Responsive breakpoints
+// - /public/featured/ - Per-page hero images (OpenAI generated); processed here
+//   into responsive webp/avif variants (script skips already-processed files).
+const IMAGE_DIRS = ['public/featured'];
+const WIDTHS = [640, 1024, 1600]; // Responsive breakpoints (sources are 1536px wide; 1920 would upscale)
 const FORMATS = ['webp', 'avif']; // Target formats
 const QUALITY = {
   webp: 80,

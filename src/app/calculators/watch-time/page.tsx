@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/watch-time/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/watch-time/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/watch-time-1600.webp', width: 1600, height: 1067, alt: 'TikTok Watch Time Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

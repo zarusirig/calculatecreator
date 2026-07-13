@@ -279,6 +279,32 @@ export function ArticleLayout({
                 )}
               </span>
             </div>
+            {frontmatter.featuredImage && frontmatter.featuredImage.endsWith('-1600.webp') && (() => {
+              const base = frontmatter.featuredImage.replace(/-1600\.webp$/, '');
+              return (
+                <picture>
+                  <source
+                    type="image/avif"
+                    srcSet={`${base}-640.avif 640w, ${base}-1024.avif 1024w, ${base}-1600.avif 1600w`}
+                    sizes="(max-width: 896px) 100vw, 896px"
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet={`${base}-640.webp 640w, ${base}-1024.webp 1024w, ${base}-1600.webp 1600w`}
+                    sizes="(max-width: 896px) 100vw, 896px"
+                  />
+                  <img
+                    src={`${base}-1024.webp`}
+                    alt={frontmatter.imageAlt || frontmatter.title}
+                    width={1536}
+                    height={1024}
+                    loading="eager"
+                    fetchPriority="high"
+                    className="w-full h-auto rounded-2xl mt-6 border border-neutral-200"
+                  />
+                </picture>
+              );
+            })()}
           </header>
 
           {/* Calculator CTA (top) */}

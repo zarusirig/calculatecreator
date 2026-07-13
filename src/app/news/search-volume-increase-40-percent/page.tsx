@@ -21,7 +21,7 @@ export default function SearchVolumeIncrease40PercentPage() {
         headline="TikTok Search Volume Increases by Over 40% Year-Over-Year"
         description="Billions of searches happen on TikTok daily, with search volume up more than 40% year-over-year, prompting major platform investment in search advertising."
         url="https://ttcalculator.net/news/search-volume-increase-40-percent/"
-        datePublished="2026-01-01"
+        datePublished="2026-01-15"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-algorithm-1024.webp"
         keywords={['tiktok search', 'search growth', 'tiktok seo', 'search volume', 'discovery']}
@@ -283,7 +283,7 @@ export default function SearchVolumeIncrease40PercentPage() {
             </table>
           </div>
           <p className="text-body-sm text-neutral-600 mt-4 italic">
-            Data from TikTok internal analytics, published at TikTok World 2026. Growth rates Q4 2025 vs Q4 2024.
+            Data from TikTok internal analytics reports. Growth rates Q4 2025 vs Q4 2024.
           </p>
         </Card>
 

@@ -20,7 +20,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
         headline="TikTok Shop Becomes Third-Fastest Growing Brand in the US"
         description="According to Morning Consult data, TikTok Shop secured third place among brands with the most significant year-over-year growth in consumer favorability."
         url="https://ttcalculator.net/news/tiktok-shop-third-fastest-growing/"
-        datePublished="2026-11-01"
+        datePublished="2025-11-03"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop', 'brand growth', 'social commerce', 'consumer favorability', 'market research']}
@@ -73,7 +73,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               E-Commerce
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2026</span>
+            <span className="text-white/80 text-label-sm">Published: November 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Ranks as Third-Fastest Growing Brand in the US
@@ -116,7 +116,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
               </div>
               <div className="bg-white p-4 rounded-lg text-center">
                 <div className="text-display-md font-bold text-cyan-600 mb-1">$20B+</div>
-                <p className="text-label-sm text-neutral-700">Projected 2026 GMV</p>
+                <p className="text-label-sm text-neutral-700">Projected 2025 GMV</p>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 As TikTok Shop grows, so do commission rates and available products. More brands are joining the platform, creating more partnership opportunities for creators of all sizes.
               </p>
               <p className="text-body-sm text-green-700">
-                In Q4 2026 alone, over 5,000 new brands joined TikTok Shop, expanding product selection by 40% and creating thousands of new affiliate opportunities.
+                In Q3 2025 alone, over 5,000 new brands joined TikTok Shop, expanding product selection by 40% and creating thousands of new affiliate opportunities.
               </p>
             </div>
             <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-lg border-l-4 border-blue-500">
@@ -375,7 +375,7 @@ export default function TikTokShopThirdFastestGrowingPage() {
                 <span className="text-emerald-600 font-bold">$40-45 billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                <span className="font-semibold text-neutral-900">2026 Projected GMV</span>
+                <span className="font-semibold text-neutral-900">2027 Projected GMV</span>
                 <span className="text-emerald-600 font-bold">$70-80 billion</span>
               </div>
               <div className="flex justify-between items-center p-3 bg-white rounded-lg">

@@ -20,7 +20,7 @@ export default function PlaybackSettingsUpdatePage() {
         headline="TikTok Introduces New Playback Settings: Disable HDR & Object Tags | TikTok News"
         description="TikTok added new playback options including 'Disable HDR videos' and 'Display object tags,' giving users more control over their viewing experience."
         url="https://ttcalculator.net/news/playback-settings-update/"
-        datePublished="2026-11-01"
+        datePublished="2025-11-10"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok settings', 'hdr videos', 'object tags', 'playback settings', 'tiktok features']}
@@ -73,7 +73,7 @@ export default function PlaybackSettingsUpdatePage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               User Experience
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2026</span>
+            <span className="text-white/80 text-label-sm">Published: November 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Introduces New Playback Settings
@@ -632,7 +632,7 @@ export default function PlaybackSettingsUpdatePage() {
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
               >
-                SocialBee: TikTok Updates November 2026 →
+                SocialBee: TikTok Updates November 2025 →
               </a>
             </li>
             <li>

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/milestone-tracker/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/milestone-tracker/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/milestone-tracker-1600.webp', width: 1600, height: 1067, alt: 'TikTok Milestone Tracker — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

@@ -18,11 +18,11 @@ export default function AlgorithmEightMajorShiftsPage() {
     <>
       <NewsArticleSchema
         headline="TikTok Algorithm Undergoes Eight Major Shifts in 2025"
-        description="TikTok implemented 8 significant algorithmic changes between January and June 2026. These include enhanced personalization that analyzes watch patterns and off-platform behavior."
+        description="TikTok implemented 8 significant algorithmic changes between January and June 2025. These include enhanced personalization that analyzes watch patterns and off-platform behavior."
         url="https://ttcalculator.net/news/algorithm-eight-major-shifts/"
-        datePublished="2026-01-03"
+        datePublished="2025-06-15"
         dateModified="2026-03-01"
-        image="https://ttcalculator.net/news/news-algorithm-1024.webp"
+        image="https://ttcalculator.net/featured/algorithm-eight-major-shifts-1024.webp"
         keywords={['tiktok algorithm', 'algorithm update', 'fyp algorithm', 'content distribution', 'tiktok changes']}
       />
       <BreadcrumbSchema
@@ -50,16 +50,16 @@ export default function AlgorithmEightMajorShiftsPage() {
           <picture>
             <source
               type="image/avif"
-              srcSet="/news/news-algorithm-640.avif 640w, /news/news-algorithm-1024.avif 1024w, /news/news-algorithm-1600.avif 1600w"
+              srcSet="/featured/algorithm-eight-major-shifts-640.avif 640w, /featured/algorithm-eight-major-shifts-1024.avif 1024w, /featured/algorithm-eight-major-shifts-1600.avif 1600w"
               sizes="100vw"
             />
             <source
               type="image/webp"
-              srcSet="/news/news-algorithm-640.webp 640w, /news/news-algorithm-1024.webp 1024w, /news/news-algorithm-1600.webp 1600w"
+              srcSet="/featured/algorithm-eight-major-shifts-640.webp 640w, /featured/algorithm-eight-major-shifts-1024.webp 1024w, /featured/algorithm-eight-major-shifts-1600.webp 1600w"
               sizes="100vw"
             />
             <img
-              src="/news/news-algorithm-1024.webp"
+              src="/featured/algorithm-eight-major-shifts-1024.webp"
               alt="Featured image for TikTok Algorithm Undergoes Eight Major Shifts in 2025"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
@@ -73,7 +73,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Platform Changes
             </span>
-            <span className="text-white/80 text-label-sm">Published: June 2026</span>
+            <span className="text-white/80 text-label-sm">Published: June 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Algorithm Undergoes Eight Major Shifts in 2025
@@ -90,7 +90,7 @@ export default function AlgorithmEightMajorShiftsPage() {
             Key Takeaway for Creators
           </h2>
           <p className="text-body-md text-violet-800">
-            The TikTok algorithm evolved significantly in the first half of 2026. Eight major changes affect how content gets distributed. Understanding these shifts is essential for maintaining and growing your reach. The focus has shifted toward retention metrics, authentic engagement, and sophisticated personalization.
+            The TikTok algorithm evolved significantly in the first half of 2025. Eight major changes affect how content gets distributed. Understanding these shifts is essential for maintaining and growing your reach. The focus has shifted toward retention metrics, authentic engagement, and sophisticated personalization.
           </p>
         </Card>
 

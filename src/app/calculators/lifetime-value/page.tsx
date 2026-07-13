@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/lifetime-value/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/lifetime-value/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/lifetime-value-1600.webp', width: 1600, height: 1067, alt: 'TikTok Lifetime Value Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqs = [

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/multi-platform-earnings/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/multi-platform-earnings/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/multi-platform-earnings-1600.webp', width: 1600, height: 1067, alt: 'Multi — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

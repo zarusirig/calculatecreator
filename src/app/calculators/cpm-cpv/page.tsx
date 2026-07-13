@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/cpm-cpv/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/cpm-cpv/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/cpm-cpv-1600.webp', width: 1600, height: 1067, alt: 'TikTok CPM & CPV Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 // Dynamic imports for E-E-A-T components

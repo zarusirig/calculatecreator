@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/earnings-revenue/live-earnings/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/earnings-revenue/live-earnings/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/live-earnings-1600.webp', width: 1600, height: 1067, alt: 'TikTok Live Earnings Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [
@@ -324,7 +330,7 @@ Monthly Potential = Per-Stream Earnings × 8 streams`} assumptions={[{ label: 'V
             <div className="space-y-4 text-body-md text-neutral-700">
               <h2 className="text-heading-lg font-semibold text-neutral-900">Professional Disclaimer</h2>
               <p>This calculator provides estimates based on industry averages and typical creator performance. Actual earnings will vary significantly based on numerous factors including but not limited to: audience demographics, content quality, engagement levels, streaming consistency, niche/category, geographic location of viewers, time of day, day of week, seasonal trends, and individual creator appeal.</p>
-              <p>TikTok's gift conversion rates and policies may change. The calculator uses current rates as of November 2026: $0.005 per diamond, with 2 coins converting to 1 diamond. Virtual gift earnings are subject to applicable taxes and must be reported as income according to your local tax laws.</p>
+              <p>TikTok's gift conversion rates and policies may change. The calculator uses current rates as of November 2025: $0.005 per diamond, with 2 coins converting to 1 diamond. Virtual gift earnings are subject to applicable taxes and must be reported as income according to your local tax laws.</p>
               <p>This tool is for educational and planning purposes only. Results are not guaranteed. Past performance does not guarantee future results. The creator of this calculator is not affiliated with TikTok/ByteDance and assumes no liability for decisions made based on these calculations.</p>
               <p className="font-semibold text-neutral-900">Always diversify your income streams and do not rely solely on any single platform for your livelihood.</p>
             </div>

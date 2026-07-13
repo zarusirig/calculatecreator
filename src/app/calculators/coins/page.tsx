@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: 'https://ttcalculator.net/calculators/coins/',
     type: 'website',
     siteName: 'TT Calculator',
-    images: [{ url: 'https://ttcalculator.net/home/hero-dashboard-1600.webp', width: 1200, height: 630, alt: 'TT Calculator' }],
+    images: [{ url: 'https://ttcalculator.net/featured/coins-1600.webp', width: 1600, height: 1067, alt: 'TikTok Coins Calculator — creator workspace scene illustrating the topic' }],
   },
 };
 

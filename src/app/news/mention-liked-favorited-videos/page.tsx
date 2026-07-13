@@ -20,9 +20,9 @@ export default function MentionLikedFavoritedVideosPage() {
         headline="TikTok Adds Mention Features for Liked and Favorited Videos | TikTok News"
         description="Users can now mention 'Liked' and 'Favorited' videos in their content, expanding cross-referencing capabilities on the platform."
         url="https://ttcalculator.net/news/mention-liked-favorited-videos/"
-        datePublished="2026-11-01"
+        datePublished="2025-11-08"
         dateModified="2026-03-01"
-        image="https://ttcalculator.net/news/news-features-1024.webp"
+        image="https://ttcalculator.net/featured/mention-liked-favorited-videos-1024.webp"
         keywords={['tiktok mentions', 'liked videos', 'favorited videos', 'tiktok features', 'content referencing']}
       />
       <BreadcrumbSchema
@@ -50,16 +50,16 @@ export default function MentionLikedFavoritedVideosPage() {
           <picture>
             <source
               type="image/avif"
-              srcSet="/news/news-features-640.avif 640w, /news/news-features-1024.avif 1024w, /news/news-features-1600.avif 1600w"
+              srcSet="/featured/mention-liked-favorited-videos-640.avif 640w, /featured/mention-liked-favorited-videos-1024.avif 1024w, /featured/mention-liked-favorited-videos-1600.avif 1600w"
               sizes="100vw"
             />
             <source
               type="image/webp"
-              srcSet="/news/news-features-640.webp 640w, /news/news-features-1024.webp 1024w, /news/news-features-1600.webp 1600w"
+              srcSet="/featured/mention-liked-favorited-videos-640.webp 640w, /featured/mention-liked-favorited-videos-1024.webp 1024w, /featured/mention-liked-favorited-videos-1600.webp 1600w"
               sizes="100vw"
             />
             <img
-              src="/news/news-features-1024.webp"
+              src="/featured/mention-liked-favorited-videos-1024.webp"
               alt="Featured image for TikTok Adds Mention Features for Liked and Favorited Videos"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
@@ -73,7 +73,7 @@ export default function MentionLikedFavoritedVideosPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Content Tools
             </span>
-            <span className="text-white/80 text-label-sm">Published: November 2026</span>
+            <span className="text-white/80 text-label-sm">Published: November 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Adds Mention Features for Liked and Favorited Videos

@@ -18,11 +18,11 @@ export default function AIOutlineSmartSplitPage() {
     <>
       <NewsArticleSchema
         headline="TikTok Launches AI Outline and Smart Split Features for Creators | TikTok News"
-        description="In November 2026, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities."
+        description="In November 2025, TikTok introduced two AI-powered tools: AI Outline to jumpstart video creation and Smart Split for enhanced editing capabilities."
         url="https://ttcalculator.net/news/ai-outline-smart-split-features/"
-        datePublished="2026-11-01"
+        datePublished="2025-11-05"
         dateModified="2026-03-01"
-        image="https://ttcalculator.net/news/news-features-1024.webp"
+        image="https://ttcalculator.net/featured/ai-outline-smart-split-features-1024.webp"
         keywords={['tiktok ai', 'ai outline', 'smart split', 'tiktok features', 'creator tools', 'tiktok news']}
       />
       <BreadcrumbSchema
@@ -52,16 +52,16 @@ export default function AIOutlineSmartSplitPage() {
           <picture>
             <source
               type="image/avif"
-              srcSet="/news/news-features-640.avif 640w, /news/news-features-1024.avif 1024w, /news/news-features-1600.avif 1600w"
+              srcSet="/featured/ai-outline-smart-split-features-640.avif 640w, /featured/ai-outline-smart-split-features-1024.avif 1024w, /featured/ai-outline-smart-split-features-1600.avif 1600w"
               sizes="100vw"
             />
             <source
               type="image/webp"
-              srcSet="/news/news-features-640.webp 640w, /news/news-features-1024.webp 1024w, /news/news-features-1600.webp 1600w"
+              srcSet="/featured/ai-outline-smart-split-features-640.webp 640w, /featured/ai-outline-smart-split-features-1024.webp 1024w, /featured/ai-outline-smart-split-features-1600.webp 1600w"
               sizes="100vw"
             />
             <img
-              src="/news/news-features-1024.webp"
+              src="/featured/ai-outline-smart-split-features-1024.webp"
               alt="Featured image for TikTok Launches AI Outline and Smart Split Features for Creators"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
               loading="eager"
@@ -76,7 +76,7 @@ export default function AIOutlineSmartSplitPage() {
               AI Tools
             </span>
             <span className="text-white/80 text-label-sm">
-              Published: November 2026
+              Published: November 2025
             </span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
@@ -275,7 +275,7 @@ export default function AIOutlineSmartSplitPage() {
               <Smartphone className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-body-md text-amber-900 font-semibold mb-1">Update Your TikTok App</p>
-                <p className="text-body-sm text-amber-800">Ensure you have the latest version of TikTok from your app store (November 2026 release or newer)</p>
+                <p className="text-body-sm text-amber-800">Ensure you have the latest version of TikTok from your app store (November 2025 release or newer)</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -296,7 +296,7 @@ export default function AIOutlineSmartSplitPage() {
               <Globe className="w-5 h-5 text-amber-600 flex-shrink-0 mt-1" />
               <div>
                 <p className="text-body-md text-amber-900 font-semibold mb-1">Availability</p>
-                <p className="text-body-sm text-amber-800">Both features are rolling out globally throughout November-December 2026. If you don't see them yet, check back in a few days.</p>
+                <p className="text-body-sm text-amber-800">Both features rolled out globally throughout November-December 2025. If you don't see them yet, make sure your TikTok app is updated to the latest version.</p>
               </div>
             </div>
           </div>

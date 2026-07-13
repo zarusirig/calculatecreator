@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/profile-visit-rate/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/profile-visit-rate/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/profile-visit-rate-1600.webp', width: 1600, height: 1067, alt: 'TikTok Profile Visit Rate Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

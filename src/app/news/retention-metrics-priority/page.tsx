@@ -20,7 +20,7 @@ export default function RetentionMetricsPriorityPage() {
         headline="Retention Metrics Become Priority for TikTok Content Distribution"
         description="Completion rates, replays, and granular watch time at 3s, 15s, and 60s checkpoints now determine video distribution on TikTok."
         url="https://ttcalculator.net/news/retention-metrics-priority/"
-        datePublished="2026-01-01"
+        datePublished="2025-06-20"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-algorithm-1024.webp"
         keywords={['tiktok retention', 'watch time', 'completion rate', 'algorithm metrics', 'content performance']}
@@ -73,7 +73,7 @@ export default function RetentionMetricsPriorityPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Creator Strategy
             </span>
-            <span className="text-white/80 text-label-sm">Published: 2026</span>
+            <span className="text-white/80 text-label-sm">Published: June 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             Retention Metrics Become Priority for Content Distribution

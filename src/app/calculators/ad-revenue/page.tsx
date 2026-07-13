@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/ad-revenue/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/ad-revenue/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/ad-revenue-1600.webp', width: 1600, height: 1067, alt: 'TikTok Ad Revenue Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

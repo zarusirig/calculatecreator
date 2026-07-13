@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/follower-growth/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/follower-growth/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/follower-growth-1600.webp', width: 1600, height: 1067, alt: 'TikTok Follower Growth Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

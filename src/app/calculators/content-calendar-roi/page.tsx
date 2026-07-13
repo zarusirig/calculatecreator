@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/content-calendar-roi/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/content-calendar-roi/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/content-calendar-roi-1600.webp', width: 1600, height: 1067, alt: 'TikTok Content Calendar ROI Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

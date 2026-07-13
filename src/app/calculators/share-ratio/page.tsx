@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/share-ratio/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/share-ratio/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/share-ratio-1600.webp', width: 1600, height: 1067, alt: 'TikTok Share Ratio Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

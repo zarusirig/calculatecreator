@@ -18,9 +18,9 @@ export default function PersonalizedAIAvatarStickersPage() {
     <>
       <NewsArticleSchema
         headline="TikTok Releases Personalized AI Avatar Stickers | TikTok News"
-        description="TikTok rolled out AI-powered personalized avatar stickers in October 2026. Users can create custom stickers based on their likeness."
+        description="TikTok rolled out AI-powered personalized avatar stickers in October 2025. Users can create custom stickers based on their likeness."
         url="https://ttcalculator.net/news/personalized-ai-avatar-stickers/"
-        datePublished="2026-10-01"
+        datePublished="2025-10-15"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-features-1024.webp"
         keywords={['tiktok stickers', 'ai avatar', 'personalized stickers', 'tiktok features', 'tiktok news']}
@@ -73,7 +73,7 @@ export default function PersonalizedAIAvatarStickersPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               Creative Tools
             </span>
-            <span className="text-white/80 text-label-sm">Published: October 2026</span>
+            <span className="text-white/80 text-label-sm">Published: October 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Releases Personalized AI Avatar Stickers
@@ -629,7 +629,7 @@ export default function PersonalizedAIAvatarStickersPage() {
                 rel="noopener noreferrer"
                 className="text-primary-600 hover:text-primary-700 hover:underline text-body-md"
               >
-                SocialBee: TikTok Updates October 2026 →
+                SocialBee: TikTok Updates October 2025 →
               </a>
             </li>
             <li>

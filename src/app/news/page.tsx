@@ -14,7 +14,7 @@ const newsFaqs = [
   },
   {
     question: 'How do algorithm changes affect my existing content?',
-    answer: '**Algorithm changes can affect older content distribution.** TikTok shifted to prioritize retention metrics in mid-2026. Videos with strong hooks and high completion rates saw renewed distribution, even months after posting. Content optimized for old metrics like likes and comments experienced decreased reach. Monitor algorithm news to understand fluctuations in older video performance.'
+    answer: '**Algorithm changes can affect older content distribution.** TikTok shifted to prioritize retention metrics in mid-2025. Videos with strong hooks and high completion rates saw renewed distribution, even months after posting. Content optimized for old metrics like likes and comments experienced decreased reach. Monitor algorithm news to understand fluctuations in older video performance.'
   },
   {
     question: 'Where does TikTok announce official updates?',
@@ -22,7 +22,7 @@ const newsFaqs = [
   },
   {
     question: 'Should I change my content strategy immediately after algorithm updates?',
-    answer: '**Test incrementally before committing to strategy changes.** Retention metrics became prioritized in 2026. Smart creators A/B tested hook styles and video lengths across 10 to 20 videos while monitoring analytics. A complete pivot based on a single announcement can backfire. Verify algorithm updates by checking whether your top-performing content aligns with the new metrics. Do this before overhauling your entire approach.'
+    answer: '**Test incrementally before committing to strategy changes.** Retention metrics became prioritized in 2025. Smart creators A/B tested hook styles and video lengths across 10 to 20 videos while monitoring analytics. A complete pivot based on a single announcement can backfire. Verify algorithm updates by checking whether your top-performing content aligns with the new metrics. Do this before overhauling your entire approach.'
   },
   {
     question: 'Do TikTok Shop updates affect all creators?',
@@ -34,7 +34,7 @@ const newsFaqs = [
   },
   {
     question: 'Are regulatory updates relevant to international creators?',
-    answer: '**Yes, regulatory updates affect international creators.** US regulatory news like the TikTok ban discussions directly impacts American creators. These decisions also influence the global strategy of TikTok. The US-China framework agreement in September 2026 led to increased platform stability worldwide. It also expanded Shop to Europe and increased Creator Rewards investment globally. Regulatory changes often cascade to affect features and policies in other countries.'
+    answer: '**Yes, regulatory updates affect international creators.** US regulatory news like the TikTok ban discussions directly impacts American creators. These decisions also influence the global strategy of TikTok. The US-China framework agreement in September 2025 led to increased platform stability worldwide. It also expanded Shop to Europe and increased Creator Rewards investment globally. Regulatory changes often cascade to affect features and policies in other countries.'
   },
   {
     question: 'What is the best way to stay updated on TikTok news?',
@@ -42,7 +42,7 @@ const newsFaqs = [
   },
   {
     question: 'How do new features impact content distribution?',
-    answer: '**TikTok promotes content that uses new features to encourage adoption.** AI Outline and Smart Split launched in November 2026. Creators using these tools reported 25% to 40% higher initial distribution. This "new feature boost" lasts 2 to 4 weeks before normalizing. Early adoption gives you a temporary algorithmic advantage. It also helps you master tools before competitors do.'
+    answer: '**TikTok promotes content that uses new features to encourage adoption.** AI Outline and Smart Split launched in November 2025. Creators using these tools reported 25% to 40% higher initial distribution. This "new feature boost" lasts 2 to 4 weeks before normalizing. Early adoption gives you a temporary algorithmic advantage. It also helps you master tools before competitors do.'
   },
   {
     question: 'How reliable are unofficial TikTok news sources?',
@@ -85,7 +85,7 @@ export default function NewsPage() {
       title: 'US-China Deal Reached to Keep TikTok Operational',
       slug: 'us-china-deal-tiktok-operational',
       description: 'Framework agreement announced between Trump administration and China to maintain TikTok operations in the United States.',
-      date: '2026-09-15',
+      date: '2025-09-15',
       category: 'Regulatory',
       featured: true,
     },
@@ -93,7 +93,7 @@ export default function NewsPage() {
       title: 'Understanding TikTok\'s De Jure Nationwide Ban Status',
       slug: 'tiktok-nationwide-ban-status',
       description: 'Explainer on why TikTok is technically banned but still operational, and what this means for creators.',
-      date: '2026-11-01',
+      date: '2025-11-01',
       category: 'Regulatory',
     },
     // Product Features (4)
@@ -101,7 +101,7 @@ export default function NewsPage() {
       title: 'TikTok Launches AI Outline and Smart Split Features',
       slug: 'ai-outline-smart-split-features',
       description: 'Two new AI-powered tools designed to streamline video creation and enhance editing capabilities for creators.',
-      date: '2026-11-05',
+      date: '2025-11-05',
       category: 'Features',
       featured: true,
     },
@@ -109,21 +109,21 @@ export default function NewsPage() {
       title: 'TikTok Releases Personalized AI Avatar Stickers',
       slug: 'personalized-ai-avatar-stickers',
       description: 'Create custom stickers based on your likeness with AI-powered avatar generation technology.',
-      date: '2026-10-15',
+      date: '2025-10-15',
       category: 'Features',
     },
     {
       title: 'New Mention Features for Liked and Favorited Videos',
       slug: 'mention-liked-favorited-videos',
       description: 'Users can now reference videos from their saved collections directly in their content.',
-      date: '2026-11-08',
+      date: '2025-11-08',
       category: 'Features',
     },
     {
       title: 'TikTok Introduces New Playback Settings',
       slug: 'playback-settings-update',
       description: 'Disable HDR videos and display object tags for enhanced viewing control and accessibility.',
-      date: '2026-11-10',
+      date: '2025-11-10',
       category: 'Features',
     },
     // TikTok Shop (5)
@@ -131,7 +131,7 @@ export default function NewsPage() {
       title: 'TikTok Shop Kicks Off Biggest Holiday Season Ever',
       slug: 'tiktok-shop-holiday-campaign',
       description: 'Platform launches largest holiday shopping campaign with special creator incentives and exclusive deals.',
-      date: '2026-11-01',
+      date: '2025-11-01',
       category: 'TikTok Shop',
       featured: true,
     },
@@ -139,28 +139,28 @@ export default function NewsPage() {
       title: 'TikTok Shop Ranks as Third-Fastest Growing Brand in the US',
       slug: 'tiktok-shop-third-fastest-growing',
       description: 'Morning Consult research reveals 145% year-over-year growth in consumer favorability.',
-      date: '2026-11-03',
+      date: '2025-11-03',
       category: 'TikTok Shop',
     },
     {
       title: 'TikTok Shop Expands to France, Germany, and Italy',
       slug: 'tiktok-shop-europe-expansion',
       description: 'Major European expansion brings social commerce to 83 million new users across three countries.',
-      date: '2026-03-27',
+      date: '2025-03-27',
       category: 'TikTok Shop',
     },
     {
       title: 'TikTok Shop GMV Projected to Double by End of 2026',
       slug: 'tiktok-shop-gmv-doubling',
       description: 'Industry analysts forecast explosive growth from $20B to $40B+ in gross merchandise value.',
-      date: '2026-11-07',
+      date: '2025-11-07',
       category: 'TikTok Shop',
     },
     {
       title: 'TikTok Shop Introduces Product Subscriptions',
       slug: 'product-subscriptions-feature',
       description: 'New recurring revenue model enables subscription-based purchasing for consumable products.',
-      date: '2026-11-09',
+      date: '2025-11-09',
       category: 'TikTok Shop',
     },
     // Algorithm (3)
@@ -168,21 +168,21 @@ export default function NewsPage() {
       title: 'TikTok Algorithm Undergoes Eight Major Shifts in 2025',
       slug: 'algorithm-eight-major-shifts',
       description: 'Enhanced personalization, off-platform behavior tracking, and retention focus reshape content distribution.',
-      date: '2026-06-15',
+      date: '2025-06-15',
       category: 'Algorithm',
     },
     {
       title: 'Retention Metrics Become Priority for Content Distribution',
       slug: 'retention-metrics-priority',
       description: 'Completion rates and watch time at 3s, 15s, and 60s checkpoints now determine video distribution.',
-      date: '2026-06-20',
+      date: '2025-06-20',
       category: 'Algorithm',
     },
     {
       title: 'TikTok Search Volume Increases by Over 40%',
       slug: 'search-volume-increase-40-percent',
       description: 'Billions of daily searches prompt major platform investment in search advertising and SEO features.',
-      date: '2026-10-01',
+      date: '2026-01-15',
       category: 'Discovery',
     },
     // Monetization (1)
@@ -190,7 +190,7 @@ export default function NewsPage() {
       title: 'Creator Fund Replaced with Creator Rewards Program',
       slug: 'creator-rewards-program-launch',
       description: 'Current program guidance now centers on Creator Rewards, longer original videos, and region eligibility.',
-      date: '2026-05-01',
+      date: '2026-01-01',
       category: 'Monetization',
       featured: true,
     },
@@ -199,14 +199,14 @@ export default function NewsPage() {
       title: 'TikTok Unveils New Safety Features for Parents',
       slug: 'parent-safety-features-update',
       description: 'Enhanced parental controls give families more visibility into teen account activity and customizable settings.',
-      date: '2026-07-15',
+      date: '2025-07-15',
       category: 'Safety',
     },
     {
       title: 'Age-Specific Privacy Features for Internet Safety Day 2026',
       slug: 'age-specific-privacy-features',
       description: 'Comprehensive age-based controls including nighttime restrictions and enhanced Family Pairing capabilities.',
-      date: '2026-02-11',
+      date: '2026-02-10',
       category: 'Safety',
     },
   ];
@@ -309,10 +309,10 @@ export default function NewsPage() {
       </section>
 
       <div className="container-custom max-w-6xl py-12">
-        {/* 2026 TikTok Updates Overview */}
+        {/* 2025-2026 TikTok Updates Overview */}
         <div className="mb-16">
           <h2 className="text-display-md font-bold text-neutral-900 mb-6">
-            2026 TikTok Updates Overview
+            2025-2026 TikTok Updates Overview
           </h2>
           <Card className="bg-gradient-to-br from-indigo-50 to-purple-50 border-l-4 border-indigo-500">
             <div className="grid md:grid-cols-3 gap-6">
@@ -365,13 +365,13 @@ export default function NewsPage() {
             <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500"></div>
             <div className="space-y-6 ml-12">
               {[
-                { date: 'Feb 11, 2026', event: 'Age-Specific Privacy Features', category: 'Safety', color: 'blue' },
-                { date: 'Mar 27, 2026', event: 'TikTok Shop Europe Expansion', category: 'TikTok Shop', color: 'green' },
-                { date: 'May 1, 2026', event: 'Creator Rewards Program Launch', category: 'Monetization', color: 'amber' },
-                { date: 'Jun 15, 2026', event: 'Eight Major Algorithm Shifts', category: 'Algorithm', color: 'indigo' },
-                { date: 'Oct 1, 2026', event: 'Search Volume +40%', category: 'Discovery', color: 'cyan' },
-                { date: 'Nov 1, 2026', event: 'Biggest Holiday Season Launch', category: 'TikTok Shop', color: 'green' },
-                { date: 'Nov 5, 2026', event: 'AI Outline & Smart Split Features', category: 'Features', color: 'purple' },
+                { date: 'Mar 27, 2025', event: 'TikTok Shop Europe Expansion', category: 'TikTok Shop', color: 'green' },
+                { date: 'Jun 15, 2025', event: 'Eight Major Algorithm Shifts', category: 'Algorithm', color: 'indigo' },
+                { date: 'Nov 1, 2025', event: 'Biggest Holiday Season Launch', category: 'TikTok Shop', color: 'green' },
+                { date: 'Nov 5, 2025', event: 'AI Outline & Smart Split Features', category: 'Features', color: 'purple' },
+                { date: 'Jan 1, 2026', event: 'Creator Rewards Replaces Creator Fund', category: 'Monetization', color: 'amber' },
+                { date: 'Jan 15, 2026', event: 'Search Volume +40%', category: 'Discovery', color: 'cyan' },
+                { date: 'Feb 10, 2026', event: 'Age-Specific Privacy Features', category: 'Safety', color: 'blue' },
               ].map((item, index) => (
                 <div key={index} className="relative">
                   <div className="absolute -left-[3.25rem] top-2 w-8 h-8 rounded-full bg-white border-4 border-primary-500 flex items-center justify-center">
@@ -435,7 +435,7 @@ export default function NewsPage() {
                     Stay Ahead of Algorithm Changes
                   </h3>
                   <p className="text-body-md text-neutral-700">
-                    The TikTok algorithm evolves constantly. The 2025 to 2026 shift to retention metrics at 3s, 15s, and 60s checkpoints changed performance results. Creators who focused on hook optimization and watch time retention outperformed those still optimizing for likes and comments alone.
+                    The TikTok algorithm evolves constantly. The mid-2025 shift to retention metrics at 3s, 15s, and 60s checkpoints changed performance results. Creators who focused on hook optimization and watch time retention outperformed those still optimizing for likes and comments alone.
                   </p>
                 </div>
               </div>
@@ -451,7 +451,7 @@ export default function NewsPage() {
                     Leverage New Features First
                   </h3>
                   <p className="text-body-md text-neutral-700">
-                    TikTok rewards early adopters of new features with increased reach. Creators who used AI Outline and Smart Split tools right away in November 2026 reported 25% to 40% higher distribution. The algorithm promoted content that used new platform capabilities.
+                    TikTok rewards early adopters of new features with increased reach. Creators who used AI Outline and Smart Split tools right away in November 2025 reported 25% to 40% higher distribution. The algorithm promoted content that used new platform capabilities.
                   </p>
                 </div>
               </div>
@@ -707,7 +707,7 @@ export default function NewsPage() {
                 <div>
                   <h3 className="text-heading-md font-semibold text-neutral-900 mb-2">Timeline Reference</h3>
                   <p className="text-body-md text-neutral-700">
-                    The Key Dates Timeline shows the chronological evolution of platform changes throughout 2026. Use it to understand context. See how algorithm changes correlate with new features and how Shop expansion aligns with monetization program updates. This historical view helps predict future platform priorities.
+                    The Key Dates Timeline shows the chronological evolution of platform changes throughout 2025 and 2026. Use it to understand context. See how algorithm changes correlate with new features and how Shop expansion aligns with monetization program updates. This historical view helps predict future platform priorities.
                   </p>
                 </div>
               </div>

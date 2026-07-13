@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/utility-tools/tax/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/utility-tools/tax/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/tax-1600.webp', width: 1600, height: 1067, alt: 'TikTok Creator Tax Calculator 2026 — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

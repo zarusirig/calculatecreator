@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/ad-spend/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/ad-spend/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/ad-spend-1600.webp', width: 1600, height: 1067, alt: 'TikTok Ad Spend Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqs = [

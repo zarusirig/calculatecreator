@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/cost-per-result/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/cost-per-result/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/cost-per-result-1600.webp', width: 1600, height: 1067, alt: 'TikTok Cost Per Result Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqs = [

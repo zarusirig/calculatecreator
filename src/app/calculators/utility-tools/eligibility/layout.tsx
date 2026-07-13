@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/utility-tools/eligibility/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/utility-tools/eligibility/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/eligibility-1600.webp', width: 1600, height: 1067, alt: 'Creator Fund Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqs = [

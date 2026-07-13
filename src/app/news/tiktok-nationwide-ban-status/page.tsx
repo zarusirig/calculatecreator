@@ -18,10 +18,10 @@ export default function TikTokNationwideBanStatusPage() {
     <>
       <NewsArticleSchema
         headline="Understanding TikTok's De Jure Nationwide Ban Status"
-        description="While a nationwide TikTok ban technically took effect on January 19, 2026, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating."
+        description="While a nationwide TikTok ban technically took effect on January 19, 2025, enforcement has been repeatedly delayed through executive orders, allowing the app to continue operating."
         url="https://ttcalculator.net/news/tiktok-nationwide-ban-status/"
         datePublished="2025-11-01"
-        dateModified="2026-03-01"
+        dateModified="2025-11-01"
         image="https://ttcalculator.net/news/news-regulatory-1024.webp"
         keywords={['tiktok ban', 'tiktok enforcement', 'de jure ban', 'tiktok status', 'tiktok news']}
       />
@@ -96,7 +96,7 @@ export default function TikTokNationwideBanStatusPage() {
             Key Takeaway for Creators
           </h2>
           <p className="text-body-md text-amber-800 mb-3">
-            TikTok exists in a unique legal limbo: a nationwide ban has been "on the books" since January 19, 2026 (de jure), but the government has repeatedly chosen not to enforce it (de facto), allowing the platform to operate normally while negotiations continue.
+            TikTok exists in a unique legal limbo: a nationwide ban has been "on the books" since January 19, 2025 (de jure), but the government has repeatedly chosen not to enforce it (de facto), allowing the platform to operate normally while negotiations continue.
           </p>
           <p className="text-body-md text-amber-800">
             <strong>What this means:</strong> TikTok is fully operational and creators can continue using the platform, but the underlying legal framework creates ongoing uncertainty that may affect long-term strategic decisions.
@@ -114,7 +114,7 @@ export default function TikTokNationwideBanStatusPage() {
                 De Jure Ban (By Law)
               </h3>
               <p className="text-body-md text-blue-800 mb-2">
-                "De jure" means "according to law." A nationwide TikTok ban is technically law as of January 19, 2026, passed by Congress and signed by the President.
+                "De jure" means "according to law." A nationwide TikTok ban is technically law as of January 19, 2025, passed by Congress and signed by the President.
               </p>
               <p className="text-body-sm text-blue-700 italic">
                 Think of it as: "On paper, TikTok is banned."
@@ -155,7 +155,7 @@ export default function TikTokNationwideBanStatusPage() {
             </div>
             <div className="flex gap-4 pb-4 border-b border-neutral-200">
               <div className="flex-shrink-0 w-32 text-label-sm font-semibold text-neutral-600">
-                January 19, 2026
+                January 19, 2025
               </div>
               <div className="flex-1">
                 <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
@@ -168,7 +168,7 @@ export default function TikTokNationwideBanStatusPage() {
             </div>
             <div className="flex gap-4 pb-4 border-b border-neutral-200">
               <div className="flex-shrink-0 w-32 text-label-sm font-semibold text-neutral-600">
-                January-September 2026
+                January-September 2025
               </div>
               <div className="flex-1">
                 <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
@@ -181,14 +181,14 @@ export default function TikTokNationwideBanStatusPage() {
             </div>
             <div className="flex gap-4">
               <div className="flex-shrink-0 w-32 text-label-sm font-semibold text-neutral-600">
-                September 24, 2026
+                September 24, 2025
               </div>
               <div className="flex-1">
                 <h3 className="text-heading-sm font-semibold text-neutral-900 mb-1">
                   Fourth Extension Announced
                 </h3>
                 <p className="text-body-md text-neutral-700">
-                  Enforcement delayed until December 16, 2026, as diplomatic negotiations continue between the U.S. and China.
+                  Enforcement delayed until December 16, 2025, as diplomatic negotiations continue between the U.S. and China.
                 </p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function TikTokNationwideBanStatusPage() {
             <div className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
               <p className="text-body-md text-green-800">
-                <strong>Enforcement is delayed</strong> until at least December 16, 2026
+                <strong>Enforcement is delayed</strong> until at least December 16, 2025
               </p>
             </div>
             <div className="flex items-start gap-3">
@@ -259,7 +259,7 @@ export default function TikTokNationwideBanStatusPage() {
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
               <p className="text-body-md text-amber-800">
-                <strong>Legal uncertainty remains</strong> beyond December 2026 deadline
+                <strong>Legal uncertainty remains</strong> beyond December 2025 deadline
               </p>
             </div>
           </div>
@@ -522,7 +522,7 @@ export default function TikTokNationwideBanStatusPage() {
             </li>
             <li>
               <Link href="/news/tiktok-ban-delayed-december-2025/" className="text-primary-600 hover:text-primary-700 hover:underline text-body-md">
-                Related: TikTok Ban Enforcement Delayed Until December 16, 2026 →
+                Related: TikTok Ban Enforcement Delayed Until December 16, 2025 →
               </Link>
             </li>
             <li>

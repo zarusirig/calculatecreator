@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/save-rate/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/save-rate/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/save-rate-1600.webp', width: 1600, height: 1067, alt: 'TikTok Save Rate Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

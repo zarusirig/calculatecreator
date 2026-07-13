@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/comment-rate/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/comment-rate/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/comment-rate-1600.webp', width: 1600, height: 1067, alt: 'TikTok Comment Rate Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqData = [

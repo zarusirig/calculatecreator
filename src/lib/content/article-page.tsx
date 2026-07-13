@@ -78,6 +78,9 @@ export function createArticlePageExports(contentDir: string) {
     if (!article) return {};
 
     const { frontmatter } = article;
+    // Not siteUrl(): that helper appends a trailing slash, which breaks file URLs.
+    const ogImage = frontmatter.featuredImage ? `${SITE_CONFIG.url}${frontmatter.featuredImage}` : DEFAULT_OG_IMAGE;
+    const ogImageDims = frontmatter.featuredImage ? { width: 1600, height: 1067 } : { width: 1200, height: 630 };
     const canonicalPath = `/${section}/${frontmatter.slug}`;
     const title = normalizeSeoTitle(frontmatter.title, frontmatter.primaryKeyword);
     const description = normalizeSeoDescription(frontmatter.metaDescription, frontmatter.primaryKeyword);
@@ -99,10 +102,10 @@ export function createArticlePageExports(contentDir: string) {
         siteName: SITE_CONFIG.name,
         images: [
           {
-            url: DEFAULT_OG_IMAGE,
-            width: 1200,
-            height: 630,
-            alt: title,
+            url: ogImage,
+            width: ogImageDims.width,
+            height: ogImageDims.height,
+            alt: frontmatter.imageAlt || title,
           },
         ],
       },
@@ -110,7 +113,7 @@ export function createArticlePageExports(contentDir: string) {
         card: 'summary_large_image',
         title,
         description,
-        images: [DEFAULT_OG_IMAGE],
+        images: [ogImage],
       },
       alternates: {
         canonical: siteUrl(canonicalPath),
@@ -170,6 +173,9 @@ export function createCatchAllArticlePageExports(contentDir: string) {
     if (!article) return {};
 
     const { frontmatter } = article;
+    // Not siteUrl(): that helper appends a trailing slash, which breaks file URLs.
+    const ogImage = frontmatter.featuredImage ? `${SITE_CONFIG.url}${frontmatter.featuredImage}` : DEFAULT_OG_IMAGE;
+    const ogImageDims = frontmatter.featuredImage ? { width: 1600, height: 1067 } : { width: 1200, height: 630 };
     const canonicalPath = `/${section}/${slugPath}`;
     const title = normalizeSeoTitle(frontmatter.title, frontmatter.primaryKeyword);
     const description = normalizeSeoDescription(frontmatter.metaDescription, frontmatter.primaryKeyword);
@@ -191,10 +197,10 @@ export function createCatchAllArticlePageExports(contentDir: string) {
         siteName: SITE_CONFIG.name,
         images: [
           {
-            url: DEFAULT_OG_IMAGE,
-            width: 1200,
-            height: 630,
-            alt: title,
+            url: ogImage,
+            width: ogImageDims.width,
+            height: ogImageDims.height,
+            alt: frontmatter.imageAlt || title,
           },
         ],
       },
@@ -202,7 +208,7 @@ export function createCatchAllArticlePageExports(contentDir: string) {
         card: 'summary_large_image',
         title,
         description,
-        images: [DEFAULT_OG_IMAGE],
+        images: [ogImage],
       },
       alternates: {
         canonical: siteUrl(canonicalPath),

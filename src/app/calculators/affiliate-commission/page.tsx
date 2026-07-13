@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://ttcalculator.net/calculators/affiliate-commission/',
   },
+  openGraph: {
+    url: 'https://ttcalculator.net/calculators/affiliate-commission/',
+    type: 'website',
+    siteName: 'TT Calculator',
+    images: [{ url: 'https://ttcalculator.net/featured/affiliate-commission-1600.webp', width: 1600, height: 1067, alt: 'TikTok Affiliate Commission Calculator — creator workspace scene illustrating the topic' }],
+  },
 };
 
 const faqs = [

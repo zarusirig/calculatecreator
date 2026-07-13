@@ -18,9 +18,9 @@ export default function TikTokShopEuropeExpansionPage() {
     <>
       <NewsArticleSchema
         headline="TikTok Shop Expands to France, Germany, and Italy"
-        description="In March 2026, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence."
+        description="In March 2025, TikTok Shop launched in France, Germany, and Italy, significantly expanding its European presence."
         url="https://ttcalculator.net/news/tiktok-shop-europe-expansion/"
-        datePublished="2026-03-27"
+        datePublished="2025-03-27"
         dateModified="2026-03-01"
         image="https://ttcalculator.net/news/news-shop-1024.webp"
         keywords={['tiktok shop europe', 'tiktok shop expansion', 'european e-commerce', 'tiktok international']}
@@ -73,7 +73,7 @@ export default function TikTokShopEuropeExpansionPage() {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-label-sm font-semibold bg-white/20 text-white">
               TikTok Shop
             </span>
-            <span className="text-white/80 text-label-sm">Published: March 27, 2026</span>
+            <span className="text-white/80 text-label-sm">Published: March 27, 2025</span>
           </div>
           <h1 className="text-display-lg font-bold text-white mb-4">
             TikTok Shop Expands to France, Germany, and Italy
@@ -99,7 +99,7 @@ export default function TikTokShopEuropeExpansionPage() {
             Three New Markets Launch Simultaneously
           </h2>
           <p className="text-body-md text-neutral-700 mb-4">
-            On March 27, 2026, TikTok Shop officially launched in France, Germany, and Italy, marking the platform's most significant European expansion to date. This strategic move comes despite ongoing regulatory challenges in the United States, demonstrating TikTok's confidence in its social commerce model.
+            On March 27, 2025, TikTok Shop officially launched in France, Germany, and Italy, marking the platform's most significant European expansion to date. This strategic move comes despite ongoing regulatory challenges in the United States, demonstrating TikTok's confidence in its social commerce model.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg text-center">
@@ -221,7 +221,7 @@ export default function TikTokShopEuropeExpansionPage() {
                 Brand Partnership Opportunities
               </h3>
               <p className="text-body-md text-purple-800">
-                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are expected to reach €500M+ in 2025.
+                With TikTok Shop now available, European brands are investing heavily in creator partnerships. Budget allocations for TikTok Shop campaigns are projected to exceed €500M in 2025.
               </p>
             </div>
           </div>
@@ -371,19 +371,20 @@ export default function TikTokShopEuropeExpansionPage() {
             <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
               <h3 className="text-heading-sm font-semibold text-green-900 mb-2">Live Markets</h3>
               <ul className="space-y-1 text-body-sm text-green-800">
-                <li>🇫🇷 France - March 2026</li>
-                <li>🇩🇪 Germany - March 2026</li>
-                <li>🇮🇹 Italy - March 2026</li>
+                <li>🇫🇷 France - March 2025</li>
+                <li>🇩🇪 Germany - March 2025</li>
+                <li>🇮🇹 Italy - March 2025</li>
+                <li>🇪🇸 Spain - December 2024</li>
+                <li>🇮🇪 Ireland - December 2024</li>
                 <li>🇬🇧 United Kingdom - August 2024</li>
               </ul>
             </div>
             <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Expected Q3-Q4 2026</h3>
+              <h3 className="text-heading-sm font-semibold text-blue-900 mb-2">Markets Under Review</h3>
               <ul className="space-y-1 text-body-sm text-blue-800">
-                <li>🇪🇸 Spain - Q3 2026 (planned)</li>
-                <li>🇳🇱 Netherlands - Q3 2026 (planned)</li>
-                <li>🇵🇱 Poland - Q4 2026 (under review)</li>
-                <li>🇸🇪 Sweden - Q4 2026 (under review)</li>
+                <li>🇳🇱 Netherlands - expansion under review, timing unconfirmed</li>
+                <li>🇵🇱 Poland - expansion under review, timing unconfirmed</li>
+                <li>🇸🇪 Sweden - expansion under review, timing unconfirmed</li>
               </ul>
             </div>
           </div>
@@ -452,7 +453,7 @@ export default function TikTokShopEuropeExpansionPage() {
             <div className="bg-neutral-50 p-4 rounded-lg">
               <h3 className="text-heading-sm font-semibold text-neutral-900 mb-2">Can creators from other EU countries participate?</h3>
               <p className="text-body-sm text-neutral-700">
-                Currently limited to France, Germany, and Italy. More EU markets expected to launch in 2025-2026.
+                Currently limited to France, Germany, Italy, Spain, and Ireland. More EU markets are under review, with further launches possible later in 2026.
               </p>
             </div>
             <div className="bg-neutral-50 p-4 rounded-lg">

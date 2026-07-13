@@ -22,7 +22,7 @@ export default function CreatorRewardsProgramLaunchPage() {
         url="https://ttcalculator.net/news/creator-rewards-program-launch/"
         datePublished="2026-01-01"
         dateModified="2026-03-15"
-        image="https://ttcalculator.net/news/news-monetization-1024.webp"
+        image="https://ttcalculator.net/featured/creator-rewards-program-launch-1024.webp"
         keywords={['creator rewards', 'creator fund', 'tiktok monetization', 'creator economy', 'earnings program']}
       />
       <BreadcrumbSchema
@@ -50,16 +50,16 @@ export default function CreatorRewardsProgramLaunchPage() {
           <picture>
             <source
               type="image/avif"
-              srcSet="/news/news-monetization-640.avif 640w, /news/news-monetization-1024.avif 1024w, /news/news-monetization-1600.avif 1600w"
+              srcSet="/featured/creator-rewards-program-launch-640.avif 640w, /featured/creator-rewards-program-launch-1024.avif 1024w, /featured/creator-rewards-program-launch-1600.avif 1600w"
               sizes="100vw"
             />
             <source
               type="image/webp"
-              srcSet="/news/news-monetization-640.webp 640w, /news/news-monetization-1024.webp 1024w, /news/news-monetization-1600.webp 1600w"
+              srcSet="/featured/creator-rewards-program-launch-640.webp 640w, /featured/creator-rewards-program-launch-1024.webp 1024w, /featured/creator-rewards-program-launch-1600.webp 1600w"
               sizes="100vw"
             />
             <img
-              src="/news/news-monetization-1024.webp"
+              src="/featured/creator-rewards-program-launch-1024.webp"
               alt="Featured image for Creator Fund Replaced with Creator Rewards Program"
               className="absolute inset-0 h-full w-full object-cover opacity-20"
               loading="eager"
