@@ -286,11 +286,11 @@ export default function CreatorRewardsProgramLaunchPage() {
             </p>
             <p className="text-body-md text-neutral-700">
               For per-category bands, see the{' '}
-              <Link href="/data/rpm-rates-by-niche/" className="text-primary-600 hover:underline">
+              <Link href="/learn/rpm-rates-by-niche/" className="text-primary-600 hover:underline">
                 TikTok RPM rates by niche
               </Link>{' '}
               data. The full eligibility breakdown lives in the{' '}
-              <Link href="/guides/creator-rewards-program/" className="text-primary-600 hover:underline">
+              <Link href="/learn/creator-rewards-program/" className="text-primary-600 hover:underline">
                 TikTok Creator Rewards Program
               </Link>{' '}
               guide.
@@ -390,7 +390,7 @@ export default function CreatorRewardsProgramLaunchPage() {
                   <strong>Not eligible</strong> for Creator Rewards. LIVE Gifts open at 1,000
                   followers and TikTok Shop affiliate access opens at 5,000, so smaller accounts
                   monetize there first. The{' '}
-                  <Link href="/guides/tiktok-monetization-requirements/" className="text-primary-600 hover:underline">
+                  <Link href="/learn/tiktok-monetization-requirements/" className="text-primary-600 hover:underline">
                     TikTok monetization requirements
                   </Link>{' '}
                   guide compares every threshold.
@@ -410,7 +410,7 @@ export default function CreatorRewardsProgramLaunchPage() {
                   A back catalog of original long-form videos keeps earning: 1 million qualified
                   monthly views return roughly <strong>$500–$2,000</strong>, versus about $20–$50
                   under the Fund rates documented in the{' '}
-                  <Link href="/guides/tiktok-creator-fund/" className="text-primary-600 hover:underline">
+                  <Link href="/learn/tiktok-creator-fund/" className="text-primary-600 hover:underline">
                     TikTok Creator Fund (Discontinued)
                   </Link>{' '}
                   guide.
@@ -511,7 +511,7 @@ export default function CreatorRewardsProgramLaunchPage() {
             </h2>
             <div className="grid gap-3">
               <Link
-                href="/guides/creator-rewards-program/"
+                href="/learn/creator-rewards-program/"
                 className="flex items-center justify-between rounded-lg border-2 border-transparent bg-white p-4 transition-colors hover:border-primary-500"
               >
                 <span className="font-semibold text-neutral-900">Creator Rewards Program guide</span>

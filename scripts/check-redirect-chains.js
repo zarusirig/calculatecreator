@@ -40,7 +40,9 @@ function main() {
 
   const raw = fs.readFileSync(FIREBASE_PATH, 'utf-8');
   const json = JSON.parse(raw);
-  const redirects = json?.hosting?.redirects || [];
+  // hosting may be a single object or a multi-site array — collect redirects from all sites.
+  const hostingArr = Array.isArray(json?.hosting) ? json.hosting : [json?.hosting].filter(Boolean);
+  const redirects = hostingArr.flatMap((h) => h?.redirects || []);
 
   const sourceOwners = new Map();
   const duplicateSources = [];

@@ -61,9 +61,9 @@ function resolvePageType(pathname: string): PageType {
   }
 
   if (
-    pathname.startsWith('/guides/') ||
+    pathname.startsWith('/learn/') ||
     pathname.startsWith('/blog/') ||
-    pathname.startsWith('/data/') ||
+    pathname.startsWith('/learn/') ||
     pathname.startsWith('/news/') ||
     pathname.startsWith('/comparisons/')
   ) {

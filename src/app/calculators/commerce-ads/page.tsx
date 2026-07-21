@@ -97,7 +97,7 @@ export default function CommerceAdsPage() {
           name: calc.name,
           description: calc.description,
           slug: calc.slug,
-          url: (calc as any).href ? `https://ttcalculator.net${(calc as any).href}` : undefined,
+          url: `https://ttcalculator.net${(calc as any).href || `/calculators/${calc.slug}/`}`,
         }))}
         keywords={[
           'TikTok RPM calculator',
@@ -141,7 +141,7 @@ export default function CommerceAdsPage() {
           {calculators.map((calc) => (
             <Link
               key={calc.slug}
-              href={(calc as any).href || `/calculators/commerce-ads/${calc.slug}`}
+              href={(calc as any).href || `/calculators/${calc.slug}/`}
               className="card card-hover p-6 group"
             >
               <div className="flex items-start space-x-4">
@@ -591,11 +591,11 @@ export default function CommerceAdsPage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Engagement Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Measure engagement rate to optimize ad performance</p>
               </Link>
-              <Link href="/calculators/utility-tools/tax/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/tax/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Tax Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Estimate tax obligations on commerce and advertising revenue</p>
               </Link>
-              <Link href="/guides/tiktok-shop-success-strategies/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/learn/tiktok-shop-success-strategies/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Shop Success Guide</h4>
                 <p className="text-body-sm text-neutral-700">Master TikTok Shop strategies to maximize affiliate profits</p>
               </Link>

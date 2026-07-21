@@ -3,6 +3,7 @@ import { Breadcrumb } from '@/components/layout/Breadcrumb';
 import { ArticleSchema, BreadcrumbSchema, HowToSchema } from '@/components/seo/CalculatorSchema';
 import { ArticleFrontmatter } from '@/lib/content/types';
 import { getRelatedArticleLinks } from '@/lib/content';
+import { articleUrl } from '@/lib/content/article-url';
 import { AdPlacement } from '@/components/ads/AdPlacement';
 import { ArticleAuthorBio } from '@/components/articles/ArticleAuthorBio';
 import { resolveAuthorFromFrontmatter } from '@/lib/constants/authors';
@@ -112,8 +113,8 @@ function RelatedContentNav({ frontmatter }: { frontmatter: ArticleFrontmatter })
   const categoryRoot = frontmatter.category.split('/')[0];
   const fallbackLinks = [
     { label: 'All Calculators', href: '/calculators/' },
-    { label: 'Creator Guides', href: '/guides/' },
-    { label: 'Data & Insights', href: '/data/' },
+    { label: 'Creator Guides', href: '/learn/' },
+    { label: 'Data & Insights', href: '/learn/' },
     { label: 'Creator News', href: '/news/' },
   ].filter((link) => !link.href.startsWith(`/${categoryRoot}/`));
 
@@ -164,7 +165,7 @@ function RelatedContentNav({ frontmatter }: { frontmatter: ArticleFrontmatter })
               {section.items.map((article) => (
                 <li key={`${article.frontmatter.category}-${article.frontmatter.slug}`}>
                   <Link
-                    href={`/${article.frontmatter.category}/${article.frontmatter.slug}/`}
+                    href={articleUrl(article.frontmatter)}
                     className="group flex items-start justify-between gap-3 rounded-lg border border-neutral-200 bg-white px-3 py-2.5 transition-colors hover:border-primary-200 hover:bg-primary-50/60"
                   >
                     <span className="text-body-sm text-neutral-700 transition-colors group-hover:text-primary-700">

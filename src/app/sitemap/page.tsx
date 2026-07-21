@@ -29,7 +29,7 @@ const sitemapGroups = [
   {
     title: 'Editorial',
     links: [
-      { label: 'Guides', href: '/guides/' },
+      { label: 'Guides', href: '/learn/' },
       { label: 'FAQ', href: '/faq/' },
       { label: 'About', href: '/about/' },
       { label: 'Contact', href: '/contact/' },
@@ -122,10 +122,10 @@ export default function HtmlSitemapPage() {
           <Link href="/calculators/" className="btn btn-secondary btn-sm">
             TikTok Calculators
           </Link>
-          <Link href="/data/" className="btn btn-secondary btn-sm">
+          <Link href="/learn/" className="btn btn-secondary btn-sm">
             Data Hub
           </Link>
-          <Link href="/guides/monetization-calculator-hub/" className="btn btn-secondary btn-sm">
+          <Link href="/learn/monetization-calculator-hub/" className="btn btn-secondary btn-sm">
             Monetization Guide Hub
           </Link>
           <Link href="/methodology/" className="btn btn-secondary btn-sm">
@@ -190,7 +190,7 @@ export default function HtmlSitemapPage() {
               <Link href="/metrics/tiktok-comments-to-likes-ratio/" className="btn btn-secondary btn-sm">
                 Legacy Metrics URL
               </Link>
-              <Link href="/guides/business/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/business/" className="btn btn-secondary btn-sm">
                 Contract Template URL
               </Link>
             </div>

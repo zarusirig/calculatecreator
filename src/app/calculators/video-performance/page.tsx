@@ -221,14 +221,14 @@ export default function VideoPerformanceCalculatorPage() {
             <p className="mt-4 text-sm text-gray-400">
               Learn more in our{' '}
               <Link
-                href="/guides/growth/tiktok-algorithm-explained/"
+                href="/learn/tiktok-algorithm-explained/"
                 className="text-cyan-400 hover:underline"
               >
                 algorithm optimization guide
               </Link>{' '}
               or explore{' '}
               <Link
-                href="/guides/how-to-increase-engagement/"
+                href="/learn/how-to-increase-engagement/"
                 className="text-cyan-400 hover:underline"
               >
                 strategies to boost engagement

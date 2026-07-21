@@ -67,10 +67,10 @@ export default function SearchPage() {
           <Link href="/calculators/" className="btn btn-secondary btn-sm">
             All TikTok Calculators
           </Link>
-          <Link href="/guides/" className="btn btn-secondary btn-sm">
+          <Link href="/learn/" className="btn btn-secondary btn-sm">
             Creator Guides
           </Link>
-          <Link href="/data/" className="btn btn-secondary btn-sm">
+          <Link href="/learn/" className="btn btn-secondary btn-sm">
             Benchmarks and Data
           </Link>
           <Link href="/news/" className="btn btn-secondary btn-sm">
@@ -119,7 +119,7 @@ export default function SearchPage() {
             <Link href="/calculators/" className="btn btn-secondary btn-sm">
               Calculator Directory
             </Link>
-            <Link href="/guides/" className="btn btn-secondary btn-sm">
+            <Link href="/learn/" className="btn btn-secondary btn-sm">
               Creator Guides
             </Link>
           </div>

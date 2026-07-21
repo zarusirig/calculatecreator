@@ -177,7 +177,7 @@ export default function MethodologyPage() {
               Sources Policy
             </Link>
             . Benchmark datasets drawn from these sources sit in the{' '}
-            <Link href="/data/" className="link">
+            <Link href="/learn/" className="link">
               TikTok Creator Data Hub
             </Link>
             .
@@ -314,7 +314,7 @@ export default function MethodologyPage() {
             <Link href="/editorial-policy/" className="btn btn-secondary btn-sm">
               Editorial Policy
             </Link>
-            <Link href="/data/" className="btn btn-secondary btn-sm">
+            <Link href="/learn/" className="btn btn-secondary btn-sm">
               TikTok Creator Data Hub
             </Link>
           </div>

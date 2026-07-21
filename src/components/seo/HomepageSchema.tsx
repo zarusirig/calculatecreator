@@ -138,7 +138,9 @@ export function HomepageSchema() {
           '@type': 'SoftwareApplication',
           name: config?.name || slug,
           description: config?.description || '',
-          url: siteUrl(`/calculators/${slug}`),
+          // slug may be a legacy lookup key with a bucket prefix (e.g. 'commerce-ads/shop-profit');
+          // the live tool is flat at /calculators/<basename>/.
+          url: siteUrl(`/calculators/${slug.split('/').pop()}`),
           applicationCategory: 'FinanceApplication',
           operatingSystem: 'Web',
           offers: {

@@ -82,16 +82,16 @@ export function validateBreadcrumbs(
 export const breadcrumbPatterns = {
   calculator: (calculatorName: string, calculatorSlug: string) => [
     { label: 'Calculators', href: '/calculators/' },
-    { label: calculatorName, href: `/calculators/${calculatorSlug}` }
+    { label: calculatorName, href: `/calculators/${calculatorSlug.split('/').pop()}/` }
   ],
 
   guide: (guideName: string, guideSlug: string) => [
-    { label: 'Guides', href: '/guides/' },
+    { label: 'Guides', href: '/learn/' },
     { label: guideName, href: `/guides/${guideSlug}` }
   ],
 
   data: (dataName: string, dataSlug: string) => [
-    { label: 'Data & Insights', href: '/data/' },
+    { label: 'Data & Insights', href: '/learn/' },
     { label: dataName, href: `/data/${dataSlug}` }
   ],
 
@@ -101,7 +101,7 @@ export const breadcrumbPatterns = {
   ],
 
   comparison: (comparisonName: string, comparisonSlug: string) => [
-    { label: 'Data & Insights', href: '/data/' },
+    { label: 'Data & Insights', href: '/learn/' },
     { label: comparisonName, href: `/comparisons/${comparisonSlug}` }
   ]
 } as const;

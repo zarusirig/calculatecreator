@@ -10,10 +10,10 @@ export const ADS_CONFIG = {
   /** Routes where ads are allowed */
   allowedRoutes: [
     '/calculators/',
-    '/guides/',
+    '/learn/',
     '/blog/',
     '/comparisons/',
-    '/data/',
+    '/learn/',
     '/news/',
     '/niches/',
   ],

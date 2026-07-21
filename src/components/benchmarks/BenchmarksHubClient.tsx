@@ -24,7 +24,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: '$0.05-$0.12',
     note: 'Often higher with US-heavy audiences',
     toolHref: '/calculators/rpm/',
-    guideHref: '/guides/monetization-calculator-hub/',
+    guideHref: '/learn/monetization-calculator-hub/',
   },
   {
     id: 'tiktok-lifestyle-rpm',
@@ -34,7 +34,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: '$0.02-$0.05',
     note: 'Directional estimate from broad creator samples',
     toolHref: '/calculators/rpm/',
-    guideHref: '/guides/tiktok-growth-hub/',
+    guideHref: '/learn/tiktok-growth-hub/',
   },
   {
     id: 'tiktok-engagement-median',
@@ -44,7 +44,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: '2%-8%',
     note: 'Short-format content benchmark range',
     toolHref: '/calculators/engagement-rate/',
-    guideHref: '/guides/tiktok-growth-hub/',
+    guideHref: '/learn/tiktok-growth-hub/',
   },
   {
     id: 'creator-brand-deal',
@@ -54,7 +54,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: '$200-$10,000+',
     note: 'Range expands by follower tier and deliverables',
     toolHref: '/calculators/brand-deal-rate/',
-    guideHref: '/guides/monetization/tiktok-series-monetization/',
+    guideHref: '/learn/tiktok-series-monetization/',
   },
   {
     id: 'tiktok-shop-commission',
@@ -63,8 +63,8 @@ const benchmarkRows: BenchmarkRow[] = [
     metric: 'Commission',
     range: '2%-20%',
     note: 'Depends on category and seller terms',
-    toolHref: '/calculators/commerce-ads/shop-profit/',
-    guideHref: '/guides/tiktok-ads-hub/',
+    toolHref: '/calculators/shop-profit/',
+    guideHref: '/learn/tiktok-ads-hub/',
   },
   {
     id: 'multi-platform-earnings',
@@ -74,7 +74,7 @@ const benchmarkRows: BenchmarkRow[] = [
     range: 'Varies by mix',
     note: 'Compare platform-by-platform assumptions',
     toolHref: '/calculators/multi-platform-earnings/',
-    guideHref: '/guides/monetization-calculator-hub/',
+    guideHref: '/learn/monetization-calculator-hub/',
   },
 ];
 

@@ -125,7 +125,7 @@ export default function DiamondConverterPage() {
               <span className="flex items-center gap-1"><DollarSign size={16} /> Payout Estimates</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Learn more in our <Link href="/guides/complete-tiktok-diamond-guide/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok diamond guide</Link> or explore <Link href="/guides/live-gift-earnings-optimization/" className="text-primary-600 hover:text-primary-700 underline">strategies to maximize LIVE gift earnings</Link>.
+              Learn more in our <Link href="/learn/complete-tiktok-diamond-guide/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok diamond guide</Link> or explore <Link href="/learn/live-gift-earnings-optimization/" className="text-primary-600 hover:text-primary-700 underline">strategies to maximize LIVE gift earnings</Link>.
             </p>
           </div>
 
@@ -320,7 +320,7 @@ export default function DiamondConverterPage() {
                 { title: 'Coins Calculator', href: '/calculators/coins/' },
                 { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
-                { title: 'Complete TikTok Diamond Guide', href: '/guides/complete-tiktok-diamond-guide/' },
+                { title: 'Complete TikTok Diamond Guide', href: '/learn/complete-tiktok-diamond-guide/' },
               ]}
             />
 

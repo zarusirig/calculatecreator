@@ -334,7 +334,7 @@ export default function TikTokNationwideBanStatusPage() {
               <span className="text-primary-600">→</span>
             </Link>
             <Link
-              href="/guides/how-to-make-money-on-tiktok/"
+              href="/learn/how-to-make-money-on-tiktok/"
               className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
             >
               <span className="font-semibold text-neutral-900">Complete Monetization Guide</span>

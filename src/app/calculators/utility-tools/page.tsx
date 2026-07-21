@@ -91,7 +91,7 @@ export default function UtilityToolsPage() {
         name="TikTok Creator Utility Tools"
         description="Essential utility calculators for TikTok creators to manage taxes, calculate payouts after fees, and check monetization eligibility requirements."
         url="https://ttcalculator.net/calculators/utility-tools/"
-        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug }))}
+        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: `https://ttcalculator.net${(c as any).href || `/calculators/${c.slug}/`}` }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
@@ -124,7 +124,7 @@ export default function UtilityToolsPage() {
           {calculators.map((calc) => (
             <Link
               key={calc.slug}
-              href={`/calculators/utility-tools/${calc.slug}`}
+              href={`/calculators/${calc.slug}/`}
               className="card card-hover p-6 group"
             >
               <div className="flex items-start space-x-4">
@@ -631,11 +631,11 @@ export default function UtilityToolsPage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Convert TikTok diamonds to cash payouts</p>
               </Link>
-              <Link href="/guides/creator-tax-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/learn/creator-tax-strategy/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Creator Tax Strategy</h4>
                 <p className="text-body-sm text-neutral-700">Advanced tax planning for content creators</p>
               </Link>
-              <Link href="/guides/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/learn/how-to-join-creator-fund/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Creator Fund Complete Guide</h4>
                 <p className="text-body-sm text-neutral-700">Everything you need to know about joining the Creator Fund</p>
               </Link>

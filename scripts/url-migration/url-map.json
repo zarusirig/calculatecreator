@@ -1,0 +1,1085 @@
+{
+  "generatedFrom": "scripts/url-migration/build-map.js",
+  "redirects": {
+    "/calculators/brand-deal-rate/brand-deal-red-flags/": "/learn/brand-deal-red-flags/",
+    "/calculators/brand-deal-rate/brands-calculate-influencer-roi/": "/learn/brands-calculate-influencer-roi/",
+    "/calculators/brand-deal-rate/tiktok-brand-deal-rates-2026/": "/learn/tiktok-brand-deal-rates-2026/",
+    "/calculators/brand-deal-rate/tiktok-media-kit/": "/learn/tiktok-media-kit/",
+    "/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers/": "/learn/tiktok-sponsorship-rates-followers/",
+    "/calculators/coins/coins-to-dollars-chart/": "/learn/coins-to-dollars-chart/",
+    "/calculators/coins/how-to-buy-tiktok-coins/": "/learn/how-to-buy-tiktok-coins/",
+    "/calculators/coins/most-expensive-tiktok-gifts/": "/learn/most-expensive-tiktok-gifts/",
+    "/calculators/coins/tiktok-coin-prices-by-country/": "/learn/tiktok-coin-prices-by-country/",
+    "/calculators/coins/tiktok-coin-value-usd/": "/learn/tiktok-coin-value-usd/",
+    "/calculators/commerce-ads/shop-profit/best-selling-tiktok-shop-products/": "/learn/best-selling-tiktok-shop-products/",
+    "/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings/": "/learn/tiktok-shop-affiliate-earnings/",
+    "/calculators/commerce-ads/shop-profit/tiktok-shop-commission-rates/": "/learn/tiktok-shop-commission-rates/",
+    "/calculators/commerce-ads/shop-profit/tiktok-shop-seller-fees/": "/learn/tiktok-shop-seller-fees/",
+    "/calculators/commerce-ads/shop-profit/viral-tiktok-shop-products/": "/learn/viral-tiktok-shop-products/",
+    "/calculators/conversion-rate/tiktok-conversion-rate-optimization/": "/learn/tiktok-conversion-rate-optimization/",
+    "/calculators/earnings-revenue/live-earnings/best-times-go-live-tiktok/": "/learn/best-times-go-live-tiktok/",
+    "/calculators/earnings-revenue/live-earnings/get-more-viewers-tiktok-live/": "/learn/get-more-viewers-tiktok-live/",
+    "/calculators/earnings-revenue/live-earnings/tiktok-live-battles/": "/learn/tiktok-live-battles/",
+    "/calculators/earnings-revenue/live-earnings/tiktok-live-earnings-per-hour/": "/learn/tiktok-live-earnings-per-hour/",
+    "/calculators/earnings-revenue/live-earnings/tiktok-live-requirements/": "/learn/tiktok-live-requirements/",
+    "/calculators/engagement-rate/algorithm-engagement-rate/": "/learn/algorithm-engagement-rate/",
+    "/calculators/engagement-rate/engagement-rate-brand-deals/": "/learn/engagement-rate-brand-deals/",
+    "/calculators/engagement-rate/engagement-rate-by-followers/": "/learn/engagement-rate-by-followers/",
+    "/calculators/engagement-rate/engagement-rate-by-niche/": "/learn/engagement-rate-by-niche/",
+    "/calculators/engagement-rate/engagement-rate-dropping/": "/learn/engagement-rate-dropping/",
+    "/calculators/engagement-rate/engagement-rate-vs-views/": "/learn/engagement-rate-vs-views/",
+    "/calculators/engagement-rate/good-tiktok-engagement-rate/": "/learn/good-tiktok-engagement-rate/",
+    "/calculators/engagement-rate/increase-engagement-rate/": "/learn/increase-engagement-rate/",
+    "/calculators/follower-growth/follower-growth-rate-normal/": "/learn/follower-growth-rate-normal/",
+    "/calculators/follower-growth/follower-milestones-unlocks/": "/learn/follower-milestones-unlocks/",
+    "/calculators/hashtag-performance/hashtag-performance-metrics/": "/learn/hashtag-performance-metrics/",
+    "/calculators/niche-profitability/niche-profitability-evaluation/": "/learn/niche-profitability-evaluation/",
+    "/calculators/niche-profitability/pivot-tiktok-niche/": "/learn/pivot-tiktok-niche/",
+    "/calculators/production-cost/tiktok-creator-equipment-guide/": "/learn/tiktok-creator-equipment-guide/",
+    "/calculators/rpm/increase-tiktok-rpm/": "/learn/increase-tiktok-rpm/",
+    "/calculators/rpm/seasonal-tiktok-rpm/": "/learn/seasonal-tiktok-rpm/",
+    "/calculators/rpm/tiktok-cpm-vs-rpm/": "/learn/tiktok-cpm-vs-rpm/",
+    "/calculators/rpm/tiktok-rpm-by-country/": "/learn/tiktok-rpm-by-country/",
+    "/calculators/rpm/what-is-tiktok-rpm/": "/learn/what-is-tiktok-rpm/",
+    "/calculators/tiktok-creator-fund/creator-fund-eligibility-2026/": "/learn/creator-fund-eligibility-2026/",
+    "/calculators/tiktok-creator-fund/creator-fund-pay-per-view/": "/learn/creator-fund-pay-per-view/",
+    "/calculators/tiktok-creator-fund/creator-fund-payment-schedule/": "/learn/creator-fund-payment-schedule/",
+    "/calculators/tiktok-creator-fund/creator-rewards-vs-creator-fund/": "/learn/creator-rewards-vs-creator-fund/",
+    "/calculators/tiktok-creator-fund/maximize-creator-fund-rpm/": "/learn/maximize-creator-fund-rpm/",
+    "/calculators/tiktok-money/how-tiktok-money-calculator-works/": "/learn/how-tiktok-money-calculator-works/",
+    "/calculators/tiktok-money/tiktok-earnings-by-country/": "/learn/tiktok-earnings-by-country/",
+    "/calculators/tiktok-money/tiktok-money-100k-followers/": "/learn/tiktok-money-100k-followers/",
+    "/calculators/tiktok-money/tiktok-money-10k-followers/": "/learn/tiktok-money-10k-followers/",
+    "/calculators/tiktok-money/tiktok-money-1m-followers/": "/learn/tiktok-money-1m-followers/",
+    "/calculators/tiktok-money/tiktok-pay-per-1000-views/": "/learn/tiktok-pay-per-1000-views/",
+    "/calculators/tiktok-money/tiktok-pay-per-million-views/": "/learn/tiktok-pay-per-million-views/",
+    "/calculators/tiktok-money/why-tiktok-earnings-low/": "/learn/why-tiktok-earnings-low/",
+    "/calculators/video-performance/video-performance-score/": "/learn/video-performance-score/",
+    "/calculators/viral-potential/how-to-go-viral-tiktok/": "/learn/how-to-go-viral-tiktok/",
+    "/calculators/watch-time/tiktok-hook-strategies/": "/learn/tiktok-hook-strategies/",
+    "/calculators/watch-time/watch-time-metrics-explained/": "/learn/watch-time-metrics-explained/",
+    "/guides/analytics-metrics-master-guide/": "/learn/analytics-metrics-master-guide/",
+    "/guides/beauty-creators-earnings/": "/learn/beauty-creators-earnings/",
+    "/guides/brand-deals/": "/learn/brand-deals/",
+    "/guides/business/brand-deal-contract-negotiate/": "/learn/brand-deal-contract-negotiate/",
+    "/guides/business/ftc-disclosure-tiktok/": "/learn/ftc-disclosure-tiktok/",
+    "/guides/business/international-creator-tax-implications/": "/learn/international-creator-tax-implications/",
+    "/guides/business/llc-for-tiktok-creators/": "/learn/llc-for-tiktok-creators/",
+    "/guides/business/tiktok-community-guidelines-strikes/": "/learn/tiktok-community-guidelines-strikes/",
+    "/guides/business/tiktok-copyright-fair-use/": "/learn/tiktok-copyright-fair-use/",
+    "/guides/business/tiktok-creator-burnout-guide/": "/learn/tiktok-creator-burnout-guide/",
+    "/guides/business/tiktok-creator-insurance/": "/learn/tiktok-creator-insurance/",
+    "/guides/business/tiktok-creator-taxes-guide/": "/learn/tiktok-creator-taxes-guide/",
+    "/guides/business/tiktok-exit-strategies/": "/learn/tiktok-exit-strategies/",
+    "/guides/business/tiktok-intellectual-property-protection/": "/learn/tiktok-intellectual-property-protection/",
+    "/guides/business/when-to-hire-manager-tiktok/": "/learn/when-to-hire-manager-tiktok/",
+    "/guides/calculating-true-influence-value/": "/learn/calculating-true-influence-value/",
+    "/guides/complete-tiktok-calculator-guide/": "/learn/complete-tiktok-calculator-guide/",
+    "/guides/complete-tiktok-diamond-guide/": "/learn/complete-tiktok-diamond-guide/",
+    "/guides/content-strategy-2025/": "/learn/content-strategy-2025/",
+    "/guides/creator-rewards-program/": "/learn/creator-rewards-program/",
+    "/guides/creator-tax-strategy/": "/learn/creator-tax-strategy/",
+    "/guides/finance-creators-earnings/": "/learn/finance-creators-earnings/",
+    "/guides/fitness-creators-earnings/": "/learn/fitness-creators-earnings/",
+    "/guides/growth/best-posting-times-tiktok/": "/learn/best-posting-times-tiktok/",
+    "/guides/growth/content-repurposing-roi-analysis/": "/learn/content-repurposing-roi-analysis/",
+    "/guides/growth/get-on-fyp-consistently/": "/learn/get-on-fyp-consistently/",
+    "/guides/growth/recover-tiktok-growth-plateau/": "/learn/recover-tiktok-growth-plateau/",
+    "/guides/growth/repurpose-tiktok-content/": "/learn/repurpose-tiktok-content/",
+    "/guides/growth/short-vs-long-tiktok-videos/": "/learn/short-vs-long-tiktok-videos/",
+    "/guides/growth/tiktok-ab-testing-content/": "/learn/tiktok-ab-testing-content/",
+    "/guides/growth/tiktok-algorithm-explained/": "/learn/tiktok-algorithm-explained/",
+    "/guides/growth/tiktok-analytics-api-creators/": "/learn/tiktok-analytics-api-creators/",
+    "/guides/growth/tiktok-analytics-guide/": "/learn/tiktok-analytics-guide/",
+    "/guides/growth/tiktok-audience-demographics-analysis/": "/learn/tiktok-audience-demographics-analysis/",
+    "/guides/growth/tiktok-batch-content-creation/": "/learn/tiktok-batch-content-creation/",
+    "/guides/growth/tiktok-content-pillars/": "/learn/tiktok-content-pillars/",
+    "/guides/growth/tiktok-hashtag-strategy-2026/": "/learn/tiktok-hashtag-strategy-2026/",
+    "/guides/growth/tiktok-photo-carousel-engagement/": "/learn/tiktok-photo-carousel-engagement/",
+    "/guides/growth/tiktok-seo-search-ranking/": "/learn/tiktok-seo-search-ranking/",
+    "/guides/growth/tiktok-shadowban-fix/": "/learn/tiktok-shadowban-fix/",
+    "/guides/growth/tiktok-sounds-music-distribution/": "/learn/tiktok-sounds-music-distribution/",
+    "/guides/how-many-followers-and-views-to-get-paid-on-tiktok/": "/learn/how-many-followers-and-views-to-get-paid-on-tiktok/",
+    "/guides/how-much-to-charge-sponsorship/": "/learn/how-much-to-charge-sponsorship/",
+    "/guides/how-to-get-1000-followers-live/": "/learn/how-to-get-1000-followers-live/",
+    "/guides/how-to-get-brand-deals/": "/learn/how-to-get-brand-deals/",
+    "/guides/how-to-increase-creator-fund-earnings/": "/learn/how-to-increase-creator-fund-earnings/",
+    "/guides/how-to-increase-engagement/": "/learn/how-to-increase-engagement/",
+    "/guides/how-to-join-creator-fund/": "/learn/how-to-join-creator-fund/",
+    "/guides/how-to-make-first-1000-dollars/": "/learn/how-to-make-first-1000-dollars/",
+    "/guides/how-to-make-money-on-tiktok/": "/learn/how-to-make-money-on-tiktok/",
+    "/guides/how-to-negotiate-brand-deals/": "/learn/how-to-negotiate-brand-deals/",
+    "/guides/how-to-qualify-for-tiktok-live/": "/learn/how-to-qualify-for-tiktok-live/",
+    "/guides/influencer-rate-calculator-guide/": "/learn/influencer-rate-calculator-guide/",
+    "/guides/live-gift-earnings-optimization/": "/learn/live-gift-earnings-optimization/",
+    "/guides/monetization/diversify-tiktok-income-streams/": "/learn/diversify-tiktok-income-streams/",
+    "/guides/monetization/financial-planning-tiktok-creators/": "/learn/financial-planning-tiktok-creators/",
+    "/guides/monetization/get-paid-faster-tiktok/": "/learn/get-paid-faster-tiktok/",
+    "/guides/monetization/micro-influencers-make-money-tiktok/": "/learn/micro-influencers-make-money-tiktok/",
+    "/guides/monetization/passive-income-tiktok-creators/": "/learn/passive-income-tiktok-creators/",
+    "/guides/monetization/selling-digital-products-tiktok/": "/learn/selling-digital-products-tiktok/",
+    "/guides/monetization/seven-ways-make-money-tiktok/": "/learn/seven-ways-make-money-tiktok/",
+    "/guides/monetization/tiktok-affiliate-without-shop/": "/learn/tiktok-affiliate-without-shop/",
+    "/guides/monetization/tiktok-consulting-creator/": "/learn/tiktok-consulting-creator/",
+    "/guides/monetization/tiktok-course-creation-guide/": "/learn/tiktok-course-creation-guide/",
+    "/guides/monetization/tiktok-merch-strategies/": "/learn/tiktok-merch-strategies/",
+    "/guides/monetization/tiktok-monetization-by-country/": "/learn/tiktok-monetization-by-country/",
+    "/guides/monetization/tiktok-series-monetization/": "/learn/tiktok-series-monetization/",
+    "/guides/monetization/tiktok-subscription-recurring-revenue/": "/learn/tiktok-subscription-recurring-revenue/",
+    "/guides/multi-platform-attribution-creators/": "/learn/multi-platform-attribution-creators/",
+    "/guides/multi-platform-strategy/": "/learn/multi-platform-strategy/",
+    "/guides/niche-selection/": "/learn/niche-selection/",
+    "/guides/niches/asmr-tiktok-earnings/": "/learn/asmr-tiktok-earnings/",
+    "/guides/niches/comedy-tiktok-earnings/": "/learn/comedy-tiktok-earnings/",
+    "/guides/niches/diy-crafts-tiktok-earnings/": "/learn/diy-crafts-tiktok-earnings/",
+    "/guides/niches/education-tiktok-earnings/": "/learn/education-tiktok-earnings/",
+    "/guides/niches/fashion-tiktok-earnings/": "/learn/fashion-tiktok-earnings/",
+    "/guides/niches/food-cooking-tiktok-earnings/": "/learn/food-cooking-tiktok-earnings/",
+    "/guides/niches/gaming-tiktok-monetization/": "/learn/gaming-tiktok-monetization/",
+    "/guides/niches/music-tiktok-monetization/": "/learn/music-tiktok-monetization/",
+    "/guides/niches/parenting-tiktok-earnings/": "/learn/parenting-tiktok-earnings/",
+    "/guides/niches/pet-tiktok-monetization/": "/learn/pet-tiktok-monetization/",
+    "/guides/niches/tech-tiktok-earnings/": "/learn/tech-tiktok-earnings/",
+    "/guides/niches/travel-tiktok-earnings/": "/learn/travel-tiktok-earnings/",
+    "/guides/spark-ads-for-creators/": "/learn/spark-ads-for-creators/",
+    "/guides/tiktok-ad-budget-calculator-guide/": "/learn/tiktok-ad-budget-calculator-guide/",
+    "/guides/tiktok-coins/": "/learn/tiktok-coins/",
+    "/guides/tiktok-creator-fund/": "/learn/tiktok-creator-fund/",
+    "/guides/tiktok-creator-marketplace/": "/learn/tiktok-creator-marketplace/",
+    "/guides/tiktok-diamonds/": "/learn/tiktok-diamonds/",
+    "/guides/tiktok-engagement-rate-calculator-guide/": "/learn/tiktok-engagement-rate-calculator-guide/",
+    "/guides/tiktok-gifts/": "/learn/tiktok-gifts/",
+    "/guides/tiktok-live-earnings-guide/": "/learn/tiktok-live-earnings-guide/",
+    "/guides/tiktok-live-shopping/": "/learn/tiktok-live-shopping/",
+    "/guides/tiktok-live/": "/learn/tiktok-live/",
+    "/guides/tiktok-monetization-requirements/": "/learn/tiktok-monetization-requirements/",
+    "/guides/tiktok-pay-per-1-million-views/": "/learn/tiktok-pay-per-1-million-views/",
+    "/guides/tiktok-pay/": "/learn/tiktok-pay/",
+    "/guides/tiktok-payment-delays/": "/learn/tiktok-payment-delays/",
+    "/guides/tiktok-rpm-calculator-guide/": "/learn/tiktok-rpm-calculator-guide/",
+    "/guides/tiktok-shop-affiliate/": "/learn/tiktok-shop-affiliate/",
+    "/guides/tiktok-shop-success-strategies/": "/learn/tiktok-shop-success-strategies/",
+    "/guides/tiktok-shop/": "/learn/tiktok-shop/",
+    "/guides/why-creator-fund-earnings-dropped/": "/learn/why-creator-fund-earnings-dropped/",
+    "/data/brand-deal-rates-by-followers/": "/learn/brand-deal-rates-by-followers/",
+    "/data/brand-deal-rates-by-niche/": "/learn/brand-deal-rates-by-niche/",
+    "/data/creator-fund-rates-by-country/": "/learn/creator-fund-rates-by-country/",
+    "/data/earnings/average-tiktok-earnings-per-views/": "/learn/average-tiktok-earnings-per-views/",
+    "/data/earnings/fulltime-vs-parttime-creator-earnings/": "/learn/fulltime-vs-parttime-creator-earnings/",
+    "/data/earnings/seasonal-tiktok-earnings-trends/": "/learn/seasonal-tiktok-earnings-trends/",
+    "/data/earnings/tiktok-advertising-rates-benchmarks/": "/learn/tiktok-advertising-rates-benchmarks/",
+    "/data/earnings/tiktok-creator-economy-size/": "/learn/tiktok-creator-economy-size/",
+    "/data/earnings/tiktok-creator-income-distribution/": "/learn/tiktok-creator-income-distribution/",
+    "/data/earnings/tiktok-earnings-growth-timeline/": "/learn/tiktok-earnings-growth-timeline/",
+    "/data/earnings/tiktok-pay-australia-earnings/": "/learn/tiktok-pay-australia-earnings/",
+    "/data/earnings/tiktok-pay-brazil-earnings/": "/learn/tiktok-pay-brazil-earnings/",
+    "/data/earnings/tiktok-pay-canada-earnings/": "/learn/tiktok-pay-canada-earnings/",
+    "/data/earnings/tiktok-pay-france-earnings/": "/learn/tiktok-pay-france-earnings/",
+    "/data/earnings/tiktok-pay-germany-earnings/": "/learn/tiktok-pay-germany-earnings/",
+    "/data/earnings/tiktok-pay-india-earnings/": "/learn/tiktok-pay-india-earnings/",
+    "/data/earnings/tiktok-pay-indonesia-earnings/": "/learn/tiktok-pay-indonesia-earnings/",
+    "/data/earnings/tiktok-pay-mexico-earnings/": "/learn/tiktok-pay-mexico-earnings/",
+    "/data/earnings/tiktok-pay-nigeria-earnings/": "/learn/tiktok-pay-nigeria-earnings/",
+    "/data/earnings/tiktok-pay-philippines-earnings/": "/learn/tiktok-pay-philippines-earnings/",
+    "/data/earnings/tiktok-pay-uk-earnings/": "/learn/tiktok-pay-uk-earnings/",
+    "/data/earnings/tiktok-pay-us-earnings/": "/learn/tiktok-pay-us-earnings/",
+    "/data/earnings/tiktok-shop-gmv-growth/": "/learn/tiktok-shop-gmv-growth/",
+    "/data/earnings/tiktok-vs-youtube-rpm-by-niche/": "/learn/tiktok-vs-youtube-rpm-by-niche/",
+    "/data/earnings/top-tiktok-creators-income/": "/learn/top-tiktok-creators-income/",
+    "/data/engagement/avg-engagement-rate-follower-count-2026/": "/learn/avg-engagement-rate-follower-count-2026/",
+    "/data/engagement/completion-rate-by-video-length/": "/learn/completion-rate-by-video-length/",
+    "/data/engagement/micro-vs-macro-engagement-rate/": "/learn/micro-vs-macro-engagement-rate/",
+    "/data/engagement/posting-frequency-engagement-correlation/": "/learn/posting-frequency-engagement-correlation/",
+    "/data/engagement/tiktok-likes-to-views-ratio/": "/learn/tiktok-likes-to-views-ratio/",
+    "/data/engagement/tiktok-save-rate-benchmarks/": "/learn/tiktok-save-rate-benchmarks/",
+    "/data/engagement/tiktok-share-rate-benchmarks/": "/learn/tiktok-share-rate-benchmarks/",
+    "/data/engagement-rates-by-niche/": "/learn/engagement-rates-by-niche/",
+    "/data/platform-comparisons/creator-monetization-platforms-2026/": "/learn/creator-monetization-platforms-2026/",
+    "/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates/": "/learn/tiktok-vs-instagram-brand-deal-rates/",
+    "/data/platform-comparisons/tiktok-vs-instagram-reels-2026/": "/learn/tiktok-vs-instagram-reels-2026/",
+    "/data/platform-comparisons/tiktok-vs-youtube-shorts-2026/": "/learn/tiktok-vs-youtube-shorts-2026/",
+    "/data/platform-comparisons/tiktok-vs-youtube-vs-twitch-live/": "/learn/tiktok-vs-youtube-vs-twitch-live/",
+    "/data/reference/creator-fund-countries/": "/learn/creator-fund-countries/",
+    "/data/reference/how-much-is-a-galaxy-on-tiktok/": "/learn/how-much-is-a-galaxy-on-tiktok/",
+    "/data/reference/live-gifts-value-chart/": "/learn/live-gifts-value-chart/",
+    "/data/reference/shop-commission-rates/": "/learn/shop-commission-rates/",
+    "/data/reference/shop-payment-schedule/": "/learn/shop-payment-schedule/",
+    "/data/reference/tiktok-business-vs-creator-account/": "/learn/tiktok-business-vs-creator-account/",
+    "/data/reference/tiktok-video-length-limits/": "/learn/tiktok-video-length-limits/",
+    "/data/rpm-rates-by-niche/": "/learn/rpm-rates-by-niche/",
+    "/calculators/earnings-revenue/live-earnings/": "/calculators/live-earnings/",
+    "/calculators/commerce-ads/shop-profit/": "/calculators/shop-profit/",
+    "/calculators/utility-tools/eligibility/": "/calculators/eligibility/",
+    "/calculators/utility-tools/payout/": "/calculators/payout/",
+    "/calculators/utility-tools/tax/": "/calculators/tax/",
+    "/guides/business/": "/learn/business/",
+    "/guides/growth/": "/learn/growth/",
+    "/guides/monetization/": "/learn/monetization/",
+    "/guides/niches/": "/learn/niches/",
+    "/data/earnings/": "/learn/earnings/",
+    "/data/engagement/": "/learn/engagement/",
+    "/data/platform-comparisons/": "/learn/platform-comparisons/",
+    "/data/reference/": "/learn/reference/",
+    "/guides/best-shop-niches/": "/learn/best-shop-niches/",
+    "/guides/monetization-calculator-hub/": "/learn/monetization-calculator-hub/",
+    "/guides/tiktok-ads-hub/": "/learn/tiktok-ads-hub/",
+    "/guides/tiktok-growth-hub/": "/learn/tiktok-growth-hub/",
+    "/guides/": "/learn/",
+    "/data/": "/learn/"
+  },
+  "articleFiles": [
+    {
+      "from": "content/calculators/brand-deal-rate/brand-deal-red-flags.mdx",
+      "slug": "brand-deal-red-flags"
+    },
+    {
+      "from": "content/calculators/brand-deal-rate/brands-calculate-influencer-roi.mdx",
+      "slug": "brands-calculate-influencer-roi"
+    },
+    {
+      "from": "content/calculators/brand-deal-rate/tiktok-brand-deal-rates-2026.mdx",
+      "slug": "tiktok-brand-deal-rates-2026"
+    },
+    {
+      "from": "content/calculators/brand-deal-rate/tiktok-media-kit.mdx",
+      "slug": "tiktok-media-kit"
+    },
+    {
+      "from": "content/calculators/brand-deal-rate/tiktok-sponsorship-rates-followers.mdx",
+      "slug": "tiktok-sponsorship-rates-followers"
+    },
+    {
+      "from": "content/calculators/coins/coins-to-dollars-chart.mdx",
+      "slug": "coins-to-dollars-chart"
+    },
+    {
+      "from": "content/calculators/coins/how-to-buy-tiktok-coins.mdx",
+      "slug": "how-to-buy-tiktok-coins"
+    },
+    {
+      "from": "content/calculators/coins/most-expensive-tiktok-gifts.mdx",
+      "slug": "most-expensive-tiktok-gifts"
+    },
+    {
+      "from": "content/calculators/coins/tiktok-coin-prices-by-country.mdx",
+      "slug": "tiktok-coin-prices-by-country"
+    },
+    {
+      "from": "content/calculators/coins/tiktok-coin-value-usd.mdx",
+      "slug": "tiktok-coin-value-usd"
+    },
+    {
+      "from": "content/calculators/commerce-ads/shop-profit/best-selling-tiktok-shop-products.mdx",
+      "slug": "best-selling-tiktok-shop-products"
+    },
+    {
+      "from": "content/calculators/commerce-ads/shop-profit/tiktok-shop-affiliate-earnings.mdx",
+      "slug": "tiktok-shop-affiliate-earnings"
+    },
+    {
+      "from": "content/calculators/commerce-ads/shop-profit/tiktok-shop-commission-rates.mdx",
+      "slug": "tiktok-shop-commission-rates"
+    },
+    {
+      "from": "content/calculators/commerce-ads/shop-profit/tiktok-shop-seller-fees.mdx",
+      "slug": "tiktok-shop-seller-fees"
+    },
+    {
+      "from": "content/calculators/commerce-ads/shop-profit/viral-tiktok-shop-products.mdx",
+      "slug": "viral-tiktok-shop-products"
+    },
+    {
+      "from": "content/calculators/conversion-rate/tiktok-conversion-rate-optimization.mdx",
+      "slug": "tiktok-conversion-rate-optimization"
+    },
+    {
+      "from": "content/calculators/earnings-revenue/live-earnings/best-times-go-live-tiktok.mdx",
+      "slug": "best-times-go-live-tiktok"
+    },
+    {
+      "from": "content/calculators/earnings-revenue/live-earnings/get-more-viewers-tiktok-live.mdx",
+      "slug": "get-more-viewers-tiktok-live"
+    },
+    {
+      "from": "content/calculators/earnings-revenue/live-earnings/tiktok-live-battles.mdx",
+      "slug": "tiktok-live-battles"
+    },
+    {
+      "from": "content/calculators/earnings-revenue/live-earnings/tiktok-live-earnings-per-hour.mdx",
+      "slug": "tiktok-live-earnings-per-hour"
+    },
+    {
+      "from": "content/calculators/earnings-revenue/live-earnings/tiktok-live-requirements.mdx",
+      "slug": "tiktok-live-requirements"
+    },
+    {
+      "from": "content/calculators/engagement-rate/algorithm-engagement-rate.mdx",
+      "slug": "algorithm-engagement-rate"
+    },
+    {
+      "from": "content/calculators/engagement-rate/engagement-rate-brand-deals.mdx",
+      "slug": "engagement-rate-brand-deals"
+    },
+    {
+      "from": "content/calculators/engagement-rate/engagement-rate-by-followers.mdx",
+      "slug": "engagement-rate-by-followers"
+    },
+    {
+      "from": "content/calculators/engagement-rate/engagement-rate-by-niche.mdx",
+      "slug": "engagement-rate-by-niche"
+    },
+    {
+      "from": "content/calculators/engagement-rate/engagement-rate-dropping.mdx",
+      "slug": "engagement-rate-dropping"
+    },
+    {
+      "from": "content/calculators/engagement-rate/engagement-rate-vs-views.mdx",
+      "slug": "engagement-rate-vs-views"
+    },
+    {
+      "from": "content/calculators/engagement-rate/good-tiktok-engagement-rate.mdx",
+      "slug": "good-tiktok-engagement-rate"
+    },
+    {
+      "from": "content/calculators/engagement-rate/increase-engagement-rate.mdx",
+      "slug": "increase-engagement-rate"
+    },
+    {
+      "from": "content/calculators/follower-growth/follower-growth-rate-normal.mdx",
+      "slug": "follower-growth-rate-normal"
+    },
+    {
+      "from": "content/calculators/follower-growth/follower-milestones-unlocks.mdx",
+      "slug": "follower-milestones-unlocks"
+    },
+    {
+      "from": "content/calculators/hashtag-performance/hashtag-performance-metrics.mdx",
+      "slug": "hashtag-performance-metrics"
+    },
+    {
+      "from": "content/calculators/niche-profitability/niche-profitability-evaluation.mdx",
+      "slug": "niche-profitability-evaluation"
+    },
+    {
+      "from": "content/calculators/niche-profitability/pivot-tiktok-niche.mdx",
+      "slug": "pivot-tiktok-niche"
+    },
+    {
+      "from": "content/calculators/production-cost/tiktok-creator-equipment-guide.mdx",
+      "slug": "tiktok-creator-equipment-guide"
+    },
+    {
+      "from": "content/calculators/rpm/increase-tiktok-rpm.mdx",
+      "slug": "increase-tiktok-rpm"
+    },
+    {
+      "from": "content/calculators/rpm/seasonal-tiktok-rpm.mdx",
+      "slug": "seasonal-tiktok-rpm"
+    },
+    {
+      "from": "content/calculators/rpm/tiktok-cpm-vs-rpm.mdx",
+      "slug": "tiktok-cpm-vs-rpm"
+    },
+    {
+      "from": "content/calculators/rpm/tiktok-rpm-by-country.mdx",
+      "slug": "tiktok-rpm-by-country"
+    },
+    {
+      "from": "content/calculators/rpm/what-is-tiktok-rpm.mdx",
+      "slug": "what-is-tiktok-rpm"
+    },
+    {
+      "from": "content/calculators/tiktok-creator-fund/creator-fund-eligibility-2026.mdx",
+      "slug": "creator-fund-eligibility-2026"
+    },
+    {
+      "from": "content/calculators/tiktok-creator-fund/creator-fund-pay-per-view.mdx",
+      "slug": "creator-fund-pay-per-view"
+    },
+    {
+      "from": "content/calculators/tiktok-creator-fund/creator-fund-payment-schedule.mdx",
+      "slug": "creator-fund-payment-schedule"
+    },
+    {
+      "from": "content/calculators/tiktok-creator-fund/creator-rewards-vs-creator-fund.mdx",
+      "slug": "creator-rewards-vs-creator-fund"
+    },
+    {
+      "from": "content/calculators/tiktok-creator-fund/maximize-creator-fund-rpm.mdx",
+      "slug": "maximize-creator-fund-rpm"
+    },
+    {
+      "from": "content/calculators/tiktok-money/how-tiktok-money-calculator-works.mdx",
+      "slug": "how-tiktok-money-calculator-works"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-earnings-by-country.mdx",
+      "slug": "tiktok-earnings-by-country"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-money-100k-followers.mdx",
+      "slug": "tiktok-money-100k-followers"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-money-10k-followers.mdx",
+      "slug": "tiktok-money-10k-followers"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-money-1m-followers.mdx",
+      "slug": "tiktok-money-1m-followers"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-pay-per-1000-views.mdx",
+      "slug": "tiktok-pay-per-1000-views"
+    },
+    {
+      "from": "content/calculators/tiktok-money/tiktok-pay-per-million-views.mdx",
+      "slug": "tiktok-pay-per-million-views"
+    },
+    {
+      "from": "content/calculators/tiktok-money/why-tiktok-earnings-low.mdx",
+      "slug": "why-tiktok-earnings-low"
+    },
+    {
+      "from": "content/calculators/video-performance/video-performance-score.mdx",
+      "slug": "video-performance-score"
+    },
+    {
+      "from": "content/calculators/viral-potential/how-to-go-viral-tiktok.mdx",
+      "slug": "how-to-go-viral-tiktok"
+    },
+    {
+      "from": "content/calculators/watch-time/tiktok-hook-strategies.mdx",
+      "slug": "tiktok-hook-strategies"
+    },
+    {
+      "from": "content/calculators/watch-time/watch-time-metrics-explained.mdx",
+      "slug": "watch-time-metrics-explained"
+    },
+    {
+      "from": "content/guides/analytics-metrics-master-guide.mdx",
+      "slug": "analytics-metrics-master-guide"
+    },
+    {
+      "from": "content/guides/beauty-creators-earnings.mdx",
+      "slug": "beauty-creators-earnings"
+    },
+    {
+      "from": "content/guides/brand-deals.mdx",
+      "slug": "brand-deals"
+    },
+    {
+      "from": "content/guides/business/brand-deal-contract-negotiate.mdx",
+      "slug": "brand-deal-contract-negotiate"
+    },
+    {
+      "from": "content/guides/business/ftc-disclosure-tiktok.mdx",
+      "slug": "ftc-disclosure-tiktok"
+    },
+    {
+      "from": "content/guides/business/international-creator-tax-implications.mdx",
+      "slug": "international-creator-tax-implications"
+    },
+    {
+      "from": "content/guides/business/llc-for-tiktok-creators.mdx",
+      "slug": "llc-for-tiktok-creators"
+    },
+    {
+      "from": "content/guides/business/tiktok-community-guidelines-strikes.mdx",
+      "slug": "tiktok-community-guidelines-strikes"
+    },
+    {
+      "from": "content/guides/business/tiktok-copyright-fair-use.mdx",
+      "slug": "tiktok-copyright-fair-use"
+    },
+    {
+      "from": "content/guides/business/tiktok-creator-burnout-guide.mdx",
+      "slug": "tiktok-creator-burnout-guide"
+    },
+    {
+      "from": "content/guides/business/tiktok-creator-insurance.mdx",
+      "slug": "tiktok-creator-insurance"
+    },
+    {
+      "from": "content/guides/business/tiktok-creator-taxes-guide.mdx",
+      "slug": "tiktok-creator-taxes-guide"
+    },
+    {
+      "from": "content/guides/business/tiktok-exit-strategies.mdx",
+      "slug": "tiktok-exit-strategies"
+    },
+    {
+      "from": "content/guides/business/tiktok-intellectual-property-protection.mdx",
+      "slug": "tiktok-intellectual-property-protection"
+    },
+    {
+      "from": "content/guides/business/when-to-hire-manager-tiktok.mdx",
+      "slug": "when-to-hire-manager-tiktok"
+    },
+    {
+      "from": "content/guides/calculating-true-influence-value.mdx",
+      "slug": "calculating-true-influence-value"
+    },
+    {
+      "from": "content/guides/complete-tiktok-calculator-guide.mdx",
+      "slug": "complete-tiktok-calculator-guide"
+    },
+    {
+      "from": "content/guides/complete-tiktok-diamond-guide.mdx",
+      "slug": "complete-tiktok-diamond-guide"
+    },
+    {
+      "from": "content/guides/content-strategy-2025.mdx",
+      "slug": "content-strategy-2025"
+    },
+    {
+      "from": "content/guides/creator-rewards-program.mdx",
+      "slug": "creator-rewards-program"
+    },
+    {
+      "from": "content/guides/creator-tax-strategy.mdx",
+      "slug": "creator-tax-strategy"
+    },
+    {
+      "from": "content/guides/finance-creators-earnings.mdx",
+      "slug": "finance-creators-earnings"
+    },
+    {
+      "from": "content/guides/fitness-creators-earnings.mdx",
+      "slug": "fitness-creators-earnings"
+    },
+    {
+      "from": "content/guides/growth/best-posting-times-tiktok.mdx",
+      "slug": "best-posting-times-tiktok"
+    },
+    {
+      "from": "content/guides/growth/content-repurposing-roi-analysis.mdx",
+      "slug": "content-repurposing-roi-analysis"
+    },
+    {
+      "from": "content/guides/growth/get-on-fyp-consistently.mdx",
+      "slug": "get-on-fyp-consistently"
+    },
+    {
+      "from": "content/guides/growth/recover-tiktok-growth-plateau.mdx",
+      "slug": "recover-tiktok-growth-plateau"
+    },
+    {
+      "from": "content/guides/growth/repurpose-tiktok-content.mdx",
+      "slug": "repurpose-tiktok-content"
+    },
+    {
+      "from": "content/guides/growth/short-vs-long-tiktok-videos.mdx",
+      "slug": "short-vs-long-tiktok-videos"
+    },
+    {
+      "from": "content/guides/growth/tiktok-ab-testing-content.mdx",
+      "slug": "tiktok-ab-testing-content"
+    },
+    {
+      "from": "content/guides/growth/tiktok-algorithm-explained.mdx",
+      "slug": "tiktok-algorithm-explained"
+    },
+    {
+      "from": "content/guides/growth/tiktok-analytics-api-creators.mdx",
+      "slug": "tiktok-analytics-api-creators"
+    },
+    {
+      "from": "content/guides/growth/tiktok-analytics-guide.mdx",
+      "slug": "tiktok-analytics-guide"
+    },
+    {
+      "from": "content/guides/growth/tiktok-audience-demographics-analysis.mdx",
+      "slug": "tiktok-audience-demographics-analysis"
+    },
+    {
+      "from": "content/guides/growth/tiktok-batch-content-creation.mdx",
+      "slug": "tiktok-batch-content-creation"
+    },
+    {
+      "from": "content/guides/growth/tiktok-content-pillars.mdx",
+      "slug": "tiktok-content-pillars"
+    },
+    {
+      "from": "content/guides/growth/tiktok-hashtag-strategy-2026.mdx",
+      "slug": "tiktok-hashtag-strategy-2026"
+    },
+    {
+      "from": "content/guides/growth/tiktok-photo-carousel-engagement.mdx",
+      "slug": "tiktok-photo-carousel-engagement"
+    },
+    {
+      "from": "content/guides/growth/tiktok-seo-search-ranking.mdx",
+      "slug": "tiktok-seo-search-ranking"
+    },
+    {
+      "from": "content/guides/growth/tiktok-shadowban-fix.mdx",
+      "slug": "tiktok-shadowban-fix"
+    },
+    {
+      "from": "content/guides/growth/tiktok-sounds-music-distribution.mdx",
+      "slug": "tiktok-sounds-music-distribution"
+    },
+    {
+      "from": "content/guides/how-many-followers-and-views-to-get-paid-on-tiktok.mdx",
+      "slug": "how-many-followers-and-views-to-get-paid-on-tiktok"
+    },
+    {
+      "from": "content/guides/how-much-to-charge-sponsorship.mdx",
+      "slug": "how-much-to-charge-sponsorship"
+    },
+    {
+      "from": "content/guides/how-to-become-tiktok-shop-affiliate.md",
+      "slug": "how-to-become-tiktok-shop-affiliate"
+    },
+    {
+      "from": "content/guides/how-to-get-1000-followers-live.mdx",
+      "slug": "how-to-get-1000-followers-live"
+    },
+    {
+      "from": "content/guides/how-to-get-brand-deals.mdx",
+      "slug": "how-to-get-brand-deals"
+    },
+    {
+      "from": "content/guides/how-to-increase-creator-fund-earnings.mdx",
+      "slug": "how-to-increase-creator-fund-earnings"
+    },
+    {
+      "from": "content/guides/how-to-increase-engagement.mdx",
+      "slug": "how-to-increase-engagement"
+    },
+    {
+      "from": "content/guides/how-to-join-creator-fund.mdx",
+      "slug": "how-to-join-creator-fund"
+    },
+    {
+      "from": "content/guides/how-to-make-first-1000-dollars.mdx",
+      "slug": "how-to-make-first-1000-dollars"
+    },
+    {
+      "from": "content/guides/how-to-make-money-on-tiktok.mdx",
+      "slug": "how-to-make-money-on-tiktok"
+    },
+    {
+      "from": "content/guides/how-to-negotiate-brand-deals.mdx",
+      "slug": "how-to-negotiate-brand-deals"
+    },
+    {
+      "from": "content/guides/how-to-qualify-for-tiktok-live.mdx",
+      "slug": "how-to-qualify-for-tiktok-live"
+    },
+    {
+      "from": "content/guides/influencer-rate-calculator-guide.mdx",
+      "slug": "influencer-rate-calculator-guide"
+    },
+    {
+      "from": "content/guides/live-gift-earnings-optimization.mdx",
+      "slug": "live-gift-earnings-optimization"
+    },
+    {
+      "from": "content/guides/monetization/diversify-tiktok-income-streams.mdx",
+      "slug": "diversify-tiktok-income-streams"
+    },
+    {
+      "from": "content/guides/monetization/financial-planning-tiktok-creators.mdx",
+      "slug": "financial-planning-tiktok-creators"
+    },
+    {
+      "from": "content/guides/monetization/get-paid-faster-tiktok.mdx",
+      "slug": "get-paid-faster-tiktok"
+    },
+    {
+      "from": "content/guides/monetization/micro-influencers-make-money-tiktok.mdx",
+      "slug": "micro-influencers-make-money-tiktok"
+    },
+    {
+      "from": "content/guides/monetization/passive-income-tiktok-creators.mdx",
+      "slug": "passive-income-tiktok-creators"
+    },
+    {
+      "from": "content/guides/monetization/selling-digital-products-tiktok.mdx",
+      "slug": "selling-digital-products-tiktok"
+    },
+    {
+      "from": "content/guides/monetization/seven-ways-make-money-tiktok.mdx",
+      "slug": "seven-ways-make-money-tiktok"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-affiliate-without-shop.mdx",
+      "slug": "tiktok-affiliate-without-shop"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-consulting-creator.mdx",
+      "slug": "tiktok-consulting-creator"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-course-creation-guide.mdx",
+      "slug": "tiktok-course-creation-guide"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-merch-strategies.mdx",
+      "slug": "tiktok-merch-strategies"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-monetization-by-country.mdx",
+      "slug": "tiktok-monetization-by-country"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-series-monetization.mdx",
+      "slug": "tiktok-series-monetization"
+    },
+    {
+      "from": "content/guides/monetization/tiktok-subscription-recurring-revenue.mdx",
+      "slug": "tiktok-subscription-recurring-revenue"
+    },
+    {
+      "from": "content/guides/multi-platform-attribution-creators.mdx",
+      "slug": "multi-platform-attribution-creators"
+    },
+    {
+      "from": "content/guides/multi-platform-strategy.mdx",
+      "slug": "multi-platform-strategy"
+    },
+    {
+      "from": "content/guides/niche-selection.mdx",
+      "slug": "niche-selection"
+    },
+    {
+      "from": "content/guides/niches/asmr-tiktok-earnings.mdx",
+      "slug": "asmr-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/comedy-tiktok-earnings.mdx",
+      "slug": "comedy-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/diy-crafts-tiktok-earnings.mdx",
+      "slug": "diy-crafts-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/education-tiktok-earnings.mdx",
+      "slug": "education-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/fashion-tiktok-earnings.mdx",
+      "slug": "fashion-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/food-cooking-tiktok-earnings.mdx",
+      "slug": "food-cooking-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/gaming-tiktok-monetization.mdx",
+      "slug": "gaming-tiktok-monetization"
+    },
+    {
+      "from": "content/guides/niches/music-tiktok-monetization.mdx",
+      "slug": "music-tiktok-monetization"
+    },
+    {
+      "from": "content/guides/niches/parenting-tiktok-earnings.mdx",
+      "slug": "parenting-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/pet-tiktok-monetization.mdx",
+      "slug": "pet-tiktok-monetization"
+    },
+    {
+      "from": "content/guides/niches/tech-tiktok-earnings.mdx",
+      "slug": "tech-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/niches/travel-tiktok-earnings.mdx",
+      "slug": "travel-tiktok-earnings"
+    },
+    {
+      "from": "content/guides/spark-ads-for-creators.mdx",
+      "slug": "spark-ads-for-creators"
+    },
+    {
+      "from": "content/guides/tiktok-ad-budget-calculator-guide.mdx",
+      "slug": "tiktok-ad-budget-calculator-guide"
+    },
+    {
+      "from": "content/guides/tiktok-coins.mdx",
+      "slug": "tiktok-coins"
+    },
+    {
+      "from": "content/guides/tiktok-creator-fund.mdx",
+      "slug": "tiktok-creator-fund"
+    },
+    {
+      "from": "content/guides/tiktok-creator-marketplace.mdx",
+      "slug": "tiktok-creator-marketplace"
+    },
+    {
+      "from": "content/guides/tiktok-diamonds.mdx",
+      "slug": "tiktok-diamonds"
+    },
+    {
+      "from": "content/guides/tiktok-engagement-rate-calculator-guide.mdx",
+      "slug": "tiktok-engagement-rate-calculator-guide"
+    },
+    {
+      "from": "content/guides/tiktok-gifts.mdx",
+      "slug": "tiktok-gifts"
+    },
+    {
+      "from": "content/guides/tiktok-live-earnings-expectations.md",
+      "slug": "tiktok-live-earnings-expectations"
+    },
+    {
+      "from": "content/guides/tiktok-live-earnings-guide.mdx",
+      "slug": "tiktok-live-earnings-guide"
+    },
+    {
+      "from": "content/guides/tiktok-live-shopping.mdx",
+      "slug": "tiktok-live-shopping"
+    },
+    {
+      "from": "content/guides/tiktok-live.mdx",
+      "slug": "tiktok-live"
+    },
+    {
+      "from": "content/guides/tiktok-monetization-requirements.mdx",
+      "slug": "tiktok-monetization-requirements"
+    },
+    {
+      "from": "content/guides/tiktok-pay-per-1-million-views.mdx",
+      "slug": "tiktok-pay-per-1-million-views"
+    },
+    {
+      "from": "content/guides/tiktok-pay.mdx",
+      "slug": "tiktok-pay"
+    },
+    {
+      "from": "content/guides/tiktok-payment-delays.mdx",
+      "slug": "tiktok-payment-delays"
+    },
+    {
+      "from": "content/guides/tiktok-rpm-calculator-guide.mdx",
+      "slug": "tiktok-rpm-calculator-guide"
+    },
+    {
+      "from": "content/guides/tiktok-shop-affiliate.mdx",
+      "slug": "tiktok-shop-affiliate"
+    },
+    {
+      "from": "content/guides/tiktok-shop-success-strategies.mdx",
+      "slug": "tiktok-shop-success-strategies"
+    },
+    {
+      "from": "content/guides/tiktok-shop.mdx",
+      "slug": "tiktok-shop"
+    },
+    {
+      "from": "content/guides/why-creator-fund-earnings-dropped.mdx",
+      "slug": "why-creator-fund-earnings-dropped"
+    },
+    {
+      "from": "content/data/brand-deal-rates-by-followers.mdx",
+      "slug": "brand-deal-rates-by-followers"
+    },
+    {
+      "from": "content/data/brand-deal-rates-by-niche.mdx",
+      "slug": "brand-deal-rates-by-niche"
+    },
+    {
+      "from": "content/data/creator-fund-rates-by-country.mdx",
+      "slug": "creator-fund-rates-by-country"
+    },
+    {
+      "from": "content/data/earnings/average-tiktok-earnings-per-views.mdx",
+      "slug": "average-tiktok-earnings-per-views"
+    },
+    {
+      "from": "content/data/earnings/fulltime-vs-parttime-creator-earnings.mdx",
+      "slug": "fulltime-vs-parttime-creator-earnings"
+    },
+    {
+      "from": "content/data/earnings/seasonal-tiktok-earnings-trends.mdx",
+      "slug": "seasonal-tiktok-earnings-trends"
+    },
+    {
+      "from": "content/data/earnings/tiktok-advertising-rates-benchmarks.mdx",
+      "slug": "tiktok-advertising-rates-benchmarks"
+    },
+    {
+      "from": "content/data/earnings/tiktok-creator-economy-size.mdx",
+      "slug": "tiktok-creator-economy-size"
+    },
+    {
+      "from": "content/data/earnings/tiktok-creator-income-distribution.mdx",
+      "slug": "tiktok-creator-income-distribution"
+    },
+    {
+      "from": "content/data/earnings/tiktok-earnings-growth-timeline.mdx",
+      "slug": "tiktok-earnings-growth-timeline"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-australia-earnings.mdx",
+      "slug": "tiktok-pay-australia-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-brazil-earnings.mdx",
+      "slug": "tiktok-pay-brazil-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-canada-earnings.mdx",
+      "slug": "tiktok-pay-canada-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-france-earnings.mdx",
+      "slug": "tiktok-pay-france-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-germany-earnings.mdx",
+      "slug": "tiktok-pay-germany-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-india-earnings.mdx",
+      "slug": "tiktok-pay-india-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-indonesia-earnings.mdx",
+      "slug": "tiktok-pay-indonesia-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-mexico-earnings.mdx",
+      "slug": "tiktok-pay-mexico-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-nigeria-earnings.mdx",
+      "slug": "tiktok-pay-nigeria-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-philippines-earnings.mdx",
+      "slug": "tiktok-pay-philippines-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-uk-earnings.mdx",
+      "slug": "tiktok-pay-uk-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-pay-us-earnings.mdx",
+      "slug": "tiktok-pay-us-earnings"
+    },
+    {
+      "from": "content/data/earnings/tiktok-shop-gmv-growth.mdx",
+      "slug": "tiktok-shop-gmv-growth"
+    },
+    {
+      "from": "content/data/earnings/tiktok-vs-youtube-rpm-by-niche.mdx",
+      "slug": "tiktok-vs-youtube-rpm-by-niche"
+    },
+    {
+      "from": "content/data/earnings/top-tiktok-creators-income.mdx",
+      "slug": "top-tiktok-creators-income"
+    },
+    {
+      "from": "content/data/engagement/avg-engagement-rate-follower-count-2026.mdx",
+      "slug": "avg-engagement-rate-follower-count-2026"
+    },
+    {
+      "from": "content/data/engagement/completion-rate-by-video-length.mdx",
+      "slug": "completion-rate-by-video-length"
+    },
+    {
+      "from": "content/data/engagement/micro-vs-macro-engagement-rate.mdx",
+      "slug": "micro-vs-macro-engagement-rate"
+    },
+    {
+      "from": "content/data/engagement/posting-frequency-engagement-correlation.mdx",
+      "slug": "posting-frequency-engagement-correlation"
+    },
+    {
+      "from": "content/data/engagement/tiktok-likes-to-views-ratio.mdx",
+      "slug": "tiktok-likes-to-views-ratio"
+    },
+    {
+      "from": "content/data/engagement/tiktok-save-rate-benchmarks.mdx",
+      "slug": "tiktok-save-rate-benchmarks"
+    },
+    {
+      "from": "content/data/engagement/tiktok-share-rate-benchmarks.mdx",
+      "slug": "tiktok-share-rate-benchmarks"
+    },
+    {
+      "from": "content/data/engagement-rates-by-niche.mdx",
+      "slug": "engagement-rates-by-niche"
+    },
+    {
+      "from": "content/data/platform-comparisons/creator-monetization-platforms-2026.mdx",
+      "slug": "creator-monetization-platforms-2026"
+    },
+    {
+      "from": "content/data/platform-comparisons/tiktok-vs-instagram-brand-deal-rates.mdx",
+      "slug": "tiktok-vs-instagram-brand-deal-rates"
+    },
+    {
+      "from": "content/data/platform-comparisons/tiktok-vs-instagram-reels-2026.mdx",
+      "slug": "tiktok-vs-instagram-reels-2026"
+    },
+    {
+      "from": "content/data/platform-comparisons/tiktok-vs-youtube-shorts-2026.mdx",
+      "slug": "tiktok-vs-youtube-shorts-2026"
+    },
+    {
+      "from": "content/data/platform-comparisons/tiktok-vs-youtube-vs-twitch-live.mdx",
+      "slug": "tiktok-vs-youtube-vs-twitch-live"
+    },
+    {
+      "from": "content/data/reference/creator-fund-countries.mdx",
+      "slug": "creator-fund-countries"
+    },
+    {
+      "from": "content/data/reference/how-much-is-a-galaxy-on-tiktok.mdx",
+      "slug": "how-much-is-a-galaxy-on-tiktok"
+    },
+    {
+      "from": "content/data/reference/live-gifts-value-chart.mdx",
+      "slug": "live-gifts-value-chart"
+    },
+    {
+      "from": "content/data/reference/shop-commission-rates.mdx",
+      "slug": "shop-commission-rates"
+    },
+    {
+      "from": "content/data/reference/shop-payment-schedule.mdx",
+      "slug": "shop-payment-schedule"
+    },
+    {
+      "from": "content/data/reference/tiktok-business-vs-creator-account.mdx",
+      "slug": "tiktok-business-vs-creator-account"
+    },
+    {
+      "from": "content/data/reference/tiktok-video-length-limits.mdx",
+      "slug": "tiktok-video-length-limits"
+    },
+    {
+      "from": "content/data/rpm-rates-by-niche.mdx",
+      "slug": "rpm-rates-by-niche"
+    }
+  ],
+  "promotedTools": {
+    "/calculators/earnings-revenue/live-earnings/": "/calculators/live-earnings/",
+    "/calculators/commerce-ads/shop-profit/": "/calculators/shop-profit/",
+    "/calculators/utility-tools/eligibility/": "/calculators/eligibility/",
+    "/calculators/utility-tools/payout/": "/calculators/payout/",
+    "/calculators/utility-tools/tax/": "/calculators/tax/"
+  },
+  "hubs": {
+    "/guides/business/": "/learn/business/",
+    "/guides/growth/": "/learn/growth/",
+    "/guides/monetization/": "/learn/monetization/",
+    "/guides/niches/": "/learn/niches/",
+    "/data/earnings/": "/learn/earnings/",
+    "/data/engagement/": "/learn/engagement/",
+    "/data/platform-comparisons/": "/learn/platform-comparisons/",
+    "/data/reference/": "/learn/reference/",
+    "/guides/best-shop-niches/": "/learn/best-shop-niches/",
+    "/guides/monetization-calculator-hub/": "/learn/monetization-calculator-hub/",
+    "/guides/tiktok-ads-hub/": "/learn/tiktok-ads-hub/",
+    "/guides/tiktok-growth-hub/": "/learn/tiktok-growth-hub/"
+  }
+}

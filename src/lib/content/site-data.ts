@@ -117,7 +117,7 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'Shop Commission Calculator',
-    href: '/calculators/commerce-ads/shop-profit/',
+    href: '/calculators/shop-profit/',
     description: 'Estimate affiliate and shop commissions with volume and margin assumptions.',
     platform: 'TikTok Shop',
     goal: 'Business',
@@ -135,7 +135,7 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
   },
   {
     title: 'Creator Tax Calculator',
-    href: '/calculators/utility-tools/tax/',
+    href: '/calculators/tax/',
     description: 'Estimate tax set-aside based on region and creator income profile.',
     platform: 'Creator Business',
     goal: 'Business',
@@ -157,21 +157,21 @@ export const toolDirectoryItems: ToolDirectoryItem[] = [
 export const featuredGuides: GuideItem[] = [
   {
     title: 'How to Build a Creator Revenue Model',
-    href: '/guides/monetization-calculator-hub/',
+    href: '/learn/monetization-calculator-hub/',
     excerpt: 'A practical framework for modeling creator earnings with transparent assumptions.',
     readingTime: '9 min read',
     updatedAt: 'Jan 2026',
   },
   {
     title: 'TikTok Growth Systems That Scale',
-    href: '/guides/tiktok-growth-hub/',
+    href: '/learn/tiktok-growth-hub/',
     excerpt: 'Turn weekly output into a predictable growth loop with metrics that matter.',
     readingTime: '8 min read',
     updatedAt: 'Jan 2026',
   },
   {
     title: 'TikTok Ads and Commerce Playbook',
-    href: '/guides/tiktok-ads-hub/',
+    href: '/learn/tiktok-ads-hub/',
     excerpt: 'Understand ad economics and product margins before scaling spend.',
     readingTime: '11 min read',
     updatedAt: 'Dec 2025',

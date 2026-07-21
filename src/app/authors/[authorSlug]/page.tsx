@@ -85,20 +85,37 @@ function formatSlug(slug: string): string {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+// PAGE_METADATA keys that are legacy aliases, not real URL slugs. Map each straight to its
+// canonical live page (verified against the export + the firebase 301s) so author cards link
+// directly instead of through a redirect — and never 404.
+const AUTHOR_PAGE_URL_OVERRIDES: Record<string, string> = {
+  'earnings-revenue/creator-fund': '/calculators/tiktok-creator-fund/',
+  'earnings-revenue/money': '/calculators/tiktok-money/',
+  'coins-gifts-diamonds/diamonds': '/calculators/diamond-converter/',
+  'coins-gifts-diamonds/gift': '/calculators/live-gifts/',
+  'commerce-ads/ad-cost': '/calculators/tiktok-ad-cost/',
+  'commerce-ads/rpm-cpm': '/calculators/rpm/',
+  'engagement-influence/influencer-pricing': '/calculators/brand-deal-rate/',
+  'engagement-influence/video-engagement': '/calculators/engagement-rate/',
+  'engagement-influence/engagement': '/calculators/engagement-rate/',
+  'tiktok-creator-fund-guide': '/learn/tiktok-creator-fund/',
+  'how-to-go-viral': '/learn/how-to-go-viral-tiktok/',
+  region: '/learn/',
+};
+
 function getCalculatorHref(slug: string): string {
-  // Guide/blog slugs don't live under /calculators/
-  if (
-    slug.startsWith('how-to-') ||
-    slug.includes('-guide') ||
-    slug.includes('-hub') ||
-    slug === 'region'
-  ) {
-    return `/guides/${slug}/`;
-  }
+  // Legacy alias keys resolve straight to their canonical page.
+  const override = AUTHOR_PAGE_URL_OVERRIDES[slug];
+  if (override) return override;
+  // Blog posts stay at /blog/; evergreen guides/hubs are unified under /learn/;
+  // calculator tools are flat under /calculators/<basename>/ (no bucket segment).
   if (slug.startsWith('building-') || slug.startsWith('charli-') || slug.startsWith('creator-fund-') || slug.startsWith('best-tiktok-') || slug.startsWith('brand-deal-rate-')) {
     return `/blog/${slug}/`;
   }
-  return `/calculators/${slug}/`;
+  if (slug.startsWith('how-to-') || slug.includes('-guide') || slug.includes('-hub')) {
+    return `/learn/${slug}/`;
+  }
+  return `/calculators/${slug.split('/').pop()}/`;
 }
 
 export default function AuthorPage({
@@ -367,10 +384,10 @@ export default function AuthorPage({
               <Link href="/calculators/" className="btn btn-secondary btn-sm">
                 Calculator Directory
               </Link>
-              <Link href="/guides/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Creator Guides
               </Link>
-              <Link href="/data/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Data & Insights
               </Link>
               <Link href="/methodology/" className="btn btn-secondary btn-sm">

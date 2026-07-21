@@ -104,7 +104,7 @@ export function ToolsDirectoryPage({
               </p>
               <p className="mt-3 text-sm leading-relaxed text-neutral-700">
                 For broader context, pair tools with the{' '}
-                <Link href="/data/" className="link">
+                <Link href="/learn/" className="link">
                   Benchmarks hub
                 </Link>{' '}
                 and relevant guides before making high-impact creator-business decisions.
@@ -134,19 +134,19 @@ export function ToolsDirectoryPage({
               Use these hubs when you need benchmark context, strategic playbooks, and methodology details.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              <Link href="/guides/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Creator Guides
               </Link>
-              <Link href="/data/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Data & Insights
               </Link>
-              <Link href="/data/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Benchmarks
               </Link>
-              <Link href="/data/platform-comparisons/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/platform-comparisons/" className="btn btn-secondary btn-sm">
                 Platform Comparisons
               </Link>
-              <Link href="/data/reference/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/reference/" className="btn btn-secondary btn-sm">
                 Reference Tables
               </Link>
               <Link href="/blog/" className="btn btn-secondary btn-sm">

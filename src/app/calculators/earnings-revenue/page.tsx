@@ -261,7 +261,7 @@ export default function EarningsRevenuePage() {
         name="TikTok Earnings & Revenue Calculators"
         description="Free calculators to estimate TikTok creator earnings from LIVE gifts, Creator Rewards, legacy Creator Fund comparisons, brand deals, and total revenue across all monetization streams."
         url="https://ttcalculator.net/calculators/earnings-revenue/"
-        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: (c as any).href ? `https://ttcalculator.net${(c as any).href}` : undefined }))}
+        calculators={calculators.map(c => ({ name: c.name, description: c.description, slug: c.slug, url: `https://ttcalculator.net${(c as any).href || `/calculators/${c.slug}/`}` }))}
       />
       <FAQSchema faqs={faqs} />
       <BreadcrumbSchema
@@ -294,7 +294,7 @@ export default function EarningsRevenuePage() {
           {calculators.map((calc) => (
             <Link
               key={calc.slug}
-              href={(calc as any).href || `/calculators/earnings-revenue/${calc.slug}`}
+              href={(calc as any).href || `/calculators/${calc.slug}/`}
               className="card card-hover p-6 group"
             >
               <div className="flex items-start space-x-4">
@@ -564,11 +564,11 @@ export default function EarningsRevenuePage() {
                 <h4 className="font-semibold text-neutral-900 mb-2">Diamonds Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Convert diamonds from LIVE gifts to real money</p>
               </Link>
-              <Link href="/calculators/utility-tools/payout/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/calculators/payout/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Payout Calculator</h4>
                 <p className="text-body-sm text-neutral-700">Calculate net earnings after platform fees</p>
               </Link>
-              <Link href="/guides/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
+              <Link href="/learn/how-to-make-money-on-tiktok/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100 transition-colors">
                 <h4 className="font-semibold text-neutral-900 mb-2">Monetization Guide</h4>
                 <p className="text-body-sm text-neutral-700">Complete guide to earning money on TikTok</p>
               </Link>

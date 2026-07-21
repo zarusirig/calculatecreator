@@ -125,7 +125,7 @@ export default function TikTokCreatorFundCalculatorPage() {
             </p>
             <p className="text-body-md text-neutral-600 max-w-3xl mx-auto">
               For current planning, start with the{' '}
-              <Link href="/guides/creator-rewards-program/" className="text-primary-600 hover:text-primary-700 underline">
+              <Link href="/learn/creator-rewards-program/" className="text-primary-600 hover:text-primary-700 underline">
                 Creator Rewards Program guide
               </Link>{' '}
               and the{' '}
@@ -254,7 +254,7 @@ export default function TikTokCreatorFundCalculatorPage() {
               </div>
               <p className="text-body-sm text-neutral-600 mt-4">
                 Read the full{' '}
-                <Link href="/guides/creator-rewards-program/" className="text-primary-600 hover:text-primary-700 underline">
+                <Link href="/learn/creator-rewards-program/" className="text-primary-600 hover:text-primary-700 underline">
                   Creator Rewards Program guide
                 </Link>{' '}
                 for the current workflow.
@@ -290,7 +290,7 @@ export default function TikTokCreatorFundCalculatorPage() {
                 'The legacy model is directional and should be used for comparison, not accounting.',
               ]}
               relatedContent={[
-                { title: 'Creator Rewards Program Guide', href: '/guides/creator-rewards-program/' },
+                { title: 'Creator Rewards Program Guide', href: '/learn/creator-rewards-program/' },
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
                 { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
                 { title: 'RPM Calculator', href: '/calculators/rpm/' },

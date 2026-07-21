@@ -131,7 +131,7 @@ export default function TikTokMoneyCalculatorPage() {
               <span className="flex items-center gap-1"><BarChart3 size={16} /> Earning Projections</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              New to monetization? Read our <Link href="/guides/how-to-make-money-on-tiktok/" className="text-primary-600 hover:text-primary-700 underline">complete guide to making money on TikTok</Link> or explore <Link href="/data/platform-comparisons/" className="text-primary-600 hover:text-primary-700 underline">income stream comparisons</Link>.
+              New to monetization? Read our <Link href="/learn/how-to-make-money-on-tiktok/" className="text-primary-600 hover:text-primary-700 underline">complete guide to making money on TikTok</Link> or explore <Link href="/learn/platform-comparisons/" className="text-primary-600 hover:text-primary-700 underline">income stream comparisons</Link>.
             </p>
           </div>
 
@@ -321,7 +321,7 @@ export default function TikTokMoneyCalculatorPage() {
                 { title: 'Legacy Creator Fund Calculator', href: '/calculators/tiktok-creator-fund/' },
                 { title: 'Brand Deal Rate Calculator', href: '/calculators/brand-deal-rate/' },
                 { title: 'LIVE Gifts Calculator', href: '/calculators/live-gifts/' },
-                { title: 'How to Make Money on TikTok Guide', href: '/guides/how-to-make-money-on-tiktok/' },
+                { title: 'How to Make Money on TikTok Guide', href: '/learn/how-to-make-money-on-tiktok/' },
               ]}
             />
 

@@ -125,7 +125,7 @@ export default function TikTokAdCostCalculatorPage() {
               <span className="flex items-center gap-1"><TrendingUp size={16} /> Format Comparison</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Learn more in our <Link href="/guides/tiktok-ad-budget-calculator-guide/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok ad budget guide</Link> or explore <Link href="/guides/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline">TikTok Shop advertising strategies</Link>.
+              Learn more in our <Link href="/learn/tiktok-ad-budget-calculator-guide/" className="text-primary-600 hover:text-primary-700 underline">complete TikTok ad budget guide</Link> or explore <Link href="/learn/tiktok-shop-success-strategies/" className="text-primary-600 hover:text-primary-700 underline">TikTok Shop advertising strategies</Link>.
             </p>
           </div>
 
@@ -327,7 +327,7 @@ export default function TikTokAdCostCalculatorPage() {
                 { title: 'TikTok Money Calculator', href: '/calculators/tiktok-money/' },
                 { title: 'CPM/CPV Calculator', href: '/calculators/cpm-cpv/' },
                 { title: 'Cost Per Result Calculator', href: '/calculators/cost-per-result/' },
-                { title: 'TikTok Ad Budget Guide', href: '/guides/tiktok-ad-budget-calculator-guide/' },
+                { title: 'TikTok Ad Budget Guide', href: '/learn/tiktok-ad-budget-calculator-guide/' },
               ]}
             />
 

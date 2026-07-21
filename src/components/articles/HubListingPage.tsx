@@ -5,6 +5,7 @@ import { Clock, ArrowRight } from 'lucide-react';
 import { CollectionSchema } from '@/components/seo/CollectionSchema';
 import { DatasetSchema } from '@/components/seo/DatasetSchema';
 import { ArticleData } from '@/lib/content/types';
+import { articleUrl, hubUrl } from '@/lib/content/article-url';
 
 interface HubListingPageProps {
   title: string;
@@ -27,7 +28,8 @@ export function HubListingPage({
   calculatorLink,
   supplementaryContent,
 }: HubListingPageProps) {
-  const canonicalPath = `/${section}/`;
+  // section is the legacy filter key (e.g. 'guides/growth'); the hub's real URL is /learn/<slug>/.
+  const canonicalPath = hubUrl(section);
   const canonicalUrl = `https://ttcalculator.net${canonicalPath}`;
   const isDataHub = section.startsWith('data/');
 
@@ -39,14 +41,14 @@ export function HubListingPage({
   const collectionItems = articles.map((article) => ({
     name: article.frontmatter.title,
     description: article.frontmatter.metaDescription,
-    url: `https://ttcalculator.net/${article.frontmatter.category}/${article.frontmatter.slug}/`,
+    url: `https://ttcalculator.net${articleUrl(article.frontmatter)}`,
     category: article.frontmatter.articleType,
   }));
 
   const relatedLinks = [
     { label: parentLabel, href: parentPath },
     { label: 'Calculator Directory', href: '/calculators/' },
-    { label: isDataHub ? 'Creator Guides' : 'Benchmarks & Data', href: isDataHub ? '/guides/' : '/data/' },
+    { label: isDataHub ? 'Creator Guides' : 'Benchmarks & Data', href: isDataHub ? '/learn/' : '/learn/' },
     ...(calculatorLink ? [{ label: calculatorLink.label, href: calculatorLink.href }] : []),
   ];
 
@@ -93,7 +95,7 @@ export function HubListingPage({
               {articles.map((article) => (
                 <Link
                   key={article.frontmatter.slug}
-                  href={`/${article.frontmatter.category}/${article.frontmatter.slug}/`}
+                  href={articleUrl(article.frontmatter)}
                   className="group block p-6 bg-white border border-neutral-200 rounded-xl hover:border-primary-300 hover:shadow-card-hover transition-all"
                 >
                   <h2 className="text-heading-md font-semibold text-neutral-900 group-hover:text-primary-600 transition-colors mb-2">

@@ -66,7 +66,7 @@ export default function BookmarksPage() {
           <Link href="/calculators/brand-deal-rate/" className="btn btn-secondary btn-sm">
             Brand Deal Rate Calculator
           </Link>
-          <Link href="/guides/monetization-calculator-hub/" className="btn btn-secondary btn-sm">
+          <Link href="/learn/monetization-calculator-hub/" className="btn btn-secondary btn-sm">
             Monetization Hub
           </Link>
         </div>
@@ -95,10 +95,10 @@ export default function BookmarksPage() {
             <Link href="/calculators/" className="btn btn-secondary btn-sm">
               Calculator Directory
             </Link>
-            <Link href="/guides/" className="btn btn-secondary btn-sm">
+            <Link href="/learn/" className="btn btn-secondary btn-sm">
               Creator Guides
             </Link>
-            <Link href="/data/" className="btn btn-secondary btn-sm">
+            <Link href="/learn/" className="btn btn-secondary btn-sm">
               Data & Insights
             </Link>
             <Link href="/search/" className="btn btn-secondary btn-sm">

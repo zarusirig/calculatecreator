@@ -9,10 +9,10 @@ import { trackNavigation } from '@/lib/analytics/ga4';
 
 const navItems = [
   { label: 'Tools', href: '/calculators/' },
-  { label: 'Benchmarks', href: '/data/' },
-  { label: 'Guides', href: '/guides/' },
+  { label: 'Benchmarks', href: '/learn/' },
+  { label: 'Guides', href: '/learn/' },
   { label: 'Blog', href: '/blog/' },
-  { label: 'Comparisons', href: '/data/platform-comparisons/' },
+  { label: 'Comparisons', href: '/learn/platform-comparisons/' },
   { label: 'News', href: '/news/' },
 ];
 

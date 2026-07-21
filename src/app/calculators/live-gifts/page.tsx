@@ -127,7 +127,7 @@ export default function LiveGiftsCalculatorPage() {
               <span className="flex items-center gap-1"><TrendingUp size={16} /> Growth Tracking</span>
             </div>
             <p className="text-body-md text-neutral-600 mt-4 max-w-2xl mx-auto">
-              Learn more in our <Link href="/guides/live-gift-earnings-optimization/" className="text-primary-600 hover:text-primary-700 underline">LIVE gift optimization guide</Link> or compare <Link href="/blog/creator-fund-vs-live-gifts/" className="text-primary-600 hover:text-primary-700 underline">LIVE gifts vs Creator Fund earnings</Link>.
+              Learn more in our <Link href="/learn/live-gift-earnings-optimization/" className="text-primary-600 hover:text-primary-700 underline">LIVE gift optimization guide</Link> or compare <Link href="/blog/creator-fund-vs-live-gifts/" className="text-primary-600 hover:text-primary-700 underline">LIVE gifts vs Creator Fund earnings</Link>.
             </p>
           </div>
 

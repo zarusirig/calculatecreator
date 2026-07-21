@@ -31,7 +31,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Algorithm',
     definition:
       'The algorithm is the recommendation system that decides how widely content is shown and to which audiences. It evaluates interaction signals like watch time, completion behavior, engagement quality, and viewer history. Algorithm shifts can change results quickly even when your posting cadence stays the same.',
-    relatedHref: '/guides/tiktok-growth-hub/',
+    relatedHref: '/learn/tiktok-growth-hub/',
     relatedLabel: 'Growth Hub Guide',
   },
   {
@@ -87,7 +87,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Content Pillar',
     definition:
       'A content pillar is a recurring theme that organizes what you publish and why your audience follows you. Pillars improve consistency and make performance analysis easier across formats. Strong pillars help creators avoid random posting that inflates output but weakens strategic growth.',
-    relatedHref: '/guides/tiktok-growth-hub/',
+    relatedHref: '/learn/tiktok-growth-hub/',
     relatedLabel: 'Growth Strategy Guide',
   },
   {
@@ -115,7 +115,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Creator Marketplace',
     definition:
       'Creator Marketplace refers to platform-managed environments where brands and creators connect for collaborations. It can reduce discovery friction but does not guarantee fair pricing. Creators still need clear rate logic, deliverable definitions, and negotiation standards before accepting campaigns.',
-    relatedHref: '/guides/monetization/tiktok-series-monetization/',
+    relatedHref: '/learn/tiktok-series-monetization/',
     relatedLabel: 'Monetization Guide',
   },
   {
@@ -150,7 +150,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'FYP',
     definition:
       'FYP stands for "For You Page," the primary recommendation feed where discovery occurs for many short-form creators. Visibility in this feed can drive rapid view growth when content matches audience behavior patterns. FYP performance is highly dynamic and cannot be guaranteed by any single tactic.',
-    relatedHref: '/guides/tiktok-growth-hub/',
+    relatedHref: '/learn/tiktok-growth-hub/',
     relatedLabel: 'FYP Strategy Guide',
   },
   {
@@ -164,7 +164,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'GMV',
     definition:
       'GMV (gross merchandise value) is total sales value before deductions such as returns, discounts, or fees. It is useful for top-line commerce analysis but should not be confused with net creator earnings. For practical decisions, creators should compare GMV with margin, commission, and conversion quality.',
-    relatedHref: '/calculators/commerce-ads/shop-profit/',
+    relatedHref: '/calculators/shop-profit/',
     relatedLabel: 'Shop Profit Calculator',
   },
   {
@@ -185,7 +185,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Influencer',
     definition:
       'An influencer is a creator whose audience trust can shape attention, preference, or buying behavior. Influence quality is determined by audience fit and credibility, not follower count alone. Campaign success typically depends on relevance, creative quality, and measurable outcomes.',
-    relatedHref: '/guides/monetization-calculator-hub/',
+    relatedHref: '/learn/monetization-calculator-hub/',
     relatedLabel: 'Influencer Monetization Guide',
   },
   {
@@ -248,7 +248,7 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'Shadowban',
     definition:
       'Shadowban is a community term for a perceived drop in visibility without explicit enforcement messaging. In many cases, performance drops are caused by content fit or demand shifts rather than hidden penalties. Diagnosis should start with data review before assuming suppression.',
-    relatedHref: '/guides/tiktok-growth-hub/',
+    relatedHref: '/learn/tiktok-growth-hub/',
     relatedLabel: 'Distribution Diagnostics Guide',
   },
   {
@@ -269,14 +269,14 @@ const glossaryTerms: GlossaryTerm[] = [
     term: 'TikTok Series',
     definition:
       'TikTok Series refers to structured content collections or paid-access formats where creators package related content for deeper audience value. Series strategies often prioritize depth over virality and can support recurring revenue patterns. Planning should include completion behavior and perceived content value.',
-    relatedHref: '/guides/monetization/tiktok-series-monetization/',
+    relatedHref: '/learn/tiktok-series-monetization/',
     relatedLabel: 'Series Monetization Guide',
   },
   {
     term: 'TikTok Shop',
     definition:
       'TikTok Shop is a commerce environment where creators can promote or sell products and earn commission or margin. Success is driven by product-market fit, creative demonstration quality, and conversion funnel health. Commerce outcomes are rarely stable without ongoing testing.',
-    relatedHref: '/calculators/commerce-ads/shop-profit/',
+    relatedHref: '/calculators/shop-profit/',
     relatedLabel: 'Shop Commission Calculator',
   },
   {
@@ -374,7 +374,7 @@ export default function GlossaryPage() {
                 for calculator workflows.
               </li>
               <li>
-                <Link href="/guides/" className="link">
+                <Link href="/learn/" className="link">
                   Guides
                 </Link>{' '}
                 for long-form explanations and examples.

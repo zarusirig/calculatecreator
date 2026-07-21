@@ -84,7 +84,7 @@ const calculatorCategories = [
     title: 'TikTok Growth Calculators',
     description:
       'Project follower growth, viral potential score, and posting frequency impact with transparent growth assumptions.',
-    href: '/guides/tiktok-growth-hub/',
+    href: '/learn/tiktok-growth-hub/',
     icon: Compass,
     accent: 'bg-[rgba(244,185,66,0.18)] text-[#8f6400]',
     tools: ['Follower Growth', 'Viral Potential', 'Hashtag Performance'],
@@ -629,7 +629,7 @@ export function HomepageRedesign() {
                   Explore All TikTok Calculators
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/guides/" className="btn btn-secondary btn-lg">
+                <Link href="/learn/" className="btn btn-secondary btn-lg">
                   Read Creator Guides
                 </Link>
               </div>

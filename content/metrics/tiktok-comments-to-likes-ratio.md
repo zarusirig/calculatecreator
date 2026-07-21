@@ -289,18 +289,18 @@ No. This prevents easy engagement and will lower overall engagement. Focus on en
 
 **Optimize further:**
 - Use the [TikTok Engagement Rate Calculator](/calculators/engagement-rate/) for your overall engagement
-- Read [How to Increase TikTok Engagement](/guides/how-to-increase-engagement/) for comprehensive strategies
-- Read the [TikTok Algorithm Explained](/guides/growth/tiktok-algorithm-explained/) guide to understand engagement signals
+- Read [How to Increase TikTok Engagement](/learn/how-to-increase-engagement/) for comprehensive strategies
+- Read the [TikTok Algorithm Explained](/learn/tiktok-algorithm-explained/) guide to understand engagement signals
 
 ---
 
 ## Related Resources
 
 - [TikTok Engagement Rate Calculator](/calculators/engagement-rate/)
-- [How to Increase TikTok Engagement](/guides/how-to-increase-engagement/)
-- [TikTok Algorithm Explained](/guides/growth/tiktok-algorithm-explained/)
-- [Average Engagement Rate by Follower Count (2026)](/data/engagement/avg-engagement-rate-follower-count-2026/)
-- [TikTok Likes-to-Views Ratio](/data/engagement/tiktok-likes-to-views-ratio/)
+- [How to Increase TikTok Engagement](/learn/how-to-increase-engagement/)
+- [TikTok Algorithm Explained](/learn/tiktok-algorithm-explained/)
+- [Average Engagement Rate by Follower Count (2026)](/learn/avg-engagement-rate-follower-count-2026/)
+- [TikTok Likes-to-Views Ratio](/learn/tiktok-likes-to-views-ratio/)
 
 ---
 

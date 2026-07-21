@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { BookOpen, Clock, ArrowRight } from 'lucide-react';
+import { articleUrl } from '@/lib/content/article-url';
 import { getArticlesByCalculator } from '@/lib/content';
 
 interface RelatedGuidesProps {
@@ -24,7 +25,7 @@ export function RelatedGuides({ calculatorPath }: RelatedGuidesProps) {
         {articles.map((article) => (
           <Link
             key={article.frontmatter.slug}
-            href={`/${article.frontmatter.category}/${article.frontmatter.slug}/`}
+            href={articleUrl(article.frontmatter)}
             className="group flex flex-col p-5 bg-white border border-neutral-200 rounded-xl hover:border-primary-300 hover:shadow-card-hover transition-all"
           >
             <div className="flex items-start gap-3 mb-3">

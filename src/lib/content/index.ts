@@ -4,6 +4,8 @@ import matter from 'gray-matter';
 import readingTime from 'reading-time';
 import { ArticleFrontmatter, ArticleData } from './types';
 
+export { articleUrl, articleUrlAbsolute, hubUrl } from './article-url';
+
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 function normalizeInternalPath(route?: string): string {
@@ -348,9 +350,16 @@ function parseArticle(filePath: string): ArticleData {
  */
 export function getArticlesBySection(section: string): ArticleData[] {
   const dir = path.join(CONTENT_DIR, section);
-  return getMdxFiles(dir)
-    .map(parseArticle)
-    .sort((a, b) => b.frontmatter.priorityScore - a.frontmatter.priorityScore);
+  // Real directory (e.g. 'learn', 'blog') -> read it. Otherwise treat `section` as a
+  // legacy category key (e.g. 'guides/growth', 'calculators/tiktok-money') and filter
+  // the flat content/learn set by frontmatter.category — hub/tool pages keep working
+  // unchanged after the URL restructure that dissolved those folders into /learn.
+  const articles = (fs.existsSync(dir) && fs.statSync(dir).isDirectory())
+    ? getMdxFiles(dir).map(parseArticle)
+    : getMdxFiles(path.join(CONTENT_DIR, 'learn'))
+        .map(parseArticle)
+        .filter(a => a.frontmatter.category === section);
+  return articles.sort((a, b) => b.frontmatter.priorityScore - a.frontmatter.priorityScore);
 }
 
 /**
@@ -367,7 +376,7 @@ export function getArticle(section: string, slug: string): ArticleData | null {
  * Get ALL articles across all sections (for sitemap)
  */
 export function getAllArticles(): ArticleData[] {
-  const sections = ['calculators', 'guides', 'data', 'blog'];
+  const sections = ['learn', 'blog'];
   return sections.flatMap(getArticlesBySection);
 }
 
@@ -419,9 +428,12 @@ export function getRelatedArticleLinks(frontmatter: ArticleFrontmatter) {
   const findByPath = (articlePath: string) => {
     const normalizedArticlePath = normalizeArticlePath(articlePath);
     return allArticles.find(a => {
-      const fullPath = normalizeArticlePath(`/${a.frontmatter.category}/${a.frontmatter.slug}`);
+      // Match on the article's real location (/learn/<slug> or /blog/<slug>), which is
+      // where every internal link now points after the restructure.
+      const rel = path.relative(CONTENT_DIR, a.filePath).replace(/\.mdx?$/, '');
+      const filePath = normalizeArticlePath(`/${rel}`);
       const shortPath = normalizeArticlePath(`/${a.frontmatter.slug}`);
-      return fullPath === normalizedArticlePath || shortPath === normalizedArticlePath;
+      return filePath === normalizedArticlePath || shortPath === normalizedArticlePath;
     });
   };
 

@@ -221,14 +221,14 @@ export default function RpmCalculatorPage() {
             <p className="mt-4 text-sm text-gray-400">
               Learn more in our{' '}
               <Link
-                href="/guides/tiktok-rpm-calculator-guide/"
+                href="/learn/tiktok-rpm-calculator-guide/"
                 className="text-cyan-400 hover:underline"
               >
                 complete RPM optimization guide
               </Link>{' '}
               or explore{' '}
               <Link
-                href="/calculators/tiktok-creator-fund/maximize-creator-fund-rpm/"
+                href="/learn/maximize-creator-fund-rpm/"
                 className="text-cyan-400 hover:underline"
               >
                 strategies to maximize your RPM

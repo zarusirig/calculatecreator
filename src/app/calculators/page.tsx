@@ -197,7 +197,7 @@ export default function CalculatorsPage() {
           range rather than a single fixed number, because TikTok does not publish official per-view
           payout rates. Creator RPM commonly lands between <strong>$0.02 and $0.05</strong> per
           qualified view; the tools expose that band instead of a guaranteed rate. For per-category
-          bands, see the <Link href="/data/rpm-rates-by-niche/" className="text-primary-600 hover:underline">TikTok RPM rates by niche</Link> data.
+          bands, see the <Link href="/learn/rpm-rates-by-niche/" className="text-primary-600 hover:underline">TikTok RPM rates by niche</Link> data.
         </p>
         <p className="text-body-md text-neutral-700">
           The full formula set, source categories, and refresh schedule live in the{' '}

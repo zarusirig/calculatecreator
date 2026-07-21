@@ -55,7 +55,7 @@ export function DatasetSchema({
         '@type': 'ListItem',
         position: 2,
         name: 'Data',
-        item: 'https://ttcalculator.net/data/',
+        item: 'https://ttcalculator.net/learn/',
       },
       {
         '@type': 'ListItem',

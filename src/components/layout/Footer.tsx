@@ -14,13 +14,13 @@ const pathwayLinks = [
   {
     title: 'Study the benchmarks',
     description: 'Use ranges before you price a deal or call a post a miss.',
-    href: '/data/',
+    href: '/learn/',
     icon: BarChart3,
   },
   {
     title: 'Read the playbooks',
     description: 'Creator-first guides for growth, monetization, and decision making.',
-    href: '/guides/',
+    href: '/learn/',
     icon: BookOpen,
   },
 ];
@@ -30,8 +30,8 @@ const footerColumns = [
     heading: 'Explore',
     links: [
       { label: 'All calculators', href: '/calculators/' },
-      { label: 'Benchmarks', href: '/data/' },
-      { label: 'Guides', href: '/guides/' },
+      { label: 'Benchmarks', href: '/learn/' },
+      { label: 'Guides', href: '/learn/' },
       { label: 'News', href: '/news/' },
     ],
   },
@@ -48,10 +48,10 @@ const footerColumns = [
     heading: 'Resources',
     links: [
       { label: 'Blog', href: '/blog/' },
-      { label: 'Data & Earnings', href: '/data/earnings/' },
-      { label: 'Engagement Data', href: '/data/engagement/' },
-      { label: 'Platform Comparisons', href: '/data/platform-comparisons/' },
-      { label: 'Reference', href: '/data/reference/' },
+      { label: 'Data & Earnings', href: '/learn/earnings/' },
+      { label: 'Engagement Data', href: '/learn/engagement/' },
+      { label: 'Platform Comparisons', href: '/learn/platform-comparisons/' },
+      { label: 'Reference', href: '/learn/reference/' },
     ],
   },
   {

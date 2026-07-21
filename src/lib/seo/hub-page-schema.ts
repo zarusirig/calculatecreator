@@ -243,7 +243,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   guides: {
     title: 'TikTok Creator Guides: Expert Strategies for Growth & Monetization',
     description: 'Comprehensive guides covering TikTok monetization, growth strategies, content creation, and creator business management. Written by industry experts.',
-    url: 'https://ttcalculator.net/guides/',
+    url: 'https://ttcalculator.net/learn/',
     collectionType: 'Guides',
     faqs: [
       {
@@ -271,7 +271,7 @@ export const hubPageConfigs: Record<string, Omit<HubPageSchemaConfig, 'items'>> 
   reference: {
     title: 'TikTok Reference Data: Official Rates, Schedules & Requirements',
     description: 'Verified reference data for TikTok creators including Creator Fund rates, payment schedules, eligibility requirements, and commission structures.',
-    url: 'https://ttcalculator.net/data/reference/',
+    url: 'https://ttcalculator.net/learn/reference/',
     collectionType: 'Reference',
     faqs: [
       {

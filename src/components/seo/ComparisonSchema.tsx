@@ -97,7 +97,7 @@ export function ComparisonSchema({
         '@type': 'ListItem',
         position: 2,
         name: 'Comparisons',
-        item: 'https://ttcalculator.net/data/platform-comparisons/'
+        item: 'https://ttcalculator.net/learn/platform-comparisons/'
       },
       {
         '@type': 'ListItem',

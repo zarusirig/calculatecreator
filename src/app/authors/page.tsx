@@ -123,10 +123,10 @@ export default function AuthorsHubPage() {
               <Link href="/calculators/" className="btn btn-secondary btn-sm">
                 Calculator Directory
               </Link>
-              <Link href="/guides/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Creator Guides
               </Link>
-              <Link href="/data/" className="btn btn-secondary btn-sm">
+              <Link href="/learn/" className="btn btn-secondary btn-sm">
                 Data &amp; Insights
               </Link>
               <Link href="/about/" className="btn btn-secondary btn-sm">

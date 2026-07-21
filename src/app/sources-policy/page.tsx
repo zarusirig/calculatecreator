@@ -342,7 +342,7 @@ export default function SourcesPolicyPage() {
             </p>
             <p className="mt-3 text-sm leading-relaxed text-neutral-700">
               Readers who want the underlying figures find them in the{' '}
-              <Link href="/data/reference/" className="text-primary-600 underline">
+              <Link href="/learn/reference/" className="text-primary-600 underline">
                 reference data
               </Link>{' '}
               hub and in the citations section of each calculator page.

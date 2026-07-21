@@ -65,7 +65,7 @@ export function ReferenceSchema({
         '@type': 'ListItem',
         position: 2,
         name: 'Reference',
-        item: 'https://ttcalculator.net/data/reference/',
+        item: 'https://ttcalculator.net/learn/reference/',
       },
       {
         '@type': 'ListItem',

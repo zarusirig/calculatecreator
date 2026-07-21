@@ -45,7 +45,7 @@ export default function SponsorshipDisclosurePage() {
           <div className="flex items-center space-x-2 text-body-sm text-neutral-600">
             <Link href="/">Home</Link>
             <span>/</span>
-            <Link href="/guides/">Guides</Link>
+            <Link href="/learn/">Guides</Link>
             <span>/</span>
             <span className="text-neutral-900">Sponsorship Disclosure</span>
           </div>
@@ -476,14 +476,14 @@ export default function SponsorshipDisclosurePage() {
         <Card>
           <h3 className="text-heading-md font-semibold text-neutral-900 mb-4">Related Resources</h3>
           <div className="grid md:grid-cols-2 gap-4">
-            <Link href="/guides/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/learn/how-to-get-brand-deals/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <Users className="w-4 h-4 flex-shrink-0 text-blue-600" />
                 How to Get Brand Deals
               </h4>
               <p className="text-body-sm text-neutral-700">Complete guide to TikTok sponsorships</p>
             </Link>
-            <Link href="/guides/business/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
+            <Link href="/learn/business/" className="p-4 bg-neutral-50 rounded-lg hover:bg-neutral-100">
               <h4 className="font-semibold text-neutral-900 mb-1 flex items-center gap-2">
                 <Shield className="w-4 h-4 flex-shrink-0 text-blue-600" />
                 Brand Deal Contract Template

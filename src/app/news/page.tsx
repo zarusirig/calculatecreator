@@ -758,7 +758,7 @@ export default function NewsPage() {
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/calculators/commerce-ads/shop-profit/"
+                href="/calculators/shop-profit/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">TikTok Shop Profit Calculator</span>
@@ -772,14 +772,14 @@ export default function NewsPage() {
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/guides/how-to-make-money-on-tiktok/"
+                href="/learn/how-to-make-money-on-tiktok/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Monetization Guide</span>
                 <span className="text-primary-600">→</span>
               </Link>
               <Link
-                href="/guides/growth/tiktok-algorithm-explained/"
+                href="/learn/tiktok-algorithm-explained/"
                 className="flex items-center justify-between p-4 bg-white rounded-lg border-2 border-transparent hover:border-primary-500 transition-colors"
               >
                 <span className="font-semibold text-neutral-900">Algorithm Guide</span>

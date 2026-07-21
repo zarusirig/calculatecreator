@@ -153,7 +153,7 @@ export function createArticlePageExports(contentDir: string) {
 
 /**
  * Factory for catch-all [...slug] routes.
- * Used by guide/data hub pages (e.g., /guides/monetization/[...slug])
+ * Used by guide/learn hub pages (e.g., /guides/monetization/[...slug])
  */
 export function createCatchAllArticlePageExports(contentDir: string) {
   const section = contentDir;

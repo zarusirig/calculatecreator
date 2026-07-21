@@ -59,7 +59,7 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/guides/"
+            href="/learn/"
             className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-4 text-left shadow-sm transition-all hover:shadow-md hover:border-primary-300"
           >
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-600">

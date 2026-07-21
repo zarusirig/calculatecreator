@@ -329,5 +329,7 @@ export function getCalculatorSchema(slug: string): CalculatorSchemaConfig | unde
  * Get full URL for a calculator
  */
 export function getCalculatorURL(slug: string): string {
-  return `https://ttcalculator.net/calculators/${slug}/`;
+  // slug may be a legacy lookup key with a bucket prefix (e.g. 'commerce-ads/shop-profit');
+  // the live tool is flat at /calculators/<basename>/.
+  return `https://ttcalculator.net/calculators/${slug.split('/').pop()}/`;
 }

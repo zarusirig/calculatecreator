@@ -46,7 +46,9 @@ function loadRedirectSourceRoutes() {
 
   try {
     const firebase = JSON.parse(fs.readFileSync(FIREBASE_CONFIG, 'utf-8'));
-    const redirects = firebase?.hosting?.redirects || [];
+    // hosting may be a single object or a multi-site array — collect redirects from all sites.
+    const hostingArr = Array.isArray(firebase?.hosting) ? firebase.hosting : [firebase?.hosting].filter(Boolean);
+    const redirects = hostingArr.flatMap((h) => h?.redirects || []);
     for (const rule of redirects) {
       if (!isLiteralInternalPath(rule?.source)) continue;
       for (const variant of expandOptionalSlash(rule.source)) {
